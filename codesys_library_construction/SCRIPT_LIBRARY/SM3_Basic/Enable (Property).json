@@ -1,0 +1,8 @@
+{
+  "library": "SM3_Basic",
+  "title": "Enable (Property)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/DriveInterface/AXIS_REF/pou-AXIS_REF_SM3/CAA-Device-Diagnosis/INode/Enable.html",
+  "page_title": "AXIS_REF_SM3.Enable (PROP)",
+  "text": "\nPROPERTY Enable : BOOL\nThis property returns if the node is enabled in the device tree. The setter can be used to change the\nEnabled\nflag. If enabling/disabling is not supported on the node, the flag value is not changed.",
+  "tables": []
+}

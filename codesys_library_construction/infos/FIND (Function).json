@@ -1,0 +1,36 @@
+{
+  "library": "Standard",
+  "title": "FIND (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/Standard/Current/String-Functions/FIND.html",
+  "page_title": "FIND (FUN)",
+  "text": "\nFUNCTION FIND : INT\nSearches for the position of a partial string within a string.\nFIND(STR1,\nSTR2)\nmeans: Find the position of the first character where\nSTR2\nappears\nin\nSTR1\nfor the first time. If STR2 is not found in STR1, then OUT:=0.\n(* Example declaration *)\narINT1\n:\nINT\n;\n(* Example in ST , result is '4' *)\narINT1\n:=\nFIND\n(\n'abcdef'\n,\n'de'\n);\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "FIND",
+          "Type": "INT",
+          "Comment": "Character position of the first occurance ofSTR2inSTR1. If no occurance is found, result is 0"
+        },
+        {
+          "Scope": "Input",
+          "Name": "STR1",
+          "Type": "STRING(255)",
+          "Comment": "String within whichSTR2is searched"
+        },
+        [
+          "STR2",
+          "STRING(255)",
+          "String whose position is searched inSTR1"
+        ]
+      ]
+    }
+  ]
+}

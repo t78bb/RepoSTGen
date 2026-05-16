@@ -1,0 +1,31 @@
+{
+  "library": "BACnet2DefaultImpl",
+  "title": "Time2BACnetDateTime (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2DefaultImpl/Current/BACnetDefaultImpl/Functions/Time2BACnetDateTime.html",
+  "page_title": "Time2BACnetDateTime (FUN)",
+  "text": "\nFUNCTION Time2BACnetDateTime : BACnet.BACnetDateTime\nConverts a timestamp into BACnet.BACnetDateTime\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "Time2BACnetDateTime",
+          "Type": "BACnet.BACnetDateTime",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "uliDateTime",
+          "Type": "ULINT",
+          "Comment": "timestamp in milliseconds since 1.1.1970 00:00:00.000"
+        }
+      ]
+    }
+  ]
+}

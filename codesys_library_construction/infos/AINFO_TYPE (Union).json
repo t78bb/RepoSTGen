@@ -1,0 +1,28 @@
+{
+  "library": "CommFB",
+  "title": "AINFO_TYPE (Union)",
+  "url": "https://content.helpme-codesys.com/en/libs/CommFB/Current/CommFB/AINFO_TYPE.html",
+  "page_title": "AINFO_TYPE (UNION)",
+  "text": "\nTYPE AINFO_TYPE : UNION\nThis union either contain Profibus or Profinet alarm information, depending on the used IO subsytem type (see:\nRALARM\n).\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "DP",
+          "Type": "DP_AINFO",
+          "Comment": "Profibus alarm information"
+        },
+        {
+          "Name": "PN",
+          "Type": "PN_AINFO",
+          "Comment": "Profinet alarm information"
+        }
+      ]
+    }
+  ]
+}

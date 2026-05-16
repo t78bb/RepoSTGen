@@ -1,0 +1,36 @@
+{
+  "library": "BACnet",
+  "title": "WritePresentValueWithPriority (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/PositiveIntegerValue/pou-BACnetPositiveIntegerValue/WritePresentValueWithPriority.html",
+  "page_title": "BACnetPositiveIntegerValue.WritePresentValueWithPriority (METH)",
+  "text": "\nMETHOD WritePresentValueWithPriority : CmpBACnet.IEC_BACNET_STATUS\nSet the Present_Value with the given priority taking client side restrictions into account (access, priorization, range checks).\nIn contrast to\nSetPropertyInstance\nand\n|PresentValue.Set|\nall access, priorization and range checks are executed by this call and on return\nthe occurred BACnet error code will be returned.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "WritePresentValueWithPriority",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "value",
+          "Type": "CmpBACnet.IEC_BACNET_UNSIGNED",
+          "Comment": "Value to write."
+        },
+        [
+          "priority",
+          "DINT",
+          "The priority to use when writing to Present_Value."
+        ]
+      ]
+    }
+  ]
+}

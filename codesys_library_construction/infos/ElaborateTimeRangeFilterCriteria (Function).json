@@ -1,0 +1,57 @@
+{
+  "library": "AlarmManager",
+  "title": "ElaborateTimeRangeFilterCriteria (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Functions/Filters/ElaborateTimeRangeFilterCriteria.html",
+  "page_title": "ElaborateTimeRangeFilterCriteria (FUN)",
+  "text": "\nFUNCTION ElaborateTimeRangeFilterCriteria : BOOL\nThis method is an helper for the customer\nIt elaborates the criteria for the filtering on time range and send back the parameters to use\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "ElaborateTimeRangeFilterCriteria",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "filterType",
+          "Type": "EFilterTimeRangeType",
+          "Comment": "Filter type to use"
+        },
+        [
+          "dtFrom",
+          "DT",
+          "Start filter position"
+        ],
+        [
+          "dtTo",
+          "DT",
+          "Stop filter position"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "filterTypeElab",
+          "Type": "EFilterTimeRangeType",
+          "Comment": "Filter criteria after the elaboration"
+        },
+        [
+          "tsFrom",
+          "Timestamp",
+          "Timestamp to use for start filter position"
+        ],
+        [
+          "tsTo",
+          "Timestamp",
+          "Timestamp to use for stop filter position"
+        ]
+      ]
+    }
+  ]
+}

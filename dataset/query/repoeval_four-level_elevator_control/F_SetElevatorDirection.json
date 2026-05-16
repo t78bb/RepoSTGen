@@ -1,0 +1,5 @@
+{
+  "requirement": "This code is intended to implement the determination of an elevator's movement direction based on the current floor and target floor.",
+  "provide_code": "FUNCTION F_SetElevatorDirection : BOOL\nVAR_INPUT\n\tnCurrentFloor\t:\tUSINT;\t\t//当前楼层\n\tnTargetFloor\t:\tUSINT;\t\t//目标楼层\nEND_VAR",
+  "function_name": "F_SetElevatorDirection"
+}

@@ -1,0 +1,28 @@
+{
+  "library": "BACnetDefaultImpl",
+  "title": "UtilDateTimeToString (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnetDefaultImpl/Current/BACnetDefaultImpl/Functions/UtilDateTimeToString.html",
+  "page_title": "UtilDateTimeToString (FUN)",
+  "text": "\nFUNCTION UtilDateTimeToString : STRING(255)\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "UtilDateTimeToString",
+          "Type": "STRING(255)"
+        },
+        {
+          "Scope": "Input",
+          "Name": "utDateTime",
+          "Type": "Util.DateTime"
+        }
+      ]
+    }
+  ]
+}

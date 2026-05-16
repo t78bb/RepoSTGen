@@ -1,0 +1,27 @@
+{
+  "library": "ModbusFB",
+  "title": "PutWordAt (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/ModbusFB/Current/ModbusFB/Function-Blocks/Util/pou-ByteBuffer/PutWordAt.html",
+  "page_title": "ByteBuffer.PutWordAt (METH)",
+  "text": "\nMETHOD PutWordAt\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "uiIndex",
+          "Type": "UINT"
+        },
+        [
+          "wWord",
+          "WORD"
+        ]
+      ]
+    }
+  ]
+}

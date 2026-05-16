@@ -1,0 +1,8 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "ActiveIndexInQueue (Property)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_RMP_ReliableMessageProtocol/pou-RMPConnection/ActiveIndexInQueue.html",
+  "page_title": "RMPConnection.ActiveIndexInQueue (PROP)",
+  "text": "\nPROPERTY FINAL ActiveIndexInQueue : UINT\nThe queue index of the current active connection",
+  "tables": []
+}

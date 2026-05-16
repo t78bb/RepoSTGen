@@ -1,0 +1,51 @@
+{
+  "library": "String Builder",
+  "title": "SetInitialValue (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Builder/Current/Builder/Function-Blocks/pou-_Builder/SetInitialValue.html",
+  "page_title": "_Builder.SetInitialValue (METH)",
+  "text": "\nMETHOD FINAL SetInitialValue :\nERROR\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetInitialValue",
+          "Type": "ERROR",
+          "Initial": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfString",
+          "Type": "IString",
+          "Initial": "0"
+        },
+        [
+          "udiInitialCapacity",
+          "UDINT",
+          "0"
+        ],
+        [
+          "pbyBuffer",
+          "POINTER TO BYTE",
+          "0"
+        ],
+        [
+          "udiBufferSize",
+          "UDINT",
+          "0"
+        ],
+        [
+          "usiExtensionFactor",
+          "USINT",
+          "0"
+        ]
+      ]
+    }
+  ]
+}

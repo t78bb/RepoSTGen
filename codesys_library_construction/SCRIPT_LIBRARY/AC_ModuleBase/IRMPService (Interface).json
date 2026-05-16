@@ -1,0 +1,8 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "IRMPService (Interface)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_RMP_ReliableMessageProtocol/IRMPService.html",
+  "page_title": "IRMPService (ITF)",
+  "text": "\nINTERFACE IRmpService EXTENDS __SYSTEM.IQueryInterface\nInterface implemented by the RMP (Reliable Message Protocoll) service\nProperties:\nLocalAppID\nMethods:\nIsMessageSent\nQueueSendMessage\nReceive\nStructure:\nIsMessageSent (Method)\nLocalAppID (Property)\nQueueSendMessage (Method)\nReceive (Method)",
+  "tables": []
+}

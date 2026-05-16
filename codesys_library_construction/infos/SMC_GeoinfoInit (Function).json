@@ -1,0 +1,28 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_GeoinfoInit (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/GeoInfo-Help-Functions/SMC_GeoinfoInit.html",
+  "page_title": "SMC_GeoinfoInit (FUN)",
+  "text": "\nFUNCTION SMC_GeoinfoInit : BOOL\nInitializes the\nSMC_GEOINFO\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SMC_GeoinfoInit",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Input",
+          "Name": "pg",
+          "Type": "POINTER TOSMC_GEOINFO"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "library": "PLCopen Safety FBs",
+  "title": "SF_EnableSwitch (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/PLCopen Safety FBs/Current/PLCopenSafetyFBs/Function-Blocks/SF_EnableSwitch.html",
+  "page_title": "SF_EnableSwitch (FB)",
+  "text": "\nFUNCTION_BLOCK SF_EnableSwitch\nThe function block SF_EnableSwitch FB evaluates the signals of an enable switch with three positions.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "Activate",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "Activation of the FB."
+        },
+        [
+          "S_SafetyActive",
+          "BOOL",
+          "FALSE",
+          "Confirmation of the safe mode (limitation of the speed or the power of motion, limitation of the range of motion).\nFALSE: Safe mode is not active. TRUE: Safe mode is active."
+        ],
+        [
+          "S_EnableSwitchCh1",
+          "BOOL",
+          "FALSE",
+          "Signal of contacts E1 and E2 of the connected enable switch.\nFALSE: Connected switches are open. TRUE: Connected switches\nare closed.."
+        ],
+        [
+          "S_EnableSwitchCh2",
+          "BOOL",
+          "FALSE",
+          "Signal of contacts E3 and E4 of the connected enable switch.\nFALSE: Connected switches are open. TRUE: Connected switches\nare closed."
+        ],
+        [
+          "S_AutoReset",
+          "BOOL",
+          "FALSE",
+          "Behaviour on error of safety FB"
+        ],
+        [
+          "Reset",
+          "BOOL",
+          "FALSE",
+          "Manual reset of FB"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Ready",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "Activation of the FB. TRUE indicates that the FB is\nactivated and the outputs results are valid, FALSE the FB is\nnot active and the program is not executed."
+        },
+        [
+          "S_EnableSwitchOut",
+          "BOOL",
+          "FALSE",
+          "Safety related output: Indicates suspension of guard. FALSE:\nDisable suspension of safeguarding. TRUE: Enable suspension\nof safeguarding."
+        ],
+        [
+          "SafetyDemand",
+          "BOOL",
+          "FALSE",
+          "Output indicating that the FB is active and the primary\nsafety function is demanded (e.g. related to the safety\nfunctionality)."
+        ],
+        [
+          "ResetRequest",
+          "BOOL",
+          "FALSE",
+          "Output which can be used to signal the operator to press the\nreset functionality to continue."
+        ],
+        [
+          "Error",
+          "BOOL",
+          "FALSE",
+          "Error flag"
+        ],
+        [
+          "DiagCode",
+          "WORD",
+          "0",
+          "Diagnostic register"
+        ]
+      ]
+    }
+  ]
+}

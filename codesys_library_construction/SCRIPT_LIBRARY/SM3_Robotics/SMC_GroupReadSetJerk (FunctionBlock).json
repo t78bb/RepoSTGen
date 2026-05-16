@@ -1,0 +1,72 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_GroupReadSetJerk (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/Diagnostics/SMC_GroupReadSetJerk.html",
+  "page_title": "SMC_GroupReadSetJerk (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_GroupReadSetJerk\nThis function block returns the set-jerk of an axis group\nin the selected coordinate system.\nTypically, this will be the set-jerk from the end of the previous\ncycle.  In order to obtain the set-jerk from the end of the current\ncycle,\nSMC_GroupUpdate\nhas to be called before this function block,\nor a\nTimeOffset\nequal to the task interval has to be supplied.\nThis is an administrative FB, since no movement is generated.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "AxisGroup",
+          "Type": "AXIS_GROUP_REF_SM3",
+          "Comment": "Reference to a group of axes"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Enable",
+          "Type": "BOOL",
+          "Comment": "Get the jerk in the selected coordinate system of the\naxis group continuously while enabled"
+        },
+        [
+          "CoordSystem",
+          "SMC_COORD_SYSTEM",
+          "Applicable coordinate system"
+        ],
+        [
+          "TimeOffset",
+          "LREAL",
+          "The time offset in seconds when to evaluate the jerk.\nRelative to the start of the current cycle.\nMust be in [0,fPlanningForecastDuration].fPlanningForecastDurationcan be configured usingSMC_TuneCPKernel.Time offsets > 0 are only supported ifthe offset does not exceed theCurrentPlanningForecastreported byMC_GroupReadStatus, andMC_GroupHalt/MC_GroupStop/MC_GroupInterruptare not active."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Valid",
+          "Type": "BOOL",
+          "Comment": "TRUEif valid outputs are available"
+        },
+        [
+          "Busy",
+          "BOOL",
+          "The FB is not finished"
+        ],
+        [
+          "Error",
+          "BOOL",
+          "Signals that an error has occurred within the function block"
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ],
+        [
+          "Jerk",
+          "SMC_POS_REF",
+          "Current jerk of the group.  If a cartesian coordinate system is\nselected, Jerk.c contains the cartesian jerk:\n(X,Y,Z) is the jerk vector in u/sÂ³, (A,B,C) is the angular jerk\naround the x, y, z axis in Â°/sÂ³."
+        ],
+        [
+          "AdditionalAxesJerks",
+          "SMC_ADDITIONAL_AXES_VALUES_ARRAY",
+          "Current jerks of the groupâs additional axes."
+        ]
+      ]
+    }
+  ]
+}

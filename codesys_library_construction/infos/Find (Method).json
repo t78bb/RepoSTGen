@@ -1,0 +1,28 @@
+{
+  "library": "StringUtils",
+  "title": "Find (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/StringUtils/Current/Public-Parts/pou-CharBufferString/Find.html",
+  "page_title": "CharBufferString.Find (METH)",
+  "text": "\nMETHOD Find : INT\nSearches for a substring within our string\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "Find",
+          "Type": "INT"
+        },
+        {
+          "Scope": "Input",
+          "Name": "cbsToSearchFor",
+          "Type": "REFERENCE TOCharBufferString"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "library": "CommFB",
+  "title": "ID_TO_ADDR (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/CommFB/Current/CommFB/Addresses/ID_TO_ADDR.html#",
+  "page_title": "ID_TO_ADDR (FB)",
+  "text": "\nFUNCTION_BLOCK ID_TO_ADDR\nThe function block ID_TO_ADDR converts the handle used for the Communication Function Blocks\nto the physical identification of a slot of a PROFIBUS DP-slave or subslot of a PROFINET IO Device.\nCode-Example: see\nRALARM\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "EN",
+          "Type": "BOOL",
+          "Initial": "TRUE",
+          "Comment": "Enable"
+        },
+        [
+          "ID",
+          "DWORD",
+          "",
+          "Slot or subslot handle"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "ENO",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Flag"
+        },
+        [
+          "STATUS",
+          "DWORD",
+          "",
+          "Last detected status"
+        ],
+        {
+          "Scope": "Inout",
+          "Name": "ADDR",
+          "Type": "ADDR_TYPE",
+          "Initial": "",
+          "Comment": "Physical address information"
+        }
+      ]
+    }
+  ]
+}

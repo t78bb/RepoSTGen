@@ -1,0 +1,8 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "ModuleHandle (Alias)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_Module/ModuleHandle.html",
+  "page_title": "ModuleHandle (ALIAS)",
+  "text": "\nTYPE ModuleHandle : INT\nThe handle of a module (internally an integer number).\nEvery module instance gets his own (project wide) unique module handle, which is\ncreated during a generation run of the standard generator of the composer.\nThis handle even is unique through out application borders.",
+  "tables": []
+}

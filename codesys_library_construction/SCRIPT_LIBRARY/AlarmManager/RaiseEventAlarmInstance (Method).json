@@ -1,0 +1,36 @@
+{
+  "library": "AlarmManager",
+  "title": "RaiseEventAlarmInstance (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/pou-IAlarmHandler7/RaiseEventAlarmInstance.html",
+  "page_title": "IAlarmHandler7.RaiseEventAlarmInstance (METH)",
+  "text": "\nMETHOD RaiseEventAlarmInstance : BOOL\nRaises an Event for a specified alarm template instance.\nThis method uses semaphore synchronization with AlarmEvaluation_PRG.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "RaiseEventAlarmInstance",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "pFBInstance",
+          "Type": "POINTER TO BYTE",
+          "Comment": "Pointer to the template FB instance. Use THIS when inside\nthe function block."
+        },
+        [
+          "uiTemplateAlarmId",
+          "ALARM_ID",
+          "The Alarm ID within the related alarm group template, which should be raised. The name of the generated\nenum has to be passed: Alm_<Name of the alarm template group>_Alarm_IDs"
+        ]
+      ]
+    }
+  ]
+}

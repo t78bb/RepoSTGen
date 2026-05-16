@@ -1,0 +1,28 @@
+{
+  "library": "BACnet",
+  "title": "DeallocStackAllocatedContentBuffer (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/Utilities/Mem/DeallocStackAllocatedContentBuffer.html",
+  "page_title": "DeallocStackAllocatedContentBuffer (FUN)",
+  "text": "\nFUNCTION DeallocStackAllocatedContentBuffer : CmpBACnet.IEC_BACNET_STATUS\nDealloc a property content buffer allocated by the BACstack.\nBACstack allocated content buffer appear at several API methods - for example calling GetPropertyInstanceStackAllocContentBuffer().\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "DeallocStackAllocatedContentBuffer",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS"
+        },
+        {
+          "Scope": "Inout",
+          "Name": "propertyContents",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_CONTENTS"
+        }
+      ]
+    }
+  ]
+}

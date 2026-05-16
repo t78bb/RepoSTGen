@@ -1,0 +1,6 @@
+{
+  "requirement": "This code should implement a method `Execute` within the `FB_SocketOffCommand` function block that controls a socket device. The method should check if the reference `refSocket` to a `FB_Socket` object is valid using the `__ISVALIDREF` function. If the reference is valid, the `On()` method of the `FB_Socket` object should be invoked. The function block should include a variable `refSocket` of type `REFERENCE TO FB_Socket` to hold the reference to the socket object.",
+  "provide_code": "FUNCTION_BLOCK PUBLIC FB_SocketOffCommand IMPLEMENTS I_Command",
+  "function_name": "FB_SocketOffCommand",
+  "requirement_cn": "此代码应在 `FB_SocketOffCommand` 功能块中实现一个名为 `Execute` 的方法，用于控制一个插座设备。该方法应检查 `FB_Socket` 对象的引用 `refSocket` 是否有效，使用 `__ISVALIDREF` 函数进行检查。如果引用有效，则应调用 `FB_Socket` 对象的 `On()` 方法。功能块应包含一个类型为 `REFERENCE TO FB_Socket` 的变量 `refSocket`，用以保存对插座对象的引用。"
+}

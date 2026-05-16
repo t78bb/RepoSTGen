@@ -1,0 +1,33 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_NC_GArgument (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/Parser/Expressions/Functions/SMC_NC_GArgument.html",
+  "page_title": "SMC_NC_GArgument (STRUCT)",
+  "text": "\nTYPE SMC_NC_GArgument : STRUCT\nCommon type for inputs and outputs of functions inside G-Code expressions.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "argType",
+          "Type": "SMC_GVar_Type",
+          "Comment": "The data type of the argument."
+        },
+        {
+          "Name": "argValue",
+          "Type": "SMC_NC_GArgumentValue",
+          "Comment": "The value of the argument."
+        },
+        {
+          "Name": "argPos",
+          "Type": "SMC_NC_SourcePosition",
+          "Comment": "The source position of the argument."
+        }
+      ]
+    }
+  ]
+}

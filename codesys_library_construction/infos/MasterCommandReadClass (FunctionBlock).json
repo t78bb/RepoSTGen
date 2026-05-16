@@ -1,0 +1,89 @@
+{
+  "library": "DNP3",
+  "title": "MasterCommandReadClass (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/Commands/MasterCommandReadClass.html",
+  "page_title": "MasterCommandReadClass (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL MasterCommandReadClass EXTENDS\nMasterCommand\nMaster command ReadClass\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment",
+        "Inherited from"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "xExecute",
+          "Type": "BOOL",
+          "Comment": "Execute the command (xExecute FALSE â> TRUE).",
+          "Inherited from": "MasterCommand"
+        },
+        [
+          "itfMaster",
+          "IMaster",
+          "Interface IMaster",
+          "MasterCommand"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "xDone",
+          "Type": "BOOL",
+          "Comment": "Command executed successfully.",
+          "Inherited from": "MasterCommand"
+        },
+        [
+          "xError",
+          "BOOL",
+          "Error during command executions",
+          "MasterCommand"
+        ],
+        [
+          "eErrorID",
+          "Error",
+          "Specific error during command executions.",
+          "MasterCommand"
+        ],
+        {
+          "Scope": "Input",
+          "Name": "qualifier",
+          "Type": "AddressQualifier",
+          "Comment": "address qualifier to use, must be all or 8/16 bitlimited quantity.",
+          "Inherited from": ""
+        },
+        [
+          "maxQuantity",
+          "UINT",
+          "quantity to request if qualifier is 8/16 bit limitedquantity.",
+          ""
+        ],
+        [
+          "class0",
+          "BOOL",
+          "TMWDEFS_TRUE to request class 0 (static data)",
+          ""
+        ],
+        [
+          "class1",
+          "BOOL",
+          "TMWDEFS_TRUE to request class 1 event data",
+          ""
+        ],
+        [
+          "class2",
+          "BOOL",
+          "TMWDEFS_TRUE to request class 2 event data",
+          ""
+        ],
+        [
+          "class3",
+          "BOOL",
+          "TMWDEFS_TRUE to request class 3 event data",
+          ""
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "library": "DNP3",
+  "title": "AnyNumberConvertFromSINT (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Functions/AnyNumber/AnyNumberConvertFromSINT.html",
+  "page_title": "AnyNumberConvertFromSINT (FUN)",
+  "text": "\nFUNCTION AnyNumberConvertFromSINT\nConvert SINT to AnyNumber\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "in",
+          "Type": "SINT"
+        },
+        {
+          "Scope": "Output",
+          "Name": "out",
+          "Type": "AnyNumber"
+        }
+      ]
+    }
+  ]
+}

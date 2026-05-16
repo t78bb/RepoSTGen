@@ -1,0 +1,31 @@
+{
+  "library": "DNP3",
+  "title": "SetChannelConfigAspectOffLineDelay (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Outstation/pou-OutstationConfiguration/SetChannelConfigAspectOffLineDelay.html",
+  "page_title": "OutstationConfiguration.SetChannelConfigAspectOffLineDelay (METH)",
+  "text": "\nMETHOD SetChannelConfigAspectOffLineDelay :\nError\nSet optional channel configuration aspect - offline delay.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetChannelConfigAspectOffLineDelay",
+          "Type": "Error",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "offLineDelay",
+          "Type": "UDINT",
+          "Comment": "For a DNP master how long to delay sending a request to offline sessions.\nThis may allow other online sessions on that channel to communicate better.\nWhen this time expires, a queued request will be attempted to an offline session.\nIf that request times out the next request for an offline session may be\ndelayed again by this amount of time. The number of sessions on a channel\nchannelResponseTimeout should be considered when setting this value. For this\nand the to have an affect it needs to be larger than channelResponseTimeout.\nThe longer this delay, the longer it might take to detect a session could\nrespond. Other responses such as link layer or unsolicited responses may\nalso bring the session online.\nThe function should be called after the function DNP3_InitChannelConfig and befor channel open!"
+        }
+      ]
+    }
+  ]
+}

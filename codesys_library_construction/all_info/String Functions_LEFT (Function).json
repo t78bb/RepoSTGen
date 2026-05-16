@@ -1,0 +1,47 @@
+{
+  "library": "String Functions",
+  "title": "LEFT (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Functions/Current/StrFunc/Functions/LEFT.html",
+  "page_title": "LEFT (FUN)",
+  "text": "Library Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nStrFunc\nAliases\nIString (Alias)\nEnums\nERROR (Enum)\nFunctions\nCONCAT (Function)\nCOUNT (Function)\nDELETE (Function)\nFIND (Function)\nINSERT (Function)\nLEFT (Function)\nLEN (Function)\nMID (Function)\nREPLACE (Function)\nRIGHT (Function)\nFile and Project Information\nLibrary Reference\nString Segments\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nUTF-8 Encoding Support\nLibrary Identification\nLibrary Properties\nString Functions\nDocs\n»\nStrFunc\n»\nFunctions\n»\nLEFT (FUN)\nLEFT (FUN)\nÂ¶\nFUNCTION LEFT :\nIString\nReturns a specific number of runes of a string, starting from left\nReturns 0 in case of\neErrorID\n<>\nERROR.NO_ERROR\nSee\nIStringRepresentation\nâ\nToIString(itfResource,\n0,\nTO_LINT(udiCount-1))\nInOut:\nScope\nName\nType\nComment\nReturn\nLEFT\nIString\nInput\nitfString\nIString\nString to be analyzed\nudiCount\nUDINT\nNumber of runes\nitfResource\nIString\nThe resource that this function is working on. It will\ncontain the result after the function call and will also be\nreturned by this function so it can be used in nested calls.\nOutput\neErrorID\nERROR",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "LEFT",
+          "Type": "IString",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfString",
+          "Type": "IString",
+          "Comment": "String to be analyzed"
+        },
+        [
+          "udiCount",
+          "UDINT",
+          "Number of runes"
+        ],
+        [
+          "itfResource",
+          "IString",
+          "The resource that this function is working on. It will\ncontain the result after the function call and will also be\nreturned by this function so it can be used in nested calls."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "eErrorID",
+          "Type": "ERROR",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

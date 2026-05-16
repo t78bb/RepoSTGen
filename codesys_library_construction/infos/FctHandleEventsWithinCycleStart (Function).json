@@ -1,0 +1,28 @@
+{
+  "library": "Visu Utils",
+  "title": "FctHandleEventsWithinCycleStart (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/Visu Utils/Current/VisuUtils/VisuActionUtilities/Functions/FctHandleEventsWithinCycleStart.html",
+  "page_title": "FctHandleEventsWithinCycleStart (FUN)",
+  "text": "\nFUNCTION FctHandleEventsWithinCycleStart : BOOL\nCalling this function the Visu will start attempting to handle all events\nthat are stored in the event queue within one cycle.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "FctHandleEventsWithinCycleStart",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Input",
+          "Name": "pClientData",
+          "Type": "POINTER TO VisuElemBase.VisuStructClientData"
+        }
+      ]
+    }
+  ]
+}

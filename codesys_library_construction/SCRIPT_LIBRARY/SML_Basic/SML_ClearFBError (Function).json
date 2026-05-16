@@ -1,0 +1,33 @@
+{
+  "library": "SML_Basic",
+  "title": "SML_ClearFBError (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SML_Basic/Current/Base/Error/SML_ClearFBError.html",
+  "page_title": "SML_ClearFBError (FUN)",
+  "text": "\nFUNCTION SML_ClearFBError : BOOL\nClears all or only the most recent FB errors. May only be called in the bus cycle task of the axis.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SML_ClearFBError",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "Axis_REF_Base_SML"
+        },
+        {
+          "Scope": "Input",
+          "Name": "bClearAll",
+          "Type": "BOOL"
+        }
+      ]
+    }
+  ]
+}

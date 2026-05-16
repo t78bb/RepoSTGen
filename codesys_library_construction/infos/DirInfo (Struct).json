@@ -1,0 +1,33 @@
+{
+  "library": "SysDir",
+  "title": "DirInfo (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/SysDir/Current/DirInfo.html",
+  "page_title": "DirInfo (STRUCT)",
+  "text": "\nTYPE DirInfo : STRUCT\nDirectory info entry\nThis structure contains the description of one directory entry\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "tDirFileTime",
+          "Type": "DirFileTime",
+          "Comment": "Directory dates"
+        },
+        {
+          "Name": "ulSize",
+          "Type": "__XWORD",
+          "Comment": "Size of the directory"
+        },
+        {
+          "Name": "diDirectory",
+          "Type": "DINT",
+          "Comment": "Flag of a directory. See DirInfoFlags"
+        }
+      ]
+    }
+  ]
+}

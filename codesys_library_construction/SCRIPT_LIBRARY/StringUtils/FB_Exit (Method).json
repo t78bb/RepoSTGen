@@ -1,0 +1,28 @@
+{
+  "library": "StringUtils",
+  "title": "FB_Exit (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/StringUtils/Current/Public-Parts/pou-CharBufferString/FB_Exit.html",
+  "page_title": "CharBufferString.FB_Exit (METH)",
+  "text": "\nMETHOD FB_Exit : BOOL\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "FB_Exit",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Input",
+          "Name": "bInCopyCode",
+          "Type": "BOOL"
+        }
+      ]
+    }
+  ]
+}

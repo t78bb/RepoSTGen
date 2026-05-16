@@ -1,0 +1,25 @@
+{
+  "library": "BACnet",
+  "title": "FreeStackAllocatedMemory (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/Utilities/Mem/FreeStackAllocatedMemory.html",
+  "page_title": "FreeStackAllocatedMemory (FUN)",
+  "text": "\nFUNCTION FreeStackAllocatedMemory\nFrees data, which got initialized by stack internal functionalities. The latter initializations may happen\nwhen, i.e. a string, which could get changed from any BACnet client, shall be read out and used within IEC,\nalthough its size can be only known by the BACnet stack, which then allocates memory for this string, which has\nto be freed after usage using this function.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "pData",
+          "Type": "POINTER TO BYTE",
+          "Comment": "Pointer to the data/memory allocated by the BACnet stack to\nbe freed again."
+        }
+      ]
+    }
+  ]
+}

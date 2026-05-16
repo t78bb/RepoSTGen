@@ -1,0 +1,35 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "SetProxyIdentification (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_Module/pou-ProxyInstance/SetProxyIdentification.html",
+  "page_title": "ProxyInstance.SetProxyIdentification (METH)",
+  "text": "\nMETHOD PUBLIC FINAL SetProxyIdentification\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "pbyName",
+          "Type": "POINTER TO BYTE"
+        },
+        [
+          "udiAddr",
+          "UDINT"
+        ],
+        [
+          "udiLocAddr",
+          "UDINT"
+        ],
+        [
+          "pEnvironment",
+          "POINTER TOMEnv"
+        ]
+      ]
+    }
+  ]
+}

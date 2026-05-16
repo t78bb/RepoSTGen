@@ -1,0 +1,6 @@
+{
+  "requirement": "This code should implement a function block named fileSave_new that constructs a file name based on the current system time and device name, and then attempts to open a file with write access. The function block should take three inputs: filePath (STRING), intervalt (INT), and devName (STRING). It should generate a timestamp string in the format 'YYYY-MM-DD_HH-MM-SS_MS' and append this to the filePath and devName to create a unique file name for each execution. The file name should be structured as 'filePath/devName/devName-Timestamp.txt'. The function block should handle file opening using the SysFileOpen function, setting the access mode to write (AM_WRITE), and should store the result of the file operation in a variable for error checking.",
+  "provide_code": "FUNCTION_BLOCK fileSave\nVAR_INPUT\n\tfilePath \t:STRING;\n\tintervalt\t:INT;\n\tdevName\t\t: STRING ;\nEND_VAR",
+  "function_name": "fileSave_new",
+  "requirement_cn": "该代码应实现一个名为 fileSave_new 的功能块，该功能块基于当前系统时间和设备名称构建文件名，并尝试以写入权限打开文件。功能块应接受三个输入：filePath（STRING 类型）、intervalt（INT 类型）和 devName（STRING 类型）。它应生成一个时间戳字符串，格式为 'YYYY-MM-DD_HH-MM-SS_MS'，并将其附加到 filePath 和 devName 上，以在每次执行时创建唯一的文件名。文件名的结构应为 'filePath/devName/devName-Timestamp.txt'。功能块应使用 SysFileOpen 函数处理文件打开，将访问模式设置为写入（AM_WRITE），并应将文件操作的结果存储在一个变量中以检查错误。"
+}

@@ -1,0 +1,5 @@
+{
+  "requirement": "This code is intended to implement a control mechanism for setting the extension and retraction percentages of proportional valves for ground or overhead tracks based on input level, index, and percentage values.",
+  "provide_code": "FUNCTION_BLOCK CommandExecutor\nVAR_INPUT\n\tlevel\t\t:INT;\t\t\t//1->地轨\t2->天轨\n\tidx\t\t\t:INT;\t\t\t//挡板索引编号\n\tpercent\t\t:REAL;\t\t\t//比例阀百分比 传入-100~+100\nEND_VAR\nVAR_OUTPUT\nEND_VAR",
+  "function_name": "CommandExecutor"
+}

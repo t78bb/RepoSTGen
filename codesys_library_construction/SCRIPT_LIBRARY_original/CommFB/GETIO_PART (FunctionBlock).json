@@ -1,0 +1,61 @@
+{
+  "library": "CommFB",
+  "title": "GETIO_PART (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/CommFB/Current/CommFB/GETIO_PART.html",
+  "page_title": "GETIO_PART (FB)",
+  "text": "CommFB\nAINFO_TYPE (Union)\nAddressConcept (GVL)\nAddress Concept\nGenerating a CommFB-ID\nProfibus DP\nProfinet IO\nDevice Diagnosis\nAddress Conversion\nAddresses\nADDR_TO_ID (FunctionBlock)\nADDR_TYPE (Union)\nCREATE_ID (FunctionBlock)\nDP_ADDR (Struct)\nDP_DEVICE_ID (Struct)\nID_TO_ADDR (FunctionBlock)\nIO_SYSTEM_TYPE (Enum)\nPN_ADDR (Struct)\nPN_DEVICE_ID (Struct)\nSUBSLOT_ID (Function)\nCNCT (FunctionBlock)\nConstants (GVL)\nDP Address\nADDR (Function)\nID (Function)\nSLOT_ID (Function)\nDP_AINFO (Struct)\nDP_DIAG (Struct)\nErrorCode (Enum)\nErrorCode1_RW (Enum)\nFieldDevice\nPRVREC (FunctionBlock)\nPRVREC_MODE (Enum)\nRCVREC (FunctionBlock)\nRCVREC_MODE (Enum)\nSALARM (FunctionBlock)\nGETIO_PART (FunctionBlock)\nPN_AINFO (Struct)\nRALARM (FunctionBlock)\nRALARM_MODE (Enum)\nRDIAG (FunctionBlock)\nRDREC (FunctionBlock)\nSETIO_PART (FunctionBlock)\nWRREC (FunctionBlock)\nImages\nLibrary Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nFile and Project Information\nLibrary Reference\nIoDriver Profibus2 Interfaces\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nCommFB\nDocs\n»\nCommFB\n»\nGETIO_PART (FB)\nGETIO_PART (FB)\nÂ¶\nFUNCTION_BLOCK GETIO_PART\nThe GETIO_PART function block gets a subset of the input data associated to a slot or subslot of a Field Device.\nThe input data are addressed within the slot or subslot through OFFSET and LEN parameters.\nThe GETIO_PART function block gets the input data from the Host Controller interface out of the cyclically read input data of the Field Device. The function block is invoked by a 1 of the EN input.\nIf the input data are valid, the ENO output is set to 1, the ERROR output is set to 0, and the input data are stored in the variable given at the INPUTS parameter.\nThe variable passed to the INPUTS parameter shall be of appropriate size to receive the input data.\nNever use GETIO-/SETIO_PART FBs concurrently with %I/%Q-Input/Output-Mapping for the same slot/subslot !\nInOut:\nScope\nName\nType\nComment\nInput\nEN\nBOOL\nEnable\nID\nDWORD\nIdentifier of a slot or subslot of a Field Device\nOFFSET\nINT\nCount of the first byte within the IO data object\nLEN\nINT\nLength of the data to read\nINPUTS\nPOINTER TO BYTE\nRequested subset of the input data\nOutput\nENO\nBOOL\nFlag indication received data OK\nSTATUS\nDWORD\nLast detected status\nERROR\nBOOL\nFlag indication an error",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "EN",
+          "Type": "BOOL",
+          "Comment": "Enable"
+        },
+        [
+          "ID",
+          "DWORD",
+          "Identifier of a slot or subslot of a Field Device"
+        ],
+        [
+          "OFFSET",
+          "INT",
+          "Count of the first byte within the IO data object"
+        ],
+        [
+          "LEN",
+          "INT",
+          "Length of the data to read"
+        ],
+        [
+          "INPUTS",
+          "POINTER TO BYTE",
+          "Requested subset of the input data"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "ENO",
+          "Type": "BOOL",
+          "Comment": "Flag indication received data OK"
+        },
+        [
+          "STATUS",
+          "DWORD",
+          "Last detected status"
+        ],
+        [
+          "ERROR",
+          "BOOL",
+          "Flag indication an error"
+        ]
+      ]
+    }
+  ]
+}

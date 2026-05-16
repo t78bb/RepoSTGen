@@ -1,0 +1,32 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_RestoreQueue (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/OutQueue-Functions/SMC_RestoreQueue.html",
+  "page_title": "SMC_RestoreQueue (FUN)",
+  "text": "\nFUNCTION SMC_RestoreQueue : BOOL\nDeprecated.\nResets the read position of the queue to zero.\nThis function is no longer necessary.\nThe interpolator will reset the read position when started.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SMC_RestoreQueue",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Enable",
+          "Type": "BOOL"
+        },
+        [
+          "poq",
+          "POINTER TOSMC_OUTQUEUE"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "library": "Standard64",
+  "title": "LTOF (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/Standard64/Current/Timer/LTOF.html",
+  "page_title": "LTOF (FB)",
+  "text": "Deutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nMenu\nSearch\nDeutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nAtomic Read-Write Functions\nAtomicReadLInt (Function)\nAtomicReadLReal (Function)\nAtomicReadLTime (Function)\nAtomicReadLWord (Function)\nAtomicReadULInt (Function)\nAtomicWriteLInt (Function)\nAtomicWriteLReal (Function)\nAtomicWriteLTime (Function)\nAtomicWriteLWord (Function)\nAtomicWriteULInt (Function)\nCounter\nLCTD (FunctionBlock)\nLCTU (FunctionBlock)\nLCTUD (FunctionBlock)\nString Functions\nWCONCAT (Function)\nWDELETE (Function)\nWFIND (Function)\nWINSERT (Function)\nWLEFT (Function)\nWLEN (Function)\nWMID (Function)\nWREPLACE (Function)\nWRIGHT (Function)\nTimer\nLTOF (FunctionBlock)\nLTON (FunctionBlock)\nLTP (FunctionBlock)\nFile and Project Information\nLibrary Reference\nStandard64\nDocs\n»\nTimer\n»\nLTOF (FB)\nLTOF (FB)\nÂ¶\nFUNCTION_BLOCK LTOF\nTimer of delay.\nQ is FALSE, after the delay defined in PT and IN had a faling edge.\nInOut:\nScope\nName\nType\nComment\nInput\nIN\nBOOL\nstarts timer with falling edge, resets timer with rising edge\nPT\nLTIME\ntime to pass, before Q is reset\nOutput\nQ\nBOOL\nis FALSE, PT seconds after IN had a falling edge\nET\nLTIME\nelapsed time since falling edge at IN\ntop\nCODESYS Group | We\nsoftware\nAutomation.\nto software\n['sɒftwɛər]\ntransitive verb\n__softwared/softwaring\n: to develop software\n// to software automation: to develop software for automation purposes\nThe CODESYS Group is the manufacturer of CODESYS, the leading hardware-independent\n                                    IEC 61131-3 automation software for developing and engineering controller\n                                    applications.\nCODESYS® is a registered trademark.\nCODESYS GmbH\nA member of the CODESYS Group\nMemminger Straße 151, 87439 Kempten\nGermany\nTel.:\n+49-831-54031-0\ninfo@codesys.com\nLegal Notice\nPrivacy Policy\nLinkedIn\nYoutube\nRSS\nDownloads\nLogin\nCODESYS Store\n© 2022 CODESYS GmbH\n| A member of the CODESYS Group",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "IN",
+          "Type": "BOOL",
+          "Comment": "starts timer with falling edge, resets timer with rising edge"
+        },
+        [
+          "PT",
+          "LTIME",
+          "time to pass, before Q is reset"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Q",
+          "Type": "BOOL",
+          "Comment": "is FALSE, PT seconds after IN had a falling edge"
+        },
+        [
+          "ET",
+          "LTIME",
+          "elapsed time since falling edge at IN"
+        ]
+      ]
+    }
+  ]
+}

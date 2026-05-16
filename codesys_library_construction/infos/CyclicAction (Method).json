@@ -1,0 +1,36 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "CyclicAction (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_RMP_ReliableMessageProtocol/pou-RMPSendMessage/CyclicAction.html",
+  "page_title": "RMPSendMessage.CyclicAction (METH)",
+  "text": "\nMETHOD CyclicAction\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "itfTimingController",
+          "Type": "CBML.ITimingController",
+          "Initial": ""
+        },
+        {
+          "Scope": "Output",
+          "Name": "xComplete",
+          "Type": "BOOL",
+          "Initial": ""
+        },
+        [
+          "iErrorID",
+          "INT",
+          "0"
+        ]
+      ]
+    }
+  ]
+}

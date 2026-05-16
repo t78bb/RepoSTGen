@@ -1,0 +1,132 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_TRAFOF_Gantry2Tool2 (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_Trafo_POUs/SoftMotion-Transformations/Gantry-systems/SMC_TRAFOF_Gantry2Tool2.html",
+  "page_title": "SMC_TRAFOF_Gantry2Tool2 (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_TRAFOF_Gantry2Tool2\nForward transformation for two-dimensional gantries (X/Y)\nwith tool offset, i.e. with the tool axis differing from the z-axis.\nThe tool is approximated by a rectangular triangle.\nNote\nFor detailed information on transformations\nsee Overview to\nSM_Trafo_POUs\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "DriveX",
+          "Type": "AXIS_REF_SM3",
+          "Comment": "Reference to x-axis"
+        },
+        [
+          "DriveY",
+          "AXIS_REF_SM3",
+          "Reference to y-axis"
+        ],
+        {
+          "Scope": "Input",
+          "Name": "dOffsetX",
+          "Type": "LREAL",
+          "Comment": "Offset x-position. Equivalent toSMC_TRAFO_Gantry2"
+        },
+        [
+          "dOffsetY",
+          "LREAL",
+          "Offset y-position. Equivalent toSMC_TRAFO_Gantry2"
+        ],
+        [
+          "dAlpha",
+          "LREAL",
+          "Angle indicating orientation of tool,\ncan be calculated by use ofSMC_CalcDirectionFromVector"
+        ],
+        [
+          "dToolA",
+          "LREAL",
+          "Size ofdToolA(see scheme)"
+        ],
+        [
+          "dToolB",
+          "LREAL",
+          "Size ofdToolB(see scheme)"
+        ],
+        [
+          "minX",
+          "LREAL",
+          "Lower bound of move range in x-direction\n(for visualization purpose)"
+        ],
+        [
+          "maxX",
+          "LREAL",
+          "Upper bound of move range in x-direction\n(for visualization purpose)"
+        ],
+        [
+          "minY",
+          "LREAL",
+          "Lower bound of move range in y-direction\n(for visualization purpose)."
+        ],
+        [
+          "maxY",
+          "LREAL",
+          "Upper bound of move range in y-direction\n(for visualization purpose)"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "dx",
+          "Type": "LREAL",
+          "Comment": "X-Position"
+        },
+        [
+          "dy",
+          "LREAL",
+          "Y-Position"
+        ],
+        [
+          "dnx",
+          "LREAL",
+          "Normed x-position (with value in [0,1])"
+        ],
+        [
+          "dny",
+          "LREAL",
+          "Normed y-position (with value in [0,1])"
+        ],
+        [
+          "dntx",
+          "LREAL",
+          "Normed x-position of triangle edge in tool"
+        ],
+        [
+          "dnty",
+          "LREAL",
+          "Normed y-position of triangle edge in tool"
+        ],
+        [
+          "dnl1",
+          "LREAL",
+          "Normed length ofdToolA"
+        ],
+        [
+          "dnl2",
+          "LREAL",
+          "Normed length ofdToolB."
+        ],
+        [
+          "ratio",
+          "LREAL",
+          "Ratio x-interval / y-interval"
+        ],
+        [
+          "dnOffsetX",
+          "LREAL",
+          "X-offset for visualization"
+        ],
+        [
+          "dnOffsetY",
+          "LREAL",
+          "Y-offset for visualization"
+        ]
+      ]
+    }
+  ]
+}

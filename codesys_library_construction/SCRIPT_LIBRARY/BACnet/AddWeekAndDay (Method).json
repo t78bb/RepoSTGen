@@ -1,0 +1,41 @@
+{
+  "library": "BACnet",
+  "title": "AddWeekAndDay (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/Calendar/pou-BACnetCalendar/AddWeekAndDay.html",
+  "page_title": "BACnetCalendar.AddWeekAndDay (METH)",
+  "text": "\nMETHOD AddWeekAndDay : CmpBACnet.IEC_BACNET_STATUS\nAdds a week and day specification (i.e. every week at day xy) as calendar entry to the Date_List-Property of this BACnet-Calendar-Object.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "AddWeekAndDay",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "month",
+          "Type": "CmpBACnet.IEC_BACNET_MONTH",
+          "Comment": "The month for the entry to add to the Date_List-Property of\nthis object."
+        },
+        [
+          "weekOfMonth",
+          "CmpBACnet.IEC_BACNET_WEEK_OF_MONTH",
+          "The week of the month for the entry to add to the Date_List-\nProperty of this object."
+        ],
+        [
+          "dayOfWeek",
+          "CmpBACnet.IEC_BACNET_DAY_OF_WEEK",
+          "The day of the week for the entry to add to the Date_List-\nProperty of this object."
+        ]
+      ]
+    }
+  ]
+}

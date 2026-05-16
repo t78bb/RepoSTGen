@@ -1,0 +1,31 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "GetAncestor (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/GenVisu/pou-AC_Visu_Base/protected/GetAncestor.html",
+  "page_title": "AC_Visu_Base.GetAncestor (METH)",
+  "text": "\nMETHOD PROTECTED GetAncestor : INT\nThis method returns the next ancestor visualisation for a\ngiven visualisation or -1 if there is none. It is used\ninternally by this function block and it is overridden in a derived class\ncreated by the composer during generation.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetAncestor",
+          "Type": "INT",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "uiIdx",
+          "Type": "UINT",
+          "Comment": "The index for which the ancestor shall be returned"
+        }
+      ]
+    }
+  ]
+}

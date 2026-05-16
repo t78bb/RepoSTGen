@@ -1,0 +1,49 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC3_ReinitDrive (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/DriveInterface/AXIS_REF/SMC3_ReinitDrive.html",
+  "page_title": "SMC3_ReinitDrive (FB)",
+  "text": "\nFUNCTION_BLOCK SMC3_ReinitDrive\nThis function block reinitializes a drive/axis.\nThat means that the start-up phase is executed again.\nNote\nDo not call the function block until the axis has reached\ncommunication state\nSMC_COMSTATE_BASE_COM_INITIALIZATION\nor higher. See also:\nSMC_CheckAxisCommunication\n.\nThe input\nbVirtual\ndetermines whether the axis should be put into\nvirtual mode.  In virtual mode, an axis is replaced by a simulation,\njust like a virtual drive device.\nThis has no influence on the field bus devices, which will work as usual\nbut without receiving messages from or sending messages.\nThis input corresponds to the âVirtual modeâ check box in the SoftMotion\ndevice editor.\nFor drive devices, note that\nSMC3_ReinitDrive\ndoes not start the\nassociated field bus automatically.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3"
+        },
+        {
+          "Scope": "Input",
+          "Name": "bExecute",
+          "Type": "BOOL"
+        },
+        [
+          "bVirtual",
+          "BOOL"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bDone",
+          "Type": "BOOL"
+        },
+        [
+          "bBusy",
+          "BOOL"
+        ],
+        [
+          "bError",
+          "BOOL"
+        ],
+        [
+          "nErrorID",
+          "SMC_ERROR"
+        ]
+      ]
+    }
+  ]
+}

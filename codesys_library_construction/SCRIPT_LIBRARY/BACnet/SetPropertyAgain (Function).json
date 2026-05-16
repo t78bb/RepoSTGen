@@ -1,0 +1,36 @@
+{
+  "library": "BACnet",
+  "title": "SetPropertyAgain (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/Utilities/BACnetUtilities/BACnetProperties/SetPropertyAgain.html",
+  "page_title": "SetPropertyAgain (FUN)",
+  "text": "\nFUNCTION SetPropertyAgain : CmpBACnet.IEC_BACNET_STATUS\nJust gets a properties value and sets it again, to initiate any possible callbacks and hooks when writing the specified property.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetPropertyAgain",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfBACnetObj",
+          "Type": "IBACnetObjectBase",
+          "Comment": "The BACnet object to use for getting and setting the\nproperty."
+        },
+        [
+          "propID",
+          "CmpBACnet.IEC_BACNET_PROPERTY_ID",
+          "The ID of the property to first get and then set with the\ngotten value."
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "library": "DNP3",
+  "title": "BinOutFeedbackPoll (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/pou-Master/Commands/BinOutFeedbackPoll.html",
+  "page_title": "Master.BinOutFeedbackPoll (METH)",
+  "text": "\nMETHOD BinOutFeedbackPoll :\nError\nIssue an operate feedback request.\nThis will send a read for class 1 2 and 3 events and\nbinary input status values.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "BinOutFeedbackPoll",
+          "Type": "Error"
+        }
+      ]
+    }
+  ]
+}

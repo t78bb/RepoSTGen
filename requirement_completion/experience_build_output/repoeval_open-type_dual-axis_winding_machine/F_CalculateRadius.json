@@ -1,0 +1,11 @@
+{
+  "模糊点列表": [
+    {
+      "模糊点类型": "计算公式",
+      "模糊点描述": "原始需求未明确指定半径计算的具体公式",
+      "差异细节": "模型生成代码使用的公式是 R = sqrt((lD/2)^2 + (lDeltaH + lOffset - lTk)^2)，而参考代码使用的公式是 R = |√(D²+(Hnew+offset)²) - √(D²+(Hold+offset)²)| / π + Tk",
+      "精准需求描述": "半径的计算应使用公式 R = |√(D²+(Hnew+offset)²) - √(D²+(Hold+offset)²)| / π + Tk，其中 D 是两轴中心距离，Hnew 是测量结束时的高度，Hold 是测量开始时的高度，offset 是高度偏移量，Tk 是材料厚度"
+    }
+  ],
+  "case_id": "repoeval_open-type_dual-axis_winding_machine/F_CalculateRadius"
+}

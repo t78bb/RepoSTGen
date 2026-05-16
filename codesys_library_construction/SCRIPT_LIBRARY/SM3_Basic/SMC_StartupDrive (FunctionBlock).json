@@ -1,0 +1,23 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_StartupDrive (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/Additional/SMC_StartupDrive.html",
+  "page_title": "SMC_StartupDrive (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_StartupDrive\nThis function block comprises a set of often used function blocks and is\nused for testing and commissioning an axis. Please note, that there is a compatible visualization template.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3"
+        }
+      ]
+    }
+  ]
+}

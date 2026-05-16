@@ -1,0 +1,46 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_TRAFO_Polar (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_Trafo_POUs/SoftMotion-Transformations/Scara-System/SMC_TRAFO_Polar.html",
+  "page_title": "SMC_TRAFO_Polar (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_TRAFO_Polar\nTransformation for 2-dim. Scara system\nNote\nFor detailed information on transformation modules\nsee overview to\nSM_Trafo_POUs\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "pi",
+          "Type": "SMC_PosInfo",
+          "Comment": "Set position (x/y)"
+        },
+        [
+          "dOffsetR",
+          "LREAL",
+          "Additional offset for distance axis R"
+        ],
+        [
+          "dOffsetPhi",
+          "LREAL",
+          "Additional offset of direction axis Phi in degree"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "dR",
+          "Type": "LREAL",
+          "Comment": "Position of distance axis R"
+        },
+        [
+          "dPhi",
+          "LREAL",
+          "Position of direction axis Phi in degree"
+        ]
+      ]
+    }
+  ]
+}

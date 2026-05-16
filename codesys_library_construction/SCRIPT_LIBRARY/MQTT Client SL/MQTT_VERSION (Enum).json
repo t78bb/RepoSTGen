@@ -1,0 +1,28 @@
+{
+  "library": "MQTT Client SL",
+  "title": "MQTT_VERSION (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/MQTT Client SL/Current/MQTT-Client/Common/Enums/MQTT_VERSION.html",
+  "page_title": "MQTT_VERSION (ENUM)",
+  "text": "\nTYPE MQTT_VERSION :\nSupported MQTT versions\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "V3_1_1",
+          "Initial": "0",
+          "Comment": "MQTT V3.1.1"
+        },
+        {
+          "Name": "V5",
+          "Initial": "1",
+          "Comment": "MQTTT V5"
+        }
+      ]
+    }
+  ]
+}

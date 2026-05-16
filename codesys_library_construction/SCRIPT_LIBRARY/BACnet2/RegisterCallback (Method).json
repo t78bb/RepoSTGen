@@ -1,0 +1,41 @@
+{
+  "library": "BACnet2",
+  "title": "RegisterCallback (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/BACnetServer/pou-IBACnetServer/HooksCallbacks/RegisterCallback.html",
+  "page_title": "IBACnetServer.RegisterCallback (METH)",
+  "text": "\nMETHOD RegisterCallback : CmpBACnet.IEC_BACNET_STATUS\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "RegisterCallback",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Initial": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "eCallbackType",
+          "Type": "CmpBACnet.IEC_BACNET_CALLBACK_TYPE",
+          "Initial": ""
+        },
+        [
+          "itfEvent",
+          "IBACnetEventConsumer",
+          ""
+        ],
+        [
+          "itfReleaseEvent",
+          "IBACnetEventConsumer",
+          "0"
+        ]
+      ]
+    }
+  ]
+}

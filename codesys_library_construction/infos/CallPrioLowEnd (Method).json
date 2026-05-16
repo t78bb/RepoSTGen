@@ -1,0 +1,23 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "CallPrioLowEnd (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_Module/pou-Module/StandardCalls/CallPrioLowEnd.html",
+  "page_title": "Module.CallPrioLowEnd (METH)",
+  "text": "\nMETHOD CallPrioLowEnd : BOOL\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "CallPrioLowEnd",
+          "Type": "BOOL"
+        }
+      ]
+    }
+  ]
+}

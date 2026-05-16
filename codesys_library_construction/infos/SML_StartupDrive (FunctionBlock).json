@@ -1,0 +1,31 @@
+{
+  "library": "SML_Basic",
+  "title": "SML_StartupDrive (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SML_Basic/Current/Additional/SML_StartupDrive.html",
+  "page_title": "SML_StartupDrive (FB)",
+  "text": "\nFUNCTION_BLOCK SML_StartupDrive\nHelper function block for commissioning.\nThis function block contains the most used function blocks for commissioning like\nMC_Power_SML\n,\nMC_MoveVelocity_SML\n,\nMC_Home_SML\n,\nMC_ReadParameter_SML\nIt comes with a visualization template that makes it very easy to use.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SML",
+          "Comment": "Reference to the axis"
+        },
+        {
+          "Scope": "Output",
+          "Name": "fActPosition",
+          "Type": "LREAL",
+          "Comment": "The actual position of the axis [u], used in the\nvisualization template."
+        }
+      ]
+    }
+  ]
+}

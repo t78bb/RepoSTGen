@@ -1,0 +1,67 @@
+{
+  "library": "Visu Utils",
+  "title": "FbChangeVisu (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/Visu Utils/Current/VisuUtils/VisuActionUtilities/Function-Blocks/FbChangeVisu.html",
+  "page_title": "FbChangeVisu (FB)",
+  "text": "\nFUNCTION_BLOCK FbChangeVisu EXTENDS FbExecuteSingleVisuActionBase\nChanges the currently shown toplevel visualization\nThe fb-instance should be declarated within a permanent setting, e.g. a GVL, and not within a temporary setting, e.g. a function.\nTherefore, the action will still be available, when called, later on.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment",
+        "Inherited from"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "xExecute",
+          "Type": "BOOL",
+          "Comment": "Rising edge: Starts defined operationFALSE: Resets the defined operation after ready condition was reached",
+          "Inherited from": "ETrig"
+        },
+        {
+          "Scope": "Output",
+          "Name": "xDone",
+          "Type": "BOOL",
+          "Comment": "TRUE: Ready condition reached",
+          "Inherited from": "ETrig"
+        },
+        [
+          "xBusy",
+          "BOOL",
+          "TRUE: Operation is running",
+          "ETrig"
+        ],
+        [
+          "xError",
+          "BOOL",
+          "TRUE: Error condition reached",
+          "ETrig"
+        ],
+        {
+          "Scope": "Input",
+          "Name": "itfClientFilter",
+          "Type": "IVisualizationClientFilter",
+          "Comment": "With this filter, the clients, where the action should happen, are specified.Use standard filter from  GVL Globals, e.g.VU.Globals.CurrentClient, or use a own implentation of the interface.",
+          "Inherited from": "FbExecuteSingleVisuActionBase"
+        },
+        {
+          "Scope": "Output",
+          "Name": "eError",
+          "Type": "ERROR",
+          "Comment": "",
+          "Inherited from": "FbExecuteSingleVisuActionBase"
+        },
+        {
+          "Scope": "Input",
+          "Name": "sVisuName",
+          "Type": "STRING",
+          "Comment": "The name of the visualization that should be shown. In case visualization names\nshould be ambigous, the name can be qualified using the namespace.",
+          "Inherited from": ""
+        }
+      ]
+    }
+  ]
+}

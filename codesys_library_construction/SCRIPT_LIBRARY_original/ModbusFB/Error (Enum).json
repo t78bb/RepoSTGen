@@ -1,0 +1,133 @@
+{
+  "library": "ModbusFB",
+  "title": "Error (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/ModbusFB/Current/ModbusFB/Enums/Error.html",
+  "page_title": "Error (ENUM)",
+  "text": "Library Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nModbusFB\nEnums\nError (Enum)\nExceptionCodes (Enum)\nFunctionCodes (Enum)\nLoggingOptions (Enum)\nPrimaryTables (Enum)\nRtuAscii (Enum)\nSerialSubFunctionCodes (Enum)\nFunction Blocks\nClient\nClient (FunctionBlock)\nClientRequest (FunctionBlock)\nClientRequestMaskWriteRegister (FunctionBlock)\nClientRequestRead (FunctionBlock)\nClientRequestReadBits (FunctionBlock)\nClientRequestReadCoils (FunctionBlock)\nClientRequestReadDiscreteInputs (FunctionBlock)\nClientRequestReadHoldingRegisters (FunctionBlock)\nClientRequestReadInputRegisters (FunctionBlock)\nClientRequestReadRegisters (FunctionBlock)\nClientRequestReadWriteMultipleRegisters (FunctionBlock)\nClientRequestWriteMultiple (FunctionBlock)\nClientRequestWriteMultipleCoils (FunctionBlock)\nClientRequestWriteMultipleRegisters (FunctionBlock)\nClientRequestWriteSingle (FunctionBlock)\nClientRequestWriteSingleCoil (FunctionBlock)\nClientRequestWriteSingleRegister (FunctionBlock)\nClientSerial (FunctionBlock)\nClientTCP (FunctionBlock)\nServer\nExampleDataModel (FunctionBlock)\nServer (FunctionBlock)\nServerSerial (FunctionBlock)\nServerTCP (FunctionBlock)\nUtil\nByteBuffer (FunctionBlock)\nGlobalConstants\nConstants (GVL)\nParameter (ParamList)\nStructs\nRequestData (Struct)\nRequestDataDiagnostics (Struct)\nRequestDataMaskWriteRegister (Struct)\nRequestDataRead (Struct)\nRequestDataReadWriteMultipleRegisters (Struct)\nRequestDataWriteMultiple (Struct)\nRequestDataWriteSingle (Struct)\nRequestUnion (Union)\nSupportedFcs (Struct)\nTableDefinition (Struct)\nTableDefinitions (Struct)\nTableSection (Struct)\nFile and Project Information\nLibrary Reference\n3SLicense\nLibrary Identification\nLibrary Properties\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nCmpLog\nLibrary Identification\nLibrary Properties\nCommon Behaviour Model\nLibrary Identification\nLibrary Properties\nComponent Manager\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nStringUtils\nLibrary Identification\nLibrary Properties\nSysCom\nLibrary Identification\nLibrary Properties\nSysCpuHandling\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysSocket\nLibrary Identification\nLibrary Properties\nSysTarget\nLibrary Identification\nLibrary Properties\nSysTimeCore\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nModbusFB\nDocs\n»\nModbusFB\n»\nEnums\n»\nError (ENUM)\nError (ENUM)\nÂ¶\nTYPE Error :\nError type used in MODBUS function block library.\nAttributes:\nqualified_only\nInOut:\nName\nInitial\nComment\nOK\n0\nLicenseMissing\n1\nValid MODBUS license is missing.\nInvalidDataModel\n2\nThe âdata modelâ contains errors or inconsistencies.\nIllegalFunction\n3\nUndefined âfunction codeâ used to enable/disable supported\nâfunction codesâ.\nInvalidUnitId\n4\nInvalid Unit-Id / Slave address.\nNoMemory\n21\nCan not allocate memory.\nInternalError\n22\nOther internal error.\nRequestNotProcessed\n50\nRequest not processed in time\nRequestException\n51\nRequest caused reply âexceptionâ.\nRequestParameterError\n52\nInvalid request parameter, for example âRead Coilsâ ->\nâQuantity of coilsâ = 0\nRequestError\n53\nInternal request error\nRequestCancelled\n54\nRequest cancelled\nReplyError\n55\nInternal reply error\nReplyTimeout\n56\nNo reply received in time\nInvalidReply\n57\nInvalid / incomplete reply\nTcpSocketError\n101\nError on open/close/read/write TCP socket.\nTcpInvalidInterface\n102\nThe application tried to use an unknown ETH interface.\nTcpConnectTimeout\n103\nTCP connect timeout.\nSerialInvalidComPort\n201\nThe application tried to use an unknown SysCom port.\nSerialComPortUserInconsistentPortSetting\n202\nMultiple ServerSerial function blocks tried to share one\nSysCom port with inconsistent settings.\nSerialComPortUserClientExclusiveError\n203\nA ClientSerial function block is not allowed to share a\nSysCom port with any other user.\nSerialComPortError\n204\nError on open/close/read/write SysCom port.\nSerialInternalError\n205\nInternal error working with SysCom port.",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "OK",
+          "Initial": "0",
+          "Comment": ""
+        },
+        {
+          "Name": "LicenseMissing",
+          "Initial": "1",
+          "Comment": "Valid MODBUS license is missing."
+        },
+        {
+          "Name": "InvalidDataModel",
+          "Initial": "2",
+          "Comment": "The âdata modelâ contains errors or inconsistencies."
+        },
+        {
+          "Name": "IllegalFunction",
+          "Initial": "3",
+          "Comment": "Undefined âfunction codeâ used to enable/disable supported\nâfunction codesâ."
+        },
+        {
+          "Name": "InvalidUnitId",
+          "Initial": "4",
+          "Comment": "Invalid Unit-Id / Slave address."
+        },
+        {
+          "Name": "NoMemory",
+          "Initial": "21",
+          "Comment": "Can not allocate memory."
+        },
+        {
+          "Name": "InternalError",
+          "Initial": "22",
+          "Comment": "Other internal error."
+        },
+        {
+          "Name": "RequestNotProcessed",
+          "Initial": "50",
+          "Comment": "Request not processed in time"
+        },
+        {
+          "Name": "RequestException",
+          "Initial": "51",
+          "Comment": "Request caused reply âexceptionâ."
+        },
+        {
+          "Name": "RequestParameterError",
+          "Initial": "52",
+          "Comment": "Invalid request parameter, for example âRead Coilsâ ->\nâQuantity of coilsâ = 0"
+        },
+        {
+          "Name": "RequestError",
+          "Initial": "53",
+          "Comment": "Internal request error"
+        },
+        {
+          "Name": "RequestCancelled",
+          "Initial": "54",
+          "Comment": "Request cancelled"
+        },
+        {
+          "Name": "ReplyError",
+          "Initial": "55",
+          "Comment": "Internal reply error"
+        },
+        {
+          "Name": "ReplyTimeout",
+          "Initial": "56",
+          "Comment": "No reply received in time"
+        },
+        {
+          "Name": "InvalidReply",
+          "Initial": "57",
+          "Comment": "Invalid / incomplete reply"
+        },
+        {
+          "Name": "TcpSocketError",
+          "Initial": "101",
+          "Comment": "Error on open/close/read/write TCP socket."
+        },
+        {
+          "Name": "TcpInvalidInterface",
+          "Initial": "102",
+          "Comment": "The application tried to use an unknown ETH interface."
+        },
+        {
+          "Name": "TcpConnectTimeout",
+          "Initial": "103",
+          "Comment": "TCP connect timeout."
+        },
+        {
+          "Name": "SerialInvalidComPort",
+          "Initial": "201",
+          "Comment": "The application tried to use an unknown SysCom port."
+        },
+        {
+          "Name": "SerialComPortUserInconsistentPortSetting",
+          "Initial": "202",
+          "Comment": "Multiple ServerSerial function blocks tried to share one\nSysCom port with inconsistent settings."
+        },
+        {
+          "Name": "SerialComPortUserClientExclusiveError",
+          "Initial": "203",
+          "Comment": "A ClientSerial function block is not allowed to share a\nSysCom port with any other user."
+        },
+        {
+          "Name": "SerialComPortError",
+          "Initial": "204",
+          "Comment": "Error on open/close/read/write SysCom port."
+        },
+        {
+          "Name": "SerialInternalError",
+          "Initial": "205",
+          "Comment": "Internal error working with SysCom port."
+        }
+      ]
+    }
+  ]
+}

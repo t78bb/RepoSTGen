@@ -1,0 +1,28 @@
+{
+  "library": "BACnetDefaultImpl",
+  "title": "GetLogDeviceObjectProperty (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnetDefaultImpl/Current/BACnetDefaultImpl/Function-Blocks/LoggingObjects/pou-TrendLog/proxy/GetLogDeviceObjectProperty.html",
+  "page_title": "TrendLog.GetLogDeviceObjectProperty (METH)",
+  "text": "\nMETHOD GetLogDeviceObjectProperty : BACnet.BACnetDevObjPropReference\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetLogDeviceObjectProperty",
+          "Type": "BACnet.BACnetDevObjPropReference"
+        },
+        {
+          "Scope": "Input",
+          "Name": "instNumber",
+          "Type": "DWORD"
+        }
+      ]
+    }
+  ]
+}

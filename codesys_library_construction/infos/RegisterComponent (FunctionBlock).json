@@ -1,0 +1,8 @@
+{
+  "library": "AC_DataLog",
+  "title": "RegisterComponent (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_DataLog/Current/AC_DataLog/ComponentManager/RegisterComponent.html",
+  "page_title": "RegisterComponent (FB)",
+  "text": "\nFUNCTION_BLOCK RegisterComponent\nMethods:\nInit\nfb_exit\nfb_init\nStructure:\nInit (Method)\nfb_exit (Method)\nfb_init (Method)",
+  "tables": []
+}

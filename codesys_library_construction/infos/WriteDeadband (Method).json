@@ -1,0 +1,46 @@
+{
+  "library": "DNP3",
+  "title": "WriteDeadband (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/pou-Master/Commands/WriteDeadband.html",
+  "page_title": "Master.WriteDeadband (METH)",
+  "text": "\nMETHOD WriteDeadband :\nError\nIssue a write request to Object 34 (Analog Input Deadbands)\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "WriteDeadband",
+          "Type": "Error",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "qualifier",
+          "Type": "AddressQualifier",
+          "Comment": "address qualifier, must be 8/16 bit indexed or 8/16 bit\nstart/stop"
+        },
+        [
+          "variation",
+          "USINT",
+          "object variation to use in request1 - 16 bit                           (this was added in subset level 4)\n2 - 32 bit                           (this was added in subset level 4)\n3 - Single Precision Floating Point  (this was added in subset level 4)"
+        ],
+        [
+          "numObjects",
+          "USINT",
+          "number of deadbands in this request"
+        ],
+        [
+          "pAnlgInfo",
+          "POINTER TOAnalogInfo",
+          "data for each deadband"
+        ]
+      ]
+    }
+  ]
+}

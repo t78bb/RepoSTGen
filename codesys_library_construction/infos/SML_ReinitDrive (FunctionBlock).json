@@ -1,0 +1,52 @@
+{
+  "library": "SML_Basic",
+  "title": "SML_ReinitDrive (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SML_Basic/Current/Additional/SML_ReinitDrive.html",
+  "page_title": "SML_ReinitDrive (FB)",
+  "text": "\nFUNCTION_BLOCK SML_ReinitDrive\nReinitializes an axis.  The startup-phase of the axis is executed again.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "Axis_REF_SML",
+          "Comment": "Reference to the axis"
+        },
+        {
+          "Scope": "Input",
+          "Name": "bExecute",
+          "Type": "BOOL",
+          "Comment": "Rising Edge: The reinitialization is started"
+        },
+        {
+          "Scope": "Output",
+          "Name": "bDone",
+          "Type": "BOOL",
+          "Comment": "The reinitialization is finished"
+        },
+        [
+          "bBusy",
+          "BOOL",
+          "The FB is not finished and new output values are to be expected"
+        ],
+        [
+          "bError",
+          "BOOL",
+          "An error has occured"
+        ],
+        [
+          "eError",
+          "SML_ERROR",
+          "Error number"
+        ]
+      ]
+    }
+  ]
+}

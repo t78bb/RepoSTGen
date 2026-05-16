@@ -1,0 +1,5 @@
+{
+  "requirement": "This code is intended to implement a file-saving mechanism that closes an open file handle if it is not already closed.",
+  "provide_code": "FUNCTION_BLOCK fileSave\nVAR_INPUT\n\tfilePath \t:STRING;\n\tintervalt\t:INT;\nEND_VAR",
+  "function_name": "fileSave_close"
+}

@@ -1,0 +1,63 @@
+{
+  "library": "PLCopen Safety FBs",
+  "title": "FBS_EQUI (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/PLCopen Safety FBs/Current/PLCopenSafetyFBs/Enums/FBS_EQUI.html",
+  "page_title": "FBS_EQUI (ENUM)",
+  "text": "\nTYPE FBS_EQUI :\nDefinition of SF_Equivalent function block states and its diagnostic values.\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "IDLE",
+          "Initial": "16#0",
+          "Comment": "The function block is not active (initial state)."
+        },
+        {
+          "Name": "INIT",
+          "Initial": "16#8801",
+          "Comment": "An activation has been detected by the FB and the FB is now\nactivated."
+        },
+        {
+          "Name": "OUT_ENABLED",
+          "Initial": "16#8000",
+          "Comment": "The inputs switched to TRUE in equivalent mode."
+        },
+        {
+          "Name": "WAIT_FOR_CH_B",
+          "Initial": "16#8802",
+          "Comment": "Channel A has been switched to TRUE - waiting for Channel B;\ndiscrepancy timer started."
+        },
+        {
+          "Name": "WAIT_FOR_CH_A",
+          "Initial": "16#8804",
+          "Comment": "Channel B has been switched to TRUE - waiting for Channel A;\ndiscrepancy timer started."
+        },
+        {
+          "Name": "FROM_ACTIVE_WAIT",
+          "Initial": "16#8806",
+          "Comment": "One channel has been switched to FALSE; waiting for the\nsecond channel to be switched to FALSE, discrepancy timer\nstarted."
+        },
+        {
+          "Name": "ERROR_1",
+          "Initial": "16#C010",
+          "Comment": "Discrepancy time elapsed in state WAIT_FOR_CH_B."
+        },
+        {
+          "Name": "ERROR_2",
+          "Initial": "16#C020",
+          "Comment": "Discrepancy time elapsed in state WAIT_FOR_CH_A."
+        },
+        {
+          "Name": "ERROR_3",
+          "Initial": "16#C030",
+          "Comment": "Discrepancy time elapsed in state FROM_ACTIVE_WAIT."
+        }
+      ]
+    }
+  ]
+}

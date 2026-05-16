@@ -1,0 +1,32 @@
+{
+  "library": "IoStandard",
+  "title": "ConfigGetParameterValuePointer (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/IoStandard/Current/Config-Access-Help-Functions-internal/ConfigGetParameterValuePointer.html",
+  "page_title": "ConfigGetParameterValuePointer (FUN)",
+  "text": "\nFUNCTION ConfigGetParameterValuePointer : POINTER TO BYTE\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "ConfigGetParameterValuePointer",
+          "Type": "POINTER TO BYTE"
+        },
+        {
+          "Scope": "Input",
+          "Name": "pParameter",
+          "Type": "POINTER TO IoConfigParameter"
+        },
+        [
+          "pResult",
+          "POINTER TO UDINT"
+        ]
+      ]
+    }
+  ]
+}

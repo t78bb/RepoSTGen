@@ -1,0 +1,73 @@
+{
+  "library": "AlarmManager",
+  "title": "AlarmGlobals (GVL)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Globals/AlarmGlobals.html",
+  "page_title": "AlarmGlobals (GVL)",
+  "text": "ALARMGROUP_ID (Alias)\nALARM_ID (Alias)\nAlarm storage API\nAlarmStorageConvertFromTimestamp (Function)\nAlarmStorageConvertToTimestamp (Function)\nAlarmStorageConvertValueToLREAL (Function)\nAlarmStorageConvertValueToREAL (Function)\nAlarmStorageConvertValueToString (Function)\nAlarmStorageGetDefaultText (Function)\nAlarmStorageGetMessageCount (Function)\nAlarmStorageGetTextId (Function)\nAlarmStorageGetTextListName (Function)\nAlarmStorageReader (FunctionBlock)\nAddAlarmStorageListener (Method)\nContinueReading (Method)\nGetFirstLastRowID (Method)\nGetMinMaxTimestamps (Method)\nRead (Method)\nRemoveAlarmStorageListener (Method)\nAlarmStorageReaderGlobals (GVL)\nAlarmStorageRow (FunctionBlock)\nGetLatchVarValue (Method)\nSetLatchVarValue (Method)\nAlarmStorageStaticData (Struct)\nEAlarmStorageReaderErrors (Enum)\nIAlarmStorageListener (Interface)\nAlarmAdded (Method)\nAlarmModified (Method)\nIAlarmStorageReaderConsumer (Interface)\nAlarmRead (Method)\nBeforeReading (Method)\nLatchVariableRead (Method)\nReadingDataCompleted (Method)\nIAlarmStorageReaderConsumer2 (Interface)\nByteOrder (Property)\nAlarm_Prg (Program)\nEnumerations\nAlarmState (Enum)\nAlarmStateTransition (Enum)\nEAlarmType (Enum)\nEFilterLatchContent (Enum)\nEFilterTimeRangeType (Enum)\nFunction blocks\nDefaultAlarmFilterCriteria (FunctionBlock)\nFunctions\nConvertTimestampToLDateAndTime (Function)\nDT_to_Timestamp (Function)\nDT_to_Timestamp2 (Function)\nFilters\nElaborateLatchFilterCriteria (Function)\nElaborateTimeRangeFilterCriteria (Function)\nFormatTimestamp2 (Function)\nFormatTypedValue (Function)\nGetAlarmIDName (Function)\nReplaceAllDefaultPlaceholder (Function)\nSetCurrentUtcOffset (Function)\nTimestamp_to_DT (Function)\ndeprecated\nFormatTimestamp (Function)\nGlobals\nAlarmGlobals (GVL)\nReturnValues (GVL)\nInterfaces\nIAlarm (Interface)\nAccess-to-timestamps\nGetTimestampAcknowledge (Method)\nGetTimestampActive (Method)\nGetTimestampInactive (Method)\nGetTimestampLast (Method)\nAccess-to-values\nGetCurrentValue (Method)\nGetLatchVar1Value (Method)\nGetLatchVar2Value (Method)\nGetTriggerValue (Method)\nGetAlarmClass (Method)\nGetAlarmGroup (Method)\nGetID (Method)\nGetInternalID (Method)\nGetMessage (Method)\nGetState (Method)\nIsDeactivated (Method)\nIAlarm2 (Interface)\nIAlarm3 (Interface)\nGetCountLatchVariables (Method)\nGetCountMessages (Method)\nGetLatchVarValue (Method)\nGetMessage2 (Method)\nSetLatchVarValue (Method)\nIAlarm4 (Interface)\nKindOf (Property)\nIAlarm5 (Interface)\nAccess-to-offsets\nOffsetAcknowledge (Property)\nOffsetActive (Property)\nOffsetInactive (Property)\nOffsetLast (Property)\nIAlarm6 (Interface)\nAlarmGroupTemplate (Property)\nIAlarm7 (Interface)\nCommentActive (Property)\nCommentActiveAck (Property)\nCommentNormal (Property)\nCommentWaitingConf (Property)\nReAlarmRepeatCount (Property)\nUserIdCommentActive (Property)\nUserIdCommentActiveAck (Property)\nUserIdCommentNormal (Property)\nUserIdCommentWaitingConf (Property)\nIAlarm8 (Interface)\nSetAcknowledge (Method)\nIAlarmClass (Interface)\nGetInternalID (Method)\nGetName (Method)\nGetPriority (Method)\nIsAcknowledgeSeparately (Method)\nIAlarmClass2 (Interface)\nAckInsteadOfConfirm (Method)\nAutoResetDigitalAlarms (Method)\nReAlarmTime (Property)\nIAlarmClass3 (Interface)\nIAlarmGroup (Interface)\nGetInternalID (Method)\nGetName (Method)\nIAlarmGroup2 (Interface)\nIAlarmGroup3 (Interface)\nGetID (Method)\nIAlarmHandler (Interface)\nAcknowledgeAll (Method)\nAcknowledgeAllOfGroup (Method)\nAcknowledgeOneOfGroup (Method)\nRaiseEvent (Method)\nIAlarmHandler10 (Interface)\nClearHistory (Method)\nFindAlarmClassByName (Method)\nFindAlarmGroupByName (Method)\nIAlarmHandler2 (Interface)\nGetActiveAlarms (Method)\nGetAlarmsFromStorage (Method)\nGetCountAlarmsFromStorage (Method)\nRegisterClient (Method)\nUnregisterClient (Method)\nIAlarmHandler3 (Interface)\nIAlarmHandler4 (Interface)\nRegisterAlarmStateChangedListener (Method)\nIAlarmHandler5 (Interface)\nIAlarmHandler6 (Interface)\nAcknowledgeAllOfGroupWithComment (Method)\nAcknowledgeAllWithComment (Method)\nAcknowledgeOneOfGroupWithComment (Method)\nSetComment (Method)\nIAlarmHandler7 (Interface)\nGetInstanceAlarm (Method)\nGetInstanceAlarmByName (Method)\nRaiseEventAlarmInstance (Method)\nRaiseEventAlarmInstanceByName (Method)\nIAlarmHandler8 (Interface)\nIsReady (Property)\nIAlarmHandler9 (Interface)\nActivateAlarm (Method)\nActivateAlarmInstance (Method)\nDeactivateAlarm (Method)\nDeactivateAlarmInstance (Method)\nIAlarmManagerClient (Interface)\nActiveAlarmsChanged (Method)\nAlarmStorageModified (Method)\nGetFilterCriteria (Method)\nIAlarmManagerClient2 (Interface)\nEventOccurred (Method)\nIAlarmNotifiable (Interface)\nExecute (Method)\nIAlarmStateChangedListener (Interface)\nAlarmStateChanged (Method)\nIAlarmStateChangedListener2 (Interface)\nAlarmDeactivationStateChanged (Method)\nLibrary Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nService\nEAlarmByteOrder (Enum)\nStructures\nLatchVariable (Struct)\nStorageTaskInfo (Struct)\nTIMESTAMP (Alias)\nTL_AlarmStatus (TextList)\nFile and Project Information\nLibrary Reference\n3S Storage\nLibrary Identification\nLibrary Properties\n3SLicense\nLibrary Identification\nLibrary Properties\nAlarm Manager Interfaces\nLibrary Identification\nLibrary Properties\nAlarm Manager Internal Interfaces\nLibrary Identification\nLibrary Properties\nBase Interfaces\nLibrary Identification\nLibrary Properties\nCAA FB Factory\nLibrary Identification\nLibrary Properties\nCAA Storage\nLibrary Identification\nLibrary Properties\nCAA Types Extern\nLibrary Identification\nLibrary Properties\nCDSV3ProtocolUtils\nLibrary Identification\nLibrary Properties\nCmpApp\nLibrary Identification\nLibrary Properties\nCmpBinTagUtilIec\nLibrary Identification\nLibrary Properties\nCmpDynamicText\nLibrary Identification\nLibrary Properties\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nCmpEventMgr\nLibrary Identification\nLibrary Properties\nCmpIecTask\nLibrary Identification\nLibrary Properties\nCmpLog\nLibrary Identification\nLibrary Properties\nCmpSrv\nLibrary Identification\nLibrary Properties\nCmpVisuHandler\nLibrary Identification\nLibrary Properties\nCollections\nLibrary Identification\nLibrary Properties\nComponent Manager\nLibrary Identification\nLibrary Properties\nDatasources Interfaces\nLibrary Identification\nLibrary Properties\nElement Collections\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nStringUtils\nLibrary Identification\nLibrary Properties\nSysCpuHandling\nLibrary Identification\nLibrary Properties\nSysFile\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysProcess\nLibrary Identification\nLibrary Properties\nSysSem\nLibrary Identification\nLibrary Properties\nSysTask\nLibrary Identification\nLibrary Properties\nSysTimeCore\nLibrary Identification\nLibrary Properties\nSysTimeRtc\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nVisuShared\nLibrary Identification\nLibrary Properties\nAlarmManager\nDocs\n»\nGlobals\n»\nAlarmGlobals (GVL)\nAlarmGlobals (GVL)\nÂ¶\nThis GVL must be initialized before GVL âGloballyForAlarmStorageâ, because this GVL\ncauses the initialization of the variable g_stApplicationName.\nWe only need the date and time format pattern for the converted code, therefore\nwe can (and must!) omit the rest from conversion\nWe must not use an attribute to hide this GVL, because there are some variables,\nthat a developer might use. Additionally it is necessary, that this GVL in considered\nin the data server, but not visible for the user, because some variables of this GVL\nare added to the data source selection implicitely and for this purpose it is necessary,\nthat this GVL is a part of the available items tree.\nInOut:\nName\nType\nInitial\nComment\ng_AlarmHandler\nIAlarmHandler10\ng_AlarmHandler_Inst\nThis global instance provides API functionality to manipulate or retrieve\nalarm configuration objects. For more information see IAlarmHandler interfaces.\ng_diAlarmStateTransitionCounter\nDINT\nA global counter, that counts all the alarm state transitions, that occur.\nNeeded by the alarm table for optimized painting. If this counter doesnât\nchange during subsequent paint calls, the same alarms have been active and\nin the same state.\nConditional show attribute must not be present for this variable, because\nsome architectural problems it can lead in a not correct regitration\nCHECKED_OMIT\ng_diAlarmStorageCounter\nDINT\nA similar counter, that will be incremented each time an alarm is written\ninto the alarm storage. This allows the alarm table to detect, whether\nsome kind of processing has to be done, because there exists a new alarm.\nConditional show attribute must not be present for this variable, because\nsome architectural problems it can lead in a not correct regitration\nCHECKED_OMIT\ng_sDateFormat\nSTRING\nâdd.MM.yyyyâ\nThe date format used to format the date part of a timestamp\ng_sTimeFormat\nSTRING\nâHH:mm:ssâ\nThe time format used to format the date part of a timestamp\ng_StorageTaskInfo\nStorageTaskInfo\nInfo object for the alarm storage task. Contains information\nabout task state and cycle times.\ng_xStepByStepMode\nBOOL\nTRUE\nActivates the progressive loading of the alarm history.\ng_tStepByStepLimit\nTIME\nTIME#25ms\nSets the time limit per loading step.\ng_iAlarmConfigurationUpdateCounter\nINT\n0\nIncrement this variable if a change is made to the\nAlarmConfig at runtime, it reloads the AlarmTable.",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "g_AlarmHandler",
+          "Type": "IAlarmHandler10",
+          "Initial": "g_AlarmHandler_Inst",
+          "Comment": "This global instance provides API functionality to manipulate or retrieve\nalarm configuration objects. For more information see IAlarmHandler interfaces."
+        },
+        {
+          "Name": "g_diAlarmStateTransitionCounter",
+          "Type": "DINT",
+          "Initial": "",
+          "Comment": "A global counter, that counts all the alarm state transitions, that occur.\nNeeded by the alarm table for optimized painting. If this counter doesnât\nchange during subsequent paint calls, the same alarms have been active and\nin the same state.\nConditional show attribute must not be present for this variable, because\nsome architectural problems it can lead in a not correct regitrationCHECKED_OMIT"
+        },
+        {
+          "Name": "g_diAlarmStorageCounter",
+          "Type": "DINT",
+          "Initial": "",
+          "Comment": "A similar counter, that will be incremented each time an alarm is written\ninto the alarm storage. This allows the alarm table to detect, whether\nsome kind of processing has to be done, because there exists a new alarm.\nConditional show attribute must not be present for this variable, because\nsome architectural problems it can lead in a not correct regitrationCHECKED_OMIT"
+        },
+        {
+          "Name": "g_sDateFormat",
+          "Type": "STRING",
+          "Initial": "âdd.MM.yyyyâ",
+          "Comment": "The date format used to format the date part of a timestamp"
+        },
+        {
+          "Name": "g_sTimeFormat",
+          "Type": "STRING",
+          "Initial": "âHH:mm:ssâ",
+          "Comment": "The time format used to format the date part of a timestamp"
+        },
+        {
+          "Name": "g_StorageTaskInfo",
+          "Type": "StorageTaskInfo",
+          "Initial": "",
+          "Comment": "Info object for the alarm storage task. Contains information\nabout task state and cycle times."
+        },
+        {
+          "Name": "g_xStepByStepMode",
+          "Type": "BOOL",
+          "Initial": "TRUE",
+          "Comment": "Activates the progressive loading of the alarm history."
+        },
+        {
+          "Name": "g_tStepByStepLimit",
+          "Type": "TIME",
+          "Initial": "TIME#25ms",
+          "Comment": "Sets the time limit per loading step."
+        },
+        {
+          "Name": "g_iAlarmConfigurationUpdateCounter",
+          "Type": "INT",
+          "Initial": "0",
+          "Comment": "Increment this variable if a change is made to the\nAlarmConfig at runtime, it reloads the AlarmTable."
+        }
+      ]
+    }
+  ]
+}

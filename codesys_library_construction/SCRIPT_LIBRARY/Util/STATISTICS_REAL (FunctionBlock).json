@@ -1,0 +1,52 @@
+{
+  "library": "Util",
+  "title": "STATISTICS_REAL (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/Mathematical-Functions/STATISTICS_REAL.html",
+  "page_title": "STATISTICS_REAL (FB)",
+  "text": "\nFUNCTION_BLOCK STATISTICS_REAL\nCalculates minimum, maximum, and average of an input value\nThe calculation is done over time and can be reset in order to begin a fresh caluclation/statistic.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "IN",
+          "Type": "REAL",
+          "Initial": "",
+          "Comment": "Input value"
+        },
+        [
+          "RESET",
+          "BOOL",
+          "",
+          "TRUE:AVGset to 0,MNandMXto minimum and\nmaximum possible real values"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "MN",
+          "Type": "REAL",
+          "Initial": "3.402823466E+38",
+          "Comment": "Minimum value"
+        },
+        [
+          "MX",
+          "REAL",
+          "-3.402823466E+38",
+          "Maximum value"
+        ],
+        [
+          "AVG",
+          "REAL",
+          "",
+          "Average value"
+        ]
+      ]
+    }
+  ]
+}

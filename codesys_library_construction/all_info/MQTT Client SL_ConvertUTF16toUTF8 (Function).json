@@ -1,0 +1,46 @@
+{
+  "library": "MQTT Client SL",
+  "title": "ConvertUTF16toUTF8 (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/MQTT Client SL/Current/MQTT-Client/UTF-8/ConvertUTF16toUTF8.html",
+  "page_title": "ConvertUTF16toUTF8 (FUN)",
+  "text": "MQTT Client\nCommon\nEnums\nCOMMUNICATION_MODE (Enum)\nFILTER_MODE (Enum)\nMQTT_ERROR (Enum)\nMQTT_QOS (Enum)\nMQTT_VERSION (Enum)\nV5\nFunction Blocks\nMQTTClient (FunctionBlock)\nMQTTPublish (FunctionBlock)\nMQTTSubscribe (FunctionBlock)\nParams\nMQTTParam (ParamList)\nStructs\nMQTTV5\nUTF-8\nConvertUTF16toUTF8 (Function)\nConvertUTF8toUTF16 (Function)\nFile and Project Information\nLibrary Reference\n3SLicense\nLibrary Identification\nLibrary Properties\nCAA FB Factory\nLibrary Identification\nLibrary Properties\nCAA Types Extern\nLibrary Identification\nLibrary Properties\nCmpCrypto\nLibrary Identification\nLibrary Properties\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nCmpLog\nLibrary Identification\nLibrary Properties\nCmpSchedule\nLibrary Identification\nLibrary Properties\nCmpX509Cert\nLibrary Identification\nLibrary Properties\nCommon Behaviour Model\nLibrary Identification\nLibrary Properties\nComponent Manager\nLibrary Identification\nLibrary Properties\nElement Collections\nLibrary Identification\nLibrary Properties\nMemoryUtils\nLibrary Identification\nLibrary Properties\nNet Base Services\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nStringUtils\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysSocket2\nLibrary Identification\nLibrary Properties\nSysSocket2 Implementation\nLibrary Identification\nLibrary Properties\nSysTime\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nWeb Socket Client SL\nLibrary Identification\nLibrary Properties\nMQTT Client SL\nDocs\n»\nMQTT\nClient\n»\nUTF-8\n»\nConvertUTF16toUTF8 (FUN)\nConvertUTF16toUTF8 (FUN)\nÂ¶\nFUNCTION ConvertUTF16toUTF8 : UDINT\nConverts a WSTRING to STRING\nInOut:\nScope\nName\nType\nComment\nReturn\nConvertUTF16toUTF8\nUDINT\nInput\nsourceStart\nPOINTER TO WORD\nPointer to WSTRING\ntargetStart\nPOINTER TO BYTE\nPointer to STRING\ndwTargetBufferSize\nDWORD\nSize of STRING\nbStrictConversion\nBOOL",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "ConvertUTF16toUTF8",
+          "Type": "UDINT",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "sourceStart",
+          "Type": "POINTER TO WORD",
+          "Comment": "Pointer to WSTRING"
+        },
+        [
+          "targetStart",
+          "POINTER TO BYTE",
+          "Pointer to STRING"
+        ],
+        [
+          "dwTargetBufferSize",
+          "DWORD",
+          "Size of STRING"
+        ],
+        [
+          "bStrictConversion",
+          "BOOL",
+          ""
+        ]
+      ]
+    }
+  ]
+}

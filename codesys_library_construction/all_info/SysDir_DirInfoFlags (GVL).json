@@ -1,0 +1,33 @@
+{
+  "library": "SysDir",
+  "title": "DirInfoFlags (GVL)",
+  "url": "https://content.helpme-codesys.com/en/libs/SysDir/Current/DirInfoFlags.html",
+  "page_title": "DirInfoFlags (GVL)",
+  "text": "Deutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nMenu\nSearch\nDeutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nDirFileTime (Struct)\nDirInfo (Struct)\nDirInfoFlags (GVL)\nSysDirClose (Function)\nSysDirCopy (Function)\nSysDirCreate (Function)\nSysDirCreate2 (Function)\nSysDirDelete (Function)\nSysDirDelete2 (Function)\nSysDirGetCurrent (Function)\nSysDirOpen (Function)\nSysDirRead (Function)\nSysDirRename (Function)\nSysDirSetCurrent (Function)\nFile and Project Information\nLibrary Reference\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nSysDir\nDocs\n»\nDirInfoFlags (GVL)\nDirInfoFlags (GVL)\nÂ¶\nDirectory info flags\nInOut:\nScope\nName\nType\nInitial\nComment\nConstant\nDF_FILE\nDWORD\n16#0\nEntry is a file\nDF_DIRECTORY\nDWORD\n16#2\nEntry is a directory\ntop\nCODESYS Group | We\nsoftware\nAutomation.\nto software\n['sɒftwɛər]\ntransitive verb\n__softwared/softwaring\n: to develop software\n// to software automation: to develop software for automation purposes\nThe CODESYS Group is the manufacturer of CODESYS, the leading hardware-independent\n                                    IEC 61131-3 automation software for developing and engineering controller\n                                    applications.\nCODESYS® is a registered trademark.\nCODESYS GmbH\nA member of the CODESYS Group\nMemminger Straße 151, 87439 Kempten\nGermany\nTel.:\n+49-831-54031-0\ninfo@codesys.com\nLegal Notice\nPrivacy Policy\nLinkedIn\nYoutube\nRSS\nDownloads\nLogin\nCODESYS Store\n© 2022 CODESYS GmbH\n| A member of the CODESYS Group",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Constant",
+          "Name": "DF_FILE",
+          "Type": "DWORD",
+          "Initial": "16#0",
+          "Comment": "Entry is a file"
+        },
+        [
+          "DF_DIRECTORY",
+          "DWORD",
+          "16#2",
+          "Entry is a directory"
+        ]
+      ]
+    }
+  ]
+}

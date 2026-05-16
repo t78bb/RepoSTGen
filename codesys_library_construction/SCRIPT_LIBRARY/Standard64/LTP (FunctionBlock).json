@@ -1,0 +1,41 @@
+{
+  "library": "Standard64",
+  "title": "LTP (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/Standard64/Current/Timer/LTP.html",
+  "page_title": "LTP (FB)",
+  "text": "\nFUNCTION_BLOCK LTP\nTimer Pulse.\nQ produces a High-Signal with the length of PT on every rising edge on IN.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "IN",
+          "Type": "BOOL",
+          "Comment": "Trigger for Start of the Signal"
+        },
+        [
+          "PT",
+          "LTIME",
+          "The length of the High-Signal"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Q",
+          "Type": "BOOL",
+          "Comment": "The pulse"
+        },
+        [
+          "ET",
+          "LTIME",
+          "elapsed time since pulse start"
+        ]
+      ]
+    }
+  ]
+}

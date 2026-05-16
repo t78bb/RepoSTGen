@@ -1,0 +1,29 @@
+{
+  "library": "AC_Alarming",
+  "title": "ModuleAlarmInfo (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_Alarming/Current/ExtenderFB/ModuleAlarmInfo.html",
+  "page_title": "ModuleAlarmInfo (STRUCT)",
+  "text": "\nTYPE ModuleAlarmInfo : STRUCT\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Name": "inst",
+          "Type": "AC.IModule"
+        },
+        {
+          "Name": "pAlarms",
+          "Type": "POINTER TOAlarmInfo"
+        },
+        {
+          "Name": "uiNumAlarms",
+          "Type": "UINT"
+        }
+      ]
+    }
+  ]
+}

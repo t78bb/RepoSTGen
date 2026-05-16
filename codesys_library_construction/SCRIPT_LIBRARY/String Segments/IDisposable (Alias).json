@@ -1,0 +1,8 @@
+{
+  "library": "String Segments",
+  "title": "IDisposable (Alias)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Segments/Current/Strings/Aliases/IDisposable.html",
+  "page_title": "IDisposable (ALIAS)",
+  "text": "\nTYPE\nIDisposable\n: MBM.|dIDisposable|\nHandling of reference counting and memory management\nSee: MBM.IDisposable",
+  "tables": []
+}

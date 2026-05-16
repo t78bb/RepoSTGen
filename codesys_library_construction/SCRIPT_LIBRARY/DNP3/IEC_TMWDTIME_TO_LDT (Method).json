@@ -1,0 +1,28 @@
+{
+  "library": "DNP3",
+  "title": "IEC_TMWDTIME_TO_LDT (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/PointObserver/pou-PointObserver/IEC_TMWDTIME_TO_LDT.html",
+  "page_title": "PointObserver.IEC_TMWDTIME_TO_LDT (METH)",
+  "text": "\nMETHOD PROTECTED IEC_TMWDTIME_TO_LDT : LDATE_AND_TIME\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "IEC_TMWDTIME_TO_LDT",
+          "Type": "LDATE_AND_TIME"
+        },
+        {
+          "Scope": "Input",
+          "Name": "tmwDtime",
+          "Type": "CmpDNP3.IEC_TMWDTIME"
+        }
+      ]
+    }
+  ]
+}

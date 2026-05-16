@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现根据输入的轨道类型、挡板索引和比例阀百分比控制轨道挡板的伸出或缩回比例。",
+  "provide_code": "FUNCTION_BLOCK CommandExecutor\nVAR_INPUT\n\tlevel\t\t:INT;\t\t\t//1->地轨\t2->天轨\n\tidx\t\t\t:INT;\t\t\t//挡板索引编号\n\tpercent\t\t:REAL;\t\t\t//比例阀百分比 传入-100~+100\nEND_VAR\nVAR_OUTPUT\nEND_VAR"
+}

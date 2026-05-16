@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现对两个轴的错误状态检测与复位操作的控制逻辑。",
+  "provide_code": "FUNCTION_BLOCK FB_DualAxisReset\nVAR_INPUT\n\tAxis1\t\t\t:\tAXIS_REF;\t\t\t//轴1引用\n\tAxis2\t\t\t:\tAXIS_REF;\t\t\t//轴2引用\n\tbExecute\t\t:\tBOOL;\t\t\t\t//执行复位信号\nEND_VAR\nVAR_OUTPUT\n\tbDone\t\t\t:\tBOOL;\t\t\t\t//复位完成\n\tbBusy\t\t\t:\tBOOL;\t\t\t\t//复位进行中\n\tbError\t\t\t:\tBOOL;\t\t\t\t//错误标志\nEND_VAR"
+}

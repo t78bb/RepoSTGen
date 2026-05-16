@@ -1,0 +1,28 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_GVarType_ToString (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/Parser/SymbolTable/SMC_GVarType_ToString.html",
+  "page_title": "SMC_GVarType_ToString (FUN)",
+  "text": "\nFUNCTION SMC_GVarType_ToString : SMC_NC_KeywordString\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SMC_GVarType_ToString",
+          "Type": "SMC_NC_KeywordString"
+        },
+        {
+          "Scope": "Input",
+          "Name": "vtype",
+          "Type": "SMC_GVar_Type"
+        }
+      ]
+    }
+  ]
+}

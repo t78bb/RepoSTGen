@@ -1,0 +1,28 @@
+{
+  "library": "BACnetDefaultImpl",
+  "title": "DataFileName (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnetDefaultImpl/Current/BACnetDefaultImpl/Function-Blocks/LoggingObjects/Internal/pou-LogObjectsBase/Files/DataFiles/DataFileName.html",
+  "page_title": "LogObjectsBase.DataFileName (METH)",
+  "text": "\nMETHOD DataFileName :\nFileNameString\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "DataFileName",
+          "Type": "FileNameString"
+        },
+        {
+          "Scope": "Input",
+          "Name": "instNumber",
+          "Type": "DWORD"
+        }
+      ]
+    }
+  ]
+}

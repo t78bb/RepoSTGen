@@ -1,0 +1,40 @@
+{
+  "library": "MQTT Client SL",
+  "title": "SetWebSocketOptions (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/MQTT Client SL/Current/MQTT-Client/Common/Function-Blocks/pou-MQTTClient/SetWebSocketOptions.html",
+  "page_title": "MQTTClient.SetWebSocketOptions (METH)",
+  "text": "\nMETHOD SetWebSocketOptions : BOOL\nMethod to set additional websocket options if eCommunicationMode = COMMUNICATION_MODE.WEB_SOCKET\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetWebSocketOptions",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "tPingInterval",
+          "Type": "TIME",
+          "Initial": "TIME#0ms",
+          "Comment": "Ping interval, T#0s: no ping"
+        },
+        [
+          "httpProxySettings",
+          "WEB_SOCKET.HttpProxySettings",
+          "",
+          "Optional http proxy settings"
+        ]
+      ]
+    }
+  ]
+}

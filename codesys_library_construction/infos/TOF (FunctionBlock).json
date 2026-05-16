@@ -1,0 +1,41 @@
+{
+  "library": "Standard",
+  "title": "TOF (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/Standard/Current/Timer/TOF.html",
+  "page_title": "TOF (FB)",
+  "text": "\nFUNCTION_BLOCK TOF\nImplements a timer with a turn-off delay\n(* Example declaration *)\nTOFInst\n:\nTOF\n;\n(* Example in ST *)\nTOFInst\n(\nIN\n:=\nVarBOOL1\n,\nPT\n:=\nT#5s\n);\nVarBOOL2\n:=\nTOFInst.Q\n;\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "IN",
+          "Type": "BOOL",
+          "Comment": "Falling edge: starts delay counterRising edge: resets delay counter"
+        },
+        [
+          "PT",
+          "TIME",
+          "Time for the delay counter [ms]"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Q",
+          "Type": "BOOL",
+          "Comment": "TRUEifINisTRUEFALSEifINisFALSEand delay timePTelapsed"
+        },
+        [
+          "ET",
+          "TIME",
+          "Elapsed time since falling edge atIN"
+        ]
+      ]
+    }
+  ]
+}

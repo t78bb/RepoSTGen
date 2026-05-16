@@ -1,0 +1,36 @@
+{
+  "library": "BACnet2",
+  "title": "Initialize (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/BACnetObjects/pou-BACnetTrendLogMultiple/private/Initialize.html",
+  "page_title": "BACnetTrendLogMultiple.Initialize (METH)",
+  "text": "\nMETHOD Initialize : UDINT\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "Initialize",
+          "Type": "UDINT"
+        },
+        {
+          "Scope": "Input",
+          "Name": "wModuleType",
+          "Type": "UINT"
+        },
+        [
+          "dwInstance",
+          "UDINT"
+        ],
+        [
+          "pConnector",
+          "POINTER TO IoConfigConnector"
+        ]
+      ]
+    }
+  ]
+}

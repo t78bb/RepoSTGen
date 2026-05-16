@@ -1,0 +1,57 @@
+{
+  "library": "SM3_Robotics",
+  "title": "MC_AddAxisToGroup (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/AdministrativeConfiguration/AxisGroup/MC_AddAxisToGroup.html",
+  "page_title": "MC_AddAxisToGroup (FB)",
+  "text": "\nFUNCTION_BLOCK MC_AddAxisToGroup\nThis function block adds one axis to an axis group.\nIf the state of the axis group is not\nGroupDisabled\n, an error\nis created and the axis is not added to the group.\nWhen enabling the axis group, the first n axes added to the group\nwill be the axes of the kinematics. All subsequently added axes are\nadditional axes.\nThis is an administrative FB, since no movement is generated.\nThe command cannot be buffered.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "AxisGroup",
+          "Type": "AXIS_GROUP_REF_SM3",
+          "Comment": "Reference to a group of axes"
+        },
+        [
+          "Axis",
+          "AXIS_REF_SM3",
+          "Reference to the axis to be added"
+        ],
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Comment": "Start the grouping process at the rising edge"
+        },
+        {
+          "Scope": "Output",
+          "Name": "Done",
+          "Type": "BOOL",
+          "Comment": "The axis has been added"
+        },
+        [
+          "Busy",
+          "BOOL",
+          "The FB is not finished"
+        ],
+        [
+          "Error",
+          "BOOL",
+          "Signals that an error has occurred within the function block"
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

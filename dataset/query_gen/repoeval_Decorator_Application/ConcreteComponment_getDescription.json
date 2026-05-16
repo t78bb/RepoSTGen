@@ -1,0 +1,6 @@
+{
+  "requirement": "This code should implement a method named `ConcreteComponment_getDescription` that returns a STRING. The method should retrieve the description of an object from a string variable `sDescription` associated with the object. The method does not require any input parameters, nor does it have any output parameters other than the return value. The method should directly assign the value of `sDescription` to the return variable `getDescription`. There are no explicit error or boundary conditions handled within this method.",
+  "provide_code": "//Illustrative method of the pattern\nMETHOD getDescription : STRING\nVAR_INPUT\nEND_VAR\nVAR_OUTPUT\nEND_VAR",
+  "function_name": "ConcreteComponment_getDescription",
+  "requirement_cn": "该代码应实现一个名为 `ConcreteComponment_getDescription` 的方法，该方法返回一个 STRING 类型的值。该方法应从与对象关联的字符串变量 `sDescription` 中检索对象的描述。该方法不需要任何输入参数，也没有除返回值之外的输出参数。方法应直接将 `sDescription` 的值赋给返回变量 `getDescription`。此方法中没有明确处理的错误或边界条件。"
+}

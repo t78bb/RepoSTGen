@@ -1,0 +1,77 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_FollowPositionVelocity (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/Movement/Direct/SMC_FollowPositionVelocity.html",
+  "page_title": "SMC_FollowPositionVelocity (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_FollowPositionVelocity\nThis function block employment is equivalent to\nSMC_FollowPosition\n, except for the velocity that may be defined in addition.\nNote\nThis function block does not support forecasts that are set up by\nSMC_SetForecast\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "bExecute",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Rising edge: Starts the execution of the function block."
+        },
+        [
+          "fSetPosition",
+          "LREAL",
+          "",
+          "Set position in technical units [u]."
+        ],
+        [
+          "fSetVelocity",
+          "LREAL",
+          "",
+          "Set velocity in technical units/sec [u/s]."
+        ],
+        [
+          "bFixedCoordinateSystem",
+          "BOOL",
+          "TRUE",
+          "The coordinate system for theAxiscan be changed usingMC_SetPosition.\nWhenbFixedCoordinateSystemis set to TRUE, thefSetPositionis expected to be given in the coordinate system that was active\nwhen there was a rising edge onbExecute.  IfMC_SetPositionis\ncalled during execution, the providedfSetPositionis automatically\ntransformed to the new coordinate system.\nWhenbFixedCoordinateSystemis set to FALSE, thefSetPositionis expected to be given in the current coordinate system.  IfMC_SetPositionis called during execution, the providedfSetPositionhas to be adjusted to the new coordinate system."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bBusy",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUE: Execution of function block has not been finished\nyet."
+        },
+        [
+          "bCommandAborted",
+          "BOOL",
+          "",
+          "TRUE: The command has been aborted by another command."
+        ],
+        [
+          "bError",
+          "BOOL",
+          "",
+          "TRUE: Error has occurred within the function block."
+        ],
+        [
+          "iErrorID",
+          "SMC_ERROR",
+          "",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

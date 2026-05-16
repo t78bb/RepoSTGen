@@ -1,0 +1,65 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_SetControllerMode (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/AdministrativeConfiguration/SMC_SetControllerMode.html",
+  "page_title": "SMC_SetControllerMode (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_SetControllerMode\nThis function block, if supported by the drive, can be used to switch to\nanother controller mode.\nPreconditions:\nThe axis must support the desired controller mode. In order to check this,\nsee the documentation inside the corresponding SoftMotion driver library.\nThe needed cyclic I/O data (e.g. for torque mode: set torque object)\nmust be mapped.\nThe axis must not be in the state\nerrorstop\n,\nstopping\nor\nhoming\nwhen this function block is called.\nIf it is in one of these states, the error\nSMC_SCM_AXIS_IN_WRONG_STATE\nwill be reported.\nBehavior when active:\nThis function block sets the\nbyControllerMode\n(command value of operation mode) parameter of the axis and waits until\nthe parameter\nbyRealControllerMode\n(actual value of operation mode)\nreflects this value.\nIf this does not happen during 1000 cycles, the function block will abort with an error.\nWhen switching from a lower level to a higher level control mode\n(e.g. torque -> velocity, torque->position, velocity->position),\nthe function block calculates the set values of the higher level\nsignal. E.g. when switching from torque mode to position mode,\nthe function block uses the actual position of the axis and adds\nan expected position distance, that compensates the time lag between\nactual and set values depending on the actual velocity and the dead\ntime in cycles (\nAxis.fSetActTimeLagCycles\n).\nThe dead time depends on the system (controller hardware, field bus, drive)\nand may need to be adjusted.\nWhat function blocks have to be called after\nSMC_SetControllerMode\nreports\nbDone\n?\nAs soon as\nbyRealControllerMode\nreflects\nbyControllerMode\n, the\nfunction block sets its\nDone\noutput and stops any action.\nThis means that the application program is immediately responsible for\ncalculating the correct set values beginning with this cycle.\nE.g. an axis was torque controlled and shall be switched to position\ncontrol. The axis was still moving when the function block\nSMC_SetControllerMode\nwas started.\nDuring the switching time, the function block calculates the proper\nvalues for the set position.\nBut as soon as it sets\nDone\n, no function block continues to provide\nset values and the axis would stop immediately and report an error.\nTherefore e.g. a function block\nMC_Halt\n,\nMC_MoveVelocity\n, or\nMC_MoveAbsolute\ncould be triggered by the\nDone\noutput of\nSMC_ControllerMode\nand take over the control of the axis.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "bExecute",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Starts changing the controlling mode."
+        },
+        [
+          "nControllerMode",
+          "SMC_CONTROLLER_MODE",
+          "SMC_position",
+          ""
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bDone",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUE: Mode switching has been done."
+        },
+        [
+          "bBusy",
+          "BOOL",
+          "",
+          "TRUE: FB is not idle."
+        ],
+        [
+          "bError",
+          "BOOL",
+          "",
+          "TRUE: Error has occured within function block."
+        ],
+        [
+          "nErrorID",
+          "SMC_ERROR",
+          "",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

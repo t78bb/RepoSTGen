@@ -1,0 +1,32 @@
+{
+  "library": "3S Storage",
+  "title": "UtilityRandomness (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/3S Storage/Current/_3SStorage/Instances/pou-Storage/UtilityRandomness.html",
+  "page_title": "Storage.UtilityRandomness (METH)",
+  "text": "\nMETHOD UtilityRandomness : STO.ERROR\nA call to this method stores szSize bytes of randomness into buffer pData\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "UtilityRandomness",
+          "Type": "STO.ERROR"
+        },
+        {
+          "Scope": "Input",
+          "Name": "szSize",
+          "Type": "CAA.SIZE"
+        },
+        [
+          "pData",
+          "CAA.PVOID"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "library": "Util",
+  "title": "IDateTimeProvider (Interface)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/TimerSwitch/Interfaces/IDateTimeProvider.html",
+  "page_title": "IDateTimeProvider (ITF)",
+  "text": "\nINTERFACE PUBLIC IDateTimeProvider EXTENDS __SYSTEM.IQueryInterface\nProvides access to the underlying system to get the current date and (UTC) time using the\nGetDateTime\nmethod.\nSee:\nDateTimeProvider\nas a default implementation\nMethods:\nGetDateTime\nStructure:\nGetDateTime (Method)",
+  "tables": []
+}

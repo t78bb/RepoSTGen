@@ -1,0 +1,36 @@
+{
+  "library": "StringUtils",
+  "title": "StrCaseCmpEndA (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/StringUtils/Current/Public-Parts/Ansi/StrCaseCmpEndA.html",
+  "page_title": "StrCaseCmpEndA (FUN)",
+  "text": "\nFUNCTION StrCaseCmpEndA : INT\nDoes a case insensitive comparison of the end of the string and the suffix\nReturn values:\n0 -> end of the string and suffix are equal\n-1 -> end OF the STRING AND suffix are NOT equal\n-2 -> Error: An invalid string (ie. Null-Pointer is given)\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "StrCaseCmpEndA",
+          "Type": "INT",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "pString",
+          "Type": "CharBufferPtr",
+          "Comment": "Pointer to the string to check."
+        },
+        [
+          "pSuffix",
+          "CharBufferPtr",
+          "Pointer to the suffix to find."
+        ]
+      ]
+    }
+  ]
+}

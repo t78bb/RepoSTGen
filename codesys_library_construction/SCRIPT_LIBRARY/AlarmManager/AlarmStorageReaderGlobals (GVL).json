@@ -1,0 +1,25 @@
+{
+  "library": "AlarmManager",
+  "title": "AlarmStorageReaderGlobals (GVL)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Alarm-storage-API/AlarmStorageReaderGlobals.html",
+  "page_title": "AlarmStorageReaderGlobals (GVL)",
+  "text": "\nThis GVL contains global configuration values of the alarm storage api.\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "g_iMaxCountRowsToRead",
+          "Type": "INT",
+          "Initial": "1000",
+          "Comment": "The maximum number of rows, that a single read request can read.\nThe limit of 1000 records per single read call is good value, because normally\nnot too many alarms are written to the storage resp. read from the alarm table.\nFor slower hardware this value has to be decreased accordingly."
+        }
+      ]
+    }
+  ]
+}

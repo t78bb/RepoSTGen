@@ -1,0 +1,8 @@
+{
+  "library": "AlarmManager",
+  "title": "AlarmStorageModified (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/pou-IAlarmManagerClient/AlarmStorageModified.html",
+  "page_title": "IAlarmManagerClient.AlarmStorageModified (METH)",
+  "text": "\nMETHOD AlarmStorageModified\nNotification by the alarm manager, that something in the alarm storage has been\nmodified, i.e. a new alarm has been added to the alarm storage or an already\nstored alarm has been modified.",
+  "tables": []
+}

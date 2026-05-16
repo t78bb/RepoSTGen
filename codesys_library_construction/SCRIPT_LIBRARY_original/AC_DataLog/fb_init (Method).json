@@ -1,0 +1,36 @@
+{
+  "library": "AC_DataLog",
+  "title": "fb_init (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_DataLog/Current/AC_DataLog/ComponentManager/pou-RegisterComponent/fb_init.html",
+  "page_title": "RegisterComponent.fb_init (METH)",
+  "text": "AC_DataLog\nComponentManager\nRegisterComponent (FunctionBlock)\nInit (Method)\nfb_exit (Method)\nfb_init (Method)\nConstants (GVL)\nDataLogChannel\nDataLogChannel (FunctionBlock)\nEventCallback\nIDataLogChannel\nIModule\nfb_exit (Method)\nDataLogChannel (FunctionBlock)\nEventCallback\nIDataLogChannel\nIModule\nfb_exit (Method)\nIDataLogChannel (Interface)\nEnable (Property)\nGetAllDataLogVariables (Method)\nGetIsActionOngoing (Method)\nLogAll (Method)\nSetIsActionOngoing (Method)\nUseHashValues (Property)\nDataLogInstanceList (Struct)\nDataLogManager\nDataLogManager (FunctionBlock)\nBias (Property)\nCallPrioLowStart (Method)\nExternaLogAllChannels (Method)\nLogBias (Property)\nDataLogManager (FunctionBlock)\nBias (Property)\nCallPrioLowStart (Method)\nExternaLogAllChannels (Method)\nLogBias (Property)\nIDataLogManager (Interface)\nExternaLogAllChannels (Method)\nIDataLogManager2 (Interface)\nBias (Property)\nLogBias (Property)\nDataLogStorage\nCSVStorage\nDataLogStorage_CSV (FunctionBlock)\nDataLogStorage_CSV (FunctionBlock)\nDataLogStorageBase (FunctionBlock)\nIDataLogStorage\nIModule\nfb_exit (Method)\nprivate\nIDataLogStorage (Folder)\nAddEntry (Method)\nOnAppStop (Method)\nOnResetOrigin (Method)\nSQLiteStorage\nDataLogStorage_SQLite (FunctionBlock)\nDataLogStorage_SQLite (FunctionBlock)\nETableType (Enum)\nIDataLogStorage_SQLite (Interface)\nDataLogVarDesc (Struct)\nFunctions\nBiasToString (Function)\nCreateString (Function)\nIP (ImagePool)\nQueue\nDataLogVarDescForQueue (Struct)\nDataLogVarDescForQueue_FB (FunctionBlock)\nIElement\nNodeDispose (Method)\nTL (TextList)\nGlobalTextList (GlobalTextList)\nLibrary Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nFile and Project Information\nLibrary Reference\n3S Storage\nLibrary Identification\nLibrary Properties\nAC_ModuleBase\nLibrary Identification\nLibrary Properties\nAC_Persistence\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nBase Interfaces\nLibrary Identification\nLibrary Properties\nCAA FB Factory\nLibrary Identification\nLibrary Properties\nCAA Mathematics\nLibrary Identification\nLibrary Properties\nCAA Memory\nLibrary Identification\nLibrary Properties\nCAA Storage\nLibrary Identification\nLibrary Properties\nCAA Types Extern\nLibrary Identification\nLibrary Properties\nCmpApp\nLibrary Identification\nLibrary Properties\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nCmpEventMgr\nLibrary Identification\nLibrary Properties\nCmpLog\nLibrary Identification\nLibrary Properties\nCmpSchedule\nLibrary Identification\nLibrary Properties\nComponent Manager\nLibrary Identification\nLibrary Properties\nElement Collections\nLibrary Identification\nLibrary Properties\nFloatingPointUtils\nLibrary Identification\nLibrary Properties\nMemoryUtils\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nStringUtils\nLibrary Identification\nLibrary Properties\nSysCpuHandling\nLibrary Identification\nLibrary Properties\nSysFile\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysTask\nLibrary Identification\nLibrary Properties\nSysTimeCore\nLibrary Identification\nLibrary Properties\nSysTimeRtc\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nUtil\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElem3DPath\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElemCamDisplayer\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElemMeter\nLibrary Identification\nLibrary Properties\nVisuElemTextEditor\nLibrary Identification\nLibrary Properties\nVisuElemTrace\nLibrary Identification\nLibrary Properties\nVisuElemXYChart\nLibrary Identification\nLibrary Properties\nVisuElems\nLibrary Identification\nLibrary Properties\nVisuElemsAlarm\nLibrary Identification\nLibrary Properties\nVisuElemsDateTime\nLibrary Identification\nLibrary Properties\nVisuElemsSpecialControls\nLibrary Identification\nLibrary Properties\nVisuElemsWinControls\nLibrary Identification\nLibrary Properties\nVisuNativeControl\nLibrary Identification\nLibrary Properties\nVisuSymbols\nLibrary Identification\nLibrary Properties\nAC_DataLog\nDocs\n»\nAC_DataLog\n»\nComponentManager\n»\nRegisterComponent\n(FB)\n»\nRegisterComponent.fb_init (METH)\nRegisterComponent.fb_init (METH)\nÂ¶\nMETHOD fb_init : BOOL\nInOut:\nScope\nName\nType\nComment\nReturn\nfb_init\nBOOL\nInput\nbInitRetains\nBOOL\nif TRUE, the retain variables are initialized (warm start /\ncold start)\nbInCopyCode\nBOOL\nif TRUE, the instance afterwards gets moved into the copy\ncode (online change)",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "fb_init",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "bInitRetains",
+          "Type": "BOOL",
+          "Comment": "if TRUE, the retain variables are initialized (warm start /\ncold start)"
+        },
+        [
+          "bInCopyCode",
+          "BOOL",
+          "if TRUE, the instance afterwards gets moved into the copy\ncode (online change)"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "library": "AlarmManager",
+  "title": "DT_to_Timestamp2 (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Functions/DT_to_Timestamp2.html",
+  "page_title": "DT_to_Timestamp2 (FUN)",
+  "text": "\nFUNCTION DT_to_Timestamp2 :\nTimestamp\nThis function converts âDTâ to âTimestampâ (UTC value).\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "DT_to_Timestamp2",
+          "Type": "Timestamp",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "dtValue",
+          "Type": "DT",
+          "Comment": "Value to convert"
+        },
+        [
+          "iOffset",
+          "INT",
+          "ofset to use"
+        ]
+      ]
+    }
+  ]
+}

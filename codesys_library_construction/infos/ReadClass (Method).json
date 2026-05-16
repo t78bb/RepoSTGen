@@ -1,0 +1,56 @@
+{
+  "library": "DNP3",
+  "title": "ReadClass (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/pou-Master/Commands/ReadClass.html",
+  "page_title": "Master.ReadClass (METH)",
+  "text": "\nMETHOD ReadClass :\nError\nIssue an read class request\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "ReadClass",
+          "Type": "Error",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "qualifier",
+          "Type": "AddressQualifier",
+          "Comment": "address qualifier to use, must be all or 8/16 bitlimited quantity."
+        },
+        [
+          "maxQuantity",
+          "UINT",
+          "quantity to request if qualifier is 8/16 bit limitedquantity."
+        ],
+        [
+          "class0",
+          "BOOL",
+          "TMWDEFS_TRUE to request class 0 (static data)"
+        ],
+        [
+          "class1",
+          "BOOL",
+          "TMWDEFS_TRUE to request class 1 event data"
+        ],
+        [
+          "class2",
+          "BOOL",
+          "TMWDEFS_TRUE to request class 2 event data"
+        ],
+        [
+          "class3",
+          "BOOL",
+          "TMWDEFS_TRUE to request class 3 event data"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_SetMovementQueueBuffer (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/AdministrativeConfiguration/Computation/SMC_SetMovementQueueBuffer.html",
+  "page_title": "SMC_SetMovementQueueBuffer (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_SetMovementQueueBuffer\nThis function block can be used to modify the size\nof the movement queue that is used internally\nby referencing an external buffer and giving its size.\nThis buffer must contain the desired number of movements\nplus one movement.\nOnce called with rising edge and\npMvt\n<>\n0\n, this FB must be called\ncyclically.\nDonât use more than one instance of this FB for one axis group.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "AxisGroup",
+          "Type": "AXIS_GROUP_REF_SM3",
+          "Comment": "Reference to a group of axis"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Comment": "Sets the movement queue buffer on rising edge"
+        },
+        [
+          "pMvt",
+          "POINTER TO SMC_Movement",
+          "Pointer to the first element of the buffer.\n0 means that the internal buffer is used."
+        ],
+        [
+          "nSizeBuf",
+          "UDINT",
+          "Size of the buffer in bytes.  Only used if pMvt <> 0.nSizeBufmust be a power of two multiple ofSIZEOF(SMC_Movement), i.e.\nnSizeBuf = 2^n * SIZEOF(SMC_Movement)"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Done",
+          "Type": "BOOL",
+          "Comment": "The FB is finished"
+        },
+        [
+          "Busy",
+          "BOOL",
+          "The FB is not finished"
+        ],
+        [
+          "Error",
+          "BOOL",
+          "Signals that an error has occurred within the function block"
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "library": "SM3_Basic",
+  "title": "MC_ReadAxisError (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/Diagnostics/MC_ReadAxisError.html",
+  "page_title": "MC_ReadAxisError (FB)",
+  "text": "\nFUNCTION_BLOCK MC_ReadAxisError\nThis function block reads general axis errors reported by the\ndrive.  Additionally it returns information about the software\nlimit switches.\nIt does not return:\nErrors detected by AXIS_REF_SM3 such as software position lag errors.\nThese errors can be checked with\nMC_ReadStatus\n, output\nErrorStop\n.\nErrors related to specific function blocks.  These are reported by the\nError\n/\nErrorID\noutputs of the respective function block.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3",
+          "Comment": "Reference to the axis"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Enable",
+          "Type": "BOOL",
+          "Comment": "WhileTRUE, the outputvalueupdates the parameter value\ncontinuously."
+        },
+        {
+          "Scope": "Output",
+          "Name": "Valid",
+          "Type": "BOOL",
+          "Comment": "TRUE: Valid outputs are available."
+        },
+        [
+          "Busy",
+          "BOOL",
+          "TRUE: Execution of the function block has not finished\nyet."
+        ],
+        [
+          "Error",
+          "BOOL",
+          "TRUE: An error has occurred within the function block."
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ],
+        [
+          "AxisError",
+          "BOOL",
+          "TRUE: An axis error has occured.\nThis is the value of parameter 1030."
+        ],
+        [
+          "AxisErrorID",
+          "DWORD",
+          "Drive specific identification of the axis error.\nThis is the value of parameter 1031."
+        ],
+        [
+          "SWEndSwitchActive",
+          "BOOL",
+          "TRUE: Software limits are exceeded.\nOnly TRUE while the axis is in stateerrorstop.\nReset as soon as the limit switch error has been acknowledged\nusingMC_Reset."
+        ]
+      ]
+    }
+  ]
+}

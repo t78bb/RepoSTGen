@@ -1,0 +1,36 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_AppendObj (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/OutQueue-Functions/SMC_AppendObj.html",
+  "page_title": "SMC_AppendObj (FUN)",
+  "text": "\nFUNCTION SMC_AppendObj : POINTER TO SMC_GEOINFO\nAppends an object to a\nSMC_OUTQUEUE\n.\nIn case of success, the function will return a pointer\nto the new list element, otherwise it will return 0.\ntask-safety: call from producer task only\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "poq",
+          "Type": "POINTER TOSMC_OUTQUEUE",
+          "Comment": "The out queue"
+        },
+        [
+          "pgi",
+          "POINTER TOSMC_GEOINFO",
+          "Object to be appended"
+        ],
+        {
+          "Scope": "Return",
+          "Name": "SMC_AppendObj",
+          "Type": "POINTER TOSMC_GEOINFO",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

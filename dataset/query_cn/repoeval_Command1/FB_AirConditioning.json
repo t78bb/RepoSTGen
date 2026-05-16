@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现空调系统的状态监控和温度输出功能。",
+  "provide_code": "FUNCTION_BLOCK PUBLIC FB_AirConditioning\nVAR_OUTPUT\n\tbActive\t\t\t: BOOL;\n\tlrTemperature\t: LREAL;\nEND_VAR"
+}

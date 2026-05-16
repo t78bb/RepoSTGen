@@ -1,0 +1,23 @@
+{
+  "library": "MemoryBarrier",
+  "title": "MemoryBarrier (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/MemoryBarrier/Current/MemoryBarrier.html",
+  "page_title": "MemoryBarrier (FUN)",
+  "text": "\nFUNCTION MemoryBarrier : BOOL\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "MemoryBarrier",
+          "Type": "BOOL"
+        }
+      ]
+    }
+  ]
+}

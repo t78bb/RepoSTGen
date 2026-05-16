@@ -1,0 +1,23 @@
+{
+  "library": "SM3_CNC",
+  "title": "Compute (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_Trafo_POUs/SoftMotion-Transformations/Wrapper/pou-SMC_Trafo_Wrapper/Compute.html",
+  "page_title": "SMC_Trafo_Wrapper.Compute (METH)",
+  "text": "\nMETHOD PROTECTED Compute : SMC_ERROR\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "Compute",
+          "Type": "SMC_ERROR"
+        }
+      ]
+    }
+  ]
+}

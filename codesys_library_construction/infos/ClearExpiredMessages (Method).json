@@ -1,0 +1,8 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "ClearExpiredMessages (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_RMP_ReliableMessageProtocol/pou-RMPMessageBuffer/ClearExpiredMessages.html",
+  "page_title": "RMPMessageBuffer.ClearExpiredMessages (METH)",
+  "text": "\nMETHOD PUBLIC FINAL ClearExpiredMessages\nClears the expired messages out of the buffer",
+  "tables": []
+}

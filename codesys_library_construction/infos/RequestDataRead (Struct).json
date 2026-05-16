@@ -1,0 +1,31 @@
+{
+  "library": "ModbusFB",
+  "title": "RequestDataRead (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/ModbusFB/Current/ModbusFB/Structs/RequestDataRead.html",
+  "page_title": "RequestDataRead (STRUCT)",
+  "text": "\nTYPE RequestDataRead : STRUCT\nRepresents a read request for ReadCoils, ReadDiscreteInputs, ReadHoldingRegisters and ReadInputRegisters.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "uiStartAddress",
+          "Type": "UINT",
+          "Initial": "0",
+          "Comment": ""
+        },
+        {
+          "Name": "uiQuantity",
+          "Type": "UINT",
+          "Initial": "1",
+          "Comment": "ReadCoils / ReadDiscreteInputs: 1 to 2000\nReadHoldingRegisters / ReadInputRegisters: 1 to 125"
+        }
+      ]
+    }
+  ]
+}

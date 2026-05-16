@@ -1,0 +1,77 @@
+{
+  "library": "SM3_Basic",
+  "title": "MC_SetOverride (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/Movement/MC_SetOverride.html",
+  "page_title": "MC_SetOverride (FB)",
+  "text": "GlobalTextList (GlobalTextList)\nImages\nLibrary Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nProject Information\nGetBooleanProperty (Function)\nGetCompany (Function)\nGetNumberProperty (Function)\nGetTextProperty (Function)\nGetTextProperty2 (Function)\nGetTitle (Function)\nGetVersion (Function)\nGetVersionProperty (Function)\nSM3_Basic\nDataTypes\nAdditional\nMC_CAMSWITCH_REF (Struct)\nMC_CAMSWITCH_TR (Struct)\nMC_OUTPUT_REF (Alias)\nMC_TAPPETMODE (Enum)\nMC_TRACK_REF (Alias)\nMC_TRACK_TR (Struct)\nTRIGGER_REF (Struct)\nAdministrative/Configuration\nSMC3_BrakeSetState (Enum)\nSMC3_PersistPositionDiag (Enum)\nSMC3_PersistPosition_Data (Struct)\nSMC_AXIS_AUTORESTART_MODE (Enum)\nCAM\nCamSegment\nMC_CAM_ID (Struct)\nMC_CAM_REF (FunctionBlock)\nMC_STARTMODE (Enum)\nSMC_CAMTAPPETACTION (Enum)\nSMC_CAMTAPPETTYPE (Enum)\nSMC_CAMTable_LREAL_128_1 (Struct)\nSMC_CAMTable_LREAL_128_2 (Struct)\nSMC_CAMTable_LREAL_256_1 (Struct)\nSMC_CAMTable_LREAL_256_2 (Struct)\nSMC_CAMTable_REAL_128_1 (Struct)\nSMC_CAMTable_REAL_128_2 (Struct)\nSMC_CAMTable_REAL_256_1 (Struct)\nSMC_CAMTable_REAL_256_2 (Struct)\nSMC_CAMTable_UDINT_128_1 (Struct)\nSMC_CAMTable_UDINT_128_2 (Struct)\nSMC_CAMTable_UDINT_256_1 (Struct)\nSMC_CAMTable_UDINT_256_2 (Struct)\nSMC_CAMTable_UINT_128_1 (Struct)\nSMC_CAMTable_UINT_128_2 (Struct)\nSMC_CAMTable_UINT_256_1 (Struct)\nSMC_CAMTable_UINT_256_2 (Struct)\nSMC_CAMTappet (Struct)\nSMC_CAMXYVA (Struct)\nSMC_CAM_TYPE (Enum)\nDiagnostics\nSMC_CommunicationState (Enum)\nSMC_LOGGERMODE (Enum)\nDriveInterface\nMC_DIRECTION (Enum)\nSMC3_CaptureDescription (Struct)\nSMC3_CheckPositionLagMode (Enum)\nSMC3_DriveAcyclicTel (Struct)\nSMC3_MappingEntry (Alias)\nSMC3_ParamCommunicationMethod_Enum (Enum)\nSMC_AXIS_STATE (Enum)\nSMC_AXIS_TYPE (Enum)\nSMC_CONTROLLER_MODE (Enum)\nSMC_ENCODER_REF (Struct)\nSMC_FBERROR (Struct)\nSMC_MOTOR_TYPE (Enum)\nSMC_MOVEMENTTYPE (Enum)\nSMC_RAMPTYPE (Enum)\nSMC_SWITCHING_STATE (Enum)\nSMC_ValueSelect (Enum)\nMovement\nMC_TA_REF (Struct)\nMC_TP_REF (Struct)\nMC_TV_REF (Struct)\nSMC_BACKLASH_MODE (Enum)\nSMC_BACKLASH_STARTSTATE (Enum)\nSMC_HOMING_MODE (Enum)\nSMC_TA (Struct)\nSMC_TP (Struct)\nSMC_TV (Struct)\nDriveInterface\nAXIS_REF\nAXIS_REF_SM3 (FunctionBlock)\nIAxisRef (Interface)\nSMC3_ReinitDrive (FunctionBlock)\nSMC_AxisChangeSettings (FunctionBlock)\nSMC_AxisReadSettings (FunctionBlock)\nAXIS_REF_LOGICAL\nAXIS_REF_LOGICAL_SM3 (FunctionBlock)\nAXIS_REF_MAPPING\nAXIS_REF_MAPPING_SM3 (FunctionBlock)\nAXIS_REF_VIRTUAL\nAXIS_REF_VIRTUAL_SM3 (FunctionBlock)\nENCODER_REF\nENCODER_REF_SM3 (FunctionBlock)\nFREE_ENCODER_REF\nFREE_ENCODER_REF (FunctionBlock)\nGlobals\nLibParams (ParamList)\nSMC_DriveBasic_GlobalVariables (GVL)\nSM_PLCOpen_GlobalVariables (GVL)\nPOUs\nAdditional\nMC_AbortTrigger (FunctionBlock)\nMC_DigitalCamSwitch (FunctionBlock)\nMC_TouchProbe (FunctionBlock)\nSMC_CAMSWITCH_TOGGLE_EVENT (Struct)\nSMC_CAMSWITCH_TOGGLE_EVENTS (Struct)\nSMC_CAMSWITCH_TRACKS_EVENTS (Alias)\nSMC_DigitalCamSwitch_HighPrecision (FunctionBlock)\nSMC_FreeEncoder (FunctionBlock)\nSMC_Logical_Axis (FunctionBlock)\nSMC_StartupDrive (FunctionBlock)\nSMC_VIRTUAL_AXIS (FunctionBlock)\nAdministrative/Configuration\nMC_Power (FunctionBlock)\nMC_Reset (FunctionBlock)\nMC_SetPosition (FunctionBlock)\nSMC3_BrakeControl (FunctionBlock)\nSMC3_PersistPosition (FunctionBlock)\nSMC3_PersistPositionLogical (FunctionBlock)\nSMC3_PersistPositionSingleturn (FunctionBlock)\nSMC_ChangeAxisScalingLinear (FunctionBlock)\nSMC_ChangeAxisScalingRotary (FunctionBlock)\nSMC_ChangeDynamicLimits (FunctionBlock)\nSMC_ChangeGearingRatio (FunctionBlock)\nSMC_GetForecast (FunctionBlock)\nSMC_GetTravelTime (FunctionBlock)\nSMC_SetAdditionalConversionFactors (FunctionBlock)\nSMC_SetControllerMode (FunctionBlock)\nSMC_SetCustomRampType (FunctionBlock)\nSMC_SetForecast (FunctionBlock)\nSMC_SetMovementType (FunctionBlock)\nSMC_SetRampType (FunctionBlock)\nSMC_SetSoftwareLimits (FunctionBlock)\nCAM\nMC_CamTableSelect (FunctionBlock)\nSMC_CAMBounds (FunctionBlock)\nSMC_CAMBounds_Pos (FunctionBlock)\nSMC_CamEditor (FunctionBlock)\nSMC_CamRegister (FunctionBlock)\nSMC_CamTableEvaluate (Function)\nSMC_GetCamSlaveSetPosition (FunctionBlock)\nSMC_GetTappetValue (FunctionBlock)\nSMC_ReadCAM (FunctionBlock)\nSMC_WriteCAM (FunctionBlock)\nDiagnostics\nFBError\nMC_ReadActualPosition (FunctionBlock)\nMC_ReadActualTorque (FunctionBlock)\nMC_ReadActualVelocity (FunctionBlock)\nMC_ReadAxisError (FunctionBlock)\nMC_ReadStatus (FunctionBlock)\nSMC3_BrakeStatus (FunctionBlock)\nSMC_AxisDiagnosticLog (FunctionBlock)\nSMC_CheckAxisCommunication (FunctionBlock)\nSMC_CheckLimits (FunctionBlock)\nSMC_EstimateDeadTime (FunctionBlock)\nSMC_GetMaxSetAccDec (FunctionBlock)\nSMC_GetMaxSetVelocity (FunctionBlock)\nSMC_GetTrackingError (FunctionBlock)\nSMC_InPosition (FunctionBlock)\nSMC_MeasureDistance (FunctionBlock)\nSMC_ReadSetPosition (FunctionBlock)\nSMC_ReadSetValues (FunctionBlock)\nMovement\nDirect\nMC_AccelerationProfile (FunctionBlock)\nMC_Halt (FunctionBlock)\nMC_HaltSuperImposed (FunctionBlock)\nMC_Home (FunctionBlock)\nMC_Jog (FunctionBlock)\nMC_MoveAbsolute (FunctionBlock)\nMC_MoveAdditive (FunctionBlock)\nMC_MoveRelative (FunctionBlock)\nMC_MoveSuperImposed (FunctionBlock)\nMC_MoveVelocity (FunctionBlock)\nMC_PositionProfile (FunctionBlock)\nMC_SetOverride (FunctionBlock)\nMC_Stop (FunctionBlock)\nMC_VelocityProfile (FunctionBlock)\nMaster/Slave\nSMC_BacklashCompensation (FunctionBlock)\nSMC_GetOverride (FunctionBlock)\nSMC_Homing (FunctionBlock)\nSMC_Inch (FunctionBlock)\nSMC_MoveContinuousAbsolute (FunctionBlock)\nSMC_MoveContinuousRelative (FunctionBlock)\nParameter access\nMC_ReadBoolParameter (FunctionBlock)\nMC_ReadParameter (FunctionBlock)\nMC_WriteBoolParameter (FunctionBlock)\nMC_WriteParameter (FunctionBlock)\nSMC_ParameterNumber_CoE (Function)\nSMC_ParameterNumber_SoE (Function)\nSMC_GetCyclicMapping (Function)\ninternal\nTrajectories\nVisualization\nGenerated\nFramed visu helpers\nOriginal\nImagePool_sm3 (ImagePool)\nSM3_Basic_GetVersion (Function)\nFile and Project Information\nLibrary Reference\n3SLicense\nLibrary Identification\nLibrary Properties\nBase Interfaces\nLibrary Identification\nLibrary Properties\nCAA Callback Extern\nLibrary Identification\nLibrary Properties\nCAA Device Diagnosis\nLibrary Identification\nLibrary Properties\nCAA Types Extern\nLibrary Identification\nLibrary Properties\nCmpApp\nLibrary Identification\nLibrary Properties\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nCmpEventMgr\nLibrary Identification\nLibrary Properties\nCmpIecTask\nLibrary Identification\nLibrary Properties\nCmpLog\nLibrary Identification\nLibrary Properties\nComponent Manager\nLibrary Identification\nLibrary Properties\nEmpty\nLibrary Identification\nLibrary Properties\nFloatingPointUtils\nLibrary Identification\nLibrary Properties\nIoDriver Interfaces\nLibrary Identification\nLibrary Properties\nIoStandard\nLibrary Identification\nLibrary Properties\nSM3_CommonPublic\nLibrary Identification\nLibrary Properties\nSM3_Error\nLibrary Identification\nLibrary Properties\nSM3_Math\nLibrary Identification\nLibrary Properties\nSM3_RBase\nLibrary Identification\nLibrary Properties\nSM3_Ramps\nLibrary Identification\nLibrary Properties\nSM3_Shared\nLibrary Identification\nLibrary Properties\nSM3_StringUtils\nLibrary Identification\nLibrary Properties\nSM3_TrajectoryGeneration\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nSysCpuHandling\nLibrary Identification\nLibrary Properties\nSysFile\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysTarget\nLibrary Identification\nLibrary Properties\nSysTime\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nVisuElem3DPath\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElemCamDisplayer\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElemMeter\nLibrary Identification\nLibrary Properties\nVisuElemTextEditor\nLibrary Identification\nLibrary Properties\nVisuElemTrace\nLibrary Identification\nLibrary Properties\nVisuElemXYChart\nLibrary Identification\nLibrary Properties\nVisuElems\nLibrary Identification\nLibrary Properties\nVisuElemsAlarm\nLibrary Identification\nLibrary Properties\nVisuElemsDateTime\nLibrary Identification\nLibrary Properties\nVisuElemsSpecialControls\nLibrary Identification\nLibrary Properties\nVisuElemsWinControls\nLibrary Identification\nLibrary Properties\nVisuInputs\nLibrary Identification\nLibrary Properties\nVisuNativeControl\nLibrary Identification\nLibrary Properties\nSM3_Basic\nDocs\n»\nSM3_Basic\n»\nPOUs\n»\nMovement\n»\nMC_SetOverride (FB)\nMC_SetOverride (FB)\nÂ¶\nFUNCTION_BLOCK MC_SetOverride\nThis function block sets velocity, acceleration/deceleration and\njerk override factors for an axis.\nFunction blocks that are working on the axis consider these override\nfactors. The factors contribute as a factor to the calculation of the\ncommanded velocity, acceleration and jerk of the motion.\nExample 1\nUse of\nMC_SetOverride\nIn this example, the axis is moved from position 0 u to position 100 u\nwith\nMC_MoveAbsolute\n.\nThe maximum velocity is 100 u/s, the maximum acceleration is 1000 u/sÂ²,\nand the maximum jerk is 10000 u/sÂ³.\nShortly after the axis reaches position 50 u, an override is commanded\nwith velocity factor 0.75 (75%).\nNote\nThe override factors can be changed at any time and act directly on the\nongoing motion.\nThe function block instance of MC_SetOverride should be called before the\nmovement function blocks of the axis are called. If it is called after\nthe movement function block, the override will take effect one cycle later.\nChanging the override should require about the same amount of computation as\naborting an ongoing movement with a new movement.\nAn override has no influence on slave axes once they are ramped in / in sync.\nHowever, the override does act while ramping in or gearing in.\nIt is recommended to use ramp type trapezoid or quadratic when using this function\nblock.  With the other ramp types sinÂ² and quadratic_smooth, an overshoot\nmay occur when applying a new override.  This is analogous to the possible overshoot\nwhen aborting movements with these ramp types.\nCoordinated movements (e.g.\nMC_MoveLinearAbsolute\n) commanded on an axis group\nwill consider override factors set on any axis of the axis group.\nIn state\ndiscrete_motion\nreducing the\nAccFactor\nand/or\nJerkFactor\ncan\nlead to a position overshoot â a possible cause of damage.\nIf\nSMC_MoveContinuousAbsolute\nor\nSMC_MoveContinuousRelative\nis\nactive, a change of\nVelFactor\ncan also lead to a position overshoot\nor an unwanted reversal.  See the documentation for these two function\nblocks for details.\nExample 2\nAn override during deceleration leading to position overshoot.\nThe maximum velocity is 100 u/s, the maximum acceleration is 1000 u/sÂ²,\nand the maximum jerk is 10000 u/sÂ³.\nThe override for acceleration and jerk is reduced to 0.5 (50%) during\ndeceleration to the target position 100 u.\nIn this situation, the override leads to a position overshoot and a\nreversal of the axis.\nInOut:\nScope\nName\nType\nInitial\nComment\nInout\nAxis\nAXIS_REF_SM3\nReference to the axis\nInput\nEnable\nBOOL\nTRUE\n: The override factors are continuously written\nVelFactor\nLREAL\n1\nNew override factor for the velocity in the range [0, 1]\nAccFactor\nLREAL\n1\nNew override factor for the acceleration/deceleration in the\nrange (0, 1]\nJerkFactor\nLREAL\n1\nNew override factor for the jerk in the range (0, 1]\nOutput\nEnabled\nBOOL\nTRUE\n: The override factors are set successfully\nBusy\nBOOL\nTRUE\n: Function block is in operation\nError\nBOOL\nTRUE\n: Error has occurred during execution\nErrorID\nSMC_ERROR\nError identification",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3",
+          "Initial": "",
+          "Comment": "Reference to the axis"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Enable",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUE: The override factors are continuously written"
+        },
+        [
+          "VelFactor",
+          "LREAL",
+          "1",
+          "New override factor for the velocity in the range [0, 1]"
+        ],
+        [
+          "AccFactor",
+          "LREAL",
+          "1",
+          "New override factor for the acceleration/deceleration in the\nrange (0, 1]"
+        ],
+        [
+          "JerkFactor",
+          "LREAL",
+          "1",
+          "New override factor for the jerk in the range (0, 1]"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Enabled",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUE: The override factors are set successfully"
+        },
+        [
+          "Busy",
+          "BOOL",
+          "",
+          "TRUE: Function block is in operation"
+        ],
+        [
+          "Error",
+          "BOOL",
+          "",
+          "TRUE: Error has occurred during execution"
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

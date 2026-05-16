@@ -1,0 +1,5 @@
+{
+  "requirement": "This code is intended to implement a mode controller that switches between automatic and manual modes based on input commands and indicates when the mode has changed.",
+  "provide_code": "FUNCTION_BLOCK FB_ModeController\nVAR_INPUT\n\tbSetToAuto\t\t:\tBOOL;\t// 切换到自动模式命令\n\tbSetToManual\t:\tBOOL;\t// 切换到手动模式命令\nEND_VAR\nVAR_OUTPUT\n\teCurrentMode\t:\tMODES;\t// 当前模式\n\tbModeChanged\t:\tBOOL;\t// 模式改变标志\nEND_VAR",
+  "function_name": "FB_ModeController"
+}

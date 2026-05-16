@@ -1,0 +1,8 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "SendCounter (Property)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_RMP_ReliableMessageProtocol/AC_RMP_FBCommunication/pou-IRMPFBCommunication/SendCounter.html",
+  "page_title": "IRMPFBCommunication.SendCounter (PROP)",
+  "text": "\nPROPERTY SendCounter : UDINT\nThis property returns the count of sent full data sets\nand sent via any network.",
+  "tables": []
+}

@@ -1,0 +1,62 @@
+{
+  "library": "Util",
+  "title": "GetTimeStampsDifference (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/TimerSwitch/Functions/GetTimeStampsDifference.html",
+  "page_title": "GetTimeStampsDifference (FUN)",
+  "text": "\nFUNCTION GetTimeStampsDifference :\nERROR\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetTimeStampsDifference",
+          "Type": "ERROR",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "uliDateTimeFirst",
+          "Type": "ULINT",
+          "Comment": "First timestamp in milliseconds since 1.1.1970 00:00:00.000"
+        },
+        [
+          "uliDateTimeSecond",
+          "ULINT",
+          "Second timestamp in milliseconds since 1.1.1970 00:00:00.000"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "uliDays",
+          "Type": "ULINT",
+          "Comment": "Differece of the timestamps in day, hour, minute, second and\nmillisecond"
+        },
+        [
+          "uiHours",
+          "HOUR",
+          ""
+        ],
+        [
+          "uiMinutes",
+          "MINUTE",
+          ""
+        ],
+        [
+          "uiSeconds",
+          "SECOND",
+          ""
+        ],
+        [
+          "uiMilliseconds",
+          "MILLISECOND",
+          ""
+        ]
+      ]
+    }
+  ]
+}

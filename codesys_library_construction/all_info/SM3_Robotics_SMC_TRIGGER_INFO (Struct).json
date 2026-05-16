@@ -1,0 +1,43 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_TRIGGER_INFO (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/AdministrativeConfiguration/Trigger/SMC_TRIGGER_INFO.html",
+  "page_title": "SMC_TRIGGER_INFO (STRUCT)",
+  "text": "Library Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nGetVersion (Function)\nIsLibReleased (Function)\nSM3_Robotics\nBasic types\nIDENT_IN_GROUP_REF_SM3 (Alias)\nMC_CIRC_PATHCHOICE (Enum)\nMC_COORD_REF (Struct)\nMC_EXECUTION_MODE (Enum)\nMC_TRANSITION_MODE (Enum)\nSMC_AXIS_GROUP_COMPATIBILITY_OPTIONS (Struct)\nSMC_AXIS_GROUP_CONTINUE_DATA (FunctionBlock)\nSMC_AXIS_GROUP_STATE (Enum)\nSMC_CIRC_MODE (Enum)\nSMC_DYN_LIMITS (Alias)\nSMC_IDynamicCS (Interface)\nSMC_ORIENTATION_MODE (Enum)\nSMC_POS_REF (Union)\nSMC_PTP_MOVEMENT_TYPE (Enum)\nSMC_READ_TOOL_MODE (Enum)\nPOUs\nAdditional\nSMC_AxisDistanceAxes (Enum)\nSMC_AxisDistanceSubMode (Enum)\nSMC_AxisDistanceTransition (FunctionBlock)\nSMC_AxisDistanceTransitionParam (Function)\nSMC_CornerDistance (FunctionBlock)\nSMC_CornerDistanceTransitionParam (Function)\nSMC_StartVelocity (FunctionBlock)\nSMC_StartVelocityAxes (Enum)\nSMC_StartVelocityTransitionParam (Function)\nSMC_StartupAxisGroup (FunctionBlock)\nAdministrative/Configuration\nAxisGroup\nComputation\nCoordinate systems\nDynamics\nKinematics\nTrigger\nAxisGroup\nAXIS_GROUP_REF_SM3 (FunctionBlock)\nHelpers\nMovements\nDiagnostics\nMC_GroupReadActualAcceleration (FunctionBlock)\nMC_GroupReadActualPosition (FunctionBlock)\nMC_GroupReadActualVelocity (FunctionBlock)\nMC_GroupReadConfiguration (FunctionBlock)\nMC_GroupReadError (FunctionBlock)\nMC_GroupReadStatus (FunctionBlock)\nMC_ReadCoordinateTransform (FunctionBlock)\nMC_ReadKinTransform (FunctionBlock)\nSMC_GroupAddOffset (FunctionBlock)\nSMC_GroupAdditionalAxesTargetPositions (FunctionBlock)\nSMC_GroupConvertPosition (FunctionBlock)\nSMC_GroupGetContinuePosition (FunctionBlock)\nSMC_GroupGetContinueToolOffset (FunctionBlock)\nSMC_GroupReadPathAcceleration (FunctionBlock)\nSMC_GroupReadPathDynamics (FunctionBlock)\nSMC_GroupReadPathVelocity (FunctionBlock)\nSMC_GroupReadPlanningStatistics (FunctionBlock)\nSMC_GroupReadPositionInMovement (FunctionBlock)\nSMC_GroupReadRemainingTrajectoryDuration (FunctionBlock)\nSMC_GroupReadSetAcceleration (FunctionBlock)\nSMC_GroupReadSetJerk (FunctionBlock)\nSMC_GroupReadSetPosition (FunctionBlock)\nSMC_GroupReadSetVelocity (FunctionBlock)\nSMC_GroupTargetPosition (FunctionBlock)\nSMC_ReadKinTransformForAxis (FunctionBlock)\nMovement\nAdditionalAxes\nGroupInterrupt\nMC_GroupContinue (FunctionBlock)\nMC_GroupHalt (FunctionBlock)\nMC_GroupInterrupt (FunctionBlock)\nMC_GroupStop (FunctionBlock)\nMC_MoveCircularAbsolute (FunctionBlock)\nMC_MoveCircularRelative (FunctionBlock)\nMC_MoveDirectAbsolute (FunctionBlock)\nMC_MoveDirectRelative (FunctionBlock)\nMC_MoveLinearAbsolute (FunctionBlock)\nMC_MoveLinearRelative (FunctionBlock)\nSMC_GroupEnableResumeAfterError (FunctionBlock)\nSMC_GroupJog (FunctionBlock)\nSMC_GroupJog2 (FunctionBlock)\nSMC_GroupUpdateContinueData (FunctionBlock)\nSMC_GroupWait (FunctionBlock)\nSMC_MoveAdditionalAxes (FunctionBlock)\ninternal\nDivers\nKernel_CP\nFile and Project Information\nLibrary Reference\n3SLicense\nLibrary Identification\nLibrary Properties\nCmpApp\nLibrary Identification\nLibrary Properties\nCmpIecTask\nLibrary Identification\nLibrary Properties\nCmpLog\nLibrary Identification\nLibrary Properties\nFloatingPointUtils\nLibrary Identification\nLibrary Properties\nSM3_Basic\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nSM3_CPKernelDefaults\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nSM3_CommonPublic\nLibrary Identification\nLibrary Properties\nSM3_Dynamics\nLibrary Identification\nLibrary Properties\nSM3_Error\nLibrary Identification\nLibrary Properties\nSM3_RBase\nLibrary Identification\nLibrary Properties\nSM3_RCP\nLibrary Identification\nLibrary Properties\nSM3_RError\nLibrary Identification\nLibrary Properties\nSM3_Ramps\nLibrary Identification\nLibrary Properties\nSM3_Shared\nLibrary Identification\nLibrary Properties\nSM3_StringUtils\nLibrary Identification\nLibrary Properties\nSM3_TrajectoryGeneration\nLibrary Identification\nLibrary Properties\nSM3_Transformation\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysTarget\nLibrary Identification\nLibrary Properties\nSysTime\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nSM3_Robotics\nDocs\n»\nSM3_Robotics\n»\nPOUs\n»\nAdministrative/Configuration\n»\nTrigger\n»\nSMC_TRIGGER_INFO (STRUCT)\nSMC_TRIGGER_INFO (STRUCT)\nÂ¶\nTYPE SMC_TRIGGER_INFO : STRUCT\nThis structure collects all information about a trigger that\ncan be read using\nSMC_GroupReadTrigger\n.\nInOut:\nName\nType\nComment\nstatus\nSMC_TRIGGER_STATUS\nThe status of the trigger.\nNote\nA trigger can be\nEnabled\nor\nActive\neven if the movement\nit is attached to is already\nDone\n.  This can happen if the\ntrigger is close to the end of a movement and the movement is\nfollowed by a blending movement.  The first movement will report\nDone\nas soon as the blending starts.  But the trigger will\nbe\nEnabled\nor\nActive\nuntil the trigger point has been\nreached.\nmovementId\nSMC_MOVEMENT_ID\nThe id of the movement the trigger\nis assigned to.\ntriggerTime\nLREAL\nThe duration in seconds until the trigger point is reached. The value\nis relative to the start of the current task cycle.\nOnly valid if\nstatus\nis\nActive\n.\nThe value of the\ntriggerTime\nis limited to the current effective\nplanning forecast.  The desired forecast can be configured using the\nfPlanningForecastDuration\ninput of\nSMC_TuneCPKernel\n.  The current\neffective planning forecast can be monitored using the\nCurrentPlanningForecast\noutput of\nMC_GroupReadStatus\n.\nIf no planning forecast has been configured, i.e. if\nfPlanningForecastDuration\nis set to 0, the trigger will become\nActive\nat the start of the\ncycle where the trigger point will be reached and the\ntriggerTime\nwill\ncontain the remaining duration until the trigger point is reached.\nThe trigger time is reported in the range\n0 <= triggerTime <= MAX(TaskCycleTime,\nfPlanningForecastDuration\n).\nerrorId\nSMC_ERROR\nThe specific error code if\nstatus\nis\nError\n.\nname\nSTRING\nThe name of the trigger.",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "status",
+          "Type": "SMC_TRIGGER_STATUS",
+          "Comment": "The status of the trigger.NoteA trigger can beEnabledorActiveeven if the movement\nit is attached to is alreadyDone.  This can happen if the\ntrigger is close to the end of a movement and the movement is\nfollowed by a blending movement.  The first movement will reportDoneas soon as the blending starts.  But the trigger will\nbeEnabledorActiveuntil the trigger point has been\nreached."
+        },
+        {
+          "Name": "movementId",
+          "Type": "SMC_MOVEMENT_ID",
+          "Comment": "The id of the movement the trigger\nis assigned to."
+        },
+        {
+          "Name": "triggerTime",
+          "Type": "LREAL",
+          "Comment": "The duration in seconds until the trigger point is reached. The value\nis relative to the start of the current task cycle.\nOnly valid ifstatusisActive.\nThe value of thetriggerTimeis limited to the current effective\nplanning forecast.  The desired forecast can be configured using thefPlanningForecastDurationinput ofSMC_TuneCPKernel.  The current\neffective planning forecast can be monitored using theCurrentPlanningForecastoutput ofMC_GroupReadStatus.\nIf no planning forecast has been configured, i.e. iffPlanningForecastDurationis set to 0, the trigger will becomeActiveat the start of the\ncycle where the trigger point will be reached and thetriggerTimewill\ncontain the remaining duration until the trigger point is reached.\nThe trigger time is reported in the range\n0 <= triggerTime <= MAX(TaskCycleTime,fPlanningForecastDuration)."
+        },
+        {
+          "Name": "errorId",
+          "Type": "SMC_ERROR",
+          "Comment": "The specific error code ifstatusisError."
+        },
+        {
+          "Name": "name",
+          "Type": "STRING",
+          "Comment": "The name of the trigger."
+        }
+      ]
+    }
+  ]
+}

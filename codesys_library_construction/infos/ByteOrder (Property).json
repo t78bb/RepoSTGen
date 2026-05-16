@@ -1,0 +1,8 @@
+{
+  "library": "AlarmManager",
+  "title": "ByteOrder (Property)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Alarm-storage-API/pou-IAlarmStorageReaderConsumer2/ByteOrder.html",
+  "page_title": "IAlarmStorageReaderConsumer2.ByteOrder (PROP)",
+  "text": "\nPROPERTY ByteOrder :\nEAlarmByteOrder\nGet/Set the byte order of the DB",
+  "tables": []
+}

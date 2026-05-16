@@ -1,0 +1,43 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_NC_FindProgramFile (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/ReadNCFile2/SMC_NC_FindProgramFile.html",
+  "page_title": "SMC_NC_FindProgramFile (FUN)",
+  "text": "\nFUNCTION SMC_NC_FindProgramFile : SMC_ERROR\nFor a given CNC sub program name, such as âSUBâ, looks for the\ncorresponding CNC file âsub.cncâ in one of the subdirectories\n(aSubProgramDirs).\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SMC_NC_FindProgramFile",
+          "Type": "SMC_ERROR",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "strProgramName",
+          "Type": "STRING",
+          "Comment": "The CNC sub program name.  Case does not matter."
+        },
+        {
+          "Scope": "Inout",
+          "Name": "strFilePath",
+          "Type": "STRING(255)",
+          "Comment": "Out: On success, the full path of the cnc file containing the\nsub program."
+        },
+        {
+          "Scope": "Inout Const",
+          "Name": "aSubProgramDirs",
+          "Type": "ARRAY [0..4] OF\nSTRING(174)",
+          "Comment": "An array of up to 5 directories where subprograms are searched.\nFor a subprogram with name âSUBâ, the file âsub.cncâ (lower-case)\nis searched in each of the given directories, starting with\ndirectory aSubProgramDirs[0], in ascending order.  The first match\nis used.\nThe first empty directory name ends the search."
+        }
+      ]
+    }
+  ]
+}

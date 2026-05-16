@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现电梯门的自动控制，包括开门、关门及状态管理。",
+  "provide_code": "FUNCTION_BLOCK FB_ElevatorDoorController\nVAR_INPUT\n\tbArrivedAtTarget\t:\tBOOL;\t\t// 到达目标楼层\n\tbDoorClosed\t\t\t:\tBOOL;\t\t// 门已关闭传感器\nEND_VAR\nVAR_OUTPUT\n\tbOpenDoor\t\t\t:\tBOOL;\t\t// 开门命令\n\tbCloseDoor\t\t\t:\tBOOL;\t\t// 关门命令\n\tbDoorOpen\t\t\t:\tBOOL;\t\t// 门打开状态\n\tbDoorReady\t\t\t:\tBOOL;\t\t// 门准备好（可以移动）\nEND_VAR"
+}

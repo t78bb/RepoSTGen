@@ -1,0 +1,61 @@
+{
+  "library": "CmpBACnet",
+  "title": "BACnetReadAllPropertyDataContents (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/CmpBACnet/Current/BACnetClientAPI/BACnetReadAllPropertyDataContents.html",
+  "page_title": "BACnetReadAllPropertyDataContents (FUN)",
+  "text": "\nFUNCTION BACnetReadAllPropertyDataContents :\nIEC_BACNET_STATUS\nTries to read all property contained data at once.\nSends one or more requests to read the value of a property of an object.\nThis function is a convenience function. It tries to get the complete property\ncontained data in different ways automatically so that the user application has\nnot to implement special strategies and fallbacks here.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "BACnetReadAllPropertyDataContents",
+          "Type": "IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "pSourceAddress",
+          "Type": "POINTER TOIEC_BACNET_ADDRESS",
+          "Comment": "If the BACnet application has only one device constructed and installed, this can\nbe 0. In this case the MAC address of this device will be used. Otherwise this\nshall be the MAC address returned on device object construction."
+        },
+        [
+          "pDestinationAddress",
+          "POINTER TOIEC_BACNET_ADDRESS",
+          "This is the MAC address of the device to which the request\nshould be sent."
+        ],
+        [
+          "pReadInfo",
+          "POINTER TOIEC_BACNET_READ_INFO",
+          "A pointer to the service information data structure. This data structure identifies\nthe property within the device and includes the object ID, property ID, and array index."
+        ],
+        [
+          "pAPDUParams",
+          "POINTER TOIEC_BACNET_APDU_PROPERTIES",
+          "A pointer to the APDU-Properties structure which sets APDU properties for this\ntransaction only. This does not change global defaults or settings for the application\nAPDU Properties. This argument may be 0. In this case APDU properties  are used\nwhich were specified in the device object properties of the applications device which\nsends the request."
+        ],
+        [
+          "pContents",
+          "POINTER TOIEC_BACNET_PROPERTY_CONTENTS",
+          "Pointer to a property contents buffer structure. This data structure must contain a\npointer to a buffer into which the value is copied. Upon successful completion, the\ncontentsIEC_BACNET_DATA_TYPEtag attribute indicates the datatype of the property.\nThe buffer pointer in the property contents structure may be 0 along with the size.\nIn this case the API will fill the buffer and the application is responsible to release\nit with a call toBACnetFreeStackAllocatedMemoryif the buffer is no longer needed."
+        ],
+        [
+          "pTransactionToken",
+          "POINTER TOBACnetAsyncTransactionToken",
+          "Transaction token of the asynchronous call - seeBACnetAsyncTransactionToken."
+        ],
+        [
+          "pError",
+          "POINTER TOIEC_BACNET_ERROR",
+          "A pointer to a structure to hold BACnet Error information. pError may be 0 if the\napplication isnât interested in detailed error information."
+        ]
+      ]
+    }
+  ]
+}

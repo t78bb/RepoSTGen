@@ -1,0 +1,51 @@
+{
+  "library": "MemoryUtils",
+  "title": "ByteBuffer (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/MemoryUtils/Current/MemoryUtils/Functionblocks/ByteBuffer.html",
+  "page_title": "ByteBuffer (FB)",
+  "text": "\nFUNCTION_BLOCK ByteBuffer\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "pbyBuffer",
+          "Type": "POINTER TO BYTE",
+          "Comment": ""
+        },
+        [
+          "udiBufferSize",
+          "UDINT",
+          ""
+        ],
+        [
+          "eByteOrder",
+          "ByteOrder",
+          "Byte order the data shall have"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "pos",
+          "Type": "UDINT",
+          "Comment": ""
+        },
+        [
+          "udiBytesRemaining",
+          "UDINT",
+          ""
+        ],
+        [
+          "xOverflow",
+          "BOOL",
+          "TRUE if a function would read or write over the buffer\nmemory."
+        ]
+      ]
+    }
+  ]
+}

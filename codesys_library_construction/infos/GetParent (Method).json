@@ -1,0 +1,31 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "GetParent (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_Module/pou-IModuleTree/GetParent.html",
+  "page_title": "IModuleTree.GetParent (METH)",
+  "text": "\nMETHOD GetParent :\nIModule\nReturns the parent instance of a given module instance\nReturns 0 if (and only if) md is a toplevel module instance.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetParent",
+          "Type": "IModule",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "md",
+          "Type": "IModule",
+          "Comment": "The module instance that is queried (must not be 0)"
+        }
+      ]
+    }
+  ]
+}

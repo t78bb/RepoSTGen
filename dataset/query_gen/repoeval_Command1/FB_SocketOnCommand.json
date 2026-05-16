@@ -1,0 +1,6 @@
+{
+  "requirement": "This code should implement a function block named FB_SocketOnCommand that controls a socket device by executing an on command. It should include a method named Execute that activates the socket if a valid reference to the socket (refSocket) is provided. The validity of the socket reference should be checked using the __ISVALIDREF function. Additionally, the function block should have an initialization method named FB_init, which accepts three parameters: bInitRetains (a boolean indicating if retain variables should be initialized), bInCopyCode (a boolean indicating if the instance should be moved into the copy code for online changes), and refNewSocket (a reference to a new FB_Socket). The FB_init method should set refSocket to refNewSocket if refNewSocket is valid; otherwise, it should set refSocket to 0 (null reference).",
+  "provide_code": "FUNCTION_BLOCK PUBLIC FB_SocketOnCommand IMPLEMENTS I_Command",
+  "function_name": "FB_SocketOnCommand",
+  "requirement_cn": "该代码应实现一个名为 FB_SocketOnCommand 的功能块，用于通过执行开启命令来控制一个插座设备。它应包括一个名为 Execute 的方法，该方法在提供了有效的插座引用（refSocket）时激活插座。插座引用的有效性应使用 __ISVALIDREF 函数进行检查。此外，功能块应具有一个名为 FB_init 的初始化方法，该方法接受三个参数：bInitRetains（一个布尔值，指示是否应初始化保持变量）、bInCopyCode（一个布尔值，指示是否应将实例移动到在线更改的复制代码中）和 refNewSocket（对新 FB_Socket 的引用）。如果 refNewSocket 有效，FB_init 方法应将 refSocket 设置为 refNewSocket；否则，应将 refSocket 设置为 0（空引用）。"
+}

@@ -1,0 +1,37 @@
+{
+  "library": "String Builder Base",
+  "title": "ValidateSegment (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Builder Base/Current/BuilderBase/Interfaces/pou-IBuilder/Segments/ValidateSegment.html",
+  "page_title": "IBuilder.ValidateSegment (METH)",
+  "text": "\nMETHOD ValidateSegment :\nERROR\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "ValidateSegment",
+          "Type": "ERROR"
+        },
+        {
+          "Scope": "Input",
+          "Name": "pbyData",
+          "Type": "POINTER TO BYTE"
+        },
+        [
+          "udiSize",
+          "UDINT"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "udiCount",
+          "Type": "UDINT"
+        }
+      ]
+    }
+  ]
+}

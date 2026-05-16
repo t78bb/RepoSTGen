@@ -1,0 +1,58 @@
+{
+  "library": "DNP3",
+  "title": "AnyNumberValueUnion (Union)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Types/AnyNumber/AnyNumberValueUnion.html",
+  "page_title": "AnyNumberValueUnion (UNION)",
+  "text": "\nTYPE AnyNumberValueUnion : UNION\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "valSINT",
+          "Type": "SINT",
+          "Comment": "value represention for SINT"
+        },
+        {
+          "Name": "valUSINT",
+          "Type": "USINT",
+          "Comment": "value represention for USINT"
+        },
+        {
+          "Name": "valINT",
+          "Type": "INT",
+          "Comment": "value represention for INT"
+        },
+        {
+          "Name": "valUINT",
+          "Type": "UINT",
+          "Comment": "value represention for UINT"
+        },
+        {
+          "Name": "valDINT",
+          "Type": "DINT",
+          "Comment": "value represention for DINT"
+        },
+        {
+          "Name": "valUDINT",
+          "Type": "UDINT",
+          "Comment": "value represention for UDINT"
+        },
+        {
+          "Name": "valREAL",
+          "Type": "REAL",
+          "Comment": "value represention for REAL"
+        },
+        {
+          "Name": "valLREAL",
+          "Type": "LREAL",
+          "Comment": "value represention for LREAL"
+        }
+      ]
+    }
+  ]
+}

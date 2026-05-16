@@ -1,0 +1,23 @@
+{
+  "library": "ModbusFB",
+  "title": "Capacity (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/ModbusFB/Current/ModbusFB/Function-Blocks/Util/pou-ByteBuffer/Capacity.html",
+  "page_title": "ByteBuffer.Capacity (METH)",
+  "text": "\nMETHOD Capacity : UINT\nReturns the capacity.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "Capacity",
+          "Type": "UINT"
+        }
+      ]
+    }
+  ]
+}

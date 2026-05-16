@@ -1,0 +1,31 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_GetCount (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/OutQueue-Functions/SMC_GetCount.html",
+  "page_title": "SMC_GetCount (FUN)",
+  "text": "\nFUNCTION SMC_GetCount : UINT\nReturns the number of objects that are stored in\nthe\nSMC_OUTQUEUE\n(\npoq\n).\ntask-safety: task-safe, but result may be too big\n(when called from producer task) or too small (consumer task)\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "poq",
+          "Type": "POINTER TOSMC_OUTQUEUE",
+          "Comment": "Out queue"
+        },
+        {
+          "Scope": "Return",
+          "Name": "SMC_GetCount",
+          "Type": "UINT",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

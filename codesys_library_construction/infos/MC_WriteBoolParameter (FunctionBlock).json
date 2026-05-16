@@ -1,0 +1,62 @@
+{
+  "library": "SM3_Basic",
+  "title": "MC_WriteBoolParameter (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/Parameter-access/MC_WriteBoolParameter.html",
+  "page_title": "MC_WriteBoolParameter (FB)",
+  "text": "\nFUNCTION_BLOCK MC_WriteBoolParameter\nMC_WriteBoolParameter\nwrites the value of the\nSoftMotion parameter specified in\nParameterNumber\n.\nThe boolean variable\nValue\ncontains the value for writing.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3",
+          "Comment": "Reference to axis"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Comment": "Rising edge: starts the execution ofMC_WriteBoolParameter."
+        },
+        [
+          "ParameterNumber",
+          "DINT",
+          "You can find a description of the most used parameter numbers inAXIS_REF_SM3.\nNegative values are fieldbus specific parameters.\nSeeSMC_ParameterNumber_CoEandSMC_ParameterNumber_SoEto translate fieldbus object identifiers to parameter numbers."
+        ],
+        [
+          "Value",
+          "BOOL",
+          "Boolean value to be written."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Done",
+          "Type": "BOOL",
+          "Comment": "TRUE: Parameter has been written successfully."
+        },
+        [
+          "Busy",
+          "BOOL",
+          "TRUE: Execution of the function block has not been\nfinished."
+        ],
+        [
+          "Error",
+          "BOOL",
+          "TRUE: Error has occurred during execution."
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

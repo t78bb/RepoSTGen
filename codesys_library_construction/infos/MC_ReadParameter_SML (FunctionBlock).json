@@ -1,0 +1,62 @@
+{
+  "library": "SML_Basic",
+  "title": "MC_ReadParameter_SML (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SML_Basic/Current/PLCopen/MC_ReadParameter_SML.html",
+  "page_title": "MC_ReadParameter_SML (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL MC_ReadParameter_SML\nReads the value of a SoftMotion or axis specific parameter.\nFor the list of all SoftMotion parameter numbers see\nAxis_REF_SML\n.\nThe value of parameters is converted to\nLREAL\n.\nTo read an axis specific parameter, the axis specific parameter number must be negated.\nFor CANOpen based parameter, the axis specific parameter number is built from the\nobject number 16#ABCD (2 Bytes) and the subindex 16#EF (1 Byte): 16#ABCDEF.\nExample: read object 16#6070, subindex 0: ParameterNumber:= -16#607000.\nNote\nAxis specific parameters are interpreted as unsigned values and converted\nto\nLREAL\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SML",
+          "Comment": "Reference to the axis"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Enable",
+          "Type": "BOOL",
+          "Comment": "Get value is updated continuously while enabled"
+        },
+        [
+          "ParameterNumber",
+          "DINT",
+          "Number of the parameter"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Valid",
+          "Type": "BOOL",
+          "Comment": "The value is valid"
+        },
+        [
+          "Busy",
+          "BOOL",
+          "The FB is not finished and new output values are to be\nexpected"
+        ],
+        [
+          "Error",
+          "BOOL",
+          "An error occurred"
+        ],
+        [
+          "ErrorID",
+          "SML_ERROR",
+          "The error number"
+        ],
+        [
+          "Value",
+          "LREAL",
+          "The value of the parameter, converted toLREAL"
+        ]
+      ]
+    }
+  ]
+}

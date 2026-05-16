@@ -1,0 +1,28 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_CalcLengthGeo (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/GeoInfo-Help-Functions/SMC_CalcLengthGeo.html",
+  "page_title": "SMC_CalcLengthGeo (FUN)",
+  "text": "\nFUNCTION SMC_CalcLengthGeo : BOOL\nThis function calculates the\ndLength\nof an\nSMC_GEOINFO\nobject.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SMC_CalcLengthGeo",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Input",
+          "Name": "pg",
+          "Type": "POINTER TOSMC_GEOINFO"
+        }
+      ]
+    }
+  ]
+}

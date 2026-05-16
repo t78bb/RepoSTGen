@@ -1,0 +1,128 @@
+{
+  "library": "PLCopen Safety FBs",
+  "title": "FBS_TESTSEN (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/PLCopen Safety FBs/Current/PLCopenSafetyFBs/Enums/FBS_TESTSEN.html",
+  "page_title": "FBS_TESTSEN (ENUM)",
+  "text": "\nTYPE FBS_TESTSEN :\nDefinition of SF_TestableSafetySensor function block states and its diagnostic values.\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "IDLE",
+          "Initial": "16#0",
+          "Comment": "The function block is not active (initial state)."
+        },
+        {
+          "Name": "INIT",
+          "Initial": "16#8401",
+          "Comment": "An activation has been detected by the FB."
+        },
+        {
+          "Name": "ESPE_INTERRUPTED_1",
+          "Initial": "16#8802",
+          "Comment": "The FB has detected a safety demand. The switch has not been\nautomatically tested yet."
+        },
+        {
+          "Name": "WAIT_FOR_RESET_1",
+          "Initial": "16#8402",
+          "Comment": "Wait for rising trigger of Reset after state 8802."
+        },
+        {
+          "Name": "EXT_FUNC_TEST",
+          "Initial": "16#8002",
+          "Comment": "The automatic sensor test was faulty. An external manual sensor test is necessary.\nThe support for the necessary external manual sensor test has been acti-vated at the FB (NoExternalTest = FALSE).\nA negative signal edge at the sensor is required."
+        },
+        {
+          "Name": "ESPE_ESPE_INTERRUPT_EXTTEST",
+          "Initial": "16#8804",
+          "Comment": "The automatic sensor test was faulty. An external manual sensor test is necessary.\nThe support FOR the necessary external manual sensor test has been activated at the FB (NoExternalTest = FALSE). A TRUE signal at the sensor is required"
+        },
+        {
+          "Name": "END_EXTTEST",
+          "Initial": "16#8404",
+          "Comment": "The automatic sensor test was faulty. An external manual sensor test is necessary. The support for the necessary external manual sensor test has been acti-vated at the FB (NoExternalTest = FALSE).\nThe external manual test is complete. The FB detected a complete sensor switching cycle (external controlled)."
+        },
+        {
+          "Name": "ESPE_FREE_NO_TEST",
+          "Initial": "16#8010",
+          "Comment": "The FB has not detected a safety demand. The sensor has not\nbeen tested automatically."
+        },
+        {
+          "Name": "ESPE_INTERRUPTED_2",
+          "Initial": "16#8806",
+          "Comment": "The FB has detected a safety demand. The switch was\nautomatically tested."
+        },
+        {
+          "Name": "WAIT_FOR_RESET_2",
+          "Initial": "16#8406",
+          "Comment": "Wait for rising trigger of Reset after state 8812"
+        },
+        {
+          "Name": "TEST_REQUEST",
+          "Initial": "16#8020",
+          "Comment": "The automatic sensor test is active. Test Timer is started first time. The transmitter signal of the sensor is switched off by the FB.\nThe signal of the receiver must follow the signal of the transmitter."
+        },
+        {
+          "Name": "TEST_ACTIVE",
+          "Initial": "16#8030",
+          "Comment": "The automatic sensor test is active. Test Timer is started second time. The transmitter signal of the sensor is switched on by the FB.\nThe signal of the receiver must follow the signal of the transmitter."
+        },
+        {
+          "Name": "ESPE_FREE_TEST_OK",
+          "Initial": "16#8000",
+          "Comment": "The FB has not detected a safety demand. The sensor was\nautomatically tested."
+        },
+        {
+          "Name": "ERR_PARAMETER",
+          "Initial": "16#C000",
+          "Comment": "Invalid value at the TestTime parameter. Values between 0 ms\nand 150 ms are possible."
+        },
+        {
+          "Name": "ERR_RESET_1",
+          "Initial": "16#C001",
+          "Comment": "Static Reset condition detected after FB activation."
+        },
+        {
+          "Name": "ERR_RESET_2",
+          "Initial": "16#C011",
+          "Comment": "Static Reset condition detected in state 8403."
+        },
+        {
+          "Name": "ERR_RESET_3",
+          "Initial": "16#C021",
+          "Comment": "Static Reset condition detected in state Cx10."
+        },
+        {
+          "Name": "ERR_RESET_4",
+          "Initial": "16#C031",
+          "Comment": "Static Reset condition detected in state 8406."
+        },
+        {
+          "Name": "ERR_RESET_5",
+          "Initial": "16#C041",
+          "Comment": "Static Reset condition detected in state C000."
+        },
+        {
+          "Name": "ERR_RESET_6",
+          "Initial": "16#C051",
+          "Comment": "Static Reset condition detected in state 8413."
+        },
+        {
+          "Name": "ERR_TEST_1",
+          "Initial": "16#C010",
+          "Comment": "Test time elapsed in state 8020 or 8030. NOT (S_OSSD_IN =\nTRUE AND NoExternalTest = TRUE)"
+        },
+        {
+          "Name": "ERR_TEST_2",
+          "Initial": "16#C410",
+          "Comment": "Test time elapsed in state 8020 or 8030. S_OSSD_IN = TRUE\nAND NoExternalTest = TRUE"
+        }
+      ]
+    }
+  ]
+}

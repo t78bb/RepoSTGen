@@ -1,0 +1,25 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_AxisDistanceSubMode (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/Additional/SMC_AxisDistanceSubMode.html",
+  "page_title": "SMC_AxisDistanceSubMode (ENUM)",
+  "text": "\nTYPE SMC_AxisDistanceSubMode :\nDetermines how axis distances are interpreted for transition mode\nMC_TRANSITION_MODE.TMAxisDistance\n.\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "Maximum",
+          "Comment": "Blending is done once the first axis reaches the distance"
+        },
+        {
+          "Name": "Euclidean",
+          "Comment": "Blending is done once the euclidean distance is reached."
+        }
+      ]
+    }
+  ]
+}

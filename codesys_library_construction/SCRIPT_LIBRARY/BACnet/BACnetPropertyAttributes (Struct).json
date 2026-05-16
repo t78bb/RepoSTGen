@@ -1,0 +1,33 @@
+{
+  "library": "BACnet",
+  "title": "BACnetPropertyAttributes (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/Structs/BACnetPropertyAttributes.html",
+  "page_title": "BACnetPropertyAttributes (STRUCT)",
+  "text": "\nTYPE BACnetPropertyAttributes : STRUCT\nBACnetPropertyAttributes are used to configure existance, writability and persistence of BACnet object properties.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Name": "existent",
+          "Type": "BACnetPropertyAttributeExistent",
+          "Initial": "BACnetPropertyAttributeExistent.DEFAULT"
+        },
+        {
+          "Name": "writable",
+          "Type": "BACnetPropertyAttributeWritable",
+          "Initial": "BACnetPropertyAttributeWritable.DEFAULT"
+        },
+        {
+          "Name": "persist",
+          "Type": "BACnetPropertyAttributePersistent",
+          "Initial": "BACnetPropertyAttributePersistent.DEFAULT"
+        }
+      ]
+    }
+  ]
+}

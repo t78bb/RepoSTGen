@@ -1,0 +1,23 @@
+{
+  "library": "SM3_CNC",
+  "title": "JumpSubCall (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/GSentence/pou-SMC_GSentenceQueue/JumpSubCall.html",
+  "page_title": "SMC_GSentenceQueue.JumpSubCall (METH)",
+  "text": "\nMETHOD JumpSubCall\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout Const",
+          "Name": "name",
+          "Type": "STRING"
+        }
+      ]
+    }
+  ]
+}

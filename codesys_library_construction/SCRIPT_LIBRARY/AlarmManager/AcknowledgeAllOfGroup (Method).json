@@ -1,0 +1,25 @@
+{
+  "library": "AlarmManager",
+  "title": "AcknowledgeAllOfGroup (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/pou-IAlarmHandler/AcknowledgeAllOfGroup.html",
+  "page_title": "IAlarmHandler.AcknowledgeAllOfGroup (METH)",
+  "text": "\nMETHOD AcknowledgeAllOfGroup\nAcknowledges all active alarms of an alarm group, whose alarm class hasnât the flag\nâacknowledge separatelyâ set\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "usiAlarmGroupID",
+          "Type": "ALARMGROUP_ID",
+          "Comment": "The ID of the alarm group"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "library": "ModbusFB",
+  "title": "Server (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/ModbusFB/Current/ModbusFB/Function-Blocks/Server/Server.html#",
+  "page_title": "Server (FB)",
+  "text": "\nFUNCTION_BLOCK ABSTRACT Server\nMODBUS server (slave) base class.\nSupported function codes\nÂ¶\nSupported function codes can be configured, see fcsSupported.\nBy default the MODBUS server supports:\nReadCoils\nReadDiscreteInputs\nReadHoldingRegisters\nReadInputRegisters\nWriteSingleCoil\nWriteSingleRegister\nWriteMultipleRegisters\nReadWriteMultipleRegisters\nOptionally it supports also:\nMaskWriteRegister\nâdata modelâ\nÂ¶\nThe âdata modelâ allows:\nnon-consecutive index for the âdata itemsâ (for example: index 0..9, 20..29)\nmultiple (non-consecutive) memory blocks for âdata itemsâ in one âdata blockâ (for example: index 0..9 => memory block 1, index 20..29 => memory block 2)\nnot-memory-mapped âdata itemsâ (user code needs to be written to handle reads/writes for those âdata itemsâ)\nâdiscrete inputsâ / âcoilsâ : data item size 1 bit or 8 bit (basically: ARRAY [0..numBits/8] OF BYTE vs. ARRAY [0..numBits-1] OF BOOL)\nâinput registersâ / âholding registersâ : data item size of 16 bit (basically: ARRAY [0..numRegisters-1] OF UDINT)\noverlapping memory blocks, could overlap âregistersâ with âregistersâ as well as âregistersâ with âdiscrete inputsâ / âcoilsâ (caution - hard to use feature)\nTo support all this the âdata modelâ (\nTableDefinitions\n) defines zero or more\nTableSection\nfor each of the MODBUS âprimary tablesâ (\nTableDefinition\n).\nSome more or less obvious limitations:\nall âdata itemsâ in one section need to have the same TableSection.uiDataItemSize\nall âdata itemâ index in one âprimary tableâ have to be unique, so no section index overlap is allowed of course\nread/write requests must not span more than one section\nâdata itemâ offset / âdata itemâ numbers\nÂ¶\nPlease note: unlike standard MODBUS, in CODESYS MODBUS the âdata itemâ numbers are equal to the âdata addressesâ.\nThe MODBUS standard states: âIn the MODBUS data Model each element within a data block is numbered from 1 to n.â\nIn CODESYS MODBUS the âdata itemsâ are numbered from 0 to n-1.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "xEnable",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "Enables the server, take over the configuration information fcsSupported and dataModel.\nIf the âdata modelâ (tableDefinitions) contains configuration errors, the Server will not got busy (xBusy = FALSE)."
+        },
+        [
+          "fcsSupported",
+          "SupportedFcs",
+          "Constants.SUPPORTED_FCS_SIMPLE_SERVER",
+          "Supported âfunction codesâ, accepted at xEnable FALSE => TRUE.\nIn case fcsSupported is not assigned by the application it defaults toConstants.SUPPORTED_FCS_SIMPLE_SERVER."
+        ],
+        [
+          "dataModel",
+          "TableDefinitions",
+          "",
+          "âdata modelâ, accepted at xEnable FALSE => TRUE."
+        ],
+        [
+          "tInactivityInfoTime",
+          "UDINT",
+          "0",
+          "âinactivity info timeâ (in milliseconds).\nIf no valid requests are received in this time xInactive is signaling inactivity - default = 0 -> no âinactivity infoâ."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "xRunning",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Server is up and running, waiting for requests."
+        },
+        [
+          "xError",
+          "BOOL",
+          "",
+          "Error"
+        ],
+        [
+          "eErrorID",
+          "Error",
+          "",
+          "Error status"
+        ],
+        [
+          "xInactive",
+          "BOOL",
+          "",
+          "No valid requests received for tInactivityTimeOut."
+        ],
+        [
+          "udiNumMsgRecv",
+          "UDINT",
+          "",
+          "Request statistics: number of request messages received\nsince enabling the Server."
+        ],
+        [
+          "udiNumMsgReply",
+          "UDINT",
+          "",
+          "Request statistics: number of reply messages send since\nenabling the Server."
+        ],
+        [
+          "udiNumMsgExcReply",
+          "UDINT",
+          "",
+          "Request statistics: number of exception reply messages send\nsince enabling the Server."
+        ],
+        [
+          "udiNumMsgExcReplyIllFct",
+          "UDINT",
+          "",
+          "Request statistics: number of exception reply messages send\nsince enabling the Server, signaling illegal function."
+        ],
+        [
+          "udiNumMsgExcReplyIllDataAdr",
+          "UDINT",
+          "",
+          "Request statistics: number of exception reply messages send\nsince enabling the Server, signaling illegal data address."
+        ],
+        [
+          "udiNumMsgExcReplyIllDataValue",
+          "UDINT",
+          "",
+          "Request statistics: number of exception reply messages send\nsince enabling the Server, signaling illegal data value."
+        ],
+        [
+          "xReadRequest",
+          "BOOL",
+          "",
+          "Read request(s) happened since last call, rejected requests\nincluded."
+        ],
+        [
+          "udiNumReadRequests",
+          "UDINT",
+          "",
+          "Request statistics: read request counter, rejected requests\nincluded."
+        ],
+        [
+          "xWriteRequest",
+          "BOOL",
+          "",
+          "Write request(s) happened since last call, rejected requests\nincluded."
+        ],
+        [
+          "udiNumWriteRequests",
+          "UDINT",
+          "",
+          "Request statistics: write request counter, rejected requests\nincluded."
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "library": "SM3_CNC",
+  "title": "SM3_CNC_GetVersion (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM3_CNC_GetVersion.html",
+  "page_title": "SM3_CNC_GetVersion (FUN)",
+  "text": "\nFUNCTION SM3_CNC_GetVersion : DWORD\nReturns the version of the CNC library as a DWORD.\nEach byte of the DWORD contains one part of the version number\n(from most significant to leas significant):\nMajor | Minor | ServicePack | 2*Patch - âReleasedâ\nThe patch number is doubled and 1 is subtracted if the Released-Flag\nof the library is not set.\nExamples:\n3.5.8.0, not released   ->  16#030507FF\n3.5.8.0, released       ->  16#03050800\n3.5.8.10, not released  ->  16#03050813\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SM3_CNC_GetVersion",
+          "Type": "DWORD"
+        }
+      ]
+    }
+  ]
+}

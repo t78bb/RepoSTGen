@@ -1,0 +1,31 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "GetLastInRange (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_Module/TreeNavigation/GetLastInRange.html",
+  "page_title": "GetLastInRange (FUN)",
+  "text": "\nFUNCTION GetLastInRange :\nIModule\nReturns the last element of a given range.\nReturns 0 if (and only if) the last element of the range is 0 or\nthe range is empty.\nNote: after the call, the range will be empty.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetLastInRange",
+          "Type": "IModule",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "rng",
+          "Type": "IModuleRangeForward",
+          "Comment": "The forward range (i.e.AncestorRange,DepthFirstRangeorSiblingRange) for which the last\nelement shall be returned for"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_ClearFBError (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/Diagnostics/FBError/SMC_ClearFBError.html",
+  "page_title": "SMC_ClearFBError (FUN)",
+  "text": "\nFUNCTION SMC_ClearFBError : BOOL\nThis function serves to delete the oldest function block error information.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SMC_ClearFBError",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Input",
+          "Name": "pDrive",
+          "Type": "POINTER TOAXIS_REF_SM3"
+        }
+      ]
+    }
+  ]
+}

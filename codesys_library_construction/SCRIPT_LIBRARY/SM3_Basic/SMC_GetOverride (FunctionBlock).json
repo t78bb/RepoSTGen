@@ -1,0 +1,67 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_GetOverride (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/Movement/SMC_GetOverride.html",
+  "page_title": "SMC_GetOverride (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_GetOverride\nThis function block returns the velocity, acceleration and jerk override\nfactors of an axis.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3",
+          "Comment": "Reference to the axis"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Enable",
+          "Type": "BOOL",
+          "Comment": "TRUE: The override factors are read continuously"
+        },
+        {
+          "Scope": "Output",
+          "Name": "Valid",
+          "Type": "BOOL",
+          "Comment": "TRUE: The override factors are read successfully"
+        },
+        [
+          "Busy",
+          "BOOL",
+          "TRUE: Function block is in operation"
+        ],
+        [
+          "Error",
+          "BOOL",
+          "TRUE: Error has occurred during execution"
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ],
+        [
+          "VelFactor",
+          "LREAL",
+          "The override factor for the velocity"
+        ],
+        [
+          "AccFactor",
+          "LREAL",
+          "The override factor for the acceleration/deceleration"
+        ],
+        [
+          "JerkFactor",
+          "LREAL",
+          "The override factor for the jerk"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "name": "st-flow-runner",
+  "displayName": "ST Flow Runner",
+  "description": "Run full_process.py and visualize intermediate artifacts in VSCode.",
+  "version": "0.0.1",
+  "publisher": "local",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:stFlow.runProcess",
+    "onCommand:stFlow.openPanel"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "stFlow.runProcess",
+        "title": "ST Flow: Run Full Process"
+      },
+      {
+        "command": "stFlow.openPanel",
+        "title": "ST Flow: Open Monitor Panel"
+      }
+    ],
+    "configuration": {
+      "title": "ST Flow Runner",
+      "properties": {
+        "stFlow.pythonExecutable": {
+          "type": "string",
+          "default": "",
+          "description": "Python executable path or command. If empty, ST Flow auto-detects workspace venv (myenv/.venv/venv/env) then falls back to python.defaultInterpreterPath and python."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "compile": "tsc -p .",
+    "watch": "tsc -watch -p .",
+    "vscode:prepublish": "npm run compile"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/vscode": "^1.85.0",
+    "typescript": "^5.4.0"
+  }
+}

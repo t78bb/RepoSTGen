@@ -1,0 +1,41 @@
+{
+  "library": "Util",
+  "title": "SeparateDateTime (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/TimerSwitch/Functions/SeparateDateTime.html",
+  "page_title": "SeparateDateTime (FUN)",
+  "text": "\nFUNCTION SeparateDateTime :\nERROR\nSeparates a timestamp in its IEC data typed parts.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SeparateDateTime",
+          "Type": "ERROR"
+        },
+        {
+          "Scope": "Input",
+          "Name": "uliDateTime",
+          "Type": "ULINT"
+        },
+        {
+          "Scope": "Output",
+          "Name": "eWeekDay",
+          "Type": "WEEKDAY"
+        },
+        [
+          "datDate",
+          "DATE"
+        ],
+        [
+          "todTime",
+          "TOD"
+        ]
+      ]
+    }
+  ]
+}

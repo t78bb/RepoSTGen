@@ -1,0 +1,34 @@
+{
+  "library": "DNP3",
+  "title": "SetSessionConfigAspectEnabledFCs (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Outstation/pou-OutstationConfiguration/SetSessionConfigAspectEnabledFCs.html",
+  "page_title": "OutstationConfiguration.SetSessionConfigAspectEnabledFCs (METH)",
+  "text": "\nMETHOD SetSessionConfigAspectEnabledFCs :\nError\nSet optional outstation session configuration aspect - function codes enabled for device specific requests.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetSessionConfigAspectEnabledFCs",
+          "Type": "Error",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "enabledFCs",
+          "Type": "UDINT",
+          "Initial": "16#FFFFFFFF",
+          "Comment": "Bit mask indicating which Function Codes are enabled for\ndevice specific requests"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "CheckConnectivity (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_RMP_ReliableMessageProtocol/pou-RMPConnection/CheckConnectivity.html",
+  "page_title": "RMPConnection.CheckConnectivity (METH)",
+  "text": "\nMETHOD PUBLIC FINAL CheckConnectivity\nChecks whether this connection is actibe\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "xToggleMirror",
+          "Type": "BOOL",
+          "Comment": "The current value of the local toggle bit used to check the connection"
+        }
+      ]
+    }
+  ]
+}

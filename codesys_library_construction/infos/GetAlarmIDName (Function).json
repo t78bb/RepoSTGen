@@ -1,0 +1,36 @@
+{
+  "library": "AlarmManager",
+  "title": "GetAlarmIDName (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Functions/GetAlarmIDName.html",
+  "page_title": "GetAlarmIDName (FUN)",
+  "text": "\nFUNCTION GetAlarmIDName : STRING\nThis function gets the ID the user entered in the AlarmGroup for a given Alarm\nIf the alarm can not be found an empty string is returned.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetAlarmIDName",
+          "Type": "STRING",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "uiAlarmId",
+          "Type": "ALARM_ID",
+          "Comment": "The (internal) AlarmID that can f.i. be retrieved via the selected variable at the\nalarm table"
+        },
+        [
+          "sAlarmGroup",
+          "STRING",
+          "The name of the AlarmGroup that can f.i. be retrieved via the selected variable at the\nalarm table"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "library": "BACnet",
+  "title": "GetBACnetPrescaleProperty (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/pou-IBACnetObjectBase/Utilities/GetBACnetPrescaleProperty.html",
+  "page_title": "IBACnetObjectBase.GetBACnetPrescaleProperty (METH)",
+  "text": "\nMETHOD GetBACnetPrescaleProperty : CmpBACnet.IEC_BACNET_PRESCALE\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetBACnetPrescaleProperty",
+          "Type": "CmpBACnet.IEC_BACNET_PRESCALE"
+        },
+        {
+          "Scope": "Input",
+          "Name": "propID",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_ID"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,195 @@
+{
+  "library": "AlarmManager",
+  "title": "AlarmStorageRow (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Alarm-storage-API/AlarmStorageRow.html",
+  "page_title": "AlarmStorageRow (FB)",
+  "text": "ALARMGROUP_ID (Alias)\nALARM_ID (Alias)\nAlarm storage API\nAlarmStorageConvertFromTimestamp (Function)\nAlarmStorageConvertToTimestamp (Function)\nAlarmStorageConvertValueToLREAL (Function)\nAlarmStorageConvertValueToREAL (Function)\nAlarmStorageConvertValueToString (Function)\nAlarmStorageGetDefaultText (Function)\nAlarmStorageGetMessageCount (Function)\nAlarmStorageGetTextId (Function)\nAlarmStorageGetTextListName (Function)\nAlarmStorageReader (FunctionBlock)\nAddAlarmStorageListener (Method)\nContinueReading (Method)\nGetFirstLastRowID (Method)\nGetMinMaxTimestamps (Method)\nRead (Method)\nRemoveAlarmStorageListener (Method)\nAlarmStorageReaderGlobals (GVL)\nAlarmStorageRow (FunctionBlock)\nGetLatchVarValue (Method)\nSetLatchVarValue (Method)\nAlarmStorageStaticData (Struct)\nEAlarmStorageReaderErrors (Enum)\nIAlarmStorageListener (Interface)\nAlarmAdded (Method)\nAlarmModified (Method)\nIAlarmStorageReaderConsumer (Interface)\nAlarmRead (Method)\nBeforeReading (Method)\nLatchVariableRead (Method)\nReadingDataCompleted (Method)\nIAlarmStorageReaderConsumer2 (Interface)\nByteOrder (Property)\nAlarm_Prg (Program)\nEnumerations\nAlarmState (Enum)\nAlarmStateTransition (Enum)\nEAlarmType (Enum)\nEFilterLatchContent (Enum)\nEFilterTimeRangeType (Enum)\nFunction blocks\nDefaultAlarmFilterCriteria (FunctionBlock)\nFunctions\nConvertTimestampToLDateAndTime (Function)\nDT_to_Timestamp (Function)\nDT_to_Timestamp2 (Function)\nFilters\nElaborateLatchFilterCriteria (Function)\nElaborateTimeRangeFilterCriteria (Function)\nFormatTimestamp2 (Function)\nFormatTypedValue (Function)\nGetAlarmIDName (Function)\nReplaceAllDefaultPlaceholder (Function)\nSetCurrentUtcOffset (Function)\nTimestamp_to_DT (Function)\ndeprecated\nFormatTimestamp (Function)\nGlobals\nAlarmGlobals (GVL)\nReturnValues (GVL)\nInterfaces\nIAlarm (Interface)\nAccess-to-timestamps\nGetTimestampAcknowledge (Method)\nGetTimestampActive (Method)\nGetTimestampInactive (Method)\nGetTimestampLast (Method)\nAccess-to-values\nGetCurrentValue (Method)\nGetLatchVar1Value (Method)\nGetLatchVar2Value (Method)\nGetTriggerValue (Method)\nGetAlarmClass (Method)\nGetAlarmGroup (Method)\nGetID (Method)\nGetInternalID (Method)\nGetMessage (Method)\nGetState (Method)\nIsDeactivated (Method)\nIAlarm2 (Interface)\nIAlarm3 (Interface)\nGetCountLatchVariables (Method)\nGetCountMessages (Method)\nGetLatchVarValue (Method)\nGetMessage2 (Method)\nSetLatchVarValue (Method)\nIAlarm4 (Interface)\nKindOf (Property)\nIAlarm5 (Interface)\nAccess-to-offsets\nOffsetAcknowledge (Property)\nOffsetActive (Property)\nOffsetInactive (Property)\nOffsetLast (Property)\nIAlarm6 (Interface)\nAlarmGroupTemplate (Property)\nIAlarm7 (Interface)\nCommentActive (Property)\nCommentActiveAck (Property)\nCommentNormal (Property)\nCommentWaitingConf (Property)\nReAlarmRepeatCount (Property)\nUserIdCommentActive (Property)\nUserIdCommentActiveAck (Property)\nUserIdCommentNormal (Property)\nUserIdCommentWaitingConf (Property)\nIAlarm8 (Interface)\nSetAcknowledge (Method)\nIAlarmClass (Interface)\nGetInternalID (Method)\nGetName (Method)\nGetPriority (Method)\nIsAcknowledgeSeparately (Method)\nIAlarmClass2 (Interface)\nAckInsteadOfConfirm (Method)\nAutoResetDigitalAlarms (Method)\nReAlarmTime (Property)\nIAlarmClass3 (Interface)\nIAlarmGroup (Interface)\nGetInternalID (Method)\nGetName (Method)\nIAlarmGroup2 (Interface)\nIAlarmGroup3 (Interface)\nGetID (Method)\nIAlarmHandler (Interface)\nAcknowledgeAll (Method)\nAcknowledgeAllOfGroup (Method)\nAcknowledgeOneOfGroup (Method)\nRaiseEvent (Method)\nIAlarmHandler10 (Interface)\nClearHistory (Method)\nFindAlarmClassByName (Method)\nFindAlarmGroupByName (Method)\nIAlarmHandler2 (Interface)\nGetActiveAlarms (Method)\nGetAlarmsFromStorage (Method)\nGetCountAlarmsFromStorage (Method)\nRegisterClient (Method)\nUnregisterClient (Method)\nIAlarmHandler3 (Interface)\nIAlarmHandler4 (Interface)\nRegisterAlarmStateChangedListener (Method)\nIAlarmHandler5 (Interface)\nIAlarmHandler6 (Interface)\nAcknowledgeAllOfGroupWithComment (Method)\nAcknowledgeAllWithComment (Method)\nAcknowledgeOneOfGroupWithComment (Method)\nSetComment (Method)\nIAlarmHandler7 (Interface)\nGetInstanceAlarm (Method)\nGetInstanceAlarmByName (Method)\nRaiseEventAlarmInstance (Method)\nRaiseEventAlarmInstanceByName (Method)\nIAlarmHandler8 (Interface)\nIsReady (Property)\nIAlarmHandler9 (Interface)\nActivateAlarm (Method)\nActivateAlarmInstance (Method)\nDeactivateAlarm (Method)\nDeactivateAlarmInstance (Method)\nIAlarmManagerClient (Interface)\nActiveAlarmsChanged (Method)\nAlarmStorageModified (Method)\nGetFilterCriteria (Method)\nIAlarmManagerClient2 (Interface)\nEventOccurred (Method)\nIAlarmNotifiable (Interface)\nExecute (Method)\nIAlarmStateChangedListener (Interface)\nAlarmStateChanged (Method)\nIAlarmStateChangedListener2 (Interface)\nAlarmDeactivationStateChanged (Method)\nLibrary Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nService\nEAlarmByteOrder (Enum)\nStructures\nLatchVariable (Struct)\nStorageTaskInfo (Struct)\nTIMESTAMP (Alias)\nTL_AlarmStatus (TextList)\nFile and Project Information\nLibrary Reference\n3S Storage\nLibrary Identification\nLibrary Properties\n3SLicense\nLibrary Identification\nLibrary Properties\nAlarm Manager Interfaces\nLibrary Identification\nLibrary Properties\nAlarm Manager Internal Interfaces\nLibrary Identification\nLibrary Properties\nBase Interfaces\nLibrary Identification\nLibrary Properties\nCAA FB Factory\nLibrary Identification\nLibrary Properties\nCAA Storage\nLibrary Identification\nLibrary Properties\nCAA Types Extern\nLibrary Identification\nLibrary Properties\nCDSV3ProtocolUtils\nLibrary Identification\nLibrary Properties\nCmpApp\nLibrary Identification\nLibrary Properties\nCmpBinTagUtilIec\nLibrary Identification\nLibrary Properties\nCmpDynamicText\nLibrary Identification\nLibrary Properties\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nCmpEventMgr\nLibrary Identification\nLibrary Properties\nCmpIecTask\nLibrary Identification\nLibrary Properties\nCmpLog\nLibrary Identification\nLibrary Properties\nCmpSrv\nLibrary Identification\nLibrary Properties\nCmpVisuHandler\nLibrary Identification\nLibrary Properties\nCollections\nLibrary Identification\nLibrary Properties\nComponent Manager\nLibrary Identification\nLibrary Properties\nDatasources Interfaces\nLibrary Identification\nLibrary Properties\nElement Collections\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nStringUtils\nLibrary Identification\nLibrary Properties\nSysCpuHandling\nLibrary Identification\nLibrary Properties\nSysFile\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysProcess\nLibrary Identification\nLibrary Properties\nSysSem\nLibrary Identification\nLibrary Properties\nSysTask\nLibrary Identification\nLibrary Properties\nSysTimeCore\nLibrary Identification\nLibrary Properties\nSysTimeRtc\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nVisuShared\nLibrary Identification\nLibrary Properties\nAlarmManager\nDocs\n»\nAlarm\nstorage\nAPI\n»\nAlarmStorageRow (FB)\nAlarmStorageRow (FB)\nÂ¶\nFUNCTION_BLOCK AlarmStorageRow\nThis function block contains the data, that will be written into the alarm storage.\nInOut:\nScope\nName\nType\nInitial\nComment\nInput\nudiAlarmID\nUDINT\nThe internal IDs of the alarm, the alarm class and the alarm\ngroup\nudiAlarmClassID\nUDINT\nudiAlarmGroupID\nUDINT\nliTimestapLast\nTIMESTAMP\nThe several timestamps of the alarm\nliTimestapActive\nTIMESTAMP\nliTimestapInactive\nTIMESTAMP\nliTimestapAcknowledge\nTIMESTAMP\niOffsetLast\nINT\n-1\nThe several offsets of the alarm\niOffsetActive\nINT\n-1\niOffsetInactive\nINT\n-1\niOffsetAcknowledge\nINT\n-1\nusiPriority\nUSINT\nThe priority of the alarm class the alarm belongs to\neState\nAlarmState\nThe current state of the alarm\nePrevState\nAlarmState\nThe previous state of the alarm\nbyTriggerValueType\nBYTE\nThe several values attached to the alarm. For each value we store the type class value\nas BYTE and an 8 byte value representing the value.\nliTriggerValueVal\nLINT\npLatchVariables\nPOINTER TO ARRAY [0..10]\nOF LatchVariable\nWill be set by the code generation and contains the memory, where the latch variables\ncan be stored (the size 0..10 is only for debug reasons)\nusiCountLatchVariables\nUSINT\nitfAlarm\nIAlarm\nThe IAlarm instance, where the data of this structure comes\nfrom\nidRow\nCAA.IDENT\nThe row ID of the alarm in the alarm storage,\nor the original row id for remote alarm\nxIdRowValid\nBOOL\nxForceUpdate\nBOOL\nIf the above row id is valid, used only in distributed alarm handling\nIndicating whether the row should only be updated\nsRemoteDeviceName\nSTRING\nThe name of the remote device in case of remote alarm\ncmtActive\nAlarmComment\nAlarm comments including user ids\ncmtActiveAck\nAlarmComment\ncmtWaitingConf\nAlarmComment\ncmtNormal\nAlarmComment\nxInvalid\nBOOL\nLikely after an online there might not be enough information for storing a deleted alarm\nTherefore, these are treated as invalid.\nxWrittenToStorage\nBOOL\nMethods:\nGetLatchVarValue\nSetLatchVarValue\nStructure:\nGetLatchVarValue (Method)\nSetLatchVarValue (Method)",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "udiAlarmID",
+          "Type": "UDINT",
+          "Initial": "",
+          "Comment": "The internal IDs of the alarm, the alarm class and the alarm\ngroup"
+        },
+        [
+          "udiAlarmClassID",
+          "UDINT",
+          "",
+          ""
+        ],
+        [
+          "udiAlarmGroupID",
+          "UDINT",
+          "",
+          ""
+        ],
+        [
+          "liTimestapLast",
+          "TIMESTAMP",
+          "",
+          "The several timestamps of the alarm"
+        ],
+        [
+          "liTimestapActive",
+          "TIMESTAMP",
+          "",
+          ""
+        ],
+        [
+          "liTimestapInactive",
+          "TIMESTAMP",
+          "",
+          ""
+        ],
+        [
+          "liTimestapAcknowledge",
+          "TIMESTAMP",
+          "",
+          ""
+        ],
+        [
+          "iOffsetLast",
+          "INT",
+          "-1",
+          "The several offsets of the alarm"
+        ],
+        [
+          "iOffsetActive",
+          "INT",
+          "-1",
+          ""
+        ],
+        [
+          "iOffsetInactive",
+          "INT",
+          "-1",
+          ""
+        ],
+        [
+          "iOffsetAcknowledge",
+          "INT",
+          "-1",
+          ""
+        ],
+        [
+          "usiPriority",
+          "USINT",
+          "",
+          "The priority of the alarm class the alarm belongs to"
+        ],
+        [
+          "eState",
+          "AlarmState",
+          "",
+          "The current state of the alarm"
+        ],
+        [
+          "ePrevState",
+          "AlarmState",
+          "",
+          "The previous state of the alarm"
+        ],
+        [
+          "byTriggerValueType",
+          "BYTE",
+          "",
+          "The several values attached to the alarm. For each value we store the type class value\nas BYTE and an 8 byte value representing the value."
+        ],
+        [
+          "liTriggerValueVal",
+          "LINT",
+          "",
+          ""
+        ],
+        [
+          "pLatchVariables",
+          "POINTER TO ARRAY [0..10]\nOF LatchVariable",
+          "",
+          "Will be set by the code generation and contains the memory, where the latch variables\ncan be stored (the size 0..10 is only for debug reasons)"
+        ],
+        [
+          "usiCountLatchVariables",
+          "USINT",
+          "",
+          ""
+        ],
+        [
+          "itfAlarm",
+          "IAlarm",
+          "",
+          "The IAlarm instance, where the data of this structure comes\nfrom"
+        ],
+        [
+          "idRow",
+          "CAA.IDENT",
+          "",
+          "The row ID of the alarm in the alarm storage,\nor the original row id for remote alarm"
+        ],
+        [
+          "xIdRowValid",
+          "BOOL",
+          "",
+          ""
+        ],
+        [
+          "xForceUpdate",
+          "BOOL",
+          "",
+          "If the above row id is valid, used only in distributed alarm handling\nIndicating whether the row should only be updated"
+        ],
+        [
+          "sRemoteDeviceName",
+          "STRING",
+          "",
+          "The name of the remote device in case of remote alarm"
+        ],
+        [
+          "cmtActive",
+          "AlarmComment",
+          "",
+          "Alarm comments including user ids"
+        ],
+        [
+          "cmtActiveAck",
+          "AlarmComment",
+          "",
+          ""
+        ],
+        [
+          "cmtWaitingConf",
+          "AlarmComment",
+          "",
+          ""
+        ],
+        [
+          "cmtNormal",
+          "AlarmComment",
+          "",
+          ""
+        ],
+        [
+          "xInvalid",
+          "BOOL",
+          "",
+          "Likely after an online there might not be enough information for storing a deleted alarm\nTherefore, these are treated as invalid."
+        ],
+        [
+          "xWrittenToStorage",
+          "BOOL",
+          "",
+          ""
+        ]
+      ]
+    }
+  ]
+}

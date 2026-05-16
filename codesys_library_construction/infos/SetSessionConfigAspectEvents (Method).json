@@ -1,0 +1,28 @@
+{
+  "library": "DNP3",
+  "title": "SetSessionConfigAspectEvents (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Outstation/pou-OutstationConfiguration/SetSessionConfigAspectEvents.html",
+  "page_title": "OutstationConfiguration.SetSessionConfigAspectEvents (METH)",
+  "text": "\nMETHOD SetSessionConfigAspectEvents :\nError\nSet optional outstation session configuration aspect - events.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetSessionConfigAspectEvents",
+          "Type": "Error"
+        },
+        {
+          "Scope": "Input",
+          "Name": "configEvents",
+          "Type": "DNP3OutstationSessionConfigEvents"
+        }
+      ]
+    }
+  ]
+}

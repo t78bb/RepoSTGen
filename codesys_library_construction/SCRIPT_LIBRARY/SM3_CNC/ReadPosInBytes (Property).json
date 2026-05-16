@@ -1,0 +1,8 @@
+{
+  "library": "SM3_CNC",
+  "title": "ReadPosInBytes (Property)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/File/ReadNCFile/Stream/pou-SMC_FileStream2/ReadPosInBytes.html",
+  "page_title": "SMC_FileStream2.ReadPosInBytes (PROP)",
+  "text": "\nPROPERTY ReadPosInBytes : UDINT",
+  "tables": []
+}

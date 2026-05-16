@@ -1,0 +1,8 @@
+{
+  "library": "AlarmManager",
+  "title": "IAlarmHandler4 (Interface)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/IAlarmHandler4.html",
+  "page_title": "IAlarmHandler4 (ITF)",
+  "text": "\nINTERFACE IAlarmHandler4 EXTENDS\nIAlarmHandler3\nThis is an extension of the IAlarmHandler3 interface.\nMethods:\nRegisterAlarmStateChangedListener\nAcknowledgeAll\n, inherited from\nIAlarmHandler\nAcknowledgeAllOfGroup\n, inherited from\nIAlarmHandler\nAcknowledgeOneOfGroup\n, inherited from\nIAlarmHandler\nGetActiveAlarms\n, inherited from\nIAlarmHandler2\nGetAlarmsFromStorage\n, inherited from\nIAlarmHandler2\nGetCountAlarmsFromStorage\n, inherited from\nIAlarmHandler2\nRaiseEvent\n, inherited from\nIAlarmHandler\nRegisterClient\n, inherited from\nIAlarmHandler2\nUnregisterClient\n, inherited from\nIAlarmHandler2\nStructure:\nRegisterAlarmStateChangedListener (Method)",
+  "tables": []
+}

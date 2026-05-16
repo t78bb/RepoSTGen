@@ -1,0 +1,23 @@
+{
+  "library": "3S Storage",
+  "title": "StorageClose (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/3S Storage/Current/_3SStorage/Instances/pou-Storage/StorageClose.html",
+  "page_title": "Storage.StorageClose (METH)",
+  "text": "\nMETHOD StorageClose : STO.ERROR\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "StorageClose",
+          "Type": "STO.ERROR"
+        }
+      ]
+    }
+  ]
+}

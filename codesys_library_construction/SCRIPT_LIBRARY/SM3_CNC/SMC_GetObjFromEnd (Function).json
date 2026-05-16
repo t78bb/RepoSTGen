@@ -1,0 +1,36 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_GetObjFromEnd (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/OutQueue-Functions/SMC_GetObjFromEnd.html",
+  "page_title": "SMC_GetObjFromEnd (FUN)",
+  "text": "\nFUNCTION SMC_GetObjFromEnd : POINTER TO SMC_GEOINFO\nReturns a pointer to the n-last object\n(start counting from the end) of the queue (\npoq\n).\nFor\nN=0\nthe last element in the list will be returned.\ntask-safety: may be called from both tasks;\nthe result however may be invalid:\nIn case of the producer task, the output may no longer be part of the queue,\nin case of the consumer task, the output may no longer be the last element.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SMC_GetObjFromEnd",
+          "Type": "POINTER TOSMC_GEOINFO",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "poq",
+          "Type": "POINTER TOSMC_OUTQUEUE",
+          "Comment": "The out queue"
+        },
+        [
+          "N",
+          "UINT",
+          "Index of object, counting is started withN=0for the last element."
+        ]
+      ]
+    }
+  ]
+}

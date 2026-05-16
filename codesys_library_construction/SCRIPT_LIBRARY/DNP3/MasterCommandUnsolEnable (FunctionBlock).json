@@ -1,0 +1,71 @@
+{
+  "library": "DNP3",
+  "title": "MasterCommandUnsolEnable (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/Commands/MasterCommandUnsolEnable.html",
+  "page_title": "MasterCommandUnsolEnable (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL MasterCommandUnsolEnable EXTENDS\nMasterCommand\nMaster command UnsolEnable\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment",
+        "Inherited from"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "xExecute",
+          "Type": "BOOL",
+          "Comment": "Execute the command (xExecute FALSE â> TRUE).",
+          "Inherited from": "MasterCommand"
+        },
+        [
+          "itfMaster",
+          "IMaster",
+          "Interface IMaster",
+          "MasterCommand"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "xDone",
+          "Type": "BOOL",
+          "Comment": "Command executed successfully.",
+          "Inherited from": "MasterCommand"
+        },
+        [
+          "xError",
+          "BOOL",
+          "Error during command executions",
+          "MasterCommand"
+        ],
+        [
+          "eErrorID",
+          "Error",
+          "Specific error during command executions.",
+          "MasterCommand"
+        ],
+        {
+          "Scope": "Input",
+          "Name": "class1",
+          "Type": "BOOL",
+          "Comment": "TRUE to disable unsolicited responses for class 1 events",
+          "Inherited from": ""
+        },
+        [
+          "class2",
+          "BOOL",
+          "TRUE to disable unsolicited responses for class 2 events",
+          ""
+        ],
+        [
+          "class3",
+          "BOOL",
+          "TRUE to disable unsolicited responses for class 3 events",
+          ""
+        ]
+      ]
+    }
+  ]
+}

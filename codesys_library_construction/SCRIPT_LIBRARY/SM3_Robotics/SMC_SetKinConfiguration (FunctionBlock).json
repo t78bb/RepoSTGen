@@ -1,0 +1,57 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_SetKinConfiguration (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/AdministrativeConfiguration/Kinematics/SMC_SetKinConfiguration.html",
+  "page_title": "SMC_SetKinConfiguration (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_SetKinConfiguration\nThis function block sets the configuration used in\nthe inverse kinematic transformation.\nThis affects only upcoming movements that are\nnot programmed in ACS-coordinates.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "AxisGroup",
+          "Type": "AXIS_GROUP_REF_SM3",
+          "Comment": "Reference to a group of axis"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Comment": "Sets the kinematic configuration on rising edge"
+        },
+        [
+          "ConfigData",
+          "TRAFO.CONFIGDATA",
+          "The kinematic configuration"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Done",
+          "Type": "BOOL",
+          "Comment": "The transformation has been set successfully"
+        },
+        [
+          "Busy",
+          "BOOL",
+          "The FB is not finished"
+        ],
+        [
+          "Error",
+          "BOOL",
+          "Signals that an error has occurred within the function block"
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

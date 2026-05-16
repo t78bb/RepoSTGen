@@ -1,0 +1,23 @@
+{
+  "library": "BACnet2DefaultImpl",
+  "title": "ComputeRecordSize (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2DefaultImpl/Current/BACnetDefaultImpl/Function-Blocks/LoggingObjects/Internal/pou-LogObjectsBase/Files/base/ComputeRecordSize.html",
+  "page_title": "LogObjectsBase.ComputeRecordSize (METH)",
+  "text": "\nMETHOD PROTECTED ComputeRecordSize : WORD\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "ComputeRecordSize",
+          "Type": "WORD"
+        }
+      ]
+    }
+  ]
+}

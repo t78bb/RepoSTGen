@@ -1,0 +1,31 @@
+{
+  "library": "BACnet",
+  "title": "SetPriorityArray (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/PositiveIntegerValue/pou-BACnetPositiveIntegerValue/SetPriorityArray.html",
+  "page_title": "BACnetPositiveIntegerValue.SetPriorityArray (METH)",
+  "text": "\nMETHOD SetPriorityArray : CmpBACnet.IEC_BACNET_STATUS\nCommand Prioritization - sets the whole Priority_Array of this BACnet object.\nTo write the Present_Value with a single priority\nWritePresentValueWithPriority\ncan be used.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetPriorityArray",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "arPrioArray",
+          "Type": "ARRAY [1..16] OF\nCmpBACnet.IEC_BACNET_PRIORITY_ARRAY_ITEM",
+          "Comment": "The priority array to set for this BACnet object."
+        }
+      ]
+    }
+  ]
+}

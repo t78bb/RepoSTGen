@@ -1,0 +1,36 @@
+{
+  "library": "Standard",
+  "title": "RIGHT (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/Standard/Current/String-Functions/RIGHT.html",
+  "page_title": "RIGHT (FUN)",
+  "text": "\nFUNCTION RIGHT : STRING(255)\nReturns a specific number of characters of a string, starting from right\nRIGHT\n(STR,\nSIZE)\nmeans: Return the first\nSIZE\ncharacters from the right in string\nSTR\n(* Example declaration *)\nVarSTRING1\n:\nSTRING\n;\n(* Example in ST , result is 'USI' *)\nVarSTRING1\n:=\nRIGHT\n(\n'SUSI'\n,\n3\n);\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "RIGHT",
+          "Type": "STRING(255)",
+          "Comment": "Resulting string"
+        },
+        {
+          "Scope": "Input",
+          "Name": "STR",
+          "Type": "STRING(255)",
+          "Comment": "String to be analyzed"
+        },
+        [
+          "SIZE",
+          "INT",
+          "Number of characters"
+        ]
+      ]
+    }
+  ]
+}

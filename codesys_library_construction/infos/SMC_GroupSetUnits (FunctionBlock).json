@@ -1,0 +1,52 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_GroupSetUnits (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/AdministrativeConfiguration/AxisGroup/SMC_GroupSetUnits.html",
+  "page_title": "SMC_GroupSetUnits (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_GroupSetUnits\nThis function block allows setting conversion factors from\nuser units to SI units.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "AxisGroup",
+          "Type": "AXIS_GROUP_REF_SM3",
+          "Comment": "Reference to a group of axes"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Comment": "Executes the FB at the rising edge."
+        },
+        [
+          "Units",
+          "SMC_GroupUnits",
+          "The unit conversion factors to be set."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Done",
+          "Type": "BOOL",
+          "Comment": "The conversion factors have been set."
+        },
+        [
+          "Error",
+          "BOOL",
+          "Signals that an error has occurred within the function block"
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

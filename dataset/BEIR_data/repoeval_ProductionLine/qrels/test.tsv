@@ -1,0 +1,14 @@
+query-id	corpus-id	score
+ProductionLine/0	ProductionLine_FUN_Motor.st_0-15	1
+ProductionLine/0	ProductionLine_FUN_Motor_ResetFault.st_0-18	1
+ProductionLine/0	ProductionLine_FUN_Motor_SetFault.st_0-16	1
+ProductionLine/0	ProductionLine_FUN_Motor_SetWaitTime.st_0-14	1
+ProductionLine/0	ProductionLine_FUN_Motor_TurnOff.st_0-13	1
+ProductionLine/0	ProductionLine_FUN_Motor_TurnOn.st_0-20	1
+ProductionLine/0	ProductionLine_struct_MotorI.st_0-8	1
+ProductionLine/0	ProductionLine_struct_MotorO.st_0-6	1
+ProductionLine/1	ProductionLine_FUN_Motor_ResetFault.st_0-18	1
+ProductionLine/2	ProductionLine_FUN_Motor_SetFault.st_0-16	1
+ProductionLine/3	ProductionLine_FUN_Motor_SetWaitTime.st_0-14	1
+ProductionLine/4	ProductionLine_FUN_Motor_TurnOff.st_0-13	1
+ProductionLine/5	ProductionLine_FUN_Motor_TurnOn.st_0-20	1

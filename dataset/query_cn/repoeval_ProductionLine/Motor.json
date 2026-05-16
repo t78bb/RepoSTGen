@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现对电机的控制逻辑，包括故障设置与复位功能以及内部定时器管理。",
+  "provide_code": "FUNCTION_BLOCK Motor\nVAR_INPUT\n\tMotorI:MotorI;\nEND_VAR\nVAR_OUTPUT\n\tMotorO:MotorO;\nEND_VAR"
+}

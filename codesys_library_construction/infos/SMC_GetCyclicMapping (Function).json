@@ -1,0 +1,57 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_GetCyclicMapping (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/SMC_GetCyclicMapping.html",
+  "page_title": "SMC_GetCyclicMapping (FUN)",
+  "text": "\nFUNCTION SMC_GetCyclicMapping\nReturns information about a parameter that is cyclically mapped, such as\nthe actual position, the set position, the control word, or the status word.\nThe function block will return where in the process image this cyclic\ndata is located.  This internal information usually is not necessary in the\napplication.  There are special cases, e.g. if the axis has ben set to\ncontroller mode\nSMC_nocontrol\n, and the control word should be written\nby the application.  In such a case, you can query the address of the\ncontrol word using this function, given the driver-specific parameter number\nof the control word.\nFor CiA-402 based drivers, you can find the parameter numbers in the\nGVL SMC_ParamNum_CiA402 of library SM3_Drive_CiA_DSP402.\nParameter numbers for other parameters can be found in the\ndocumentation of\nAXIS_REF_SM3\n.\nOnly use the returned information if you know what you are doing,\nas it can interfere with the SoftMotion driver.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout Const",
+          "Name": "Axis",
+          "Type": "AXIS_REF_MAPPING_SM3",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "ParameterNumber",
+          "Type": "DINT",
+          "Comment": "The SoftMotion parameter number of the parameter that\nis cyclically mapped."
+        },
+        {
+          "Scope": "Output",
+          "Name": "Valid",
+          "Type": "BOOL",
+          "Comment": "Whether the parameter is cyclically mapped"
+        },
+        [
+          "Address",
+          "POINTER TO BYTE",
+          "The address where the value of the parameter is located."
+        ],
+        [
+          "Bitmask",
+          "DWORD",
+          "A bit mask to the portion of a DWORD where the value resides"
+        ],
+        [
+          "BitOffset",
+          "USINT",
+          "The bit offset in the DWORD"
+        ],
+        [
+          "BitLength",
+          "USINT",
+          "The length of the value in bits."
+        ]
+      ]
+    }
+  ]
+}

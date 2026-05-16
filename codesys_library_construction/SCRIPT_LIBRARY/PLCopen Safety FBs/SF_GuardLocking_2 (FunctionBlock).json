@@ -1,0 +1,112 @@
+{
+  "library": "PLCopen Safety FBs",
+  "title": "SF_GuardLocking_2 (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/PLCopen Safety FBs/Current/PLCopenSafetyFBs/Function-Blocks/SF_GuardLocking_2.html",
+  "page_title": "SF_GuardLocking_2 (FB)",
+  "text": "\nFUNCTION_BLOCK SF_GuardLocking_2\nThis FB controls an entrance to a hazardous area via an interlocking guard with guard locking (âfour state interlockingâ).\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "Activate",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "Activation of the FB."
+        },
+        [
+          "S_Guard",
+          "BOOL",
+          "FALSE",
+          "Monitors the guard interlocking. Can be connected to the\nGuardOut of the SF_Guard FB. FALSE: Guard open. TRUE: Guard\nclosed and guarded area safe."
+        ],
+        [
+          "S_SafetyActive",
+          "BOOL",
+          "FALSE",
+          "Status of the hazardous area (EDM), e.g., based on speed\nmoni-toring or safe time off delay. FALSE: Machine in ânon-\nsafeâ state. TRUE: Machine in safe state."
+        ],
+        [
+          "S_GuardLock",
+          "BOOL",
+          "FALSE",
+          "Status of the mechanical guard locking. FALSE: Guard is not\nlocked. TRUE: Guard is locked."
+        ],
+        [
+          "UnlockRequest",
+          "BOOL",
+          "FALSE",
+          "Operator intervention â request to unlock the guard. FALSE:\nNo request. TRUE: Request made."
+        ],
+        [
+          "S_StartReset",
+          "BOOL",
+          "FALSE",
+          "Start behaviour of safety FB"
+        ],
+        [
+          "S_AutoReset",
+          "BOOL",
+          "FALSE",
+          "Behaviour on error of safety FB"
+        ],
+        [
+          "Reset",
+          "BOOL",
+          "FALSE",
+          "Manual reset of FB"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Ready",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "Activation of the FB. TRUE indicates that the FB is\nactivated and the outputs results are valid, FALSE the FB is\nnot active and the program is not executed."
+        },
+        [
+          "S_GuardLocked",
+          "BOOL",
+          "FALSE",
+          "Interface to hazardous area which must be stopped. FALSE: No\nsafe state. TRUE: Safe state."
+        ],
+        [
+          "S_UnlockGuard",
+          "BOOL",
+          "FALSE",
+          "Signal to unlock the guard. FALSE: Close guard. TRUE: Unlock\nguard."
+        ],
+        [
+          "SafetyDemand",
+          "BOOL",
+          "FALSE",
+          "Output indicating that the FB is active and the primary\nsafety function is demanded (e.g. related to the safety\nfunctionality)."
+        ],
+        [
+          "ResetRequest",
+          "BOOL",
+          "FALSE",
+          "Output which can be used to signal the operator to press the\nreset functionality to continue."
+        ],
+        [
+          "Error",
+          "BOOL",
+          "FALSE",
+          "Error flag"
+        ],
+        [
+          "DiagCode",
+          "WORD",
+          "0",
+          "Diagnostic register"
+        ]
+      ]
+    }
+  ]
+}

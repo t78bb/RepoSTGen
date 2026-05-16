@@ -1,0 +1,131 @@
+{
+  "library": "Visu Utils",
+  "title": "FbOpenDialogExtended (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/Visu Utils/Current/VisuUtils/VisuActionUtilities/Function-Blocks/FbOpenDialogExtended.html",
+  "page_title": "FbOpenDialogExtended (FB)",
+  "text": "VisuUtils\nVisuActionUtilities\nFunction Blocks\nFBFileTransfer (FunctionBlock)\nFbChangeVisu (FunctionBlock)\nFbCloseDialog (FunctionBlock)\nFbIterateClients (FunctionBlock)\nFbOpenDialog (FunctionBlock)\nFbOpenDialogExtended (FunctionBlock)\nFunctions\nFctGetNextVisu (Function)\nFctGetPreviousVisu (Function)\nFctHandleEventsWithinCycleStart (Function)\nFctHandleEventsWithinCycleStop (Function)\nGlobalVariables\nGlobals (GVL)\nPublicVariables (GVL)\nInterfaces\nIVisualizationClient (Interface)\nIVisualizationClientFilter (Interface)\nIVisualizationClientIteration (Interface)\nIVisualizationClientRaw (Interface)\nTypes\nEnum\nFile and Project Information\nLibrary Reference\nCmpIecTask\nLibrary Identification\nLibrary Properties\nCmpVisuHandler\nLibrary Identification\nLibrary Properties\nCommon Behaviour Model\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysSem\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nVisuElemBase\nLibrary Identification\nLibrary Properties\nVisu Utils\nDocs\n»\nVisuUtils\n»\nVisuActionUtilities\n»\nFunction\nBlocks\n»\nFbOpenDialogExtended (FB)\nFbOpenDialogExtended (FB)\nÂ¶\nFUNCTION_BLOCK FbOpenDialogExtended EXTENDS\nFbOpenDialog\nHandles the action open dialog with extended parameters\nTo use this function block in the programm set the according inputvalues\nand start the dialog open action with\nxExecute\n=\nTRUE\n.\nInOut:\nScope\nName\nType\nInitial\nComment\nInherited from\nInput\nxExecute\nBOOL\nRising edge: Starts defined operation\nFALSE\n: Resets the defined operation after ready condition was reached\nETrig\nOutput\nxDone\nBOOL\nTRUE\n: Ready condition reached\nETrig\nxBusy\nBOOL\nTRUE\n: Operation is running\nETrig\nxError\nBOOL\nTRUE\n: Error condition reached\nETrig\nInput\nitfClientFilter\nIVisualizationClientFilter\nWith this filter, the clients, where the action should happen, are specified.\nUse standard filter from  GVL Globals, e.g.\nVU.Globals.CurrentClient\n, or use a own implentation of the interface.\nFbExecuteSingleVisuActionBase\nOutput\neError\nERROR\nFbExecuteSingleVisuActionBase\nInput\nsDialogName\nSTRING\nMandatory value: name of the dialog\nFbOpenDialog\nxModal\nBOOL\nTRUE\nOptional setting for dialog usage (modal or not modal).\nTRUE\n: modal: only input in the dialog is possible (defaultvalue)\nFALSE\n: not modal: usage of visu beneath dialog is possible, too.\nFbOpenDialog\npTopLeftPosition\nPOINTER TO\nVisuStructPoint\nOptional position to open:\ncentered (default): use no input point\non position X/Y: set values accordingly in the VisuStructPoint\nFbOpenDialog\nitfDialogOpenedListener\nVisuElemBase.IDialogOpenedListener\nOptional: Action done listener\nThe FB instance gets notified, when the dialog has opened.\npbyDialogInterfaceData\nPOINTER TO BYTE\nOptional: Sets the parameters for the dialog interface.\nShould be used together with\nudiDialogInterfaceDataSize\n.\nFor each dialog automatically a structure is generated.\nE.g. DialogName: MessagBox â> Structure name: MessageBox_VISU_STRUCT.\nUse a instance of this struct, e.g. dialoginst : MessageBox_VISU_STRUCT and\nset it as ADR(dialoginst) for this variable\nudiDialogInterfaceDataSize\nUDINT\nOptional: Sets the size of the data for the dialog interface.\nShould be used together with\npbyDialogInterfaceData\nFor each dialog automatically a structure is generated.\nE.g. DialogName: MessagBox â> Structure name: MessageBox_VISU_STRUCT.\nUse SIZEOF(MessageBox_VISU_STRUCT) for this variable.\nitfDialogCloseListener\nVisuElemBase.IDialogCloseListener\nOptional: Dialog close listener\nThe FB instance gets notified, when the dialog is closed.\npbyTagForDialogClosed\nPOINTER TO BYTE\nOptional: Tag/Data which is necessary for the action on dialog closed.\nCan only be used together with\nitfDialogCloseListener\nThe optional parameter\nitfDialogCloseListener\nmust implement\nIDialogCloseListenerWithTag\n.\nIn\nDialogClosedWithTag\nit will get this parameter (\npbyTagForDialogClosed\n) back as\npTag\ndwDialogFlags\nDWORD\nOptional: Additional information flags with content of type\nVisu_InputFlags. CenterOnElement flag is only supported by\nVU.Globals.CurrentClient filter.",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment",
+        "Inherited from"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "xExecute",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Rising edge: Starts defined operationFALSE: Resets the defined operation after ready condition was reached",
+          "Inherited from": "ETrig"
+        },
+        {
+          "Scope": "Output",
+          "Name": "xDone",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUE: Ready condition reached",
+          "Inherited from": "ETrig"
+        },
+        [
+          "xBusy",
+          "BOOL",
+          "",
+          "TRUE: Operation is running",
+          "ETrig"
+        ],
+        [
+          "xError",
+          "BOOL",
+          "",
+          "TRUE: Error condition reached",
+          "ETrig"
+        ],
+        {
+          "Scope": "Input",
+          "Name": "itfClientFilter",
+          "Type": "IVisualizationClientFilter",
+          "Initial": "",
+          "Comment": "With this filter, the clients, where the action should happen, are specified.Use standard filter from  GVL Globals, e.g.VU.Globals.CurrentClient, or use a own implentation of the interface.",
+          "Inherited from": "FbExecuteSingleVisuActionBase"
+        },
+        {
+          "Scope": "Output",
+          "Name": "eError",
+          "Type": "ERROR",
+          "Initial": "",
+          "Comment": "",
+          "Inherited from": "FbExecuteSingleVisuActionBase"
+        },
+        {
+          "Scope": "Input",
+          "Name": "sDialogName",
+          "Type": "STRING",
+          "Initial": "",
+          "Comment": "Mandatory value: name of the dialog",
+          "Inherited from": "FbOpenDialog"
+        },
+        [
+          "xModal",
+          "BOOL",
+          "TRUE",
+          "Optional setting for dialog usage (modal or not modal).TRUE: modal: only input in the dialog is possible (defaultvalue)FALSE: not modal: usage of visu beneath dialog is possible, too.",
+          "FbOpenDialog"
+        ],
+        [
+          "pTopLeftPosition",
+          "POINTER TO\nVisuStructPoint",
+          "",
+          "Optional position to open:centered (default): use no input pointon position X/Y: set values accordingly in the VisuStructPoint",
+          "FbOpenDialog"
+        ],
+        [
+          "itfDialogOpenedListener",
+          "VisuElemBase.IDialogOpenedListener",
+          "",
+          "Optional: Action done listenerThe FB instance gets notified, when the dialog has opened.",
+          ""
+        ],
+        [
+          "pbyDialogInterfaceData",
+          "POINTER TO BYTE",
+          "",
+          "Optional: Sets the parameters for the dialog interface.Should be used together withudiDialogInterfaceDataSize.For each dialog automatically a structure is generated.E.g. DialogName: MessagBox â> Structure name: MessageBox_VISU_STRUCT.Use a instance of this struct, e.g. dialoginst : MessageBox_VISU_STRUCT and\nset it as ADR(dialoginst) for this variable",
+          ""
+        ],
+        [
+          "udiDialogInterfaceDataSize",
+          "UDINT",
+          "",
+          "Optional: Sets the size of the data for the dialog interface.Should be used together withpbyDialogInterfaceDataFor each dialog automatically a structure is generated.E.g. DialogName: MessagBox â> Structure name: MessageBox_VISU_STRUCT.Use SIZEOF(MessageBox_VISU_STRUCT) for this variable.",
+          ""
+        ],
+        [
+          "itfDialogCloseListener",
+          "VisuElemBase.IDialogCloseListener",
+          "",
+          "Optional: Dialog close listenerThe FB instance gets notified, when the dialog is closed.",
+          ""
+        ],
+        [
+          "pbyTagForDialogClosed",
+          "POINTER TO BYTE",
+          "",
+          "Optional: Tag/Data which is necessary for the action on dialog closed.Can only be used together withitfDialogCloseListenerThe optional parameteritfDialogCloseListenermust implementIDialogCloseListenerWithTag.\nInDialogClosedWithTagit will get this parameter (pbyTagForDialogClosed) back aspTag",
+          ""
+        ],
+        [
+          "dwDialogFlags",
+          "DWORD",
+          "",
+          "Optional: Additional information flags with content of type\nVisu_InputFlags. CenterOnElement flag is only supported by\nVU.Globals.CurrentClient filter.",
+          ""
+        ]
+      ]
+    }
+  ]
+}

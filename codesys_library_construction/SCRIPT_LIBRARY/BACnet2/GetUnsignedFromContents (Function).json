@@ -1,0 +1,31 @@
+{
+  "library": "BACnet2",
+  "title": "GetUnsignedFromContents (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/Utilities/BACnetUtilities/FromBACnetContents/GetUnsignedFromContents.html",
+  "page_title": "GetUnsignedFromContents (FUN)",
+  "text": "\nFUNCTION GetUnsignedFromContents : UDINT\nTries to evaluate property contents as UDINT data type. If the contents are not of type UDINT\n0 is returned.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetUnsignedFromContents",
+          "Type": "UDINT",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "conts",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_CONTENTS",
+          "Comment": "The contents to be evaluated as UDINT."
+        }
+      ]
+    }
+  ]
+}

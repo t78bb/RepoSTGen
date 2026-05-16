@@ -1,0 +1,28 @@
+{
+  "library": "SM3_CNC",
+  "title": "GetSentenceFromStart (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/GSentence/pou-SMC_GSentenceQueue/GetSentenceFromStart.html",
+  "page_title": "SMC_GSentenceQueue.GetSentenceFromStart (METH)",
+  "text": "\nMETHOD GetSentenceFromStart : POINTER TO SMC_GSentence\nReturns a pointer to the n-th sentence, or 0 if the queue has less than n+1 elements.\nThe pointer is valid until the next call to RemoveFirst.\nOnly to be called safely from the reading thread, or when it is made sure that\nno elements are removed concurrently.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "n",
+          "Type": "UDINT"
+        },
+        {
+          "Scope": "Return",
+          "Name": "GetSentenceFromStart",
+          "Type": "POINTER TOSMC_GSentence"
+        }
+      ]
+    }
+  ]
+}

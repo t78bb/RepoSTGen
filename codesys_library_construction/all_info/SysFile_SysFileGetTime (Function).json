@@ -1,0 +1,36 @@
+{
+  "library": "SysFile",
+  "title": "SysFileGetTime (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SysFile/Current/SysFileGetTime.html",
+  "page_title": "SysFileGetTime (FUN)",
+  "text": "Deutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nMenu\nSearch\nDeutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nACCESS_MODE (Enum)\nSYS_FILETIME (Struct)\nSYS_FILE_STATUS (Enum)\nSysFileClose (Function)\nSysFileCopy (Function)\nSysFileDelete (Function)\nSysFileDeleteByHandle (Function)\nSysFileEOF (Function)\nSysFileFlush (Function)\nSysFileGetName (Function)\nSysFileGetName2 (Function)\nSysFileGetPath (Function)\nSysFileGetPos (Function)\nSysFileGetSize (Function)\nSysFileGetSizeByHandle (Function)\nSysFileGetStatus (Function)\nSysFileGetStatus2 (Function)\nSysFileGetTime (Function)\nSysFileOpen (Function)\nSysFileRead (Function)\nSysFileRename (Function)\nSysFileSetPos (Function)\nSysFileTruncate (Function)\nSysFileWrite (Function)\nFile and Project Information\nLibrary Reference\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nSysFile\nDocs\n»\nSysFileGetTime (FUN)\nSysFileGetTime (FUN)\nÂ¶\nFUNCTION SysFileGetTime : RTS_IEC_RESULT\nGet file time of the specified file.\nA standard path will be added to the filename, if no path is specified.\nInOut:\nScope\nName\nType\nComment\nReturn\nSysFileGetTime\nRTS_IEC_RESULT\nThe runtime system error code (see CmpErrors.library)\nInput\nszFileName\nSTRING\nFile name. File name can contain an absolute or relative path to the file.\nPath entries must be separated with a Slash (/)  and not with a Backslash (\\)!\nptFileTime\nPOINTER TO\nSYS_FILETIME\nPointer to get the file time results.\ntop\nCODESYS Group | We\nsoftware\nAutomation.\nto software\n['sɒftwɛər]\ntransitive verb\n__softwared/softwaring\n: to develop software\n// to software automation: to develop software for automation purposes\nThe CODESYS Group is the manufacturer of CODESYS, the leading hardware-independent\n                                    IEC 61131-3 automation software for developing and engineering controller\n                                    applications.\nCODESYS® is a registered trademark.\nCODESYS GmbH\nA member of the CODESYS Group\nMemminger Straße 151, 87439 Kempten\nGermany\nTel.:\n+49-831-54031-0\ninfo@codesys.com\nLegal Notice\nPrivacy Policy\nLinkedIn\nYoutube\nRSS\nDownloads\nLogin\nCODESYS Store\n© 2022 CODESYS GmbH\n| A member of the CODESYS Group",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SysFileGetTime",
+          "Type": "RTS_IEC_RESULT",
+          "Comment": "The runtime system error code (see CmpErrors.library)"
+        },
+        {
+          "Scope": "Input",
+          "Name": "szFileName",
+          "Type": "STRING",
+          "Comment": "File name. File name can contain an absolute or relative path to the file.\nPath entries must be separated with a Slash (/)  and not with a Backslash (\\)!"
+        },
+        [
+          "ptFileTime",
+          "POINTER TOSYS_FILETIME",
+          "Pointer to get the file time results."
+        ]
+      ]
+    }
+  ]
+}

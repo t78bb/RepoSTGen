@@ -1,0 +1,23 @@
+{
+  "library": "ModbusFB",
+  "title": "BytesToEnd (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/ModbusFB/Current/ModbusFB/Function-Blocks/Util/pou-ByteBuffer/BytesToEnd.html",
+  "page_title": "ByteBuffer.BytesToEnd (METH)",
+  "text": "\nMETHOD BytesToEnd : UINT\nReturns the number of bytes to be read until end.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "BytesToEnd",
+          "Type": "UINT"
+        }
+      ]
+    }
+  ]
+}

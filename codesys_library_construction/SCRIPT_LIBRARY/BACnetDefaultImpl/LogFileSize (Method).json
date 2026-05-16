@@ -1,0 +1,27 @@
+{
+  "library": "BACnetDefaultImpl",
+  "title": "LogFileSize (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnetDefaultImpl/Current/BACnetDefaultImpl/Function-Blocks/LoggingObjects/Internal/pou-LogObjectsBase/Logging/LogFileSize.html",
+  "page_title": "LogObjectsBase.LogFileSize (METH)",
+  "text": "\nMETHOD PROTECTED LogFileSize\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "hFile",
+          "Type": "RTS_IEC_HANDLE"
+        },
+        [
+          "msg",
+          "STRING"
+        ]
+      ]
+    }
+  ]
+}

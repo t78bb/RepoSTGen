@@ -1,0 +1,37 @@
+{
+  "library": "BACnetDefaultImpl",
+  "title": "GetPropertyAttributes (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnetDefaultImpl/Current/BACnetDefaultImpl/Function-Blocks/pou-PropertyConfigurationMostlyAllWritable/GetPropertyAttributes.html",
+  "page_title": "PropertyConfigurationMostlyAllWritable.GetPropertyAttributes (METH)",
+  "text": "\nMETHOD GetPropertyAttributes : BOOL\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetPropertyAttributes",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Input",
+          "Name": "objID",
+          "Type": "CmpBACnet.IEC_BACNET_OBJECT_ID"
+        },
+        [
+          "propID",
+          "CmpBACnet.IEC_BACNET_PROPERTY_ID"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "propAttr",
+          "Type": "BACnet.BACnetPropertyAttributes"
+        }
+      ]
+    }
+  ]
+}

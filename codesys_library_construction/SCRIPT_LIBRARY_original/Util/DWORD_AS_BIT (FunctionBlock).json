@@ -1,0 +1,186 @@
+{
+  "library": "Util",
+  "title": "DWORD_AS_BIT (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/BitByte-Functions/DWORD_AS_BIT.html",
+  "page_title": "DWORD_AS_BIT (FB)",
+  "text": "Analog Monitors\nHYSTERESIS (FunctionBlock)\nLIMITALARM (FunctionBlock)\nBCD Conversions\nBCD_TO_BYTE (Function)\nBCD_TO_DWORD (Function)\nBCD_TO_INT (Function)\nBCD_TO_WORD (Function)\nBYTE_TO_BCD (Function)\nDWORD_TO_BCD (Function)\nINT_TO_BCD (Function)\nWORD_TO_BCD (Function)\nBit/Byte Functions\nBIT_AS_BYTE (FunctionBlock)\nBIT_AS_DWORD (FunctionBlock)\nBIT_AS_WORD (FunctionBlock)\nBYTE_AS_BIT (FunctionBlock)\nDWORD_AS_BIT (FunctionBlock)\nEXTRACT (Function)\nGETBIT (Function)\nPACK (Function)\nPUTBIT (Function)\nSETBIT (Function)\nSWITCHBIT (Function)\nUNPACK (FunctionBlock)\nWORD_AS_BIT (FunctionBlock)\nConstants\nTextBlockSize (ParamList)\nController\nPD (FunctionBlock)\nPID\n(FB)\nTemperature control with PID and LIMIT\nPID_FIXCYCLE (FunctionBlock)\nDatatypes\nGEN_MODE (Enum)\nPOINT (Struct)\nPT_SIZE (Struct)\nEncoding\nBASE64 (Function)\nFunction Manipulators\nCHARCURVE (FunctionBlock)\nRAMP_INT (FunctionBlock)\nRAMP_REAL (FunctionBlock)\nGray Conversions\nBYTE_TO_GRAY (Function)\nDWORD_TO_GRAY (Function)\nGRAY_TO_BYTE (Function)\nGRAY_TO_DWORD (Function)\nGRAY_TO_WORD (Function)\nWORD_TO_GRAY (Function)\nHEX/ASCII Functions\nBYTE_TO_HEXinASCII (Function)\nHEXinASCII_TO_BYTE (Function)\nWORD_AS_STRING (Function)\nLibrary Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nMathematical Functions\nDERIVATIVE (FunctionBlock)\nINTEGRAL (FunctionBlock)\nLIN_TRAFO (FunctionBlock)\nROTATION_DIFFERENCE (FunctionBlock)\nSTATISTICS_INT (FunctionBlock)\nSTATISTICS_REAL (FunctionBlock)\nVARIANCE (FunctionBlock)\nSignals\nBLINK (FunctionBlock)\nFREQ_MEASURE (FunctionBlock)\nGEN (FunctionBlock)\nTimerSwitch\nEnums\nERROR (Enum)\nPERIOD (Enum)\nWEEKDAY (Enum)\nFunctionBlocks\nDateTimeProvider (FunctionBlock)\nGetDateTime (Method)\nTimerSwitch (FunctionBlock)\nIDateTimeProvider\nFunctions\nCombineDateTime (Function)\nDateTimeFromWeek (Function)\nDayOfWeek (Function)\nGetDateTime (Function)\nGetLocalDateTime (Function)\nGetTimeStampsDifference (Function)\nIsLeapYear (Function)\nJoinDateTime (Function)\nLocalDateTime (Function)\nSeparateDateTime (Function)\nSplitDateTime (Function)\nWeekOfYear (Function)\nGlobalConstants\nDAY_FLAGS (GVL)\nTSW (GVL)\nInterfaces\nIDateTimeProvider (Interface)\nGetDateTime (Method)\nStructs\nDateTime (Struct)\nSchedule (Struct)\nSegment (Struct)\nTimeZone (Struct)\nTypes\nDAY (Alias)\nDAYS (Alias)\nHOUR (Alias)\nMILLISECOND (Alias)\nMINUTE (Alias)\nMONTH (Alias)\nSECOND (Alias)\nTZ_NAME (Alias)\nWEEK (Alias)\nYEAR (Alias)\nFile and Project Information\nLibrary Reference\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysTimeRtc\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nUtil\nDocs\n»\nBit/Byte\nFunctions\n»\nDWORD_AS_BIT (FB)\nDWORD_AS_BIT (FB)\nÂ¶\nFUNCTION_BLOCK DWORD_AS_BIT\nConverts an input value of data type DWORD into 32 outputs of data type BOOL\nInOut:\nScope\nName\nType\nComment\nInput\nX\nDWORD\nInput value\nOutput\nB00\nBOOL\nOutput bit 0\nB01\nBOOL\nOutput bit 1\nB02\nBOOL\nOutput bit 2\nB03\nBOOL\nOutput bit 3\nB04\nBOOL\nOutput bit 4\nB05\nBOOL\nOutput bit 5\nB06\nBOOL\nOutput bit 6\nB07\nBOOL\nOutput bit 7\nB08\nBOOL\nOutput bit 8\nB09\nBOOL\nOutput bit 9\nB10\nBOOL\nOutput bit 10\nB11\nBOOL\nOutput bit 11\nB12\nBOOL\nOutput bit 12\nB13\nBOOL\nOutput bit 13\nB14\nBOOL\nOutput bit 14\nB15\nBOOL\nOutput bit 15\nB16\nBOOL\nOutput bit 16\nB17\nBOOL\nOutput bit 17\nB18\nBOOL\nOutput bit 18\nB19\nBOOL\nOutput bit 19\nB20\nBOOL\nOutput bit 20\nB21\nBOOL\nOutput bit 21\nB22\nBOOL\nOutput bit 22\nB23\nBOOL\nOutput bit 23\nB24\nBOOL\nOutput bit 24\nB25\nBOOL\nOutput bit 25\nB26\nBOOL\nOutput bit 26\nB27\nBOOL\nOutput bit 27\nB28\nBOOL\nOutput bit 28\nB29\nBOOL\nOutput bit 29\nB30\nBOOL\nOutput bit 30\nB31\nBOOL\nOutput bit 31",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "X",
+          "Type": "DWORD",
+          "Comment": "Input value"
+        },
+        {
+          "Scope": "Output",
+          "Name": "B00",
+          "Type": "BOOL",
+          "Comment": "Output bit 0"
+        },
+        [
+          "B01",
+          "BOOL",
+          "Output bit 1"
+        ],
+        [
+          "B02",
+          "BOOL",
+          "Output bit 2"
+        ],
+        [
+          "B03",
+          "BOOL",
+          "Output bit 3"
+        ],
+        [
+          "B04",
+          "BOOL",
+          "Output bit 4"
+        ],
+        [
+          "B05",
+          "BOOL",
+          "Output bit 5"
+        ],
+        [
+          "B06",
+          "BOOL",
+          "Output bit 6"
+        ],
+        [
+          "B07",
+          "BOOL",
+          "Output bit 7"
+        ],
+        [
+          "B08",
+          "BOOL",
+          "Output bit 8"
+        ],
+        [
+          "B09",
+          "BOOL",
+          "Output bit 9"
+        ],
+        [
+          "B10",
+          "BOOL",
+          "Output bit 10"
+        ],
+        [
+          "B11",
+          "BOOL",
+          "Output bit 11"
+        ],
+        [
+          "B12",
+          "BOOL",
+          "Output bit 12"
+        ],
+        [
+          "B13",
+          "BOOL",
+          "Output bit 13"
+        ],
+        [
+          "B14",
+          "BOOL",
+          "Output bit 14"
+        ],
+        [
+          "B15",
+          "BOOL",
+          "Output bit 15"
+        ],
+        [
+          "B16",
+          "BOOL",
+          "Output bit 16"
+        ],
+        [
+          "B17",
+          "BOOL",
+          "Output bit 17"
+        ],
+        [
+          "B18",
+          "BOOL",
+          "Output bit 18"
+        ],
+        [
+          "B19",
+          "BOOL",
+          "Output bit 19"
+        ],
+        [
+          "B20",
+          "BOOL",
+          "Output bit 20"
+        ],
+        [
+          "B21",
+          "BOOL",
+          "Output bit 21"
+        ],
+        [
+          "B22",
+          "BOOL",
+          "Output bit 22"
+        ],
+        [
+          "B23",
+          "BOOL",
+          "Output bit 23"
+        ],
+        [
+          "B24",
+          "BOOL",
+          "Output bit 24"
+        ],
+        [
+          "B25",
+          "BOOL",
+          "Output bit 25"
+        ],
+        [
+          "B26",
+          "BOOL",
+          "Output bit 26"
+        ],
+        [
+          "B27",
+          "BOOL",
+          "Output bit 27"
+        ],
+        [
+          "B28",
+          "BOOL",
+          "Output bit 28"
+        ],
+        [
+          "B29",
+          "BOOL",
+          "Output bit 29"
+        ],
+        [
+          "B30",
+          "BOOL",
+          "Output bit 30"
+        ],
+        [
+          "B31",
+          "BOOL",
+          "Output bit 31"
+        ]
+      ]
+    }
+  ]
+}

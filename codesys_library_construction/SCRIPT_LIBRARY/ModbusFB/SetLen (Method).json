@@ -1,0 +1,23 @@
+{
+  "library": "ModbusFB",
+  "title": "SetLen (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/ModbusFB/Current/ModbusFB/Function-Blocks/Util/pou-ByteBuffer/SetLen.html",
+  "page_title": "ByteBuffer.SetLen (METH)",
+  "text": "\nMETHOD SetLen\nUpdate the length between 0 and capacity -1.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "uiLenToSet",
+          "Type": "UINT"
+        }
+      ]
+    }
+  ]
+}

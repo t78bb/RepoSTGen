@@ -1,0 +1,36 @@
+{
+  "library": "CmpBACnet",
+  "title": "BACnetSetClientDeviceCommunication (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/CmpBACnet/Current/BACnetClientAPI/advanced/BACnetSetClientDeviceCommunication.html",
+  "page_title": "BACnetSetClientDeviceCommunication (FUN)",
+  "text": "Deutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nMenu\nSearch\nDeutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nBACnetAsyncTransactionToken (Struct)\nBACnetClientAPI\nBACnetAcknowledgeAlarm (Function)\nBACnetAddListElement (Function)\nBACnetCancelPendingConfirmedRequest (Function)\nBACnetConfPrivateTransfer (Function)\nBACnetConfTextMessage (Function)\nBACnetCreateObject (Function)\nBACnetCreateObjectResult (Struct)\nBACnetDeleteObject (Function)\nBACnetDeviceCommControl (Function)\nBACnetGetAlarmSummary (Function)\nBACnetGetEnrollmentSummary (Function)\nBACnetGetEventInfo (Function)\nBACnetLifeSafetyOperation (Function)\nBACnetReadAllPropertyDataContents (Function)\nBACnetReadFile (Function)\nBACnetReadProperty (Function)\nBACnetReadPropertyMultiple (Function)\nBACnetReadRange (Function)\nBACnetReinitializeDevice (Function)\nBACnetRemoveListElement (Function)\nBACnetSubscribeCOV (Function)\nBACnetSubscribeCOVProperty (Function)\nBACnetUnconfPrivateTransfer (Function)\nBACnetUnconfTextMessage (Function)\nBACnetWhoHas (Function)\nBACnetWhoIs (Function)\nBACnetWriteFile (Function)\nBACnetWriteGroup (Function)\nBACnetWriteProperty (Function)\nBACnetWritePropertyMultiple (Function)\nadvanced\nBACnetBackupBACnetDevice (Function)\nBACnetCloseClientCustomer (Function)\nBACnetGetClientDeviceCommunication (Function)\nBACnetOpenClientCustomer (Function)\nBACnetRegisterClientCommunicationStateCallback (Function)\nBACnetRegisterClientDataPoint (Function)\nBACnetRegisterClientEventNotification (Function)\nBACnetRegisterClientUnsubscribeCompletionCallback (Function)\nBACnetRestartAllClients (Function)\nBACnetRestoreBACnetDevice (Function)\nBACnetSetClientDeviceCommunication (Function)\nBACnetSetClientDeviceFixAddress (Function)\nBACnetSetClientDeviceFixSubscribeCovTime (Function)\nBACnetSetClientGlobalCommTimingParameters (Function)\nBACnetSetClientGlobalMaxDeviceActions (Function)\nBACnetUnregisterClientDataPoint (Function)\nBACnetUnregisterClientEventNotification (Function)\nFile and Project Information\nLibrary Reference\n3SLicense\nLibrary Identification\nLibrary Properties\nCAA Ressource Manager Extern\nLibrary Identification\nLibrary Properties\nCAA Types Extern\nLibrary Identification\nLibrary Properties\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nCmpEventMgr\nLibrary Identification\nLibrary Properties\nCmpLog\nLibrary Identification\nLibrary Properties\nCmpSettings\nLibrary Identification\nLibrary Properties\nComponent Manager\nLibrary Identification\nLibrary Properties\nIoStandard\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysTarget\nLibrary Identification\nLibrary Properties\nSysTask\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nCmpBACnet\nDocs\n»\nBACnetClientAPI\n»\nadvanced\n»\nBACnetSetClientDeviceCommunication (FUN)\nBACnetSetClientDeviceCommunication (FUN)\nÂ¶\nFUNCTION BACnetSetClientDeviceCommunication :\nIEC_BACNET_STATUS\nEnables or disables communication in the advanced BACnet client API to devices.\nThe user application can enable or disable communication to registered devices. If\ncommunication is disabled to one or ALL devices, the connection state change callback\nwill be called for all customers which have registerd that callback for the device.\nIf a new device is registered itâs communication state is initially enabled by default.\nInOut:\nScope\nName\nType\nComment\nReturn\nBACnetSetClientDeviceCommunication\nIEC_BACNET_STATUS\nInput\ndevId\nIEC_BACNET_INST_NUMBER\nThe device instance number for which communication needs to be changed. A value of\n0xFFFFFFFF will change the state of ALL registered devices including the global\ncommunication enable / disable state.\ndccValue\nIEC_BACNET_DCC_VALUE\nSpecifies if communication should be enabled (\nDCC_ENABLE\n) or disabled\n(\nDCC_DISABLE\nor\nDCC_OFFLINE\n)\ntop\nCODESYS Group | We\nsoftware\nAutomation.\nto software\n['sɒftwɛər]\ntransitive verb\n__softwared/softwaring\n: to develop software\n// to software automation: to develop software for automation purposes\nThe CODESYS Group is the manufacturer of CODESYS, the leading hardware-independent\n                                    IEC 61131-3 automation software for developing and engineering controller\n                                    applications.\nCODESYS® is a registered trademark.\nCODESYS GmbH\nA member of the CODESYS Group\nMemminger Straße 151, 87439 Kempten\nGermany\nTel.:\n+49-831-54031-0\ninfo@codesys.com\nLegal Notice\nPrivacy Policy\nLinkedIn\nYoutube\nRSS\nDownloads\nLogin\nCODESYS Store\n© 2022 CODESYS GmbH\n| A member of the CODESYS Group",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "BACnetSetClientDeviceCommunication",
+          "Type": "IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "devId",
+          "Type": "IEC_BACNET_INST_NUMBER",
+          "Comment": "The device instance number for which communication needs to be changed. A value of\n0xFFFFFFFF will change the state of ALL registered devices including the global\ncommunication enable / disable state."
+        },
+        [
+          "dccValue",
+          "IEC_BACNET_DCC_VALUE",
+          "Specifies if communication should be enabled (DCC_ENABLE) or disabled\n(DCC_DISABLEorDCC_OFFLINE)"
+        ]
+      ]
+    }
+  ]
+}

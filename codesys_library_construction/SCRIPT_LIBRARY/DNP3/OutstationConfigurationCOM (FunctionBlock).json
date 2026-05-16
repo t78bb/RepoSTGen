@@ -1,0 +1,106 @@
+{
+  "library": "DNP3",
+  "title": "OutstationConfigurationCOM (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Outstation/OutstationConfigurationCOM.html",
+  "page_title": "OutstationConfigurationCOM (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL OutstationConfigurationCOM EXTENDS\nOutstationConfiguration\nIMPLEMENTS IOutstationConfigurationCOM\nFunction block representing an Outstation COM configuration.\nAn Outstation needs to be configured regarding its\noutstation address\noptional validate a given master address\neither IP- or COM-settings\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment",
+        "Inherited from"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "address",
+          "Type": "UINT",
+          "Initial": "0",
+          "Comment": "The outstation address.",
+          "Inherited from": "OutstationConfiguration"
+        },
+        [
+          "name",
+          "STRING",
+          "",
+          "The outstation name.",
+          "OutstationConfiguration"
+        ],
+        [
+          "validateMaster",
+          "BOOL",
+          "FALSE",
+          "Validate the master address. This allows only the master\nwith âmasterAddressâ a connection.",
+          "OutstationConfiguration"
+        ],
+        [
+          "masterAddress",
+          "UINT",
+          "0",
+          "The master address which is allowed to connect.",
+          "OutstationConfiguration"
+        ],
+        [
+          "enableUnsolicitedResponse",
+          "BOOL",
+          "FALSE",
+          "Enable or disable the unsolicited responses using a default configuration represented by defaults provided by CmpDNP3OutstationSessionConfigUnsolicitedResponse.\nIf disabled the client will not be able to enable them.",
+          "OutstationConfiguration"
+        ],
+        [
+          "portNumber",
+          "UINT",
+          "0",
+          "Port number: 0=disabled, 1=COM1, 2=COM2, â¦.",
+          ""
+        ],
+        [
+          "baudrate",
+          "UDINT",
+          "115200",
+          "Baudrate:  4800, 9600, 19200,  38400, 57600, 115200â¦.",
+          ""
+        ],
+        [
+          "dataBits",
+          "USINT",
+          "8",
+          "Number of bits 4-8",
+          ""
+        ],
+        [
+          "stopBits",
+          "COMStopBits",
+          "1",
+          "Supported stop bits",
+          ""
+        ],
+        [
+          "parity",
+          "COMParity",
+          "COMParity.None",
+          "Supported parity",
+          ""
+        ],
+        [
+          "bufferSize",
+          "UDINT",
+          "",
+          "Buffer size of FIFO buffer",
+          ""
+        ],
+        [
+          "timeout",
+          "TIME",
+          "",
+          "The Timeout is the TIME between two received or sent\ncharacters until the read or write operation will return.",
+          ""
+        ]
+      ]
+    }
+  ]
+}

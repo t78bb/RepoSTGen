@@ -1,0 +1,6 @@
+{
+  "requirement": "This code should implement a function that reverses the direction of an input of type TargetDirect, where TargetDirect is an enumeration with at least the members 'extend' and 'retract'. The function should take one input parameter named 'input' of type TargetDirect and return a value of the same type. If 'input' equals TargetDirect.extend, the function should return TargetDirect.retract. Conversely, if 'input' equals TargetDirect.retract, the function should return TargetDirect.extend. The behavior for other values of TargetDirect, if any, is not defined in the provided code snippet.",
+  "provide_code": "FUNCTION cmdReverse : TargetDirect\nVAR_INPUT\n\tinput\t\t:TargetDirect;\nEND_VAR",
+  "function_name": "DataReverse_cmdReverse",
+  "requirement_cn": "该代码应实现一个功能，用于反转类型为TargetDirect的输入方向，其中TargetDirect是一个枚举，至少包含'member'和'retract'两个成员。该函数应接受一个名为'input'的输入参数，类型为TargetDirect，并返回相同类型的值。如果'input'等于TargetDirect.extend，则函数应返回TargetDirect.retract。相反，如果'input'等于TargetDirect.retract，则函数应返回TargetDirect.extend。如果有，TargetDirect的其他值的行为在提供的代码片段中未定义。"
+}

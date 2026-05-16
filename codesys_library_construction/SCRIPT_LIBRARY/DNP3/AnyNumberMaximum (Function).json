@@ -1,0 +1,28 @@
+{
+  "library": "DNP3",
+  "title": "AnyNumberMaximum (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Functions/AnyNumber/AnyNumberMaximum.html",
+  "page_title": "AnyNumberMaximum (FUN)",
+  "text": "\nFUNCTION AnyNumberMaximum :\nAnyNumber\nReturns an AnyNumber set to numerical maximum using the given base type.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "AnyNumberMaximum",
+          "Type": "AnyNumber"
+        },
+        {
+          "Scope": "Input",
+          "Name": "baseType",
+          "Type": "AnyNumberType"
+        }
+      ]
+    }
+  ]
+}

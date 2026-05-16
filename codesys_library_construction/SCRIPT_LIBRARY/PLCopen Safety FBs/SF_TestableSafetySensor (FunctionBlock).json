@@ -1,0 +1,124 @@
+{
+  "library": "PLCopen Safety FBs",
+  "title": "SF_TestableSafetySensor (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/PLCopen Safety FBs/Current/PLCopenSafetyFBs/Function-Blocks/SF_TestableSafetySensor.html",
+  "page_title": "SF_TestableSafetySensor (FB)",
+  "text": "\nFUNCTION_BLOCK SF_TestableSafetySensor\nThis function block detects, for example, the loss of the sensing unit detection capability, the response time exceed-ing that specified, and static ON signal in single-channel sensor systems.\nIt can be used for external testable safety sensors (ESPE: Electro-sensitive protective equipment, such as a light beam).\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "Activate",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "Activation of the FB."
+        },
+        [
+          "S_OSSD_In",
+          "BOOL",
+          "FALSE",
+          "Status of sensor output, e.g., light curtain. FALSE: Safety\nsensor in test state or demand for safety-related response.\nTRUE: Sensor in the state for normal operating conditions."
+        ],
+        [
+          "StartTest",
+          "BOOL",
+          "FALSE",
+          "Input to start sensor test. Sets âS_TestOutâ and starts the\ninternal time monitoring function in the FB. FALSE: No test\nrequested. TRUE: Test requested."
+        ],
+        [
+          "TestTime",
+          "TIME",
+          "TIME#10ms",
+          "Test time of safety sensor. Range from 0 to 150ms."
+        ],
+        [
+          "NoExternalTest",
+          "BOOL",
+          "FALSE",
+          "Indicates if external manual sensor test is supported. FALSE: The external manual sensor test is supported.\nOnly after a complete manual sensor switching sequence, a automatic test is possible again after a faulty automatic sensor test.\nTRUE: The external manual sensor test is not supported. An automatic test is possible again without a manual sensor switch-ing sequence after faulty automatic sensor test."
+        ],
+        [
+          "S_StartReset",
+          "BOOL",
+          "FALSE",
+          "Start behaviour of safety FB"
+        ],
+        [
+          "S_AutoReset",
+          "BOOL",
+          "FALSE",
+          "Behaviour on error of safety FB"
+        ],
+        [
+          "Reset",
+          "BOOL",
+          "FALSE",
+          "Manual reset of FB"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Ready",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "Activation of the FB. TRUE indicates that the FB is\nactivated and the outputs results are valid, FALSE the FB is\nnot active and the program is not executed."
+        },
+        [
+          "S_OSSD_Out",
+          "BOOL",
+          "FALSE",
+          "Safety related output indicating the status of the ESPE.\nFALSE: The sensor has a safety-related action request or\ntest error. TRUE: The sensor has no safety-related action\nrequest AND no test error."
+        ],
+        [
+          "S_TestOut",
+          "BOOL",
+          "FALSE",
+          "Coupled with the test input of the sensor. Although specified as SAFEBOOL, in practice this signal will often be connected to a BOOL output.\nFALSE: Test request issued. TRUE: No test request."
+        ],
+        [
+          "TestPossible",
+          "BOOL",
+          "FALSE",
+          "Feedback signal to the process. FALSE: An automatic sensor\ntest is not possible. TRUE: An automatic sensor test is\npossible."
+        ],
+        [
+          "TestExecuted",
+          "BOOL",
+          "FALSE",
+          "A positive signal edge indicates the successful execution of the au-tomatic sensor test.\nFALSE: An automatic sensor test was not executed yet or an automatic sensor test is active or an automatic sensor test was faulty.\nTRUE: A sensor test was executed successfully."
+        ],
+        [
+          "SafetyDemand",
+          "BOOL",
+          "FALSE",
+          "Output indicating that the FB is active and the primary\nsafety function is demanded (e.g. related to the safety\nfunctionality)."
+        ],
+        [
+          "ResetRequest",
+          "BOOL",
+          "FALSE",
+          "Output which can be used to signal the operator to press the\nreset functionality to continue."
+        ],
+        [
+          "Error",
+          "BOOL",
+          "FALSE",
+          "Error flag"
+        ],
+        [
+          "DiagCode",
+          "WORD",
+          "0",
+          "Diagnostic register"
+        ]
+      ]
+    }
+  ]
+}

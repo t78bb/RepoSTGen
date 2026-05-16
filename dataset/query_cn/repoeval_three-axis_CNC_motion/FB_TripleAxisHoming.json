@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现三轴（X、Y、Z）伺服电机的自动回零控制功能，包括回零过程的状态监控和错误处理。",
+  "provide_code": "FUNCTION_BLOCK FB_TripleAxisHoming\nVAR_INPUT\n\tbExecute\t\t\t:\tBOOL;\t\t\t\t//执行回零信号\n\tAxisX\t\t\t\t:\tAXIS_REF;\t\t\t//X轴引用\n\tAxisY\t\t\t\t:\tAXIS_REF;\t\t\t//Y轴引用\n\tAxisZ\t\t\t\t:\tAXIS_REF;\t\t\t//Z轴引用\n\tbAxisXRefSwitch\t\t:\tBOOL;\t\t\t\t//X轴零点开关\n\tbAxisYRefSwitch\t\t:\tBOOL;\t\t\t\t//Y轴零点开关\n\tbAxisZRefSwitch\t\t:\tBOOL;\t\t\t\t//Z轴零点开关\n\tfVelocitySlow\t\t:\tREAL;\t\t\t\t//慢速回零速度\n\tfVelocityFast\t\t:\tREAL;\t\t\t\t//快速回零速度\n\tfAcceleration\t\t:\tREAL;\t\t\t\t//加速度\n\tfDeceleration\t\t:\tREAL;\t\t\t\t//减速度\nEND_VAR\nVAR_OUTPUT\n\tbHomeOK\t\t\t\t:\tBOOL;\t\t\t\t//三轴都回零完成\n\tbAxisXHomeOK\t\t:\tBOOL;\t\t\t\t//X轴回零完成\n\tbAxisYHomeOK\t\t:\tBOOL;\t\t\t\t//Y轴回零完成\n\tbAxisZHomeOK\t\t:\tBOOL;\t\t\t\t//Z轴回零完成\n\tbBusy\t\t\t\t:\tBOOL;\t\t\t\t//回零进行中\n\tbError\t\t\t\t:\tBOOL;\t\t\t\t//错误标志\n\tsErrorString\t\t:\tSTRING;\t\t\t\t//错误信息字符串\nEND_VAR"
+}

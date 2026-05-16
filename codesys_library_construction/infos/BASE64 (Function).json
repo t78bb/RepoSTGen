@@ -1,0 +1,41 @@
+{
+  "library": "Util",
+  "title": "BASE64 (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/Encoding/BASE64.html",
+  "page_title": "BASE64 (FUN)",
+  "text": "\nFUNCTION BASE64 :\nPT_SIZE\nencodes 8 bit binary data into ASCII data\nA text block (string, binary, array of bytes) will be base64 encoded. The maximum of the block is set in the\nTextBlockSize\nparameter.\nThis size can be changed but must be divisible by 3.\nIf the text block is only a part of a text and followed by more text, the size must be\nTextBlockSize.iBlockSize\nand\nthe\nisLastBlock\nvariable must be set to\nFALSE\n. If a text is not followed by another block, the specific length\nof it must be used and\nisLastBlock\nhas to be set to\nTRUE\n, as shown in the following example. The reason is\nthree 8-bit letters will become four 6-bit letters. If only two 8-Bit letters are remaining at the end, the encoded text is\nfilled with â=â. This must only be at the end of a text.\nExample:\nStringToConvert\n:\nPT_SIZE\n;\nEncodedString\n:\nPT_SIZE\n;\nbyError\n:\nBYTE\n;\nsText\n:\nSTRING\n:=\n'This is a test string.'\n;\nStringToConvert.uiSize\n:=\nLEN\n(\nsText\n);\n(* When another block follows, use the size TextBlockSize.iBlockSize\nand set isLastBlock to FALSE. *)\nStringToConvert.pString\n:=\nADR\n(\nsText\n);\nEncodedString\n:=\nBase64\n(\nTextToEncode\n:=\nStringToConvert\n,\nisLastBlock\n:=\nTRUE\n,\npbyError\n:=\nADR\n(\nbyError\n));\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "BASE64",
+          "Type": "PT_SIZE",
+          "Comment": "A structure with a pointer to the text and its size\n(comprising the terminating character)"
+        },
+        {
+          "Scope": "Input",
+          "Name": "TextToEncode",
+          "Type": "PT_SIZE",
+          "Comment": "The text block which should be encoded"
+        },
+        [
+          "isLastBlock",
+          "BOOL",
+          "TRUE: The current text block is the end of a textFALSE: The current text block is just a small text"
+        ],
+        [
+          "pbyError",
+          "POINTER TO BYTE",
+          "0: No error1: Text block is too long2: Not divisible through 34: Empty string"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "library": "BACnet",
+  "title": "GetObjectIDFromContents (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/Utilities/BACnetUtilities/FromBACnetContents/GetObjectIDFromContents.html",
+  "page_title": "GetObjectIDFromContents (FUN)",
+  "text": "\nFUNCTION GetObjectIDFromContents : CmpBACnet.IEC_BACNET_OBJECT_ID\nTries to evaluate property contents as IEC_BACNET_OBJECT_ID data type.\nIf the contents are not of type IEC_BACNET_OBJECT_ID an IEC_BACNET_OBJECT_ID(typ = _OBJ_MAX_SIZE, instNumber = 0) is returned.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetObjectIDFromContents",
+          "Type": "CmpBACnet.IEC_BACNET_OBJECT_ID",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "conts",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_CONTENTS",
+          "Comment": "The contents to be evaluated as IEC_BACNET_OBJECT_ID."
+        }
+      ]
+    }
+  ]
+}

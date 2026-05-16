@@ -1,0 +1,36 @@
+{
+  "library": "AlarmManager",
+  "title": "AlarmStorageGetMessageCount (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Alarm-storage-API/AlarmStorageGetMessageCount.html",
+  "page_title": "AlarmStorageGetMessageCount (FUN)",
+  "text": "\nFUNCTION AlarmStorageGetMessageCount : USINT\nThis function can be used to determine the number of messages an alarm belonging\nto a given alarm group has.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "AlarmStorageGetMessageCount",
+          "Type": "USINT",
+          "Comment": "The number of messages. 0 if the corresponding information\ncannot be retrieved"
+        },
+        {
+          "Scope": "Input",
+          "Name": "udiAlarmGroupId",
+          "Type": "UDINT",
+          "Comment": "The internal id of the alarm group, that was read from the\nalarm storage"
+        },
+        [
+          "udiAlarmId",
+          "UDINT",
+          "The internal id of the alarm, that was read from the alarm\nstorage"
+        ]
+      ]
+    }
+  ]
+}

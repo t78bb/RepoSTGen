@@ -1,0 +1,33 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_ORI_CONVENTION (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_Data-types/SoftMotion-CNC/SMC_ORI_CONVENTION.html",
+  "page_title": "SMC_ORI_CONVENTION (ENUM)",
+  "text": "\nTYPE SMC_ORI_CONVENTION :\nRepresents different interpretations of an orientation given by three Euler angles.\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "ADDAXES",
+          "Comment": "A/B/C are treated as additional axes and not as an orientation;"
+        },
+        {
+          "Name": "ZYZ",
+          "Comment": "Rotation around the axes z, yâ, zââ;"
+        },
+        {
+          "Name": "ZYX",
+          "Comment": "Rotation around the axes z, yâ, xââ; also known as Yaw-Pitch-Roll;"
+        },
+        {
+          "Name": "XYZ",
+          "Comment": "Rotation around the axes x, yâ, zââ;"
+        }
+      ]
+    }
+  ]
+}

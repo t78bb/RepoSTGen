@@ -1,0 +1,32 @@
+{
+  "library": "MemoryUtils",
+  "title": "Swap (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/MemoryUtils/Current/MemoryUtils/Functions/Swapping/Swap.html",
+  "page_title": "Swap (FUN)",
+  "text": "\nFUNCTION Swap : INT\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "Swap",
+          "Type": "INT"
+        },
+        {
+          "Scope": "Input",
+          "Name": "puc",
+          "Type": "POINTER TO BYTE"
+        },
+        [
+          "iSize",
+          "INT"
+        ]
+      ]
+    }
+  ]
+}

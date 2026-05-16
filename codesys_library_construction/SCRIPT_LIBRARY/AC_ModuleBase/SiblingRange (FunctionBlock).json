@@ -1,0 +1,8 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "SiblingRange (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_Module/TreeNavigation/SiblingRange.html",
+  "page_title": "SiblingRange (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL SiblingRange IMPLEMENTS\nIModuleRangeForward\nThe range of all siblings of a module instance.  The order is\nas defined by the module tree. The range starts with a given\nmodule instance.\nProperties:\nFirst\nIsEmpty\nMethods:\nInit\nPopFirst\nStructure:\nFirst (Property)\nInit (Method)\nIsEmpty (Property)\nPopFirst (Method)",
+  "tables": []
+}

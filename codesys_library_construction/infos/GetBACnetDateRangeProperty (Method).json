@@ -1,0 +1,28 @@
+{
+  "library": "BACnet",
+  "title": "GetBACnetDateRangeProperty (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/pou-IBACnetObjectBase/Utilities/GetBACnetDateRangeProperty.html",
+  "page_title": "IBACnetObjectBase.GetBACnetDateRangeProperty (METH)",
+  "text": "\nMETHOD GetBACnetDateRangeProperty :\nBACnetDateRange\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetBACnetDateRangeProperty",
+          "Type": "BACnetDateRange"
+        },
+        {
+          "Scope": "Input",
+          "Name": "propID",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_ID"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现根据指定的SWMC控制ID和缓冲区索引读取CAN总线数据并返回对应的帧信息。",
+  "provide_code": "FUNCTION CAN_Read_Data_SWMC : Can_baseframe\nVAR_INPUT\n\tSWMC_ID\t :UINT;\t\t//接收SWMC控制ID\n\tI\t \t :UINT;      //接收缓冲区域\nEND_VAR"
+}

@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现针对输入信号的PT1滤波功能。",
+  "provide_code": "FUNCTION_BLOCK FB_PT1Filter\nVAR_INPUT\n\trInput: REAL:= 0.0; \t\t\t\t\t\t\t\t//输入数据\n\trK: REAL:= 1.0; \t\t\t\t\t\t\t\t\t//增益\n\ttT: TIME; \t\t\t\t\t\t\t\t\t\t\t//时间参数\nEND_VAR\nVAR_OUTPUT\n\trOutput: REAL:= 0.0;  \t\t\t\t\t\t\t\t//输出数据\nEND_VAR"
+}

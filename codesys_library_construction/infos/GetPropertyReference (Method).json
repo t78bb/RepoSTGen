@@ -1,0 +1,37 @@
+{
+  "library": "BACnet",
+  "title": "GetPropertyReference (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/Schedule/pou-BACnetSchedule/PropertyReferences/GetPropertyReference.html",
+  "page_title": "BACnetSchedule.GetPropertyReference (METH)",
+  "text": "\nMETHOD GetPropertyReference : CmpBACnet.IEC_BACNET_STATUS\nGets the device object property reference at index nIndex in the List_Of-Object_Property_References-Property of this BACnet-Object.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetPropertyReference",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "nIndex",
+          "Type": "CmpBACnet.IEC_BACNET_ELEMENT_COUNT",
+          "Comment": "The 1 based index of the reference to get."
+        },
+        {
+          "Scope": "Output",
+          "Name": "devObjPropRef",
+          "Type": "CmpBACnet.IEC_BACNET_DEV_OBJ_PROP_REFERENCE",
+          "Comment": "The object property reference gotten after a call to this\nmethod."
+        }
+      ]
+    }
+  ]
+}

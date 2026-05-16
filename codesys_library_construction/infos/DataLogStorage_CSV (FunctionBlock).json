@@ -1,0 +1,85 @@
+{
+  "library": "AC_DataLog",
+  "title": "DataLogStorage_CSV (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_DataLog/Current/AC_DataLog/DataLogStorage/CSVStorage/DataLogStorage_CSV.html",
+  "page_title": "DataLogStorage_CSV (FB)",
+  "text": "\nFUNCTION_BLOCK DataLogStorage_CSV EXTENDS\nDataLogStorageBase\nimplements IReplaceDateInFilePath\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment",
+        "Inherited from"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "sStorageName",
+          "Type": "STRING(32)",
+          "Initial": "Constants.gc_ChannelNamePlaceholder",
+          "Comment": "",
+          "Inherited from": "DataLogStorageBase"
+        },
+        [
+          "sSeperator",
+          "STRING(5)",
+          "â,â",
+          "Parameter",
+          ""
+        ],
+        [
+          "pbyBuffer",
+          "POINTER TO BYTE",
+          "",
+          "",
+          ""
+        ],
+        [
+          "uiBufferSize",
+          "UINT",
+          "2000",
+          "",
+          ""
+        ],
+        [
+          "rBufferFillLevel",
+          "REAL",
+          "75",
+          "",
+          ""
+        ],
+        [
+          "xAddApostropheAroundStringEntries",
+          "BOOL",
+          "FALSE",
+          "",
+          ""
+        ],
+        [
+          "sSurroundingSign",
+          "STRING(5)",
+          "â$ââ",
+          "",
+          ""
+        ],
+        [
+          "sDateReplacementString",
+          "STRING(50)",
+          "âyyyyMMddâ",
+          "",
+          ""
+        ],
+        [
+          "eLineEnding",
+          "AC_PERSIST.LineEnding",
+          "AC_PERSIST.LineEnding.CRLF",
+          "",
+          ""
+        ]
+      ]
+    }
+  ]
+}

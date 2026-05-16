@@ -1,0 +1,36 @@
+{
+  "library": "BACnet",
+  "title": "AddBACnetDateRange (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/Calendar/pou-BACnetCalendar/AddBACnetDateRange.html",
+  "page_title": "BACnetCalendar.AddBACnetDateRange (METH)",
+  "text": "\nMETHOD AddBACnetDateRange : CmpBACnet.IEC_BACNET_STATUS\nAdds a date range as calendar entry to the Date_List-Property of this BACnet-Calendar-Object.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "AddBACnetDateRange",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "bacStartDat",
+          "Type": "CmpBACnet.IEC_BACNET_DATE",
+          "Comment": "The start date of the date range to add to the Date_List-\nProperty."
+        },
+        [
+          "bacEndDat",
+          "CmpBACnet.IEC_BACNET_DATE",
+          "The end date of the date range to add to the Date_List-\nProperty."
+        ]
+      ]
+    }
+  ]
+}

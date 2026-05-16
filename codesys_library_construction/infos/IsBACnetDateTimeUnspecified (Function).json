@@ -1,0 +1,28 @@
+{
+  "library": "BACnet",
+  "title": "IsBACnetDateTimeUnspecified (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/Utilities/BACnetUtilities/FromBACnetDataTypes/IsBACnetDateTimeUnspecified.html",
+  "page_title": "IsBACnetDateTimeUnspecified (FUN)",
+  "text": "\nFUNCTION IsBACnetDateTimeUnspecified : BOOL\nCheck if a IEC_BACNET_DATE_TIME is set to unspecified.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "IsBACnetDateTimeUnspecified",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Input",
+          "Name": "bacDateTime",
+          "Type": "CmpBACnet.IEC_BACNET_DATE_TIME"
+        }
+      ]
+    }
+  ]
+}

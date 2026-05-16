@@ -1,0 +1,52 @@
+{
+  "library": "DNP3",
+  "title": "AnalogInputGetFromPointNum (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/pou-Master/Datapoints/AnalogInputGetFromPointNum.html",
+  "page_title": "Master.AnalogInputGetFromPointNum (METH)",
+  "text": "\nMETHOD AnalogInputGetFromPointNum :\nError\nGet the value of Analog Input datapoint (DNP3 object group 30 âanalog inputsâ) with given point number (0 .. MaxPointNum).\nReturns PointNotExistent, if a datapoint with the given point number doesnt exist, OK otherwise.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "AnalogInputGetFromPointNum",
+          "Type": "Error",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "pointNumber",
+          "Type": "UINT",
+          "Comment": "Point number."
+        },
+        {
+          "Scope": "Output",
+          "Name": "value",
+          "Type": "AnyNumber",
+          "Comment": "Value"
+        },
+        [
+          "flags",
+          "USINT",
+          "Flags. Flag values are ORâdcombinations of the following:DNPDEFS_DBAS_FLAG_ON_LINE - the point has been readsuccessfullyDNPDEFS_DBAS_FLAG_RESTART - the field device that originated thedata object has been restarted. This device may be the deviced\nreporting this data object.DNPDEFS_DBAS_FLAG_COMM_LOST - the device reporting this data objecthas lost communication with the originator of the data objectDNPDEFS_DBAS_FLAG_REMOTE_FORCED - the state of the binary objecthas been forced to its current state at the originating deviceDNPDEFS_DBAS_FLAG_LOCAL_FORCED - the state of the binary objecthas been forced to its current state at the device reporting\nthis data objectDNPDEFS_DBAS_FLAG_OVER_RANGE - the digitized signal or calculationis greater than the type specified in TMWTYPES_ANALOG_VALUE. If the\nSCL determines that the value returned cannot fit in the type\nspecified by the object variation read it will set this OVER_RANGE bit.DNPDEFS_DBAS_FLAG_REFERENCE_CHK - the reference signal used todigitize the signal is not stable, and the resulting digitized\nvalue may not be correct."
+        ],
+        [
+          "hasTimeStamp",
+          "BOOL",
+          "Has a valid time stamp."
+        ],
+        [
+          "timeStamp",
+          "LDATE_AND_TIME",
+          "Time stamp reported - valid if hasTimeStamp = TRUE, invalid\notherwise."
+        ]
+      ]
+    }
+  ]
+}

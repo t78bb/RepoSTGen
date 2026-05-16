@@ -1,0 +1,36 @@
+{
+  "library": "AC_DataLog",
+  "title": "DequeueElement (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_DataLog/Current/AC_DataLog/DataLogStorage/pou-DataLogStorageBase/private/DequeueElement.html",
+  "page_title": "DataLogStorageBase.DequeueElement (METH)",
+  "text": "\nMETHOD FINAL PROTECTED DequeueElement : IDataLogQueueNode\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "DequeueElement",
+          "Type": "IDataLogQueueNode",
+          "Initial": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfVarDescElemOld",
+          "Type": "IDataLogQueueNode",
+          "Initial": ""
+        },
+        [
+          "xRemoveFromQueue",
+          "BOOL",
+          "TRUE"
+        ]
+      ]
+    }
+  ]
+}

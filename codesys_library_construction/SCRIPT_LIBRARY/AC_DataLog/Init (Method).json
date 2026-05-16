@@ -1,0 +1,23 @@
+{
+  "library": "AC_DataLog",
+  "title": "Init (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_DataLog/Current/AC_DataLog/DataLogStorage/SQLiteStorage/pou-DataLogStorage_SQLite/IModule/Init.html",
+  "page_title": "DataLogStorage_SQLite.Init (METH)",
+  "text": "\nMETHOD Init\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "bOnlineChange",
+          "Type": "BOOL"
+        }
+      ]
+    }
+  ]
+}

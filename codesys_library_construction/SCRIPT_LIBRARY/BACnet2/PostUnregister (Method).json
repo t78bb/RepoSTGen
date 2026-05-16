@@ -1,0 +1,23 @@
+{
+  "library": "BACnet2",
+  "title": "PostUnregister (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/BACnetServerPlugin/pou-IBACnetServerPlugin/PostUnregister.html",
+  "page_title": "IBACnetServerPlugin.PostUnregister (METH)",
+  "text": "\nMETHOD PostUnregister : UDINT\nDeinitialization, gets called during\nBACnetServer.UnregisterPlugin\nafter application service hooks/callbacks are unregistered.\nReturn CmpErrors.Errors.ERR_OK if successfully.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "PostUnregister",
+          "Type": "UDINT"
+        }
+      ]
+    }
+  ]
+}

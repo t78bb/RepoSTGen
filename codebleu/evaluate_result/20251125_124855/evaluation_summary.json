@@ -1,0 +1,1787 @@
+{
+  "overall_statistics": {
+    "num_projects": 29,
+    "total_cases": 101,
+    "overall_codebleu": 0.31980954656141797,
+    "overall_edit_distance": 1232.4158415841584,
+    "overall_edit_similarity": 0.20500657546829737
+  },
+  "project_results": [
+    {
+      "project_name": "repoeval_Builder_Application_RPI",
+      "num_cases": 5,
+      "average_codebleu": 0.30846958043015366,
+      "average_edit_distance": 1588.8,
+      "average_edit_similarity": 0.23940746331876778,
+      "case_results": [
+        {
+          "codebleu": 0.3757046261859586,
+          "codebleu_details": {
+            "codebleu": 0.3757046261859586,
+            "ngram_match_score": 0.04304742170538843,
+            "weighted_ngram_match_score": 0.13977108303844601,
+            "syntax_match_score": 0.52,
+            "dataflow_match_score": 0.8
+          },
+          "edit_distance": 1638,
+          "normalized_edit_distance": 0.8210526315789474,
+          "edit_similarity": 0.17894736842105263,
+          "reference_length": 595,
+          "prediction_length": 1995
+        },
+        {
+          "codebleu": 0.2672380231749882,
+          "codebleu_details": {
+            "codebleu": 0.2672380231749882,
+            "ngram_match_score": 0.06896037216235697,
+            "weighted_ngram_match_score": 0.26966457641734815,
+            "syntax_match_score": 0.28205128205128205,
+            "dataflow_match_score": 0.4482758620689655
+          },
+          "edit_distance": 2129,
+          "normalized_edit_distance": 0.7861890694239291,
+          "edit_similarity": 0.21381093057607092,
+          "reference_length": 766,
+          "prediction_length": 2708
+        },
+        {
+          "codebleu": 0.17635737718402406,
+          "codebleu_details": {
+            "codebleu": 0.17635737718402406,
+            "ngram_match_score": 0.1086981570784156,
+            "weighted_ngram_match_score": 0.14821650017253213,
+            "syntax_match_score": 0.1485148514851485,
+            "dataflow_match_score": 0.3
+          },
+          "edit_distance": 819,
+          "normalized_edit_distance": 0.6573033707865169,
+          "edit_similarity": 0.3426966292134831,
+          "reference_length": 1246,
+          "prediction_length": 604
+        },
+        {
+          "codebleu": 0.4960451684176771,
+          "codebleu_details": {
+            "codebleu": 0.4960451684176771,
+            "ngram_match_score": 0.06247980400720994,
+            "weighted_ngram_match_score": 0.38640675201643954,
+            "syntax_match_score": 0.7352941176470589,
+            "dataflow_match_score": 0.8
+          },
+          "edit_distance": 2782,
+          "normalized_edit_distance": 0.8591723285978999,
+          "edit_similarity": 0.14082767140210006,
+          "reference_length": 503,
+          "prediction_length": 3238
+        },
+        {
+          "codebleu": 0.22700270718812024,
+          "codebleu_details": {
+            "codebleu": 0.22700270718812024,
+            "ngram_match_score": 0.13262303509747084,
+            "weighted_ngram_match_score": 0.1975031782703948,
+            "syntax_match_score": 0.3625,
+            "dataflow_match_score": 0.2153846153846154
+          },
+          "edit_distance": 576,
+          "normalized_edit_distance": 0.6792452830188679,
+          "edit_similarity": 0.3207547169811321,
+          "reference_length": 848,
+          "prediction_length": 400
+        }
+      ]
+    },
+    {
+      "project_name": "repoeval_Command1",
+      "num_cases": 12,
+      "average_codebleu": 0.40903270936572644,
+      "average_edit_distance": 1487.0,
+      "average_edit_similarity": 0.10844720554824631,
+      "case_results": [
+        {
+          "codebleu": 0.3888888888888889,
+          "codebleu_details": {
+            "codebleu": 0.3888888888888889,
+            "ngram_match_score": 0,
+            "weighted_ngram_match_score": 0,
+            "syntax_match_score": 0.5555555555555556,
+            "dataflow_match_score": 0
+          },
+          "edit_distance": 1999,
+          "normalized_edit_distance": 0.9460482725982016,
+          "edit_similarity": 0.05395172740179843,
+          "reference_length": 133,
+          "prediction_length": 2113
+        },
+        {
+          "codebleu": 0.2822289485094688,
+          "codebleu_details": {
+            "codebleu": 0.2822289485094688,
+            "ngram_match_score": 0.0007714968891247334,
+            "weighted_ngram_match_score": 0.017033186037639283,
+            "syntax_match_score": 0.1111111111111111,
+            "dataflow_match_score": 0
+          },
+          "edit_distance": 1526,
+          "normalized_edit_distance": 0.9327628361858191,
+          "edit_similarity": 0.06723716381418088,
+          "reference_length": 133,
+          "prediction_length": 1636
+        },
+        {
+          "codebleu": 0.2727272727272727,
+          "codebleu_details": {
+            "codebleu": 0.2727272727272727,
+            "ngram_match_score": 0,
+            "weighted_ngram_match_score": 0,
+            "syntax_match_score": 0.09090909090909091,
+            "dataflow_match_score": 0
+          },
+          "edit_distance": 846,
+          "normalized_edit_distance": 0.9235807860262009,
+          "edit_similarity": 0.07641921397379914,
+          "reference_length": 102,
+          "prediction_length": 916
+        },
+        {
+          "codebleu": 0.3251509525129671,
+          "codebleu_details": {
+            "codebleu": 0.3251509525129671,
+            "ngram_match_score": 0.0006058917589234542,
+            "weighted_ngram_match_score": 0.01428363257865929,
+            "syntax_match_score": 0.2857142857142857,
+            "dataflow_match_score": 0
+          },
+          "edit_distance": 1829,
+          "normalized_edit_distance": 0.9521082769390942,
+          "edit_similarity": 0.04789172306090583,
+          "reference_length": 116,
+          "prediction_length": 1921
+        },
+        {
+          "codebleu": 0.6086710155967954,
+          "codebleu_details": {
+            "codebleu": 0.6086710155967954,
+            "ngram_match_score": 0.042710908430010866,
+            "weighted_ngram_match_score": 0.5169731539571706,
+            "syntax_match_score": 0.875,
+            "dataflow_match_score": 0
+          },
+          "edit_distance": 458,
+          "normalized_edit_distance": 0.882466281310212,
+          "edit_similarity": 0.11753371868978801,
+          "reference_length": 67,
+          "prediction_length": 519
+        },
+        {
+          "codebleu": 0.2916666666666667,
+          "codebleu_details": {
+            "codebleu": 0.2916666666666667,
+            "ngram_match_score": 0,
+            "weighted_ngram_match_score": 0,
+            "syntax_match_score": 0.16666666666666666,
+            "dataflow_match_score": 0
+          },
+          "edit_distance": 2025,
+          "normalized_edit_distance": 0.9538389072067829,
+          "edit_similarity": 0.04616109279321712,
+          "reference_length": 131,
+          "prediction_length": 2123
+        },
+        {
+          "codebleu": 0.5132275235403481,
+          "codebleu_details": {
+            "codebleu": 0.5132275235403481,
+            "ngram_match_score": 0.0490158685673909,
+            "weighted_ngram_match_score": 0.44833867003844585,
+            "syntax_match_score": 0.5555555555555556,
+            "dataflow_match_score": 0
+          },
+          "edit_distance": 558,
+          "normalized_edit_distance": 0.8441754916792739,
+          "edit_similarity": 0.15582450832072614,
+          "reference_length": 115,
+          "prediction_length": 661
+        },
+        {
+          "codebleu": 0.5020161805595985,
+          "codebleu_details": {
+            "codebleu": 0.5020161805595985,
+            "ngram_match_score": 0.2465969639416065,
+            "weighted_ngram_match_score": 0.31702331385234306,
+            "syntax_match_score": 0.4444444444444444,
+            "dataflow_match_score": 0
+          },
+          "edit_distance": 53,
+          "normalized_edit_distance": 0.4608695652173913,
+          "edit_similarity": 0.5391304347826087,
+          "reference_length": 115,
+          "prediction_length": 62
+        },
+        {
+          "codebleu": 0.28839845021778215,
+          "codebleu_details": {
+            "codebleu": 0.28839845021778215,
+            "ngram_match_score": 0.0008176105310107052,
+            "weighted_ngram_match_score": 0.02777619034011792,
+            "syntax_match_score": 0.125,
+            "dataflow_match_score": 0
+          },
+          "edit_distance": 1381,
+          "normalized_edit_distance": 0.9590277777777778,
+          "edit_similarity": 0.04097222222222219,
+          "reference_length": 68,
+          "prediction_length": 1440
+        },
+        {
+          "codebleu": 0.5877334781093073,
+          "codebleu_details": {
+            "codebleu": 0.5877334781093073,
+            "ngram_match_score": 0.013706353509894803,
+            "weighted_ngram_match_score": 0.44833867003844585,
+            "syntax_match_score": 0.8888888888888888,
+            "dataflow_match_score": 0
+          },
+          "edit_distance": 2324,
+          "normalized_edit_distance": 0.9579554822753503,
+          "edit_similarity": 0.04204451772464968,
+          "reference_length": 111,
+          "prediction_length": 2426
+        },
+        {
+          "codebleu": 0.5873111990526597,
+          "codebleu_details": {
+            "codebleu": 0.5873111990526597,
+            "ngram_match_score": 0.012017237283304283,
+            "weighted_ngram_match_score": 0.44833867003844585,
+            "syntax_match_score": 0.8888888888888888,
+            "dataflow_match_score": 0
+          },
+          "edit_distance": 2639,
+          "normalized_edit_distance": 0.9627873039036848,
+          "edit_similarity": 0.03721269609631517,
+          "reference_length": 110,
+          "prediction_length": 2741
+        },
+        {
+          "codebleu": 0.26037193600696257,
+          "codebleu_details": {
+            "codebleu": 0.26037193600696257,
+            "ngram_match_score": 0.0006282839895443013,
+            "weighted_ngram_match_score": 0.005145174324020217,
+            "syntax_match_score": 0.03571428571428571,
+            "dataflow_match_score": 1.0
+          },
+          "edit_distance": 2206,
+          "normalized_edit_distance": 0.9230125523012552,
+          "edit_similarity": 0.07698744769874477,
+          "reference_length": 385,
+          "prediction_length": 2390
+        }
+      ]
+    },
+    {
+      "project_name": "repoeval_Decorator_Application",
+      "num_cases": 8,
+      "average_codebleu": 0.3489003642215759,
+      "average_edit_distance": 769.125,
+      "average_edit_similarity": 0.2573067776207325,
+      "case_results": [
+        {
+          "codebleu": 0.3705098216669511,
+          "codebleu_details": {
+            "codebleu": 0.3705098216669511,
+            "ngram_match_score": 0.05378415990900805,
+            "weighted_ngram_match_score": 0.10216817023705729,
+            "syntax_match_score": 0.5,
+            "dataflow_match_score": 0.8260869565217391
+          },
+          "edit_distance": 570,
+          "normalized_edit_distance": 0.7298335467349552,
+          "edit_similarity": 0.27016645326504485,
+          "reference_length": 379,
+          "prediction_length": 781
+        },
+        {
+          "codebleu": 0.2916822525563517,
+          "codebleu_details": {
+            "codebleu": 0.2916822525563517,
+            "ngram_match_score": 0.1312309453813544,
+            "weighted_ngram_match_score": 0.13668854103452865,
+            "syntax_match_score": 0.6071428571428571,
+            "dataflow_match_score": 0.2916666666666667
+          },
+          "edit_distance": 229,
+          "normalized_edit_distance": 0.6715542521994134,
+          "edit_similarity": 0.32844574780058655,
+          "reference_length": 341,
+          "prediction_length": 289
+        },
+        {
+          "codebleu": 0.2901485973133979,
+          "codebleu_details": {
+            "codebleu": 0.2901485973133979,
+            "ngram_match_score": 0.08671253932605229,
+            "weighted_ngram_match_score": 0.08842730447299393,
+            "syntax_match_score": 0.5454545454545454,
+            "dataflow_match_score": 0.44
+          },
+          "edit_distance": 294,
+          "normalized_edit_distance": 0.7538461538461538,
+          "edit_similarity": 0.24615384615384617,
+          "reference_length": 390,
+          "prediction_length": 315
+        },
+        {
+          "codebleu": 0.5269809504400057,
+          "codebleu_details": {
+            "codebleu": 0.5269809504400057,
+            "ngram_match_score": 0.08819353309167563,
+            "weighted_ngram_match_score": 0.31973026866834736,
+            "syntax_match_score": 0.8,
+            "dataflow_match_score": 0.9
+          },
+          "edit_distance": 907,
+          "normalized_edit_distance": 0.788010425716768,
+          "edit_similarity": 0.21198957428323195,
+          "reference_length": 334,
+          "prediction_length": 1151
+        },
+        {
+          "codebleu": 0.2735618395550107,
+          "codebleu_details": {
+            "codebleu": 0.2735618395550107,
+            "ngram_match_score": 0.040798131714009866,
+            "weighted_ngram_match_score": 0.0830058767523383,
+            "syntax_match_score": 0.14285714285714285,
+            "dataflow_match_score": 0.8275862068965517
+          },
+          "edit_distance": 579,
+          "normalized_edit_distance": 0.6959134615384616,
+          "edit_similarity": 0.30408653846153844,
+          "reference_length": 504,
+          "prediction_length": 832
+        },
+        {
+          "codebleu": 0.23461229573430858,
+          "codebleu_details": {
+            "codebleu": 0.23461229573430858,
+            "ngram_match_score": 0.11440123127566207,
+            "weighted_ngram_match_score": 0.113730491344112,
+            "syntax_match_score": 0.3888888888888889,
+            "dataflow_match_score": 0.32142857142857145
+          },
+          "edit_distance": 256,
+          "normalized_edit_distance": 0.6124401913875598,
+          "edit_similarity": 0.3875598086124402,
+          "reference_length": 418,
+          "prediction_length": 316
+        },
+        {
+          "codebleu": 0.46555339822872643,
+          "codebleu_details": {
+            "codebleu": 0.46555339822872643,
+            "ngram_match_score": 0.19569490173151818,
+            "weighted_ngram_match_score": 0.4331853578500543,
+            "syntax_match_score": 0.3333333333333333,
+            "dataflow_match_score": 0.9
+          },
+          "edit_distance": 571,
+          "normalized_edit_distance": 0.7779291553133515,
+          "edit_similarity": 0.2220708446866485,
+          "reference_length": 334,
+          "prediction_length": 734
+        },
+        {
+          "codebleu": 0.3381537582778548,
+          "codebleu_details": {
+            "codebleu": 0.3381537582778548,
+            "ngram_match_score": 0.006730142403323834,
+            "weighted_ngram_match_score": 0.07921822404142884,
+            "syntax_match_score": 0.26666666666666666,
+            "dataflow_match_score": 1.0
+          },
+          "edit_distance": 2747,
+          "normalized_edit_distance": 0.9120185922974767,
+          "edit_similarity": 0.08798140770252327,
+          "reference_length": 334,
+          "prediction_length": 3012
+        }
+      ]
+    },
+    {
+      "project_name": "repoeval_FB50_虚轴控制",
+      "num_cases": 3,
+      "average_codebleu": 0.3627419658091799,
+      "average_edit_distance": 1381.6666666666667,
+      "average_edit_similarity": 0.1871250248107583,
+      "case_results": [
+        {
+          "codebleu": 0.48647516555174486,
+          "codebleu_details": {
+            "codebleu": 0.48647516555174486,
+            "ngram_match_score": 0.05881647164242988,
+            "weighted_ngram_match_score": 0.20287366424876002,
+            "syntax_match_score": 0.6842105263157895,
+            "dataflow_match_score": 0.0
+          },
+          "edit_distance": 122,
+          "normalized_edit_distance": 0.6777777777777778,
+          "edit_similarity": 0.3222222222222222,
+          "reference_length": 180,
+          "prediction_length": 65
+        },
+        {
+          "codebleu": 0.25995905403336905,
+          "codebleu_details": {
+            "codebleu": 0.25995905403336905,
+            "ngram_match_score": 0,
+            "weighted_ngram_match_score": 0,
+            "syntax_match_score": 0.35638297872340424,
+            "dataflow_match_score": 0.6834532374100719
+          },
+          "edit_distance": 3815,
+          "normalized_edit_distance": 0.8642954236520163,
+          "edit_similarity": 0.13570457634798372,
+          "reference_length": 4262,
+          "prediction_length": 4414
+        },
+        {
+          "codebleu": 0.3417916778424257,
+          "codebleu_details": {
+            "codebleu": 0.3417916778424257,
+            "ngram_match_score": 2.3670226947659947e-05,
+            "weighted_ngram_match_score": 0.019316954186233335,
+            "syntax_match_score": 0.34782608695652173,
+            "dataflow_match_score": 0.0
+          },
+          "edit_distance": 208,
+          "normalized_edit_distance": 0.896551724137931,
+          "edit_similarity": 0.10344827586206895,
+          "reference_length": 232,
+          "prediction_length": 24
+        }
+      ]
+    },
+    {
+      "project_name": "repoeval_GreatExampleOfAdvantages",
+      "num_cases": 2,
+      "average_codebleu": 0.30980474438246874,
+      "average_edit_distance": 907.5,
+      "average_edit_similarity": 0.20312161669540046,
+      "case_results": [
+        {
+          "codebleu": 0.39579319786383255,
+          "codebleu_details": {
+            "codebleu": 0.39579319786383255,
+            "ngram_match_score": 0.026491258687377152,
+            "weighted_ngram_match_score": 0.1281101041965245,
+            "syntax_match_score": 0.42857142857142855,
+            "dataflow_match_score": 1.0
+          },
+          "edit_distance": 307,
+          "normalized_edit_distance": 0.7732997481108312,
+          "edit_similarity": 0.22670025188916876,
+          "reference_length": 142,
+          "prediction_length": 397
+        },
+        {
+          "codebleu": 0.2238162909011049,
+          "codebleu_details": {
+            "codebleu": 0.2238162909011049,
+            "ngram_match_score": 0.00554354457730883,
+            "weighted_ngram_match_score": 0.014721619027110628,
+            "syntax_match_score": 0.16666666666666666,
+            "dataflow_match_score": 0.7083333333333334
+          },
+          "edit_distance": 1508,
+          "normalized_edit_distance": 0.8204570184983678,
+          "edit_similarity": 0.17954298150163217,
+          "reference_length": 1458,
+          "prediction_length": 1838
+        }
+      ]
+    },
+    {
+      "project_name": "repoeval_Interation_HowTo",
+      "num_cases": 2,
+      "average_codebleu": 0.3242767713861181,
+      "average_edit_distance": 492.0,
+      "average_edit_similarity": 0.21567110471392587,
+      "case_results": [
+        {
+          "codebleu": 0.32997966408821117,
+          "codebleu_details": {
+            "codebleu": 0.32997966408821117,
+            "ngram_match_score": 0.025752340710705337,
+            "weighted_ngram_match_score": 0.03775605923188284,
+            "syntax_match_score": 0.3333333333333333,
+            "dataflow_match_score": 0.9230769230769231
+          },
+          "edit_distance": 351,
+          "normalized_edit_distance": 0.7714285714285715,
+          "edit_similarity": 0.22857142857142854,
+          "reference_length": 455,
+          "prediction_length": 384
+        },
+        {
+          "codebleu": 0.3185738786840251,
+          "codebleu_details": {
+            "codebleu": 0.3185738786840251,
+            "ngram_match_score": 0.012696059413884754,
+            "weighted_ngram_match_score": 0.03579300370931225,
+            "syntax_match_score": 0.22580645161290322,
+            "dataflow_match_score": 1.0
+          },
+          "edit_distance": 633,
+          "normalized_edit_distance": 0.7972292191435768,
+          "edit_similarity": 0.2027707808564232,
+          "reference_length": 559,
+          "prediction_length": 794
+        }
+      ]
+    },
+    {
+      "project_name": "repoeval_PID_controller",
+      "num_cases": 4,
+      "average_codebleu": 0.28987131264952637,
+      "average_edit_distance": 1903.75,
+      "average_edit_similarity": 0.21250992995394316,
+      "case_results": [
+        {
+          "codebleu": 0.4300933554394001,
+          "codebleu_details": {
+            "codebleu": 0.4300933554394001,
+            "ngram_match_score": 0.11972156474791676,
+            "weighted_ngram_match_score": 0.15533935700968365,
+            "syntax_match_score": 0.5703125,
+            "dataflow_match_score": 0.875
+          },
+          "edit_distance": 865,
+          "normalized_edit_distance": 0.7393162393162394,
+          "edit_similarity": 0.26068376068376065,
+          "reference_length": 844,
+          "prediction_length": 1170
+        },
+        {
+          "codebleu": 0.30964430404652205,
+          "codebleu_details": {
+            "codebleu": 0.30964430404652205,
+            "ngram_match_score": 0.012837800100832769,
+            "weighted_ngram_match_score": 0.03295004227121364,
+            "syntax_match_score": 0.25161290322580643,
+            "dataflow_match_score": 0.9411764705882353
+          },
+          "edit_distance": 2393,
+          "normalized_edit_distance": 0.7861366622864652,
+          "edit_similarity": 0.21386333771353483,
+          "reference_length": 1361,
+          "prediction_length": 3044
+        },
+        {
+          "codebleu": 0.27480415968262406,
+          "codebleu_details": {
+            "codebleu": 0.27480415968262406,
+            "ngram_match_score": 0.0007034461002750933,
+            "weighted_ngram_match_score": 0.002713634782026641,
+            "syntax_match_score": 0.16101694915254236,
+            "dataflow_match_score": 0.9347826086956522
+          },
+          "edit_distance": 2721,
+          "normalized_edit_distance": 0.8303326212999694,
+          "edit_similarity": 0.16966737870003057,
+          "reference_length": 1017,
+          "prediction_length": 3277
+        },
+        {
+          "codebleu": 0.14494343142955932,
+          "codebleu_details": {
+            "codebleu": 0.14494343142955932,
+            "ngram_match_score": 0.04982516017899828,
+            "weighted_ngram_match_score": 0.08934215602091242,
+            "syntax_match_score": 0.25925925925925924,
+            "dataflow_match_score": 0.18134715025906736
+          },
+          "edit_distance": 1636,
+          "normalized_edit_distance": 0.7941747572815534,
+          "edit_similarity": 0.2058252427184466,
+          "reference_length": 2060,
+          "prediction_length": 726
+        }
+      ]
+    },
+    {
+      "project_name": "repoeval_PT1Filter",
+      "num_cases": 1,
+      "average_codebleu": 0.22556694210379602,
+      "average_edit_distance": 484.0,
+      "average_edit_similarity": 0.17546848381601365,
+      "case_results": [
+        {
+          "codebleu": 0.22556694210379602,
+          "codebleu_details": {
+            "codebleu": 0.22556694210379602,
+            "ngram_match_score": 0.00302211268229099,
+            "weighted_ngram_match_score": 0.003141759628996917,
+            "syntax_match_score": 0.4318181818181818,
+            "dataflow_match_score": 0.4642857142857143
+          },
+          "edit_distance": 484,
+          "normalized_edit_distance": 0.8245315161839863,
+          "edit_similarity": 0.17546848381601365,
+          "reference_length": 587,
+          "prediction_length": 472
+        }
+      ]
+    },
+    {
+      "project_name": "repoeval_ProductionLine",
+      "num_cases": 6,
+      "average_codebleu": 0.3762586851841418,
+      "average_edit_distance": 545.8333333333334,
+      "average_edit_similarity": 0.17629879515969096,
+      "case_results": [
+        {
+          "codebleu": 0.40464906132655765,
+          "codebleu_details": {
+            "codebleu": 0.40464906132655765,
+            "ngram_match_score": 0.007205335066302803,
+            "weighted_ngram_match_score": 0.018798317647335087,
+            "syntax_match_score": 0.9259259259259259,
+            "dataflow_match_score": 0.6666666666666666
+          },
+          "edit_distance": 206,
+          "normalized_edit_distance": 0.8207171314741036,
+          "edit_similarity": 0.17928286852589637,
+          "reference_length": 174,
+          "prediction_length": 251
+        },
+        {
+          "codebleu": 0.2759470366764868,
+          "codebleu_details": {
+            "codebleu": 0.2759470366764868,
+            "ngram_match_score": 0.0011378591863804737,
+            "weighted_ngram_match_score": 0.019316954186233335,
+            "syntax_match_score": 0.3333333333333333,
+            "dataflow_match_score": 0.75
+          },
+          "edit_distance": 1979,
+          "normalized_edit_distance": 0.9196096654275093,
+          "edit_similarity": 0.08039033457249067,
+          "reference_length": 267,
+          "prediction_length": 2152
+        },
+        {
+          "codebleu": 0.3965650444818325,
+          "codebleu_details": {
+            "codebleu": 0.3965650444818325,
+            "ngram_match_score": 0.061333802010134136,
+            "weighted_ngram_match_score": 0.2308087288583725,
+            "syntax_match_score": 0.7941176470588235,
+            "dataflow_match_score": 0.5
+          },
+          "edit_distance": 438,
+          "normalized_edit_distance": 0.7361344537815127,
+          "edit_similarity": 0.26386554621848735,
+          "reference_length": 219,
+          "prediction_length": 595
+        },
+        {
+          "codebleu": 0.4703652378377792,
+          "codebleu_details": {
+            "codebleu": 0.4703652378377792,
+            "ngram_match_score": 0.049787068367863944,
+            "weighted_ngram_match_score": 0.1531024544118244,
+            "syntax_match_score": 0.6785714285714286,
+            "dataflow_match_score": 0.0
+          },
+          "edit_distance": 186,
+          "normalized_edit_distance": 0.8815165876777251,
+          "edit_similarity": 0.11848341232227488,
+          "reference_length": 211,
+          "prediction_length": 25
+        },
+        {
+          "codebleu": 0.32575141427213916,
+          "codebleu_details": {
+            "codebleu": 0.32575141427213916,
+            "ngram_match_score": 0.006534878510818802,
+            "weighted_ngram_match_score": 0.018693000799960027,
+            "syntax_match_score": 0.7777777777777778,
+            "dataflow_match_score": 0.5
+          },
+          "edit_distance": 226,
+          "normalized_edit_distance": 0.8100358422939068,
+          "edit_similarity": 0.1899641577060932,
+          "reference_length": 168,
+          "prediction_length": 279
+        },
+        {
+          "codebleu": 0.3842743165100552,
+          "codebleu_details": {
+            "codebleu": 0.3842743165100552,
+            "ngram_match_score": 0.006840735900081622,
+            "weighted_ngram_match_score": 0.008517399705356638,
+            "syntax_match_score": 0.5217391304347826,
+            "dataflow_match_score": 0.0
+          },
+          "edit_distance": 240,
+          "normalized_edit_distance": 0.7741935483870968,
+          "edit_similarity": 0.22580645161290325,
+          "reference_length": 310,
+          "prediction_length": 135
+        }
+      ]
+    },
+    {
+      "project_name": "repoeval_Proxy_Application",
+      "num_cases": 2,
+      "average_codebleu": 0.4336876392988679,
+      "average_edit_distance": 1104.5,
+      "average_edit_similarity": 0.148483211810244,
+      "case_results": [
+        {
+          "codebleu": 0.3789783805765037,
+          "codebleu_details": {
+            "codebleu": 0.3789783805765037,
+            "ngram_match_score": 0.040729225385208116,
+            "weighted_ngram_match_score": 0.09555466729117681,
+            "syntax_match_score": 0.6296296296296297,
+            "dataflow_match_score": 0.75
+          },
+          "edit_distance": 768,
+          "normalized_edit_distance": 0.7950310559006211,
+          "edit_similarity": 0.20496894409937894,
+          "reference_length": 449,
+          "prediction_length": 966
+        },
+        {
+          "codebleu": 0.48839689802123204,
+          "codebleu_details": {
+            "codebleu": 0.48839689802123204,
+            "ngram_match_score": 0.01995959399905615,
+            "weighted_ngram_match_score": 0.24941747177008258,
+            "syntax_match_score": 0.6842105263157895,
+            "dataflow_match_score": 1.0
+          },
+          "edit_distance": 1441,
+          "normalized_edit_distance": 0.908002520478891,
+          "edit_similarity": 0.09199747952110904,
+          "reference_length": 190,
+          "prediction_length": 1587
+        }
+      ]
+    },
+    {
+      "project_name": "repoeval_Robotics_DynamicModel",
+      "num_cases": 2,
+      "average_codebleu": 0.1608273251760076,
+      "average_edit_distance": 1148.0,
+      "average_edit_similarity": 0.17885665808152568,
+      "case_results": [
+        {
+          "codebleu": 0.23925438596491228,
+          "codebleu_details": {
+            "codebleu": 0.23925438596491228,
+            "ngram_match_score": 0,
+            "weighted_ngram_match_score": 0,
+            "syntax_match_score": 0.23333333333333334,
+            "dataflow_match_score": 0.7236842105263158
+          },
+          "edit_distance": 1387,
+          "normalized_edit_distance": 0.8385731559854898,
+          "edit_similarity": 0.16142684401451024,
+          "reference_length": 957,
+          "prediction_length": 1654
+        },
+        {
+          "codebleu": 0.0824002643871029,
+          "codebleu_details": {
+            "codebleu": 0.0824002643871029,
+            "ngram_match_score": 0.013321835141513284,
+            "weighted_ngram_match_score": 0.02089968445310294,
+            "syntax_match_score": 0.16666666666666666,
+            "dataflow_match_score": 0.12871287128712872
+          },
+          "edit_distance": 909,
+          "normalized_edit_distance": 0.8037135278514589,
+          "edit_similarity": 0.1962864721485411,
+          "reference_length": 1131,
+          "prediction_length": 410
+        }
+      ]
+    },
+    {
+      "project_name": "repoeval_Wrappers",
+      "num_cases": 1,
+      "average_codebleu": 0.07757734737852127,
+      "average_edit_distance": 313.0,
+      "average_edit_similarity": 0.15405405405405403,
+      "case_results": [
+        {
+          "codebleu": 0.07757734737852127,
+          "codebleu_details": {
+            "codebleu": 0.07757734737852127,
+            "ngram_match_score": 0.005139894278092584,
+            "weighted_ngram_match_score": 0.005169495235992546,
+            "syntax_match_score": 0.0,
+            "dataflow_match_score": 0.3
+          },
+          "edit_distance": 313,
+          "normalized_edit_distance": 0.845945945945946,
+          "edit_similarity": 0.15405405405405403,
+          "reference_length": 370,
+          "prediction_length": 166
+        }
+      ]
+    },
+    {
+      "project_name": "repoeval__assembly-station",
+      "num_cases": 1,
+      "average_codebleu": 0.19551356757719746,
+      "average_edit_distance": 2079.0,
+      "average_edit_similarity": 0.18117369042930287,
+      "case_results": [
+        {
+          "codebleu": 0.19551356757719746,
+          "codebleu_details": {
+            "codebleu": 0.19551356757719746,
+            "ngram_match_score": 0.0006863546886788253,
+            "weighted_ngram_match_score": 0.00136791562011095,
+            "syntax_match_score": 0.28,
+            "dataflow_match_score": 0.5
+          },
+          "edit_distance": 2079,
+          "normalized_edit_distance": 0.8188263095706971,
+          "edit_similarity": 0.18117369042930287,
+          "reference_length": 1932,
+          "prediction_length": 2539
+        }
+      ]
+    },
+    {
+      "project_name": "repoeval_can",
+      "num_cases": 2,
+      "average_codebleu": 0.15963586076369818,
+      "average_edit_distance": 1240.5,
+      "average_edit_similarity": 0.07392771751888894,
+      "case_results": [
+        {
+          "codebleu": 0.2731949001956205,
+          "codebleu_details": {
+            "codebleu": 0.2731949001956205,
+            "ngram_match_score": 2.289734845645553e-11,
+            "weighted_ngram_match_score": 0.022024883778452475,
+            "syntax_match_score": 0.07075471698113207,
+            "dataflow_match_score": 0.0
+          },
+          "edit_distance": 1231,
+          "normalized_edit_distance": 0.966248037676609,
+          "edit_similarity": 0.03375196232339095,
+          "reference_length": 1274,
+          "prediction_length": 43
+        },
+        {
+          "codebleu": 0.04607682133177589,
+          "codebleu_details": {
+            "codebleu": 0.04607682133177589,
+            "ngram_match_score": 0.006359403260415155,
+            "weighted_ngram_match_score": 0.011592801107215661,
+            "syntax_match_score": 0.15311004784688995,
+            "dataflow_match_score": 0.013245033112582781
+          },
+          "edit_distance": 1250,
+          "normalized_edit_distance": 0.8858965272856131,
+          "edit_similarity": 0.11410347271438692,
+          "reference_length": 1411,
+          "prediction_length": 315
+        }
+      ]
+    },
+    {
+      "project_name": "repoeval_core",
+      "num_cases": 2,
+      "average_codebleu": 0.14971305177695615,
+      "average_edit_distance": 1658.0,
+      "average_edit_similarity": 0.21479016507788884,
+      "case_results": [
+        {
+          "codebleu": 0.14082876340026712,
+          "codebleu_details": {
+            "codebleu": 0.14082876340026712,
+            "ngram_match_score": 0.0004374627641144364,
+            "weighted_ngram_match_score": 0.002324796558859722,
+            "syntax_match_score": 0.17699115044247787,
+            "dataflow_match_score": 0.3835616438356164
+          },
+          "edit_distance": 2401,
+          "normalized_edit_distance": 0.8772378516624041,
+          "edit_similarity": 0.12276214833759591,
+          "reference_length": 778,
+          "prediction_length": 2737
+        },
+        {
+          "codebleu": 0.1585973401536452,
+          "codebleu_details": {
+            "codebleu": 0.1585973401536452,
+            "ngram_match_score": 0.051110184466180965,
+            "weighted_ngram_match_score": 0.059446465008433376,
+            "syntax_match_score": 0.30601092896174864,
+            "dataflow_match_score": 0.21782178217821782
+          },
+          "edit_distance": 915,
+          "normalized_edit_distance": 0.6931818181818182,
+          "edit_similarity": 0.30681818181818177,
+          "reference_length": 1320,
+          "prediction_length": 841
+        }
+      ]
+    },
+    {
+      "project_name": "repoeval_counter",
+      "num_cases": 1,
+      "average_codebleu": 0.3924385020555009,
+      "average_edit_distance": 475.0,
+      "average_edit_similarity": 0.31259044862518093,
+      "case_results": [
+        {
+          "codebleu": 0.3924385020555009,
+          "codebleu_details": {
+            "codebleu": 0.3924385020555009,
+            "ngram_match_score": 0.017828932052587346,
+            "weighted_ngram_match_score": 0.06346353770787776,
+            "syntax_match_score": 0.7384615384615385,
+            "dataflow_match_score": 0.75
+          },
+          "edit_distance": 475,
+          "normalized_edit_distance": 0.6874095513748191,
+          "edit_similarity": 0.31259044862518093,
+          "reference_length": 313,
+          "prediction_length": 691
+        }
+      ]
+    },
+    {
+      "project_name": "repoeval_elevator",
+      "num_cases": 5,
+      "average_codebleu": 0.5065985003241048,
+      "average_edit_distance": 791.2,
+      "average_edit_similarity": 0.501712503228308,
+      "case_results": [
+        {
+          "codebleu": 0.3315594262945428,
+          "codebleu_details": {
+            "codebleu": 0.3315594262945428,
+            "ngram_match_score": 0.15651949784477212,
+            "weighted_ngram_match_score": 0.3629153335121148,
+            "syntax_match_score": 0.1450381679389313,
+            "dataflow_match_score": 0.6617647058823529
+          },
+          "edit_distance": 1723,
+          "normalized_edit_distance": 0.7164241164241164,
+          "edit_similarity": 0.2835758835758836,
+          "reference_length": 1128,
+          "prediction_length": 2405
+        },
+        {
+          "codebleu": 0.3542498848727306,
+          "codebleu_details": {
+            "codebleu": 0.3542498848727306,
+            "ngram_match_score": 0.23558838659954764,
+            "weighted_ngram_match_score": 0.2426106632952917,
+            "syntax_match_score": 0.46511627906976744,
+            "dataflow_match_score": 0.47368421052631576
+          },
+          "edit_distance": 1247,
+          "normalized_edit_distance": 0.6414609053497943,
+          "edit_similarity": 0.3585390946502057,
+          "reference_length": 1944,
+          "prediction_length": 1452
+        },
+        {
+          "codebleu": 0.6593737369969046,
+          "codebleu_details": {
+            "codebleu": 0.6593737369969046,
+            "ngram_match_score": 0.35552291068677255,
+            "weighted_ngram_match_score": 0.5774265827553912,
+            "syntax_match_score": 0.8545454545454545,
+            "dataflow_match_score": 0.85
+          },
+          "edit_distance": 262,
+          "normalized_edit_distance": 0.37589670014347204,
+          "edit_similarity": 0.6241032998565279,
+          "reference_length": 517,
+          "prediction_length": 697
+        },
+        {
+          "codebleu": 0.6587919806550127,
+          "codebleu_details": {
+            "codebleu": 0.6587919806550127,
+            "ngram_match_score": 0.6928014092523967,
+            "weighted_ngram_match_score": 0.7942183652195062,
+            "syntax_match_score": 0.5925925925925926,
+            "dataflow_match_score": 0.5555555555555556
+          },
+          "edit_distance": 72,
+          "normalized_edit_distance": 0.14314115308151093,
+          "edit_similarity": 0.856858846918489,
+          "reference_length": 462,
+          "prediction_length": 503
+        },
+        {
+          "codebleu": 0.5290174728013335,
+          "codebleu_details": {
+            "codebleu": 0.5290174728013335,
+            "ngram_match_score": 0.20608527082802539,
+            "weighted_ngram_match_score": 0.44588205627474453,
+            "syntax_match_score": 0.7333333333333333,
+            "dataflow_match_score": 0.7307692307692307
+          },
+          "edit_distance": 652,
+          "normalized_edit_distance": 0.6145146088595664,
+          "edit_similarity": 0.38548539114043356,
+          "reference_length": 499,
+          "prediction_length": 1061
+        }
+      ]
+    },
+    {
+      "project_name": "repoeval_healthydata",
+      "num_cases": 4,
+      "average_codebleu": 0.3521659548732248,
+      "average_edit_distance": 871.75,
+      "average_edit_similarity": 0.22569810983574176,
+      "case_results": [
+        {
+          "codebleu": 0.46928167033913226,
+          "codebleu_details": {
+            "codebleu": 0.46928167033913226,
+            "ngram_match_score": 0.0542132477341833,
+            "weighted_ngram_match_score": 0.16100867171758365,
+            "syntax_match_score": 0.8285714285714286,
+            "dataflow_match_score": 0.8333333333333334
+          },
+          "edit_distance": 562,
+          "normalized_edit_distance": 0.748335552596538,
+          "edit_similarity": 0.25166444740346205,
+          "reference_length": 255,
+          "prediction_length": 751
+        },
+        {
+          "codebleu": 0.42035898242630754,
+          "codebleu_details": {
+            "codebleu": 0.42035898242630754,
+            "ngram_match_score": 0.0494989683820395,
+            "weighted_ngram_match_score": 0.10920968859591808,
+            "syntax_match_score": 0.7954545454545454,
+            "dataflow_match_score": 0.7272727272727273
+          },
+          "edit_distance": 373,
+          "normalized_edit_distance": 0.6869244935543278,
+          "edit_similarity": 0.31307550644567217,
+          "reference_length": 342,
+          "prediction_length": 543
+        },
+        {
+          "codebleu": 0.13793481118023307,
+          "codebleu_details": {
+            "codebleu": 0.13793481118023307,
+            "ngram_match_score": 0,
+            "weighted_ngram_match_score": 0,
+            "syntax_match_score": 0.10619469026548672,
+            "dataflow_match_score": 0.44554455445544555
+          },
+          "edit_distance": 1780,
+          "normalized_edit_distance": 0.8380414312617702,
+          "edit_similarity": 0.16195856873822978,
+          "reference_length": 1791,
+          "prediction_length": 2124
+        },
+        {
+          "codebleu": 0.3810883555472262,
+          "codebleu_details": {
+            "codebleu": 0.3810883555472262,
+            "ngram_match_score": 0.002261942612706854,
+            "weighted_ngram_match_score": 0.003294487094994745,
+            "syntax_match_score": 0.518796992481203,
+            "dataflow_match_score": 0.0
+          },
+          "edit_distance": 772,
+          "normalized_edit_distance": 0.823906083244397,
+          "edit_similarity": 0.17609391675560304,
+          "reference_length": 937,
+          "prediction_length": 367
+        }
+      ]
+    },
+    {
+      "project_name": "repoeval_isScaleOutput",
+      "num_cases": 1,
+      "average_codebleu": 0.264614823075377,
+      "average_edit_distance": 2988.0,
+      "average_edit_similarity": 0.12554872695346797,
+      "case_results": [
+        {
+          "codebleu": 0.264614823075377,
+          "codebleu_details": {
+            "codebleu": 0.264614823075377,
+            "ngram_match_score": 0.0006122526754812055,
+            "weighted_ngram_match_score": 0.0032106410111749565,
+            "syntax_match_score": 0.1415929203539823,
+            "dataflow_match_score": 0.9130434782608695
+          },
+          "edit_distance": 2988,
+          "normalized_edit_distance": 0.874451273046532,
+          "edit_similarity": 0.12554872695346797,
+          "reference_length": 798,
+          "prediction_length": 3417
+        }
+      ]
+    },
+    {
+      "project_name": "repoeval_modbus",
+      "num_cases": 5,
+      "average_codebleu": 0.2554116914834485,
+      "average_edit_distance": 1337.0,
+      "average_edit_similarity": 0.19427435024295145,
+      "case_results": [
+        {
+          "codebleu": 0.3951818060326489,
+          "codebleu_details": {
+            "codebleu": 0.3951818060326489,
+            "ngram_match_score": 0.07145732721637867,
+            "weighted_ngram_match_score": 0.2116508492951693,
+            "syntax_match_score": 0.4642857142857143,
+            "dataflow_match_score": 0.8333333333333334
+          },
+          "edit_distance": 300,
+          "normalized_edit_distance": 0.6507592190889371,
+          "edit_similarity": 0.3492407809110629,
+          "reference_length": 236,
+          "prediction_length": 461
+        },
+        {
+          "codebleu": 0.2639960385814823,
+          "codebleu_details": {
+            "codebleu": 0.2639960385814823,
+            "ngram_match_score": 1.4122363631358242e-76,
+            "weighted_ngram_match_score": 0.0010821935416154983,
+            "syntax_match_score": 0.054901960784313725,
+            "dataflow_match_score": 0.0
+          },
+          "edit_distance": 2022,
+          "normalized_edit_distance": 0.9858605558264262,
+          "edit_similarity": 0.014139444173573823,
+          "reference_length": 2051,
+          "prediction_length": 29
+        },
+        {
+          "codebleu": 0.17978795791791552,
+          "codebleu_details": {
+            "codebleu": 0.17978795791791552,
+            "ngram_match_score": 0.005453030120159585,
+            "weighted_ngram_match_score": 0.011267829162546924,
+            "syntax_match_score": 0.47794117647058826,
+            "dataflow_match_score": 0.22448979591836735
+          },
+          "edit_distance": 638,
+          "normalized_edit_distance": 0.7341772151898734,
+          "edit_similarity": 0.26582278481012656,
+          "reference_length": 869,
+          "prediction_length": 435
+        },
+        {
+          "codebleu": 0.27762098740124236,
+          "codebleu_details": {
+            "codebleu": 0.27762098740124236,
+            "ngram_match_score": 0.017431493297491128,
+            "weighted_ngram_match_score": 0.04232781862631883,
+            "syntax_match_score": 0.717391304347826,
+            "dataflow_match_score": 0.3333333333333333
+          },
+          "edit_distance": 1649,
+          "normalized_edit_distance": 0.7935514918190568,
+          "edit_similarity": 0.20644850818094318,
+          "reference_length": 2078,
+          "prediction_length": 751
+        },
+        {
+          "codebleu": 0.16047166748395336,
+          "codebleu_details": {
+            "codebleu": 0.16047166748395336,
+            "ngram_match_score": 0.0004960357204603825,
+            "weighted_ngram_match_score": 0.0015807708760779049,
+            "syntax_match_score": 0.2620320855614973,
+            "dataflow_match_score": 0.37777777777777777
+          },
+          "edit_distance": 2076,
+          "normalized_edit_distance": 0.8642797668609492,
+          "edit_similarity": 0.1357202331390508,
+          "reference_length": 1158,
+          "prediction_length": 2402
+        }
+      ]
+    },
+    {
+      "project_name": "repoeval_plc_hello_mixing_tank",
+      "num_cases": 6,
+      "average_codebleu": 0.4374382731157653,
+      "average_edit_distance": 1112.3333333333333,
+      "average_edit_similarity": 0.33903021527213806,
+      "case_results": [
+        {
+          "codebleu": 0.23567916957381427,
+          "codebleu_details": {
+            "codebleu": 0.23567916957381427,
+            "ngram_match_score": 0.0006730439846312852,
+            "weighted_ngram_match_score": 0.001495201587169055,
+            "syntax_match_score": 0.2672811059907834,
+            "dataflow_match_score": 0.6732673267326733
+          },
+          "edit_distance": 3505,
+          "normalized_edit_distance": 0.8429533429533429,
+          "edit_similarity": 0.1570466570466571,
+          "reference_length": 2164,
+          "prediction_length": 4158
+        },
+        {
+          "codebleu": 0.2714754875337121,
+          "codebleu_details": {
+            "codebleu": 0.2714754875337121,
+            "ngram_match_score": 0.00948367096925379,
+            "weighted_ngram_match_score": 0.009751612498927892,
+            "syntax_match_score": 0.16666666666666666,
+            "dataflow_match_score": 0.9
+          },
+          "edit_distance": 674,
+          "normalized_edit_distance": 0.7247311827956989,
+          "edit_similarity": 0.2752688172043011,
+          "reference_length": 930,
+          "prediction_length": 626
+        },
+        {
+          "codebleu": 0.4055557166996327,
+          "codebleu_details": {
+            "codebleu": 0.4055557166996327,
+            "ngram_match_score": 0.10425829670173162,
+            "weighted_ngram_match_score": 0.11247006460229358,
+            "syntax_match_score": 0.47692307692307695,
+            "dataflow_match_score": 0.9285714285714286
+          },
+          "edit_distance": 465,
+          "normalized_edit_distance": 0.8058925476603119,
+          "edit_similarity": 0.19410745233968807,
+          "reference_length": 523,
+          "prediction_length": 577
+        },
+        {
+          "codebleu": 0.4410775187551802,
+          "codebleu_details": {
+            "codebleu": 0.4410775187551802,
+            "ngram_match_score": 0.22839949649324956,
+            "weighted_ngram_match_score": 0.4656375754941042,
+            "syntax_match_score": 0.7441860465116279,
+            "dataflow_match_score": 0.32608695652173914
+          },
+          "edit_distance": 890,
+          "normalized_edit_distance": 0.5615141955835962,
+          "edit_similarity": 0.43848580441640383,
+          "reference_length": 893,
+          "prediction_length": 1585
+        },
+        {
+          "codebleu": 0.6626867548256626,
+          "codebleu_details": {
+            "codebleu": 0.6626867548256626,
+            "ngram_match_score": 0.5624532108019621,
+            "weighted_ngram_match_score": 0.5625289131705757,
+            "syntax_match_score": 0.8518518518518519,
+            "dataflow_match_score": 0.6739130434782609
+          },
+          "edit_distance": 319,
+          "normalized_edit_distance": 0.3241869918699187,
+          "edit_similarity": 0.6758130081300813,
+          "reference_length": 984,
+          "prediction_length": 964
+        },
+        {
+          "codebleu": 0.6081549913065897,
+          "codebleu_details": {
+            "codebleu": 0.6081549913065897,
+            "ngram_match_score": 0.19500649211245336,
+            "weighted_ngram_match_score": 0.468382703883136,
+            "syntax_match_score": 0.7692307692307693,
+            "dataflow_match_score": 1.0
+          },
+          "edit_distance": 821,
+          "normalized_edit_distance": 0.7065404475043029,
+          "edit_similarity": 0.2934595524956971,
+          "reference_length": 444,
+          "prediction_length": 1162
+        }
+      ]
+    },
+    {
+      "project_name": "repoeval_三轴CNC运动实训",
+      "num_cases": 5,
+      "average_codebleu": 0.27446782427831906,
+      "average_edit_distance": 1916.6,
+      "average_edit_similarity": 0.16274143505549898,
+      "case_results": [
+        {
+          "codebleu": 0.23296542196825942,
+          "codebleu_details": {
+            "codebleu": 0.23296542196825942,
+            "ngram_match_score": 0.0023706945717526955,
+            "weighted_ngram_match_score": 0.003881787525111785,
+            "syntax_match_score": 0.30685920577617326,
+            "dataflow_match_score": 0.61875
+          },
+          "edit_distance": 3186,
+          "normalized_edit_distance": 0.8428571428571429,
+          "edit_similarity": 0.15714285714285714,
+          "reference_length": 2708,
+          "prediction_length": 3780
+        },
+        {
+          "codebleu": 0.10942929145138408,
+          "codebleu_details": {
+            "codebleu": 0.10942929145138408,
+            "ngram_match_score": 0.0004075682408057491,
+            "weighted_ngram_match_score": 0.003207504720715622,
+            "syntax_match_score": 0.30538922155688625,
+            "dataflow_match_score": 0.12871287128712872
+          },
+          "edit_distance": 1357,
+          "normalized_edit_distance": 0.8428571428571429,
+          "edit_similarity": 0.15714285714285714,
+          "reference_length": 1610,
+          "prediction_length": 412
+        },
+        {
+          "codebleu": 0.43300324130265955,
+          "codebleu_details": {
+            "codebleu": 0.43300324130265955,
+            "ngram_match_score": 0.07384915692947415,
+            "weighted_ngram_match_score": 0.16646088033662534,
+            "syntax_match_score": 0.5906040268456376,
+            "dataflow_match_score": 0.9010989010989011
+          },
+          "edit_distance": 1696,
+          "normalized_edit_distance": 0.6789431545236189,
+          "edit_similarity": 0.32105684547638114,
+          "reference_length": 1283,
+          "prediction_length": 2498
+        },
+        {
+          "codebleu": 0.2675355604854496,
+          "codebleu_details": {
+            "codebleu": 0.2675355604854496,
+            "ngram_match_score": 0,
+            "weighted_ngram_match_score": 0,
+            "syntax_match_score": 0.18354430379746836,
+            "dataflow_match_score": 0.8865979381443299
+          },
+          "edit_distance": 1816,
+          "normalized_edit_distance": 0.8415199258572753,
+          "edit_similarity": 0.1584800741427247,
+          "reference_length": 1399,
+          "prediction_length": 2158
+        },
+        {
+          "codebleu": 0.32940560618384257,
+          "codebleu_details": {
+            "codebleu": 0.32940560618384257,
+            "ngram_match_score": 1.0956650033262367e-16,
+            "weighted_ngram_match_score": 0.014805523326919489,
+            "syntax_match_score": 0.3028169014084507,
+            "dataflow_match_score": 0.0
+          },
+          "edit_distance": 1528,
+          "normalized_edit_distance": 0.9801154586273252,
+          "edit_similarity": 0.019884541372674813,
+          "reference_length": 1559,
+          "prediction_length": 31
+        }
+      ]
+    },
+    {
+      "project_name": "repoeval_交通信号灯控制实训",
+      "num_cases": 3,
+      "average_codebleu": 0.388335140465077,
+      "average_edit_distance": 341.0,
+      "average_edit_similarity": 0.2255625786695771,
+      "case_results": [
+        {
+          "codebleu": 0.25697725913542313,
+          "codebleu_details": {
+            "codebleu": 0.25697725913542313,
+            "ngram_match_score": 0.0005333374475295406,
+            "weighted_ngram_match_score": 0.009831839445040182,
+            "syntax_match_score": 0.017543859649122806,
+            "dataflow_match_score": 0.0
+          },
+          "edit_distance": 431,
+          "normalized_edit_distance": 0.8760162601626016,
+          "edit_similarity": 0.12398373983739841,
+          "reference_length": 492,
+          "prediction_length": 73
+        },
+        {
+          "codebleu": 0.5354975644626954,
+          "codebleu_details": {
+            "codebleu": 0.5354975644626954,
+            "ngram_match_score": 0.12158457920199857,
+            "weighted_ngram_match_score": 0.4489771072202117,
+            "syntax_match_score": 0.5714285714285714,
+            "dataflow_match_score": 1.0
+          },
+          "edit_distance": 305,
+          "normalized_edit_distance": 0.7261904761904762,
+          "edit_similarity": 0.27380952380952384,
+          "reference_length": 170,
+          "prediction_length": 420
+        },
+        {
+          "codebleu": 0.3725305977971125,
+          "codebleu_details": {
+            "codebleu": 0.3725305977971125,
+            "ngram_match_score": 0.1324338782729285,
+            "weighted_ngram_match_score": 0.435949382480739,
+            "syntax_match_score": 0.5217391304347826,
+            "dataflow_match_score": 0.4
+          },
+          "edit_distance": 287,
+          "normalized_edit_distance": 0.7211055276381909,
+          "edit_similarity": 0.2788944723618091,
+          "reference_length": 194,
+          "prediction_length": 398
+        }
+      ]
+    },
+    {
+      "project_name": "repoeval_四层电梯控制实训",
+      "num_cases": 3,
+      "average_codebleu": 0.14185649676614473,
+      "average_edit_distance": 404.6666666666667,
+      "average_edit_similarity": 0.2625443011141246,
+      "case_results": [
+        {
+          "codebleu": 0.04158518851660453,
+          "codebleu_details": {
+            "codebleu": 0.04158518851660453,
+            "ngram_match_score": 0.005311980796685452,
+            "weighted_ngram_match_score": 0.007881920122879542,
+            "syntax_match_score": 0.1076923076923077,
+            "dataflow_match_score": 0.045454545454545456
+          },
+          "edit_distance": 475,
+          "normalized_edit_distance": 0.7903494176372712,
+          "edit_similarity": 0.20965058236272882,
+          "reference_length": 601,
+          "prediction_length": 217
+        },
+        {
+          "codebleu": 0.014764881325256536,
+          "codebleu_details": {
+            "codebleu": 0.014764881325256536,
+            "ngram_match_score": 0.0005075458816796782,
+            "weighted_ngram_match_score": 0.004497925365292407,
+            "syntax_match_score": 0.0,
+            "dataflow_match_score": 0.05405405405405406
+          },
+          "edit_distance": 496,
+          "normalized_edit_distance": 0.8406779661016949,
+          "edit_similarity": 0.15932203389830513,
+          "reference_length": 590,
+          "prediction_length": 111
+        },
+        {
+          "codebleu": 0.36921942045657313,
+          "codebleu_details": {
+            "codebleu": 0.36921942045657313,
+            "ngram_match_score": 0.23013463437029189,
+            "weighted_ngram_match_score": 0.28007638078933395,
+            "syntax_match_score": 0.4666666666666667,
+            "dataflow_match_score": 0.5
+          },
+          "edit_distance": 243,
+          "normalized_edit_distance": 0.5813397129186603,
+          "edit_similarity": 0.41866028708133973,
+          "reference_length": 400,
+          "prediction_length": 418
+        }
+      ]
+    },
+    {
+      "project_name": "repoeval_开放式双轴卷绕机编程开发实训",
+      "num_cases": 5,
+      "average_codebleu": 0.24085447830367207,
+      "average_edit_distance": 1237.2,
+      "average_edit_similarity": 0.16520087533809907,
+      "case_results": [
+        {
+          "codebleu": 0.5550180660753764,
+          "codebleu_details": {
+            "codebleu": 0.5550180660753764,
+            "ngram_match_score": 0.17697157562861207,
+            "weighted_ngram_match_score": 0.44850609407829894,
+            "syntax_match_score": 0.5945945945945946,
+            "dataflow_match_score": 1.0
+          },
+          "edit_distance": 184,
+          "normalized_edit_distance": 0.5679012345679012,
+          "edit_similarity": 0.4320987654320988,
+          "reference_length": 178,
+          "prediction_length": 324
+        },
+        {
+          "codebleu": 0.3246703749615809,
+          "codebleu_details": {
+            "codebleu": 0.3246703749615809,
+            "ngram_match_score": 2.1445408316589164e-05,
+            "weighted_ngram_match_score": 0.04866005443800709,
+            "syntax_match_score": 0.25,
+            "dataflow_match_score": 0.0
+          },
+          "edit_distance": 364,
+          "normalized_edit_distance": 0.914572864321608,
+          "edit_similarity": 0.085427135678392,
+          "reference_length": 398,
+          "prediction_length": 34
+        },
+        {
+          "codebleu": 0.015898557144499458,
+          "codebleu_details": {
+            "codebleu": 0.015898557144499458,
+            "ngram_match_score": 6.872472915143134e-07,
+            "weighted_ngram_match_score": 0.004770011918941616,
+            "syntax_match_score": 0.0,
+            "dataflow_match_score": 0.058823529411764705
+          },
+          "edit_distance": 721,
+          "normalized_edit_distance": 0.921994884910486,
+          "edit_similarity": 0.07800511508951402,
+          "reference_length": 782,
+          "prediction_length": 62
+        },
+        {
+          "codebleu": 0.20373730295246967,
+          "codebleu_details": {
+            "codebleu": 0.20373730295246967,
+            "ngram_match_score": 0.0007022278631439352,
+            "weighted_ngram_match_score": 0.0014123319847750943,
+            "syntax_match_score": 0.09965635738831616,
+            "dataflow_match_score": 0.7131782945736435
+          },
+          "edit_distance": 3000,
+          "normalized_edit_distance": 0.8393956351426972,
+          "edit_similarity": 0.16060436485730278,
+          "reference_length": 2609,
+          "prediction_length": 3574
+        },
+        {
+          "codebleu": 0.10494809038443387,
+          "codebleu_details": {
+            "codebleu": 0.10494809038443387,
+            "ngram_match_score": 0.0006418071929728562,
+            "weighted_ngram_match_score": 0.004107264301472584,
+            "syntax_match_score": 0.03409090909090909,
+            "dataflow_match_score": 0.38095238095238093
+          },
+          "edit_distance": 1917,
+          "normalized_edit_distance": 0.9301310043668122,
+          "edit_similarity": 0.06986899563318782,
+          "reference_length": 577,
+          "prediction_length": 2061
+        }
+      ]
+    },
+    {
+      "project_name": "repoeval_测量控件",
+      "num_cases": 1,
+      "average_codebleu": 0.2254300032088398,
+      "average_edit_distance": 2370.0,
+      "average_edit_similarity": 0.10633484162895923,
+      "case_results": [
+        {
+          "codebleu": 0.2254300032088398,
+          "codebleu_details": {
+            "codebleu": 0.2254300032088398,
+            "ngram_match_score": 0.0004353209474723559,
+            "weighted_ngram_match_score": 0.0022947928979879166,
+            "syntax_match_score": 0.010101010101010102,
+            "dataflow_match_score": 0.8888888888888888
+          },
+          "edit_distance": 2370,
+          "normalized_edit_distance": 0.8936651583710408,
+          "edit_similarity": 0.10633484162895923,
+          "reference_length": 673,
+          "prediction_length": 2652
+        }
+      ]
+    },
+    {
+      "project_name": "repoeval_电子凸轮运动实训",
+      "num_cases": 4,
+      "average_codebleu": 0.21214693105024707,
+      "average_edit_distance": 1699.75,
+      "average_edit_similarity": 0.08920521874902732,
+      "case_results": [
+        {
+          "codebleu": 0.24369251208258788,
+          "codebleu_details": {
+            "codebleu": 0.24369251208258788,
+            "ngram_match_score": 0.0005882483320684619,
+            "weighted_ngram_match_score": 0.002286375161681812,
+            "syntax_match_score": 0.17777777777777778,
+            "dataflow_match_score": 0.7941176470588235
+          },
+          "edit_distance": 2001,
+          "normalized_edit_distance": 0.8715156794425087,
+          "edit_similarity": 0.12848432055749126,
+          "reference_length": 761,
+          "prediction_length": 2296
+        },
+        {
+          "codebleu": 0.1915178551679368,
+          "codebleu_details": {
+            "codebleu": 0.1915178551679368,
+            "ngram_match_score": 0.0006967897449883319,
+            "weighted_ngram_match_score": 0.0008442170021631755,
+            "syntax_match_score": 0.16593886462882096,
+            "dataflow_match_score": 0.5985915492957746
+          },
+          "edit_distance": 1726,
+          "normalized_edit_distance": 0.883768561187916,
+          "edit_similarity": 0.11623143881208398,
+          "reference_length": 1953,
+          "prediction_length": 1894
+        },
+        {
+          "codebleu": 0.2773783345661318,
+          "codebleu_details": {
+            "codebleu": 0.2773783345661318,
+            "ngram_match_score": 2.646573638909117e-09,
+            "weighted_ngram_match_score": 0.02716039444148304,
+            "syntax_match_score": 0.08235294117647059,
+            "dataflow_match_score": 0.0
+          },
+          "edit_distance": 861,
+          "normalized_edit_distance": 0.9577308120133482,
+          "edit_similarity": 0.0422691879866518,
+          "reference_length": 899,
+          "prediction_length": 38
+        },
+        {
+          "codebleu": 0.1359990223843318,
+          "codebleu_details": {
+            "codebleu": 0.1359990223843318,
+            "ngram_match_score": 5.861301016666102e-06,
+            "weighted_ngram_match_score": 0.0019670109892126956,
+            "syntax_match_score": 0.5022222222222222,
+            "dataflow_match_score": 0.03980099502487562
+          },
+          "edit_distance": 2211,
+          "normalized_edit_distance": 0.9301640723601178,
+          "edit_similarity": 0.06983592763988222,
+          "reference_length": 2377,
+          "prediction_length": 217
+        }
+      ]
+    },
+    {
+      "project_name": "repoeval_电子齿轮运动实训",
+      "num_cases": 3,
+      "average_codebleu": 0.2790496448410116,
+      "average_edit_distance": 2219.6666666666665,
+      "average_edit_similarity": 0.14513835214207707,
+      "case_results": [
+        {
+          "codebleu": 0.3390323882463153,
+          "codebleu_details": {
+            "codebleu": 0.3390323882463153,
+            "ngram_match_score": 0.011614263822537321,
+            "weighted_ngram_match_score": 0.011612897436802804,
+            "syntax_match_score": 0.45054945054945056,
+            "dataflow_match_score": 0.8823529411764706
+          },
+          "edit_distance": 646,
+          "normalized_edit_distance": 0.8659517426273459,
+          "edit_similarity": 0.13404825737265413,
+          "reference_length": 746,
+          "prediction_length": 738
+        },
+        {
+          "codebleu": 0.2715482841181165,
+          "codebleu_details": {
+            "codebleu": 0.2715482841181165,
+            "ngram_match_score": 0,
+            "weighted_ngram_match_score": 0,
+            "syntax_match_score": 0.22905027932960895,
+            "dataflow_match_score": 0.8571428571428571
+          },
+          "edit_distance": 2838,
+          "normalized_edit_distance": 0.8517406962785115,
+          "edit_similarity": 0.14825930372148854,
+          "reference_length": 1578,
+          "prediction_length": 3332
+        },
+        {
+          "codebleu": 0.22656826215860293,
+          "codebleu_details": {
+            "codebleu": 0.22656826215860293,
+            "ngram_match_score": 0.000473165084366809,
+            "weighted_ngram_match_score": 0.0006995491018842979,
+            "syntax_match_score": 0.2692307692307692,
+            "dataflow_match_score": 0.6358695652173914
+          },
+          "edit_distance": 3175,
+          "normalized_edit_distance": 0.8468925046679114,
+          "edit_similarity": 0.15310749533208856,
+          "reference_length": 2946,
+          "prediction_length": 3749
+        }
+      ]
+    },
+    {
+      "project_name": "repoeval_readwriteFile",
+      "num_cases": 2,
+      "average_codebleu": 0.2001290718701279,
+      "average_edit_distance": 1711.0,
+      "average_edit_similarity": 0.12077561928846486,
+      "case_results": [
+        {
+          "codebleu": 0.14499568606565866,
+          "codebleu_details": {
+            "codebleu": 0.14499568606565866,
+            "ngram_match_score": 0.00023481234209944338,
+            "weighted_ngram_match_score": 0.0028161008063893106,
+            "syntax_match_score": 0.4504950495049505,
+            "dataflow_match_score": 0.12643678160919541
+          },
+          "edit_distance": 1223,
+          "normalized_edit_distance": 0.8927007299270073,
+          "edit_similarity": 0.10729927007299267,
+          "reference_length": 1370,
+          "prediction_length": 270
+        },
+        {
+          "codebleu": 0.25526245767459715,
+          "codebleu_details": {
+            "codebleu": 0.25526245767459715,
+            "ngram_match_score": 0.00043109962227363225,
+            "weighted_ngram_match_score": 0.0009142975785781626,
+            "syntax_match_score": 0.1625615763546798,
+            "dataflow_match_score": 0.8571428571428571
+          },
+          "edit_distance": 2199,
+          "normalized_edit_distance": 0.8657480314960629,
+          "edit_similarity": 0.13425196850393706,
+          "reference_length": 1377,
+          "prediction_length": 2540
+        }
+      ]
+    }
+  ]
+}

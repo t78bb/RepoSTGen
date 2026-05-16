@@ -1,0 +1,31 @@
+{
+  "library": "BACnet2",
+  "title": "GetBACnetRealProperty (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/BACnetObjects/base/pou-BACnetObjectBase/Utilities/typed-property-access/GetBACnetRealProperty.html",
+  "page_title": "BACnetObjectBase.GetBACnetRealProperty (METH)",
+  "text": "\nMETHOD GetBACnetRealProperty : CmpBACnet.IEC_BACNET_REAL\nReturns the BACnet-Real-Value of the specified Property (propID) of this BACnet-Object.\nThe used functions are no client, meaning, that the access of the property is not restricted by write or read access restrictions.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetBACnetRealProperty",
+          "Type": "CmpBACnet.IEC_BACNET_REAL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "propID",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_ID",
+          "Comment": "The ID of the property to get."
+        }
+      ]
+    }
+  ]
+}

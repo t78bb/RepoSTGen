@@ -1,0 +1,31 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "GetToplevelInstance (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_Module/TreeNavigation/GetToplevelInstance.html",
+  "page_title": "GetToplevelInstance (FUN)",
+  "text": "\nFUNCTION GetToplevelInstance :\nIModule\nReturns the toplevel instance of itfM.\nNever returns 0.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetToplevelInstance",
+          "Type": "IModule",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfM",
+          "Type": "IModule",
+          "Comment": "The module instance that is queried for the toplevel\ninstance (must not be 0)"
+        }
+      ]
+    }
+  ]
+}

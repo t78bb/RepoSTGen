@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现基于热传导和热容量计算的房间温度动态模拟。",
+  "provide_code": "// AJ Jaworowski 2015-02-23\n// Following the presentation on\n// http://openenergymonitor.org/emon/node/2999\nFUNCTION_BLOCK HeatExchanger2\nVAR_INPUT\n\tHeat_In:\t\tREAL;\t\t//In principle a radiator in the room [W]\n\tU:\t\t\t\tREAL;\t\t//Thermal conductance [W/K]\n\tTC:\t\t\t\tREAL;\t\t//Thermal capacity [J/K], commonly cv, specific heat capacity [J/kgK]\n\t\t\t\t\t\t\t\t//we use a smaller value than in reality, so that we can see changes\n\t\t\t\t\t\t\t\t//during a life-time...\n\tTemp_In:\t\tREAL;\t\t//Start temperature in the room [K]\n\tTemp_Out:\t\tREAL;\t\t//Outside temperature [K] \n\tSample_time:\tTIME;\nEND_VAR\nVAR_OUTPUT\n\tTemp:\t\t\tREAL;\t\t//The resulting room temperature\nEND_VAR"
+}

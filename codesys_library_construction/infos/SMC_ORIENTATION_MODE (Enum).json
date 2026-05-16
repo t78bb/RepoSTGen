@@ -1,0 +1,25 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_ORIENTATION_MODE (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/Basic-types/SMC_ORIENTATION_MODE.html",
+  "page_title": "SMC_ORIENTATION_MODE (ENUM)",
+  "text": "\nTYPE SMC_ORIENTATION_MODE :\nThe orientation mode describes how the orientation is interpolated\nfor CP movements.\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "GreatCircle",
+          "Comment": "The orientation is interpolated from the start orientation to\nthe target orientation along the shortest path.\nEven if the start and the target orientation are in the working\nspace, this interpolation mode may leave the working space."
+        },
+        {
+          "Name": "Axis",
+          "Comment": "The orientation axes are interpolated in axis space from their\nstart values to their target values.\nThis mode can be used to move through singularities of the orientation.\nCoupled kinematics and position kinematics support this mode."
+        }
+      ]
+    }
+  ]
+}

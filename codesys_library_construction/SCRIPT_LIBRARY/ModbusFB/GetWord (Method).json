@@ -1,0 +1,23 @@
+{
+  "library": "ModbusFB",
+  "title": "GetWord (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/ModbusFB/Current/ModbusFB/Function-Blocks/Util/pou-ByteBuffer/GetWord.html",
+  "page_title": "ByteBuffer.GetWord (METH)",
+  "text": "\nMETHOD GetWord : WORD\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetWord",
+          "Type": "WORD"
+        }
+      ]
+    }
+  ]
+}

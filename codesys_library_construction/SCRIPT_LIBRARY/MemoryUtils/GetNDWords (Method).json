@@ -1,0 +1,27 @@
+{
+  "library": "MemoryUtils",
+  "title": "GetNDWords (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/MemoryUtils/Current/MemoryUtils/Functionblocks/pou-ByteBuffer/GetNDWords.html",
+  "page_title": "ByteBuffer.GetNDWords (METH)",
+  "text": "\nMETHOD GetNDWords\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "pdwTarget",
+          "Type": "POINTER TO DWORD"
+        },
+        [
+          "uiCount",
+          "UINT"
+        ]
+      ]
+    }
+  ]
+}

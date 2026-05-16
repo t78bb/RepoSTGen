@@ -1,0 +1,36 @@
+{
+  "library": "BACnet2DefaultImpl",
+  "title": "ReadRangeResultSetInfo (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2DefaultImpl/Current/BACnetDefaultImpl/Function-Blocks/LoggingObjects/Internal/pou-LogObjectsBase/ReadRangeResultSetInfo.html",
+  "page_title": "LogObjectsBase.ReadRangeResultSetInfo (METH)",
+  "text": "\nMETHOD PROTECTED ReadRangeResultSetInfo\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "readRangeResult",
+          "Type": "CmpBACnet.IEC_BACNET_READ_RANGE_RESULT"
+        },
+        {
+          "Scope": "Input",
+          "Name": "objId",
+          "Type": "CmpBACnet.IEC_BACNET_OBJECT_ID"
+        },
+        [
+          "propId",
+          "CmpBACnet.IEC_BACNET_PROPERTY_ID"
+        ],
+        [
+          "nIndex",
+          "CmpBACnet.IEC_BACNET_ARRAY_INDEX"
+        ]
+      ]
+    }
+  ]
+}

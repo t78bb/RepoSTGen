@@ -1,0 +1,46 @@
+{
+  "library": "Standard",
+  "title": "REPLACE (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/Standard/Current/String-Functions/REPLACE.html",
+  "page_title": "REPLACE (FUN)",
+  "text": "\nFUNCTION REPLACE : STRING(255)\nReplaces a specific number of characters of a string by another string\nREPLACE(STR1,\nSTR2,\nL,\nP)\nmeans: Replace\nL\ncharacters from\nSTR1\nby\nSTR2\n, beginning with the character in the\nP\nposition.\nPOS\n=\n0\nor\nPOS\n=\n1\n, are both addressing the first character.\nNote\nThe current implementation is unfortunately not correct for the case\nP=0\n. The implementation cannot be changed for compatibility reasons.\nIf\nP=0\nis used, the parameter\nL\nis internally reduced by one!\nIt is generally recommended to use values in the range specified by IEC 61131-3. The smallest value for\nP\nis specified there as\n1\n.\n(* Example declaration *)\nVarSTRING1\n:\nSTRING\n;\n(* Example in ST , result is 'SKYSI' *)\nVarSTRING1\n:=\nREPLACE\n(\n'SUXYSI'\n,\n'K'\n,\n2\n,\n2\n);\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "REPLACE",
+          "Type": "STRING(255)",
+          "Comment": "Resulting string"
+        },
+        {
+          "Scope": "Input",
+          "Name": "STR1",
+          "Type": "STRING(255)",
+          "Comment": "String of which a part is replaced"
+        },
+        [
+          "STR2",
+          "STRING(255)",
+          "String which replaces a part ofSTR1"
+        ],
+        [
+          "L",
+          "INT",
+          "Number of characters, counting from left"
+        ],
+        [
+          "P",
+          "INT",
+          "Start position of the characters to be replaced.P=1orP=0are both addressing the first character"
+        ]
+      ]
+    }
+  ]
+}

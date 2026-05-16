@@ -1,0 +1,8 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_ITextStream (Interface)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/File/ReadNCFile/Stream/SMC_ITextStream.html",
+  "page_title": "SMC_ITextStream (ITF)",
+  "text": "\nINTERFACE SMC_ITextStream EXTENDS __SYSTEM.IQueryInterface\nPresents textual contents as a stream of characters\nProperties:\nEOS\nName\nMethods:\nClose\nRead\nReset\nStructure:\nClose (Method)\nEOS (Property)\nName (Property)\nRead (Method)\nReset (Method)",
+  "tables": []
+}

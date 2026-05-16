@@ -1,0 +1,73 @@
+{
+  "library": "Visu Utils",
+  "title": "FbCloseDialog (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/Visu Utils/Current/VisuUtils/VisuActionUtilities/Function-Blocks/FbCloseDialog.html",
+  "page_title": "FbCloseDialog (FB)",
+  "text": "VisuUtils\nVisuActionUtilities\nFunction Blocks\nFBFileTransfer (FunctionBlock)\nFbChangeVisu (FunctionBlock)\nFbCloseDialog (FunctionBlock)\nFbIterateClients (FunctionBlock)\nFbOpenDialog (FunctionBlock)\nFbOpenDialogExtended (FunctionBlock)\nFunctions\nFctGetNextVisu (Function)\nFctGetPreviousVisu (Function)\nFctHandleEventsWithinCycleStart (Function)\nFctHandleEventsWithinCycleStop (Function)\nGlobalVariables\nGlobals (GVL)\nPublicVariables (GVL)\nInterfaces\nIVisualizationClient (Interface)\nIVisualizationClientFilter (Interface)\nIVisualizationClientIteration (Interface)\nIVisualizationClientRaw (Interface)\nTypes\nEnum\nFile and Project Information\nLibrary Reference\nCmpIecTask\nLibrary Identification\nLibrary Properties\nCmpVisuHandler\nLibrary Identification\nLibrary Properties\nCommon Behaviour Model\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysSem\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nVisuElemBase\nLibrary Identification\nLibrary Properties\nVisu Utils\nDocs\n»\nVisuUtils\n»\nVisuActionUtilities\n»\nFunction\nBlocks\n»\nFbCloseDialog (FB)\nFbCloseDialog (FB)\nÂ¶\nFUNCTION_BLOCK FbCloseDialog EXTENDS FbExecuteSingleVisuActionBase\nHandles the action close dialog\nTo use this function block in the programm set the according inputvalues\nand start the dialog close action with\nxExecute\n=\nTRUE\n.\nThe fb-instance should be declarated within a permanent setting, e.g. a GVL, and not within a temporary setting, e.g. a function.\nTherefore, the action will still be available, when called, later on.\nInOut:\nScope\nName\nType\nComment\nInherited from\nInput\nxExecute\nBOOL\nRising edge: Starts defined operation\nFALSE\n: Resets the defined operation after ready condition was reached\nETrig\nOutput\nxDone\nBOOL\nTRUE\n: Ready condition reached\nETrig\nxBusy\nBOOL\nTRUE\n: Operation is running\nETrig\nxError\nBOOL\nTRUE\n: Error condition reached\nETrig\nInput\nitfClientFilter\nIVisualizationClientFilter\nWith this filter, the clients, where the action should happen, are specified.\nUse standard filter from  GVL Globals, e.g.\nVU.Globals.CurrentClient\n, or use a own implentation of the interface.\nFbExecuteSingleVisuActionBase\nOutput\neError\nERROR\nFbExecuteSingleVisuActionBase\nInput\nsDialogName\nSTRING\nMandatory value: name of the dialog\ndialogResult\nVisuElemBase.Visu_DialogResult",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment",
+        "Inherited from"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "xExecute",
+          "Type": "BOOL",
+          "Comment": "Rising edge: Starts defined operationFALSE: Resets the defined operation after ready condition was reached",
+          "Inherited from": "ETrig"
+        },
+        {
+          "Scope": "Output",
+          "Name": "xDone",
+          "Type": "BOOL",
+          "Comment": "TRUE: Ready condition reached",
+          "Inherited from": "ETrig"
+        },
+        [
+          "xBusy",
+          "BOOL",
+          "TRUE: Operation is running",
+          "ETrig"
+        ],
+        [
+          "xError",
+          "BOOL",
+          "TRUE: Error condition reached",
+          "ETrig"
+        ],
+        {
+          "Scope": "Input",
+          "Name": "itfClientFilter",
+          "Type": "IVisualizationClientFilter",
+          "Comment": "With this filter, the clients, where the action should happen, are specified.Use standard filter from  GVL Globals, e.g.VU.Globals.CurrentClient, or use a own implentation of the interface.",
+          "Inherited from": "FbExecuteSingleVisuActionBase"
+        },
+        {
+          "Scope": "Output",
+          "Name": "eError",
+          "Type": "ERROR",
+          "Comment": "",
+          "Inherited from": "FbExecuteSingleVisuActionBase"
+        },
+        {
+          "Scope": "Input",
+          "Name": "sDialogName",
+          "Type": "STRING",
+          "Comment": "Mandatory value: name of the dialog",
+          "Inherited from": ""
+        },
+        [
+          "dialogResult",
+          "VisuElemBase.Visu_DialogResult",
+          "",
+          ""
+        ]
+      ]
+    }
+  ]
+}

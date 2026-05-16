@@ -1,0 +1,8 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_MonotoneSentenceHistory (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/SoftMotion-Function-Blocks/DecoderBuffer/SMC_MonotoneSentenceHistory.html",
+  "page_title": "SMC_MonotoneSentenceHistory (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_MonotoneSentenceHistory IMPLEMENTS\nSMC_ISentenceHistory\nThis implementation of\nSMC_ISentenceHistory\nrequires new elements\nto fit into a monotonically increasing sequence of sentences.\nIf sentence numbers are not monotonically increasing, an error will be\nreturned.\nMethods:\nContainsElement\nRegisterElement\nReset\nStructure:\nContainsElement (Method)\nRegisterElement (Method)\nReset (Method)",
+  "tables": []
+}

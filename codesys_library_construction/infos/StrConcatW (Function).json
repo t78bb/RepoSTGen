@@ -1,0 +1,41 @@
+{
+  "library": "StringUtils",
+  "title": "StrConcatW (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/StringUtils/Current/Public-Parts/Unicode/StrConcatW.html",
+  "page_title": "StrConcatW (FUN)",
+  "text": "\nFUNCTION StrConcatW : BOOL\nThis function concatenates pstFrom to pstTo if the iBufferSize from pstTo is big enough.\nIt will return FALSE and does no concatenation if one of the strings is NULL\nor the buffer size is not big enough.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "StrConcatW",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "pstFrom",
+          "Type": "CharBufferPtr",
+          "Comment": "simply a pointer to byte"
+        },
+        [
+          "pstTo",
+          "CharBufferPtr",
+          "simply a pointer to byte"
+        ],
+        [
+          "iBufferSize",
+          "INT",
+          "the buffer size of pstTo"
+        ]
+      ]
+    }
+  ]
+}

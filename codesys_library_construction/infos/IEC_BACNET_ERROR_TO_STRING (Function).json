@@ -1,0 +1,28 @@
+{
+  "library": "BACnet",
+  "title": "IEC_BACNET_ERROR_TO_STRING (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/Utilities/ToString/IEC_BACNET_ERROR_TO_STRING.html",
+  "page_title": "IEC_BACNET_ERROR_TO_STRING (FUN)",
+  "text": "\nFUNCTION IEC_BACNET_ERROR_TO_STRING : STRING\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "IEC_BACNET_ERROR_TO_STRING",
+          "Type": "STRING"
+        },
+        {
+          "Scope": "Input",
+          "Name": "bacnetError",
+          "Type": "CmpBACnet.IEC_BACNET_ERROR"
+        }
+      ]
+    }
+  ]
+}

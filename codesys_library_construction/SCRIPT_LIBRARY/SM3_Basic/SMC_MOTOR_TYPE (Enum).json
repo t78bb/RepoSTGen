@@ -1,0 +1,22 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_MOTOR_TYPE (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/DataTypes/DriveInterface/SMC_MOTOR_TYPE.html",
+  "page_title": "SMC_MOTOR_TYPE (ENUM)",
+  "text": "\nTYPE SMC_MOTOR_TYPE :\nThe type (rotary or linear) of a motor.\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name"
+      ],
+      "rows": [
+        {
+          "Name": "rotary"
+        },
+        {
+          "Name": "linear"
+        }
+      ]
+    }
+  ]
+}

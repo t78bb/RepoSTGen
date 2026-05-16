@@ -1,0 +1,11 @@
+{
+  "模糊点列表": [
+    {
+      "模糊点类型": "逻辑处理顺序",
+      "模糊点描述": "原始需求未明确指定输入信号处理的优先级顺序",
+      "差异细节": "模型生成代码中，如果同时收到bReset和bUp或bDown信号，将优先执行bReset操作；而参考代码中，bUp和bDown的操作可以在bReset之前执行，因为它们在不同的IF语句中",
+      "精准需求描述": "输入信号处理应该按照以下优先级顺序进行：首先检查bReset，如果为TRUE，则重置计数器；如果bReset为FALSE，然后检查bUp和bDown，bUp和bDown可以同时生效，即如果bUp和bDown同时为TRUE，计数器先增加后减少。"
+    }
+  ],
+  "case_id": "repoeval_counter/FB_counter"
+}

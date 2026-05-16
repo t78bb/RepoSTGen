@@ -1,0 +1,53 @@
+{
+  "library": "AlarmManager",
+  "title": "GetAlarmsFromStorage (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/pou-IAlarmHandler2/GetAlarmsFromStorage.html",
+  "page_title": "IAlarmHandler2.GetAlarmsFromStorage (METH)",
+  "text": "\nMETHOD GetAlarmsFromStorage : UDINT\nReads alarms from the alarm storage using the filter criteria of the passed IAlarmManagerClient\ninstance. The result will be stored in the array the IAlarmManagerClient instance passed in\nthe call of method RegisterClient. The return value indicates, whether the\nprocessing was successful or not:\n* ERR_OK:              Alarms from storage have been read successfully\n* ERR_NO_OBJECT:       Client was not found, has been not yet registered at the alarm manager\n* ERR_NOTINITIALIZED:  No client has been registered at the alarm manager\n* ERR_NO_ALARM_STORAGE:    No access to the alarm storage possible, because no array for\nstoring alarms from storage has been passed during registering the client\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetAlarmsFromStorage",
+          "Type": "UDINT",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfAlarmManagerClient",
+          "Type": "IAlarmManagerClient",
+          "Comment": "The IAlarmManagerClient instance"
+        },
+        [
+          "iSkipRows",
+          "INT",
+          "The number of rows (beginning at the row with the row ID), that have to skipped.\nThis parameter is used to consider the vertical scrolling. After skipping the rows,\nthe row ID parameter contains the row ID of the new start row. In case of\nscrolling down, this parameter is positive, in case of scrolling up, this parameter\nhas a negative value. If not scrolled this parameter is 0."
+        ],
+        {
+          "Scope": "Inout",
+          "Name": "bRowIDValid",
+          "Type": "BOOL",
+          "Comment": "A flag indicating, whether the row ID parameter contains a valid row ID.\nFor the 1st query this flag should be FALSE in order to signal, that the\nquery is performed the 1st time and therefore the cursor has to be set at the\nbeginning of the result set."
+        },
+        [
+          "diRowID",
+          "DINT",
+          "The row ID of the row, where the search has to start. This parameter will also\nbe modified by the function using the parameter"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "iCountRows",
+          "Type": "INT",
+          "Comment": "Returns the effective number of rows, that have been read"
+        }
+      ]
+    }
+  ]
+}

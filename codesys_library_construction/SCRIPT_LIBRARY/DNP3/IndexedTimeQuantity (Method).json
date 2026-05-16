@@ -1,0 +1,23 @@
+{
+  "library": "DNP3",
+  "title": "IndexedTimeQuantity (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Outstation/pou-Outstation/internal/DataCallbacks/IndexedTimeQuantity.html",
+  "page_title": "Outstation.IndexedTimeQuantity (METH)",
+  "text": "\nMETHOD IndexedTimeQuantity : UINT\nGet number of IndexedTime points\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "IndexedTimeQuantity",
+          "Type": "UINT"
+        }
+      ]
+    }
+  ]
+}

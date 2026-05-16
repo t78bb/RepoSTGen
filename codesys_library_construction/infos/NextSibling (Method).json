@@ -1,0 +1,31 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "NextSibling (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_Module/pou-IModuleTree/NextSibling.html",
+  "page_title": "IModuleTree.NextSibling (METH)",
+  "text": "\nMETHOD NextSibling :\nIModule\nReturns the next sibling of a module instance.\nReturns 0 if (and only if) md has no further sibling.\nNote: can be called for toplevel instances, too.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "NextSibling",
+          "Type": "IModule",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "md",
+          "Type": "IModule",
+          "Comment": "The module instance that is queried (must not be 0)"
+        }
+      ]
+    }
+  ]
+}

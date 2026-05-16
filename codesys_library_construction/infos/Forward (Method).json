@@ -1,0 +1,8 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "Forward (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/GenVisu/pou-AC_Visu_Base/Forward.html",
+  "page_title": "AC_Visu_Base.Forward (METH)",
+  "text": "\nMETHOD FINAL Forward\nMoves forward one step in the history of selected frames.\nIf there is no next step, nothing is done.",
+  "tables": []
+}

@@ -1,0 +1,56 @@
+{
+  "library": "DNP3",
+  "title": "PointObserver (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/PointObserver/PointObserver.html",
+  "page_title": "PointObserver (FB)",
+  "text": "\nFUNCTION_BLOCK ABSTRACT PointObserver IMPLEMENTS IPointObserverImpl\nBase object for all DNP3 Master datapoint observer.\nPointObserver can be used in conjunction with a Master to listen for DNP3 datapoint changes of a certain Outstation datapoint.\nThe PointObserver needs to be connected to a Master, pointNumber must be configured accordingly, the datapoint type is defined implicitly by the specific PointObserver - like\nAnalogInputPointObserver\n.\nIf enabled, the PointObserver signals datapoint changes at output modified for one call to the PointObserver instance (one IEC application cycle).\nEventually multiple changes to the datapoint can happen between two calls to the PointObserver instance (one IEC application cycle).\nIn this case only the most recent value is provided by the PointObserver, the application can detect such data loss by analysing the sequenceNumber did increment by more than the value 1.\nThis relatively simple approach should be sufficient for most use cases, especially as a Master can use an\nIntegrityPoll\nif needed, to get the most recent datapoint values from an outstation.\nA more complex DNP3 datapoint observer providing capabilities to process all datapoint changes can be realized, but is subject to eventual future improvements.\nIn case the Master will be disabled during PointObserver normal operation (PointObserver.xEnable=TRUE)\nthe PointObserver will signal an error (xError=TRUE, eErrorID=MasterDisabled) and need to be disabled\nand enabled again after the Master had been enabled to get back to normal operation.\nIt is adviced to set PointObserver.xEnable:=Master.xEnable.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "itfMaster",
+          "Type": "IMaster",
+          "Comment": "Connect to a Master."
+        },
+        [
+          "xEnable",
+          "BOOL",
+          "Enable the PointObserver."
+        ],
+        [
+          "pointNumber",
+          "UINT",
+          "Datapoint number."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "xError",
+          "Type": "BOOL",
+          "Comment": "An error occured."
+        },
+        [
+          "eErrorID",
+          "Error",
+          "The specific error."
+        ],
+        [
+          "modified",
+          "BOOL",
+          "Data received since last call."
+        ],
+        [
+          "sequenceNumber",
+          "UDINT",
+          "Sequence number of received data."
+        ]
+      ]
+    }
+  ]
+}

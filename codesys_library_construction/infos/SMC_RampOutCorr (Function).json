@@ -1,0 +1,32 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_RampOutCorr (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/GeoInfo-Help-Functions/SMC_RampOutCorr.html",
+  "page_title": "SMC_RampOutCorr (FUN)",
+  "text": "\nFUNCTION SMC_RampOutCorr : BOOL\nTranslates the object corresp. to the radius\ndR\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SMC_RampOutCorr",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Input",
+          "Name": "pg",
+          "Type": "POINTER TOSMC_GEOINFO"
+        },
+        [
+          "pp",
+          "POINTER TOSMC_PosInfo"
+        ]
+      ]
+    }
+  ]
+}

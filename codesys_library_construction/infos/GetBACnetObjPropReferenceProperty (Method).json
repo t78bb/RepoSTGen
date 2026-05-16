@@ -1,0 +1,28 @@
+{
+  "library": "BACnet",
+  "title": "GetBACnetObjPropReferenceProperty (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/pou-IBACnetObjectBase/Utilities/GetBACnetObjPropReferenceProperty.html",
+  "page_title": "IBACnetObjectBase.GetBACnetObjPropReferenceProperty (METH)",
+  "text": "\nMETHOD GetBACnetObjPropReferenceProperty : CmpBACnet.IEC_BACNET_OBJ_PROP_REFERENCE\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetBACnetObjPropReferenceProperty",
+          "Type": "CmpBACnet.IEC_BACNET_OBJ_PROP_REFERENCE"
+        },
+        {
+          "Scope": "Input",
+          "Name": "propID",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_ID"
+        }
+      ]
+    }
+  ]
+}

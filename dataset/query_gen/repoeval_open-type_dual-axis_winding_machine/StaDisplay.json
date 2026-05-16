@@ -1,0 +1,6 @@
+{
+  "requirement": "This code should implement a function block named StaDisplay which takes an integer input iStatus and sets six boolean outputs (Y1, Y2, Y3, Y4, Y5, Y6) based on the value of iStatus. It should handle multiple ranges and specific values of iStatus by setting these outputs accordingly: for values 2-10, 221-222, set Y1 to TRUE, Y6 to TRUE, and all other outputs to FALSE; for values 11-12, set Y2 to TRUE, Y6 to TRUE, and all other outputs to FALSE; for values 13-22, set Y3 to TRUE, Y5 to TRUE, and all other outputs to FALSE; for values 23-24, set Y4 to TRUE, Y5 to TRUE, and all other outputs to FALSE. For any other value of iStatus, all outputs should be set to FALSE except Y5 and Y6 which should be TRUE.",
+  "provide_code": "FUNCTION_BLOCK StaDisplay\nVAR_INPUT\n\tiStatus :\tINT;\nEND_VAR\nVAR_OUTPUT\n\tY1,Y2,Y3,Y4,Y5,Y6\t:\tBOOL;\nEND_VAR",
+  "function_name": "StaDisplay",
+  "requirement_cn": "该代码应实现一个名为 StaDisplay 的功能块，它接受一个整数输入 iStatus 并根据 iStatus 的值设置六个布尔输出（Y1, Y2, Y3, Y4, Y5, Y6）。它应该通过相应设置这些输出来处理 iStatus 的多个范围和特定值：对于值 2-10, 221-222，设置 Y1 为 TRUE，Y6 为 TRUE，其它所有输出为 FALSE；对于值 11-12，设置 Y2 为 TRUE，Y6 为 TRUE，其它所有输出为 FALSE；对于值 13-22，设置 Y3 为 TRUE，Y5 为 TRUE，其它所有输出为 FALSE；对于值 23-24，设置 Y4 为 TRUE，Y5 为 TRUE，其它所有输出为 FALSE。对于 iStatus 的任何其他值，所有输出应设置为 FALSE，除了 Y5 和 Y6 应该为 TRUE。"
+}

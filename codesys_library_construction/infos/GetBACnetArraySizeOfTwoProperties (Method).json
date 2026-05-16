@@ -1,0 +1,37 @@
+{
+  "library": "BACnet",
+  "title": "GetBACnetArraySizeOfTwoProperties (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/pou-BACnetObjectBase/Utilities/GetBACnetArraySizeOfTwoProperties.html",
+  "page_title": "BACnetObjectBase.GetBACnetArraySizeOfTwoProperties (METH)",
+  "text": "\nMETHOD GetBACnetArraySizeOfTwoProperties : CmpBACnet.IEC_BACNET_STATUS\nReturns the minimum number of elements in two BACnetARRAY properties.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetBACnetArraySizeOfTwoProperties",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "aePropertyIDs",
+          "Type": "ARRAY [0..2] OF\nCmpBACnet.IEC_BACNET_PROPERTY_ID",
+          "Comment": "The ID of the property to get the array size from."
+        },
+        {
+          "Scope": "Output",
+          "Name": "arraySize",
+          "Type": "CmpBACnet.IEC_BACNET_ELEMENT_COUNT",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

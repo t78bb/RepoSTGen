@@ -1,0 +1,36 @@
+{
+  "library": "SM3_CNC",
+  "title": "Init (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_Trafo_POUs/SoftMotion-Transformations/Wrapper/pou-SMC_Trafo_Wrapper/Init.html",
+  "page_title": "SMC_Trafo_Wrapper.Init (METH)",
+  "text": "\nMETHOD PROTECTED Init : SMC_ERROR\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "Init",
+          "Type": "SMC_ERROR"
+        },
+        {
+          "Scope": "Input",
+          "Name": "kin",
+          "Type": "TRAFO.MC_KIN_REF_SM3"
+        },
+        [
+          "kinOri",
+          "TRAFO.ISMOrientationKinematics"
+        ],
+        [
+          "oriConv",
+          "SMC_ORI_CONVENTION"
+        ]
+      ]
+    }
+  ]
+}

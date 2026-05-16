@@ -1,0 +1,36 @@
+{
+  "library": "IoStandard",
+  "title": "ConfigGetFirstConnector (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/IoStandard/Current/Config-Access-Help-Functions-internal/ConfigGetFirstConnector.html",
+  "page_title": "ConfigGetFirstConnector (FUN)",
+  "text": "\nFUNCTION ConfigGetFirstConnector : POINTER TO IoConfigConnector\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "ConfigGetFirstConnector",
+          "Type": "POINTER TO IoConfigConnector"
+        },
+        {
+          "Scope": "Input",
+          "Name": "pIoConnectorList",
+          "Type": "POINTER TO IoConfigConnector"
+        },
+        [
+          "pnCount",
+          "POINTER TO DINT"
+        ],
+        [
+          "wType",
+          "WORD"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "library": "SM3_CNC",
+  "title": "AppendData (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/File/ReadNCFile/Stream/pou-SMC_StringStream2/AppendData.html",
+  "page_title": "SMC_StringStream2.AppendData (METH)",
+  "text": "\nMETHOD AppendData : SMC_ERROR\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "AppendData",
+          "Type": "SMC_ERROR",
+          "Comment": ""
+        },
+        {
+          "Scope": "Inout Const",
+          "Name": "sData",
+          "Type": "STRING(255)",
+          "Comment": "The data to be copied to the stream"
+        }
+      ]
+    }
+  ]
+}

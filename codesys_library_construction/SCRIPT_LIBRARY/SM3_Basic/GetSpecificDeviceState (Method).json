@@ -1,0 +1,42 @@
+{
+  "library": "SM3_Basic",
+  "title": "GetSpecificDeviceState (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/DriveInterface/AXIS_REF/pou-AXIS_REF_SM3/CAA-Device-Diagnosis/GetSpecificDeviceState.html",
+  "page_title": "AXIS_REF_SM3.GetSpecificDeviceState (METH)",
+  "text": "\nMETHOD GetSpecificDeviceState : DED.ERROR\nReturns the fieldbus specific device state; interpretation is fieldbus dependent.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetSpecificDeviceState",
+          "Type": "DED.ERROR",
+          "Comment": "eError"
+        },
+        {
+          "Scope": "Input",
+          "Name": "pData",
+          "Type": "CAA.PVOID",
+          "Comment": "Pointer to memory"
+        },
+        [
+          "szSize",
+          "CAA.SIZE",
+          "Size of memory in bytes wherepDatais pointing to."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "szCount",
+          "Type": "CAA.SIZE",
+          "Comment": "Number of Bytes written to pData"
+        }
+      ]
+    }
+  ]
+}

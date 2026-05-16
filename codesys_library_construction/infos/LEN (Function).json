@@ -1,0 +1,31 @@
+{
+  "library": "Standard",
+  "title": "LEN (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/Standard/Current/String-Functions/LEN.html",
+  "page_title": "LEN (FUN)",
+  "text": "\nFUNCTION LEN : INT\nReturns the number of characters of a string\n(* Example declaration *)\nVarINT1\n:\nINT\n;\n(* Example in ST , result is '4 *)\nVarINT1\n:=\nLEN\n(\n'SUSI'\n);\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "LEN",
+          "Type": "INT",
+          "Comment": "Length of stringSTR"
+        },
+        {
+          "Scope": "Input",
+          "Name": "STR",
+          "Type": "STRING(255)",
+          "Comment": "String to be analyzed"
+        }
+      ]
+    }
+  ]
+}

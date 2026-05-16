@@ -1,0 +1,23 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_NCCallstackInfo (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/Interpreter/Callstack/SMC_NCCallstackInfo.html",
+  "page_title": "SMC_NCCallstackInfo (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_NCCallstackInfo\nData structure that contains information about the current\ncallstack of\nSMC_NCInterpreter\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Output",
+          "Name": "bLocked",
+          "Type": "BOOL"
+        }
+      ]
+    }
+  ]
+}

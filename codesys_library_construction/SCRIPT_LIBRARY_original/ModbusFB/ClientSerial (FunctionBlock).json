@@ -1,0 +1,178 @@
+{
+  "library": "ModbusFB",
+  "title": "ClientSerial (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/ModbusFB/Current/ModbusFB/Function-Blocks/Client/ClientSerial.html",
+  "page_title": "ClientSerial (FB)",
+  "text": "Library Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nModbusFB\nEnums\nError (Enum)\nExceptionCodes (Enum)\nFunctionCodes (Enum)\nLoggingOptions (Enum)\nPrimaryTables (Enum)\nRtuAscii (Enum)\nSerialSubFunctionCodes (Enum)\nFunction Blocks\nClient\nClient (FunctionBlock)\nClientRequest (FunctionBlock)\nClientRequestMaskWriteRegister (FunctionBlock)\nClientRequestRead (FunctionBlock)\nClientRequestReadBits (FunctionBlock)\nClientRequestReadCoils (FunctionBlock)\nClientRequestReadDiscreteInputs (FunctionBlock)\nClientRequestReadHoldingRegisters (FunctionBlock)\nClientRequestReadInputRegisters (FunctionBlock)\nClientRequestReadRegisters (FunctionBlock)\nClientRequestReadWriteMultipleRegisters (FunctionBlock)\nClientRequestWriteMultiple (FunctionBlock)\nClientRequestWriteMultipleCoils (FunctionBlock)\nClientRequestWriteMultipleRegisters (FunctionBlock)\nClientRequestWriteSingle (FunctionBlock)\nClientRequestWriteSingleCoil (FunctionBlock)\nClientRequestWriteSingleRegister (FunctionBlock)\nClientSerial (FunctionBlock)\nClientTCP (FunctionBlock)\nServer\nExampleDataModel (FunctionBlock)\nServer (FunctionBlock)\nServerSerial (FunctionBlock)\nServerTCP (FunctionBlock)\nUtil\nByteBuffer (FunctionBlock)\nGlobalConstants\nConstants (GVL)\nParameter (ParamList)\nStructs\nRequestData (Struct)\nRequestDataDiagnostics (Struct)\nRequestDataMaskWriteRegister (Struct)\nRequestDataRead (Struct)\nRequestDataReadWriteMultipleRegisters (Struct)\nRequestDataWriteMultiple (Struct)\nRequestDataWriteSingle (Struct)\nRequestUnion (Union)\nSupportedFcs (Struct)\nTableDefinition (Struct)\nTableDefinitions (Struct)\nTableSection (Struct)\nFile and Project Information\nLibrary Reference\n3SLicense\nLibrary Identification\nLibrary Properties\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nCmpLog\nLibrary Identification\nLibrary Properties\nCommon Behaviour Model\nLibrary Identification\nLibrary Properties\nComponent Manager\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nStringUtils\nLibrary Identification\nLibrary Properties\nSysCom\nLibrary Identification\nLibrary Properties\nSysCpuHandling\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysSocket\nLibrary Identification\nLibrary Properties\nSysTarget\nLibrary Identification\nLibrary Properties\nSysTimeCore\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nModbusFB\nDocs\n»\nModbusFB\n»\nFunction\nBlocks\n»\nClient\n»\nClientSerial (FB)\nClientSerial (FB)\nÂ¶\nFUNCTION_BLOCK ClientSerial EXTENDS\nClient\nIMPLEMENTS ISysComUser\nMODBUS serial client (master).\nPlease note: some input variables related to connection configuration are read when rising edge on xConnect occurs.\nTo change connection configuration the application needs to\n- disconnect (xConnect := FALSE and execute the FB)\n- modify the related input variables\n- connect (xConnect := TRUE and execute the FB)\nThe\nClient\nprovides some statistics of sent request messages and received valid reply messages.\nInvalid messages are dropped at the communication level, so doesnt appear in the statistics.\nTo analyse situations where invalid reply messages might occur, you can use udiLogOptions with LoggingOptions.WarnOnReceivedInvalidFrames.\nThe maximum number of serial ports usable with ClientSerial / ServerSerial is limited to MAX_NUM_COMPORTS.\nIn case there is a need to use more serial ports, anyone can set the library parameter MAX_NUM_COMPORTS within an application - see Library Manager -> ModbusFB -> Parameter -> MAX_NUM_COMPORTS.\nPlease visit\nhttps://forge.codesys.com/prj/codesys-example/modbus/home\nto find examples.\nInOut:\nScope\nName\nType\nInitial\nComment\nInherited from\nInput\nxConnect\nBOOL\nFALSE\nConnect to server (slave).\nClient\nOutput\nxConnected\nBOOL\nClient (master) is connected to server (slave).\nClient\nxError\nBOOL\nError\nClient\neErrorID\nError\nError status\nClient\nudiNumMsgSent\nUDINT\nNumber of request messages send since connect.\nClient\nudiNumMsgReply\nUDINT\nNumber of reply messages received since connect.\nClient\nudiNumMsgExcReply\nUDINT\nNumber of exception reply messages received since connect.\nClient\nudiNumMsgExcReplyIllFct\nUDINT\nNumber of exception reply messages received since connect,\nsignaling illegal function.\nClient\nudiNumMsgExcReplyIllDataAdr\nUDINT\nNumber of exception reply messages received since connect,\nsignaling illegal data address.\nClient\nudiNumReplyTimeouts\nUDINT\nNumber of reply timeouts since connect.\nClient\nudiNumReqNotProcessed\nUDINT\nNumber of requests not processed in time (ârequest\nstarvationâ) since connect.\nClient\nudiNumReqParamError\nUDINT\nNumber of requests started with parameter error, for example\nâRead Coilsâ -> âQuantity of coilsâ = 0.\nClient\nudiLastTransactionTime\nUDINT\nTransaction time in ms - time difference between request\nmessage send und reply message received.\nClient\nInput\niPort\nSysCom.SYS_COM_PORTS\nSysCom.SYS_COM_PORTS.SYS_COMPORT_NONE\nSerial port, only read when rising edge on xConnect occurs.\ndwBaudrate\nSysCom.SYS_COM_BAUDRATE\nSysCom.SYS_COM_BAUDRATE.SYS_BR_115200\nBaud rate, only read when rising edge on xConnect occurs.\nbyDataBits\nBYTE\n8\nNumber of data bits/BYTE, 5-8, only read when rising edge on\nxConnect occurs.\neParity\nSysCom.SYS_COM_PARITY\nSysCom.SYS_COM_PARITY.SYS_NOPARITY\nParity, only read when rising edge on xConnect occurs.\neStopBits\nSysCom.SYS_COM_STOPBITS\nSysCom.SYS_COM_STOPBITS.SYS_ONESTOPBIT\nStop bits, only read when rising edge on xConnect occurs.\neDTRcontrol\nSYS_COM_DTR_CONTROL\nSysCom.SYS_COM_DTR_CONTROL.SYS_DTR_CONTROL_DISABLE\nDTR control, only read when rising edge on xConnect occurs.\neRTScontrol\nSysCom.SYS_COM_RTS_CONTROL\nSysCom.SYS_COM_RTS_CONTROL.SYS_RTS_CONTROL_DISABLE\nRTS control, only read when rising edge on xConnect occurs.\neRtuAscii\nRtuAscii\nRtuAscii.RTU\nRTU / ASCII, only read when rising edge on xConnect occurs.\nudiLogOptions\nUDINT\nLoggingOptions.ClientConnectDisconnect\nLogging options.",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment",
+        "Inherited from"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "xConnect",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "Connect to server (slave).",
+          "Inherited from": "Client"
+        },
+        {
+          "Scope": "Output",
+          "Name": "xConnected",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Client (master) is connected to server (slave).",
+          "Inherited from": "Client"
+        },
+        [
+          "xError",
+          "BOOL",
+          "",
+          "Error",
+          "Client"
+        ],
+        [
+          "eErrorID",
+          "Error",
+          "",
+          "Error status",
+          "Client"
+        ],
+        [
+          "udiNumMsgSent",
+          "UDINT",
+          "",
+          "Number of request messages send since connect.",
+          "Client"
+        ],
+        [
+          "udiNumMsgReply",
+          "UDINT",
+          "",
+          "Number of reply messages received since connect.",
+          "Client"
+        ],
+        [
+          "udiNumMsgExcReply",
+          "UDINT",
+          "",
+          "Number of exception reply messages received since connect.",
+          "Client"
+        ],
+        [
+          "udiNumMsgExcReplyIllFct",
+          "UDINT",
+          "",
+          "Number of exception reply messages received since connect,\nsignaling illegal function.",
+          "Client"
+        ],
+        [
+          "udiNumMsgExcReplyIllDataAdr",
+          "UDINT",
+          "",
+          "Number of exception reply messages received since connect,\nsignaling illegal data address.",
+          "Client"
+        ],
+        [
+          "udiNumReplyTimeouts",
+          "UDINT",
+          "",
+          "Number of reply timeouts since connect.",
+          "Client"
+        ],
+        [
+          "udiNumReqNotProcessed",
+          "UDINT",
+          "",
+          "Number of requests not processed in time (ârequest\nstarvationâ) since connect.",
+          "Client"
+        ],
+        [
+          "udiNumReqParamError",
+          "UDINT",
+          "",
+          "Number of requests started with parameter error, for example\nâRead Coilsâ -> âQuantity of coilsâ = 0.",
+          "Client"
+        ],
+        [
+          "udiLastTransactionTime",
+          "UDINT",
+          "",
+          "Transaction time in ms - time difference between request\nmessage send und reply message received.",
+          "Client"
+        ],
+        {
+          "Scope": "Input",
+          "Name": "iPort",
+          "Type": "SysCom.SYS_COM_PORTS",
+          "Initial": "SysCom.SYS_COM_PORTS.SYS_COMPORT_NONE",
+          "Comment": "Serial port, only read when rising edge on xConnect occurs.",
+          "Inherited from": ""
+        },
+        [
+          "dwBaudrate",
+          "SysCom.SYS_COM_BAUDRATE",
+          "SysCom.SYS_COM_BAUDRATE.SYS_BR_115200",
+          "Baud rate, only read when rising edge on xConnect occurs.",
+          ""
+        ],
+        [
+          "byDataBits",
+          "BYTE",
+          "8",
+          "Number of data bits/BYTE, 5-8, only read when rising edge on\nxConnect occurs.",
+          ""
+        ],
+        [
+          "eParity",
+          "SysCom.SYS_COM_PARITY",
+          "SysCom.SYS_COM_PARITY.SYS_NOPARITY",
+          "Parity, only read when rising edge on xConnect occurs.",
+          ""
+        ],
+        [
+          "eStopBits",
+          "SysCom.SYS_COM_STOPBITS",
+          "SysCom.SYS_COM_STOPBITS.SYS_ONESTOPBIT",
+          "Stop bits, only read when rising edge on xConnect occurs.",
+          ""
+        ],
+        [
+          "eDTRcontrol",
+          "SYS_COM_DTR_CONTROL",
+          "SysCom.SYS_COM_DTR_CONTROL.SYS_DTR_CONTROL_DISABLE",
+          "DTR control, only read when rising edge on xConnect occurs.",
+          ""
+        ],
+        [
+          "eRTScontrol",
+          "SysCom.SYS_COM_RTS_CONTROL",
+          "SysCom.SYS_COM_RTS_CONTROL.SYS_RTS_CONTROL_DISABLE",
+          "RTS control, only read when rising edge on xConnect occurs.",
+          ""
+        ],
+        [
+          "eRtuAscii",
+          "RtuAscii",
+          "RtuAscii.RTU",
+          "RTU / ASCII, only read when rising edge on xConnect occurs.",
+          ""
+        ],
+        [
+          "udiLogOptions",
+          "UDINT",
+          "LoggingOptions.ClientConnectDisconnect",
+          "Logging options.",
+          ""
+        ]
+      ]
+    }
+  ]
+}

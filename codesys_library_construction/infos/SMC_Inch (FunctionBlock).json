@@ -1,0 +1,95 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_Inch (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/Movement/SMC_Inch.html",
+  "page_title": "SMC_Inch (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_Inch\nThis function block causes a gradual motion on the axis, which is carried out step by step.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3",
+          "Initial": "",
+          "Comment": "Reference to axis"
+        },
+        {
+          "Scope": "Input",
+          "Name": "InchForward",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUE: Axis is moved with the dynamic valuesVelocity,Acceleration,DecelerationandJerkin a positive direction untilDistancehas been travelled.IfInchForwardis set toFALSEand back toTRUE, a further motion is started.IfInchForwardis set toFALSEbeforeDistancehas been travelled, the axis is immediately decelerated to the velocity value zero.Busyis then set toFALSE.IfInchBackwardandInchForwardareTRUEat the same time, then no motions are carried out."
+        },
+        [
+          "InchBackward",
+          "BOOL",
+          "",
+          "TRUE:Axisis moved with the dynamic valuesVelocity,Acceleration,DecelerationandJerkin a negative direction untilDistancehas been travelled.IfInchBackwardis set toFALSEand back toTRUE, a further motion is started.IfInchBackwardis set toFALSEbeforeDistancehas been travelled, the axis is immediately decelerated to the velocity value zero andBusyis then set toFALSE.IfInchBackwardandInchForwardareTRUEat the same time, then no motions are carried out."
+        ],
+        [
+          "Distance",
+          "LREAL",
+          "",
+          "Distance that is travelled"
+        ],
+        [
+          "Velocity",
+          "LREAL",
+          "",
+          "Positive velocity in [u/s]"
+        ],
+        [
+          "Acceleration",
+          "LREAL",
+          "",
+          "Positive acceleration in [u/sÂ²]"
+        ],
+        [
+          "Deceleration",
+          "LREAL",
+          "",
+          "Positive deceleration in [u/sÂ²]"
+        ],
+        [
+          "Jerk",
+          "LREAL",
+          "",
+          "Positive jerk in [u/sÂ³]"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Busy",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "TRUE: Function block operating"
+        },
+        [
+          "CommandAborted",
+          "BOOL",
+          "FALSE",
+          "TRUE: Execution has been interrupted by another function block instance operating onAxis.CommandAbortedremains set as long asInchForwardorInchBackwardis set, but for at least one cycle."
+        ],
+        [
+          "Error",
+          "BOOL",
+          "",
+          "TRUE: Error has occurred whileInchForwardorInchBackwardhave been set for one cycle."
+        ],
+        [
+          "ErrorId",
+          "SMC_ERROR",
+          "",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

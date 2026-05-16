@@ -1,0 +1,8 @@
+{
+  "library": "String Segments",
+  "title": "_UTF8String (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Segments/Current/Strings/Functionblocks/_UTF8String.html",
+  "page_title": "_UTF8String (FB)",
+  "text": "\nFUNCTION_BLOCK _UTF8String EXTENDS MBM.Disposable IMPLEMENTS\nIString\nManaging a UTF-8 encoded âimmutableâ string segment\nPlease take a look to the function blocks in the Library âGeneric String Baseâ\nYou can use the\nGSB.UTF8String\nfunction block, which performs the same task in a much more convenient way\nMethods:\nGetSegment\nIsASCII\nIsValid\nLen\nToIString\nStructure:\nIString\nGetSegment (Method)\nIsASCII (Method)\nIsValid (Method)\nIStringRepresentation\nLen (Method)\nToIString (Method)",
+  "tables": []
+}

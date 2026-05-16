@@ -1,0 +1,43 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_CONTROLLER_MODE (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/DataTypes/DriveInterface/SMC_CONTROLLER_MODE.html",
+  "page_title": "SMC_CONTROLLER_MODE (ENUM)",
+  "text": "\nTYPE SMC_CONTROLLER_MODE :\nThis\nENUM\ndescribes the mode in which the motor is controlled.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "SMC_nocontrol",
+          "Initial": "0",
+          "Comment": "nocontrol: SoftMotion does not send cyclic data to the\ndrive, making it possible to control the drive by other means."
+        },
+        {
+          "Name": "SMC_torque",
+          "Initial": "1",
+          "Comment": "Torque-mode"
+        },
+        {
+          "Name": "SMC_velocity",
+          "Initial": "2",
+          "Comment": "Velocity-mode"
+        },
+        {
+          "Name": "SMC_position",
+          "Initial": "3",
+          "Comment": "Position-mode"
+        },
+        {
+          "Name": "SMC_current",
+          "Initial": "4",
+          "Comment": "Current-mode"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "library": "AlarmManager",
+  "title": "FindAlarmClassByName (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/pou-IAlarmHandler10/FindAlarmClassByName.html",
+  "page_title": "IAlarmHandler10.FindAlarmClassByName (METH)",
+  "text": "\nMETHOD FindAlarmClassByName :\nIAlarmClass\nFinds the alarm class with a given name. If the alarm class cannot be found 0 is returned.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "FindAlarmClassByName",
+          "Type": "IAlarmClass",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "sAlarmClass",
+          "Type": "STRING",
+          "Comment": "The name the alarm class must have."
+        }
+      ]
+    }
+  ]
+}

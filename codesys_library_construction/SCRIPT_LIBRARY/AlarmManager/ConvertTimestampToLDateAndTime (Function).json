@@ -1,0 +1,36 @@
+{
+  "library": "AlarmManager",
+  "title": "ConvertTimestampToLDateAndTime (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Functions/ConvertTimestampToLDateAndTime.html",
+  "page_title": "ConvertTimestampToLDateAndTime (FUN)",
+  "text": "\nFUNCTION ConvertTimestampToLDateAndTime : LDATE_AND_TIME\nThis function converts the alarm time stamp from type timestamp into the\nLDATE_AND_TIME type which can be monitored in a better readable way.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "ConvertTimestampToLDateAndTime",
+          "Type": "LDATE_AND_TIME",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "timestamp",
+          "Type": "Timestamp",
+          "Comment": ""
+        },
+        [
+          "iOffset",
+          "INT",
+          "UTC Offset (-1 = Still use convert to local time)"
+        ]
+      ]
+    }
+  ]
+}

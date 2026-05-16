@@ -1,0 +1,8 @@
+{
+  "library": "Visu Utils",
+  "title": "IVisualizationClientFilter (Interface)",
+  "url": "https://content.helpme-codesys.com/en/libs/Visu Utils/Current/VisuUtils/VisuActionUtilities/Interfaces/IVisualizationClientFilter.html",
+  "page_title": "IVisualizationClientFilter (ITF)",
+  "text": "\nINTERFACE IVisualizationClientFilter EXTENDS __SYSTEM.IQueryInterface\nFilter that can be used to decide about the usage of the clients\nMethods:\nIsAccepted\nStructure:\nIsAccepted (Method)",
+  "tables": []
+}

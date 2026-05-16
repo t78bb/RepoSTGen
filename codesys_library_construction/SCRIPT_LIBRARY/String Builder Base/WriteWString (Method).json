@@ -1,0 +1,37 @@
+{
+  "library": "String Builder Base",
+  "title": "WriteWString (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Builder Base/Current/BuilderBase/Interfaces/pou-IBuilder/WriteWString.html",
+  "page_title": "IBuilder.WriteWString (METH)",
+  "text": "\nMETHOD WriteWString : UDINT\nAppends the contents of\nwsValue\nto the buffer.\nIt returns the number of bytes written.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "WriteWString",
+          "Type": "UDINT",
+          "Comment": ""
+        },
+        {
+          "Scope": "Inout Const",
+          "Name": "wsValue",
+          "Type": "WSTRING(255)",
+          "Comment": "Encoding UCS-2"
+        },
+        {
+          "Scope": "Output",
+          "Name": "eErrorID",
+          "Type": "ERROR",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

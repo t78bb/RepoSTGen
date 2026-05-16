@@ -1,0 +1,8 @@
+{
+  "library": "BACnet2DefaultImpl",
+  "title": "ClientCreatableObjects (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2DefaultImpl/Current/BACnetDefaultImpl/Function-Blocks/ClientCreatableObjects.html",
+  "page_title": "ClientCreatableObjects (FB)",
+  "text": "\nFUNCTION_BLOCK PUBLIC FINAL ClientCreatableObjects EXTENDS BACnet.BACnetServerPluginBase IMPLEMENTS BACnet.IBACnetEventConsumer\nDefault implementation for client-create-object requests to limit client creatable object types to certain types and amounts.\nThis default implementation registers a (client) create object service application hook and rejects unwanted client create object requests.\nThis default implementation also ignores all property initial values except: Object_Name, Description, Profile_Name\nProperties:\nBlockFurtherProcessing\nName\nNumHooks\nMethods:\nSetMaxNum\nStructure:\nBlockFurtherProcessing (Property)\nName (Property)\nNumHooks (Property)\nSetMaxNum (Method)\ntop\nCODESYS Group | We\nsoftware\nAutomation.\nto software\n['sɒftwɛər]\ntransitive verb\n__softwared/softwaring\n: to develop software\n// to software automation: to develop software for automation purposes\nThe CODESYS Group is the manufacturer of CODESYS, the leading hardware-independent\n                                    IEC 61131-3 automation software for developing and engineering controller\n                                    applications.\nCODESYS® is a registered trademark.\nCODESYS GmbH\nA member of the CODESYS Group\nMemminger Straße 151, 87439 Kempten\nGermany\nTel.:\n+49-831-54031-0\ninfo@codesys.com\nLegal Notice\nPrivacy Policy\nLinkedIn\nYoutube\nRSS\nDownloads\nLogin\nCODESYS Store\n© 2022 CODESYS GmbH\n| A member of the CODESYS Group",
+  "tables": []
+}

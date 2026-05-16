@@ -1,0 +1,22 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_TOOLCORRMODE (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_Data-types/SoftMotion-CNC/SMC_TOOLCORRMODE.html",
+  "page_title": "SMC_TOOLCORRMODE (ENUM)",
+  "text": "\nTYPE SMC_TOOLCORRMODE :\n",
+  "tables": [
+    {
+      "headers": [
+        "Name"
+      ],
+      "rows": [
+        {
+          "Name": "TC_BLIND_POS"
+        },
+        {
+          "Name": "TC_RAMP_IN"
+        }
+      ]
+    }
+  ]
+}

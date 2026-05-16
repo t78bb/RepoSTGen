@@ -1,0 +1,6 @@
+{
+  "requirement": "This code should implement a function that registers call requests to different floors of a building based on boolean inputs for each floor. The function, named F_RegisterCalls, takes boolean inputs CallGround, CallFloor1, CallFloor2, and CallFloor3, each representing a call request to floors 0 through 3 respectively. It modifies an array, TargetFloors, which is passed as an input-output parameter. The array has four elements corresponding to floors 0 to 3. If a call request for a specific floor is true, the corresponding index in the TargetFloors array is set to true. The function always returns true, indicating successful execution.",
+  "provide_code": "FUNCTION F_RegisterCalls : BOOL\nVAR_INPUT\n\tCallGround\t\t:\tBOOL;\t\t// 0楼呼叫\n\tCallFloor1\t\t:\tBOOL;\t\t// 1楼呼叫\n\tCallFloor2\t\t:\tBOOL;\t\t// 2楼呼叫\n\tCallFloor3\t\t:\tBOOL;\t\t// 3楼呼叫\nEND_VAR\nVAR_IN_OUT\n\tTargetFloors\t:\tARRAY[0..3] OF BOOL;\t// 目标楼层数组\nEND_VAR",
+  "function_name": "F_RegisterCalls",
+  "requirement_cn": "这段代码应实现一个函数，根据每个楼层的布尔输入注册对不同楼层的呼叫请求。该函数名为 F_RegisterCalls，接受布尔输入 CallGround、CallFloor1、CallFloor2 和 CallFloor3，分别代表对楼层0至3的呼叫请求。它修改一个作为输入输出参数传递的数组 TargetFloors。该数组有四个元素，对应楼层0到3。如果对特定楼层的呼叫请求为真，则在 TargetFloors 数组中相应的索引将被设置为真。函数始终返回真，表示执行成功。"
+}

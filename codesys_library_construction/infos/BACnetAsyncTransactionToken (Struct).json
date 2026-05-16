@@ -1,0 +1,43 @@
+{
+  "library": "CmpBACnet",
+  "title": "BACnetAsyncTransactionToken (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/CmpBACnet/Current/BACnetAsyncTransactionToken.html",
+  "page_title": "BACnetAsyncTransactionToken (STRUCT)",
+  "text": "\nTYPE BACnetAsyncTransactionToken : STRUCT\nA transaction token for BACnet âasynchronous callsâ.\nFor all âasynchronous callsâ there is a callback in CODESYS runtime component CmpBACnet, which getâs called\nasynchronously after the IEC-code has startet the âasynchronous callâ.\nThis had been chosen as the best solution to avoid the complexitity of handling those callbacks via âIEC-Eventsâ.\nThe callback in CODESYS runtime component CmpBACnet sets a request status, which can be checked by the IEC-code,\nthis mechanism is referenced as âcaller status pollingâ later on.\nBACnetAsyncTransactionToken is used to identify transactions of âasynchronous callsâ like\nBACnetReadProperty\n,\nand to allow\nBACnetCancelPendingConfirmedRequest\nif needed.\nBACnetAsyncTransactionToken transports a pointer to the request status, to allow âcaller status pollingâ.\nThe caller had to provide the memory pointed to by this pointer.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "transactionID",
+          "Type": "UDINT",
+          "Initial": "0",
+          "Comment": "Unique ID to identify the transaction.\nSet the transactionID prio to the âasynchronous callâ.\nReset the transactionID to 0 after the âasynchronous callâ is done or after a call toBACnetCancelPendingConfirmedRequest."
+        },
+        {
+          "Name": "pStatus",
+          "Type": "POINTER TOIEC_BACNET_STATUS",
+          "Initial": "0",
+          "Comment": "Asynchronous Status of the call.\nIf this value switches fromIEC_BACNET_STATUS.BACNET_STATUS_BUSYto another state,\nfor exampleIEC_BACNET_STATUS.BACNET_STATUS_OK, the asynchronous call has finished."
+        },
+        {
+          "Name": "callbackDone",
+          "Type": "UDINT",
+          "Initial": "0",
+          "Comment": "internal information to keep track of transaction status"
+        },
+        {
+          "Name": "cancelled",
+          "Type": "UDINT",
+          "Initial": "0",
+          "Comment": "internal information to keep track of transaction status"
+        }
+      ]
+    }
+  ]
+}

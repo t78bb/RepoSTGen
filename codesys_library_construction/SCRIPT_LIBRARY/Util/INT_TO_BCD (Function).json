@@ -1,0 +1,31 @@
+{
+  "library": "Util",
+  "title": "INT_TO_BCD (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/BCD-Conversions/INT_TO_BCD.html",
+  "page_title": "INT_TO_BCD (FUN)",
+  "text": "\nFUNCTION INT_TO_BCD : BYTE\nConverts an INT value into a byte in BCD code\nExample in ST:\ni\n:=\nINT_TO_BCD\n(\n49\n);\n(* Result is 73 *)\nk\n:=\nBCD_TO_INT\n(\n97\n);\n(* Result is 151 *)\nl\n:=\nBCD_TO_INT\n(\n100\n);\n(* Error! Output: 255 *)\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "INT_TO_BCD",
+          "Type": "BYTE",
+          "Comment": "Value in BCD code for the inputI"
+        },
+        {
+          "Scope": "Input",
+          "Name": "I",
+          "Type": "INT",
+          "Comment": "Value as INT. A wrong value (<0 or >99) causes a return of 255."
+        }
+      ]
+    }
+  ]
+}

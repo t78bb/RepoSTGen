@@ -1,0 +1,36 @@
+{
+  "library": "StringUtils",
+  "title": "StrCmpStartA (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/StringUtils/Current/Public-Parts/Ansi/StrCmpStartA.html",
+  "page_title": "StrCmpStartA (FUN)",
+  "text": "\nFUNCTION StrCmpStartA : INT\nDoes a case sensitive comparison of the start of the string and the prefix\nReturn values:\n0 -> start of the string and prefix are equal\n-1 -> start of the string and prefix are NOT equal\n-2 -> Error: An invalid string (ie. Null-Pointer is given)\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "StrCmpStartA",
+          "Type": "INT",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "pString",
+          "Type": "CharBufferPtr",
+          "Comment": "Pointer to the string to check."
+        },
+        [
+          "pPrefix",
+          "CharBufferPtr",
+          "Pointer to the prefix to find."
+        ]
+      ]
+    }
+  ]
+}

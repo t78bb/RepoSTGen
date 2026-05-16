@@ -1,0 +1,23 @@
+{
+  "library": "SM3_CNC",
+  "title": "RemoveFirstSentence (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/GSentence/pou-SMC_GSentenceQueue/RemoveFirstSentence.html",
+  "page_title": "SMC_GSentenceQueue.RemoveFirstSentence (METH)",
+  "text": "\nMETHOD RemoveFirstSentence : BOOL\nRemoves the first sentence of the queue.\nInvalidates the pointer returned by a prior call to GetFirst.\nOnly safe to be called from consumer task.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "RemoveFirstSentence",
+          "Type": "BOOL"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "library": "Standard",
+  "title": "CTU (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/Standard/Current/Counter/CTU.html",
+  "page_title": "CTU (FB)",
+  "text": "Deutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nMenu\nSearch\nDeutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nBistable Function Blocks\nRS (FunctionBlock)\nSR (FunctionBlock)\nCounter\nCTD (FunctionBlock)\nCTU (FunctionBlock)\nCTUD (FunctionBlock)\nMiscellaneous\nRTC (FunctionBlock)\nString Functions\nCONCAT (Function)\nDELETE (Function)\nFIND (Function)\nINSERT (Function)\nLEFT (Function)\nLEN (Function)\nMID (Function)\nREPLACE (Function)\nRIGHT (Function)\nTimer\nTOF (FunctionBlock)\nTON (FunctionBlock)\nTP (FunctionBlock)\nTrigger\nF_TRIG (FunctionBlock)\nR_TRIG (FunctionBlock)\nFile and Project Information\nLibrary Reference\nStandard\nDocs\n»\nCounter\n»\nCTU (FB)\nCTU (FB)\nÂ¶\nFUNCTION_BLOCK CTU\nIncrements a given value\n(* Example declaration *)\nCTUInst\n:\nCTU\n;\n(* Example in ST *)\nCTUInst\n(\nCU\n:=\nVarBOOL1\n,\nRESET\n:=\nVarBOOL2\n,\nPV\n:=\nVarWORD1\n);\nVarBOOL3\n:=\nCTUInst.Q\n;\nVarWORD2\n:=\nCTUInst.CV\n;\nInOut:\nScope\nName\nType\nComment\nInput\nCU\nBOOL\nRising edge: Incrementing\nCV\nby one\nRESET\nBOOL\nTRUE\n: Reset\nCV\nto 0\nPV\nWORD\nUpper limit for incrementing\nOutput\nQ\nBOOL\nTRUE\nif\nCV\n>=\nPV\nCV\nWORD\nCurrent counter value\ntop\nCODESYS Group | We\nsoftware\nAutomation.\nto software\n['sɒftwɛər]\ntransitive verb\n__softwared/softwaring\n: to develop software\n// to software automation: to develop software for automation purposes\nThe CODESYS Group is the manufacturer of CODESYS, the leading hardware-independent\n                                    IEC 61131-3 automation software for developing and engineering controller\n                                    applications.\nCODESYS® is a registered trademark.\nCODESYS GmbH\nA member of the CODESYS Group\nMemminger Straße 151, 87439 Kempten\nGermany\nTel.:\n+49-831-54031-0\ninfo@codesys.com\nLegal Notice\nPrivacy Policy\nLinkedIn\nYoutube\nRSS\nDownloads\nLogin\nCODESYS Store\n© 2022 CODESYS GmbH\n| A member of the CODESYS Group",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "CU",
+          "Type": "BOOL",
+          "Comment": "Rising edge: IncrementingCVby one"
+        },
+        [
+          "RESET",
+          "BOOL",
+          "TRUE: ResetCVto 0"
+        ],
+        [
+          "PV",
+          "WORD",
+          "Upper limit for incrementing"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Q",
+          "Type": "BOOL",
+          "Comment": "TRUEifCV>=PV"
+        },
+        [
+          "CV",
+          "WORD",
+          "Current counter value"
+        ]
+      ]
+    }
+  ]
+}

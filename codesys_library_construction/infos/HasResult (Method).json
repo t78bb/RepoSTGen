@@ -1,0 +1,23 @@
+{
+  "library": "BACnet",
+  "title": "HasResult (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetClient/BACnetClientProperty/pou-BACnetClientReadRange/HasResult.html",
+  "page_title": "BACnetClientReadRange.HasResult (METH)",
+  "text": "\nMETHOD PROTECTED HasResult : BOOL\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "HasResult",
+          "Type": "BOOL"
+        }
+      ]
+    }
+  ]
+}

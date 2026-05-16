@@ -1,0 +1,28 @@
+{
+  "library": "AlarmManager",
+  "title": "StorageTaskInfo (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Structures/StorageTaskInfo.html",
+  "page_title": "StorageTaskInfo (STRUCT)",
+  "text": "\nTYPE StorageTaskInfo : STRUCT\nThis structure provides cycle information about the alarm storage task.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "xTaskActive",
+          "Type": "BOOL",
+          "Comment": "Info if the storage task is running or not."
+        },
+        {
+          "Name": "ptaskInfo",
+          "Type": "POINTER TO CmpIecTask.Task_Info2",
+          "Comment": "Current information about the storage task."
+        }
+      ]
+    }
+  ]
+}

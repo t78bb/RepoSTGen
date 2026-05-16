@@ -1,0 +1,42 @@
+{
+  "library": "3S Storage",
+  "title": "_StorageGetIndexId (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/3S Storage/Current/_3SStorage/External/Functions/Storage/_StorageGetIndexId.html",
+  "page_title": "_StorageGetIndexId (FUN)",
+  "text": "\nFUNCTION _StorageGetIndexId : STO.ERROR\n= SignatureFlag.SimulationExternal = link even in simulation mode\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "_StorageGetIndexId",
+          "Type": "STO.ERROR"
+        },
+        {
+          "Scope": "Input",
+          "Name": "hStorage",
+          "Type": "STORAGE_TYPE"
+        },
+        {
+          "Scope": "Inout",
+          "Name": "sIndex",
+          "Type": "STRING"
+        },
+        [
+          "sTable",
+          "STRING"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "idIndex",
+          "Type": "CAA.IDENT"
+        }
+      ]
+    }
+  ]
+}

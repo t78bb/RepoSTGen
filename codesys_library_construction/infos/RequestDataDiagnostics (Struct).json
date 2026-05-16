@@ -1,0 +1,23 @@
+{
+  "library": "ModbusFB",
+  "title": "RequestDataDiagnostics (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/ModbusFB/Current/ModbusFB/Structs/RequestDataDiagnostics.html",
+  "page_title": "RequestDataDiagnostics (STRUCT)",
+  "text": "\nTYPE RequestDataDiagnostics : STRUCT\nRepresents a read request for Diagnostics.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Name": "subFc",
+          "Type": "SerialSubFunctionCodes",
+          "Initial": "SerialSubFunctionCodes.ReturnQueryData"
+        }
+      ]
+    }
+  ]
+}

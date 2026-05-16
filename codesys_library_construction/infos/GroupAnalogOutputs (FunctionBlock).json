@@ -1,0 +1,52 @@
+{
+  "library": "DNP3",
+  "title": "GroupAnalogOutputs (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Outstation/Groups/GroupAnalogOutputs.html",
+  "page_title": "GroupAnalogOutputs (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL GroupAnalogOutputs EXTENDS GroupAnalogOutputsBase\nGroup of datapoints of type Analog Output.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment",
+        "Inherited from"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "tScanPeriod",
+          "Type": "TIME",
+          "Initial": "TIME#0ms",
+          "Comment": "Scan period for datapoints within group.\nIf tScanPeriod is set to T#0MS, the OutstationDataModel.tScanPeriod is used.\nCan be configured per datapoint as well.",
+          "Inherited from": "GroupBase"
+        },
+        {
+          "Scope": "Output",
+          "Name": "itfGroup",
+          "Type": "IGroupAnalogOutputs",
+          "Initial": "",
+          "Comment": "",
+          "Inherited from": "GroupAnalogOutputsBase"
+        },
+        {
+          "Scope": "Input",
+          "Name": "aPoints",
+          "Type": "POINTER TOAnalogOutput",
+          "Initial": "",
+          "Comment": "Pointer to array of AnalogOutput",
+          "Inherited from": ""
+        },
+        [
+          "numPoints",
+          "UINT",
+          "",
+          "Number of Points",
+          ""
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "library": "Util",
+  "title": "PERIOD (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/TimerSwitch/Enums/PERIOD.html",
+  "page_title": "PERIOD (ENUM)",
+  "text": "\nTYPE PERIOD :\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Name": "UNKNOWN",
+          "Initial": "0"
+        },
+        {
+          "Name": "STANDARD",
+          "Initial": "1"
+        },
+        {
+          "Name": "DAYLIGHT",
+          "Initial": "2"
+        }
+      ]
+    }
+  ]
+}

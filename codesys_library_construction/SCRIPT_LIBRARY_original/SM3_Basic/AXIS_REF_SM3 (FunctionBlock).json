@@ -1,0 +1,772 @@
+{
+  "library": "SM3_Basic",
+  "title": "AXIS_REF_SM3 (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/DriveInterface/AXIS_REF/AXIS_REF_SM3.html",
+  "page_title": "AXIS_REF_SM3 (FB)",
+  "text": "GlobalTextList (GlobalTextList)\nImages\nLibrary Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nProject Information\nGetBooleanProperty (Function)\nGetCompany (Function)\nGetNumberProperty (Function)\nGetTextProperty (Function)\nGetTextProperty2 (Function)\nGetTitle (Function)\nGetVersion (Function)\nGetVersionProperty (Function)\nSM3_Basic\nDataTypes\nAdditional\nMC_CAMSWITCH_REF (Struct)\nMC_CAMSWITCH_TR (Struct)\nMC_OUTPUT_REF (Alias)\nMC_TAPPETMODE (Enum)\nMC_TRACK_REF (Alias)\nMC_TRACK_TR (Struct)\nTRIGGER_REF (Struct)\nAdministrative/Configuration\nSMC3_BrakeSetState (Enum)\nSMC3_PersistPositionDiag (Enum)\nSMC3_PersistPosition_Data (Struct)\nSMC_AXIS_AUTORESTART_MODE (Enum)\nCAM\nCamSegment\nMC_CAM_ID (Struct)\nMC_CAM_REF (FunctionBlock)\nMC_STARTMODE (Enum)\nSMC_CAMTAPPETACTION (Enum)\nSMC_CAMTAPPETTYPE (Enum)\nSMC_CAMTable_LREAL_128_1 (Struct)\nSMC_CAMTable_LREAL_128_2 (Struct)\nSMC_CAMTable_LREAL_256_1 (Struct)\nSMC_CAMTable_LREAL_256_2 (Struct)\nSMC_CAMTable_REAL_128_1 (Struct)\nSMC_CAMTable_REAL_128_2 (Struct)\nSMC_CAMTable_REAL_256_1 (Struct)\nSMC_CAMTable_REAL_256_2 (Struct)\nSMC_CAMTable_UDINT_128_1 (Struct)\nSMC_CAMTable_UDINT_128_2 (Struct)\nSMC_CAMTable_UDINT_256_1 (Struct)\nSMC_CAMTable_UDINT_256_2 (Struct)\nSMC_CAMTable_UINT_128_1 (Struct)\nSMC_CAMTable_UINT_128_2 (Struct)\nSMC_CAMTable_UINT_256_1 (Struct)\nSMC_CAMTable_UINT_256_2 (Struct)\nSMC_CAMTappet (Struct)\nSMC_CAMXYVA (Struct)\nSMC_CAM_TYPE (Enum)\nDiagnostics\nSMC_CommunicationState (Enum)\nSMC_LOGGERMODE (Enum)\nDriveInterface\nMC_DIRECTION (Enum)\nSMC3_CaptureDescription (Struct)\nSMC3_CheckPositionLagMode (Enum)\nSMC3_DriveAcyclicTel (Struct)\nSMC3_MappingEntry (Alias)\nSMC3_ParamCommunicationMethod_Enum (Enum)\nSMC_AXIS_STATE (Enum)\nSMC_AXIS_TYPE (Enum)\nSMC_CONTROLLER_MODE (Enum)\nSMC_ENCODER_REF (Struct)\nSMC_FBERROR (Struct)\nSMC_MOTOR_TYPE (Enum)\nSMC_MOVEMENTTYPE (Enum)\nSMC_RAMPTYPE (Enum)\nSMC_SWITCHING_STATE (Enum)\nSMC_ValueSelect (Enum)\nMovement\nMC_TA_REF (Struct)\nMC_TP_REF (Struct)\nMC_TV_REF (Struct)\nSMC_BACKLASH_MODE (Enum)\nSMC_BACKLASH_STARTSTATE (Enum)\nSMC_HOMING_MODE (Enum)\nSMC_TA (Struct)\nSMC_TP (Struct)\nSMC_TV (Struct)\nDriveInterface\nAXIS_REF\nAXIS_REF_SM3 (FunctionBlock)\nIAxisRef (Interface)\nSMC3_ReinitDrive (FunctionBlock)\nSMC_AxisChangeSettings (FunctionBlock)\nSMC_AxisReadSettings (FunctionBlock)\nAXIS_REF_LOGICAL\nAXIS_REF_LOGICAL_SM3 (FunctionBlock)\nAXIS_REF_MAPPING\nAXIS_REF_MAPPING_SM3 (FunctionBlock)\nAXIS_REF_VIRTUAL\nAXIS_REF_VIRTUAL_SM3 (FunctionBlock)\nENCODER_REF\nENCODER_REF_SM3 (FunctionBlock)\nFREE_ENCODER_REF\nFREE_ENCODER_REF (FunctionBlock)\nGlobals\nLibParams (ParamList)\nSMC_DriveBasic_GlobalVariables (GVL)\nSM_PLCOpen_GlobalVariables (GVL)\nPOUs\nAdditional\nMC_AbortTrigger (FunctionBlock)\nMC_DigitalCamSwitch (FunctionBlock)\nMC_TouchProbe (FunctionBlock)\nSMC_CAMSWITCH_TOGGLE_EVENT (Struct)\nSMC_CAMSWITCH_TOGGLE_EVENTS (Struct)\nSMC_CAMSWITCH_TRACKS_EVENTS (Alias)\nSMC_DigitalCamSwitch_HighPrecision (FunctionBlock)\nSMC_FreeEncoder (FunctionBlock)\nSMC_Logical_Axis (FunctionBlock)\nSMC_StartupDrive (FunctionBlock)\nSMC_VIRTUAL_AXIS (FunctionBlock)\nAdministrative/Configuration\nMC_Power (FunctionBlock)\nMC_Reset (FunctionBlock)\nMC_SetPosition (FunctionBlock)\nSMC3_BrakeControl (FunctionBlock)\nSMC3_PersistPosition (FunctionBlock)\nSMC3_PersistPositionLogical (FunctionBlock)\nSMC3_PersistPositionSingleturn (FunctionBlock)\nSMC_ChangeAxisScalingLinear (FunctionBlock)\nSMC_ChangeAxisScalingRotary (FunctionBlock)\nSMC_ChangeDynamicLimits (FunctionBlock)\nSMC_ChangeGearingRatio (FunctionBlock)\nSMC_GetForecast (FunctionBlock)\nSMC_GetTravelTime (FunctionBlock)\nSMC_SetAdditionalConversionFactors (FunctionBlock)\nSMC_SetControllerMode (FunctionBlock)\nSMC_SetCustomRampType (FunctionBlock)\nSMC_SetForecast (FunctionBlock)\nSMC_SetMovementType (FunctionBlock)\nSMC_SetRampType (FunctionBlock)\nSMC_SetSoftwareLimits (FunctionBlock)\nCAM\nMC_CamTableSelect (FunctionBlock)\nSMC_CAMBounds (FunctionBlock)\nSMC_CAMBounds_Pos (FunctionBlock)\nSMC_CamEditor (FunctionBlock)\nSMC_CamRegister (FunctionBlock)\nSMC_CamTableEvaluate (Function)\nSMC_GetCamSlaveSetPosition (FunctionBlock)\nSMC_GetTappetValue (FunctionBlock)\nSMC_ReadCAM (FunctionBlock)\nSMC_WriteCAM (FunctionBlock)\nDiagnostics\nFBError\nMC_ReadActualPosition (FunctionBlock)\nMC_ReadActualTorque (FunctionBlock)\nMC_ReadActualVelocity (FunctionBlock)\nMC_ReadAxisError (FunctionBlock)\nMC_ReadStatus (FunctionBlock)\nSMC3_BrakeStatus (FunctionBlock)\nSMC_AxisDiagnosticLog (FunctionBlock)\nSMC_CheckAxisCommunication (FunctionBlock)\nSMC_CheckLimits (FunctionBlock)\nSMC_EstimateDeadTime (FunctionBlock)\nSMC_GetMaxSetAccDec (FunctionBlock)\nSMC_GetMaxSetVelocity (FunctionBlock)\nSMC_GetTrackingError (FunctionBlock)\nSMC_InPosition (FunctionBlock)\nSMC_MeasureDistance (FunctionBlock)\nSMC_ReadSetPosition (FunctionBlock)\nSMC_ReadSetValues (FunctionBlock)\nMovement\nDirect\nMC_AccelerationProfile (FunctionBlock)\nMC_Halt (FunctionBlock)\nMC_HaltSuperImposed (FunctionBlock)\nMC_Home (FunctionBlock)\nMC_Jog (FunctionBlock)\nMC_MoveAbsolute (FunctionBlock)\nMC_MoveAdditive (FunctionBlock)\nMC_MoveRelative (FunctionBlock)\nMC_MoveSuperImposed (FunctionBlock)\nMC_MoveVelocity (FunctionBlock)\nMC_PositionProfile (FunctionBlock)\nMC_SetOverride (FunctionBlock)\nMC_Stop (FunctionBlock)\nMC_VelocityProfile (FunctionBlock)\nMaster/Slave\nSMC_BacklashCompensation (FunctionBlock)\nSMC_GetOverride (FunctionBlock)\nSMC_Homing (FunctionBlock)\nSMC_Inch (FunctionBlock)\nSMC_MoveContinuousAbsolute (FunctionBlock)\nSMC_MoveContinuousRelative (FunctionBlock)\nParameter access\nMC_ReadBoolParameter (FunctionBlock)\nMC_ReadParameter (FunctionBlock)\nMC_WriteBoolParameter (FunctionBlock)\nMC_WriteParameter (FunctionBlock)\nSMC_ParameterNumber_CoE (Function)\nSMC_ParameterNumber_SoE (Function)\nSMC_GetCyclicMapping (Function)\ninternal\nTrajectories\nVisualization\nGenerated\nFramed visu helpers\nOriginal\nImagePool_sm3 (ImagePool)\nSM3_Basic_GetVersion (Function)\nFile and Project Information\nLibrary Reference\n3SLicense\nLibrary Identification\nLibrary Properties\nBase Interfaces\nLibrary Identification\nLibrary Properties\nCAA Callback Extern\nLibrary Identification\nLibrary Properties\nCAA Device Diagnosis\nLibrary Identification\nLibrary Properties\nCAA Types Extern\nLibrary Identification\nLibrary Properties\nCmpApp\nLibrary Identification\nLibrary Properties\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nCmpEventMgr\nLibrary Identification\nLibrary Properties\nCmpIecTask\nLibrary Identification\nLibrary Properties\nCmpLog\nLibrary Identification\nLibrary Properties\nComponent Manager\nLibrary Identification\nLibrary Properties\nEmpty\nLibrary Identification\nLibrary Properties\nFloatingPointUtils\nLibrary Identification\nLibrary Properties\nIoDriver Interfaces\nLibrary Identification\nLibrary Properties\nIoStandard\nLibrary Identification\nLibrary Properties\nSM3_CommonPublic\nLibrary Identification\nLibrary Properties\nSM3_Error\nLibrary Identification\nLibrary Properties\nSM3_Math\nLibrary Identification\nLibrary Properties\nSM3_RBase\nLibrary Identification\nLibrary Properties\nSM3_Ramps\nLibrary Identification\nLibrary Properties\nSM3_Shared\nLibrary Identification\nLibrary Properties\nSM3_StringUtils\nLibrary Identification\nLibrary Properties\nSM3_TrajectoryGeneration\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nSysCpuHandling\nLibrary Identification\nLibrary Properties\nSysFile\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysTarget\nLibrary Identification\nLibrary Properties\nSysTime\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nVisuElem3DPath\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElemCamDisplayer\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElemMeter\nLibrary Identification\nLibrary Properties\nVisuElemTextEditor\nLibrary Identification\nLibrary Properties\nVisuElemTrace\nLibrary Identification\nLibrary Properties\nVisuElemXYChart\nLibrary Identification\nLibrary Properties\nVisuElems\nLibrary Identification\nLibrary Properties\nVisuElemsAlarm\nLibrary Identification\nLibrary Properties\nVisuElemsDateTime\nLibrary Identification\nLibrary Properties\nVisuElemsSpecialControls\nLibrary Identification\nLibrary Properties\nVisuElemsWinControls\nLibrary Identification\nLibrary Properties\nVisuInputs\nLibrary Identification\nLibrary Properties\nVisuNativeControl\nLibrary Identification\nLibrary Properties\nSM3_Basic\nDocs\n»\nSM3_Basic\n»\nDriveInterface\n»\nAXIS_REF\n»\nAXIS_REF_SM3 (FB)\nAXIS_REF_SM3 (FB)\nÂ¶\nFUNCTION_BLOCK AXIS_REF_SM3 IMPLEMENTS DED.IDevice2,\nIAxisRef\nThe function block serves as drive interface containing routines\nserving as drivers.\nEvery SoftMotion axis is an extended instance of this function block.\nNote\nEvery motion-generating function block or, more generally,\na function block having a\nVAR_IN_OUT\nof type\nAXIS_REF_SM3\nneeds\nto be called in the bus cycle task of the drive device represented\nby this\nAXIS_REF_SM3\n.\nInOut:\nScope\nName\nType\nInitial\nComment\nInput\nwAxisStructID\nWORD\n16#FE12\nnAxisState\nSMC_AXIS_STATE\npower_off\nState of the axis according to the\nPLCopen\nstate diagram:\n0:\npower_off\n1:\nerrorstop\n2:\nstopping\n3:\nstandstill\n4:\ndiscrete_motion\n5:\ncontinuous_motion\n6:\nsynchronized_motion\n7:\nhoming\nParameter number: 1000\nbRegulatorOn\nBOOL\nFALSE\nParameter number: 1010\nbDriveStart\nBOOL\nFALSE\nParameter number: 1011\nbCommunication\nBOOL\nFALSE\nTRUE\n: Communication OK\nParameter number: 1012\nwCommunicationState\nWORD\n16#FFFF\nParameter number: 1013\nuiDriveInterfaceError\nUINT\nDrive interface error number\nParameter number: 1014\nbRegulatorRealState\nBOOL\nFALSE\nParameter number: 1015\nbDriveStartRealState\nBOOL\nFALSE\nParameter number: 1016\nwDriveId\nWORD\n0\nParameter number: 1021\niOwner\nINT\n0\nParameter number: 1022\nfCycleTimeSpent\nLREAL\nParameter number: 1024\nfTaskCycle\nLREAL\n0.005\nParameter number: 1025\nbError\nBOOL\nFALSE\nParameter number: 1030\ndwErrorID\nDWORD\n0\nDrive specific error identifier, parameter number: 1031\nbErrorAckn\nBOOL\nFALSE\nParameter number: 1032\nbDisableErrorLogging\nBOOL\nFALSE\nParameter number: 1036\nfbeFBError\nARRAY\n[0..g_SMC_NUMBER_FB_ERRORS]\nOF\nSMC_FBERROR\nParameter number: 1035\ndwRatioTechUnitsDenom\nDWORD\n1\nParameter number 1051\niRatioTechUnitsNum\nDINT\n1\nParameter number 1052\nnDirection\nMC_Direction\npositive\nParameter number 1053\nfScalefactor\nLREAL\n1\nParameter number 1054\nfFactorVel\nLREAL\n1\nParameter number 1055\nfFactorAcc\nLREAL\n1\nParameter number: 1056\nfFactorTor\nLREAL\n1\nParameter number: 1057\nfFactorJerk\nLREAL\n1\nFactor jerk\nParameter number: 1058\nfFactorCur\nLREAL\n1\nParameter number: 1059\nfFactorReference\nLREAL\n1\nThe factor the home offset (fReference, parameter 1211) is multiplied by\nafter conversion to increments.\nWhen converting from increments, the received value in increments is\ndivided by the factor.  Drivers can set this to -1 to invert the\nsign of the home offset.\niMovementType\nINT\nSMC_AXIS_TYPE.finite\nParameter number: 1060\nfPositionPeriod\nLREAL\n1000\nParameter number: 1061\neRampType\nSMC_RAMPTYPE\ntrapez\nParameter number: 1062\nmotorType\nSMC_MOTOR_TYPE\nParameter number: 5007\nbyControllerMode\nBYTE\nSMC_position\nParameter number: 1091\nbyRealControllerMode\nBYTE\nSMC_position\nParameter number: 1092\nfSetPosition\nLREAL\n0\nParameter number: 1100, 1\nfActPosition\nLREAL\n0\nParameter number: 1101\nfAimPosition\nLREAL\n0\nParameter number: 1105\nfSavePosition\nLREAL\n0\nParameter number: 1107\nfSetVelocity\nLREAL\n0\nParameter number: 1110, 11\nfActVelocity\nLREAL\n0\nParameter number: 1111, 10\nfMaxVelocity\nLREAL\n0\nMaximum velocity of the drive (remote parameter) in [u/s]\nParameter number: 1112,9\nfSWMaxVelocity\nLREAL\n0\nMaximum velocity (software limit) in [u/s]\nParameter number: 1113\nbConstantVelocity\nBOOL\nFALSE\nParameter number: 1115\nfSaveVelocity\nLREAL\n0\nParameter number: 1117\nfSetAcceleration\nLREAL\n0\nParameter number: 1120\nfActAcceleration\nLREAL\n0\nParameter number: 1121\nfMaxAcceleration\nLREAL\n0\nMaximum acceleration of the drive (remote parameter) in [u/sÂ²]\nParameter number: 1122, 13\nfSWMaxAcceleration\nLREAL\n0\nMaximum acceleration (software limit) in [u/sÂ²]\nParameter number: 1123\nbAccelerating\nBOOL\nFALSE\nParameter number: 1125\nfSaveAcceleration\nLREAL\n0\nParameter number: 1127\nfMaxDeceleration\nLREAL\n0\nMaximum deceleration of the drive (remote parameter) in [u/sÂ²]\nParameter number: 1132, 15\nfSWMaxDeceleration\nLREAL\n0\nMaximum deceleration (software limit) in [u/sÂ²]\nParameter number: 1133\nbDecelerating\nBOOL\nFALSE\nParameter number: 1135\nfSaveDeceleration\nLREAL\n0\nParameter number: 1137\nfSetJerk\nLREAL\n0\nParameter number: 1140\nfActJerk\nLREAL\n0\nParameter number: 1141\nfMaxJerk\nLREAL\n0\nMaximum jerk of the drive (remote parameter) in [u/sÂ³]\nParameter number: 1142, 16\nfSWMaxJerk\nLREAL\n0\nMaximum jerk (software limit) in [u/sÂ³]\nParameter number: 1143\nfRampJerk\nLREAL\n100000\nMaximum Jerk, special value for sinÂ² ramp type in [u/sÂ³]\nParameter number: 1144\nfSaveJerk\nLREAL\n0\nParameter number: 1147\nfSetCurrent\nLREAL\n0\nParameter number: 1150\nfActCurrent\nLREAL\n0\nParameter number: 1151\nfMaxCurrent\nLREAL\n100\nMaximum current in [A]\nParameter number: 1152\nfSWMaxCurrent\nLREAL\n0\nMaximum user defined current in [A]\nParameter number: 1153\nfSetTorque\nLREAL\n0\nThe set torque in [Nm] or [N] (linear) at the gearbox output.\nParameter number: 1160\nfActTorque\nLREAL\n0\nActual torque in [Nm] or [N] (linear) at the gearbox output.\nParameter number: 1161\nfMaxTorque\nLREAL\n0\nThe maximum torque in [Nm] or [N] (linear) at the gearbox output.\nParameter number: 1162\nfSWMaxTorque\nLREAL\nFPU.GetLRealSpecialVal(FPU.ESpecial_FP_Value.PosInf)\nThe maximum torque (software limit) in [Nm] or [N] (linear) at\nthe gearbox output.\nParameter number: 1163\nfSWLimitPositive\nLREAL\n0\nPosition limit in positive direction in [u]\nParameter number: 1200, 2\nfSWLimitNegative\nLREAL\n0\nPosition limit in negative direction in [u]\nParameter number: 1201, 3\nusiSWEndSwitchState\nUSINT\n0\nParameter number: 1204\nbSWLimitEnable\nBOOL\nFALSE\nParameter number: 1205\nbHWLimitEnable\nBOOL\nTRUE\nParameter number: 1206\nbStartReference\nBOOL\nFALSE\nParameter number: 1210\nfReference\nLREAL\n0\nParameter number: 1211\nbStartReferenceRealState\nBOOL\nFALSE\nParameter number: 1212\nfOffsetPosition\nLREAL\n0\nParameter number: 1215\ndwPosOffsetForResiduals\nDWORD\n0\nParameter number: 1230\ndwOneTurn\nDWORD\n0\nParameter number: 1231\ndwLastPosition\nDWORD\n0\nParameter number: 1232\nbySwitchingState\nSMC_SWITCHING_STATE\nSMC_ST_INITIALIZING\nParameter number: 1233\niRestNumerator\nDINT\n0\nParameter number: 1234\niTurn\nINT\n0\nParameter number: 1235\ndwActPosition\nDWORD\n0\nParameter number: 1238\nusiBusBitWidth\nUSINT\n32\nThe bus bit depth.  This is the number of bits used to send\nthe actual and set position from and to the drive.\nBetween 1 and 32.\ndwBusModuloMask\nDWORD\n16#FFFFFFFF\nThe value (2^k - 1) where k is the bus bit depth.\neBrakeControl\nSMC3_BrakeSetState\nSMC_BRAKE_AUTO\nParameter number: 1017\nbBrakeClosedRealState\nBOOL\nFALSE\nParameter number: 1018\nbOldError\nBOOL\nParameter number: 1033\nbVirtual\nBOOL\nTRUE\n: Virtual drive.\nParameter number: 1040\nbLogical\nBOOL\nParameter number: 1041\nfSetActTimeLagCycles\nLREAL\n3\nThe dead time in cycles between the fActPosition received in this bus task\ncycle, and the fSetPosition at the beginning OF THIS bus task cycle.\nParameter number: 1070\ndiSetPosition\nDINT\n0\nParameter number: 1108\ndiActPosition\nDINT\n0\nParameter number: 1109\ndiSetVelocity\nDINT\n0\nParameter number: 1118\ndiActVelocity\nDINT\n0\nParameter number: 1119\ndiSetAcceleration\nDINT\n0\nParameter number:  1128\ndiActAcceleration\nDINT\n0\nParameter number: 1129\ndiSetCurrent\nDINT\n0\nParameter number: 1158\ndiActCurrent\nDINT\n0\nParameter number: 1159\ndiSetTorque\nDINT\n0\nParameter number: 1168\ndiActTorque\nDINT\n0\nParameter number: 1169\nfSWLimitDeceleration\nLREAL\n0\nDeceleration in [u/sÂ²] with which the system will brake in case\nof a software limit.\nParameter number: 1203\nxWaitForHaltWhenStopInterruptsHome\nBOOL\nTRUE\n: When\nMC_Home\nis interrupted by\nMC_Stop\n, then``MC_Stop.bDone``\nis delayed until the drive reports that it has successfully halted.\nbStartReferenceRealState\n=\nFALSE\nParameter number: 1213\nfSWErrorMaxDistance\nLREAL\n0\nDistance in which the drive has to reach standstill after an error\nhas occurred.\nParameter number: 1250\neCheckPositionLag\nSMC3_CheckPositionLagMode\n0\nParameter number: 1207\nfMaxPositionLag\nLREAL\nParameter number: 1208\nbPositionLagActive\nBOOL\nParameter number: 1209\nbModuloDoneByDrive\nBOOL\nParameter number: 1242\ndiFollowingError\nDINT\nParameter number:  1243\nfFollowingError\nLREAL\nParameter number: 1244\naCaptDesc\nARRAY [0..7] OF\nSMC3_CaptureDescription\nParameter number: 1400\nxPersistentDataLoaded\nBOOL\nFALSE\nstrDriveInterfaceError\nSTRING(255)\nadatAcyclic\nARRAY\n[1..SMC3_gc_usiNumberAcyclicChannels]\nOF\nSMC3_DriveAcyclicTel\nnAbortCounter\nUDINT\nInternal: counts the number of aborts.  This counter\nsimply wraps to 0 when exceeding 2^32-1, so use accordingly.\nIncreased in method SetOwner().\nvMinRequiredVersion\nVERSION\nThe minimum version of SM3_Basic that the driver requires.\nbAvoidReversalOnHaltStop\nBOOL\nParameter number: 1260\nbConsiderLimitsOfAbortedMotionOnHaltStop\nBOOL\nParameter number: 1270\nbUpdateIOsInStop\nBOOL\nUpdate the IOs if the application is stopped.\nParameter number 1280\nbAutoRestart\nBOOL\nTRUE\nIf TRUE, an implict\nSMC3_ReinitDrive\nis executed after\nthe communication to the drive is established again after a\ncommunication loss (e.g. fieldbus slave no longer operational).\nIf FALSE, an explicit call to\nSMC3_ReinitDrive\nis required\nafter communication has been established again. (This is the\nbehavior of SoftMotion versions before 4.18.0.0.)\nDefault is TRUE if not set by the device parameter, i.e. the\ndrive device can override the default.\nParameter number 1281\noverrideFactors\nSMRB.DynFactors\nSTRUCT(fVel := 1, fAcc := 1, fJerk := 1, fTorque := 1)\nm_superimposed\nSMC_SuperimposedData\nInternal: information of superimposed movements\nOutput\nstrDriver\nSTRING(16)\ndwDriverVersion\nDWORD\nProperties:\nChildNodeCount\nConnector\nEnable\nFirstChildNode\nIndex\nIsDeviceDiagInitialized\nIsRootNode\nNextSiblingNode\nParentNode\nSiblingNodeCount\nMethods:\nBasicInit\nGetActValuesForCycle\nGetSetValuesForCycle\nCheckCurrentSupportedCommunicationState\nCheckPositionLag\nCheckSupportedCommunicationState\nGetDeviceErrorAsync\nGetDeviceInfo\nGetDeviceState\nGetSpecificDeviceErrorAsync\nGetSpecificDeviceState\nIsDeviceEnabled\nSetCommunicationState\nSkipNextInputUpdate\nSkipNextOutputUpdate\nStructure:\nBasicInit (Method)\nCAA-Device-Diagnosis\nCheckCurrentSupportedCommunicationState (Method)\nCheckSupportedCommunicationState (Method)\nGetDeviceErrorAsync (Method)\nGetDeviceInfo (Method)\nGetDeviceState (Method)\nGetSpecificDeviceErrorAsync (Method)\nGetSpecificDeviceState (Method)\nINode\nChildNodeCount (Property)\nConnector (Property)\nEnable (Property)\nFirstChildNode (Property)\nIndex (Property)\nIsRootNode (Property)\nNextSiblingNode (Property)\nParentNode (Property)\nSiblingNodeCount (Property)\nIsDeviceDiagInitialized (Property)\nSetCommunicationState (Method)\nGetActValuesForCycle (Method)\nGetSetValuesForCycle (Method)\nHelp-functions\nCheckPositionLag (Method)\nIsDeviceEnabled (Method)\nSMC3_DetectDriveError (Action)\nSkipNextInputUpdate (Method)\nSkipNextOutputUpdate (Method)",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "wAxisStructID",
+          "Type": "WORD",
+          "Initial": "16#FE12",
+          "Comment": ""
+        },
+        [
+          "nAxisState",
+          "SMC_AXIS_STATE",
+          "power_off",
+          "State of the axis according to thePLCopenstate diagram:0:power_off1:errorstop2:stopping3:standstill4:discrete_motion5:continuous_motion6:synchronized_motion7:homingParameter number: 1000"
+        ],
+        [
+          "bRegulatorOn",
+          "BOOL",
+          "FALSE",
+          "Parameter number: 1010"
+        ],
+        [
+          "bDriveStart",
+          "BOOL",
+          "FALSE",
+          "Parameter number: 1011"
+        ],
+        [
+          "bCommunication",
+          "BOOL",
+          "FALSE",
+          "TRUE: Communication OKParameter number: 1012"
+        ],
+        [
+          "wCommunicationState",
+          "WORD",
+          "16#FFFF",
+          "Parameter number: 1013"
+        ],
+        [
+          "uiDriveInterfaceError",
+          "UINT",
+          "",
+          "Drive interface error numberParameter number: 1014"
+        ],
+        [
+          "bRegulatorRealState",
+          "BOOL",
+          "FALSE",
+          "Parameter number: 1015"
+        ],
+        [
+          "bDriveStartRealState",
+          "BOOL",
+          "FALSE",
+          "Parameter number: 1016"
+        ],
+        [
+          "wDriveId",
+          "WORD",
+          "0",
+          "Parameter number: 1021"
+        ],
+        [
+          "iOwner",
+          "INT",
+          "0",
+          "Parameter number: 1022"
+        ],
+        [
+          "fCycleTimeSpent",
+          "LREAL",
+          "",
+          "Parameter number: 1024"
+        ],
+        [
+          "fTaskCycle",
+          "LREAL",
+          "0.005",
+          "Parameter number: 1025"
+        ],
+        [
+          "bError",
+          "BOOL",
+          "FALSE",
+          "Parameter number: 1030"
+        ],
+        [
+          "dwErrorID",
+          "DWORD",
+          "0",
+          "Drive specific error identifier, parameter number: 1031"
+        ],
+        [
+          "bErrorAckn",
+          "BOOL",
+          "FALSE",
+          "Parameter number: 1032"
+        ],
+        [
+          "bDisableErrorLogging",
+          "BOOL",
+          "FALSE",
+          "Parameter number: 1036"
+        ],
+        [
+          "fbeFBError",
+          "ARRAY\n[0..g_SMC_NUMBER_FB_ERRORS]\nOFSMC_FBERROR",
+          "",
+          "Parameter number: 1035"
+        ],
+        [
+          "dwRatioTechUnitsDenom",
+          "DWORD",
+          "1",
+          "Parameter number 1051"
+        ],
+        [
+          "iRatioTechUnitsNum",
+          "DINT",
+          "1",
+          "Parameter number 1052"
+        ],
+        [
+          "nDirection",
+          "MC_Direction",
+          "positive",
+          "Parameter number 1053"
+        ],
+        [
+          "fScalefactor",
+          "LREAL",
+          "1",
+          "Parameter number 1054"
+        ],
+        [
+          "fFactorVel",
+          "LREAL",
+          "1",
+          "Parameter number 1055"
+        ],
+        [
+          "fFactorAcc",
+          "LREAL",
+          "1",
+          "Parameter number: 1056"
+        ],
+        [
+          "fFactorTor",
+          "LREAL",
+          "1",
+          "Parameter number: 1057"
+        ],
+        [
+          "fFactorJerk",
+          "LREAL",
+          "1",
+          "Factor jerkParameter number: 1058"
+        ],
+        [
+          "fFactorCur",
+          "LREAL",
+          "1",
+          "Parameter number: 1059"
+        ],
+        [
+          "fFactorReference",
+          "LREAL",
+          "1",
+          "The factor the home offset (fReference, parameter 1211) is multiplied by\nafter conversion to increments.\nWhen converting from increments, the received value in increments is\ndivided by the factor.  Drivers can set this to -1 to invert the\nsign of the home offset."
+        ],
+        [
+          "iMovementType",
+          "INT",
+          "SMC_AXIS_TYPE.finite",
+          "Parameter number: 1060"
+        ],
+        [
+          "fPositionPeriod",
+          "LREAL",
+          "1000",
+          "Parameter number: 1061"
+        ],
+        [
+          "eRampType",
+          "SMC_RAMPTYPE",
+          "trapez",
+          "Parameter number: 1062"
+        ],
+        [
+          "motorType",
+          "SMC_MOTOR_TYPE",
+          "",
+          "Parameter number: 5007"
+        ],
+        [
+          "byControllerMode",
+          "BYTE",
+          "SMC_position",
+          "Parameter number: 1091"
+        ],
+        [
+          "byRealControllerMode",
+          "BYTE",
+          "SMC_position",
+          "Parameter number: 1092"
+        ],
+        [
+          "fSetPosition",
+          "LREAL",
+          "0",
+          "Parameter number: 1100, 1"
+        ],
+        [
+          "fActPosition",
+          "LREAL",
+          "0",
+          "Parameter number: 1101"
+        ],
+        [
+          "fAimPosition",
+          "LREAL",
+          "0",
+          "Parameter number: 1105"
+        ],
+        [
+          "fSavePosition",
+          "LREAL",
+          "0",
+          "Parameter number: 1107"
+        ],
+        [
+          "fSetVelocity",
+          "LREAL",
+          "0",
+          "Parameter number: 1110, 11"
+        ],
+        [
+          "fActVelocity",
+          "LREAL",
+          "0",
+          "Parameter number: 1111, 10"
+        ],
+        [
+          "fMaxVelocity",
+          "LREAL",
+          "0",
+          "Maximum velocity of the drive (remote parameter) in [u/s]Parameter number: 1112,9"
+        ],
+        [
+          "fSWMaxVelocity",
+          "LREAL",
+          "0",
+          "Maximum velocity (software limit) in [u/s]Parameter number: 1113"
+        ],
+        [
+          "bConstantVelocity",
+          "BOOL",
+          "FALSE",
+          "Parameter number: 1115"
+        ],
+        [
+          "fSaveVelocity",
+          "LREAL",
+          "0",
+          "Parameter number: 1117"
+        ],
+        [
+          "fSetAcceleration",
+          "LREAL",
+          "0",
+          "Parameter number: 1120"
+        ],
+        [
+          "fActAcceleration",
+          "LREAL",
+          "0",
+          "Parameter number: 1121"
+        ],
+        [
+          "fMaxAcceleration",
+          "LREAL",
+          "0",
+          "Maximum acceleration of the drive (remote parameter) in [u/sÂ²]Parameter number: 1122, 13"
+        ],
+        [
+          "fSWMaxAcceleration",
+          "LREAL",
+          "0",
+          "Maximum acceleration (software limit) in [u/sÂ²]Parameter number: 1123"
+        ],
+        [
+          "bAccelerating",
+          "BOOL",
+          "FALSE",
+          "Parameter number: 1125"
+        ],
+        [
+          "fSaveAcceleration",
+          "LREAL",
+          "0",
+          "Parameter number: 1127"
+        ],
+        [
+          "fMaxDeceleration",
+          "LREAL",
+          "0",
+          "Maximum deceleration of the drive (remote parameter) in [u/sÂ²]Parameter number: 1132, 15"
+        ],
+        [
+          "fSWMaxDeceleration",
+          "LREAL",
+          "0",
+          "Maximum deceleration (software limit) in [u/sÂ²]Parameter number: 1133"
+        ],
+        [
+          "bDecelerating",
+          "BOOL",
+          "FALSE",
+          "Parameter number: 1135"
+        ],
+        [
+          "fSaveDeceleration",
+          "LREAL",
+          "0",
+          "Parameter number: 1137"
+        ],
+        [
+          "fSetJerk",
+          "LREAL",
+          "0",
+          "Parameter number: 1140"
+        ],
+        [
+          "fActJerk",
+          "LREAL",
+          "0",
+          "Parameter number: 1141"
+        ],
+        [
+          "fMaxJerk",
+          "LREAL",
+          "0",
+          "Maximum jerk of the drive (remote parameter) in [u/sÂ³]\nParameter number: 1142, 16"
+        ],
+        [
+          "fSWMaxJerk",
+          "LREAL",
+          "0",
+          "Maximum jerk (software limit) in [u/sÂ³]Parameter number: 1143"
+        ],
+        [
+          "fRampJerk",
+          "LREAL",
+          "100000",
+          "Maximum Jerk, special value for sinÂ² ramp type in [u/sÂ³]\nParameter number: 1144"
+        ],
+        [
+          "fSaveJerk",
+          "LREAL",
+          "0",
+          "Parameter number: 1147"
+        ],
+        [
+          "fSetCurrent",
+          "LREAL",
+          "0",
+          "Parameter number: 1150"
+        ],
+        [
+          "fActCurrent",
+          "LREAL",
+          "0",
+          "Parameter number: 1151"
+        ],
+        [
+          "fMaxCurrent",
+          "LREAL",
+          "100",
+          "Maximum current in [A]Parameter number: 1152"
+        ],
+        [
+          "fSWMaxCurrent",
+          "LREAL",
+          "0",
+          "Maximum user defined current in [A]Parameter number: 1153"
+        ],
+        [
+          "fSetTorque",
+          "LREAL",
+          "0",
+          "The set torque in [Nm] or [N] (linear) at the gearbox output.\nParameter number: 1160"
+        ],
+        [
+          "fActTorque",
+          "LREAL",
+          "0",
+          "Actual torque in [Nm] or [N] (linear) at the gearbox output.Parameter number: 1161"
+        ],
+        [
+          "fMaxTorque",
+          "LREAL",
+          "0",
+          "The maximum torque in [Nm] or [N] (linear) at the gearbox output.\nParameter number: 1162"
+        ],
+        [
+          "fSWMaxTorque",
+          "LREAL",
+          "FPU.GetLRealSpecialVal(FPU.ESpecial_FP_Value.PosInf)",
+          "The maximum torque (software limit) in [Nm] or [N] (linear) at\nthe gearbox output.\nParameter number: 1163"
+        ],
+        [
+          "fSWLimitPositive",
+          "LREAL",
+          "0",
+          "Position limit in positive direction in [u]Parameter number: 1200, 2"
+        ],
+        [
+          "fSWLimitNegative",
+          "LREAL",
+          "0",
+          "Position limit in negative direction in [u]Parameter number: 1201, 3"
+        ],
+        [
+          "usiSWEndSwitchState",
+          "USINT",
+          "0",
+          "Parameter number: 1204"
+        ],
+        [
+          "bSWLimitEnable",
+          "BOOL",
+          "FALSE",
+          "Parameter number: 1205"
+        ],
+        [
+          "bHWLimitEnable",
+          "BOOL",
+          "TRUE",
+          "Parameter number: 1206"
+        ],
+        [
+          "bStartReference",
+          "BOOL",
+          "FALSE",
+          "Parameter number: 1210"
+        ],
+        [
+          "fReference",
+          "LREAL",
+          "0",
+          "Parameter number: 1211"
+        ],
+        [
+          "bStartReferenceRealState",
+          "BOOL",
+          "FALSE",
+          "Parameter number: 1212"
+        ],
+        [
+          "fOffsetPosition",
+          "LREAL",
+          "0",
+          "Parameter number: 1215"
+        ],
+        [
+          "dwPosOffsetForResiduals",
+          "DWORD",
+          "0",
+          "Parameter number: 1230"
+        ],
+        [
+          "dwOneTurn",
+          "DWORD",
+          "0",
+          "Parameter number: 1231"
+        ],
+        [
+          "dwLastPosition",
+          "DWORD",
+          "0",
+          "Parameter number: 1232"
+        ],
+        [
+          "bySwitchingState",
+          "SMC_SWITCHING_STATE",
+          "SMC_ST_INITIALIZING",
+          "Parameter number: 1233"
+        ],
+        [
+          "iRestNumerator",
+          "DINT",
+          "0",
+          "Parameter number: 1234"
+        ],
+        [
+          "iTurn",
+          "INT",
+          "0",
+          "Parameter number: 1235"
+        ],
+        [
+          "dwActPosition",
+          "DWORD",
+          "0",
+          "Parameter number: 1238"
+        ],
+        [
+          "usiBusBitWidth",
+          "USINT",
+          "32",
+          "The bus bit depth.  This is the number of bits used to send\nthe actual and set position from and to the drive.\nBetween 1 and 32."
+        ],
+        [
+          "dwBusModuloMask",
+          "DWORD",
+          "16#FFFFFFFF",
+          "The value (2^k - 1) where k is the bus bit depth."
+        ],
+        [
+          "eBrakeControl",
+          "SMC3_BrakeSetState",
+          "SMC_BRAKE_AUTO",
+          "Parameter number: 1017"
+        ],
+        [
+          "bBrakeClosedRealState",
+          "BOOL",
+          "FALSE",
+          "Parameter number: 1018"
+        ],
+        [
+          "bOldError",
+          "BOOL",
+          "",
+          "Parameter number: 1033"
+        ],
+        [
+          "bVirtual",
+          "BOOL",
+          "",
+          "TRUE: Virtual drive.\nParameter number: 1040"
+        ],
+        [
+          "bLogical",
+          "BOOL",
+          "",
+          "Parameter number: 1041"
+        ],
+        [
+          "fSetActTimeLagCycles",
+          "LREAL",
+          "3",
+          "The dead time in cycles between the fActPosition received in this bus task\ncycle, and the fSetPosition at the beginning OF THIS bus task cycle.\nParameter number: 1070"
+        ],
+        [
+          "diSetPosition",
+          "DINT",
+          "0",
+          "Parameter number: 1108"
+        ],
+        [
+          "diActPosition",
+          "DINT",
+          "0",
+          "Parameter number: 1109"
+        ],
+        [
+          "diSetVelocity",
+          "DINT",
+          "0",
+          "Parameter number: 1118"
+        ],
+        [
+          "diActVelocity",
+          "DINT",
+          "0",
+          "Parameter number: 1119"
+        ],
+        [
+          "diSetAcceleration",
+          "DINT",
+          "0",
+          "Parameter number:  1128"
+        ],
+        [
+          "diActAcceleration",
+          "DINT",
+          "0",
+          "Parameter number: 1129"
+        ],
+        [
+          "diSetCurrent",
+          "DINT",
+          "0",
+          "Parameter number: 1158"
+        ],
+        [
+          "diActCurrent",
+          "DINT",
+          "0",
+          "Parameter number: 1159"
+        ],
+        [
+          "diSetTorque",
+          "DINT",
+          "0",
+          "Parameter number: 1168"
+        ],
+        [
+          "diActTorque",
+          "DINT",
+          "0",
+          "Parameter number: 1169"
+        ],
+        [
+          "fSWLimitDeceleration",
+          "LREAL",
+          "0",
+          "Deceleration in [u/sÂ²] with which the system will brake in case\nof a software limit.Parameter number: 1203"
+        ],
+        [
+          "xWaitForHaltWhenStopInterruptsHome",
+          "BOOL",
+          "",
+          "TRUE: WhenMC_Homeis interrupted byMC_Stop, then``MC_Stop.bDone``\nis delayed until the drive reports that it has successfully halted.bStartReferenceRealState=FALSEParameter number: 1213"
+        ],
+        [
+          "fSWErrorMaxDistance",
+          "LREAL",
+          "0",
+          "Distance in which the drive has to reach standstill after an error\nhas occurred.Parameter number: 1250"
+        ],
+        [
+          "eCheckPositionLag",
+          "SMC3_CheckPositionLagMode",
+          "0",
+          "Parameter number: 1207"
+        ],
+        [
+          "fMaxPositionLag",
+          "LREAL",
+          "",
+          "Parameter number: 1208"
+        ],
+        [
+          "bPositionLagActive",
+          "BOOL",
+          "",
+          "Parameter number: 1209"
+        ],
+        [
+          "bModuloDoneByDrive",
+          "BOOL",
+          "",
+          "Parameter number: 1242"
+        ],
+        [
+          "diFollowingError",
+          "DINT",
+          "",
+          "Parameter number:  1243"
+        ],
+        [
+          "fFollowingError",
+          "LREAL",
+          "",
+          "Parameter number: 1244"
+        ],
+        [
+          "aCaptDesc",
+          "ARRAY [0..7] OFSMC3_CaptureDescription",
+          "",
+          "Parameter number: 1400"
+        ],
+        [
+          "xPersistentDataLoaded",
+          "BOOL",
+          "FALSE",
+          ""
+        ],
+        [
+          "strDriveInterfaceError",
+          "STRING(255)",
+          "",
+          ""
+        ],
+        [
+          "adatAcyclic",
+          "ARRAY\n[1..SMC3_gc_usiNumberAcyclicChannels]\nOFSMC3_DriveAcyclicTel",
+          "",
+          ""
+        ],
+        [
+          "nAbortCounter",
+          "UDINT",
+          "",
+          "Internal: counts the number of aborts.  This counter\nsimply wraps to 0 when exceeding 2^32-1, so use accordingly.\nIncreased in method SetOwner()."
+        ],
+        [
+          "vMinRequiredVersion",
+          "VERSION",
+          "",
+          "The minimum version of SM3_Basic that the driver requires."
+        ],
+        [
+          "bAvoidReversalOnHaltStop",
+          "BOOL",
+          "",
+          "Parameter number: 1260"
+        ],
+        [
+          "bConsiderLimitsOfAbortedMotionOnHaltStop",
+          "BOOL",
+          "",
+          "Parameter number: 1270"
+        ],
+        [
+          "bUpdateIOsInStop",
+          "BOOL",
+          "",
+          "Update the IOs if the application is stopped.\nParameter number 1280"
+        ],
+        [
+          "bAutoRestart",
+          "BOOL",
+          "TRUE",
+          "If TRUE, an implictSMC3_ReinitDriveis executed after\nthe communication to the drive is established again after a\ncommunication loss (e.g. fieldbus slave no longer operational).\nIf FALSE, an explicit call toSMC3_ReinitDriveis required\nafter communication has been established again. (This is the\nbehavior of SoftMotion versions before 4.18.0.0.)\nDefault is TRUE if not set by the device parameter, i.e. the\ndrive device can override the default.\nParameter number 1281"
+        ],
+        [
+          "overrideFactors",
+          "SMRB.DynFactors",
+          "STRUCT(fVel := 1, fAcc := 1, fJerk := 1, fTorque := 1)",
+          ""
+        ],
+        [
+          "m_superimposed",
+          "SMC_SuperimposedData",
+          "",
+          "Internal: information of superimposed movements"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "strDriver",
+          "Type": "STRING(16)",
+          "Initial": "",
+          "Comment": ""
+        },
+        [
+          "dwDriverVersion",
+          "DWORD",
+          "",
+          ""
+        ]
+      ]
+    }
+  ]
+}

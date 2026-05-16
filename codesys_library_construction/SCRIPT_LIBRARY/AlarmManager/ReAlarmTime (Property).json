@@ -1,0 +1,8 @@
+{
+  "library": "AlarmManager",
+  "title": "ReAlarmTime (Property)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/pou-IAlarmClass2/ReAlarmTime.html",
+  "page_title": "IAlarmClass2.ReAlarmTime (PROP)",
+  "text": "\nPROPERTY ReAlarmTime : TIME\nRetrieves the configured value of the âRe-Alarm Timeâ setting",
+  "tables": []
+}

@@ -1,0 +1,29 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_NCSymbolResult (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/Parser/SymbolTable/SMC_NCSymbolResult.html",
+  "page_title": "SMC_NCSymbolResult (ENUM)",
+  "text": "\nTYPE SMC_NCSymbolResult :\nThe possible results of a symbol table lookup.\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "FOUND",
+          "Comment": "The signature has been found"
+        },
+        {
+          "Name": "LOOKING",
+          "Comment": "The signature will be retrieved and can be queried\nagain in the next cycles."
+        },
+        {
+          "Name": "ERROR",
+          "Comment": "An error ocurred while looking up the signature, e.g. if the\nsubprogram could not be found."
+        }
+      ]
+    }
+  ]
+}

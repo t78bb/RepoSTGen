@@ -1,0 +1,28 @@
+{
+  "library": "3S Storage",
+  "title": "UtilityGetCurrentDateAndTime (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/3S Storage/Current/_3SStorage/Instances/pou-Storage/UtilityGetCurrentDateAndTime.html",
+  "page_title": "Storage.UtilityGetCurrentDateAndTime (METH)",
+  "text": "\nMETHOD UtilityGetCurrentDateAndTime : STO.INT64\nJulian day numbers, the number of days since noon in\nGreenwich on November 24, 4714 B.C. according to the proleptic Gregorian calendar\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "UtilityGetCurrentDateAndTime",
+          "Type": "STO.INT64"
+        },
+        {
+          "Scope": "Output",
+          "Name": "eError",
+          "Type": "STO.ERROR"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_SetInterpreterStartPosition (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/SoftMotion-Function-Blocks/SMC_SetInterpreterStartPosition.html",
+  "page_title": "SMC_SetInterpreterStartPosition (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_SetInterpreterStartPosition\nThis function block copies the actual position from the bus task\nto the task of the\nSMC_NCInterpreter\n, in a task safe manner.\nUsually, the position is computed based on the actual position\nof the drives and the kinematic forward transformation.\nTo be called from the bus task.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "Enable",
+          "Type": "BOOL",
+          "Comment": "Copies the position while enabled"
+        },
+        [
+          "actualPosition",
+          "SMC_POSINFO",
+          "The current poition of the machine as output by the forward\ntransformation"
+        ]
+      ]
+    }
+  ]
+}

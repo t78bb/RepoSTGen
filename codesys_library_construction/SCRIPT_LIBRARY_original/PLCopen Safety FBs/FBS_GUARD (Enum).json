@@ -1,0 +1,78 @@
+{
+  "library": "PLCopen Safety FBs",
+  "title": "FBS_GUARD (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/PLCopen Safety FBs/Current/PLCopenSafetyFBs/Enums/FBS_GUARD.html",
+  "page_title": "FBS_GUARD (ENUM)",
+  "text": "PLCopenSafetyFBs\nEnums\nFBS_ANTI (Enum)\nFBS_EDM (Enum)\nFBS_ENSWITCH (Enum)\nFBS_ENSWITCH2 (Enum)\nFBS_EQUI (Enum)\nFBS_ESPE (Enum)\nFBS_ESTOP (Enum)\nFBS_GUARD (Enum)\nFBS_GUARDLOCK2 (Enum)\nFBS_MODESEL (Enum)\nFBS_OUTCONTROL (Enum)\nFBS_PSE (Enum)\nFBS_RESBUT (Enum)\nFBS_SAFEREQ (Enum)\nFBS_TESTSEN (Enum)\nFBS_TWOHAND (Enum)\nFunction Blocks\nSF_Antivalent (FunctionBlock)\nSF_EDM (FunctionBlock)\nSF_ESPE (FunctionBlock)\nSF_EmergencyStop (FunctionBlock)\nSF_EnableSwitch (FunctionBlock)\nSF_EnableSwitch_2 (FunctionBlock)\nSF_Equivalent (FunctionBlock)\nSF_Guard (FunctionBlock)\nSF_GuardLocking_2 (FunctionBlock)\nSF_ModeSelector (FunctionBlock)\nSF_OutControl (FunctionBlock)\nSF_PSE (FunctionBlock)\nSF_ResetButton (FunctionBlock)\nSF_SafetyRequest (FunctionBlock)\nSF_TestableSafetySensor (FunctionBlock)\nSF_TwoHandControlTypeII (FunctionBlock)\nSF_TwoHandControlTypeIII (FunctionBlock)\nFile and Project Information\nLibrary Reference\nStandard\nLibrary Identification\nLibrary Properties\nSysTimeCore\nLibrary Identification\nLibrary Properties\nPLCopen Safety FBs\nDocs\n»\nPLCopenSafetyFBs\n»\nEnums\n»\nFBS_GUARD (ENUM)\nFBS_GUARD (ENUM)\nÂ¶\nTYPE FBS_GUARD :\nDefinition of SF_Guard function block states and its diagnostic values.\nAttributes:\nqualified_only\nInOut:\nName\nInitial\nComment\nIDLE\n16#0\nThe FUNCTION block is NOT active (initial state).\nINIT\n16#8001\nFunction block has been activated.\nNORMAL\n16#8000\nSafety guard closed and Safe state acknowledged.\nOPEN_START\n16#8802\nComplete switching sequence required.\nWAIT_FOR_RESET\n16#8402\nWaiting for rising trigger at Reset.\nGUARD_OPENED\n16#8804\nGuard completely opened.\nWAIT_FOR_SWITCH2\n16#8806\nS_GuardSwitch1 has been switched to TRUE - waiting for\nS_GuardSwitch2; discrepancy timer started.\nWAIT_FOR_SWITCH1\n16#8808\nS_GuardSwitch2 has been switched to TRUE - waiting for\nS_GuardSwitch1; discrepancy timer started.\nGUARD_CLOSED\n16#8002\nGuard closed. Waiting for Reset, if S_AutoReset = FALSE.\nERR_RESET\n16#C001\nStatic reset detected in state âWait for Resetâ, 16#8402.\nERR_DISC_TIME_1\n16#C010\nDiscrepancyTime elapsed in state âWait for GuardSwitch 2â,\n16#8806.\nERR_DISC_TIME_2\n16#C020\nDiscrepancyTime elapsed in state âWait for GuardSwitch 1â,\n16#8808.",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "IDLE",
+          "Initial": "16#0",
+          "Comment": "The FUNCTION block is NOT active (initial state)."
+        },
+        {
+          "Name": "INIT",
+          "Initial": "16#8001",
+          "Comment": "Function block has been activated."
+        },
+        {
+          "Name": "NORMAL",
+          "Initial": "16#8000",
+          "Comment": "Safety guard closed and Safe state acknowledged."
+        },
+        {
+          "Name": "OPEN_START",
+          "Initial": "16#8802",
+          "Comment": "Complete switching sequence required."
+        },
+        {
+          "Name": "WAIT_FOR_RESET",
+          "Initial": "16#8402",
+          "Comment": "Waiting for rising trigger at Reset."
+        },
+        {
+          "Name": "GUARD_OPENED",
+          "Initial": "16#8804",
+          "Comment": "Guard completely opened."
+        },
+        {
+          "Name": "WAIT_FOR_SWITCH2",
+          "Initial": "16#8806",
+          "Comment": "S_GuardSwitch1 has been switched to TRUE - waiting for\nS_GuardSwitch2; discrepancy timer started."
+        },
+        {
+          "Name": "WAIT_FOR_SWITCH1",
+          "Initial": "16#8808",
+          "Comment": "S_GuardSwitch2 has been switched to TRUE - waiting for\nS_GuardSwitch1; discrepancy timer started."
+        },
+        {
+          "Name": "GUARD_CLOSED",
+          "Initial": "16#8002",
+          "Comment": "Guard closed. Waiting for Reset, if S_AutoReset = FALSE."
+        },
+        {
+          "Name": "ERR_RESET",
+          "Initial": "16#C001",
+          "Comment": "Static reset detected in state âWait for Resetâ, 16#8402."
+        },
+        {
+          "Name": "ERR_DISC_TIME_1",
+          "Initial": "16#C010",
+          "Comment": "DiscrepancyTime elapsed in state âWait for GuardSwitch 2â,\n16#8806."
+        },
+        {
+          "Name": "ERR_DISC_TIME_2",
+          "Initial": "16#C020",
+          "Comment": "DiscrepancyTime elapsed in state âWait for GuardSwitch 1â,\n16#8808."
+        }
+      ]
+    }
+  ]
+}

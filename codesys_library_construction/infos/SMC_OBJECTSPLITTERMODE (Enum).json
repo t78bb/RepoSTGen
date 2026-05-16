@@ -1,0 +1,22 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_OBJECTSPLITTERMODE (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_Data-types/SoftMotion-CNC/SMC_OBJECTSPLITTERMODE.html",
+  "page_title": "SMC_OBJECTSPLITTERMODE (ENUM)",
+  "text": "\nTYPE SMC_OBJECTSPLITTERMODE :\n",
+  "tables": [
+    {
+      "headers": [
+        "Name"
+      ],
+      "rows": [
+        {
+          "Name": "OBJSPLIT_FIX"
+        },
+        {
+          "Name": "OBJSPLIT_LENGTH"
+        }
+      ]
+    }
+  ]
+}

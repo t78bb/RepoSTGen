@@ -1,0 +1,23 @@
+{
+  "library": "BACnet2",
+  "title": "PostStartBACnetStack (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/BACnetServerPlugin/pou-IBACnetServerPlugin/PostStartBACnetStack.html",
+  "page_title": "IBACnetServerPlugin.PostStartBACnetStack (METH)",
+  "text": "\nMETHOD PostStartBACnetStack : UDINT\nGets called after of\nBACnetServer.StartBACnetStack\n.\nReturn CmpErrors.Errors.ERR_OK if successfully.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "PostStartBACnetStack",
+          "Type": "UDINT"
+        }
+      ]
+    }
+  ]
+}

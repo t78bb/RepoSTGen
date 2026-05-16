@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现电机在无故障状态下经过延时后启动的功能。",
+  "provide_code": "METHOD TurnOn : BOOL\nVAR_INPUT\n\tMotorI:MotorI;\nEND_VAR\nVAR_OUTPUT\n\tMotorO:MotorO;\nEND_VAR"
+}

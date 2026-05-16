@@ -1,0 +1,53 @@
+{
+  "library": "String Segments",
+  "title": "ToIString (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Segments/Current/Strings/Functionblocks/pou-_UTF8String/IStringRepresentation/ToIString.html",
+  "page_title": "_UTF8String.ToIString (METH)",
+  "text": "\nMETHOD FINAL ToIString :\nIString\nReturns the string representation\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "ToIString",
+          "Type": "IString",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfString",
+          "Type": "IString",
+          "Initial": "",
+          "Comment": "Defines the output target"
+        },
+        [
+          "liStart",
+          "LINT",
+          "0",
+          "Defines the rune index from which the content is output0 => first rune, -1 => last rune[c_liMinIndex<=liStart<=c_liMaxIndex]"
+        ],
+        [
+          "liEnd",
+          "LINT",
+          "-1",
+          "Defines the rune index up to which the content is output0 => first rune, -1 => last rune[c_liMinIndex<=liEnd<=c_liMaxIndex]"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "eErrorID",
+          "Type": "ERROR",
+          "Initial": "",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

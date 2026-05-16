@@ -1,0 +1,36 @@
+{
+  "library": "CmpBACnet",
+  "title": "BACnetGetClientDeviceCommunication (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/CmpBACnet/Current/BACnetClientAPI/advanced/BACnetGetClientDeviceCommunication.html",
+  "page_title": "BACnetGetClientDeviceCommunication (FUN)",
+  "text": "\nFUNCTION BACnetGetClientDeviceCommunication :\nIEC_BACNET_STATUS\nRetrieves the current device communication control value for the specified device.\nThe user application can request the current communication enable state for registered\ndevices.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "BACnetGetClientDeviceCommunication",
+          "Type": "IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "devId",
+          "Type": "IEC_BACNET_INST_NUMBER",
+          "Comment": "The device instance number for which communication needs to be requested. A value of\n0xFFFFFFFF will retrieve the global communication enable / disable state."
+        },
+        [
+          "pDccValue",
+          "POINTER TOIEC_BACNET_DCC_VALUE",
+          "A pointer to hold the requested communication state which is\nfilled by the API."
+        ]
+      ]
+    }
+  ]
+}

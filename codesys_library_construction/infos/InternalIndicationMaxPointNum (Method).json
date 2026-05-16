@@ -1,0 +1,23 @@
+{
+  "library": "DNP3",
+  "title": "InternalIndicationMaxPointNum (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/pou-Master/Datapoints/InternalIndicationMaxPointNum.html",
+  "page_title": "Master.InternalIndicationMaxPointNum (METH)",
+  "text": "\nMETHOD InternalIndicationMaxPointNum : DINT\nMaximum point number of all Internal Indication datapoints (DNP3 object group 80 âinternal indicationsâ) provided by the Outstation.\nReturns -1 if there are no datapoints.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "InternalIndicationMaxPointNum",
+          "Type": "DINT"
+        }
+      ]
+    }
+  ]
+}

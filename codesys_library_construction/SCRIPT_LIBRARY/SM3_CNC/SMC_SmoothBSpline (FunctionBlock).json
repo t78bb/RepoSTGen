@@ -1,0 +1,76 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_SmoothBSpline (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/SoftMotion-Function-Blocks/SMC_SmoothBSpline.html",
+  "page_title": "SMC_SmoothBSpline (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL SMC_SmoothBSpline\nSmoothes segments of consecutive G1 elements with a B-Spline of fifth degree.\nEach segment of at least 5 consecutive G1 elements of non-zero length is\nreplaced by splines. The start and end positions of the G1 elements serve\nas control points of the B-spline that is created.  Only the start position\nof the segment and the end position are interpolated exactly.\nEach segment of n >= 5 G1 elements is replaced by n-5 polynomials.\nNote\nDoes not support H-functions\nDoes not support changes of flags like G51, G52, G40 and so on,\nthese changes are ignored\nRequires 3D-Mode\nCan be turned on and off from G-Code using G38/G39\nA spline always contains the same tool correction information\n(i.e. lengths and diameter) as the first of the segments\nthat it replaces.\nElements other than G1 (e.g. G0, G2, G3, â¦) interrupt the smoothing\nuntil the next G1 element.\nProbe movements / G31 are not supported.\nAdditional axis: First the values of the additional axis are also converted\nto a B-spline. For the linear axis (P,Q,U,V,W) only the positions at the end\nof each polynomial are stored in SMC_GeoInfo. For the smoothed axis (A, B, C) the\nslope is also stored.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "bExecute",
+          "Type": "BOOL",
+          "Comment": "Execution starts on the rising edge."
+        },
+        [
+          "poqDataIn",
+          "POINTER TOSMC_OUTQUEUE",
+          "Input path queue"
+        ],
+        [
+          "nSizeOutQueue",
+          "UDINT",
+          "Size of the data bufferpbyBufferOutQueuein bytes."
+        ],
+        [
+          "pbyBufferOutQueue",
+          "POINTER TO ARRAY [0..0]\nOF SMC_GEOINFO",
+          "Points to the first byte of the memory area being allocated for theSMC_OUTQUEUE-structure. This area must be at least as big as defined innSizeOutQueue. Typically the allocation of the memory buffer is done within\nthe declaration part of the IEC-program by defining an array ofSMC_GeoInfo(ExampleBuf:ARRAY[1..50]OFSMC_GEOINFOfor a buffer which can hold 50 path`\nelements). After predefining the value it may be modified during a reset only."
+        ],
+        [
+          "eMode",
+          "SMC_SMOOTHBSPLINE_MODE",
+          "The element type applied for the smoothing of the axes."
+        ],
+        [
+          "wFeatureFlag",
+          "WORD",
+          "The feature bit (0..31) used for smoothing (controlled by\nG38/G39)"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bDone",
+          "Type": "BOOL",
+          "Comment": "Will be set toTRUEas soon as the input data frompoqDataInhas been processed completely.  Afterwards, the function block will\nnot perform any further actions until it gets reset.\nIf thebExecuteinput isFALSE, bDone will be reset toFALSE."
+        },
+        [
+          "bBusy",
+          "BOOL",
+          "TRUE, while execution of function block is not finished."
+        ],
+        [
+          "bError",
+          "BOOL",
+          "Signals, that an error has occurred within the function\nblock."
+        ],
+        [
+          "wErrorID",
+          "SMC_ERROR",
+          "Error identification."
+        ],
+        [
+          "poqDataOut",
+          "POINTER TOSMC_OUTQUEUE",
+          "The queue for the output path"
+        ]
+      ]
+    }
+  ]
+}

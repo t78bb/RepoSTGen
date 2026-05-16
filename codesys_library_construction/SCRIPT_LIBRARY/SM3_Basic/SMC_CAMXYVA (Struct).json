@@ -1,0 +1,38 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_CAMXYVA (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/DataTypes/CAM/SMC_CAMXYVA.html",
+  "page_title": "SMC_CAMXYVA (STRUCT)",
+  "text": "\nTYPE SMC_CAMXYVA : STRUCT\nA XYVA-cam is represented by an array of variables of type SMC_CAMXYVA describing each point of a cam.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "dX",
+          "Type": "LREAL",
+          "Comment": "master position"
+        },
+        {
+          "Name": "dY",
+          "Type": "LREAL",
+          "Comment": "slave position"
+        },
+        {
+          "Name": "dV",
+          "Type": "LREAL",
+          "Comment": "first derivative dY/dX; slave velocity"
+        },
+        {
+          "Name": "dA",
+          "Type": "LREAL",
+          "Comment": "second derivative dÂ²Y/dXÂ²; slave acceleration"
+        }
+      ]
+    }
+  ]
+}

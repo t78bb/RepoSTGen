@@ -1,0 +1,9 @@
+FUN/ConcreteComponment.st
+FUN/ConcreteDecoratorA.st
+FUN/ConcreteDecoratorB.st
+FUN/ConcreteDecoratorC.st
+FUN/ConcreteComponment_getValue.st
+FUN/ConcreteComponment_getDescription.st
+FUN/ConcreteDecoratorA_getValue.st
+FUN/ConcreteDecoratorA_getDescription.st
+#还有一些b和c的，为保持多样性不抽取了

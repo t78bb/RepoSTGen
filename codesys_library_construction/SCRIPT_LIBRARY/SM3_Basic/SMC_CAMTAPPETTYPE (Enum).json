@@ -1,0 +1,29 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_CAMTAPPETTYPE (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/DataTypes/CAM/SMC_CAMTAPPETTYPE.html",
+  "page_title": "SMC_CAMTAPPETTYPE (ENUM)",
+  "text": "\nTYPE SMC_CAMTAPPETTYPE :\nDetermines in which direction the tappet has to be passed.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "TAPPET_pos",
+          "Comment": "Tappet action active when the axis passes in positive direction."
+        },
+        {
+          "Name": "TAPPET_all",
+          "Comment": "Tappet action active when the axis passes in any direction."
+        },
+        {
+          "Name": "TAPPET_neg",
+          "Comment": "Tappet action active when the axis passes in negative direction."
+        }
+      ]
+    }
+  ]
+}

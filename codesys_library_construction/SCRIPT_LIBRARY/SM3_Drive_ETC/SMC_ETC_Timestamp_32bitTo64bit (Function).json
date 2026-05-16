@@ -1,0 +1,43 @@
+{
+  "library": "SM3_Drive_ETC",
+  "title": "SMC_ETC_Timestamp_32bitTo64bit (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Drive_ETC/Current/SMC_ETC_Timestamp_32bitTo64bit.html",
+  "page_title": "SMC_ETC_Timestamp_32bitTo64bit (FUN)",
+  "text": "\nFUNCTION SMC_ETC_Timestamp_32bitTo64bit : SMC_ERROR\nConverts a 32bit timestamp to a 64bit timestamp\nthat is less than or equal to the timestamp of the actual values,\nplus one task cycle.  The function computes the\ngreatest such timestamp.\nThe lower 32 bits of the returned timestamp are equal to\nTimestamp32_ns.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout Const",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "Timestamp32_ns",
+          "Type": "UDINT",
+          "Comment": "The 32 bit timestamp in nanoseconds to convert."
+        },
+        {
+          "Scope": "Return",
+          "Name": "SMC_ETC_Timestamp_32bitTo64bit",
+          "Type": "SMC_ERROR",
+          "Comment": ""
+        },
+        {
+          "Scope": "Output",
+          "Name": "Timestamp64_ns",
+          "Type": "ULINT",
+          "Comment": "The resulting 64 bit timestamp in nanoseconds."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "library": "CommFB",
+  "title": "PN_ADDR (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/CommFB/Current/CommFB/Addresses/PN_ADDR.html",
+  "page_title": "PN_ADDR (STRUCT)",
+  "text": "\nTYPE PN_ADDR : STRUCT\ndata structure for physical/native identification or subslot of a PROFINET IO Device.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "VERSION",
+          "Type": "BYTE",
+          "Initial": "1",
+          "Comment": "Version of the data structure (1= Version 1)"
+        },
+        {
+          "Name": "MASTER",
+          "Type": "BYTE",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Name": "D",
+          "Type": "PN_DEVICE_ID",
+          "Initial": "",
+          "Comment": "Identification of the Field Device"
+        },
+        {
+          "Name": "API",
+          "Type": "DWORD",
+          "Initial": "",
+          "Comment": "application process identifier"
+        },
+        {
+          "Name": "SLOT",
+          "Type": "WORD",
+          "Initial": "",
+          "Comment": "Slot Number (identification of a slot)"
+        },
+        {
+          "Name": "SUBSLOT",
+          "Type": "WORD",
+          "Initial": "",
+          "Comment": "Subslot Number (identification of a subslot)"
+        }
+      ]
+    }
+  ]
+}

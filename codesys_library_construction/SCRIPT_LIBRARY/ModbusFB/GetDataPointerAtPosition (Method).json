@@ -1,0 +1,23 @@
+{
+  "library": "ModbusFB",
+  "title": "GetDataPointerAtPosition (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/ModbusFB/Current/ModbusFB/Function-Blocks/Util/pou-ByteBuffer/GetDataPointerAtPosition.html",
+  "page_title": "ByteBuffer.GetDataPointerAtPosition (METH)",
+  "text": "\nMETHOD GetDataPointerAtPosition : POINTER TO BYTE\nReturns the byte array that backs this buffer at uiPosition.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetDataPointerAtPosition",
+          "Type": "POINTER TO BYTE"
+        }
+      ]
+    }
+  ]
+}

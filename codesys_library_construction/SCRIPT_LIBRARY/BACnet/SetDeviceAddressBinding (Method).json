@@ -1,0 +1,36 @@
+{
+  "library": "BACnet",
+  "title": "SetDeviceAddressBinding (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/Device/pou-BACnetDevice/SetDeviceAddressBinding.html",
+  "page_title": "BACnetDevice.SetDeviceAddressBinding (METH)",
+  "text": "\nMETHOD SetDeviceAddressBinding : CmpBACnet.IEC_BACNET_STATUS\nSets the Device_Address_Binding-List of this BACnet object.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetDeviceAddressBinding",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "uiListCount",
+          "Type": "CmpBACnet.IEC_BACNET_ELEMENT_COUNT",
+          "Comment": "The length of the list in the following pointer."
+        },
+        [
+          "pList",
+          "POINTER TO\nCmpBACnet.IEC_BACNET_ADDRESS_BINDING",
+          "The list data containing elements according to the given\ncount."
+        ]
+      ]
+    }
+  ]
+}

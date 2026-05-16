@@ -1,0 +1,25 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "Activate (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_RMP_ReliableMessageProtocol/pou-RMPConnection/Activate.html",
+  "page_title": "RMPConnection.Activate (METH)",
+  "text": "\nMETHOD PUBLIC FINAL Activate\nActivates the connection\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "uiIndexInQueue",
+          "Type": "UINT",
+          "Comment": "The index of the connection to be placed in the connection queue"
+        }
+      ]
+    }
+  ]
+}

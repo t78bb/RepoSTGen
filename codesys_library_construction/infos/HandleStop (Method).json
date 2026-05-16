@@ -1,0 +1,23 @@
+{
+  "library": "SM3_CNC",
+  "title": "HandleStop (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/SoftMotion-Function-Blocks/pou-SMC_Interpolator/Toplevel/HandleStop.html",
+  "page_title": "SMC_Interpolator.HandleStop (METH)",
+  "text": "\nMETHOD HandleStop : SMC_ERROR\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "HandleStop",
+          "Type": "SMC_ERROR"
+        }
+      ]
+    }
+  ]
+}

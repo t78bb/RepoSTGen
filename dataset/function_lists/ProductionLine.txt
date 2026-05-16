@@ -1,0 +1,6 @@
+FUN/Motor.st
+FUN/Motor_TurnOn.st
+FUN/Motor_TurnOff.st
+FUN/Motor_SetWaitTime.st
+FUN/Motor_SetFault.st
+FUN/Motor_ResetFault.st

@@ -1,0 +1,62 @@
+{
+  "library": "SML_Basic",
+  "title": "MC_Halt_SML (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SML_Basic/Current/PLCopen/MC_Halt_SML.html",
+  "page_title": "MC_Halt_SML (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL MC_Halt_SML\nCommands a controlled motion stop.\nThe axis is moved to the state\nDiscreteMotion\n, until the velocity is zero.\nWhen the output\nDone\nis set, the state is transferred to\nStandstill\n.\nNote\nMC_Halt_SML\nis used to stop the axis under normal operation conditions.\nIt is possible to start another motion command during deceleration of the axis,\nwhich will abort\nMC_Halt_SML\nand will be executed immediately.\nThe example below shows the behavior in combination with\nMC_MoveVelocity_SML\n.\nA rotating axis is ramped down with Function Block\nMC_Halt_SML\nAnother motion command overrides the\nMC_Halt_SML\ncommand.\nMC_Halt_SML\nallows this, in contrast to\nMC_Stop_SML\n.\nThe axis can accelerate again without reaching\nStandstill\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "Axis_REF_SML",
+          "Comment": "Reference to the axis"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Comment": "Rising edeg: The halt is started"
+        },
+        [
+          "Deceleration",
+          "LREAL",
+          "Value of the deceleration (decreasing energy of the motor)\n[u/sÂ²]"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Done",
+          "Type": "BOOL",
+          "Comment": "Becomes true as soon as the axis has reached velocity zero"
+        },
+        [
+          "Busy",
+          "BOOL",
+          "TRUEas long asMC_Halt_SMLis operating, reset when\nvelocity is zero"
+        ],
+        [
+          "CommandAborted",
+          "BOOL",
+          "Commanded motion was interrupted by any motion FB acting on\nthe same axis"
+        ],
+        [
+          "Error",
+          "BOOL",
+          "Signals that an error has occured"
+        ],
+        [
+          "ErrorID",
+          "SML_ERROR",
+          "Error number"
+        ]
+      ]
+    }
+  ]
+}

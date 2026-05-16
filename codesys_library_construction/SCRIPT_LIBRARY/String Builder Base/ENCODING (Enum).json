@@ -1,0 +1,37 @@
+{
+  "library": "String Builder Base",
+  "title": "ENCODING (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Builder Base/Current/BuilderBase/Enums/ENCODING.html",
+  "page_title": "ENCODING (ENUM)",
+  "text": "\nTYPE ENCODING :\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "UNKNOWN",
+          "Comment": ""
+        },
+        {
+          "Name": "UTF8",
+          "Comment": "UTF-8 Encoding"
+        },
+        {
+          "Name": "UTF16",
+          "Comment": "UTF-16 Encoding (host byte order)"
+        },
+        {
+          "Name": "UTF16BE",
+          "Comment": "UTF-16 Encoding (big endian byte order)"
+        },
+        {
+          "Name": "UTF16LE",
+          "Comment": "UTF-16 Encoding (little endian byte order)"
+        }
+      ]
+    }
+  ]
+}

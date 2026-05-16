@@ -1,0 +1,31 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "SetBaseIdentification (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_Module/pou-BaseInstance/SetBaseIdentification.html",
+  "page_title": "BaseInstance.SetBaseIdentification (METH)",
+  "text": "\nMETHOD PUBLIC FINAL SetBaseIdentification\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "pbyName",
+          "Type": "POINTER TO BYTE"
+        },
+        [
+          "udiAddr",
+          "UDINT"
+        ],
+        [
+          "pEnvironment",
+          "POINTER TOMEnv"
+        ]
+      ]
+    }
+  ]
+}

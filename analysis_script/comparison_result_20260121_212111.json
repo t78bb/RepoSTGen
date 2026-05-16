@@ -1,0 +1,1285 @@
+{
+  "metadata": {
+    "comparison_timestamp": "2026-01-21T21:21:11.865722",
+    "baseline_file": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\evaluation_summary_20260121_171642.json",
+    "compare_file": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\output\\20260121_174449_fixed\\evaluation_summary_20260121_193015.json",
+    "baseline_timestamp": "2026-01-21T17:16:42.054584",
+    "compare_timestamp": "2026-01-21T19:30:15.773093"
+  },
+  "overall_comparison": {
+    "total_projects": {
+      "baseline": 30,
+      "compare": 25,
+      "diff": -5
+    },
+    "success_count": {
+      "baseline": 25,
+      "compare": 25,
+      "diff": 0
+    },
+    "failed_count": {
+      "baseline": 5,
+      "compare": 0,
+      "diff": -5
+    },
+    "total_files": {
+      "baseline": 98,
+      "compare": 99,
+      "diff": 1
+    },
+    "average_scores": {
+      "codebleu": {
+        "baseline": 0.46018,
+        "compare": 0.542204,
+        "absolute_diff": 0.082025,
+        "relative_diff_percent": 17.82
+      },
+      "ngram_match_score": {
+        "baseline": 0.160742,
+        "compare": 0.243403,
+        "absolute_diff": 0.08266,
+        "relative_diff_percent": 51.42
+      },
+      "weighted_ngram_match_score": {
+        "baseline": 0.321391,
+        "compare": 0.462592,
+        "absolute_diff": 0.141201,
+        "relative_diff_percent": 43.93
+      },
+      "syntax_match_score": {
+        "baseline": 0.618024,
+        "compare": 0.698169,
+        "absolute_diff": 0.080146,
+        "relative_diff_percent": 12.97
+      },
+      "dataflow_match_score": {
+        "baseline": 0.516072,
+        "compare": 0.471724,
+        "absolute_diff": -0.044348,
+        "relative_diff_percent": -8.59
+      }
+    }
+  },
+  "project_lists_comparison": {
+    "success": {
+      "baseline_count": 25,
+      "compare_count": 25,
+      "common": [
+        "repoeval_Builder_Application_RPI",
+        "repoeval_Command1",
+        "repoeval_Decorator_Application",
+        "repoeval_GreatExampleOfAdvantages",
+        "repoeval_Interation_HowTo",
+        "repoeval_PID_controller",
+        "repoeval_PT1Filter",
+        "repoeval_ProductionLine",
+        "repoeval_Proxy_Application",
+        "repoeval_Wrappers",
+        "repoeval_assembly-station",
+        "repoeval_barrier",
+        "repoeval_counter",
+        "repoeval_electronic_cam_motion",
+        "repoeval_electronic_gear_motion",
+        "repoeval_elevator",
+        "repoeval_four-level_elevator_control",
+        "repoeval_isScaleOutput",
+        "repoeval_measurement_control",
+        "repoeval_open-type_dual-axis_winding_machine",
+        "repoeval_plc_hello_mixing_tank",
+        "repoeval_readwriteFile",
+        "repoeval_three-axis_CNC_motion",
+        "repoeval_traffic_light"
+      ],
+      "only_in_baseline": [
+        "repoeval_Robotics_DynamicModel"
+      ],
+      "only_in_compare": [
+        "repoeval_VisuElements"
+      ],
+      "newly_successful": [],
+      "newly_failed": []
+    },
+    "failed": {
+      "baseline_count": 5,
+      "compare_count": 0,
+      "common": [],
+      "only_in_baseline": [
+        "repoeval_FB50_虚轴控制",
+        "repoeval_can",
+        "repoeval_core",
+        "repoeval_healthydata",
+        "repoeval_modbus"
+      ],
+      "only_in_compare": []
+    }
+  },
+  "project_statistics_comparison": {
+    "repoeval_Builder_Application_RPI": {
+      "status": "共同项目",
+      "baseline_exists": true,
+      "compare_exists": true,
+      "total_files": {
+        "baseline": 5,
+        "compare": 5,
+        "diff": 0
+      },
+      "successful_evaluations": {
+        "baseline": 5,
+        "compare": 5,
+        "diff": 0
+      },
+      "average_scores": {
+        "codebleu": {
+          "baseline": 0.583473,
+          "compare": 0.393792,
+          "absolute_diff": -0.189682,
+          "relative_diff_percent": -32.51
+        },
+        "ngram_match_score": {
+          "baseline": 0.270683,
+          "compare": 0.150323,
+          "absolute_diff": -0.12036,
+          "relative_diff_percent": -44.47
+        },
+        "weighted_ngram_match_score": {
+          "baseline": 0.51449,
+          "compare": 0.338424,
+          "absolute_diff": -0.176066,
+          "relative_diff_percent": -34.22
+        },
+        "syntax_match_score": {
+          "baseline": 0.630917,
+          "compare": 0.426746,
+          "absolute_diff": -0.20417,
+          "relative_diff_percent": -32.36
+        },
+        "dataflow_match_score": {
+          "baseline": 0.717803,
+          "compare": 0.459673,
+          "absolute_diff": -0.25813,
+          "relative_diff_percent": -35.96
+        }
+      }
+    },
+    "repoeval_Command1": {
+      "status": "共同项目",
+      "baseline_exists": true,
+      "compare_exists": true,
+      "total_files": {
+        "baseline": 12,
+        "compare": 12,
+        "diff": 0
+      },
+      "successful_evaluations": {
+        "baseline": 12,
+        "compare": 12,
+        "diff": 0
+      },
+      "average_scores": {
+        "codebleu": {
+          "baseline": 0.575133,
+          "compare": 0.585039,
+          "absolute_diff": 0.009906,
+          "relative_diff_percent": 1.72
+        },
+        "ngram_match_score": {
+          "baseline": 0.119353,
+          "compare": 0.134226,
+          "absolute_diff": 0.014873,
+          "relative_diff_percent": 12.46
+        },
+        "weighted_ngram_match_score": {
+          "baseline": 0.638154,
+          "compare": 0.648414,
+          "absolute_diff": 0.01026,
+          "relative_diff_percent": 1.61
+        },
+        "syntax_match_score": {
+          "baseline": 0.561542,
+          "compare": 0.576035,
+          "absolute_diff": 0.014493,
+          "relative_diff_percent": 2.58
+        },
+        "dataflow_match_score": {
+          "baseline": 0.064815,
+          "compare": 0.064815,
+          "absolute_diff": 0.0,
+          "relative_diff_percent": 0.0
+        }
+      }
+    },
+    "repoeval_Decorator_Application": {
+      "status": "共同项目",
+      "baseline_exists": true,
+      "compare_exists": true,
+      "total_files": {
+        "baseline": 8,
+        "compare": 8,
+        "diff": 0
+      },
+      "successful_evaluations": {
+        "baseline": 8,
+        "compare": 8,
+        "diff": 0
+      },
+      "average_scores": {
+        "codebleu": {
+          "baseline": 0.47847,
+          "compare": 0.466447,
+          "absolute_diff": -0.012023,
+          "relative_diff_percent": -2.51
+        },
+        "ngram_match_score": {
+          "baseline": 0.130276,
+          "compare": 0.104594,
+          "absolute_diff": -0.025682,
+          "relative_diff_percent": -19.71
+        },
+        "weighted_ngram_match_score": {
+          "baseline": 0.294774,
+          "compare": 0.260098,
+          "absolute_diff": -0.034676,
+          "relative_diff_percent": -11.76
+        },
+        "syntax_match_score": {
+          "baseline": 0.590025,
+          "compare": 0.597302,
+          "absolute_diff": 0.007277,
+          "relative_diff_percent": 1.23
+        },
+        "dataflow_match_score": {
+          "baseline": 0.523803,
+          "compare": 0.528793,
+          "absolute_diff": 0.004989,
+          "relative_diff_percent": 0.95
+        }
+      }
+    },
+    "repoeval_GreatExampleOfAdvantages": {
+      "status": "共同项目",
+      "baseline_exists": true,
+      "compare_exists": true,
+      "total_files": {
+        "baseline": 2,
+        "compare": 2,
+        "diff": 0
+      },
+      "successful_evaluations": {
+        "baseline": 2,
+        "compare": 2,
+        "diff": 0
+      },
+      "average_scores": {
+        "codebleu": {
+          "baseline": 0.354669,
+          "compare": 0.578265,
+          "absolute_diff": 0.223596,
+          "relative_diff_percent": 63.04
+        },
+        "ngram_match_score": {
+          "baseline": 0.010457,
+          "compare": 0.190133,
+          "absolute_diff": 0.179677,
+          "relative_diff_percent": 1718.31
+        },
+        "weighted_ngram_match_score": {
+          "baseline": 0.030644,
+          "compare": 0.266691,
+          "absolute_diff": 0.236047,
+          "relative_diff_percent": 770.29
+        },
+        "syntax_match_score": {
+          "baseline": 0.638446,
+          "compare": 0.856237,
+          "absolute_diff": 0.217791,
+          "relative_diff_percent": 34.11
+        },
+        "dataflow_match_score": {
+          "baseline": 0.23913,
+          "compare": 0.0,
+          "absolute_diff": -0.23913,
+          "relative_diff_percent": -100.0
+        }
+      }
+    },
+    "repoeval_Interation_HowTo": {
+      "status": "共同项目",
+      "baseline_exists": true,
+      "compare_exists": true,
+      "total_files": {
+        "baseline": 2,
+        "compare": 2,
+        "diff": 0
+      },
+      "successful_evaluations": {
+        "baseline": 2,
+        "compare": 2,
+        "diff": 0
+      },
+      "average_scores": {
+        "codebleu": {
+          "baseline": 0.527083,
+          "compare": 0.611733,
+          "absolute_diff": 0.08465,
+          "relative_diff_percent": 16.06
+        },
+        "ngram_match_score": {
+          "baseline": 0.242086,
+          "compare": 0.20602,
+          "absolute_diff": -0.036066,
+          "relative_diff_percent": -14.9
+        },
+        "weighted_ngram_match_score": {
+          "baseline": 0.265255,
+          "compare": 0.323451,
+          "absolute_diff": 0.058197,
+          "relative_diff_percent": 21.94
+        },
+        "syntax_match_score": {
+          "baseline": 0.788492,
+          "compare": 0.97996,
+          "absolute_diff": 0.191468,
+          "relative_diff_percent": 24.28
+        },
+        "dataflow_match_score": {
+          "baseline": 0.8125,
+          "compare": 0.9375,
+          "absolute_diff": 0.125,
+          "relative_diff_percent": 15.38
+        }
+      }
+    },
+    "repoeval_PID_controller": {
+      "status": "共同项目",
+      "baseline_exists": true,
+      "compare_exists": true,
+      "total_files": {
+        "baseline": 4,
+        "compare": 4,
+        "diff": 0
+      },
+      "successful_evaluations": {
+        "baseline": 4,
+        "compare": 4,
+        "diff": 0
+      },
+      "average_scores": {
+        "codebleu": {
+          "baseline": 0.278498,
+          "compare": 0.558372,
+          "absolute_diff": 0.279874,
+          "relative_diff_percent": 100.49
+        },
+        "ngram_match_score": {
+          "baseline": 0.098141,
+          "compare": 0.245259,
+          "absolute_diff": 0.147119,
+          "relative_diff_percent": 149.91
+        },
+        "weighted_ngram_match_score": {
+          "baseline": 0.130276,
+          "compare": 0.446775,
+          "absolute_diff": 0.316499,
+          "relative_diff_percent": 242.94
+        },
+        "syntax_match_score": {
+          "baseline": 0.092292,
+          "compare": 0.739272,
+          "absolute_diff": 0.64698,
+          "relative_diff_percent": 701.01
+        },
+        "dataflow_match_score": {
+          "baseline": 0.793284,
+          "compare": 0.802182,
+          "absolute_diff": 0.008898,
+          "relative_diff_percent": 1.12
+        }
+      }
+    },
+    "repoeval_PT1Filter": {
+      "status": "共同项目",
+      "baseline_exists": true,
+      "compare_exists": true,
+      "total_files": {
+        "baseline": 1,
+        "compare": 1,
+        "diff": 0
+      },
+      "successful_evaluations": {
+        "baseline": 1,
+        "compare": 1,
+        "diff": 0
+      },
+      "average_scores": {
+        "codebleu": {
+          "baseline": 0.632933,
+          "compare": 0.518195,
+          "absolute_diff": -0.114738,
+          "relative_diff_percent": -18.13
+        },
+        "ngram_match_score": {
+          "baseline": 0.35245,
+          "compare": 0.206403,
+          "absolute_diff": -0.146047,
+          "relative_diff_percent": -41.44
+        },
+        "weighted_ngram_match_score": {
+          "baseline": 0.504027,
+          "compare": 0.526716,
+          "absolute_diff": 0.022689,
+          "relative_diff_percent": 4.5
+        },
+        "syntax_match_score": {
+          "baseline": 0.915254,
+          "compare": 0.779661,
+          "absolute_diff": -0.135593,
+          "relative_diff_percent": -14.81
+        },
+        "dataflow_match_score": {
+          "baseline": 0.76,
+          "compare": 0.56,
+          "absolute_diff": -0.2,
+          "relative_diff_percent": -26.32
+        }
+      }
+    },
+    "repoeval_ProductionLine": {
+      "status": "共同项目",
+      "baseline_exists": true,
+      "compare_exists": true,
+      "total_files": {
+        "baseline": 6,
+        "compare": 6,
+        "diff": 0
+      },
+      "successful_evaluations": {
+        "baseline": 6,
+        "compare": 6,
+        "diff": 0
+      },
+      "average_scores": {
+        "codebleu": {
+          "baseline": 0.573416,
+          "compare": 0.437482,
+          "absolute_diff": -0.135934,
+          "relative_diff_percent": -23.71
+        },
+        "ngram_match_score": {
+          "baseline": 0.168932,
+          "compare": 0.066322,
+          "absolute_diff": -0.10261,
+          "relative_diff_percent": -60.74
+        },
+        "weighted_ngram_match_score": {
+          "baseline": 0.35825,
+          "compare": 0.192079,
+          "absolute_diff": -0.166171,
+          "relative_diff_percent": -46.38
+        },
+        "syntax_match_score": {
+          "baseline": 0.882167,
+          "compare": 0.849042,
+          "absolute_diff": -0.033125,
+          "relative_diff_percent": -3.75
+        },
+        "dataflow_match_score": {
+          "baseline": 0.55098,
+          "compare": 0.30915,
+          "absolute_diff": -0.24183,
+          "relative_diff_percent": -43.89
+        }
+      }
+    },
+    "repoeval_Proxy_Application": {
+      "status": "共同项目",
+      "baseline_exists": true,
+      "compare_exists": true,
+      "total_files": {
+        "baseline": 2,
+        "compare": 2,
+        "diff": 0
+      },
+      "successful_evaluations": {
+        "baseline": 2,
+        "compare": 2,
+        "diff": 0
+      },
+      "average_scores": {
+        "codebleu": {
+          "baseline": 0.535674,
+          "compare": 0.692423,
+          "absolute_diff": 0.156749,
+          "relative_diff_percent": 29.26
+        },
+        "ngram_match_score": {
+          "baseline": 0.075208,
+          "compare": 0.13826,
+          "absolute_diff": 0.063052,
+          "relative_diff_percent": 83.84
+        },
+        "weighted_ngram_match_score": {
+          "baseline": 0.444686,
+          "compare": 0.810578,
+          "absolute_diff": 0.365892,
+          "relative_diff_percent": 82.28
+        },
+        "syntax_match_score": {
+          "baseline": 0.729947,
+          "compare": 0.820856,
+          "absolute_diff": 0.090909,
+          "relative_diff_percent": 12.45
+        },
+        "dataflow_match_score": {
+          "baseline": 0.392857,
+          "compare": 0.5,
+          "absolute_diff": 0.107143,
+          "relative_diff_percent": 27.27
+        }
+      }
+    },
+    "repoeval_Robotics_DynamicModel": {
+      "status": "缺失项目",
+      "baseline_exists": true,
+      "compare_exists": false,
+      "total_files": 2,
+      "successful_evaluations": 2,
+      "average_scores": {
+        "codebleu": 0.8744200013647869,
+        "ngram_match_score": 0.7695877445788367,
+        "weighted_ngram_match_score": 0.955378084929485,
+        "syntax_match_score": 0.9635036496350364,
+        "dataflow_match_score": 0.8092105263157895
+      }
+    },
+    "repoeval_VisuElements": {
+      "status": "新增项目",
+      "baseline_exists": false,
+      "compare_exists": true,
+      "total_files": 3,
+      "successful_evaluations": 3,
+      "average_scores": {
+        "codebleu": 0.6800214896946134,
+        "ngram_match_score": 0.45826053231187264,
+        "weighted_ngram_match_score": 0.6748183479452711,
+        "syntax_match_score": 0.8161021984551396,
+        "dataflow_match_score": 0.7709048800661704
+      }
+    },
+    "repoeval_Wrappers": {
+      "status": "共同项目",
+      "baseline_exists": true,
+      "compare_exists": true,
+      "total_files": {
+        "baseline": 1,
+        "compare": 1,
+        "diff": 0
+      },
+      "successful_evaluations": {
+        "baseline": 1,
+        "compare": 1,
+        "diff": 0
+      },
+      "average_scores": {
+        "codebleu": {
+          "baseline": 0.460177,
+          "compare": 0.263514,
+          "absolute_diff": -0.196663,
+          "relative_diff_percent": -42.74
+        },
+        "ngram_match_score": {
+          "baseline": 0.088653,
+          "compare": 0.0,
+          "absolute_diff": -0.088653,
+          "relative_diff_percent": -100.0
+        },
+        "weighted_ngram_match_score": {
+          "baseline": 0.324391,
+          "compare": 0.0,
+          "absolute_diff": -0.324391,
+          "relative_diff_percent": -100.0
+        },
+        "syntax_match_score": {
+          "baseline": 0.486486,
+          "compare": 0.054054,
+          "absolute_diff": -0.432432,
+          "relative_diff_percent": -88.89
+        },
+        "dataflow_match_score": {
+          "baseline": 0.941176,
+          "compare": 0.0,
+          "absolute_diff": -0.941176,
+          "relative_diff_percent": -100.0
+        }
+      }
+    },
+    "repoeval_assembly-station": {
+      "status": "共同项目",
+      "baseline_exists": true,
+      "compare_exists": true,
+      "total_files": {
+        "baseline": 1,
+        "compare": 1,
+        "diff": 0
+      },
+      "successful_evaluations": {
+        "baseline": 1,
+        "compare": 1,
+        "diff": 0
+      },
+      "average_scores": {
+        "codebleu": {
+          "baseline": 0.242432,
+          "compare": 0.529609,
+          "absolute_diff": 0.287177,
+          "relative_diff_percent": 118.46
+        },
+        "ngram_match_score": {
+          "baseline": 0.049059,
+          "compare": 0.455626,
+          "absolute_diff": 0.406567,
+          "relative_diff_percent": 828.74
+        },
+        "weighted_ngram_match_score": {
+          "baseline": 0.069834,
+          "compare": 0.467763,
+          "absolute_diff": 0.397928,
+          "relative_diff_percent": 569.82
+        },
+        "syntax_match_score": {
+          "baseline": 0.619048,
+          "compare": 0.738095,
+          "absolute_diff": 0.119048,
+          "relative_diff_percent": 19.23
+        },
+        "dataflow_match_score": {
+          "baseline": 0.231788,
+          "compare": 0.456954,
+          "absolute_diff": 0.225166,
+          "relative_diff_percent": 97.14
+        }
+      }
+    },
+    "repoeval_barrier": {
+      "status": "共同项目",
+      "baseline_exists": true,
+      "compare_exists": true,
+      "total_files": {
+        "baseline": 13,
+        "compare": 13,
+        "diff": 0
+      },
+      "successful_evaluations": {
+        "baseline": 13,
+        "compare": 13,
+        "diff": 0
+      },
+      "average_scores": {
+        "codebleu": {
+          "baseline": 0.388456,
+          "compare": 0.60516,
+          "absolute_diff": 0.216704,
+          "relative_diff_percent": 55.79
+        },
+        "ngram_match_score": {
+          "baseline": 0.18261,
+          "compare": 0.448661,
+          "absolute_diff": 0.266052,
+          "relative_diff_percent": 145.69
+        },
+        "weighted_ngram_match_score": {
+          "baseline": 0.32884,
+          "compare": 0.601896,
+          "absolute_diff": 0.273057,
+          "relative_diff_percent": 83.04
+        },
+        "syntax_match_score": {
+          "baseline": 0.65026,
+          "compare": 0.818239,
+          "absolute_diff": 0.167979,
+          "relative_diff_percent": 25.83
+        },
+        "dataflow_match_score": {
+          "baseline": 0.392114,
+          "compare": 0.47492,
+          "absolute_diff": 0.082806,
+          "relative_diff_percent": 21.12
+        }
+      }
+    },
+    "repoeval_counter": {
+      "status": "共同项目",
+      "baseline_exists": true,
+      "compare_exists": true,
+      "total_files": {
+        "baseline": 1,
+        "compare": 1,
+        "diff": 0
+      },
+      "successful_evaluations": {
+        "baseline": 1,
+        "compare": 1,
+        "diff": 0
+      },
+      "average_scores": {
+        "codebleu": {
+          "baseline": 0.389409,
+          "compare": 0.505672,
+          "absolute_diff": 0.116264,
+          "relative_diff_percent": 29.86
+        },
+        "ngram_match_score": {
+          "baseline": 0.01534,
+          "compare": 0.034425,
+          "absolute_diff": 0.019085,
+          "relative_diff_percent": 124.42
+        },
+        "weighted_ngram_match_score": {
+          "baseline": 0.089914,
+          "compare": 0.093027,
+          "absolute_diff": 0.003113,
+          "relative_diff_percent": 3.46
+        },
+        "syntax_match_score": {
+          "baseline": 0.666667,
+          "compare": 0.966667,
+          "absolute_diff": 0.3,
+          "relative_diff_percent": 45.0
+        },
+        "dataflow_match_score": {
+          "baseline": 0.785714,
+          "compare": 0.928571,
+          "absolute_diff": 0.142857,
+          "relative_diff_percent": 18.18
+        }
+      }
+    },
+    "repoeval_electronic_cam_motion": {
+      "status": "共同项目",
+      "baseline_exists": true,
+      "compare_exists": true,
+      "total_files": {
+        "baseline": 4,
+        "compare": 4,
+        "diff": 0
+      },
+      "successful_evaluations": {
+        "baseline": 4,
+        "compare": 4,
+        "diff": 0
+      },
+      "average_scores": {
+        "codebleu": {
+          "baseline": 0.35054,
+          "compare": 0.632182,
+          "absolute_diff": 0.281643,
+          "relative_diff_percent": 80.35
+        },
+        "ngram_match_score": {
+          "baseline": 0.047647,
+          "compare": 0.473993,
+          "absolute_diff": 0.426346,
+          "relative_diff_percent": 894.8
+        },
+        "weighted_ngram_match_score": {
+          "baseline": 0.108026,
+          "compare": 0.556973,
+          "absolute_diff": 0.448947,
+          "relative_diff_percent": 415.59
+        },
+        "syntax_match_score": {
+          "baseline": 0.75356,
+          "compare": 0.819543,
+          "absolute_diff": 0.065983,
+          "relative_diff_percent": 8.76
+        },
+        "dataflow_match_score": {
+          "baseline": 0.492927,
+          "compare": 0.678221,
+          "absolute_diff": 0.185294,
+          "relative_diff_percent": 37.59
+        }
+      }
+    },
+    "repoeval_electronic_gear_motion": {
+      "status": "共同项目",
+      "baseline_exists": true,
+      "compare_exists": true,
+      "total_files": {
+        "baseline": 3,
+        "compare": 3,
+        "diff": 0
+      },
+      "successful_evaluations": {
+        "baseline": 3,
+        "compare": 3,
+        "diff": 0
+      },
+      "average_scores": {
+        "codebleu": {
+          "baseline": 0.389596,
+          "compare": 0.33797,
+          "absolute_diff": -0.051626,
+          "relative_diff_percent": -13.25
+        },
+        "ngram_match_score": {
+          "baseline": 0.049519,
+          "compare": 0.120581,
+          "absolute_diff": 0.071062,
+          "relative_diff_percent": 143.5
+        },
+        "weighted_ngram_match_score": {
+          "baseline": 0.086025,
+          "compare": 0.120588,
+          "absolute_diff": 0.034563,
+          "relative_diff_percent": 40.18
+        },
+        "syntax_match_score": {
+          "baseline": 0.716022,
+          "compare": 0.298086,
+          "absolute_diff": -0.417936,
+          "relative_diff_percent": -58.37
+        },
+        "dataflow_match_score": {
+          "baseline": 0.706817,
+          "compare": 0.145957,
+          "absolute_diff": -0.56086,
+          "relative_diff_percent": -79.35
+        }
+      }
+    },
+    "repoeval_elevator": {
+      "status": "共同项目",
+      "baseline_exists": true,
+      "compare_exists": true,
+      "total_files": {
+        "baseline": 5,
+        "compare": 5,
+        "diff": 0
+      },
+      "successful_evaluations": {
+        "baseline": 5,
+        "compare": 5,
+        "diff": 0
+      },
+      "average_scores": {
+        "codebleu": {
+          "baseline": 0.491658,
+          "compare": 0.699847,
+          "absolute_diff": 0.208189,
+          "relative_diff_percent": 42.34
+        },
+        "ngram_match_score": {
+          "baseline": 0.160909,
+          "compare": 0.474642,
+          "absolute_diff": 0.313732,
+          "relative_diff_percent": 194.97
+        },
+        "weighted_ngram_match_score": {
+          "baseline": 0.295664,
+          "compare": 0.824938,
+          "absolute_diff": 0.529274,
+          "relative_diff_percent": 179.01
+        },
+        "syntax_match_score": {
+          "baseline": 0.79306,
+          "compare": 0.849809,
+          "absolute_diff": 0.056749,
+          "relative_diff_percent": 7.16
+        },
+        "dataflow_match_score": {
+          "baseline": 0.717,
+          "compare": 0.65,
+          "absolute_diff": -0.067,
+          "relative_diff_percent": -9.34
+        }
+      }
+    },
+    "repoeval_four-level_elevator_control": {
+      "status": "共同项目",
+      "baseline_exists": true,
+      "compare_exists": true,
+      "total_files": {
+        "baseline": 3,
+        "compare": 3,
+        "diff": 0
+      },
+      "successful_evaluations": {
+        "baseline": 3,
+        "compare": 3,
+        "diff": 0
+      },
+      "average_scores": {
+        "codebleu": {
+          "baseline": 0.389594,
+          "compare": 0.319757,
+          "absolute_diff": -0.069837,
+          "relative_diff_percent": -17.93
+        },
+        "ngram_match_score": {
+          "baseline": 0.139566,
+          "compare": 0.049114,
+          "absolute_diff": -0.090452,
+          "relative_diff_percent": -64.81
+        },
+        "weighted_ngram_match_score": {
+          "baseline": 0.263939,
+          "compare": 0.133643,
+          "absolute_diff": -0.130295,
+          "relative_diff_percent": -49.37
+        },
+        "syntax_match_score": {
+          "baseline": 0.614156,
+          "compare": 0.258433,
+          "absolute_diff": -0.355723,
+          "relative_diff_percent": -57.92
+        },
+        "dataflow_match_score": {
+          "baseline": 0.540717,
+          "compare": 0.171171,
+          "absolute_diff": -0.369546,
+          "relative_diff_percent": -68.34
+        }
+      }
+    },
+    "repoeval_isScaleOutput": {
+      "status": "共同项目",
+      "baseline_exists": true,
+      "compare_exists": true,
+      "total_files": {
+        "baseline": 1,
+        "compare": 1,
+        "diff": 0
+      },
+      "successful_evaluations": {
+        "baseline": 1,
+        "compare": 1,
+        "diff": 0
+      },
+      "average_scores": {
+        "codebleu": {
+          "baseline": 0.755259,
+          "compare": 0.674699,
+          "absolute_diff": -0.08056,
+          "relative_diff_percent": -10.67
+        },
+        "ngram_match_score": {
+          "baseline": 0.499922,
+          "compare": 0.33646,
+          "absolute_diff": -0.163462,
+          "relative_diff_percent": -32.7
+        },
+        "weighted_ngram_match_score": {
+          "baseline": 0.577451,
+          "compare": 0.571256,
+          "absolute_diff": -0.006195,
+          "relative_diff_percent": -1.07
+        },
+        "syntax_match_score": {
+          "baseline": 0.943662,
+          "compare": 0.957746,
+          "absolute_diff": 0.014085,
+          "relative_diff_percent": 1.49
+        },
+        "dataflow_match_score": {
+          "baseline": 1.0,
+          "compare": 0.833333,
+          "absolute_diff": -0.166667,
+          "relative_diff_percent": -16.67
+        }
+      }
+    },
+    "repoeval_measurement_control": {
+      "status": "共同项目",
+      "baseline_exists": true,
+      "compare_exists": true,
+      "total_files": {
+        "baseline": 1,
+        "compare": 1,
+        "diff": 0
+      },
+      "successful_evaluations": {
+        "baseline": 1,
+        "compare": 1,
+        "diff": 0
+      },
+      "average_scores": {
+        "codebleu": {
+          "baseline": 0.14881,
+          "compare": 0.764951,
+          "absolute_diff": 0.616142,
+          "relative_diff_percent": 414.05
+        },
+        "ngram_match_score": {
+          "baseline": 0.0,
+          "compare": 0.482899,
+          "absolute_diff": 0.482899,
+          "relative_diff_percent": Infinity
+        },
+        "weighted_ngram_match_score": {
+          "baseline": 0.0,
+          "compare": 0.853097,
+          "absolute_diff": 0.853097,
+          "relative_diff_percent": Infinity
+        },
+        "syntax_match_score": {
+          "baseline": 0.0,
+          "compare": 0.985714,
+          "absolute_diff": 0.985714,
+          "relative_diff_percent": Infinity
+        },
+        "dataflow_match_score": {
+          "baseline": 0.595238,
+          "compare": 0.738095,
+          "absolute_diff": 0.142857,
+          "relative_diff_percent": 24.0
+        }
+      }
+    },
+    "repoeval_open-type_dual-axis_winding_machine": {
+      "status": "共同项目",
+      "baseline_exists": true,
+      "compare_exists": true,
+      "total_files": {
+        "baseline": 5,
+        "compare": 5,
+        "diff": 0
+      },
+      "successful_evaluations": {
+        "baseline": 5,
+        "compare": 5,
+        "diff": 0
+      },
+      "average_scores": {
+        "codebleu": {
+          "baseline": 0.333488,
+          "compare": 0.420996,
+          "absolute_diff": 0.087508,
+          "relative_diff_percent": 26.24
+        },
+        "ngram_match_score": {
+          "baseline": 0.063783,
+          "compare": 0.126239,
+          "absolute_diff": 0.062456,
+          "relative_diff_percent": 97.92
+        },
+        "weighted_ngram_match_score": {
+          "baseline": 0.106974,
+          "compare": 0.291534,
+          "absolute_diff": 0.18456,
+          "relative_diff_percent": 172.53
+        },
+        "syntax_match_score": {
+          "baseline": 0.467711,
+          "compare": 0.692538,
+          "absolute_diff": 0.224827,
+          "relative_diff_percent": 48.07
+        },
+        "dataflow_match_score": {
+          "baseline": 0.495483,
+          "compare": 0.573674,
+          "absolute_diff": 0.07819,
+          "relative_diff_percent": 15.78
+        }
+      }
+    },
+    "repoeval_plc_hello_mixing_tank": {
+      "status": "共同项目",
+      "baseline_exists": true,
+      "compare_exists": true,
+      "total_files": {
+        "baseline": 6,
+        "compare": 6,
+        "diff": 0
+      },
+      "successful_evaluations": {
+        "baseline": 6,
+        "compare": 6,
+        "diff": 0
+      },
+      "average_scores": {
+        "codebleu": {
+          "baseline": 0.356231,
+          "compare": 0.668306,
+          "absolute_diff": 0.312075,
+          "relative_diff_percent": 87.6
+        },
+        "ngram_match_score": {
+          "baseline": 0.080161,
+          "compare": 0.328024,
+          "absolute_diff": 0.247863,
+          "relative_diff_percent": 309.21
+        },
+        "weighted_ngram_match_score": {
+          "baseline": 0.136256,
+          "compare": 0.694871,
+          "absolute_diff": 0.558614,
+          "relative_diff_percent": 409.97
+        },
+        "syntax_match_score": {
+          "baseline": 0.460797,
+          "compare": 0.833993,
+          "absolute_diff": 0.373196,
+          "relative_diff_percent": 80.99
+        },
+        "dataflow_match_score": {
+          "baseline": 0.747711,
+          "compare": 0.816336,
+          "absolute_diff": 0.068625,
+          "relative_diff_percent": 9.18
+        }
+      }
+    },
+    "repoeval_readwriteFile": {
+      "status": "共同项目",
+      "baseline_exists": true,
+      "compare_exists": true,
+      "total_files": {
+        "baseline": 2,
+        "compare": 2,
+        "diff": 0
+      },
+      "successful_evaluations": {
+        "baseline": 2,
+        "compare": 2,
+        "diff": 0
+      },
+      "average_scores": {
+        "codebleu": {
+          "baseline": 0.585916,
+          "compare": 0.62504,
+          "absolute_diff": 0.039124,
+          "relative_diff_percent": 6.68
+        },
+        "ngram_match_score": {
+          "baseline": 0.403666,
+          "compare": 0.516228,
+          "absolute_diff": 0.112562,
+          "relative_diff_percent": 27.89
+        },
+        "weighted_ngram_match_score": {
+          "baseline": 0.403981,
+          "compare": 0.51868,
+          "absolute_diff": 0.114699,
+          "relative_diff_percent": 28.39
+        },
+        "syntax_match_score": {
+          "baseline": 0.858584,
+          "compare": 0.866991,
+          "absolute_diff": 0.008407,
+          "relative_diff_percent": 0.98
+        },
+        "dataflow_match_score": {
+          "baseline": 0.677433,
+          "compare": 0.598263,
+          "absolute_diff": -0.07917,
+          "relative_diff_percent": -11.69
+        }
+      }
+    },
+    "repoeval_three-axis_CNC_motion": {
+      "status": "共同项目",
+      "baseline_exists": true,
+      "compare_exists": true,
+      "total_files": {
+        "baseline": 5,
+        "compare": 5,
+        "diff": 0
+      },
+      "successful_evaluations": {
+        "baseline": 5,
+        "compare": 5,
+        "diff": 0
+      },
+      "average_scores": {
+        "codebleu": {
+          "baseline": 0.416374,
+          "compare": 0.377482,
+          "absolute_diff": -0.038892,
+          "relative_diff_percent": -9.34
+        },
+        "ngram_match_score": {
+          "baseline": 0.214848,
+          "compare": 0.119673,
+          "absolute_diff": -0.095176,
+          "relative_diff_percent": -44.3
+        },
+        "weighted_ngram_match_score": {
+          "baseline": 0.236613,
+          "compare": 0.182849,
+          "absolute_diff": -0.053764,
+          "relative_diff_percent": -22.72
+        },
+        "syntax_match_score": {
+          "baseline": 0.466931,
+          "compare": 0.49245,
+          "absolute_diff": 0.025518,
+          "relative_diff_percent": 5.47
+        },
+        "dataflow_match_score": {
+          "baseline": 0.547104,
+          "compare": 0.514955,
+          "absolute_diff": -0.032148,
+          "relative_diff_percent": -5.88
+        }
+      }
+    },
+    "repoeval_traffic_light": {
+      "status": "共同项目",
+      "baseline_exists": true,
+      "compare_exists": true,
+      "total_files": {
+        "baseline": 3,
+        "compare": 3,
+        "diff": 0
+      },
+      "successful_evaluations": {
+        "baseline": 3,
+        "compare": 3,
+        "diff": 0
+      },
+      "average_scores": {
+        "codebleu": {
+          "baseline": 0.459071,
+          "compare": 0.638924,
+          "absolute_diff": 0.179854,
+          "relative_diff_percent": 39.18
+        },
+        "ngram_match_score": {
+          "baseline": 0.23362,
+          "compare": 0.239456,
+          "absolute_diff": 0.005836,
+          "relative_diff_percent": 2.5
+        },
+        "weighted_ngram_match_score": {
+          "baseline": 0.233657,
+          "compare": 0.482323,
+          "absolute_diff": 0.248666,
+          "relative_diff_percent": 106.42
+        },
+        "syntax_match_score": {
+          "baseline": 0.61345,
+          "compare": 0.833918,
+          "absolute_diff": 0.220468,
+          "relative_diff_percent": 35.94
+        },
+        "dataflow_match_score": {
+          "baseline": 0.422222,
+          "compare": 0.333333,
+          "absolute_diff": -0.088889,
+          "relative_diff_percent": -21.05
+        }
+      }
+    }
+  },
+  "summary": {
+    "total_projects_change": -5,
+    "success_count_change": 0,
+    "failed_count_change": -5,
+    "newly_successful_projects": 0,
+    "newly_failed_projects": 0,
+    "codebleu_change": 17.82,
+    "improved_projects": 14,
+    "degraded_projects": 9,
+    "unchanged_projects": 1
+  }
+}

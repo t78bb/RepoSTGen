@@ -1,0 +1,28 @@
+{
+  "library": "BACnet2DefaultImpl",
+  "title": "RTS_SYSTIMEDATE_TO_STRING (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2DefaultImpl/Current/BACnetDefaultImpl/Functions/RTS_SYSTIMEDATE_TO_STRING.html",
+  "page_title": "RTS_SYSTIMEDATE_TO_STRING (FUN)",
+  "text": "\nFUNCTION RTS_SYSTIMEDATE_TO_STRING : STRING\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "RTS_SYSTIMEDATE_TO_STRING",
+          "Type": "STRING"
+        },
+        {
+          "Scope": "Input",
+          "Name": "std",
+          "Type": "SYSTIMEDATE"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_DYN_LIMITS (Alias)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/Basic-types/SMC_DYN_LIMITS.html",
+  "page_title": "SMC_DYN_LIMITS (ALIAS)",
+  "text": "\nTYPE SMC_DYN_LIMITS : SMRB.DynLimits\nHolds limits for the magnitude of the velocity (\nfVelMax\n),\nacceleration (\nfAccMax\n), deceleration (\nfDecMax\n),\njerk (\nfJerkMax\n) and torque (\nfTorqueMax\n).",
+  "tables": []
+}

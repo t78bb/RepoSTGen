@@ -1,0 +1,72 @@
+{
+  "library": "SML_Basic",
+  "title": "MC_Power_SML (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SML_Basic/Current/PLCopen/MC_Power_SML.html",
+  "page_title": "MC_Power_SML (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL MC_Power_SML\nControls the power stage of an axis and can be used to issue a quick stop.\nNote\nThe inputs are only processed if\nEnable\nis set.\nA call of\nMC_Power_SML\nwith\nbRegulatorOn=FALSE\nsets the axis state\nto\nPowerOff\n(disabled).\nA call of\nMC_Power_SML\nwith\nbRegulatorOn``=``TRUE\non a disabled axis sets\nthe axis state to\nStandstill\n, if there is no error on the axis.\nIf an error is detected, the state of the axis is set to\nErrorStop\n.\nIf the inputs\nEnable\n,\nbRegulatorOn\nand\nbDriveStart\nare\n``TRUE\nbut the output\nStatus\nremains in\nFALSE\nfor a long time, there may be a problem\nwith the power stage, or an external halt may be set.\nIf power fails (also during operation), the axis state is set to\nErrorStop\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "Axis_REF_SML",
+          "Comment": "Reference to the axis"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Enable",
+          "Type": "BOOL",
+          "Comment": "Enables the function block"
+        },
+        [
+          "bRegulatorOn",
+          "BOOL",
+          "Enables the power stage"
+        ],
+        [
+          "bDriveStart",
+          "BOOL",
+          "Disables the quickstop mechanism"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Status",
+          "Type": "BOOL",
+          "Comment": "Axis ready for motion"
+        },
+        [
+          "bRegulatorRealState",
+          "BOOL",
+          "Effective state of the power stage"
+        ],
+        [
+          "bDriveStartRealState",
+          "BOOL",
+          "Effective state of the quickstop mechanism"
+        ],
+        [
+          "Busy",
+          "BOOL",
+          "Function block is executing"
+        ],
+        [
+          "Error",
+          "BOOL",
+          "Signals that an error has occured"
+        ],
+        [
+          "ErrorID",
+          "SML_ERROR",
+          "Error number"
+        ]
+      ]
+    }
+  ]
+}

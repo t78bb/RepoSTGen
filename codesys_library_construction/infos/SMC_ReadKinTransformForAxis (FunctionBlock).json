@@ -1,0 +1,67 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_ReadKinTransformForAxis (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/Diagnostics/SMC_ReadKinTransformForAxis.html",
+  "page_title": "SMC_ReadKinTransformForAxis (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_ReadKinTransformForAxis\nThis function block returns the kinematic transformation for a given axis.\nIf a coupled kinematics is used for the axis group, each axis either belongs\nto the position kinematics, the orientation kinematics, or to no\ntransformation (additional axis).\nIf no coupled kinematics is used, then each axis that is part of the kinematics\n(i.e. that is not an additional axis) belongs the the main kinematics.\nFor example, to test whether a given axis with index i is an orientation or\nposition axis, call the FB with IdentInGroup = i and then test the returned\nKinTransform:\nitfOri\n:\nTRAFO.ISMOrientationKinematics\n;\nitfPos\n:\nTRAFO.ISMPositionKinematics\n;\nisOriAxis\n:=\n__QUERYINTERFACE\n(\nKinTransform\n,\nitfOri\n);\nisPosAxis\n:=\n__QUERYINTERFACE\n(\nKinTransform\n,\nitfPos\n);\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "AxisGroup",
+          "Type": "AXIS_GROUP_REF_SM3",
+          "Comment": "Reference to a group of axis"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Enable",
+          "Type": "BOOL",
+          "Comment": "Gets the kinematic transformation information of the axis\ncontinuously while enabled"
+        },
+        [
+          "IdentInGroup",
+          "IDENT_IN_GROUP_REF_SM3",
+          "The zero-based index of the axis inside the axis group"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Valid",
+          "Type": "BOOL",
+          "Comment": "TRUEif valid outputs are available"
+        },
+        [
+          "Busy",
+          "BOOL",
+          "The FB is not finished"
+        ],
+        [
+          "Error",
+          "BOOL",
+          "Signals that an error has occurred within the function block"
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ],
+        [
+          "KinTransform",
+          "TRAFO.MC_KIN_REF_SM3",
+          "The kinematic transformation for the axis or 0 if the axis\nis an additional axis and not part of the kinematics."
+        ],
+        [
+          "identInKinematics",
+          "UDINT",
+          "The zero-based index of the axis insideKinTransform.  Only\nvalid ifKinTransform<> 0."
+        ]
+      ]
+    }
+  ]
+}

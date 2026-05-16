@@ -1,0 +1,33 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_GVar_Type (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/GSentence/SMC_GVar_Type.html",
+  "page_title": "SMC_GVar_Type (ENUM)",
+  "text": "\nTYPE SMC_GVar_Type :\nThe supported types of variables, formal subprogram parameters, and\nexpressions in G-Code.\nNote that there is only one numeric type, LREAL.  All  numeric values\nare represented as an LREAL.\nSee\nSMC_NC_GArgumentValue\n, a union that holds the value of\na variable or expression.\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "T_BOOL",
+          "Comment": "Boolean type, TRUE or FALSE."
+        },
+        {
+          "Name": "T_LREAL",
+          "Comment": "Numeric type (both integer and floating point types)"
+        },
+        {
+          "Name": "T_STRING",
+          "Comment": "String of maximum length 255."
+        },
+        {
+          "Name": "T_OTHER",
+          "Comment": "Other type, used e.g. for M-Function parameters and\nfor functions that accept and return arbitrary types."
+        }
+      ]
+    }
+  ]
+}

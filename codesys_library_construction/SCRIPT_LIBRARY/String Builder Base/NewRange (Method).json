@@ -1,0 +1,41 @@
+{
+  "library": "String Builder Base",
+  "title": "NewRange (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Builder Base/Current/BuilderBase/Internals/pou-_RangePool/Protected/NewRange.html",
+  "page_title": "_RangePool.NewRange (METH)",
+  "text": "\nMETHOD PROTECTED NewRange : STR.IRange\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "NewRange",
+          "Type": "STR.IRange"
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfStrRep",
+          "Type": "STR.IStringRepresentation"
+        },
+        [
+          "pbyMemory",
+          "POINTER TO BYTE"
+        ],
+        [
+          "udiMemSize",
+          "UDINT"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "eErrorID",
+          "Type": "STR.ERROR"
+        }
+      ]
+    }
+  ]
+}

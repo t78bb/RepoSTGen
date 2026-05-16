@@ -1,0 +1,5 @@
+{
+  "requirement": "This code is intended to implement a file-saving functionality that generates a timestamped file name based on the current system time and device name, and opens the file for writing.",
+  "provide_code": "FUNCTION_BLOCK fileSave\nVAR_INPUT\n\tfilePath \t:STRING;\n\tintervalt\t:INT;\n\tdevName\t\t: STRING ;\nEND_VAR",
+  "function_name": "fileSave_new"
+}

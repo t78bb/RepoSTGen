@@ -1,0 +1,110 @@
+{
+  "library": "ModbusFB",
+  "title": "ClientRequest (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/ModbusFB/Current/ModbusFB/Function-Blocks/Client/ClientRequest.html#",
+  "page_title": "ClientRequest (FB)",
+  "text": "Library Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nModbusFB\nEnums\nError (Enum)\nExceptionCodes (Enum)\nFunctionCodes (Enum)\nLoggingOptions (Enum)\nPrimaryTables (Enum)\nRtuAscii (Enum)\nSerialSubFunctionCodes (Enum)\nFunction Blocks\nClient\nClient (FunctionBlock)\nClientRequest (FunctionBlock)\nClientRequestMaskWriteRegister (FunctionBlock)\nClientRequestRead (FunctionBlock)\nClientRequestReadBits (FunctionBlock)\nClientRequestReadCoils (FunctionBlock)\nClientRequestReadDiscreteInputs (FunctionBlock)\nClientRequestReadHoldingRegisters (FunctionBlock)\nClientRequestReadInputRegisters (FunctionBlock)\nClientRequestReadRegisters (FunctionBlock)\nClientRequestReadWriteMultipleRegisters (FunctionBlock)\nClientRequestWriteMultiple (FunctionBlock)\nClientRequestWriteMultipleCoils (FunctionBlock)\nClientRequestWriteMultipleRegisters (FunctionBlock)\nClientRequestWriteSingle (FunctionBlock)\nClientRequestWriteSingleCoil (FunctionBlock)\nClientRequestWriteSingleRegister (FunctionBlock)\nClientSerial (FunctionBlock)\nClientTCP (FunctionBlock)\nServer\nExampleDataModel (FunctionBlock)\nServer (FunctionBlock)\nServerSerial (FunctionBlock)\nServerTCP (FunctionBlock)\nUtil\nByteBuffer (FunctionBlock)\nGlobalConstants\nConstants (GVL)\nParameter (ParamList)\nStructs\nRequestData (Struct)\nRequestDataDiagnostics (Struct)\nRequestDataMaskWriteRegister (Struct)\nRequestDataRead (Struct)\nRequestDataReadWriteMultipleRegisters (Struct)\nRequestDataWriteMultiple (Struct)\nRequestDataWriteSingle (Struct)\nRequestUnion (Union)\nSupportedFcs (Struct)\nTableDefinition (Struct)\nTableDefinitions (Struct)\nTableSection (Struct)\nFile and Project Information\nLibrary Reference\n3SLicense\nLibrary Identification\nLibrary Properties\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nCmpLog\nLibrary Identification\nLibrary Properties\nCommon Behaviour Model\nLibrary Identification\nLibrary Properties\nComponent Manager\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nStringUtils\nLibrary Identification\nLibrary Properties\nSysCom\nLibrary Identification\nLibrary Properties\nSysCpuHandling\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysSocket\nLibrary Identification\nLibrary Properties\nSysTarget\nLibrary Identification\nLibrary Properties\nSysTimeCore\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nModbusFB\nDocs\n»\nModbusFB\n»\nFunction\nBlocks\n»\nClient\n»\nClientRequest (FB)\nClientRequest (FB)\nÂ¶\nFUNCTION_BLOCK ABSTRACT ClientRequest EXTENDS CBML.ETrigTo IMPLEMENTS IClientRequest\nMODBUS client (master) request base class.\nThere are specific client request function blocks related to all supported MODBUS âfunction codesâ.\nA ClientRequest relies on a\nClient\nto provide the communication infrastructure,\nthis means a ClientRequest needs to be connected to one Client (\nClientSerial\nor\nClientTCP\n) to work with.\nOnce a client request is triggered (rising edge on xExecute) it is processed by the\nClient\nit is connected to.\nThe Client does process the triggered requests strictly in the order they got triggered (first come, first served).\nA successful client request is indicated by xDone=TRUE, a client request in progress is indicated by xBusy=TRUE.\nA failed client request is indicated by xError=TRUE, and a specific eErrorID.\nClientRequest does have a timeout (it extends CBML.ETrigTo - udiTimeout in Âµs) to avoid endless, effectless client operations.\nSo in general the application should:\n- trigger the request with rising edge on xExecute (set xExecute:=TRUE)\n- check if request is done (xDone=TRUE) or error occured (xError=TRUE)\n- falling edge on xExecute (set xExecute:=FALSE)\n- eventually repeat\nClient request errors and timeout\nÂ¶\nA client request can fail (xError=TRUE) for different reason:\nâexception replyâ - the server is answering in time, but signals an invalid request.\nIn this case eErrorID is set to Error.RequestException and eException contains the specific exception code.\nThis is kind of a normal reply a server can do, because of client request parameters not valid for the server âdata modelâ.\nâreply timeoutâ - the server is not answering in time (udiReplyTimeout - for consistency to CBML.ETrigTo.udiTimeout in Âµs as well).\nThis includes incomplete (frames) or invalid replies which are dropped, but does not include âexception repliesâ.\nIn this case eErrorID is set to Error.ReplyTimeout.\nIn general the application canât do a lot about this type of error except choosing adequate udiReplyTimeout.\nârequest starvationâ - too many client requests triggered in parallel, causing a timeout (see udiTimeout) before server reply or âreply timeoutâ happens.\nIn this case eErrorID is set to Error.RequestNotProcessed.\nIn general the application is responsible to avoid ârequest starvationâ.\nThe client does process the client requests as fast as possible, but in sequential order.\nProcessing one client request involves waiting for the server reply to be processed (including eventual âreply timeoutâ).\nIn case a number of client requests are triggered in parallel,\nprocessing time and waiting sums up for the subsequent client requests triggered already, but not processed yet.\nBecause ârequest starvationâ can not be avoided in general, it is recommended to trigger client requests in âdaisy chainsâ\n(first client request xDone=TRUE or xError=TRUE triggering second client request) to avoid client ârequest starvationâ at all.\nClient request errors and connection shutdown\nÂ¶\nIn case of a client request there is no other action on client involved - the client connection stays alive.\nIn case there is a need to disconnect the client (shutdown the client connection either TCP or serial)\non such a single client request error, this has to be done in the application by setting client.xConnect:=FALSE.\nTimeout default\nÂ¶\nIt is not possible to overload member defaults of base classes in IEC61131.\nCBML.ETrigTo defaults udiTimeout to 0 which is not optimal for ClientRequestâs\nbecause itâs state machine would get stuck without timeout on âreply timeoutâ or ârequest starvationâ.\nSo ClientRequest.fb_init writes udiTimeout to 2s (in Âµs) initially.\nIn case you want to chose another udiTimeout you need to assign it explicitly after initializaton (in a PLC application cycle).\nâdata itemâ offset / âdata itemâ numbers\nÂ¶\nPlease note: unlike standard MODBUS, in CODESYS MODBUS the âdata itemâ numbers are equal to the âdata addressesâ.\nThe MODBUS standard states: âIn the MODBUS data Model each element within a data block is numbered from 1 to n.â\nIn CODESYS MODBUS the âdata itemsâ are numbered from 0 to n-1.\nInOut:\nScope\nName\nType\nInitial\nComment\nInherited from\nInput\nxExecute\nBOOL\nRising edge: Starts defined operation\nFALSE\n: Resets the defined operation after ready condition was reached\nETrigTo\nudiTimeOut\nUDINT\nMax. operating time for executing\n[Âµs], 0: No operating time limit\nETrigTo\nOutput\nxDone\nBOOL\nReady condition reached\nETrigTo\nxBusy\nBOOL\nOperation is running\nETrigTo\nxError\nBOOL\nError condition reached\nETrigTo\nInout\nrClient\nClient\nReference to\nClient\n.\nInput\nuiUnitId\nUINT\n0\nUnit-Id to send the request to.\nudiReplyTimeout\nUDINT\n(50 * 1000)\nReply timeout in Âµs - accepted maxmimum time between request\nmessage send and reply message receveived - default 50ms.\nuiMaxRetries\nUINT\n0\nMaximum number of request retries in case of âreply\ntimeoutâ.\nOutput\neErrorID\nError\nError status\neException\nExceptionCodes\nRequest exception code.\nuiRetryCnt\nUINT\n0\nNumber of request retries in case of âreply timeoutâ.",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment",
+        "Inherited from"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "xExecute",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Rising edge: Starts defined operationFALSE: Resets the defined operation after ready condition was reached",
+          "Inherited from": "ETrigTo"
+        },
+        [
+          "udiTimeOut",
+          "UDINT",
+          "",
+          "Max. operating time for executing\n[Âµs], 0: No operating time limit",
+          "ETrigTo"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "xDone",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Ready condition reached",
+          "Inherited from": "ETrigTo"
+        },
+        [
+          "xBusy",
+          "BOOL",
+          "",
+          "Operation is running",
+          "ETrigTo"
+        ],
+        [
+          "xError",
+          "BOOL",
+          "",
+          "Error condition reached",
+          "ETrigTo"
+        ],
+        {
+          "Scope": "Inout",
+          "Name": "rClient",
+          "Type": "Client",
+          "Initial": "",
+          "Comment": "Reference toClient.",
+          "Inherited from": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "uiUnitId",
+          "Type": "UINT",
+          "Initial": "0",
+          "Comment": "Unit-Id to send the request to.",
+          "Inherited from": ""
+        },
+        [
+          "udiReplyTimeout",
+          "UDINT",
+          "(50 * 1000)",
+          "Reply timeout in Âµs - accepted maxmimum time between request\nmessage send and reply message receveived - default 50ms.",
+          ""
+        ],
+        [
+          "uiMaxRetries",
+          "UINT",
+          "0",
+          "Maximum number of request retries in case of âreply\ntimeoutâ.",
+          ""
+        ],
+        {
+          "Scope": "Output",
+          "Name": "eErrorID",
+          "Type": "Error",
+          "Initial": "",
+          "Comment": "Error status",
+          "Inherited from": ""
+        },
+        [
+          "eException",
+          "ExceptionCodes",
+          "",
+          "Request exception code.",
+          ""
+        ],
+        [
+          "uiRetryCnt",
+          "UINT",
+          "0",
+          "Number of request retries in case of âreply timeoutâ.",
+          ""
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "library": "String Segments",
+  "title": "GetRangeSize (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Segments/Current/Strings/Functionblocks/pou-_RangePool/Protected/GetRangeSize.html",
+  "page_title": "_RangePool.GetRangeSize (METH)",
+  "text": "\nMETHOD FINAL PROTECTED GetRangeSize : UDINT\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetRangeSize",
+          "Type": "UDINT"
+        }
+      ]
+    }
+  ]
+}

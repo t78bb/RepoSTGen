@@ -1,0 +1,36 @@
+{
+  "library": "Util",
+  "title": "ROTATION_DIFFERENCE (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/Mathematical-Functions/ROTATION_DIFFERENCE.html",
+  "page_title": "ROTATION_DIFFERENCE (FB)",
+  "text": "\nFUNCTION_BLOCK ROTATION_DIFFERENCE\nComputes the difference between two UINT values without rollover\nThis function block receives two values e.g. from an motion encoder and calculates the difference between the two positions.\nIf curValue := 65535 and lastValue := 15, a negative rotation is detected and diffValues := -16.\nIf lastValue := 65535 and curValue := 15, a positive rotation is detected and diffValues := 16.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "curValue",
+          "Type": "UINT",
+          "Comment": "Current value of rotation"
+        },
+        [
+          "lastValue",
+          "UINT",
+          "Last value of rotation"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "diffValues",
+          "Type": "INT",
+          "Comment": "Difference between the two values without rollover"
+        }
+      ]
+    }
+  ]
+}

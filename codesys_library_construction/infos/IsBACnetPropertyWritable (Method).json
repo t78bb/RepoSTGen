@@ -1,0 +1,32 @@
+{
+  "library": "BACnet",
+  "title": "IsBACnetPropertyWritable (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetServer/pou-IBACnetServer/PropertyAttributes/IsBACnetPropertyWritable.html",
+  "page_title": "IBACnetServer.IsBACnetPropertyWritable (METH)",
+  "text": "\nMETHOD IsBACnetPropertyWritable : BOOL\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "IsBACnetPropertyWritable",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Input",
+          "Name": "objID",
+          "Type": "CmpBACnet.IEC_BACNET_OBJECT_ID"
+        },
+        [
+          "propID",
+          "CmpBACnet.IEC_BACNET_PROPERTY_ID"
+        ]
+      ]
+    }
+  ]
+}

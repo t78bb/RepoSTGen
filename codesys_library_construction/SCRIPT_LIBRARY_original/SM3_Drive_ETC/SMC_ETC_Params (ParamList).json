@@ -1,0 +1,45 @@
+{
+  "library": "SM3_Drive_ETC",
+  "title": "SMC_ETC_Params (ParamList)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Drive_ETC/Current/SMC_ETC_Params.html",
+  "page_title": "SMC_ETC_Params (PARAMS)",
+  "text": "AXIS_REF_ETC_BASE_SM3 (FunctionBlock)\nParameterAccess\nGetSlaveId (Method)\nGlobalTextList (GlobalTextList)\nSMC3_ETC\nvisu templates\nSMC_ETC_InterpolateAxisPosition (Function)\nSMC_ETC_Params (ParamList)\nSMC_ETC_Timestamp_32bitTo64bit (Function)\nSMC_Set_ETC_DCSyncSupervision (FunctionBlock)\nFile and Project Information\nLibrary Reference\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nCmpIecTask\nLibrary Identification\nLibrary Properties\nCmpLog\nLibrary Identification\nLibrary Properties\nIoStandard\nLibrary Identification\nLibrary Properties\nSM3_Basic\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nSM3_ETC_ITF\nLibrary Identification\nLibrary Properties\nSM3_RBase\nLibrary Identification\nLibrary Properties\nSM3_Shared\nLibrary Identification\nLibrary Properties\nSM3_StringUtils\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nVisuElem3DPath\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElemCamDisplayer\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElemMeter\nLibrary Identification\nLibrary Properties\nVisuElemTextEditor\nLibrary Identification\nLibrary Properties\nVisuElemTrace\nLibrary Identification\nLibrary Properties\nVisuElems\nLibrary Identification\nLibrary Properties\nVisuElemsAlarm\nLibrary Identification\nLibrary Properties\nVisuElemsDateTime\nLibrary Identification\nLibrary Properties\nVisuElemsSpecialControls\nLibrary Identification\nLibrary Properties\nVisuElemsWinControls\nLibrary Identification\nLibrary Properties\nVisuInputs\nLibrary Identification\nLibrary Properties\nVisuNativeControl\nLibrary Identification\nLibrary Properties\nSM3_Drive_ETC\nDocs\n»\nSMC_ETC_Params (PARAMS)\nSMC_ETC_Params (PARAMS)\nÂ¶\nAttributes:\nqualified_only\nInOut:\nScope\nName\nType\nInitial\nComment\nConstant\nSDO_TIMEOUT_MS\nUDINT\n10000\nThe timeout used for reading and writing SDOs, in\nmilliseconds.\nIDN_READ_WRITE_TIMEOUT_MS\nUDINT\n10000\nThe timeout used for reading and writing IDNs, in\nmilliseconds.\nIDN_RESET_TIMEOUT_MS\nUDINT\n60000\nThe timeout used for the IDN 99 reset command, in\nmilliseconds\nIDN_REFERENCE_TIMEOUT_MS\nUDINT\n16#FFFFFFFF\nThe timeout used for the IDN 149 reference command, in\nmilliseconds",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Constant",
+          "Name": "SDO_TIMEOUT_MS",
+          "Type": "UDINT",
+          "Initial": "10000",
+          "Comment": "The timeout used for reading and writing SDOs, in\nmilliseconds."
+        },
+        [
+          "IDN_READ_WRITE_TIMEOUT_MS",
+          "UDINT",
+          "10000",
+          "The timeout used for reading and writing IDNs, in\nmilliseconds."
+        ],
+        [
+          "IDN_RESET_TIMEOUT_MS",
+          "UDINT",
+          "60000",
+          "The timeout used for the IDN 99 reset command, in\nmilliseconds"
+        ],
+        [
+          "IDN_REFERENCE_TIMEOUT_MS",
+          "UDINT",
+          "16#FFFFFFFF",
+          "The timeout used for the IDN 149 reference command, in\nmilliseconds"
+        ]
+      ]
+    }
+  ]
+}

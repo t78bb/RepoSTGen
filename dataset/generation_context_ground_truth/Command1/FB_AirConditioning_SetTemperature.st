@@ -1,0 +1,3 @@
+
+
+lrTemperature := lrNewTemperature;

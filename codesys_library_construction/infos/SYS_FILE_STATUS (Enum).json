@@ -1,0 +1,37 @@
+{
+  "library": "SysFile",
+  "title": "SYS_FILE_STATUS (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SysFile/Current/SYS_FILE_STATUS.html",
+  "page_title": "SYS_FILE_STATUS (ENUM)",
+  "text": "\nTYPE SYS_FILE_STATUS :\nFile status\nActual file status of the specified file.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "FS_OK",
+          "Comment": "File could be opened"
+        },
+        {
+          "Name": "FS_NO_FILE",
+          "Comment": "No file available"
+        },
+        {
+          "Name": "FS_ILLEGAL_POS",
+          "Comment": "Illegal position in the file"
+        },
+        {
+          "Name": "FS_FULL",
+          "Comment": "No more space on the filesystem"
+        },
+        {
+          "Name": "FS_EOF",
+          "Comment": "End of file reached"
+        }
+      ]
+    }
+  ]
+}

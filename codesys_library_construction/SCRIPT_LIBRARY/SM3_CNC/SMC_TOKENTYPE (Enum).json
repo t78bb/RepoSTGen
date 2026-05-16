@@ -1,0 +1,41 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_TOKENTYPE (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_Data-types/File/SMC_TOKENTYPE.html",
+  "page_title": "SMC_TOKENTYPE (ENUM)",
+  "text": "\nTYPE SMC_TOKENTYPE :\nThe possible types of tokens.  (See\nSMC_Token\n.)\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "identifier",
+          "Comment": "An identifier"
+        },
+        {
+          "Name": "strLiteral",
+          "Comment": "A string literal"
+        },
+        {
+          "Name": "number",
+          "Comment": "A number, represented as an LREAL"
+        },
+        {
+          "Name": "operator",
+          "Comment": "An operator such as â+â or â/â"
+        },
+        {
+          "Name": "variable",
+          "Comment": "An IEC variable"
+        },
+        {
+          "Name": "localVariable",
+          "Comment": "A variable local to the g-code, or a function argument"
+        }
+      ]
+    }
+  ]
+}

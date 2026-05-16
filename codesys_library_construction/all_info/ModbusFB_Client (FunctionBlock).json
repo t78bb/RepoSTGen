@@ -1,0 +1,100 @@
+{
+  "library": "ModbusFB",
+  "title": "Client (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/ModbusFB/Current/ModbusFB/Function-Blocks/Client/Client.html",
+  "page_title": "Client (FB)",
+  "text": "Library Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nModbusFB\nEnums\nError (Enum)\nExceptionCodes (Enum)\nFunctionCodes (Enum)\nLoggingOptions (Enum)\nPrimaryTables (Enum)\nRtuAscii (Enum)\nSerialSubFunctionCodes (Enum)\nFunction Blocks\nClient\nClient (FunctionBlock)\nClientRequest (FunctionBlock)\nClientRequestMaskWriteRegister (FunctionBlock)\nClientRequestRead (FunctionBlock)\nClientRequestReadBits (FunctionBlock)\nClientRequestReadCoils (FunctionBlock)\nClientRequestReadDiscreteInputs (FunctionBlock)\nClientRequestReadHoldingRegisters (FunctionBlock)\nClientRequestReadInputRegisters (FunctionBlock)\nClientRequestReadRegisters (FunctionBlock)\nClientRequestReadWriteMultipleRegisters (FunctionBlock)\nClientRequestWriteMultiple (FunctionBlock)\nClientRequestWriteMultipleCoils (FunctionBlock)\nClientRequestWriteMultipleRegisters (FunctionBlock)\nClientRequestWriteSingle (FunctionBlock)\nClientRequestWriteSingleCoil (FunctionBlock)\nClientRequestWriteSingleRegister (FunctionBlock)\nClientSerial (FunctionBlock)\nClientTCP (FunctionBlock)\nServer\nExampleDataModel (FunctionBlock)\nServer (FunctionBlock)\nServerSerial (FunctionBlock)\nServerTCP (FunctionBlock)\nUtil\nByteBuffer (FunctionBlock)\nGlobalConstants\nConstants (GVL)\nParameter (ParamList)\nStructs\nRequestData (Struct)\nRequestDataDiagnostics (Struct)\nRequestDataMaskWriteRegister (Struct)\nRequestDataRead (Struct)\nRequestDataReadWriteMultipleRegisters (Struct)\nRequestDataWriteMultiple (Struct)\nRequestDataWriteSingle (Struct)\nRequestUnion (Union)\nSupportedFcs (Struct)\nTableDefinition (Struct)\nTableDefinitions (Struct)\nTableSection (Struct)\nFile and Project Information\nLibrary Reference\n3SLicense\nLibrary Identification\nLibrary Properties\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nCmpLog\nLibrary Identification\nLibrary Properties\nCommon Behaviour Model\nLibrary Identification\nLibrary Properties\nComponent Manager\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nStringUtils\nLibrary Identification\nLibrary Properties\nSysCom\nLibrary Identification\nLibrary Properties\nSysCpuHandling\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysSocket\nLibrary Identification\nLibrary Properties\nSysTarget\nLibrary Identification\nLibrary Properties\nSysTimeCore\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nModbusFB\nDocs\n»\nModbusFB\n»\nFunction\nBlocks\n»\nClient\n»\nClient (FB)\nClient (FB)\nÂ¶\nFUNCTION_BLOCK ABSTRACT Client IMPLEMENTS IClient\nMODBUS client (master) base class.\nClient provides the communication infrastructure for\nClientRequest\nto work with.\nInOut:\nScope\nName\nType\nInitial\nComment\nInput\nxConnect\nBOOL\nFALSE\nConnect to server (slave).\nOutput\nxConnected\nBOOL\nClient (master) is connected to server (slave).\nxError\nBOOL\nError\neErrorID\nError\nError status\nudiNumMsgSent\nUDINT\nNumber of request messages send since connect.\nudiNumMsgReply\nUDINT\nNumber of reply messages received since connect.\nudiNumMsgExcReply\nUDINT\nNumber of exception reply messages received since connect.\nudiNumMsgExcReplyIllFct\nUDINT\nNumber of exception reply messages received since connect,\nsignaling illegal function.\nudiNumMsgExcReplyIllDataAdr\nUDINT\nNumber of exception reply messages received since connect,\nsignaling illegal data address.\nudiNumReplyTimeouts\nUDINT\nNumber of reply timeouts since connect.\nudiNumReqNotProcessed\nUDINT\nNumber of requests not processed in time (ârequest\nstarvationâ) since connect.\nudiNumReqParamError\nUDINT\nNumber of requests started with parameter error, for example\nâRead Coilsâ -> âQuantity of coilsâ = 0.\nudiLastTransactionTime\nUDINT\nTransaction time in ms - time difference between request\nmessage send und reply message received.",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "xConnect",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "Connect to server (slave)."
+        },
+        {
+          "Scope": "Output",
+          "Name": "xConnected",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Client (master) is connected to server (slave)."
+        },
+        [
+          "xError",
+          "BOOL",
+          "",
+          "Error"
+        ],
+        [
+          "eErrorID",
+          "Error",
+          "",
+          "Error status"
+        ],
+        [
+          "udiNumMsgSent",
+          "UDINT",
+          "",
+          "Number of request messages send since connect."
+        ],
+        [
+          "udiNumMsgReply",
+          "UDINT",
+          "",
+          "Number of reply messages received since connect."
+        ],
+        [
+          "udiNumMsgExcReply",
+          "UDINT",
+          "",
+          "Number of exception reply messages received since connect."
+        ],
+        [
+          "udiNumMsgExcReplyIllFct",
+          "UDINT",
+          "",
+          "Number of exception reply messages received since connect,\nsignaling illegal function."
+        ],
+        [
+          "udiNumMsgExcReplyIllDataAdr",
+          "UDINT",
+          "",
+          "Number of exception reply messages received since connect,\nsignaling illegal data address."
+        ],
+        [
+          "udiNumReplyTimeouts",
+          "UDINT",
+          "",
+          "Number of reply timeouts since connect."
+        ],
+        [
+          "udiNumReqNotProcessed",
+          "UDINT",
+          "",
+          "Number of requests not processed in time (ârequest\nstarvationâ) since connect."
+        ],
+        [
+          "udiNumReqParamError",
+          "UDINT",
+          "",
+          "Number of requests started with parameter error, for example\nâRead Coilsâ -> âQuantity of coilsâ = 0."
+        ],
+        [
+          "udiLastTransactionTime",
+          "UDINT",
+          "",
+          "Transaction time in ms - time difference between request\nmessage send und reply message received."
+        ]
+      ]
+    }
+  ]
+}

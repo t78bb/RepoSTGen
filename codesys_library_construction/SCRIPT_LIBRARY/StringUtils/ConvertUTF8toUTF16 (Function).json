@@ -1,0 +1,46 @@
+{
+  "library": "StringUtils",
+  "title": "ConvertUTF8toUTF16 (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/StringUtils/Current/Public-Parts/UTF8/ConvertUTF8toUTF16.html",
+  "page_title": "ConvertUTF8toUTF16 (FUN)",
+  "text": "\nFUNCTION ConvertUTF8toUTF16 : UDINT\nThis function converts an UTF-8 encoded string to an UTF-16 encoded string (may be wrong for 3 or 4 character encoded UTF16 characters).\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "ConvertUTF8toUTF16",
+          "Type": "UDINT",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "sourceStart",
+          "Type": "POINTER TO BYTE",
+          "Comment": "Pointer to the UTF-8 string to convert"
+        },
+        [
+          "targetStart",
+          "POINTER TO WORD",
+          "Pointer to the WSTRING the result shall be stored in"
+        ],
+        [
+          "dwTargetBufferSize",
+          "DWORD",
+          "The size (in bytes) of the buffer (targetStart) the result\nshall be stored in"
+        ],
+        [
+          "bStrictConversion",
+          "BOOL",
+          "Do not continue on illegal characters"
+        ]
+      ]
+    }
+  ]
+}

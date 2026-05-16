@@ -1,0 +1,33 @@
+{
+  "library": "MQTT Client SL",
+  "title": "MQTT_RETAIN_HANDLING (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/MQTT Client SL/Current/MQTT-Client/Common/Enums/V5/MQTT_RETAIN_HANDLING.html",
+  "page_title": "MQTT_RETAIN_HANDLING (ENUM)",
+  "text": "\nTYPE MQTT_RETAIN_HANDLING :\nEnum for the Retain Handling option.\nThis option specifies whether retained messages are sent when the subscription is established\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "Time_Of_Subscribe",
+          "Initial": "0",
+          "Comment": ""
+        },
+        {
+          "Name": "Not_Exists",
+          "Initial": "1",
+          "Comment": "Send retained messages at the time of the subscribe"
+        },
+        {
+          "Name": "Do_Not_Send",
+          "Initial": "2",
+          "Comment": "Send retained messages at subscribe only if the subscription does not currently exist\nDo not send retained messages at the time of the subscribe"
+        }
+      ]
+    }
+  ]
+}

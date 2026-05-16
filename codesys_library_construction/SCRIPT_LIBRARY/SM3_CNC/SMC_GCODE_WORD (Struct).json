@@ -1,0 +1,49 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_GCODE_WORD (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_Data-types/SoftMotion-CNC/SMC_GCODE_WORD.html",
+  "page_title": "SMC_GCODE_WORD (STRUCT)",
+  "text": "\nTYPE SMC_GCODE_WORD : STRUCT\nThis data type includes the data of one G-code word like âN20â or âG1â.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "fValue",
+          "Type": "LREAL",
+          "Initial": "0",
+          "Comment": "Value asLREAL.  This value is used bySMC_NCDecoder.\nIf the SMC_GCODE_WORD is created programatically, this value\nhas to be set for all g-words (e.g. for âM5â, set it to 5.0)."
+        },
+        {
+          "Name": "diValue",
+          "Type": "DINT",
+          "Initial": "0",
+          "Comment": "Value asDINT.  Not used any more.  If the SMC_GCODE_WORD\nis created programatically, we recommend to set this value\nto TO_DINT(fValue)."
+        },
+        {
+          "Name": "pAdr",
+          "Type": "POINTER TO BYTE",
+          "Initial": "0",
+          "Comment": "If<>0, the value of this word is specified by a variable.pAdrpoints to this variable."
+        },
+        {
+          "Name": "byLetter",
+          "Type": "BYTE",
+          "Initial": "0",
+          "Comment": "ASCII-code of the letter of the word, e.g. 69 for âFâ"
+        },
+        {
+          "Name": "byVarType",
+          "Type": "BYTE",
+          "Initial": "0",
+          "Comment": "If<32, contains the variable type as defined inSMC_VARTYPE.If>=32, contains 32 + the variable type as defined\ninIBaseLibrary.TypeClass"
+        }
+      ]
+    }
+  ]
+}

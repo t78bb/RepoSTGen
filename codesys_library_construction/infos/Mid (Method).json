@@ -1,0 +1,35 @@
+{
+  "library": "StringUtils",
+  "title": "Mid (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/StringUtils/Current/Public-Parts/pou-CharBufferString/Mid.html",
+  "page_title": "CharBufferString.Mid (METH)",
+  "text": "\nMETHOD Mid\nReturn <iLength> characters of our string, beginning at the <iPosition>-th character position.\n<iPosition> = 1 is the first character. The result string is stored in the CharBufferString\ninstance <pstResult>\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "iLength",
+          "Type": "INT",
+          "Comment": ""
+        },
+        [
+          "iPosition",
+          "INT",
+          ""
+        ],
+        [
+          "cbsResult",
+          "REFERENCE TOCharBufferString",
+          "The CharBufferString instance, where the result will be\nreturned"
+        ]
+      ]
+    }
+  ]
+}

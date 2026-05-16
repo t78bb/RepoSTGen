@@ -1,0 +1,81 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_TRAFO_5Axes (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_Trafo_POUs/SoftMotion-Transformations/Gantry-systems/SMC_TRAFO_5Axes.html",
+  "page_title": "SMC_TRAFO_5Axes (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_TRAFO_5Axes\nReverse transformation, computes the axis positions\nso that the tool center point (TCP) achieves the\ndesired path position and orientation.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "pi",
+          "Type": "SMC_PosInfo",
+          "Comment": "Set position: Contains the path position in the\nvariables dX, dY, dZ and the orientation of the\ntool in dB (Inclination) and dC (Azimuth)."
+        },
+        [
+          "dOffsetX",
+          "LREAL",
+          "Offset values X"
+        ],
+        [
+          "dOffsetY",
+          "LREAL",
+          "Offset values Y"
+        ],
+        [
+          "dOffsetZ",
+          "LREAL",
+          "Offset values Z"
+        ],
+        [
+          "dOffsetIncl",
+          "LREAL",
+          "Offset values inclination"
+        ],
+        [
+          "dOffsetAzi",
+          "LREAL",
+          "Offset values azimuth"
+        ],
+        [
+          "dTool",
+          "LREAL",
+          "Length of the tool"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "dx",
+          "Type": "LREAL",
+          "Comment": "Set position of TCP for axis x"
+        },
+        [
+          "dy",
+          "LREAL",
+          "Set position of TCP for axis y"
+        ],
+        [
+          "dz",
+          "LREAL",
+          "Set position of TCP for axis z"
+        ],
+        [
+          "dIncl",
+          "LREAL",
+          "Set position of TCP for inclination axis [degrees]"
+        ],
+        [
+          "dAzi",
+          "LREAL",
+          "Set position of TCP for azimuth axis [degrees]"
+        ]
+      ]
+    }
+  ]
+}

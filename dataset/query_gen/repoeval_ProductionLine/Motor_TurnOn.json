@@ -1,0 +1,6 @@
+{
+  "requirement": "This code should implement a method named `Motor_TurnOn` that controls the turning on of a motor based on its fault status and a timing mechanism. The method takes an input `MotorI` of type `MotorI` and modifies an output `MotorO` of type `MotorO`. The method should check if `MotorO.FaultStatus` is `FALSE` and, if so, initiate a timer `WaitTimer` with a preset delay `InternalSequenceDelay`. If the timer `WaitTimer` completes (`WaitTimer.Q` is `TRUE`), the method should set `MotorO.Coil` to `TRUE` and reset the timer by setting `WaitTimer.IN` to `FALSE`. The method should return a boolean indicating whether the motor was successfully turned on, which can be inferred from the state of `MotorO.Coil`.",
+  "provide_code": "METHOD TurnOn : BOOL\nVAR_INPUT\n\tMotorI:MotorI;\nEND_VAR\nVAR_OUTPUT\n\tMotorO:MotorO;\nEND_VAR",
+  "function_name": "Motor_TurnOn",
+  "requirement_cn": "该代码应实现一个名为 `Motor_TurnOn` 的方法，用于控制基于其故障状态和计时机制的电机启动。该方法接收一个类型为 `MotorI` 的输入 `MotorI` 并修改一个类型为 `MotorO` 的输出 `MotorO`。方法应检查 `MotorO.FaultStatus` 是否为 `FALSE`，如果是，则启动一个预设延迟 `InternalSequenceDelay` 的定时器 `WaitTimer`。如果定时器 `WaitTimer` 完成（`WaitTimer.Q` 为 `TRUE`），方法应将 `MotorO.Coil` 设置为 `TRUE` 并通过设置 `WaitTimer.IN` 为 `FALSE` 来重置定时器。该方法应返回一个布尔值，指示电机是否成功启动，这可以从 `MotorO.Coil` 的状态推断出来。"
+}

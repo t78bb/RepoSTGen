@@ -1,0 +1,31 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "Lock (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_RMP_ReliableMessageProtocol/pou-RMPMessageBuffer/Lock.html",
+  "page_title": "RMPMessageBuffer.Lock (METH)",
+  "text": "\nMETHOD FINAL Lock : BOOL\nLocks a certain message\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "Lock",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "uiIndex",
+          "Type": "UINT",
+          "Comment": "The index of the message to be locked in the buffer"
+        }
+      ]
+    }
+  ]
+}

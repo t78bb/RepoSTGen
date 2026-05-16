@@ -1,0 +1,57 @@
+{
+  "library": "String Functions",
+  "title": "REPLACE (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Functions/Current/StrFunc/Functions/REPLACE.html",
+  "page_title": "REPLACE (FUN)",
+  "text": "Library Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nStrFunc\nAliases\nIString (Alias)\nEnums\nERROR (Enum)\nFunctions\nCONCAT (Function)\nCOUNT (Function)\nDELETE (Function)\nFIND (Function)\nINSERT (Function)\nLEFT (Function)\nLEN (Function)\nMID (Function)\nREPLACE (Function)\nRIGHT (Function)\nFile and Project Information\nLibrary Reference\nString Segments\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nUTF-8 Encoding Support\nLibrary Identification\nLibrary Properties\nString Functions\nDocs\n»\nStrFunc\n»\nFunctions\n»\nREPLACE (FUN)\nREPLACE (FUN)\nÂ¶\nFUNCTION REPLACE :\nIString\nReplaces a specific number of characters of a string by another string\nReplace\nudiCount\ncharacters from\nitfString\nby\nitfPartial\n, beginning with the character in the\nudiStart\nposition.\nInOut:\nScope\nName\nType\nComment\nReturn\nREPLACE\nIString\nInput\nitfString\nIString\nString to be modfied\nitfPartial\nIString\nString which replaces a part of\nitfString\nudiCount\nUDINT\nNumber of runes to be replaced, counting from left\nudiStart\nUDINT\nStart index of the runes to be replaced.\nFirst rune is index 0\nitfResource\nIString\nThe resource that this function is working on. It will\ncontain the result after the function call and will also be\nreturned by this function so it can be used in nested calls.\nOutput\neErrorID\nERROR",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "REPLACE",
+          "Type": "IString",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfString",
+          "Type": "IString",
+          "Comment": "String to be modfied"
+        },
+        [
+          "itfPartial",
+          "IString",
+          "String which replaces a part ofitfString"
+        ],
+        [
+          "udiCount",
+          "UDINT",
+          "Number of runes to be replaced, counting from left"
+        ],
+        [
+          "udiStart",
+          "UDINT",
+          "Start index of the runes to be replaced.\nFirst rune is index 0"
+        ],
+        [
+          "itfResource",
+          "IString",
+          "The resource that this function is working on. It will\ncontain the result after the function call and will also be\nreturned by this function so it can be used in nested calls."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "eErrorID",
+          "Type": "ERROR",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

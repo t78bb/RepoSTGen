@@ -1,0 +1,5 @@
+{
+  "requirement": "This code is intended to implement a countdown timer that calculates the remaining seconds based on the elapsed time and total time.",
+  "provide_code": "FUNCTION_BLOCK FB_CountdownTimer\nVAR_INPUT\n\ttElapsedTime\t:\tTIME;\t\t//已经过的时间（定时器的ET）\n\ttTotalTime\t\t:\tTIME;\t\t//总时间（定时器的PT）\nEND_VAR\nVAR_OUTPUT\n\tnRemainingSeconds\t:\tUINT;\t//剩余秒数\nEND_VAR",
+  "function_name": "FB_CountdownTimer"
+}

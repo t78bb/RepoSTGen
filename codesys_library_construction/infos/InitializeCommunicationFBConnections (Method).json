@@ -1,0 +1,36 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "InitializeCommunicationFBConnections (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_RMP_ReliableMessageProtocol/AC_RMP_FBCommunication/pou-IRMPFBCommunication/InitializeCommunicationFBConnections.html",
+  "page_title": "IRMPFBCommunication.InitializeCommunicationFBConnections (METH)",
+  "text": "\nMETHOD InitializeCommunicationFBConnections : BOOL\nThis method is called before the Cyclic-RMP-Communication AND provides you with\na complete List of all locally (on one application) generated\ncommunication FBs (including the this instance).\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "InitializeCommunicationFBConnections",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "pComFBs",
+          "Type": "POINTER TOIRMPFBCommunication",
+          "Comment": "The list of locally generated communication FBs"
+        },
+        [
+          "udiComFBsCount",
+          "UDINT",
+          "This is the number of locally generated communication FBspComFBs"
+        ]
+      ]
+    }
+  ]
+}

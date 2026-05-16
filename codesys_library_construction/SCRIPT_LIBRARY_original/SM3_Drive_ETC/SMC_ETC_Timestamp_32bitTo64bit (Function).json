@@ -1,0 +1,43 @@
+{
+  "library": "SM3_Drive_ETC",
+  "title": "SMC_ETC_Timestamp_32bitTo64bit (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Drive_ETC/Current/SMC_ETC_Timestamp_32bitTo64bit.html",
+  "page_title": "SMC_ETC_Timestamp_32bitTo64bit (FUN)",
+  "text": "AXIS_REF_ETC_BASE_SM3 (FunctionBlock)\nParameterAccess\nGetSlaveId (Method)\nGlobalTextList (GlobalTextList)\nSMC3_ETC\nvisu templates\nSMC_ETC_InterpolateAxisPosition (Function)\nSMC_ETC_Params (ParamList)\nSMC_ETC_Timestamp_32bitTo64bit (Function)\nSMC_Set_ETC_DCSyncSupervision (FunctionBlock)\nFile and Project Information\nLibrary Reference\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nCmpIecTask\nLibrary Identification\nLibrary Properties\nCmpLog\nLibrary Identification\nLibrary Properties\nIoStandard\nLibrary Identification\nLibrary Properties\nSM3_Basic\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nSM3_ETC_ITF\nLibrary Identification\nLibrary Properties\nSM3_RBase\nLibrary Identification\nLibrary Properties\nSM3_Shared\nLibrary Identification\nLibrary Properties\nSM3_StringUtils\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nVisuElem3DPath\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElemCamDisplayer\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElemMeter\nLibrary Identification\nLibrary Properties\nVisuElemTextEditor\nLibrary Identification\nLibrary Properties\nVisuElemTrace\nLibrary Identification\nLibrary Properties\nVisuElems\nLibrary Identification\nLibrary Properties\nVisuElemsAlarm\nLibrary Identification\nLibrary Properties\nVisuElemsDateTime\nLibrary Identification\nLibrary Properties\nVisuElemsSpecialControls\nLibrary Identification\nLibrary Properties\nVisuElemsWinControls\nLibrary Identification\nLibrary Properties\nVisuInputs\nLibrary Identification\nLibrary Properties\nVisuNativeControl\nLibrary Identification\nLibrary Properties\nSM3_Drive_ETC\nDocs\n»\nSMC_ETC_Timestamp_32bitTo64bit (FUN)\nSMC_ETC_Timestamp_32bitTo64bit (FUN)\nÂ¶\nFUNCTION SMC_ETC_Timestamp_32bitTo64bit : SMC_ERROR\nConverts a 32bit timestamp to a 64bit timestamp\nthat is less than or equal to the timestamp of the actual values,\nplus one task cycle.  The function computes the\ngreatest such timestamp.\nThe lower 32 bits of the returned timestamp are equal to\nTimestamp32_ns.\nInOut:\nScope\nName\nType\nComment\nInout Const\nAxis\nAXIS_REF_SM3\nInput\nTimestamp32_ns\nUDINT\nThe 32 bit timestamp in nanoseconds to convert.\nReturn\nSMC_ETC_Timestamp_32bitTo64bit\nSMC_ERROR\nOutput\nTimestamp64_ns\nULINT\nThe resulting 64 bit timestamp in nanoseconds.",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout Const",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "Timestamp32_ns",
+          "Type": "UDINT",
+          "Comment": "The 32 bit timestamp in nanoseconds to convert."
+        },
+        {
+          "Scope": "Return",
+          "Name": "SMC_ETC_Timestamp_32bitTo64bit",
+          "Type": "SMC_ERROR",
+          "Comment": ""
+        },
+        {
+          "Scope": "Output",
+          "Name": "Timestamp64_ns",
+          "Type": "ULINT",
+          "Comment": "The resulting 64 bit timestamp in nanoseconds."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "library": "PLCopen Safety FBs",
+  "title": "SF_OutControl (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/PLCopen Safety FBs/Current/PLCopenSafetyFBs/Function-Blocks/SF_OutControl.html",
+  "page_title": "SF_OutControl (FB)",
+  "text": "\nFUNCTION_BLOCK SF_OutControl\nControl of a safety output with a signal from the functional application and a safety signal with optional startup inhib-its.\nFunction block according to PLCopen, Technical Committee 5: Safety Software (Technical Specification), Part 1: Concepts and Function Blocks, Version 2.01 (2020-2)\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "Activate",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "Activation of the FB."
+        },
+        [
+          "S_SafeControl",
+          "BOOL",
+          "FALSE",
+          "Control signal of the preceding safety FB. FALSE: The\npreceding safety FBâs are in safe state, TRUE: The preceding\nsafety FBâs enable safety control."
+        ],
+        [
+          "ProcessControl",
+          "BOOL",
+          "FALSE",
+          "Control signal from the functional application. FALSE:\nRequest to set S_OutControl to FALSE, TRUE: Request to set\nS_OutControl to TRUE."
+        ],
+        [
+          "StaticControl",
+          "BOOL",
+          "FALSE",
+          "Optional conditions for process control. FALSE: Dynamic\nchange at ProcessControl, TRUE: No dynamic change at\nProcessControl."
+        ],
+        [
+          "S_StartReset",
+          "BOOL",
+          "FALSE",
+          "Start behaviour of safety FB"
+        ],
+        [
+          "S_AutoReset",
+          "BOOL",
+          "FALSE",
+          "Behaviour on error of safety FB"
+        ],
+        [
+          "Reset",
+          "BOOL",
+          "FALSE",
+          "Manual reset of FB"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Ready",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "Activation of the FB. TRUE indicates that the FB is\nactivated and the outputs results are valid, FALSE the FB is\nnot active and the program is not executed."
+        },
+        [
+          "S_OutControl",
+          "BOOL",
+          "FALSE",
+          "Controls connected actuators. FALSE: Disable connected\nactuators, TRUE: Enable connected actuators."
+        ],
+        [
+          "SafetyDemand",
+          "BOOL",
+          "FALSE",
+          "Output indicating that the FB is active and the primary\nsafety function is demanded (e.g. related to the safety\nfunctionality)."
+        ],
+        [
+          "ResetRequest",
+          "BOOL",
+          "FALSE",
+          "Output which can be used to signal the operator to press the\nreset functionality to continue."
+        ],
+        [
+          "Error",
+          "BOOL",
+          "FALSE",
+          "Error flag"
+        ],
+        [
+          "DiagCode",
+          "WORD",
+          "0",
+          "Diagnostic register"
+        ]
+      ]
+    }
+  ]
+}

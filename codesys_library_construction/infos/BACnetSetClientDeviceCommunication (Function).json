@@ -1,0 +1,36 @@
+{
+  "library": "CmpBACnet",
+  "title": "BACnetSetClientDeviceCommunication (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/CmpBACnet/Current/BACnetClientAPI/advanced/BACnetSetClientDeviceCommunication.html",
+  "page_title": "BACnetSetClientDeviceCommunication (FUN)",
+  "text": "\nFUNCTION BACnetSetClientDeviceCommunication :\nIEC_BACNET_STATUS\nEnables or disables communication in the advanced BACnet client API to devices.\nThe user application can enable or disable communication to registered devices. If\ncommunication is disabled to one or ALL devices, the connection state change callback\nwill be called for all customers which have registerd that callback for the device.\nIf a new device is registered itâs communication state is initially enabled by default.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "BACnetSetClientDeviceCommunication",
+          "Type": "IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "devId",
+          "Type": "IEC_BACNET_INST_NUMBER",
+          "Comment": "The device instance number for which communication needs to be changed. A value of\n0xFFFFFFFF will change the state of ALL registered devices including the global\ncommunication enable / disable state."
+        },
+        [
+          "dccValue",
+          "IEC_BACNET_DCC_VALUE",
+          "Specifies if communication should be enabled (DCC_ENABLE) or disabled\n(DCC_DISABLEorDCC_OFFLINE)"
+        ]
+      ]
+    }
+  ]
+}

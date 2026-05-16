@@ -1,0 +1,6 @@
+VAR
+END_VAR
+
+IF lH<>0 THEN
+	lF:=9.8*lM/(2*COS(ATAN(lL/lH)));
+END_IF

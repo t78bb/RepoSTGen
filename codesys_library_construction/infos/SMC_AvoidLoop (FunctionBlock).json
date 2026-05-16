@@ -1,0 +1,81 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_AvoidLoop (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/SoftMotion-Function-Blocks/SMC_AvoidLoop.html",
+  "page_title": "SMC_AvoidLoop (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_AvoidLoop\nSMC_AvoidLoop\nremoves loops from the path.\nIt copies the input path, but cuts out the loops created by\nself-intersections. The resulting output path is free of\nself-intersections.\nFor a typical application see\nSMC_ToolRadiusCorr\n.\nThis function block needs to be activated/deactivated in the G-Code\nwith G61/G60.\nNote\nThe effectiveness and efficiency of SMC_AvoidLoop depend\non the appropriate size of the input queue\npoqDataIn\n.\nA loop containing more objects than can be stored\nin\npoqDataIn\nis not detected.\nOn the other hand, for each element, an intersection check is executed\nwith all following elements of the queue. If the queue is large,\ncompleting these checks may take a long time.\nSMC_AvoidLoop does not support ellipses (G08/G09). An error is\nreported if an ellipse element is detected while loop avoidance\nis active.\nSMC_AvoidLoop only works in 2.5D mode (see G15).  An error is\nreported if elements with full 3D mode (such as G10 elements)\nare detected while loop avoidance is active.\nPROBE movements such as G31 are not supported. The error\nSMC_PROBE_G31_NOT_ALLOWED\nis reported if a PROBE movement\nis encountered while loop avoidance is active.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "bExecute",
+          "Type": "BOOL",
+          "Comment": "Execution starts on the rising edge."
+        },
+        [
+          "bAbort",
+          "BOOL",
+          "IfTRUE, the current processing of this function block\nis aborted"
+        ],
+        [
+          "bAppend",
+          "BOOL",
+          "As long as this input remainsFALSE,poqDataOutis\ncleared at each reset. As long as it remainsTRUE,\nnewly incoming data is written to the end ofpoqDataOut."
+        ],
+        [
+          "poqDataIn",
+          "POINTER TOSMC_OUTQUEUE",
+          "This variable points to theSMC_OUTQUEUEstructure\nwhich contains theSMC_GEOINFOobjects of the path.\nTypically it points on the outputpoqDataOutof the\npreceding function block (e.g. theSMC_NCInterpreter)."
+        ],
+        [
+          "nSizeOutQueue",
+          "UDINT",
+          "This variable contains the size of the data buffer in bytes.\nThis buffer must be able to hold at least fiveSMC_GEOINFOobjects.\nIt is recommended to create the buffer as described by the example below.ExampleBuf:Array[1..50]ofSMC_GeoInfoThe appropriate buffer size can then be computed usingSIZEOF(ExampleBuf)."
+        ],
+        [
+          "pbyBufferOutQueue",
+          "POINTER TO ARRAY [0..0]\nOF SMC_GEOINFO",
+          "This input must point to the first byte of the memory area that is\nallocated for theSMC_OUTQUEUEstructure.\nThis area must be at least as big as defined innSizeOutQueue.\nTypically the allocation of the memory buffer is done in the\ndeclaration part of the IEC-program by defining an\narray ofSMC_GEOINFOe.g.BUF:ARRAY[1..50]OFSMC_GEOINFO;\nfor a buffer that can store 50 path elements)."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bDone",
+          "Type": "BOOL",
+          "Comment": "Set if the entire path has been processed"
+        },
+        [
+          "bBusy",
+          "BOOL",
+          "TRUE, while execution of function block is not finished"
+        ],
+        [
+          "bError",
+          "BOOL",
+          "Signals, that an error has occurred within the function\nblock"
+        ],
+        [
+          "wErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ],
+        [
+          "poqDataOut",
+          "POINTER TOSMC_OUTQUEUE",
+          "This variable points to aSMC_OUTQUEUEstructure,\nwhich manages theSMC_GEOINFOobjects of the output path."
+        ],
+        [
+          "iStatus",
+          "SMC_AL_STATUS",
+          "This enum variable shows the current state of the function\nblock."
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现一个模拟储罐的液位控制系统，根据输入和输出流量以及时间间隔动态计算液位，并限制其在设定的上下限范围内。",
+  "provide_code": "//A.J. Jaworowski 2015-02-20\n//Simulering av en tank med RedBull\nFUNCTION_BLOCK Tank\nVAR_INPUT\n\tProcess_In: REAL;  //Flöde in per sekund, testa vad som händer on du matar in 100\n\t\t\t\t\t   //Därefter ska regulatorns OUT in i denna ingång.\n\tProcess_Out: REAL; //Flöde ut per sekund, typ 90\n\t\t\t\t\t   //Effekten blir att tanken fylls med 10 per sekund\n\t\t\t\t\t   //Full efter ca 1 minut - testa\n\tSampleTime: TIME;  //Uppdateringstid, typ 100ms\n\tLower_limit: REAL; //Tankens lägsta nivå, typ 0\n\tUpper_limit: REAL; //Tankens max nivå, kanske 500\nEND_VAR\nVAR_OUTPUT\n\tLevel: REAL; //Nivån i tanken\nEND_VAR"
+}

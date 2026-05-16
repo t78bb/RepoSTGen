@@ -1,0 +1,8 @@
+{
+  "library": "AlarmManager",
+  "title": "IAlarmClass3 (Interface)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/IAlarmClass3.html",
+  "page_title": "IAlarmClass3 (ITF)",
+  "text": "\nINTERFACE IAlarmClass3 EXTENDS\nIAlarmClass2\nThis interface is only used internally.\nProperties:\nReAlarmTime\n, inherited from\nIAlarmClass2\nMethods:\nAckInsteadOfConfirm\n, inherited from\nIAlarmClass2\nAutoResetDigitalAlarms\n, inherited from\nIAlarmClass2\nGetInternalID\n, inherited from\nIAlarmClass\nGetName\n, inherited from\nIAlarmClass\nGetPriority\n, inherited from\nIAlarmClass\nIsAcknowledgeSeparately\n, inherited from\nIAlarmClass",
+  "tables": []
+}

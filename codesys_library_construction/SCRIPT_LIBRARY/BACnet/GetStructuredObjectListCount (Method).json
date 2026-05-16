@@ -1,0 +1,28 @@
+{
+  "library": "BACnet",
+  "title": "GetStructuredObjectListCount (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/Device/pou-BACnetDevice/GetStructuredObjectListCount.html",
+  "page_title": "BACnetDevice.GetStructuredObjectListCount (METH)",
+  "text": "\nMETHOD GetStructuredObjectListCount : CmpBACnet.IEC_BACNET_STATUS\nGets the count of entries in the Structured_Object_List-BACnet-Property.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetStructuredObjectListCount",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS"
+        },
+        {
+          "Scope": "Output",
+          "Name": "count",
+          "Type": "CmpBACnet.IEC_BACNET_ELEMENT_COUNT"
+        }
+      ]
+    }
+  ]
+}

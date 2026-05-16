@@ -1,0 +1,31 @@
+{
+  "library": "Util",
+  "title": "BYTE_TO_GRAY (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/Gray-Conversions/BYTE_TO_GRAY.html",
+  "page_title": "BYTE_TO_GRAY (FUN)",
+  "text": "\nFUNCTION BYTE_TO_GRAY : BYTE\nConverts one byte of binary code into one byte of GRAY code\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "BYTE_TO_GRAY",
+          "Type": "BYTE",
+          "Comment": "Value in GRAY code for inputB"
+        },
+        {
+          "Scope": "Input",
+          "Name": "B",
+          "Type": "BYTE",
+          "Comment": "Value in binary code"
+        }
+      ]
+    }
+  ]
+}

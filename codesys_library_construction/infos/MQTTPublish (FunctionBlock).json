@@ -1,0 +1,109 @@
+{
+  "library": "MQTT Client SL",
+  "title": "MQTTPublish (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/MQTT Client SL/Current/MQTT-Client/Common/Function-Blocks/MQTTPublish.html",
+  "page_title": "MQTTPublish (FB)",
+  "text": "\nFUNCTION_BLOCK MQTTPublish EXTENDS CBML.ETrigTo IMPLEMENTS IClientAction\nFunction block to publish (send) messages to a MQTT broker\nUse the input udiTimeout (see CBML.ETrigTo) to set the time in Âµs in which an acknowledgement\nmust be received (relevant for QoS1 and QoS2). Default: 1s\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment",
+        "Inherited from"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "xExecute",
+          "Type": "BOOL",
+          "Comment": "Rising edge: Starts defined operationFALSE: Resets the defined operation after ready condition was reached",
+          "Inherited from": "ETrigTo"
+        },
+        [
+          "udiTimeOut",
+          "UDINT",
+          "Max. operating time for executing\n[Âµs], 0: No operating time limit",
+          "ETrigTo"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "xDone",
+          "Type": "BOOL",
+          "Comment": "Ready condition reached",
+          "Inherited from": "ETrigTo"
+        },
+        [
+          "xBusy",
+          "BOOL",
+          "Operation is running",
+          "ETrigTo"
+        ],
+        [
+          "xError",
+          "BOOL",
+          "Error condition reached",
+          "ETrigTo"
+        ],
+        {
+          "Scope": "Input",
+          "Name": "eQoS",
+          "Type": "MQTT_QOS",
+          "Comment": "QoS Level of message",
+          "Inherited from": ""
+        },
+        [
+          "xReDelivery",
+          "BOOL",
+          "TRUE: When packet got already send and now should got\nresend, FALSE: First time",
+          ""
+        ],
+        [
+          "xRetain",
+          "BOOL",
+          "TRUE: Stores the message on server",
+          ""
+        ],
+        [
+          "pbPayload",
+          "POINTER TO BYTE",
+          "Pointer to the message",
+          ""
+        ],
+        [
+          "udiPayloadSize",
+          "UDINT",
+          "Size of message",
+          ""
+        ],
+        [
+          "mQTTPublishProperties",
+          "REFERENCE TOMQTTPublishProperties",
+          "Optional publish properties (MQTT V5 only)",
+          ""
+        ],
+        {
+          "Scope": "Inout",
+          "Name": "mqttClient",
+          "Type": "MQTTClient",
+          "Comment": "Function block MQTTClient",
+          "Inherited from": ""
+        },
+        [
+          "wsTopicName",
+          "WSTRING(1024)",
+          "Topic Name of message",
+          ""
+        ],
+        {
+          "Scope": "Output",
+          "Name": "eMQTTError",
+          "Type": "MQTT_ERROR",
+          "Comment": "MQTT Error type",
+          "Inherited from": ""
+        }
+      ]
+    }
+  ]
+}

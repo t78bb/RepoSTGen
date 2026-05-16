@@ -1,0 +1,31 @@
+{
+  "library": "BACnet2",
+  "title": "GetCount (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/Utilities/BACnetUtilities/BACnetProperties/property-proxies/pou-IBACnetLIST_of_Unsigned/GetCount.html",
+  "page_title": "IBACnetLIST_of_Unsigned.GetCount (METH)",
+  "text": "\nMETHOD GetCount : CmpBACnet.IEC_BACNET_STATUS\nGet the number of elements in this property.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetCount",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Output",
+          "Name": "count",
+          "Type": "CmpBACnet.IEC_BACNET_ELEMENT_COUNT",
+          "Comment": "Number of property elements."
+        }
+      ]
+    }
+  ]
+}

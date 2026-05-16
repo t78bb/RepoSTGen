@@ -1,0 +1,108 @@
+{
+  "library": "DNP3",
+  "title": "MasterCommandAnalogCommand (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/Commands/MasterCommandAnalogCommand.html",
+  "page_title": "MasterCommandAnalogCommand (FB)",
+  "text": "DNP3\nDoc\nIntegration of datapoints into the application\nExample\nIntroduction\nCODESYS DNP3 - Components\nOutstation data model and datapoints\nOutstation datapoint - inputs versa configuration\nOutstation datapoint inputs / outputs of type AnyNumber\nOutstation data flow\nMaster functionality\nMaster data flow\nCalling function block instances\nApplication bringup and debugging\nEnums\nCommandRejectReason (Enum)\nDoubleBitState (Enum)\nError (Enum)\nFunction Blocks\nAnyNumberConverter\nAnyNumberToDINT (FunctionBlock)\nAnyNumberToINT (FunctionBlock)\nAnyNumberToLREAL (FunctionBlock)\nAnyNumberToREAL (FunctionBlock)\nAnyNumberToSINT (FunctionBlock)\nAnyNumberToUDINT (FunctionBlock)\nAnyNumberToUINT (FunctionBlock)\nAnyNumberToUSINT (FunctionBlock)\nDINTToAnyNumber (FunctionBlock)\nINTToAnyNumber (FunctionBlock)\nLREALToAnyNumber (FunctionBlock)\nREALToAnyNumber (FunctionBlock)\nSINTToAnyNumber (FunctionBlock)\nUDINTToAnyNumber (FunctionBlock)\nUINTToAnyNumber (FunctionBlock)\nUSINTToAnyNumber (FunctionBlock)\nETHdeviceHelper (FunctionBlock)\nMaster\nAddressQualifier (Enum)\nAnalogInfo (Struct)\nAutoUpdateMode (Enum)\nCROB_Info (Struct)\nCommands\nFreezeTimeDateField (Enum)\nFunctionCode (Enum)\nMaster (FunctionBlock)\nMasterConfiguration (FunctionBlock)\nMasterConfigurationCOM (FunctionBlock)\nMasterConfigurationIP (FunctionBlock)\nMasterLoggingOptions (Enum)\nPointObserver\nTimeSyncType (Enum)\nOutstation\nDNP3OutstationSessionConfigEvents (Struct)\nDNP3OutstationSessionConfigUnsolicitedResponse (Struct)\nEvents\nGroups\nOutstation (FunctionBlock)\nOutstationConfiguration (FunctionBlock)\nOutstationConfigurationCOM (FunctionBlock)\nOutstationConfigurationIP (FunctionBlock)\nOutstationDataModel (FunctionBlock)\nOutstationDataModelExample (FunctionBlock)\nOutstationLoggingOptions (Enum)\nPoints\nFunctions\nAnyNumber\nAnyNumberArithmetic (Function)\nAnyNumberArithmeticOperation (Enum)\nAnyNumberAssign (Function)\nAnyNumberAssignIfNotEqual (Function)\nAnyNumberCheck (Function)\nAnyNumberClipToLimits (Function)\nAnyNumberCompare (Function)\nAnyNumberCompareOperation (Enum)\nAnyNumberConvertFromDINT (Function)\nAnyNumberConvertFromINT (Function)\nAnyNumberConvertFromLREAL (Function)\nAnyNumberConvertFromREAL (Function)\nAnyNumberConvertFromSINT (Function)\nAnyNumberConvertFromUDINT (Function)\nAnyNumberConvertFromUINT (Function)\nAnyNumberConvertFromUSINT (Function)\nAnyNumberConvertToDINT (Function)\nAnyNumberConvertToINT (Function)\nAnyNumberConvertToLREAL (Function)\nAnyNumberConvertToREAL (Function)\nAnyNumberConvertToSINT (Function)\nAnyNumberConvertToUDINT (Function)\nAnyNumberConvertToUINT (Function)\nAnyNumberConvertToUSINT (Function)\nAnyNumberInitToZero (Function)\nAnyNumberIsWithinLimits (Function)\nAnyNumberMaximum (Function)\nAnyNumberMinimum (Function)\nAnyNumberToString (Function)\nAnyNumberTypeEquals (Function)\nAnyNumberTypeToString (Function)\nAnyNumberValueToString (Function)\nAnyNumberZero (Function)\nGetCurrentDateTime (Function)\nGlobalConstants\nConstants (GVL)\nConstantsInternal (GVL)\nInterfaces\nIPoint (Interface)\nGetDescriptionString (Method)\nIdentificationToString (Method)\nPointNum (Property)\nPointTyp (Property)\nToString (Method)\nIPointObserver (Interface)\nEnabled (Property)\nEquals (Method)\nGetError (Method)\nGetErrorId (Method)\nGetSequenceNumber (Method)\nIsModified (Property)\nKey (Property)\nNum (Property)\nToString (Method)\nTyp (Property)\nParameter\nParameter (ParamList)\nTypes\nAnyNumber\nAnyNumber (Struct)\nAnyNumberPointerUnion (Union)\nAnyNumberType (Enum)\nAnyNumberUnion (Union)\nAnyNumberValueUnion (Union)\nCOMParity (Enum)\nCOMStopBits (Enum)\nDNP3_String (Alias)\nLibrary Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nFile and Project Information\nLibrary Reference\n3SLicense\nLibrary Identification\nLibrary Properties\nCmpApp\nLibrary Identification\nLibrary Properties\nCmpDNP3\nLibrary Identification\nLibrary Properties\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nCmpEventMgr\nLibrary Identification\nLibrary Properties\nCmpLog\nLibrary Identification\nLibrary Properties\nComponent Manager\nLibrary Identification\nLibrary Properties\nIoDrvEthernet Interfaces\nLibrary Identification\nLibrary Properties\nIoDrvUtility\nLibrary Identification\nLibrary Properties\nIoStandard\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nSysCpuHandling\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysSocket\nLibrary Identification\nLibrary Properties\nSysTask\nLibrary Identification\nLibrary Properties\nSysTimeCore\nLibrary Identification\nLibrary Properties\nSysTimeRtc\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nUtil\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nDNP3\nDocs\n»\nDNP3\n»\nFunction\nBlocks\n»\nMaster\n»\nCommands\n»\nMasterCommandAnalogCommand (FB)\nMasterCommandAnalogCommand (FB)\nÂ¶\nFUNCTION_BLOCK FINAL MasterCommandAnalogCommand EXTENDS\nMasterCommand\nMaster command AnalogCommand\nInOut:\nScope\nName\nType\nInitial\nComment\nInherited from\nInput\nxExecute\nBOOL\nExecute the command (xExecute FALSE â> TRUE).\nMasterCommand\nitfMaster\nIMaster\nInterface IMaster\nMasterCommand\nOutput\nxDone\nBOOL\nCommand executed successfully.\nMasterCommand\nxError\nBOOL\nError during command executions\nMasterCommand\neErrorID\nError\nSpecific error during command executions.\nMasterCommand\nInput\nfuncCode\nFunctionCode\nConstants.DNPDEFS_FC_DIRECT_OP\nfunction code, must be FC_SELECT, FC_OPERATE, FC_DIRECT_OP\nor FC_DIRECT_OP_NOACK\nautoMode\nUSINT\nConstants.AUTO_MODE_OPERATE\nbit mask to specify which actions to perform. Combine\nAUTO_MODE_OPERATE and AUTO_MODE_FEEDBACK as needed.\nopFeedbackDelay\nTIME\nTIME#0ms\nspecify a delay, in milliseconds, after receiving\nthe response to an operate or direct operate request before issueing\nan operate feedback poll using the autoMode parameter.\nqualifier\nAddressQualifier\nAddressQualifier.QUAL_8BIT_INDEX\naddress qualifier, must be 8 or 16 bit indexed\nQUAL_8BIT_INDEX or QUAL_16BIT_INDEX\nvariation\nUSINT\n1\nobject variation to use in request, must be 1, 2, 3 or 4\nThis will indicate what type value will be sent to the outstation.\n1 - 32 bit                           (this was added in subset level 3)\n2 - 16 bit                           (this is in subset level 1)\n3 - Single Precision Floating Point  (this was added in subset level 4)\n4 - Double Precision Floating Point  (this is beyond subset level 4 )\nnumObjects\nUSINT\n0\nnumber of Analog Output Blocks in this request\npAnlgInfo\nPOINTER TO\nAnalogInfo\n0\ndata for each Analog Output Block\nMethods:\nSetError\n, inherited from\nMasterCommand",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment",
+        "Inherited from"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "xExecute",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Execute the command (xExecute FALSE â> TRUE).",
+          "Inherited from": "MasterCommand"
+        },
+        [
+          "itfMaster",
+          "IMaster",
+          "",
+          "Interface IMaster",
+          "MasterCommand"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "xDone",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Command executed successfully.",
+          "Inherited from": "MasterCommand"
+        },
+        [
+          "xError",
+          "BOOL",
+          "",
+          "Error during command executions",
+          "MasterCommand"
+        ],
+        [
+          "eErrorID",
+          "Error",
+          "",
+          "Specific error during command executions.",
+          "MasterCommand"
+        ],
+        {
+          "Scope": "Input",
+          "Name": "funcCode",
+          "Type": "FunctionCode",
+          "Initial": "Constants.DNPDEFS_FC_DIRECT_OP",
+          "Comment": "function code, must be FC_SELECT, FC_OPERATE, FC_DIRECT_OP\nor FC_DIRECT_OP_NOACK",
+          "Inherited from": ""
+        },
+        [
+          "autoMode",
+          "USINT",
+          "Constants.AUTO_MODE_OPERATE",
+          "bit mask to specify which actions to perform. Combine\nAUTO_MODE_OPERATE and AUTO_MODE_FEEDBACK as needed.",
+          ""
+        ],
+        [
+          "opFeedbackDelay",
+          "TIME",
+          "TIME#0ms",
+          "specify a delay, in milliseconds, after receivingthe response to an operate or direct operate request before issueing\nan operate feedback poll using the autoMode parameter.",
+          ""
+        ],
+        [
+          "qualifier",
+          "AddressQualifier",
+          "AddressQualifier.QUAL_8BIT_INDEX",
+          "address qualifier, must be 8 or 16 bit indexed\nQUAL_8BIT_INDEX or QUAL_16BIT_INDEX",
+          ""
+        ],
+        [
+          "variation",
+          "USINT",
+          "1",
+          "object variation to use in request, must be 1, 2, 3 or 4This will indicate what type value will be sent to the outstation.\n1 - 32 bit                           (this was added in subset level 3)\n2 - 16 bit                           (this is in subset level 1)\n3 - Single Precision Floating Point  (this was added in subset level 4)\n4 - Double Precision Floating Point  (this is beyond subset level 4 )",
+          ""
+        ],
+        [
+          "numObjects",
+          "USINT",
+          "0",
+          "number of Analog Output Blocks in this request",
+          ""
+        ],
+        [
+          "pAnlgInfo",
+          "POINTER TOAnalogInfo",
+          "0",
+          "data for each Analog Output Block",
+          ""
+        ]
+      ]
+    }
+  ]
+}

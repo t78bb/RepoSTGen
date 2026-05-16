@@ -1,0 +1,37 @@
+{
+  "library": "BACnet2",
+  "title": "InsertElement (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/Utilities/BACnetUtilities/BACnetProperties/property-proxies/pou-IBACnetLIST_of_Unsigned/InsertElement.html",
+  "page_title": "IBACnetLIST_of_Unsigned.InsertElement (METH)",
+  "text": "\nMETHOD InsertElement : CmpBACnet.IEC_BACNET_STATUS\nInsert element to this property at the given index.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "InsertElement",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "nIndex",
+          "Type": "CmpBACnet.IEC_BACNET_ARRAY_INDEX",
+          "Comment": "Index (0 .. number of elements-1)."
+        },
+        {
+          "Scope": "Inout Const",
+          "Name": "value",
+          "Type": "CmpBACnet.IEC_BACNET_UNSIGNED",
+          "Comment": "Element value to insert."
+        }
+      ]
+    }
+  ]
+}

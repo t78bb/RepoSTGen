@@ -1,0 +1,41 @@
+{
+  "library": "CmpBACnet",
+  "title": "BACnetRegisterClientUnsubscribeCompletionCallback (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/CmpBACnet/Current/BACnetClientAPI/advanced/BACnetRegisterClientUnsubscribeCompletionCallback.html",
+  "page_title": "BACnetRegisterClientUnsubscribeCompletionCallback (FUN)",
+  "text": "\nFUNCTION BACnetRegisterClientUnsubscribeCompletionCallback :\nIEC_BACNET_STATUS\nRegisters the user application callback for completed unregistrations.\nThis registers a callback routine. This callback can be registered at any time. If the\ncallback is registered more than once, the new callback procedure replaces old one.\nA NULL pointer cancels the callback.\nThis function gives a user application the ability to get notified if an\nunregistration of device object property reference has completed. Depending on\nthe type of registration made (COV, COVP or POLLING), an unregistration may need\nsome time to be processed. The function for initiation of the unregistration\nBACnetUnregisterClientDataPoint\ncompletes directly but the callback is called\nafter the unsubscription for event or value notification in the remote device has\ncompleted. The application may only expect unsubscribe complete callbacks for which\nthe\nBACnetUnregisterClientDataPoint\nfunction call has returned the\nBACNET_STATUS_BUSY. In case that all registered references have been retrievd by\npolling this function callback will also be called for the last customer which\nunregisters the last reference to an device but the referenced object will be the\ndevice and the property will be PROP_ALL and the index BACNET_VOID_INDEX (-1).\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "BACnetRegisterClientUnsubscribeCompletionCallback",
+          "Type": "IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "hCustomer",
+          "Type": "IEC_BACNET_HANDLE",
+          "Comment": "An handle to an created advanced BACnet client customer created byBACnetOpenClientCustomer."
+        },
+        [
+          "pICallback",
+          "CmpEventMgr.ICmpEventCallback",
+          "A pointer to the event-callback interface which gets called which gets called on completion of\nan unregistration.\nTo unregister a NULL pointer shall be used here."
+        ],
+        [
+          "pUserUnsubArg",
+          "POINTER TO BYTE",
+          "A pointer to data from the user application which is transparent for the API.\nThis pointer will not be modified by the BACnet API. This may be NULL."
+        ]
+      ]
+    }
+  ]
+}

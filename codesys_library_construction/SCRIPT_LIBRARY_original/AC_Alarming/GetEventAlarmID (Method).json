@@ -1,0 +1,47 @@
+{
+  "library": "AC_Alarming",
+  "title": "GetEventAlarmID (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_Alarming/Current/ExtenderFB/pou-IACAlarmExtender2/GetEventAlarmID.html",
+  "page_title": "IACAlarmExtender2.GetEventAlarmID (METH)",
+  "text": "ExtenderFB\nACAlarmExtender (FunctionBlock)\nAcknowledgeAllAlarmsOfModule (Method)\nExecute (Method)\nGetActiveAlarmsOfModule (Method)\nGetEventAlarmID (Method)\nGetID (Property)\nInit (Method)\nInit2 (Method)\nInitSortedModuleAlarms (Method)\nAlarmInfo (Struct)\nAlarmingCall (Enum)\nIACAlarmExtender (Interface)\nInit (Method)\nIACAlarmExtender2 (Interface)\nGetEventAlarmID (Method)\nInit2 (Method)\nIACAlarmExtender3 (Interface)\nAcknowledgeAllAlarmsOfModule (Method)\nGetActiveAlarmsOfModule (Method)\nInitSortedModuleAlarms (Method)\nModuleAlarmInfo (Struct)\nModuleCall (Struct)\nModuleEvent (Struct)\nFunctions\nRaiseModuleEvent (Function)\nReplaceAlarmPlaceholderString (Function)\nGlobalTextList (GlobalTextList)\nModuleInterface\nIModuleAlarming (Interface)\nConsumeModuleAlarm (Method)\nVisualization\nFile and Project Information\nLibrary Reference\nAC_ModuleBase\nLibrary Identification\nLibrary Properties\nAlarmManager\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nStringUtils\nLibrary Identification\nLibrary Properties\nVisuElem3DPath\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElemCamDisplayer\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElemMeter\nLibrary Identification\nLibrary Properties\nVisuElemTextEditor\nLibrary Identification\nLibrary Properties\nVisuElemTrace\nLibrary Identification\nLibrary Properties\nVisuElemXYChart\nLibrary Identification\nLibrary Properties\nVisuElems\nLibrary Identification\nLibrary Properties\nVisuElemsAlarm\nLibrary Identification\nLibrary Properties\nVisuElemsDateTime\nLibrary Identification\nLibrary Properties\nVisuElemsSpecialControls\nLibrary Identification\nLibrary Properties\nVisuElemsWinControls\nLibrary Identification\nLibrary Properties\nVisuNativeControl\nLibrary Identification\nLibrary Properties\nAC_Alarming\nDocs\n»\nExtenderFB\n»\nIACAlarmExtender2\n(ITF)\n»\nIACAlarmExtender2.GetEventAlarmID (METH)\nIACAlarmExtender2.GetEventAlarmID (METH)\nÂ¶\nMETHOD GetEventAlarmID : BOOL\nThis method gets information about an Event-Alarm of a certain module.\nInOut:\nScope\nName\nType\nComment\nReturn\nGetEventAlarmID\nBOOL\nThe return value indicates whether an Event-Alarm could be\nfound.\nInput\ninst\nAC.IModule\nThe module instance the Event-Alarm belongs to.\npEventTargetID\nPOINTER TO STRING\nThe target of the Event-Alarm\nOutput\nalarmGroupID\nAlarmManager.ALARMGROUP_ID\nThe alarm-groupId of the found Event-Alarm\nalarmID\nAlarmManager.ALARM_ID\nThe alarmId of the found Event-Alarm",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetEventAlarmID",
+          "Type": "BOOL",
+          "Comment": "The return value indicates whether an Event-Alarm could be\nfound."
+        },
+        {
+          "Scope": "Input",
+          "Name": "inst",
+          "Type": "AC.IModule",
+          "Comment": "The module instance the Event-Alarm belongs to."
+        },
+        [
+          "pEventTargetID",
+          "POINTER TO STRING",
+          "The target of the Event-Alarm"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "alarmGroupID",
+          "Type": "AlarmManager.ALARMGROUP_ID",
+          "Comment": "The alarm-groupId of the found Event-Alarm"
+        },
+        [
+          "alarmID",
+          "AlarmManager.ALARM_ID",
+          "The alarmId of the found Event-Alarm"
+        ]
+      ]
+    }
+  ]
+}

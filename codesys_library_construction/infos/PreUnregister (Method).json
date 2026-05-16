@@ -1,0 +1,23 @@
+{
+  "library": "BACnet",
+  "title": "PreUnregister (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetServerPlugin/pou-IBACnetServerPlugin/PreUnregister.html",
+  "page_title": "IBACnetServerPlugin.PreUnregister (METH)",
+  "text": "\nMETHOD PreUnregister : UDINT\nDeinitialization, gets called during\nBACNetServer.UnregisterPlugin\nbefore application service hooks/callbacks are unregistered.\nReturn CmpErrors.Errors.ERR_OK if successfully.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "PreUnregister",
+          "Type": "UDINT"
+        }
+      ]
+    }
+  ]
+}

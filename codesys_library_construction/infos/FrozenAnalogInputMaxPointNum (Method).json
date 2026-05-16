@@ -1,0 +1,23 @@
+{
+  "library": "DNP3",
+  "title": "FrozenAnalogInputMaxPointNum (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/pou-Master/Datapoints/FrozenAnalogInputMaxPointNum.html",
+  "page_title": "Master.FrozenAnalogInputMaxPointNum (METH)",
+  "text": "\nMETHOD FrozenAnalogInputMaxPointNum : DINT\nMaximum point number of all Frozen Analog Input datapoints (DNP3 object group 31 âfrozen analog inputsâ) provided by the Outstation.\nReturns -1 if there are no datapoints.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "FrozenAnalogInputMaxPointNum",
+          "Type": "DINT"
+        }
+      ]
+    }
+  ]
+}

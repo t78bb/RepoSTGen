@@ -1,0 +1,223 @@
+{
+  "library": "ModbusFB",
+  "title": "SupportedFcs (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/ModbusFB/Current/ModbusFB/Structs/SupportedFcs.html",
+  "page_title": "SupportedFcs (STRUCT)",
+  "text": "\nTYPE SupportedFcs : STRUCT\nSupported function codes\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "ReadCoils",
+          "Type": "BIT",
+          "Initial": "FALSE",
+          "Comment": "supported functions codes"
+        },
+        {
+          "Name": "ReadDiscreteInputs",
+          "Type": "BIT",
+          "Initial": "FALSE",
+          "Comment": ""
+        },
+        {
+          "Name": "ReadHoldingRegisters",
+          "Type": "BIT",
+          "Initial": "FALSE",
+          "Comment": ""
+        },
+        {
+          "Name": "ReadInputRegisters",
+          "Type": "BIT",
+          "Initial": "FALSE",
+          "Comment": ""
+        },
+        {
+          "Name": "WriteSingleCoil",
+          "Type": "BIT",
+          "Initial": "FALSE",
+          "Comment": ""
+        },
+        {
+          "Name": "WriteSingleRegister",
+          "Type": "BIT",
+          "Initial": "FALSE",
+          "Comment": ""
+        },
+        {
+          "Name": "ReadExceptionStatus",
+          "Type": "BIT",
+          "Initial": "FALSE",
+          "Comment": ""
+        },
+        {
+          "Name": "Diagnostics",
+          "Type": "BIT",
+          "Initial": "FALSE",
+          "Comment": ""
+        },
+        {
+          "Name": "GetCommEventCounter",
+          "Type": "BIT",
+          "Initial": "FALSE",
+          "Comment": ""
+        },
+        {
+          "Name": "GetCommEventLog",
+          "Type": "BIT",
+          "Initial": "FALSE",
+          "Comment": ""
+        },
+        {
+          "Name": "WriteMultipleCoils",
+          "Type": "BIT",
+          "Initial": "FALSE",
+          "Comment": ""
+        },
+        {
+          "Name": "WriteMultipleRegisters",
+          "Type": "BIT",
+          "Initial": "FALSE",
+          "Comment": ""
+        },
+        {
+          "Name": "ReportServerID",
+          "Type": "BIT",
+          "Initial": "FALSE",
+          "Comment": ""
+        },
+        {
+          "Name": "ReadFileRecord",
+          "Type": "BIT",
+          "Initial": "FALSE",
+          "Comment": ""
+        },
+        {
+          "Name": "WriteFileRecord",
+          "Type": "BIT",
+          "Initial": "FALSE",
+          "Comment": ""
+        },
+        {
+          "Name": "MaskWriteRegister",
+          "Type": "BIT",
+          "Initial": "FALSE",
+          "Comment": ""
+        },
+        {
+          "Name": "ReadWriteMultipleRegisters",
+          "Type": "BIT",
+          "Initial": "FALSE",
+          "Comment": ""
+        },
+        {
+          "Name": "ReadFifoQueue",
+          "Type": "BIT",
+          "Initial": "FALSE",
+          "Comment": ""
+        },
+        {
+          "Name": "EncapsulatedInterfaceTransport",
+          "Type": "BIT",
+          "Initial": "FALSE",
+          "Comment": ""
+        },
+        {
+          "Name": "DiagnosticsReturnQueryData",
+          "Type": "BIT",
+          "Initial": "FALSE",
+          "Comment": "supported sub functions codes for FC08"
+        },
+        {
+          "Name": "DiagnosticsRestartCommunicationsOption",
+          "Type": "BIT",
+          "Initial": "FALSE",
+          "Comment": ""
+        },
+        {
+          "Name": "DiagnosticsReturnDiagnosticRegister",
+          "Type": "BIT",
+          "Initial": "FALSE",
+          "Comment": ""
+        },
+        {
+          "Name": "DiagnosticsChangeASCIIInputDelimiter",
+          "Type": "BIT",
+          "Initial": "FALSE",
+          "Comment": ""
+        },
+        {
+          "Name": "DiagnosticsForceListenOnlyMode",
+          "Type": "BIT",
+          "Initial": "FALSE",
+          "Comment": ""
+        },
+        {
+          "Name": "DiagnosticsClearCountersAndDiagnosticRegister",
+          "Type": "BIT",
+          "Initial": "FALSE",
+          "Comment": ""
+        },
+        {
+          "Name": "DiagnosticsReturnBusMessageCount",
+          "Type": "BIT",
+          "Initial": "FALSE",
+          "Comment": ""
+        },
+        {
+          "Name": "DiagnosticsReturnBusCommunicationErrorCount",
+          "Type": "BIT",
+          "Initial": "FALSE",
+          "Comment": ""
+        },
+        {
+          "Name": "DiagnosticsReturnBusExceptionErrorCount",
+          "Type": "BIT",
+          "Initial": "FALSE",
+          "Comment": ""
+        },
+        {
+          "Name": "DiagnosticsReturnServerMessageCount",
+          "Type": "BIT",
+          "Initial": "FALSE",
+          "Comment": ""
+        },
+        {
+          "Name": "DiagnosticsReturnServerNoResponseCount",
+          "Type": "BIT",
+          "Initial": "FALSE",
+          "Comment": ""
+        },
+        {
+          "Name": "DiagnosticsReturnServerNAKCount",
+          "Type": "BIT",
+          "Initial": "FALSE",
+          "Comment": ""
+        },
+        {
+          "Name": "DiagnosticsReturnServerBusyCount",
+          "Type": "BIT",
+          "Initial": "FALSE",
+          "Comment": ""
+        },
+        {
+          "Name": "DiagnosticsReturnBusCharacterOverrunCount",
+          "Type": "BIT",
+          "Initial": "FALSE",
+          "Comment": ""
+        },
+        {
+          "Name": "DiagnosticsClearOverrunCounterAndFlag",
+          "Type": "BIT",
+          "Initial": "FALSE",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

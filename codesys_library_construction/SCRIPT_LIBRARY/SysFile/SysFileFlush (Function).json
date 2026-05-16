@@ -1,0 +1,31 @@
+{
+  "library": "SysFile",
+  "title": "SysFileFlush (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SysFile/Current/SysFileFlush.html",
+  "page_title": "SysFileFlush (FUN)",
+  "text": "\nFUNCTION SysFileFlush : RTS_IEC_RESULT\nFlush the file cache and write into the file\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SysFileFlush",
+          "Type": "RTS_IEC_RESULT",
+          "Comment": "Returns the runtime system error code (see CmpErrors_Itfs.library):ERR_OK: Succeeded flushing the fileERR_FAILED: Error occurred during file flushERR_NOTIMPLEMENTED: File flush is not implementedERR_NOT_SUPPORTED: File flush not available on the target"
+        },
+        {
+          "Scope": "Input",
+          "Name": "hFile",
+          "Type": "RTS_IEC_HANDLE",
+          "Comment": "Handle of the file"
+        }
+      ]
+    }
+  ]
+}

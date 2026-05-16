@@ -1,0 +1,38 @@
+{
+  "library": "AC_Alarming",
+  "title": "ModuleEvent (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_Alarming/Current/ExtenderFB/ModuleEvent.html",
+  "page_title": "ModuleEvent (STRUCT)",
+  "text": "\nTYPE ModuleEvent : STRUCT\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "inst",
+          "Type": "AC.IModule",
+          "Comment": ""
+        },
+        {
+          "Name": "uliEventID",
+          "Type": "ULINT",
+          "Comment": "built by the hashcode from Target of SetAlarm section"
+        },
+        {
+          "Name": "alarmGroupID",
+          "Type": "AlarmManager.ALARMGROUP_ID",
+          "Comment": ""
+        },
+        {
+          "Name": "alarmID",
+          "Type": "AlarmManager.ALARM_ID",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

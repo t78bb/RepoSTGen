@@ -1,0 +1,73 @@
+{
+  "library": "AlarmManager",
+  "title": "AlarmGlobals (GVL)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Globals/AlarmGlobals.html",
+  "page_title": "AlarmGlobals (GVL)",
+  "text": "\nThis GVL must be initialized before GVL âGloballyForAlarmStorageâ, because this GVL\ncauses the initialization of the variable g_stApplicationName.\nWe only need the date and time format pattern for the converted code, therefore\nwe can (and must!) omit the rest from conversion\nWe must not use an attribute to hide this GVL, because there are some variables,\nthat a developer might use. Additionally it is necessary, that this GVL in considered\nin the data server, but not visible for the user, because some variables of this GVL\nare added to the data source selection implicitely and for this purpose it is necessary,\nthat this GVL is a part of the available items tree.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "g_AlarmHandler",
+          "Type": "IAlarmHandler10",
+          "Initial": "g_AlarmHandler_Inst",
+          "Comment": "This global instance provides API functionality to manipulate or retrieve\nalarm configuration objects. For more information see IAlarmHandler interfaces."
+        },
+        {
+          "Name": "g_diAlarmStateTransitionCounter",
+          "Type": "DINT",
+          "Initial": "",
+          "Comment": "A global counter, that counts all the alarm state transitions, that occur.\nNeeded by the alarm table for optimized painting. If this counter doesnât\nchange during subsequent paint calls, the same alarms have been active and\nin the same state.\nConditional show attribute must not be present for this variable, because\nsome architectural problems it can lead in a not correct regitrationCHECKED_OMIT"
+        },
+        {
+          "Name": "g_diAlarmStorageCounter",
+          "Type": "DINT",
+          "Initial": "",
+          "Comment": "A similar counter, that will be incremented each time an alarm is written\ninto the alarm storage. This allows the alarm table to detect, whether\nsome kind of processing has to be done, because there exists a new alarm.\nConditional show attribute must not be present for this variable, because\nsome architectural problems it can lead in a not correct regitrationCHECKED_OMIT"
+        },
+        {
+          "Name": "g_sDateFormat",
+          "Type": "STRING",
+          "Initial": "âdd.MM.yyyyâ",
+          "Comment": "The date format used to format the date part of a timestamp"
+        },
+        {
+          "Name": "g_sTimeFormat",
+          "Type": "STRING",
+          "Initial": "âHH:mm:ssâ",
+          "Comment": "The time format used to format the date part of a timestamp"
+        },
+        {
+          "Name": "g_StorageTaskInfo",
+          "Type": "StorageTaskInfo",
+          "Initial": "",
+          "Comment": "Info object for the alarm storage task. Contains information\nabout task state and cycle times."
+        },
+        {
+          "Name": "g_xStepByStepMode",
+          "Type": "BOOL",
+          "Initial": "TRUE",
+          "Comment": "Activates the progressive loading of the alarm history."
+        },
+        {
+          "Name": "g_tStepByStepLimit",
+          "Type": "TIME",
+          "Initial": "TIME#25ms",
+          "Comment": "Sets the time limit per loading step."
+        },
+        {
+          "Name": "g_iAlarmConfigurationUpdateCounter",
+          "Type": "INT",
+          "Initial": "0",
+          "Comment": "Increment this variable if a change is made to the\nAlarmConfig at runtime, it reloads the AlarmTable."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "library": "BACnet2DefaultImpl",
+  "title": "Connect (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2DefaultImpl/Current/BACnetDefaultImpl/Function-Blocks/pou-NetworkPortObjects/Connect.html",
+  "page_title": "NetworkPortObjects.Connect (METH)",
+  "text": "\nMETHOD Connect : BOOL\nConnect / pair a Datalink with a NetworkPort object.\nCall this method for all pairs prio to BACnetServer.StartBACnetStack().\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "Connect",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "datalink",
+          "Type": "REFERENCE TO BACnet.BACnetDatalink",
+          "Comment": "Datalink"
+        },
+        [
+          "networkport",
+          "REFERENCE TO BACnet.BACnetNetworkPort",
+          "NetworkPort"
+        ]
+      ]
+    }
+  ]
+}

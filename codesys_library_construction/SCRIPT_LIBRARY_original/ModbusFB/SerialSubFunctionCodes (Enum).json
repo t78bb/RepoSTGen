@@ -1,0 +1,77 @@
+{
+  "library": "ModbusFB",
+  "title": "SerialSubFunctionCodes (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/ModbusFB/Current/ModbusFB/Enums/SerialSubFunctionCodes.html",
+  "page_title": "SerialSubFunctionCodes (ENUM)",
+  "text": "Library Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nModbusFB\nEnums\nError (Enum)\nExceptionCodes (Enum)\nFunctionCodes (Enum)\nLoggingOptions (Enum)\nPrimaryTables (Enum)\nRtuAscii (Enum)\nSerialSubFunctionCodes (Enum)\nFunction Blocks\nClient\nClient (FunctionBlock)\nClientRequest (FunctionBlock)\nClientRequestMaskWriteRegister (FunctionBlock)\nClientRequestRead (FunctionBlock)\nClientRequestReadBits (FunctionBlock)\nClientRequestReadCoils (FunctionBlock)\nClientRequestReadDiscreteInputs (FunctionBlock)\nClientRequestReadHoldingRegisters (FunctionBlock)\nClientRequestReadInputRegisters (FunctionBlock)\nClientRequestReadRegisters (FunctionBlock)\nClientRequestReadWriteMultipleRegisters (FunctionBlock)\nClientRequestWriteMultiple (FunctionBlock)\nClientRequestWriteMultipleCoils (FunctionBlock)\nClientRequestWriteMultipleRegisters (FunctionBlock)\nClientRequestWriteSingle (FunctionBlock)\nClientRequestWriteSingleCoil (FunctionBlock)\nClientRequestWriteSingleRegister (FunctionBlock)\nClientSerial (FunctionBlock)\nClientTCP (FunctionBlock)\nServer\nExampleDataModel (FunctionBlock)\nServer (FunctionBlock)\nServerSerial (FunctionBlock)\nServerTCP (FunctionBlock)\nUtil\nByteBuffer (FunctionBlock)\nGlobalConstants\nConstants (GVL)\nParameter (ParamList)\nStructs\nRequestData (Struct)\nRequestDataDiagnostics (Struct)\nRequestDataMaskWriteRegister (Struct)\nRequestDataRead (Struct)\nRequestDataReadWriteMultipleRegisters (Struct)\nRequestDataWriteMultiple (Struct)\nRequestDataWriteSingle (Struct)\nRequestUnion (Union)\nSupportedFcs (Struct)\nTableDefinition (Struct)\nTableDefinitions (Struct)\nTableSection (Struct)\nFile and Project Information\nLibrary Reference\n3SLicense\nLibrary Identification\nLibrary Properties\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nCmpLog\nLibrary Identification\nLibrary Properties\nCommon Behaviour Model\nLibrary Identification\nLibrary Properties\nComponent Manager\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nStringUtils\nLibrary Identification\nLibrary Properties\nSysCom\nLibrary Identification\nLibrary Properties\nSysCpuHandling\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysSocket\nLibrary Identification\nLibrary Properties\nSysTarget\nLibrary Identification\nLibrary Properties\nSysTimeCore\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nModbusFB\nDocs\n»\nModbusFB\n»\nEnums\n»\nSerialSubFunctionCodes (ENUM)\nSerialSubFunctionCodes (ENUM)\nÂ¶\nTYPE SerialSubFunctionCodes :\nAttributes:\nqualified_only\nInOut:\nName\nInitial\nReturnQueryData\n0\nRestartCommunicationsOption\n1\nReturnDiagnosticRegister\n2\nChangeASCIIInputDelimiter\n3\nForceListenOnlyMode\n4\nClearCountersAndDiagnosticRegister\n11\nReturnBusMessageCount\n12\nReturnBusCommunicationErrorCount\n13\nReturnBusExceptionErrorCount\n14\nReturnServerMessageCount\n15\nReturnServerNoResponseCount\n16\nReturnServerNAKCount\n17\nReturnServerBusyCount\n18\nReturnBusCharacterOverrunCount\n19\nClearOverrunCounterAndFlag\n20",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Name": "ReturnQueryData",
+          "Initial": "0"
+        },
+        {
+          "Name": "RestartCommunicationsOption",
+          "Initial": "1"
+        },
+        {
+          "Name": "ReturnDiagnosticRegister",
+          "Initial": "2"
+        },
+        {
+          "Name": "ChangeASCIIInputDelimiter",
+          "Initial": "3"
+        },
+        {
+          "Name": "ForceListenOnlyMode",
+          "Initial": "4"
+        },
+        {
+          "Name": "ClearCountersAndDiagnosticRegister",
+          "Initial": "11"
+        },
+        {
+          "Name": "ReturnBusMessageCount",
+          "Initial": "12"
+        },
+        {
+          "Name": "ReturnBusCommunicationErrorCount",
+          "Initial": "13"
+        },
+        {
+          "Name": "ReturnBusExceptionErrorCount",
+          "Initial": "14"
+        },
+        {
+          "Name": "ReturnServerMessageCount",
+          "Initial": "15"
+        },
+        {
+          "Name": "ReturnServerNoResponseCount",
+          "Initial": "16"
+        },
+        {
+          "Name": "ReturnServerNAKCount",
+          "Initial": "17"
+        },
+        {
+          "Name": "ReturnServerBusyCount",
+          "Initial": "18"
+        },
+        {
+          "Name": "ReturnBusCharacterOverrunCount",
+          "Initial": "19"
+        },
+        {
+          "Name": "ClearOverrunCounterAndFlag",
+          "Initial": "20"
+        }
+      ]
+    }
+  ]
+}

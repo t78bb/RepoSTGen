@@ -1,0 +1,8 @@
+{
+  "library": "AlarmManager",
+  "title": "IAlarmManagerClient (Interface)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/IAlarmManagerClient.html",
+  "page_title": "IAlarmManagerClient (ITF)",
+  "text": "\nINTERFACE IAlarmManagerClient EXTENDS __SYSTEM.IQueryInterface\nImplementors of the interface have access both to the currently active alarms\nand to the alarms in the alarm history.\nMethods:\nActiveAlarmsChanged\nAlarmStorageModified\nGetFilterCriteria\nStructure:\nActiveAlarmsChanged (Method)\nAlarmStorageModified (Method)\nGetFilterCriteria (Method)",
+  "tables": []
+}

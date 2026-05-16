@@ -1,0 +1,52 @@
+{
+  "library": "String Segments",
+  "title": "SetSegment (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Segments/Current/Strings/Functions/SetSegment.html",
+  "page_title": "SetSegment (FUN)",
+  "text": "\nFUNCTION SetSegment :\nIString\nInitializes the passed\nIString\ninstance and uses the specified memory area for this purpose\nExample for a 50 byte\nIString\ninstance:\nsValue : STRING(50) := UTF8#'CÃDâ¬Å¡Å¸Å  Ã¯Ã vÃ¤rÃ¿ Ã§Ã´Ãµl';\nudiLength : UDINT := TO_UDINT(LEN(sValue));\n   fbString : STR._UTF8String;\nitfString : STR.IString := STR.SetSegment(fbString, ADR(sValue), SIZEOF(sValue)-1, udiLength);\nNote\nThe final\nNULL\nbyte of\nsValue\nis not part of the usable memory area of the string.\nThe values\nsValue[0]\nâ¦\nsValue[49]\nare part of the usable Memory area.\nThis is the reason for the expression\nSIZEOF(sValue)-1\nwhen calling\nSetSegment\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetSegment",
+          "Type": "IString",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfString",
+          "Type": "IString",
+          "Comment": "String instance of an_UTF8String|"
+        },
+        [
+          "pbyMemory",
+          "POINTER TO BYTE",
+          "Pointer to the first byte of the memory.This address should aligned to a__XWORDboundary!"
+        ],
+        [
+          "udiSize",
+          "UDINT",
+          "Size of the whole allocated memory"
+        ],
+        [
+          "udiLength",
+          "UDINT",
+          "Length of the segment in bytes"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "eErrorID",
+          "Type": "ERROR",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

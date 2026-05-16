@@ -1,0 +1,5 @@
+{
+  "requirement": "This code is intended to implement the control of UI button states for ground and sky tracks based on input parameters for level, index, and direction.",
+  "provide_code": "FUNCTION setButtonByDirect : BOOL\nVAR_INPUT\n\tlevel\t\t:INT;\t//1->地轨\t2->天轨\n\tidx\t\t\t:INT;\t//挡板索引编号\n\tdirect\t\t:TargetDirect;\nEND_VAR",
+  "function_name": "setButtonByDirect"
+}

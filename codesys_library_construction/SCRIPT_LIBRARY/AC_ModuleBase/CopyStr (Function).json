@@ -1,0 +1,36 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "CopyStr (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_Module/CopyStr.html",
+  "page_title": "CopyStr (FUN)",
+  "text": "\nFUNCTION CopyStr : BOOL\nCopies a string from a zero-terminated array of characters into a string object.\nNote: at most 255 characters are copied, even of pbySrc is longer.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "CopyStr",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "psDst",
+          "Type": "POINTER TO STRING(255)",
+          "Comment": "A non-zero pointer to the destination string"
+        },
+        [
+          "pbySrc",
+          "POINTER TO BYTE",
+          "A non-zero, zero-terminated array of characters"
+        ]
+      ]
+    }
+  ]
+}

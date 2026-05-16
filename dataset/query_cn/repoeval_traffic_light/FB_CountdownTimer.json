@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现基于已过时间和总时间计算剩余秒数的倒计时功能。",
+  "provide_code": "FUNCTION_BLOCK FB_CountdownTimer\nVAR_INPUT\n\ttElapsedTime\t:\tTIME;\t\t//已经过的时间（定时器的ET）\n\ttTotalTime\t\t:\tTIME;\t\t//总时间（定时器的PT）\nEND_VAR\nVAR_OUTPUT\n\tnRemainingSeconds\t:\tUINT;\t//剩余秒数\nEND_VAR"
+}

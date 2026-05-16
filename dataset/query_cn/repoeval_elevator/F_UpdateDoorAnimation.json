@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现基于开门、关门命令和楼层呼叫状态的电梯门动画更新逻辑。",
+  "provide_code": "FUNCTION F_UpdateDoorAnimation : DINT\nVAR_INPUT\n\tbOpenDoor\t\t:\tBOOL;\t\t// 开门命令\n\tbCloseDoor\t\t:\tBOOL;\t\t// 关门命令\n\tbCallFloor\t\t:\tBOOL;\t\t// 该楼层有呼叫\n\tnCurrentAni\t\t:\tDINT;\t\t// 当前动画值\n\tnMaxAni\t\t\t:\tDINT := 70;\t// 最大动画值\nEND_VAR"
+}

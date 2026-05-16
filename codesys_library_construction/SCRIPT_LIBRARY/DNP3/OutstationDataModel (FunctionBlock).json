@@ -1,0 +1,88 @@
+{
+  "library": "DNP3",
+  "title": "OutstationDataModel (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Outstation/OutstationDataModel.html#",
+  "page_title": "OutstationDataModel (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL OutstationDataModel IMPLEMENTS IOutstationDataModel\nFunction block representing an Outstation data model.\nAssign the related input to connect groups of needed datapoints to the Outstation data model.\nCall the OutstationDataModel frequent enough to ensure the tScanPeriod.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "groupAnalogInputs",
+          "Type": "IGroupAnalogInputs",
+          "Initial": "",
+          "Comment": ""
+        },
+        [
+          "groupAnalogOutputs",
+          "IGroupAnalogOutputs",
+          "",
+          ""
+        ],
+        [
+          "groupBinaryCounters",
+          "IGroupBinaryCounters",
+          "",
+          ""
+        ],
+        [
+          "groupBinaryInputs",
+          "IGroupBinaryInputs",
+          "",
+          ""
+        ],
+        [
+          "groupBinaryOutputs",
+          "IGroupBinaryOutputs",
+          "",
+          ""
+        ],
+        [
+          "groupDoubleBitInputs",
+          "IGroupDoubleBitInputs",
+          "",
+          ""
+        ],
+        [
+          "groupOctetStrings",
+          "IGroupOctetStrings",
+          "",
+          ""
+        ],
+        [
+          "tScanPeriod",
+          "TIME",
+          "TIME#100ms",
+          "ScanPeriod: the time difference between two samples of the datapoints to generate change-events towards the master.\nCan be configured per group and per datapoint as well."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "itfOutstationDataModel",
+          "Type": "IOutstationDataModel",
+          "Initial": "",
+          "Comment": ""
+        },
+        [
+          "xError",
+          "BOOL",
+          "",
+          "An error occured."
+        ],
+        [
+          "eErrorID",
+          "Error",
+          "",
+          "The specific error."
+        ]
+      ]
+    }
+  ]
+}

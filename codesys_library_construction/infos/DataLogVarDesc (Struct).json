@@ -1,0 +1,63 @@
+{
+  "library": "AC_DataLog",
+  "title": "DataLogVarDesc (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_DataLog/Current/AC_DataLog/DataLogVarDesc.html",
+  "page_title": "DataLogVarDesc (STRUCT)",
+  "text": "\nTYPE DataLogVarDesc : STRUCT\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "pbyValue",
+          "Type": "POINTER TO BYTE",
+          "Comment": ""
+        },
+        {
+          "Name": "pbyOldValue",
+          "Type": "POINTER TO BYTE",
+          "Comment": ""
+        },
+        {
+          "Name": "pbyInstancePath",
+          "Type": "POINTER TO BYTE",
+          "Comment": ""
+        },
+        {
+          "Name": "tc",
+          "Type": "IBaseLibrary.TypeClass",
+          "Comment": ""
+        },
+        {
+          "Name": "uiMaxSize",
+          "Type": "UINT",
+          "Comment": "needed for (w)string variables"
+        },
+        {
+          "Name": "rHysterese",
+          "Type": "REAL",
+          "Comment": ""
+        },
+        {
+          "Name": "udiHash",
+          "Type": "UDINT",
+          "Comment": ""
+        },
+        {
+          "Name": "xLogBias",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Name": "iBias",
+          "Type": "INT",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

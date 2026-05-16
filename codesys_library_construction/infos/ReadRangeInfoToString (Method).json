@@ -1,0 +1,28 @@
+{
+  "library": "BACnet2DefaultImpl",
+  "title": "ReadRangeInfoToString (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2DefaultImpl/Current/BACnetDefaultImpl/Function-Blocks/LoggingObjects/Internal/pou-LogObjectsBase/ToString/ReadRangeInfoToString.html",
+  "page_title": "LogObjectsBase.ReadRangeInfoToString (METH)",
+  "text": "\nMETHOD PROTECTED ReadRangeInfoToString : STRING\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "ReadRangeInfoToString",
+          "Type": "STRING"
+        },
+        {
+          "Scope": "Input",
+          "Name": "readRangeInfo",
+          "Type": "CmpBACnet.IEC_BACNET_READ_RANGE_INFO"
+        }
+      ]
+    }
+  ]
+}

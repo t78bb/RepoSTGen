@@ -1,0 +1,28 @@
+{
+  "library": "DNP3",
+  "title": "AnyNumberMinimum (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Functions/AnyNumber/AnyNumberMinimum.html",
+  "page_title": "AnyNumberMinimum (FUN)",
+  "text": "\nFUNCTION AnyNumberMinimum :\nAnyNumber\nReturns an AnyNumber set to numerical minimum using the given base type.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "AnyNumberMinimum",
+          "Type": "AnyNumber"
+        },
+        {
+          "Scope": "Input",
+          "Name": "baseType",
+          "Type": "AnyNumberType"
+        }
+      ]
+    }
+  ]
+}

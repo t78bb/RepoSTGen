@@ -1,0 +1,28 @@
+{
+  "library": "AC_DataLog",
+  "title": "SetIsActionOngoing (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_DataLog/Current/AC_DataLog/DataLogChannel/pou-DataLogChannel/IDataLogChannel/SetIsActionOngoing.html",
+  "page_title": "DataLogChannel.SetIsActionOngoing (METH)",
+  "text": "\nMETHOD SetIsActionOngoing : BOOL\nThis method tries to set that this channel is currently active writing or reading.\n..return:\nIf it was possible to set the current state of activity.\nIf this is\nFALSE\nxIsActionOngoing\nhas not been set!\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetIsActionOngoing",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Input",
+          "Name": "xIsActionOngoing",
+          "Type": "BOOL"
+        }
+      ]
+    }
+  ]
+}

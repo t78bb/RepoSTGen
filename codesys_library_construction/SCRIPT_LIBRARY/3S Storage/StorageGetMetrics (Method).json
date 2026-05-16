@@ -1,0 +1,28 @@
+{
+  "library": "3S Storage",
+  "title": "StorageGetMetrics (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/3S Storage/Current/_3SStorage/Instances/pou-Storage/StorageGetMetrics.html",
+  "page_title": "Storage.StorageGetMetrics (METH)",
+  "text": "\nMETHOD StorageGetMetrics : STO.ERROR\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "StorageGetMetrics",
+          "Type": "STO.ERROR"
+        },
+        {
+          "Scope": "Inout",
+          "Name": "mMetrics",
+          "Type": "STO.METRICS"
+        }
+      ]
+    }
+  ]
+}

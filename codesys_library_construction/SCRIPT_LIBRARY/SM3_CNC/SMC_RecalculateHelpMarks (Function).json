@@ -1,0 +1,36 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_RecalculateHelpMarks (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/GeoInfo-Help-Functions/SMC_RecalculateHelpMarks.html",
+  "page_title": "SMC_RecalculateHelpMarks (FUN)",
+  "text": "\nFUNCTION SMC_RecalculateHelpMarks : BOOL\nThis function recalculates the positions of the helpmarks\nif the length of one object has changed from\nl\n,\nstarting at the beginning\niDir\n=\n1\nor end\niDir\n=\n-1\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SMC_RecalculateHelpMarks",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Input",
+          "Name": "pg",
+          "Type": "POINTER TOSMC_GeoInfo"
+        },
+        [
+          "l",
+          "LREAL"
+        ],
+        [
+          "iDir",
+          "INT"
+        ]
+      ]
+    }
+  ]
+}

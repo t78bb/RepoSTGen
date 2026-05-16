@@ -1,0 +1,6 @@
+{
+  "requirement": "This code should implement a function named `Motor_SetFault` that checks if a motor, represented by an input variable `MotorI` of type `MotorI`, is overloaded. If `MotorI.Overload` is true, the function should set the output variable `MotorO` of type `MotorO` to indicate a fault by setting `MotorO.FaultStatus` to TRUE and then call a function `TurnOff()` to presumably turn off the motor. The function should return a boolean value indicating the success or failure of the operation, although the specific conditions for these outcomes are not detailed in the provided snippet.",
+  "provide_code": "METHOD SetFault : BOOL\nVAR_INPUT\n\tMotorI:MotorI;\nEND_VAR\nVAR_OUTPUT\n\tMotorO:MotorO;\nEND_VAR",
+  "function_name": "Motor_SetFault",
+  "requirement_cn": "这段代码应实现一个名为 `Motor_SetFault` 的函数，该函数检查一个由输入变量 `MotorI`（类型为 `MotorI`）代表的电机是否过载。如果 `MotorI.Overload` 为真，则函数应设置输出变量 `MotorO`（类型为 `MotorO`）以指示故障，方法是将 `MotorO.FaultStatus` 设置为 TRUE，并调用一个名为 `TurnOff()` 的函数来关闭电机。该函数应返回一个布尔值，表示操作的成功或失败，尽管具体的结果条件在提供的代码片段中没有详细说明。"
+}

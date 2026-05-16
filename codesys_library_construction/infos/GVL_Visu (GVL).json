@@ -1,0 +1,25 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "GVL_Visu (GVL)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/GenVisu/GVL_Visu.html",
+  "page_title": "GVL_Visu (GVL)",
+  "text": "\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "g_stVisuStatusBar",
+          "Type": "WSTRING",
+          "Initial": "âStatusâ",
+          "Comment": "The status variable which can be used to access\nthe text displayed in the status bar of any\ncomposer visu template"
+        }
+      ]
+    }
+  ]
+}

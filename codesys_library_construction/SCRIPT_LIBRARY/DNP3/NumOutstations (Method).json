@@ -1,0 +1,23 @@
+{
+  "library": "DNP3",
+  "title": "NumOutstations (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Outstation/pou-OutstationDataModel/private/Outstations/NumOutstations.html",
+  "page_title": "OutstationDataModel.NumOutstations (METH)",
+  "text": "\nMETHOD NumOutstations : UINT\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "NumOutstations",
+          "Type": "UINT"
+        }
+      ]
+    }
+  ]
+}

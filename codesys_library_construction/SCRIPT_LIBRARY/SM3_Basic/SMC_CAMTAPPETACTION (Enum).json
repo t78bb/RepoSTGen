@@ -1,0 +1,38 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_CAMTAPPETACTION (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/DataTypes/CAM/SMC_CAMTAPPETACTION.html",
+  "page_title": "SMC_CAMTAPPETACTION (ENUM)",
+  "text": "\nTYPE SMC_CAMTAPPETACTION :\nThis\nENUM\ndetermines what switching action is executed when the tapped is passed.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "TAPPETACTION_on",
+          "Initial": "0",
+          "Comment": "Switches on."
+        },
+        {
+          "Name": "TAPPETACTION_off",
+          "Initial": "",
+          "Comment": "Switches off."
+        },
+        {
+          "Name": "TAPPETACTION_inv",
+          "Initial": "",
+          "Comment": "Inverts."
+        },
+        {
+          "Name": "TAPPETACTION_time",
+          "Initial": "",
+          "Comment": "Switches on after a delay for a certain time period."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "library": "String Segments",
+  "title": "IsValid (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Segments/Current/Strings/Functionblocks/pou-_UTF8String/IString/IsValid.html",
+  "page_title": "_UTF8String.IsValid (METH)",
+  "text": "\nMETHOD FINAL IsValid : BOOL\nReports whether this\nIString\ninstance consists entirely of valid UTF-8-encoded runes.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "IsValid",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Output",
+          "Name": "eErrorID",
+          "Type": "ERROR",
+          "Comment": "Check error message for better diagnostics"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "library": "SML_Basic",
+  "title": "MC_Power_SML (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SML_Basic/Current/PLCopen/MC_Power_SML.html",
+  "page_title": "MC_Power_SML (FB)",
+  "text": "Additional\nSML_ChangeAxisConfig (FunctionBlock)\nSML_ReinitDrive (FunctionBlock)\nSML_SetOpmode (FunctionBlock)\nSML_StartupDrive (FunctionBlock)\nBase\nAxis_REF_SML (FunctionBlock)\nConfig\nReadStandardConfigParameters (Method)\nReinitAxis (Method)\nError\nSML_ClearFBError (Function)\nSML_ErrorText (Function)\nSML_Language (Enum)\nSML_AXIS_STATE (Enum)\nSML_Constants (GVL)\nSML_ERROR (Enum)\nSML_FBError (Struct)\nSML_Globals (GVL)\nSML_MOVEMENTTYPE (Enum)\nSML_OPMODE (Enum)\nSML_Ramptype (Enum)\nGlobalTextList (GlobalTextList)\nLibrary Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nPLCopen\nMC_Halt_SML (FunctionBlock)\nMC_Home_SML (FunctionBlock)\nMC_MoveAbsolute_SML (FunctionBlock)\nMC_MoveRelative_SML (FunctionBlock)\nMC_MoveVelocity_SML (FunctionBlock)\nMC_Power_SML (FunctionBlock)\nMC_ReadBoolParameter_SML (FunctionBlock)\nMC_ReadParameter_SML (FunctionBlock)\nMC_ReadStatus_SML (FunctionBlock)\nMC_Reset_SML (FunctionBlock)\nMC_Stop_SML (FunctionBlock)\nMC_WriteBoolParameter_SML (FunctionBlock)\nMC_WriteParameter_SML (FunctionBlock)\nVisu_Templates\nHelpers\nTextListForCombobox_SML_MOVEMENTTYPE (TextList)\nTextListForCombobox_SML_OPMODE (TextList)\nStartupDrive\nFile and Project Information\nLibrary Reference\n3SLicense\nLibrary Identification\nLibrary Properties\nCmpApp\nLibrary Identification\nLibrary Properties\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nCmpLog\nLibrary Identification\nLibrary Properties\nCmpSchedule\nLibrary Identification\nLibrary Properties\nComponent Manager\nLibrary Identification\nLibrary Properties\nIoStandard\nLibrary Identification\nLibrary Properties\nSM3_Math\nLibrary Identification\nLibrary Properties\nSM3_Shared\nLibrary Identification\nLibrary Properties\nSM3_StringUtils\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nSysCpuHandling\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysTarget\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nVisuElem3DPath\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElemCamDisplayer\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElemMeter\nLibrary Identification\nLibrary Properties\nVisuElemTextEditor\nLibrary Identification\nLibrary Properties\nVisuElemTrace\nLibrary Identification\nLibrary Properties\nVisuElems\nLibrary Identification\nLibrary Properties\nVisuElemsAlarm\nLibrary Identification\nLibrary Properties\nVisuElemsDateTime\nLibrary Identification\nLibrary Properties\nVisuElemsSpecialControls\nLibrary Identification\nLibrary Properties\nVisuElemsWinControls\nLibrary Identification\nLibrary Properties\nVisuInputs\nLibrary Identification\nLibrary Properties\nVisuNativeControl\nLibrary Identification\nLibrary Properties\nSML_Basic\nDocs\n»\nPLCopen\n»\nMC_Power_SML (FB)\nMC_Power_SML (FB)\nÂ¶\nFUNCTION_BLOCK FINAL MC_Power_SML\nControls the power stage of an axis and can be used to issue a quick stop.\nNote\nThe inputs are only processed if\nEnable\nis set.\nA call of\nMC_Power_SML\nwith\nbRegulatorOn=FALSE\nsets the axis state\nto\nPowerOff\n(disabled).\nA call of\nMC_Power_SML\nwith\nbRegulatorOn``=``TRUE\non a disabled axis sets\nthe axis state to\nStandstill\n, if there is no error on the axis.\nIf an error is detected, the state of the axis is set to\nErrorStop\n.\nIf the inputs\nEnable\n,\nbRegulatorOn\nand\nbDriveStart\nare\n``TRUE\nbut the output\nStatus\nremains in\nFALSE\nfor a long time, there may be a problem\nwith the power stage, or an external halt may be set.\nIf power fails (also during operation), the axis state is set to\nErrorStop\n.\nInOut:\nScope\nName\nType\nComment\nInout\nAxis\nAxis_REF_SML\nReference to the axis\nInput\nEnable\nBOOL\nEnables the function block\nbRegulatorOn\nBOOL\nEnables the power stage\nbDriveStart\nBOOL\nDisables the quickstop mechanism\nOutput\nStatus\nBOOL\nAxis ready for motion\nbRegulatorRealState\nBOOL\nEffective state of the power stage\nbDriveStartRealState\nBOOL\nEffective state of the quickstop mechanism\nBusy\nBOOL\nFunction block is executing\nError\nBOOL\nSignals that an error has occured\nErrorID\nSML_ERROR\nError number",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "Axis_REF_SML",
+          "Comment": "Reference to the axis"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Enable",
+          "Type": "BOOL",
+          "Comment": "Enables the function block"
+        },
+        [
+          "bRegulatorOn",
+          "BOOL",
+          "Enables the power stage"
+        ],
+        [
+          "bDriveStart",
+          "BOOL",
+          "Disables the quickstop mechanism"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Status",
+          "Type": "BOOL",
+          "Comment": "Axis ready for motion"
+        },
+        [
+          "bRegulatorRealState",
+          "BOOL",
+          "Effective state of the power stage"
+        ],
+        [
+          "bDriveStartRealState",
+          "BOOL",
+          "Effective state of the quickstop mechanism"
+        ],
+        [
+          "Busy",
+          "BOOL",
+          "Function block is executing"
+        ],
+        [
+          "Error",
+          "BOOL",
+          "Signals that an error has occured"
+        ],
+        [
+          "ErrorID",
+          "SML_ERROR",
+          "Error number"
+        ]
+      ]
+    }
+  ]
+}

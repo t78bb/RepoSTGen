@@ -1,0 +1,8 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC3_MappingEntry (Alias)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/DataTypes/DriveInterface/SMC3_MappingEntry.html",
+  "page_title": "SMC3_MappingEntry (ALIAS)",
+  "text": "\nTYPE SMC3_MappingEntry : SM0.MappingEntry",
+  "tables": []
+}

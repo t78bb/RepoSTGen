@@ -1,0 +1,41 @@
+{
+  "library": "StringUtils",
+  "title": "StrFindA (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/StringUtils/Current/Public-Parts/Ansi/StrFindA.html",
+  "page_title": "StrFindA (FUN)",
+  "text": "\nFUNCTION StrFindA : INT\nSimilar semantics as Find from the standard.library.\nA null pointer will lead to a return of -1\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "StrFindA",
+          "Type": "INT",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "pst1",
+          "Type": "POINTER TO STRING(255)",
+          "Comment": ""
+        },
+        [
+          "pst2",
+          "POINTER TO STRING(255)",
+          ""
+        ],
+        [
+          "uiSearchStart",
+          "UINT",
+          "a position relative to 1, where the search starts"
+        ]
+      ]
+    }
+  ]
+}

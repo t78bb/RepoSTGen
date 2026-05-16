@@ -1,0 +1,5 @@
+{
+  "requirement": "This code is intended to implement a decorator pattern functionality that modifies the behavior of a component by adding a fixed value (e.g., 0.5) to its existing value.",
+  "provide_code": "//Illustrative method of the pattern\nMETHOD getValue : REAL\nVAR_INPUT\n\t//Reference to store the component to be decorated\n\ttempInputComponent : Component_Interface;\nEND_VAR",
+  "function_name": "ConcreteDecoratorA_getValue"
+}

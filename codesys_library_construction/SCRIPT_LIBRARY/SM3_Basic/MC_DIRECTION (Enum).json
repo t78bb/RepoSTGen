@@ -1,0 +1,43 @@
+{
+  "library": "SM3_Basic",
+  "title": "MC_DIRECTION (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/DataTypes/DriveInterface/MC_DIRECTION.html",
+  "page_title": "MC_DIRECTION (ENUM)",
+  "text": "\nTYPE MC_DIRECTION :\nSpecifies the direction of a movement.\nPlease note that not all modes can be applied to all function blocks\nand axis types (modulo/finite).\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "fastest",
+          "Initial": "3",
+          "Comment": "Selects the direction automatically in order to reach the target\nposition as fast as possible (only modulo axes)."
+        },
+        {
+          "Name": "current",
+          "Initial": "2",
+          "Comment": "Keeps the current direction to reach the target (only modulo\naxes)."
+        },
+        {
+          "Name": "positive",
+          "Initial": "1",
+          "Comment": "Moves in positive direction."
+        },
+        {
+          "Name": "shortest",
+          "Initial": "0",
+          "Comment": "Selects the direction according to the shortest distance\n(only modulo axes)."
+        },
+        {
+          "Name": "negative",
+          "Initial": "-1",
+          "Comment": "Moves in negative direction."
+        }
+      ]
+    }
+  ]
+}

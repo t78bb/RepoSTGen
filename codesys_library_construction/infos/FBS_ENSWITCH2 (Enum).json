@@ -1,0 +1,58 @@
+{
+  "library": "PLCopen Safety FBs",
+  "title": "FBS_ENSWITCH2 (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/PLCopen Safety FBs/Current/PLCopenSafetyFBs/Enums/FBS_ENSWITCH2.html",
+  "page_title": "FBS_ENSWITCH2 (ENUM)",
+  "text": "\nTYPE FBS_ENSWITCH2 :\nDefinition of SF_EnableSwitch_2 function block states and its diagnostic values.\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "IDLE",
+          "Initial": "16#0",
+          "Comment": "The function block is not active (initial state)."
+        },
+        {
+          "Name": "BASIC_OPMODE",
+          "Initial": "16#8002",
+          "Comment": "Safe operation mode is not active."
+        },
+        {
+          "Name": "SAFE_OPMODE",
+          "Initial": "16#8004",
+          "Comment": "Safe operation mode is active."
+        },
+        {
+          "Name": "NOT_ENABLED",
+          "Initial": "16#8802",
+          "Comment": "Safe operation mode is active and the enable switch is in\nposition 1 or 3."
+        },
+        {
+          "Name": "ENABLED",
+          "Initial": "16#8000",
+          "Comment": "Safe operation mode is active and the enable switch is in\nposition 2."
+        },
+        {
+          "Name": "ERR_OPERATION",
+          "Initial": "16#C010",
+          "Comment": "Enable switch not in position 1 during activation of\nS_SafetyActive. S_EnableIn = TRUE"
+        },
+        {
+          "Name": "ERR_OPERATION_RESREQ",
+          "Initial": "16#C410",
+          "Comment": "Enable switch not in position 1 during activation of\nS_SafetyActive. S_EnableIn = FALSE"
+        },
+        {
+          "Name": "ERR_RESET_1",
+          "Initial": "16#C001",
+          "Comment": "Static Reset signal detected in state Cx10."
+        }
+      ]
+    }
+  ]
+}

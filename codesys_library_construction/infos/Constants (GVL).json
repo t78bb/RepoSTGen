@@ -1,0 +1,35 @@
+{
+  "library": "AC_DataLog",
+  "title": "Constants (GVL)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_DataLog/Current/AC_DataLog/Constants.html",
+  "page_title": "Constants (GVL)",
+  "text": "\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Scope": "Constant",
+          "Name": "gc_CLASSID_DataLogManager",
+          "Type": "UDINT",
+          "Initial": "16#1803"
+        },
+        [
+          "gc_ChannelNamePlaceholder",
+          "STRING(14)",
+          "â%CHANNEL_NAME%â"
+        ],
+        [
+          "gc_DatePlaceholder",
+          "STRING(6)",
+          "â%DATE%â"
+        ]
+      ]
+    }
+  ]
+}

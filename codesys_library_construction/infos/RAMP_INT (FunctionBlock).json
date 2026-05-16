@@ -1,0 +1,51 @@
+{
+  "library": "Util",
+  "title": "RAMP_INT (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/Function-Manipulators/RAMP_INT.html",
+  "page_title": "RAMP_INT (FB)",
+  "text": "\nFUNCTION_BLOCK RAMP_INT\nLimits the slope of a value to a certain value\nThe limitation of the slope is given by the maximum ascend\nASCEND\nand the maximum descend\nDESCEND\nand a time base\nTIMEBASE\ndefining the time for which\nASCEND\nor\nDESCEND\nhold.\nNote\nIt is not necessary to readjust the controller parameters (KP, TN, TV) if the cycle time changes.\nExample\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "IN",
+          "Type": "INT",
+          "Comment": "Input value"
+        },
+        [
+          "ASCEND",
+          "INT",
+          "Limitation of acceleration: Maximum ascent per time base\nExample:ASCEND:=25andTIMEBASE:=T#1s=> Maximum ascent of 25 increments per second"
+        ],
+        [
+          "DESCEND",
+          "INT",
+          "Limitation of deceleration: Maximum descent per time base (DESCEND> 0)\nExample:DESCEND:=20andTIMEBASE:=T#500ms=> Maximum ascent of 20 increments in 500 milliseconds"
+        ],
+        [
+          "TIMEBASE",
+          "TIME",
+          "Reference forASCEND/DESCEND:t#0s :ASCEND/DESCENDdefined per callelse :ASCEND/DESCENDdefined per specified timeIfTIMEBASE=t#0s, then the time base is equal to the task cycle time. In this case the limitation refers to a task cycle.Usually this corresponds exactly to one call of the function blockRAMP_INT.NoteIf the time baseTIMEBASEis smaller than the task cycle time, then this will lead to a violation of the sampling\ntheorem and might result in a loss of information in the output signal."
+        ],
+        [
+          "RESET",
+          "BOOL",
+          "Reset of the function blockTRUE: Stops the internal calculation and reinitializes the function block.The last calculated output value inOUTis maintained in order to start the internal calculation with it at the next restart of the function block.FALSE: Outputs the smoothed input signal at outputOUT."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "OUT",
+          "Type": "INT",
+          "Comment": "Function value with limited ramp\nThe value gets stored internally and will be used for the calculation of the ascent and the descent of the input signal."
+        }
+      ]
+    }
+  ]
+}

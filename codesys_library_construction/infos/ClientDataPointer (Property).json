@@ -1,0 +1,8 @@
+{
+  "library": "Visu Utils",
+  "title": "ClientDataPointer (Property)",
+  "url": "https://content.helpme-codesys.com/en/libs/Visu Utils/Current/VisuUtils/VisuActionUtilities/Interfaces/pou-IVisualizationClientRaw/ClientDataPointer.html",
+  "page_title": "IVisualizationClientRaw.ClientDataPointer (PROP)",
+  "text": "\nPROPERTY ClientDataPointer : POINTER TO VisuElemBase.VisuStructClientData\nReturns the ClientDataPointer which is needed for other functionalities for\nwhich there is no alternative in VisuUtils. Normally this pointer should\nonly be passed to other functions. The internal data should not be accessed.",
+  "tables": []
+}

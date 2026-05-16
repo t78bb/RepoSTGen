@@ -1,0 +1,66 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_TRAFO_Bipod_Arm (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_Trafo_POUs/SoftMotion-Transformations/Parallel-Systems/Bipod_Arm/SMC_TRAFO_Bipod_Arm.html",
+  "page_title": "SMC_TRAFO_Bipod_Arm (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_TRAFO_Bipod_Arm\nThe transformation computes the inverse transformation of a bipod\nwith two rotary axes.\nThe origin of the coordinate system is at the center of the tool plate\nif both axes are in zero position (horizontal).\nThe direction of positive rotation is shown for the first axis A and the\nsecond axis B.\nIn the above diagram, both axes are in position 0Â°.\nNote\nFor more information on the supported transformations,\nsee the chapter on CNC transformations.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "pi",
+          "Type": "SMC_PosInfo",
+          "Comment": "Target position vector (x,y), output of interpolator"
+        },
+        [
+          "dArmLength1",
+          "LREAL",
+          "Length of first link (motor to âelbowâ), must be positive."
+        ],
+        [
+          "dArmLength2",
+          "LREAL",
+          "Length of second link (âelbowâ to platform), must be positive.\nIf dArmLength2 < dArmLength1 + dDistance/2, an error is\nreturned,  no solution is possible."
+        ],
+        [
+          "dDistance",
+          "LREAL",
+          "Horizontal distance of the two motors, must be non-negative."
+        ],
+        [
+          "dOffsetA",
+          "LREAL",
+          "Additional offset of axis A in angular degrees"
+        ],
+        [
+          "dOffsetB",
+          "LREAL",
+          "Additional offset of axis B in angular degrees"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bError",
+          "Type": "BOOL",
+          "Comment": "TRUE, if position is invalid."
+        },
+        [
+          "dA",
+          "LREAL",
+          "Target position of axis A in degree"
+        ],
+        [
+          "dB",
+          "LREAL",
+          "Target position of axis B in degree"
+        ]
+      ]
+    }
+  ]
+}

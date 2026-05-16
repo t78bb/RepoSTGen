@@ -1,0 +1,28 @@
+{
+  "library": "BACnet2DefaultImpl",
+  "title": "LogObjectBaseFileHandleTableEntry (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2DefaultImpl/Current/BACnetDefaultImpl/Function-Blocks/LoggingObjects/Internal/LogObjectBaseFileHandleTableEntry.html",
+  "page_title": "LogObjectBaseFileHandleTableEntry (STRUCT)",
+  "text": "\nTYPE LogObjectBaseFileHandleTableEntry : STRUCT\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Name": "instNumber",
+          "Type": "DWORD",
+          "Initial": "Constants.LOG_INVALID_INSTNUMBER"
+        },
+        {
+          "Name": "hFile",
+          "Type": "RTS_IEC_HANDLE",
+          "Initial": "RTS_INVALID_HANDLE"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "library": "BACnet",
+  "title": "GetRealFromContents (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/Utilities/BACnetUtilities/FromBACnetContents/GetRealFromContents.html",
+  "page_title": "GetRealFromContents (FUN)",
+  "text": "\nFUNCTION GetRealFromContents : REAL\nTries to evaluate property contents as REAL data type. If the contents are not of apropriate type\n0 is returned.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetRealFromContents",
+          "Type": "REAL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "conts",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_CONTENTS",
+          "Comment": "The contents to be evaluated as LREAL."
+        }
+      ]
+    }
+  ]
+}

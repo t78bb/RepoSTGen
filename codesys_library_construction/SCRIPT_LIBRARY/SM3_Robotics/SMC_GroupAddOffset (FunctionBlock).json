@@ -1,0 +1,97 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_GroupAddOffset (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/Diagnostics/SMC_GroupAddOffset.html",
+  "page_title": "SMC_GroupAddOffset (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_GroupAddOffset\nThis function block adds an offset to a position.\nThe offset and the position may be given in different coordinate systems.\nIf one of the coordinate systems is dynamic, the conversion between the\ncoordinate systems is done at the time at the end of the bus task cycle.\nThe resulting position\nPositionOut\nis expressed in the same coordinate\nsystem as the offset (\nCoordSystemOffset\n).\nNote\nThe same effect can be achieved with\nSMC_GroupConvertPosition\nby\nfirst converting PostionIn from coordinate system\nCoordSystemPositionIn to CoordSystemOffset and then adding the offset.\nThe coordinate system used is not necessarily the one of the currently\nactive movement. It is always the coordinate system that would be used\nfor new movements.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "AxisGroup",
+          "Type": "AXIS_GROUP_REF_SM3",
+          "Comment": "Reference to a group of axes"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Enable",
+          "Type": "BOOL",
+          "Comment": "Converts the position while enabled"
+        },
+        [
+          "PositionIn",
+          "SMC_POS_REF",
+          "The position to which the offset is added"
+        ],
+        [
+          "CoordSystemPositionIn",
+          "SMC_COORD_SYSTEM",
+          "Coordinate system ofPositionIn"
+        ],
+        [
+          "Offset",
+          "SMC_POS_REF",
+          "Offset to be added"
+        ],
+        [
+          "CoordSystemOffset",
+          "SMC_COORD_SYSTEM",
+          "Coordinate system ofOffset"
+        ],
+        [
+          "aRef",
+          "TRAFO.AXISPOS_REF",
+          "The reference position of the axes.  Only used ifCoordSystemOffset=ACSandCoordSystemPositionIn<>ACS."
+        ],
+        [
+          "config",
+          "TRAFO.CONFIGDATA",
+          "The kinematic configuration.  Only used ifCoordSystemOffset=ACSandCoordSystemPositionIn<>ACS."
+        ],
+        [
+          "UseToolOffsetParameter",
+          "BOOL",
+          "Whether to use theToolOffsetparameter.\nIf set to FALSE, the last tool offset set bySMC_GroupSetToolis used."
+        ],
+        [
+          "ToolOffset",
+          "MC_COORD_REF",
+          "The tool offset used for converting the position.\nNote that error SMC_AXIS_GROUP_TOOL_OFFSET_INCOMPATIBLE_WITH_KINEMATICS\nis returned if the tool offset is not compatible."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Valid",
+          "Type": "BOOL",
+          "Comment": "TRUEif valid outputs are available"
+        },
+        [
+          "Busy",
+          "BOOL",
+          "The FB is not finished"
+        ],
+        [
+          "Error",
+          "BOOL",
+          "Signals that an error has occurred within the function block"
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ],
+        [
+          "PositionOut",
+          "SMC_POS_REF",
+          "The position with the offset in coordinate systemCoordSystemOffset"
+        ]
+      ]
+    }
+  ]
+}

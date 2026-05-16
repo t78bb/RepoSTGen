@@ -1,0 +1,173 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_NCInterpreter (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/Interpreter/SMC_NCInterpreter.html",
+  "page_title": "SMC_NCInterpreter (FB)",
+  "text": "GlobalTextList (GlobalTextList)\nImagePool_cnc_sm3 (ImagePool)\nImages\nLibrary Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nProjektinformationen\nGetBooleanProperty (Function)\nGetCompany (Function)\nGetNumberProperty (Function)\nGetTextProperty (Function)\nGetTextProperty2 (Function)\nGetTitle (Function)\nGetVersion (Function)\nGetVersionProperty (Function)\nSM3_CNC_GetVersion (Function)\nSMC_CNC_LibParams (ParamList)\nSM_CNC_Data types\nFile\nSMC_SINGLEVAR (Struct)\nSMC_TOKENTYPE (Enum)\nSMC_VARLIST (Struct)\nSMC_VARTYPE (Enum)\nSoftMotion CNC\nSMC_ABC_SLOPES_AT_STOP (Enum)\nSMC_ABC_SLOPES_NO_STOP (Enum)\nSMC_ADDAXIS (Enum)\nSMC_AL_STATUS (Enum)\nSMC_CNC_REF (FunctionBlock)\nSMC_DEC_STATUS (Enum)\nSMC_DIRECTION (Enum)\nSMC_GAddress (Alias)\nSMC_GCODEVIEWER_DATA (Struct)\nSMC_GCODE_TEXT (Struct)\nSMC_GCODE_WORD (Struct)\nSMC_GCodeObjectId (Struct)\nSMC_GEOINFO (Struct)\nSMC_GWord (Struct)\nSMC_INT_STATUS (Enum)\nSMC_INT_VELMODE (Enum)\nSMC_LINE_3D (Struct)\nSMC_MOVTYP (Enum)\nSMC_M_PARAMETERS (Struct)\nSMC_OBJECTSPLITTERMODE (Enum)\nSMC_ORI_CONVENTION (Enum)\nSMC_OUTQUEUE (FunctionBlock)\nbFull (Property)\nSMC_PLANE_H (Struct)\nSMC_POSINFO (Struct)\nSMC_SEGMENT (Struct)\nSMC_SEGMENTTYPE (Enum)\nSMC_SMOOTHBSPLINE_MODE (Enum)\nSMC_SMOOTHPATHADDAXMODE (Enum)\nSMC_SMOOTHPATHMODE (Enum)\nSMC_Seg (Struct)\nSMC_TC_STATUS (Enum)\nSMC_TOOLCORRMODE (Enum)\nSMC_VECTOR6D (Struct)\nSM_CNC_POUs\nFile\nReadNCFile\nSMC_ReadNCFile (FunctionBlock)\nStream\nToken\nSMC_ReadNCQueue (FunctionBlock)\nCloseFile (Action)\nhelp functions\nSMC_StringBuffer (FunctionBlock)\nNC2\nGSentence\nSMC_GExpToken_Iterator (FunctionBlock)\nSMC_GJUMP_COMMAND (Enum)\nSMC_GJUMP_TARGET (Union)\nSMC_GSentence (Struct)\nSMC_GSentenceQueue (FunctionBlock)\nSMC_GSentence_DynCall (Struct)\nSMC_GSentence_GWords (Struct)\nSMC_GSentence_GWords_Create (Function)\nSMC_GSentence_Iterator (FunctionBlock)\nSMC_GSentence_Let (Struct)\nSMC_GSentence_SubCall (Struct)\nSMC_GSentence_SubRet (Struct)\nSMC_GSentence_Type (Enum)\nSMC_GSentence_Union (Union)\nSMC_GVarDecl (Struct)\nSMC_GVar_Type (Enum)\nSMC_GWord_Iterator (FunctionBlock)\nSMC_NC_CopySentence (Function)\nSMC_NC_CopySentenceChecked (Function)\nGSentenceJumpBuffer\nSMC_GSentenceJumpBuffer (FunctionBlock)\nInterpreter\nCallstack\nSMC_NCInterpreter (FunctionBlock)\nParser\nExpressions\nSMC_NCTokenParser (FunctionBlock)\nSMC_NC_SourcePosition (Struct)\nSymbolTable\nReadNCFile2\nSMC_IGSentenceModifier (Interface)\nSMC_INCLookup (Interface)\nSMC_ITokenModifier (Interface)\nSMC_NCLookupFile (FunctionBlock)\nSMC_NCNavigator (FunctionBlock)\nSMC_NC_CanProcessTokens (Function)\nSMC_NC_FindProgramFile (Function)\nSMC_NC_PrependDefaults (FunctionBlock)\nSMC_NC_TokenQueue_Completed (Function)\nSMC_ReadNCFile2 (FunctionBlock)\nSMC_ReadNCFromStream (FunctionBlock)\nSoftMotion CNC\nCoordinate Transformations\nSMC_CoordinateTransformation3D (FunctionBlock)\nSMC_DetermineCuboidBearing (FunctionBlock)\nSMC_InvCoordinateTransformation3D (FunctionBlock)\nSMC_TeachCoordinateSystem (FunctionBlock)\nSMC_UnitVectorToRPY (FunctionBlock)\nDirect Axis Control\nSMC_ControlAxisByPos (FunctionBlock)\nSMC_ControlAxisByPosVel (FunctionBlock)\nSMC_ControlAxisByVel (FunctionBlock)\nGCode Viewer\nSMC_GCodeViewer (FunctionBlock)\nGeoInfo Help Functions\nSMC_AdaptHelpMarks (Function)\nSMC_CalcEndPnt (Function)\nSMC_CalcLengthGeo (Function)\nSMC_CalcStartPnt (Function)\nSMC_CutEnd (Function)\nSMC_CutStart (Function)\nSMC_GeoinfoInit (Function)\nSMC_GetAccVec (Function)\nSMC_GetAddAxValue (Function)\nSMC_GetClosestPnt (Function)\nSMC_GetLengthOfPrefix (Function)\nSMC_GetPnt (Function)\nSMC_GetPntPI (Function)\nSMC_GetTanVec (Function)\nSMC_GetTanVec3D (Function)\nSMC_InvertDirection (Function)\nSMC_RampInCorr (Function)\nSMC_RampOutCorr (Function)\nSMC_RecalculateHelpMarks (Function)\nSMC_SingleCorr (Function)\nOutQueue Functions\nSMC_AppendObj (Function)\nSMC_DeleteObj (Function)\nSMC_GetCount (Function)\nSMC_GetHistoryCount (Function)\nSMC_GetLastObj (Function)\nSMC_GetObj (Function)\nSMC_GetObjFromEnd (Function)\nSMC_GetObjFromHistory (Function)\nSMC_OutQueueInit (Function)\nSMC_OutQueueIsSyncing (Function)\nSMC_OutQueue_IsFull (Function)\nSMC_RestoreQueue (Function)\nSMC_SetObj (Function)\nSMC_SetQueueCapacity (Function)\nPosinfo Functions\nSMC_PosInfo_Trf_Inverse (Function)\nSMC_PosInfo_Trf_Mult (Function)\nQueue manipulation\nSMC_QueueSetReservedEntries (FunctionBlock)\nSMC_RotateQueue2D (FunctionBlock)\nSMC_ScaleQueue3D (FunctionBlock)\nSMC_TranslateQueue3D (FunctionBlock)\nSoftMotion Function Blocks\nBlockSearch\nDecoderBuffer\nInterpolator_Help_Functions\nM_Functions\nNCDecoder_Help_Functions\nSMC_AddGCodeState (Struct)\nSMC_AvoidLoop (FunctionBlock)\nSMC_CheckForLimits (FunctionBlock)\nSMC_CheckVelocities (FunctionBlock)\nSMC_ExtendedVelocityChecks (FunctionBlock)\nSMC_Interpolator (FunctionBlock)\nSMC_Interpolator2Dir (FunctionBlock)\nSMC_Interpolator2Dir_SlowTask (FunctionBlock)\nSMC_LimitCircularVelocity (FunctionBlock)\nSMC_LimitDynamics (FunctionBlock)\nSMC_NCDecoder (FunctionBlock)\nSMC_ObjectSplitter (FunctionBlock)\nSMC_ReadAdditionalIpoState (FunctionBlock)\nSMC_RecomputeABCSlopes (FunctionBlock)\nSMC_ReduceVelEndAtCorner (FunctionBlock)\nSMC_RoundPath (FunctionBlock)\nSMC_SegmentAnalyzer (FunctionBlock)\nSMC_SetInterpreterStartPosition (FunctionBlock)\nSMC_SmoothAddAxes (FunctionBlock)\nSMC_SmoothBSpline (FunctionBlock)\nSMC_SmoothMerge (FunctionBlock)\nSMC_SmoothPath (FunctionBlock)\nSMC_ToolCorr (FunctionBlock)\nSMC_ToolLengthCorr (FunctionBlock)\nSMC_ToolRadiusCorr (FunctionBlock)\nSMC_XInterpolator (FunctionBlock)\nSM_Trafo_Data types\nSMC_ArticulatedRobot_6DOF_J0_State (Enum)\nSMC_ArticulatedRobot_6DOF_J1_State (Enum)\nSMC_ArticulatedRobot_6DOF_J4_State (Enum)\nSMC_TrafoConfig_4AxisPalletizer (Struct)\nSMC_TrafoConfig_ArticulatedRobot_6DOF (Struct)\nSMC_TrafoResult_4AxisPalletizer (Enum)\nSMC_TrafoResult_ArticulatedRobot_6DOF (Enum)\nSMC_VECTORDIR (Enum)\nSM_Trafo_POUs\nForward and inverse transformation\nSMC_TRAFOV_\nSoftMotion Transformations\nGantry systems\nParallel Systems\nRobot Kinematiks\nScara System\nWrapper\nadditional FBs\nVisu_Templates\nFile\nCNC\nSM_CNC_Visualizations\nFBs\nCNC\nDirect Axis Control\nTranslation & Rotation & Scaling\nhelp visu\nSM_Trafo_Visualizations\nTrafo templates\nGantry\nParallel\nRobot\nScara\nVisu_Templates_New\nFramed Visu Helpers\nTextListForCombobox_MC_DIRECTION (TextList)\nTextListForCombobox_SMC_ABC_SLOPES_AT_STOP (TextList)\nTextListForCombobox_SMC_ABC_SLOPES_NO_STOP (TextList)\nTextListForCombobox_SMC_AL_STATUS (TextList)\nTextListForCombobox_SMC_DEC_STATUS (TextList)\nTextListForCombobox_SMC_DIRECTION (TextList)\nTextListForCombobox_SMC_ERROR (TextList)\nTextListForCombobox_SMC_INT_STATUS (TextList)\nTextListForCombobox_SMC_INT_VELMODE (TextList)\nTextListForCombobox_SMC_ORI_CONVENTION (TextList)\nTextListForCombobox_SMC_SMOOTHBSPLINE_MODE (TextList)\nTextListForCombobox_SMC_SMOOTHPATHADDAXMODE (TextList)\nTextListForCombobox_SMC_SMOOTHPATHMODE (TextList)\nTextListForCombobox_SMC_TC_STATUS (TextList)\nTextListForCombobox_SMC_TOOLCORRMODE (TextList)\nFile and Project Information\nLibrary Reference\n3SLicense\nLibrary Identification\nLibrary Properties\nBase Interfaces\nLibrary Identification\nLibrary Properties\nCmpLog\nLibrary Identification\nLibrary Properties\nFloatingPointUtils\nLibrary Identification\nLibrary Properties\nMatrix\nLibrary Identification\nLibrary Properties\nSM3_Basic\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nSM3_RBase\nLibrary Identification\nLibrary Properties\nSM3_Shared\nLibrary Identification\nLibrary Properties\nSM3_Transformation\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nSysFile\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysTarget\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nVisuElem3DPath\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElemCamDisplayer\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElemMeter\nLibrary Identification\nLibrary Properties\nVisuElemTextEditor\nLibrary Identification\nLibrary Properties\nVisuElemTrace\nLibrary Identification\nLibrary Properties\nVisuElems\nLibrary Identification\nLibrary Properties\nVisuElemsAlarm\nLibrary Identification\nLibrary Properties\nVisuElemsDateTime\nLibrary Identification\nLibrary Properties\nVisuElemsSpecialControls\nLibrary Identification\nLibrary Properties\nVisuElemsWinControls\nLibrary Identification\nLibrary Properties\nVisuInputs\nLibrary Identification\nLibrary Properties\nVisuNativeControl\nLibrary Identification\nLibrary Properties\nSM3_CNC\nDocs\n»\nSM_CNC_POUs\n»\nNC2\n»\nInterpreter\n»\nSMC_NCInterpreter (FB)\nSMC_NCInterpreter (FB)\nÂ¶\nFUNCTION_BLOCK FINAL SMC_NCInterpreter\nThis function block is used to interpret a CNC program\n(Din 66025, G-code).\nThe program is converted into a list of\nSMC_GeoInfo\nobjects\nand stored in a queue of type\nSMC_OutQueue\n.\nIn each call, usually one line of the program is interpreted.\nThis function block should be called in a separate task with\na priority lower than the priority of the bus task.\nIt should be called together with the function blocks for reading\nthe G-Code (e.g.\nSMC_ReadNCFile2\n) and for pre-processing the path\n(e.g.\nSMC_CheckVelocities\n).\nIt can be called multiple times per cycle.\nNote\nThe interpreter must be called in the same task as the function block\nthat fills the SMC_GSentenceQueue (input\nsentences\n).\nUsually, the sentences are provided by\nSMC_ReadNCFile2\n,\nSMC_ReadNCFromStream\n, or\nSMC_NCTokenParser\n.\nThe maximum number of M-functions in a row is 64.\nIf the G-Code contains more than 64 M-functions in a row,\nthe error\nSMC_DEC_OUTQUEUE_RAN_EMPTY\noccurs.\nThis restriction can be circumvented by inserting a G75\nprevious to the first M-function of the sequence.\nG4-elements count as M-functions, too.\nInOut:\nScope\nName\nType\nInitial\nComment\nInout\nsentences\nSMC_GSentenceQueue\nThe input queue of g-code sentences\nInput\nbExecute\nBOOL\nExecution starts on the rising edge.\nbAbort\nBOOL\nIf\nTRUE\n, the current processing of this function block\nis aborted\nbAppend\nBOOL\nThe input\nbAppend\nis intended for the use-case of appending a further\nG-Code file to the last one, keeping the interpreter state.\nThe result is the same as if both G-Code files would have been copied into\na single file, with a few exceptions as mentioned below.\nThe out-queue is not cleared, only the bEndOfData flag is reset.\nState like the decoder coordinate system (G54, G55, G56),\nthe arc coordinate system (G15, G16, G17, G18, G19), the\ncurrent mode (G90, G91, G98, G99), or the implicit variable is kept and\nused for the new G-Code.\nNote that when reading the G-Code with\nSMC_ReadNCFile2\nor\nSMC_ReadNCFromStream\n, the input âbAppendâ of these function blocks\nmust be set, too.\nRestrictions:\nThe first rising edge of\nbExecute\nmust have\nbAppend\n=\nFALSE\n,\notherwise the error\nSMC_CNC_APPEND_ON_FIRST_RISING_EDGE\nis returend.\nSplines (G05/G10) cannot be continued.  If the first G-Code ends with\na spline, and the following G-Code starts with a spline, a spline stop\nis done at the end of the previous G-Code, nevertheless.\nThe inputs\npiStartPosition\nand\nvStartToolLength\nare ignored if\nbAppend\nis\nTRUE\n.\npiStartPosition\nSMC_POSINFO\nStart position of the path. Only the position of the axes\n(piStartPosition.dX/dY/dZ/dA/dB/dC/dA1/â¦/dA6) is used, the other\nmembers of piStartPosition are ignored.\nThe start position is read at a rising edge of execute, and when\na G31 / PROBE movement is finished.\nIt is recommended to use\nSMC_SetInterpreterStartPosition\nto copy\nthe actual position of the machine from the bus task to the task\nof the interpreter.\nvStartToolLength\nSMC_Vector3d\nStart tool length.\nnSizeOutQueue\nUDINT\nThis variable contains the size of the data buffer,\nthe list of\nSMC_GEOINFO\nstructure objects will be written to.\nThis buffer must be able to hold at least five\nSMC_GEOINFO\nobjects.\nOtherwise, the function block will not execute any actions at all.\nIts size may be predefined, but may be modified later only\nduring a reset.\nIt is recommended to create the buffer as described by the example below:\nExampleBuf:\nArray[1..50]\nof\nSMC_GeoInfo;\nThe appropriate buffer size will then be retrieved by use of the\noperator\nsizeof(ExampleBuf)\n.\npbyBufferOutQueue\nPOINTER TO ARRAY [0..0]\nOF SMC_GEOINFO\nThis input must point to the first byte of the memory area\nthat is allocated for the\nSMC_OUTQUEUE\nstructure.\nThis area must be at least as big as defined in\nnSizeOutQueue\n.\nTypically the allocation of the memory buffer is done in the\ndeclaration part of the IEC-program by defining an array of\nSMC_GEOINFO\n(e.g.\nBUF:\nARRAY[1..50]\nOF\nSMC_GEOINFO\n; for a buffer that can\nstore 50 path elements). The value may be predefined, but may be\nmodified later on only during a reset.\nbEnableSyntaxChecks\nBOOL\nTRUE\nTurns on syntax checks that will detect invalid G-code and\nstop with an error in this case.  It is recommended to\nuse the syntax checks.\neOriConv\nSMC_ORI_CONVENTION\nSMC_ORI_CONVENTION.ADDAXES\nDefines the way the orientation in the A/B/C words is interpreted.\nFor movement commands (such as G01, G02, â¦), the value determines\nhow A/B/C are treated.  For values other than\nSMC_ORI_CONVENTION\n.``ADDAXES``, the angles A/B/C may be normalized,\neven if no coordinate rotation has been programmed.  For example with\norientation convention ZYZ, a programmed orientation of A=90Â° B=0Â° C=0Â°\nmay result in the (equivalent) rotation A=0Â° B=0Â° C=90Â° in the path\nelement.\nFor commands that set the decoder coordinate system (G54/G55/G56),\nthe value determines how the coordinates A/B/C are treated.\nIf the value is\nSMC_ORI_CONVENTION\n.``ADDAXES``, then A/B/C are\ntreated as independent additional axes, for which offsets are set.\nFor all other values, A/B/C are treated as an orientation, and the\ndecoder coordinate system is rotated accordingly.\nNote\nIf used with tool correction functions such as\nSMC_ToolLengthCorr\n, the same orientation convention has to\nbe used there.\ndCircleTolerance\nLREAL\nTolerance to decide whether the definition of a circle makes sense.\ncase definition via target-position and radius:\nIf the distance between start- and end-position\n(both projected onto the circle plane) is greater than\n2\n*\nthe\nradius\n+\nMAX(fCircleTolerance,\n1e-06)\n,\nthe circle will be converted into a line.\ncase definition via target- and center-position:\nLet\nx\nbe the maximum of\nthe distance between start- and center-position and\nthe distance between target- and center-position\n(projecting everything onto the circle plane).\nIf those distances differ by more than\nMAX(fCircleTolerance,\n0.1\n*\nx)\n,\nthe circle will be converted into a line.\npInterpreterStack\nPOINTER TO BYTE\nAllows to supply a buffer for the interpreter stack.  If 0, a default buffer\nof size 10240 Bytes is used.  If <> 0, the given buffer will be used.\nThis input is read each cycle.\nnInterpreterStackSizeBytes\nUDINT\nThe size of the buffer pointed to by pInterpreterStack.  Note that the size\nneeds to be at least 1024 Bytes.\ndPrecision\nLREAL\nThe precision of the path in technical units.\nThis value indicates the precision of the positions\nread from the G-Code.  For example, if the G-Code is\ngiven with 3 places after the decimal point, the precision\nshould be set to 1e-3 units.\nThe precision must be non-negative.\nThe precision value is used for example by path preprocessors like\nSMC_ToolRadiusCorr\nand\nSMC_AvoidLoop\n.\nOutput\nbDone\nBOOL\nThis variable will be set to\nTRUE\nas soon as the\ninput data has been processed completely.\nThe function block will not perform any further actions\nuntil it gets reset.\nbBusy\nBOOL\nTRUE\n, while execution of function block is not finished.\nbError\nBOOL\nSignals that an error has occurred within the function\nblock.\nwErrorID\nSMC_ERROR\nError identification\nerrorPos\nSMC_NC_SourcePosition\nThe source-position where an error has been detected.\npoqDataOut\nPOINTER TO\nSMC_OUTQUEUE\nPointer to the\nSMC_OUTQUEUE\nstructure that manages the\ndecoded\nSMC_GEOINFO\nobjects.\niStatus\nSMC_DEC_STATUS\nThe current status.\niLineNumberDecoded\nDINT\nThe variable contains the 0-based line number of the CNC\nfile.\nGCodeText\nSMC_GCODE_TEXT\nThe G-Code text of the current line.\nCallstackInfo\nSMC_NCCallstackInfo\nInformation about the callstack of the current\nG-Code line.  Used by\nSMC_DisplayNCCallstack\n.\naActivePrograms\nARRAY\n[0..(SoftMotion_NC2_Constants.IPR_CALLSTACK_SIZE\n- 1)] OF STRING\nThe currently active programs and subprograms.\naActivePrograms[0] holds the name of the (sub)program that is\ncurrently interpreted.  If it is a sub-program, then\naActivePrograms[1] holds the name of the calling (sub)program\nand so on.\nThe list of active programs is terminated by an empty string.\nMethods:\nGetDCS\nStructure:\nGetDCS (Method)",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "sentences",
+          "Type": "SMC_GSentenceQueue",
+          "Initial": "",
+          "Comment": "The input queue of g-code sentences"
+        },
+        {
+          "Scope": "Input",
+          "Name": "bExecute",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Execution starts on the rising edge."
+        },
+        [
+          "bAbort",
+          "BOOL",
+          "",
+          "IfTRUE, the current processing of this function block\nis aborted"
+        ],
+        [
+          "bAppend",
+          "BOOL",
+          "",
+          "The inputbAppendis intended for the use-case of appending a further\nG-Code file to the last one, keeping the interpreter state.\nThe result is the same as if both G-Code files would have been copied into\na single file, with a few exceptions as mentioned below.\nThe out-queue is not cleared, only the bEndOfData flag is reset.\nState like the decoder coordinate system (G54, G55, G56),\nthe arc coordinate system (G15, G16, G17, G18, G19), the\ncurrent mode (G90, G91, G98, G99), or the implicit variable is kept and\nused for the new G-Code.Note that when reading the G-Code withSMC_ReadNCFile2orSMC_ReadNCFromStream, the input âbAppendâ of these function blocks\nmust be set, too.Restrictions:The first rising edge ofbExecutemust havebAppend=FALSE,\notherwise the errorSMC_CNC_APPEND_ON_FIRST_RISING_EDGEis returend.Splines (G05/G10) cannot be continued.  If the first G-Code ends with\na spline, and the following G-Code starts with a spline, a spline stop\nis done at the end of the previous G-Code, nevertheless.The inputspiStartPositionandvStartToolLengthare ignored ifbAppendisTRUE."
+        ],
+        [
+          "piStartPosition",
+          "SMC_POSINFO",
+          "",
+          "Start position of the path. Only the position of the axes\n(piStartPosition.dX/dY/dZ/dA/dB/dC/dA1/â¦/dA6) is used, the other\nmembers of piStartPosition are ignored.\nThe start position is read at a rising edge of execute, and when\na G31 / PROBE movement is finished.\nIt is recommended to useSMC_SetInterpreterStartPositionto copy\nthe actual position of the machine from the bus task to the task\nof the interpreter."
+        ],
+        [
+          "vStartToolLength",
+          "SMC_Vector3d",
+          "",
+          "Start tool length."
+        ],
+        [
+          "nSizeOutQueue",
+          "UDINT",
+          "",
+          "This variable contains the size of the data buffer,\nthe list ofSMC_GEOINFOstructure objects will be written to.\nThis buffer must be able to hold at least fiveSMC_GEOINFOobjects.\nOtherwise, the function block will not execute any actions at all.\nIts size may be predefined, but may be modified later only\nduring a reset.\nIt is recommended to create the buffer as described by the example below:ExampleBuf:Array[1..50]ofSMC_GeoInfo;The appropriate buffer size will then be retrieved by use of the\noperatorsizeof(ExampleBuf)."
+        ],
+        [
+          "pbyBufferOutQueue",
+          "POINTER TO ARRAY [0..0]\nOF SMC_GEOINFO",
+          "",
+          "This input must point to the first byte of the memory area\nthat is allocated for theSMC_OUTQUEUEstructure.\nThis area must be at least as big as defined innSizeOutQueue.\nTypically the allocation of the memory buffer is done in the\ndeclaration part of the IEC-program by defining an array ofSMC_GEOINFO(e.g.BUF:ARRAY[1..50]OFSMC_GEOINFO; for a buffer that can\nstore 50 path elements). The value may be predefined, but may be\nmodified later on only during a reset."
+        ],
+        [
+          "bEnableSyntaxChecks",
+          "BOOL",
+          "TRUE",
+          "Turns on syntax checks that will detect invalid G-code and\nstop with an error in this case.  It is recommended to\nuse the syntax checks."
+        ],
+        [
+          "eOriConv",
+          "SMC_ORI_CONVENTION",
+          "SMC_ORI_CONVENTION.ADDAXES",
+          "Defines the way the orientation in the A/B/C words is interpreted.For movement commands (such as G01, G02, â¦), the value determines\nhow A/B/C are treated.  For values other thanSMC_ORI_CONVENTION.``ADDAXES``, the angles A/B/C may be normalized,\neven if no coordinate rotation has been programmed.  For example with\norientation convention ZYZ, a programmed orientation of A=90Â° B=0Â° C=0Â°\nmay result in the (equivalent) rotation A=0Â° B=0Â° C=90Â° in the path\nelement.For commands that set the decoder coordinate system (G54/G55/G56),\nthe value determines how the coordinates A/B/C are treated.\nIf the value isSMC_ORI_CONVENTION.``ADDAXES``, then A/B/C are\ntreated as independent additional axes, for which offsets are set.\nFor all other values, A/B/C are treated as an orientation, and the\ndecoder coordinate system is rotated accordingly.NoteIf used with tool correction functions such asSMC_ToolLengthCorr, the same orientation convention has to\nbe used there."
+        ],
+        [
+          "dCircleTolerance",
+          "LREAL",
+          "",
+          "Tolerance to decide whether the definition of a circle makes sense.case definition via target-position and radius:\nIf the distance between start- and end-position\n(both projected onto the circle plane) is greater than2*theradius+MAX(fCircleTolerance,1e-06),\nthe circle will be converted into a line.case definition via target- and center-position:\nLetxbe the maximum of\nthe distance between start- and center-position and\nthe distance between target- and center-position\n(projecting everything onto the circle plane).\nIf those distances differ by more thanMAX(fCircleTolerance,0.1*x),\nthe circle will be converted into a line."
+        ],
+        [
+          "pInterpreterStack",
+          "POINTER TO BYTE",
+          "",
+          "Allows to supply a buffer for the interpreter stack.  If 0, a default buffer\nof size 10240 Bytes is used.  If <> 0, the given buffer will be used.\nThis input is read each cycle."
+        ],
+        [
+          "nInterpreterStackSizeBytes",
+          "UDINT",
+          "",
+          "The size of the buffer pointed to by pInterpreterStack.  Note that the size\nneeds to be at least 1024 Bytes."
+        ],
+        [
+          "dPrecision",
+          "LREAL",
+          "",
+          "The precision of the path in technical units.\nThis value indicates the precision of the positions\nread from the G-Code.  For example, if the G-Code is\ngiven with 3 places after the decimal point, the precision\nshould be set to 1e-3 units.\nThe precision must be non-negative.The precision value is used for example by path preprocessors likeSMC_ToolRadiusCorrandSMC_AvoidLoop."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bDone",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "This variable will be set toTRUEas soon as the\ninput data has been processed completely.\nThe function block will not perform any further actions\nuntil it gets reset."
+        },
+        [
+          "bBusy",
+          "BOOL",
+          "",
+          "TRUE, while execution of function block is not finished."
+        ],
+        [
+          "bError",
+          "BOOL",
+          "",
+          "Signals that an error has occurred within the function\nblock."
+        ],
+        [
+          "wErrorID",
+          "SMC_ERROR",
+          "",
+          "Error identification"
+        ],
+        [
+          "errorPos",
+          "SMC_NC_SourcePosition",
+          "",
+          "The source-position where an error has been detected."
+        ],
+        [
+          "poqDataOut",
+          "POINTER TOSMC_OUTQUEUE",
+          "",
+          "Pointer to theSMC_OUTQUEUEstructure that manages the\ndecodedSMC_GEOINFOobjects."
+        ],
+        [
+          "iStatus",
+          "SMC_DEC_STATUS",
+          "",
+          "The current status."
+        ],
+        [
+          "iLineNumberDecoded",
+          "DINT",
+          "",
+          "The variable contains the 0-based line number of the CNC\nfile."
+        ],
+        [
+          "GCodeText",
+          "SMC_GCODE_TEXT",
+          "",
+          "The G-Code text of the current line."
+        ],
+        [
+          "CallstackInfo",
+          "SMC_NCCallstackInfo",
+          "",
+          "Information about the callstack of the current\nG-Code line.  Used bySMC_DisplayNCCallstack."
+        ],
+        [
+          "aActivePrograms",
+          "ARRAY\n[0..(SoftMotion_NC2_Constants.IPR_CALLSTACK_SIZE\n- 1)] OF STRING",
+          "",
+          "The currently active programs and subprograms.\naActivePrograms[0] holds the name of the (sub)program that is\ncurrently interpreted.  If it is a sub-program, then\naActivePrograms[1] holds the name of the calling (sub)program\nand so on.\nThe list of active programs is terminated by an empty string."
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "library": "AC_DataLog",
+  "title": "GlobalTextList (GlobalTextList)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_DataLog/Current/GlobalTextList.html",
+  "page_title": "GlobalTextList (Text List)",
+  "text": "\nID\nDefault\nen\nde\n293\n%d\n%d\n%d\n63\n%s\n%s\n%s\n380\nNumber\nof\nentries\ncreated:\nNumber of entries created:\nAnzahl der erzeugten EintrÃ¤ge:\n414\nNumber\nof\nvariables\nbeing\nlogged:\nNumber of variables being logged:",
+  "tables": [
+    {
+      "headers": [
+        "ID",
+        "Default",
+        "en",
+        "de"
+      ],
+      "rows": [
+        {
+          "ID": "293",
+          "Default": "%d",
+          "en": "%d",
+          "de": "%d"
+        },
+        {
+          "ID": "63",
+          "Default": "%s",
+          "en": "%s",
+          "de": "%s"
+        },
+        {
+          "ID": "380",
+          "Default": "Numberofentriescreated:",
+          "en": "Number of entries created:",
+          "de": "Anzahl der erzeugten EintrÃ¤ge:"
+        },
+        {
+          "ID": "414",
+          "Default": "Numberofvariablesbeinglogged:",
+          "en": "Number of variables being logged:",
+          "de": ""
+        }
+      ]
+    }
+  ]
+}

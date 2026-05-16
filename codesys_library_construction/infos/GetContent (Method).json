@@ -1,0 +1,31 @@
+{
+  "library": "BACnet2",
+  "title": "GetContent (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/Utilities/BACnetUtilities/BACnetProperties/property-proxies/pou-ISingleValue_of_OCTETSTRING/GetContent.html",
+  "page_title": "ISingleValue_of_OCTETSTRING.GetContent (METH)",
+  "text": "\nMETHOD GetContent : CmpBACnet.IEC_BACNET_STATUS\nGet the content of this property.\nAfter usage, use\nFreeStackAllocatedMemory\n, to free the used memory.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetContent",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Output",
+          "Name": "pData",
+          "Type": "POINTER TO\nCmpBACnet.IEC_BACNET_OCTET_STRING",
+          "Comment": "Property content.\nAfter usage, useFreeStackAllocatedMemory, to free the used memory."
+        }
+      ]
+    }
+  ]
+}

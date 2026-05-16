@@ -1,0 +1,31 @@
+{
+  "library": "BACnet",
+  "title": "GetPropertyReferenceCount (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/Schedule/pou-BACnetSchedule/PropertyReferences/GetPropertyReferenceCount.html",
+  "page_title": "BACnetSchedule.GetPropertyReferenceCount (METH)",
+  "text": "\nMETHOD GetPropertyReferenceCount : CmpBACnet.IEC_BACNET_STATUS\nGets the number of device object property reference entries in the List_Of_Object_Property_References-Property of this BACnet-Object.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetPropertyReferenceCount",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Output",
+          "Name": "count",
+          "Type": "CmpBACnet.IEC_BACNET_ELEMENT_COUNT",
+          "Comment": "The number of property references of the\nList_Of_Object_Property_References of this object."
+        }
+      ]
+    }
+  ]
+}

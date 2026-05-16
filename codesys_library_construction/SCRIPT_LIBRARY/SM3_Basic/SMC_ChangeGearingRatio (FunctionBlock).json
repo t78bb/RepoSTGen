@@ -1,0 +1,77 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_ChangeGearingRatio (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/AdministrativeConfiguration/SMC_ChangeGearingRatio.html",
+  "page_title": "SMC_ChangeGearingRatio (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_ChangeGearingRatio\nNote: this function block has been superseded by\n|SMC_ChangeAxisScalaingRotary|\nand\nSMC_ChangeAxisScalingLinear\n.\nChanges the gearing ratio and the type of the axis.\nAfter execution, the axis must be restarted by\nSMC3_ReinitDrive\n,\nin order to guarantee that all variables are initialized in a correct way.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "bExecute",
+          "Type": "BOOL",
+          "Comment": "Rising edge: Starts the execution of the function block."
+        },
+        [
+          "dwRatioTechUnitsDenom",
+          "DWORD",
+          "Denominator of the conversion factor to convert drive increments\ninto technical units.  Units: [inc]."
+        ],
+        [
+          "iRatioTechUnitsNum",
+          "DINT",
+          "Numerator of the conversion factor to convert drive increments\ninto technical units.  Units: [u]."
+        ],
+        [
+          "fPositionPeriod",
+          "LREAL",
+          "Position period, modulo value (only for modulo axes)"
+        ],
+        [
+          "iMovementType",
+          "SMC_MOVEMENTTYPE",
+          "0: Modulo axis,1: Finite axis"
+        ],
+        [
+          "motorType",
+          "SMC_MOTOR_TYPE",
+          "Whether a rotary or linear motor is used"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bDone",
+          "Type": "BOOL",
+          "Comment": "TRUE: The gearing ratio / movement type / modulo period\nhas been changed."
+        },
+        [
+          "bBusy",
+          "BOOL",
+          "TRUE: Execution of function block has not been finished\nyet."
+        ],
+        [
+          "bError",
+          "BOOL",
+          "TRUE: An error has occurred within the function block."
+        ],
+        [
+          "nErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

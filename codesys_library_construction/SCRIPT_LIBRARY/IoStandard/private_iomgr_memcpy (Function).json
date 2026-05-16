@@ -1,0 +1,36 @@
+{
+  "library": "IoStandard",
+  "title": "private_iomgr_memcpy (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/IoStandard/Current/Config-Access-Help-Functions-internal/private/private_iomgr_memcpy.html",
+  "page_title": "private_iomgr_memcpy (FUN)",
+  "text": "\nFUNCTION private_iomgr_memcpy : INT\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "private_iomgr_memcpy",
+          "Type": "INT"
+        },
+        {
+          "Scope": "Input",
+          "Name": "pSrc",
+          "Type": "POINTER TO BYTE"
+        },
+        [
+          "pDst",
+          "POINTER TO BYTE"
+        ],
+        [
+          "iSize",
+          "INT"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_READ_TOOL_MODE (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/Basic-types/SMC_READ_TOOL_MODE.html",
+  "page_title": "SMC_READ_TOOL_MODE (ENUM)",
+  "text": "\nTYPE SMC_READ_TOOL_MODE :\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "last_set",
+          "Initial": "0",
+          "Comment": "Read the tool offset last set usingSMC_GroupSetTool"
+        },
+        {
+          "Name": "active_movement",
+          "Initial": "",
+          "Comment": "Read the tool offset of the active movement."
+        },
+        {
+          "Name": "last_movement",
+          "Initial": "",
+          "Comment": "Read the tool offset of the last commanded movement."
+        }
+      ]
+    }
+  ]
+}

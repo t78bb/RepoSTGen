@@ -1,0 +1,31 @@
+{
+  "library": "3S Storage",
+  "title": "_3SStorageVersionConstants (GVL)",
+  "url": "https://content.helpme-codesys.com/en/libs/3S Storage/Current/_3SStorageVersionConstants.html",
+  "page_title": "_3SStorageVersionConstants (GVL)",
+  "text": "\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "_3SSTORAGE_VERSION_LARGEROREQUAL_3_5_5_0_",
+          "Type": "INT",
+          "Initial": "0",
+          "Comment": "These variables should not be removed, because other libraries or code generation may rely on\nthese variables to identifiy a version of the lib!"
+        },
+        {
+          "Name": "_3SSTORAGE_VERSION_LARGEROREQUAL_3_5_11_10_",
+          "Type": "INT",
+          "Initial": "0",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

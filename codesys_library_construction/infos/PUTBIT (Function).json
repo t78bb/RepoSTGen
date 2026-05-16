@@ -1,0 +1,41 @@
+{
+  "library": "Util",
+  "title": "PUTBIT (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/BitByte-Functions/PUTBIT.html",
+  "page_title": "PUTBIT (FUN)",
+  "text": "\nFUNCTION PUTBIT : DWORD\nSets a bit of a DWORD value\nExample in ST:\nvar1\n:=\n38\n;\n(* binÃ¤r 100110 *)\nvar2\n:=\nPUTBIT\n(\nA\n,\n4\n,\nTRUE\n);\n(* Result: 54 = 2#110110 *)\nvar3\n:=\nPUTBIT\n(\nA\n,\n1\n,\nFALSE\n);\n(* Result: 36 = 2#100100 *)\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "PUTBIT",
+          "Type": "DWORD",
+          "Comment": "Value with the changed bit"
+        },
+        {
+          "Scope": "Input",
+          "Name": "X",
+          "Type": "DWORD",
+          "Comment": "Value to be manipulated"
+        },
+        [
+          "N",
+          "BYTE",
+          "Position of the bit to be changed, starting with 0"
+        ],
+        [
+          "B",
+          "BOOL",
+          "Value of specified bit"
+        ]
+      ]
+    }
+  ]
+}

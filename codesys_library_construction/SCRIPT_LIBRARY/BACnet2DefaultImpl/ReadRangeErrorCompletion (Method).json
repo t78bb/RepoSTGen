@@ -1,0 +1,23 @@
+{
+  "library": "BACnet2DefaultImpl",
+  "title": "ReadRangeErrorCompletion (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2DefaultImpl/Current/BACnetDefaultImpl/Function-Blocks/LoggingObjects/Internal/pou-LogObjectsBase/BACnetEventCallback/ReadRangeErrorCompletion.html",
+  "page_title": "LogObjectsBase.ReadRangeErrorCompletion (METH)",
+  "text": "\nMETHOD PROTECTED ReadRangeErrorCompletion\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "pReadRange",
+          "Type": "POINTER TO CmpBACnet.EVT_BACNET_READ_RANGE"
+        }
+      ]
+    }
+  ]
+}

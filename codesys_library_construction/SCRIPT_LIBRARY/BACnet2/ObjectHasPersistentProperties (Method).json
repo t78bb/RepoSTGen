@@ -1,0 +1,28 @@
+{
+  "library": "BACnet2",
+  "title": "ObjectHasPersistentProperties (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/BACnetServer/pou-IBACnetServer/PropertyAttributes/ObjectHasPersistentProperties.html",
+  "page_title": "IBACnetServer.ObjectHasPersistentProperties (METH)",
+  "text": "\nMETHOD ObjectHasPersistentProperties : BOOL\nChecks, if a BACnet-Object has persistent properties\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "ObjectHasPersistentProperties",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Input",
+          "Name": "objID",
+          "Type": "CmpBACnet.IEC_BACNET_OBJECT_ID"
+        }
+      ]
+    }
+  ]
+}

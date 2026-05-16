@@ -1,0 +1,31 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "GetAncestorRange (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_Module/TreeNavigation/GetAncestorRange.html",
+  "page_title": "GetAncestorRange (FUN)",
+  "text": "\nFUNCTION GetAncestorRange :\nAncestorRange\nReturns the range of all ancestors of a given instance including this instance.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetAncestorRange",
+          "Type": "AncestorRange",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfM",
+          "Type": "IModule",
+          "Comment": "The instance whose ancestors are of interest"
+        }
+      ]
+    }
+  ]
+}

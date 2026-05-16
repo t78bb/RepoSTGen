@@ -1,0 +1,37 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_SMOOTHPATHADDAXMODE (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_Data-types/SoftMotion-CNC/SMC_SMOOTHPATHADDAXMODE.html",
+  "page_title": "SMC_SMOOTHPATHADDAXMODE (ENUM)",
+  "text": "\nTYPE SMC_SMOOTHPATHADDAXMODE :\nMode for handling the additional axes by\nSMC_SmoothPath\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "SPAA_LATE",
+          "Comment": "Shift additional axesâ position to end position of inserted\nspline"
+        },
+        {
+          "Name": "SPAA_BROAD",
+          "Comment": "Shift additional axesâ position at the first spline to\nstart, at last spline to the end"
+        },
+        {
+          "Name": "SPAA_NONE",
+          "Comment": "Do not consider additional axes"
+        },
+        {
+          "Name": "SPAA_EVEN",
+          "Comment": "Distribute positions of additional axes proportional to\nelement lengths"
+        },
+        {
+          "Name": "SPAA_EXACT",
+          "Comment": "Cut ABC axesâ position functions like X/Y/Z and connect\nsmoothly"
+        }
+      ]
+    }
+  ]
+}

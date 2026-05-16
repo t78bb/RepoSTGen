@@ -1,0 +1,155 @@
+{
+  "library": "SM3_Basic",
+  "title": "MC_DigitalCamSwitch (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/Additional/MC_DigitalCamSwitch.html",
+  "page_title": "MC_DigitalCamSwitch (FB)",
+  "text": "\nFUNCTION_BLOCK MC_DigitalCamSwitch\nThis function block is analogous to switching on a motor shaft: The function block commands a group\nof discrete output bits to switch in analogy to a set of mechanical cam controlled switches connected to an axis.\nForward and backward movements are allowed.\nNote\nChanging the\nVAR_IN_OUT\n-parameters requires a new rising edge of\nthe\nEnable\ninput.\nSee\nSMC_DigitalCamSwitch_HighPrecision\nfor a similar function block\nthat can provide more precise timing information.\nHint\nThis functionality is sometimes called PLS â Phase or Position or Programmable Limit Switch.\nExample\nAssume the following parameter values set:\nParameter\nType\nSwitch01\nSwitch02\nSwitch03\nSwitch04\nTrackNumber\nINT\n1\n1\n1\n2\nFirstOnPosition [u]\nREAL\n2000\n2500\n4000\n3000\nLastOnPosition [u]\nREAL\n3000\n3000\n1000\n-\nAxisDirection\nINT\n1=Pos\n2=Neg\n0=Both\n0=Both\nCamSwitchMode\nINT\n0=Position\n0=Position\n0=Position\n1=TIME\nDuration\nTIME\n-\n-\n-\n1350\nAssume further, that no on/off compensation nor hysteresis is employed. The figure demonstrates the behavior of the outputs,\nwhen the axis is moving continuously in positive direction. The axis is a modulo axis with a modulo length of 5000 u.\nExample of DigitalCamSwitch\nÂ¶\nNow assume that on compensation (-125ms) and off compensation (+250ms) are employed.\nDetailed description of Switch01\nÂ¶\nThe resulting behavior of the outputs, when the axis is moving continuously in negative direction without on/off compensation and without hysteresis.\nExample in negative direction\nÂ¶\n",
+  "tables": [
+    {
+      "headers": [
+        "Parameter",
+        "Type",
+        "Switch01",
+        "Switch02",
+        "Switch03",
+        "Switch04"
+      ],
+      "rows": [
+        {
+          "Parameter": "TrackNumber",
+          "Type": "INT",
+          "Switch01": "1",
+          "Switch02": "1",
+          "Switch03": "1",
+          "Switch04": "2"
+        },
+        {
+          "Parameter": "FirstOnPosition [u]",
+          "Type": "REAL",
+          "Switch01": "2000",
+          "Switch02": "2500",
+          "Switch03": "4000",
+          "Switch04": "3000"
+        },
+        {
+          "Parameter": "LastOnPosition [u]",
+          "Type": "REAL",
+          "Switch01": "3000",
+          "Switch02": "3000",
+          "Switch03": "1000",
+          "Switch04": "-"
+        },
+        {
+          "Parameter": "AxisDirection",
+          "Type": "INT",
+          "Switch01": "1=Pos",
+          "Switch02": "2=Neg",
+          "Switch03": "0=Both",
+          "Switch04": "0=Both"
+        },
+        {
+          "Parameter": "CamSwitchMode",
+          "Type": "INT",
+          "Switch01": "0=Position",
+          "Switch02": "0=Position",
+          "Switch03": "0=Position",
+          "Switch04": "1=TIME"
+        },
+        {
+          "Parameter": "Duration",
+          "Type": "TIME",
+          "Switch01": "-",
+          "Switch02": "-",
+          "Switch03": "-",
+          "Switch04": "1350"
+        }
+      ]
+    },
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3",
+          "Initial": "",
+          "Comment": "Reference to axis the switches are connected to"
+        },
+        [
+          "Switches",
+          "MC_CAMSWITCH_REF",
+          "",
+          "Reference to switching actions"
+        ],
+        [
+          "Outputs",
+          "MC_OUTPUT_REF",
+          "",
+          "Reference to signal outputs that are directly related to the\nreferenced tracks"
+        ],
+        [
+          "TrackOptions",
+          "MC_TRACK_REF",
+          "",
+          "Reference to structure containing track related properties,\ne.g. the on/off compensations per output/track."
+        ],
+        {
+          "Scope": "Input",
+          "Name": "Enable",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUE: Enables execution of function block."
+        },
+        [
+          "EnableMask",
+          "DWORD",
+          "16#FFFFFFFF",
+          "32 bits ofBOOLenabling the different tracks. Least\nsignificant data is related to the lowestTrackNumber."
+        ],
+        [
+          "TappetMode",
+          "MC_TAPPETMODE",
+          "tp_mode_auto",
+          "Mode for position outputs"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "InOperation",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUE: Commanded tracks have been enabled."
+        },
+        [
+          "Busy",
+          "BOOL",
+          "",
+          "TRUE: Execution of function block has not been finished\nyet."
+        ],
+        [
+          "Error",
+          "BOOL",
+          "",
+          "TRUE: Error has occurred within the function block."
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "",
+          "Error identification"
+        ],
+        [
+          "SwitchCorrupted",
+          "INT",
+          "",
+          "Signals potential problems that arise from compensation times:\nCompensation times may lead to the case that the extrapolated position\npasses one switching point several times before passing the other\nswitching point again.\nAs a consequence, a non-inverted switch may become inverted\n(and the other way around).\nIn this case, this variable indicates the switch in concern.\nThere are two possible reasons:noisy velocity-values,âbigâ difference between on- and off-compensation.-1 means that such behaviour hasnât occured."
+        ]
+      ]
+    }
+  ]
+}

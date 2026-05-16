@@ -1,0 +1,29 @@
+{
+  "library": "SM3_CommonPublic",
+  "title": "MC_SOURCE (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CommonPublic/Current/SM3_CommonPublic/MC_SOURCE.html",
+  "page_title": "MC_SOURCE (ENUM)",
+  "text": "\nTYPE MC_SOURCE :\nDetermines the source or reference used for position, velocity,\nacceleration, or jerk.\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "SAVE",
+          "Comment": "Use the values computed on the PLC, as a reference.\n(Based on the start of a PLC cycle.)"
+        },
+        {
+          "Name": "SET",
+          "Comment": "Use the values computed on the PLC, as a reference.\n(Based on the end of a PLC cycle.)"
+        },
+        {
+          "Name": "ACT",
+          "Comment": "Use the actual values in the drive as a reference."
+        }
+      ]
+    }
+  ]
+}

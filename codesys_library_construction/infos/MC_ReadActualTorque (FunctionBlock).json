@@ -1,0 +1,65 @@
+{
+  "library": "SM3_Basic",
+  "title": "MC_ReadActualTorque (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/Diagnostics/MC_ReadActualTorque.html",
+  "page_title": "MC_ReadActualTorque (FB)",
+  "text": "\nFUNCTION_BLOCK MC_ReadActualTorque\nAs long as\nEnable\nremains\nTRUE\n, the function block will return the value of the current torque or force.\nValid\nwill be set to\nTRUE\n, as soon as data output\nTorque\nbecomes valid. If\nEnable\nis reset, the data will loose its validity and\nValid\nwill also be reset regardless of new data available.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3",
+          "Initial": "",
+          "Comment": "Reference to axis"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Enable",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "WhileTRUE, the parameter values are read out\ncontinuously."
+        },
+        {
+          "Scope": "Output",
+          "Name": "Valid",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "TRUE: Valid outputs are available."
+        },
+        [
+          "Busy",
+          "BOOL",
+          "FALSE",
+          "TRUE: Execution of function block has not been finished\nyet."
+        ],
+        [
+          "Error",
+          "BOOL",
+          "FALSE",
+          "TRUE: Error has occurred within the function block."
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "0",
+          "Error identification"
+        ],
+        [
+          "Torque",
+          "LREAL",
+          "0",
+          "Value of current torque (in Nm) or force"
+        ]
+      ]
+    }
+  ]
+}

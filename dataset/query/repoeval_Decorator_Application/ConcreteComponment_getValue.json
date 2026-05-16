@@ -1,0 +1,5 @@
+{
+  "requirement": "This code is intended to implement a method for retrieving the plain real value of an object, representing its cost without additional modifications or decorations.",
+  "provide_code": "//Illustrative method of the pattern\nMETHOD getValue : REAL\nVAR_INPUT\nEND_VAR\nVAR_OUTPUT\nEND_VAR",
+  "function_name": "ConcreteComponment_getValue"
+}

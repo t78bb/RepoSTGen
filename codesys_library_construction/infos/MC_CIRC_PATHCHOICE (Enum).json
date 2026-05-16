@@ -1,0 +1,22 @@
+{
+  "library": "SM3_Robotics",
+  "title": "MC_CIRC_PATHCHOICE (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/Basic-types/MC_CIRC_PATHCHOICE.html",
+  "page_title": "MC_CIRC_PATHCHOICE (ENUM)",
+  "text": "\nTYPE MC_CIRC_PATHCHOICE :\nDetermines the direction of arc segments.\nSee\nMC_MoveCircularAbsolute\nand\nMC_MoveCircularRelative\n.\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name"
+      ],
+      "rows": [
+        {
+          "Name": "CLOCKWISE"
+        },
+        {
+          "Name": "COUNTER_CLOCKWISE"
+        }
+      ]
+    }
+  ]
+}

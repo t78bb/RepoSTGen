@@ -1,0 +1,41 @@
+{
+  "library": "Standard64",
+  "title": "LTON (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/Standard64/Current/Timer/LTON.html",
+  "page_title": "LTON (FB)",
+  "text": "\nFUNCTION_BLOCK LTON\nTimer on delay.\nQ is TRUE, after the delay defined in PT and IN had a rising edge.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "IN",
+          "Type": "BOOL",
+          "Comment": "starts timer with rising edge, resets timer with falling edge"
+        },
+        [
+          "PT",
+          "LTIME",
+          "time to pass, before Q is set"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Q",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        [
+          "ET",
+          "LTIME",
+          "elapsed time since rising edge at IN"
+        ]
+      ]
+    }
+  ]
+}

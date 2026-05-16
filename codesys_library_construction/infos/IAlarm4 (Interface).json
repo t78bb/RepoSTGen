@@ -1,0 +1,8 @@
+{
+  "library": "AlarmManager",
+  "title": "IAlarm4 (Interface)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/IAlarm4.html",
+  "page_title": "IAlarm4 (ITF)",
+  "text": "\nINTERFACE IAlarm4 EXTENDS\nIAlarm3\nThis is an extension of the IAlarm3 interface to be able to distinguish between alarms and events.\nProperties:\nKindOf\nMethods:\nGetAlarmClass\n, inherited from\nIAlarm\nGetAlarmGroup\n, inherited from\nIAlarm\nGetCountLatchVariables\n, inherited from\nIAlarm3\nGetCountMessages\n, inherited from\nIAlarm3\nGetCurrentValue\n, inherited from\nIAlarm\nGetID\n, inherited from\nIAlarm\nGetInternalID\n, inherited from\nIAlarm\nGetLatchVar1Value\n, inherited from\nIAlarm\nGetLatchVar2Value\n, inherited from\nIAlarm\nGetLatchVarValue\n, inherited from\nIAlarm3\nGetMessage\n, inherited from\nIAlarm\nGetMessage2\n, inherited from\nIAlarm3\nGetState\n, inherited from\nIAlarm\nGetTimestampAcknowledge\n, inherited from\nIAlarm\nGetTimestampActive\n, inherited from\nIAlarm\nGetTimestampInactive\n, inherited from\nIAlarm\nGetTimestampLast\n, inherited from\nIAlarm\nGetTriggerValue\n, inherited from\nIAlarm\nIsDeactivated\n, inherited from\nIAlarm\nSetLatchVarValue\n, inherited from\nIAlarm3\nStructure:\nKindOf (Property)",
+  "tables": []
+}

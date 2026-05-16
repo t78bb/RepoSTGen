@@ -1,0 +1,36 @@
+{
+  "library": "Standard64",
+  "title": "WMID (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/Standard64/Current/String-Functions/WMID.html",
+  "page_title": "WMID (FUN)",
+  "text": "\nFUNCTION WMID : WSTRING(255)\nReturn LEN characters of STR, beginning\nat the POS-th wcharacter position.\nPOS = 1 is the first character.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "WMID",
+          "Type": "WSTRING(255)"
+        },
+        {
+          "Scope": "Input",
+          "Name": "STR",
+          "Type": "WSTRING(255)"
+        },
+        [
+          "LEN",
+          "INT"
+        ],
+        [
+          "POS",
+          "INT"
+        ]
+      ]
+    }
+  ]
+}

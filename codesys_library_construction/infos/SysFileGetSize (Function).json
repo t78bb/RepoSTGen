@@ -1,0 +1,36 @@
+{
+  "library": "SysFile",
+  "title": "SysFileGetSize (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SysFile/Current/SysFileGetSize.html",
+  "page_title": "SysFileGetSize (FUN)",
+  "text": "\nFUNCTION SysFileGetSize : __XWORD\nGet file size of the file specified by name.\nA standard path will be added to the filename, if no path is specified.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SysFileGetSize",
+          "Type": "__XWORD",
+          "Comment": "Size of the file in bytes"
+        },
+        {
+          "Scope": "Input",
+          "Name": "szFileName",
+          "Type": "STRING",
+          "Comment": "File name. File name can contain an absolute or relative path to the file.\nPath entries must be separated with a Slash (/) and not with a Backslash (\\)!"
+        },
+        [
+          "pResult",
+          "POINTER TO RTS_IEC_RESULT",
+          "Pointer to runtime system error code (see CmpErrors.library):ERR_OK: SuccessfulERR_NO_OBJECT: File not availableERR_FAILED: Failed to get file size"
+        ]
+      ]
+    }
+  ]
+}

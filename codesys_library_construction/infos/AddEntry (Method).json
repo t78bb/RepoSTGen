@@ -1,0 +1,28 @@
+{
+  "library": "AC_DataLog",
+  "title": "AddEntry (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_DataLog/Current/AC_DataLog/DataLogStorage/pou-DataLogStorageBase/IDataLogStorage/AddEntry.html",
+  "page_title": "DataLogStorageBase.AddEntry (METH)",
+  "text": "\nMETHOD FINAL AddEntry : BOOL\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "AddEntry",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Input",
+          "Name": "pVarDesc",
+          "Type": "POINTER TODataLogVarDesc"
+        }
+      ]
+    }
+  ]
+}

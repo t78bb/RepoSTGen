@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现基于MQTT协议的客户端连接、订阅特定主题并在连接建立时发布初始消息的功能。",
+  "provide_code": "FUNCTION_BLOCK MQTT_STUFF\nVAR_INPUT\nEND_VAR\nVAR_OUTPUT\nEND_VAR"
+}

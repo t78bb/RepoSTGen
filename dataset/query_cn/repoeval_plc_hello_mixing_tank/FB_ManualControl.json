@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现通过手动模式的HMI命令控制混合电机和阀门的启停，并根据设备状态反馈进行锁存逻辑控制。",
+  "provide_code": "FUNCTION_BLOCK FB_ManualControl\nVAR_INPUT\n\t// HMI命令输入\n\tbMixerRunCmd\t\t:\tBOOL;\n\tbMixerStopCmd\t\t:\tBOOL;\n\tbMedium1OpenCmd\t\t:\tBOOL;\n\tbMedium1CloseCmd\t:\tBOOL;\n\tbMedium2OpenCmd\t\t:\tBOOL;\n\tbMedium2CloseCmd\t:\tBOOL;\n\tbDrainOpenCmd\t\t:\tBOOL;\n\tbDrainCloseCmd\t\t:\tBOOL;\n\t\n\t// 设备反馈输入\n\tbMixerRunning\t\t:\tBOOL;\n\tbMedium1Opened\t\t:\tBOOL;\n\tbMedium2Opened\t\t:\tBOOL;\n\tbDrainOpened\t\t:\tBOOL;\nEND_VAR\nVAR_OUTPUT\n\t// 设备控制输出\n\tbMixerRunCmdOut\t\t:\tBOOL;\n\tbMedium1OpenCmdOut\t:\tBOOL;\n\tbMedium2OpenCmdOut\t:\tBOOL;\n\tbDrainOpenCmdOut\t:\tBOOL;\nEND_VAR"
+}

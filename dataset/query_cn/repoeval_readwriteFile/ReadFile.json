@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现从指定文件路径读取数据并通过状态机控制读取过程的功能。",
+  "provide_code": "FUNCTION_BLOCK ReadFile\nVAR_INPUT\n\tbExec\t:\tBOOL;//功能块触发变量\n\tfileName\t:\tSTRING;//文件的路径\nEND_VAR"
+}

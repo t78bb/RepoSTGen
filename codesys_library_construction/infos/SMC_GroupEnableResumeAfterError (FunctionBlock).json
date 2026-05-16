@@ -1,0 +1,47 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_GroupEnableResumeAfterError (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/Movement/SMC_GroupEnableResumeAfterError.html",
+  "page_title": "SMC_GroupEnableResumeAfterError (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_GroupEnableResumeAfterError\nThis function block allows resuming the programmed movement after\nan error of the axis group.  The continueData passed to the function\nblock is used to store the necessary information.\nTo resume after an error, the axis group error first needs to be reset\nwith\nMC_GroupReset\n.  Then, the axis group needs to be moved to the\ncontinue position, which can be queried from the continue data using\nSMC_GroupGetContinuePosition\n.  Finally, the movement that has been\ninterrupted by the error can be resumed using\nMC_GroupContinue\n.\nNote\nIf an axis group error occurs, the function block instance of the\nactive movement will show the error (Outputs Active and Busy go to\nFALSE, output Error goes to TRUE).  The function block instances\nof buffered or blending movements that have not yet become active\nwill also show an error.  After resume, all these function block\ninstances will become Busy/Active again and their Error/CommandAborted\noutputs will be reset.\nIf a falling edge of the input âEnableâ is commanded while the continue\ndata is being written (output âActiveâ = TRUE), then the continue data will\nnot be valid. A falling edge of âEnableâ can only be safely commanded once\nthe output âActiveâ changes to FALSE. This happens once the continue data\nhas been completely written.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "AxisGroup",
+          "Type": "AXIS_GROUP_REF_SM3",
+          "Comment": "Reference to a group of axis"
+        },
+        [
+          "continueData",
+          "SMC_AXIS_GROUP_CONTINUE_DATA",
+          "Written when gettingDone"
+        ],
+        {
+          "Scope": "Input",
+          "Name": "Enable",
+          "Type": "BOOL",
+          "Comment": "Enables the feature."
+        },
+        {
+          "Scope": "Output",
+          "Name": "Busy",
+          "Type": "BOOL",
+          "Comment": "The FB is not finished"
+        },
+        [
+          "Active",
+          "BOOL",
+          "The continue data is being written"
+        ]
+      ]
+    }
+  ]
+}

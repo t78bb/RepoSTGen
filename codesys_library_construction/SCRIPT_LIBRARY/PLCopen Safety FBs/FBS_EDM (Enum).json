@@ -1,0 +1,138 @@
+{
+  "library": "PLCopen Safety FBs",
+  "title": "FBS_EDM (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/PLCopen Safety FBs/Current/PLCopenSafetyFBs/Enums/FBS_EDM.html",
+  "page_title": "FBS_EDM (ENUM)",
+  "text": "\nTYPE FBS_EDM :\nDefinition of SF_EDM function block states and its diagnostic values.\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "IDLE",
+          "Initial": "16#0",
+          "Comment": "The function block is not active (initial state)."
+        },
+        {
+          "Name": "INIT",
+          "Initial": "16#8401",
+          "Comment": "Block activation startup inhibit is active. Reset required."
+        },
+        {
+          "Name": "OUT_DISABLE",
+          "Initial": "16#8810",
+          "Comment": "EDM control is not active. Timer starts when state is\nentered"
+        },
+        {
+          "Name": "OUT_ENABLE",
+          "Initial": "16#8000",
+          "Comment": "EDM control is active. Timer starts when state is entered"
+        },
+        {
+          "Name": "ERR_RESET_1",
+          "Initial": "16#C001",
+          "Comment": "Static Reset signal in state 16#8401."
+        },
+        {
+          "Name": "ERR_INIT",
+          "Initial": "16#C100",
+          "Comment": "Similar signals at S_OutControl and Reset (R_TRIG at same\ncycle) detected (may be a programming error)."
+        },
+        {
+          "Name": "ERR_EDM_11",
+          "Initial": "16#C010",
+          "Comment": "The signal at EDM1 is not valid in the initial actuator\nstate. In state 16#8810 the EDM1 signal is FALSE when\nenabling S_OutControl."
+        },
+        {
+          "Name": "ERR_EDM_12",
+          "Initial": "16#C020",
+          "Comment": "The signal at EDM2 is not valid in the initial actuator\nstate. In state 16#8810 the EDM2 signal is FALSE when\nenabling S_OutControl."
+        },
+        {
+          "Name": "ERR_EDM_13",
+          "Initial": "16#C030",
+          "Comment": "The signals at EDM1 and EDM2 are not valid in the initial\nactuator states. In state 16#8810 the EDM1 and EDM2 signals\nare FALSE when enabling S_OutControl."
+        },
+        {
+          "Name": "ERR_EDM_21",
+          "Initial": "16#C040",
+          "Comment": "The signal at EDM1 is not valid in the initial actuator\nstate. In state 16#8810 the EDM1 signal is FALSE and the\nmonitoring time has elapsed."
+        },
+        {
+          "Name": "ERR_EDM_22",
+          "Initial": "16#C050",
+          "Comment": "The signal at EDM2 is not valid in the initial actuator\nstate. In state 16#8810 the EDM2 signal is FALSE and the\nmonitoring time has elapsed."
+        },
+        {
+          "Name": "ERR_EDM_23",
+          "Initial": "16#C060",
+          "Comment": "The signals at EDM1 and EDM2 are not valid in the initial\nactuator states. In state 16#8810 the EDM1 and EDM2 signals\nare FALSE and the monitoring time has elapsed."
+        },
+        {
+          "Name": "ERR_EDM_31",
+          "Initial": "16#C070",
+          "Comment": "The signal at EDM1 is not valid in the actuator switching\nstate. In state 16#8000 the EDM1 signal is TRUE and the\nmonitoring time has elapsed."
+        },
+        {
+          "Name": "ERR_EDM_32",
+          "Initial": "16#C080",
+          "Comment": "The signal at EDM2 is not valid in the actuator switching\nstate. In state 16#8000 the EDM2 signal is TRUE and the\nmonitoring time has elapsed."
+        },
+        {
+          "Name": "ERR_EDM_33",
+          "Initial": "16#C090",
+          "Comment": "The signals at EDM1 and EDM2 are not valid in the actuator\nswitching state. In state 16#8000 the EDM1 and EDM2 signals\nare TRUE and the monitoring time has elapsed."
+        },
+        {
+          "Name": "ERR_RESET_21",
+          "Initial": "16#C011",
+          "Comment": "Static Reset signal or same signals at EDM1 and Reset\n(rising trigger at Reset and EDM1 at the same time) in state\n16#C010."
+        },
+        {
+          "Name": "ERR_RESET_22",
+          "Initial": "16#C021",
+          "Comment": "Static Reset signal or same signals at EDM2 and Reset\n(rising trigger at Reset and EDM2 at the same time) in state\n16#C020."
+        },
+        {
+          "Name": "ERR_RESET_23",
+          "Initial": "16#C031",
+          "Comment": "Static Reset signal or same signals at EDM1, EDM2, and Reset\n(rising trigger at Reset, EDM1, and EDM2 at the same time)\nin state 16#C030."
+        },
+        {
+          "Name": "ERR_RESET_31",
+          "Initial": "16#C041",
+          "Comment": "Static Reset signal or same signals at EDM1 and Reset\n(rising trigger at Reset and EDM1 at the same time) in state\n16#C040."
+        },
+        {
+          "Name": "ERR_RESET_32",
+          "Initial": "16#C051",
+          "Comment": "Static Reset signal or same signals at EDM2 and Reset\n(rising trigger at Reset and EDM2 at the same time) in state\n16#C050."
+        },
+        {
+          "Name": "ERR_RESET_33",
+          "Initial": "16#C061",
+          "Comment": "Static Reset signal or same signals at EDM1, EDM2, and Reset\n(rising trigger at Reset, EDM1, and EDM2 at the same time)\nin state 16#C060."
+        },
+        {
+          "Name": "ERR_RESET_41",
+          "Initial": "16#C071",
+          "Comment": "Static Reset signal in state 16#C070."
+        },
+        {
+          "Name": "ERR_RESET_42",
+          "Initial": "16#C081",
+          "Comment": "Static Reset signal in state 16#C080."
+        },
+        {
+          "Name": "ERR_RESET_43",
+          "Initial": "16#C091",
+          "Comment": "Static Reset signal in state 16#C090."
+        }
+      ]
+    }
+  ]
+}

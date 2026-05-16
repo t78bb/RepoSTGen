@@ -1,0 +1,31 @@
+{
+  "library": "SM3_Basic",
+  "title": "GetDeviceInfo (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/DriveInterface/AXIS_REF/pou-AXIS_REF_SM3/CAA-Device-Diagnosis/GetDeviceInfo.html",
+  "page_title": "AXIS_REF_SM3.GetDeviceInfo (METH)",
+  "text": "\nMETHOD GetDeviceInfo : DED.ERROR\nReturns the device information of the current node.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetDeviceInfo",
+          "Type": "DED.ERROR",
+          "Comment": "eError"
+        },
+        {
+          "Scope": "Inout",
+          "Name": "deiInfo",
+          "Type": "DED.DEVICE_INFO",
+          "Comment": "Device information struct"
+        }
+      ]
+    }
+  ]
+}

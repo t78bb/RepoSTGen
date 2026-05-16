@@ -1,0 +1,33 @@
+{
+  "library": "SysDir",
+  "title": "DirFileTime (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/SysDir/Current/DirFileTime.html",
+  "page_title": "DirFileTime (STRUCT)",
+  "text": "\nTYPE DirFileTime : STRUCT\nDirectory file time\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "ulCreation",
+          "Type": "UDINT",
+          "Comment": "Creation date of the file"
+        },
+        {
+          "Name": "ulLastAccess",
+          "Type": "UDINT",
+          "Comment": "Date of last access to the file"
+        },
+        {
+          "Name": "ulLastModification",
+          "Type": "UDINT",
+          "Comment": "Date of last modification to the file"
+        }
+      ]
+    }
+  ]
+}

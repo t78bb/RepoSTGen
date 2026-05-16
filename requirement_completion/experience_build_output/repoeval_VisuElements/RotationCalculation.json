@@ -1,0 +1,11 @@
+{
+  "模糊点列表": [
+    {
+      "模糊点类型": "变量命名和结构",
+      "模糊点描述": "原始需求未明确指定变量命名和中间计算步骤的结构",
+      "差异细节": "模型生成代码中使用了rAngleRad, rDeltaX, rDeltaY, rCosAngle, rSinAngle等变量，而参考代码使用了rRadians, rCos, rSin, rTranslatedX, rTranslatedY等变量",
+      "精准需求描述": "需明确指定使用的变量名及其对应的计算步骤，例如将角度转换为弧度的变量应命名为rRadians，计算平移后坐标的变量应命名为rTranslatedX和rTranslatedY"
+    }
+  ],
+  "case_id": "repoeval_VisuElements/RotationCalculation"
+}

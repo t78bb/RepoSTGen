@@ -1,0 +1,27 @@
+{
+  "library": "ModbusFB",
+  "title": "ExampleDataModel (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/ModbusFB/Current/ModbusFB/Function-Blocks/Server/ExampleDataModel.html",
+  "page_title": "ExampleDataModel (FB)",
+  "text": "\nFUNCTION_BLOCK ExampleDataModel\nSimple âdata modelâ example, contains four memory-separated sections containg two:\n- âdiscrete inputsâ\n- âcoilsâ\n- âinput registersâ\n- âholding registersâ\nâdata itemâ start index for all sections is 5\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Output",
+          "Name": "tableDefs",
+          "Type": "TableDefinitions",
+          "Initial": "STRUCT(tableDiscreteInputs := STRUCT(uiNumSections := (SIZEOF(_aDiscreteInputsSections) / SIZEOF(_aDiscreteInputsSections[0])), pSections := ADR(_aDiscreteInputsSections[0])), tableCoils := STRUCT(uiNumSections := (SIZEOF(_aCoilsSections) / SIZEOF(_aCoilsSections[0])), pSections := ADR(_aCoilsSections[0])), tableInputRegisters := STRUCT(uiNumSections := (SIZEOF(_aInputRegistersSections) / SIZEOF(_aInputRegistersSections[0])), pSections := ADR(_aInputRegistersSections[0])), tableHoldingRegisters := STRUCT(uiNumSections := (SIZEOF(_aHoldingRegistersSections) / SIZEOF(_aHoldingRegistersSections[0])), pSections := ADR(_aHoldingRegistersSections[0])))",
+          "Comment": "the âdata modelâ tables"
+        }
+      ]
+    }
+  ]
+}

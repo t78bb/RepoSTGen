@@ -1,0 +1,28 @@
+{
+  "library": "BACnet2",
+  "title": "GetPropertyInitListElement (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/BACnetObjects/base/pou-IBACnetStaticObjectBase/GetPropertyInitListElement.html",
+  "page_title": "IBACnetStaticObjectBase.GetPropertyInitListElement (METH)",
+  "text": "\nMETHOD GetPropertyInitListElement : POINTER TO CmpBACnet.IEC_BACNET_PROPERTY_INSTANCE\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetPropertyInitListElement",
+          "Type": "POINTER TO CmpBACnet.IEC_BACNET_PROPERTY_INSTANCE"
+        },
+        {
+          "Scope": "Input",
+          "Name": "ePropertyID",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_ID"
+        }
+      ]
+    }
+  ]
+}

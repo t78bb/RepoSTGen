@@ -1,0 +1,8 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "IsEmpty (Property)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_Module/TreeNavigation/pou-SiblingRange/IsEmpty.html",
+  "page_title": "SiblingRange.IsEmpty (PROP)",
+  "text": "\nPROPERTY FINAL IsEmpty : BOOL\nReturns whether there are items left on the range or not",
+  "tables": []
+}

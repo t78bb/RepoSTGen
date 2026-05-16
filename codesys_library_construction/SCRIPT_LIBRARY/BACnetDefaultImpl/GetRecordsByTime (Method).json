@@ -1,0 +1,41 @@
+{
+  "library": "BACnetDefaultImpl",
+  "title": "GetRecordsByTime (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnetDefaultImpl/Current/BACnetDefaultImpl/Function-Blocks/LoggingObjects/Internal/pou-LogObjectsBase/GetRecordsByTime.html",
+  "page_title": "LogObjectsBase.GetRecordsByTime (METH)",
+  "text": "\nMETHOD PROTECTED GetRecordsByTime : RTS_IEC_RESULT\nAllocates readRangeResult.itemData.buffer.pBuffer needs to be deallocated using FreeReadRangeResult().\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetRecordsByTime",
+          "Type": "RTS_IEC_RESULT"
+        },
+        {
+          "Scope": "Input",
+          "Name": "instNumber",
+          "Type": "DWORD"
+        },
+        [
+          "refTime",
+          "CmpBACnet.IEC_BACNET_DATE_TIME"
+        ],
+        [
+          "numRecords",
+          "CmpBACnet.IEC_BACNET_SIGNED"
+        ],
+        {
+          "Scope": "Inout",
+          "Name": "readRangeResult",
+          "Type": "CmpBACnet.IEC_BACNET_READ_RANGE_RESULT"
+        }
+      ]
+    }
+  ]
+}

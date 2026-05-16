@@ -1,0 +1,33 @@
+{
+  "library": "3S Storage",
+  "title": "TransactionBegin (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/3S Storage/Current/_3SStorage/Instances/pou-Storage/TransactionBegin.html",
+  "page_title": "Storage.TransactionBegin (METH)",
+  "text": "\nMETHOD TransactionBegin : STO.ITransaction\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "TransactionBegin",
+          "Type": "STO.ITransaction"
+        },
+        {
+          "Scope": "Input",
+          "Name": "eMode",
+          "Type": "STO.TRANSACTION_MODE"
+        },
+        {
+          "Scope": "Output",
+          "Name": "eError",
+          "Type": "STO.ERROR"
+        }
+      ]
+    }
+  ]
+}

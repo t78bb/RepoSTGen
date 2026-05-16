@@ -1,0 +1,48 @@
+{
+  "library": "BACnet2DefaultImpl",
+  "title": "PERSISTENT_DATA_BUFFER (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2DefaultImpl/Current/BACnetDefaultImpl/Structs/Persistence/PERSISTENT_DATA_BUFFER.html",
+  "page_title": "PERSISTENT_DATA_BUFFER (STRUCT)",
+  "text": "\nTYPE PERSISTENT_DATA_BUFFER : STRUCT\nstructure which contains the data for the current object\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "sPathFileName",
+          "Type": "FileNameString",
+          "Comment": "the file name"
+        },
+        {
+          "Name": "hFile",
+          "Type": "RTS_IEC_HANDLE",
+          "Comment": "the data file handle"
+        },
+        {
+          "Name": "dumpStatus",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": "the dump error status"
+        },
+        {
+          "Name": "objectHasPersistentProperties",
+          "Type": "BOOL",
+          "Comment": "object has persistent properties"
+        },
+        {
+          "Name": "tHdr",
+          "Type": "PERSISTENT_PDATA_HEADER",
+          "Comment": "the object header"
+        },
+        {
+          "Name": "tData",
+          "Type": "PERSISTENT_PDATA_ENTRY",
+          "Comment": "the data header"
+        }
+      ]
+    }
+  ]
+}

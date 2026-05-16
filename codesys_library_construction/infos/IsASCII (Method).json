@@ -1,0 +1,31 @@
+{
+  "library": "String Segments",
+  "title": "IsASCII (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Segments/Current/Strings/Functionblocks/pou-_UTF8String/IString/IsASCII.html",
+  "page_title": "_UTF8String.IsASCII (METH)",
+  "text": "\nMETHOD FINAL IsASCII : BOOL\nReports whether this\nIString\ninstance consists entirely of runes <= 16#7F.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "IsASCII",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Output",
+          "Name": "eErrorID",
+          "Type": "ERROR",
+          "Comment": "Check error message for better diagnostics"
+        }
+      ]
+    }
+  ]
+}

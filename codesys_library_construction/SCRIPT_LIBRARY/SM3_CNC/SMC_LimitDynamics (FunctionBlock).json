@@ -1,0 +1,101 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_LimitDynamics (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/SoftMotion-Function-Blocks/SMC_LimitDynamics.html",
+  "page_title": "SMC_LimitDynamics (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_LimitDynamics\nThe function block reduces the velocity and acceleration/deceleration\nof the path so that the resulting velocities, accelerations and\ndecelerations of the cartesian and additional axes do not exceed the\ninput values\ndMaxVel\n,\ndMaxAcc\nand\ndMaxDec\n.\nNote\nSMC_LimitDynamics\nwas renamed and was previously named\nSMC_LimitAddAxisDynamics\n.\nUsing SMC_LimitDynamics\nAssignment of input poqDataIn\nTypically,\npoqDataOut\nof the previous function block is fed to the\ninput\npoqDataIn\n. That can be an instance of the function block\nSMC_NCDecoder\nor\nSMC_SmoothPath\n.\nAllocating memory for the preprocessing of the path elements\nIf the function block is executed, memory is needed, in which the processing\nelements are copied. The memory area must be able to hold at least five\nSMC_GEOINFO\nobjects. If the memory is too small, the function block\nperforms no actions. The memory is declared in the IEC program as an array\nof objects of type\nSMC_GEOINFO\n.\nPROGRAM\nPath\nVAR\nbuf2\n:\nARRAY\n[1..50]\nOF\nSMC_GeoInfo\n;\nEND_VAR\nFeeding the allocated memory area\nThe size of the memory is determined by the operator SIZEOF in the implementation\nof the IEC program and is fed to the input\nnSizeOutQueue\n. The address of the\nmemory is defined with the operator ADR and is fed to the input\npbyBufferOutQueue\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "bExecute",
+          "Type": "BOOL",
+          "Comment": "Execution starts on the rising edge."
+        },
+        [
+          "bAbort",
+          "BOOL",
+          "TRUE: Aborts the processing of the function block"
+        ],
+        [
+          "bAppend",
+          "BOOL",
+          "FALSE: Starts emptyingpoqDataOuton a rising edge\natbExecute"
+        ],
+        [
+          "poqDataIn",
+          "POINTER TOSMC_OUTQUEUE",
+          "Pointer to data of structureSMC_OUTQUEUEcontaining the path objects\nof typSMC_GEOINFO."
+        ],
+        [
+          "wAxis",
+          "WORD",
+          "Bit field of the axes on that the operation is executed:X: Bit 0Y: Bit 1Z: Bit 2A: Bit 3B: Bit 4C: Bit 5P: Bit 6Q: Bit 7U: Bit 8V: Bit 9W: Bit 10Example: 16#0104 causes limitation of Z and U"
+        ],
+        [
+          "dMaxVel",
+          "LREAL",
+          "Maximum speed value for the defined axes"
+        ],
+        [
+          "dMaxAccDec",
+          "LREAL",
+          "Maximum acceleration or deceleration value ââfor the defined\naxes"
+        ],
+        [
+          "bIncludePathSettings",
+          "BOOL",
+          "TRUE: Limits the velocity, acceleration or deceleration\n(F, E +, E-) on the values ââdefined indMaxVelanddMaxAccDec"
+        ],
+        [
+          "nSizeOutQueue",
+          "UDINT",
+          "Size in bytes of the data bufferpbyBufferOutQueue,\nin which the path elements are copied.\nIf the value is set, it may not be changed except after a reset."
+        ],
+        [
+          "pbyBufferOutQueue",
+          "POINTER TO ARRAY [0..0]\nOF SMC_GEOINFO",
+          "Pointer to the first byte of the storage area created for the path elements.\nIf the value is set, it may not be changed except after a reset."
+        ],
+        [
+          "bStrictlyHoldAccDecABC",
+          "BOOL",
+          "IfTRUE, the maximal accelerations and decelerations of A, B, C are strictly held.\nOtherwise, we use a heuristic that may lead to quicker profiles, but occasionally violate\nthe A/B/C-acceleration-limit, if A/B/C move quickly while\nthere is an ac- / deceleration on the path."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bDone",
+          "Type": "BOOL",
+          "Comment": "TRUE: input date frompoqDataInhave been precessed fully.\nAfter that, the function block performs no action until a\nreset is detected.\nWhenbExecuteis set toFALSE,bDoneis reset toFALSE."
+        },
+        [
+          "bBusy",
+          "BOOL",
+          "TRUE: Function block in execution"
+        ],
+        [
+          "bError",
+          "BOOL",
+          "TRUE: Error has occurred"
+        ],
+        [
+          "wErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ],
+        [
+          "poqDataOut",
+          "POINTER TOSMC_OUTQUEUE",
+          "Pointer to data of structureSMC_OUTQUEUEcontaining the\npath elements of typSMC_GEOINFO."
+        ]
+      ]
+    }
+  ]
+}

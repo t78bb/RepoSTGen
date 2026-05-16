@@ -1,0 +1,107 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_TuneCPKernel (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/AdministrativeConfiguration/Computation/SMC_TuneCPKernel.html",
+  "page_title": "SMC_TuneCPKernel (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_TuneCPKernel\nThis function block can be used to tune the behaviour\nof the CP movements kernel.\nIt must be called from the planning task.\nOnce called with rising edge and\npPE\n<>\n0\n, this FB must be called cyclically.\nDonât use more than one instance of this FB.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "AxisGroup",
+          "Type": "AXIS_GROUP_REF_SM3",
+          "Initial": "",
+          "Comment": "Reference to a group of axis"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Applies the settings on a rising edge"
+        },
+        [
+          "pPE",
+          "POINTER TO\nSMC_AXIS_GROUP_PATH_ELEMENT",
+          "",
+          "Pointer to the first element of the path buffer;\n0 means reset to default.\nNote: this input is deprecated.  The internal path buffer\nhas been increased, it should no longer be necessary to\nchange it.  Use of this input is discouraged."
+        ],
+        [
+          "nSizeBuf",
+          "UDINT",
+          "",
+          "Size of the path buffer;\nMust be a multiple ofSIZEOF(SMC_AXIS_GROUP_PATH_ELEMENT).\nThe buffer must contain the desired number of path elements\nplus one, but at least 5 path elements.\nNote: this input is deprecated.  The internal path buffer\nhas been increased, it should no longer be necessary to\nchange it.  Use of this input is discouraged."
+        ],
+        [
+          "fPlanningInterval",
+          "LREAL",
+          "",
+          "The planning interval in seconds.\n(If less than bus task interval, then the bus task interval will be\nused.)0 means reset to default.This is the maximum step size of the trajectory planner.  Using a longer\nplanning interval can reduce the amount of computation done by the planning task.\nIf there are no performance issues in the planning task, it is recommended to\nleave this parameter at its default value.If the planning interval is changed, the following consideration should be taken\ninto account:Since in one planning cycle at most a duration of fPlanningInterval of the\ntrajectory is planned, the planning interval must not be lower than the\naverage planning task cycle time.  Otherwise, the synchronisation buffer\n(see|fSyncBufferDuration|) might run empty.A longer planning interval can lead to a coarser trajectory, i.e. configured\nlimits might not be reached or they might be exceeded.For fast movements with acceleration and deceleration phases well below one\nsecond, a planning interval between 0.016 and 0.032 is recommended.Changing the planning interval should be done step by step, starting from the default\nvalue 0.016, while checking the resulting trajectories for each step."
+        ],
+        [
+          "fSyncBufferDuration",
+          "LREAL",
+          "",
+          "Employed for the synchronisation between planning task and bus task:\nthe minimum duration of trajectories that shall be held available\n(apart from end of path).\nThe lower this parameter, the lower the latency.\nToo low values may lead to errors, if the synchronisation-queue runs empty.\n0 means reset to default.\nThe current sync buffer duration can be monitored using theCurrentSyncBufferDurationoutput ofMC_GroupReadStatus."
+        ],
+        [
+          "fSyncBufferMinFactor",
+          "LREAL",
+          "",
+          "Employed for the synchronisation between planning task and bus task:\nthe factor of fSyncBufferDuration that the duration of the synchronisation\nbuffer should not fall below.\nIf a queue underrun error occurs, using a higher value of this parameter\nmay help.\nToo low values may lead to queue underrun errors.\n0 means reset to default, must be in the range [0, 1[."
+        ],
+        [
+          "fMaxBrakeDuration",
+          "LREAL",
+          "",
+          "The maximum duration of a stop trajectory. In seconds.\nSetting a low value may lower the effective maximum velocity.\n0 means reset to default.\nNote: this input is deprecated.  It no longer has an effect\non the trajectory planning."
+        ],
+        [
+          "diMaxBlendingDelayCycles",
+          "DINT",
+          "-1",
+          "The maximum time the planner waits for a second element\nafter planning has started.  (In cycles of the bus task.)\nBefore this duration has elapsed, the planner will not plan beyond\nhalf of the first element.A negative value will reset the setting to its default.A too short delay may result in too little blending after a new\npath has been started.  A too long delay may result in an acutal\ndelay before the movement starts.(This delay is important for good blending behaviour after\nthe planner starts.  If no delay were used and the second\nblended movement was commanded a bit later, the planner\nmight have advanced the lookahead marker too much, limiting\nor removing the effect of blending.)"
+        ],
+        [
+          "fPlanningForecastDuration",
+          "LREAL",
+          "-1",
+          "The planning forecast duration in seconds.\nThis parameter is relevant for various function blocks that allow\nquerying information about the future state of an axis group.  This\nincludes function blocks related to triggers (seeSMC_GroupPrepareTrigger,SMC_GroupReadTrigger, andSMC_TRIGGER_INFO) as well as function\nblocks such asSMC_GroupReadRemainingTrajectoryDurationorSMC_GroupReadPathDynamics, if theTimeOffsetinput is used.The lower this parameter, the lower the latency. This has the following\neffects:Depending on the performance of the PLC, higher values of this parameter\ncan slightly delay the start of a movement from standstill. However, for\nPLCs with good performance, this delay will be much smaller than the\nconfigured value of this parameter.On the other hand, some operations that are executed on an ongoing movement\nare affected by this parameter and result in a higher latency. The latency\nincreases by the value that is set for this parameter.\nIt affects the following operations: (1) Movements withMC_BUFFER_MODE.Aborting.\n(2) Changing the dynamics withMC_GroupSetOverride. (3) Performing an immediate\ninterrupt withMC_GroupInterrupt. (4) Applying ancillary limits withSMC_GroupSetAncillaryAxisLimitsorSMC_GroupSetAncillaryPathLimitsand\nexecution modeMC_EXECUTION_MODE.Immediately. (5) Applying a load withSMC_GroupSetLoadand execution modeMC_EXECUTION_MODE.Immediately.A negative value will reset the parameter to its default value.If the value is too large, the errorSMC_CP_FORECAST_TOO_LARGEis returned.  For this error, the value offSyncBufferDurationandfPlanningIntervalare also considered.  The larger the total duration\nforecast and buffer) and the smaller the planning interval, the more likely\nthe error is returned.  For a planning interval of 0.016 s and a sync buffer\nduration of 0.05 s, a typical forecast duration is 0.3 s.  In this case,\na forecast duration of more than 8 seconds (a value that is very high and\nnot recommended due to the resulting latency) leads to an error.\nThe recommended range for the quotient\n(sync buffer duration + forecast duration) / fPlanningInterval\nis between 0 and 25, the maximum is 511.\nThe current planning forecast can be monitored using theCurrentPlanningForecastoutput ofMC_GroupReadStatus."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Done",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "The FB is finished"
+        },
+        [
+          "Busy",
+          "BOOL",
+          "",
+          "The FB is not finished"
+        ],
+        [
+          "Error",
+          "BOOL",
+          "",
+          "Signals that an error has occurred within the function block"
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "library": "BACnet2DefaultImpl",
+  "title": "Read (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2DefaultImpl/Current/BACnetDefaultImpl/Functions/pou-Directory/Read.html",
+  "page_title": "Directory.Read (METH)",
+  "text": "\nMETHOD Read : RTS_IEC_RESULT\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "Read",
+          "Type": "RTS_IEC_RESULT"
+        },
+        {
+          "Scope": "Output",
+          "Name": "dEntry",
+          "Type": "FileNameString"
+        },
+        [
+          "dInfo",
+          "DirInfo"
+        ]
+      ]
+    }
+  ]
+}

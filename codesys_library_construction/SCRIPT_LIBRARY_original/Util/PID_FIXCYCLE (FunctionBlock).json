@@ -1,0 +1,112 @@
+{
+  "library": "Util",
+  "title": "PID_FIXCYCLE (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/Controller/PID_FIXCYCLE.html",
+  "page_title": "PID_FIXCYCLE (FB)",
+  "text": "Analog Monitors\nHYSTERESIS (FunctionBlock)\nLIMITALARM (FunctionBlock)\nBCD Conversions\nBCD_TO_BYTE (Function)\nBCD_TO_DWORD (Function)\nBCD_TO_INT (Function)\nBCD_TO_WORD (Function)\nBYTE_TO_BCD (Function)\nDWORD_TO_BCD (Function)\nINT_TO_BCD (Function)\nWORD_TO_BCD (Function)\nBit/Byte Functions\nBIT_AS_BYTE (FunctionBlock)\nBIT_AS_DWORD (FunctionBlock)\nBIT_AS_WORD (FunctionBlock)\nBYTE_AS_BIT (FunctionBlock)\nDWORD_AS_BIT (FunctionBlock)\nEXTRACT (Function)\nGETBIT (Function)\nPACK (Function)\nPUTBIT (Function)\nSETBIT (Function)\nSWITCHBIT (Function)\nUNPACK (FunctionBlock)\nWORD_AS_BIT (FunctionBlock)\nConstants\nTextBlockSize (ParamList)\nController\nPD (FunctionBlock)\nPID\n(FB)\nTemperature control with PID and LIMIT\nPID_FIXCYCLE (FunctionBlock)\nDatatypes\nGEN_MODE (Enum)\nPOINT (Struct)\nPT_SIZE (Struct)\nEncoding\nBASE64 (Function)\nFunction Manipulators\nCHARCURVE (FunctionBlock)\nRAMP_INT (FunctionBlock)\nRAMP_REAL (FunctionBlock)\nGray Conversions\nBYTE_TO_GRAY (Function)\nDWORD_TO_GRAY (Function)\nGRAY_TO_BYTE (Function)\nGRAY_TO_DWORD (Function)\nGRAY_TO_WORD (Function)\nWORD_TO_GRAY (Function)\nHEX/ASCII Functions\nBYTE_TO_HEXinASCII (Function)\nHEXinASCII_TO_BYTE (Function)\nWORD_AS_STRING (Function)\nLibrary Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nMathematical Functions\nDERIVATIVE (FunctionBlock)\nINTEGRAL (FunctionBlock)\nLIN_TRAFO (FunctionBlock)\nROTATION_DIFFERENCE (FunctionBlock)\nSTATISTICS_INT (FunctionBlock)\nSTATISTICS_REAL (FunctionBlock)\nVARIANCE (FunctionBlock)\nSignals\nBLINK (FunctionBlock)\nFREQ_MEASURE (FunctionBlock)\nGEN (FunctionBlock)\nTimerSwitch\nEnums\nERROR (Enum)\nPERIOD (Enum)\nWEEKDAY (Enum)\nFunctionBlocks\nDateTimeProvider (FunctionBlock)\nGetDateTime (Method)\nTimerSwitch (FunctionBlock)\nIDateTimeProvider\nFunctions\nCombineDateTime (Function)\nDateTimeFromWeek (Function)\nDayOfWeek (Function)\nGetDateTime (Function)\nGetLocalDateTime (Function)\nGetTimeStampsDifference (Function)\nIsLeapYear (Function)\nJoinDateTime (Function)\nLocalDateTime (Function)\nSeparateDateTime (Function)\nSplitDateTime (Function)\nWeekOfYear (Function)\nGlobalConstants\nDAY_FLAGS (GVL)\nTSW (GVL)\nInterfaces\nIDateTimeProvider (Interface)\nGetDateTime (Method)\nStructs\nDateTime (Struct)\nSchedule (Struct)\nSegment (Struct)\nTimeZone (Struct)\nTypes\nDAY (Alias)\nDAYS (Alias)\nHOUR (Alias)\nMILLISECOND (Alias)\nMINUTE (Alias)\nMONTH (Alias)\nSECOND (Alias)\nTZ_NAME (Alias)\nWEEK (Alias)\nYEAR (Alias)\nFile and Project Information\nLibrary Reference\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysTimeRtc\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nUtil\nDocs\n»\nController\n»\nPID_FIXCYCLE (FB)\nPID_FIXCYCLE (FB)\nÂ¶\nFUNCTION_BLOCK PID_FIXCYCLE\nRepresents a PID controller for which the cycle time can be set manually\nA PID controller continuously calculates an error value e(t)\nas the difference between a desired set point and a measured process variable. The PID contoller applies a correction\nbased on proportional, integral, and derivative terms (sometimes denoted P, I, and D respectively)\nwhich give their name to the controller type.\nNote\nFor fast and fix tasks it is recommended to use PID_FIXCYCLE instead of PID, because the cycle\ntime is defined accurately, whereas PID only can measure the cycle time with a maximum accuracy\nof milliseconds. In case of very short cycles (1ms) this might lead to a rough run (see PID).\nNote\nIt is not necessary to readjust the controller parameters (KP, TN, TV) if the cycle time changes.\nFor more information see:\nPID\n.\nInOut:\nScope\nName\nType\nInitial\nComment\nInput\nACTUAL\nREAL\nActual value, process variable\nSET_POINT\nREAL\nDesired value, set point\nKP\nREAL\nProportionality const. P\nTN\nREAL\nReset time I in sec\nTV\nREAL\nRate time, derivative time D in sec\nY_MANUAL\nREAL\nY\nis set to this value as long as\nMANUAL\n=\nTRUE\nY_OFFSET\nREAL\nOffset for manipulated variable\nY_MIN\nREAL\nMinimum value for manipulated variable\nY_MAX\nREAL\nMaximum value for manipulated variable\nMANUAL\nBOOL\nTRUE\n:\nManual\n:\nY\nis not influenced by controller\nFALSE\n: Controller determines\nY\nRESET\nBOOL\nTRUE\n: Sets\nY\noutput to\nY_OFFSET\nand reset\nintegral part\nCYCLE\nREAL\nTime in s between two calls\nOutput\nY\nREAL\nManipulated variable, set value\nLIMITS_ACTIVE\nBOOL\nFALSE\nTRUE\n: Set value would exceed limits\nY_MIN\n,\nY_MAX\nOVERFLOW\nBOOL\nFALSE\nOverflow in integral part",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "ACTUAL",
+          "Type": "REAL",
+          "Initial": "",
+          "Comment": "Actual value, process variable"
+        },
+        [
+          "SET_POINT",
+          "REAL",
+          "",
+          "Desired value, set point"
+        ],
+        [
+          "KP",
+          "REAL",
+          "",
+          "Proportionality const. P"
+        ],
+        [
+          "TN",
+          "REAL",
+          "",
+          "Reset time I in sec"
+        ],
+        [
+          "TV",
+          "REAL",
+          "",
+          "Rate time, derivative time D in sec"
+        ],
+        [
+          "Y_MANUAL",
+          "REAL",
+          "",
+          "Yis set to this value as long asMANUAL=TRUE"
+        ],
+        [
+          "Y_OFFSET",
+          "REAL",
+          "",
+          "Offset for manipulated variable"
+        ],
+        [
+          "Y_MIN",
+          "REAL",
+          "",
+          "Minimum value for manipulated variable"
+        ],
+        [
+          "Y_MAX",
+          "REAL",
+          "",
+          "Maximum value for manipulated variable"
+        ],
+        [
+          "MANUAL",
+          "BOOL",
+          "",
+          "TRUE:Manual:Yis not influenced by controllerFALSE: Controller determinesY"
+        ],
+        [
+          "RESET",
+          "BOOL",
+          "",
+          "TRUE: SetsYoutput toY_OFFSETand reset\nintegral part"
+        ],
+        [
+          "CYCLE",
+          "REAL",
+          "",
+          "Time in s between two calls"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Y",
+          "Type": "REAL",
+          "Initial": "",
+          "Comment": "Manipulated variable, set value"
+        },
+        [
+          "LIMITS_ACTIVE",
+          "BOOL",
+          "FALSE",
+          "TRUE: Set value would exceed limitsY_MIN,Y_MAX"
+        ],
+        [
+          "OVERFLOW",
+          "BOOL",
+          "FALSE",
+          "Overflow in integral part"
+        ]
+      ]
+    }
+  ]
+}

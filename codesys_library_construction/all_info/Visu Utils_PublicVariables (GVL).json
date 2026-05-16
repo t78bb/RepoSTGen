@@ -1,0 +1,21 @@
+{
+  "library": "Visu Utils",
+  "title": "PublicVariables (GVL)",
+  "url": "https://content.helpme-codesys.com/en/libs/Visu Utils/Current/VisuUtils/VisuActionUtilities/GlobalVariables/PublicVariables.html",
+  "page_title": "PublicVariables (GVL)",
+  "text": "VisuUtils\nVisuActionUtilities\nFunction Blocks\nFBFileTransfer (FunctionBlock)\nFbChangeVisu (FunctionBlock)\nFbCloseDialog (FunctionBlock)\nFbIterateClients (FunctionBlock)\nFbOpenDialog (FunctionBlock)\nFbOpenDialogExtended (FunctionBlock)\nFunctions\nFctGetNextVisu (Function)\nFctGetPreviousVisu (Function)\nFctHandleEventsWithinCycleStart (Function)\nFctHandleEventsWithinCycleStop (Function)\nGlobalVariables\nGlobals (GVL)\nPublicVariables (GVL)\nInterfaces\nIVisualizationClient (Interface)\nIVisualizationClientFilter (Interface)\nIVisualizationClientIteration (Interface)\nIVisualizationClientRaw (Interface)\nTypes\nEnum\nFile and Project Information\nLibrary Reference\nCmpIecTask\nLibrary Identification\nLibrary Properties\nCmpVisuHandler\nLibrary Identification\nLibrary Properties\nCommon Behaviour Model\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysSem\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nVisuElemBase\nLibrary Identification\nLibrary Properties\nVisu Utils\nDocs\n»\nVisuUtils\n»\nVisuActionUtilities\n»\nGlobalVariables\n»\nPublicVariables (GVL)\nPublicVariables (GVL)\nÂ¶\nThis GVL is called from the visualization libraries and it registers therein. Therefore\nit is initialized in visualization context. In fact this initialization together\nwith the visualization fixes a problem that the library did not work anymore after\nonlinechanges.\nInOut:\nName\nType\nClients\nFbCurrentClientProvider",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Name": "Clients",
+          "Type": "FbCurrentClientProvider"
+        }
+      ]
+    }
+  ]
+}

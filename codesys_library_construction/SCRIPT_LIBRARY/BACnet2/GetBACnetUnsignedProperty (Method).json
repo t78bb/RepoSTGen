@@ -1,0 +1,31 @@
+{
+  "library": "BACnet2",
+  "title": "GetBACnetUnsignedProperty (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/BACnetObjects/base/pou-BACnetObjectBase/Utilities/typed-property-access/GetBACnetUnsignedProperty.html",
+  "page_title": "BACnetObjectBase.GetBACnetUnsignedProperty (METH)",
+  "text": "\nMETHOD GetBACnetUnsignedProperty : CmpBACnet.IEC_BACNET_UNSIGNED\nReturns the BACnet-Unsigned-Value of the specified Property (propID) of this BACnet-Object.\nThe used functions are no client, meaning, that the access of the property is not restricted by write or read access restrictions.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetBACnetUnsignedProperty",
+          "Type": "CmpBACnet.IEC_BACNET_UNSIGNED",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "propID",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_ID",
+          "Comment": "The ID of the property to get."
+        }
+      ]
+    }
+  ]
+}

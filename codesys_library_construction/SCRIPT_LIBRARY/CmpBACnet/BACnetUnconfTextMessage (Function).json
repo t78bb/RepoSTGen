@@ -1,0 +1,41 @@
+{
+  "library": "CmpBACnet",
+  "title": "BACnetUnconfTextMessage (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/CmpBACnet/Current/BACnetClientAPI/BACnetUnconfTextMessage.html",
+  "page_title": "BACnetUnconfTextMessage (FUN)",
+  "text": "\nFUNCTION BACnetUnconfTextMessage :\nIEC_BACNET_STATUS\nSends an unconfirmed TextMessage.\nSends an Unconfirmed-Text-Message service request to remote device. This service may\nbe broadcast, multicast, or addressed to a single recipient. This service may be used\nin cases where confirmation that the text message was received is not required. Message\nmay be prioritized into Normal or Urgent categories. A text message may be optionally\nclassified by a numeric class code or class identification string. The interpretation\nof the class is a local matter.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "BACnetUnconfTextMessage",
+          "Type": "IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "pSourceAddress",
+          "Type": "POINTER TOIEC_BACNET_ADDRESS",
+          "Comment": "If the BACnet application has only one device constructed and installed, this can\nbe NULL. In this case the MAC address of this device will be used. Otherwise this\nshall be the MAC address returned on device object construction."
+        },
+        [
+          "pDestinationAddress",
+          "POINTER TOIEC_BACNET_ADDRESS",
+          "This is the MAC address of the device to which the request\nshould be sent."
+        ],
+        [
+          "pServiceInfo",
+          "POINTER TOIEC_BACNET_TEXT_MESSAGE_INFO",
+          "A pointer to the service information data structure. This data structure of datatype\nBACNET_TEXT_MESSAGE_INFO contains an object Identifier of device object of the request\ninitiator, a boolen if Message Class Present attribute, a message class, a\nmessage priority, a message string type and a message string."
+        ]
+      ]
+    }
+  ]
+}

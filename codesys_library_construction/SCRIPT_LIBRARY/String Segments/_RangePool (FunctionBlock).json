@@ -1,0 +1,40 @@
+{
+  "library": "String Segments",
+  "title": "_RangePool (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Segments/Current/Strings/Functionblocks/_RangePool.html",
+  "page_title": "_RangePool (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL _RangePool EXTENDS _AbstractRangePool IMPLEMENTS\nIRangePool\nProvides a pool of\nIRange\ninstances.\nUse the\nGetRange\nmethod to get a new instance.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Inherited from"
+      ],
+      "rows": [
+        {
+          "Scope": "Input Const",
+          "Name": "udiInitialCapacity",
+          "Type": "UDINT",
+          "Inherited from": "_AbstractRangePool"
+        },
+        [
+          "pbyPool",
+          "POINTER TO BYTE",
+          "_AbstractRangePool"
+        ],
+        [
+          "udiPoolSize",
+          "UDINT",
+          "_AbstractRangePool"
+        ],
+        [
+          "usiExtensionFactor",
+          "USINT",
+          "_AbstractRangePool"
+        ]
+      ]
+    }
+  ]
+}

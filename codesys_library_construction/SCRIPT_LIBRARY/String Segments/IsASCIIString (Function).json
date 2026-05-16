@@ -1,0 +1,33 @@
+{
+  "library": "String Segments",
+  "title": "IsASCIIString (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Segments/Current/Strings/Functions/IsASCIIString.html",
+  "page_title": "IsASCIIString (FUN)",
+  "text": "\nFUNCTION IsASCIIString : BOOL\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "IsASCIIString",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfString",
+          "Type": "IString"
+        },
+        {
+          "Scope": "Output",
+          "Name": "eErrorID",
+          "Type": "ERROR"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "library": "DNP3",
+  "title": "BinaryOutputCmdPointObserver (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/PointObserver/BinaryOutputCmdPointObserver.html",
+  "page_title": "BinaryOutputCmdPointObserver (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL BinaryOutputCmdPointObserver EXTENDS\nPointObserver\nIMPLEMENTS IBinaryOutputCmdPointObserver\nDNP3 Master datapoint observer for a datapoint of DNP3 object group 12 âbinary output commandsâ.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment",
+        "Inherited from"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "itfMaster",
+          "Type": "IMaster",
+          "Comment": "Connect to a Master.",
+          "Inherited from": "PointObserver"
+        },
+        [
+          "xEnable",
+          "BOOL",
+          "Enable the PointObserver.",
+          "PointObserver"
+        ],
+        [
+          "pointNumber",
+          "UINT",
+          "Datapoint number.",
+          "PointObserver"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "xError",
+          "Type": "BOOL",
+          "Comment": "An error occured.",
+          "Inherited from": "PointObserver"
+        },
+        [
+          "eErrorID",
+          "Error",
+          "The specific error.",
+          "PointObserver"
+        ],
+        [
+          "modified",
+          "BOOL",
+          "Data received since last call.",
+          "PointObserver"
+        ],
+        [
+          "sequenceNumber",
+          "UDINT",
+          "Sequence number of received data.",
+          "PointObserver"
+        ],
+        [
+          "value",
+          "BOOL",
+          "Value received from Outstation.",
+          ""
+        ],
+        [
+          "status",
+          "USINT",
+          "Status received from Outstation.",
+          ""
+        ],
+        [
+          "hasTimeStamp",
+          "BOOL",
+          "Update received from Outstation has a valid time stamp.",
+          ""
+        ],
+        [
+          "timeStamp",
+          "LDATE_AND_TIME",
+          "Time stamp reported - valid if hasTimeStamp = TRUE, invalid\notherwise.",
+          ""
+        ]
+      ]
+    }
+  ]
+}

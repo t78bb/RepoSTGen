@@ -1,0 +1,32 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_Movement_Id_Max (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/AxisGroup/Movements/SMC_Movement_Id_Max.html",
+  "page_title": "SMC_Movement_Id_Max (FUN)",
+  "text": "\nFUNCTION SMC_Movement_Id_Max : SMC_Movement_Id\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "id0",
+          "Type": "SMC_Movement_Id"
+        },
+        [
+          "id1",
+          "SMC_Movement_Id"
+        ],
+        {
+          "Scope": "Return",
+          "Name": "SMC_Movement_Id_Max",
+          "Type": "SMC_Movement_Id"
+        }
+      ]
+    }
+  ]
+}

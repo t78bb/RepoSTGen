@@ -1,0 +1,40 @@
+{
+  "library": "BACnet",
+  "title": "RemoveWeeklyEntry (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/Schedule/pou-BACnetSchedule/WeeklySchedule/RemoveWeeklyEntry.html",
+  "page_title": "BACnetSchedule.RemoveWeeklyEntry (METH)",
+  "text": "\nMETHOD RemoveWeeklyEntry : CmpBACnet.IEC_BACNET_STATUS\nRemovess a weekly entry for a specific day dayOfWeek at the index nIndex in the Weekly_Schedule-Property of this BACnet-Object.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "RemoveWeeklyEntry",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "dayOfWeek",
+          "Type": "CmpBACnet.IEC_BACNET_DAY_OF_WEEK",
+          "Initial": "",
+          "Comment": "The day of the week for which n entry shall be removed."
+        },
+        [
+          "nIndex",
+          "CmpBACnet.IEC_BACNET_ELEMENT_COUNT",
+          "0",
+          "The 1 based index of the entry to remove."
+        ]
+      ]
+    }
+  ]
+}

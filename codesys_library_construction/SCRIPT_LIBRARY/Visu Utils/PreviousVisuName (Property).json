@@ -1,0 +1,8 @@
+{
+  "library": "Visu Utils",
+  "title": "PreviousVisuName (Property)",
+  "url": "https://content.helpme-codesys.com/en/libs/Visu Utils/Current/VisuUtils/VisuActionUtilities/Interfaces/pou-IVisualizationClient/PreviousVisuName.html",
+  "page_title": "IVisualizationClient.PreviousVisuName (PROP)",
+  "text": "\nPROPERTY PreviousVisuName : STRING\nReturns the name of the previous visualization or an empty string, if still the first visualization is displayed.",
+  "tables": []
+}

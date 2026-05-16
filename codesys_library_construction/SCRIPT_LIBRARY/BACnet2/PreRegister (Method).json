@@ -1,0 +1,28 @@
+{
+  "library": "BACnet2",
+  "title": "PreRegister (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/BACnetServerPlugin/pou-IBACnetServerPlugin/PreRegister.html",
+  "page_title": "IBACnetServerPlugin.PreRegister (METH)",
+  "text": "\nMETHOD PreRegister : UDINT\nInitialization, gets called during\nBACnetServer.RegisterPlugin\nbefore application service hooks/callbacks are registered.\nReturn CmpErrors.Errors.ERR_OK if successfully.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "PreRegister",
+          "Type": "UDINT"
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfServer",
+          "Type": "IBACnetServer"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "library": "String Segments",
+  "title": "SetSegment (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Segments/Current/Strings/Functions/SetSegment.html",
+  "page_title": "SetSegment (FUN)",
+  "text": "Library Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nStrings\nAliases\nConstants (GVL)\nIDisposable (Alias)\nRUNE (Alias)\nEnums\nERROR (Enum)\nFunctionblocks\nRange (FunctionBlock)\nIRange\nSetInitialValue (Method)\nUTF8Literal (FunctionBlock)\nSetInitialValue (Method)\n_RangePool (FunctionBlock)\nProtected\n_StringPool (FunctionBlock)\nIStringPool\nSetInitialValue (Method)\n_UTF8String (FunctionBlock)\nIString\nIStringRepresentation\nFunctions\nCompare (Function)\nCopy (Function)\nCreateRangePool (Function)\nCreateString (Function)\nCreateStringPool (Function)\nIsASCIIString (Function)\nIsValidString (Function)\nLen (Function)\nReset (Function)\nRuneCount (Function)\nSetSegment (Function)\nInterfaces\nIRange (Interface)\nGetNextRune (Method)\nReset (Method)\nUngetLastRune (Method)\nIRangePool (Interface)\nGetPoolStatus (Method)\nGetRange (Method)\nIRangeProvider (Interface)\nGetRange (Method)\nIString (Interface)\nGetSegment (Method)\nIsASCII (Method)\nIsValid (Method)\nLen (Method)\nIStringPool (Interface)\nGetPoolConfig (Method)\nGetString (Method)\nIStringRepresentation (Interface)\nLen (Method)\nToIString (Method)\nStructs\nCONFIG (Struct)\nSTATUS (Struct)\nFile and Project Information\nLibrary Reference\nMemory Block Manager\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nUTF-8 Encoding Support\nLibrary Identification\nLibrary Properties\nString Segments\nDocs\n»\nStrings\n»\nFunctions\n»\nSetSegment (FUN)\nSetSegment (FUN)\nÂ¶\nFUNCTION SetSegment :\nIString\nInitializes the passed\nIString\ninstance and uses the specified memory area for this purpose\nExample for a 50 byte\nIString\ninstance:\nsValue : STRING(50) := UTF8#'CÃDâ¬Å¡Å¸Å  Ã¯Ã vÃ¤rÃ¿ Ã§Ã´Ãµl';\nudiLength : UDINT := TO_UDINT(LEN(sValue));\n   fbString : STR._UTF8String;\nitfString : STR.IString := STR.SetSegment(fbString, ADR(sValue), SIZEOF(sValue)-1, udiLength);\nNote\nThe final\nNULL\nbyte of\nsValue\nis not part of the usable memory area of the string.\nThe values\nsValue[0]\nâ¦\nsValue[49]\nare part of the usable Memory area.\nThis is the reason for the expression\nSIZEOF(sValue)-1\nwhen calling\nSetSegment\nInOut:\nScope\nName\nType\nComment\nReturn\nSetSegment\nIString\nInput\nitfString\nIString\nString instance of an\n_UTF8String|\npbyMemory\nPOINTER TO BYTE\nPointer to the first byte of the memory.\nThis address should aligned to a\n__XWORD\nboundary!\nudiSize\nUDINT\nSize of the whole allocated memory\nudiLength\nUDINT\nLength of the segment in bytes\nOutput\neErrorID\nERROR",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetSegment",
+          "Type": "IString",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfString",
+          "Type": "IString",
+          "Comment": "String instance of an_UTF8String|"
+        },
+        [
+          "pbyMemory",
+          "POINTER TO BYTE",
+          "Pointer to the first byte of the memory.This address should aligned to a__XWORDboundary!"
+        ],
+        [
+          "udiSize",
+          "UDINT",
+          "Size of the whole allocated memory"
+        ],
+        [
+          "udiLength",
+          "UDINT",
+          "Length of the segment in bytes"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "eErrorID",
+          "Type": "ERROR",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

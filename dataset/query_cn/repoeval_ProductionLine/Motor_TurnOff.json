@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现通过将线圈设为假来关闭电机的功能。",
+  "provide_code": "METHOD TurnOff : BOOL\nVAR_INPUT\n\tMotorI:MotorI;\nEND_VAR\nVAR_OUTPUT\n\tMotorO:MotorO;\nEND_VAR"
+}

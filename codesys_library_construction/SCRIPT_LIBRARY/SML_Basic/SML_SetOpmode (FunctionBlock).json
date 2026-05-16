@@ -1,0 +1,57 @@
+{
+  "library": "SML_Basic",
+  "title": "SML_SetOpmode (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SML_Basic/Current/Additional/SML_SetOpmode.html",
+  "page_title": "SML_SetOpmode (FB)",
+  "text": "\nFUNCTION_BLOCK SML_SetOpmode\nSets the mode of operation to a new value, if necessary.\nIf\neSetOpmode\n<>\neOpmode\nor\neActOpmode\n<>\neOpmode\n, the value of the\nparameter\neSetOpMode\n(2000) is written to\neOpmode\n.\nThe operation succeeds once parameter\neActOpMode\n(2001) has the new value.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "Axis_REF_SML",
+          "Comment": "Reference to the axis"
+        },
+        {
+          "Scope": "Input",
+          "Name": "bExecute",
+          "Type": "BOOL",
+          "Comment": "Operates on the rising edge"
+        },
+        [
+          "eOpmode",
+          "SML_OPMODE",
+          "The desired mode of operation"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bBusy",
+          "Type": "BOOL",
+          "Comment": "The FB is not finished and new output values are to be expected"
+        },
+        [
+          "bDone",
+          "BOOL",
+          "The mode of operation has been successfully set"
+        ],
+        [
+          "bError",
+          "BOOL",
+          "An error has occured"
+        ],
+        [
+          "eError",
+          "SML_ERROR",
+          "Error number"
+        ]
+      ]
+    }
+  ]
+}

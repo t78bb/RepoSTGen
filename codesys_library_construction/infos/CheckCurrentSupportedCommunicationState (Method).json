@@ -1,0 +1,31 @@
+{
+  "library": "SM3_Basic",
+  "title": "CheckCurrentSupportedCommunicationState (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/DriveInterface/AXIS_REF/pou-AXIS_REF_SM3/CAA-Device-Diagnosis/CheckCurrentSupportedCommunicationState.html",
+  "page_title": "AXIS_REF_SM3.CheckCurrentSupportedCommunicationState (METH)",
+  "text": "\nMETHOD CheckCurrentSupportedCommunicationState : BOOL\nReturns\nTRUE\nif the driver in the current state supports the requested communications state.\nThe method\nAXIS_REF_SM3.CheckSupportedCommunicationState\nis used to check for the general availability of communications states.\nTherefore the result of\nCheckCurrentSupportedCommunicationState\nand\nCheckSupportedCommunicationState\ncould differ if the driver is for example in the startup procedure and not supporting currently some communication states.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "CheckCurrentSupportedCommunicationState",
+          "Type": "BOOL",
+          "Comment": "TRUE: State is supported."
+        },
+        {
+          "Scope": "Input",
+          "Name": "eRequestedState",
+          "Type": "DED.DEVICE_TRANSITION_STATE",
+          "Comment": "Communication state that is checked."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "library": "CommFB",
+  "title": "ErrorCode1_RW (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/CommFB/Current/CommFB/ErrorCode1_RW.html",
+  "page_title": "ErrorCode1_RW (ENUM)",
+  "text": "CommFB\nAINFO_TYPE (Union)\nAddressConcept (GVL)\nAddress Concept\nGenerating a CommFB-ID\nProfibus DP\nProfinet IO\nDevice Diagnosis\nAddress Conversion\nAddresses\nADDR_TO_ID (FunctionBlock)\nADDR_TYPE (Union)\nCREATE_ID (FunctionBlock)\nDP_ADDR (Struct)\nDP_DEVICE_ID (Struct)\nID_TO_ADDR (FunctionBlock)\nIO_SYSTEM_TYPE (Enum)\nPN_ADDR (Struct)\nPN_DEVICE_ID (Struct)\nSUBSLOT_ID (Function)\nCNCT (FunctionBlock)\nConstants (GVL)\nDP Address\nADDR (Function)\nID (Function)\nSLOT_ID (Function)\nDP_AINFO (Struct)\nDP_DIAG (Struct)\nErrorCode (Enum)\nErrorCode1_RW (Enum)\nFieldDevice\nPRVREC (FunctionBlock)\nPRVREC_MODE (Enum)\nRCVREC (FunctionBlock)\nRCVREC_MODE (Enum)\nSALARM (FunctionBlock)\nGETIO_PART (FunctionBlock)\nPN_AINFO (Struct)\nRALARM (FunctionBlock)\nRALARM_MODE (Enum)\nRDIAG (FunctionBlock)\nRDREC (FunctionBlock)\nSETIO_PART (FunctionBlock)\nWRREC (FunctionBlock)\nImages\nLibrary Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nFile and Project Information\nLibrary Reference\nIoDriver Profibus2 Interfaces\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nCommFB\nDocs\n»\nCommFB\n»\nErrorCode1_RW (ENUM)\nErrorCode1_RW (ENUM)\nÂ¶\nTYPE ErrorCode1_RW :\nSome encodings of ErrorCode1 of STATUS (byte 3) that are use for acyclic read-/write services.\nCould be used for access errors in\nRCVREC\nor\nPRVREC\nfunction blocks, for example.\nAttributes:\nqualified_only\nInOut:\nName\nInitial\nInvalid_index\n16#B0\nWrite_length_error\n16#B1\nInvalid_slot_or_subslot\n16#B2\nType_conflict\n16#B3\nInvalid_area_or_API\n16#B4\nState_conflict\n16#B5\nAccess_denied\n16#B6\nInvalid_range\n16#B7\nInvalid_parameter\n16#B8\nInvalid_type\n16#B9\nBackup\n16#BA",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Name": "Invalid_index",
+          "Initial": "16#B0"
+        },
+        {
+          "Name": "Write_length_error",
+          "Initial": "16#B1"
+        },
+        {
+          "Name": "Invalid_slot_or_subslot",
+          "Initial": "16#B2"
+        },
+        {
+          "Name": "Type_conflict",
+          "Initial": "16#B3"
+        },
+        {
+          "Name": "Invalid_area_or_API",
+          "Initial": "16#B4"
+        },
+        {
+          "Name": "State_conflict",
+          "Initial": "16#B5"
+        },
+        {
+          "Name": "Access_denied",
+          "Initial": "16#B6"
+        },
+        {
+          "Name": "Invalid_range",
+          "Initial": "16#B7"
+        },
+        {
+          "Name": "Invalid_parameter",
+          "Initial": "16#B8"
+        },
+        {
+          "Name": "Invalid_type",
+          "Initial": "16#B9"
+        },
+        {
+          "Name": "Backup",
+          "Initial": "16#BA"
+        }
+      ]
+    }
+  ]
+}

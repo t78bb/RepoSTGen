@@ -1,0 +1,27 @@
+{
+  "library": "StringUtils",
+  "title": "Insert (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/StringUtils/Current/Public-Parts/pou-CharBufferString/Insert.html",
+  "page_title": "CharBufferString.Insert (METH)",
+  "text": "\nMETHOD Insert\nInserts <cbsInsert> into this string instance after the <iPosition>-th character position.\n<iPosition> = 0 inserts before the first character.\n<iPosition> = 1 inserts after the first character.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "cbsInsert",
+          "Type": "REFERENCE TOCharBufferString"
+        },
+        [
+          "iPosition",
+          "INT"
+        ]
+      ]
+    }
+  ]
+}

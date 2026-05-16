@@ -1,0 +1,8 @@
+{
+  "library": "SM3_Basic",
+  "title": "IAxisRef (Interface)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/DriveInterface/AXIS_REF/IAxisRef.html",
+  "page_title": "IAxisRef (ITF)",
+  "text": "\nINTERFACE IAxisRef\nInterface that gives access to the pointer of an\nAXIS_REF_SM3\n.\nIts sole purpose is to achieve online safety: while pointers\nmay be invalidated by online change, interfaces are not.\nMethods:\nGetAxisRefPointer\nStructure:\nGetAxisRefPointer (Method)",
+  "tables": []
+}

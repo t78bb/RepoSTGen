@@ -1,0 +1,33 @@
+{
+  "library": "BACnetDefaultImpl",
+  "title": "ReadNumberOfRecordsFromDataFile (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnetDefaultImpl/Current/BACnetDefaultImpl/Function-Blocks/LoggingObjects/Internal/pou-LogObjectsBase/Files/DataFiles/ReadNumberOfRecordsFromDataFile.html",
+  "page_title": "LogObjectsBase.ReadNumberOfRecordsFromDataFile (METH)",
+  "text": "\nMETHOD PROTECTED ReadNumberOfRecordsFromDataFile : RTS_IEC_RESULT\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "ReadNumberOfRecordsFromDataFile",
+          "Type": "RTS_IEC_RESULT"
+        },
+        {
+          "Scope": "Input",
+          "Name": "instNumber",
+          "Type": "DWORD"
+        },
+        {
+          "Scope": "Output",
+          "Name": "numRecords",
+          "Type": "CmpBACnet.IEC_BACNET_UNSIGNED"
+        }
+      ]
+    }
+  ]
+}

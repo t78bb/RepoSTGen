@@ -1,0 +1,34 @@
+{
+  "library": "DNP3",
+  "title": "SetSessionConfigAspectMultiFragConfirm (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Outstation/pou-OutstationConfiguration/SetSessionConfigAspectMultiFragConfirm.html",
+  "page_title": "OutstationConfiguration.SetSessionConfigAspectMultiFragConfirm (METH)",
+  "text": "\nMETHOD SetSessionConfigAspectMultiFragConfirm :\nError\nSet optional outstation session configuration aspect - multi fragment confirmations.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetSessionConfigAspectMultiFragConfirm",
+          "Type": "Error",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "multiFragConfirm",
+          "Type": "BOOL",
+          "Initial": "TRUE",
+          "Comment": "Specify whether application layer confirmations will be requested\nfor non-final fragments of a multi fragment response. Setting this to\nFALSE would now be considered NON-COMPLIANT. Application layer\nconfirmations are always requested for responses that contain events."
+        }
+      ]
+    }
+  ]
+}

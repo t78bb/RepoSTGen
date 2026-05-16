@@ -1,0 +1,38 @@
+{
+  "library": "SML_Basic",
+  "title": "SML_OPMODE (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SML_Basic/Current/Base/SML_OPMODE.html",
+  "page_title": "SML_OPMODE (ENUM)",
+  "text": "\nTYPE SML_OPMODE :\nThe possible operating modes of an axis.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "SML_OP_UNKNOWN",
+          "Initial": "0",
+          "Comment": "The operating mode is not known"
+        },
+        {
+          "Name": "SML_OP_HOMING",
+          "Initial": "1",
+          "Comment": "Homing mode"
+        },
+        {
+          "Name": "SML_OP_VELOCITY",
+          "Initial": "2",
+          "Comment": "Velocity mode: continuous movement with constant velocity."
+        },
+        {
+          "Name": "SML_OP_POSITION",
+          "Initial": "3",
+          "Comment": "Position mode: discrete movement to a given position or by a\ngiven distance."
+        }
+      ]
+    }
+  ]
+}

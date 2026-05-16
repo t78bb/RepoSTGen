@@ -1,0 +1,36 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "GetCurrentDisplayedModuleInstance (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/GenVisu/GetCurrentDisplayedModuleInstance.html",
+  "page_title": "GetCurrentDisplayedModuleInstance (FUN)",
+  "text": "\nFUNCTION GetCurrentDisplayedModuleInstance :\nIModule\nThis function returns the instance whose page-visualization is displayed in the main frame. Might return 0.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetCurrentDisplayedModuleInstance",
+          "Type": "IModule",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "iVisuClientId",
+          "Type": "INT",
+          "Comment": "The visu ClientID whose main frame is checked. Must be in\nthe range of VISU_MIN_NUMBER_OF_CLIENTS and\nVISU_MAX_NUMBER_OF_CLIENTS."
+        },
+        [
+          "pEnv",
+          "POINTER TOMEnv",
+          "A pointer to the environment of a module instance. Must not\nbe null."
+        ]
+      ]
+    }
+  ]
+}

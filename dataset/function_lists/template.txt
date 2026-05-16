@@ -1,0 +1,20 @@
+# 函数列表模板
+# 
+# 使用说明：
+# 1. 复制此文件并重命名为你的项目名.txt
+# 2. 填写函数文件路径（相对于项目根目录）
+# 3. 使用 python project_gen.py -p <项目路径> -l function_lists/<项目名>.txt -n <项目名>
+#
+# 示例：
+# FUN/MyFunction.st
+# PRG/MyProgram.st
+# struct/MyDataType.st
+#
+# 注意事项：
+# - 路径相对于 -p 参数指定的项目根目录
+# - 使用正斜杠 / 作为路径分隔符
+# - 不要以 / 开头
+# - 注释行（以#开头）会被忽略
+
+
+

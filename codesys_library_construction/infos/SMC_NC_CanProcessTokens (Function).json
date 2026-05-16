@@ -1,0 +1,32 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_NC_CanProcessTokens (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/ReadNCFile2/SMC_NC_CanProcessTokens.html",
+  "page_title": "SMC_NC_CanProcessTokens (FUN)",
+  "text": "\nFUNCTION SMC_NC_CanProcessTokens : BOOL\nReturns whether a token modifier can process tokens,\nwhich means that tokens are available in tokensIn,\nand tokensOut is not full.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SMC_NC_CanProcessTokens",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Inout Const",
+          "Name": "tokensIn",
+          "Type": "SMC_TokenQueue"
+        },
+        [
+          "tokensOut",
+          "SMC_TokenQueue"
+        ]
+      ]
+    }
+  ]
+}

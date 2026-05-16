@@ -1,0 +1,31 @@
+{
+  "library": "String Builder",
+  "title": "Len (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Builder/Current/Builder/Function-Blocks/pou-_Builder/IStringRepresentation/Len.html",
+  "page_title": "_Builder.Len (METH)",
+  "text": "\nMETHOD FINAL Len : UDINT\nReturns the number of accumulated bytes\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "Len",
+          "Type": "UDINT",
+          "Comment": ""
+        },
+        {
+          "Scope": "Output",
+          "Name": "eErrorID",
+          "Type": "STR.ERROR",
+          "Comment": "Check error message for better diagnostics"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "library": "String Segments",
+  "title": "IStringPool (Interface)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Segments/Current/Strings/Interfaces/IStringPool.html",
+  "page_title": "IStringPool (ITF)",
+  "text": "\nINTERFACE IStringPool EXTENDS MBM.|dIDisposable|\nMethods:\nGetPoolConfig\nGetString\nStructure:\nGetPoolConfig (Method)\nGetString (Method)",
+  "tables": []
+}

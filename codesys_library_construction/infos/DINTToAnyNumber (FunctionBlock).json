@@ -1,0 +1,28 @@
+{
+  "library": "DNP3",
+  "title": "DINTToAnyNumber (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/AnyNumberConverter/DINTToAnyNumber.html",
+  "page_title": "DINTToAnyNumber (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL DINTToAnyNumber\nConvert DINT to an AnyNumber with baseType = AnyNumberType.TYPE_DINT.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "in",
+          "Type": "DINT"
+        },
+        {
+          "Scope": "Output",
+          "Name": "out",
+          "Type": "AnyNumber"
+        }
+      ]
+    }
+  ]
+}

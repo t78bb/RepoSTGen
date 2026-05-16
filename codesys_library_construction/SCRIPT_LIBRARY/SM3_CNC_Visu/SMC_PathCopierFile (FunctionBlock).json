@@ -1,0 +1,124 @@
+{
+  "library": "SM3_CNC_Visu",
+  "title": "SMC_PathCopierFile (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC_Visu/Current/SM3_CNC_VISU/SMC_PathCopierFile.html",
+  "page_title": "SMC_PathCopierFile (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_PathCopierFile\nThe function block\nSMC_PathCopierFile\nreads and decodes a G-code\nfile (\nsFileName\n) and creates an array of points from the generated path.\nThe inputs\npvl\nand\npiStartPosition\nare transferred to the\nfunction blocks\nSMC_ReadNCFile2\nand\nSMC_NCInterpreter\n,\nsee the input documentation there.\nThis function block is used to provide an overview over a\ncomplete CNC program.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "bExecute",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "A rising edge starts the function block"
+        },
+        [
+          "udiNumberOfPointsInArray",
+          "UDINT",
+          "0",
+          "Number of points which are declared inpBufferof the\nreferred array."
+        ],
+        [
+          "pBuffer",
+          "POINTER TO\nVisuStruct3DPathPoint",
+          "",
+          "Pointer to the allocated array of points"
+        ],
+        [
+          "sFileName",
+          "STRING",
+          "",
+          "CNC file name to be read"
+        ],
+        [
+          "pvl",
+          "POINTER TO SMC_VarList",
+          "",
+          "Pointer to variable list (seeSMC_NCReadNCFile2)"
+        ],
+        [
+          "piStartPosition",
+          "SMC_PosInfo",
+          "",
+          "start position (seeSMC_NCInterpreter)"
+        ],
+        [
+          "aSubProgramDirs",
+          "ARRAY [0..4] OF\nSTRING(174)",
+          "",
+          "An array of up to 5 directories where subprograms are\nsearched (seeSMC_ReadNCFile2)"
+        ],
+        [
+          "bParenthesesAsComments",
+          "BOOL",
+          "TRUE",
+          "If parenthesis should be considered as comments (SeeSMC_ReadNCFile2)"
+        ],
+        [
+          "bEnableSyntaxChecks",
+          "BOOL",
+          "TRUE",
+          "bEnableSyntaxChecks (seeSMC_NCInterpreter)"
+        ],
+        [
+          "bStepSuppress",
+          "BOOL",
+          "",
+          "When this input isTRUE, lines of the CNC program starting\nwith â/â will be ignored. Otherwise they will be processed."
+        ],
+        [
+          "eOriConv",
+          "SMC_ORI_CONVENTION",
+          "SMC_ORI_CONVENTION.ADDAXES",
+          "Defines the way the orientation in the A/B/C words is\ninterpreted (SeeSMC_NCInterpreter)"
+        ],
+        [
+          "precision",
+          "LREAL",
+          "1",
+          "Defines the precision of the track, meaning how many points should be computed for\nan element in the queue. A value of 1 indicates that a point should be calculated\nevery 1 unit of the path. A value of 2 indicates that two points should be calculated\nfor every 1 unit of the path."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bDone",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUE: FB completed"
+        },
+        [
+          "bBusy",
+          "BOOL",
+          "",
+          ""
+        ],
+        [
+          "bError",
+          "BOOL",
+          "",
+          "TRUE: error during operation"
+        ],
+        [
+          "iErrorID",
+          "SMC_ERROR",
+          "",
+          "Error ID"
+        ],
+        [
+          "vs3dt",
+          "VisuStruct3DTrack",
+          "",
+          "Track output. To be setup as input of the visu elementPath3D."
+        ]
+      ]
+    }
+  ]
+}

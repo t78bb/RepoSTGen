@@ -1,0 +1,8 @@
+{
+  "library": "DNP3",
+  "title": "IsModified (Property)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/PointObserver/pou-PointObserver/IsModified.html",
+  "page_title": "PointObserver.IsModified (PROP)",
+  "text": "\nPROPERTY IsModified : BOOL",
+  "tables": []
+}

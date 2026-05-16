@@ -1,0 +1,43 @@
+{
+  "library": "DNP3",
+  "title": "AnyNumberArithmeticOperation (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Functions/AnyNumber/AnyNumberArithmeticOperation.html",
+  "page_title": "AnyNumberArithmeticOperation (ENUM)",
+  "text": "\nTYPE AnyNumberArithmeticOperation :\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "Addition",
+          "Initial": "0",
+          "Comment": ""
+        },
+        {
+          "Name": "Subtraction",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Name": "Multiplication",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Name": "Division",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Name": "AbsoluteDelta",
+          "Initial": "",
+          "Comment": "computes fabs(left-right) or synonymous for integer types"
+        }
+      ]
+    }
+  ]
+}

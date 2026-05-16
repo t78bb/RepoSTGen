@@ -1,0 +1,31 @@
+{
+  "library": "BACnet2",
+  "title": "FromBACnetBoolean (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/Utilities/BACnetUtilities/FromBACnetDataTypes/FromBACnetBoolean.html",
+  "page_title": "FromBACnetBoolean (FUN)",
+  "text": "\nFUNCTION FromBACnetBoolean : BOOL\nReturns a BOOL corresponding to the given IEC_BACNET_BOOLEAN.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "FromBACnetBoolean",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "bacBol",
+          "Type": "CmpBACnet.IEC_BACNET_BOOLEAN",
+          "Comment": "The BACnet boolean to convert to a BOOL."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "library": "CommFB",
+  "title": "CREATE_ID (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/CommFB/Current/CommFB/Addresses/CREATE_ID.html",
+  "page_title": "CREATE_ID (FB)",
+  "text": "\nFUNCTION_BLOCK CREATE_ID\nThis function block creates a temporary ID from the physical identification of a slot of a PROFIBUS DP-slave or subslot of a PROFINET IO Device which can be used with the Communication Function Blocks.\nIn contrast to the other address conversion functions, it does not retrieve the ID from the projected devices of the application, but creates a temporary assignment of ID and the given address.\nUse case is for example a Profinet implicit read-service. (\nRDREC\nwithout established connection\nCNCT\n)\nNote\nImplementations may choose to only support a single or a limitted number of these temporary IDs and the underlying services.\nCode-Example: Profinet implicit read\nPROGRAM\nREAD_Implicit\nVAR\naddr\n:\nCommFB.ADDR_TYPE\n;\ncreateID\n:\nCommFB.CREATE_ID\n;\nexecRead\n:\nBOOL\n;\nrdrec\n:\nCommFB.RDREC\n;\nbuffer\n:\nARRAY\n[0..63]\nOF\nBYTE\n;\nEND_VAR\n// init address:\n// (this data might be retrieved by a bus-scan)\naddr.SYSTEM\n:=\nCommFB.IO_SYSTEM_TYPE.PROFINET_IO\n;\naddr.PN.D.STATIONNAME\n:=\n'pnDevice'\n;\n// 'pnDevice' is some online device\naddr.PN.D.INSTANCE\n:=\n1\n;\n// typically 0 or 1\ncreateID\n(\nADDR\n:=\naddr\n);\nIF\n(\ncreateID.ENO\nAND\nexecRead\n)\nTHEN\n// Read data from profinet device\nrdrec.ID\n:=\ncreateID.ID\n;\n// ENO = TRUE, so the ID is valid and can be used for RDREC\nrdrec.INDEX\n:=\nTO_INT\n(\n16#AFF0\n);\n// I&M1-Data\nrdrec.MLEN\n:=\nTO_INT\n(\nSIZEOF\n(\nbuffer\n));\nrdrec.RECORD\n:=\nADR\n(\nbuffer\n);\nrdrec\n(\nREQ\n:=\nexecRead\n);\nIF\n(\nrdrec.VALID\nOR\nrdrec.ERROR\n)\nTHEN\n//execution done\nexecRead\n:=\nFALSE\n;\nrdrec\n(\nREQ\n:=\nexecRead\n);\nEND_IF\nEND_IF\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "EN",
+          "Type": "BOOL",
+          "Initial": "TRUE",
+          "Comment": "Enable"
+        },
+        {
+          "Scope": "Inout",
+          "Name": "ADDR",
+          "Type": "ADDR_TYPE",
+          "Initial": "",
+          "Comment": "Data structure to define the address of a slot of a PROFIBUS\nDP-slave or a subslot of a PROFINET IO Device"
+        },
+        {
+          "Scope": "Output",
+          "Name": "ENO",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Provided ID is valid."
+        },
+        [
+          "STATUS",
+          "DWORD",
+          "",
+          "Last detected status, see enumErrorCode"
+        ],
+        [
+          "ID",
+          "DWORD",
+          "",
+          "Handle"
+        ]
+      ]
+    }
+  ]
+}

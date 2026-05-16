@@ -1,0 +1,23 @@
+{
+  "library": "SM3_Drive_ETC",
+  "title": "GetSlaveId (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Drive_ETC/Current/pou-AXIS_REF_ETC_BASE_SM3/ParameterAccess/GetSlaveId.html",
+  "page_title": "AXIS_REF_ETC_BASE_SM3.GetSlaveId (METH)",
+  "text": "\nMETHOD GetSlaveId : SMC3_ETC_SlaveId\nReturns the physical EtherCAT address and the number of the EtherCAT master\nfor the fieldbus slave of the drive.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetSlaveId",
+          "Type": "SMC3_ETC_SlaveId"
+        }
+      ]
+    }
+  ]
+}

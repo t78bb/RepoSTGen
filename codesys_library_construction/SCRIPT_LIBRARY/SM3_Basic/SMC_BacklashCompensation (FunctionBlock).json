@@ -1,0 +1,113 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_BacklashCompensation (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/Movement/SMC_BacklashCompensation.html",
+  "page_title": "SMC_BacklashCompensation (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_BacklashCompensation\nThis function block can be used to compensate the backlash which arises\nfor example at a belt drive or in a gear-box.\nFor this purpose a (usually virtual) master axis gets mirrored on the\nreal slave axis, whose backlash should be compensated.\nThe function block works similar to a phasing function block, the phase\ndepends on the direction of the master axis.\nIf the master axis starts in a certain direction, the slave axis does\nthe same plus an additional movement (distance:\nfBacklash\n) in this direction;\nif the master axis inverts, the slave axis also turns around and\nadditionally covers the double distance\nfBacklash\nin this new direction.\nTake care that the master axis and the slave axis are at the same\nposition when the module starts working, because otherwise the slave\naxis would be positioned on the master axis.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Master",
+          "Type": "AXIS_REF_SM3",
+          "Initial": "",
+          "Comment": "Reference to master axis"
+        },
+        [
+          "Slave",
+          "AXIS_REF_SM3",
+          "",
+          "Reference to slave axis"
+        ],
+        {
+          "Scope": "Input",
+          "Name": "bExecute",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Rising edge: Starts the execution of the function block.\nIt stays active until the slave axis gets\ninterrupted by another movement, or if an error occurs."
+        },
+        [
+          "fBacklash",
+          "LREAL",
+          "",
+          "Distance/Backlash to be compensated."
+        ],
+        [
+          "fCompensationVel",
+          "LREAL",
+          "",
+          "Additional velocity, which should be used for the\ncompensation."
+        ],
+        [
+          "fCompensationAcc",
+          "LREAL",
+          "",
+          "Additional acceleration, which should be used for the\ncompensation."
+        ],
+        [
+          "fCompensationDec",
+          "LREAL",
+          "",
+          "Additional deceleration, which should be used for the\ncompensation."
+        ],
+        [
+          "fCompensationJerk",
+          "LREAL",
+          "",
+          "Additional jerk, which should be used for the compensation."
+        ],
+        [
+          "eBacklashMode",
+          "SMC_BACKLASH_MODE",
+          "SMC_BL_AUTO",
+          "The mode of backlash compensation.SMC_BL_AUTO: Direction in which the master axis moves;determines the compensation direction.SMC_BL_POSITIVE: Compensation in positive direction,independent on the movement of the master axis.SMC_BL_NEGATIVE: Compensation in negative direction,independent on the movement of the master axis.SMC_BL_OFF: No compensation"
+        ],
+        [
+          "eBacklashStartState",
+          "SMC_BACKLASH_STARTSTATE",
+          "SMC_BL_START_NONE",
+          "The start condition of the axis.SMC_BL_START_NEGATIVE: The slave axis is under traction in negativedirection, that is: a movement in negative direction needs no\ncompensation; in case of a movement in positive direction the\ndoublefBacklash-distance will be made up.SMC_BL_START_POSITIVE: The slave axis is under traction in positivedirection, that is: a movement in positive direction needs no\ncompensation; in case of a movement in negative direction the\ndoublefBacklash-distance will be made up.SMC_BL_START_NONE: The slave axis is not under traction; a movementin positive or negative direction will cause a corresponding\ncompensating movement of distancefBacklash."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bBusy",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUE: Execution of the function block is not finished\nyet."
+        },
+        [
+          "bCommandAborted",
+          "BOOL",
+          "",
+          "TRUE: Command has been aborted by another command."
+        ],
+        [
+          "bError",
+          "BOOL",
+          "",
+          "TRUE: Error has occured within the function block."
+        ],
+        [
+          "iErrorID",
+          "SMC_ERROR",
+          "",
+          "Error identification"
+        ],
+        [
+          "bCompensating",
+          "BOOL",
+          "",
+          "TRUE: While compensating a backlash."
+        ]
+      ]
+    }
+  ]
+}

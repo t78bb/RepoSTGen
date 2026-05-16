@@ -1,0 +1,94 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_FreeEncoder (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/Additional/SMC_FreeEncoder.html",
+  "page_title": "SMC_FreeEncoder (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_FreeEncoder\nthe need to add it to the device tree.\nUse the output variable\nEncoder\nof type\nFREE_ENCODER_REF\nas the encoder\naxis.\nIf the function block is restarted, the free encoder is reinitialized.\nNote that instances of this function block must not be assigned to other\ninstances of the same function block.  If you create your own function\nblock containing this function block, it is recommended to add the attribute\nâno_assignâ to your function block as well.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Starts the execution of the function block."
+        },
+        [
+          "diEncoderPosition",
+          "DINT",
+          "",
+          "The encoder position in increments."
+        ],
+        [
+          "bDelayActivation",
+          "BOOL",
+          "",
+          "During startup, communication state 90 will not be reached as long\nas this value is TRUE."
+        ],
+        [
+          "wDriveID",
+          "WORD",
+          "1",
+          "Identifier of the drive."
+        ],
+        [
+          "iMovementType",
+          "SMC_AXIS_TYPE",
+          "SMC_AXIS_TYPE.modulo",
+          "The type (finite or modulo) of axis."
+        ],
+        [
+          "fPositionPeriod",
+          "LREAL",
+          "360.0",
+          "Length of period for modulo drives in technical units [u]."
+        ],
+        [
+          "dwRatioTechUnitsDenom",
+          "DWORD",
+          "16#10000",
+          "The number of encoder increments per iRatioTechUnitsNum."
+        ],
+        [
+          "iRatioTechUnitsNum",
+          "DINT",
+          "360",
+          "The number of technical units [u] per dwRatioTechUnitsDenom."
+        ],
+        [
+          "usiEncoderBitWidth",
+          "USINT",
+          "32",
+          "The bit width of the encoder signal."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Initialized",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "The encoder axis is intialized and can be used."
+        },
+        [
+          "Error",
+          "BOOL",
+          "",
+          "There is an error."
+        ],
+        [
+          "Encoder",
+          "FREE_ENCODER_REF",
+          "",
+          "The encoder axis."
+        ]
+      ]
+    }
+  ]
+}

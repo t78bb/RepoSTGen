@@ -1,0 +1,23 @@
+{
+  "library": "AlarmManager",
+  "title": "GetState (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/pou-IAlarm/GetState.html",
+  "page_title": "IAlarm.GetState (METH)",
+  "text": "\nMETHOD GetState :\nAlarmState\nReturns the current state of the alarm\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetState",
+          "Type": "AlarmState"
+        }
+      ]
+    }
+  ]
+}

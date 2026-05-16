@@ -1,0 +1,23 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "CyclicCall (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_RMP_ReliableMessageProtocol/pou-RMPService/Cyclic/CyclicCall.html",
+  "page_title": "RMPService.CyclicCall (METH)",
+  "text": "\nMETHOD FINAL CyclicCall : BOOL\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "CyclicCall",
+          "Type": "BOOL"
+        }
+      ]
+    }
+  ]
+}

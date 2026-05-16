@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现通过装饰器模式为组件动态添加额外的描述功能。",
+  "provide_code": "//Illustrative method of the pattern\nMETHOD getDescription : STRING\nVAR_INPUT\n\t//Reference to store the component to be decorated\n\ttempInputComponent : Component_Interface;\nEND_VAR"
+}

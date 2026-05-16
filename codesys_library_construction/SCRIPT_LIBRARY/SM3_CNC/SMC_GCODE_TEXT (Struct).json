@@ -1,0 +1,43 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_GCODE_TEXT (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_Data-types/SoftMotion-CNC/SMC_GCODE_TEXT.html",
+  "page_title": "SMC_GCODE_TEXT (STRUCT)",
+  "text": "\nTYPE SMC_GCODE_TEXT : STRUCT\nThis data type is used to transmit the string of the last interpreted line\nof the CNC file from the function block\nSMC_NCInterpreter\nto the\nfunction block\nSMC_GCodeViewer\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "str",
+          "Type": "STRING(80)",
+          "Comment": "String representing the current line"
+        },
+        {
+          "Name": "iLineNumber",
+          "Type": "DINT",
+          "Comment": "Line number (from N word)"
+        },
+        {
+          "Name": "bNewLine",
+          "Type": "BOOL",
+          "Comment": "TRUEwhen a new line has been decoded in this cycle;FALSEelse"
+        },
+        {
+          "Name": "bClearList",
+          "Type": "BOOL",
+          "Comment": "TRUEwhen the interpreter has been (re-) started.  This implies\nthat a buffer that may store previous lines should be emptied."
+        },
+        {
+          "Name": "objectId",
+          "Type": "SMC_GCodeObjectId",
+          "Comment": "The object id of the object created by the given line."
+        }
+      ]
+    }
+  ]
+}

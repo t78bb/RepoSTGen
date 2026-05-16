@@ -1,0 +1,31 @@
+{
+  "library": "BACnet2",
+  "title": "FreePersistenceInfos (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/Persistence/pou-IBACnetPersistence/FreePersistenceInfos.html",
+  "page_title": "IBACnetPersistence.FreePersistenceInfos (METH)",
+  "text": "\nMETHOD FreePersistenceInfos : CmpBACnet.IEC_BACNET_STATUS\nDeallocate buffer allocated from\nIBACnetPersistence.GetPersistenceInfos\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "FreePersistenceInfos",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "pInfo",
+          "Type": "POINTER TOBACnetPersistenceInfo",
+          "Comment": "Array of information about stored objects."
+        }
+      ]
+    }
+  ]
+}

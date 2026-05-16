@@ -1,0 +1,8 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_INCSymbolTable (Interface)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/Parser/SymbolTable/SMC_INCSymbolTable.html",
+  "page_title": "SMC_INCSymbolTable (ITF)",
+  "text": "\nINTERFACE SMC_INCSymbolTable\nInterface for a symbol table that can be used to look up global\nvariables and CNC sub program signatures.\nMethods:\nGetSubprogramSignature\nLookupGlobalVar\nStoreSubprogramSignature\nStructure:\nGetSubprogramSignature (Method)\nLookupGlobalVar (Method)\nStoreSubprogramSignature (Method)",
+  "tables": []
+}

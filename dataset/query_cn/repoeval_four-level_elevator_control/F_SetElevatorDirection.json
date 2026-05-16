@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现根据当前楼层和目标楼层设定电梯的运行方向。",
+  "provide_code": "FUNCTION F_SetElevatorDirection\nVAR_INPUT\n\tnCurrentFloor\t:\tUSINT;\t\t//当前楼层\n\tnTargetFloor\t:\tUSINT;\t\t//目标楼层\nEND_VAR"
+}

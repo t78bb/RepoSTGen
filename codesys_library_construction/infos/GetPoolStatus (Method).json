@@ -1,0 +1,28 @@
+{
+  "library": "String Segments",
+  "title": "GetPoolStatus (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Segments/Current/Strings/Interfaces/pou-IRangePool/GetPoolStatus.html",
+  "page_title": "IRangePool.GetPoolStatus (METH)",
+  "text": "\nMETHOD GetPoolStatus :\nSTATUS\nRetunrs the current status of the pool\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetPoolStatus",
+          "Type": "STATUS"
+        },
+        {
+          "Scope": "Output",
+          "Name": "eErrorID",
+          "Type": "ERROR"
+        }
+      ]
+    }
+  ]
+}

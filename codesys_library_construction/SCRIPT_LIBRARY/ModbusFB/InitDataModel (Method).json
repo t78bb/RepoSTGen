@@ -1,0 +1,8 @@
+{
+  "library": "ModbusFB",
+  "title": "InitDataModel (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/ModbusFB/Current/ModbusFB/Function-Blocks/Server/pou-Server/DataModel/InitDataModel.html",
+  "page_title": "Server.InitDataModel (METH)",
+  "text": "\nMETHOD InitDataModel\nInitializes the âdata modelâ, set all âdata itemsâ to 0.",
+  "tables": []
+}

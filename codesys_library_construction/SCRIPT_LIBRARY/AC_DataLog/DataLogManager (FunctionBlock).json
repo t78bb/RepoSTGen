@@ -1,0 +1,45 @@
+{
+  "library": "AC_DataLog",
+  "title": "DataLogManager (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_DataLog/Current/AC_DataLog/DataLogManager/DataLogManager.html",
+  "page_title": "DataLogManager (FB)",
+  "text": "\nFUNCTION_BLOCK DataLogManager EXTENDS AC.Module IMPLEMENTS\nIDataLogManager\n,\nIDataLogManager2\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "pitfDataLogChannels",
+          "Type": "POINTER TOIDataLogChannel",
+          "Initial": "",
+          "Comment": ""
+        },
+        [
+          "uiNumDataLogChannels",
+          "UINT",
+          "",
+          ""
+        ],
+        [
+          "xLogBias",
+          "BOOL",
+          "FALSE",
+          "Returns whether the current bias shall be logged"
+        ],
+        [
+          "iBias",
+          "INT",
+          "0",
+          "The bias to log in minutes"
+        ]
+      ]
+    }
+  ]
+}

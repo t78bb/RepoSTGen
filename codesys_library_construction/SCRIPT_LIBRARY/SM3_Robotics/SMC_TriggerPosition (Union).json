@@ -1,0 +1,28 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_TriggerPosition (Union)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/AdministrativeConfiguration/Trigger/SMC_TriggerPosition.html",
+  "page_title": "SMC_TriggerPosition (UNION)",
+  "text": "\nTYPE SMC_TriggerPosition : UNION\nDefines a trigger position.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "MvtPosition",
+          "Type": "LREAL",
+          "Comment": "The relative or absolute position, only defined ifSMC_TriggerPositionTypeis MvtRelative or MvtDistance."
+        },
+        {
+          "Name": "Plane",
+          "Type": "SMC_TriggerPosition_Plane",
+          "Comment": "The plane of intersection, only defined ifSMC_TriggerPositionTypeis PlaneIntersection."
+        }
+      ]
+    }
+  ]
+}

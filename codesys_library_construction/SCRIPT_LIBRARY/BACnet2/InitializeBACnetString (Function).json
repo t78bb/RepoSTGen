@@ -1,0 +1,47 @@
+{
+  "library": "BACnet2",
+  "title": "InitializeBACnetString (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/Utilities/BACnetUtilities/InitializeBACnetDataTypes/InitializeBACnetString.html",
+  "page_title": "InitializeBACnetString (FUN)",
+  "text": "\nFUNCTION InitializeBACnetString : BOOL\nInitializes a IEC_BACNET_STRING according to a given WSTRING. Only UTF-8 and ISO 8859-1 BACnet-String supported right now.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "InitializeBACnetString",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "strUTF16",
+          "Type": "WSTRING(255)",
+          "Comment": "The utf16 WSTRING (standard format for CODESYS WSTRINGs in\nvisus, etc.) to use for initialization."
+        },
+        [
+          "strType",
+          "CmpBACnet.IEC_BACNET_STRING_TYPE",
+          "The string type to initialize the BACnet string with."
+        ],
+        {
+          "Scope": "Inout",
+          "Name": "strBuffer",
+          "Type": "STRING(255)",
+          "Comment": "A buffer used during initialization in the end being used\nfor the initialized string data."
+        },
+        [
+          "bacString",
+          "CmpBACnet.IEC_BACNET_STRING",
+          "The BACnet string to operate on."
+        ]
+      ]
+    }
+  ]
+}

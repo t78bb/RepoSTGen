@@ -1,0 +1,32 @@
+{
+  "library": "DNP3",
+  "title": "AnyNumberTypeEquals (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Functions/AnyNumber/AnyNumberTypeEquals.html",
+  "page_title": "AnyNumberTypeEquals (FUN)",
+  "text": "\nFUNCTION AnyNumberTypeEquals : BOOL\nReturns TRUE, if base type of two AnyNumber is equal, otherwise FALSE.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "AnyNumberTypeEquals",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Input",
+          "Name": "left",
+          "Type": "REFERENCE TOAnyNumber"
+        },
+        [
+          "right",
+          "REFERENCE TOAnyNumber"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "library": "CmpBACnet",
+  "title": "BACnetGetAlarmSummary (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/CmpBACnet/Current/BACnetClientAPI/BACnetGetAlarmSummary.html",
+  "page_title": "BACnetGetAlarmSummary (FUN)",
+  "text": "\nFUNCTION BACnetGetAlarmSummary :\nIEC_BACNET_STATUS\nSend an GetAlarmSummary request\nThis routine generates a Get Alarm Summary service request. It is used by a client\nBACnet user to obtain a summary of âalarm-activeâ objects within the given device\nthat is capable of alarm processing. The âalarm-activeâ objects are objects that have\nany value but\nIEC_BACNET_EVENT_STATE.STATE_NORMAL\nfor the Event_State property and\nIEC_BACNET_NOTIFY_TYPE.NOTIFY_TYPE_ALARM\nfor the Notify_Type property.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "BACnetGetAlarmSummary",
+          "Type": "IEC_BACNET_STATUS",
+          "Comment": "A status indicating if the operation worked."
+        },
+        {
+          "Scope": "Input",
+          "Name": "pSourceAddress",
+          "Type": "POINTER TOIEC_BACNET_ADDRESS",
+          "Comment": "If the BACnet application has only one device constructed and installed, this can\nbe 0. In this case the MAC address of this device will be used. Otherwise this\nshall be the MAC address returned on device object construction."
+        },
+        [
+          "pDestinationAddress",
+          "POINTER TOIEC_BACNET_ADDRESS",
+          "This is the MAC address of the device to which the request\nshould be sent."
+        ],
+        [
+          "pAPDUParams",
+          "POINTER TOIEC_BACNET_APDU_PROPERTIES",
+          "A pointer to the APDU-Properties structure which sets APDU properties for this\ntransaction only. This does not change global defaults or settings for the application\nAPDU Properties. This argument may be 0. In this case APDU properties  are used\nwhich were specified in the device object properties of the applications device which\nsends the request."
+        ],
+        [
+          "pInfoBuffer",
+          "POINTER TOIEC_BACNET_ALARM_INFO",
+          "A pointer to a memory block of datatypeIEC_BACNET_ALARM_INFOin which to place summary\ninformation, which is a list of Alarm Summary items. Each item of datatypeIEC_BACNET_ALARM_SUMMARYconsists of three parameters: Object ID of the appropriate\nobject, the Event State of this object, and Acked Transitions property values.\nThe application may initialize the pSummaries member of theIEC_BACNET_ALARM_INFOstruture with a 0 pointer and bufferCount and summaryCount with 0 too. In this\ncase the memory for the response is allocated by the API and the application is\nresponsible to release it with a call toBACnetFreeStackAllocatedMemoryif the\nbuffer is no longer needed."
+        ],
+        [
+          "pTransactionToken",
+          "POINTER TOBACnetAsyncTransactionToken",
+          "Transaction token of the asynchronous call - seeBACnetAsyncTransactionToken."
+        ],
+        [
+          "pError",
+          "POINTER TOIEC_BACNET_ERROR",
+          "A pointer to a structure to hold BACnet Error information. pError may be 0 if the\napplication isnât interested in detailed error information."
+        ]
+      ]
+    }
+  ]
+}

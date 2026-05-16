@@ -1,0 +1,67 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC3_CaptureDescription (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/DataTypes/DriveInterface/SMC3_CaptureDescription.html",
+  "page_title": "SMC3_CaptureDescription (STRUCT)",
+  "text": "\nTYPE SMC3_CaptureDescription : STRUCT\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "fCaptPosition",
+          "Type": "LREAL",
+          "Initial": "0",
+          "Comment": "14x0"
+        },
+        {
+          "Name": "bCaptureOccured",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "14x1"
+        },
+        {
+          "Name": "bStartCapturing",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "14x2"
+        },
+        {
+          "Name": "bAbortTrigger",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "14x3"
+        },
+        {
+          "Name": "fFirstCapturePosition",
+          "Type": "LREAL",
+          "Initial": "0",
+          "Comment": "14x4"
+        },
+        {
+          "Name": "fLastCapturePosition",
+          "Type": "LREAL",
+          "Initial": "0",
+          "Comment": "14x5"
+        },
+        {
+          "Name": "bCaptureWindowActive",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "14x7"
+        },
+        {
+          "Name": "bLatchInController",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "The modebLatchInControllergot deprecated\nand is not supported anymore."
+        }
+      ]
+    }
+  ]
+}

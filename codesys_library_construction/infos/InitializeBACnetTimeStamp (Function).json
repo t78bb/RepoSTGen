@@ -1,0 +1,37 @@
+{
+  "library": "BACnet",
+  "title": "InitializeBACnetTimeStamp (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/Utilities/BACnetUtilities/InitializeBACnetDataTypes/InitializeBACnetTimeStamp.html",
+  "page_title": "InitializeBACnetTimeStamp (FUN)",
+  "text": "\nFUNCTION InitializeBACnetTimeStamp : BOOL\nInitializes a IEC_BACNET_TIME_STAMP according to a given BACnetTimeStamp.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "InitializeBACnetTimeStamp",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "timeStamp",
+          "Type": "BACnetTimeStamp",
+          "Comment": "The BACnetTimeStamp to use for initialization."
+        },
+        {
+          "Scope": "Inout",
+          "Name": "bacTimeStamp",
+          "Type": "CmpBACnet.IEC_BACNET_TIME_STAMP",
+          "Comment": "The BACnet time stamp to operate on."
+        }
+      ]
+    }
+  ]
+}

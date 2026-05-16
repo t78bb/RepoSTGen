@@ -1,0 +1,36 @@
+{
+  "library": "AlarmManager",
+  "title": "FormatTypedValue (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Functions/FormatTypedValue.html",
+  "page_title": "FormatTypedValue (FUN)",
+  "text": "\nFUNCTION FormatTypedValue : CharBufferPtr\nTakes an ITypedValue instance and formats the stored value using the default format string\nfor the type. The result of the function is a CharBufferPtr pointing to the formatted value.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "FormatTypedValue",
+          "Type": "CharBufferPtr",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfTypedValue",
+          "Type": "ITypedValue",
+          "Comment": "The value to format"
+        },
+        [
+          "cbsResult",
+          "REFERENCE TO CharBufferString",
+          "The string, where the result will be stored"
+        ]
+      ]
+    }
+  ]
+}

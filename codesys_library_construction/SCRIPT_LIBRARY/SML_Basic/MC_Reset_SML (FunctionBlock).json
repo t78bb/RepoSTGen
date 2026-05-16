@@ -1,0 +1,52 @@
+{
+  "library": "SML_Basic",
+  "title": "MC_Reset_SML (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SML_Basic/Current/PLCopen/MC_Reset_SML.html",
+  "page_title": "MC_Reset_SML (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL MC_Reset_SML\nForces the transition from the state\nErrorStop\nto\nStandstill\nor\nPowerOff\nby resetting all internal axis-related errors.\nIf the axis is not in state\nErrorStop\n, the function block signals the\nerror\nSML_R_NO_ERROR_TO_RESET\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SML",
+          "Comment": "Reference to the axis"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Comment": "Rising edge: The reset is started"
+        },
+        {
+          "Scope": "Output",
+          "Name": "Done",
+          "Type": "BOOL",
+          "Comment": "StateStandstillorPowerOffhas been reached"
+        },
+        [
+          "Busy",
+          "BOOL",
+          "The FB is not finished and new output values are to be expected"
+        ],
+        [
+          "Error",
+          "BOOL",
+          "An error has occurred"
+        ],
+        [
+          "ErrorID",
+          "SML_ERROR",
+          "The error number"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现对储罐的液位和温度进行监控和自动调整，使其保持在指定的最小值和最大值范围内。",
+  "provide_code": "FUNCTION_BLOCK Tank\nVAR_INPUT\n\tstName: STRING;\n\tnMaxLevel\t: INT;\n\tnMinLevel\t: INT;\n\tnMaxTemp\t: INT;\n\tnMinTemp\t: INT;\n\tnUnitLevel\t\t\t\t\t\t\t:INT:=0;\n\tnUnitTemp\t\t\t\t\t\t\t:INT:=0;\nEND_VAR\nVAR_OUTPUT\nEND_VAR"
+}

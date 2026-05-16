@@ -1,0 +1,82 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_ReadNCQueue (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/File/SMC_ReadNCQueue.html",
+  "page_title": "SMC_ReadNCQueue (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_ReadNCQueue\nThis FB is used for files created with Codesys V2.3;\nTo write the queue to a file or to read the queue from a file:\nthe FBs SMC_WriteQueueToFile and SMC_ReadQueueFromFile from\nSM3_Debug library can be used.\nThis function block will read an\nSMC_OUTQUEUE\nfile,\nwhich has been created by the CNC editor,\nfrom the PLC file system and provide an OutQueue structure,\nwhich typically is processed by the decoder.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "bExecute",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "Rising edge: Starts execution. WhileTRUE, the function\nblock stays active"
+        },
+        [
+          "sFileName",
+          "STRING(255)",
+          "ââ",
+          "File path"
+        ],
+        [
+          "pBuffer",
+          "POINTER TO BYTE",
+          "",
+          "Pointer on a sufficiently large, free data area (buffer)\nthat is allocated in the IEC application."
+        ],
+        [
+          "dwBufferSize",
+          "DWORD",
+          "0",
+          "Size of the buffer in byte"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bDone",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "TRUE, if execution finished sucessfully."
+        },
+        [
+          "bBusy",
+          "BOOL",
+          "FALSE",
+          "TRUE, while execution of function block is not finished"
+        ],
+        [
+          "bError",
+          "BOOL",
+          "FALSE",
+          "Signals, that an error has occurred within the function\nblock"
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "0",
+          "Error identification"
+        ],
+        [
+          "poqDataOut",
+          "POINTER TOSMC_OUTQUEUE",
+          "",
+          "Pointer on queue that has been read in."
+        ],
+        [
+          "iObjectsRead",
+          "UDINT",
+          "0",
+          "Number ofSMC_GEOINFOobjects, which have been read\nand written to the queue up to now."
+        ]
+      ]
+    }
+  ]
+}

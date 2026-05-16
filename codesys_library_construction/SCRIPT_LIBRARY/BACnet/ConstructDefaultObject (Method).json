@@ -1,0 +1,45 @@
+{
+  "library": "BACnet",
+  "title": "ConstructDefaultObject (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetServer/pou-IBACnetServer/Objects/ConstructDefaultObject.html",
+  "page_title": "IBACnetServer.ConstructDefaultObject (METH)",
+  "text": "\nMETHOD ConstructDefaultObject : CmpBACnet.IEC_BACNET_STATUS\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "ConstructDefaultObject",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS"
+        },
+        {
+          "Scope": "Input",
+          "Name": "objIDTyp",
+          "Type": "CmpBACnet.IEC_BACNET_OBJECT_TYPE"
+        },
+        [
+          "objIDInstance",
+          "UDINT"
+        ],
+        [
+          "objName",
+          "WSTRING(255)"
+        ],
+        {
+          "Scope": "Inout",
+          "Name": "bacObj",
+          "Type": "BACnetObjectBase"
+        },
+        [
+          "strBuffer",
+          "STRING(255)"
+        ]
+      ]
+    }
+  ]
+}

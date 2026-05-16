@@ -1,0 +1,71 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_OrientationBasedOnTangent (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_Trafo_POUs/SoftMotion-Transformations/additional-FBs/SMC_OrientationBasedOnTangent.html",
+  "page_title": "SMC_OrientationBasedOnTangent (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_OrientationBasedOnTangent\nThis function block computes the tool orientation based on the\npath tangent.\nThe resulting orientation is written to the position\npiOut\nin\nthe members dA, dB, and dC, according to the chosen orientation\nconvention.\nThe orientation is computed as follows:\nFirst, an intermediate coordinate system is computed, where\nthe Z-axis is the given normal vector, and the X-axis points in\nthe direction of the tangent, but projected to the working plane.\nSecond, the relative orientation is applied to this coordinate\nsystem, resulting in the final orientation.\nThis function block is intended to be used before the inverse\nkinematic transformation function block.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "Enable",
+          "Type": "BOOL",
+          "Comment": "Starts on a rising edge.\nIf used withSMC_Interpolator, it is recommended to\nsetEnabletoipo.bWorkingANDipo.iStatus<>IPO_INIT."
+        },
+        [
+          "piIn",
+          "SMC_PosInfo",
+          "The input position.\nEvaluated continously, independent of the value of input ContinuousUpdate."
+        ],
+        [
+          "Tangent",
+          "SMC_VECTOR3D",
+          "Tangent vector of the path.\nThe output|ioSMC_Interpolator|``.vecActTangent`` can be connected.\nNote: if the component of the tangent that is orthogonal to the\nnormal vector is 0 (or very close to 0), the orientation is\nnot updated.  If an orientation has been computed previously,\nthen the last orientation is kept.  If no orientation has been\ncomputed previously, the errorSMC_ORIENTATION_UNKNOWNis reported.\nThis error is automatically cleared once called with a tangent that\nis not 0.\nEvaluated continously, independent of the value of input ContinuousUpdate."
+        ],
+        [
+          "Normal",
+          "SMC_VECTOR3D",
+          "The normal vector.  This is the direction orthogonal to the working\nplane.  For a process that works in the X/Y plane, this will be\nthe Z-Axis."
+        ],
+        [
+          "RelativeOrientation",
+          "SMC_Orientation",
+          "The relative orientation offset from the orientation given by\nthe normal in z-direction and the tangent in x-direction."
+        ],
+        [
+          "OriConv",
+          "SMC_ORI_CONVENTION",
+          "The orientation convention used for theRelativeOrientationand the orientation inpiOut."
+        ],
+        [
+          "ContinuousUpdate",
+          "BOOL",
+          "As long as this input is TRUE, the values of the inputsNormal,RelativeOrientation, andOriConvare applied every cycle while Enable = TRUE.\nIf the input is FALSE, the values of these inputs are only\napplied on a rising edge of Enable."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Error",
+          "Type": "BOOL",
+          "Comment": "TRUEif an error has occurred"
+        },
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "The error identifier"
+        ],
+        [
+          "piOut",
+          "SMC_PosInfo",
+          "The resulting position.  Identical topiIn, except for\ndA, dB, and dC."
+        ]
+      ]
+    }
+  ]
+}

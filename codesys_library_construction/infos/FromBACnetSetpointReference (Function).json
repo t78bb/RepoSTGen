@@ -1,0 +1,31 @@
+{
+  "library": "BACnet",
+  "title": "FromBACnetSetpointReference (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/Utilities/BACnetUtilities/FromBACnetDataTypes/FromBACnetSetpointReference.html",
+  "page_title": "FromBACnetSetpointReference (FUN)",
+  "text": "\nFUNCTION FromBACnetSetpointReference :\nBACnetSetpointReference\nReturns a BACnetSetpointReference struct corresponding to the given IEC_BACNET_SETPOINT_REFERENCE.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "FromBACnetSetpointReference",
+          "Type": "BACnetSetpointReference",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "bacRef",
+          "Type": "CmpBACnet.IEC_BACNET_SETPOINT_REFERENCE",
+          "Comment": "The BACnet set point reference to convert to a\nBACnetSetpointReference."
+        }
+      ]
+    }
+  ]
+}

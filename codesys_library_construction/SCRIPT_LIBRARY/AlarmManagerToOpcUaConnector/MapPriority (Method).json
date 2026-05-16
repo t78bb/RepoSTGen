@@ -1,0 +1,28 @@
+{
+  "library": "AlarmManagerToOpcUaConnector",
+  "title": "MapPriority (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManagerToOpcUaConnector/Current/Curstom-Mapping/pou-ICustomAlarmToOpcUaMapping/MapPriority.html",
+  "page_title": "ICustomAlarmToOpcUaMapping.MapPriority (METH)",
+  "text": "\nMETHOD MapPriority : UDINT\nThis function is called to convert he priority of the AlarmConfiguration (0 (highest) .. 255(lowest))\ninto the OPC UA severity range (1(lowest) .. 1000(highest)).\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "MapPriority",
+          "Type": "UDINT"
+        },
+        {
+          "Scope": "Input",
+          "Name": "SeverityAlarm",
+          "Type": "USINT"
+        }
+      ]
+    }
+  ]
+}

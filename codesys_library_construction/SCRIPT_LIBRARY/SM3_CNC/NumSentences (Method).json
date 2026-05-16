@@ -1,0 +1,23 @@
+{
+  "library": "SM3_CNC",
+  "title": "NumSentences (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/GSentence/pou-SMC_GSentenceQueue/NumSentences.html",
+  "page_title": "SMC_GSentenceQueue.NumSentences (METH)",
+  "text": "\nMETHOD NumSentences : UDINT\nReturns the number of elements currently in the queue.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "NumSentences",
+          "Type": "UDINT"
+        }
+      ]
+    }
+  ]
+}

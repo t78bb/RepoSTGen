@@ -1,0 +1,52 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_SetForecast (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/AdministrativeConfiguration/SMC_SetForecast.html",
+  "page_title": "SMC_SetForecast (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_SetForecast\nThis function block sets a forecast for a given axis.\nThe forecast is limited to a maximum of 512 task cycles.\nBy setting a forecast, information about the status of the axis in the\nfuture can be retrieved.\n- The duration up to a certain axis position can be obtained\nusing\nSMC_GetTravelTime\n.\nThe axis dynamics at a certain point of time can be obtained\nusing\nSMC_ReadSetValues\n.\nNegative On- and OffCompensation times (up to the forecast)\ncan be used in\nSMC_DigitalCamSwitch_HighPrecision\n).\nThe current forecast duration can be read using\nSMC_GetForecast\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3",
+          "Comment": "Reference to the axis"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Comment": "Rising edge: sets the forecast duration"
+        },
+        [
+          "ForecastDuration",
+          "LREAL",
+          "The duration of the trajectory forecast in seconds"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Done",
+          "Type": "BOOL",
+          "Comment": "TRUE: The forecast is set successfully"
+        },
+        [
+          "Error",
+          "BOOL",
+          "TRUE: Error has occurred during execution"
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "library": "SysFile",
+  "title": "SysFileGetName2 (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SysFile/Current/SysFileGetName2.html",
+  "page_title": "SysFileGetName2 (FUN)",
+  "text": "Deutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nMenu\nSearch\nDeutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nACCESS_MODE (Enum)\nSYS_FILETIME (Struct)\nSYS_FILE_STATUS (Enum)\nSysFileClose (Function)\nSysFileCopy (Function)\nSysFileDelete (Function)\nSysFileDeleteByHandle (Function)\nSysFileEOF (Function)\nSysFileFlush (Function)\nSysFileGetName (Function)\nSysFileGetName2 (Function)\nSysFileGetPath (Function)\nSysFileGetPos (Function)\nSysFileGetSize (Function)\nSysFileGetSizeByHandle (Function)\nSysFileGetStatus (Function)\nSysFileGetStatus2 (Function)\nSysFileGetTime (Function)\nSysFileOpen (Function)\nSysFileRead (Function)\nSysFileRename (Function)\nSysFileSetPos (Function)\nSysFileTruncate (Function)\nSysFileWrite (Function)\nFile and Project Information\nLibrary Reference\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nSysFile\nDocs\n»\nSysFileGetName2 (FUN)\nSysFileGetName2 (FUN)\nÂ¶\nFUNCTION SysFileGetName2 : POINTER TO STRING\nGet the file name from file specified by handle\nInOut:\nScope\nName\nType\nComment\nReturn\nSysFileGetName2\nPOINTER TO STRING\nFile name of the specified file\nInput\nhFile\nRTS_IEC_HANDLE\nHandle of the file\npResult\nPOINTER TO RTS_IEC_RESULT\nPointer to runtime system error code (see CmpErrors.library)\ntop\nCODESYS Group | We\nsoftware\nAutomation.\nto software\n['sɒftwɛər]\ntransitive verb\n__softwared/softwaring\n: to develop software\n// to software automation: to develop software for automation purposes\nThe CODESYS Group is the manufacturer of CODESYS, the leading hardware-independent\n                                    IEC 61131-3 automation software for developing and engineering controller\n                                    applications.\nCODESYS® is a registered trademark.\nCODESYS GmbH\nA member of the CODESYS Group\nMemminger Straße 151, 87439 Kempten\nGermany\nTel.:\n+49-831-54031-0\ninfo@codesys.com\nLegal Notice\nPrivacy Policy\nLinkedIn\nYoutube\nRSS\nDownloads\nLogin\nCODESYS Store\n© 2022 CODESYS GmbH\n| A member of the CODESYS Group",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SysFileGetName2",
+          "Type": "POINTER TO STRING",
+          "Comment": "File name of the specified file"
+        },
+        {
+          "Scope": "Input",
+          "Name": "hFile",
+          "Type": "RTS_IEC_HANDLE",
+          "Comment": "Handle of the file"
+        },
+        [
+          "pResult",
+          "POINTER TO RTS_IEC_RESULT",
+          "Pointer to runtime system error code (see CmpErrors.library)"
+        ]
+      ]
+    }
+  ]
+}

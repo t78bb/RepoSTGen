@@ -1,0 +1,66 @@
+{
+  "library": "BACnet",
+  "title": "InitializeActionCommandBACnetBinaryPV (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/Command/pou-BACnetCommand/InitializeActionCommands/InitializeActionCommandBACnetBinaryPV.html",
+  "page_title": "BACnetCommand.InitializeActionCommandBACnetBinaryPV (METH)",
+  "text": "\nMETHOD InitializeActionCommandBACnetBinaryPV\nInitialized a BACnet-ActionCommand, which writes a BACnet-BinaryPV value to another BACnet-Object-Property. The initialized command then\nnormally is used as part of a BACnet-ActionList.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "devInst",
+          "Type": "CmpBACnet.IEC_BACNET_DWORD",
+          "Comment": "The instance number of the targeted BACnet device."
+        },
+        [
+          "bacObjectInst",
+          "CmpBACnet.IEC_BACNET_DWORD",
+          "The instance number of the targeted BACnet object under the\nBACnet device."
+        ],
+        [
+          "bacObjectType",
+          "CmpBACnet.IEC_BACNET_OBJECT_TYPE",
+          "The type of the targeted BACnet object under the BACnet\ndevice."
+        ],
+        [
+          "bacPropertyID",
+          "CmpBACnet.IEC_BACNET_PROPERTY_ID",
+          "The property ID of the targetedn property under the BACnet\nobject."
+        ],
+        [
+          "priority",
+          "CmpBACnet.IEC_BACNET_SIGNED",
+          "The priority used to write the BinaryPV value to the\ntargeted property."
+        ],
+        [
+          "postDelay",
+          "CmpBACnet.IEC_BACNET_UNSIGNED",
+          "The post delay after writing the BinaryPV value."
+        ],
+        [
+          "quitOnFailure",
+          "CmpBACnet.IEC_BACNET_BOOLEAN",
+          "Whether the action list execution shall be quited on failure\nof this action command or not."
+        ],
+        {
+          "Scope": "Inout",
+          "Name": "bacBinaryPV",
+          "Type": "CmpBACnet.IEC_BACNET_BINARY_PV",
+          "Comment": "The BinaryPV value to be written."
+        },
+        [
+          "bacActionCommand",
+          "CmpBACnet.IEC_BACNET_ACTION_COMMAND",
+          "The action command structure to be filled."
+        ]
+      ]
+    }
+  ]
+}

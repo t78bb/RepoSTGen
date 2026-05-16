@@ -1,0 +1,41 @@
+{
+  "library": "DNP3",
+  "title": "AnyNumberIsWithinLimits (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Functions/AnyNumber/AnyNumberIsWithinLimits.html",
+  "page_title": "AnyNumberIsWithinLimits (FUN)",
+  "text": "\nFUNCTION AnyNumberIsWithinLimits :\nError\nCheck an AnyNumber if it is within the given limits\nReturns Error.AnyNumberError if source, lowLimit and highLimit not consistent.\nThe output isWithinLimit is set to TRUE, if source is within lowLimit .. highLimit.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "AnyNumberIsWithinLimits",
+          "Type": "Error"
+        },
+        {
+          "Scope": "Input",
+          "Name": "source",
+          "Type": "REFERENCE TOAnyNumber"
+        },
+        [
+          "lowLimit",
+          "REFERENCE TOAnyNumber"
+        ],
+        [
+          "highLimit",
+          "REFERENCE TOAnyNumber"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "isWithinLimit",
+          "Type": "BOOL"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "library": "AlarmManager",
+  "title": "FindAlarmGroupByName (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/pou-IAlarmHandler10/FindAlarmGroupByName.html",
+  "page_title": "IAlarmHandler10.FindAlarmGroupByName (METH)",
+  "text": "\nMETHOD FindAlarmGroupByName :\nIAlarmGroup\nFinds the alarm group with a given name. If the alarm group cannot be found 0 is returned.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "FindAlarmGroupByName",
+          "Type": "IAlarmGroup",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "sAlarmGroup",
+          "Type": "STRING",
+          "Comment": "The name the alarm group must have."
+        }
+      ]
+    }
+  ]
+}

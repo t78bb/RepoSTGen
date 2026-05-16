@@ -1,0 +1,65 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_GetMaxSetVelocity (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/Diagnostics/SMC_GetMaxSetVelocity.html",
+  "page_title": "SMC_GetMaxSetVelocity (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_GetMaxSetVelocity\nThis function block may be employed to measure the maximum value of velocity of an axis.\nMeasuring will be done if\nbEnable\nis\nTRUE\n, and will be reset to 0,\nif\nbEnable\nis\nFALSE\n. With\ndwTimeStamp\nyou can provide\na call counter, which is latched output in\ndwTimeAtMax\nwith a new maximum value.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "bEnable",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "TRUE: Starts execution of the function block."
+        },
+        [
+          "dwTimeStamp",
+          "DWORD",
+          "",
+          "Optional time stamp input; can be used to find out when the\nmaximum occured."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bValid",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": ""
+        },
+        [
+          "bBusy",
+          "BOOL",
+          "",
+          "TRUE: Parameter is available."
+        ],
+        [
+          "fMaxVelocity",
+          "LREAL",
+          "0",
+          "TRUE: Eecution of the function block is not finished\nyet."
+        ],
+        [
+          "dwTimeAtMax",
+          "DWORD",
+          "0",
+          "Maximum velocity in [u/sÂ²]"
+        ]
+      ]
+    }
+  ]
+}

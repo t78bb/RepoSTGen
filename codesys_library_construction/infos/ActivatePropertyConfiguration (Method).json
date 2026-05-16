@@ -1,0 +1,28 @@
+{
+  "library": "BACnet",
+  "title": "ActivatePropertyConfiguration (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetServer/pou-IBACnetServer/PropertyConfiguration/ActivatePropertyConfiguration.html",
+  "page_title": "IBACnetServer.ActivatePropertyConfiguration (METH)",
+  "text": "\nMETHOD ActivatePropertyConfiguration : UDINT\nRegisters a\nIBACnetPropertyConfiguration\nwith\nBACnetServer\n.\nReturn CmpErrors.Errors.ERR_OK if succesfully registered.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "ActivatePropertyConfiguration",
+          "Type": "UDINT"
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfPropertyConfiguration",
+          "Type": "IBACnetPropertyConfiguration"
+        }
+      ]
+    }
+  ]
+}

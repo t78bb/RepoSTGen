@@ -1,0 +1,52 @@
+{
+  "library": "DNP3",
+  "title": "MasterCommandColdRestart (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/Commands/MasterCommandColdRestart.html",
+  "page_title": "MasterCommandColdRestart (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL MasterCommandColdRestart EXTENDS\nMasterCommand\nMaster command ColdRestart\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment",
+        "Inherited from"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "xExecute",
+          "Type": "BOOL",
+          "Comment": "Execute the command (xExecute FALSE â> TRUE).",
+          "Inherited from": "MasterCommand"
+        },
+        [
+          "itfMaster",
+          "IMaster",
+          "Interface IMaster",
+          "MasterCommand"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "xDone",
+          "Type": "BOOL",
+          "Comment": "Command executed successfully.",
+          "Inherited from": "MasterCommand"
+        },
+        [
+          "xError",
+          "BOOL",
+          "Error during command executions",
+          "MasterCommand"
+        ],
+        [
+          "eErrorID",
+          "Error",
+          "Specific error during command executions.",
+          "MasterCommand"
+        ]
+      ]
+    }
+  ]
+}

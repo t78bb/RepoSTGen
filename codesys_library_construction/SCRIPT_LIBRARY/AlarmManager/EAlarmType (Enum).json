@@ -1,0 +1,43 @@
+{
+  "library": "AlarmManager",
+  "title": "EAlarmType (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Enumerations/EAlarmType.html",
+  "page_title": "EAlarmType (ENUM)",
+  "text": "\nTYPE EAlarmType :\nThis enumeration is used to distinguish between alarms and events.\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "Undefined",
+          "Initial": "0",
+          "Comment": "Undefined, resp. represents the absence of a value"
+        },
+        {
+          "Name": "Alarm",
+          "Initial": "1",
+          "Comment": "An alarm."
+        },
+        {
+          "Name": "Event",
+          "Initial": "2",
+          "Comment": "An event, that must be acknowledged by the user (has\nacknoledge method ACK)"
+        },
+        {
+          "Name": "ImplicitlyAcknowledgedEvent",
+          "Initial": "3",
+          "Comment": "An event with acknowledge method REP, that is implicitly acknowledged and\nonly written into the alarm storage (not visible in the list of active alarms)."
+        },
+        {
+          "Name": "AlarmAPI",
+          "Initial": "4",
+          "Comment": "An alarm that can only be raised programmatically"
+        }
+      ]
+    }
+  ]
+}

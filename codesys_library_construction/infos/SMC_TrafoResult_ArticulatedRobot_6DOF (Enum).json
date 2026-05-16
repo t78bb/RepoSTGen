@@ -1,0 +1,33 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_TrafoResult_ArticulatedRobot_6DOF (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_Trafo_Data-types/SMC_TrafoResult_ArticulatedRobot_6DOF.html",
+  "page_title": "SMC_TrafoResult_ArticulatedRobot_6DOF (ENUM)",
+  "text": "\nTYPE SMC_TrafoResult_ArticulatedRobot_6DOF :\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Name": "TA6DOF_Result_OK",
+          "Initial": "0"
+        },
+        {
+          "Name": "TA6DOF_Result_InvalidConfig",
+          "Initial": "1"
+        },
+        {
+          "Name": "TA6DOF_Result_PosOutOfWorkingSpace",
+          "Initial": "2"
+        },
+        {
+          "Name": "TA6DOF_Result_OrientationAxesOutOfRange",
+          "Initial": "3"
+        }
+      ]
+    }
+  ]
+}

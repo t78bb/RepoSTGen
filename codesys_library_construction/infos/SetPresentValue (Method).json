@@ -1,0 +1,31 @@
+{
+  "library": "BACnet",
+  "title": "SetPresentValue (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/Schedule/pou-BACnetSchedule/SetPresentValue.html",
+  "page_title": "BACnetSchedule.SetPresentValue (METH)",
+  "text": "\nMETHOD SetPresentValue : CmpBACnet.IEC_BACNET_STATUS\nSets the contents of the Present_Value-Property of this BACnet-Object.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetPresentValue",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "value",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_CONTENTS",
+          "Comment": "The value to set."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "library": "BACnet2",
+  "title": "GetNextAvailableInstanceNumberForType (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/BACnetServer/pou-BACnetServer/Services/GetNextAvailableInstanceNumberForType.html",
+  "page_title": "BACnetServer.GetNextAvailableInstanceNumberForType (METH)",
+  "text": "\nMETHOD GetNextAvailableInstanceNumberForType : CmpBACnet.IEC_BACNET_DWORD\nGets the next available object instance number for a given type.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetNextAvailableInstanceNumberForType",
+          "Type": "CmpBACnet.IEC_BACNET_DWORD"
+        },
+        {
+          "Scope": "Input",
+          "Name": "typ",
+          "Type": "CmpBACnet.IEC_BACNET_OBJECT_TYPE"
+        }
+      ]
+    }
+  ]
+}

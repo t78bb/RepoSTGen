@@ -1,0 +1,28 @@
+{
+  "library": "AC_DataLog",
+  "title": "fb_exit (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_DataLog/Current/AC_DataLog/DataLogStorage/pou-DataLogStorageBase/fb_exit.html",
+  "page_title": "DataLogStorageBase.fb_exit (METH)",
+  "text": "\nMETHOD fb_exit : BOOL\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "fb_exit",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Input",
+          "Name": "bInCopyCode",
+          "Type": "BOOL"
+        }
+      ]
+    }
+  ]
+}

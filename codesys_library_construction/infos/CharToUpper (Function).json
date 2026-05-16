@@ -1,0 +1,28 @@
+{
+  "library": "StringUtils",
+  "title": "CharToUpper (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/StringUtils/Current/Public-Parts/Ansi/CharToUpper.html",
+  "page_title": "CharToUpper (FUN)",
+  "text": "\nFUNCTION CharToUpper : BYTE\nThis function converts a character (i.e. a byte) of a string to uppercase.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "CharToUpper",
+          "Type": "BYTE"
+        },
+        {
+          "Scope": "Input",
+          "Name": "byChar",
+          "Type": "BYTE"
+        }
+      ]
+    }
+  ]
+}

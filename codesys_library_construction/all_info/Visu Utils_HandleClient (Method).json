@@ -1,0 +1,25 @@
+{
+  "library": "Visu Utils",
+  "title": "HandleClient (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/Visu Utils/Current/VisuUtils/VisuActionUtilities/Interfaces/pou-IVisualizationClientIteration/HandleClient.html",
+  "page_title": "IVisualizationClientIteration.HandleClient (METH)",
+  "text": "VisuUtils\nVisuActionUtilities\nFunction Blocks\nFBFileTransfer (FunctionBlock)\nFbChangeVisu (FunctionBlock)\nFbCloseDialog (FunctionBlock)\nFbIterateClients (FunctionBlock)\nFbOpenDialog (FunctionBlock)\nFbOpenDialogExtended (FunctionBlock)\nFunctions\nFctGetNextVisu (Function)\nFctGetPreviousVisu (Function)\nFctHandleEventsWithinCycleStart (Function)\nFctHandleEventsWithinCycleStop (Function)\nGlobalVariables\nGlobals (GVL)\nPublicVariables (GVL)\nInterfaces\nIVisualizationClient (Interface)\nIVisualizationClientFilter (Interface)\nIVisualizationClientIteration (Interface)\nIVisualizationClientRaw (Interface)\nTypes\nEnum\nFile and Project Information\nLibrary Reference\nCmpIecTask\nLibrary Identification\nLibrary Properties\nCmpVisuHandler\nLibrary Identification\nLibrary Properties\nCommon Behaviour Model\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysSem\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nVisuElemBase\nLibrary Identification\nLibrary Properties\nVisu Utils\nDocs\n»\nVisuUtils\n»\nVisuActionUtilities\n»\nInterfaces\n»\nIVisualizationClientIteration\n(ITF)\n»\nIVisualizationClientIteration.HandleClient (METH)\nIVisualizationClientIteration.HandleClient (METH)\nÂ¶\nMETHOD HandleClient\nThis method will be called for each client that is currently within the list\nof active visualization clients.\nNote\nPlease remark that this method will be called from VISU_TASK\nInOut:\nScope\nName\nType\nComment\nInput\nitfClient\nIVisualizationClient\nThe object representing the according client. Will not be 0.",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "itfClient",
+          "Type": "IVisualizationClient",
+          "Comment": "The object representing the according client. Will not be 0."
+        }
+      ]
+    }
+  ]
+}

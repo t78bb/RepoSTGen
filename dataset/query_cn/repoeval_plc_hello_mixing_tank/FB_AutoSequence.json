@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现一个基于状态机的自动化罐体操作序列，包括填充、混合和排空的循环控制。",
+  "provide_code": "FUNCTION_BLOCK FB_AutoSequence\nVAR_INPUT\n\tbEnable\t\t\t\t:\tBOOL;\t\t\t// 使能自动序列\n\tbReset\t\t\t\t:\tBOOL;\t\t\t// 复位到排空状态\n\t\n\t// 液位传感器反馈\n\tbTankLevelFull\t\t:\tBOOL;\t\t\t// 液位满传感器\n\tbTankLevelEmpty\t\t:\tBOOL;\t\t\t// 液位空传感器\n\t\n\t// 设备状态反馈\n\tbMixerRunning\t\t:\tBOOL;\t\t\t// 混合电机运行中\n\tbMedium1Opened\t\t:\tBOOL;\t\t\t// 介质1阀门打开\n\tbMedium2Opened\t\t:\tBOOL;\t\t\t// 介质2阀门打开\n\tbDrainOpened\t\t:\tBOOL;\t\t\t// 排空阀门打开\n\t\n\t// 配置参数\n\ttMixingDuration\t\t:\tTIME := T#10S;\t// 混合持续时间\nEND_VAR\nVAR_OUTPUT\n\t// 设备控制输出\n\tbMixerRunCmd\t\t:\tBOOL;\t\t\t// 混合电机运行命令\n\tbMedium1OpenCmd\t\t:\tBOOL;\t\t\t// 介质1阀门打开命令\n\tbMedium2OpenCmd\t\t:\tBOOL;\t\t\t// 介质2阀门打开命令\n\tbDrainOpenCmd\t\t:\tBOOL;\t\t\t// 排空阀门打开命令\n\t\n\t// 状态输出\n\teCurrentState\t\t:\tAUTO_SEQUENCE;\t// 当前状态\n\tnCyclesCompleted\t:\tUINT;\t\t\t// 完成的循环次数\nEND_VAR"
+}

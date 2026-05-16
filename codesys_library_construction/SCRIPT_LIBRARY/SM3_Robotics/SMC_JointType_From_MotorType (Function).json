@@ -1,0 +1,28 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_JointType_From_MotorType (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/internal/Divers/SMC_JointType_From_MotorType.html",
+  "page_title": "SMC_JointType_From_MotorType (FUN)",
+  "text": "\nFUNCTION SMC_JointType_From_MotorType : TRAFO.Axis_Type\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "motorType",
+          "Type": "SMC_MOTOR_TYPE"
+        },
+        {
+          "Scope": "Return",
+          "Name": "SMC_JointType_From_MotorType",
+          "Type": "TRAFO.Axis_Type"
+        }
+      ]
+    }
+  ]
+}

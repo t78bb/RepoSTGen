@@ -1,0 +1,23 @@
+{
+  "library": "SM3_CNC",
+  "title": "SentenceQueueFull (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/GSentence/pou-SMC_GSentenceQueue/SentenceQueueFull.html",
+  "page_title": "SMC_GSentenceQueue.SentenceQueueFull (METH)",
+  "text": "\nMETHOD SentenceQueueFull : BOOL\nReturns whether the sentence queue is full.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SentenceQueueFull",
+          "Type": "BOOL"
+        }
+      ]
+    }
+  ]
+}

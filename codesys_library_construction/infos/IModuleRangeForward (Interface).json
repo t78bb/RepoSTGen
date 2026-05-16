@@ -1,0 +1,8 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "IModuleRangeForward (Interface)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_Module/TreeNavigation/IModuleRangeForward.html",
+  "page_title": "IModuleRangeForward (ITF)",
+  "text": "\nINTERFACE IModuleRangeForward\nA forward range that represents a range of module instances.\nA forward range is similar to an iterator in Java or an\nenumerator in C#.\nProperties:\nFirst\nIsEmpty\nMethods:\nPopFirst\nStructure:\nFirst (Property)\nIsEmpty (Property)\nPopFirst (Method)",
+  "tables": []
+}

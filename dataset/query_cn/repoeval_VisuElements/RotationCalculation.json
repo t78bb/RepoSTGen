@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现基于给定旋转中心和角度的二维点坐标旋转计算。",
+  "provide_code": "FUNCTION RotationCalculation : BOOL\nVAR_INPUT\n    rCenterX : REAL;    (* X coordinate of rotation center *)\n    rCenterY : REAL;    (* Y coordinate of rotation center *)\n    rAngle : REAL;      (* Rotation angle in degrees *)\n    rPointX : REAL;     (* X coordinate of point to rotate *)\n    rPointY : REAL;     (* Y coordinate of point to rotate *)\nEND_VAR\n\nVAR_OUTPUT\n    rRotatedX : REAL;   (* X coordinate after rotation *)\n    rRotatedY : REAL;   (* Y coordinate after rotation *)\nEND_VAR"
+}

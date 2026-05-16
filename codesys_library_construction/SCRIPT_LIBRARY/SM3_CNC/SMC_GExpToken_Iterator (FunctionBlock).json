@@ -1,0 +1,8 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_GExpToken_Iterator (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/GSentence/SMC_GExpToken_Iterator.html",
+  "page_title": "SMC_GExpToken_Iterator (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL SMC_GExpToken_Iterator\nThis iterator allows to iterate all g-expression tokens of a g-word.\nIt can be retrieved from a gword-iterator\n(\nSMC_GWord_Iterator.GetGExpTokenIterator\n).\nFor each token, the additional data can be queried.\nMethods:\nAdvance\nGetAddData\nGetCount\nGetValue\nInit\nIsValid\nStructure:\nAdvance (Method)\nGetAddData (Method)\nGetCount (Method)\nGetValue (Method)\nInit (Method)\nIsValid (Method)",
+  "tables": []
+}

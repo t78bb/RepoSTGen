@@ -1,0 +1,25 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "Init (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_Module/TreeNavigation/pou-SiblingRange/Init.html",
+  "page_title": "SiblingRange.Init (METH)",
+  "text": "\nMETHOD PUBLIC FINAL Init\nInitializes the range.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "itfM",
+          "Type": "IModule",
+          "Comment": "The instance whose siblings are of interest. If 0 is passed,\nthe range is empty."
+        }
+      ]
+    }
+  ]
+}

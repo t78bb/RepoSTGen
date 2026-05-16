@@ -1,0 +1,57 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_FollowVelocity (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/Movement/Direct/SMC_FollowVelocity.html",
+  "page_title": "SMC_FollowVelocity (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_FollowVelocity\nThis function block writes set velocities to the axis without doing any checks.\nNote\nThis function block does not support forecasts that are set up by\nSMC_SetForecast\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "bExecute",
+          "Type": "BOOL",
+          "Comment": "Rising edge: Starts the execution of the function block."
+        },
+        [
+          "fSetVelocity",
+          "LREAL",
+          "Set velocity in technical units per second."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bBusy",
+          "Type": "BOOL",
+          "Comment": "TRUE: Execution of function block has not been finished."
+        },
+        [
+          "bCommandAborted",
+          "BOOL",
+          "TRUE: Command has been aborted by another command."
+        ],
+        [
+          "bError",
+          "BOOL",
+          "TRUE: Error has occurred within the function block."
+        ],
+        [
+          "iErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "library": "BACnet2",
+  "title": "DeactivatePropertyConfiguration (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/BACnetServer/pou-IBACnetServer/PropertyConfiguration/DeactivatePropertyConfiguration.html",
+  "page_title": "IBACnetServer.DeactivatePropertyConfiguration (METH)",
+  "text": "\nMETHOD DeactivatePropertyConfiguration : UDINT\nUnregisters a\nIBACnetPropertyConfiguration\nwith\nBACnetServer\n.\nReturn CmpErrors.Errors.ERR_OK if succesfully registered.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "DeactivatePropertyConfiguration",
+          "Type": "UDINT"
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfPropertyConfiguration",
+          "Type": "IBACnetPropertyConfiguration"
+        }
+      ]
+    }
+  ]
+}

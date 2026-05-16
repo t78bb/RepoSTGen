@@ -1,0 +1,86 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_TRAFO_Scara3 (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_Trafo_POUs/SoftMotion-Transformations/Scara-System/SMC_TRAFO_Scara3.html",
+  "page_title": "SMC_TRAFO_Scara3 (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_TRAFO_Scara3\nThe transformation module is provided to\nexecute backward transformations of 3-jointed Scara systems.\nNote\nFor detailed information on transformation modules see\nsee the overview on kinematic transformations in the\nCNC online help.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "pi",
+          "Type": "SMC_PosInfo",
+          "Comment": "Target position vector (x,y). Output of Interpolator"
+        },
+        [
+          "dDirection",
+          "LREAL",
+          "Direction angle of last joint in degree\n(0=west, 90=north)"
+        ],
+        [
+          "dOffsetA",
+          "LREAL",
+          "Additional offset for axis A in degree"
+        ],
+        [
+          "dOffsetB",
+          "LREAL",
+          "Additional offset for axis B in degree"
+        ],
+        [
+          "dOffsetC",
+          "LREAL",
+          "Additional offset for axis C in degree"
+        ],
+        [
+          "dArmLength1",
+          "LREAL",
+          "Length of robot arm 1"
+        ],
+        [
+          "dArmLength2",
+          "LREAL",
+          "Length of robot arm 2"
+        ],
+        [
+          "dArmLength3",
+          "LREAL",
+          "Length of robot arm 3"
+        ],
+        [
+          "bElbowLow",
+          "BOOL",
+          "TRUEif elbow is low (FALSE, if elbow is high)"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bError",
+          "Type": "BOOL",
+          "Comment": "TRUEif position is invalid"
+        },
+        [
+          "dA",
+          "LREAL",
+          "Position of axis A in degree"
+        ],
+        [
+          "dB",
+          "LREAL",
+          "Position of axis B in degree"
+        ],
+        [
+          "dC",
+          "LREAL",
+          "Position of axis C in degree"
+        ]
+      ]
+    }
+  ]
+}

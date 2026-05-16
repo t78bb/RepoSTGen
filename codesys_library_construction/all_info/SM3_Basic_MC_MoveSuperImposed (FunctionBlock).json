@@ -1,0 +1,102 @@
+{
+  "library": "SM3_Basic",
+  "title": "MC_MoveSuperImposed (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/Movement/MC_MoveSuperImposed.html",
+  "page_title": "MC_MoveSuperImposed (FB)",
+  "text": "GlobalTextList (GlobalTextList)\nImages\nLibrary Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nProject Information\nGetBooleanProperty (Function)\nGetCompany (Function)\nGetNumberProperty (Function)\nGetTextProperty (Function)\nGetTextProperty2 (Function)\nGetTitle (Function)\nGetVersion (Function)\nGetVersionProperty (Function)\nSM3_Basic\nDataTypes\nAdditional\nMC_CAMSWITCH_REF (Struct)\nMC_CAMSWITCH_TR (Struct)\nMC_OUTPUT_REF (Alias)\nMC_TAPPETMODE (Enum)\nMC_TRACK_REF (Alias)\nMC_TRACK_TR (Struct)\nTRIGGER_REF (Struct)\nAdministrative/Configuration\nSMC3_BrakeSetState (Enum)\nSMC3_PersistPositionDiag (Enum)\nSMC3_PersistPosition_Data (Struct)\nSMC_AXIS_AUTORESTART_MODE (Enum)\nCAM\nCamSegment\nMC_CAM_ID (Struct)\nMC_CAM_REF (FunctionBlock)\nMC_STARTMODE (Enum)\nSMC_CAMTAPPETACTION (Enum)\nSMC_CAMTAPPETTYPE (Enum)\nSMC_CAMTable_LREAL_128_1 (Struct)\nSMC_CAMTable_LREAL_128_2 (Struct)\nSMC_CAMTable_LREAL_256_1 (Struct)\nSMC_CAMTable_LREAL_256_2 (Struct)\nSMC_CAMTable_REAL_128_1 (Struct)\nSMC_CAMTable_REAL_128_2 (Struct)\nSMC_CAMTable_REAL_256_1 (Struct)\nSMC_CAMTable_REAL_256_2 (Struct)\nSMC_CAMTable_UDINT_128_1 (Struct)\nSMC_CAMTable_UDINT_128_2 (Struct)\nSMC_CAMTable_UDINT_256_1 (Struct)\nSMC_CAMTable_UDINT_256_2 (Struct)\nSMC_CAMTable_UINT_128_1 (Struct)\nSMC_CAMTable_UINT_128_2 (Struct)\nSMC_CAMTable_UINT_256_1 (Struct)\nSMC_CAMTable_UINT_256_2 (Struct)\nSMC_CAMTappet (Struct)\nSMC_CAMXYVA (Struct)\nSMC_CAM_TYPE (Enum)\nDiagnostics\nSMC_CommunicationState (Enum)\nSMC_LOGGERMODE (Enum)\nDriveInterface\nMC_DIRECTION (Enum)\nSMC3_CaptureDescription (Struct)\nSMC3_CheckPositionLagMode (Enum)\nSMC3_DriveAcyclicTel (Struct)\nSMC3_MappingEntry (Alias)\nSMC3_ParamCommunicationMethod_Enum (Enum)\nSMC_AXIS_STATE (Enum)\nSMC_AXIS_TYPE (Enum)\nSMC_CONTROLLER_MODE (Enum)\nSMC_ENCODER_REF (Struct)\nSMC_FBERROR (Struct)\nSMC_MOTOR_TYPE (Enum)\nSMC_MOVEMENTTYPE (Enum)\nSMC_RAMPTYPE (Enum)\nSMC_SWITCHING_STATE (Enum)\nSMC_ValueSelect (Enum)\nMovement\nMC_TA_REF (Struct)\nMC_TP_REF (Struct)\nMC_TV_REF (Struct)\nSMC_BACKLASH_MODE (Enum)\nSMC_BACKLASH_STARTSTATE (Enum)\nSMC_HOMING_MODE (Enum)\nSMC_TA (Struct)\nSMC_TP (Struct)\nSMC_TV (Struct)\nDriveInterface\nAXIS_REF\nAXIS_REF_SM3 (FunctionBlock)\nIAxisRef (Interface)\nSMC3_ReinitDrive (FunctionBlock)\nSMC_AxisChangeSettings (FunctionBlock)\nSMC_AxisReadSettings (FunctionBlock)\nAXIS_REF_LOGICAL\nAXIS_REF_LOGICAL_SM3 (FunctionBlock)\nAXIS_REF_MAPPING\nAXIS_REF_MAPPING_SM3 (FunctionBlock)\nAXIS_REF_VIRTUAL\nAXIS_REF_VIRTUAL_SM3 (FunctionBlock)\nENCODER_REF\nENCODER_REF_SM3 (FunctionBlock)\nFREE_ENCODER_REF\nFREE_ENCODER_REF (FunctionBlock)\nGlobals\nLibParams (ParamList)\nSMC_DriveBasic_GlobalVariables (GVL)\nSM_PLCOpen_GlobalVariables (GVL)\nPOUs\nAdditional\nMC_AbortTrigger (FunctionBlock)\nMC_DigitalCamSwitch (FunctionBlock)\nMC_TouchProbe (FunctionBlock)\nSMC_CAMSWITCH_TOGGLE_EVENT (Struct)\nSMC_CAMSWITCH_TOGGLE_EVENTS (Struct)\nSMC_CAMSWITCH_TRACKS_EVENTS (Alias)\nSMC_DigitalCamSwitch_HighPrecision (FunctionBlock)\nSMC_FreeEncoder (FunctionBlock)\nSMC_Logical_Axis (FunctionBlock)\nSMC_StartupDrive (FunctionBlock)\nSMC_VIRTUAL_AXIS (FunctionBlock)\nAdministrative/Configuration\nMC_Power (FunctionBlock)\nMC_Reset (FunctionBlock)\nMC_SetPosition (FunctionBlock)\nSMC3_BrakeControl (FunctionBlock)\nSMC3_PersistPosition (FunctionBlock)\nSMC3_PersistPositionLogical (FunctionBlock)\nSMC3_PersistPositionSingleturn (FunctionBlock)\nSMC_ChangeAxisScalingLinear (FunctionBlock)\nSMC_ChangeAxisScalingRotary (FunctionBlock)\nSMC_ChangeDynamicLimits (FunctionBlock)\nSMC_ChangeGearingRatio (FunctionBlock)\nSMC_GetForecast (FunctionBlock)\nSMC_GetTravelTime (FunctionBlock)\nSMC_SetAdditionalConversionFactors (FunctionBlock)\nSMC_SetControllerMode (FunctionBlock)\nSMC_SetCustomRampType (FunctionBlock)\nSMC_SetForecast (FunctionBlock)\nSMC_SetMovementType (FunctionBlock)\nSMC_SetRampType (FunctionBlock)\nSMC_SetSoftwareLimits (FunctionBlock)\nCAM\nMC_CamTableSelect (FunctionBlock)\nSMC_CAMBounds (FunctionBlock)\nSMC_CAMBounds_Pos (FunctionBlock)\nSMC_CamEditor (FunctionBlock)\nSMC_CamRegister (FunctionBlock)\nSMC_CamTableEvaluate (Function)\nSMC_GetCamSlaveSetPosition (FunctionBlock)\nSMC_GetTappetValue (FunctionBlock)\nSMC_ReadCAM (FunctionBlock)\nSMC_WriteCAM (FunctionBlock)\nDiagnostics\nFBError\nMC_ReadActualPosition (FunctionBlock)\nMC_ReadActualTorque (FunctionBlock)\nMC_ReadActualVelocity (FunctionBlock)\nMC_ReadAxisError (FunctionBlock)\nMC_ReadStatus (FunctionBlock)\nSMC3_BrakeStatus (FunctionBlock)\nSMC_AxisDiagnosticLog (FunctionBlock)\nSMC_CheckAxisCommunication (FunctionBlock)\nSMC_CheckLimits (FunctionBlock)\nSMC_EstimateDeadTime (FunctionBlock)\nSMC_GetMaxSetAccDec (FunctionBlock)\nSMC_GetMaxSetVelocity (FunctionBlock)\nSMC_GetTrackingError (FunctionBlock)\nSMC_InPosition (FunctionBlock)\nSMC_MeasureDistance (FunctionBlock)\nSMC_ReadSetPosition (FunctionBlock)\nSMC_ReadSetValues (FunctionBlock)\nMovement\nDirect\nMC_AccelerationProfile (FunctionBlock)\nMC_Halt (FunctionBlock)\nMC_HaltSuperImposed (FunctionBlock)\nMC_Home (FunctionBlock)\nMC_Jog (FunctionBlock)\nMC_MoveAbsolute (FunctionBlock)\nMC_MoveAdditive (FunctionBlock)\nMC_MoveRelative (FunctionBlock)\nMC_MoveSuperImposed (FunctionBlock)\nMC_MoveVelocity (FunctionBlock)\nMC_PositionProfile (FunctionBlock)\nMC_SetOverride (FunctionBlock)\nMC_Stop (FunctionBlock)\nMC_VelocityProfile (FunctionBlock)\nMaster/Slave\nSMC_BacklashCompensation (FunctionBlock)\nSMC_GetOverride (FunctionBlock)\nSMC_Homing (FunctionBlock)\nSMC_Inch (FunctionBlock)\nSMC_MoveContinuousAbsolute (FunctionBlock)\nSMC_MoveContinuousRelative (FunctionBlock)\nParameter access\nMC_ReadBoolParameter (FunctionBlock)\nMC_ReadParameter (FunctionBlock)\nMC_WriteBoolParameter (FunctionBlock)\nMC_WriteParameter (FunctionBlock)\nSMC_ParameterNumber_CoE (Function)\nSMC_ParameterNumber_SoE (Function)\nSMC_GetCyclicMapping (Function)\ninternal\nTrajectories\nVisualization\nGenerated\nFramed visu helpers\nOriginal\nImagePool_sm3 (ImagePool)\nSM3_Basic_GetVersion (Function)\nFile and Project Information\nLibrary Reference\n3SLicense\nLibrary Identification\nLibrary Properties\nBase Interfaces\nLibrary Identification\nLibrary Properties\nCAA Callback Extern\nLibrary Identification\nLibrary Properties\nCAA Device Diagnosis\nLibrary Identification\nLibrary Properties\nCAA Types Extern\nLibrary Identification\nLibrary Properties\nCmpApp\nLibrary Identification\nLibrary Properties\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nCmpEventMgr\nLibrary Identification\nLibrary Properties\nCmpIecTask\nLibrary Identification\nLibrary Properties\nCmpLog\nLibrary Identification\nLibrary Properties\nComponent Manager\nLibrary Identification\nLibrary Properties\nEmpty\nLibrary Identification\nLibrary Properties\nFloatingPointUtils\nLibrary Identification\nLibrary Properties\nIoDriver Interfaces\nLibrary Identification\nLibrary Properties\nIoStandard\nLibrary Identification\nLibrary Properties\nSM3_CommonPublic\nLibrary Identification\nLibrary Properties\nSM3_Error\nLibrary Identification\nLibrary Properties\nSM3_Math\nLibrary Identification\nLibrary Properties\nSM3_RBase\nLibrary Identification\nLibrary Properties\nSM3_Ramps\nLibrary Identification\nLibrary Properties\nSM3_Shared\nLibrary Identification\nLibrary Properties\nSM3_StringUtils\nLibrary Identification\nLibrary Properties\nSM3_TrajectoryGeneration\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nSysCpuHandling\nLibrary Identification\nLibrary Properties\nSysFile\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysTarget\nLibrary Identification\nLibrary Properties\nSysTime\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nVisuElem3DPath\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElemCamDisplayer\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElemMeter\nLibrary Identification\nLibrary Properties\nVisuElemTextEditor\nLibrary Identification\nLibrary Properties\nVisuElemTrace\nLibrary Identification\nLibrary Properties\nVisuElemXYChart\nLibrary Identification\nLibrary Properties\nVisuElems\nLibrary Identification\nLibrary Properties\nVisuElemsAlarm\nLibrary Identification\nLibrary Properties\nVisuElemsDateTime\nLibrary Identification\nLibrary Properties\nVisuElemsSpecialControls\nLibrary Identification\nLibrary Properties\nVisuElemsWinControls\nLibrary Identification\nLibrary Properties\nVisuInputs\nLibrary Identification\nLibrary Properties\nVisuNativeControl\nLibrary Identification\nLibrary Properties\nSM3_Basic\nDocs\n»\nSM3_Basic\n»\nPOUs\n»\nMovement\n»\nMC_MoveSuperImposed (FB)\nMC_MoveSuperImposed (FB)\nÂ¶\nFUNCTION_BLOCK FINAL MC_MoveSuperImposed\nThe function block causes an additional movement, on top of an ongoing\n(original) movement of the axis. The original movement is not aborted,\ninstead the movement by the given distance is superimposed.\nIf\nMC_MoveSuperImposed\nis active, a further aborting command on the\nsame axis interrupts both commands, i.e.\nMC_MoveSuperImposed\nand the\noriginal command.  A further buffered or blending command does _not_\ninterrupt the superimposed movement.  The superimposed movement is\ncontinued in parallel.\nThe function block\nMC_MoveSuperImposed\nmust be called after the\nfunction block of the original movement.  If a movement command is called\nafter\nMC_MoveSuperImposed\n, the error SMC_MSI_INVALID_EXECUTION_ORDER\nis returned.\nIf an instance of\nMC_MoveSuperImposed\nis active and a second instance\nof type\nMC_MoveSuperImposed\nis called, an error is reported by the\nsecond instance.\nIf an instance of\nMC_MoveSuperImposed\nis active and is started again\n(with possibly different inputs) with a new rising edge on\nExecute\n,\nthe active superimposed movement is aborted and replaced by the new\nsuperimposed movement, while the original motion function block\nremains active.  The new distance is relative to the start of the\nfirst superimposed movement.  This means that a new distance of 0\nwill result in a slowdown that cancels the effect of the first\nsuperimposed movement.\nTo halt a superimposed movement, use the function block\nMC_HaltSuperImposed\n.  While\nMC_HaltSuperImposed\nis active,\nno further superimposed movement can be started.\nIn the\nstandstill\nstate of the axis,\nMC_MoveSuperImposed\nbehaves\nlike\nMC_MoveRelative\n.\nThe\nAcceleration\n,\nDeceleration\nand\nJerk\ninputs are\nadditional values (not absolute values), which are added to the\noriginal movement.\nThe original function block will always complete its movement\nwithin the same duration and with no consideration for any instance of\nMC_MoveSuperImposed\nacting at the same time.\nMC_MoveSuperImposed\nacts on the slave axis while\nMC_Phasing\noperates\non the master axis.\nExample\nUse of\nMC_MoveSuperImposed\nThe following illustration shows how the\nFirst\ninstance of the type\nMC_MoveRelative\nis combined with the\nSecond\ninstance of the type\nMC_MoveSuperImposed\n.\nThe signal curve of\nCommandAborted\nis not shown because the new\ncommand works on the same instance. The end position lies between 7000\nand 8000 depending on the time behavior of the abortion of the second\ncommand set for\nMC_MoveSuperimposed\n.\nUse of\nMC_MoveSuperImposed\nand cam plate motion\nThe double line of the slave\nVelocity\nindicates the effect on the\nAxis\n, which is in synchronized motion of cam plate execution and\nMC_MoveSuperimposed\n.\nThe same applies to the associated slave position.\nSlave\nVelocity\nwith\nMC_Superimposed\n: Slave\nVelocity\nunder\nthe influence of\nMC_SuperImposed\n.\nSlave\nPosition\nwith\nMC_Superimposed\n: Slave\nPosition\nunder\nthe influence of\nMC_SuperImposed\n.\nInOut:\nScope\nName\nType\nComment\nInout\nAxis\nAXIS_REF_SM3\nReference to the axis\nInput\nExecute\nBOOL\nA rising edge starts the superimposed movement.\nAbort\nBOOL\nAborts an ongoing movement and resets all outputs.\nIf set during an active movement, then the axis position\nwill jump back to the position it would have had without the\nsuperimposed movement.\nDistance\nLREAL\nAdditional distance in technical units [u].\nIf the FB interrupts itself,\na superimposed movement aborted by a new superimposed movement, then\nthe distance is relative to the start position of the interrupted\nsuperimposed movement.\nVelocityDiff\nLREAL\nMaximum velocity of the superimposed movement\nAcceleration\nLREAL\nMaximum acceleration of the superimposed movement\nDeceleration\nLREAL\nMaximum deceleration of the superimposed movement\nJerk\nLREAL\nMaximum jerk of the superimposed movement\nOutput\nDone\nBOOL\nTRUE\n: Distance is reached\nBusy\nBOOL\nTRUE\n: Function block is in operation.\nCommandAborted\nBOOL\nTRUE\n: Execution has been interrupted by another function\nblock instance operating on\nAxis\n.\nError\nBOOL\nTRUE\n: Error has occurred.\nErrorID\nSMC_ERROR\nError identification\nDistanceTravelled\nLREAL\nThe superimposed distance travelled so far.  Only set if\nBusy or Done.\nSuperImposedVelocity\nLREAL\nThe current superimposed velocity.  Only set if Busy or\nDone.\nSuperImposedAcceleration\nLREAL\nThe current superimposed acceleration.  Only set if Busy or\nDone.",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3",
+          "Comment": "Reference to the axis"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Comment": "A rising edge starts the superimposed movement."
+        },
+        [
+          "Abort",
+          "BOOL",
+          "Aborts an ongoing movement and resets all outputs.\nIf set during an active movement, then the axis position\nwill jump back to the position it would have had without the\nsuperimposed movement."
+        ],
+        [
+          "Distance",
+          "LREAL",
+          "Additional distance in technical units [u].\nIf the FB interrupts itself,\na superimposed movement aborted by a new superimposed movement, then\nthe distance is relative to the start position of the interrupted\nsuperimposed movement."
+        ],
+        [
+          "VelocityDiff",
+          "LREAL",
+          "Maximum velocity of the superimposed movement"
+        ],
+        [
+          "Acceleration",
+          "LREAL",
+          "Maximum acceleration of the superimposed movement"
+        ],
+        [
+          "Deceleration",
+          "LREAL",
+          "Maximum deceleration of the superimposed movement"
+        ],
+        [
+          "Jerk",
+          "LREAL",
+          "Maximum jerk of the superimposed movement"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Done",
+          "Type": "BOOL",
+          "Comment": "TRUE: Distance is reached"
+        },
+        [
+          "Busy",
+          "BOOL",
+          "TRUE: Function block is in operation."
+        ],
+        [
+          "CommandAborted",
+          "BOOL",
+          "TRUE: Execution has been interrupted by another function\nblock instance operating onAxis."
+        ],
+        [
+          "Error",
+          "BOOL",
+          "TRUE: Error has occurred."
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ],
+        [
+          "DistanceTravelled",
+          "LREAL",
+          "The superimposed distance travelled so far.  Only set if\nBusy or Done."
+        ],
+        [
+          "SuperImposedVelocity",
+          "LREAL",
+          "The current superimposed velocity.  Only set if Busy or\nDone."
+        ],
+        [
+          "SuperImposedAcceleration",
+          "LREAL",
+          "The current superimposed acceleration.  Only set if Busy or\nDone."
+        ]
+      ]
+    }
+  ]
+}

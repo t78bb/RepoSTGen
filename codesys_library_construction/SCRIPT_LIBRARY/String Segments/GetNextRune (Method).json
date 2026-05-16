@@ -1,0 +1,32 @@
+{
+  "library": "String Segments",
+  "title": "GetNextRune (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Segments/Current/Strings/Functionblocks/pou-Range/IRange/GetNextRune.html",
+  "page_title": "Range.GetNextRune (METH)",
+  "text": "\nMETHOD FINAL GetNextRune :\nRUNE\nUnpacks the next UTF-8 encoding in a\nIString\ninstance and\nreturns the rune and its length in bytes.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetNextRune",
+          "Type": "RUNE"
+        },
+        {
+          "Scope": "Output",
+          "Name": "udiLength",
+          "Type": "UDINT"
+        },
+        [
+          "eErrorID",
+          "ERROR"
+        ]
+      ]
+    }
+  ]
+}

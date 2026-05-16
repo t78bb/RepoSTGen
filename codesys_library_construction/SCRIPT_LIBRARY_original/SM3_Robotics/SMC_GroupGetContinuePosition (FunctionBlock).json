@@ -1,0 +1,77 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_GroupGetContinuePosition (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/Diagnostics/SMC_GroupGetContinuePosition.html",
+  "page_title": "SMC_GroupGetContinuePosition (FB)",
+  "text": "Library Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nGetVersion (Function)\nIsLibReleased (Function)\nSM3_Robotics\nBasic types\nIDENT_IN_GROUP_REF_SM3 (Alias)\nMC_CIRC_PATHCHOICE (Enum)\nMC_COORD_REF (Struct)\nMC_EXECUTION_MODE (Enum)\nMC_TRANSITION_MODE (Enum)\nSMC_AXIS_GROUP_COMPATIBILITY_OPTIONS (Struct)\nSMC_AXIS_GROUP_CONTINUE_DATA (FunctionBlock)\nSMC_AXIS_GROUP_STATE (Enum)\nSMC_CIRC_MODE (Enum)\nSMC_DYN_LIMITS (Alias)\nSMC_IDynamicCS (Interface)\nSMC_ORIENTATION_MODE (Enum)\nSMC_POS_REF (Union)\nSMC_PTP_MOVEMENT_TYPE (Enum)\nSMC_READ_TOOL_MODE (Enum)\nPOUs\nAdditional\nSMC_AxisDistanceAxes (Enum)\nSMC_AxisDistanceSubMode (Enum)\nSMC_AxisDistanceTransition (FunctionBlock)\nSMC_AxisDistanceTransitionParam (Function)\nSMC_CornerDistance (FunctionBlock)\nSMC_CornerDistanceTransitionParam (Function)\nSMC_StartVelocity (FunctionBlock)\nSMC_StartVelocityAxes (Enum)\nSMC_StartVelocityTransitionParam (Function)\nSMC_StartupAxisGroup (FunctionBlock)\nAdministrative/Configuration\nAxisGroup\nComputation\nCoordinate systems\nDynamics\nKinematics\nTrigger\nAxisGroup\nAXIS_GROUP_REF_SM3 (FunctionBlock)\nHelpers\nMovements\nDiagnostics\nMC_GroupReadActualAcceleration (FunctionBlock)\nMC_GroupReadActualPosition (FunctionBlock)\nMC_GroupReadActualVelocity (FunctionBlock)\nMC_GroupReadConfiguration (FunctionBlock)\nMC_GroupReadError (FunctionBlock)\nMC_GroupReadStatus (FunctionBlock)\nMC_ReadCoordinateTransform (FunctionBlock)\nMC_ReadKinTransform (FunctionBlock)\nSMC_GroupAddOffset (FunctionBlock)\nSMC_GroupAdditionalAxesTargetPositions (FunctionBlock)\nSMC_GroupConvertPosition (FunctionBlock)\nSMC_GroupGetContinuePosition (FunctionBlock)\nSMC_GroupGetContinueToolOffset (FunctionBlock)\nSMC_GroupReadPathAcceleration (FunctionBlock)\nSMC_GroupReadPathDynamics (FunctionBlock)\nSMC_GroupReadPathVelocity (FunctionBlock)\nSMC_GroupReadPlanningStatistics (FunctionBlock)\nSMC_GroupReadPositionInMovement (FunctionBlock)\nSMC_GroupReadRemainingTrajectoryDuration (FunctionBlock)\nSMC_GroupReadSetAcceleration (FunctionBlock)\nSMC_GroupReadSetJerk (FunctionBlock)\nSMC_GroupReadSetPosition (FunctionBlock)\nSMC_GroupReadSetVelocity (FunctionBlock)\nSMC_GroupTargetPosition (FunctionBlock)\nSMC_ReadKinTransformForAxis (FunctionBlock)\nMovement\nAdditionalAxes\nGroupInterrupt\nMC_GroupContinue (FunctionBlock)\nMC_GroupHalt (FunctionBlock)\nMC_GroupInterrupt (FunctionBlock)\nMC_GroupStop (FunctionBlock)\nMC_MoveCircularAbsolute (FunctionBlock)\nMC_MoveCircularRelative (FunctionBlock)\nMC_MoveDirectAbsolute (FunctionBlock)\nMC_MoveDirectRelative (FunctionBlock)\nMC_MoveLinearAbsolute (FunctionBlock)\nMC_MoveLinearRelative (FunctionBlock)\nSMC_GroupEnableResumeAfterError (FunctionBlock)\nSMC_GroupJog (FunctionBlock)\nSMC_GroupJog2 (FunctionBlock)\nSMC_GroupUpdateContinueData (FunctionBlock)\nSMC_GroupWait (FunctionBlock)\nSMC_MoveAdditionalAxes (FunctionBlock)\ninternal\nDivers\nKernel_CP\nFile and Project Information\nLibrary Reference\n3SLicense\nLibrary Identification\nLibrary Properties\nCmpApp\nLibrary Identification\nLibrary Properties\nCmpIecTask\nLibrary Identification\nLibrary Properties\nCmpLog\nLibrary Identification\nLibrary Properties\nFloatingPointUtils\nLibrary Identification\nLibrary Properties\nSM3_Basic\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nSM3_CPKernelDefaults\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nSM3_CommonPublic\nLibrary Identification\nLibrary Properties\nSM3_Dynamics\nLibrary Identification\nLibrary Properties\nSM3_Error\nLibrary Identification\nLibrary Properties\nSM3_RBase\nLibrary Identification\nLibrary Properties\nSM3_RCP\nLibrary Identification\nLibrary Properties\nSM3_RError\nLibrary Identification\nLibrary Properties\nSM3_Ramps\nLibrary Identification\nLibrary Properties\nSM3_Shared\nLibrary Identification\nLibrary Properties\nSM3_StringUtils\nLibrary Identification\nLibrary Properties\nSM3_TrajectoryGeneration\nLibrary Identification\nLibrary Properties\nSM3_Transformation\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysTarget\nLibrary Identification\nLibrary Properties\nSysTime\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nSM3_Robotics\nDocs\n»\nSM3_Robotics\n»\nPOUs\n»\nDiagnostics\n»\nSMC_GroupGetContinuePosition (FB)\nSMC_GroupGetContinuePosition (FB)\nÂ¶\nFUNCTION_BLOCK SMC_GroupGetContinuePosition\nReads the continue position from the\ncontinueData\n.\nThe continue position is the position, from where a\nMC_GroupContinue\ncan be performed using the\ncontinueData\n.\nInOut:\nScope\nName\nType\nComment\nInout Const\nAxisGroup\nAXIS_GROUP_REF_SM3\nReference to the axis group\ncontinueData\nSMC_AXIS_GROUP_CONTINUE_DATA\nThe continue data.\nInput\nExecute\nBOOL\nReads the position on rising edge\nOutput\nDone\nBOOL\nThe operation has been finished successfully\nBusy\nBOOL\nThe operation is not finished\nError\nBOOL\nSignals that an error has occurred within the function block\nErrorID\nSMC_ERROR\nError identification\nPosition\nSMC_POS_REF\nThe position where the interrupted path can be continued.\nCoordSystem\nSMC_COORD_SYSTEM\nThe coordinate system in which the position has been stored.\nAdditionalAxesPositions\nSMC_ADDITIONAL_AXES_VALUES_ARRAY\nThe positions where the additional axes movement can be\ncontinued.\nMovementId\nSMC_Movement_Id\nThe movemnet Id corresponding to the interrupt position",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout Const",
+          "Name": "AxisGroup",
+          "Type": "AXIS_GROUP_REF_SM3",
+          "Comment": "Reference to the axis group"
+        },
+        [
+          "continueData",
+          "SMC_AXIS_GROUP_CONTINUE_DATA",
+          "The continue data."
+        ],
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Comment": "Reads the position on rising edge"
+        },
+        {
+          "Scope": "Output",
+          "Name": "Done",
+          "Type": "BOOL",
+          "Comment": "The operation has been finished successfully"
+        },
+        [
+          "Busy",
+          "BOOL",
+          "The operation is not finished"
+        ],
+        [
+          "Error",
+          "BOOL",
+          "Signals that an error has occurred within the function block"
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ],
+        [
+          "Position",
+          "SMC_POS_REF",
+          "The position where the interrupted path can be continued."
+        ],
+        [
+          "CoordSystem",
+          "SMC_COORD_SYSTEM",
+          "The coordinate system in which the position has been stored."
+        ],
+        [
+          "AdditionalAxesPositions",
+          "SMC_ADDITIONAL_AXES_VALUES_ARRAY",
+          "The positions where the additional axes movement can be\ncontinued."
+        ],
+        [
+          "MovementId",
+          "SMC_Movement_Id",
+          "The movemnet Id corresponding to the interrupt position"
+        ]
+      ]
+    }
+  ]
+}

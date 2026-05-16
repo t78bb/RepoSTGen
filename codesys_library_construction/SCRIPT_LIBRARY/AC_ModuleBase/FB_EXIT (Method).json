@@ -1,0 +1,28 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "FB_EXIT (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_Module/pou-BaseInstance/FB_EXIT.html",
+  "page_title": "BaseInstance.FB_EXIT (METH)",
+  "text": "\nMETHOD FB_EXIT : BOOL\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "FB_EXIT",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Input",
+          "Name": "bInCopyCode",
+          "Type": "BOOL"
+        }
+      ]
+    }
+  ]
+}

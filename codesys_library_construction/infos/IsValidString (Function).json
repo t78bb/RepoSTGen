@@ -1,0 +1,33 @@
+{
+  "library": "String Segments",
+  "title": "IsValidString (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Segments/Current/Strings/Functions/IsValidString.html",
+  "page_title": "IsValidString (FUN)",
+  "text": "\nFUNCTION IsValidString : BOOL\nReports whether\nitfString\nconsists entirely of valid UTF-8-encoded runes.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "IsValidString",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfString",
+          "Type": "IString"
+        },
+        {
+          "Scope": "Output",
+          "Name": "eErrorID",
+          "Type": "ERROR"
+        }
+      ]
+    }
+  ]
+}

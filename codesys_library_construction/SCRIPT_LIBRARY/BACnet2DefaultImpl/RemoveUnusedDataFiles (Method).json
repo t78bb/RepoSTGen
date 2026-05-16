@@ -1,0 +1,23 @@
+{
+  "library": "BACnet2DefaultImpl",
+  "title": "RemoveUnusedDataFiles (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2DefaultImpl/Current/BACnetDefaultImpl/Function-Blocks/LoggingObjects/Internal/pou-LogObjectsBase/Files/DataFiles/RemoveUnusedDataFiles.html",
+  "page_title": "LogObjectsBase.RemoveUnusedDataFiles (METH)",
+  "text": "\nMETHOD PROTECTED RemoveUnusedDataFiles : RTS_IEC_RESULT\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "RemoveUnusedDataFiles",
+          "Type": "RTS_IEC_RESULT"
+        }
+      ]
+    }
+  ]
+}

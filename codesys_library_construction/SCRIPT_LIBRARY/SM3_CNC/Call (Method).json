@@ -1,0 +1,51 @@
+{
+  "library": "SM3_CNC",
+  "title": "Call (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/ReadNCFile2/pou-SMC_ITokenModifier/Call.html",
+  "page_title": "SMC_ITokenModifier.Call (METH)",
+  "text": "\nMETHOD Call\nCalled cyclically to process tokens from tokensIn to tokensOut.\nThe implementation should read the tokens in tokensIn, and append\n(possibly modified) tokens to tokensOut.  The processed tokens\nneed to be removed from tokensIn.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "tokensIn",
+          "Type": "SMC_TokenQueue",
+          "Comment": "Input token queue"
+        },
+        [
+          "tokensOut",
+          "SMC_TokenQueue",
+          "Output token queue"
+        ],
+        [
+          "errorPos",
+          "SMC_NC_SourcePosition",
+          "Out: error position (line number, column, and length)\nin case of an error.\nSet all to -1 if no error position is known."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Done",
+          "Type": "BOOL",
+          "Comment": "All tokens have been processed and no new tokens will be appended.\nShould be set if tokensIn is empty and has EndOfData set, and there\nare no pending tokens due to the state of the modifier function block."
+        },
+        [
+          "Error",
+          "BOOL",
+          "An error has occurred"
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error-ID"
+        ]
+      ]
+    }
+  ]
+}

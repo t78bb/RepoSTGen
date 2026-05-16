@@ -1,0 +1,131 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_AxisDiagnosticLog (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/Diagnostics/SMC_AxisDiagnosticLog.html",
+  "page_title": "SMC_AxisDiagnosticLog (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_AxisDiagnosticLog\nThis function block is designed for writing cyclically a set of parameter values belonging to one axis to a file.\nThis output file is ideal for diagnosis purposes.\nAs the writing of data on a data medium usually needs some time, this module stores the collected data in a buffer\nof size 10 kByte and the data will not be written until module action\nWriteToFile\nis called.\nThis action call should be placed in a slower (ca. 50 ms) task of lower priority, in order to prevent the actual\nmotion task as well as the motion itself from being disturbed. As soon as the buffer is exceeded, the module will\ncreate an error output.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "bExecute",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Rising edge: Starts the execution of the function block."
+        },
+        [
+          "bCloseFile",
+          "BOOL",
+          "",
+          "The module closes the file as soon as this input gets TRUE."
+        ],
+        [
+          "sFileName",
+          "STRING(255)",
+          "",
+          "File name (preceded by path)."
+        ],
+        [
+          "bSetPosition",
+          "BOOL",
+          "",
+          "TRUE: The associated value of the axis to be written to\nthe file."
+        ],
+        [
+          "bActPosition",
+          "BOOL",
+          "",
+          "TRUE: The associated value of the axis to be written to\nthe file."
+        ],
+        [
+          "bSetVelocity",
+          "BOOL",
+          "",
+          "TRUE: The associated value of the axis to be written to\nthe file."
+        ],
+        [
+          "bActVelocity",
+          "BOOL",
+          "",
+          "TRUE: The associated value of the axis to be written to\nthe file."
+        ],
+        [
+          "bSetAcceleration",
+          "BOOL",
+          "",
+          "TRUE: The associated value of the axis to be written to\nthe file."
+        ],
+        [
+          "bActAcceleration",
+          "BOOL",
+          "",
+          "TRUE: The associated value of the axis to be written to\nthe file."
+        ],
+        [
+          "bySeparatorChar",
+          "BYTE",
+          "9",
+          "ASCII-Code of the letter, which is to be written between two\nvalues of same date."
+        ],
+        [
+          "sRecordSeparatorString",
+          "STRING(3)",
+          "â$R$Nâ",
+          "String to be written at the end of a date."
+        ],
+        [
+          "eMode",
+          "SMC_LOGGERMODE",
+          "LOG_CONTINUOUS",
+          "LOG_CONTINUOUS: Continuous logging into file.LOG_AT_CLOSE: Continuous logging into buffer (10kByte).\nWhenbCloseFileis set, the buffer content is written to file."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bDone",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUE: Logging has been terminated and file is closed."
+        },
+        [
+          "bBusy",
+          "BOOL",
+          "FALSE",
+          "TRUE: Execution of function block has not been finished."
+        ],
+        [
+          "bError",
+          "BOOL",
+          "",
+          "TRUE: Error has occurred within the function block."
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "",
+          "Error identification"
+        ],
+        [
+          "bRecording",
+          "BOOL",
+          "FALSE",
+          "TRUE: Module records."
+        ]
+      ]
+    }
+  ]
+}

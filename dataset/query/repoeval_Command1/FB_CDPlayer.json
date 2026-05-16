@@ -1,0 +1,5 @@
+{
+  "requirement": "This code is intended to implement a functional block for controlling a CD player, providing outputs for player activity status, volume level, and current track number.",
+  "provide_code": "FUNCTION_BLOCK PUBLIC FB_CDPlayer\nVAR_OUTPUT\n\tbPlayerActive\t\t: BOOL;\n\tbyVolume\t\t\t: BYTE;\n\tbyTrack\t\t\t\t: UINT;\nEND_VAR",
+  "function_name": "FB_CDPlayer"
+}

@@ -1,0 +1,28 @@
+{
+  "library": "BACnet",
+  "title": "BACnetDateTimeToString (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/Utilities/ToString/BACnetDateTimeToString.html",
+  "page_title": "BACnetDateTimeToString (FUN)",
+  "text": "\nFUNCTION BACnetDateTimeToString : STRING\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "BACnetDateTimeToString",
+          "Type": "STRING"
+        },
+        {
+          "Scope": "Input",
+          "Name": "dateTime",
+          "Type": "BACnetDateTime"
+        }
+      ]
+    }
+  ]
+}

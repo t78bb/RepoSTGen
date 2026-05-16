@@ -1,0 +1,70 @@
+{
+  "library": "PLCopen Safety FBs",
+  "title": "SF_ResetButton (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/PLCopen Safety FBs/Current/PLCopenSafetyFBs/Function-Blocks/SF_ResetButton.html",
+  "page_title": "SF_ResetButton (FB)",
+  "text": "PLCopenSafetyFBs\nEnums\nFBS_ANTI (Enum)\nFBS_EDM (Enum)\nFBS_ENSWITCH (Enum)\nFBS_ENSWITCH2 (Enum)\nFBS_EQUI (Enum)\nFBS_ESPE (Enum)\nFBS_ESTOP (Enum)\nFBS_GUARD (Enum)\nFBS_GUARDLOCK2 (Enum)\nFBS_MODESEL (Enum)\nFBS_OUTCONTROL (Enum)\nFBS_PSE (Enum)\nFBS_RESBUT (Enum)\nFBS_SAFEREQ (Enum)\nFBS_TESTSEN (Enum)\nFBS_TWOHAND (Enum)\nFunction Blocks\nSF_Antivalent (FunctionBlock)\nSF_EDM (FunctionBlock)\nSF_ESPE (FunctionBlock)\nSF_EmergencyStop (FunctionBlock)\nSF_EnableSwitch (FunctionBlock)\nSF_EnableSwitch_2 (FunctionBlock)\nSF_Equivalent (FunctionBlock)\nSF_Guard (FunctionBlock)\nSF_GuardLocking_2 (FunctionBlock)\nSF_ModeSelector (FunctionBlock)\nSF_OutControl (FunctionBlock)\nSF_PSE (FunctionBlock)\nSF_ResetButton (FunctionBlock)\nSF_SafetyRequest (FunctionBlock)\nSF_TestableSafetySensor (FunctionBlock)\nSF_TwoHandControlTypeII (FunctionBlock)\nSF_TwoHandControlTypeIII (FunctionBlock)\nFile and Project Information\nLibrary Reference\nStandard\nLibrary Identification\nLibrary Properties\nSysTimeCore\nLibrary Identification\nLibrary Properties\nPLCopen Safety FBs\nDocs\n»\nPLCopenSafetyFBs\n»\nFunction\nBlocks\n»\nSF_ResetButton (FB)\nSF_ResetButton (FB)\nÂ¶\nFUNCTION_BLOCK SF_ResetButton\nThis function block adds the trailing edge functionality to all the function blocks with reset input with rising edge detection. This can be used to comply to EN ISO 13849-1:2015.\nFunction block according to PLCopen, Technical Committee 5: Safety Software (Technical Specification), Part 1: Concepts and Function Blocks, Version 2.01 (2020-2)\nInOut:\nScope\nName\nType\nInitial\nComment\nInput\nResetRequested\nBOOL\nTRUE\nInput which should be connected to the ResetRequest output\nof the paired FB. TRUE: ResetRequested, FALSE: No reset\nrequested / no monitoring of ResetIn.\nResetIn\nBOOL\nFALSE\nInput of reset button. FALSE: reset button released, TRUE:\nreset button actuated by operator.\nTrailingMinimum\nTIME\nTIME#350ms\nMinimum time that the reset switch has to be actuated. If the reset button is pushed shorter than this time, the reset is ignored.\nAbsolut minimum value is 100msec. Minimum value 2 PLC cycles. Default value T#350MS\nTrailingMaximum\nTIME\nTIME#2s0ms\nMaximum time that the reset switch is actuated. Typical\nvalue can be around 2 sec. If the reset button is pushed\nlonger than this time, the reset is ignored.\nOutput\nReady\nBOOL\nFALSE\nActivation of the FB. TRUE indicates that the FB is\nactivated and the outputs results are valid, FALSE the FB is\nnot active and the program is not executed.\nResetOut\nBOOL\nFALSE\nPulse for the initiation of the reset procedure. This pulse\nis generated after the falling edge. Pulse output with\nrising edge first. At least 1 cycle.\nError\nBOOL\nFALSE\nError flag\nDiagCode\nWORD\nANY_TO_WORD(FBS_RESBUT.IDLE)\nDiagnostic register",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "ResetRequested",
+          "Type": "BOOL",
+          "Initial": "TRUE",
+          "Comment": "Input which should be connected to the ResetRequest output\nof the paired FB. TRUE: ResetRequested, FALSE: No reset\nrequested / no monitoring of ResetIn."
+        },
+        [
+          "ResetIn",
+          "BOOL",
+          "FALSE",
+          "Input of reset button. FALSE: reset button released, TRUE:\nreset button actuated by operator."
+        ],
+        [
+          "TrailingMinimum",
+          "TIME",
+          "TIME#350ms",
+          "Minimum time that the reset switch has to be actuated. If the reset button is pushed shorter than this time, the reset is ignored.\nAbsolut minimum value is 100msec. Minimum value 2 PLC cycles. Default value T#350MS"
+        ],
+        [
+          "TrailingMaximum",
+          "TIME",
+          "TIME#2s0ms",
+          "Maximum time that the reset switch is actuated. Typical\nvalue can be around 2 sec. If the reset button is pushed\nlonger than this time, the reset is ignored."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Ready",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "Activation of the FB. TRUE indicates that the FB is\nactivated and the outputs results are valid, FALSE the FB is\nnot active and the program is not executed."
+        },
+        [
+          "ResetOut",
+          "BOOL",
+          "FALSE",
+          "Pulse for the initiation of the reset procedure. This pulse\nis generated after the falling edge. Pulse output with\nrising edge first. At least 1 cycle."
+        ],
+        [
+          "Error",
+          "BOOL",
+          "FALSE",
+          "Error flag"
+        ],
+        [
+          "DiagCode",
+          "WORD",
+          "ANY_TO_WORD(FBS_RESBUT.IDLE)",
+          "Diagnostic register"
+        ]
+      ]
+    }
+  ]
+}

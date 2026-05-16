@@ -1,0 +1,41 @@
+{
+  "library": "ModbusFB",
+  "title": "RequestUnion (Union)",
+  "url": "https://content.helpme-codesys.com/en/libs/ModbusFB/Current/ModbusFB/Structs/RequestUnion.html",
+  "page_title": "RequestUnion (UNION)",
+  "text": "\nTYPE RequestUnion : UNION\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Name": "read",
+          "Type": "RequestDataRead"
+        },
+        {
+          "Name": "writeSingle",
+          "Type": "RequestDataWriteSingle"
+        },
+        {
+          "Name": "diagnostics",
+          "Type": "RequestDataDiagnostics"
+        },
+        {
+          "Name": "writeMultiple",
+          "Type": "RequestDataWriteMultiple"
+        },
+        {
+          "Name": "maskWriteRegister",
+          "Type": "RequestDataMaskWriteRegister"
+        },
+        {
+          "Name": "readWriteMultipleRegisters",
+          "Type": "RequestDataReadWriteMultipleRegisters"
+        }
+      ]
+    }
+  ]
+}

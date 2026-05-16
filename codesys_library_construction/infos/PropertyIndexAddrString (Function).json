@@ -1,0 +1,40 @@
+{
+  "library": "BACnet",
+  "title": "PropertyIndexAddrString (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/Utilities/ToString/PropertyIndexAddrString.html",
+  "page_title": "PropertyIndexAddrString (FUN)",
+  "text": "\nFUNCTION PropertyIndexAddrString : STRING\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "PropertyIndexAddrString",
+          "Type": "STRING"
+        },
+        {
+          "Scope": "Input",
+          "Name": "devInstance",
+          "Type": "CmpBACnet.IEC_BACNET_DWORD"
+        },
+        [
+          "objId",
+          "CmpBACnet.IEC_BACNET_OBJECT_ID"
+        ],
+        [
+          "propID",
+          "CmpBACnet.IEC_BACNET_PROPERTY_ID"
+        ],
+        [
+          "index",
+          "CmpBACnet.IEC_BACNET_SIGNED"
+        ]
+      ]
+    }
+  ]
+}

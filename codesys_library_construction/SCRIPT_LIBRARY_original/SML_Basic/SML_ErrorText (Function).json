@@ -1,0 +1,36 @@
+{
+  "library": "SML_Basic",
+  "title": "SML_ErrorText (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SML_Basic/Current/Base/Error/SML_ErrorText.html",
+  "page_title": "SML_ErrorText (FUN)",
+  "text": "Additional\nSML_ChangeAxisConfig (FunctionBlock)\nSML_ReinitDrive (FunctionBlock)\nSML_SetOpmode (FunctionBlock)\nSML_StartupDrive (FunctionBlock)\nBase\nAxis_REF_SML (FunctionBlock)\nConfig\nReadStandardConfigParameters (Method)\nReinitAxis (Method)\nError\nSML_ClearFBError (Function)\nSML_ErrorText (Function)\nSML_Language (Enum)\nSML_AXIS_STATE (Enum)\nSML_Constants (GVL)\nSML_ERROR (Enum)\nSML_FBError (Struct)\nSML_Globals (GVL)\nSML_MOVEMENTTYPE (Enum)\nSML_OPMODE (Enum)\nSML_Ramptype (Enum)\nGlobalTextList (GlobalTextList)\nLibrary Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nPLCopen\nMC_Halt_SML (FunctionBlock)\nMC_Home_SML (FunctionBlock)\nMC_MoveAbsolute_SML (FunctionBlock)\nMC_MoveRelative_SML (FunctionBlock)\nMC_MoveVelocity_SML (FunctionBlock)\nMC_Power_SML (FunctionBlock)\nMC_ReadBoolParameter_SML (FunctionBlock)\nMC_ReadParameter_SML (FunctionBlock)\nMC_ReadStatus_SML (FunctionBlock)\nMC_Reset_SML (FunctionBlock)\nMC_Stop_SML (FunctionBlock)\nMC_WriteBoolParameter_SML (FunctionBlock)\nMC_WriteParameter_SML (FunctionBlock)\nVisu_Templates\nHelpers\nTextListForCombobox_SML_MOVEMENTTYPE (TextList)\nTextListForCombobox_SML_OPMODE (TextList)\nStartupDrive\nFile and Project Information\nLibrary Reference\n3SLicense\nLibrary Identification\nLibrary Properties\nCmpApp\nLibrary Identification\nLibrary Properties\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nCmpLog\nLibrary Identification\nLibrary Properties\nCmpSchedule\nLibrary Identification\nLibrary Properties\nComponent Manager\nLibrary Identification\nLibrary Properties\nIoStandard\nLibrary Identification\nLibrary Properties\nSM3_Math\nLibrary Identification\nLibrary Properties\nSM3_Shared\nLibrary Identification\nLibrary Properties\nSM3_StringUtils\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nSysCpuHandling\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysTarget\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nVisuElem3DPath\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElemCamDisplayer\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElemMeter\nLibrary Identification\nLibrary Properties\nVisuElemTextEditor\nLibrary Identification\nLibrary Properties\nVisuElemTrace\nLibrary Identification\nLibrary Properties\nVisuElems\nLibrary Identification\nLibrary Properties\nVisuElemsAlarm\nLibrary Identification\nLibrary Properties\nVisuElemsDateTime\nLibrary Identification\nLibrary Properties\nVisuElemsSpecialControls\nLibrary Identification\nLibrary Properties\nVisuElemsWinControls\nLibrary Identification\nLibrary Properties\nVisuInputs\nLibrary Identification\nLibrary Properties\nVisuNativeControl\nLibrary Identification\nLibrary Properties\nSML_Basic\nDocs\n»\nBase\n»\nError\n»\nSML_ErrorText (FUN)\nSML_ErrorText (FUN)\nÂ¶\nFUNCTION SML_ErrorText : STRING(100)\nTranslates an error number to a descriptive error text.\nInOut:\nScope\nName\nType\nComment\nReturn\nSML_ErrorText\nSTRING(100)\nInput\neError\nSML_Error\nThe error number\neLanguage\nSML_LANGUAGE\nThe desired output language",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SML_ErrorText",
+          "Type": "STRING(100)",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "eError",
+          "Type": "SML_Error",
+          "Comment": "The error number"
+        },
+        [
+          "eLanguage",
+          "SML_LANGUAGE",
+          "The desired output language"
+        ]
+      ]
+    }
+  ]
+}

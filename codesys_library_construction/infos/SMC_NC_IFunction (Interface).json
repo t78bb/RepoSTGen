@@ -1,0 +1,8 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_NC_IFunction (Interface)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/Parser/Expressions/Functions/SMC_NC_IFunction.html",
+  "page_title": "SMC_NC_IFunction (ITF)",
+  "text": "\nINTERFACE SMC_NC_IFunction\nInterface for functions that can be called from G-Code.\nBy implementing a function block of this type, it is\npossible to add additional functions that can be called in\nexpressions in the G-Code.\nThese function blocks need to be passed to the\nSMC_ReadNCFile2\nor\nSMC_ReadNCFromStream\nvia the input\npCustomFunTable\n.\nMethods:\nCall\nGetSignature\nStructure:\nCall (Method)\nGetSignature (Method)",
+  "tables": []
+}

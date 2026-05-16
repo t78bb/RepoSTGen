@@ -1,0 +1,51 @@
+{
+  "library": "Util",
+  "title": "LIMITALARM (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/Analog-Monitors/LIMITALARM.html",
+  "page_title": "LIMITALARM (FB)",
+  "text": "\nFUNCTION_BLOCK LIMITALARM\nMonitors if an input value is between a lower and a upper limit\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "IN",
+          "Type": "INT",
+          "Comment": "Input value"
+        },
+        [
+          "HIGH",
+          "INT",
+          "Upper limit"
+        ],
+        [
+          "LOW",
+          "INT",
+          "Lower limit"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "O",
+          "Type": "BOOL",
+          "Comment": "TRUE:IN>HIGHFALSE: Else"
+        },
+        [
+          "U",
+          "BOOL",
+          "TRUE:IN<LOWFALSE: Else"
+        ],
+        [
+          "IL",
+          "BOOL",
+          "TRUE: NeitherOnorUareTRUE"
+        ]
+      ]
+    }
+  ]
+}

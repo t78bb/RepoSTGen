@@ -1,0 +1,3 @@
+VAR
+	refCDPlayer : REFERENCE TO FB_CDPlayer;
+END_VAR

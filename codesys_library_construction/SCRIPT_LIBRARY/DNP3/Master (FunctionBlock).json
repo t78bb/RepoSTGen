@@ -1,0 +1,70 @@
+{
+  "library": "DNP3",
+  "title": "Master (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/Master.html#",
+  "page_title": "Master (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL Master IMPLEMENTS IMaster, CmpDNP3.IMasterDatabaseCallback, CmpDNP3.IDNP3SessionStatisticsCallback\nFunction block representing a DNP3 master.\nAn Master needs to be configured regarding its communication (TCP vs. serial).\nCommands\nÂ¶\nCommands can be issued using calls to the Master Commands API - for example\nIntegrityPoll\n.\nAccess to datapoint information\nÂ¶\nDatapoint information can be accessed two ways:\ncalls to Master Datapoints API - for example\nAnalogInputGetFromPointNum\nusing a point observer - for example\nAnalogInputPointObserver\nUnsolicted responses and integrity data polls / explicit reads\nÂ¶\nNevertheless there are unsolicted responses, anyone canât rely on them alone - if enabled at all - without integrity data polls or explicit reads to keep the master up to date.\nItâs up to the application to do integrity data polls and / or explicit reads as needed.\nPlease be aware of the fact, that Object groups 34 âanalog input deadbandsâ, 110 âoctet stringsâ and 115 âextended stringsâ are not in the reply of an integrity data poll,\nso explicit reads (additional to integrity data polls) for those Object groups are necessary to update the master accordingly.\nOf course this all falls true for eventually existing PointObserver as well, because they get fed by the master.\nContemplate carefully when / how often your application does integrity data polls / explicit reads to avoid unwanted network contention.\nAs a convenience measure there is an optional automatic request mechanism to update the Master database doing cyclic reads - see MasterConfiguration.SetConfigAspectAutoUpdate().\nThis mechanism can be configured to some degree, to either read all points of a certain Object group, or just the points relevant for connected PointObserver.\nBy default it is configured to read Binary* and Counter/FrozenCounter only for PointObservers at 1s cycle, and\nAnalog*, OctetString and ExtendedString only for PointObservers at 2s cycle.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "xEnable",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Enables the Master."
+        },
+        [
+          "Configuration",
+          "IMasterConfiguration",
+          "_nullConfiguration",
+          "Master configuration - this is a configuration, changes are\nignored after Master was enabled."
+        ],
+        [
+          "udiLogOptions",
+          "UDINT",
+          "MasterLoggingOptions.None",
+          "LoggingOptions can be combined using OR"
+        ],
+        [
+          "enableSessionStatistics",
+          "BOOL",
+          "FALSE",
+          "Enable session statistics."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "xBusy",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "The Master is operational."
+        },
+        [
+          "xError",
+          "BOOL",
+          "",
+          "An error occured."
+        ],
+        [
+          "eErrorID",
+          "Error",
+          "",
+          "The specific error."
+        ],
+        [
+          "itfMaster",
+          "IMaster",
+          "",
+          "Interface IMaster"
+        ]
+      ]
+    }
+  ]
+}

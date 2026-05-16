@@ -1,0 +1,41 @@
+{
+  "library": "StringUtils",
+  "title": "StrConcatA (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/StringUtils/Current/Public-Parts/Ansi/StrConcatA.html",
+  "page_title": "StrConcatA (FUN)",
+  "text": "\nFUNCTION StrConcatA : BOOL\nThis function concatenates pstFrom to pstTo if the iBufferSize from pstTo is big enough. The function will do its work either with native\nIEC-Strings or with strings coming from external functions. It will return FALSE and does no concatenation if one of the strings is NULL\nor the buffer size is not big enough.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "StrConcatA",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "pstFrom",
+          "Type": "CharBufferPtr",
+          "Comment": "simply a pointer to byte"
+        },
+        [
+          "pstTo",
+          "CharBufferPtr",
+          "simply a pointer to byte"
+        ],
+        [
+          "iBufferSize",
+          "INT",
+          "the buffer size of pstTo"
+        ]
+      ]
+    }
+  ]
+}

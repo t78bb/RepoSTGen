@@ -1,0 +1,28 @@
+{
+  "library": "SM3_Basic_Visu",
+  "title": "SMC_CamSegmentType_HasJerkBound (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic_Visu/Current/SM3_Basic_Visu/SMC_CamSegmentType_HasJerkBound.html",
+  "page_title": "SMC_CamSegmentType_HasJerkBound (FUN)",
+  "text": "\nFUNCTION SMC_CamSegmentType_HasJerkBound : BOOL\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "t",
+          "Type": "SMCB.CAM_SEGMENT_TYPE"
+        },
+        {
+          "Scope": "Return",
+          "Name": "SMC_CamSegmentType_HasJerkBound",
+          "Type": "BOOL"
+        }
+      ]
+    }
+  ]
+}

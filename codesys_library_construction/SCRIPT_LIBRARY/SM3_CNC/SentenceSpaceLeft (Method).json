@@ -1,0 +1,23 @@
+{
+  "library": "SM3_CNC",
+  "title": "SentenceSpaceLeft (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/GSentence/pou-SMC_GSentenceQueue/SentenceSpaceLeft.html",
+  "page_title": "SMC_GSentenceQueue.SentenceSpaceLeft (METH)",
+  "text": "\nMETHOD SentenceSpaceLeft : UDINT\nReturns how many elements may be appended to the queue.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SentenceSpaceLeft",
+          "Type": "UDINT"
+        }
+      ]
+    }
+  ]
+}

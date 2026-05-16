@@ -1,0 +1,61 @@
+{
+  "library": "CmpBACnet",
+  "title": "BACnetReadRange (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/CmpBACnet/Current/BACnetClientAPI/BACnetReadRange.html",
+  "page_title": "BACnetReadRange (FUN)",
+  "text": "\nFUNCTION BACnetReadRange :\nIEC_BACNET_STATUS\nSends a ReadRange request\nSends a request to read a specific range of data items representing a subset of data\navailable within a specified object property. This routine may be used with any list\nor array of lists property. This routine may control APDU properties like APDU length,\nsegmentation, and timeout for both request and in response. This routine can execute\nasynchronously, i.e. this routine will return to the caller before the BACnet reply\ncomes so that the applications can keep running. In this case the response information\nwill be received by the thread which is responsible for receiving asynchronous\nresponses. An optional BACNET_READ_RANGE_COMPLETE_CB routine, which is provided by the\nBACnet application, shall be used to process this information. If a number of\nasynchronous requests are sent, the responses shall be queued and identified by the\ntransaction handles. If the application does not supply the BACNET_READ_RANGE_COMPLETE_CB\nroutine; then the BACnetReadRange routine sends a request and waits for reply.\nAsynchron call, which fills pResult with the call result in an asynchronus manner. As soon as pContentsStatus\nis\nIEC_BACNET_STATUS.BACNET_STATUS_OK\nthe data in pContents is valid.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "BACnetReadRange",
+          "Type": "IEC_BACNET_STATUS",
+          "Comment": "A status indicating whether the operation worked."
+        },
+        {
+          "Scope": "Input",
+          "Name": "pSourceAddress",
+          "Type": "POINTER TOIEC_BACNET_ADDRESS",
+          "Comment": "If the BACnet application has only one device constructed and installed, this can\nbe 0. In this case the MAC address of this device will be used. Otherwise this\nshall be the MAC address returned on device object construction."
+        },
+        [
+          "pDestinationAddress",
+          "POINTER TOIEC_BACNET_ADDRESS",
+          "This is the MAC address of the device to which the request\nshould be sent."
+        ],
+        [
+          "pReadInfo",
+          "POINTER TOIEC_BACNET_READ_RANGE_INFO",
+          "A pointer to the service information data structure of datatypeIEC_BACNET_READ_RANGE_INFO."
+        ],
+        [
+          "pAPDUParams",
+          "POINTER TOIEC_BACNET_APDU_PROPERTIES",
+          "A pointer to the APDU-Properties structure which sets APDU properties for this\ntransaction only. This does not change global defaults or settings for the application\nAPDU Properties. This argument may be 0. In this case APDU properties  are used\nwhich were specified in the device object properties of the applications device which\nsends the request."
+        ],
+        [
+          "pResult",
+          "POINTER TOIEC_BACNET_READ_RANGE_RESULT",
+          "A pointer to a buffer to place the Result data if successful reading (datatypeIEC_BACNET_READ_RANGE_RESULT).\nThe application may initialize the itemData member of theIEC_BACNET_READ_RANGE_RESULTstruture with a 0 pointer and bufferSize with 0 too. In this\ncase the memory for the response is allocated by the API and the application is\nresponsible to release it with a call toBACnetFreeStackAllocatedMemoryif the\nbuffer is no longer needed."
+        ],
+        [
+          "pTransactionToken",
+          "POINTER TOBACnetAsyncTransactionToken",
+          "Transaction token of the asynchronous call - seeBACnetAsyncTransactionToken."
+        ],
+        [
+          "pError",
+          "POINTER TOIEC_BACNET_ERROR",
+          "A pointer to a structure to hold BACnet Error information. pError may be 0 if the\napplication isnât interested in detailed error information."
+        ]
+      ]
+    }
+  ]
+}

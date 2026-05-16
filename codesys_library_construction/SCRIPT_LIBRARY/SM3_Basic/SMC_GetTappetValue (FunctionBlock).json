@@ -1,0 +1,47 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_GetTappetValue (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/CAM/SMC_GetTappetValue.html",
+  "page_title": "SMC_GetTappetValue (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_GetTappetValue\nThis function block evaluates the output\nTappets\nof function block\nMC_CamIn\nand contains the current tappet status.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Tappets",
+          "Type": "SMC_TappetData",
+          "Comment": "Tappet signals to be evaluated byMC_GetTappetValue"
+        },
+        {
+          "Scope": "Input",
+          "Name": "iID",
+          "Type": "INT",
+          "Comment": "Group ID of the tappet to be evaluated."
+        },
+        [
+          "bInitValue",
+          "BOOL",
+          "Initial value of the tappet to be assigned at first call"
+        ],
+        [
+          "bSetInitValueAtReset",
+          "BOOL",
+          "TRUE: Sets the value of the tappet tobInitValueat a restart of theMC_CamIn`function block.FALSE: Retains the tappet value at a restart of theMC_CamInfunction block."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bTappet",
+          "Type": "BOOL",
+          "Comment": "Tappet value"
+        }
+      ]
+    }
+  ]
+}

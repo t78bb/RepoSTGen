@@ -1,0 +1,34 @@
+{
+  "library": "DNP3",
+  "title": "SetSessionConfigAspectEnabledBroadcastWrites (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Outstation/pou-OutstationConfiguration/SetSessionConfigAspectEnabledBroadcastWrites.html",
+  "page_title": "OutstationConfiguration.SetSessionConfigAspectEnabledBroadcastWrites (METH)",
+  "text": "\nMETHOD SetSessionConfigAspectEnabledBroadcastWrites :\nError\nSet optional outstation session configuration aspect - writes enabled for broadcast requests.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetSessionConfigAspectEnabledBroadcastWrites",
+          "Type": "Error",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "enabledBroadcastWrites",
+          "Type": "USINT",
+          "Initial": "16#0",
+          "Comment": "Bit mask indicating which Writes are enabled for broadcast requests if\nbroadcast Write is enabled"
+        }
+      ]
+    }
+  ]
+}

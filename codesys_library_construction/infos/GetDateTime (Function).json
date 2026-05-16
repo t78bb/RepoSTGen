@@ -1,0 +1,31 @@
+{
+  "library": "Util",
+  "title": "GetDateTime (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/TimerSwitch/Functions/GetDateTime.html",
+  "page_title": "GetDateTime (FUN)",
+  "text": "\nFUNCTION GetDateTime : ULINT\nRelated to UTC this function returns the current date and time in milliseconds since Thursday, 1.1.1970 00:00:00.000, managed in a 64 Bit data type\nThe default\nIDateTimeProvider\nimplementation (\nDateTimeProvider\n) is in use\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetDateTime",
+          "Type": "ULINT",
+          "Comment": "The current UTC date and time in milliseconds since 1.1.1970\n00:00:00.000"
+        },
+        {
+          "Scope": "Output",
+          "Name": "eErrorID",
+          "Type": "ERROR",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

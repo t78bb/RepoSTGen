@@ -1,0 +1,57 @@
+{
+  "library": "SM3_Robotics",
+  "title": "MC_GroupReadError (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/Diagnostics/MC_GroupReadError.html",
+  "page_title": "MC_GroupReadError (FB)",
+  "text": "\nFUNCTION_BLOCK MC_GroupReadError\nThis function block reads general axis group errors not relating\nto the function blocks.\nNote\nExamples are (software) limit switch exceeded or single axis error.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "AxisGroup",
+          "Type": "AXIS_GROUP_REF_SM3",
+          "Comment": "Reference to a group of axes"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Enable",
+          "Type": "BOOL",
+          "Comment": "Get the value of theGroupErrorIDcontinuously while\nenabled"
+        },
+        {
+          "Scope": "Output",
+          "Name": "Valid",
+          "Type": "BOOL",
+          "Comment": "TRUEif valid outputs are available"
+        },
+        [
+          "Busy",
+          "BOOL",
+          "The FB is not finished"
+        ],
+        [
+          "Error",
+          "BOOL",
+          "Signals that an error has occurred within the function block"
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ],
+        [
+          "GroupErrorID",
+          "SMC_ERROR",
+          "The value of the axis group error"
+        ]
+      ]
+    }
+  ]
+}

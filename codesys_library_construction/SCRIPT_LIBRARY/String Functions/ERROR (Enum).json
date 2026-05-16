@@ -1,0 +1,33 @@
+{
+  "library": "String Functions",
+  "title": "ERROR (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Functions/Current/StrFunc/Enums/ERROR.html",
+  "page_title": "ERROR (ENUM)",
+  "text": "\nTYPE ERROR :\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Name": "NO_ERROR",
+          "Initial": ""
+        },
+        {
+          "Name": "WRONG_PARAMETER",
+          "Initial": "2"
+        },
+        {
+          "Name": "NOT_FOUND",
+          "Initial": ""
+        },
+        {
+          "Name": "INVALID_ENCODING",
+          "Initial": ""
+        }
+      ]
+    }
+  ]
+}

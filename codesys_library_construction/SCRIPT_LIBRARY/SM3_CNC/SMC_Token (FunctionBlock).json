@@ -1,0 +1,27 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_Token (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/File/ReadNCFile/Token/SMC_Token.html",
+  "page_title": "SMC_Token (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL SMC_Token\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "tokenType",
+          "Type": "SMC_TOKENTYPE"
+        },
+        [
+          "srcPos",
+          "SMC_NC_SourcePosition"
+        ]
+      ]
+    }
+  ]
+}

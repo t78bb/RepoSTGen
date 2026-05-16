@@ -1,0 +1,66 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_TRAFOV_Gantry2 (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_Trafo_POUs/SoftMotion-Transformations/Gantry-systems/SMC_TRAFOV_Gantry2.html",
+  "page_title": "SMC_TRAFOV_Gantry2 (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_TRAFOV_Gantry2\nReverse transformation for two-dimensional portal systems\ntaking into account the path velocity and path direction\nas control variables for the axis.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "pi",
+          "Type": "SMC_PosInfo",
+          "Comment": "Target position vector (x,y), ouput of interpolator.SMC_POSINFO"
+        },
+        [
+          "dVel",
+          "LREAL",
+          "Path velocity, output of interpolator"
+        ],
+        [
+          "v",
+          "SMC_VECTOR3D",
+          "Tangent path vector, output of interpolator"
+        ],
+        [
+          "dOffsetX",
+          "LREAL",
+          "Additional offset of x-axis"
+        ],
+        [
+          "dOffsetY",
+          "LREAL",
+          "Additional offset of y-axis"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "dx",
+          "Type": "LREAL",
+          "Comment": "X-coordinate of resulting position"
+        },
+        [
+          "dvx",
+          "LREAL",
+          "X-coordinate of resulting velocity"
+        ],
+        [
+          "dy",
+          "LREAL",
+          "Y-coordinate of resulting position"
+        ],
+        [
+          "dvy",
+          "LREAL",
+          "Y-Coordinate of resulting velocity"
+        ]
+      ]
+    }
+  ]
+}

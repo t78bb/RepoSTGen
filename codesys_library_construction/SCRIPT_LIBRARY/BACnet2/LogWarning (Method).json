@@ -1,0 +1,23 @@
+{
+  "library": "BACnet2",
+  "title": "LogWarning (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/BACnetServerPlugin/pou-BACnetServerPluginBase/Logging/LogWarning.html",
+  "page_title": "BACnetServerPluginBase.LogWarning (METH)",
+  "text": "\nMETHOD LogWarning\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "str",
+          "Type": "LoggerString"
+        }
+      ]
+    }
+  ]
+}

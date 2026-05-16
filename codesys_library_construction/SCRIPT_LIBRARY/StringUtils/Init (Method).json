@@ -1,0 +1,41 @@
+{
+  "library": "StringUtils",
+  "title": "Init (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/StringUtils/Current/Public-Parts/pou-CharBufferString/Init.html",
+  "page_title": "CharBufferString.Init (METH)",
+  "text": "\nMETHOD Init : BOOL\nInit method used for using an already existing memory for storing the string\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "Init",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "pBuffer",
+          "Type": "POINTER TO BYTE",
+          "Comment": "The pointer to the buffer containing the string"
+        },
+        [
+          "uiBufferSize",
+          "UINT",
+          "The size of the buffer (in bytes), where the string is stored.\nIf this value is 0, no memory is allocated and the CharBufferPtr pointer\nhas to be set by calling the Initialize method"
+        ],
+        [
+          "stringType",
+          "__SYSTEM.TYPE_CLASS",
+          "A __SYSTEM.TYPE_CLASS value indicating type of the string"
+        ]
+      ]
+    }
+  ]
+}

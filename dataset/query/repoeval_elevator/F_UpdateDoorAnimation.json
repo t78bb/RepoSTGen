@@ -1,0 +1,5 @@
+{
+  "requirement": "This code is intended to implement the update logic for door animation values based on open, close, and floor call commands within specified constraints.",
+  "provide_code": "FUNCTION F_UpdateDoorAnimation : DINT\nVAR_INPUT\n\tbOpenDoor\t\t:\tBOOL;\t\t// 开门命令\n\tbCloseDoor\t\t:\tBOOL;\t\t// 关门命令\n\tbCallFloor\t\t:\tBOOL;\t\t// 该楼层有呼叫\n\tnCurrentAni\t\t:\tDINT;\t\t// 当前动画值\n\tnMaxAni\t\t\t:\tDINT := 70;\t// 最大动画值\nEND_VAR",
+  "function_name": "F_UpdateDoorAnimation"
+}

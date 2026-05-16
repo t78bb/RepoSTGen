@@ -1,0 +1,72 @@
+{
+  "library": "SM3_Basic",
+  "title": "MC_Power (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/AdministrativeConfiguration/MC_Power.html",
+  "page_title": "MC_Power (FB)",
+  "text": "\nFUNCTION_BLOCK MC_Power\nMC_Power\nis designed for controlling the power stage (âonâ or âoffâ).\nNote\nThe inputs are only processed if\nEnable\nis\nTRUE\n.\nA call of\nMC_Power\nwith\nbRegulatorOn\n=\nFALSE\nsets\nnAxisState\nof the referenced axis always into state\npower_off\n.\n(Except for encoder axes, which stay in\nstandstill\n, see the note on\nencoders further below.)\nA call of\nMC_Power\nwith\nbRegulatorOn\n=\nTRUE\non a disabled\naxis sets its\nnAxisState\nto\nstandstill\nif there is no error on\nthe axis. If an error is detected, the state of the axis is set to\nerrorstop\n.\nIf the inputs\nEnable\n,\nbRegulatorOn\nand\nbDriveStart\nare\nTRUE\nbut the output\nStatus\nremains\nFALSE\nfor a long time,\na possible reason is a hardware problem with the power stage of the\ndrive.\nIf power fails (also during operation),\nnAxisState\nof the\nreferenced axis is set to\nerrorstop\n.\nFor encoder axes, such as\nFREE_ENCODER_REF\nor an encoder axis below\na drive, calling\nMC_Power\nis not necessary.\nIf called on an encoder axis, MC_Power has no effect on the\naxis and the output\nStatus\nremains\nFALSE\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3",
+          "Comment": "Reference to the axis"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Enable",
+          "Type": "BOOL",
+          "Comment": "TRUE: Enables the execution of the function block."
+        },
+        [
+          "bRegulatorOn",
+          "BOOL",
+          "TRUE: Enables the power stage."
+        ],
+        [
+          "bDriveStart",
+          "BOOL",
+          "TRUE: Disables the quickstop mechanism."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Status",
+          "Type": "BOOL",
+          "Comment": "TRUE: Axis is ready to move."
+        },
+        [
+          "bRegulatorRealState",
+          "BOOL",
+          "TRUE: The power stage has been switched on."
+        ],
+        [
+          "bDriveStartRealState",
+          "BOOL",
+          "TRUE: Drive is not blocked by the quickstop mechanism."
+        ],
+        [
+          "Busy",
+          "BOOL",
+          "TRUE: Execution of the function block has not been\nfinished yet."
+        ],
+        [
+          "Error",
+          "BOOL",
+          "TRUE: Error has occurred within the function block\nduring execution."
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

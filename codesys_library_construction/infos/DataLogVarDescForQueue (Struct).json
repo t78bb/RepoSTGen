@@ -1,0 +1,49 @@
+{
+  "library": "AC_DataLog",
+  "title": "DataLogVarDescForQueue (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_DataLog/Current/AC_DataLog/Queue/DataLogVarDescForQueue.html",
+  "page_title": "DataLogVarDescForQueue (STRUCT)",
+  "text": "\nTYPE DataLogVarDescForQueue : STRUCT\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Name": "pbyValue",
+          "Type": "POINTER TO BYTE"
+        },
+        {
+          "Name": "pbyInstancePath",
+          "Type": "POINTER TO BYTE"
+        },
+        {
+          "Name": "tc",
+          "Type": "IBaseLibrary.TypeClass"
+        },
+        {
+          "Name": "uiSize",
+          "Type": "UINT"
+        },
+        {
+          "Name": "udiHash",
+          "Type": "UDINT"
+        },
+        {
+          "Name": "timeStamp",
+          "Type": "SysTimeRtc.SYSTIMEDATE"
+        },
+        {
+          "Name": "xLogBias",
+          "Type": "BOOL"
+        },
+        {
+          "Name": "iBias",
+          "Type": "INT"
+        }
+      ]
+    }
+  ]
+}

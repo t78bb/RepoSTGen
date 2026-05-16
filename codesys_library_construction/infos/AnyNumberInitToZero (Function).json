@@ -1,0 +1,28 @@
+{
+  "library": "DNP3",
+  "title": "AnyNumberInitToZero (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Functions/AnyNumber/AnyNumberInitToZero.html",
+  "page_title": "AnyNumberInitToZero (FUN)",
+  "text": "\nFUNCTION AnyNumberInitToZero :\nError\nInitialize an AnyNumber to 0, keep the base type.\nReturns Error.AnyNumberError if no base type was set before.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "AnyNumberInitToZero",
+          "Type": "Error"
+        },
+        {
+          "Scope": "Inout",
+          "Name": "dest",
+          "Type": "AnyNumber"
+        }
+      ]
+    }
+  ]
+}

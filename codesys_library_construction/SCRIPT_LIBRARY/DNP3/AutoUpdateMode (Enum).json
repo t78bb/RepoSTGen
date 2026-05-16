@@ -1,0 +1,33 @@
+{
+  "library": "DNP3",
+  "title": "AutoUpdateMode (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/AutoUpdateMode.html",
+  "page_title": "AutoUpdateMode (ENUM)",
+  "text": "\nTYPE AutoUpdateMode :\nAuto update mode for a given point type.\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "NoUpdate",
+          "Initial": "0",
+          "Comment": "No cyclic reads for the given point type."
+        },
+        {
+          "Name": "OnlyForPointObserver",
+          "Initial": "",
+          "Comment": "Cyclic reads for the given point type limited to points used\nby PointObservers."
+        },
+        {
+          "Name": "AllPoints",
+          "Initial": "",
+          "Comment": "Cyclic reads for all points of the given point type."
+        }
+      ]
+    }
+  ]
+}

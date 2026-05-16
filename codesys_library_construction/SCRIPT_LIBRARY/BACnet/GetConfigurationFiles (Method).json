@@ -1,0 +1,36 @@
+{
+  "library": "BACnet",
+  "title": "GetConfigurationFiles (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/Device/pou-BACnetDevice/GetConfigurationFiles.html",
+  "page_title": "BACnetDevice.GetConfigurationFiles (METH)",
+  "text": "\nMETHOD GetConfigurationFiles : CmpBACnet.IEC_BACNET_STATUS\nGets the Configuration_Files-List of this BACnet object. The returned pointer is\nallocated with the corresponding data, whereas the user has to use\nFreeStackAllocatedMemory\n,\nto free the allocated memory after data usage.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetConfigurationFiles",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Output",
+          "Name": "uiListCount",
+          "Type": "CmpBACnet.IEC_BACNET_ELEMENT_COUNT",
+          "Comment": "The length of the list in the following pointer."
+        },
+        [
+          "pList",
+          "POINTER TO\nCmpBACnet.IEC_BACNET_OBJECT_ID",
+          "The returned Pointer gets filled with the data of the List AND (!) the data referenced within\nthat list (i.e. strings, etc.).\nAfter usage, useFreeStackAllocatedMemory, to free the used memory again."
+        ]
+      ]
+    }
+  ]
+}

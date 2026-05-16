@@ -1,0 +1,32 @@
+{
+  "library": "String Builder Base",
+  "title": "GetFirstSegment (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Builder Base/Current/BuilderBase/Interfaces/pou-IBuilder/Segments/GetFirstSegment.html",
+  "page_title": "IBuilder.GetFirstSegment (METH)",
+  "text": "\nMETHOD GetFirstSegment : POINTER TO BYTE\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetFirstSegment",
+          "Type": "POINTER TO BYTE"
+        },
+        {
+          "Scope": "Output",
+          "Name": "udiSize",
+          "Type": "UDINT"
+        },
+        [
+          "eErrorID",
+          "ERROR"
+        ]
+      ]
+    }
+  ]
+}

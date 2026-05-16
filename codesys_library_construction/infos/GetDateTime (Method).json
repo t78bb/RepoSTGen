@@ -1,0 +1,31 @@
+{
+  "library": "Util",
+  "title": "GetDateTime (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/TimerSwitch/FunctionBlocks/pou-TimerSwitch/IDateTimeProvider/GetDateTime.html",
+  "page_title": "TimerSwitch.GetDateTime (METH)",
+  "text": "\nMETHOD FINAL GetDateTime : ULINT\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetDateTime",
+          "Type": "ULINT",
+          "Comment": "date and (UTC) time in milliseconds since 1.1.1970 00:00:00.000"
+        },
+        {
+          "Scope": "Output",
+          "Name": "eErrorID",
+          "Type": "ERROR",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "library": "BACnet",
+  "title": "AddExceptionReference (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/Schedule/pou-BACnetSchedule/ExceptionSchedule/AddExceptionReference.html",
+  "page_title": "BACnetSchedule.AddExceptionReference (METH)",
+  "text": "\nMETHOD AddExceptionReference : CmpBACnet.IEC_BACNET_STATUS\nAdds a reference (to a BACnet-Calendar-Object) to the Exception_Schedule-Property of this BACnet-Object.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "AddExceptionReference",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "calendarInstance",
+          "Type": "CmpBACnet.IEC_BACNET_DWORD",
+          "Comment": "The instance number of the calendar object to reference."
+        },
+        [
+          "pEntries",
+          "POINTER TO\nCmpBACnet.IEC_BACNET_TIME_VALUE",
+          "The times and values during the calendar entries which\ncorrespond to the exception date."
+        ],
+        [
+          "entryCount",
+          "CmpBACnet.IEC_BACNET_ELEMENT_COUNT",
+          "The number of times and values for the exceptions."
+        ],
+        [
+          "eventPriority",
+          "BYTE",
+          "The priority with which the values are written."
+        ]
+      ]
+    }
+  ]
+}

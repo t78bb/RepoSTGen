@@ -1,0 +1,36 @@
+{
+  "library": "AlarmManager",
+  "title": "ActivateAlarmInstance (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/pou-IAlarmHandler9/ActivateAlarmInstance.html",
+  "page_title": "IAlarmHandler9.ActivateAlarmInstance (METH)",
+  "text": "\nMETHOD ActivateAlarmInstance : BOOL\nThe alarm can be deactivated by calling IAlarmHandler9.DeactivateAlarmInstance.\nReturns TRUE if the operation was successful and the alarm was found.\nThis method uses semaphore synchronization with AlarmEvaluation_PRG.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "ActivateAlarmInstance",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "pFBInstance",
+          "Type": "POINTER TO BYTE",
+          "Comment": "Pointer to the template FB instance. Use THIS when inside\nthe function block."
+        },
+        [
+          "uiTemplateAlarmId",
+          "ALARM_ID",
+          "Alarm ID within the related alarm group template.\nThe alarm ID is inside the enum Alm_<Name of the alarm group template>_Alarm_IDs"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现对输入目标方向的反转操作。",
+  "provide_code": "FUNCTION cmdReverse : TargetDirect\nVAR_INPUT\n\tinput\t\t:TargetDirect;\nEND_VAR"
+}

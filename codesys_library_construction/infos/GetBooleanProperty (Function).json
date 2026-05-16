@@ -1,0 +1,28 @@
+{
+  "library": "SM3_Basic",
+  "title": "GetBooleanProperty (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/Project-Information/GetBooleanProperty.html",
+  "page_title": "GetBooleanProperty (FUN)",
+  "text": "\nFUNCTION GetBooleanProperty : BOOL\nThis function has been automatically generated from the project information.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetBooleanProperty",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Input",
+          "Name": "stKey",
+          "Type": "WSTRING"
+        }
+      ]
+    }
+  ]
+}

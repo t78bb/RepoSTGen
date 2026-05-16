@@ -1,0 +1,28 @@
+{
+  "library": "SM3_CNC",
+  "title": "AppendGExpToken (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/GSentence/pou-SMC_GSentenceQueue/AppendGExpToken.html",
+  "page_title": "SMC_GSentenceQueue.AppendGExpToken (METH)",
+  "text": "\nMETHOD AppendGExpToken : BOOL\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "AppendGExpToken",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Inout Const",
+          "Name": "et",
+          "Type": "SMC_GExpression_Token"
+        }
+      ]
+    }
+  ]
+}

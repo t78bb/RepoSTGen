@@ -1,0 +1,36 @@
+{
+  "library": "BACnet2",
+  "title": "PropertyAddrString (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/Utilities/ToString/PropertyAddrString.html",
+  "page_title": "PropertyAddrString (FUN)",
+  "text": "\nFUNCTION PropertyAddrString : STRING\nProvides descriptive object property address string.\nShould be used for debugging / logging only.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "PropertyAddrString",
+          "Type": "STRING"
+        },
+        {
+          "Scope": "Input",
+          "Name": "instNumber",
+          "Type": "CmpBACnet.IEC_BACNET_INST_NUMBER"
+        },
+        [
+          "objId",
+          "CmpBACnet.IEC_BACNET_OBJECT_ID"
+        ],
+        [
+          "propID",
+          "CmpBACnet.IEC_BACNET_PROPERTY_ID"
+        ]
+      ]
+    }
+  ]
+}

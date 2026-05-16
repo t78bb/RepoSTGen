@@ -1,0 +1,39 @@
+{
+  "library": "String Builder",
+  "title": "_Builder (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Builder/Current/Builder/Function-Blocks/_Builder.html",
+  "page_title": "_Builder (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL _Builder EXTENDS MBM.Disposable IMPLEMENTS\nIBuilder\nA Builder is used to efficiently build a string using Write methods.\nIt minimizes memory copying.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input Const",
+          "Name": "itfString",
+          "Type": "IString"
+        },
+        [
+          "udiInitialCapacity",
+          "UDINT"
+        ],
+        [
+          "pbyBuffer",
+          "POINTER TO BYTE"
+        ],
+        [
+          "udiBufferSize",
+          "UDINT"
+        ],
+        [
+          "usiExtensionFactor",
+          "USINT"
+        ]
+      ]
+    }
+  ]
+}

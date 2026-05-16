@@ -1,0 +1,117 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_ReadNCTokens (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/File/ReadNCFile/Token/SMC_ReadNCTokens.html",
+  "page_title": "SMC_ReadNCTokens (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_ReadNCTokens\nSMC_ReadNCTokens\nreads from a\nSMC_TokenQueue\nof\nSMC_Token\nand transforms it\ninto a\nSMC_CNC_REF\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "ncprog",
+          "Type": "SMC_CNC_REF",
+          "Comment": "Output CNC program"
+        },
+        [
+          "tokens",
+          "SMC_TokenQueue",
+          "Input token queue"
+        ],
+        {
+          "Scope": "Input",
+          "Name": "bExecute",
+          "Type": "BOOL",
+          "Comment": "WhileTRUE, the function block is active."
+        },
+        [
+          "pBuffer",
+          "POINTER TO BYTE",
+          "Pointer on a sufficiently large, free data area (buffer) that is allocated in the IEC application.\nIt is strongly recommended to allocate the buffer asARRAY[0..x]OF|ioSMC_GCODE_WORD|in order to make sure to have a correct data alignment.\nA definition ofARRAY[0..x]OFBYTEmay lead to a misaligned data access on some platforms."
+        ],
+        [
+          "dwBufferSize",
+          "DWORD",
+          "Size of the buffer in byte"
+        ],
+        [
+          "pStringBuffer",
+          "POINTER TOSMC_StringBuffer",
+          "Pointer to an object of typeSMC_StringBufferThis object is used to store strings that are defined in the G-code program in order to write them to variables using G36&37.\nIf the pointer is not set (0) and string constants are used in the G-code program, an error will be generated.(Â´Â´SMC_RNCF_NO_STRINGBUFFERÂ´Â´)."
+        ],
+        [
+          "pvl",
+          "POINTER TOSMC_VARLIST",
+          "If there arenât variables in the CNC programm, this input\nisnât set.SMC_VARLIST"
+        ],
+        [
+          "fDefaultVel",
+          "LREAL",
+          ""
+        ],
+        [
+          "fDefaultAccel",
+          "LREAL",
+          ""
+        ],
+        [
+          "fDefaultDecel",
+          "LREAL",
+          ""
+        ],
+        [
+          "fDefaultVelFF",
+          "LREAL",
+          "Default velocity for fast forward (G0), FF word"
+        ],
+        [
+          "fDefaultAccelFF",
+          "LREAL",
+          "Default acceleration for fast forward (G0), EF+ word"
+        ],
+        [
+          "fDefaultDecelFF",
+          "LREAL",
+          "Default deceleration for fast forward (G0), EF- word. A non-\nnegative value is expected."
+        ],
+        [
+          "b3DMode",
+          "BOOL",
+          "If TRUE, an implicit G17 is prepended to the G-code."
+        ],
+        [
+          "bEnableSyntaxChecks",
+          "BOOL",
+          "Turns on syntax checks that will detect invalid g-code and\nstop with an error in this case"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bDone",
+          "Type": "BOOL",
+          "Comment": "TRUEif parameter is available"
+        },
+        [
+          "bBusy",
+          "BOOL",
+          "TRUEwhile execution of function block is not finished."
+        ],
+        [
+          "bError",
+          "BOOL",
+          "TRUEsignals that an error has occurred within\nthe function block."
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification,SMC_ERROR"
+        ]
+      ]
+    }
+  ]
+}

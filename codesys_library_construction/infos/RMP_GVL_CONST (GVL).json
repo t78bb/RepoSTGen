@@ -1,0 +1,27 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "RMP_GVL_CONST (GVL)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_RMP_ReliableMessageProtocol/RMP_GVL_CONST.html",
+  "page_title": "RMP_GVL_CONST (GVL)",
+  "text": "\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Constant",
+          "Name": "gc_SizeMessageData",
+          "Type": "UINT",
+          "Initial": "64",
+          "Comment": "The size of the message data.Note: Currently this constant is not used but the data size is set to 64 without using the constant"
+        }
+      ]
+    }
+  ]
+}

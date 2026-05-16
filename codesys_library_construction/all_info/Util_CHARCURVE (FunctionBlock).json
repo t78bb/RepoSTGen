@@ -1,0 +1,47 @@
+{
+  "library": "Util",
+  "title": "CHARCURVE (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/Function-Manipulators/CHARCURVE.html",
+  "page_title": "CHARCURVE (FB)",
+  "text": "Analog Monitors\nHYSTERESIS (FunctionBlock)\nLIMITALARM (FunctionBlock)\nBCD Conversions\nBCD_TO_BYTE (Function)\nBCD_TO_DWORD (Function)\nBCD_TO_INT (Function)\nBCD_TO_WORD (Function)\nBYTE_TO_BCD (Function)\nDWORD_TO_BCD (Function)\nINT_TO_BCD (Function)\nWORD_TO_BCD (Function)\nBit/Byte Functions\nBIT_AS_BYTE (FunctionBlock)\nBIT_AS_DWORD (FunctionBlock)\nBIT_AS_WORD (FunctionBlock)\nBYTE_AS_BIT (FunctionBlock)\nDWORD_AS_BIT (FunctionBlock)\nEXTRACT (Function)\nGETBIT (Function)\nPACK (Function)\nPUTBIT (Function)\nSETBIT (Function)\nSWITCHBIT (Function)\nUNPACK (FunctionBlock)\nWORD_AS_BIT (FunctionBlock)\nConstants\nTextBlockSize (ParamList)\nController\nPD (FunctionBlock)\nPID\n(FB)\nTemperature control with PID and LIMIT\nPID_FIXCYCLE (FunctionBlock)\nDatatypes\nGEN_MODE (Enum)\nPOINT (Struct)\nPT_SIZE (Struct)\nEncoding\nBASE64 (Function)\nFunction Manipulators\nCHARCURVE (FunctionBlock)\nRAMP_INT (FunctionBlock)\nRAMP_REAL (FunctionBlock)\nGray Conversions\nBYTE_TO_GRAY (Function)\nDWORD_TO_GRAY (Function)\nGRAY_TO_BYTE (Function)\nGRAY_TO_DWORD (Function)\nGRAY_TO_WORD (Function)\nWORD_TO_GRAY (Function)\nHEX/ASCII Functions\nBYTE_TO_HEXinASCII (Function)\nHEXinASCII_TO_BYTE (Function)\nWORD_AS_STRING (Function)\nLibrary Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nMathematical Functions\nDERIVATIVE (FunctionBlock)\nINTEGRAL (FunctionBlock)\nLIN_TRAFO (FunctionBlock)\nROTATION_DIFFERENCE (FunctionBlock)\nSTATISTICS_INT (FunctionBlock)\nSTATISTICS_REAL (FunctionBlock)\nVARIANCE (FunctionBlock)\nSignals\nBLINK (FunctionBlock)\nFREQ_MEASURE (FunctionBlock)\nGEN (FunctionBlock)\nTimerSwitch\nEnums\nERROR (Enum)\nPERIOD (Enum)\nWEEKDAY (Enum)\nFunctionBlocks\nDateTimeProvider (FunctionBlock)\nGetDateTime (Method)\nTimerSwitch (FunctionBlock)\nIDateTimeProvider\nFunctions\nCombineDateTime (Function)\nDateTimeFromWeek (Function)\nDayOfWeek (Function)\nGetDateTime (Function)\nGetLocalDateTime (Function)\nGetTimeStampsDifference (Function)\nIsLeapYear (Function)\nJoinDateTime (Function)\nLocalDateTime (Function)\nSeparateDateTime (Function)\nSplitDateTime (Function)\nWeekOfYear (Function)\nGlobalConstants\nDAY_FLAGS (GVL)\nTSW (GVL)\nInterfaces\nIDateTimeProvider (Interface)\nGetDateTime (Method)\nStructs\nDateTime (Struct)\nSchedule (Struct)\nSegment (Struct)\nTimeZone (Struct)\nTypes\nDAY (Alias)\nDAYS (Alias)\nHOUR (Alias)\nMILLISECOND (Alias)\nMINUTE (Alias)\nMONTH (Alias)\nSECOND (Alias)\nTZ_NAME (Alias)\nWEEK (Alias)\nYEAR (Alias)\nFile and Project Information\nLibrary Reference\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysTimeRtc\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nUtil\nDocs\n»\nFunction\nManipulators\n»\nCHARCURVE (FB)\nCHARCURVE (FB)\nÂ¶\nFUNCTION_BLOCK CHARCURVE\nMaps an input signal onto a characteristic curve\nThe characteristic curve is given by an array of POINTs, which include a set of X-values\nwith their corresponding Y-values.\nExample in ST:\nVAR\nCHARACTERISTIC_LINE\n:\nCHARCURVE\n;\nKL\n:\nARRAY\n[0..10]\nOF\nPOINT\n:=\n[(X:=0,Y:=0),(X:=250,Y:=50),\n(X:=500,Y:=150),(X:=750,Y:=400), 7((X:=1000,Y:=1000))]\n;\nCOUNTER\n:\nINT\n;\nEND_VAR\nCOUNTER\n:=\nCOUNTER\n+10\n;\nsupply\nCHARCURVE\nwith\nfor\nexample\na\nconstantly\nincreasing\nvalue\nCHARACTERISTIC_LINE\n(\nIN\n:=\nCOUNTER\n,\nN\n:=\n5\n,\nP\n:=\nKL\n);\nIllustration of the resulting curve\nInOut:\nScope\nName\nType\nComment\nInput\nIN\nINT\nInput signal\nN\nBYTE\nNumber of points defining the characteristic curve : 2 <=\nN\n<= 11\nInout\nP\nARRAY [0..10] OF\nPOINT\nArray of points to describe the characteristic curve\nOutput\nOUT\nINT\nOutput variable, contains the manipulated value\nERR\nBYTE\n0 : No error\n1 : Error in\nP\n: wrong sequence (completely tested, only if\nIN\nis equal to largest X-value of\nP\n)\n2 :\nIN\noutside of limits of\nP\n4 :\nN\ninvalid, number of points not within the allowed range 2..11",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "IN",
+          "Type": "INT",
+          "Comment": "Input signal"
+        },
+        [
+          "N",
+          "BYTE",
+          "Number of points defining the characteristic curve : 2 <=N<= 11"
+        ],
+        {
+          "Scope": "Inout",
+          "Name": "P",
+          "Type": "ARRAY [0..10] OFPOINT",
+          "Comment": "Array of points to describe the characteristic curve"
+        },
+        {
+          "Scope": "Output",
+          "Name": "OUT",
+          "Type": "INT",
+          "Comment": "Output variable, contains the manipulated value"
+        },
+        [
+          "ERR",
+          "BYTE",
+          "0 : No error1 : Error inP: wrong sequence (completely tested, only ifINis equal to largest X-value ofP)2 :INoutside of limits ofP4 :Ninvalid, number of points not within the allowed range 2..11"
+        ]
+      ]
+    }
+  ]
+}

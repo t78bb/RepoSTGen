@@ -1,0 +1,76 @@
+{
+  "library": "PLCopen Safety FBs",
+  "title": "SF_Equivalent (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/PLCopen Safety FBs/Current/PLCopenSafetyFBs/Function-Blocks/SF_Equivalent.html",
+  "page_title": "SF_Equivalent (FB)",
+  "text": "PLCopenSafetyFBs\nEnums\nFBS_ANTI (Enum)\nFBS_EDM (Enum)\nFBS_ENSWITCH (Enum)\nFBS_ENSWITCH2 (Enum)\nFBS_EQUI (Enum)\nFBS_ESPE (Enum)\nFBS_ESTOP (Enum)\nFBS_GUARD (Enum)\nFBS_GUARDLOCK2 (Enum)\nFBS_MODESEL (Enum)\nFBS_OUTCONTROL (Enum)\nFBS_PSE (Enum)\nFBS_RESBUT (Enum)\nFBS_SAFEREQ (Enum)\nFBS_TESTSEN (Enum)\nFBS_TWOHAND (Enum)\nFunction Blocks\nSF_Antivalent (FunctionBlock)\nSF_EDM (FunctionBlock)\nSF_ESPE (FunctionBlock)\nSF_EmergencyStop (FunctionBlock)\nSF_EnableSwitch (FunctionBlock)\nSF_EnableSwitch_2 (FunctionBlock)\nSF_Equivalent (FunctionBlock)\nSF_Guard (FunctionBlock)\nSF_GuardLocking_2 (FunctionBlock)\nSF_ModeSelector (FunctionBlock)\nSF_OutControl (FunctionBlock)\nSF_PSE (FunctionBlock)\nSF_ResetButton (FunctionBlock)\nSF_SafetyRequest (FunctionBlock)\nSF_TestableSafetySensor (FunctionBlock)\nSF_TwoHandControlTypeII (FunctionBlock)\nSF_TwoHandControlTypeIII (FunctionBlock)\nFile and Project Information\nLibrary Reference\nStandard\nLibrary Identification\nLibrary Properties\nSysTimeCore\nLibrary Identification\nLibrary Properties\nPLCopen Safety FBs\nDocs\n»\nPLCopenSafetyFBs\n»\nFunction\nBlocks\n»\nSF_Equivalent (FB)\nSF_Equivalent (FB)\nÂ¶\nFUNCTION_BLOCK SF_Equivalent\nThis function block converts two equivalent SAFEBOOL inputs (both NO or NC) to one SAFEBOOL output, includ-ing discrepancy time monitoring.\nThis function block should not be used stand-alone since it has no restart interlock. It is required to connect the output to other safety related functionalities.\nFunction block according to PLCopen, Technical Committee 5: Safety Software (Technical Specification), Part 1: Concepts and Function Blocks, Version 2.01 (2020-2)\nInOut:\nScope\nName\nType\nInitial\nComment\nInput\nActivate\nBOOL\nFALSE\nActivation of the FB.\nS_ChannelA\nBOOL\nFALSE\nInput A for logical connection.\nS_ChannelB\nBOOL\nFALSE\nInput B for logical connection.\nDiscrepancyTime\nTIME\nTIME#0ms\nMaximum monitoring time for discrepancy status of both\ninputs.\nOutput\nReady\nBOOL\nFALSE\nActivation of the FB. TRUE indicates that the FB is\nactivated and the outputs results are valid, FALSE the FB is\nnot active and the program is not executed.\nS_EquivalentOut\nBOOL\nFALSE\nSafety related output\nSafetyDemand\nBOOL\nFALSE\nOutput indicating that the FB is active and the primary\nsafety function is demanded (e.g. related to the safety\nfunctionality).\nError\nBOOL\nFALSE\nError flag\nDiagCode\nWORD\n0\nDiagnostic register",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "Activate",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "Activation of the FB."
+        },
+        [
+          "S_ChannelA",
+          "BOOL",
+          "FALSE",
+          "Input A for logical connection."
+        ],
+        [
+          "S_ChannelB",
+          "BOOL",
+          "FALSE",
+          "Input B for logical connection."
+        ],
+        [
+          "DiscrepancyTime",
+          "TIME",
+          "TIME#0ms",
+          "Maximum monitoring time for discrepancy status of both\ninputs."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Ready",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "Activation of the FB. TRUE indicates that the FB is\nactivated and the outputs results are valid, FALSE the FB is\nnot active and the program is not executed."
+        },
+        [
+          "S_EquivalentOut",
+          "BOOL",
+          "FALSE",
+          "Safety related output"
+        ],
+        [
+          "SafetyDemand",
+          "BOOL",
+          "FALSE",
+          "Output indicating that the FB is active and the primary\nsafety function is demanded (e.g. related to the safety\nfunctionality)."
+        ],
+        [
+          "Error",
+          "BOOL",
+          "FALSE",
+          "Error flag"
+        ],
+        [
+          "DiagCode",
+          "WORD",
+          "0",
+          "Diagnostic register"
+        ]
+      ]
+    }
+  ]
+}

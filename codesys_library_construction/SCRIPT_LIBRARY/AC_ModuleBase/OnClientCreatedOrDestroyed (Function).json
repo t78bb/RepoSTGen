@@ -1,0 +1,31 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "OnClientCreatedOrDestroyed (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/GenVisu/OnClientCreatedOrDestroyed.html",
+  "page_title": "OnClientCreatedOrDestroyed (FUN)",
+  "text": "\nFUNCTION OnClientCreatedOrDestroyed : BOOL\nThis function is called when a visu client is created or destroyed.\nIt clears the history of the client and changes the frame to default start page.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "OnClientCreatedOrDestroyed",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "pAC_Visu_Base",
+          "Type": "POINTER TOAC_Visu_Base",
+          "Comment": "Pointer to the newly added/destroyed visu client"
+        }
+      ]
+    }
+  ]
+}

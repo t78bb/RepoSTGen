@@ -1,0 +1,29 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_CIRC_MODE (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/Basic-types/SMC_CIRC_MODE.html",
+  "page_title": "SMC_CIRC_MODE (ENUM)",
+  "text": "\nTYPE SMC_CIRC_MODE :\nThe circ mode defines how an arc segment is described.\nSee\nMC_MoveCircularAbsolute\nand\nMC_MoveCircularRelative\n.\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "BORDER",
+          "Comment": "The user defines the end point and a border point (inputAuxPoint)\non the sector of the circle, which shall be cruised by the machine.(InputPathChoiceis not considered for modeBORDER.)Advantage of this mode: the border point usually can be reached by\nthe machine, i.e. it can be teached.Inconvenience of this mode: Restriction to angles < 2Ï in one single\ncommand.NoteThe three points (starting point, end point, and aux point)\nmust not be collinear."
+        },
+        {
+          "Name": "CENTER",
+          "Comment": "The user defines the end point and the center point (inputAuxPoint)\nof the circle.When using this mode, the inputPathChoicedefines, which of\nthe two possible arcs is used.  The plane normal is the unit vector\nin the direction of (start - center) x (dest - center).\nThe direction of the arc is chosen according to the rule of right\nthumb: counter-clockwise direction is along the fingers bending around\nthe axis of the thumb which represents the normal vector.Inconveniencies of this mode:Restriction to angles < 2Ï and â  Ï in one single command;The center point usually cannot be teached in due to collisions\nwith obstacles.NoteIf the center point is not exactly at the same distance to\nthe start- and the end-point (which is often the case due to the\nlimited precision in which the center-point is programmed), then\nit is projected onto the perpendicular bisector of start- and\nend-point.\nOnce the center-point is too far off (more than 1 percent of the\nradius), an error is returned."
+        },
+        {
+          "Name": "RADIUS",
+          "Comment": "The user defines the end point and the perpendicular vector of the\ncircle plane according to the rule of right thumb:  counter-clockwise\ndirection is along the fingers bending around the axis of the thumb.The normal vector is the inputAuxPoint.  That is,AuxPointis not a position but a direction vector.\nThe radius of the circle is the length of the vector.If the distance between start- and end-point is not equal to the\ndiameter, there are two possible circles with the given radius.The inputPathChoicedefines the direction of the arc.\nThe system then chooses the circle for which the distance from\nstart- to end-point is shorter.  This means that the total angle\nwill be at most Ï.If the movement is commanded in ACS-coordinates, then the auxiliary\npoint will just be transformed into MCS using the kinematic\ntransformation in order to interprete it as an MCS-direction.NoteIf start- and end-point are not in the plane defined by\nthe normal vector, a helical movement from start- to end-point\nis created.  That means a circular movement in the plane plus\na linear movement orthogonal to the plane.Inconveniences of this mode:Restriction to angles <= Ï in one single command;The perpendicular vector has to be computed.Example:\nAuxPoint = (50,0,0) -> Circle in plane parallel to yz\nplane with radius 50 and rotation around axis\nparallel to x-axis according to the rule of right thumb\n(CoordSystem = MCS)"
+        }
+      ]
+    }
+  ]
+}

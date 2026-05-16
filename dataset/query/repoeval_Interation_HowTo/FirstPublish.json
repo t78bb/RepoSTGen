@@ -1,0 +1,5 @@
+{
+  "requirement": "This code is intended to implement an MQTT message publishing functionality with a predefined topic, payload, and quality of service settings.",
+  "provide_code": "FUNCTION_BLOCK FirstPublish\nVAR_INPUT\nEND_VAR\nVAR_OUTPUT\nEND_VAR",
+  "function_name": "FirstPublish"
+}

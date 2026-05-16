@@ -1,0 +1,23 @@
+{
+  "library": "MemoryUtils",
+  "title": "Skip (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/MemoryUtils/Current/MemoryUtils/Functionblocks/pou-ByteBuffer/Skip.html",
+  "page_title": "ByteBuffer.Skip (METH)",
+  "text": "\nMETHOD Skip\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "len",
+          "Type": "UINT"
+        }
+      ]
+    }
+  ]
+}

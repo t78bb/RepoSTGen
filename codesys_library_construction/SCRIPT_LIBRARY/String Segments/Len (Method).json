@@ -1,0 +1,28 @@
+{
+  "library": "String Segments",
+  "title": "Len (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Segments/Current/Strings/Functionblocks/pou-_UTF8String/IStringRepresentation/Len.html",
+  "page_title": "_UTF8String.Len (METH)",
+  "text": "\nMETHOD FINAL Len : UDINT\nReturns the number of bytes required for the UTF-8 encoded segment of this\nIString\ninstance.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "Len",
+          "Type": "UDINT"
+        },
+        {
+          "Scope": "Output",
+          "Name": "eErrorID",
+          "Type": "ERROR"
+        }
+      ]
+    }
+  ]
+}

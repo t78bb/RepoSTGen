@@ -1,0 +1,45 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_SWITCHING_STATE (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/DataTypes/DriveInterface/SMC_SWITCHING_STATE.html",
+  "page_title": "SMC_SWITCHING_STATE (ENUM)",
+  "text": "\nTYPE SMC_SWITCHING_STATE :\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Name": "SMC_ST_SWITCHED_OFF",
+          "Initial": "0"
+        },
+        {
+          "Name": "SMC_ST_SWITCHING_ON",
+          "Initial": "1"
+        },
+        {
+          "Name": "SMC_ST_SWITCHED_ON",
+          "Initial": "2"
+        },
+        {
+          "Name": "SMC_ST_SWITCHING_OFF",
+          "Initial": "3"
+        },
+        {
+          "Name": "SMC_ST_UNEXPECTED_SWITCHED_OFF",
+          "Initial": "4"
+        },
+        {
+          "Name": "SMC_ST_HOMING",
+          "Initial": "5"
+        },
+        {
+          "Name": "SMC_ST_INITIALIZING",
+          "Initial": "255"
+        }
+      ]
+    }
+  ]
+}

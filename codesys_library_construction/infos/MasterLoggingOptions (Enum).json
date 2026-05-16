@@ -1,0 +1,68 @@
+{
+  "library": "DNP3",
+  "title": "MasterLoggingOptions (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/MasterLoggingOptions.html",
+  "page_title": "MasterLoggingOptions (ENUM)",
+  "text": "\nTYPE MasterLoggingOptions :\nLogging options - can be combined with bitwise OR operation to enable specific logging.\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "None",
+          "Initial": "16#0",
+          "Comment": ""
+        },
+        {
+          "Name": "StartStop",
+          "Initial": "16#1",
+          "Comment": "Master start / stop."
+        },
+        {
+          "Name": "Callbacks",
+          "Initial": "16#2",
+          "Comment": "Master callbacks"
+        },
+        {
+          "Name": "CallbackInfo",
+          "Initial": "16#4",
+          "Comment": "Callback information"
+        },
+        {
+          "Name": "Commands",
+          "Initial": "16#8",
+          "Comment": "Commands"
+        },
+        {
+          "Name": "PointChanges",
+          "Initial": "16#10",
+          "Comment": "Point changes"
+        },
+        {
+          "Name": "PointObserver",
+          "Initial": "16#20",
+          "Comment": "Point Observer"
+        },
+        {
+          "Name": "SessionStatistics",
+          "Initial": "16#40000000",
+          "Comment": "Session statistics"
+        },
+        {
+          "Name": "Internals",
+          "Initial": "16#80000000",
+          "Comment": "Internals"
+        },
+        {
+          "Name": "All",
+          "Initial": "16#FFFFFFFF",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

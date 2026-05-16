@@ -1,0 +1,82 @@
+{
+  "library": "SM3_Robotics",
+  "title": "MC_TrackConveyorBelt (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/AdministrativeConfiguration/Coordinate-systems/MC_TrackConveyorBelt.html",
+  "page_title": "MC_TrackConveyorBelt (FB)",
+  "text": "\nFUNCTION_BLOCK MC_TrackConveyorBelt\nThis function block tracks a piece on a conveyor belt.\nBased on the position and orientation of the conveyor belt\nand on the position and orientation of the piece relative to the\nconveyor belt, the tracking is performed using\nSMC_SetDynCoordTransformEx\n.\nThe position, velocity, etc. of the conveyor belt is given by a\nsingle axis.\nThis FB may be called with a new rising edge on Execute only after the\nconfigured dynamic coordinate system is no longer in use by any movement,\notherwise error SMC_AXIS_GROUP_PCS_STILL_IN_USE will be returned.\nSee output\nInUse\n.\nNote\nNo dead time compensation is done. In case the axis is an encoder,\nit is recommended to use a logical axis to account for the dead time.\nSee also\nMC_TrackRotaryTable\n.\nThe function block\nSMC_SetDynCoordTransformEx\nprovides a more\ngeneral interface.\nThis FB does not start a movement (administrative FB). The movement is\ninitiated by a command in PCS.\nThe following example demonstrates the usage of\nMC_TrackConveyorBelt\n.\nThe task is to manipulate a workpiece, starting from a certain position P\n(xPCS; yPCS; 0) on the workpiece.\nThe workpiece is lying on a conveyor belt (CB) which is moving with\nspeed vCB.  The workpiece is detected by a digital camera, which also\nprovides the position (and orientation) of the workpiece relative to\nthe conveyor belt.\nAt time t0, when the workpiece is detected by the camera,\nMC_TrackConveyorBelt\nis executed.\nAt the same time, a movement to position P in PCS is started.\nThe axis group starts to move from its waiting position W (MCS)\ntowards P (PCS).\nAt time t1 the axis group has reached P. In the meantime the\nconveyor belt has moved by the distance dx0_1.\nAfter P has been reached, the process can be started. All positions\nwithin the process have to be related to the PCS.\nAt time t2 the process is finished and the axis group moves back to\nits waiting position WMCS. A possible resulting trajectory of the TCP\nis shown in the picture below.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "AxisGroup",
+          "Type": "AXIS_GROUP_REF_SM3",
+          "Comment": "Reference to the axis group."
+        },
+        [
+          "ConveyorBelt",
+          "AXIS_REF_SM3",
+          "Reference to the axis of the conveyor belt.\nIfConveyorBelt.bRegulatorOnis set when the FB is started,\nthe set values will be used.  Otherwise the act values will\nbe used."
+        ],
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Comment": "Start the action at rising edge"
+        },
+        [
+          "ConveyorBeltOrigin",
+          "MC_COORD_REF",
+          "Specifies the position and orientation of the conveyor belt in\nworld coordinates (WCS).\nThis defines a coordinate system of the conveyor belt in\nwhich the position of an object lying on the conveyor belt\ncan be specified.\nThe x-axis of the coordinate system of the conveyor belt has\nto point into the direction of movement of the conveyor belt."
+        ],
+        [
+          "InitialObjectPosition",
+          "MC_COORD_REF",
+          "Specifies the position and orientation of an object lying on\nthe conveyor belt relative to the conveyor belt."
+        ],
+        [
+          "CoordSystem",
+          "SMC_COORD_SYSTEM",
+          "Which PCS is to be set (PCS_1 or PCS_2)"
+        ],
+        [
+          "Name",
+          "STRING",
+          "The name of the coordinate system."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Done",
+          "Type": "BOOL",
+          "Comment": "The transformation has been set successfully"
+        },
+        [
+          "Busy",
+          "BOOL",
+          "The FB is not finished"
+        ],
+        [
+          "InUse",
+          "BOOL",
+          "Signals that the axis group still needs the\nreferenced dynamic coordinate system.\nA new rising edge ofExecutewill lead to the errorSMC_AXIS_GROUP_PCS_STILL_IN_USE.\nFor this information to be up-to-date, the function block\nhas to be called continuously\n(even if alreadyDone).\nA dynamic coordinate system becomesInUsewhen a movement\nto a position in the coordinate system is commanded.\nIt remainsInUseuntil the target position of a movement to\na different coordinate system has been reached."
+        ],
+        [
+          "Error",
+          "BOOL",
+          "Signals that an error has occurred within the function block"
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "library": "String Segments",
+  "title": "ERROR (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Segments/Current/Strings/Enums/ERROR.html",
+  "page_title": "ERROR (ENUM)",
+  "text": "\nTYPE ERROR :\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Name": "NO_ERROR",
+          "Initial": ""
+        },
+        {
+          "Name": "END_OF_BUFFER",
+          "Initial": "2"
+        },
+        {
+          "Name": "WRONG_CONFIGURATION",
+          "Initial": ""
+        },
+        {
+          "Name": "WRONG_PARAMETER",
+          "Initial": ""
+        },
+        {
+          "Name": "INVALID_ENCODING",
+          "Initial": ""
+        },
+        {
+          "Name": "NO_MEMORY",
+          "Initial": ""
+        },
+        {
+          "Name": "POOL_EMPTY",
+          "Initial": ""
+        },
+        {
+          "Name": "ALREADY_INITIALIZED",
+          "Initial": ""
+        },
+        {
+          "Name": "WRONG_OPERATION",
+          "Initial": ""
+        },
+        {
+          "Name": "NULL_POINTER",
+          "Initial": ""
+        }
+      ]
+    }
+  ]
+}

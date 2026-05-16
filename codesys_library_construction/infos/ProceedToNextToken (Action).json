@@ -1,0 +1,8 @@
+{
+  "library": "SM3_CNC",
+  "title": "ProceedToNextToken (Action)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/File/ReadNCFile/Token/pou-SMC_NCTokenizer/ProceedToNextToken.html",
+  "page_title": "SMC_NCTokenizer.ProceedToNextToken (ACT)",
+  "text": "\nRemember begin of the next token",
+  "tables": []
+}

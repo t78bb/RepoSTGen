@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现根据轴的状态返回对应的字符串描述。",
+  "provide_code": "FUNCTION F_AxisStatusToString : STRING\nVAR_INPUT\n\tfbReadStatus\t:\tMC_ReadStatus;\t\t//轴状态读取功能块\nEND_VAR"
+}

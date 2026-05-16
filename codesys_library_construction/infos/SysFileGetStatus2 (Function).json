@@ -1,0 +1,36 @@
+{
+  "library": "SysFile",
+  "title": "SysFileGetStatus2 (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SysFile/Current/SysFileGetStatus2.html",
+  "page_title": "SysFileGetStatus2 (FUN)",
+  "text": "\nFUNCTION SysFileGetStatus2 :\nSYS_FILE_STATUS\nGet the file status\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SysFileGetStatus2",
+          "Type": "SYS_FILE_STATUS",
+          "Comment": "File status. See category file status"
+        },
+        {
+          "Scope": "Input",
+          "Name": "hFile",
+          "Type": "RTS_IEC_HANDLE",
+          "Comment": "Handle of the file"
+        },
+        [
+          "pResult",
+          "POINTER TO RTS_IEC_RESULT",
+          "Pointer to runtime system error code (see CmpErrors.library)"
+        ]
+      ]
+    }
+  ]
+}

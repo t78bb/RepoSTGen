@@ -1,0 +1,36 @@
+{
+  "library": "BACnet",
+  "title": "AddGroupMember (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/Global-Group/pou-BACnetGlobalGroup/AddGroupMember.html",
+  "page_title": "BACnetGlobalGroup.AddGroupMember (METH)",
+  "text": "\nMETHOD AddGroupMember : CmpBACnet.IEC_BACNET_STATUS\nAdds a group member (given by a BACnet-Object-Reference) and a group member name to the Group_Members-Property and the\nGroup_Member_Names-Property of this BACnet-Object.\nBoth the group member and its group member name are added simulatenously by this function.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "AddGroupMember",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "groupMember",
+          "Type": "CmpBACnet.IEC_BACNET_DEV_OBJ_PROP_REFERENCE",
+          "Comment": "group member"
+        },
+        [
+          "groupMemberName",
+          "WSTRING(255)",
+          "group member name"
+        ]
+      ]
+    }
+  ]
+}

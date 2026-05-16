@@ -1,0 +1,23 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_FileStream2 (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/File/ReadNCFile/Stream/SMC_FileStream2.html",
+  "page_title": "SMC_FileStream2 (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_FileStream2 IMPLEMENTS\nSMC_ITextStream\nOpens a file and presents the file contents as a stream of characters\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Output",
+          "Name": "stream",
+          "Type": "SMC_ITextStream"
+        }
+      ]
+    }
+  ]
+}

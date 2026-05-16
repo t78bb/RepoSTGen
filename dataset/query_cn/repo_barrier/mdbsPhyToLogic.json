@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现根据输入的区域编号和物理索引计算对应的逻辑地址。",
+  "provide_code": "FUNCTION_BLOCK mdbsPhyToLogic\t//modbus本地索引对应回传华中的状态地址\nVAR_INPUT\n\tsection\t\t:INT;\t//区域限定(1:grdExt, 2:grdRet, 3:skyExt, 4:skyRet)\n\tphyIdx\t\t:INT;\t//内存物理地址对应数组索引\nEND_VAR\nVAR_OUTPUT\n\tlgcIdx\t\t:INT;\t//华中对应的地址\t127 175 223 271...\nEND_VAR"
+}

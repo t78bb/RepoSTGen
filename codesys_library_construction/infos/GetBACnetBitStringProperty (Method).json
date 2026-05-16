@@ -1,0 +1,28 @@
+{
+  "library": "BACnet",
+  "title": "GetBACnetBitStringProperty (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/pou-IBACnetObjectBase/Utilities/GetBACnetBitStringProperty.html",
+  "page_title": "IBACnetObjectBase.GetBACnetBitStringProperty (METH)",
+  "text": "\nMETHOD GetBACnetBitStringProperty : STRING\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetBACnetBitStringProperty",
+          "Type": "STRING"
+        },
+        {
+          "Scope": "Input",
+          "Name": "propID",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_ID"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现节点的单击选择与双击展开/折叠功能。",
+  "provide_code": "FUNCTION_BLOCK NodeExpandCollapse\nVAR_INPUT\n    xNodeClick : BOOL;  (* Input signal for node click *)\n    tDblClickTime : TIME := T#500MS;  (* Time to wait for double click *)\nEND_VAR\n\nVAR_OUTPUT\n    xNodeExpand : BOOL;  (* Output: TRUE when node is expanded *)\n    xNodeSelected : BOOL; (* Output: TRUE when node is selected *)\nEND_VAR"
+}

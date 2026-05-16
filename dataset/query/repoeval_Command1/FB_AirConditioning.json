@@ -1,0 +1,5 @@
+{
+  "requirement": "This code is intended to implement a functional block for air conditioning control with outputs for activation status and temperature.",
+  "provide_code": "FUNCTION_BLOCK PUBLIC FB_AirConditioning\nVAR_OUTPUT\n\tbActive\t\t\t: BOOL;\n\tlrTemperature\t: LREAL;\nEND_VAR",
+  "function_name": "FB_AirConditioning"
+}

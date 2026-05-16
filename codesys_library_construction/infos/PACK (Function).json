@@ -1,0 +1,66 @@
+{
+  "library": "Util",
+  "title": "PACK (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/BitByte-Functions/PACK.html",
+  "page_title": "PACK (FUN)",
+  "text": "\nFUNCTION PACK : BYTE\nPacks 8 bits into 1 byte\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "PACK",
+          "Type": "BYTE",
+          "Comment": "Value for the inputBO..B7"
+        },
+        {
+          "Scope": "Input",
+          "Name": "B0",
+          "Type": "BOOL",
+          "Comment": "Input bit 0"
+        },
+        [
+          "B1",
+          "BOOL",
+          "Input bit 1"
+        ],
+        [
+          "B2",
+          "BOOL",
+          "Input bit 2"
+        ],
+        [
+          "B3",
+          "BOOL",
+          "Input bit 3"
+        ],
+        [
+          "B4",
+          "BOOL",
+          "Input bit 4"
+        ],
+        [
+          "B5",
+          "BOOL",
+          "Input bit 5"
+        ],
+        [
+          "B6",
+          "BOOL",
+          "Input bit 6"
+        ],
+        [
+          "B7",
+          "BOOL",
+          "Input bit 7"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现关闭已打开的文件句柄以释放资源。",
+  "provide_code": "FUNCTION_BLOCK fileSave\nVAR_INPUT\n\tfilePath \t:STRING;\n\tintervalt\t:INT;\nEND_VAR"
+}

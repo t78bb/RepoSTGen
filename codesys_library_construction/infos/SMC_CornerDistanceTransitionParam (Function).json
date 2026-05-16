@@ -1,0 +1,31 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_CornerDistanceTransitionParam (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/Additional/SMC_CornerDistanceTransitionParam.html",
+  "page_title": "SMC_CornerDistanceTransitionParam (FUN)",
+  "text": "\nFUNCTION SMC_CornerDistanceTransitionParam : ARRAY [0..(SMC_RCNST.MAX_TRANS_PARAMS - 1)] OF LREAL\nSets the transition parameters for distance based blending\n(transition mode\nMC_TRANSITION_MODE.TMCornerDistance\n).\nThe result can be assigned to a movement function blockâs\nTransitionParameter\ninput.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SMC_CornerDistanceTransitionParam",
+          "Type": "ARRAY\n[0..(SMC_RCNST.MAX_TRANS_PARAMS\n- 1)] OF LREAL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "Distance",
+          "Type": "LREAL",
+          "Comment": "The corner distance."
+        }
+      ]
+    }
+  ]
+}

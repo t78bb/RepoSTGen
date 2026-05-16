@@ -1,0 +1,31 @@
+{
+  "library": "BACnet",
+  "title": "GetWStringFromContents (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/Utilities/BACnetUtilities/FromBACnetContents/GetWStringFromContents.html",
+  "page_title": "GetWStringFromContents (FUN)",
+  "text": "\nFUNCTION GetWStringFromContents : WSTRING(255)\nTries to evaluate property contents as WSTRING data type. If the contents are not of type WSTRING\nââ is returned.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetWStringFromContents",
+          "Type": "WSTRING(255)",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "conts",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_CONTENTS",
+          "Comment": "The contents to be evaluated as DINT."
+        }
+      ]
+    }
+  ]
+}

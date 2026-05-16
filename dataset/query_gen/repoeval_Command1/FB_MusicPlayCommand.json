@@ -1,0 +1,6 @@
+{
+  "requirement": "This code should implement a function block named FB_MusicPlayCommand that controls a CD player. It must include methods to execute commands and initialize the function block with references to a CD player object. The Execute method should check if the reference to the CD player (refCDPlayer) is valid using __ISVALIDREF and, if true, set the volume to 40, set the track to 1, and start the CD player. The FB_init method should accept two boolean inputs, bInitRetains and bInCopyCode, and a reference to FB_CDPlayer. It should assign the CD player reference to the function block's internal reference (THIS^.refCDPlayer) if the passed reference is valid; otherwise, it should set THIS^.refCDPlayer to null (0).",
+  "provide_code": "FUNCTION_BLOCK PUBLIC FB_MusicPlayCommand IMPLEMENTS I_Command",
+  "function_name": "FB_MusicPlayCommand",
+  "requirement_cn": "该代码应实现一个名为 FB_MusicPlayCommand 的功能块，用于控制 CD 播放器。它必须包括执行命令和使用 CD 播放器对象的引用初始化功能块的方法。Execute 方法应检查 CD 播放器的引用（refCDPlayer）是否有效，使用 __ISVALIDREF 进行验证，如果为真，则将音量设置为 40，将曲目设置为 1，并启动 CD 播放器。FB_init 方法应接受两个布尔输入 bInitRetains 和 bInCopyCode，以及一个对 FB_CDPlayer 的引用。如果传递的引用有效，它应将 CD 播放器引用分配给功能块的内部引用（THIS^.refCDPlayer）；否则，应将 THIS^.refCDPlayer 设置为 null（0）。"
+}

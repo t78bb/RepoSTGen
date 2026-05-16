@@ -1,0 +1,28 @@
+{
+  "library": "SM3_Basic",
+  "title": "MC_CAMSWITCH_REF (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/DataTypes/Additional/MC_CAMSWITCH_REF.html",
+  "page_title": "MC_CAMSWITCH_REF (STRUCT)",
+  "text": "\nTYPE MC_CAMSWITCH_REF : STRUCT\nThis\nSTRUCT\ndescribes a list of cam switches and is used as an input of\nMC_DigitalCamSwitch\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "NoOfSwitches",
+          "Type": "BYTE",
+          "Comment": "the number ofMC_CAMSWITCH_TRto be evaluated"
+        },
+        {
+          "Name": "CamSwitchPtr",
+          "Type": "POINTER TOMC_CAMSWITCH_TR",
+          "Comment": "pointer to the first element of an array of MC_CAMSWITCH_TR"
+        }
+      ]
+    }
+  ]
+}

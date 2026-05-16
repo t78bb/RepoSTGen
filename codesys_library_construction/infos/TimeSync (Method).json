@@ -1,0 +1,36 @@
+{
+  "library": "DNP3",
+  "title": "TimeSync (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/pou-Master/Commands/TimeSync.html",
+  "page_title": "Master.TimeSync (METH)",
+  "text": "\nMETHOD TimeSync :\nError\nSynchronize time on a remote DNP3 device. DNP3 supports two\nmechanisms for time synchronization, one for standard serial channels\nand another for LAN applications. Each of these mechanisms may require\nmultiple request/response operations. This routine will perform all\nthe operations required to perform a time synchronization as specified.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "TimeSync",
+          "Type": "Error",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "typ",
+          "Type": "TimeSyncType",
+          "Comment": "type of time synchronization to perform, serial or lan."
+        },
+        [
+          "measureDelay",
+          "BOOL",
+          "TMWDEFS_TRUE to perform a delay measurement beforethe write time request."
+        ]
+      ]
+    }
+  ]
+}

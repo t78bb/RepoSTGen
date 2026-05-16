@@ -1,0 +1,77 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_TRAFOF_Polar (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_Trafo_POUs/SoftMotion-Transformations/Scara-System/SMC_TRAFOF_Polar.html",
+  "page_title": "SMC_TRAFOF_Polar (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_TRAFOF_Polar\nForward transformation for 2-dim. Scara system\nNote\nFor detailed information on transformation modules\nsee overview to\nSM_Trafo_POUs\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "DriveR",
+          "Type": "AXIS_REF_SM3",
+          "Comment": "Reference to distance axis R"
+        },
+        [
+          "DrivePhi",
+          "AXIS_REF_SM3",
+          "Reference to direction axis Phi"
+        ],
+        {
+          "Scope": "Input",
+          "Name": "dOffsetR",
+          "Type": "LREAL",
+          "Comment": "Additional offset for distance axis R in degree"
+        },
+        [
+          "dOffsetPhi",
+          "LREAL",
+          "Additional offset for direction axis Phi in degree"
+        ],
+        [
+          "dmaxR",
+          "LREAL",
+          "Maximum value for distance axis R"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bError",
+          "Type": "BOOL",
+          "Comment": "TRUEif values are invalid\n(DriveR.fActPosition<0)"
+        },
+        [
+          "dx",
+          "LREAL",
+          "X-component of manipulator position in geo coordinates"
+        ],
+        [
+          "dy",
+          "LREAL",
+          "Y-component of manipulator position in geo coordinates"
+        ],
+        [
+          "dnx",
+          "LREAL",
+          "X-coordinate (in]-1,1[) of normed position vector of\nmanipulator (for visualization purpose)"
+        ],
+        [
+          "dny",
+          "LREAL",
+          "Y-coordinate (in]-1,1[) of normed position vector of\nmanipulator (for visualization purpose)"
+        ],
+        [
+          "dnr",
+          "LREAL",
+          "Standardised distance[0..1]for visualization"
+        ]
+      ]
+    }
+  ]
+}

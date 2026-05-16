@@ -1,0 +1,25 @@
+{
+  "library": "DNP3",
+  "title": "Parameter (ParamList)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Parameter/Parameter.html",
+  "page_title": "Parameter (PARAMS)",
+  "text": "\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Scope": "Constant",
+          "Name": "DNP3_StringLength",
+          "Type": "UINT",
+          "Initial": "80"
+        }
+      ]
+    }
+  ]
+}

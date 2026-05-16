@@ -1,0 +1,25 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_GVarDecl (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/GSentence/SMC_GVarDecl.html",
+  "page_title": "SMC_GVarDecl (STRUCT)",
+  "text": "\nTYPE SMC_GVarDecl : STRUCT\nA G-Code variable declaration\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Name": "name",
+          "Type": "STRING"
+        },
+        {
+          "Name": "vtype",
+          "Type": "SMC_GVar_Type"
+        }
+      ]
+    }
+  ]
+}

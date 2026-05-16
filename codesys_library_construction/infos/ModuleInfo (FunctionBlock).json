@@ -1,0 +1,8 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "ModuleInfo (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_Module/ModuleInfo.html",
+  "page_title": "ModuleInfo (FB)",
+  "text": "\nFUNCTION_BLOCK ModuleInfo\nContains information common to all instances of one module\nProperties:\nModuleType\nStructure:\nModuleType (Property)",
+  "tables": []
+}

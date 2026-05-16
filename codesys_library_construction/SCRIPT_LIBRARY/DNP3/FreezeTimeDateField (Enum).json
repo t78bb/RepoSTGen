@@ -1,0 +1,29 @@
+{
+  "library": "DNP3",
+  "title": "FreezeTimeDateField (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/FreezeTimeDateField.html",
+  "page_title": "FreezeTimeDateField (ENUM)",
+  "text": "\nTYPE FreezeTimeDateField :\n|\nââââââââââââââââââââââââââââââââââââ/// |\n| Time-date field /// | Interval field /// | Freeze timing                                                  /// |\n|\nââââââââââââââââââââââââââââââââââââ/// |\n| zero            /// | zero           /// | Freeze once immediately.                                       /// |\n|\nââââââââââââââââââââââââââââââââââââ/// |\n| non-zero        /// | zero           /// | Freeze once at the specified time.                             /// |\n|\nââââââââââââââââââââââââââââââââââââ/// |\n|                 /// |                /// | Periodically freeze at intervals relative to the beginning of  /// |\n| zero            /// | non-zero       /// | of the current hour. Use the time interval from the interval   /// |\n|                 /// |                /// | field. Coninue freezing forever or until a new function code   /// |\n|                 /// |                /// | FREEZE_AT_TIME(_NR) is received.                               /// |\n|\nââââââââââââââââââââââââââââââââââââ/// |\n|                 /// |                /// | Periodically freeze at intervals relative to the time and date /// |\n| non-zero        /// | non-zero       /// | in the time-date field. Use the time interval from the interval/// |\n|                 /// |                /// | field. Coninue freezing forever or until a new function code   /// |\n|                 /// |                /// | FREEZE_AT_TIME(_NR) is received.                               /// |\n|\nââââââââââââââââââââââââââââââââââââ/// |\nNOTE - To cancel a freeze request, set the time-date field to all ones\nThe follow enum is used to enumerate the type of value passed in the time-date field of freeze at time requests.\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Name": "Zero",
+          "Initial": "ANY_TO_UDINT(CmpDNP3.IEC_DNPDATA_FREEZE_TIME_DATE_FIELD.DNPDATA_FREEZE_TIME_DATE_FIELD_ZERO)"
+        },
+        {
+          "Name": "NonZero",
+          "Initial": "ANY_TO_UDINT(CmpDNP3.IEC_DNPDATA_FREEZE_TIME_DATE_FIELD.DNPDATA_FREEZE_TIME_DATE_FIELD_NON_ZERO)"
+        },
+        {
+          "Name": "Cancel",
+          "Initial": "ANY_TO_UDINT(CmpDNP3.IEC_DNPDATA_FREEZE_TIME_DATE_FIELD.DNPDATA_FREEZE_TIME_DATE_FIELD_CANCEL)"
+        }
+      ]
+    }
+  ]
+}

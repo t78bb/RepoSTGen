@@ -1,0 +1,23 @@
+{
+  "library": "BACnetDefaultImpl",
+  "title": "ScanObjectsAndSetCallbackAttachments (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnetDefaultImpl/Current/BACnetDefaultImpl/Function-Blocks/LoggingObjects/Internal/pou-LogObjectsBase/ScanObjectsAndSetCallbackAttachments.html",
+  "page_title": "LogObjectsBase.ScanObjectsAndSetCallbackAttachments (METH)",
+  "text": "\nMETHOD PROTECTED ScanObjectsAndSetCallbackAttachments : CmpBACnet.IEC_BACNET_STATUS\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "ScanObjectsAndSetCallbackAttachments",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS"
+        }
+      ]
+    }
+  ]
+}

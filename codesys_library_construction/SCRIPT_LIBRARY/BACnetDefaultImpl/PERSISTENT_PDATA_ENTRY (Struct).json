@@ -1,0 +1,33 @@
+{
+  "library": "BACnetDefaultImpl",
+  "title": "PERSISTENT_PDATA_ENTRY (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnetDefaultImpl/Current/BACnetDefaultImpl/Structs/Persistence/PERSISTENT_PDATA_ENTRY.html",
+  "page_title": "PERSISTENT_PDATA_ENTRY (STRUCT)",
+  "text": "\nTYPE PERSISTENT_PDATA_ENTRY : STRUCT\nstructure which contains persistent property data information\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "magicCode",
+          "Type": "CmpBACnet.IEC_BACNET_UNSIGNED",
+          "Comment": "should be PDATA_PROPPER_MAGIC"
+        },
+        {
+          "Name": "nPropertyId",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_ID",
+          "Comment": "the PROPERTY identifier"
+        },
+        {
+          "Name": "nDataLength",
+          "Type": "CmpBACnet.IEC_BACNET_UNSIGNED",
+          "Comment": "the size of the ASN1 encoded data"
+        }
+      ]
+    }
+  ]
+}

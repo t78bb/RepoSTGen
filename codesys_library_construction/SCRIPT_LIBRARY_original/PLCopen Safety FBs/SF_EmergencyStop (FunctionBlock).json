@@ -1,0 +1,88 @@
+{
+  "library": "PLCopen Safety FBs",
+  "title": "SF_EmergencyStop (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/PLCopen Safety FBs/Current/PLCopenSafetyFBs/Function-Blocks/SF_EmergencyStop.html",
+  "page_title": "SF_EmergencyStop (FB)",
+  "text": "PLCopenSafetyFBs\nEnums\nFBS_ANTI (Enum)\nFBS_EDM (Enum)\nFBS_ENSWITCH (Enum)\nFBS_ENSWITCH2 (Enum)\nFBS_EQUI (Enum)\nFBS_ESPE (Enum)\nFBS_ESTOP (Enum)\nFBS_GUARD (Enum)\nFBS_GUARDLOCK2 (Enum)\nFBS_MODESEL (Enum)\nFBS_OUTCONTROL (Enum)\nFBS_PSE (Enum)\nFBS_RESBUT (Enum)\nFBS_SAFEREQ (Enum)\nFBS_TESTSEN (Enum)\nFBS_TWOHAND (Enum)\nFunction Blocks\nSF_Antivalent (FunctionBlock)\nSF_EDM (FunctionBlock)\nSF_ESPE (FunctionBlock)\nSF_EmergencyStop (FunctionBlock)\nSF_EnableSwitch (FunctionBlock)\nSF_EnableSwitch_2 (FunctionBlock)\nSF_Equivalent (FunctionBlock)\nSF_Guard (FunctionBlock)\nSF_GuardLocking_2 (FunctionBlock)\nSF_ModeSelector (FunctionBlock)\nSF_OutControl (FunctionBlock)\nSF_PSE (FunctionBlock)\nSF_ResetButton (FunctionBlock)\nSF_SafetyRequest (FunctionBlock)\nSF_TestableSafetySensor (FunctionBlock)\nSF_TwoHandControlTypeII (FunctionBlock)\nSF_TwoHandControlTypeIII (FunctionBlock)\nFile and Project Information\nLibrary Reference\nStandard\nLibrary Identification\nLibrary Properties\nSysTimeCore\nLibrary Identification\nLibrary Properties\nPLCopen Safety FBs\nDocs\n»\nPLCopenSafetyFBs\n»\nFunction\nBlocks\n»\nSF_EmergencyStop (FB)\nSF_EmergencyStop (FB)\nÂ¶\nFUNCTION_BLOCK SF_EmergencyStop\nThis function block is a safety-related function block for monitoring an emergency stop button.\nThis Function block can be used for emergency switch off functionality (stop category 0), or - with additional peripheral support - as emergency stop (stop category 1 or 2).\nFunction block according to PLCopen, Technical Committee 5: Safety Software (Technical Specification), Part 1: Concepts and Function Blocks, Version 2.01 (2020-2)\nInOut:\nScope\nName\nType\nInitial\nComment\nInput\nActivate\nBOOL\nFALSE\nActivation of the FB.\nS_EStopIn\nBOOL\nFALSE\nSafety demand input.\nS_StartReset\nBOOL\nFALSE\nStart behaviour of safety FB\nS_AutoReset\nBOOL\nFALSE\nBehaviour on error of safety FB\nReset\nBOOL\nFALSE\nManual reset of FB\nOutput\nReady\nBOOL\nFALSE\nActivation of the FB. TRUE indicates that the FB is\nactivated and the outputs results are valid, FALSE the FB is\nnot active and the program is not executed.\nS_EStopOut\nBOOL\nFALSE\nOutput for the safety-related response.\nSafetyDemand\nBOOL\nFALSE\nOutput indicating that the FB is active and the primary\nsafety function is demanded (e.g. related to the safety\nfunctionality).\nResetRequest\nBOOL\nFALSE\nOutput which can be used to signal the operator to press the\nreset functionality to continue.\nError\nBOOL\nFALSE\nError flag\nDiagCode\nWORD\n0\nDiagnostic register",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "Activate",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "Activation of the FB."
+        },
+        [
+          "S_EStopIn",
+          "BOOL",
+          "FALSE",
+          "Safety demand input."
+        ],
+        [
+          "S_StartReset",
+          "BOOL",
+          "FALSE",
+          "Start behaviour of safety FB"
+        ],
+        [
+          "S_AutoReset",
+          "BOOL",
+          "FALSE",
+          "Behaviour on error of safety FB"
+        ],
+        [
+          "Reset",
+          "BOOL",
+          "FALSE",
+          "Manual reset of FB"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Ready",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "Activation of the FB. TRUE indicates that the FB is\nactivated and the outputs results are valid, FALSE the FB is\nnot active and the program is not executed."
+        },
+        [
+          "S_EStopOut",
+          "BOOL",
+          "FALSE",
+          "Output for the safety-related response."
+        ],
+        [
+          "SafetyDemand",
+          "BOOL",
+          "FALSE",
+          "Output indicating that the FB is active and the primary\nsafety function is demanded (e.g. related to the safety\nfunctionality)."
+        ],
+        [
+          "ResetRequest",
+          "BOOL",
+          "FALSE",
+          "Output which can be used to signal the operator to press the\nreset functionality to continue."
+        ],
+        [
+          "Error",
+          "BOOL",
+          "FALSE",
+          "Error flag"
+        ],
+        [
+          "DiagCode",
+          "WORD",
+          "0",
+          "Diagnostic register"
+        ]
+      ]
+    }
+  ]
+}

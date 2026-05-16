@@ -1,0 +1,118 @@
+{
+  "library": "ModbusFB",
+  "title": "LoggingOptions (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/ModbusFB/Current/ModbusFB/Enums/LoggingOptions.html",
+  "page_title": "LoggingOptions (ENUM)",
+  "text": "\nTYPE LoggingOptions :\nLogging options - can be combined with bitwise OR operation to enable specific logging.\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "None",
+          "Initial": "16#0",
+          "Comment": ""
+        },
+        {
+          "Name": "Init",
+          "Initial": "16#1",
+          "Comment": "Initialization"
+        },
+        {
+          "Name": "ServerStartStop",
+          "Initial": "16#2",
+          "Comment": "Start / stop of server"
+        },
+        {
+          "Name": "ServerDataModel",
+          "Initial": "16#4",
+          "Comment": "Server data model information"
+        },
+        {
+          "Name": "ServerException",
+          "Initial": "16#8",
+          "Comment": "Server rejected requests with exception"
+        },
+        {
+          "Name": "ServerExceptionReason",
+          "Initial": "16#10",
+          "Comment": "Server rejected requests with exception, detailed reason"
+        },
+        {
+          "Name": "ServerReceivedValidRequests",
+          "Initial": "16#20",
+          "Comment": "Server received valid request"
+        },
+        {
+          "Name": "ServerRequestDetails",
+          "Initial": "16#40",
+          "Comment": "Server received request - details"
+        },
+        {
+          "Name": "ClientConnectDisconnect",
+          "Initial": "16#80",
+          "Comment": "Client connect / disconnect."
+        },
+        {
+          "Name": "ClientReceivedValidReplies",
+          "Initial": "16#100",
+          "Comment": "Client received valid reply"
+        },
+        {
+          "Name": "ClientReplyDetails",
+          "Initial": "16#200",
+          "Comment": "Client received valid reply - details"
+        },
+        {
+          "Name": "ClientRequestStateChange",
+          "Initial": "16#400",
+          "Comment": "ClientRequest state changes"
+        },
+        {
+          "Name": "SendFrames",
+          "Initial": "16#800",
+          "Comment": "Send frame"
+        },
+        {
+          "Name": "WarnOnReceivedInvalidFrames",
+          "Initial": "16#1000",
+          "Comment": "Warn on invalid frames received"
+        },
+        {
+          "Name": "ClientTcpSocket",
+          "Initial": "16#2000",
+          "Comment": "Log ClientTcp socket activities"
+        },
+        {
+          "Name": "ServerTcpSocket",
+          "Initial": "16#4000",
+          "Comment": "Log ServerTcp socket activities"
+        },
+        {
+          "Name": "SysComOpenClose",
+          "Initial": "16#8000",
+          "Comment": "Log SysCom open/close"
+        },
+        {
+          "Name": "Internals",
+          "Initial": "16#10000",
+          "Comment": ""
+        },
+        {
+          "Name": "SysComHandlerStateChange",
+          "Initial": "16#20000",
+          "Comment": "Log SysComHandler state changes"
+        },
+        {
+          "Name": "All",
+          "Initial": "16#FFFFFFFF",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

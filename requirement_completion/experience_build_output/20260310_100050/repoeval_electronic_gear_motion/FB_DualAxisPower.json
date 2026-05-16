@@ -1,0 +1,11 @@
+{
+  "模糊点列表": [
+    {
+      "模糊点类型": "IO映射",
+      "模糊点描述": "原始需求未明确是否需要在电源控制功能块中启动驱动器和调节器",
+      "差异细节": "模型生成代码中fbPower1和fbPower2仅设置了Axis和Enable参数，而参考代码中还设置了bDriveStart和bRegulatorOn参数为TRUE",
+      "精准需求描述": "在电源控制功能块中，除了设置轴和使能信号外，还应确保驱动器启动和调节器开启"
+    }
+  ],
+  "case_id": "repoeval_electronic_gear_motion/FB_DualAxisPower"
+}

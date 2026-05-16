@@ -1,0 +1,33 @@
+{
+  "library": "CommFB",
+  "title": "ADDR_TYPE (Union)",
+  "url": "https://content.helpme-codesys.com/en/libs/CommFB/Current/CommFB/Addresses/ADDR_TYPE.html",
+  "page_title": "ADDR_TYPE (UNION)",
+  "text": "\nTYPE ADDR_TYPE : UNION\nUniform data structure (UNION) for physical identification of a slot of a PROFIBUS DP-slave or subslot of a PROFINET IO Device.\n(see:\nAddressConcept\n,\nADDR_TO_ID\n,\nID_TO_ADDR\n)\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "SYSTEM",
+          "Type": "IO_SYSTEM_TYPE",
+          "Comment": "1 = DP, 2 = PROFINET IO"
+        },
+        {
+          "Name": "DP",
+          "Type": "DP_ADDR",
+          "Comment": ""
+        },
+        {
+          "Name": "PN",
+          "Type": "PN_ADDR",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

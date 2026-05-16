@@ -1,0 +1,6 @@
+{
+  "requirement": "This code should implement a method named `Product_toString` that concatenates several string inputs (`mainPart`, `part1`, `part2`, `part3`) into a single output string. The method should sequentially concatenate these parts starting with `mainPart` followed by `part1`, then `part2`, and finally `part3`. Each concatenation step should build on the result of the previous, using the `CONCAT` function. The final concatenated string should be assigned as the return value of the method. The method should handle any string inputs, including empty strings, without any specific error or boundary handling for unusual or special string contents.",
+  "provide_code": "//Method to be used in the visualization element for an easier String handling\nMETHOD toString : STRING\nVAR_INPUT\n\t//List of possible parts to be build in a final Product object\n\tmainPart \t: STRING;\n\tpart1 \t\t: STRING;\n\tpart2 \t\t: STRING;\n\tpart3 \t\t: STRING;\nEND_VAR\nVAR_OUTPUT\nEND_VAR",
+  "function_name": "Product_toString",
+  "requirement_cn": "该代码应实现一个名为 `Product_toString` 的方法，该方法将几个字符串输入（`mainPart`、`part1`、`part2`、`part3`）连接成一个单一的输出字符串。方法应按顺序连接这些部分，从 `mainPart` 开始，然后是 `part1`，接着是 `part2`，最后是 `part3`。每个连接步骤都应建立在前一个结果的基础上，使用 `CONCAT` 函数。最终连接的字符串应作为方法的返回值。该方法应能处理任何字符串输入，包括空字符串，无需对异常或特殊的字符串内容进行特定的错误或边界处理。"
+}

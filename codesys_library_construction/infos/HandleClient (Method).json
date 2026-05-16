@@ -1,0 +1,25 @@
+{
+  "library": "Visu Utils",
+  "title": "HandleClient (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/Visu Utils/Current/VisuUtils/VisuActionUtilities/Interfaces/pou-IVisualizationClientIteration/HandleClient.html",
+  "page_title": "IVisualizationClientIteration.HandleClient (METH)",
+  "text": "\nMETHOD HandleClient\nThis method will be called for each client that is currently within the list\nof active visualization clients.\nNote\nPlease remark that this method will be called from VISU_TASK\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "itfClient",
+          "Type": "IVisualizationClient",
+          "Comment": "The object representing the according client. Will not be 0."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "library": "BACnetDefaultImpl",
+  "title": "DoGetPropertyAttributes (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnetDefaultImpl/Current/BACnetDefaultImpl/Function-Blocks/pou-PropertyConfiguration/DoGetPropertyAttributes.html",
+  "page_title": "PropertyConfiguration.DoGetPropertyAttributes (METH)",
+  "text": "\nMETHOD PROTECTED DoGetPropertyAttributes : BOOL\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "DoGetPropertyAttributes",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Input",
+          "Name": "objID",
+          "Type": "CmpBACnet.IEC_BACNET_OBJECT_ID"
+        },
+        [
+          "propID",
+          "CmpBACnet.IEC_BACNET_PROPERTY_ID"
+        ],
+        {
+          "Scope": "Inout",
+          "Name": "propAttr",
+          "Type": "BACnet.BACnetPropertyAttributes"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "library": "BACnet",
+  "title": "RemoveExceptionEntry (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/Schedule/pou-BACnetSchedule/ExceptionSchedule/RemoveExceptionEntry.html",
+  "page_title": "BACnetSchedule.RemoveExceptionEntry (METH)",
+  "text": "\nMETHOD RemoveExceptionEntry : CmpBACnet.IEC_BACNET_STATUS\nRemoves a entry at index nIndex from the Exception_Schedule-Property of this BACnet-Object.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "RemoveExceptionEntry",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "nIndex",
+          "Type": "CmpBACnet.IEC_BACNET_ELEMENT_COUNT",
+          "Initial": "0",
+          "Comment": "The 1 based index of the exception entry to remove."
+        }
+      ]
+    }
+  ]
+}

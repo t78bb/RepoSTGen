@@ -1,0 +1,36 @@
+{
+  "library": "Standard",
+  "title": "LEFT (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/Standard/Current/String-Functions/LEFT.html",
+  "page_title": "LEFT (FUN)",
+  "text": "\nFUNCTION LEFT : STRING(255)\nReturns a specific number of characters of a string, starting from left\nLEFT\n(STR,\nSIZE)\nmeans: Return the first\nSIZE\ncharacters from the left in string\nSTR\n(* Example declaration *)\nVarSTRING1\n:\nSTRING\n;\n(* Example in ST , result is 'SUS' *)\nVarSTRING1\n:=\nLEFT\n(\n'SUSI'\n,\n3\n);\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "LEFT",
+          "Type": "STRING(255)",
+          "Comment": "Resulting string"
+        },
+        {
+          "Scope": "Input",
+          "Name": "STR",
+          "Type": "STRING(255)",
+          "Comment": "String to be analyzed"
+        },
+        [
+          "SIZE",
+          "INT",
+          "Number of characters"
+        ]
+      ]
+    }
+  ]
+}

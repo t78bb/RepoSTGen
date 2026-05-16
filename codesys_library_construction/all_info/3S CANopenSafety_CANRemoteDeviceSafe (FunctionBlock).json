@@ -1,0 +1,46 @@
+{
+  "library": "3S CANopenSafety",
+  "title": "CANRemoteDeviceSafe (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/3S CANopenSafety/Current/_3SCANopenSafety/Function-Blocks/CANRemoteDeviceSafe.html",
+  "page_title": "CANRemoteDeviceSafe (FB)",
+  "text": "_3SCANopenSafety\nBufferSizes (ParamList)\nFunction Blocks\nCANRemoteDeviceSafe (FunctionBlock)\nCyclic-Methods-state-independent\nInitialization\nState-Machine\nCANopenManagerSIL2 (FunctionBlock)\nFile and Project Information\nLibrary Reference\nBase Interfaces\nLibrary Identification\nLibrary Properties\nCANopenSafetyBase\nLibrary Identification\nLibrary Properties\nCANopenSafetyTypes\nLibrary Identification\nLibrary Properties\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nCmpSIL2\nLibrary Identification\nLibrary Properties\nIoDriver Interfaces\nLibrary Identification\nLibrary Properties\nIoDriver Parameter Interfaces\nLibrary Identification\nLibrary Properties\nIoStandard\nLibrary Identification\nLibrary Properties\nSysExcept\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\n3S CANopenSafety\nDocs\n»\n_3SCANopenSafety\n»\nFunction\nBlocks\n»\nCANRemoteDeviceSafe (FB)\nCANRemoteDeviceSafe (FB)\nÂ¶\nFUNCTION_BLOCK CANRemoteDeviceSafe\nThis function block implements the logic of a CANopen Safety Remote Device. All instances are managed by the CANopenManagerSIL2 in a simple chained list\nand called on StartBusCycle.\nThe function block gets its SRDO config in SetupSDROs and has its own pointer to the Safety Exchange.\nFunction block can be enabled/disabled by S_xEnable. When S_xEnable gets TRUE the function block checks every bus cycle\nall conditions for safe communication:\nUnsafe stack is in OPERATIONAL state\nCRCs read back from device are correct\nConsistency of SRDO configuration data\nIf a configuration error is detected (e.g. CRC mismatch) S_eError changes from NO_ERROR to a corresponding error code.\nIf every condition is fulfilled the function block tries starting safe communication.\nS_xActive gets TRUE if all SRDOs are sent/received at least one time without any error.\nWhen communication error occurs (SCT/SRVT timeout, data mismatch, â¦), all SRDO communication is stopped: S_xActive = FALSE, S_eError <> NO_ERROR\nErrors can be acknowledged by a rising edge of S_xErrorAck. Safe communication will be continued.\nInOut:\nScope\nName\nType\nInitial\nComment\nInput\nS_xEnable\nBOOL\nTRUE\nTRUE: SRDO communication enabled; FALSE: SRDO communication\nstopped\nS_xErrorAck\nBOOL\nFALSE\nPending error (S_eError <> NO_ERROR) will be acknowledged on\nrising edge.\nOutput\nS_xActive\nBOOL\nFALSE\nTRUE: safe communication active; FALSE: safe communication\ninactive (in case of error or S_xEnable = FALSE)\nS_eError\nCST.ERROR\nCST.ERROR.NO_ERROR\npending error\nStructure:\nCyclic-Methods-state-independent\nInitialization\nState-Machine\nState Transitions\nStates\nCheckConfiguration\nCheckConfiguration and Stopped\nOperational",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "S_xEnable",
+          "Type": "BOOL",
+          "Initial": "TRUE",
+          "Comment": "TRUE: SRDO communication enabled; FALSE: SRDO communication\nstopped"
+        },
+        [
+          "S_xErrorAck",
+          "BOOL",
+          "FALSE",
+          "Pending error (S_eError <> NO_ERROR) will be acknowledged on\nrising edge."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "S_xActive",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "TRUE: safe communication active; FALSE: safe communication\ninactive (in case of error or S_xEnable = FALSE)"
+        },
+        [
+          "S_eError",
+          "CST.ERROR",
+          "CST.ERROR.NO_ERROR",
+          "pending error"
+        ]
+      ]
+    }
+  ]
+}

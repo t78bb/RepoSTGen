@@ -1,0 +1,8 @@
+{
+  "library": "AlarmManager",
+  "title": "UserIdCommentNormal (Property)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/pou-IAlarm7/UserIdCommentNormal.html",
+  "page_title": "IAlarm7.UserIdCommentNormal (PROP)",
+  "text": "\nPROPERTY UserIdCommentNormal : POINTER TO WSTRING\nOptional user id that can be provided with the comment for the state âNormalâ.",
+  "tables": []
+}

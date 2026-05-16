@@ -1,0 +1,31 @@
+{
+  "library": "StringUtils",
+  "title": "GetMonthLong (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/StringUtils/Current/Public-Parts/pou-ILocalizedDateTimeNames/GetMonthLong.html",
+  "page_title": "ILocalizedDateTimeNames.GetMonthLong (METH)",
+  "text": "\nMETHOD GetMonthLong :\nCharBufferPtr\nreturns the localized text of the month as whole name.\nIf no localization exists, a defaulttext (textid) should be returned.\nThe stored value, the returnpointer is set to, will be overridden by\nany next call of one of the Get-methods of the implementing functionblock in VisuElemBase.\nTherefore, the result should be used at once. The pointer should not be stored.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetMonthLong",
+          "Type": "CharBufferPtr",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "uiMonth",
+          "Type": "UINT",
+          "Comment": "the month: 1: January,.. 12: December"
+        }
+      ]
+    }
+  ]
+}

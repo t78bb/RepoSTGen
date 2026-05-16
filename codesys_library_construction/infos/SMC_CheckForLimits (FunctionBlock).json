@@ -1,0 +1,124 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_CheckForLimits (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/SoftMotion-Function-Blocks/SMC_CheckForLimits.html",
+  "page_title": "SMC_CheckForLimits (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_CheckForLimits\nThe function block checks whether a path leaves its\nspecific, rectangular range.\nTypically,\npoqDataOut\nof the previous function block is fed\nto the input\npoqDataIn\n. Subsequent function blocks should\nin turn use\npoqDataOut\nof this FB.\nIn contrast to other pre-processing function blocks,\nSMC_CheckForLimits\nworks on the\nSMC_Outqueue\n-structure only,\nit doesnât need a buffer and does not change the path\n(whose data is still held by the buffer of the previous function block).\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "bExecute",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "Execution starts on the rising edge."
+        },
+        [
+          "bAbort",
+          "BOOL",
+          "FALSE",
+          "TRUE: Aborts the processing of the function block"
+        ],
+        [
+          "poqDataIn",
+          "POINTER TOSMC_OUTQUEUE",
+          "SMC_NULL",
+          "Pointer to data of structureSMC_OUTQUEUEcontaining the\npath objects of typeSMC_GEOINFO."
+        ],
+        [
+          "wAddAxis",
+          "WORD",
+          "",
+          "Bit field of the axes that will be testedX: Bit 0Y: Bit 1Z: Bit 2A: Bit 3B: Bit 4C: Bit 5P: Bit 6Q: Bit 7U: Bit 8V: Bit 9W: Bit 10Example: 16#104 causes test of Z and U"
+        ],
+        [
+          "piMin",
+          "SMC_POSINFO",
+          "",
+          "Lower edge of permissible range"
+        ],
+        [
+          "piMax",
+          "SMC_POSINFO",
+          "",
+          "Upper edge of permissible range"
+        ],
+        [
+          "d3dCheckDistance",
+          "LREAL",
+          "",
+          "In case of an 3D-object, the distance between the points that are checked.\nIf 0, the number of points per object will be the objectâs length divided by 10,\nplus start- and end-position."
+        ],
+        [
+          "diMinNoPoints",
+          "DINT",
+          "5",
+          "Apart from start- and end-position, the minimal number of points per object\nthat are checked."
+        ],
+        [
+          "diMaxNoPoints",
+          "DINT",
+          "100",
+          "Analogously.\n-1 means that there is no maximum number."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bBusy",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "TRUE: Function block in execution"
+        },
+        [
+          "bError",
+          "BOOL",
+          "FALSE",
+          "TRUE: Error has occurred"
+        ],
+        [
+          "wErrorID",
+          "SMC_ERROR",
+          "SMC_NO_ERROR",
+          "Error identification"
+        ],
+        [
+          "wAxisOutOfLimits",
+          "WORD",
+          "",
+          "Axes that have left the boundary"
+        ],
+        [
+          "iSourceLine_No",
+          "DINT",
+          "INVALID_LINE_NUMBER",
+          "Line number of the first object that has exceeded the limit.\nThe line number is zero based and the value -1 shows that\nno line with exceeding limits was found."
+        ],
+        [
+          "poqDataOut",
+          "POINTER TOSMC_OUTQUEUE",
+          "SMC_NULL",
+          "Pointer to data of structureSMC_OUTQUEUEcontaining the\npath elements of typeSMC_GEOINFOthat has been checked"
+        ],
+        [
+          "wLimitSwPositive",
+          "WORD",
+          "",
+          "Axes that have exceeded the upper limit"
+        ],
+        [
+          "wLimitSwNegative",
+          "WORD",
+          "",
+          "Axes that have exceeded the lower limit"
+        ]
+      ]
+    }
+  ]
+}

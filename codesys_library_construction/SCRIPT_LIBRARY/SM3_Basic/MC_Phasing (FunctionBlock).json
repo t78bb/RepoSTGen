@@ -1,0 +1,101 @@
+{
+  "library": "SM3_Basic",
+  "title": "MC_Phasing (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/Movement/MasterSlave/MC_Phasing.html",
+  "page_title": "MC_Phasing (FB)",
+  "text": "\nFUNCTION_BLOCK MC_Phasing\nMC_Phasing\nprovides a constant phase shift between master and slave axis.\nMC_Phasing\nwill abort any ongoing movement of the slave axis.\nIn this respect, it differs from the function blocks\nMC_PhasingAbsolute\nand\nMC_PhasingRelative\ndefined by the PLCopen for Motion Control 2.0\nstandard.\nThese function blocks donât abort an ongoing slave movement but superimpose\nthe phase shift on top of e.g. an ongoing\nMC_CamIn\nor\nMC_GearIn\nmovement.\nTo achieve this behavior with\nMC_Phasing\n, please use an additional\nvirtual axis as the slave axis of\nMC_Phasing\nand use this virtual\nslave as the master for\nMC_CamIn\nor\nMC_GearIn\n.\nAlternatively,\nMC_MoveSuperimposed\ncan be used on the master axis of\nan\nMC_CamIn\nor\nMC_GearIn\nmovement.\nImportant\nPhase\n,\nVelocity\n,\nAcceleration\nand\nDeceleration\nof a phase shift are controlled by the function block.\nNote\nMC_Phasing\nshould be called after the motion FB controlling\nthe\nMaster\naxis has been called.  Otherwise, the\nSlave\naxis\nwill lag behind the\nMaster\naxis.\nTiming example of\nMC_Phasing\nTiming of\nMC_Phasing\nÂ¶\nExample demonstrating the effect of\nMC_Phasing\nDemonstrating the effect of\nMC_Phasing\nÂ¶\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Master",
+          "Type": "AXIS_REF_SM3",
+          "Initial": "",
+          "Comment": "Reference to master axis"
+        },
+        [
+          "Slave",
+          "AXIS_REF_SM3",
+          "",
+          "Reference to slave axis"
+        ],
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "Rising edge: Starts the execution of the function block."
+        },
+        [
+          "PhaseShift",
+          "LREAL",
+          "0",
+          "Phase difference between master and slave (slave - master)\n[u]"
+        ],
+        [
+          "Velocity",
+          "LREAL",
+          "0",
+          "Maximum velocity for reaching phase difference [u/s]"
+        ],
+        [
+          "Acceleration",
+          "LREAL",
+          "0",
+          "Maximum acceleration for reaching phase difference [u/sÂ²]"
+        ],
+        [
+          "Deceleration",
+          "LREAL",
+          "0",
+          "Maximum deceleration for reaching phase difference [u/sÂ²]"
+        ],
+        [
+          "Jerk",
+          "LREAL",
+          "",
+          "maximum jerk to reach phase difference [u/s^3]"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Done",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "TRUE: Commanded phasing has been reached."
+        },
+        [
+          "Busy",
+          "BOOL",
+          "FALSE",
+          "TRUE: Execution of the function block has not been\nfinished."
+        ],
+        [
+          "CommandAborted",
+          "BOOL",
+          "FALSE",
+          "TRUE: Command has been aborted by another command."
+        ],
+        [
+          "Error",
+          "BOOL",
+          "FALSE",
+          "TRUE: Error has occurred within the function block."
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "0",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "PopFirst (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_Module/TreeNavigation/pou-SiblingRange/PopFirst.html",
+  "page_title": "SiblingRange.PopFirst (METH)",
+  "text": "\nMETHOD PUBLIC FINAL PopFirst\nPops the first item out of the range",
+  "tables": []
+}

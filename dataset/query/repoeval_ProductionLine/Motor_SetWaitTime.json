@@ -1,0 +1,5 @@
+{
+  "requirement": "This code is intended to implement a mechanism for setting a wait time for a motor operation using a specified sequence delay.",
+  "provide_code": "METHOD SetWaitTime : BOOL\nVAR_INPUT\n\tMotorI:MotorI;\n\tSequenceDelay:TIME;\nEND_VAR\nVAR_OUTPUT\n\tMotorO:MotorO;\nEND_VAR",
+  "function_name": "Motor_SetWaitTime"
+}

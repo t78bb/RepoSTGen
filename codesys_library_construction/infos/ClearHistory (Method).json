@@ -1,0 +1,23 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "ClearHistory (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/GenVisu/pou-AC_Visu_Base/ClearHistory.html",
+  "page_title": "AC_Visu_Base.ClearHistory (METH)",
+  "text": "\nMETHOD ClearHistory : BOOL\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "ClearHistory",
+          "Type": "BOOL"
+        }
+      ]
+    }
+  ]
+}

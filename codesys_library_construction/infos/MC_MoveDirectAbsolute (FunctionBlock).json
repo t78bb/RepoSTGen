@@ -1,0 +1,155 @@
+{
+  "library": "SM3_Robotics",
+  "title": "MC_MoveDirectAbsolute (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/Movement/MC_MoveDirectAbsolute.html",
+  "page_title": "MC_MoveDirectAbsolute (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL MC_MoveDirectAbsolute\nThis function block commands a movement of an axis group to the specified\nabsolute position in the specified coordinate system.\nEach axis is moved to its target position independently, the movement\nis only synchronized such that all axes reach the target at the same\ntime.  This means that the path travelled by the TCP depends on the\nkinematic transformation used.  In general, it will not be a line.\n(This is called a point to point or PTP movement.)\nNote\nThe path travelled by the TCP results indirectly from the movement\nof the axes and the kinematic transformation.  It is not easy to\npredict the path based on the start- and end-position of the movement.\nHowever, once a PTP movement has been taught-in, the path is not\nmodified by changing the override, interrupting, halting, or stopping.\nIn more detail:\nThe path is independent of the override.\nThe path is independent of the limits of the axes\n(limits for velocity, acceleration, deceleration, and jerk).\nThe only exception is for determining the cutoff points in\nTMStartVelocity mode.\nIn TMCornerDistance mode, the path is independent of the\nblending type (BlendingHigh/Low/Previous/Next).\nThe path is not left on halt or stop (MC_GroupHalt/MC_GroupStop).\nThe path is not left on interrupt or continue\n(MC_GroupInterrupt/MC_GroupContinue).\nThe acceleration, constant velocity, and deceleration phase for\nall axes begins and ends at the same time.\nNote\nThe velocity/acc-/deceleration/jerk limits of each axis are properties\nof each axis and not specified within this function block.\nSee also inputs\nVelFactor\n,\nAccFactor\nand\nJerkFactor\n.\nThe transition mode TMCornerDistance is only supported if the start-\nand end-position of the movement are given in the ACS.  Otherwise,\nan error is reported.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "AxisGroup",
+          "Type": "AXIS_GROUP_REF_SM3",
+          "Initial": "",
+          "Comment": "Reference to a group of axes"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Start the motion at rising edge"
+        },
+        [
+          "Position",
+          "SMC_POS_REF",
+          "",
+          "End position in the specified coordinate system"
+        ],
+        [
+          "MovementType",
+          "SMC_PTP_MOVEMENT_TYPE",
+          "",
+          "Type of PTP movement.  No longer supported.  This obsolete input\nwill be removed in future versions."
+        ],
+        [
+          "CoordSystem",
+          "SMC_COORD_SYSTEM",
+          "",
+          "Applicable coordinate system"
+        ],
+        [
+          "BufferMode",
+          "MC_BUFFER_MODE",
+          "",
+          "Defines the chronological sequence of the FB relative to the\nprevious block."
+        ],
+        [
+          "TransitionMode",
+          "MC_TRANSITION_MODE",
+          "",
+          "Defined the blending in case of a blending buffer mode"
+        ],
+        [
+          "TransitionParameter",
+          "ARRAY\n[0..(SMC_RCNST.MAX_TRANS_PARAMS\n- 1)] OF LREAL",
+          "",
+          "Parameters for blending"
+        ],
+        [
+          "VelFactor",
+          "LREAL",
+          "1",
+          "The maximum velocity of each axis is multiplied by this factor, which\nmust be in the range ]0, 1]."
+        ],
+        [
+          "AccFactor",
+          "LREAL",
+          "1",
+          "The maximum acceleration of each axis is multiplied by this factor, which\nmust be in the range ]0, 1]."
+        ],
+        [
+          "JerkFactor",
+          "LREAL",
+          "1",
+          "The maximum jerk of each axis is multiplied by this factor, which\nmust be in the range ]0, 1]."
+        ],
+        [
+          "TorqueFactor",
+          "LREAL",
+          "1",
+          "The maximum torque of each axis is multiplied by this factor, which\nmust be in the range ]0, 1].  A dynamic model must have been set usingSMC_GroupSetDynamicsfor this factor to have an effect."
+        ],
+        [
+          "AdditionalAxes",
+          "IAdditionalAxesMovement",
+          "",
+          "If an instance ofSMC_MoveAdditionalAxesAbsoluteorSMC_MoveAdditionalAxesRelativeis assigned to this input, the additional axes of the axis group will perform\nthe specified movement while this function block is active.\nSet to0if no additional axes movement has to be performed or if there are no\nadditional axes."
+        ],
+        [
+          "Name",
+          "STRING",
+          "âMC_MoveDirectAbsoluteâ",
+          "The name of the movement."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Done",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Commanded end positions reached for all axes"
+        },
+        [
+          "Busy",
+          "BOOL",
+          "",
+          "The FB is not finished"
+        ],
+        [
+          "Active",
+          "BOOL",
+          "",
+          "Indicates that the FB has control on the axis"
+        ],
+        [
+          "CommandAborted",
+          "BOOL",
+          "",
+          "Command is aborted by another command"
+        ],
+        [
+          "CommandAccepted",
+          "BOOL",
+          "",
+          "The command has been accepted by the axis group.\nIf the output becomesTRUE, the function block instance can be used to\ncommand the next movement with a new rising edge onExecute.\nWhile the output isFALSE, keep calling the function block without\na new rising edge ofExecute.\nThe output is reset toFALSEon a falling edge ofExecute."
+        ],
+        [
+          "Error",
+          "BOOL",
+          "",
+          "Signals that an error has occurred within the function block"
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "",
+          "Error identification"
+        ],
+        [
+          "MovementId",
+          "SMC_Movement_Id",
+          "",
+          "The unique identifier of the movement.  Valid ifCommandAcceptedorDoneisTRUE."
+        ]
+      ]
+    }
+  ]
+}

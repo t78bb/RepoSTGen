@@ -1,0 +1,73 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_INT_STATUS (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_Data-types/SoftMotion-CNC/SMC_INT_STATUS.html",
+  "page_title": "SMC_INT_STATUS (ENUM)",
+  "text": "\nTYPE SMC_INT_STATUS :\nStatus of an interpolator instance.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "IPO_UNKNOWN",
+          "Initial": "0",
+          "Comment": "Internal state that may not occur after a complete pass\nof theSMC_Interpolator."
+        },
+        {
+          "Name": "IPO_INIT",
+          "Initial": "1",
+          "Comment": "Initialization state; movement not started yet"
+        },
+        {
+          "Name": "IPO_ACCEL",
+          "Initial": "2",
+          "Comment": "Interpolation ongoing; currently accelerating"
+        },
+        {
+          "Name": "IPO_CONSTANT",
+          "Initial": "3",
+          "Comment": "Interpolation ongoing with constant velocity"
+        },
+        {
+          "Name": "IPO_DECEL",
+          "Initial": "4",
+          "Comment": "Interpolation ongoing; currently decelerating"
+        },
+        {
+          "Name": "IPO_FINISHED",
+          "Initial": "5",
+          "Comment": "Interpolation done"
+        },
+        {
+          "Name": "IPO_WAIT",
+          "Initial": "6",
+          "Comment": "Interpolation ongoing; currently waiting for example by a\nstop input or a M-command"
+        },
+        {
+          "Name": "IPO_INCREASING_ACCEL",
+          "Initial": "7",
+          "Comment": "Interpolation ongoing; currently building up the\nacceleration"
+        },
+        {
+          "Name": "IPO_DECREASING_ACCEL",
+          "Initial": "8",
+          "Comment": "Interpolation ongoing; currently ramping down the\nacceleration"
+        },
+        {
+          "Name": "IPO_INCREASING_DECEL",
+          "Initial": "9",
+          "Comment": "Interpolation ongoing; currently building up the\ndeceleration"
+        },
+        {
+          "Name": "IPO_DECREASING_DECEL",
+          "Initial": "10",
+          "Comment": "Interpolation ongoing; currently ramping down the\ndeceleration"
+        }
+      ]
+    }
+  ]
+}

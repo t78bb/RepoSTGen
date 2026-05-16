@@ -1,0 +1,61 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_TRAFO_Gantry2Tool2 (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_Trafo_POUs/SoftMotion-Transformations/Gantry-systems/SMC_TRAFO_Gantry2Tool2.html",
+  "page_title": "SMC_TRAFO_Gantry2Tool2 (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_TRAFO_Gantry2Tool2\nReverse transformations for gantry systems with tool offset.\nThe tool is approximated by a rectangular triangle.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "pi",
+          "Type": "SMC_PosInfo",
+          "Comment": "Target vector position (x,y), ouptput of interpolator.SMC_POSINFO"
+        },
+        [
+          "dOffsetX",
+          "LREAL",
+          "Additional offset for x-axis"
+        ],
+        [
+          "dOffsetY",
+          "LREAL",
+          "Additional offset for y-axis"
+        ],
+        [
+          "dAlpha",
+          "LREAL",
+          "Angle indicating orientation of tool,\ncan be calculated by use ofSMC_CalcDirectionFromVector"
+        ],
+        [
+          "dToolA",
+          "LREAL",
+          "Size of tool A = distance( set position) - (machine position)"
+        ],
+        [
+          "dToolB",
+          "LREAL",
+          "Size of tool B = distance( set position) - (machine position)"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "dx",
+          "Type": "LREAL",
+          "Comment": "Resulting position for x-axis"
+        },
+        [
+          "dy",
+          "LREAL",
+          "Resulting position for y-axis"
+        ]
+      ]
+    }
+  ]
+}

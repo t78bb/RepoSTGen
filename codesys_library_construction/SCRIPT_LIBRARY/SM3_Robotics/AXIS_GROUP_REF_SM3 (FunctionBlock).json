@@ -1,0 +1,8 @@
+{
+  "library": "SM3_Robotics",
+  "title": "AXIS_GROUP_REF_SM3 (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/AxisGroup/AXIS_GROUP_REF_SM3.html",
+  "page_title": "AXIS_GROUP_REF_SM3 (FB)",
+  "text": "\nFUNCTION_BLOCK AXIS_GROUP_REF_SM3 IMPLEMENTS SMC_IAxisGroup\nRepresents an axis group.\nThe axis group is the central handle referenced by all motion and\nadministrative function blocks.\nAn axis group consists of references to the grouped axes,\nseveral transformations (kinematics, product coordinate system, â¦)\nand several internal state variables.",
+  "tables": []
+}

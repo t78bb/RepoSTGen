@@ -1,0 +1,33 @@
+{
+  "library": "SM3_Dynamics",
+  "title": "DynamicsParams (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Dynamics/Current/SM3_Dynamics/ISMDynamics/DynamicsParams.html",
+  "page_title": "DynamicsParams (STRUCT)",
+  "text": "Library Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nSM3_Dynamics\nISMDynamics\nDynLoad (Struct)\nDynSpatialInertia (Struct)\nDynUnits (Struct)\nDynamicsParams (Struct)\nISMDynamics (Interface)\nAxesStateToTorque (Method)\nFile and Project Information\nLibrary Reference\nSM3_Error\nLibrary Identification\nLibrary Properties\nSM3_Math\nLibrary Identification\nLibrary Properties\nSM3_RBase\nLibrary Identification\nLibrary Properties\nSM3_Dynamics\nDocs\n»\nSM3_Dynamics\n»\nISMDynamics\n»\nDynamicsParams (STRUCT)\nDynamicsParams (STRUCT)\nÂ¶\nTYPE DynamicsParams : STRUCT\nParameters for evaluating a dynamic model.\nInOut:\nName\nType\nComment\ng\nSM3M.SMC_VECTOR3D\nThe gravitational acceleration, defined in the MCS in u/sÂ².\nload\nDynLoad\nThe load, defined in the end effector frame.\nunits\nDynUnits\nConversion factors from user units to SI units.",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "g",
+          "Type": "SM3M.SMC_VECTOR3D",
+          "Comment": "The gravitational acceleration, defined in the MCS in u/sÂ²."
+        },
+        {
+          "Name": "load",
+          "Type": "DynLoad",
+          "Comment": "The load, defined in the end effector frame."
+        },
+        {
+          "Name": "units",
+          "Type": "DynUnits",
+          "Comment": "Conversion factors from user units to SI units."
+        }
+      ]
+    }
+  ]
+}

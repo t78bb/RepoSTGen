@@ -1,0 +1,56 @@
+{
+  "library": "CmpBACnet",
+  "title": "BACnetSubscribeCOVProperty (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/CmpBACnet/Current/BACnetClientAPI/BACnetSubscribeCOVProperty.html",
+  "page_title": "BACnetSubscribeCOVProperty (FUN)",
+  "text": "\nFUNCTION BACnetSubscribeCOVProperty :\nIEC_BACNET_STATUS\nSends an SubscribeCovProperty request\nSends a message to subscribe a COV client to receive COV notifications for an arbitrary\nproperty in an arbitrary BACnet object, or to cancel an existing subscription. If the\nobject supports COV reporting, COV notifications may be sent to one or more subscriber\nclients. A subscription establishes a connection between the change of value detection\nand reporting mechanism within the COV initiating object, and a logical process within\nthe COV-client. This routine may control APDU Properties like APDU length and\nsegmentation and timeout for both request and response processing. This routine may\nsend asynchronous messages, i.e. this routine will complete its execution before the\nBACnet reply comes so the application can keep running. In this case the response\ninformation will be received by the thread which is responsible for receiving\nasynchronous responses. An optional BACNET_SIMPLE_ACK_COMPLETE_CB routine, which is\nprovided by the BACnet application, shall be used to process this information. If a\nnumber of asynchronous messages are sent, the responses shall be queued and identified\nby the transaction handles. If no BACNET_SIMPLE_ACK_COMPLETE_CB routine is used then\nBACnetSubscribeCOVProperty routine sends a request message and waits for the reply.\nNOTE\n: If fLifeTimePresent and fCovIncrementPresent of pSubscriber are not set to 1, on some systems\nerrors may occur. However, these parameters can be 1 any time, because a liftime of 0\nindicates infinite lifetime and an increment of 0 an infinitesimal small increment.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "BACnetSubscribeCOVProperty",
+          "Type": "IEC_BACNET_STATUS",
+          "Comment": "A status indicating whether the operation worked."
+        },
+        {
+          "Scope": "Input",
+          "Name": "pSourceAddress",
+          "Type": "POINTER TOIEC_BACNET_ADDRESS",
+          "Comment": "If the BACnet application has only one device constructed and installed, this can\nbe 0. In this case the MAC address of this device will be used. Otherwise this\nshall be the MAC address returned on device object construction."
+        },
+        [
+          "pDestinationAddress",
+          "POINTER TOIEC_BACNET_ADDRESS",
+          "This is the MAC address of the device to which the request\nshould be sent."
+        ],
+        [
+          "pSubscriber",
+          "POINTER TOIEC_BACNET_SUBSCRIBE_COVP_INFO",
+          "A pointer to a memory block which contains data structure defining a set of\nparameters: whether this request is for subscription or cancellation, the destination\nProcess identifier, monitored object identifier, monitored property reference,\nCOV increment, whether confirmed or unconfirmed notification is required, and\nsubscription lifetime."
+        ],
+        [
+          "pAPDUParams",
+          "POINTER TOIEC_BACNET_APDU_PROPERTIES",
+          "A pointer to the APDU-Properties structure which sets APDU properties for this\ntransaction only. This does not change global defaults or settings for the application\nAPDU Properties. This argument may be 0. In this case APDU properties  are used\nwhich were specified in the device object properties of the applications device which\nsends the request."
+        ],
+        [
+          "pTransactionToken",
+          "POINTER TOBACnetAsyncTransactionToken",
+          "Transaction token of the asynchronous call - seeBACnetAsyncTransactionToken."
+        ],
+        [
+          "pError",
+          "POINTER TOIEC_BACNET_ERROR",
+          "A pointer to a structure to hold BACnet Error information. pError may be 0 if the\napplication isnât interested in detailed error information."
+        ]
+      ]
+    }
+  ]
+}

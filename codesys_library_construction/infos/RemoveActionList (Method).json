@@ -1,0 +1,31 @@
+{
+  "library": "BACnet",
+  "title": "RemoveActionList (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/Command/pou-BACnetCommand/RemoveActionList.html",
+  "page_title": "BACnetCommand.RemoveActionList (METH)",
+  "text": "\nMETHOD RemoveActionList : CmpBACnet.IEC_BACNET_STATUS\nRemoves a action list and action list text at index nIndex from the Action-BACnet-Propetrty and Action_Text-BACnetProperty of this BACnet-Command-Object at the same time.\nSo both description and action are removed simultaneously.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "RemoveActionList",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "nIndex",
+          "Type": "CmpBACnet.IEC_BACNET_ELEMENT_COUNT",
+          "Comment": "The 1 based index of the action list (and text) to remove."
+        }
+      ]
+    }
+  ]
+}

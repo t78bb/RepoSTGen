@@ -1,0 +1,77 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_GetTrackingError (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/Diagnostics/SMC_GetTrackingError.html",
+  "page_title": "SMC_GetTrackingError (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_GetTrackingError\nThis function block may be employed to measure the current and maximum lag error compensating the dead time,\nwhich can arise from the communication via a field bus and will be given in number of cycles (\nbyDeadTimeCycles\n).\nSimilar to\nSMC_GetMaxSetVelocity\na time stamp (\ndwTimeStamp\n) can be used to measure the time at the maximum.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "bEnable",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "TRUE: Starts execution of the function block."
+        },
+        [
+          "byDeadTimeCycles",
+          "BYTE",
+          "2",
+          "Number of dead time cycles"
+        ],
+        [
+          "dwTimeStamp",
+          "DWORD",
+          "",
+          "Optional time stamp input; can be used to find out when the\nmaximum occured."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bValid",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUE: Parameter is available."
+        },
+        [
+          "bBusy",
+          "BOOL",
+          "",
+          "TRUE: Execution of function block has not been finished\nyet."
+        ],
+        [
+          "fActTrackingError",
+          "LREAL",
+          "0",
+          "Current lag error"
+        ],
+        [
+          "fMaxTrackingError",
+          "LREAL",
+          "0",
+          "Maximum lag error"
+        ],
+        [
+          "dwTimeAtMax",
+          "DWORD",
+          "0",
+          "Maximum value ofdwTimeStamp"
+        ]
+      ]
+    }
+  ]
+}

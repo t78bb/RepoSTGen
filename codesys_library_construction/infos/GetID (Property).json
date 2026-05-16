@@ -1,0 +1,8 @@
+{
+  "library": "AC_Alarming",
+  "title": "GetID (Property)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_Alarming/Current/ExtenderFB/pou-ACAlarmExtender/GetID.html",
+  "page_title": "ACAlarmExtender.GetID (PROP)",
+  "text": "\nPROPERTY GetID : STRING\nImplementation of the property defined by AC.IEnvironmentExtender.",
+  "tables": []
+}

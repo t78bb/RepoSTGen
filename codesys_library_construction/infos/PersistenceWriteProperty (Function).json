@@ -1,0 +1,41 @@
+{
+  "library": "BACnet2DefaultImpl",
+  "title": "PersistenceWriteProperty (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2DefaultImpl/Current/BACnetDefaultImpl/Functions/PersistenceWriteProperty.html",
+  "page_title": "PersistenceWriteProperty (FUN)",
+  "text": "\nFUNCTION PersistenceWriteProperty : CmpBACnet.IEC_BACNET_STATUS\nImplementation helper function for ObjectPersistence and BackupRestore\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "PersistenceWriteProperty",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS"
+        },
+        {
+          "Scope": "Input",
+          "Name": "hFile",
+          "Type": "RTS_IEC_HANDLE"
+        },
+        [
+          "pPropertyHeader",
+          "POINTER TOPERSISTENT_PDATA_ENTRY"
+        ],
+        [
+          "rawBuffer",
+          "CmpBACnet.IEC_BACNET_BUFFER"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "result",
+          "Type": "RTS_IEC_RESULT"
+        }
+      ]
+    }
+  ]
+}

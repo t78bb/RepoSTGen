@@ -1,0 +1,6 @@
+TYPE MotorO :
+STRUCT
+	Coil:BOOL;
+	FaultStatus:BOOL;
+END_STRUCT
+END_TYPE

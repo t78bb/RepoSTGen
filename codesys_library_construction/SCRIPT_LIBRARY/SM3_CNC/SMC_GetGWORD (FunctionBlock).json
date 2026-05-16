@@ -1,0 +1,36 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_GetGWORD (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/SoftMotion-Function-Blocks/NCDecoder_Help_Functions/SMC_GetGWORD.html",
+  "page_title": "SMC_GetGWORD (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_GetGWORD\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "w",
+          "Type": "UDINT"
+        },
+        [
+          "pncprog",
+          "POINTER TOSMC_CNC_REF"
+        ],
+        [
+          "bInit",
+          "BOOL"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "gword",
+          "Type": "POINTER TOSMC_GCODE_WORD"
+        }
+      ]
+    }
+  ]
+}

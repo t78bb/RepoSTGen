@@ -1,0 +1,23 @@
+{
+  "library": "String Functions",
+  "title": "GetLibVersionNumber (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Functions/Current/Library-Information/GetLibVersionNumber.html",
+  "page_title": "GetLibVersionNumber (FUN)",
+  "text": "Library Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nStrFunc\nAliases\nIString (Alias)\nEnums\nERROR (Enum)\nFunctions\nCONCAT (Function)\nCOUNT (Function)\nDELETE (Function)\nFIND (Function)\nINSERT (Function)\nLEFT (Function)\nLEN (Function)\nMID (Function)\nREPLACE (Function)\nRIGHT (Function)\nFile and Project Information\nLibrary Reference\nString Segments\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nUTF-8 Encoding Support\nLibrary Identification\nLibrary Properties\nString Functions\nDocs\n»\nLibrary\nInformation\n»\nGetLibVersionNumber (FUN)\nGetLibVersionNumber (FUN)\nÂ¶\nFUNCTION GetLibVersionNumber : DWORD\nInOut:\nScope\nName\nType\nReturn\nGetLibVersionNumber\nDWORD",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetLibVersionNumber",
+          "Type": "DWORD"
+        }
+      ]
+    }
+  ]
+}

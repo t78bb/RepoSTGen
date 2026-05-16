@@ -1,0 +1,39 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "SetIdentification (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_Module/pou-Module/Identification/SetIdentification.html",
+  "page_title": "Module.SetIdentification (METH)",
+  "text": "\nMETHOD PUBLIC FINAL SetIdentification\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "pbyName",
+          "Type": "POINTER TO BYTE"
+        },
+        [
+          "pMI",
+          "POINTER TOModuleInfo"
+        ],
+        [
+          "udiComAddr",
+          "UDINT"
+        ],
+        [
+          "handle",
+          "ModuleHandle"
+        ],
+        [
+          "pEnvironment",
+          "POINTER TOMEnv"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "library": "Visu Utils",
+  "title": "IsAccepted (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/Visu Utils/Current/VisuUtils/VisuActionUtilities/Interfaces/pou-IVisualizationClientFilter/IsAccepted.html",
+  "page_title": "IVisualizationClientFilter.IsAccepted (METH)",
+  "text": "\nMETHOD IsAccepted : BOOL\nFor every client can be desided, if it is accepted.\nTRUE\n: Client is accepted\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "IsAccepted",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfClient",
+          "Type": "IVisualizationClient",
+          "Comment": "The client, to check"
+        }
+      ]
+    }
+  ]
+}

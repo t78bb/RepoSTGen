@@ -1,0 +1,41 @@
+{
+  "library": "Standard64",
+  "title": "LTOF (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/Standard64/Current/Timer/LTOF.html",
+  "page_title": "LTOF (FB)",
+  "text": "\nFUNCTION_BLOCK LTOF\nTimer of delay.\nQ is FALSE, after the delay defined in PT and IN had a faling edge.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "IN",
+          "Type": "BOOL",
+          "Comment": "starts timer with falling edge, resets timer with rising edge"
+        },
+        [
+          "PT",
+          "LTIME",
+          "time to pass, before Q is reset"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Q",
+          "Type": "BOOL",
+          "Comment": "is FALSE, PT seconds after IN had a falling edge"
+        },
+        [
+          "ET",
+          "LTIME",
+          "elapsed time since falling edge at IN"
+        ]
+      ]
+    }
+  ]
+}

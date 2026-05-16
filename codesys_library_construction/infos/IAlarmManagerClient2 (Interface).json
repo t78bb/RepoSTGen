@@ -1,0 +1,8 @@
+{
+  "library": "AlarmManager",
+  "title": "IAlarmManagerClient2 (Interface)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/IAlarmManagerClient2.html",
+  "page_title": "IAlarmManagerClient2 (ITF)",
+  "text": "\nINTERFACE IAlarmManagerClient2 EXTENDS\nIAlarmManagerClient\nExtension of interface IAlarmManagerClient to be able to get notifications about\nevents, that are only written into the alarm storage.\nMethods:\nEventOccurred\nActiveAlarmsChanged\n, inherited from\nIAlarmManagerClient\nAlarmStorageModified\n, inherited from\nIAlarmManagerClient\nGetFilterCriteria\n, inherited from\nIAlarmManagerClient\nStructure:\nEventOccurred (Method)",
+  "tables": []
+}

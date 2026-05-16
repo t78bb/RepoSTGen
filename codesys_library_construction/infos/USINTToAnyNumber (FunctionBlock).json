@@ -1,0 +1,28 @@
+{
+  "library": "DNP3",
+  "title": "USINTToAnyNumber (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/AnyNumberConverter/USINTToAnyNumber.html",
+  "page_title": "USINTToAnyNumber (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL USINTToAnyNumber\nConvert USINT to an AnyNumber with baseType = AnyNumberType.TYPE_USINT.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "in",
+          "Type": "USINT"
+        },
+        {
+          "Scope": "Output",
+          "Name": "out",
+          "Type": "AnyNumber"
+        }
+      ]
+    }
+  ]
+}

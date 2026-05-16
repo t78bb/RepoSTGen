@@ -1,0 +1,48 @@
+{
+  "library": "String Builder Base",
+  "title": "WriteString (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Builder Base/Current/BuilderBase/Interfaces/pou-IBuilder/WriteString.html",
+  "page_title": "IBuilder.WriteString (METH)",
+  "text": "\nMETHOD WriteString : UDINT\nAppends the contents of\nsValue\nto the buffer.\nIt returns the number of bytes written.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "WriteString",
+          "Type": "UDINT",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Scope": "Inout Const",
+          "Name": "sValue",
+          "Type": "STRING(255)",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfCharmap",
+          "Type": "ICharmap",
+          "Initial": "0",
+          "Comment": "Default: Windows-1252"
+        },
+        {
+          "Scope": "Output",
+          "Name": "eErrorID",
+          "Type": "ERROR",
+          "Initial": "",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

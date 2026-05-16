@@ -1,0 +1,70 @@
+{
+  "library": "PLCopen Safety FBs",
+  "title": "SF_TwoHandControlTypeII (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/PLCopen Safety FBs/Current/PLCopenSafetyFBs/Function-Blocks/SF_TwoHandControlTypeII.html",
+  "page_title": "SF_TwoHandControlTypeII (FB)",
+  "text": "PLCopenSafetyFBs\nEnums\nFBS_ANTI (Enum)\nFBS_EDM (Enum)\nFBS_ENSWITCH (Enum)\nFBS_ENSWITCH2 (Enum)\nFBS_EQUI (Enum)\nFBS_ESPE (Enum)\nFBS_ESTOP (Enum)\nFBS_GUARD (Enum)\nFBS_GUARDLOCK2 (Enum)\nFBS_MODESEL (Enum)\nFBS_OUTCONTROL (Enum)\nFBS_PSE (Enum)\nFBS_RESBUT (Enum)\nFBS_SAFEREQ (Enum)\nFBS_TESTSEN (Enum)\nFBS_TWOHAND (Enum)\nFunction Blocks\nSF_Antivalent (FunctionBlock)\nSF_EDM (FunctionBlock)\nSF_ESPE (FunctionBlock)\nSF_EmergencyStop (FunctionBlock)\nSF_EnableSwitch (FunctionBlock)\nSF_EnableSwitch_2 (FunctionBlock)\nSF_Equivalent (FunctionBlock)\nSF_Guard (FunctionBlock)\nSF_GuardLocking_2 (FunctionBlock)\nSF_ModeSelector (FunctionBlock)\nSF_OutControl (FunctionBlock)\nSF_PSE (FunctionBlock)\nSF_ResetButton (FunctionBlock)\nSF_SafetyRequest (FunctionBlock)\nSF_TestableSafetySensor (FunctionBlock)\nSF_TwoHandControlTypeII (FunctionBlock)\nSF_TwoHandControlTypeIII (FunctionBlock)\nFile and Project Information\nLibrary Reference\nStandard\nLibrary Identification\nLibrary Properties\nSysTimeCore\nLibrary Identification\nLibrary Properties\nPLCopen Safety FBs\nDocs\n»\nPLCopenSafetyFBs\n»\nFunction\nBlocks\n»\nSF_TwoHandControlTypeII (FB)\nSF_TwoHandControlTypeII (FB)\nÂ¶\nFUNCTION_BLOCK SF_TwoHandControlTypeII\nThis function block provides the two-hand control functionality (see EN 574, Section 4 Type II).\nInOut:\nScope\nName\nType\nInitial\nComment\nInput\nActivate\nBOOL\nFALSE\nActivation of the FB.\nS_Button1\nBOOL\nFALSE\nInput of button 1, FALSE: Button 1 released, TRUE: Button 1\nactuated.\nS_Button2\nBOOL\nFALSE\nInput of button 2, FALSE: Button 2 released, TRUE: Button 2\nactuated.\nOutput\nReady\nBOOL\nFALSE\nActivation of the FB. TRUE indicates that the FB is\nactivated and the outputs results are valid, FALSE the FB is\nnot active and the program is not executed.\nS_TwoHandOut\nBOOL\nFALSE\nSafety related output signal. FALSE: No correct two hand\noperation. TRUE: S_Button1 and S_Button2 inputs are TRUE and\nno error occurred. Correct two hand operation.\nSafetyDemand\nBOOL\nFALSE\nOutput indicating that the FB is active and the primary\nsafety function is demanded (e.g. related to the safety\nfunctionality).\nError\nBOOL\nFALSE\nError flag\nDiagCode\nWORD\n0\nDiagnostic register",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "Activate",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "Activation of the FB."
+        },
+        [
+          "S_Button1",
+          "BOOL",
+          "FALSE",
+          "Input of button 1, FALSE: Button 1 released, TRUE: Button 1\nactuated."
+        ],
+        [
+          "S_Button2",
+          "BOOL",
+          "FALSE",
+          "Input of button 2, FALSE: Button 2 released, TRUE: Button 2\nactuated."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Ready",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "Activation of the FB. TRUE indicates that the FB is\nactivated and the outputs results are valid, FALSE the FB is\nnot active and the program is not executed."
+        },
+        [
+          "S_TwoHandOut",
+          "BOOL",
+          "FALSE",
+          "Safety related output signal. FALSE: No correct two hand\noperation. TRUE: S_Button1 and S_Button2 inputs are TRUE and\nno error occurred. Correct two hand operation."
+        ],
+        [
+          "SafetyDemand",
+          "BOOL",
+          "FALSE",
+          "Output indicating that the FB is active and the primary\nsafety function is demanded (e.g. related to the safety\nfunctionality)."
+        ],
+        [
+          "Error",
+          "BOOL",
+          "FALSE",
+          "Error flag"
+        ],
+        [
+          "DiagCode",
+          "WORD",
+          "0",
+          "Diagnostic register"
+        ]
+      ]
+    }
+  ]
+}

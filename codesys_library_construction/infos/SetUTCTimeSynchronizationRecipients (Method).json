@@ -1,0 +1,36 @@
+{
+  "library": "BACnet",
+  "title": "SetUTCTimeSynchronizationRecipients (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/Device/pou-BACnetDevice/SetUTCTimeSynchronizationRecipients.html",
+  "page_title": "BACnetDevice.SetUTCTimeSynchronizationRecipients (METH)",
+  "text": "\nMETHOD SetUTCTimeSynchronizationRecipients : CmpBACnet.IEC_BACNET_STATUS\nSets the UTC_Time_Synchronization_Recipients-List of this BACnet object.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetUTCTimeSynchronizationRecipients",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "uiListCount",
+          "Type": "CmpBACnet.IEC_BACNET_ELEMENT_COUNT",
+          "Comment": "The length of the list in the following pointer."
+        },
+        [
+          "pList",
+          "POINTER TO\nCmpBACnet.IEC_BACNET_RECIPIENT",
+          "The list data containing elements according to the given\ncount."
+        ]
+      ]
+    }
+  ]
+}

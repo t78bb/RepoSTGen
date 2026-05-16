@@ -1,0 +1,52 @@
+{
+  "library": "AlarmManager",
+  "title": "GetInstanceAlarmByName (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/pou-IAlarmHandler7/GetInstanceAlarmByName.html",
+  "page_title": "IAlarmHandler7.GetInstanceAlarmByName (METH)",
+  "text": "\nMETHOD GetInstanceAlarmByName :\nIAlarm8\nProvides access to alarm specific data of instantiated function blocks.\nIf a function block is used in several alarm group templates this function can be used to obtain the correct alarm instance.\nAlso, if several alarm templates are using the same function block, this function returns the correct alarm instance.\nReturns NULL if no alarm is found.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetInstanceAlarmByName",
+          "Type": "IAlarm8",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "pFBInstance",
+          "Type": "POINTER TO BYTE",
+          "Comment": "Pointer to the template FB instance. Use THIS when inside\nthe fucntion block."
+        },
+        [
+          "uiTemplateAlarmId",
+          "ALARM_ID",
+          "Alarm ID within the related alarm group template."
+        ],
+        [
+          "stAlarmTemplateName",
+          "STRING(255)",
+          "Name of the related alarm group template of this template instance.\nIn case of multiple alarm group template objects that use the same FB as type, specify the specific type."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "usiAlarmGroupID",
+          "Type": "ALARMGROUP_ID",
+          "Comment": "Id of the related alarm group.\nCan be used to acknowledge this alarm by using methods like IAlarmHandler.AcknowlegeOneOfGroup."
+        },
+        [
+          "uiAlarmid",
+          "ALARM_ID",
+          "Alarm ID of this alarm in the related alarm group.\nCan be used to acknowledge this alarm by using methods like IAlarmHandler.AcknowlegeOneOfGroup."
+        ]
+      ]
+    }
+  ]
+}

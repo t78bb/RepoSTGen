@@ -1,0 +1,25 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_ValueSelect (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/DataTypes/DriveInterface/SMC_ValueSelect.html",
+  "page_title": "SMC_ValueSelect (ENUM)",
+  "text": "\nTYPE SMC_ValueSelect :\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Name": "set",
+          "Initial": "0"
+        },
+        {
+          "Name": "actual",
+          "Initial": "1"
+        }
+      ]
+    }
+  ]
+}

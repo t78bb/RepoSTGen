@@ -1,0 +1,25 @@
+{
+  "library": "DNP3",
+  "title": "AnalogInfo (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/AnalogInfo.html",
+  "page_title": "AnalogInfo (STRUCT)",
+  "text": "\nTYPE AnalogInfo : STRUCT\nDefine structure to hold information for a single Analog\nOutput Block. An array of these structures will be passed to\nMaster.AnalogCommand to generate a single request with multiple\nanalog output objects in it.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Name": "pointNumber",
+          "Type": "UINT"
+        },
+        {
+          "Name": "value",
+          "Type": "AnyNumber"
+        }
+      ]
+    }
+  ]
+}

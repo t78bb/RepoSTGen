@@ -1,0 +1,36 @@
+{
+  "library": "SysFile",
+  "title": "SysFileGetSizeByHandle (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SysFile/Current/SysFileGetSizeByHandle.html",
+  "page_title": "SysFileGetSizeByHandle (FUN)",
+  "text": "\nFUNCTION SysFileGetSizeByHandle : __XWORD\nGet file size of the file specified by handle\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SysFileGetSizeByHandle",
+          "Type": "__XWORD",
+          "Comment": "Size of the file in bytes"
+        },
+        {
+          "Scope": "Input",
+          "Name": "hFile",
+          "Type": "RTS_IEC_HANDLE",
+          "Comment": "Handle of the file"
+        },
+        [
+          "pResult",
+          "POINTER TO RTS_IEC_RESULT",
+          "Pointer to runtime system error code (see CmpErrors.library)"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "library": "3S CANopenSafety Slave",
+  "title": "BufferSizes (ParamList)",
+  "url": "https://content.helpme-codesys.com/en/libs/3S CANopenSafety Slave/Current/_3SCANopenSafetySlave/BufferSizes.html",
+  "page_title": "BufferSizes (PARAMS)",
+  "text": "_3SCANopenSafetySlave\nBufferSizes (ParamList)\nFunction Blocks\nCANopenDeviceSIL2 (FunctionBlock)\nCyclic-Methods-state-independent\nState-Machine\nFile and Project Information\nLibrary Reference\nBase Interfaces\nLibrary Identification\nLibrary Properties\nCANopenSafetyBase\nLibrary Identification\nLibrary Properties\nCANopenSafetyTypes\nLibrary Identification\nLibrary Properties\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nCmpSIL2\nLibrary Identification\nLibrary Properties\nIoDriver Interfaces\nLibrary Identification\nLibrary Properties\nIoDriver Parameter Interfaces\nLibrary Identification\nLibrary Properties\nIoStandard\nLibrary Identification\nLibrary Properties\nSysExcept\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\n3S CANopenSafety Slave\nDocs\n»\n_3SCANopenSafetySlave\n»\nBufferSizes (PARAMS)\nBufferSizes (PARAMS)\nÂ¶\nLibrary parameters for Tx and RxSRDO buffer sizes.\nHigh Limit defines the highest array index.\nValues will be set by the configurator.\nInOut:\nScope\nName\nType\nInitial\nComment\nConstant\ngc_TXSRDOBUFFER_HIGH_LIMIT\nBYTE\n63\nmaximal number of TxSRDOs = gc_TXSRDOBUFFER_HIGH_LIMIT + 1\ngc_RXSRDOBUFFER_HIGH_LIMIT\nBYTE\n63\nmaximal number of RxSRDOs = gc_RXSRDOBUFFER_HIGH_LIMIT + 1",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Constant",
+          "Name": "gc_TXSRDOBUFFER_HIGH_LIMIT",
+          "Type": "BYTE",
+          "Initial": "63",
+          "Comment": "maximal number of TxSRDOs = gc_TXSRDOBUFFER_HIGH_LIMIT + 1"
+        },
+        [
+          "gc_RXSRDOBUFFER_HIGH_LIMIT",
+          "BYTE",
+          "63",
+          "maximal number of RxSRDOs = gc_RXSRDOBUFFER_HIGH_LIMIT + 1"
+        ]
+      ]
+    }
+  ]
+}

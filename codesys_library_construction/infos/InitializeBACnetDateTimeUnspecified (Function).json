@@ -1,0 +1,25 @@
+{
+  "library": "BACnet",
+  "title": "InitializeBACnetDateTimeUnspecified (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/Utilities/BACnetUtilities/InitializeBACnetDataTypes/InitializeBACnetDateTimeUnspecified.html",
+  "page_title": "InitializeBACnetDateTimeUnspecified (FUN)",
+  "text": "\nFUNCTION InitializeBACnetDateTimeUnspecified\nInitializes a IEC_BACNET_DATE_TIME unspecified\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "bacDateTime",
+          "Type": "CmpBACnet.IEC_BACNET_DATE_TIME",
+          "Comment": "The BACnet date time to operate on."
+        }
+      ]
+    }
+  ]
+}

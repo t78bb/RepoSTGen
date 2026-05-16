@@ -1,0 +1,42 @@
+{
+  "library": "3S Storage",
+  "title": "StorageGetIndexId (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/3S Storage/Current/_3SStorage/Instances/pou-Storage/IStorage2/StorageGetIndexId.html",
+  "page_title": "Storage.StorageGetIndexId (METH)",
+  "text": "\nMETHOD StorageGetIndexId : STO.ERROR\nDetermines the id of an index of a table.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "StorageGetIndexId",
+          "Type": "STO.ERROR",
+          "Comment": "The error code. Can return ERROR.NOT_IMPLEMENTED for non-\nsqlite implementations"
+        },
+        {
+          "Scope": "Inout",
+          "Name": "sIndex",
+          "Type": "STRING",
+          "Comment": "The name of the index"
+        },
+        [
+          "sTable",
+          "STRING",
+          "The name of the table the index belongs to"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "idIndex",
+          "Type": "CAA.IDENT",
+          "Comment": "Returns id of the index."
+        }
+      ]
+    }
+  ]
+}

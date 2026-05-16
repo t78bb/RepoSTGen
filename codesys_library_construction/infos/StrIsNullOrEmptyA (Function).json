@@ -1,0 +1,31 @@
+{
+  "library": "StringUtils",
+  "title": "StrIsNullOrEmptyA (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/StringUtils/Current/Public-Parts/Ansi/StrIsNullOrEmptyA.html",
+  "page_title": "StrIsNullOrEmptyA (FUN)",
+  "text": "\nFUNCTION StrIsNullOrEmptyA : BOOL\nThis function determines if the given string is null or empty\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "StrIsNullOrEmptyA",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "pstData",
+          "Type": "CharBufferPtr",
+          "Comment": "simply a pointer to byte"
+        }
+      ]
+    }
+  ]
+}

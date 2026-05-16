@@ -1,0 +1,34 @@
+{
+  "library": "DNP3",
+  "title": "SetSessionConfigAspectMultiFragRespAllowed (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Outstation/pou-OutstationConfiguration/SetSessionConfigAspectMultiFragRespAllowed.html",
+  "page_title": "OutstationConfiguration.SetSessionConfigAspectMultiFragRespAllowed (METH)",
+  "text": "\nMETHOD SetSessionConfigAspectMultiFragRespAllowed :\nError\nSet optional outstation session configuration aspect - multi fragment responses.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetSessionConfigAspectMultiFragRespAllowed",
+          "Type": "Error",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "multiFragRespAllowed",
+          "Type": "BOOL",
+          "Initial": "TRUE",
+          "Comment": "Specify whether application is allowed to send multi\nfragment responses."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现一个支持动态创建的功能块，并定义一个实现了接口的类结构，其中包含一个可读写的整数属性。",
+  "provide_code": "{attribute 'enable_dynamic_creation'}\nFUNCTION_BLOCK Realsubject IMPLEMENTS  Subject_Interface\nVAR_INPUT\nEND_VAR\nVAR_OUTPUT\nEND_VAR"
+}

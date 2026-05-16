@@ -1,0 +1,8 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "IsActive (Property)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_RMP_ReliableMessageProtocol/pou-RMPConnection/IsActive.html",
+  "page_title": "RMPConnection.IsActive (PROP)",
+  "text": "\nPROPERTY FINAL IsActive : BOOL\nReturns whether the connection is active or not",
+  "tables": []
+}

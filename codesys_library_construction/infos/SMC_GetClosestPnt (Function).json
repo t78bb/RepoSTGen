@@ -1,0 +1,32 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_GetClosestPnt (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/GeoInfo-Help-Functions/SMC_GetClosestPnt.html",
+  "page_title": "SMC_GetClosestPnt (FUN)",
+  "text": "\nFUNCTION SMC_GetClosestPnt : LREAL\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SMC_GetClosestPnt",
+          "Type": "LREAL"
+        },
+        {
+          "Scope": "Input",
+          "Name": "pv",
+          "Type": "POINTER TO SMC_VECTOR3D"
+        },
+        [
+          "pg",
+          "POINTER TOSMC_GEOINFO"
+        ]
+      ]
+    }
+  ]
+}

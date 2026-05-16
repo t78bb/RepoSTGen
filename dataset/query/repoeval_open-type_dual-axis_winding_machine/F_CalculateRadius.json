@@ -1,0 +1,5 @@
+{
+  "requirement": "This code is intended to implement a calculation for the radius based on the distances, height positions, material thickness, and height offset using a specific mathematical formula.",
+  "provide_code": "FUNCTION F_CalculateRadius : LREAL\nVAR_INPUT\n\tlD\t\t\t\t:\tLREAL;\t\t//两轴中心距离\n\tlHold\t\t\t:\tLREAL;\t\t//测量开始时的AxisV位置\n\tlHnew\t\t\t:\tLREAL;\t\t//测量结束时的AxisV位置\n\tlTk\t\t\t\t:\tLREAL;\t\t//材料厚度\n\tlOffset\t\t\t:\tLREAL;\t\t//高度偏移量\nEND_VAR",
+  "function_name": "F_CalculateRadius"
+}

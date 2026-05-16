@@ -1,0 +1,37 @@
+{
+  "library": "SM3_CNC",
+  "title": "LookupGlobalVar (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/Parser/SymbolTable/pou-SMC_NCSymbolTable/LookupGlobalVar.html",
+  "page_title": "SMC_NCSymbolTable.LookupGlobalVar (METH)",
+  "text": "\nMETHOD LookupGlobalVar : BOOL\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "LookupGlobalVar",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Input",
+          "Name": "stName",
+          "Type": "STRING"
+        },
+        {
+          "Scope": "Output",
+          "Name": "pAddr",
+          "Type": "POINTER TO BYTE"
+        },
+        [
+          "tc",
+          "TypeClass"
+        ]
+      ]
+    }
+  ]
+}

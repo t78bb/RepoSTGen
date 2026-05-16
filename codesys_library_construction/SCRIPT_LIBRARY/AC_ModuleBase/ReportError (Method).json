@@ -1,0 +1,27 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "ReportError (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_Module/pou-Module/ErrorHandling/ReportError.html",
+  "page_title": "Module.ReportError (METH)",
+  "text": "\nMETHOD ReportError\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "uiErrorNumber",
+          "Type": "UINT"
+        },
+        [
+          "itfErrorSourceModule",
+          "IModule"
+        ]
+      ]
+    }
+  ]
+}

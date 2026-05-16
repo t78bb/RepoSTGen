@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现基于不同SWMC_ID的CAN总线数据发送功能。",
+  "provide_code": "FUNCTION CAN_Send_Data_SWMC : BOOL\nVAR_INPUT\n\tSWMC_ID : UINT;\n\tid \t\t: UINT;\n\tdata\t: ARRAY[1..8] OF BYTE;\nEND_VAR"
+}

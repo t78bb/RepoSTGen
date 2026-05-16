@@ -1,0 +1,100 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_NCTokenizer (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/File/ReadNCFile/Token/SMC_NCTokenizer.html",
+  "page_title": "SMC_NCTokenizer (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL SMC_NCTokenizer\nReads a CNC program from an\nSMC_ITextStream\nand converts it into a\nSMC_TokenQueue\nof\nSMC_Token\n, which ultimately will be processed by\nSMC_NCTokenParser\n(which repleaces\nSMC_ReadNCTokens\n).\nDelimiters for tokens of type\nstring\n,\ncomment\nand\nvariable\ncan be\nreconfigured using the method\nSMC_NCTokenizer.SetDelimiters\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "bExecute",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Rising edge: Starts operation."
+        },
+        [
+          "bAbort",
+          "BOOL",
+          "",
+          "IfTRUE, the current processing of this function block\nis aborted"
+        ],
+        [
+          "stream",
+          "SMC_ITextStream",
+          "",
+          "Stream to read the CNC program from; e.g. might be a file\nstream"
+        ],
+        [
+          "paTokensBuffer",
+          "POINTER TO ARRAY [0..0]\nOF SMC_Token",
+          "",
+          "Buffer forSMC_TokenQueue"
+        ],
+        [
+          "udiTokensBufferSize",
+          "UDINT",
+          "",
+          "Length of buffer forSMC_TokenQueue"
+        ],
+        [
+          "bEnableSyntaxChecks",
+          "BOOL",
+          "TRUE",
+          "Report an error in case of syntax error, ifTRUESkips the erroneous token, ifFALSE"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bDone",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUE: The input stream has been processed completely."
+        },
+        [
+          "bBusy",
+          "BOOL",
+          "",
+          "FALSE: The FB hasnât finished processing the input\nstream yet."
+        ],
+        [
+          "bError",
+          "BOOL",
+          "",
+          "TRUE: An error occured.ErrorIDprovides additional\ninformation."
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "",
+          "In case of normal operationSMC_Error.SMC_NO_ERROR,\notherwise the ID of the occured error."
+        ],
+        [
+          "tokens",
+          "SMC_TokenQueue",
+          "",
+          "Token queue generated from the inputstream"
+        ],
+        [
+          "diSourceLineNo",
+          "DINT",
+          "",
+          "Zero-based current source line number"
+        ],
+        [
+          "diColumnNo",
+          "DINT",
+          "",
+          "Zero-based current column number"
+        ]
+      ]
+    }
+  ]
+}

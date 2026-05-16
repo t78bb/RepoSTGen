@@ -1,0 +1,41 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "InitializeReceiveBuffers (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_RMP_ReliableMessageProtocol/AC_RMP_FBCommunication/pou-IRMPFBCommunication/InitializeReceiveBuffers.html",
+  "page_title": "IRMPFBCommunication.InitializeReceiveBuffers (METH)",
+  "text": "\nMETHOD InitializeReceiveBuffers : BOOL\nThis method provides you with pointers TO the buffers holding the RMP data AND mirrored\nvariables to be received.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "InitializeReceiveBuffers",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "pRMPReceiveData",
+          "Type": "POINTER TORMPExchangeData",
+          "Comment": "The data structure used for the generall RMP; this data has to be received\nvia any network connection from the application having the given communication\naddress"
+        },
+        [
+          "pReceiveVars",
+          "POINTER TORMPVarData",
+          "The data list of variables being mirrored from a module in another application;\nthis data has to be received via any network connection from the application having\nthe given communication address"
+        ],
+        [
+          "udiReceiveVarsCount",
+          "UDINT",
+          "This is the number of variables given via the pointerpReceiveVars"
+        ]
+      ]
+    }
+  ]
+}

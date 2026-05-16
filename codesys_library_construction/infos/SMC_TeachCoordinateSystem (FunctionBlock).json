@@ -1,0 +1,61 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_TeachCoordinateSystem (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/Coordinate-Transformations/SMC_TeachCoordinateSystem.html",
+  "page_title": "SMC_TeachCoordinateSystem (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_TeachCoordinateSystem\nThis function block will help the user in calculating\nthe vectors of a new coordinate system to be taught.\nAs input data the origin of the new coordinate system and\nan arbitrary point each of the x- and y- axis are entered.\nThe outputs of the module are the translation vector and\nthe unit vectors of the new coordinate system.\nAdditionally the quality of the input parameters is evaluated\n(angle between x- and y-axis should be 90Â°).\nFor detailed information of transformation modules see\nthe overview on kinematic transformations in the CNC\nonline help.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "vOrigin",
+          "Type": "SMC_Vector3D",
+          "Comment": "Origin of the new coordinate system"
+        },
+        [
+          "vPointOnX",
+          "SMC_Vector3D",
+          "Position of point on the x-axis"
+        ],
+        [
+          "vPointOnY",
+          "SMC_Vector3D",
+          "Position of point on the y-axis"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "vX",
+          "Type": "SMC_Vector3d",
+          "Comment": "x-Coordinate of unit vector of new coordinate system"
+        },
+        [
+          "vY",
+          "SMC_Vector3d",
+          "y-Coordinate of unit vector of new coordinate system"
+        ],
+        [
+          "vZ",
+          "SMC_Vector3d",
+          "z-Coordinate of unit vector of new coordinate system"
+        ],
+        [
+          "vTranslation",
+          "SMC_Vector3d",
+          "Translation vector for origin = origin of\nnew coordinate system in old coordinates"
+        ],
+        [
+          "fQuality",
+          "LREAL",
+          "Quality of input data ranging from 0\n(vX,vYinvalid) to 1(vX,vYorthogonal)"
+        ]
+      ]
+    }
+  ]
+}

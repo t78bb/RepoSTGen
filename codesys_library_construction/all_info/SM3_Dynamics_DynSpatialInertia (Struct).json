@@ -1,0 +1,28 @@
+{
+  "library": "SM3_Dynamics",
+  "title": "DynSpatialInertia (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Dynamics/Current/SM3_Dynamics/ISMDynamics/DynSpatialInertia.html",
+  "page_title": "DynSpatialInertia (STRUCT)",
+  "text": "Library Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nSM3_Dynamics\nISMDynamics\nDynLoad (Struct)\nDynSpatialInertia (Struct)\nDynUnits (Struct)\nDynamicsParams (Struct)\nISMDynamics (Interface)\nAxesStateToTorque (Method)\nFile and Project Information\nLibrary Reference\nSM3_Error\nLibrary Identification\nLibrary Properties\nSM3_Math\nLibrary Identification\nLibrary Properties\nSM3_RBase\nLibrary Identification\nLibrary Properties\nSM3_Dynamics\nDocs\n»\nSM3_Dynamics\n»\nISMDynamics\n»\nDynSpatialInertia (STRUCT)\nDynSpatialInertia (STRUCT)\nÂ¶\nTYPE DynSpatialInertia : STRUCT\nThe spatial inertia of a body, relative to a frame at the center\nof mass.\nBeing situated at the center of mass means that the spatial inertia\ncan be represented by a 3x3 rotational inertia matrix\nI\nand the\nmass of the body\nm\n.\nInOut:\nName\nType\nComment\nI\nSM3M.SMC_Matrix3\nThe 3x3 rotational inertia matrix in kg*uÂ².\nm\nLREAL\nThe mass in kg.",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "I",
+          "Type": "SM3M.SMC_Matrix3",
+          "Comment": "The 3x3 rotational inertia matrix in kg*uÂ²."
+        },
+        {
+          "Name": "m",
+          "Type": "LREAL",
+          "Comment": "The mass in kg."
+        }
+      ]
+    }
+  ]
+}

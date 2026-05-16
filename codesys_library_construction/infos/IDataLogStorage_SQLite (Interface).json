@@ -1,0 +1,8 @@
+{
+  "library": "AC_DataLog",
+  "title": "IDataLogStorage_SQLite (Interface)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_DataLog/Current/AC_DataLog/DataLogStorage/SQLiteStorage/IDataLogStorage_SQLite.html",
+  "page_title": "IDataLogStorage_SQLite (ITF)",
+  "text": "\nINTERFACE IDataLogStorage_SQLite EXTENDS\nIDataLogStorage\nNeeded for checking in PlugIn -> Create Database or not?\nMethods:\nAddEntry\n, inherited from\nIDataLogStorage\nOnAppStop\n, inherited from\nIDataLogStorage\nOnResetOrigin\n, inherited from\nIDataLogStorage",
+  "tables": []
+}

@@ -1,0 +1,53 @@
+{
+  "library": "BACnet2",
+  "title": "UpdateProperties (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/Persistence/pou-IBACnetPersistence/UpdateProperties.html",
+  "page_title": "IBACnetPersistence.UpdateProperties (METH)",
+  "text": "\nMETHOD UpdateProperties : CmpBACnet.IEC_BACNET_STATUS\nUpdates the object initialization data with the persistent data (if present).\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "UpdateProperties",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "devInstance",
+          "Type": "CmpBACnet.IEC_BACNET_DWORD",
+          "Comment": "The device instance for which objects the update should be\ndone."
+        },
+        [
+          "objID",
+          "CmpBACnet.IEC_BACNET_OBJECT_ID",
+          "The object identifier for which the update should be done."
+        ],
+        {
+          "Scope": "Inout",
+          "Name": "propList",
+          "Type": "POINTER TO\nCmpBACnet.IEC_BACNET_PROPERTY_INSTANCE",
+          "Comment": "The pointer to the array with the property declarations for the\nobject initialization."
+        },
+        [
+          "propCount",
+          "CmpBACnet.IEC_BACNET_UNSIGNED",
+          "The number of entries in the array with properties."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "pBuffer",
+          "Type": "POINTER TO BYTE",
+          "Comment": "This pointer is used to store the allocated buffer pointer which\ncontains the loaded data which are needed for object construction.\nThe application has to free this buffer after object construction."
+        }
+      ]
+    }
+  ]
+}

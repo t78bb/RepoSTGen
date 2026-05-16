@@ -1,0 +1,28 @@
+{
+  "library": "SM3_CNC",
+  "title": "Append (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/File/ReadNCFile/Token/pou-SMC_TokenQueue/Append.html",
+  "page_title": "SMC_TokenQueue.Append (METH)",
+  "text": "\nMETHOD Append : BOOL\nTries to append a new element to the queue.\nReturns\nTRUE\nif the queue was not full yet,\nFALSE\notherwise.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout Const",
+          "Name": "token",
+          "Type": "SMC_Token"
+        },
+        {
+          "Scope": "Return",
+          "Name": "Append",
+          "Type": "BOOL"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "library": "Visu Utils",
+  "title": "VisuInputType (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/Visu Utils/Current/VisuUtils/VisuActionUtilities/Types/Enum/VisuInputType.html",
+  "page_title": "VisuInputType (ENUM)",
+  "text": "\nTYPE VisuInputType :\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Name": "Keyboard",
+          "Initial": "0"
+        },
+        {
+          "Name": "Touchscreen",
+          "Initial": "1"
+        }
+      ]
+    }
+  ]
+}

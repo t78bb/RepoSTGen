@@ -1,0 +1,32 @@
+{
+  "library": "BACnetDefaultImpl",
+  "title": "PurgeDataFile (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnetDefaultImpl/Current/BACnetDefaultImpl/Function-Blocks/LoggingObjects/Internal/pou-LogObjectsBase/Files/DataFiles/PurgeDataFile.html",
+  "page_title": "LogObjectsBase.PurgeDataFile (METH)",
+  "text": "\nMETHOD PROTECTED PurgeDataFile : RTS_IEC_RESULT\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "PurgeDataFile",
+          "Type": "RTS_IEC_RESULT"
+        },
+        {
+          "Scope": "Input",
+          "Name": "instNumber",
+          "Type": "DWORD"
+        },
+        [
+          "numRecords",
+          "CmpBACnet.IEC_BACNET_UNSIGNED"
+        ]
+      ]
+    }
+  ]
+}

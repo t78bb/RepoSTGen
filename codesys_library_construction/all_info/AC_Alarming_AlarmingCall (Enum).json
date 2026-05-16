@@ -1,0 +1,38 @@
+{
+  "library": "AC_Alarming",
+  "title": "AlarmingCall (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_Alarming/Current/ExtenderFB/AlarmingCall.html",
+  "page_title": "AlarmingCall (ENUM)",
+  "text": "ExtenderFB\nACAlarmExtender (FunctionBlock)\nAcknowledgeAllAlarmsOfModule (Method)\nExecute (Method)\nGetActiveAlarmsOfModule (Method)\nGetEventAlarmID (Method)\nGetID (Property)\nInit (Method)\nInit2 (Method)\nInitSortedModuleAlarms (Method)\nAlarmInfo (Struct)\nAlarmingCall (Enum)\nIACAlarmExtender (Interface)\nInit (Method)\nIACAlarmExtender2 (Interface)\nGetEventAlarmID (Method)\nInit2 (Method)\nIACAlarmExtender3 (Interface)\nAcknowledgeAllAlarmsOfModule (Method)\nGetActiveAlarmsOfModule (Method)\nInitSortedModuleAlarms (Method)\nModuleAlarmInfo (Struct)\nModuleCall (Struct)\nModuleEvent (Struct)\nFunctions\nRaiseModuleEvent (Function)\nReplaceAlarmPlaceholderString (Function)\nGlobalTextList (GlobalTextList)\nModuleInterface\nIModuleAlarming (Interface)\nConsumeModuleAlarm (Method)\nVisualization\nFile and Project Information\nLibrary Reference\nAC_ModuleBase\nLibrary Identification\nLibrary Properties\nAlarmManager\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nStringUtils\nLibrary Identification\nLibrary Properties\nVisuElem3DPath\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElemCamDisplayer\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElemMeter\nLibrary Identification\nLibrary Properties\nVisuElemTextEditor\nLibrary Identification\nLibrary Properties\nVisuElemTrace\nLibrary Identification\nLibrary Properties\nVisuElemXYChart\nLibrary Identification\nLibrary Properties\nVisuElems\nLibrary Identification\nLibrary Properties\nVisuElemsAlarm\nLibrary Identification\nLibrary Properties\nVisuElemsDateTime\nLibrary Identification\nLibrary Properties\nVisuElemsSpecialControls\nLibrary Identification\nLibrary Properties\nVisuElemsWinControls\nLibrary Identification\nLibrary Properties\nVisuNativeControl\nLibrary Identification\nLibrary Properties\nAC_Alarming\nDocs\n»\nExtenderFB\n»\nAlarmingCall (ENUM)\nAlarmingCall (ENUM)\nÂ¶\nTYPE AlarmingCall :\nThe different ways, a module call after an alarm was\nissued can be done to a module instance and its parents or surrounding\nmodule instances.\nInOut:\nName\nInitial\nComment\nNone\n0\nNo module instance call at all is issued\nOwn\n1\nOnly the alarm defining module instance itself is called\nParents\n2\nThe parent instances of the alarm defining module instance\nare called.\nAll\n4\nCall all module instances available under the current\napplication",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "None",
+          "Initial": "0",
+          "Comment": "No module instance call at all is issued"
+        },
+        {
+          "Name": "Own",
+          "Initial": "1",
+          "Comment": "Only the alarm defining module instance itself is called"
+        },
+        {
+          "Name": "Parents",
+          "Initial": "2",
+          "Comment": "The parent instances of the alarm defining module instance\nare called."
+        },
+        {
+          "Name": "All",
+          "Initial": "4",
+          "Comment": "Call all module instances available under the current\napplication"
+        }
+      ]
+    }
+  ]
+}

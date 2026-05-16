@@ -1,0 +1,8 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "IModule (Interface)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_Module/IModule.html",
+  "page_title": "IModule (ITF)",
+  "text": "\nINTERFACE IModule EXTENDS\nIBaseInstance\nBase interface that must be implemented by every function block\nthat implements an application composer module.\nProperties:\nComAddress\n, inherited from\nIBaseInstance\nEnvironment\nFirstErrorInstance\nFirstErrorNumber\nHandle\nInstanceName\n, inherited from\nIBaseInstance\nLastErrorInstance\nLastErrorNumber\nModuleInfo\nMethods:\nCallPrioHighEnd\nCallPrioHighStart\nCallPrioLowEnd\nCallPrioLowStart\nCallPrioMediumEnd\nCallPrioMediumStart\nClearErrors\nGetErrorMessage\nGetFirstErrorMessage\nGetLastErrorMessage\nInit\n, inherited from\nIBaseInstance\nMain\n, inherited from\nIBaseInstance\nOnAfterOnlineChange\n, inherited from\nIBaseInstance\nOnBeforeOnlineChange\n, inherited from\nIBaseInstance\nStructure:\nErrorHandling\nClearErrors (Method)\nFirstErrorInstance (Property)\nFirstErrorNumber (Property)\nGetErrorMessage (Method)\nGetFirstErrorMessage (Method)\nGetLastErrorMessage (Method)\nLastErrorInstance (Property)\nLastErrorNumber (Property)\nIdentification\nEnvironment (Property)\nHandle (Property)\nModuleInfo (Property)\nStandardCalls\nCallPrioHighEnd (Method)\nCallPrioHighStart (Method)\nCallPrioLowEnd (Method)\nCallPrioLowStart (Method)\nCallPrioMediumEnd (Method)\nCallPrioMediumStart (Method)",
+  "tables": []
+}

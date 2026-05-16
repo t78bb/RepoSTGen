@@ -1,0 +1,23 @@
+{
+  "library": "BACnet2DefaultImpl",
+  "title": "CreateDataFiles (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2DefaultImpl/Current/BACnetDefaultImpl/Function-Blocks/LoggingObjects/Internal/pou-LogObjectsBase/Files/DataFiles/CreateDataFiles.html",
+  "page_title": "LogObjectsBase.CreateDataFiles (METH)",
+  "text": "\nMETHOD PROTECTED CreateDataFiles : RTS_IEC_RESULT\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "CreateDataFiles",
+          "Type": "RTS_IEC_RESULT"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_Token_InitIdentifier (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/File/ReadNCFile/Token/Constructors/SMC_Token_InitIdentifier.html",
+  "page_title": "SMC_Token_InitIdentifier (FUN)",
+  "text": "\nFUNCTION SMC_Token_InitIdentifier\nConstructor function for tokens of type identifier.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "tk",
+          "Type": "SMC_Token",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "name",
+          "Type": "STRING",
+          "Comment": "The identifer in upper-case"
+        },
+        {
+          "Scope": "Inout Const",
+          "Name": "srcPos",
+          "Type": "SMC_NC_SourcePosition",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "library": "AlarmManager",
+  "title": "DeactivateAlarm (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/pou-IAlarmHandler9/DeactivateAlarm.html",
+  "page_title": "IAlarmHandler9.DeactivateAlarm (METH)",
+  "text": "\nMETHOD DeactivateAlarm : BOOL\nThis method only works if alarm has been activated with IAlarmHandler9.ActivateAlarm.\nReturns TRUE if the operation was successful and the alarm was found.\nThis method uses semaphore synchronization with AlarmEvaluation_PRG.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "DeactivateAlarm",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "usiAlarmGroupID",
+          "Type": "ALARMGROUP_ID",
+          "Comment": "The ID of the alarm group, where the event is declared"
+        },
+        [
+          "uiAlarmID",
+          "ALARM_ID",
+          "The ID of the alarm, that have to be raised. Here the corresponding enum value\nhas to be passed, where the name of the generated enum is:\nAlm_<Name of the alarm group>_Alarm_IDs\nThe enumeration member has the same name like the ID of the alarm"
+        ]
+      ]
+    }
+  ]
+}

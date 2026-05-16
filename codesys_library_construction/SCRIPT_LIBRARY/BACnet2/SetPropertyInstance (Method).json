@@ -1,0 +1,41 @@
+{
+  "library": "BACnet2",
+  "title": "SetPropertyInstance (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/BACnetObjects/base/pou-BACnetObjectBase/SetPropertyInstance.html",
+  "page_title": "BACnetObjectBase.SetPropertyInstance (METH)",
+  "text": "\nMETHOD SetPropertyInstance : CmpBACnet.IEC_BACNET_STATUS\nSets the value/content of a specified BACnet-Property (ePropertyID) independend of any client side restrictions (access, priorization, range checks).\nTo simulate behaviour happing at BACnet client write property requests (access, priorization, range checks) use\nWritePropertyInstance\n.\nThe specified index should be set to CmpBACnet.CONSTANT.BACNET_ENTIRE_ARRAY, meaning that all elements of a List or Array in a BACnet-Property are stored.\nOtherwise an index counting from 1 specifies a element of a List or Array of a BACnet-Property, whereas this access method should be only used for BACnet-Property of constant array size.\nMoreover the IEC_BACNET_PEROPERTY_CONTENTS variable propertyContents holds the information to be written, whereas the data given in propertyContents.Buffer.pBuffer has to\nbe in the format expected by the specified BACnet-Property-Type.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetPropertyInstance",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "ePropertyID",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_ID",
+          "Comment": "The property ID of the property to set its instance data\nfor."
+        },
+        [
+          "nIndex",
+          "CmpBACnet.IEC_BACNET_ARRAY_INDEX",
+          "Counting from 1. See documentation of\nCmpBACnet.BACnetRetrievePropertyInstance."
+        ],
+        [
+          "propertyContents",
+          "CmpBACnet.IEC_BACNET_PROPERTY_CONTENTS",
+          "Property-Contents to be written to the specified BACnet-\nProperty."
+        ]
+      ]
+    }
+  ]
+}

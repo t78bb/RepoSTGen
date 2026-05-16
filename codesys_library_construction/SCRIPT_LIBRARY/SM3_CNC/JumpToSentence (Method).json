@@ -1,0 +1,23 @@
+{
+  "library": "SM3_CNC",
+  "title": "JumpToSentence (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/GSentence/pou-SMC_GSentenceQueue/JumpToSentence.html",
+  "page_title": "SMC_GSentenceQueue.JumpToSentence (METH)",
+  "text": "\nMETHOD JumpToSentence\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "sentenceNo",
+          "Type": "UDINT"
+        }
+      ]
+    }
+  ]
+}

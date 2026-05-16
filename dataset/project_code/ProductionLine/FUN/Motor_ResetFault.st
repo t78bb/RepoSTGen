@@ -1,0 +1,18 @@
+METHOD ResetFault : BOOL
+VAR_INPUT
+	MotorI:MotorI;
+END_VAR
+VAR_OUTPUT
+	MotorO:MotorO;
+END_VAR
+VAR
+	WaitTimer:TON;
+	InternalSequenceDelay:time;
+	ResetDetect:r_trig;
+END_VAR
+
+ResetDetect(CLK:=MotorI.FaultReset);
+
+IF ResetDetect.Q THEN
+	MotorO.FaultStatus:=FALSE;
+END_IF

@@ -1,0 +1,23 @@
+{
+  "library": "SM3_CNC",
+  "title": "WordCapacity (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/GSentence/pou-SMC_GSentenceQueue/WordCapacity.html",
+  "page_title": "SMC_GSentenceQueue.WordCapacity (METH)",
+  "text": "\nMETHOD WordCapacity : UDINT\nThe maximum number of words that can be stored in the queue.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "WordCapacity",
+          "Type": "UDINT"
+        }
+      ]
+    }
+  ]
+}

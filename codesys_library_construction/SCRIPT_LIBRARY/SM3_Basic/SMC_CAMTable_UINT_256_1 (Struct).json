@@ -1,0 +1,63 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_CAMTable_UINT_256_1 (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/DataTypes/CAM/SMC_CAMTable_UINT_256_1.html",
+  "page_title": "SMC_CAMTable_UINT_256_1 (STRUCT)",
+  "text": "\nTYPE SMC_CAMTable_UINT_256_1 : STRUCT\nThis\nSTRUCT\nrepresents an equidistant curve table.\nThe table can handle 256 elements of type\nUINT\n.\nNote\nFor information about technical and table units please\nsee the documentation of\nSMC_CAMTable_LREAL_128_1\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "Table",
+          "Type": "ARRAY [0..255] OF UINT",
+          "Comment": "Array of slave positions in table units. The array must start with\nthe slave position related to the master start position and end with\nthe slave position related to the master end position (seexStartandxEndofMC_CAM_REF)."
+        },
+        {
+          "Name": "fEditorMasterMin",
+          "Type": "REAL",
+          "Comment": "The minimum master value in technical units."
+        },
+        {
+          "Name": "fEditorMasterMax",
+          "Type": "REAL",
+          "Comment": "The maximum master value in technical units."
+        },
+        {
+          "Name": "fEditorSlaveMin",
+          "Type": "REAL",
+          "Comment": "The minimum slave value in technical units."
+        },
+        {
+          "Name": "fEditorSlaveMax",
+          "Type": "REAL",
+          "Comment": "The maximum slave value in technical units."
+        },
+        {
+          "Name": "fTableMasterMin",
+          "Type": "REAL",
+          "Comment": "The minimum master value in table units."
+        },
+        {
+          "Name": "fTableMasterMax",
+          "Type": "REAL",
+          "Comment": "The maximum master value in table units."
+        },
+        {
+          "Name": "fTableSlaveMin",
+          "Type": "REAL",
+          "Comment": "The minimum slave value in table units."
+        },
+        {
+          "Name": "fTableSlaveMax",
+          "Type": "REAL",
+          "Comment": "The maximum slave value in table units."
+        }
+      ]
+    }
+  ]
+}

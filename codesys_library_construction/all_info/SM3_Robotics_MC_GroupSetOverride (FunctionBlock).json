@@ -1,0 +1,101 @@
+{
+  "library": "SM3_Robotics",
+  "title": "MC_GroupSetOverride (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/AdministrativeConfiguration/Dynamics/MC_GroupSetOverride.html",
+  "page_title": "MC_GroupSetOverride (FB)",
+  "text": "Library Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nGetVersion (Function)\nIsLibReleased (Function)\nSM3_Robotics\nBasic types\nIDENT_IN_GROUP_REF_SM3 (Alias)\nMC_CIRC_PATHCHOICE (Enum)\nMC_COORD_REF (Struct)\nMC_EXECUTION_MODE (Enum)\nMC_TRANSITION_MODE (Enum)\nSMC_AXIS_GROUP_COMPATIBILITY_OPTIONS (Struct)\nSMC_AXIS_GROUP_CONTINUE_DATA (FunctionBlock)\nSMC_AXIS_GROUP_STATE (Enum)\nSMC_CIRC_MODE (Enum)\nSMC_DYN_LIMITS (Alias)\nSMC_IDynamicCS (Interface)\nSMC_ORIENTATION_MODE (Enum)\nSMC_POS_REF (Union)\nSMC_PTP_MOVEMENT_TYPE (Enum)\nSMC_READ_TOOL_MODE (Enum)\nPOUs\nAdditional\nSMC_AxisDistanceAxes (Enum)\nSMC_AxisDistanceSubMode (Enum)\nSMC_AxisDistanceTransition (FunctionBlock)\nSMC_AxisDistanceTransitionParam (Function)\nSMC_CornerDistance (FunctionBlock)\nSMC_CornerDistanceTransitionParam (Function)\nSMC_StartVelocity (FunctionBlock)\nSMC_StartVelocityAxes (Enum)\nSMC_StartVelocityTransitionParam (Function)\nSMC_StartupAxisGroup (FunctionBlock)\nAdministrative/Configuration\nAxisGroup\nComputation\nCoordinate systems\nDynamics\nKinematics\nTrigger\nAxisGroup\nAXIS_GROUP_REF_SM3 (FunctionBlock)\nHelpers\nMovements\nDiagnostics\nMC_GroupReadActualAcceleration (FunctionBlock)\nMC_GroupReadActualPosition (FunctionBlock)\nMC_GroupReadActualVelocity (FunctionBlock)\nMC_GroupReadConfiguration (FunctionBlock)\nMC_GroupReadError (FunctionBlock)\nMC_GroupReadStatus (FunctionBlock)\nMC_ReadCoordinateTransform (FunctionBlock)\nMC_ReadKinTransform (FunctionBlock)\nSMC_GroupAddOffset (FunctionBlock)\nSMC_GroupAdditionalAxesTargetPositions (FunctionBlock)\nSMC_GroupConvertPosition (FunctionBlock)\nSMC_GroupGetContinuePosition (FunctionBlock)\nSMC_GroupGetContinueToolOffset (FunctionBlock)\nSMC_GroupReadPathAcceleration (FunctionBlock)\nSMC_GroupReadPathDynamics (FunctionBlock)\nSMC_GroupReadPathVelocity (FunctionBlock)\nSMC_GroupReadPlanningStatistics (FunctionBlock)\nSMC_GroupReadPositionInMovement (FunctionBlock)\nSMC_GroupReadRemainingTrajectoryDuration (FunctionBlock)\nSMC_GroupReadSetAcceleration (FunctionBlock)\nSMC_GroupReadSetJerk (FunctionBlock)\nSMC_GroupReadSetPosition (FunctionBlock)\nSMC_GroupReadSetVelocity (FunctionBlock)\nSMC_GroupTargetPosition (FunctionBlock)\nSMC_ReadKinTransformForAxis (FunctionBlock)\nMovement\nAdditionalAxes\nGroupInterrupt\nMC_GroupContinue (FunctionBlock)\nMC_GroupHalt (FunctionBlock)\nMC_GroupInterrupt (FunctionBlock)\nMC_GroupStop (FunctionBlock)\nMC_MoveCircularAbsolute (FunctionBlock)\nMC_MoveCircularRelative (FunctionBlock)\nMC_MoveDirectAbsolute (FunctionBlock)\nMC_MoveDirectRelative (FunctionBlock)\nMC_MoveLinearAbsolute (FunctionBlock)\nMC_MoveLinearRelative (FunctionBlock)\nSMC_GroupEnableResumeAfterError (FunctionBlock)\nSMC_GroupJog (FunctionBlock)\nSMC_GroupJog2 (FunctionBlock)\nSMC_GroupUpdateContinueData (FunctionBlock)\nSMC_GroupWait (FunctionBlock)\nSMC_MoveAdditionalAxes (FunctionBlock)\ninternal\nDivers\nKernel_CP\nFile and Project Information\nLibrary Reference\n3SLicense\nLibrary Identification\nLibrary Properties\nCmpApp\nLibrary Identification\nLibrary Properties\nCmpIecTask\nLibrary Identification\nLibrary Properties\nCmpLog\nLibrary Identification\nLibrary Properties\nFloatingPointUtils\nLibrary Identification\nLibrary Properties\nSM3_Basic\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nSM3_CPKernelDefaults\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nSM3_CommonPublic\nLibrary Identification\nLibrary Properties\nSM3_Dynamics\nLibrary Identification\nLibrary Properties\nSM3_Error\nLibrary Identification\nLibrary Properties\nSM3_RBase\nLibrary Identification\nLibrary Properties\nSM3_RCP\nLibrary Identification\nLibrary Properties\nSM3_RError\nLibrary Identification\nLibrary Properties\nSM3_Ramps\nLibrary Identification\nLibrary Properties\nSM3_Shared\nLibrary Identification\nLibrary Properties\nSM3_StringUtils\nLibrary Identification\nLibrary Properties\nSM3_TrajectoryGeneration\nLibrary Identification\nLibrary Properties\nSM3_Transformation\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysTarget\nLibrary Identification\nLibrary Properties\nSysTime\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nSM3_Robotics\nDocs\n»\nSM3_Robotics\n»\nPOUs\n»\nAdministrative/Configuration\n»\nDynamics\n»\nMC_GroupSetOverride (FB)\nMC_GroupSetOverride (FB)\nÂ¶\nFUNCTION_BLOCK MC_GroupSetOverride\nThis FB allows to change the velocity, acceleration, or jerk\nof active and commanded movements.\nThe given override factors are valid until a new override is set.\nThe value 0 set to the\nVelFactor\nor\nPathVelFactor\nleads to halt\non the path, if a CP movement (even in case of tracking) is active\nand to an absolute halt otherwise.\nIf\nMC_GroupStop\nis currently active, an error is returned.\nNote\nThe dynamics of\nMC_GroupStop\nare not influenced by the\noverride factors.\nReenabling the axis group does not reset the override factors.\nThe default values of the override factors are 1.\nThe FB does not change the state of the axis group.\nSingle axis override factors set using\nMC_SetOverride\nfor any axis\nof the axis group are overwritten by this function block.\nThis function block sets the same override factors on all axes of the\naxis group.  Individual override factors for each axis can be set using\nMC_SetOverride\nThe axis override factors affect both the axes of the groupâs kinematics\nas well as the groupâs additional axes.\nWarning\nReducing the\nAccFactor\nand/or\nJerkFactor\ncan lead to a position\novershoot, a possible cause of damage.\nInOut:\nScope\nName\nType\nInitial\nComment\nInout\nAxisGroup\nAXIS_GROUP_REF_SM3\nReference to a group of axis\nInput\nEnable\nBOOL\nIf\nTRUE\n, we write the value of the override factors continuously.\nIf\nFALSE\n, we keep the last value.\nVelFactor\nLREAL\n1\nFactor for axis velocities, [0 .. 1]\nAccFactor\nLREAL\n1\nFactor for axis accelerations and axis decelerations, ]0 ..\n1]\nJerkFactor\nLREAL\n1\nFactor for axis jerks, ]0 .. 1]\nTorqueFactor\nLREAL\n1\nFactor for axis torques, ]0 .. 1].  A dynamic model must have been\nset using\nSMC_GroupSetDynamics\nfor these factors to have an effect.\nPathVelFactor\nLREAL\n1\nFactor for path velocities, [0 .. 1]\nPathAccFactor\nLREAL\n1\nFactor for path accelerations and path decelerations, ]0 ..\n1]\nPathJerkFactor\nLREAL\n1\nFactor for path jerks, ]0 .. 1]\nOutput\nEnabled\nBOOL\nSignals that the override factors have been set\nsuccessfully.\nBusy\nBOOL\nThe FB is not finished\nError\nBOOL\nSignals that an error has occurred within the function\nblock.\nErrorID\nSMC_ERROR\nError identification",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "AxisGroup",
+          "Type": "AXIS_GROUP_REF_SM3",
+          "Initial": "",
+          "Comment": "Reference to a group of axis"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Enable",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "IfTRUE, we write the value of the override factors continuously.\nIfFALSE, we keep the last value."
+        },
+        [
+          "VelFactor",
+          "LREAL",
+          "1",
+          "Factor for axis velocities, [0 .. 1]"
+        ],
+        [
+          "AccFactor",
+          "LREAL",
+          "1",
+          "Factor for axis accelerations and axis decelerations, ]0 ..\n1]"
+        ],
+        [
+          "JerkFactor",
+          "LREAL",
+          "1",
+          "Factor for axis jerks, ]0 .. 1]"
+        ],
+        [
+          "TorqueFactor",
+          "LREAL",
+          "1",
+          "Factor for axis torques, ]0 .. 1].  A dynamic model must have been\nset usingSMC_GroupSetDynamicsfor these factors to have an effect."
+        ],
+        [
+          "PathVelFactor",
+          "LREAL",
+          "1",
+          "Factor for path velocities, [0 .. 1]"
+        ],
+        [
+          "PathAccFactor",
+          "LREAL",
+          "1",
+          "Factor for path accelerations and path decelerations, ]0 ..\n1]"
+        ],
+        [
+          "PathJerkFactor",
+          "LREAL",
+          "1",
+          "Factor for path jerks, ]0 .. 1]"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Enabled",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Signals that the override factors have been set\nsuccessfully."
+        },
+        [
+          "Busy",
+          "BOOL",
+          "",
+          "The FB is not finished"
+        ],
+        [
+          "Error",
+          "BOOL",
+          "",
+          "Signals that an error has occurred within the function\nblock."
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "library": "DNP3",
+  "title": "PatternMask (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/pou-Master/Commands/PatternMask.html",
+  "page_title": "Master.PatternMask (METH)",
+  "text": "\nMETHOD PatternMask :\nError\nSend a pattern mask to remote device\nNOTE: If you are doing a SELECT/OPERATE but choose not to use the autoMode\nmask to do this, but instead are going to call this brm function to send\nthe SELECT and then call this function again to send the OPERATE, you will\nneed to increase the pReqDesc->priority of the OPERATE to 255 to\nguarantee it gets sent before any automatic processing of events is performed.\n(Automatic processing of events is enabled by default when the mdnp session\nwas opened). For example, if in the response to the SELECT the restart IIN bit\nis set and the session was set up to automatically send a clear restart\ncommand, you will want to make sure the OPERATE gets sent before the clear\nrestart, otherwise the operate will fail.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "PatternMask",
+          "Type": "Error",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "funcCode",
+          "Type": "FunctionCode",
+          "Comment": "function code, DNPDEFS_FC_SELECT, DNPDEFS_FC_OPERATE,DNPDEFS_FC_DIRECT_OP, or DNPDEFS_FC_DIRECT_OP_NOACK"
+        },
+        [
+          "autoMode",
+          "USINT",
+          "bit mask to specify which actions to perform. Combine\nAUTO_MODE_OPERATE and AUTO_MODE_FEEDBACK as needed."
+        ],
+        [
+          "opFeedbackDelay",
+          "TIME",
+          "specify a delay, in milliseconds, after receivingthe response to an operate or direct operate request before issueing\nan operate feedback poll using the autoMode parameter."
+        ],
+        [
+          "qualifier",
+          "AddressQualifier",
+          "address qualifier, must be 8 or 16 bit start/stopQUAL_8BIT_START_STOP or QUAL_16BIT_START_STOP"
+        ],
+        [
+          "start",
+          "UINT",
+          "first point number for mask"
+        ],
+        [
+          "stop",
+          "UINT",
+          "last point number for mask"
+        ],
+        [
+          "control",
+          "USINT",
+          "control codelow 4 bits is Op TypeDNPDEFS_CROB_CTRL_NUL, DNPDEFS_CROB_CTRL_PULSE_ON, DNPDEFS_CROB_CTRL_PULSE_OFF,\nDNPDEFS_CROB_CTRL_LATCH_ON, or DNPDEFS_CROB_CTRL_LATCH_OFFThen the Queue Field which is obsolete\nThen the Clear Field DNPDEFS_CROB_CTRL_CLEAR\nThen the two bit Trip-Close field  0, or DNPDEFS_CROB_CTRL_PAIRED_CLOSE or DNPDEFS_CROB_CTRL_PAIRED_TRIP"
+        ],
+        [
+          "count",
+          "USINT",
+          "number of times outstation shall execute the operation"
+        ],
+        [
+          "activationPeriod",
+          "TIME",
+          "pulse activation time"
+        ],
+        [
+          "deactivationPeriod",
+          "TIME",
+          "pulse deactivation time"
+        ],
+        [
+          "pMask",
+          "POINTER TO USINT",
+          "bitmask indicating which points in the range specified by start->stop are to be controlled.bit value of 1 means that point should be controlled.\nExample: funcCode=DNPDEFS_FC_DIRECT_OP, start==2, stop==17,control=DNPDEFS_CROB_CTRL_LATCH_ON,*pMask=0x81,0x10;sends a latch on to points 2, 9 and 14"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "library": "SM3_Basic_Visu",
+  "title": "SMC_Basic_Visu_LibParams (ParamList)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic_Visu/Current/SM3_Basic_Visu/SMC_Basic_Visu_LibParams.html",
+  "page_title": "SMC_Basic_Visu_LibParams (PARAMS)",
+  "text": "\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Scope": "Constant",
+          "Name": "MAX_CAM_POINTS",
+          "Type": "UDINT",
+          "Initial": "1000"
+        }
+      ]
+    }
+  ]
+}

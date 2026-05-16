@@ -1,0 +1,23 @@
+{
+  "library": "DNP3",
+  "title": "IdentificationToString (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Outstation/Points/pou-Point/IdentificationToString.html",
+  "page_title": "Point.IdentificationToString (METH)",
+  "text": "\nMETHOD IdentificationToString : STRING(128)\nString representation of Point identification\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "IdentificationToString",
+          "Type": "STRING(128)"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "library": "Util",
+  "title": "DERIVATIVE (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/Mathematical-Functions/DERIVATIVE.html",
+  "page_title": "DERIVATIVE (FB)",
+  "text": "\nFUNCTION_BLOCK DERIVATIVE\nApproximates the derivative of a given value in its time course\nFour consecutive values are recorded and used in the calculation so that the resulting\nderivative is as accurate as possible.\nExample: Function block in FBD\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "IN",
+          "Type": "REAL",
+          "Comment": "Input value"
+        },
+        [
+          "TM",
+          "DWORD",
+          "Time since last call in msec"
+        ],
+        [
+          "RESET",
+          "BOOL",
+          "TRUE:OUTis set to zero and saved values are set to\nthe current inputIN"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "OUT",
+          "Type": "REAL",
+          "Comment": "Derivative"
+        }
+      ]
+    }
+  ]
+}

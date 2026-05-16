@@ -1,0 +1,83 @@
+{
+  "library": "DNP3",
+  "title": "MasterCommandReadGroup (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/Commands/MasterCommandReadGroup.html",
+  "page_title": "MasterCommandReadGroup (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL MasterCommandReadGroup EXTENDS\nMasterCommand\nMaster command ReadGroup\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment",
+        "Inherited from"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "xExecute",
+          "Type": "BOOL",
+          "Comment": "Execute the command (xExecute FALSE â> TRUE).",
+          "Inherited from": "MasterCommand"
+        },
+        [
+          "itfMaster",
+          "IMaster",
+          "Interface IMaster",
+          "MasterCommand"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "xDone",
+          "Type": "BOOL",
+          "Comment": "Command executed successfully.",
+          "Inherited from": "MasterCommand"
+        },
+        [
+          "xError",
+          "BOOL",
+          "Error during command executions",
+          "MasterCommand"
+        ],
+        [
+          "eErrorID",
+          "Error",
+          "Specific error during command executions.",
+          "MasterCommand"
+        ],
+        {
+          "Scope": "Input",
+          "Name": "group",
+          "Type": "USINT",
+          "Comment": "object group for read request",
+          "Inherited from": ""
+        },
+        [
+          "variation",
+          "USINT",
+          "object variation to read. The type specified by this isspecific to the object group being read.",
+          ""
+        ],
+        [
+          "qualifier",
+          "AddressQualifier",
+          "address qualifier, must be all, 8/16 bit limited quantity,or 8/16 bit start/stop",
+          ""
+        ],
+        [
+          "start",
+          "UINT",
+          "start point if qualifier is start/stop",
+          ""
+        ],
+        [
+          "stopOrQty",
+          "UINT",
+          "stop point if qualifier is start/stop or quantity ifqualifier is limited points.",
+          ""
+        ]
+      ]
+    }
+  ]
+}

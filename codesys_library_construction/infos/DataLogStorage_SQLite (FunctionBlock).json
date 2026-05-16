@@ -1,0 +1,33 @@
+{
+  "library": "AC_DataLog",
+  "title": "DataLogStorage_SQLite (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_DataLog/Current/AC_DataLog/DataLogStorage/SQLiteStorage/DataLogStorage_SQLite.html",
+  "page_title": "DataLogStorage_SQLite (FB)",
+  "text": "\nFUNCTION_BLOCK DataLogStorage_SQLite EXTENDS\nDataLogStorageBase\nIMPLEMENTS\nIDataLogStorage_SQLite\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Inherited from"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "sStorageName",
+          "Type": "STRING(32)",
+          "Initial": "Constants.gc_ChannelNamePlaceholder",
+          "Inherited from": "DataLogStorageBase"
+        },
+        [
+          "uiNumMaxEntries",
+          "UINT",
+          "0",
+          ""
+        ]
+      ]
+    }
+  ]
+}

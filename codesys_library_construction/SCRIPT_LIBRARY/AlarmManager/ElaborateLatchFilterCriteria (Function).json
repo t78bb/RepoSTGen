@@ -1,0 +1,67 @@
+{
+  "library": "AlarmManager",
+  "title": "ElaborateLatchFilterCriteria (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Functions/Filters/ElaborateLatchFilterCriteria.html",
+  "page_title": "ElaborateLatchFilterCriteria (FUN)",
+  "text": "\nFUNCTION ElaborateLatchFilterCriteria : BOOL\nThis method is an helper for the customer\nIt elaborates the criteria for the filtering by latch 1 variable and send back the parameters to use\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "ElaborateLatchFilterCriteria",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "filterType",
+          "Type": "EFilterLatchContent",
+          "Comment": "Filter type to use"
+        },
+        [
+          "filterValue",
+          "WSTRING",
+          "Filter value"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "filterTypeElab",
+          "Type": "EFilterLatchContent",
+          "Comment": "Filter criteria after the elaboration"
+        },
+        [
+          "wsValue",
+          "WSTRING",
+          "Filter value in case of filter criteria is âSTRINGâ"
+        ],
+        [
+          "vType",
+          "Visu_Types",
+          "Type of the elaborated value"
+        ],
+        [
+          "liValue",
+          "LINT",
+          "Numerical value elaborated"
+        ],
+        [
+          "rValue",
+          "REAL",
+          "Numerical value elaborated in case of REAL"
+        ],
+        [
+          "lrValue",
+          "LREAL",
+          "Numerical value elaborated in case of LREAL"
+        ]
+      ]
+    }
+  ]
+}

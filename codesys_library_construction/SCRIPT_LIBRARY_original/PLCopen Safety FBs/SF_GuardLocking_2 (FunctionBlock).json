@@ -1,0 +1,112 @@
+{
+  "library": "PLCopen Safety FBs",
+  "title": "SF_GuardLocking_2 (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/PLCopen Safety FBs/Current/PLCopenSafetyFBs/Function-Blocks/SF_GuardLocking_2.html",
+  "page_title": "SF_GuardLocking_2 (FB)",
+  "text": "PLCopenSafetyFBs\nEnums\nFBS_ANTI (Enum)\nFBS_EDM (Enum)\nFBS_ENSWITCH (Enum)\nFBS_ENSWITCH2 (Enum)\nFBS_EQUI (Enum)\nFBS_ESPE (Enum)\nFBS_ESTOP (Enum)\nFBS_GUARD (Enum)\nFBS_GUARDLOCK2 (Enum)\nFBS_MODESEL (Enum)\nFBS_OUTCONTROL (Enum)\nFBS_PSE (Enum)\nFBS_RESBUT (Enum)\nFBS_SAFEREQ (Enum)\nFBS_TESTSEN (Enum)\nFBS_TWOHAND (Enum)\nFunction Blocks\nSF_Antivalent (FunctionBlock)\nSF_EDM (FunctionBlock)\nSF_ESPE (FunctionBlock)\nSF_EmergencyStop (FunctionBlock)\nSF_EnableSwitch (FunctionBlock)\nSF_EnableSwitch_2 (FunctionBlock)\nSF_Equivalent (FunctionBlock)\nSF_Guard (FunctionBlock)\nSF_GuardLocking_2 (FunctionBlock)\nSF_ModeSelector (FunctionBlock)\nSF_OutControl (FunctionBlock)\nSF_PSE (FunctionBlock)\nSF_ResetButton (FunctionBlock)\nSF_SafetyRequest (FunctionBlock)\nSF_TestableSafetySensor (FunctionBlock)\nSF_TwoHandControlTypeII (FunctionBlock)\nSF_TwoHandControlTypeIII (FunctionBlock)\nFile and Project Information\nLibrary Reference\nStandard\nLibrary Identification\nLibrary Properties\nSysTimeCore\nLibrary Identification\nLibrary Properties\nPLCopen Safety FBs\nDocs\n»\nPLCopenSafetyFBs\n»\nFunction\nBlocks\n»\nSF_GuardLocking_2 (FB)\nSF_GuardLocking_2 (FB)\nÂ¶\nFUNCTION_BLOCK SF_GuardLocking_2\nThis FB controls an entrance to a hazardous area via an interlocking guard with guard locking (âfour state interlockingâ).\nInOut:\nScope\nName\nType\nInitial\nComment\nInput\nActivate\nBOOL\nFALSE\nActivation of the FB.\nS_Guard\nBOOL\nFALSE\nMonitors the guard interlocking. Can be connected to the\nGuardOut of the SF_Guard FB. FALSE: Guard open. TRUE: Guard\nclosed and guarded area safe.\nS_SafetyActive\nBOOL\nFALSE\nStatus of the hazardous area (EDM), e.g., based on speed\nmoni-toring or safe time off delay. FALSE: Machine in ânon-\nsafeâ state. TRUE: Machine in safe state.\nS_GuardLock\nBOOL\nFALSE\nStatus of the mechanical guard locking. FALSE: Guard is not\nlocked. TRUE: Guard is locked.\nUnlockRequest\nBOOL\nFALSE\nOperator intervention â request to unlock the guard. FALSE:\nNo request. TRUE: Request made.\nS_StartReset\nBOOL\nFALSE\nStart behaviour of safety FB\nS_AutoReset\nBOOL\nFALSE\nBehaviour on error of safety FB\nReset\nBOOL\nFALSE\nManual reset of FB\nOutput\nReady\nBOOL\nFALSE\nActivation of the FB. TRUE indicates that the FB is\nactivated and the outputs results are valid, FALSE the FB is\nnot active and the program is not executed.\nS_GuardLocked\nBOOL\nFALSE\nInterface to hazardous area which must be stopped. FALSE: No\nsafe state. TRUE: Safe state.\nS_UnlockGuard\nBOOL\nFALSE\nSignal to unlock the guard. FALSE: Close guard. TRUE: Unlock\nguard.\nSafetyDemand\nBOOL\nFALSE\nOutput indicating that the FB is active and the primary\nsafety function is demanded (e.g. related to the safety\nfunctionality).\nResetRequest\nBOOL\nFALSE\nOutput which can be used to signal the operator to press the\nreset functionality to continue.\nError\nBOOL\nFALSE\nError flag\nDiagCode\nWORD\n0\nDiagnostic register",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "Activate",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "Activation of the FB."
+        },
+        [
+          "S_Guard",
+          "BOOL",
+          "FALSE",
+          "Monitors the guard interlocking. Can be connected to the\nGuardOut of the SF_Guard FB. FALSE: Guard open. TRUE: Guard\nclosed and guarded area safe."
+        ],
+        [
+          "S_SafetyActive",
+          "BOOL",
+          "FALSE",
+          "Status of the hazardous area (EDM), e.g., based on speed\nmoni-toring or safe time off delay. FALSE: Machine in ânon-\nsafeâ state. TRUE: Machine in safe state."
+        ],
+        [
+          "S_GuardLock",
+          "BOOL",
+          "FALSE",
+          "Status of the mechanical guard locking. FALSE: Guard is not\nlocked. TRUE: Guard is locked."
+        ],
+        [
+          "UnlockRequest",
+          "BOOL",
+          "FALSE",
+          "Operator intervention â request to unlock the guard. FALSE:\nNo request. TRUE: Request made."
+        ],
+        [
+          "S_StartReset",
+          "BOOL",
+          "FALSE",
+          "Start behaviour of safety FB"
+        ],
+        [
+          "S_AutoReset",
+          "BOOL",
+          "FALSE",
+          "Behaviour on error of safety FB"
+        ],
+        [
+          "Reset",
+          "BOOL",
+          "FALSE",
+          "Manual reset of FB"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Ready",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "Activation of the FB. TRUE indicates that the FB is\nactivated and the outputs results are valid, FALSE the FB is\nnot active and the program is not executed."
+        },
+        [
+          "S_GuardLocked",
+          "BOOL",
+          "FALSE",
+          "Interface to hazardous area which must be stopped. FALSE: No\nsafe state. TRUE: Safe state."
+        ],
+        [
+          "S_UnlockGuard",
+          "BOOL",
+          "FALSE",
+          "Signal to unlock the guard. FALSE: Close guard. TRUE: Unlock\nguard."
+        ],
+        [
+          "SafetyDemand",
+          "BOOL",
+          "FALSE",
+          "Output indicating that the FB is active and the primary\nsafety function is demanded (e.g. related to the safety\nfunctionality)."
+        ],
+        [
+          "ResetRequest",
+          "BOOL",
+          "FALSE",
+          "Output which can be used to signal the operator to press the\nreset functionality to continue."
+        ],
+        [
+          "Error",
+          "BOOL",
+          "FALSE",
+          "Error flag"
+        ],
+        [
+          "DiagCode",
+          "WORD",
+          "0",
+          "Diagnostic register"
+        ]
+      ]
+    }
+  ]
+}

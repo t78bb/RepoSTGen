@@ -1,0 +1,61 @@
+{
+  "library": "CmpBACnet",
+  "title": "BACnetUnregisterClientDataPoint (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/CmpBACnet/Current/BACnetClientAPI/advanced/BACnetUnregisterClientDataPoint.html",
+  "page_title": "BACnetUnregisterClientDataPoint (FUN)",
+  "text": "\nFUNCTION BACnetUnregisterClientDataPoint :\nIEC_BACNET_STATUS\nReleases an device object property reference from data acquisation.\nThe user application can remove device object property references from data\nacquisation which it doesnât need anymore. If the user application has registered an\ncallback for unsubscribe completion, it will get notified about the successful or\nunsuccessful unsubscription asynchronously.\nReturns:\nBACNET_STATUS\nBACNET_STATUS_BUSY: if unsubscription is pending. The registered unsubscribe-complete\ncallback will be called on completion to indicate that unregistration\nhas been completed.\nBACNET_STATUS_OK:   unsubscription completed. The registered unsubscribe-complete\ncallback WILL NOT BE CALLED because other customers have an active\nregistration on the same reference OR the data is retrieved by polling\nusing read property or read property multiple.\nOTHER:              some other failure in given parameters has been detected\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "BACnetUnregisterClientDataPoint",
+          "Type": "IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "hCustomer",
+          "Type": "IEC_BACNET_HANDLE",
+          "Comment": "An handle to an created advanced BACnet client customer created byBACnetOpenClientCustomer."
+        },
+        [
+          "devId",
+          "IEC_BACNET_INST_NUMBER",
+          "The device instance number from the remote or local device from which the value\nshall not be acquired anymore."
+        ],
+        [
+          "pObjId",
+          "POINTER TOIEC_BACNET_OBJECT_ID",
+          "A pointer to the object identifier from the remote or local object from which the\nvalue shall not be acquired anymore."
+        ],
+        [
+          "propId",
+          "IEC_BACNET_PROPERTY_ID",
+          "The property identifier from which the value shall not be\nacquired anymore."
+        ],
+        [
+          "index",
+          "IEC_BACNET_ARRAY_INDEX",
+          "The property array index from which the value shall not be acquired anymore.\nIf the property is not an array the value shall be BACNET_VOID_INDEX (-1) If the\nproperty is an array and the whole array should be acquired the value\nBACNET_ENTIRE_ARRAY (-1) shall be used here."
+        ],
+        [
+          "bClockAlignedPolling",
+          "IEC_BACNET_BOOLEAN",
+          "If set to True the acquisation will be stopped for the clock aligned registered\nreference. If set to False the NON clock aligned reference will be removed."
+        ],
+        [
+          "bForceUnsubscribe",
+          "IEC_BACNET_BOOLEAN",
+          "If set to True the unsubscription will be executed with nininmal delay instead of\nwaiting for the next device alive check or waiting for new registrations."
+        ]
+      ]
+    }
+  ]
+}

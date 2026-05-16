@@ -1,0 +1,107 @@
+{
+  "library": "SM3_Basic",
+  "title": "MC_MoveVelocity (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/Movement/MC_MoveVelocity.html",
+  "page_title": "MC_MoveVelocity (FB)",
+  "text": "\nFUNCTION_BLOCK MC_MoveVelocity\nThis function block causes an endless motion at a specified velocity.\nExample\nUse of\nMC_MoveVelocity\nThe following illustration shows how two instances (\nFirst\nand\nSecond\n) of the function block\nMC_MoveVelocity\nare combined.\nIn the left-hand part of the illustration the\nSecond\ninstance is called after the\nFirst\ninstance. If\nFirst\nachieves the specified velocity 3000,\nthen the\nFirst\noutput\nInVelocity\nis ANDed with the\nNext\nsignal. This causes\nSecond\nto move at velocity 2000.\nIn the right-hand part of the illustration the execution is started by\nFirst\n, which aborts the previously executed\nSecond\ninstance and therefore the\n   output\nInVelocity\nof the\nSecond\ninstance  is set to False. Although\nFirst\nis still accelerating in order to reach velocity 3000, it is interrupted and\naborted because the\nTest\nsignal starts the execution of\nSecond\n. Now\nSecond\nwill decelerate the velocity to 2000 after which the\nInVelocity\nof\nthe\nSecond\ninstance is set to TRUE.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3",
+          "Initial": "",
+          "Comment": "Reference to axis"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUE: Starts execution."
+        },
+        [
+          "Velocity",
+          "LREAL",
+          "",
+          "Maximum velocity in techincal units per second [u/s].Is always positive."
+        ],
+        [
+          "Acceleration",
+          "LREAL",
+          "",
+          "Acceleration in [u/sÂ²].Is always positive.Increasing motor energy"
+        ],
+        [
+          "Deceleration",
+          "LREAL",
+          "",
+          "Deceleration in [u/sÂ²].Is always positive.Decreasing motor energy"
+        ],
+        [
+          "Jerk",
+          "LREAL",
+          "",
+          "Maximum magnitude of jerk in [u/sÂ³]"
+        ],
+        [
+          "Direction",
+          "MC_Direction",
+          "current",
+          "The direction of the movement.  Only current, positive, and negative\nare allowed."
+        ],
+        [
+          "BufferMode",
+          "MC_BUFFER_MODE",
+          "",
+          "Defines the chronological sequence of the FB relative to the previous\nblock.  If the function block is Busy, then only BufferMode=Aborting\nis allowed."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "InVelocity",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUE: The set velocity has been reached for the first\ntime."
+        },
+        [
+          "Busy",
+          "BOOL",
+          "",
+          "TRUE: Function block is in operation."
+        ],
+        [
+          "Active",
+          "BOOL",
+          "",
+          "Indicates that the FB has control on the axis"
+        ],
+        [
+          "CommandAborted",
+          "BOOL",
+          "FALSE",
+          "TRUE: Execution has been interrupted by another function\nblock instance operating on the axis."
+        ],
+        [
+          "Error",
+          "BOOL",
+          "",
+          "TRUE: Error has occurred."
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

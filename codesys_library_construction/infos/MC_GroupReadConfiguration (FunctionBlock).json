@@ -1,0 +1,67 @@
+{
+  "library": "SM3_Robotics",
+  "title": "MC_GroupReadConfiguration (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/Diagnostics/MC_GroupReadConfiguration.html",
+  "page_title": "MC_GroupReadConfiguration (FB)",
+  "text": "\nFUNCTION_BLOCK MC_GroupReadConfiguration\nThis function block gets the axis reference according to the given\ngroup identifier in order to read the current configuration\nof an axis group.\nThis is an administrative FB, since no movement is generated.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "AxisGroup",
+          "Type": "AXIS_GROUP_REF_SM3",
+          "Comment": "Reference to a group of axes"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Enable",
+          "Type": "BOOL",
+          "Comment": "Gets the axis reference according to the given group identifier\nwhile enabled"
+        },
+        [
+          "IdentInGroup",
+          "IDENT_IN_GROUP_REF_SM3",
+          "Identifies the axis in the group"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "pAxis",
+          "Type": "POINTER TO AXIS_REF_SM3",
+          "Comment": "Reference to the selected axis"
+        },
+        [
+          "NumAxes",
+          "UDINT",
+          "Number of axes in group"
+        ],
+        [
+          "Valid",
+          "BOOL",
+          "TRUEif valid outputs are available"
+        ],
+        [
+          "Busy",
+          "BOOL",
+          "The FB is not finished"
+        ],
+        [
+          "Error",
+          "BOOL",
+          "Signals that an error has occurred within the function block"
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

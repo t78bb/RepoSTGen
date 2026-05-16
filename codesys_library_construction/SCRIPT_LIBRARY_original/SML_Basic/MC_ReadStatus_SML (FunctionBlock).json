@@ -1,0 +1,87 @@
+{
+  "library": "SML_Basic",
+  "title": "MC_ReadStatus_SML (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SML_Basic/Current/PLCopen/MC_ReadStatus_SML.html",
+  "page_title": "MC_ReadStatus_SML (FB)",
+  "text": "Additional\nSML_ChangeAxisConfig (FunctionBlock)\nSML_ReinitDrive (FunctionBlock)\nSML_SetOpmode (FunctionBlock)\nSML_StartupDrive (FunctionBlock)\nBase\nAxis_REF_SML (FunctionBlock)\nConfig\nReadStandardConfigParameters (Method)\nReinitAxis (Method)\nError\nSML_ClearFBError (Function)\nSML_ErrorText (Function)\nSML_Language (Enum)\nSML_AXIS_STATE (Enum)\nSML_Constants (GVL)\nSML_ERROR (Enum)\nSML_FBError (Struct)\nSML_Globals (GVL)\nSML_MOVEMENTTYPE (Enum)\nSML_OPMODE (Enum)\nSML_Ramptype (Enum)\nGlobalTextList (GlobalTextList)\nLibrary Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nPLCopen\nMC_Halt_SML (FunctionBlock)\nMC_Home_SML (FunctionBlock)\nMC_MoveAbsolute_SML (FunctionBlock)\nMC_MoveRelative_SML (FunctionBlock)\nMC_MoveVelocity_SML (FunctionBlock)\nMC_Power_SML (FunctionBlock)\nMC_ReadBoolParameter_SML (FunctionBlock)\nMC_ReadParameter_SML (FunctionBlock)\nMC_ReadStatus_SML (FunctionBlock)\nMC_Reset_SML (FunctionBlock)\nMC_Stop_SML (FunctionBlock)\nMC_WriteBoolParameter_SML (FunctionBlock)\nMC_WriteParameter_SML (FunctionBlock)\nVisu_Templates\nHelpers\nTextListForCombobox_SML_MOVEMENTTYPE (TextList)\nTextListForCombobox_SML_OPMODE (TextList)\nStartupDrive\nFile and Project Information\nLibrary Reference\n3SLicense\nLibrary Identification\nLibrary Properties\nCmpApp\nLibrary Identification\nLibrary Properties\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nCmpLog\nLibrary Identification\nLibrary Properties\nCmpSchedule\nLibrary Identification\nLibrary Properties\nComponent Manager\nLibrary Identification\nLibrary Properties\nIoStandard\nLibrary Identification\nLibrary Properties\nSM3_Math\nLibrary Identification\nLibrary Properties\nSM3_Shared\nLibrary Identification\nLibrary Properties\nSM3_StringUtils\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nSysCpuHandling\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysTarget\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nVisuElem3DPath\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElemCamDisplayer\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElemMeter\nLibrary Identification\nLibrary Properties\nVisuElemTextEditor\nLibrary Identification\nLibrary Properties\nVisuElemTrace\nLibrary Identification\nLibrary Properties\nVisuElems\nLibrary Identification\nLibrary Properties\nVisuElemsAlarm\nLibrary Identification\nLibrary Properties\nVisuElemsDateTime\nLibrary Identification\nLibrary Properties\nVisuElemsSpecialControls\nLibrary Identification\nLibrary Properties\nVisuElemsWinControls\nLibrary Identification\nLibrary Properties\nVisuInputs\nLibrary Identification\nLibrary Properties\nVisuNativeControl\nLibrary Identification\nLibrary Properties\nSML_Basic\nDocs\n»\nPLCopen\n»\nMC_ReadStatus_SML (FB)\nMC_ReadStatus_SML (FB)\nÂ¶\nFUNCTION_BLOCK MC_ReadStatus_SML\nReturns the axis state according to the PLCopen the state diagram for a given axis.\nInOut:\nScope\nName\nType\nComment\nInout\nAxis\nAxis_REF_SML\nReference to the axis\nInput\nEnable\nBOOL\nThe status is updated continuously while enabled\nOutput\nValid\nBOOL\nThe status is valid\nBusy\nBOOL\nThe FB is not finished and new output values are to be\nexpected\nError\nBOOL\nAn error has occurred\nErrorID\nSML_ERROR\nThe error number\nErrorStop\nBOOL\nThe axis is in state\nErrorStop\nDisabled\nBOOL\nThe axis is in state\nDisabled\nStopping\nBOOL\nThe axis is in state\nStopping\nHoming\nBOOL\nThe axis is in state\nHoming\nStandstill\nBOOL\nThe axis is in state\nStandstill\nDiscreteMotion\nBOOL\nThe axis is in state\nDiscreteMotion\nContinuousMotion\nBOOL\nThe axis is in state\nContinuousMotion",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "Axis_REF_SML",
+          "Comment": "Reference to the axis"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Enable",
+          "Type": "BOOL",
+          "Comment": "The status is updated continuously while enabled"
+        },
+        {
+          "Scope": "Output",
+          "Name": "Valid",
+          "Type": "BOOL",
+          "Comment": "The status is valid"
+        },
+        [
+          "Busy",
+          "BOOL",
+          "The FB is not finished and new output values are to be\nexpected"
+        ],
+        [
+          "Error",
+          "BOOL",
+          "An error has occurred"
+        ],
+        [
+          "ErrorID",
+          "SML_ERROR",
+          "The error number"
+        ],
+        [
+          "ErrorStop",
+          "BOOL",
+          "The axis is in stateErrorStop"
+        ],
+        [
+          "Disabled",
+          "BOOL",
+          "The axis is in stateDisabled"
+        ],
+        [
+          "Stopping",
+          "BOOL",
+          "The axis is in stateStopping"
+        ],
+        [
+          "Homing",
+          "BOOL",
+          "The axis is in stateHoming"
+        ],
+        [
+          "Standstill",
+          "BOOL",
+          "The axis is in stateStandstill"
+        ],
+        [
+          "DiscreteMotion",
+          "BOOL",
+          "The axis is in stateDiscreteMotion"
+        ],
+        [
+          "ContinuousMotion",
+          "BOOL",
+          "The axis is in stateContinuousMotion"
+        ]
+      ]
+    }
+  ]
+}

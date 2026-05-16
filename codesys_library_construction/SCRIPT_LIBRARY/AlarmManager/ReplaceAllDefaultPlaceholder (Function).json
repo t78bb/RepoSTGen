@@ -1,0 +1,31 @@
+{
+  "library": "AlarmManager",
+  "title": "ReplaceAllDefaultPlaceholder (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Functions/ReplaceAllDefaultPlaceholder.html",
+  "page_title": "ReplaceAllDefaultPlaceholder (FUN)",
+  "text": "\nFUNCTION ReplaceAllDefaultPlaceholder : BOOL\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "ReplaceAllDefaultPlaceholder",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "cbsMessage",
+          "Type": "REFERENCE TO\nCharBufferString",
+          "Comment": "The string, where the placeholders have to be replaced"
+        }
+      ]
+    }
+  ]
+}

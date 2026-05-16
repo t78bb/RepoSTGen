@@ -1,0 +1,27 @@
+{
+  "library": "BACnetDefaultImpl",
+  "title": "LogFilePos (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnetDefaultImpl/Current/BACnetDefaultImpl/Function-Blocks/LoggingObjects/Internal/pou-LogObjectsBase/Logging/LogFilePos.html",
+  "page_title": "LogObjectsBase.LogFilePos (METH)",
+  "text": "\nMETHOD PROTECTED LogFilePos\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "hFile",
+          "Type": "RTS_IEC_HANDLE"
+        },
+        [
+          "msg",
+          "STRING"
+        ]
+      ]
+    }
+  ]
+}

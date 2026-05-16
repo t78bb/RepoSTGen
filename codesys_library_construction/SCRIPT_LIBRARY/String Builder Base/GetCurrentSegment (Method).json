@@ -1,0 +1,32 @@
+{
+  "library": "String Builder Base",
+  "title": "GetCurrentSegment (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Builder Base/Current/BuilderBase/Interfaces/pou-IBuilder/Segments/GetCurrentSegment.html",
+  "page_title": "IBuilder.GetCurrentSegment (METH)",
+  "text": "\nMETHOD GetCurrentSegment :\nERROR\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetCurrentSegment",
+          "Type": "ERROR"
+        },
+        {
+          "Scope": "Output",
+          "Name": "pbyData",
+          "Type": "POINTER TO BYTE"
+        },
+        [
+          "udiSize",
+          "UDINT"
+        ]
+      ]
+    }
+  ]
+}

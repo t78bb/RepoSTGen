@@ -1,0 +1,37 @@
+{
+  "library": "Util",
+  "title": "DayOfWeek (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/TimerSwitch/Functions/DayOfWeek.html",
+  "page_title": "DayOfWeek (FUN)",
+  "text": "\nFUNCTION DayOfWeek :\nWEEKDAY\nCalculates the appropriate value of the WEEKDAY enum that matches the parameter\ndatDate\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "DayOfWeek",
+          "Type": "WEEKDAY",
+          "Initial": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "datDate",
+          "Type": "DATE",
+          "Initial": ""
+        },
+        {
+          "Scope": "Output",
+          "Name": "eErrorID",
+          "Type": "ERROR",
+          "Initial": "ERROR.NO_ERROR"
+        }
+      ]
+    }
+  ]
+}

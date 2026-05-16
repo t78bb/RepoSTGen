@@ -1,0 +1,5 @@
+{
+  "requirement": "This code should implement a scaling function that converts a physical output value (rOutput) within a specified process range (rPhyMin to rPhyMax) into an integer value suitable for the analog output terminal type (eTerminal), where the return represents a raw analog output register, the terminal type affects only the minimum of the raw output, all terminal types share the same maximum raw output, the mapping should linearly scale the physical range to the raw output range and internally compute any range offset as needed, outputs must be saturated within the raw output bounds, and if the physical range is zero, the function should return a default safe value to avoid division by zero.",
+  "provide_code": "FUNCTION F_iScaleOutput : INT\nVAR_INPUT\n\trOutput: REAL; (* [] Physical output *)\n\trPhyMin: REAL; (* [] Physical minimum *)\n\trPhyMax: REAL; (* [] Physical maximum *)\n\teTerminal: E_Ctrl_TerminalType; (* [] Terminal type. *)\nEND_VAR",
+  "function_name": "F_isScaleOutput"
+}

@@ -1,0 +1,77 @@
+{
+  "library": "Util",
+  "title": "JoinDateTime (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/TimerSwitch/Functions/JoinDateTime.html",
+  "page_title": "JoinDateTime (FUN)",
+  "text": "\nFUNCTION JoinDateTime : ULINT\nReturns a timestamp in milliseconds since 1.1.1970 00:00:00.000 calculated out of the parameters\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "JoinDateTime",
+          "Type": "ULINT",
+          "Initial": "",
+          "Comment": "date and time in milliseconds since 1.1.1970 00:00:00.000"
+        },
+        {
+          "Scope": "Input",
+          "Name": "uiYear",
+          "Type": "YEAR",
+          "Initial": "",
+          "Comment": "1970..2106"
+        },
+        [
+          "uiMonth",
+          "MONTH",
+          "",
+          ""
+        ],
+        [
+          "uiDay",
+          "DAY",
+          "",
+          ""
+        ],
+        [
+          "uiHour",
+          "HOUR",
+          "",
+          ""
+        ],
+        [
+          "uiMinute",
+          "MINUTE",
+          "",
+          ""
+        ],
+        [
+          "uiSecond",
+          "SECOND",
+          "",
+          ""
+        ],
+        [
+          "uiMilliseconds",
+          "MILLISECOND",
+          "",
+          ""
+        ],
+        {
+          "Scope": "Output",
+          "Name": "eErrorID",
+          "Type": "ERROR",
+          "Initial": "ERROR.NO_ERROR",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

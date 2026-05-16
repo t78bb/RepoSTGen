@@ -1,0 +1,8 @@
+{
+  "library": "Util",
+  "title": "MINUTE (Alias)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/TimerSwitch/Types/MINUTE.html",
+  "page_title": "MINUTE (ALIAS)",
+  "text": "\nTYPE MINUTE : UINT (0..59)",
+  "tables": []
+}

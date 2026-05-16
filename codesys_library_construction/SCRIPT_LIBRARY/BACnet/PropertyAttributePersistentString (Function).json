@@ -1,0 +1,28 @@
+{
+  "library": "BACnet",
+  "title": "PropertyAttributePersistentString (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/Utilities/ToString/PropertyAttributePersistentString.html",
+  "page_title": "PropertyAttributePersistentString (FUN)",
+  "text": "\nFUNCTION PropertyAttributePersistentString : STRING\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "PropertyAttributePersistentString",
+          "Type": "STRING"
+        },
+        {
+          "Scope": "Input",
+          "Name": "propAttr",
+          "Type": "BACnetPropertyAttributePersistent"
+        }
+      ]
+    }
+  ]
+}

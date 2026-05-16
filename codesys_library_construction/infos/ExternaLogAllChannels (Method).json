@@ -1,0 +1,23 @@
+{
+  "library": "AC_DataLog",
+  "title": "ExternaLogAllChannels (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_DataLog/Current/AC_DataLog/DataLogManager/pou-IDataLogManager/ExternaLogAllChannels.html",
+  "page_title": "IDataLogManager.ExternaLogAllChannels (METH)",
+  "text": "\nMETHOD ExternaLogAllChannels : BOOL\nLog all variables of all channels\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "ExternaLogAllChannels",
+          "Type": "BOOL"
+        }
+      ]
+    }
+  ]
+}

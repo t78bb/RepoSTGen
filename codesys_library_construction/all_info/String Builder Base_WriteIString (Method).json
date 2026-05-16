@@ -1,0 +1,33 @@
+{
+  "library": "String Builder Base",
+  "title": "WriteIString (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Builder Base/Current/BuilderBase/Interfaces/pou-IBuilder/WriteIString.html",
+  "page_title": "IBuilder.WriteIString (METH)",
+  "text": "BuilderBase\nAliases\nConstants (GVL)\nIStringRepresentation (Alias)\nRUNE (Alias)\nEnums\nENCODING (Enum)\nERROR (Enum)\nFunction Blocks\nRange (FunctionBlock)\nIRange\nSetInitialValue (Method)\nFunctions\nCreateRange (Function)\nCreateRangePool (Function)\nInterfaces\nIBuilder (Interface)\nGetBuilderStats (Method)\nReset (Method)\nSegments\nWriteIString (Method)\nWriteMemSegment (Method)\nWriteRune (Method)\nWriteString (Method)\nWriteWString (Method)\nICharmap (Interface)\nDecode (Method)\nEncode (Method)\nInternals\n_RangePool (FunctionBlock)\nProtected\nStructs\nSTATS (Struct)\nLibrary Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nFile and Project Information\nLibrary Reference\nMemory Block Manager\nLibrary Identification\nLibrary Properties\nString Segments\nLibrary Identification\nLibrary Properties\nUTF-8 Encoding Support\nLibrary Identification\nLibrary Properties\nString Builder Base\nDocs\n»\nBuilderBase\n»\nInterfaces\n»\nIBuilder\n(ITF)\n»\nIBuilder.WriteIString (METH)\nIBuilder.WriteIString (METH)\nÂ¶\nMETHOD WriteIString : UDINT\nAppends the contents of\nitfString\nto the buffer.\nIt returns the number of bytes written.\nInOut:\nScope\nName\nType\nReturn\nWriteIString\nUDINT\nInput\nitfString\nIStringRepresentation\nOutput\neErrorID\nERROR",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "WriteIString",
+          "Type": "UDINT"
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfString",
+          "Type": "IStringRepresentation"
+        },
+        {
+          "Scope": "Output",
+          "Name": "eErrorID",
+          "Type": "ERROR"
+        }
+      ]
+    }
+  ]
+}

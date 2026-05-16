@@ -1,0 +1,21 @@
+{
+  "library": "Visu Utils",
+  "title": "PublicVariables (GVL)",
+  "url": "https://content.helpme-codesys.com/en/libs/Visu Utils/Current/VisuUtils/VisuActionUtilities/GlobalVariables/PublicVariables.html",
+  "page_title": "PublicVariables (GVL)",
+  "text": "\nThis GVL is called from the visualization libraries and it registers therein. Therefore\nit is initialized in visualization context. In fact this initialization together\nwith the visualization fixes a problem that the library did not work anymore after\nonlinechanges.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Name": "Clients",
+          "Type": "FbCurrentClientProvider"
+        }
+      ]
+    }
+  ]
+}

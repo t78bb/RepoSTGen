@@ -1,0 +1,32 @@
+{
+  "library": "BACnet2DefaultImpl",
+  "title": "LogObjectPropertyAddrString (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2DefaultImpl/Current/BACnetDefaultImpl/Function-Blocks/LoggingObjects/Internal/pou-LogObjectsBase/Logging/LogObjectPropertyAddrString.html",
+  "page_title": "LogObjectsBase.LogObjectPropertyAddrString (METH)",
+  "text": "\nMETHOD PROTECTED LogObjectPropertyAddrString : STRING\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "LogObjectPropertyAddrString",
+          "Type": "STRING"
+        },
+        {
+          "Scope": "Input",
+          "Name": "instanceNumber",
+          "Type": "DWORD"
+        },
+        [
+          "propID",
+          "CmpBACnet.IEC_BACNET_PROPERTY_ID"
+        ]
+      ]
+    }
+  ]
+}

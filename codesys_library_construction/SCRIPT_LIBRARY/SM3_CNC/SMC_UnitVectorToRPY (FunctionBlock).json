@@ -1,0 +1,61 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_UnitVectorToRPY (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/Coordinate-Transformations/SMC_UnitVectorToRPY.html",
+  "page_title": "SMC_UnitVectorToRPY (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_UnitVectorToRPY\nThis function block will calculate the RPY-angle\n(referring to the old coordinate system)\nfrom the unit vectors of the new coordinate system.\nFor detailed information of transformation modules see\nthe overview on kinematic transformations in the CNC\nonline help.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "vX",
+          "Type": "SMC_Vector3d",
+          "Comment": "x-coordinate of unit vector of new coordinate system\n(in respect of old coordinate system)"
+        },
+        [
+          "vY",
+          "SMC_Vector3d",
+          "y-coordinate of unit vector of new coordinate system\n(in respect of old coordinate system)"
+        ],
+        [
+          "vZ",
+          "SMC_Vector3d",
+          "z-coordinate of unit vector of new coordinate system\n(in respect of old coordinate system)"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "dA",
+          "Type": "LREAL",
+          "Comment": "Roll angle in radian measure"
+        },
+        [
+          "dB",
+          "LREAL",
+          "Pitch angle in radian measure"
+        ],
+        [
+          "dC",
+          "LREAL",
+          "Yaw angle in radian measure"
+        ],
+        [
+          "bError",
+          "BOOL",
+          "Signals, that an error has occurred within the function block"
+        ],
+        [
+          "nError",
+          "WORD",
+          "Error description:1: No error (bError=FALSE)2: Vectors do not have length 13: Vectors are not orthogonal4: No right hand system"
+        ]
+      ]
+    }
+  ]
+}

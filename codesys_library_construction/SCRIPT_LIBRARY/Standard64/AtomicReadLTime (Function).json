@@ -1,0 +1,28 @@
+{
+  "library": "Standard64",
+  "title": "AtomicReadLTime (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/Standard64/Current/Atomic-Read-Write-Functions/AtomicReadLTime.html",
+  "page_title": "AtomicReadLTime (FUN)",
+  "text": "\nFUNCTION AtomicReadLTime : LTIME\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "AtomicReadLTime",
+          "Type": "LTIME"
+        },
+        {
+          "Scope": "Input",
+          "Name": "pSrc",
+          "Type": "POINTER TO LTIME"
+        }
+      ]
+    }
+  ]
+}

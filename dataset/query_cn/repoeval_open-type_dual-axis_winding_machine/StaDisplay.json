@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现根据输入状态值 `iStatus` 控制多个布尔输出信号 `Y1` 到 `Y6` 的状态变化逻辑。",
+  "provide_code": "FUNCTION_BLOCK StaDisplay\nVAR_INPUT\n\tiStatus :\tINT;\nEND_VAR\nVAR_OUTPUT\n\tY1,Y2,Y3,Y4,Y5,Y6\t:\tBOOL;\nEND_VAR"
+}

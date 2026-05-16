@@ -1,0 +1,23 @@
+{
+  "library": "SM3_CNC",
+  "title": "GetProgramName (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/GSentence/pou-SMC_GSentenceQueue/GetProgramName.html",
+  "page_title": "SMC_GSentenceQueue.GetProgramName (METH)",
+  "text": "\nMETHOD GetProgramName : STRING(255)\nThe name of the program or subprogram.\nThis is usually the full path of the CNC file.\nE.g. for the file with full path â/some/dir/name.cncâ.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetProgramName",
+          "Type": "STRING(255)"
+        }
+      ]
+    }
+  ]
+}

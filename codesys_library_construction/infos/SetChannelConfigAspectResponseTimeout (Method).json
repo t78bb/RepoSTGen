@@ -1,0 +1,31 @@
+{
+  "library": "DNP3",
+  "title": "SetChannelConfigAspectResponseTimeout (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Outstation/pou-OutstationConfiguration/SetChannelConfigAspectResponseTimeout.html",
+  "page_title": "OutstationConfiguration.SetChannelConfigAspectResponseTimeout (METH)",
+  "text": "\nMETHOD SetChannelConfigAspectResponseTimeout :\nError\nSet optional channel configuration aspect - response timeout.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetChannelConfigAspectResponseTimeout",
+          "Type": "Error",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "responseTimeout",
+          "Type": "TIME",
+          "Comment": "This value can be made shorter than the default response timeout to quickly determine if a particular\ndevice is not responding, without causing requests to other devices on the same channel to also time out."
+        }
+      ]
+    }
+  ]
+}

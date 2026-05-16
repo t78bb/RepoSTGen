@@ -1,0 +1,28 @@
+{
+  "library": "BACnet",
+  "title": "GetBACnetTimeProperty (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/pou-IBACnetObjectBase/Utilities/GetBACnetTimeProperty.html",
+  "page_title": "IBACnetObjectBase.GetBACnetTimeProperty (METH)",
+  "text": "\nMETHOD GetBACnetTimeProperty : TIME\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetBACnetTimeProperty",
+          "Type": "TIME"
+        },
+        {
+          "Scope": "Input",
+          "Name": "propID",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_ID"
+        }
+      ]
+    }
+  ]
+}

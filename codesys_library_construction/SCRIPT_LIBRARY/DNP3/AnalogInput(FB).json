@@ -1,0 +1,200 @@
+{
+  "library": "DNP3",
+  "title": "AnalogInput(FB)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Outstation/Points/AnalogInput.html",
+  "page_title": "AnalogInput (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL AnalogInput EXTENDS\nPointWithFlags\nDNP3 datapoint of type Analog Input including its deadband.\nAn instance of AnalogInput does represent an instance of a datapoint of DNP3 object group 30 âanalog inputsâ,\nand optionally also a datapoint of DNP3 object group 31 âfrozen analog inputsâ and\na datapoint of DNP3 object group 34 âanalog input reporting deadbandsâ.\nAnalogInput provides a lowLimit, highLimit and a deadband.\nDonât confuse this deadband with an instance of DNP3 object group 34 âanalog input reporting deadbandsâ.\nThe AnalogInput.deadBand is an private functionality of an AnalogInput instance.\nDNP3 master read/write access to this deadBand can be enabled with an optional instance of AnalogInputDeadband\nwhich relates to the same point number.\nDNP3 Analog Input provides the option to use certain data types to represent the value using\nAnyNumber\n.\nSINT (8bit -128 .. 127)\nUSINT (16bit 0 .. 255)\nINT (16bit -32768 .. 32767)\nUINT (16bit 0 .. 65535)\nDINT (32bit -2147483648 .. 2147483647)\nUDINT (32bit 0 .. 4294967295)\nREAL\nDOUBLE\nAny one of the types listed can be used for value, lowLimit, highLimit and deadBand,\nall variables have to be of same base type.\nPlease be aware:\nAnyNumber\nprovides a value representation as well as a POINTER TO value representation.\nDNP3 object group 31 âfrozen analog inputsâ behaviour\nÂ¶\nIn general the DNP3 âfreezeâ is an activity only relevant for the master,\nthe âfrozenâ value is not of any interest for the application.\nNevertheless DNP3 defines a âfreeze-and-clearâ operation.\nThe DNP3 standard states - begin of citation â¦\nWith a freeze-and-clear type operation the\nunderlying analog input value is preset to a suitable, possibly non-zero number after its value is copied to\nthe frozen analog variable. Two applications where freeze-and-clear would be useful are when the\nunderlying analog input holds either a peak value (minimum or maximum) or an integrated value that is\nreinitialized by the clear action from a freeze-and-clear request.\nâ¦ end of citation.\nThis functionality is optional, and can be disabled setting enableFreezeAndClear:=FALSE.\nIf enabled, there are two aspects to take care of.\nFirst: the underlying analog input value is preset to freezeAndClearValue during a âfreeze-and-clearâ operation - be aware: the variable value will be modified.\nSecond: eventually the application need to know, that an âfreeze-and-clearâ operation happend and need to do someting useful.\nThe output freezeAndClearOccurred is set to TRUE for one application cycle, to signal the application to do its part.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment",
+        "Inherited from"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "Description",
+          "Type": "STRING",
+          "Initial": "",
+          "Comment": "Description of the datapoint - this is a configuration,\nchanges are ignored after Outstation was enabled.",
+          "Inherited from": "Point"
+        },
+        [
+          "Number",
+          "DINT",
+          "-1",
+          "Point number - this is a configuration, changes are ignored after Outstation was enabled..\nThe point number can be configured if needed to either:start with Point number > 0have gaps in Point numbersIf set to -1 (the default) the OutstationDataModel (more precisely the related âGroupâ) takes care to set the Point number internally:starting at 0, if first Point number is not set explicitly.increment by 1In case you set Point number explicitly please keep it consistent:Point numbers need to be >= 0Point numbers need to be ascending",
+          "Point"
+        ],
+        [
+          "EventClass",
+          "USINT",
+          "Constants.TMWDEFS_CLASS_MASK_ONE",
+          "The initial event class - this is a configuration, changes are ignored after Outstation was enabled.\nOperational event class may be changed by a master.",
+          "Point"
+        ],
+        [
+          "EventMode",
+          "PointEventMode",
+          "PointEventMode.EVENT_MODE_SOE",
+          "The event mode - this is a configuration, changes are ignored after Outstation was enabled.\nOnly used if the sampling rate is set within the outstation configuration.",
+          "Point"
+        ],
+        [
+          "tScanPeriod",
+          "TIME",
+          "TIME#0ms",
+          "Scan period for datapoint.\nIf tScanPeriod is set to T#0MS, the Group related tScanPeriod or the OutstationDataModel.tScanPeriod is used.",
+          "Point"
+        ],
+        [
+          "udiLogOptions",
+          "UDINT",
+          "OutstationLoggingOptions.None",
+          "LoggingOptions can be combined using OR.",
+          "Point"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "xError",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "An error occured.",
+          "Inherited from": "Point"
+        },
+        [
+          "eErrorID",
+          "Error",
+          "",
+          "The specific error.",
+          "Point"
+        ],
+        {
+          "Scope": "Input",
+          "Name": "flags",
+          "Type": "BYTE",
+          "Initial": "Constants.DNPDEFS_DBAS_FLAG_ON_LINE",
+          "Comment": "Flags used by the point. Can be changed in case a point goes offline or any other error.\nIf set to 0, the variation without flags will be used by DNP3",
+          "Inherited from": "PointWithFlags"
+        },
+        [
+          "EventWithTimeStamp",
+          "BOOL",
+          "TRUE",
+          "Enable / disable if events will be send with / without\ntimestamp - this is a configuration, changes are ignored\nafter Outstation was enabled.",
+          ""
+        ],
+        [
+          "EnableFreeze",
+          "BOOL",
+          "FALSE",
+          "Enable / disable freezing the current value - this is a configuration, changes are ignored after Outstation was enabled.\nIf enabled, an instance of DNP3 object group 31 âfrozen analog inputsâ is created.",
+          ""
+        ],
+        [
+          "FreezeEventClass",
+          "USINT",
+          "Constants.TMWDEFS_CLASS_MASK_ONE",
+          "The initial event class used for the optional datapoint of DNP3 object group 31 âfrozen analog inputsâ - this is a configuration, changes are ignored after Outstation was enabled.\nOperational event class may be changed by a master.",
+          ""
+        ],
+        [
+          "FreezeEventMode",
+          "PointEventMode",
+          "PointEventMode.EVENT_MODE_SOE",
+          "The event mode used for the optional datapoint of DNP3 object group 31 âfrozen analog inputsâ - this is a configuration, changes are ignored after Outstation was enabled.\nOnly used if the sampling rate is set within the outstation configuration.",
+          ""
+        ],
+        [
+          "EnableMasterAccessDeadband",
+          "BOOL",
+          "FALSE",
+          "Enable / disable providing master access to the deadband - this is a configuration, changes are ignored after Outstation was enabled.\nIf enabled, an instance of DNP3 object group 34 âanalog input reporting deadbandsâ is created.",
+          ""
+        ],
+        [
+          "value",
+          "AnyNumber",
+          "",
+          "The current value to use, in most cases using the POINTER TO\nvalue representation is appropriate.",
+          ""
+        ],
+        [
+          "lowLimit",
+          "AnyNumber",
+          "",
+          "The low limit to operate with - default is numerical minimum",
+          ""
+        ],
+        [
+          "highLimit",
+          "AnyNumber",
+          "",
+          "The high limit to operate with - default is numerical\nmaximum.",
+          ""
+        ],
+        [
+          "deadBand",
+          "AnyNumber",
+          "",
+          "The deadband to operate with - default is 0.0.",
+          ""
+        ],
+        [
+          "enableWriteDeadband",
+          "BOOL",
+          "TRUE",
+          "Enable / disable master write to deadband, only relevant, if EnableMasterAccessDeadband is set to TRUE.\nNevertheless EnableMasterAccessDeadband is set to TRUE, it might be necessary to reject master write to deadband during operation.",
+          ""
+        ],
+        [
+          "resetDeadband",
+          "BOOL",
+          "FALSE",
+          "A deadband value resulting from an active master write will be reset at rising edge (resetDeadband FALSE â> TRUE).\nAfter reset, the local deadband value is used until next master master write to deadband.",
+          ""
+        ],
+        [
+          "enableFreezeAndClear",
+          "BOOL",
+          "TRUE",
+          "Enable / disable âfreeze-and-clearâ operation.",
+          ""
+        ],
+        [
+          "freezeAndClearValue",
+          "AnyNumber",
+          "",
+          "The value to use for âfreeze-and-clearâ operation - default\nis 0.0.",
+          ""
+        ],
+        {
+          "Scope": "Output",
+          "Name": "resultingDeadBand",
+          "Type": "AnyNumber",
+          "Initial": "",
+          "Comment": "The resulting deadband, results from deadband or accepted\nwrite to deadband request.",
+          "Inherited from": ""
+        },
+        [
+          "masterChangedDeadband",
+          "BOOL",
+          "",
+          "A master write to deadband was accepted and is active right now.\nThe deadband value issued with the master write is used as a resultingDeadBand until a reset happens - see resetDeadband.",
+          ""
+        ],
+        [
+          "freezeAndClearOccurred",
+          "BOOL",
+          "",
+          "A freeze-and-clear occured.",
+          ""
+        ]
+      ]
+    }
+  ]
+}

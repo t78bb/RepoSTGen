@@ -1,0 +1,28 @@
+{
+  "library": "BACnetDefaultImpl",
+  "title": "GetBufferSize (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnetDefaultImpl/Current/BACnetDefaultImpl/Function-Blocks/LoggingObjects/pou-TrendLog/proxy/GetBufferSize.html",
+  "page_title": "TrendLog.GetBufferSize (METH)",
+  "text": "\nMETHOD PROTECTED GetBufferSize : CmpBACnet.IEC_BACNET_UNSIGNED\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetBufferSize",
+          "Type": "CmpBACnet.IEC_BACNET_UNSIGNED"
+        },
+        {
+          "Scope": "Input",
+          "Name": "instNumber",
+          "Type": "DWORD"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "EnlargeExpirationTime (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_RMP_ReliableMessageProtocol/pou-RMPMessageBuffer/EnlargeExpirationTime.html",
+  "page_title": "RMPMessageBuffer.EnlargeExpirationTime (METH)",
+  "text": "\nMETHOD PUBLIC FINAL EnlargeExpirationTime\nEnlarges the expiration time of all messages\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "tShift",
+          "Type": "TIME",
+          "Comment": "The time by which the expiration times shall be increased"
+        }
+      ]
+    }
+  ]
+}

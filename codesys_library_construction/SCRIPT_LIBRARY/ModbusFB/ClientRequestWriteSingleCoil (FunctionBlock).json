@@ -1,0 +1,125 @@
+{
+  "library": "ModbusFB",
+  "title": "ClientRequestWriteSingleCoil (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/ModbusFB/Current/ModbusFB/Function-Blocks/Client/ClientRequestWriteSingleCoil.html",
+  "page_title": "ClientRequestWriteSingleCoil (FB)",
+  "text": "\nFUNCTION_BLOCK ClientRequestWriteSingleCoil EXTENDS\nClientRequestWriteSingle\nWriteSingleCoil client request (FC05).\nFor details about client request see\nClientRequest\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment",
+        "Inherited from"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "xExecute",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Rising edge: Starts defined operationFALSE: Resets the defined operation after ready condition was reached",
+          "Inherited from": "ETrigTo"
+        },
+        [
+          "udiTimeOut",
+          "UDINT",
+          "",
+          "Max. operating time for executing\n[Âµs], 0: No operating time limit",
+          "ETrigTo"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "xDone",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Ready condition reached",
+          "Inherited from": "ETrigTo"
+        },
+        [
+          "xBusy",
+          "BOOL",
+          "",
+          "Operation is running",
+          "ETrigTo"
+        ],
+        [
+          "xError",
+          "BOOL",
+          "",
+          "Error condition reached",
+          "ETrigTo"
+        ],
+        {
+          "Scope": "Inout",
+          "Name": "rClient",
+          "Type": "Client",
+          "Initial": "",
+          "Comment": "Reference toClient.",
+          "Inherited from": "ClientRequest"
+        },
+        {
+          "Scope": "Input",
+          "Name": "uiUnitId",
+          "Type": "UINT",
+          "Initial": "0",
+          "Comment": "Unit-Id to send the request to.",
+          "Inherited from": "ClientRequest"
+        },
+        [
+          "udiReplyTimeout",
+          "UDINT",
+          "(50 * 1000)",
+          "Reply timeout in Âµs - accepted maxmimum time between request\nmessage send and reply message receveived - default 50ms.",
+          "ClientRequest"
+        ],
+        [
+          "uiMaxRetries",
+          "UINT",
+          "0",
+          "Maximum number of request retries in case of âreply\ntimeoutâ.",
+          "ClientRequest"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "eErrorID",
+          "Type": "Error",
+          "Initial": "",
+          "Comment": "Error status",
+          "Inherited from": "ClientRequest"
+        },
+        [
+          "eException",
+          "ExceptionCodes",
+          "",
+          "Request exception code.",
+          "ClientRequest"
+        ],
+        [
+          "uiRetryCnt",
+          "UINT",
+          "0",
+          "Number of request retries in case of âreply timeoutâ.",
+          "ClientRequest"
+        ],
+        {
+          "Scope": "Input",
+          "Name": "uiItem",
+          "Type": "UINT",
+          "Initial": "0",
+          "Comment": "âdata itemâ to write.",
+          "Inherited from": "ClientRequestWriteSingle"
+        },
+        [
+          "xValue",
+          "BOOL",
+          "FALSE",
+          "",
+          ""
+        ]
+      ]
+    }
+  ]
+}

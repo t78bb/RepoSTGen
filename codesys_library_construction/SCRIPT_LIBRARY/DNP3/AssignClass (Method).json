@@ -1,0 +1,56 @@
+{
+  "library": "DNP3",
+  "title": "AssignClass (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/pou-Master/Commands/AssignClass.html",
+  "page_title": "Master.AssignClass (METH)",
+  "text": "\nMETHOD AssignClass :\nError\nIssue an assign class request\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "AssignClass",
+          "Type": "Error",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "classMask",
+          "Type": "USINT",
+          "Comment": "class to assign group to. This puts a Class Object Header (COH)in a request and all Data Object Headers (DOH) immediately following that\nare assigned to that class."
+        },
+        [
+          "group",
+          "USINT",
+          "object group to assign class"
+        ],
+        [
+          "qualifier",
+          "AddressQualifier",
+          "address qualfier, must be all or 8/16 bit start/stopor 8/16 bit limited quantity or 8/16 bit indexed"
+        ],
+        [
+          "start",
+          "USINT",
+          "start if qualifier is 8/16 bit start/stop"
+        ],
+        [
+          "stopOrQty",
+          "USINT",
+          "stop if qualifier is 8/16 bit start/stop or quantityif qualifier is 8/16 bit limited quantity"
+        ],
+        [
+          "pPoints",
+          "POINTER TO USINT",
+          "pointer to array of point numbers to read if 8/16 bit\nindexed"
+        ]
+      ]
+    }
+  ]
+}

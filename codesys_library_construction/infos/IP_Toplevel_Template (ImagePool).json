@@ -1,0 +1,43 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "IP_Toplevel_Template (ImagePool)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/GenVisu/Toplevel_Vertical_Template/IP_Toplevel_Template.html",
+  "page_title": "IP_Toplevel_Template (Image Pool)",
+  "text": "\nID\nFile name\nImage\nLink type\nCoDeSysLogo\nLogo_CoDeSys_08_h_Skala.gif\nEmbedded\nArrowLeft\narrow_left.png\nEmbedded\nArrowRight\narrow_right.png\nEmbedded\nArrowUp\narrow_up.png\nEmbedded",
+  "tables": [
+    {
+      "headers": [
+        "ID",
+        "File name",
+        "Image",
+        "Link type"
+      ],
+      "rows": [
+        {
+          "ID": "CoDeSysLogo",
+          "File name": "Logo_CoDeSys_08_h_Skala.gif",
+          "Image": "",
+          "Link type": "Embedded"
+        },
+        {
+          "ID": "ArrowLeft",
+          "File name": "arrow_left.png",
+          "Image": "",
+          "Link type": "Embedded"
+        },
+        {
+          "ID": "ArrowRight",
+          "File name": "arrow_right.png",
+          "Image": "",
+          "Link type": "Embedded"
+        },
+        {
+          "ID": "ArrowUp",
+          "File name": "arrow_up.png",
+          "Image": "",
+          "Link type": "Embedded"
+        }
+      ]
+    }
+  ]
+}

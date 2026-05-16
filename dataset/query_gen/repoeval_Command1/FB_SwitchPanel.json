@@ -1,0 +1,6 @@
+{
+  "requirement": "This code should implement a function block named FB_SwitchPanel that processes an array of boolean switches (arrSwitch) to execute commands based on their state changes. It should handle an array of 8 boolean inputs (arrSwitch) and maintain an internal array of command interfaces (aiCommand) and rising edge detectors (arrRtrig). For each index from 1 to 8, the function block should check if the corresponding switch has a rising edge and, if so, execute the command associated with that index if it is not null. The command execution should be triggered only when the switch state changes from false to true, and the command object at that index is not null.",
+  "provide_code": "FUNCTION_BLOCK PUBLIC FB_SwitchPanel\nVAR_INPUT\n\tarrSwitch\t\t: ARRAY[1..8] OF BOOL;\nEND_VAR",
+  "function_name": "FB_SwitchPanel",
+  "requirement_cn": "该代码应实现一个名为 FB_SwitchPanel 的功能块，该功能块处理一个布尔开关数组（arrSwitch），根据它们的状态变化执行命令。它应该处理一个有 8 个布尔输入的数组（arrSwitch），并维护一个内部的命令接口数组（aiCommand）和上升沿检测器数组（arrRtrig）。对于从 1 到 8 的每个索引，功能块应检查相应的开关是否有上升沿，如果有，并且该索引处的命令不为空，则执行该命令。命令执行应仅在开关状态从假变为真时触发，并且该索引处的命令对象不为空。"
+}

@@ -1,0 +1,23 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "Up (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/GenVisu/pou-AC_Visu_Base/Up.html",
+  "page_title": "AC_Visu_Base.Up (METH)",
+  "text": "\nMETHOD FINAL Up : BOOL\nMoves up to the next ancestor visualization.\nIf there is none, nothing is done.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "Up",
+          "Type": "BOOL"
+        }
+      ]
+    }
+  ]
+}

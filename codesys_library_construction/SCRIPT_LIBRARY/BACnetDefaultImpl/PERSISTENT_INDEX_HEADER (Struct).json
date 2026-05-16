@@ -1,0 +1,43 @@
+{
+  "library": "BACnetDefaultImpl",
+  "title": "PERSISTENT_INDEX_HEADER (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnetDefaultImpl/Current/BACnetDefaultImpl/Structs/Persistence/PERSISTENT_INDEX_HEADER.html",
+  "page_title": "PERSISTENT_INDEX_HEADER (STRUCT)",
+  "text": "\nTYPE PERSISTENT_INDEX_HEADER : STRUCT\nstructure which contains PERSISTENT index header information\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "magicCode",
+          "Type": "UDINT",
+          "Initial": "Constants.PDATA_HEADER_MAGIC",
+          "Comment": "should be PDATA_HEADER_MAGIC"
+        },
+        {
+          "Name": "version",
+          "Type": "WORD",
+          "Initial": "Constants.PDATA_HEADER_VERSION",
+          "Comment": "version field for future use"
+        },
+        {
+          "Name": "numBackupFiles",
+          "Type": "UDINT",
+          "Initial": "",
+          "Comment": "number of persistent objects"
+        },
+        {
+          "Name": "uliDateTime",
+          "Type": "ULINT",
+          "Initial": "",
+          "Comment": "timestamp in milliseconds since 1.1.1970 00:00:00.000"
+        }
+      ]
+    }
+  ]
+}

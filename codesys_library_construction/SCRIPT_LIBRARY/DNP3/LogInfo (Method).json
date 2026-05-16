@@ -1,0 +1,23 @@
+{
+  "library": "DNP3",
+  "title": "LogInfo (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/PointObserver/pou-PointObserver/LogInfo.html",
+  "page_title": "PointObserver.LogInfo (METH)",
+  "text": "\nMETHOD PROTECTED LogInfo\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "str",
+          "Type": "LoggerString"
+        }
+      ]
+    }
+  ]
+}

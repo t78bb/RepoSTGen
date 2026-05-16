@@ -1,0 +1,37 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_Token_InitLocalVariable (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/File/ReadNCFile/Token/Constructors/SMC_Token_InitLocalVariable.html",
+  "page_title": "SMC_Token_InitLocalVariable (FUN)",
+  "text": "\nFUNCTION SMC_Token_InitLocalVariable\nConstructor function for tokens of type localVariable.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "tk",
+          "Type": "SMC_Token",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "name",
+          "Type": "STRING",
+          "Comment": "The name of the variable, without the leading â#â character.\nMust be a valid identifier in upper-case."
+        },
+        {
+          "Scope": "Inout Const",
+          "Name": "srcPos",
+          "Type": "SMC_NC_SourcePosition",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

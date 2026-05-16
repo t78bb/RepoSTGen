@@ -1,0 +1,51 @@
+{
+  "library": "String Segments",
+  "title": "SetInitialValue (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Segments/Current/Strings/Functionblocks/pou-_StringPool/SetInitialValue.html",
+  "page_title": "_StringPool.SetInitialValue (METH)",
+  "text": "\nMETHOD FINAL SetInitialValue :\nERROR\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetInitialValue",
+          "Type": "ERROR",
+          "Initial": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "udiStringSize",
+          "Type": "UDINT",
+          "Initial": ""
+        },
+        [
+          "udiInitialCapacity",
+          "UDINT",
+          "0"
+        ],
+        [
+          "pbyPool",
+          "POINTER TO BYTE",
+          "0"
+        ],
+        [
+          "udiPoolSize",
+          "UDINT",
+          "0"
+        ],
+        [
+          "usiExtensionFactor",
+          "USINT",
+          "0"
+        ]
+      ]
+    }
+  ]
+}

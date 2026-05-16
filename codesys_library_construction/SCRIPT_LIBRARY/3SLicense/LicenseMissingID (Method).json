@@ -1,0 +1,30 @@
+{
+  "library": "3SLicense",
+  "title": "LicenseMissingID (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/3SLicense/Current/pou-OLM_OnlineLicenseManager/LicenseMissingID.html",
+  "page_title": "OLM_OnlineLicenseManager.LicenseMissingID (METH)",
+  "text": "\nMETHOD LicenseMissingID\nWith this method a component that previously asked for a license and received a negative result can post an error log message in a unified way\nHence this method should be called after GetUserLicenseValue has been called and returned no license.\nIn contrast to the method LicenseMissing, this function will post the message only once, and so the caller doesnât have to take care and make sure to call it only once by himself\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "strComponent",
+          "Type": "STRING",
+          "Comment": "name of the component"
+        },
+        [
+          "udiLicenseID",
+          "UDINT",
+          "license ID of the component"
+        ]
+      ]
+    }
+  ]
+}

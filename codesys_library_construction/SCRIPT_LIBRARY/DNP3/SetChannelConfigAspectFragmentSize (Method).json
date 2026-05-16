@@ -1,0 +1,40 @@
+{
+  "library": "DNP3",
+  "title": "SetChannelConfigAspectFragmentSize (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Outstation/pou-OutstationConfiguration/SetChannelConfigAspectFragmentSize.html",
+  "page_title": "OutstationConfiguration.SetChannelConfigAspectFragmentSize (METH)",
+  "text": "\nMETHOD SetChannelConfigAspectFragmentSize :\nError\nSet optional channel configuration aspect - maximum receive and transmit application fragment sizes.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetChannelConfigAspectFragmentSize",
+          "Type": "Error",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "txFragmentSize",
+          "Type": "UINT",
+          "Initial": "2048",
+          "Comment": "Maximum size for a transmit fragment"
+        },
+        [
+          "rxFragmentSize",
+          "UINT",
+          "2048",
+          "Maximum size for a receive fragment"
+        ]
+      ]
+    }
+  ]
+}

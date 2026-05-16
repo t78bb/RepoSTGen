@@ -1,0 +1,48 @@
+{
+  "library": "Visu Utils",
+  "title": "VisuClientType (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/Visu Utils/Current/VisuUtils/VisuActionUtilities/Types/Enum/VisuClientType.html",
+  "page_title": "VisuClientType (ENUM)",
+  "text": "VisuUtils\nVisuActionUtilities\nFunction Blocks\nFBFileTransfer (FunctionBlock)\nFbChangeVisu (FunctionBlock)\nFbCloseDialog (FunctionBlock)\nFbIterateClients (FunctionBlock)\nFbOpenDialog (FunctionBlock)\nFbOpenDialogExtended (FunctionBlock)\nFunctions\nFctGetNextVisu (Function)\nFctGetPreviousVisu (Function)\nFctHandleEventsWithinCycleStart (Function)\nFctHandleEventsWithinCycleStop (Function)\nGlobalVariables\nGlobals (GVL)\nPublicVariables (GVL)\nInterfaces\nIVisualizationClient (Interface)\nIVisualizationClientFilter (Interface)\nIVisualizationClientIteration (Interface)\nIVisualizationClientRaw (Interface)\nTypes\nEnum\nFile and Project Information\nLibrary Reference\nCmpIecTask\nLibrary Identification\nLibrary Properties\nCmpVisuHandler\nLibrary Identification\nLibrary Properties\nCommon Behaviour Model\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysSem\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nVisuElemBase\nLibrary Identification\nLibrary Properties\nVisu Utils\nDocs\n»\nVisuUtils\n»\nVisuActionUtilities\n»\nTypes\n»\nEnum\n»\nVisuClientType (ENUM)\nVisuClientType (ENUM)\nÂ¶\nTYPE VisuClientType :\nThe client type. Similar to VisuElemBase.Visu_ClientType, but only containing the clients, needed here.\nAttributes:\nqualified_only\nInOut:\nName\nInitial\nComment\nUnknown\n16#0\nProgrammingSystem\n16#1\nTargetVisualization\n16#4\nWebVisualization\n16#8\nRemoteTargetVisualization\n16#10\nAllRemoteVisualizations\n16#1B\n1 | 2 | 8 | 16",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "Unknown",
+          "Initial": "16#0",
+          "Comment": ""
+        },
+        {
+          "Name": "ProgrammingSystem",
+          "Initial": "16#1",
+          "Comment": ""
+        },
+        {
+          "Name": "TargetVisualization",
+          "Initial": "16#4",
+          "Comment": ""
+        },
+        {
+          "Name": "WebVisualization",
+          "Initial": "16#8",
+          "Comment": ""
+        },
+        {
+          "Name": "RemoteTargetVisualization",
+          "Initial": "16#10",
+          "Comment": ""
+        },
+        {
+          "Name": "AllRemoteVisualizations",
+          "Initial": "16#1B",
+          "Comment": "1 | 2 | 8 | 16"
+        }
+      ]
+    }
+  ]
+}

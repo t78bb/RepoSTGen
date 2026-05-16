@@ -1,0 +1,43 @@
+{
+  "library": "AlarmManager",
+  "title": "EFilterLatchContent (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Enumerations/EFilterLatchContent.html",
+  "page_title": "EFilterLatchContent (ENUM)",
+  "text": "\nTYPE EFilterLatchContent :\nThis enumeration describes how to interpret the value of filter by latch variable content\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "NOT_SET",
+          "Initial": "-1",
+          "Comment": "Filter is not already set"
+        },
+        {
+          "Name": "DISABLE",
+          "Initial": "0",
+          "Comment": "Filter is disabled"
+        },
+        {
+          "Name": "STR",
+          "Initial": "1",
+          "Comment": "Variable for filtering contains a literal value: e.g. âABCDâ\nâ123â âABCDâ â123â"
+        },
+        {
+          "Name": "IEC",
+          "Initial": "2",
+          "Comment": "Variable for filtering contains a string\nthat has to be interpret as IEC notation number: e.g. t#2s"
+        },
+        {
+          "Name": "NUMBER",
+          "Initial": "3",
+          "Comment": "Variable for filtering contains a string\nthat has to be interpret as number: e.g. â123â, â456.4â"
+        }
+      ]
+    }
+  ]
+}

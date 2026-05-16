@@ -1,0 +1,8 @@
+{
+  "library": "AlarmManager",
+  "title": "IAlarmHandler9 (Interface)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/IAlarmHandler9.html",
+  "page_title": "IAlarmHandler9 (ITF)",
+  "text": "\nINTERFACE IAlarmHandler9 EXTENDS\nIAlarmHandler8\nThis is an extension of the IAlarmHandler8 interface.\nProperties:\nIsReady\n, inherited from\nIAlarmHandler8\nMethods:\nActivateAlarm\nActivateAlarmInstance\nDeactivateAlarm\nDeactivateAlarmInstance\nAcknowledgeAll\n, inherited from\nIAlarmHandler\nAcknowledgeAllOfGroup\n, inherited from\nIAlarmHandler\nAcknowledgeAllOfGroupWithComment\n, inherited from\nIAlarmHandler6\nAcknowledgeAllWithComment\n, inherited from\nIAlarmHandler6\nAcknowledgeOneOfGroup\n, inherited from\nIAlarmHandler\nAcknowledgeOneOfGroupWithComment\n, inherited from\nIAlarmHandler6\nGetActiveAlarms\n, inherited from\nIAlarmHandler2\nGetAlarmsFromStorage\n, inherited from\nIAlarmHandler2\nGetCountAlarmsFromStorage\n, inherited from\nIAlarmHandler2\nGetInstanceAlarm\n, inherited from\nIAlarmHandler7\nGetInstanceAlarmByName\n, inherited from\nIAlarmHandler7\nRaiseEvent\n, inherited from\nIAlarmHandler\nRaiseEventAlarmInstance\n, inherited from\nIAlarmHandler7\nRaiseEventAlarmInstanceByName\n, inherited from\nIAlarmHandler7\nRegisterAlarmStateChangedListener\n, inherited from\nIAlarmHandler4\nRegisterClient\n, inherited from\nIAlarmHandler2\nSetComment\n, inherited from\nIAlarmHandler6\nUnregisterClient\n, inherited from\nIAlarmHandler2\nStructure:\nActivateAlarm (Method)\nActivateAlarmInstance (Method)\nDeactivateAlarm (Method)\nDeactivateAlarmInstance (Method)",
+  "tables": []
+}

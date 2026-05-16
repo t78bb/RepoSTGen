@@ -1,0 +1,28 @@
+{
+  "library": "ModbusFB",
+  "title": "Equals (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/ModbusFB/Current/ModbusFB/Function-Blocks/Util/pou-ByteBuffer/Equals.html",
+  "page_title": "ByteBuffer.Equals (METH)",
+  "text": "\nMETHOD Equals : BOOL\nByteBuffer content is equal to other ByteBuffer.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "Equals",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Inout",
+          "Name": "other",
+          "Type": "ByteBuffer"
+        }
+      ]
+    }
+  ]
+}

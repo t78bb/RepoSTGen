@@ -1,0 +1,77 @@
+{
+  "library": "SM3_Basic",
+  "title": "MC_SetOverride (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/Movement/MC_SetOverride.html",
+  "page_title": "MC_SetOverride (FB)",
+  "text": "\nFUNCTION_BLOCK MC_SetOverride\nThis function block sets velocity, acceleration/deceleration and\njerk override factors for an axis.\nFunction blocks that are working on the axis consider these override\nfactors. The factors contribute as a factor to the calculation of the\ncommanded velocity, acceleration and jerk of the motion.\nExample 1\nUse of\nMC_SetOverride\nIn this example, the axis is moved from position 0 u to position 100 u\nwith\nMC_MoveAbsolute\n.\nThe maximum velocity is 100 u/s, the maximum acceleration is 1000 u/sÂ²,\nand the maximum jerk is 10000 u/sÂ³.\nShortly after the axis reaches position 50 u, an override is commanded\nwith velocity factor 0.75 (75%).\nNote\nThe override factors can be changed at any time and act directly on the\nongoing motion.\nThe function block instance of MC_SetOverride should be called before the\nmovement function blocks of the axis are called. If it is called after\nthe movement function block, the override will take effect one cycle later.\nChanging the override should require about the same amount of computation as\naborting an ongoing movement with a new movement.\nAn override has no influence on slave axes once they are ramped in / in sync.\nHowever, the override does act while ramping in or gearing in.\nIt is recommended to use ramp type trapezoid or quadratic when using this function\nblock.  With the other ramp types sinÂ² and quadratic_smooth, an overshoot\nmay occur when applying a new override.  This is analogous to the possible overshoot\nwhen aborting movements with these ramp types.\nCoordinated movements (e.g.\nMC_MoveLinearAbsolute\n) commanded on an axis group\nwill consider override factors set on any axis of the axis group.\nIn state\ndiscrete_motion\nreducing the\nAccFactor\nand/or\nJerkFactor\ncan\nlead to a position overshoot â a possible cause of damage.\nIf\nSMC_MoveContinuousAbsolute\nor\nSMC_MoveContinuousRelative\nis\nactive, a change of\nVelFactor\ncan also lead to a position overshoot\nor an unwanted reversal.  See the documentation for these two function\nblocks for details.\nExample 2\nAn override during deceleration leading to position overshoot.\nThe maximum velocity is 100 u/s, the maximum acceleration is 1000 u/sÂ²,\nand the maximum jerk is 10000 u/sÂ³.\nThe override for acceleration and jerk is reduced to 0.5 (50%) during\ndeceleration to the target position 100 u.\nIn this situation, the override leads to a position overshoot and a\nreversal of the axis.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3",
+          "Initial": "",
+          "Comment": "Reference to the axis"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Enable",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUE: The override factors are continuously written"
+        },
+        [
+          "VelFactor",
+          "LREAL",
+          "1",
+          "New override factor for the velocity in the range [0, 1]"
+        ],
+        [
+          "AccFactor",
+          "LREAL",
+          "1",
+          "New override factor for the acceleration/deceleration in the\nrange (0, 1]"
+        ],
+        [
+          "JerkFactor",
+          "LREAL",
+          "1",
+          "New override factor for the jerk in the range (0, 1]"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Enabled",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUE: The override factors are set successfully"
+        },
+        [
+          "Busy",
+          "BOOL",
+          "",
+          "TRUE: Function block is in operation"
+        ],
+        [
+          "Error",
+          "BOOL",
+          "",
+          "TRUE: Error has occurred during execution"
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

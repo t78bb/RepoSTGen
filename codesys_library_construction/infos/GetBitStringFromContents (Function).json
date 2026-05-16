@@ -1,0 +1,31 @@
+{
+  "library": "BACnet",
+  "title": "GetBitStringFromContents (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/Utilities/BACnetUtilities/FromBACnetContents/GetBitStringFromContents.html",
+  "page_title": "GetBitStringFromContents (FUN)",
+  "text": "\nFUNCTION GetBitStringFromContents : STRING\nTries to evaluate property contents as which are Bit-Strings as STRING data type. If the contents can not be interpretated\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetBitStringFromContents",
+          "Type": "STRING",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "conts",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_CONTENTS",
+          "Comment": "The contents to be evaluated as Bir-String STRING."
+        }
+      ]
+    }
+  ]
+}

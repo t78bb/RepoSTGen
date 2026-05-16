@@ -1,0 +1,52 @@
+{
+  "library": "DNP3",
+  "title": "BinaryCounterGetFromPointNum (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/pou-Master/Datapoints/BinaryCounterGetFromPointNum.html",
+  "page_title": "Master.BinaryCounterGetFromPointNum (METH)",
+  "text": "\nMETHOD BinaryCounterGetFromPointNum :\nError\nGet the value of Binary Counter datapoint (DNP3 object group 20 âcountersâ) with given point number (0 .. MaxPointNum).\nReturns PointNotExistent, if a datapoint with the given point number doesnt exist, OK otherwise.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "BinaryCounterGetFromPointNum",
+          "Type": "Error",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "pointNumber",
+          "Type": "UINT",
+          "Comment": "Point number."
+        },
+        {
+          "Scope": "Output",
+          "Name": "value",
+          "Type": "UDINT",
+          "Comment": "Value"
+        },
+        [
+          "flags",
+          "USINT",
+          "Flags. Flag values are ORâdcombinations of the following:DNPDEFS_DBAS_FLAG_ON_LINE - the point has been readsuccessfullyDNPDEFS_DBAS_FLAG_RESTART - the field device that originated thedata object has been restarted. This device may be the deviced\nreporting this data object.DNPDEFS_DBAS_FLAG_COMM_LOST - the device reporting this data objecthas lost communication with the originator of the data objectDNPDEFS_DBAS_FLAG_REMOTE_FORCED - the state of the binary objecthas been forced to its current state at the originating deviceDNPDEFS_DBAS_FLAG_LOCAL_FORCED - the state of the binary objecthas been forced to its current state at the device reporting\nthis data objectDNPDEFS_DBAS_FLAG_CNTR_ROLLOVER - the accumulated value has exceededhas exceeded its maximum and rolled over to zero.\nNOTE: This maximum value is not necessarily equal to (2^32-1) for\n32 bit counters or (2^16-1) for 16 bit counters. It can be different\nfor each counter instance. Technical Bulletin TB-2002-001 Counter\nObjects recommends â[Outstation] devices do not set the Rollover flag and\nthat host(Master) devices ignore the Rollover flagâ."
+        ],
+        [
+          "hasTimeStamp",
+          "BOOL",
+          "Has a valid time stamp."
+        ],
+        [
+          "timeStamp",
+          "LDATE_AND_TIME",
+          "Time stamp reported - valid if hasTimeStamp = TRUE, invalid\notherwise."
+        ]
+      ]
+    }
+  ]
+}

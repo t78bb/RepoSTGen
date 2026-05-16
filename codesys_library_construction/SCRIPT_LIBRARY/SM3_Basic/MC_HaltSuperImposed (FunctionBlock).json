@@ -1,0 +1,67 @@
+{
+  "library": "SM3_Basic",
+  "title": "MC_HaltSuperImposed (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/Movement/MC_HaltSuperImposed.html",
+  "page_title": "MC_HaltSuperImposed (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL MC_HaltSuperImposed\nHalts any superimposed movement of the axis. The underlying movement is\nnot aborted.\nThe function block\nMC_HaltSuperImposed\nmust be called after the\nfunction block of the original movement.  If a movement command is called\nafter\nMC_HaltSuperImposed\n, the error SMC_MSI_INVALID_EXECUTION_ORDER\nis returned.\nAn active instance of\nMC_HaltSuperImposed\ncan be aborted by a\nsecond instance of\nMC_HaltSuperImposed\n.\nAn active instance can also be aborted by the same instance\nwhen it is called with a new rising edge on the input\nExecute\n.\nIf no superimposed movement is active when this function block is called,\nit reports done in immediately.\nThe\nDeceleration\nand\nJerk\ninputs are additional values\n(not absolute values), which are added to the original movement.\nThe original function block will always complete its movement\nwithin the same duration and with no consideration for any instance of\nMC_HaltSuperImposed\nacting at the same time.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3",
+          "Comment": "Reference to the axis"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Comment": "A rising edge starts the function block."
+        },
+        [
+          "Deceleration",
+          "LREAL",
+          "Maximum deceleration of the superimposed movement"
+        ],
+        [
+          "Jerk",
+          "LREAL",
+          "Maximum jerk of the superimposed movement"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Done",
+          "Type": "BOOL",
+          "Comment": "TRUE: Superimposed movement has been halted."
+        },
+        [
+          "Busy",
+          "BOOL",
+          "TRUE: Function block is in operation."
+        ],
+        [
+          "CommandAborted",
+          "BOOL",
+          "TRUE: Execution has been interrupted by another function\nblock instance operating onAxis."
+        ],
+        [
+          "Error",
+          "BOOL",
+          "TRUE: Error has occurred."
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

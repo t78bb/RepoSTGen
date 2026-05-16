@@ -1,0 +1,118 @@
+{
+  "library": "ModbusFB",
+  "title": "FunctionCodes (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/ModbusFB/Current/ModbusFB/Enums/FunctionCodes.html",
+  "page_title": "FunctionCodes (ENUM)",
+  "text": "Library Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nModbusFB\nEnums\nError (Enum)\nExceptionCodes (Enum)\nFunctionCodes (Enum)\nLoggingOptions (Enum)\nPrimaryTables (Enum)\nRtuAscii (Enum)\nSerialSubFunctionCodes (Enum)\nFunction Blocks\nClient\nClient (FunctionBlock)\nClientRequest (FunctionBlock)\nClientRequestMaskWriteRegister (FunctionBlock)\nClientRequestRead (FunctionBlock)\nClientRequestReadBits (FunctionBlock)\nClientRequestReadCoils (FunctionBlock)\nClientRequestReadDiscreteInputs (FunctionBlock)\nClientRequestReadHoldingRegisters (FunctionBlock)\nClientRequestReadInputRegisters (FunctionBlock)\nClientRequestReadRegisters (FunctionBlock)\nClientRequestReadWriteMultipleRegisters (FunctionBlock)\nClientRequestWriteMultiple (FunctionBlock)\nClientRequestWriteMultipleCoils (FunctionBlock)\nClientRequestWriteMultipleRegisters (FunctionBlock)\nClientRequestWriteSingle (FunctionBlock)\nClientRequestWriteSingleCoil (FunctionBlock)\nClientRequestWriteSingleRegister (FunctionBlock)\nClientSerial (FunctionBlock)\nClientTCP (FunctionBlock)\nServer\nExampleDataModel (FunctionBlock)\nServer (FunctionBlock)\nServerSerial (FunctionBlock)\nServerTCP (FunctionBlock)\nUtil\nByteBuffer (FunctionBlock)\nGlobalConstants\nConstants (GVL)\nParameter (ParamList)\nStructs\nRequestData (Struct)\nRequestDataDiagnostics (Struct)\nRequestDataMaskWriteRegister (Struct)\nRequestDataRead (Struct)\nRequestDataReadWriteMultipleRegisters (Struct)\nRequestDataWriteMultiple (Struct)\nRequestDataWriteSingle (Struct)\nRequestUnion (Union)\nSupportedFcs (Struct)\nTableDefinition (Struct)\nTableDefinitions (Struct)\nTableSection (Struct)\nFile and Project Information\nLibrary Reference\n3SLicense\nLibrary Identification\nLibrary Properties\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nCmpLog\nLibrary Identification\nLibrary Properties\nCommon Behaviour Model\nLibrary Identification\nLibrary Properties\nComponent Manager\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nStringUtils\nLibrary Identification\nLibrary Properties\nSysCom\nLibrary Identification\nLibrary Properties\nSysCpuHandling\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysSocket\nLibrary Identification\nLibrary Properties\nSysTarget\nLibrary Identification\nLibrary Properties\nSysTimeCore\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nModbusFB\nDocs\n»\nModbusFB\n»\nEnums\n»\nFunctionCodes (ENUM)\nFunctionCodes (ENUM)\nÂ¶\nTYPE FunctionCodes :\nMODBUS function codes.\nAttributes:\nqualified_only\nInOut:\nName\nInitial\nComment\nInvalidFunctionCode\n0\nReadCoils\n1\nReadDiscreteInputs\n2\nReadHoldingRegisters\n3\nReadInputRegisters\n4\nWriteSingleCoil\n5\nWriteSingleRegister\n6\nReadExceptionStatus\n7\nserial line only\nDiagnostics\n8\nserial line only\nGetCommEventCounter\n11\nserial line only\nGetCommEventLog\n12\nserial line only\nWriteMultipleCoils\n15\nWriteMultipleRegisters\n16\nReportServerID\n17\nserial line only\nReadFileRecord\n20\nWriteFileRecord\n21\nMaskWriteRegister\n22\nReadWriteMultipleRegisters\n23\nReadFifoQueue\n24\nEncapsulatedInterfaceTransport\n43",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "InvalidFunctionCode",
+          "Initial": "0",
+          "Comment": ""
+        },
+        {
+          "Name": "ReadCoils",
+          "Initial": "1",
+          "Comment": ""
+        },
+        {
+          "Name": "ReadDiscreteInputs",
+          "Initial": "2",
+          "Comment": ""
+        },
+        {
+          "Name": "ReadHoldingRegisters",
+          "Initial": "3",
+          "Comment": ""
+        },
+        {
+          "Name": "ReadInputRegisters",
+          "Initial": "4",
+          "Comment": ""
+        },
+        {
+          "Name": "WriteSingleCoil",
+          "Initial": "5",
+          "Comment": ""
+        },
+        {
+          "Name": "WriteSingleRegister",
+          "Initial": "6",
+          "Comment": ""
+        },
+        {
+          "Name": "ReadExceptionStatus",
+          "Initial": "7",
+          "Comment": "serial line only"
+        },
+        {
+          "Name": "Diagnostics",
+          "Initial": "8",
+          "Comment": "serial line only"
+        },
+        {
+          "Name": "GetCommEventCounter",
+          "Initial": "11",
+          "Comment": "serial line only"
+        },
+        {
+          "Name": "GetCommEventLog",
+          "Initial": "12",
+          "Comment": "serial line only"
+        },
+        {
+          "Name": "WriteMultipleCoils",
+          "Initial": "15",
+          "Comment": ""
+        },
+        {
+          "Name": "WriteMultipleRegisters",
+          "Initial": "16",
+          "Comment": ""
+        },
+        {
+          "Name": "ReportServerID",
+          "Initial": "17",
+          "Comment": "serial line only"
+        },
+        {
+          "Name": "ReadFileRecord",
+          "Initial": "20",
+          "Comment": ""
+        },
+        {
+          "Name": "WriteFileRecord",
+          "Initial": "21",
+          "Comment": ""
+        },
+        {
+          "Name": "MaskWriteRegister",
+          "Initial": "22",
+          "Comment": ""
+        },
+        {
+          "Name": "ReadWriteMultipleRegisters",
+          "Initial": "23",
+          "Comment": ""
+        },
+        {
+          "Name": "ReadFifoQueue",
+          "Initial": "24",
+          "Comment": ""
+        },
+        {
+          "Name": "EncapsulatedInterfaceTransport",
+          "Initial": "43",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

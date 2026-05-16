@@ -1,0 +1,28 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_OutQueueIsSyncing (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/OutQueue-Functions/SMC_OutQueueIsSyncing.html",
+  "page_title": "SMC_OutQueueIsSyncing (FUN)",
+  "text": "\nFUNCTION SMC_OutQueueIsSyncing : BOOL\nReturns whether the queue is syncing,\ni.e. if it is to be emptied completely before being refilled.\nThis is done if a G75 command is issued, which is stored as a\nm-function with m-value -2.\ntask-safety: may be called from both tasks\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SMC_OutQueueIsSyncing",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Input",
+          "Name": "poq",
+          "Type": "POINTER TOSMC_OUTQUEUE"
+        }
+      ]
+    }
+  ]
+}

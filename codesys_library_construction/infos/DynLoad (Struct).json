@@ -1,0 +1,37 @@
+{
+  "library": "SM3_Dynamics",
+  "title": "DynLoad (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Dynamics/Current/SM3_Dynamics/ISMDynamics/DynLoad.html",
+  "page_title": "DynLoad (STRUCT)",
+  "text": "\nTYPE DynLoad : STRUCT\nA load that is attached to the end effector.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "Name",
+          "Type": "STRING",
+          "Initial": "âLoadâ",
+          "Comment": ""
+        },
+        {
+          "Name": "Inertia",
+          "Type": "DynSpatialInertia",
+          "Initial": "",
+          "Comment": "The inertia of the load defined in the center of mass frame."
+        },
+        {
+          "Name": "CenterOfMassFrame",
+          "Type": "SM3M.SMC_Frame",
+          "Initial": "SM3M.SMC_FRAME_IDENTITY",
+          "Comment": "The center of mass frame of the load relative to the machines flange.\n[vT.dX] = [vT.dY] = [vT.dZ] = u"
+        }
+      ]
+    }
+  ]
+}

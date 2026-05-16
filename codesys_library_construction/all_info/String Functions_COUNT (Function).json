@@ -1,0 +1,37 @@
+{
+  "library": "String Functions",
+  "title": "COUNT (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Functions/Current/StrFunc/Functions/COUNT.html",
+  "page_title": "COUNT (FUN)",
+  "text": "Library Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nStrFunc\nAliases\nIString (Alias)\nEnums\nERROR (Enum)\nFunctions\nCONCAT (Function)\nCOUNT (Function)\nDELETE (Function)\nFIND (Function)\nINSERT (Function)\nLEFT (Function)\nLEN (Function)\nMID (Function)\nREPLACE (Function)\nRIGHT (Function)\nFile and Project Information\nLibrary Reference\nString Segments\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nUTF-8 Encoding Support\nLibrary Identification\nLibrary Properties\nString Functions\nDocs\n»\nStrFunc\n»\nFunctions\n»\nCOUNT (FUN)\nCOUNT (FUN)\nÂ¶\nFUNCTION COUNT : UDINT\nReturns the number of\nrunes\nof a string\nSee function\nLEN\nfor calculating the number of bytes\nInOut:\nScope\nName\nType\nComment\nReturn\nCOUNT\nUDINT\nInput\nitfString\nIString\nString to be analyzed\nOutput\neErrorID\nERROR",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "COUNT",
+          "Type": "UDINT",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfString",
+          "Type": "IString",
+          "Comment": "String to be analyzed"
+        },
+        {
+          "Scope": "Output",
+          "Name": "eErrorID",
+          "Type": "ERROR",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

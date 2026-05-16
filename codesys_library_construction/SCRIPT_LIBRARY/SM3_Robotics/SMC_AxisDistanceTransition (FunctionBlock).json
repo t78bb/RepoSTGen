@@ -1,0 +1,58 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_AxisDistanceTransition (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/Additional/SMC_AxisDistanceTransition.html",
+  "page_title": "SMC_AxisDistanceTransition (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_AxisDistanceTransition\nSets the transition parameters for distance based blending in axis space\n(transition mode\nMC_TRANSITION_MODE.TMAxisDistance\n).\nThe outputs can be connected to the inputs\nTransitionMode\nand\nTransitionParameter\nof the movement function blocks.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "LinearDistance",
+          "Type": "LREAL",
+          "Initial": "",
+          "Comment": "The linear distance in user units. Must be non-negative."
+        },
+        [
+          "AngularDistance",
+          "LREAL",
+          "",
+          "The rotary distance in angular degrees. Must be non-\nnegative."
+        ],
+        [
+          "Axes",
+          "SMC_AxisDistanceAxes",
+          "SMC_AxisDistanceAxes.KINEMATIC",
+          "Defines which axes are taken into account for axis distance\nbased blending."
+        ],
+        [
+          "SubMode",
+          "SMC_AxisDistanceSubMode",
+          "SMC_AxisDistanceSubMode.Maximum",
+          "The submode, determines how the distances are interpreted."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "TransitionMode",
+          "Type": "MC_TRANSITION_MODE",
+          "Initial": "",
+          "Comment": "Can be connected to the input TransitionMode of the movement\nfunction block."
+        },
+        [
+          "TransitionParameter",
+          "ARRAY\n[0..(SMC_RCNST.MAX_TRANS_PARAMS\n- 1)] OF LREAL",
+          "",
+          "Can be connected to the TransitionParameter input\nof the movement function block."
+        ]
+      ]
+    }
+  ]
+}

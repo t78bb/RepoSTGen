@@ -1,0 +1,137 @@
+{
+  "library": "DNP3",
+  "title": "BinaryCounter(FB)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Outstation/Points/BinaryCounter.html",
+  "page_title": "BinaryCounter (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL BinaryCounter EXTENDS\nPointWithFlags\nDNP3 datapoint of type (Binary) Counter.\nAn instance of BinaryCounter does represent an instance of a datapoint of DNP3 object group 20 âcountersâ,\nand optionally also a datapoint of DNP3 object group 21 âfrozen countersâ.\nThis function block ist called BinaryCounter, because the slang term âBinary Counterâ is used frequently in DNP3 realm.\nDNP3 object group 21 âfrozen countersâ behaviour\nÂ¶\nIn general the DNP3 âfreezeâ is an activity only relevant for the master,\nthe âfrozenâ value is not of any interest for the application.\nNevertheless DNP3 defines a âfreeze-and-clearâ operation.\nThe DNP3 standard states - begin of citation â¦\nFreeze operations take two formsâfreeze and freeze-and-clear. With a freeze-and-clear type operation, the\ncounter value is zeroed after its counts are copied to the frozen counter.\nâ¦ end of citation.\nThis functionality is optional, and can be disabled setting enableFreezeAndClear:=FALSE.\nIf enabled, there are two aspects to take care of.\nFirst: the counter value will be zeroed during a âfreeze-and-clearâ operation - be aware: the variable value will be modified.\nSecond: eventually the application need to know, that an âfreeze-and-clearâ operation happend and need to do someting useful.\nThe output freezeAndClearOccurred is set to TRUE for one application cycle, to signal the application to do its part.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment",
+        "Inherited from"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "Description",
+          "Type": "STRING",
+          "Initial": "",
+          "Comment": "Description of the datapoint - this is a configuration,\nchanges are ignored after Outstation was enabled.",
+          "Inherited from": "Point"
+        },
+        [
+          "Number",
+          "DINT",
+          "-1",
+          "Point number - this is a configuration, changes are ignored after Outstation was enabled..\nThe point number can be configured if needed to either:start with Point number > 0have gaps in Point numbersIf set to -1 (the default) the OutstationDataModel (more precisely the related âGroupâ) takes care to set the Point number internally:starting at 0, if first Point number is not set explicitly.increment by 1In case you set Point number explicitly please keep it consistent:Point numbers need to be >= 0Point numbers need to be ascending",
+          "Point"
+        ],
+        [
+          "EventClass",
+          "USINT",
+          "Constants.TMWDEFS_CLASS_MASK_ONE",
+          "The initial event class - this is a configuration, changes are ignored after Outstation was enabled.\nOperational event class may be changed by a master.",
+          "Point"
+        ],
+        [
+          "EventMode",
+          "PointEventMode",
+          "PointEventMode.EVENT_MODE_SOE",
+          "The event mode - this is a configuration, changes are ignored after Outstation was enabled.\nOnly used if the sampling rate is set within the outstation configuration.",
+          "Point"
+        ],
+        [
+          "tScanPeriod",
+          "TIME",
+          "TIME#0ms",
+          "Scan period for datapoint.\nIf tScanPeriod is set to T#0MS, the Group related tScanPeriod or the OutstationDataModel.tScanPeriod is used.",
+          "Point"
+        ],
+        [
+          "udiLogOptions",
+          "UDINT",
+          "OutstationLoggingOptions.None",
+          "LoggingOptions can be combined using OR.",
+          "Point"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "xError",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "An error occured.",
+          "Inherited from": "Point"
+        },
+        [
+          "eErrorID",
+          "Error",
+          "",
+          "The specific error.",
+          "Point"
+        ],
+        {
+          "Scope": "Input",
+          "Name": "flags",
+          "Type": "BYTE",
+          "Initial": "Constants.DNPDEFS_DBAS_FLAG_ON_LINE",
+          "Comment": "Flags used by the point. Can be changed in case a point goes offline or any other error.\nIf set to 0, the variation without flags will be used by DNP3",
+          "Inherited from": "PointWithFlags"
+        },
+        [
+          "EventWithTimeStamp",
+          "BOOL",
+          "TRUE",
+          "Enable / disable if events will be send with / without\ntimestamp - this is a configuration, changes are ignored\nafter Outstation was enabled.",
+          ""
+        ],
+        [
+          "EnableFreeze",
+          "BOOL",
+          "FALSE",
+          "Enable / disable freezing the current value - this is a configuration, changes are ignored after Outstation was enabled.\nIf enabled, an instance of DNP3 object group 21 âfrozen countersâ is created.",
+          ""
+        ],
+        [
+          "FreezeEventClass",
+          "USINT",
+          "Constants.TMWDEFS_CLASS_MASK_ONE",
+          "The initial event class used for the optional datapoint of DNP3 object group 21 âfrozen countersâ - this is a configuration, changes are ignored after Outstation was enabled.\nOperational event class may be changed by a master.",
+          ""
+        ],
+        [
+          "FreezeEventMode",
+          "PointEventMode",
+          "PointEventMode.EVENT_MODE_SOE",
+          "The event mode used for the optional datapoint of DNP3 object group 21 âfrozen countersâ - this is a configuration, changes are ignored after Outstation was enabled.\nOnly used if the sampling rate is set within the outstation configuration.",
+          ""
+        ],
+        [
+          "enableFreezeAndClear",
+          "BOOL",
+          "TRUE",
+          "Enable / disable âfreeze-and-clearâ operation.",
+          ""
+        ],
+        [
+          "value",
+          "AnyNumber",
+          "",
+          "The current value to use, in most cases using the POINTER TO\nvalue representation is appropriate.",
+          ""
+        ],
+        {
+          "Scope": "Output",
+          "Name": "freezeAndClearOccurred",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "A freeze-and-clear occured.",
+          "Inherited from": ""
+        }
+      ]
+    }
+  ]
+}

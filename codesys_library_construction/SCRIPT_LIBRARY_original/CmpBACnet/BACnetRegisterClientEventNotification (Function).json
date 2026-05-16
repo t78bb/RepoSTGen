@@ -1,0 +1,76 @@
+{
+  "library": "CmpBACnet",
+  "title": "BACnetRegisterClientEventNotification (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/CmpBACnet/Current/BACnetClientAPI/advanced/BACnetRegisterClientEventNotification.html",
+  "page_title": "BACnetRegisterClientEventNotification (FUN)",
+  "text": "Deutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nMenu\nSearch\nDeutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nBACnetAsyncTransactionToken (Struct)\nBACnetClientAPI\nBACnetAcknowledgeAlarm (Function)\nBACnetAddListElement (Function)\nBACnetCancelPendingConfirmedRequest (Function)\nBACnetConfPrivateTransfer (Function)\nBACnetConfTextMessage (Function)\nBACnetCreateObject (Function)\nBACnetCreateObjectResult (Struct)\nBACnetDeleteObject (Function)\nBACnetDeviceCommControl (Function)\nBACnetGetAlarmSummary (Function)\nBACnetGetEnrollmentSummary (Function)\nBACnetGetEventInfo (Function)\nBACnetLifeSafetyOperation (Function)\nBACnetReadAllPropertyDataContents (Function)\nBACnetReadFile (Function)\nBACnetReadProperty (Function)\nBACnetReadPropertyMultiple (Function)\nBACnetReadRange (Function)\nBACnetReinitializeDevice (Function)\nBACnetRemoveListElement (Function)\nBACnetSubscribeCOV (Function)\nBACnetSubscribeCOVProperty (Function)\nBACnetUnconfPrivateTransfer (Function)\nBACnetUnconfTextMessage (Function)\nBACnetWhoHas (Function)\nBACnetWhoIs (Function)\nBACnetWriteFile (Function)\nBACnetWriteGroup (Function)\nBACnetWriteProperty (Function)\nBACnetWritePropertyMultiple (Function)\nadvanced\nBACnetBackupBACnetDevice (Function)\nBACnetCloseClientCustomer (Function)\nBACnetGetClientDeviceCommunication (Function)\nBACnetOpenClientCustomer (Function)\nBACnetRegisterClientCommunicationStateCallback (Function)\nBACnetRegisterClientDataPoint (Function)\nBACnetRegisterClientEventNotification (Function)\nBACnetRegisterClientUnsubscribeCompletionCallback (Function)\nBACnetRestartAllClients (Function)\nBACnetRestoreBACnetDevice (Function)\nBACnetSetClientDeviceCommunication (Function)\nBACnetSetClientDeviceFixAddress (Function)\nBACnetSetClientDeviceFixSubscribeCovTime (Function)\nBACnetSetClientGlobalCommTimingParameters (Function)\nBACnetSetClientGlobalMaxDeviceActions (Function)\nBACnetUnregisterClientDataPoint (Function)\nBACnetUnregisterClientEventNotification (Function)\nFile and Project Information\nLibrary Reference\n3SLicense\nLibrary Identification\nLibrary Properties\nCAA Ressource Manager Extern\nLibrary Identification\nLibrary Properties\nCAA Types Extern\nLibrary Identification\nLibrary Properties\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nCmpEventMgr\nLibrary Identification\nLibrary Properties\nCmpLog\nLibrary Identification\nLibrary Properties\nCmpSettings\nLibrary Identification\nLibrary Properties\nComponent Manager\nLibrary Identification\nLibrary Properties\nIoStandard\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysTarget\nLibrary Identification\nLibrary Properties\nSysTask\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nCmpBACnet\nDocs\n»\nBACnetClientAPI\n»\nadvanced\n»\nBACnetRegisterClientEventNotification (FUN)\nBACnetRegisterClientEventNotification (FUN)\nÂ¶\nFUNCTION BACnetRegisterClientEventNotification :\nIEC_BACNET_STATUS\nRegisters an device notification class reference for event and alarm acquisation.\nThis function enables the user appliaction to subscribe to an event and alarm source\nvery easy. This function will do most of the work, normally a client application has\nto manage, just in one call. It checks periodical for the presence and online state\nfor devices and checks for integrity of the alarms and event acquired from other\ndevices.\nInOut:\nScope\nName\nType\nComment\nReturn\nBACnetRegisterClientEventNotification\nIEC_BACNET_STATUS\nInput\nhCustomer\nIEC_BACNET_HANDLE\nAn handle to an created advanced BACnet client customer created by\nBACnetOpenClientCustomer\n.\ndevId\nIEC_BACNET_INST_NUMBER\nThe device instance number from the remote or local device from which the events or\nalarms shall be acquired.\nnotifClass\nIEC_BACNET_INST_NUMBER\nThe notification class object instance number from the remote or local device from\nwhich the events or alarms shall be acquired.\npValidTransitions\nPOINTER TO\nIEC_BACNET_BIT_STRING\nA pointer to an bit string structure which contians the bits for the transitions on\nwhich a notification shall be sent. More information can be found under\nBACNET_DESTINATION\npValidDays\nPOINTER TO\nIEC_BACNET_BIT_STRING\nA pointer to an bit string structure which contians the bits for the weekdays on\nwhich a notification shall be sent. More information can be found under\nBACNET_DESTINATION\npFromTime\nPOINTER TO\nIEC_BACNET_TIME\nA pointer to a time structure which contains the start time at which notifications\nshall be sent. More information can be found under BACNET_DESTINATION\npToTime\nPOINTER TO\nIEC_BACNET_TIME\nA pointer to a time structure which contains the end time at which notifications\nshall NOT be sent anymore. More information can be found under\nBACNET_DESTINATION\nnSubscribeMode\nIEC_BACNET_CLIENT_SUBSCRIBE_MODE\nThis defines how the data is acquired.\npICallback\nCmpEventMgr.ICmpEventCallback\nA pointer to the event-callback interface which gets called on BACnet event notification.\nTo unregister a NULL pointer shall be used here.\npUserArg\nPOINTER TO BYTE\nA pointer to data from the user application which is transparent for the API.\nThis pointer will not be modified by the BACnet API. This pointer and the pUserFct\npointer is associated with the given device instance and notification class object\ninstance pair. So for every different combination of those parameters these pointers\nare stored. This pointer may be NULL.\ntop\nCODESYS Group | We\nsoftware\nAutomation.\nto software\n['sɒftwɛər]\ntransitive verb\n__softwared/softwaring\n: to develop software\n// to software automation: to develop software for automation purposes\nThe CODESYS Group is the manufacturer of CODESYS, the leading hardware-independent\n                                    IEC 61131-3 automation software for developing and engineering controller\n                                    applications.\nCODESYS® is a registered trademark.\nCODESYS GmbH\nA member of the CODESYS Group\nMemminger Straße 151, 87439 Kempten\nGermany\nTel.:\n+49-831-54031-0\ninfo@codesys.com\nLegal Notice\nPrivacy Policy\nLinkedIn\nYoutube\nRSS\nDownloads\nLogin\nCODESYS Store\n© 2022 CODESYS GmbH\n| A member of the CODESYS Group",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "BACnetRegisterClientEventNotification",
+          "Type": "IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "hCustomer",
+          "Type": "IEC_BACNET_HANDLE",
+          "Comment": "An handle to an created advanced BACnet client customer created byBACnetOpenClientCustomer."
+        },
+        [
+          "devId",
+          "IEC_BACNET_INST_NUMBER",
+          "The device instance number from the remote or local device from which the events or\nalarms shall be acquired."
+        ],
+        [
+          "notifClass",
+          "IEC_BACNET_INST_NUMBER",
+          "The notification class object instance number from the remote or local device from\nwhich the events or alarms shall be acquired."
+        ],
+        [
+          "pValidTransitions",
+          "POINTER TOIEC_BACNET_BIT_STRING",
+          "A pointer to an bit string structure which contians the bits for the transitions on\nwhich a notification shall be sent. More information can be found under\nBACNET_DESTINATION"
+        ],
+        [
+          "pValidDays",
+          "POINTER TOIEC_BACNET_BIT_STRING",
+          "A pointer to an bit string structure which contians the bits for the weekdays on\nwhich a notification shall be sent. More information can be found under\nBACNET_DESTINATION"
+        ],
+        [
+          "pFromTime",
+          "POINTER TOIEC_BACNET_TIME",
+          "A pointer to a time structure which contains the start time at which notifications\nshall be sent. More information can be found under BACNET_DESTINATION"
+        ],
+        [
+          "pToTime",
+          "POINTER TOIEC_BACNET_TIME",
+          "A pointer to a time structure which contains the end time at which notifications\nshall NOT be sent anymore. More information can be found under\nBACNET_DESTINATION"
+        ],
+        [
+          "nSubscribeMode",
+          "IEC_BACNET_CLIENT_SUBSCRIBE_MODE",
+          "This defines how the data is acquired."
+        ],
+        [
+          "pICallback",
+          "CmpEventMgr.ICmpEventCallback",
+          "A pointer to the event-callback interface which gets called on BACnet event notification.\nTo unregister a NULL pointer shall be used here."
+        ],
+        [
+          "pUserArg",
+          "POINTER TO BYTE",
+          "A pointer to data from the user application which is transparent for the API.\nThis pointer will not be modified by the BACnet API. This pointer and the pUserFct\npointer is associated with the given device instance and notification class object\ninstance pair. So for every different combination of those parameters these pointers\nare stored. This pointer may be NULL."
+        ]
+      ]
+    }
+  ]
+}

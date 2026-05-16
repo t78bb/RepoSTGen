@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现用于设置灯光亮度级别的命令功能。",
+  "provide_code": "FUNCTION_BLOCK PUBLIC FB_LampSetLevelCommand IMPLEMENTS I_Command"
+}

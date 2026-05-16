@@ -1,0 +1,32 @@
+{
+  "library": "SM3_CNC",
+  "title": "GetAddData (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/GSentence/pou-SMC_GExpToken_Iterator/GetAddData.html",
+  "page_title": "SMC_GExpToken_Iterator.GetAddData (METH)",
+  "text": "\nMETHOD GetAddData : BOOL\nReturns the pointer to the additional data and the length of the\nadditional data stored for the current g-expression token.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetAddData",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Output",
+          "Name": "pData",
+          "Type": "POINTER TO BYTE"
+        },
+        [
+          "nNumBytes",
+          "UDINT"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_GetPntPI (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/GeoInfo-Help-Functions/SMC_GetPntPI.html",
+  "page_title": "SMC_GetPntPI (FUN)",
+  "text": "\nFUNCTION SMC_GetPntPI : BOOL\nWrites the point at\nt\n[0,\n1]\non\npg\nin\npv\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SMC_GetPntPI",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Input",
+          "Name": "ppi",
+          "Type": "POINTER TOSMC_POSINFO"
+        },
+        [
+          "pg",
+          "POINTER TOSMC_GEOINFO"
+        ],
+        [
+          "t",
+          "LREAL"
+        ]
+      ]
+    }
+  ]
+}

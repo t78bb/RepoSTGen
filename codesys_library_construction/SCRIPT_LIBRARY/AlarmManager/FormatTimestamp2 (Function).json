@@ -1,0 +1,58 @@
+{
+  "library": "AlarmManager",
+  "title": "FormatTimestamp2 (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Functions/FormatTimestamp2.html",
+  "page_title": "FormatTimestamp2 (FUN)",
+  "text": "\nFUNCTION FormatTimestamp2 : BOOL\nThis method extends the format timestamp to support the utc offset conversion\ncalling FB_Exit does not hurt because so far only on CharBufferString instances that operate on local buffers (ie. nothing done in FB_Exit at all)\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "FormatTimestamp2",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "liTimestamp",
+          "Type": "Timestamp",
+          "Initial": "",
+          "Comment": "The timestamp to format"
+        },
+        [
+          "iOffset",
+          "INT",
+          "",
+          "UTC offset (-1 indicates that the utc time should be\nconverted to the local time)"
+        ],
+        [
+          "cbsResult",
+          "REFERENCE TO\nCharBufferString",
+          "",
+          "The string, where the result will be stored"
+        ],
+        [
+          "sDateFormatPattern",
+          "STRING",
+          "ââ",
+          "optional date format"
+        ],
+        [
+          "sTimeFormatPattern",
+          "STRING",
+          "ââ",
+          "optionale time format"
+        ]
+      ]
+    }
+  ]
+}

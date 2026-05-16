@@ -1,0 +1,41 @@
+{
+  "library": "Standard",
+  "title": "MID (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/Standard/Current/String-Functions/MID.html",
+  "page_title": "MID (FUN)",
+  "text": "\nFUNCTION MID : STRING(255)\nReturns a specific number of characters of a string, starting from a specific position\nMID\n(STR,\nLEN,\nPOS)\nmeans: Retrieve\nLEN\ncharacters from the\nSTR\nstring beginning with the character at position\nPOS\n.\n(* Example declaration *)\nVarSTRING1\n:\nSTRING\n;\n(* Example in ST , result is 'US' *)\nVarSTRING1\n:=\nMID\n(\n'SUSI'\n,\n2\n,\n2\n);\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "MID",
+          "Type": "STRING(255)",
+          "Comment": "Partial string ofSTR"
+        },
+        {
+          "Scope": "Input",
+          "Name": "STR",
+          "Type": "STRING(255)",
+          "Comment": "String to be analyzed"
+        },
+        [
+          "LEN",
+          "INT",
+          "Number of characters, counted from the left"
+        ],
+        [
+          "POS",
+          "INT",
+          "Start position for the partial string"
+        ]
+      ]
+    }
+  ]
+}

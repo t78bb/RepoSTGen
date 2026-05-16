@@ -1,0 +1,56 @@
+{
+  "library": "Util",
+  "title": "LIN_TRAFO (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/Mathematical-Functions/LIN_TRAFO.html",
+  "page_title": "LIN_TRAFO (FB)",
+  "text": "\nFUNCTION_BLOCK LIN_TRAFO\nPerforms a linear transformation\nThe transformation is performed by using the minimum and maximum values\nof the inputs for a linear approximation of the output value.\nApplication example:\nA temperature sensor provides Volt-values (input\nIN\n). These are to be converted to temperature\nvalues in degree centigrade (output\nOUT\n). The input (Volt) values range is defined by the\nlimits\nIN_MIN=0\nand\nIN_MAX=10\n. The output(degree centigrade) value range is defined by the\nlimits\nOUT_MIN=-20\nand\nOUT_MAX=40\n.\nThus for an input of 5 Volt a temperature of 10 degree centigrade will result.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "IN",
+          "Type": "REAL",
+          "Comment": "Input value"
+        },
+        [
+          "IN_MIN",
+          "REAL",
+          "Minimum input value"
+        ],
+        [
+          "IN_MAX",
+          "REAL",
+          "Maximum input value"
+        ],
+        [
+          "OUT_MIN",
+          "REAL",
+          "Corresponding minimum output value"
+        ],
+        [
+          "OUT_MAX",
+          "REAL",
+          "Corresponding maximum output value"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "OUT",
+          "Type": "REAL",
+          "Comment": "Output value"
+        },
+        [
+          "ERROR",
+          "BOOL",
+          "TRUE:IN_MIN=IN_MAXorINout of input range"
+        ]
+      ]
+    }
+  ]
+}

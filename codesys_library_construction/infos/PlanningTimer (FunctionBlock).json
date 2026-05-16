@@ -1,0 +1,41 @@
+{
+  "library": "SM3_Robotics",
+  "title": "PlanningTimer (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/internal/Kernel_CP/Helpers/PlanningTimer.html",
+  "page_title": "PlanningTimer (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL PlanningTimer\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "IN",
+          "Type": "BOOL",
+          "Comment": "Measures the time as long as IN is true.\nStarts with a rising edge."
+        },
+        [
+          "PT",
+          "LTIME",
+          "The time delay before Q fires"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Q",
+          "Type": "BOOL",
+          "Comment": "True iff ET >= PT"
+        },
+        [
+          "ET",
+          "LTIME",
+          "The elapsed time since the rising edge of IN"
+        ]
+      ]
+    }
+  ]
+}

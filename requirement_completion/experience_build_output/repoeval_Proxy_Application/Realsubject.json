@@ -1,0 +1,11 @@
+{
+  "模糊点列表": [
+    {
+      "模糊点类型": "方法实现",
+      "模糊点描述": "原始需求未明确是否需要实现获取和设置动态属性的方法",
+      "差异细节": "模型生成代码中没有实现获取和设置动态属性的方法，而参考代码中实现了Get_Method和Set_Method方法",
+      "精准需求描述": "实现公共方法Get_Method返回动态整数属性iProp的值，和公共方法Set_Method用于设置动态整数属性iProp的值"
+    }
+  ],
+  "case_id": "repoeval_Proxy_Application/Realsubject"
+}

@@ -1,0 +1,40 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_StartVelocityTransitionParam (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/Additional/SMC_StartVelocityTransitionParam.html",
+  "page_title": "SMC_StartVelocityTransitionParam (FUN)",
+  "text": "\nFUNCTION SMC_StartVelocityTransitionParam : ARRAY [0..(SMC_RCNST.MAX_TRANS_PARAMS - 1)] OF LREAL\nSets the transition parameters for velocity based blending\n(transition mode\nMC_TRANSITION_MODE.TMStartVelocity\n).\nThe result can be assigned to a movement function blockâs\nTransitionParameter\ninput.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SMC_StartVelocityTransitionParam",
+          "Type": "ARRAY\n[0..(SMC_RCNST.MAX_TRANS_PARAMS\n- 1)] OF LREAL",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "Factor",
+          "Type": "LREAL",
+          "Initial": "1",
+          "Comment": "The start-velocity factor.  A factor of 1 (100%) means that\nblending is started when the deceleration phase would begin\non the unmodified first movement, and finished when the\nacceleration phase would end on the unmodified second movement.\nLarger factors lead to a larger blending area, smaller factors\nlead to a smaller blending area."
+        },
+        [
+          "Axes",
+          "SMC_StartVelocityAxes",
+          "SMC_StartVelocityAxes.KINEMATIC",
+          "Defines which axes are taken into account for velocity based\nblending."
+        ]
+      ]
+    }
+  ]
+}

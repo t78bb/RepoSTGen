@@ -1,0 +1,30 @@
+{
+  "library": "BACnet2",
+  "title": "SetBACnetValueSourceProperty (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/BACnetObjects/base/pou-BACnetObjectBase/Utilities/typed-property-access/SetBACnetValueSourceProperty.html",
+  "page_title": "BACnetObjectBase.SetBACnetValueSourceProperty (METH)",
+  "text": "\nMETHOD SetBACnetValueSourceProperty\nSets the BACnet-Value_Source-Value of the specified Property (propID) of this BACnet-Object.\nThe used functions are no client, meaning, that the access of the property is not restricted by write or read access restrictions.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "propID",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_ID",
+          "Comment": "The ID of the property to set."
+        },
+        [
+          "vs",
+          "CmpBACnet.IEC_BACNET_VALUE_SOURCE",
+          "The Value_Source value to set for the property."
+        ]
+      ]
+    }
+  ]
+}

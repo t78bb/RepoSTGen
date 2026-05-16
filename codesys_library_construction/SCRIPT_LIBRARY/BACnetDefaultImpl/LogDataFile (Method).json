@@ -1,0 +1,32 @@
+{
+  "library": "BACnetDefaultImpl",
+  "title": "LogDataFile (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnetDefaultImpl/Current/BACnetDefaultImpl/Function-Blocks/LoggingObjects/Internal/pou-LogObjectsBase/Logging/LogDataFile.html",
+  "page_title": "LogObjectsBase.LogDataFile (METH)",
+  "text": "\nMETHOD LogDataFile : RTS_IEC_RESULT\nPrints the content of a data file to the logger.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "LogDataFile",
+          "Type": "RTS_IEC_RESULT"
+        },
+        {
+          "Scope": "Input",
+          "Name": "instNumber",
+          "Type": "DWORD"
+        },
+        [
+          "msg",
+          "STRING"
+        ]
+      ]
+    }
+  ]
+}

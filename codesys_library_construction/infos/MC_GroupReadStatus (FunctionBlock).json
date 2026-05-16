@@ -1,0 +1,132 @@
+{
+  "library": "SM3_Robotics",
+  "title": "MC_GroupReadStatus (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/Diagnostics/MC_GroupReadStatus.html",
+  "page_title": "MC_GroupReadStatus (FB)",
+  "text": "\nFUNCTION_BLOCK MC_GroupReadStatus\nThis function block returns the status of an axis group.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "AxisGroup",
+          "Type": "AXIS_GROUP_REF_SM3",
+          "Comment": "Reference to a group of axes"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Enable",
+          "Type": "BOOL",
+          "Comment": "Get the status of the axis group continuously while enabled"
+        },
+        {
+          "Scope": "Output",
+          "Name": "Valid",
+          "Type": "BOOL",
+          "Comment": "TRUEif valid outputs are available"
+        },
+        [
+          "Busy",
+          "BOOL",
+          "The FB is not finished"
+        ],
+        [
+          "Error",
+          "BOOL",
+          "Signals that an error has occurred within the function block"
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ],
+        [
+          "GroupMoving",
+          "BOOL",
+          "SeeSMC_Axis_Group_State"
+        ],
+        [
+          "GroupHoming",
+          "BOOL",
+          "SeeSMC_Axis_Group_State"
+        ],
+        [
+          "GroupErrorStop",
+          "BOOL",
+          "SeeSMC_Axis_Group_State"
+        ],
+        [
+          "GroupStandby",
+          "BOOL",
+          "SeeSMC_Axis_Group_State"
+        ],
+        [
+          "GroupStopping",
+          "BOOL",
+          "SeeSMC_Axis_Group_State"
+        ],
+        [
+          "GroupDisabled",
+          "BOOL",
+          "SeeSMC_Axis_Group_State"
+        ],
+        [
+          "TrackingDynamicCS",
+          "BOOL",
+          "If the active movement is commanded using a dynamic coordination system,\nE.g. withMC_TrackConveyorBeltorMC_TrackRotaryTable."
+        ],
+        [
+          "InSync",
+          "BOOL",
+          "Indicates whether the axis group follows the programmed path exactly.\nIf FALSE, the axis group is following the path within the configured\ntolerance.  SeeSMC_GroupSetPathTolerance."
+        ],
+        [
+          "ActiveMovementId",
+          "SMC_Movement_Id",
+          "The identifier of the active movement.  An Id of 0 means\nthat no movement is active.\nDuring blending between two movements, the second movement becomes\nactive as soon as blending starts.\nWhen aborting, the aborting movements becomes active immediately\nafter it has been accepted.\nSeeFirstReferencedMovementIdfor additional information."
+        ],
+        [
+          "ActiveMovementName",
+          "STRING",
+          "The name of the active movement."
+        ],
+        [
+          "FirstReferencedMovementId",
+          "SMC_Movement_Id",
+          "The identifier of the first (i.e. oldest) movement which is still\nbeing referenced by an ongoing movement.\nAn Id of 0 means that no movement is active.\nTo test whether the axis group is fully tracked in to a dynamic\ncoordinate system (or fully tracked out), the condition\nFirstReferencedMovementId = ActiveMovementId can be used."
+        ],
+        [
+          "LastAcceptedMovementId",
+          "SMC_Movement_Id",
+          "The identifier of the movement that was last accepted.  An Id of 0 means\nthat no movement has been accepted yet."
+        ],
+        [
+          "PositionLag",
+          "LREAL",
+          "The magnitude of the position lag (in position units).  The position lag\nis the deviation of the position of the axis group from the programmed\ntrajectory."
+        ],
+        [
+          "OrientationLag",
+          "LREAL",
+          "The magnitude of the orientation lag (in angular degrees).  The orientation\nlag is the deviation of the orientation of the axis group from the programmed\ntrajectory."
+        ],
+        [
+          "CurrentPlanningForecast",
+          "LREAL",
+          "The current planning forecast in seconds.  Will be between 0 and thefPlanningForecastDurationconfigured usingSMC_TuneCPKernel.  While the axis group is moving, should be\nexactly thefPlanningForecastDuration.  Limited to the remaining trajectory duration\nwhile the axis group is stopping."
+        ],
+        [
+          "CurrentSyncBufferDuration",
+          "LREAL",
+          "The current duration of the synchronisation buffer between fieldbus and planning task\nin seconds.  Will be between 0 and thefSyncBufferDurationconfigured usingSMC_TuneCPKernel.\nThis value must be > 0 while the axis group is moving.  Otherwise, the error\nSMC_CP_QUEUE_UNDERRUN will be reported."
+        ]
+      ]
+    }
+  ]
+}

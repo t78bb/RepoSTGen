@@ -1,0 +1,47 @@
+{
+  "library": "DNP3",
+  "title": "AnyNumberCompare (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Functions/AnyNumber/AnyNumberCompare.html",
+  "page_title": "AnyNumberCompare (FUN)",
+  "text": "\nFUNCTION AnyNumberCompare :\nError\nCompare two AnyNumber.\nCompare of AnyNumber Equal with left/right baseType TYPE_REAL and TYPE_LREAL does work with an fix epsilon, so its not exact real equal,\nnevertheless the resolution is appropriate in the realm of DNP3.\nReturns Error.AnyNumberError if left and right are not consistent.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "AnyNumberCompare",
+          "Type": "Error",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "left",
+          "Type": "REFERENCE TOAnyNumber",
+          "Comment": ""
+        },
+        [
+          "right",
+          "REFERENCE TOAnyNumber",
+          ""
+        ],
+        [
+          "operation",
+          "AnyNumberCompareOperation",
+          ""
+        ],
+        {
+          "Scope": "Output",
+          "Name": "result",
+          "Type": "BOOL",
+          "Comment": "Compare result"
+        }
+      ]
+    }
+  ]
+}

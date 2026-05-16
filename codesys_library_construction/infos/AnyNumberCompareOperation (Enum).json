@@ -1,0 +1,37 @@
+{
+  "library": "DNP3",
+  "title": "AnyNumberCompareOperation (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Functions/AnyNumber/AnyNumberCompareOperation.html",
+  "page_title": "AnyNumberCompareOperation (ENUM)",
+  "text": "\nTYPE AnyNumberCompareOperation :\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Name": "LessThan",
+          "Initial": "0"
+        },
+        {
+          "Name": "LessEqual",
+          "Initial": ""
+        },
+        {
+          "Name": "Equal",
+          "Initial": ""
+        },
+        {
+          "Name": "GreaterThanEqual",
+          "Initial": ""
+        },
+        {
+          "Name": "GreaterThan",
+          "Initial": ""
+        }
+      ]
+    }
+  ]
+}

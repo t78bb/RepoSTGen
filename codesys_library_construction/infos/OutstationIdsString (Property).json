@@ -1,0 +1,8 @@
+{
+  "library": "DNP3",
+  "title": "OutstationIdsString (Property)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Outstation/pou-OutstationDataModel/OutstationIdsString.html",
+  "page_title": "OutstationDataModel.OutstationIdsString (PROP)",
+  "text": "\nPROPERTY OutstationIdsString : STRING",
+  "tables": []
+}

@@ -1,0 +1,31 @@
+{
+  "library": "AlarmManager",
+  "title": "GetLatchVarValue (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/pou-IAlarm3/GetLatchVarValue.html",
+  "page_title": "IAlarm3.GetLatchVarValue (METH)",
+  "text": "\nMETHOD GetLatchVarValue : ITypedValue\nReturns a ITypedValue instance, describing the current value of an optional latch variable.\nThis method is an enhancement/a replacement of methods IAlarm.GetLatchVar1Value and\nIAlarm.GetLatchVar2Value.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetLatchVarValue",
+          "Type": "ITypedValue",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "iWhichLatchVar",
+          "Type": "INT",
+          "Comment": "The 1-based index of the latch variable. Specify 1 to obtain the same result like\nmethod IAlarm.GetLatchVar1Value and 2 to obtain the same result like\nmethod IAlarm.GetLatchVar2Value. All greater values correspond to the optional\nadditional latch variables."
+        }
+      ]
+    }
+  ]
+}

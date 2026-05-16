@@ -1,0 +1,36 @@
+{
+  "library": "BACnet",
+  "title": "SetAutoSlaveDiscovery (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/Device/pou-BACnetDevice/SetAutoSlaveDiscovery.html",
+  "page_title": "BACnetDevice.SetAutoSlaveDiscovery (METH)",
+  "text": "\nMETHOD SetAutoSlaveDiscovery : CmpBACnet.IEC_BACNET_STATUS\nSets the Auto_Slave_Discovery-List of this BACnet object.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetAutoSlaveDiscovery",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "uiListCount",
+          "Type": "CmpBACnet.IEC_BACNET_ELEMENT_COUNT",
+          "Comment": "The length of the list in the following pointer."
+        },
+        [
+          "pList",
+          "POINTER TO\nCmpBACnet.IEC_BACNET_BOOLEAN",
+          "The list data containing elements according to the given\ncount."
+        ]
+      ]
+    }
+  ]
+}

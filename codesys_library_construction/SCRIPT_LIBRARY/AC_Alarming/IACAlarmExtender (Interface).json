@@ -1,0 +1,8 @@
+{
+  "library": "AC_Alarming",
+  "title": "IACAlarmExtender (Interface)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_Alarming/Current/ExtenderFB/IACAlarmExtender.html",
+  "page_title": "IACAlarmExtender (ITF)",
+  "text": "\nINTERFACE IACAlarmExtender EXTENDS AC.IEnvironmentExtender\nInterface describing the environment extender for the alarming used by the\nalarm generator\nMethods:\nInit\nStructure:\nInit (Method)",
+  "tables": []
+}

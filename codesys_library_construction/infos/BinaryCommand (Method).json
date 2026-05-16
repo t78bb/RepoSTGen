@@ -1,0 +1,56 @@
+{
+  "library": "DNP3",
+  "title": "BinaryCommand (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/pou-Master/Commands/BinaryCommand.html",
+  "page_title": "Master.BinaryCommand (METH)",
+  "text": "\nMETHOD BinaryCommand :\nError\nIssue a binary command\nNOTE: If you are doing a SELECT/OPERATE but choose not to use the autoMode\nmask to do this, but instead are going to call this brm function to send\nthe SELECT and then call this function again to send the OPERATE, you will\nneed to increase the pReqDesc->priority of the OPERATE to 255 to\nguarantee it gets sent before any automatic processing of events is performed.\n(Automatic processing of events is enabled by default when the mdnp session\nwas opened). For example, if in the response to the SELECT the restart IIN bit\nis set and the session was set up to automatically send a clear restart\ncommand, you will want to make sure the OPERATE gets sent before the clear\nrestart, otherwise the operate will fail.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "BinaryCommand",
+          "Type": "Error",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "funcCode",
+          "Type": "FunctionCode",
+          "Comment": "function code, must be DNPDEFS_FC_SELECT, DNPDEFS_FC_OPERATE,DNPDEFS_FC_DIRECT_OP, or DNPDEFS_FC_DIRECT_OP_NOACK"
+        },
+        [
+          "autoMode",
+          "USINT",
+          "bit mask to specify which actions to perform. Combine\nAUTO_MODE_OPERATE and AUTO_MODE_FEEDBACK as needed."
+        ],
+        [
+          "opFeedbackDelay",
+          "TIME",
+          "specify a delay, in milliseconds, after receivingthe response to an operate or direct operate request before issueing\nan operate feedback poll using the autoMode parameter."
+        ],
+        [
+          "qualifier",
+          "AddressQualifier",
+          "address qualifier, must be 8 or 16 bit indexedQUAL_8BIT_INDEX or QUAL_16BIT_INDEX"
+        ],
+        [
+          "numCROBs",
+          "USINT",
+          "number of Control Relay Output Blocks in this request"
+        ],
+        [
+          "pCROBInfo",
+          "POINTER TOCROB_Info",
+          "data for each Control Relay Output Block"
+        ]
+      ]
+    }
+  ]
+}

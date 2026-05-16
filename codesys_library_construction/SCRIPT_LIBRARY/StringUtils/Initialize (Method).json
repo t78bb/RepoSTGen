@@ -1,0 +1,36 @@
+{
+  "library": "StringUtils",
+  "title": "Initialize (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/StringUtils/Current/Public-Parts/pou-CharBufferString/Initialize.html",
+  "page_title": "CharBufferString.Initialize (METH)",
+  "text": "\nMETHOD Initialize : BOOL\nMethod Initialize must be called in order to pass an already existing CharBufferPtr\nto this instance. In this case the buffer size is unknown and remains 0. This method\ncan be used if the string is read only.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "Initialize",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "cbpSource",
+          "Type": "CharBufferPtr",
+          "Comment": "The buffer, where the string is stored this instance\nrepresents"
+        },
+        [
+          "stringType",
+          "__SYSTEM.TYPE_CLASS",
+          "A __SYSTEM.TYPE_CLASS value indicating type of the string"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "requirement": "This code should implement a calculation for the variable `lF` based on the inputs `lM`, `lL`, and `lH`, where all variables are of type LREAL. The calculation should only proceed if `lH` is not zero, to avoid division by zero errors. If `lH` is not zero, `lF` should be calculated using the formula `9.8 * lM / (2 * COS(ATAN(lL / lH)))`. There should be no action or change to `lF` if `lH` equals zero, effectively leaving `lF` in its default or previously set state.",
+  "provide_code": "FUNCTION_BLOCK CheckF\nVAR_INPUT\n\tlM\t:\tLREAL;\n\tlL\t:\tLREAL;\n\tlH\t:\tLREAL;\nEND_VAR\nVAR_OUTPUT\n\tlF\t:\tLREAL;\nEND_VAR",
+  "function_name": "CheckF",
+  "requirement_cn": "这段代码应当根据输入变量`lM`、`lL`和`lH`（均为LREAL类型）来计算变量`lF`的值。只有当`lH`不为零时，才进行计算，以避免除零错误。如果`lH`不为零，则应使用公式`9.8 * lM / (2 * COS(ATAN(lL / lH)))`来计算`lF`。如果`lH`为零，则不进行任何操作或更改，`lF`保持其默认值或之前设置的状态。"
+}

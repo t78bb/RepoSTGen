@@ -1,0 +1,11 @@
+{
+  "模糊点列表": [
+    {
+      "模糊点类型": "IO映射",
+      "模糊点描述": "原始需求未明确指定用于检查停靠请求的具体变量",
+      "差异细节": "模型生成代码使用了IGoFloor[nFloorIndex]和IFloorUp[nFloorIndex]或IFloorDown[nFloorIndex]变量，而参考代码使用了Tar_Dir.IsStopFloor[i]变量",
+      "精准需求描述": "应明确指定一个布尔数组变量，用于表示每个楼层是否有停靠请求，例如使用Tar_Dir.IsStopFloor[i]表示第i楼层是否有停靠请求"
+    }
+  ],
+  "case_id": "repoeval_four-level_elevator_control/F_CheckJobInDirection"
+}

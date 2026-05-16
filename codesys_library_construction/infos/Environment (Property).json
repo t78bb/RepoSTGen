@@ -1,0 +1,8 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "Environment (Property)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_Module/pou-Module/Identification/Environment.html",
+  "page_title": "Module.Environment (PROP)",
+  "text": "\nPROPERTY FINAL Environment : POINTER TO MEnv",
+  "tables": []
+}

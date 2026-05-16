@@ -1,0 +1,23 @@
+{
+  "library": "DNP3",
+  "title": "EventPoll (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/pou-Master/Commands/EventPoll.html",
+  "page_title": "Master.EventPoll (METH)",
+  "text": "\nMETHOD EventPoll :\nError\nIssue an event data poll\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "EventPoll",
+          "Type": "Error"
+        }
+      ]
+    }
+  ]
+}

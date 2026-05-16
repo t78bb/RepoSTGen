@@ -1,0 +1,5 @@
+{
+  "requirement": "This code is intended to implement a mapping system that translates physical index values within specified sections into corresponding logical register addresses.",
+  "provide_code": "FUNCTION_BLOCK mdbsPhyToLogic\t//modbus本地索引对应回传华中的状态地址\nVAR_INPUT\n\tsection\t\t:INT;\t//区域限定(1:grdExt, 2:grdRet, 3:skyExt, 4:skyRet)\n\tphyIdx\t\t:INT;\t//内存物理地址对应数组索引\nEND_VAR\nVAR_OUTPUT\n\tlgcIdx\t\t:INT;\t//华中对应的地址\t127 175 223 271...\nEND_VAR",
+  "function_name": "mdbsPhyToLogic"
+}

@@ -1,0 +1,31 @@
+{
+  "library": "BACnet",
+  "title": "RemoveGroupMember (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/Global-Group/pou-BACnetGlobalGroup/RemoveGroupMember.html",
+  "page_title": "BACnetGlobalGroup.RemoveGroupMember (METH)",
+  "text": "\nMETHOD RemoveGroupMember : CmpBACnet.IEC_BACNET_STATUS\nRemoves a group member (given by a BACnet-Object-Reference) and a group member name at index nIndex from the Group_Members-Property and the\nGroup_Member_Names-Property of this BACnet-Object. Both the group member and its group member name are removed simulatenously by this function.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "RemoveGroupMember",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "nIndex",
+          "Type": "CmpBACnet.IEC_BACNET_ELEMENT_COUNT",
+          "Comment": "The 1 based index of the subordinate to remove."
+        }
+      ]
+    }
+  ]
+}

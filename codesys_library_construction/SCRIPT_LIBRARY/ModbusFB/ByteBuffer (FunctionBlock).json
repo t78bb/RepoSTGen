@@ -1,0 +1,25 @@
+{
+  "library": "ModbusFB",
+  "title": "ByteBuffer (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/ModbusFB/Current/ModbusFB/Function-Blocks/Util/ByteBuffer.html",
+  "page_title": "ByteBuffer (FB)",
+  "text": "\nFUNCTION_BLOCK ByteBuffer\nBuffer to work with fixed size byte arrays.\nByteBuffer does have a Capacity() fixed during Init().\nIt could be written to using the Put*() methods, updating Len() and the position (uiPosition).\nIt could be read using the Get*() methods, updating the position (uiPosition).\nPosition could be set from begin (0) to end (Len() -1).\nRewind() does set uiPosition to begin.\nFreeze() make subsequent Put*() calls be ignored - this is reset at Init().\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Scope": "Output",
+          "Name": "uiPosition",
+          "Type": "UINT",
+          "Initial": "0"
+        }
+      ]
+    }
+  ]
+}

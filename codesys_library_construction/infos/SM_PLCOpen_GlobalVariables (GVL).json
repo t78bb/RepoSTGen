@@ -1,0 +1,46 @@
+{
+  "library": "SM3_Basic",
+  "title": "SM_PLCOpen_GlobalVariables (GVL)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/Globals/SM_PLCOpen_GlobalVariables.html",
+  "page_title": "SM_PLCOpen_GlobalVariables (GVL)",
+  "text": "\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Constant",
+          "Name": "MAX_NUM_TAPPETS",
+          "Type": "UINT",
+          "Initial": "512",
+          "Comment": ""
+        },
+        [
+          "SMC_SUPPORTEDRAMPTYPES",
+          "DWORD",
+          "2#111",
+          "quadratic, sinsquare, trapez"
+        ],
+        [
+          "SMC_MAX_NUM_TRIGGERS",
+          "INT",
+          "8",
+          "The maximum number of triggers supported for|TRIGGER_REF.iTriggerNumber|"
+        ],
+        {
+          "Scope": "",
+          "Name": "g_fSMC_PLCOPEN_EPS",
+          "Type": "LREAL",
+          "Initial": "1E-06",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "library": "String Segments",
+  "title": "Len (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Segments/Current/Strings/Functions/Len.html",
+  "page_title": "Len (FUN)",
+  "text": "Library Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nStrings\nAliases\nConstants (GVL)\nIDisposable (Alias)\nRUNE (Alias)\nEnums\nERROR (Enum)\nFunctionblocks\nRange (FunctionBlock)\nIRange\nSetInitialValue (Method)\nUTF8Literal (FunctionBlock)\nSetInitialValue (Method)\n_RangePool (FunctionBlock)\nProtected\n_StringPool (FunctionBlock)\nIStringPool\nSetInitialValue (Method)\n_UTF8String (FunctionBlock)\nIString\nIStringRepresentation\nFunctions\nCompare (Function)\nCopy (Function)\nCreateRangePool (Function)\nCreateString (Function)\nCreateStringPool (Function)\nIsASCIIString (Function)\nIsValidString (Function)\nLen (Function)\nReset (Function)\nRuneCount (Function)\nSetSegment (Function)\nInterfaces\nIRange (Interface)\nGetNextRune (Method)\nReset (Method)\nUngetLastRune (Method)\nIRangePool (Interface)\nGetPoolStatus (Method)\nGetRange (Method)\nIRangeProvider (Interface)\nGetRange (Method)\nIString (Interface)\nGetSegment (Method)\nIsASCII (Method)\nIsValid (Method)\nLen (Method)\nIStringPool (Interface)\nGetPoolConfig (Method)\nGetString (Method)\nIStringRepresentation (Interface)\nLen (Method)\nToIString (Method)\nStructs\nCONFIG (Struct)\nSTATUS (Struct)\nFile and Project Information\nLibrary Reference\nMemory Block Manager\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nUTF-8 Encoding Support\nLibrary Identification\nLibrary Properties\nString Segments\nDocs\n»\nStrings\n»\nFunctions\n»\nLen (FUN)\nLen (FUN)\nÂ¶\nFUNCTION Len : UDINT\nReturns the number of bytes required for the UTF-8 encoded string segment of\nifString\nInOut:\nScope\nName\nType\nReturn\nLen\nUDINT\nInput\nitfString\nIString\nOutput\neErrorID\nERROR",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "Len",
+          "Type": "UDINT"
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfString",
+          "Type": "IString"
+        },
+        {
+          "Scope": "Output",
+          "Name": "eErrorID",
+          "Type": "ERROR"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "library": "DNP3",
+  "title": "UnsolDisable (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/pou-Master/Commands/UnsolDisable.html",
+  "page_title": "Master.UnsolDisable (METH)",
+  "text": "\nMETHOD UnsolDisable :\nError\nIssue an unsolicited disable request\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "UnsolDisable",
+          "Type": "Error",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "class1",
+          "Type": "BOOL",
+          "Comment": "TRUE to disable unsolicited responses for class 1 events"
+        },
+        [
+          "class2",
+          "BOOL",
+          "TRUE to disable unsolicited responses for class 2 events"
+        ],
+        [
+          "class3",
+          "BOOL",
+          "TRUE to disable unsolicited responses for class 3 events"
+        ]
+      ]
+    }
+  ]
+}

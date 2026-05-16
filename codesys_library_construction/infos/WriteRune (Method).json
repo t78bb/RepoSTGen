@@ -1,0 +1,37 @@
+{
+  "library": "String Builder",
+  "title": "WriteRune (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Builder/Current/Builder/Function-Blocks/pou-_Builder/IBuilder/WriteRune.html",
+  "page_title": "_Builder.WriteRune (METH)",
+  "text": "\nMETHOD FINAL WriteRune : UDINT\nAppends the UTF-8 encoding of Unicode code point\ndiRune\nto the buffer.\nIt returns the number of bytes written.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "WriteRune",
+          "Type": "UDINT",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "diRune",
+          "Type": "RUNE",
+          "Comment": "Rune to be written"
+        },
+        {
+          "Scope": "Output",
+          "Name": "eErrorID",
+          "Type": "ERROR",
+          "Comment": "Check error message for better diagnostics"
+        }
+      ]
+    }
+  ]
+}

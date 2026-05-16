@@ -1,0 +1,89 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_SetDynamicLimitFactors (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/AdministrativeConfiguration/Dynamics/SMC_SetDynamicLimitFactors.html",
+  "page_title": "SMC_SetDynamicLimitFactors (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_SetDynamicLimitFactors\nThis function block is deprecated and will be removed in the future.\nPlease use\nSMC_GroupSetAxisLimitFactors\nor\nSMC_GroupSetAncillaryAxisLimits\ninstead.\nAllows to configure factors for the dynamic limits of all axes\nof an axis group.\nInitially (after\nMC_GroupEnable\n), all factors are 1.\nThis function block may not be called in state\nGroupDisabled\nor\nGroupErrorStop\n.\nNote\nThe ancillary limits are set to the product of the dynamic\nfactors given here and the global dynamic limits of the axis.\nSee\nSMC_GroupSetAncillaryAxisLimits\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "AxisGroup",
+          "Type": "AXIS_GROUP_REF_SM3",
+          "Initial": "",
+          "Comment": "Reference to a group of axis"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Sets the factors on rising edge"
+        },
+        [
+          "VelFactors",
+          "ARRAY\n[0..(SMRB.MAX_TOTAL_AXES\n- 1)] OF LREAL",
+          "",
+          "The velocity factor of each axis.  Must be in the range\n]0, 1] for each axis used by the axis group."
+        ],
+        [
+          "AccFactors",
+          "ARRAY\n[0..(SMRB.MAX_TOTAL_AXES\n- 1)] OF LREAL",
+          "",
+          "The acceleration factor of each axis.  Must be in the range\n]0, 1] for each axis used by the axis group."
+        ],
+        [
+          "DecFactors",
+          "ARRAY\n[0..(SMRB.MAX_TOTAL_AXES\n- 1)] OF LREAL",
+          "",
+          "The deceleration factor of each axis.  Must be in the range\n]0, 1] for each axis used by the axis group."
+        ],
+        [
+          "JerkFactors",
+          "ARRAY\n[0..(SMRB.MAX_TOTAL_AXES\n- 1)] OF LREAL",
+          "",
+          "The jerk factor of each axis.  Must be in the range\n]0, 1] for each axis used by the axis group."
+        ],
+        [
+          "TorqueFactors",
+          "ARRAY\n[0..(SMRB.MAX_TOTAL_AXES\n- 1)] OF LREAL",
+          "[SMRB.MAX_TOTAL_AXES(1)]",
+          "The torque factor of each axis.  Must be in the range\n]0, 1] for each axis used by the axis group.  A dynamic\nmodel must have been set usingSMC_GroupSetDynamicsfor these factors to have an effect."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Done",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "The factors have been set successfully"
+        },
+        [
+          "Busy",
+          "BOOL",
+          "",
+          "The FB is not finished"
+        ],
+        [
+          "Error",
+          "BOOL",
+          "",
+          "Signals that an error has occurred within the function block"
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

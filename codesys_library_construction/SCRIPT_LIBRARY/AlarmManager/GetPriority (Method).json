@@ -1,0 +1,23 @@
+{
+  "library": "AlarmManager",
+  "title": "GetPriority (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/pou-IAlarmClass/GetPriority.html",
+  "page_title": "IAlarmClass.GetPriority (METH)",
+  "text": "\nMETHOD GetPriority : USINT\nReturns the priority of the alarm class\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetPriority",
+          "Type": "USINT"
+        }
+      ]
+    }
+  ]
+}

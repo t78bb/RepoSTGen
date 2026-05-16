@@ -1,0 +1,33 @@
+{
+  "library": "String Builder Base",
+  "title": "Decode (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Builder Base/Current/BuilderBase/Interfaces/pou-ICharmap/Decode.html",
+  "page_title": "ICharmap.Decode (METH)",
+  "text": "BuilderBase\nAliases\nConstants (GVL)\nIStringRepresentation (Alias)\nRUNE (Alias)\nEnums\nENCODING (Enum)\nERROR (Enum)\nFunction Blocks\nRange (FunctionBlock)\nIRange\nSetInitialValue (Method)\nFunctions\nCreateRange (Function)\nCreateRangePool (Function)\nInterfaces\nIBuilder (Interface)\nGetBuilderStats (Method)\nReset (Method)\nSegments\nWriteIString (Method)\nWriteMemSegment (Method)\nWriteRune (Method)\nWriteString (Method)\nWriteWString (Method)\nICharmap (Interface)\nDecode (Method)\nEncode (Method)\nInternals\n_RangePool (FunctionBlock)\nProtected\nStructs\nSTATS (Struct)\nLibrary Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nFile and Project Information\nLibrary Reference\nMemory Block Manager\nLibrary Identification\nLibrary Properties\nString Segments\nLibrary Identification\nLibrary Properties\nUTF-8 Encoding Support\nLibrary Identification\nLibrary Properties\nString Builder Base\nDocs\n»\nBuilderBase\n»\nInterfaces\n»\nICharmap\n(ITF)\n»\nICharmap.Decode (METH)\nICharmap.Decode (METH)\nÂ¶\nMETHOD Decode :\nRUNE\nInOut:\nScope\nName\nType\nReturn\nDecode\nRUNE\nInput\nbyCode\nBYTE\nOutput\neErrorID\nERROR",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "Decode",
+          "Type": "RUNE"
+        },
+        {
+          "Scope": "Input",
+          "Name": "byCode",
+          "Type": "BYTE"
+        },
+        {
+          "Scope": "Output",
+          "Name": "eErrorID",
+          "Type": "ERROR"
+        }
+      ]
+    }
+  ]
+}

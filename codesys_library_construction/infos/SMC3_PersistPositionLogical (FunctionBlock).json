@@ -1,0 +1,77 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC3_PersistPositionLogical (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/AdministrativeConfiguration/SMC3_PersistPositionLogical.html",
+  "page_title": "SMC3_PersistPositionLogical (FB)",
+  "text": "\nFUNCTION_BLOCK SMC3_PersistPositionLogical\nThis function block serves to persist the axis position of a logical axis.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_LOGICAL_SM3",
+          "Initial": "",
+          "Comment": ""
+        },
+        [
+          "PersistentData",
+          "SMC3_PersistPositionLogical_Data",
+          "",
+          ""
+        ],
+        {
+          "Scope": "Input",
+          "Name": "bEnable",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "TRUE: Activates FB, else inactive."
+        },
+        {
+          "Scope": "Output",
+          "Name": "bPositionRestored",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUE: The position has been restored during the last start-\nup of the axis."
+        },
+        [
+          "bPositionStored",
+          "BOOL",
+          "",
+          "TRUE: The position has been stored during the last call."
+        ],
+        [
+          "bBusy",
+          "BOOL",
+          "",
+          "TRUE: FB is not idle."
+        ],
+        [
+          "bError",
+          "BOOL",
+          "FALSE",
+          "TRUE: Error has occurred within the function block."
+        ],
+        [
+          "eErrorID",
+          "SMC_ERROR",
+          "SMC_NO_ERROR",
+          "Error identification"
+        ],
+        [
+          "eRestoringDiag",
+          "SMC3_PersistPositionDiag",
+          "SMC3_PersistPositionDiag.SMC3_PPD_RESTORING_OK",
+          "Diagnostic information about restoring"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "library": "BACnet2",
+  "title": "SetBACnetOptionalREALProperty (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/BACnetObjects/base/pou-BACnetObjectBase/Utilities/typed-property-access/SetBACnetOptionalREALProperty.html",
+  "page_title": "BACnetObjectBase.SetBACnetOptionalREALProperty (METH)",
+  "text": "\nMETHOD SetBACnetOptionalREALProperty\nSets the BACnetOptionalREAL value of the specified Property (propID) of this BACnet-Object.\nThe used functions are no client, meaning, that the access of the property is not restricted by write or read access restrictions.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "propID",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_ID",
+          "Comment": "The ID of the property to set."
+        },
+        [
+          "orVal",
+          "CmpBACnet.IEC_BACNET_OPTIONAL_REAL",
+          "The BACnetOptionalREAL value to set for the property."
+        ]
+      ]
+    }
+  ]
+}

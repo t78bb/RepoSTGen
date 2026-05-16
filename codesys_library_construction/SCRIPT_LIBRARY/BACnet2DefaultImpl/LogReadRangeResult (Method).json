@@ -1,0 +1,28 @@
+{
+  "library": "BACnet2DefaultImpl",
+  "title": "LogReadRangeResult (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2DefaultImpl/Current/BACnetDefaultImpl/Function-Blocks/LoggingObjects/Internal/pou-LogObjectsBase/Logging/LogReadRangeResult.html",
+  "page_title": "LogObjectsBase.LogReadRangeResult (METH)",
+  "text": "\nMETHOD PROTECTED LogReadRangeResult\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "msg",
+          "Type": "STRING"
+        },
+        {
+          "Scope": "Inout",
+          "Name": "readRangeResult",
+          "Type": "CmpBACnet.IEC_BACNET_READ_RANGE_RESULT"
+        }
+      ]
+    }
+  ]
+}

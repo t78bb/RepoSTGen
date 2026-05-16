@@ -1,0 +1,33 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_Token_InitStrLiteral (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/File/ReadNCFile/Token/Constructors/SMC_Token_InitStrLiteral.html",
+  "page_title": "SMC_Token_InitStrLiteral (FUN)",
+  "text": "\nFUNCTION SMC_Token_InitStrLiteral\nConstructor function for tokens of type strLiteral.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "tk",
+          "Type": "SMC_Token"
+        },
+        {
+          "Scope": "Input",
+          "Name": "value",
+          "Type": "STRING(127)"
+        },
+        {
+          "Scope": "Inout Const",
+          "Name": "srcPos",
+          "Type": "SMC_NC_SourcePosition"
+        }
+      ]
+    }
+  ]
+}

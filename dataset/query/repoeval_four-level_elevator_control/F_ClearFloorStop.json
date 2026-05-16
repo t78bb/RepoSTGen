@@ -1,0 +1,5 @@
+{
+  "requirement": "This code is intended to implement the functionality for clearing elevator stop requests and associated indicators for a specified floor based on input conditions.",
+  "provide_code": "FUNCTION F_ClearFloorStop : BOOL\nVAR_INPUT\n\tnFloor\t\t\t:\tUSINT;\t\t//楼层号\n\tbClearUpStop\t:\tBOOL;\t\t//是否清除上升停靠标志\n\tbClearDownStop\t:\tBOOL;\t\t//是否清除下降停靠标志\n\tbClearStopFloor\t:\tBOOL;\t\t//是否清除楼层停靠标志\nEND_VAR",
+  "function_name": "F_ClearFloorStop"
+}

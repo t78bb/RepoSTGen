@@ -1,0 +1,52 @@
+{
+  "library": "String Functions",
+  "title": "INSERT (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Functions/Current/StrFunc/Functions/INSERT.html",
+  "page_title": "INSERT (FUN)",
+  "text": "Library Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nStrFunc\nAliases\nIString (Alias)\nEnums\nERROR (Enum)\nFunctions\nCONCAT (Function)\nCOUNT (Function)\nDELETE (Function)\nFIND (Function)\nINSERT (Function)\nLEFT (Function)\nLEN (Function)\nMID (Function)\nREPLACE (Function)\nRIGHT (Function)\nFile and Project Information\nLibrary Reference\nString Segments\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nUTF-8 Encoding Support\nLibrary Identification\nLibrary Properties\nString Functions\nDocs\n»\nStrFunc\n»\nFunctions\n»\nINSERT (FUN)\nINSERT (FUN)\nÂ¶\nFUNCTION INSERT :\nIString\nInserts a partial string into another string at a specific position\nReturns 0 in case of\neErrorID\n<>\nERROR.NO_ERROR\nInOut:\nScope\nName\nType\nComment\nReturn\nINSERT\nIString\nInput\nitfString\nIString\nString into which\nitfPartial\nis inserted\nitfPartial\nIString\nString to be inserted into\nitfString\nudiStart\nUDINT\nInsert position.\n0\n: Inserts before the first rune\n1\n: Inserts after the first rune.\nitfResource\nIString\nThe resource that this function is working on. It will\ncontain the result after the function call and will also be\nreturned by this function so it can be used in nested calls.\nOutput\neErrorID\nERROR",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "INSERT",
+          "Type": "IString",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfString",
+          "Type": "IString",
+          "Comment": "String into whichitfPartialis inserted"
+        },
+        [
+          "itfPartial",
+          "IString",
+          "String to be inserted intoitfString"
+        ],
+        [
+          "udiStart",
+          "UDINT",
+          "Insert position.0: Inserts before the first rune1: Inserts after the first rune."
+        ],
+        [
+          "itfResource",
+          "IString",
+          "The resource that this function is working on. It will\ncontain the result after the function call and will also be\nreturned by this function so it can be used in nested calls."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "eErrorID",
+          "Type": "ERROR",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现一个基础对象的创建，该对象包含描述和数值字段，并可用于装饰模式。",
+  "provide_code": "{attribute 'enable_dynamic_creation'}\n//This class creates the most basic object well called. This object is to be decorated\nFUNCTION_BLOCK ConcreteComponent IMPLEMENTS Component_Interface\nVAR_INPUT\nEND_VAR\nVAR_OUTPUT\nEND_VAR"
+}

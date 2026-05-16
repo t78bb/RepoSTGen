@@ -1,0 +1,23 @@
+{
+  "library": "DNP3",
+  "title": "BinaryCounterMaxPointNum (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/pou-Master/Datapoints/BinaryCounterMaxPointNum.html",
+  "page_title": "Master.BinaryCounterMaxPointNum (METH)",
+  "text": "\nMETHOD BinaryCounterMaxPointNum : DINT\nMaximum point number of all Binary Counter datapoints (DNP3 object group 20 âcountersâ) provided by the Outstation.\nReturns -1 if there are no datapoints.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "BinaryCounterMaxPointNum",
+          "Type": "DINT"
+        }
+      ]
+    }
+  ]
+}

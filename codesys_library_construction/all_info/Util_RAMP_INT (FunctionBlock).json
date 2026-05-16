@@ -1,0 +1,51 @@
+{
+  "library": "Util",
+  "title": "RAMP_INT (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/Function-Manipulators/RAMP_INT.html",
+  "page_title": "RAMP_INT (FB)",
+  "text": "Analog Monitors\nHYSTERESIS (FunctionBlock)\nLIMITALARM (FunctionBlock)\nBCD Conversions\nBCD_TO_BYTE (Function)\nBCD_TO_DWORD (Function)\nBCD_TO_INT (Function)\nBCD_TO_WORD (Function)\nBYTE_TO_BCD (Function)\nDWORD_TO_BCD (Function)\nINT_TO_BCD (Function)\nWORD_TO_BCD (Function)\nBit/Byte Functions\nBIT_AS_BYTE (FunctionBlock)\nBIT_AS_DWORD (FunctionBlock)\nBIT_AS_WORD (FunctionBlock)\nBYTE_AS_BIT (FunctionBlock)\nDWORD_AS_BIT (FunctionBlock)\nEXTRACT (Function)\nGETBIT (Function)\nPACK (Function)\nPUTBIT (Function)\nSETBIT (Function)\nSWITCHBIT (Function)\nUNPACK (FunctionBlock)\nWORD_AS_BIT (FunctionBlock)\nConstants\nTextBlockSize (ParamList)\nController\nPD (FunctionBlock)\nPID\n(FB)\nTemperature control with PID and LIMIT\nPID_FIXCYCLE (FunctionBlock)\nDatatypes\nGEN_MODE (Enum)\nPOINT (Struct)\nPT_SIZE (Struct)\nEncoding\nBASE64 (Function)\nFunction Manipulators\nCHARCURVE (FunctionBlock)\nRAMP_INT (FunctionBlock)\nRAMP_REAL (FunctionBlock)\nGray Conversions\nBYTE_TO_GRAY (Function)\nDWORD_TO_GRAY (Function)\nGRAY_TO_BYTE (Function)\nGRAY_TO_DWORD (Function)\nGRAY_TO_WORD (Function)\nWORD_TO_GRAY (Function)\nHEX/ASCII Functions\nBYTE_TO_HEXinASCII (Function)\nHEXinASCII_TO_BYTE (Function)\nWORD_AS_STRING (Function)\nLibrary Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nMathematical Functions\nDERIVATIVE (FunctionBlock)\nINTEGRAL (FunctionBlock)\nLIN_TRAFO (FunctionBlock)\nROTATION_DIFFERENCE (FunctionBlock)\nSTATISTICS_INT (FunctionBlock)\nSTATISTICS_REAL (FunctionBlock)\nVARIANCE (FunctionBlock)\nSignals\nBLINK (FunctionBlock)\nFREQ_MEASURE (FunctionBlock)\nGEN (FunctionBlock)\nTimerSwitch\nEnums\nERROR (Enum)\nPERIOD (Enum)\nWEEKDAY (Enum)\nFunctionBlocks\nDateTimeProvider (FunctionBlock)\nGetDateTime (Method)\nTimerSwitch (FunctionBlock)\nIDateTimeProvider\nFunctions\nCombineDateTime (Function)\nDateTimeFromWeek (Function)\nDayOfWeek (Function)\nGetDateTime (Function)\nGetLocalDateTime (Function)\nGetTimeStampsDifference (Function)\nIsLeapYear (Function)\nJoinDateTime (Function)\nLocalDateTime (Function)\nSeparateDateTime (Function)\nSplitDateTime (Function)\nWeekOfYear (Function)\nGlobalConstants\nDAY_FLAGS (GVL)\nTSW (GVL)\nInterfaces\nIDateTimeProvider (Interface)\nGetDateTime (Method)\nStructs\nDateTime (Struct)\nSchedule (Struct)\nSegment (Struct)\nTimeZone (Struct)\nTypes\nDAY (Alias)\nDAYS (Alias)\nHOUR (Alias)\nMILLISECOND (Alias)\nMINUTE (Alias)\nMONTH (Alias)\nSECOND (Alias)\nTZ_NAME (Alias)\nWEEK (Alias)\nYEAR (Alias)\nFile and Project Information\nLibrary Reference\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysTimeRtc\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nUtil\nDocs\n»\nFunction\nManipulators\n»\nRAMP_INT (FB)\nRAMP_INT (FB)\nÂ¶\nFUNCTION_BLOCK RAMP_INT\nLimits the slope of a value to a certain value\nThe limitation of the slope is given by the maximum ascend\nASCEND\nand the maximum descend\nDESCEND\nand a time base\nTIMEBASE\ndefining the time for which\nASCEND\nor\nDESCEND\nhold.\nNote\nIt is not necessary to readjust the controller parameters (KP, TN, TV) if the cycle time changes.\nExample\nInOut:\nScope\nName\nType\nComment\nInput\nIN\nINT\nInput value\nASCEND\nINT\nLimitation of acceleration: Maximum ascent per time base\nExample:\nASCEND\n:=\n25\nand\nTIMEBASE\n:=\nT#1s\n=> Maximum ascent of 25 increments per second\nDESCEND\nINT\nLimitation of deceleration: Maximum descent per time base (\nDESCEND\n> 0)\nExample:\nDESCEND\n:=\n20\nand\nTIMEBASE\n:=\nT#500ms\n=> Maximum ascent of 20 increments in 500 milliseconds\nTIMEBASE\nTIME\nReference for\nASCEND/DESCEND\n:\nt#0s :\nASCEND/DESCEND\ndefined per call\nelse :\nASCEND/DESCEND\ndefined per specified time\nIf\nTIMEBASE\n=\nt#0s\n, then the time base is equal to the task cycle time. In this case the limitation refers to a task cycle.\nUsually this corresponds exactly to one call of the function block\nRAMP_INT\n.\nNote\nIf the time base\nTIMEBASE\nis smaller than the task cycle time, then this will lead to a violation of the sampling\ntheorem and might result in a loss of information in the output signal.\nRESET\nBOOL\nReset of the function block\nTRUE\n: Stops the internal calculation and reinitializes the function block.\nThe last calculated output value in\nOUT\nis maintained in order to start the internal calculation with it at the next restart of the function block.\nFALSE\n: Outputs the smoothed input signal at output\nOUT\n.\nOutput\nOUT\nINT\nFunction value with limited ramp\nThe value gets stored internally and will be used for the calculation of the ascent and the descent of the input signal.",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "IN",
+          "Type": "INT",
+          "Comment": "Input value"
+        },
+        [
+          "ASCEND",
+          "INT",
+          "Limitation of acceleration: Maximum ascent per time base\nExample:ASCEND:=25andTIMEBASE:=T#1s=> Maximum ascent of 25 increments per second"
+        ],
+        [
+          "DESCEND",
+          "INT",
+          "Limitation of deceleration: Maximum descent per time base (DESCEND> 0)\nExample:DESCEND:=20andTIMEBASE:=T#500ms=> Maximum ascent of 20 increments in 500 milliseconds"
+        ],
+        [
+          "TIMEBASE",
+          "TIME",
+          "Reference forASCEND/DESCEND:t#0s :ASCEND/DESCENDdefined per callelse :ASCEND/DESCENDdefined per specified timeIfTIMEBASE=t#0s, then the time base is equal to the task cycle time. In this case the limitation refers to a task cycle.Usually this corresponds exactly to one call of the function blockRAMP_INT.NoteIf the time baseTIMEBASEis smaller than the task cycle time, then this will lead to a violation of the sampling\ntheorem and might result in a loss of information in the output signal."
+        ],
+        [
+          "RESET",
+          "BOOL",
+          "Reset of the function blockTRUE: Stops the internal calculation and reinitializes the function block.The last calculated output value inOUTis maintained in order to start the internal calculation with it at the next restart of the function block.FALSE: Outputs the smoothed input signal at outputOUT."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "OUT",
+          "Type": "INT",
+          "Comment": "Function value with limited ramp\nThe value gets stored internally and will be used for the calculation of the ascent and the descent of the input signal."
+        }
+      ]
+    }
+  ]
+}

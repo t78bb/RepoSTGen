@@ -1,0 +1,46 @@
+{
+  "library": "DNP3",
+  "title": "BinaryOutWrite (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/pou-Master/Commands/BinaryOutWrite.html",
+  "page_title": "Master.BinaryOutWrite (METH)",
+  "text": "\nMETHOD BinaryOutWrite :\nError\nIssue a binary output write command\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "BinaryOutWrite",
+          "Type": "Error",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "qualifier",
+          "Type": "AddressQualifier",
+          "Comment": "address qualifier, must be 8 or 16 bit startstopQUAL_8BIT_START_STOP or QUAL_16BIT_START_STOP"
+        },
+        [
+          "start",
+          "UINT",
+          "starting point index"
+        ],
+        [
+          "stop",
+          "UINT",
+          "ending point index"
+        ],
+        [
+          "pValues",
+          "POINTER TO USINT",
+          "pointer to array of values, 0 for off, 1 for onStatus bits are not sent in a write request."
+        ]
+      ]
+    }
+  ]
+}

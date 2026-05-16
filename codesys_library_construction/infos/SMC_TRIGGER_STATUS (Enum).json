@@ -1,0 +1,33 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_TRIGGER_STATUS (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/AdministrativeConfiguration/Trigger/SMC_TRIGGER_STATUS.html",
+  "page_title": "SMC_TRIGGER_STATUS (ENUM)",
+  "text": "\nTYPE SMC_TRIGGER_STATUS :\nThe status of a trigger.\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "Unknown",
+          "Comment": "The trigger is unknown, either because it\nnever existed or because it no longer exists."
+        },
+        {
+          "Name": "Enabled",
+          "Comment": "The trigger is enabled, has not yet been\nreached, and the trigger time is still unknown."
+        },
+        {
+          "Name": "Active",
+          "Comment": "The trigger is active and the trigger time\ncan be checked."
+        },
+        {
+          "Name": "Error",
+          "Comment": "An error occurred while processing the trigger."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "library": "AC_DataLog",
+  "title": "ElementHashCode (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_DataLog/Current/AC_DataLog/Queue/pou-DataLogVarDescForQueue_FB/IElement/ElementHashCode.html",
+  "page_title": "DataLogVarDescForQueue_FB.ElementHashCode (METH)",
+  "text": "\nMETHOD ElementHashCode : LINT\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "ElementHashCode",
+          "Type": "LINT"
+        }
+      ]
+    }
+  ]
+}

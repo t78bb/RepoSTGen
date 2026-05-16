@@ -1,0 +1,27 @@
+{
+  "library": "BACnet",
+  "title": "SetBACnetDevObjPropReferenceProperty (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/pou-IBACnetObjectBase/Utilities/SetBACnetDevObjPropReferenceProperty.html",
+  "page_title": "IBACnetObjectBase.SetBACnetDevObjPropReferenceProperty (METH)",
+  "text": "\nMETHOD SetBACnetDevObjPropReferenceProperty\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "propID",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_ID"
+        },
+        [
+          "devObjRef",
+          "BACnetDevObjPropReference"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "library": "PLCopen Safety FBs",
+  "title": "SF_ResetButton (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/PLCopen Safety FBs/Current/PLCopenSafetyFBs/Function-Blocks/SF_ResetButton.html",
+  "page_title": "SF_ResetButton (FB)",
+  "text": "\nFUNCTION_BLOCK SF_ResetButton\nThis function block adds the trailing edge functionality to all the function blocks with reset input with rising edge detection. This can be used to comply to EN ISO 13849-1:2015.\nFunction block according to PLCopen, Technical Committee 5: Safety Software (Technical Specification), Part 1: Concepts and Function Blocks, Version 2.01 (2020-2)\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "ResetRequested",
+          "Type": "BOOL",
+          "Initial": "TRUE",
+          "Comment": "Input which should be connected to the ResetRequest output\nof the paired FB. TRUE: ResetRequested, FALSE: No reset\nrequested / no monitoring of ResetIn."
+        },
+        [
+          "ResetIn",
+          "BOOL",
+          "FALSE",
+          "Input of reset button. FALSE: reset button released, TRUE:\nreset button actuated by operator."
+        ],
+        [
+          "TrailingMinimum",
+          "TIME",
+          "TIME#350ms",
+          "Minimum time that the reset switch has to be actuated. If the reset button is pushed shorter than this time, the reset is ignored.\nAbsolut minimum value is 100msec. Minimum value 2 PLC cycles. Default value T#350MS"
+        ],
+        [
+          "TrailingMaximum",
+          "TIME",
+          "TIME#2s0ms",
+          "Maximum time that the reset switch is actuated. Typical\nvalue can be around 2 sec. If the reset button is pushed\nlonger than this time, the reset is ignored."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Ready",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "Activation of the FB. TRUE indicates that the FB is\nactivated and the outputs results are valid, FALSE the FB is\nnot active and the program is not executed."
+        },
+        [
+          "ResetOut",
+          "BOOL",
+          "FALSE",
+          "Pulse for the initiation of the reset procedure. This pulse\nis generated after the falling edge. Pulse output with\nrising edge first. At least 1 cycle."
+        ],
+        [
+          "Error",
+          "BOOL",
+          "FALSE",
+          "Error flag"
+        ],
+        [
+          "DiagCode",
+          "WORD",
+          "ANY_TO_WORD(FBS_RESBUT.IDLE)",
+          "Diagnostic register"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "library": "String Segments",
+  "title": "UngetLastRune (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Segments/Current/Strings/Functionblocks/pou-Range/IRange/UngetLastRune.html",
+  "page_title": "Range.UngetLastRune (METH)",
+  "text": "\nMETHOD FINAL UngetLastRune :\nERROR\nUndo the last call of\nGetNextRune\n.\nThis allow to restore the state of this\nRange\ninstance.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "UngetLastRune",
+          "Type": "ERROR"
+        }
+      ]
+    }
+  ]
+}

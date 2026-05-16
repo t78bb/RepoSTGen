@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现将TIME类型的时间值转换为以秒为单位的DWORD类型值。",
+  "provide_code": "FUNCTION F_TimeToSeconds : DWORD\nVAR_INPUT\n\ttTime\t:\tTIME;\t\t//输入的时间\nEND_VAR"
+}

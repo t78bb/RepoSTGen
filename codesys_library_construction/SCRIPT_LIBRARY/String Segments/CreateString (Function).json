@@ -1,0 +1,59 @@
+{
+  "library": "String Segments",
+  "title": "CreateString (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Segments/Current/Strings/Functions/CreateString.html",
+  "page_title": "CreateString (FUN)",
+  "text": "\nFUNCTION CreateString :\nIString\nReturns a\nIString\ninstance placed in the memory area given by the parameters.\nExample for a IString instance with a capacity of minimal 80 byte:\nsValue : STRING(50) := UTF8#'CÃDâ¬Å¡Å¸Å  Ã¯Ã vÃ¤rÃ¿ Ã§Ã´Ãµl';\nudiCapacity : UDINT; // Capacity of the new String\naxwMemory : ARRAY[0..(SIZEOF(STR._UTF8String)+80) / SIZEOF(__XWORD)] OF __XWORD;\nitfString : STR.IString := STR.CreateString(ADR(axwMemory), SIZEOF(axwMemory), ADR(sValue), udiStrSize=>udiCapacity);\nNote\nThe size of the memory area should be a multible of\nSIZEOF(__XWORD)\n.\nThe last byte of this memory area is reserved for the final NULL byte.\nTherefore,\nudiCapacity\nrepresents the practical amount of memory available.\nPlease take a look to the function blocks in the Library âGeneric String Baseâ\nYou can use the\nGSB.UTF8String\nfunction block, which performs this task in a much more convenient way\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "CreateString",
+          "Type": "IString",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "pbyMemory",
+          "Type": "POINTER TO BYTE",
+          "Initial": "",
+          "Comment": "Pointer to the first byte of the memory.This address should aligned to a__XWORDboundary!"
+        },
+        [
+          "udiMemSize",
+          "UDINT",
+          "",
+          "Size of the allocated memory for the string.This also includes the memory for the_UTF8Stringinstance.If e.g. an 80 byte string is required than memory size would beSIZEOF(STR._UTF8String)+80"
+        ],
+        [
+          "psValue",
+          "POINTER TO BYTE",
+          "0",
+          "optional address of a utf-8 encoded, NULL terminated byte\narray (string), used as inital value"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "udiStrSize",
+          "Type": "UDINT",
+          "Initial": "",
+          "Comment": "The capacity in bytes of the new IString instance"
+        },
+        [
+          "eErrorID",
+          "ERROR",
+          "",
+          ""
+        ]
+      ]
+    }
+  ]
+}

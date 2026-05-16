@@ -1,0 +1,77 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_SetSoftwareLimits (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/AdministrativeConfiguration/SMC_SetSoftwareLimits.html",
+  "page_title": "SMC_SetSoftwareLimits (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_SetSoftwareLimits\nSets the position limits and the corresponding error reaction of an axis.\nIf the axis is used in the context of coordinated motion, the corresponding\naxis group has to be reenabled in order to take into account\nthe new limits for coordinated motion computations.\nNote\nThe effective error deceleration is the maximum of the configured\nmaximum deceleration of the axis, the value of\nSWL_Error_Deceleration\n, and\nthe value derived from\nSWL_Error_MaxDistance\nand the current velocity.\n(\nSWL_Error_MaxDistance\nis only taken into account if the value is positive.)\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3",
+          "Comment": "Axis to change"
+        },
+        {
+          "Scope": "Input",
+          "Name": "bExecute",
+          "Type": "BOOL",
+          "Comment": "Rising edge: Rising edge: Starts the execution of the\nfunction block. Applies the Changes."
+        },
+        [
+          "SWL_Activated",
+          "BOOL",
+          "TRUE: Activates the position limits."
+        ],
+        [
+          "SWL_Positive",
+          "LREAL",
+          "The positive limit switch ([u])"
+        ],
+        [
+          "SWL_Negative",
+          "LREAL",
+          "The negative limit switch ([u])"
+        ],
+        [
+          "SWL_Error_Decelerate",
+          "BOOL",
+          "Deprecated, the axis decelerates always if a deceleration is configured\n(`SWL_Error_Deceleration,SWL_Error_MaxDistance) or in the maximum deceleration\n(seeSMC_ChangeDynamicLimits.fMaxDeceleration or drive configuration)."
+        ],
+        [
+          "SWL_Error_Deceleration",
+          "LREAL",
+          "The (positive) deceleration in [u/sÂ²]"
+        ],
+        [
+          "SWL_Error_MaxDistance",
+          "LREAL",
+          "The maximum braking distance in [u], only applied if\npositive."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bDone",
+          "Type": "BOOL",
+          "Comment": "TRUE: Success"
+        },
+        [
+          "bError",
+          "BOOL",
+          "TRUE: Error has occured within the function block."
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification."
+        ]
+      ]
+    }
+  ]
+}

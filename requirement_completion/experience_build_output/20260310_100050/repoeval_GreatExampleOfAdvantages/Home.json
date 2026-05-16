@@ -1,0 +1,11 @@
+{
+  "模糊点列表": [
+    {
+      "模糊点类型": "变量命名",
+      "模糊点描述": "原始需求未明确指定地面层和顶层实例的变量命名",
+      "差异细节": "模型生成代码中变量命名为GroundFloorInstance和TopFloorInstance，而参考代码中变量命名为GroundFloor和TopFloor",
+      "精准需求描述": "地面层和顶层的实例应分别命名为GroundFloor和TopFloor"
+    }
+  ],
+  "case_id": "repoeval_GreatExampleOfAdvantages/Home"
+}

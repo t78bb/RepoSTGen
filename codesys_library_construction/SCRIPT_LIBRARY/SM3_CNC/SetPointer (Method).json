@@ -1,0 +1,28 @@
+{
+  "library": "SM3_CNC",
+  "title": "SetPointer (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/File/ReadNCFile/Token/pou-SMC_TokenQueue/SetPointer.html",
+  "page_title": "SMC_TokenQueue.SetPointer (METH)",
+  "text": "\nMETHOD SetPointer : BOOL\nMethod to cyclically set the pointer for the queue-storage.\nThe pointer needs to be udpated every cycle because it could change\ndue to an online-change.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "pD",
+          "Type": "POINTER TO BYTE"
+        },
+        {
+          "Scope": "Return",
+          "Name": "SetPointer",
+          "Type": "BOOL"
+        }
+      ]
+    }
+  ]
+}

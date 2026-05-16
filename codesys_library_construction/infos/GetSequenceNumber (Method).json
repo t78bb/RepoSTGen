@@ -1,0 +1,23 @@
+{
+  "library": "DNP3",
+  "title": "GetSequenceNumber (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/PointObserver/pou-PointObserver/GetSequenceNumber.html",
+  "page_title": "PointObserver.GetSequenceNumber (METH)",
+  "text": "\nMETHOD GetSequenceNumber : UDINT\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetSequenceNumber",
+          "Type": "UDINT"
+        }
+      ]
+    }
+  ]
+}

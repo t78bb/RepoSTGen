@@ -1,0 +1,35 @@
+{
+  "library": "BACnetDefaultImpl",
+  "title": "LogRecordContentInfo (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnetDefaultImpl/Current/BACnetDefaultImpl/Function-Blocks/LoggingObjects/Internal/pou-LogObjectsBase/Logging/LogRecordContentInfo.html",
+  "page_title": "LogObjectsBase.LogRecordContentInfo (METH)",
+  "text": "\nMETHOD PROTECTED LogRecordContentInfo\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "recordCount",
+          "Type": "CmpBACnet.IEC_BACNET_UNSIGNED"
+        },
+        [
+          "sequence",
+          "CmpBACnet.IEC_BACNET_UNSIGNED"
+        ],
+        [
+          "timeStamp",
+          "CmpBACnet.IEC_BACNET_DATE_TIME"
+        ],
+        [
+          "numRecordEntries",
+          "CmpBACnet.IEC_BACNET_UNSIGNED"
+        ]
+      ]
+    }
+  ]
+}

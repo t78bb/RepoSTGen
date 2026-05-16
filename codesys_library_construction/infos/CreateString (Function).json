@@ -1,0 +1,32 @@
+{
+  "library": "AC_DataLog",
+  "title": "CreateString (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_DataLog/Current/AC_DataLog/Functions/CreateString.html",
+  "page_title": "CreateString (FUN)",
+  "text": "\nFUNCTION CreateString : STRING(AC_PERSIST.Constants.gc_uiMaxLineSize)\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "CreateString",
+          "Type": "STRING(AC_PERSIST.Constants.gc_uiMaxLineSize)"
+        },
+        {
+          "Scope": "Input",
+          "Name": "pSt",
+          "Type": "POINTER TO BYTE"
+        },
+        [
+          "diLen",
+          "DINT"
+        ]
+      ]
+    }
+  ]
+}

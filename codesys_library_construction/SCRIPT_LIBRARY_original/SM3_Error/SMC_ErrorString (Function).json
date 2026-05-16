@@ -1,0 +1,36 @@
+{
+  "library": "SM3_Error",
+  "title": "SMC_ErrorString (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Error/Current/SM3_Error/SMC_ErrorString.html",
+  "page_title": "SMC_ErrorString (FUN)",
+  "text": "SM3_Error\nSMC_ERROR (Enum)\nSMC_ErrorString (Function)\nSMC_LANGUAGE_TYPE (Enum)\nFile and Project Information\nLibrary Reference\nSM3_Error\nDocs\n»\nSM3_Error\n»\nSMC_ErrorString (FUN)\nSMC_ErrorString (FUN)\nÂ¶\nFUNCTION SMC_ErrorString : STRING(100)\nDepending on the inputs\nErrorID\nand\nLanguage\nthe function\nSMC_ErrorString\nwill return a string representing the error.\nInOut:\nScope\nName\nType\nComment\nInput\nErrorID\nSMC_ERROR\nError identification\nLanguage\nSMC_LANGUAGE_TYPE\nDesired language\nReturn\nSMC_ErrorString\nSTRING(100)",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "ErrorID",
+          "Type": "SMC_ERROR",
+          "Comment": "Error identification"
+        },
+        [
+          "Language",
+          "SMC_LANGUAGE_TYPE",
+          "Desired language"
+        ],
+        {
+          "Scope": "Return",
+          "Name": "SMC_ErrorString",
+          "Type": "STRING(100)",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

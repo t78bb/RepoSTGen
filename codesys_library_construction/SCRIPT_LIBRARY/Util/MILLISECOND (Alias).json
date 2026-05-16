@@ -1,0 +1,8 @@
+{
+  "library": "Util",
+  "title": "MILLISECOND (Alias)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/TimerSwitch/Types/MILLISECOND.html",
+  "page_title": "MILLISECOND (ALIAS)",
+  "text": "\nTYPE MILLISECOND : UINT (0..999)",
+  "tables": []
+}

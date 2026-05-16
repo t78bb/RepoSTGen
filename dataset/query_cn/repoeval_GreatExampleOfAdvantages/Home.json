@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现对家庭结构中底层和顶层功能块的调用与管理。",
+  "provide_code": "FUNCTION_BLOCK Home\nVAR_INPUT\nEND_VAR\nVAR_OUTPUT\nEND_VAR"
+}

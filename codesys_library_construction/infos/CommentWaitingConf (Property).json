@@ -1,0 +1,8 @@
+{
+  "library": "AlarmManager",
+  "title": "CommentWaitingConf (Property)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/pou-IAlarm7/CommentWaitingConf.html",
+  "page_title": "IAlarm7.CommentWaitingConf (PROP)",
+  "text": "\nPROPERTY CommentWaitingConf : POINTER TO WSTRING\nOptional comment that can be provided for the state âWaiting for confirmationâ\nor âInactive, Unacknowledgedâ if the option âAcknowledge instead of confirmâ is active.",
+  "tables": []
+}

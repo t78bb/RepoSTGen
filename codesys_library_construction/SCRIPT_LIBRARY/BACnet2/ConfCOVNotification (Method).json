@@ -1,0 +1,36 @@
+{
+  "library": "BACnet2",
+  "title": "ConfCOVNotification (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/BACnetServer/pou-IBACnetServer/Services/ConfCOVNotification.html",
+  "page_title": "IBACnetServer.ConfCOVNotification (METH)",
+  "text": "\nMETHOD ConfCOVNotification : CmpBACnet.IEC_BACNET_STATUS\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "ConfCOVNotification",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS"
+        },
+        {
+          "Scope": "Input",
+          "Name": "targetDevInst",
+          "Type": "DWORD"
+        },
+        [
+          "pCOVInfo",
+          "POINTER TO CmpBACnet.IEC_BACNET_COV_NOTIF_INFO"
+        ],
+        [
+          "pAPDUParams",
+          "POINTER TO CmpBACnet.IEC_BACNET_APDU_PROPERTIES"
+        ]
+      ]
+    }
+  ]
+}

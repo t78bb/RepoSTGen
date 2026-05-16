@@ -1,0 +1,33 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_NC_GArgumentValue (Union)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/Parser/Expressions/Functions/SMC_NC_GArgumentValue.html",
+  "page_title": "SMC_NC_GArgumentValue (UNION)",
+  "text": "\nTYPE SMC_NC_GArgumentValue : UNION\nRepresents a value of a variable or expression in the G-Code.\nSee also\nSMC_GVar_Type\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "bValue",
+          "Type": "BOOL",
+          "Comment": "Value for arguments of type T_BOOL"
+        },
+        {
+          "Name": "fValue",
+          "Type": "LREAL",
+          "Comment": "Value for arguments of type T_LREAL"
+        },
+        {
+          "Name": "sValue",
+          "Type": "STRING(255)",
+          "Comment": "Value for arguments of type T_STRING"
+        }
+      ]
+    }
+  ]
+}

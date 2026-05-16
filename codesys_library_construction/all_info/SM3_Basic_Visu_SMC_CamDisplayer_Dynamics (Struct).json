@@ -1,0 +1,43 @@
+{
+  "library": "SM3_Basic_Visu",
+  "title": "SMC_CamDisplayer_Dynamics (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic_Visu/Current/SM3_Basic_Visu/SMC_CamDisplayer_Dynamics.html",
+  "page_title": "SMC_CamDisplayer_Dynamics (STRUCT)",
+  "text": "GlobalTextList (GlobalTextList)\nSM3_Basic_Visu\nSMC_Basic_Visu_LibParams (ParamList)\nSMC_Basic_Visu_TL_CamDisplayer (TextList)\nSMC_Basic_Visu_TL_CamSegmentType (TextList)\nSMC_CamDisplayer_Dynamics (Struct)\nSMC_CamDisplayer_Outputs (Struct)\nSMC_CamSegmentType_HasAccBound (Function)\nSMC_CamSegmentType_HasJerkBound (Function)\nSMC_CamSegmentType_HasLambdaParam (Function)\nSMC_CamSegmentType_HasVelBound (Function)\nFile and Project Information\nLibrary Reference\nSM3_Basic\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nSM3_CamBuilder\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nSM3_Error\nLibrary Identification\nLibrary Properties\nSM3_Math\nLibrary Identification\nLibrary Properties\nSM3_RBase\nLibrary Identification\nLibrary Properties\nSM3_Ramps\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nVisuDialogs\nLibrary Identification\nLibrary Properties\nVisuElem3DPath\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElemCamDisplayer\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElemMeter\nLibrary Identification\nLibrary Properties\nVisuElemTextEditor\nLibrary Identification\nLibrary Properties\nVisuElemTrace\nLibrary Identification\nLibrary Properties\nVisuElemXYChart\nLibrary Identification\nLibrary Properties\nVisuElems\nLibrary Identification\nLibrary Properties\nVisuElemsAlarm\nLibrary Identification\nLibrary Properties\nVisuElemsDateTime\nLibrary Identification\nLibrary Properties\nVisuElemsSpecialControls\nLibrary Identification\nLibrary Properties\nVisuElemsWinControls\nLibrary Identification\nLibrary Properties\nVisuInputs\nLibrary Identification\nLibrary Properties\nVisuNativeControl\nLibrary Identification\nLibrary Properties\nSM3_Basic_Visu\nDocs\n»\nSM3_Basic_Visu\n»\nSMC_CamDisplayer_Dynamics (STRUCT)\nSMC_CamDisplayer_Dynamics (STRUCT)\nÂ¶\nTYPE SMC_CamDisplayer_Dynamics : STRUCT\nData structure containing the cam dynamics at a master position.\nInOut:\nName\nType\nComment\nx\nLREAL\nMaster position\ny\nLREAL\nSlave position\nv\nLREAL\nSlave velocity wrt. the master position\na\nLREAL\nSlave acceleration wrt. the master position\nj\nLREAL\nSlave jerk wrt. the master position",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "x",
+          "Type": "LREAL",
+          "Comment": "Master position"
+        },
+        {
+          "Name": "y",
+          "Type": "LREAL",
+          "Comment": "Slave position"
+        },
+        {
+          "Name": "v",
+          "Type": "LREAL",
+          "Comment": "Slave velocity wrt. the master position"
+        },
+        {
+          "Name": "a",
+          "Type": "LREAL",
+          "Comment": "Slave acceleration wrt. the master position"
+        },
+        {
+          "Name": "j",
+          "Type": "LREAL",
+          "Comment": "Slave jerk wrt. the master position"
+        }
+      ]
+    }
+  ]
+}

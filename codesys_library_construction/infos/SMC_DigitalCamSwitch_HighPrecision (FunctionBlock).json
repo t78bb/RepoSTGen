@@ -1,0 +1,149 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_DigitalCamSwitch_HighPrecision (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/Additional/SMC_DigitalCamSwitch_HighPrecision.html",
+  "page_title": "SMC_DigitalCamSwitch_HighPrecision (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL SMC_DigitalCamSwitch_HighPrecision\nThis function block is analogous to switching on a motor shaft:\nit commands a group of discrete output bits to switch in analogy\nto a set of mechanical cam controlled switches connected to an axis.\nForward and backward movements are allowed.\nIn contrast to\nMC_DigitalCamSwitch\n, this function block\nprovides high resolution and exact switching times,\noutputs future switching events in advance,\nuses the forecast feature (see\nSMC_SetForecast\n),\nonly works based on the set values, not the actual value, and\ndoes not support hysteresis.\nThis makes the function block suitable to program highly accurate\ndigital outputs that have a time resolution well below the task\ninterval.\nNote\nA forecast has to be configured using\nSMC_SetForecast\nif the\nthe switching events need to be available in advance or negative\ntimes for the On- or OffCompensation are configured.\nExample: the task interval is 4 ms, the On-Compensation is -100 ms and the\nswitching event should be available 5 cycles in advance.  In this case,\na forecast of at least 100 ms + 5*4 ms = 120 ms must be configured.\nA switching event occurs when a switch turns on or off.  No on\nevent will occur if the axis is inside a switch when this function\nblock is enabled.  However, there will be an off event when the\naxis leaves the switch.\nA switching event occurs when the axis reaches the configured on or off\nposition.  No switching event occurs if the axis is exactly at the on or\noff position when this function block is enabled.\nExample\nAssume the following parameter values set:\nParameter\nType\nSwitch01\nSwitch02\nSwitch03\nSwitch04\nTrackNumber\nINT\n1\n1\n1\n2\nFirstOnPosition [u]\nREAL\n2000\n2500\n4000\n3000\nLastOnPosition [u]\nREAL\n3000\n3000\n1000\n-\nAxisDirection\nINT\n1=Pos\n2=Neg\n0=Both\n0=Both\nCamSwitchMode\nINT\n0=Position\n0=Position\n0=Position\n1=TIME\nDuration\nTIME\n-\n-\n-\n1350\nAssume further, that no on/off compensation is used.\nThe figure demonstrates the behavior of the outputs,\nwhen the axis is moving continuously in positive direction.\nThe axis is a modulo axis with a modulo length of 5000 u.\nExample of DigitalCamSwitch\nÂ¶\nNow assume that on compensation (-125ms) and off compensation (+250ms)\nare used.\nDetailed description of Switch01\nÂ¶\nThe resulting behavior of the outputs, when the axis is moving\ncontinuously in negative direction without on/off compensation.\nExample in negative direction\nÂ¶\n",
+  "tables": [
+    {
+      "headers": [
+        "Parameter",
+        "Type",
+        "Switch01",
+        "Switch02",
+        "Switch03",
+        "Switch04"
+      ],
+      "rows": [
+        {
+          "Parameter": "TrackNumber",
+          "Type": "INT",
+          "Switch01": "1",
+          "Switch02": "1",
+          "Switch03": "1",
+          "Switch04": "2"
+        },
+        {
+          "Parameter": "FirstOnPosition [u]",
+          "Type": "REAL",
+          "Switch01": "2000",
+          "Switch02": "2500",
+          "Switch03": "4000",
+          "Switch04": "3000"
+        },
+        {
+          "Parameter": "LastOnPosition [u]",
+          "Type": "REAL",
+          "Switch01": "3000",
+          "Switch02": "3000",
+          "Switch03": "1000",
+          "Switch04": "-"
+        },
+        {
+          "Parameter": "AxisDirection",
+          "Type": "INT",
+          "Switch01": "1=Pos",
+          "Switch02": "2=Neg",
+          "Switch03": "0=Both",
+          "Switch04": "0=Both"
+        },
+        {
+          "Parameter": "CamSwitchMode",
+          "Type": "INT",
+          "Switch01": "0=Position",
+          "Switch02": "0=Position",
+          "Switch03": "0=Position",
+          "Switch04": "1=TIME"
+        },
+        {
+          "Parameter": "Duration",
+          "Type": "TIME",
+          "Switch01": "-",
+          "Switch02": "-",
+          "Switch03": "-",
+          "Switch04": "1350"
+        }
+      ]
+    },
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3",
+          "Initial": "",
+          "Comment": "Reference to axis the switches are connected to"
+        },
+        [
+          "Switches",
+          "MC_CAMSWITCH_REF",
+          "",
+          "Reference to switching actions"
+        ],
+        [
+          "TrackOptions",
+          "MC_TRACK_REF",
+          "",
+          "Reference to structure containing track related properties,\ne.g. the on/off compensations per output/track."
+        ],
+        {
+          "Scope": "Input",
+          "Name": "Enable",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUE: Enables execution of function block."
+        },
+        [
+          "EnableMask",
+          "DWORD",
+          "16#FFFFFFFF",
+          "32 bits ofBOOLenabling the different tracks.\nLeast significant data is related to the lowestTrackNumber."
+        ],
+        [
+          "ValueSource",
+          "MC_SOURCE",
+          "MC_SOURCE.SET",
+          "Determines whether the switching is done based on when the switch\nposition is reached by the set position sent to the drive, or the\nactual position inside the drive.With MC_SOURCE.SET, the switch event time is based on the set position\nat the beginning of the current bus task cycle.With MC_SOURCE.ACT, an additional dead time between the set positions\nand the time when this set position is reached by the drive,\nis added to the swicth event time.\nIf you set this input to MC_SOURCE.ACT, make sure the dead time\nbetween set and actual values is correct.  The dead time in cycles\ncan be set by writing parameter 1070, or in the SoftMotion drive\nconfiguration editor.Note: the value MC_SOURCE.SAVE behaves identically to MC_SOURCE.SET."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Events",
+          "Type": "SMC_CAMSWITCH_TRACKS_EVENTS",
+          "Initial": "",
+          "Comment": "Information about the future toggle events.\nEvents[i] contains the future events of the i-th track.\nThe list of events contains all toggle events for the track, capped\nto the maximum number SMC_CAMSWITCH_MAX_TOGGLE_EVENTS."
+        },
+        [
+          "InOperation",
+          "BOOL",
+          "",
+          "TRUE: Commanded tracks have been enabled."
+        ],
+        [
+          "Busy",
+          "BOOL",
+          "",
+          "TRUE: Execution of function block has not been finished\nyet."
+        ],
+        [
+          "Error",
+          "BOOL",
+          "",
+          "TRUE: Error has occurred within the function block."
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

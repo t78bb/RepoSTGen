@@ -1,0 +1,71 @@
+{
+  "library": "CommFB",
+  "title": "SALARM (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/CommFB/Current/CommFB/FieldDevice/SALARM.html",
+  "page_title": "SALARM (FB)",
+  "text": "\nFUNCTION_BLOCK SALARM\nA Field Device can generate alarms to its associated Host Controller to inform it e.g. about certain process events or other events to state there are\nsome limitations of the capabilities of the Field Device for diagnostic reasons. The Host application may use the\nRALARM\nfunction block to receive these alarms.\nThe ID parameter identifies the slot of the Field Device the alarm is generated for. The ATYPE input shall contain the\nalarm type. The ASPEC input shall contain the alarm specifier. The LEN input contains the length in byte of the additional\nalarm information stored in the AINFO parameter.\nThe Variable given as AINFO parameter shall be at least of LEN byte.\nIf the alarm is transmitted successfully, the VALID output indicates that the alarm was received by the Host Controller.\nIf an error occurred, the ERROR output indicates an error and the STATUS output contains the error code.\nCode-Example\nPROGRAM\nSendAlarm\nVAR\nsender\n:\nCommFB.SALARM\n;\nalarmPayload\n:\nARRAY\n[0..3]\nOF\nBYTE\n:=\n[0, 1, 2, 3]\n;\n// encoding for Profinet: USI (UInt16), ARRAY[0..n] OF BYTE;\nID\n:\nDWORD\n:=\nCommFB.Constants.INVALID_ID\n;\nEND_VAR\nID\n:=\nCommFB.SUBSLOT_ID\n(\nEN\n:=\nTRUE\n,\nID\n:=\nPN_Device.DeviceID\n,\nSLOT\n:=\n2\n,\nSUBSLOT\n:=\n1\n);\nsender.ID\n:=\nID\n;\nsender.ATYPE\n:=\nProfinetCommon.AlarmType.PROCESS\n;\nsender.ASPEC\n:=\n0\n;\n// 0 for process-alarm\nsender.LEN\n:=\nSIZEOF\n(\nalarmPayload\n);\nsender.AINFO\n:=\nADR\n(\nalarmPayload\n);\nsender\n();\nIF\n(\nsender.DONE\nOR\nsender.ERROR\n)\nTHEN\nsender\n(\nREQ\n:=\nFALSE\n);\nEND_IF\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "REQ",
+          "Type": "BOOL",
+          "Comment": "The function is invoked when the REQ input is equal to 1."
+        },
+        [
+          "ID",
+          "DWORD",
+          "Handle of the slot of the alarm source"
+        ],
+        [
+          "ATYPE",
+          "UINT",
+          "Type of the alarm"
+        ],
+        [
+          "ASPEC",
+          "UINT",
+          "Specifier of the alarm"
+        ],
+        [
+          "LEN",
+          "UINT",
+          "Length of AINFO data in bytes"
+        ],
+        [
+          "AINFO",
+          "POINTER TO BYTE",
+          "Additional alarm information"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "DONE",
+          "Type": "BOOL",
+          "Comment": "Indicates that the alarm was received by the Host Controller"
+        },
+        [
+          "BUSY",
+          "BOOL",
+          "FB is busy"
+        ],
+        [
+          "ERROR",
+          "BOOL",
+          "Error detected"
+        ],
+        [
+          "STATUS",
+          "DWORD",
+          "Last detected status"
+        ]
+      ]
+    }
+  ]
+}

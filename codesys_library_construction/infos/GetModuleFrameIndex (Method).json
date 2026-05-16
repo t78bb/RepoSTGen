@@ -1,0 +1,31 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "GetModuleFrameIndex (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/GenVisu/pou-AC_Visu_Base/GetModuleFrameIndex.html",
+  "page_title": "AC_Visu_Base.GetModuleFrameIndex (METH)",
+  "text": "\nMETHOD GetModuleFrameIndex : INT\nThe implementation of this method is created by the composer during generation\nand returns the frame index of the page visualization of a given module.\nIf the module has no page visualization or a\npage visualization cannot be identified -1 is returned.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetModuleFrameIndex",
+          "Type": "INT",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "hnd",
+          "Type": "ModuleHandle",
+          "Comment": "The module handle for which the page visu frame index\nshall be returned"
+        }
+      ]
+    }
+  ]
+}

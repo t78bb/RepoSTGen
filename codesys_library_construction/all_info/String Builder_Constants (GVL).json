@@ -1,0 +1,33 @@
+{
+  "library": "String Builder",
+  "title": "Constants (GVL)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Builder/Current/Builder/Aliases/Constants.html",
+  "page_title": "Constants (GVL)",
+  "text": "Builder\nAliases\nConstants (GVL)\nEnums\nENCODING (Alias)\nERROR (Alias)\nSTATS (Alias)\nFunction Blocks\nRange (Alias)\n_RangePool (Alias)\nInterfaces\nIBuilder (Folder)\nICharmap (Alias)\nIString (Alias)\nIStringRepresentation (Folder)\nTypes\nRUNE (Alias)\nFunction Blocks\n_Builder (FunctionBlock)\nIBuilder\nIStringRepresentation\nSetInitialValue (Method)\nFunctions\nCreateRange (Function)\nCreateRangePool (Function)\nLibrary Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nFile and Project Information\nLibrary Reference\nImmutable String Segments\nLibrary Identification\nLibrary Properties\nMemory Block Manager\nLibrary Identification\nLibrary Properties\nString Builder Base\nLibrary Identification\nLibrary Properties\nString Conversions\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nUTF-16 Encoding Support\nLibrary Identification\nLibrary Properties\nUTF-8 Encoding Support\nLibrary Identification\nLibrary Properties\nString Builder\nDocs\n»\nBuilder\n»\nAliases\n»\nConstants (GVL)\nConstants (GVL)\nÂ¶\nInOut:\nScope\nName\nType\nInitial\nComment\nConstant\nc_diRuneError\nRUNE\nUTF8.c_diRuneError\nThe âerrorâ Rune or âUnicode replacement characterâ\nc_diMaxRune\nDINT\nUTF8.c_diMaxRune",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Constant",
+          "Name": "c_diRuneError",
+          "Type": "RUNE",
+          "Initial": "UTF8.c_diRuneError",
+          "Comment": "The âerrorâ Rune or âUnicode replacement characterâ"
+        },
+        [
+          "c_diMaxRune",
+          "DINT",
+          "UTF8.c_diMaxRune",
+          ""
+        ]
+      ]
+    }
+  ]
+}

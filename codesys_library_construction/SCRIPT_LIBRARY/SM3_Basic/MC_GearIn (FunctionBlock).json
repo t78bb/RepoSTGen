@@ -1,0 +1,113 @@
+{
+  "library": "SM3_Basic",
+  "title": "MC_GearIn (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/Movement/MasterSlave/MC_GearIn.html",
+  "page_title": "MC_GearIn (FB)",
+  "text": "\nFUNCTION_BLOCK MC_GearIn\nThe function block couples the slave axis to the master axis,\nand applies a certain velocity ratio between master and slave.\nWhen\nMC_GearIn\nis started, the slave axis is ramped up to the\ngiven ratio of the master velocity.\nCoupling takes place once this is achieved. The distance travelled during\nthe coupling is not compensated for.\nNote\nMC_GearIn\nshould be called after the motion FB controlling\nthe\nMaster\naxis has been called.  Otherwise, the\nSlave\naxis\nwill lag behind the\nMaster\naxis.\nWhile\nMC_GearIn\nis in operation, the velocity ratio can be changed\nby sequential\nMC_GearIn\ncommands. To do this, no preceding call of\nMC_GearOut\nis necessary.\nInGear\nis set as soon as the desired velocity ratio is reached.\nOnce\nInGear\nis set, the type of coupling depends on the current\ncontrol mode. In the standard case, i.e. in the position\ncontrol mode, the coupling is performed with the position values.\nFor example, with a ratio of 1:2, the slave is moved by exactly half\nthe distance of the master.\nIf velocity control mode is used, then the coupling is performed\nwith the velocity values.  For example, with a ratio of 1:2, the slave\nwill move with half the master velocity in each cycle.\nRatio\nReached\n: Velocity ratio has been reached.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Master",
+          "Type": "AXIS_REF_SM3",
+          "Initial": "",
+          "Comment": "Reference to master axis.Masterneeds not to be\nstationary."
+        },
+        [
+          "Slave",
+          "AXIS_REF_SM3",
+          "",
+          "Reference to slave axis"
+        ],
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Rising edge: Starts the execution of the function block."
+        },
+        [
+          "RatioNumerator",
+          "DINT",
+          "1",
+          "Numerator of the quotient for the desired velocity ratio"
+        ],
+        [
+          "RatioDenominator",
+          "UDINT",
+          "1",
+          "Denominator of the quotient for the desired velocity ratio"
+        ],
+        [
+          "Acceleration",
+          "LREAL",
+          "",
+          "Maximum acceleration for ramping up in [u/sÂ²]"
+        ],
+        [
+          "Deceleration",
+          "LREAL",
+          "",
+          "Maximum deceleration for ramping up in [u/sÂ²]"
+        ],
+        [
+          "Jerk",
+          "LREAL",
+          "",
+          "Maximum jerk for ramping up in [u/sÂ³]"
+        ],
+        [
+          "BufferMode",
+          "MC_BUFFER_MODE",
+          "",
+          "Defines the chronological sequence of the FB relative to the previous block.\nOnly the BufferModesAborting,BufferedandBlendingPreviousare\nsupported.BlendingPreviousmeans that the configured velocity (including the direction)\nof the previous movement is used as the blending velocity, even if this movement\nhas the opposite direction.\nIf the function block is Busy, then only BufferMode=Aborting\nis allowed."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "InGear",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUE: Coupling has taken place.  The slave moves\nwith the given velocity ratio of the master."
+        },
+        [
+          "Busy",
+          "BOOL",
+          "",
+          "TRUE: Function block is in operation."
+        ],
+        [
+          "Active",
+          "BOOL",
+          "",
+          "Indicates that the FB has control on the axis"
+        ],
+        [
+          "CommandAborted",
+          "BOOL",
+          "FALSE",
+          "TRUE: Execution has been interrupted by another function\nblock instance operating on the axis."
+        ],
+        [
+          "Error",
+          "BOOL",
+          "",
+          "TRUE: Error has occurred."
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "library": "DNP3",
+  "title": "ReadGroup (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/pou-Master/Commands/ReadGroup.html",
+  "page_title": "Master.ReadGroup (METH)",
+  "text": "\nMETHOD ReadGroup :\nError\nIssue a read group request\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "ReadGroup",
+          "Type": "Error",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "group",
+          "Type": "USINT",
+          "Comment": "object group for read request"
+        },
+        [
+          "variation",
+          "USINT",
+          "object variation to read. The type specified by this isspecific to the object group being read."
+        ],
+        [
+          "qualifier",
+          "AddressQualifier",
+          "address qualifier, must be all, 8/16 bit limited quantity,or 8/16 bit start/stop"
+        ],
+        [
+          "start",
+          "UINT",
+          "start point if qualifier is start/stop"
+        ],
+        [
+          "stopOrQty",
+          "UINT",
+          "stop point if qualifier is start/stop or quantity ifqualifier is limited points."
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "library": "DNP3",
+  "title": "WriteString (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/pou-Master/Commands/WriteString.html",
+  "page_title": "Master.WriteString (METH)",
+  "text": "\nMETHOD WriteString :\nError\nWrite a string object\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "WriteString",
+          "Type": "Error",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "point",
+          "Type": "UINT",
+          "Comment": "point number of string to write"
+        },
+        [
+          "pValue",
+          "POINTER TO USINT",
+          "pointer to string data to write"
+        ],
+        [
+          "length",
+          "USINT",
+          "length of string to write"
+        ]
+      ]
+    }
+  ]
+}

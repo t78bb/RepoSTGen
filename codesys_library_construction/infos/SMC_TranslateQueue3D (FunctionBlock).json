@@ -1,0 +1,88 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_TranslateQueue3D (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/Queue-manipulation/SMC_TranslateQueue3D.html",
+  "page_title": "SMC_TranslateQueue3D (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_TranslateQueue3D\nThis function will translate the path stored in\npoqDataIn\nto the vector given by\nvec\n, which is of structure type\nSMC_VECTOR3D\n.\nThe input variable\npoqDataIn\nis a pointer to the\nstructure\nSMC_OUTQUEUE\n, which describes the path to get rotated.\nThe initialization value\nFALSE\nof input variable\nbEnable\nwill\nbar the rotation of the path.\nAs soon as\nbEnable\nis set to\nTRUE\nall\nSMC_GEOINFO\nobjects\nfound in\npoqDataIn\nwill be processed.\nWhen\nbEnable\nis reset to\nFALSE\n, the module will\nnot execute any further modifications.\nThe initialization of input variable\nbReset\nwith\nFALSE\neffects,\nthat the\nSMC_GEOINFO\nobjects currently found in\npoqDataIn\nwill\nnot get rotated, but only those that will be added.\nAs, during the processing, a sudden change of the characteristic\nparameter vec of the translation might cause the path to be broken,\nmodifications to the corresponding input will not be taken into account,\nuntil\nSMC_OUTQUEUE\nwill be empty at\npoqDataIn\nor until a Reset (\nbReset\n) will be done.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "bExecute",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "WhileTRUE, the function block is active"
+        },
+        [
+          "bAppend",
+          "BOOL",
+          "FALSE",
+          "IfFALSEat a rising edge ofbExecute,\nthe output queuepoqDataOutis emptied."
+        ],
+        [
+          "poqDataIn",
+          "POINTER TOSMC_OUTQUEUE",
+          "SMC_NULL",
+          "Pointer on a sufficiently large, free data area (buffer)\nthat is allocated in the IEC application."
+        ],
+        [
+          "vec",
+          "SMC_VECTOR3D",
+          "",
+          ""
+        ],
+        [
+          "nSizeOutQueue",
+          "UDINT",
+          "0",
+          "This variable contains the size of the data buffer,\nthe list ofSMC_GEOINFOstructure objects will be written to.\nThis buffer must be at least five times as big as aSMC_GEOINFOstructure itself.\nOtherwise,SMC_NCDecoderwill not execute any actions at all.\nIts size may be predefined, but may be modified later only during a reset.\nIt is recommended to create the buffer as described by the example below.ExampleBuf:ArrayofSMC_GeoInfoThe appropriate buffer size will then be retrieved by use\nof the operatorsizeof(ExampleBuf)."
+        ],
+        [
+          "pbyBufferOutQueue",
+          "POINTER TO ARRAY [0..0]\nOF SMC_GEOINFO",
+          "SMC_NULL",
+          "Size of the buffer in byte"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bDone",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "This variable will be set toTRUEas soon as the\ninput data ofpoqDataInhas been processed completely.\nThereafter the module will not perform any further actions\nuntil it will be reset.\nIf inputbExecuteisFALSE,bDonewill be reset toFALSE."
+        },
+        [
+          "bBusy",
+          "BOOL",
+          "FALSE",
+          "TRUE, while execution of function block is not finished"
+        ],
+        [
+          "bError",
+          "BOOL",
+          "FALSE",
+          "Signals, that an error has occurred within the function\nblock"
+        ],
+        [
+          "wErrorID",
+          "SMC_ERROR",
+          "SMC_NO_ERROR",
+          "Error identification"
+        ],
+        [
+          "poqDataOut",
+          "POINTER TOSMC_OUTQUEUE",
+          "SMC_NULL",
+          "Pointer to resultingSMC_OUTQUEUE"
+        ]
+      ]
+    }
+  ]
+}

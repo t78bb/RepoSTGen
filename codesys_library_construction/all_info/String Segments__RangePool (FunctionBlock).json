@@ -1,0 +1,40 @@
+{
+  "library": "String Segments",
+  "title": "_RangePool (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Segments/Current/Strings/Functionblocks/_RangePool.html",
+  "page_title": "_RangePool (FB)",
+  "text": "Library Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nStrings\nAliases\nConstants (GVL)\nIDisposable (Alias)\nRUNE (Alias)\nEnums\nERROR (Enum)\nFunctionblocks\nRange (FunctionBlock)\nIRange\nSetInitialValue (Method)\nUTF8Literal (FunctionBlock)\nSetInitialValue (Method)\n_RangePool (FunctionBlock)\nProtected\n_StringPool (FunctionBlock)\nIStringPool\nSetInitialValue (Method)\n_UTF8String (FunctionBlock)\nIString\nIStringRepresentation\nFunctions\nCompare (Function)\nCopy (Function)\nCreateRangePool (Function)\nCreateString (Function)\nCreateStringPool (Function)\nIsASCIIString (Function)\nIsValidString (Function)\nLen (Function)\nReset (Function)\nRuneCount (Function)\nSetSegment (Function)\nInterfaces\nIRange (Interface)\nGetNextRune (Method)\nReset (Method)\nUngetLastRune (Method)\nIRangePool (Interface)\nGetPoolStatus (Method)\nGetRange (Method)\nIRangeProvider (Interface)\nGetRange (Method)\nIString (Interface)\nGetSegment (Method)\nIsASCII (Method)\nIsValid (Method)\nLen (Method)\nIStringPool (Interface)\nGetPoolConfig (Method)\nGetString (Method)\nIStringRepresentation (Interface)\nLen (Method)\nToIString (Method)\nStructs\nCONFIG (Struct)\nSTATUS (Struct)\nFile and Project Information\nLibrary Reference\nMemory Block Manager\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nUTF-8 Encoding Support\nLibrary Identification\nLibrary Properties\nString Segments\nDocs\n»\nStrings\n»\nFunctionblocks\n»\n_RangePool (FB)\n_RangePool (FB)\nÂ¶\nFUNCTION_BLOCK FINAL _RangePool EXTENDS _AbstractRangePool IMPLEMENTS\nIRangePool\nProvides a pool of\nIRange\ninstances.\nUse the\nGetRange\nmethod to get a new instance.\nInOut:\nScope\nName\nType\nInherited from\nInput Const\nudiInitialCapacity\nUDINT\n_AbstractRangePool\npbyPool\nPOINTER TO BYTE\n_AbstractRangePool\nudiPoolSize\nUDINT\n_AbstractRangePool\nusiExtensionFactor\nUSINT\n_AbstractRangePool\nMethods:\nGetRangeSize\nNewRange\nStructure:\nProtected\nGetRangeSize (Method)\nNewRange (Method)",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Inherited from"
+      ],
+      "rows": [
+        {
+          "Scope": "Input Const",
+          "Name": "udiInitialCapacity",
+          "Type": "UDINT",
+          "Inherited from": "_AbstractRangePool"
+        },
+        [
+          "pbyPool",
+          "POINTER TO BYTE",
+          "_AbstractRangePool"
+        ],
+        [
+          "udiPoolSize",
+          "UDINT",
+          "_AbstractRangePool"
+        ],
+        [
+          "usiExtensionFactor",
+          "USINT",
+          "_AbstractRangePool"
+        ]
+      ]
+    }
+  ]
+}

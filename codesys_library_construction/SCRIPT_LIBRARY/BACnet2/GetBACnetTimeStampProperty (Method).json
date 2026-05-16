@@ -1,0 +1,31 @@
+{
+  "library": "BACnet2",
+  "title": "GetBACnetTimeStampProperty (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/BACnetObjects/base/pou-BACnetObjectBase/Utilities/typed-property-access/GetBACnetTimeStampProperty.html",
+  "page_title": "BACnetObjectBase.GetBACnetTimeStampProperty (METH)",
+  "text": "\nMETHOD GetBACnetTimeStampProperty : CmpBACnet.IEC_BACNET_TIME_STAMP\nReturns the BACnet-TimeStamp-Value of the specified Property (propID) of this BACnet-Object.\nThe used functions are no client, meaning, that the access of the property is not restricted by write or read access restrictions.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetBACnetTimeStampProperty",
+          "Type": "CmpBACnet.IEC_BACNET_TIME_STAMP",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "propID",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_ID",
+          "Comment": "The ID of the property to get."
+        }
+      ]
+    }
+  ]
+}

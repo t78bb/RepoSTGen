@@ -1,0 +1,27 @@
+{
+  "library": "MemoryUtils",
+  "title": "Create (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/MemoryUtils/Current/MemoryUtils/Functionblocks/pou-MemoryManager/Public/Create.html",
+  "page_title": "MemoryManager.Create (METH)",
+  "text": "\nMETHOD PUBLIC Create\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "udiInitSize",
+          "Type": "UDINT"
+        },
+        [
+          "udiBlockSize",
+          "UDINT"
+        ]
+      ]
+    }
+  ]
+}

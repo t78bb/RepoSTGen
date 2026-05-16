@@ -1,0 +1,66 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_TRAFOV_GantryT2_O (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_Trafo_POUs/SoftMotion-Transformations/Gantry-systems/SMC_TRAFOV_GantryT2_O.html",
+  "page_title": "SMC_TRAFOV_GantryT2_O (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_TRAFOV_GantryT2_O\nReverse transformation for T-gantry systems with stationary drives,\ntaking into account the path velocity and\npath direction as control variables for the axis.\nNote\nFor more information see\nSMC_TRAFOF_GantryT2_O\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "pi",
+          "Type": "SMC_PosInfo",
+          "Comment": "Set position (x,y)"
+        },
+        [
+          "dVel",
+          "LREAL",
+          "Velocity"
+        ],
+        [
+          "v",
+          "SMC_VECTOR3D",
+          "Tangential vector"
+        ],
+        [
+          "dOffsetX",
+          "LREAL",
+          "Additional offsets"
+        ],
+        [
+          "dOffsetY",
+          "LREAL",
+          "Additional offsets"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "da",
+          "Type": "LREAL",
+          "Comment": "Resulting position/velocity for drive a"
+        },
+        [
+          "dva",
+          "LREAL",
+          "Resulting position/velocity for drive a"
+        ],
+        [
+          "db",
+          "LREAL",
+          "Resulting position/velocity for drive b"
+        ],
+        [
+          "dvb",
+          "LREAL",
+          "Resulting position/velocity for drive b"
+        ]
+      ]
+    }
+  ]
+}

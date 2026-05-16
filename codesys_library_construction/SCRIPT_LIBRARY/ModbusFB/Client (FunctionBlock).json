@@ -1,0 +1,100 @@
+{
+  "library": "ModbusFB",
+  "title": "Client (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/ModbusFB/Current/ModbusFB/Function-Blocks/Client/Client.html",
+  "page_title": "Client (FB)",
+  "text": "\nFUNCTION_BLOCK ABSTRACT Client IMPLEMENTS IClient\nMODBUS client (master) base class.\nClient provides the communication infrastructure for\nClientRequest\nto work with.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "xConnect",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "Connect to server (slave)."
+        },
+        {
+          "Scope": "Output",
+          "Name": "xConnected",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Client (master) is connected to server (slave)."
+        },
+        [
+          "xError",
+          "BOOL",
+          "",
+          "Error"
+        ],
+        [
+          "eErrorID",
+          "Error",
+          "",
+          "Error status"
+        ],
+        [
+          "udiNumMsgSent",
+          "UDINT",
+          "",
+          "Number of request messages send since connect."
+        ],
+        [
+          "udiNumMsgReply",
+          "UDINT",
+          "",
+          "Number of reply messages received since connect."
+        ],
+        [
+          "udiNumMsgExcReply",
+          "UDINT",
+          "",
+          "Number of exception reply messages received since connect."
+        ],
+        [
+          "udiNumMsgExcReplyIllFct",
+          "UDINT",
+          "",
+          "Number of exception reply messages received since connect,\nsignaling illegal function."
+        ],
+        [
+          "udiNumMsgExcReplyIllDataAdr",
+          "UDINT",
+          "",
+          "Number of exception reply messages received since connect,\nsignaling illegal data address."
+        ],
+        [
+          "udiNumReplyTimeouts",
+          "UDINT",
+          "",
+          "Number of reply timeouts since connect."
+        ],
+        [
+          "udiNumReqNotProcessed",
+          "UDINT",
+          "",
+          "Number of requests not processed in time (ârequest\nstarvationâ) since connect."
+        ],
+        [
+          "udiNumReqParamError",
+          "UDINT",
+          "",
+          "Number of requests started with parameter error, for example\nâRead Coilsâ -> âQuantity of coilsâ = 0."
+        ],
+        [
+          "udiLastTransactionTime",
+          "UDINT",
+          "",
+          "Transaction time in ms - time difference between request\nmessage send und reply message received."
+        ]
+      ]
+    }
+  ]
+}

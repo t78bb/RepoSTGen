@@ -1,0 +1,28 @@
+{
+  "library": "AC_DataLog",
+  "title": "Replace (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_DataLog/Current/AC_DataLog/DataLogStorage/CSVStorage/pou-DataLogStorage_CSV/IReplaceDateInFilePath/Replace.html",
+  "page_title": "DataLogStorage_CSV.Replace (METH)",
+  "text": "\nMETHOD Replace : BOOL\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "Replace",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Inout",
+          "Name": "sString",
+          "Type": "STRING(255)"
+        }
+      ]
+    }
+  ]
+}

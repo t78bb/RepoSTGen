@@ -1,0 +1,37 @@
+{
+  "library": "3S Storage",
+  "title": "StorageGetTableId (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/3S Storage/Current/_3SStorage/Instances/pou-Storage/IStorage2/StorageGetTableId.html",
+  "page_title": "Storage.StorageGetTableId (METH)",
+  "text": "\nMETHOD StorageGetTableId : STO.ERROR\nDetermines the id of a given table.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "StorageGetTableId",
+          "Type": "STO.ERROR",
+          "Comment": "The error code. Can return ERROR.NOT_IMPLEMENTED for non-\nsqlite implementations"
+        },
+        {
+          "Scope": "Inout",
+          "Name": "sTable",
+          "Type": "STRING",
+          "Comment": "The name of the table"
+        },
+        {
+          "Scope": "Output",
+          "Name": "idTable",
+          "Type": "CAA.IDENT",
+          "Comment": "Returns id of the table."
+        }
+      ]
+    }
+  ]
+}

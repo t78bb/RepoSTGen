@@ -1,0 +1,41 @@
+{
+  "library": "SysFile",
+  "title": "ACCESS_MODE (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SysFile/Current/ACCESS_MODE.html",
+  "page_title": "ACCESS_MODE (ENUM)",
+  "text": "\nTYPE ACCESS_MODE :\nAccess mode\nFile modes to open a file.\nNote\nFor all\n*_PLUS\nmodes be aware, that after reading from a file, writing can only be done after a call\nto\nSysFileGetPos\nor\nSysFileSetPos\n! If you call\nSysFileWrite\nright after\nSysFileRead\n,\nthe file pointer could be on an invalid position!\nCorrect example:\nSysFileRead\n();\nSysFileGetPos\n();\nSysFileWrite\n();\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "AM_READ",
+          "Comment": "Open an existing file with Read access. If file does not\nexist, Open fails"
+        },
+        {
+          "Name": "AM_WRITE",
+          "Comment": "Create new file with Write access. If file does exist,\ncontent is discarded"
+        },
+        {
+          "Name": "AM_APPEND",
+          "Comment": "Open an existing file with Append (only write) access. If\nfile does not exist, Open fails"
+        },
+        {
+          "Name": "AM_READ_PLUS",
+          "Comment": "Open an existing file with Read/Write access. If file does\nnot exist, Open fails"
+        },
+        {
+          "Name": "AM_WRITE_PLUS",
+          "Comment": "Create new file with Read/Write access. If file does exist,\ncontent is discarded"
+        },
+        {
+          "Name": "AM_APPEND_PLUS",
+          "Comment": "Open an existing file with Append (read/write) access. If\nfile does not exist, Open creates a new file"
+        }
+      ]
+    }
+  ]
+}

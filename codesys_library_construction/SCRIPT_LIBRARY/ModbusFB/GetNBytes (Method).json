@@ -1,0 +1,27 @@
+{
+  "library": "ModbusFB",
+  "title": "GetNBytes (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/ModbusFB/Current/ModbusFB/Function-Blocks/Util/pou-ByteBuffer/GetNBytes.html",
+  "page_title": "ByteBuffer.GetNBytes (METH)",
+  "text": "\nMETHOD GetNBytes\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "pDest",
+          "Type": "POINTER TO BYTE"
+        },
+        [
+          "uiBytes",
+          "UINT"
+        ]
+      ]
+    }
+  ]
+}

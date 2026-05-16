@@ -1,0 +1,23 @@
+{
+  "library": "DNP3",
+  "title": "AnalogOutputMaxPointNum (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/pou-Master/Datapoints/AnalogOutputMaxPointNum.html",
+  "page_title": "Master.AnalogOutputMaxPointNum (METH)",
+  "text": "\nMETHOD AnalogOutputMaxPointNum : DINT\nMaximum point number of all Analog Output datapoints (DNP3 object group 40 âanalog output statusâ) provided by the Outstation.\nReturns -1 if there are no datapoints.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "AnalogOutputMaxPointNum",
+          "Type": "DINT"
+        }
+      ]
+    }
+  ]
+}

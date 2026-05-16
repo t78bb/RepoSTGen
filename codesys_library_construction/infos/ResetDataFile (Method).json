@@ -1,0 +1,28 @@
+{
+  "library": "BACnet2DefaultImpl",
+  "title": "ResetDataFile (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2DefaultImpl/Current/BACnetDefaultImpl/Function-Blocks/LoggingObjects/Internal/pou-LogObjectsBase/Files/DataFiles/ResetDataFile.html",
+  "page_title": "LogObjectsBase.ResetDataFile (METH)",
+  "text": "\nMETHOD PROTECTED ResetDataFile : RTS_IEC_RESULT\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "ResetDataFile",
+          "Type": "RTS_IEC_RESULT"
+        },
+        {
+          "Scope": "Input",
+          "Name": "instNumber",
+          "Type": "DWORD"
+        }
+      ]
+    }
+  ]
+}

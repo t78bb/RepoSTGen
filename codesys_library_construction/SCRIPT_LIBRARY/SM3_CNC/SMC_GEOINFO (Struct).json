@@ -1,0 +1,379 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_GEOINFO (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_Data-types/SoftMotion-CNC/SMC_GEOINFO.html",
+  "page_title": "SMC_GEOINFO (STRUCT)",
+  "text": "\nTYPE SMC_GEOINFO : STRUCT\nThis data type is designed to store a path object, i.e. a segment of the programmed path, for example a line, arc or spline segment.\nIn addition to the geometry of these objects, further information can be stored as for example the velocity at the beginning/end of the path or as labels.\nNote\nAs from V3.5 SP2 of the programming system,\niSourceLine_No\nstores the line number of the CNC word and the sentence number is stored in\ndiSentenceNo\n.\nIn former versions, in particular CODESYS V2.3, the sentence number has been stored in\niSourceLine_No\n.\nThe parameters\ndP1\n--\ndP18\nare used for specific use cases.\nDepending on\niMoveType\n, these parameters contain different information:\nLIN, LINPOS\n:\nComplete information stored in\npiStartPos\nand\npiDestPos\nCLW, CCLW\n:\nThe coordinates are stored in the coordinate system\n(vX,\nvY,\nvN)\n.\ndP1\n: X-coordinate of circle center\ndP2\n: Y-coordinate of circle center\ndP3\n: Circle radius\ndP4\n: Z-coordinate of circle\nSPLINE\n:\ndP1-dP8\n: Spline parameter\ndP9-dP18\n: Additional spline parameter\nELLCLW, ELLCCLW\n:\ndP1\n: X-coordinate of circle center\ndP2\n: Y-coordinate of circle center\ndP3\n: X-component of the main axis unit vector\ndP4\n: Y-component of the main axis unit vector\ndP5\n: Length of the main axis\ndP6\n: Length of the subaxis\ndP7\n: Angle between main axis and X axis (in rad)\ndP8\n: Ratio P6/P5\nMCOMMAND\n:\nfor M-commands (\niMoveType\n=\n120\n) the values of\ndP1\n, â¦\ndP8\nare returned  by\nSMC_GetMParameters\n.\ndT1\nand\ndT2\nare the start and end parameters for circle/spline.\nLIN, LINPOS\n:\nComplete information stored in\npiStartPos\nand\npiDestPos\nCLW, ELLCLW\n:\ndT1\n: Start angle in degree, oriented mathematically (0=east, 90=north, 180=west, 270=south)\ndT2\n: Apex angle of circle in degree (e.g. 90=quarter of circle, 180 = semicircle)\nCCLW, ELLCCLW\n:\ndT1\n: Start angle in degree oriented mathematically (0=east, 90=north, 180=west, 270=south)\ndT2\n: Negative apex angle of circle in degree (e.g. -90=quarter of circle, -180 = semicircle)\nSPLINE\n:\nStart and end value of parameter t, Spline, 0 and 1 by default.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "iObjNo",
+          "Type": "DINT",
+          "Initial": "",
+          "Comment": "Arbitrary object number (irrelevant for current path\ndescription). Itâs a 1-based, consecutive ID."
+        },
+        {
+          "Name": "iSourceLine_No",
+          "Type": "DINT",
+          "Initial": "",
+          "Comment": "Stores the 0-based line number inside the CNC source file"
+        },
+        {
+          "Name": "diSentenceNo",
+          "Type": "DINT",
+          "Initial": "",
+          "Comment": "Stores the G-code sentence number (value of the N-word)"
+        },
+        {
+          "Name": "iMoveType",
+          "Type": "SMC_MOVTYP",
+          "Initial": "",
+          "Comment": "Value defining the geometrical type of the object.SMC_MOVTYP(ENUM)"
+        },
+        {
+          "Name": "piStartPos",
+          "Type": "SMC_POSINFO",
+          "Initial": "",
+          "Comment": "The start position of the object."
+        },
+        {
+          "Name": "piDestPos",
+          "Type": "SMC_POSINFO",
+          "Initial": "",
+          "Comment": "The end position of the object"
+        },
+        {
+          "Name": "dP1",
+          "Type": "LREAL",
+          "Initial": "0",
+          "Comment": ""
+        },
+        {
+          "Name": "dP2",
+          "Type": "LREAL",
+          "Initial": "0",
+          "Comment": ""
+        },
+        {
+          "Name": "dP3",
+          "Type": "LREAL",
+          "Initial": "0",
+          "Comment": ""
+        },
+        {
+          "Name": "dP4",
+          "Type": "LREAL",
+          "Initial": "0",
+          "Comment": ""
+        },
+        {
+          "Name": "dP5",
+          "Type": "LREAL",
+          "Initial": "0",
+          "Comment": ""
+        },
+        {
+          "Name": "dP6",
+          "Type": "LREAL",
+          "Initial": "0",
+          "Comment": ""
+        },
+        {
+          "Name": "dP7",
+          "Type": "LREAL",
+          "Initial": "0",
+          "Comment": ""
+        },
+        {
+          "Name": "dP8",
+          "Type": "LREAL",
+          "Initial": "0",
+          "Comment": ""
+        },
+        {
+          "Name": "dP9",
+          "Type": "LREAL",
+          "Initial": "0",
+          "Comment": ""
+        },
+        {
+          "Name": "dP10",
+          "Type": "LREAL",
+          "Initial": "0",
+          "Comment": ""
+        },
+        {
+          "Name": "dP11",
+          "Type": "LREAL",
+          "Initial": "0",
+          "Comment": ""
+        },
+        {
+          "Name": "dP12",
+          "Type": "LREAL",
+          "Initial": "0",
+          "Comment": ""
+        },
+        {
+          "Name": "dP13",
+          "Type": "LREAL",
+          "Initial": "0",
+          "Comment": ""
+        },
+        {
+          "Name": "dP14",
+          "Type": "LREAL",
+          "Initial": "0",
+          "Comment": ""
+        },
+        {
+          "Name": "dP15",
+          "Type": "LREAL",
+          "Initial": "0",
+          "Comment": ""
+        },
+        {
+          "Name": "dP16",
+          "Type": "LREAL",
+          "Initial": "0",
+          "Comment": ""
+        },
+        {
+          "Name": "dP17",
+          "Type": "LREAL",
+          "Initial": "0",
+          "Comment": ""
+        },
+        {
+          "Name": "dP18",
+          "Type": "LREAL",
+          "Initial": "0",
+          "Comment": ""
+        },
+        {
+          "Name": "vX",
+          "Type": "SMC_Vector3D",
+          "Initial": "STRUCT(dX := 1, dY := 0, dZ := 0)",
+          "Comment": "X-axis of the local coordinate system, expressed in world\ncoordinates."
+        },
+        {
+          "Name": "vY",
+          "Type": "SMC_Vector3D",
+          "Initial": "STRUCT(dX := 0, dY := 1, dZ := 0)",
+          "Comment": "Y-axis of the local coordinate system, expressed in world\ncoordinates."
+        },
+        {
+          "Name": "vN",
+          "Type": "SMC_Vector3D",
+          "Initial": "STRUCT(dX := 0, dY := 0, dZ := 1)",
+          "Comment": "Z-axis of the local coordinate system, expressed in world\ncoordinates."
+        },
+        {
+          "Name": "dT1",
+          "Type": "LREAL",
+          "Initial": "0",
+          "Comment": "Start parameter for circle/spline"
+        },
+        {
+          "Name": "dT2",
+          "Type": "LREAL",
+          "Initial": "1",
+          "Comment": "Apex angle/end parameter for circle/spline"
+        },
+        {
+          "Name": "dToolRadius",
+          "Type": "LREAL",
+          "Initial": "0",
+          "Comment": "The tool radius. Necessary for path processing withSMC_ToolRadiusCorr."
+        },
+        {
+          "Name": "dSmoothRadius",
+          "Type": "LREAL",
+          "Initial": "0",
+          "Comment": "The smooth radius. Necessary for path processing withSMC_RoundPathandSMC_SmoothPath."
+        },
+        {
+          "Name": "dVel",
+          "Type": "LREAL",
+          "Initial": "0",
+          "Comment": "Target velocity to be reached (in path units/sec)"
+        },
+        {
+          "Name": "dVelEnd",
+          "Type": "LREAL",
+          "Initial": "0",
+          "Comment": "Prescribed velocity at end of object (path units/sec)"
+        },
+        {
+          "Name": "dVelEndStored",
+          "Type": "LREAL",
+          "Initial": "",
+          "Comment": "No longer used, kept for compatibility."
+        },
+        {
+          "Name": "dVelEndSafe",
+          "Type": "LREAL",
+          "Initial": "0",
+          "Comment": "Computed for the quadratic velocity profile: maximum <=dVelEndthat allows to reachdVelEndSafeof the next element.\nMay be -1 if the next element has identical values for acceleration, deceleration, and velocity."
+        },
+        {
+          "Name": "dAccel",
+          "Type": "LREAL",
+          "Initial": "100",
+          "Comment": "Maximum allowable acceleration (in path units/secÂ²)"
+        },
+        {
+          "Name": "dDecel",
+          "Type": "LREAL",
+          "Initial": "100",
+          "Comment": "Maximum allowable deceleration (in path units/secÂ²)"
+        },
+        {
+          "Name": "dLength",
+          "Type": "LREAL",
+          "Initial": "0",
+          "Comment": "Length of object in path units"
+        },
+        {
+          "Name": "wInternMark2",
+          "Type": "WORD",
+          "Initial": "0",
+          "Comment": "Intern marks for tool correction, rounding, etc."
+        },
+        {
+          "Name": "byInternMark",
+          "Type": "BYTE",
+          "Initial": "0",
+          "Comment": "Start and end of path preprocessing actions:Bit 0 set: Stop tool radius correction after this objectBit 1 set: Start tool radius correction to the left of this objectBit 2 set: Start tool radius correction to the right of this objectBit 3 set: Stop path rounding/smoothing after this objectBit 4 set: Start path smoothing at this objectBit 5 set: Start path rounding at this objectBit 6 set: Stop avoiding loops after this objectBit 7 set: Start avoiding loops at this object"
+        },
+        {
+          "Name": "dwFeatureFlags",
+          "Type": "DWORD",
+          "Initial": "",
+          "Comment": "IfTRUE, the object is a 3D-object"
+        },
+        {
+          "Name": "b3DMode",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "Stores feature bits set by G38/G39"
+        },
+        {
+          "Name": "dHelpPos",
+          "Type": "ARRAY\n[0..MAX_IPOSWITCHES] OF\nLREAL",
+          "Initial": "",
+          "Comment": "Relative position of auxiliary switches (0: object start, 1:\nobject end, similar to G-code: O)"
+        },
+        {
+          "Name": "iHelpID",
+          "Type": "ARRAY\n[0..MAX_IPOSWITCHES] OF\nINT",
+          "Initial": "",
+          "Comment": "ID (G-code: H) of auxiliary switches.\nIf the current object is of typeMCOMMAND,iHelpID[0]will contain the number of the M-option."
+        },
+        {
+          "Name": "adVelAddAx",
+          "Type": "ARRAY [0..7] OF LREAL",
+          "Initial": "",
+          "Comment": "If value<>0, then it specifies the velocity values for following use:[0]: all G0 commands[1]: Z-axis[2]: P-axis[3]: Q-axis[4]: U-axis/A-axis[5]: V-axis/B-axis[6]: W-axis/C-axis[1]-[6]: These are maximum values used ofSMC_ExtendedVelocityChecks."
+        },
+        {
+          "Name": "adAccAddAx",
+          "Type": "ARRAY [0..7] OF LREAL",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Name": "adDecAddAx",
+          "Type": "ARRAY [0..7] OF LREAL",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Name": "aAdditionalParams",
+          "Type": "ARRAY\n[0..(SMC_MAX_ADDITIONAL_PARAMS\n- 1)] OF LREAL",
+          "Initial": "",
+          "Comment": "Additional parameters set by G38 I/J/K"
+        },
+        {
+          "Name": "adToolLength",
+          "Type": "ARRAY [0..2] OF LREAL",
+          "Initial": "",
+          "Comment": "Parameters for tool length compensation (set by G43 I/J/K)"
+        },
+        {
+          "Name": "dPrecision",
+          "Type": "LREAL",
+          "Initial": "",
+          "Comment": "The precision of the G-Code, see input dPrecision of\nSMC_NCInterpreter."
+        },
+        {
+          "Name": "OriConv",
+          "Type": "SMC_ORI_CONVENTION",
+          "Initial": "",
+          "Comment": "The orientation convention in use for this object."
+        },
+        {
+          "Name": "DCS",
+          "Type": "SMC_PosInfo",
+          "Initial": "",
+          "Comment": "The decoder coordinate system, expressed in MCS.\nMeaning of dA/dB/dC depends on OriConv"
+        },
+        {
+          "Name": "smoothPathActive",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Set bySMC_SmoothPathbased on byInternMark"
+        },
+        {
+          "Name": "roundPathActive",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Set bySMC_RoundPathbased on byInternMark"
+        },
+        {
+          "Name": "toolRadiusCorrLeftActive",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Set bySMC_ToolRadiusCorrbased on byInternMark"
+        },
+        {
+          "Name": "toolRadiusCorrRightActive",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Set bySMC_ToolRadiusCorrbased on byInternMark"
+        },
+        {
+          "Name": "avoidLoopActive",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Set bySMC_AvoidLoopbased on byInternMark"
+        },
+        {
+          "Name": "smoothAddAxesActive",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Set bySMC_SmoothAddAxesbased on wInternMark2"
+        },
+        {
+          "Name": "cvParams",
+          "Type": "SMC_CheckVelParams",
+          "Initial": "",
+          "Comment": "The parameters ofSMC_CheckVelocities."
+        },
+        {
+          "Name": "probeNumber",
+          "Type": "UDINT",
+          "Initial": "",
+          "Comment": "The probe number (G31, PROBE word in G-Code), 0 if not a probe\nmovement."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_TRAFO_GantryT2_O (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_Trafo_POUs/SoftMotion-Transformations/Gantry-systems/SMC_TRAFO_GantryT2_O.html",
+  "page_title": "SMC_TRAFO_GantryT2_O (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_TRAFO_GantryT2_O\nReverse transformations of T-gantry systems with stationary drives\n(alternative drive configuration).\nNote\nFor detailed information on transformations\nsee overview to\nSM_Trafo_POUs\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "pi",
+          "Type": "SMC_PosInfo",
+          "Comment": "Set position (y,z)"
+        },
+        [
+          "dOffsetX",
+          "LREAL",
+          "Additional offsets"
+        ],
+        [
+          "dOffsetY",
+          "LREAL",
+          "Additional offsets"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "da",
+          "Type": "LREAL",
+          "Comment": "Resulting position of drive a and b"
+        },
+        [
+          "db",
+          "LREAL",
+          "Resulting position of drive a and b"
+        ]
+      ]
+    }
+  ]
+}

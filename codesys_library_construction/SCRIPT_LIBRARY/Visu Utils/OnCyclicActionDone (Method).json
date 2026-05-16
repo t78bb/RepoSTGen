@@ -1,0 +1,32 @@
+{
+  "library": "Visu Utils",
+  "title": "OnCyclicActionDone (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/Visu Utils/Current/VisuUtils/VisuActionUtilities/Function-Blocks/pou-FBFileTransfer/OnCyclicActionDone.html",
+  "page_title": "FBFileTransfer.OnCyclicActionDone (METH)",
+  "text": "\nMETHOD PROTECTED OnCyclicActionDone : BOOL\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "OnCyclicActionDone",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Output",
+          "Name": "xComplete",
+          "Type": "BOOL"
+        },
+        [
+          "iErrorID",
+          "INT"
+        ]
+      ]
+    }
+  ]
+}

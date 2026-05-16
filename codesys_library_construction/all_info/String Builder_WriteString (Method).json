@@ -1,0 +1,48 @@
+{
+  "library": "String Builder",
+  "title": "WriteString (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Builder/Current/Builder/Function-Blocks/pou-_Builder/IBuilder/WriteString.html",
+  "page_title": "_Builder.WriteString (METH)",
+  "text": "Builder\nAliases\nConstants (GVL)\nEnums\nENCODING (Alias)\nERROR (Alias)\nSTATS (Alias)\nFunction Blocks\nRange (Alias)\n_RangePool (Alias)\nInterfaces\nIBuilder (Folder)\nICharmap (Alias)\nIString (Alias)\nIStringRepresentation (Folder)\nTypes\nRUNE (Alias)\nFunction Blocks\n_Builder (FunctionBlock)\nIBuilder\nIStringRepresentation\nSetInitialValue (Method)\nFunctions\nCreateRange (Function)\nCreateRangePool (Function)\nLibrary Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nFile and Project Information\nLibrary Reference\nImmutable String Segments\nLibrary Identification\nLibrary Properties\nMemory Block Manager\nLibrary Identification\nLibrary Properties\nString Builder Base\nLibrary Identification\nLibrary Properties\nString Conversions\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nUTF-16 Encoding Support\nLibrary Identification\nLibrary Properties\nUTF-8 Encoding Support\nLibrary Identification\nLibrary Properties\nString Builder\nDocs\n»\nBuilder\n»\nFunction\nBlocks\n»\n_Builder\n(FB)\n»\nIBuilder\n»\n_Builder.WriteString (METH)\n_Builder.WriteString (METH)\nÂ¶\nMETHOD FINAL WriteString : UDINT\nAppends the contents of\nsValue\nto the buffer.\nIt returns the number of bytes written.\nInOut:\nScope\nName\nType\nInitial\nComment\nReturn\nWriteString\nUDINT\nInout Const\nsValue\nSTRING(255)\nString instance to be written in the builder\nInput\nitfCharmap\nICharmap\n0\nDefault: Windows-1252\nOutput\neErrorID\nERROR\nCheck error message for better diagnostics",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "WriteString",
+          "Type": "UDINT",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Scope": "Inout Const",
+          "Name": "sValue",
+          "Type": "STRING(255)",
+          "Initial": "",
+          "Comment": "String instance to be written in the builder"
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfCharmap",
+          "Type": "ICharmap",
+          "Initial": "0",
+          "Comment": "Default: Windows-1252"
+        },
+        {
+          "Scope": "Output",
+          "Name": "eErrorID",
+          "Type": "ERROR",
+          "Initial": "",
+          "Comment": "Check error message for better diagnostics"
+        }
+      ]
+    }
+  ]
+}

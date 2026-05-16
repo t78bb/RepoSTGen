@@ -1,0 +1,36 @@
+{
+  "library": "BACnet2",
+  "title": "GetBACnetPropertyDataType (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/Utilities/BACnetUtilities/BACnetProperties/GetBACnetPropertyDataType.html",
+  "page_title": "GetBACnetPropertyDataType (FUN)",
+  "text": "\nFUNCTION GetBACnetPropertyDataType : CmpBACnet.IEC_BACNET_DATA_TYPE\nReturns the BACnet-Data-Type for a specific BACnet-Object-Property.\nNote\nData types may depend on the object type (i.e. the Present_Value\nof a Binary Value object is different to the Present_Value of a Analog Value object).\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetBACnetPropertyDataType",
+          "Type": "CmpBACnet.IEC_BACNET_DATA_TYPE",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "objTyp",
+          "Type": "CmpBACnet.IEC_BACNET_OBJECT_TYPE",
+          "Comment": "The object type having the desired property."
+        },
+        [
+          "propID",
+          "CmpBACnet.IEC_BACNET_PROPERTY_ID",
+          "The property ID of the property to determine its BACnet data\ntype for."
+        ]
+      ]
+    }
+  ]
+}

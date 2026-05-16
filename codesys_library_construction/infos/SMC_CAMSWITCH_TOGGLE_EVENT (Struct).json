@@ -1,0 +1,38 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_CAMSWITCH_TOGGLE_EVENT (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/Additional/SMC_CAMSWITCH_TOGGLE_EVENT.html",
+  "page_title": "SMC_CAMSWITCH_TOGGLE_EVENT (STRUCT)",
+  "text": "\nTYPE SMC_CAMSWITCH_TOGGLE_EVENT : STRUCT\nA toggle event as reported by\nSMC_DigitalCamSwitch_HighPrecision\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "SwitchNumber",
+          "Type": "UDINT",
+          "Comment": "The switch number of the toggle event. Switch numbers are 1-based so\nthe first switch has number 1."
+        },
+        {
+          "Name": "ToggleEventId",
+          "Type": "UDINT",
+          "Comment": "The identifier of the switch event.  Incremented by 1 for each switch\nevent, with a wrap to 0 after 2^32 - 1.  This means it is guaranteed that\nthe last 2^32 switch event identifiers are all unique.IDs are assigned in ascending order of the switch events, i.e. it is\nguaranteed that a later switch event has a higher ID (except for\na possible 32-bit overflow).NoteAn aborting movement or an override can change the order\nin which switch events occur or even change whether a switch event\noccurs at all.  If this happens, the IDs assigned to the changed\nevents can change, too.This ID is intended for determining whether a given event of a\nparticular switch has already been processed by the caller of\nthe function block: If events are processed in order, the ID of\nthe last processed event can be used to decide whether a given\nevent has already been processed."
+        },
+        {
+          "Name": "Duration",
+          "Type": "LREAL",
+          "Comment": "The duration in seconds until the new value should be output.\nThe duration is relative to the start of the current cycle.\nThis duration is shifted by the OnCompensation and OffCompensation\nof the track.  For example, if the track has an OnCompensation\nis -0.1 s, the duration is measuered until 0.1 seconds before the axis\nreaches the switch position."
+        },
+        {
+          "Name": "NewValue",
+          "Type": "BOOL",
+          "Comment": "The new value of the output"
+        }
+      ]
+    }
+  ]
+}

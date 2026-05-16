@@ -1,0 +1,5 @@
+{
+  "requirement": "This code is intended to implement a check to determine whether there are any elevator stop requests between a specified start floor and end floor in a given direction.",
+  "provide_code": "FUNCTION F_CheckJobInDirection : BOOL\nVAR_INPUT\n\tnStartFloor\t\t:\tUSINT;\t\t//起始楼层\n\tnEndFloor\t\t:\tUSINT;\t\t//结束楼层\n\tbIncreasing\t\t:\tBOOL;\t\t//TRUE=向上检查（递增），FALSE=向下检查（递减）\nEND_VAR",
+  "function_name": "F_CheckJobInDirection"
+}

@@ -1,0 +1,67 @@
+{
+  "library": "CommFB",
+  "title": "RDIAG (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/CommFB/Current/CommFB/RDIAG.html",
+  "page_title": "RDIAG (FB)",
+  "text": "\nFUNCTION_BLOCK RDIAG\nRead Diagnosis data from DP Slave.\nThis service is for Profibus only, Profinet uses a different, more advanced Diagnosis.\nCode-Example: Profibus DP Diagnosis\nPROGRAM\nPLC_PRG\nVAR\nreadDiag\n:\nCommfB.RDIAG\n;\ndiag\n:\nCommFB.DP_DIAG\n;\nsMessage\n:\nSTRING\n;\nEND_VAR\nreadDiag.REQ\n:=\nTRUE\n;\nreadDiag.ID\n:=\nCommFB.ID\n(\nEN\n:=\nTRUE\n,\nMaster\n:=\nCIFX_PB.MasterID\n,\nSEGMENT\n:=\n0\n,\nSTATION\n:=\n3\n,\nSLOT\n:=\n0\n);\nreadDiag.MLEN\n:=\nTO_INT\n(\nSIZEOF\n(\ndiag\n));\nreadDiag\n(\nDINFO\n:=\ndiag\n);\nIF\n(\nreadDiag.VALID\n)\nTHEN\nIF\n(\ndiag.status1.Diag.Station_Non_Existent\n)\nTHEN\nsMessage\n:=\n'Station with Address = 3 is not available !'\n;\nEND_IF\nEND_IF\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "REQ",
+          "Type": "BOOL",
+          "Comment": "Request"
+        },
+        [
+          "ID",
+          "DWORD",
+          "Identifier of a of DP-slave (see:AddressConcept)"
+        ],
+        [
+          "MLEN",
+          "INT",
+          "maximum length to be read"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "VALID",
+          "Type": "BOOL",
+          "Comment": "New diagnosis data received and is valid"
+        },
+        [
+          "BUSY",
+          "BOOL",
+          "FB is busy"
+        ],
+        [
+          "ERROR",
+          "BOOL",
+          "Error detected"
+        ],
+        [
+          "STATUS",
+          "DWORD",
+          "Last detected status"
+        ],
+        [
+          "LEN",
+          "INT",
+          "Length of diagnosis data"
+        ],
+        {
+          "Scope": "Inout",
+          "Name": "DINFO",
+          "Type": "DP_DIAG",
+          "Comment": "Read diagnosis data (see:DP_DIAG"
+        }
+      ]
+    }
+  ]
+}

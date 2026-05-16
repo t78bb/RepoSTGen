@@ -1,0 +1,8 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "Deactivate (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_RMP_ReliableMessageProtocol/pou-RMPConnection/Deactivate.html",
+  "page_title": "RMPConnection.Deactivate (METH)",
+  "text": "\nMETHOD PUBLIC FINAL Deactivate\nDeactivates the connection",
+  "tables": []
+}

@@ -1,0 +1,41 @@
+{
+  "library": "BACnet2DefaultImpl",
+  "title": "GetRecordsBySequence (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2DefaultImpl/Current/BACnetDefaultImpl/Function-Blocks/LoggingObjects/Internal/pou-LogObjectsBase/GetRecordsBySequence.html",
+  "page_title": "LogObjectsBase.GetRecordsBySequence (METH)",
+  "text": "\nMETHOD PROTECTED GetRecordsBySequence : RTS_IEC_RESULT\nAllocates readRangeResult.itemData.buffer.pBuffer needs to be deallocated using FreeReadRangeResult().\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetRecordsBySequence",
+          "Type": "RTS_IEC_RESULT"
+        },
+        {
+          "Scope": "Input",
+          "Name": "instNumber",
+          "Type": "DWORD"
+        },
+        [
+          "refSequenceNum",
+          "CmpBACnet.IEC_BACNET_UNSIGNED"
+        ],
+        [
+          "numRecords",
+          "CmpBACnet.IEC_BACNET_SIGNED"
+        ],
+        {
+          "Scope": "Inout",
+          "Name": "readRangeResult",
+          "Type": "CmpBACnet.IEC_BACNET_READ_RANGE_RESULT"
+        }
+      ]
+    }
+  ]
+}

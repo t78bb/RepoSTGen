@@ -1,0 +1,23 @@
+{
+  "library": "SM3_CNC",
+  "title": "NumElems (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/File/ReadNCFile/Token/pou-SMC_TokenQueue/NumElems.html",
+  "page_title": "SMC_TokenQueue.NumElems (METH)",
+  "text": "\nMETHOD NumElems : UDINT\nReturns the number of tokens currently in the queue\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "NumElems",
+          "Type": "UDINT"
+        }
+      ]
+    }
+  ]
+}

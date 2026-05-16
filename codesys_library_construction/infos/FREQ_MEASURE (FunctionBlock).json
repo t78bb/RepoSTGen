@@ -1,0 +1,52 @@
+{
+  "library": "Util",
+  "title": "FREQ_MEASURE (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/Signals/FREQ_MEASURE.html",
+  "page_title": "FREQ_MEASURE (FB)",
+  "text": "\nFUNCTION_BLOCK FREQ_MEASURE\nMeasures the frequency of a signal\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "IN",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Input signal"
+        },
+        [
+          "PERIODS",
+          "INT (1..10)",
+          "1",
+          "A period is the time between two rising edges of the input signal.OUTwill equal the average frequency during the givenPERIODS(number of periods; minimal 1 maximal 10).\nThe function block will not work unless this value is between 1 and 10."
+        ],
+        [
+          "RESET",
+          "BOOL",
+          "",
+          "Reset measurement"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "OUT",
+          "Type": "REAL",
+          "Initial": "",
+          "Comment": "Frequency [Hz]"
+        },
+        [
+          "VALID",
+          "BOOL",
+          "",
+          "FALSE: As long as the first measure has been finished.  Or time distance between two rising edges >3*OUT.\n(Indicates that something is wrong with the inputs)"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "library": "String Builder Base",
+  "title": "SetInitialValue (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Builder Base/Current/BuilderBase/Function-Blocks/pou-Range/SetInitialValue.html",
+  "page_title": "Range.SetInitialValue (METH)",
+  "text": "\nMETHOD FINAL SetInitialValue : STR.ERROR\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetInitialValue",
+          "Type": "STR.ERROR"
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfBuilder",
+          "Type": "IBuilder"
+        }
+      ]
+    }
+  ]
+}

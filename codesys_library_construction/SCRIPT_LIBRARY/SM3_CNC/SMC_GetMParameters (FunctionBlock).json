@@ -1,0 +1,52 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_GetMParameters (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/SoftMotion-Function-Blocks/M_Functions/SMC_GetMParameters.html",
+  "page_title": "SMC_GetMParameters (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_GetMParameters\nIf the interpolator is waiting for an M-function,\nthis function block can be used to query the parameters\nthat have been set for this M-function in the G-Code\n(K, L, O words).\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Interpolator",
+          "Type": "SMC_Interpolator",
+          "Comment": "Instance of interpolator"
+        },
+        {
+          "Scope": "Input",
+          "Name": "bEnable",
+          "Type": "BOOL",
+          "Comment": "WhileTRUE, the function block is active"
+        },
+        {
+          "Scope": "Output",
+          "Name": "bMActive",
+          "Type": "BOOL",
+          "Comment": "The valueTRUEindicates a M-function is currently\nactive"
+        },
+        [
+          "dK",
+          "LREAL",
+          "M-parameter specified via word K"
+        ],
+        [
+          "dL",
+          "LREAL",
+          "M-parameter specified via word L"
+        ],
+        [
+          "MParameters",
+          "SMC_M_PARAMETERS",
+          "M-parameters, specified by a variable of typeSMC_M_PARAMETERS(passed by the O-word).\nExample G-Code: âN00 M5 K1 L2 O$mParams$â"
+        ]
+      ]
+    }
+  ]
+}

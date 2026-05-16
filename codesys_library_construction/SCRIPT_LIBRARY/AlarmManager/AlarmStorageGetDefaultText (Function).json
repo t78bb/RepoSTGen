@@ -1,0 +1,46 @@
+{
+  "library": "AlarmManager",
+  "title": "AlarmStorageGetDefaultText (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Alarm-storage-API/AlarmStorageGetDefaultText.html",
+  "page_title": "AlarmStorageGetDefaultText (FUN)",
+  "text": "\nFUNCTION AlarmStorageGetDefaultText : CharBufferPtr\nThis function can be used to determine the default text of a message of an alarm,\nthat was read from the alarm storage.\nPlease remark: This function is accessing localization information and is therefore not recommended for calls from realtime tasks\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "AlarmStorageGetDefaultText",
+          "Type": "CharBufferPtr",
+          "Comment": "A CharBufferPtr  containing the default text. A NULL pointer\nif the corresponding information cannot be retrieved"
+        },
+        {
+          "Scope": "Input",
+          "Name": "udiAlarmGroupId",
+          "Type": "UDINT",
+          "Comment": "The internal id of the alarm group, that was read from the\nalarm storage"
+        },
+        [
+          "udiAlarmId",
+          "UDINT",
+          "The internal id of the alarm, that was read from the alarm\nstorage"
+        ],
+        [
+          "iWhichMessage",
+          "INT",
+          "The 1-based index of the text id."
+        ],
+        [
+          "stringType",
+          "__SYSTEM.TYPE_CLASS",
+          "A __SYSTEM.TYPE_CLASS indicating, which type of string has to be retrieved.\nPass either __SYSTEM.TYPE_CLASS.TYPE_STRING or __SYSTEM.TYPE_CLASS.TYPE_WSTRING"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "library": "Standard",
+  "title": "CONCAT (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/Standard/Current/String-Functions/CONCAT.html",
+  "page_title": "CONCAT (FUN)",
+  "text": "\nFUNCTION CONCAT : STRING(255)\nConcatenates two strings\nCONCAT(STR1,STR2)\nmeans: Connect\nSTR1\nand\nSTR2\nto a single string\nSTR1STR2\n.\n(* Example declaration *)\nVarSTRING1\n:\nSTRING\n;\n(* Example in ST , result is 'SUSIWILLI' *)\nVarSTRING1\n:=\nCONCAT\n(\n'SUSI'\n,\n'WILLI'\n);\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "CONCAT",
+          "Type": "STRING(255)",
+          "Comment": "Concatenated string, max. 255 characters. If the result doesnât fit into these 255 bytes, it will be silently truncated. No error is produced."
+        },
+        {
+          "Scope": "Input",
+          "Name": "STR1",
+          "Type": "STRING(255)",
+          "Comment": "String 1 to be concatenated, max. 255 characters"
+        },
+        [
+          "STR2",
+          "STRING(255)",
+          "String 2 to be concatenated, max. 255 characters"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "library": "BACnet2DefaultImpl",
+  "title": "PropertyContentToString (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2DefaultImpl/Current/BACnetDefaultImpl/Functions/PropertyContentToString.html",
+  "page_title": "PropertyContentToString (FUN)",
+  "text": "\nFUNCTION PropertyContentToString : STRING\nTries to build a string represenation for some property types\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "PropertyContentToString",
+          "Type": "STRING",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "objectID",
+          "Type": "CmpBACnet.IEC_BACNET_OBJECT_ID",
+          "Comment": "optional to encode enums, to ignore set objectID.typ :=\nCmpBACnet.IEC_BACNET_OBJECT_TYPE._OBJ_MAX_SIZE"
+        },
+        [
+          "propID",
+          "CmpBACnet.IEC_BACNET_PROPERTY_ID",
+          "optional to encode enums, to ignore set propID :=\nCmpBACnet.IEC_BACNET_PROPERTY_ID._PROP_MAX_SIZE"
+        ],
+        [
+          "propertyContents",
+          "CmpBACnet.IEC_BACNET_PROPERTY_CONTENTS",
+          ""
+        ]
+      ]
+    }
+  ]
+}

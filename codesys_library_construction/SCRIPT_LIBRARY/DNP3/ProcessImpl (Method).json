@@ -1,0 +1,23 @@
+{
+  "library": "DNP3",
+  "title": "ProcessImpl (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/PointObserver/pou-PointObserver/ProcessImpl.html",
+  "page_title": "PointObserver.ProcessImpl (METH)",
+  "text": "\nMETHOD PROTECTED ProcessImpl :\nError\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "ProcessImpl",
+          "Type": "Error"
+        }
+      ]
+    }
+  ]
+}

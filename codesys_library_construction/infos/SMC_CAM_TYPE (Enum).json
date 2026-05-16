@@ -1,0 +1,43 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_CAM_TYPE (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/DataTypes/CAM/SMC_CAM_TYPE.html",
+  "page_title": "SMC_CAM_TYPE (ENUM)",
+  "text": "\nTYPE SMC_CAM_TYPE :\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "POLY",
+          "Initial": "0",
+          "Comment": "Polynomial description (5th degree).  Deprecated, donât use."
+        },
+        {
+          "Name": "X",
+          "Initial": "1",
+          "Comment": "Equidistant, one-dimensional table of slave positions"
+        },
+        {
+          "Name": "XY",
+          "Initial": "2",
+          "Comment": "Non-equidistant, two-dimensional table of master/slave\npositions"
+        },
+        {
+          "Name": "XYVA",
+          "Initial": "3",
+          "Comment": "Polynomial description consisting of master position X, slave position Y,\nslave velocity V and slave acceleration A"
+        },
+        {
+          "Name": "SEGMENT",
+          "Initial": "4",
+          "Comment": "Generic segment description"
+        }
+      ]
+    }
+  ]
+}

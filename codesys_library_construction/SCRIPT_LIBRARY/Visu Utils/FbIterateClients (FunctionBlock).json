@@ -1,0 +1,67 @@
+{
+  "library": "Visu Utils",
+  "title": "FbIterateClients (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/Visu Utils/Current/VisuUtils/VisuActionUtilities/Function-Blocks/FbIterateClients.html",
+  "page_title": "FbIterateClients (FB)",
+  "text": "\nFUNCTION_BLOCK FbIterateClients EXTENDS FbExecuteSingleVisuActionBase\nIterates over all or only a subset of the currently active clients\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment",
+        "Inherited from"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "xExecute",
+          "Type": "BOOL",
+          "Comment": "Rising edge: Starts defined operationFALSE: Resets the defined operation after ready condition was reached",
+          "Inherited from": "ETrig"
+        },
+        {
+          "Scope": "Output",
+          "Name": "xDone",
+          "Type": "BOOL",
+          "Comment": "TRUE: Ready condition reached",
+          "Inherited from": "ETrig"
+        },
+        [
+          "xBusy",
+          "BOOL",
+          "TRUE: Operation is running",
+          "ETrig"
+        ],
+        [
+          "xError",
+          "BOOL",
+          "TRUE: Error condition reached",
+          "ETrig"
+        ],
+        {
+          "Scope": "Input",
+          "Name": "itfClientFilter",
+          "Type": "IVisualizationClientFilter",
+          "Comment": "With this filter, the clients, where the action should happen, are specified.Use standard filter from  GVL Globals, e.g.VU.Globals.CurrentClient, or use a own implentation of the interface.",
+          "Inherited from": "FbExecuteSingleVisuActionBase"
+        },
+        {
+          "Scope": "Output",
+          "Name": "eError",
+          "Type": "ERROR",
+          "Comment": "",
+          "Inherited from": "FbExecuteSingleVisuActionBase"
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfIterationCallback",
+          "Type": "IVisualizationClientIteration",
+          "Comment": "An instance that will be called during the iteration.NoteAs the iteration takes place within VISU_TASK please make sure that the given object is alive long enough!",
+          "Inherited from": ""
+        }
+      ]
+    }
+  ]
+}

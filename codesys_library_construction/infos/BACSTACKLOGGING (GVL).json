@@ -1,0 +1,139 @@
+{
+  "library": "CmpBACnet2",
+  "title": "BACSTACKLOGGING (GVL)",
+  "url": "https://content.helpme-codesys.com/en/libs/CmpBACnet2/Current/BACSTACKLOGGING.html",
+  "page_title": "BACSTACKLOGGING (GVL)",
+  "text": "\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "P_UDP",
+          "Type": "UDINT",
+          "Initial": "16#10000",
+          "Comment": ""
+        },
+        {
+          "Name": "P_BBMD",
+          "Type": "UDINT",
+          "Initial": "16#10000",
+          "Comment": "BACnet IP UDP Datagramms"
+        },
+        {
+          "Name": "P_DL",
+          "Type": "UDINT",
+          "Initial": "16#10000",
+          "Comment": "BACnet IP BBMD configuration"
+        },
+        {
+          "Name": "P_NET",
+          "Type": "UDINT",
+          "Initial": "16#20000",
+          "Comment": "Datalink layer communication from <> to"
+        },
+        {
+          "Name": "P_NPDU",
+          "Type": "UDINT",
+          "Initial": "16#40000",
+          "Comment": "Network layer routing info"
+        },
+        {
+          "Name": "P_APDU",
+          "Type": "UDINT",
+          "Initial": "16#80000",
+          "Comment": "Network management messages"
+        },
+        {
+          "Name": "P_RFSM",
+          "Type": "UDINT",
+          "Initial": "16#10000",
+          "Comment": "Data from application to network"
+        },
+        {
+          "Name": "P_CNSM",
+          "Type": "UDINT",
+          "Initial": "16#10000",
+          "Comment": "PTP receive frame state machine"
+        },
+        {
+          "Name": "P_MDM",
+          "Type": "UDINT",
+          "Initial": "16#20000",
+          "Comment": "PTP connection state machine"
+        },
+        {
+          "Name": "P_TSM",
+          "Type": "UDINT",
+          "Initial": "16#40000",
+          "Comment": "PTP modem handler"
+        },
+        {
+          "Name": "P_RSM",
+          "Type": "UDINT",
+          "Initial": "16#40000",
+          "Comment": "PTP transmitter state machine"
+        },
+        {
+          "Name": "P_ClientTimer",
+          "Type": "UDINT",
+          "Initial": "16#80000",
+          "Comment": "PTP receiver state machine"
+        },
+        {
+          "Name": "P_ServerTimer",
+          "Type": "UDINT",
+          "Initial": "16#80000",
+          "Comment": "TSM apdu / segmenttimer client"
+        },
+        {
+          "Name": "P_Server",
+          "Type": "UDINT",
+          "Initial": "16#100000",
+          "Comment": "TSM apdu / segmenttimer server"
+        },
+        {
+          "Name": "P_Client",
+          "Type": "UDINT",
+          "Initial": "16#200000",
+          "Comment": "TSM state machine server"
+        },
+        {
+          "Name": "P_InfoSC",
+          "Type": "UDINT",
+          "Initial": "16#400000",
+          "Comment": "TSM state machine client"
+        },
+        {
+          "Name": "P_ClntApi",
+          "Type": "UDINT",
+          "Initial": "16#800000",
+          "Comment": "Application registration"
+        },
+        {
+          "Name": "P_SrvrApi",
+          "Type": "UDINT",
+          "Initial": "16#800000",
+          "Comment": "Client API functions"
+        },
+        {
+          "Name": "P_CovInt",
+          "Type": "UDINT",
+          "Initial": "16#800000",
+          "Comment": "Server API functions"
+        },
+        {
+          "Name": "P_Dbg",
+          "Type": "UDINT",
+          "Initial": "16#800000",
+          "Comment": "COV / Intrinsic handling"
+        }
+      ]
+    }
+  ]
+}

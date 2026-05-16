@@ -1,0 +1,36 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_NCSymbolTable (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/Parser/SymbolTable/SMC_NCSymbolTable.html",
+  "page_title": "SMC_NCSymbolTable (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_NCSymbolTable IMPLEMENTS\nSMC_INCSymbolTable\nThis function block implements a symbol table for the G-Code parser.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "bExecute",
+          "Type": "BOOL",
+          "Comment": "A rising edge resets the symbol table."
+        },
+        [
+          "pvl",
+          "POINTER TOSMC_VARLIST",
+          "If there arenât variables in the CNC programm, this input is\nnot used."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "stRequestedSubprogram",
+          "Type": "STRING",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

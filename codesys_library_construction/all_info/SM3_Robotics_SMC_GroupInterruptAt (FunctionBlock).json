@@ -1,0 +1,77 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_GroupInterruptAt (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/Movement/GroupInterrupt/SMC_GroupInterruptAt.html",
+  "page_title": "SMC_GroupInterruptAt (FB)",
+  "text": "Library Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nGetVersion (Function)\nIsLibReleased (Function)\nSM3_Robotics\nBasic types\nIDENT_IN_GROUP_REF_SM3 (Alias)\nMC_CIRC_PATHCHOICE (Enum)\nMC_COORD_REF (Struct)\nMC_EXECUTION_MODE (Enum)\nMC_TRANSITION_MODE (Enum)\nSMC_AXIS_GROUP_COMPATIBILITY_OPTIONS (Struct)\nSMC_AXIS_GROUP_CONTINUE_DATA (FunctionBlock)\nSMC_AXIS_GROUP_STATE (Enum)\nSMC_CIRC_MODE (Enum)\nSMC_DYN_LIMITS (Alias)\nSMC_IDynamicCS (Interface)\nSMC_ORIENTATION_MODE (Enum)\nSMC_POS_REF (Union)\nSMC_PTP_MOVEMENT_TYPE (Enum)\nSMC_READ_TOOL_MODE (Enum)\nPOUs\nAdditional\nSMC_AxisDistanceAxes (Enum)\nSMC_AxisDistanceSubMode (Enum)\nSMC_AxisDistanceTransition (FunctionBlock)\nSMC_AxisDistanceTransitionParam (Function)\nSMC_CornerDistance (FunctionBlock)\nSMC_CornerDistanceTransitionParam (Function)\nSMC_StartVelocity (FunctionBlock)\nSMC_StartVelocityAxes (Enum)\nSMC_StartVelocityTransitionParam (Function)\nSMC_StartupAxisGroup (FunctionBlock)\nAdministrative/Configuration\nAxisGroup\nComputation\nCoordinate systems\nDynamics\nKinematics\nTrigger\nAxisGroup\nAXIS_GROUP_REF_SM3 (FunctionBlock)\nHelpers\nMovements\nDiagnostics\nMC_GroupReadActualAcceleration (FunctionBlock)\nMC_GroupReadActualPosition (FunctionBlock)\nMC_GroupReadActualVelocity (FunctionBlock)\nMC_GroupReadConfiguration (FunctionBlock)\nMC_GroupReadError (FunctionBlock)\nMC_GroupReadStatus (FunctionBlock)\nMC_ReadCoordinateTransform (FunctionBlock)\nMC_ReadKinTransform (FunctionBlock)\nSMC_GroupAddOffset (FunctionBlock)\nSMC_GroupAdditionalAxesTargetPositions (FunctionBlock)\nSMC_GroupConvertPosition (FunctionBlock)\nSMC_GroupGetContinuePosition (FunctionBlock)\nSMC_GroupGetContinueToolOffset (FunctionBlock)\nSMC_GroupReadPathAcceleration (FunctionBlock)\nSMC_GroupReadPathDynamics (FunctionBlock)\nSMC_GroupReadPathVelocity (FunctionBlock)\nSMC_GroupReadPlanningStatistics (FunctionBlock)\nSMC_GroupReadPositionInMovement (FunctionBlock)\nSMC_GroupReadRemainingTrajectoryDuration (FunctionBlock)\nSMC_GroupReadSetAcceleration (FunctionBlock)\nSMC_GroupReadSetJerk (FunctionBlock)\nSMC_GroupReadSetPosition (FunctionBlock)\nSMC_GroupReadSetVelocity (FunctionBlock)\nSMC_GroupTargetPosition (FunctionBlock)\nSMC_ReadKinTransformForAxis (FunctionBlock)\nMovement\nAdditionalAxes\nGroupInterrupt\nMC_GroupContinue (FunctionBlock)\nMC_GroupHalt (FunctionBlock)\nMC_GroupInterrupt (FunctionBlock)\nMC_GroupStop (FunctionBlock)\nMC_MoveCircularAbsolute (FunctionBlock)\nMC_MoveCircularRelative (FunctionBlock)\nMC_MoveDirectAbsolute (FunctionBlock)\nMC_MoveDirectRelative (FunctionBlock)\nMC_MoveLinearAbsolute (FunctionBlock)\nMC_MoveLinearRelative (FunctionBlock)\nSMC_GroupEnableResumeAfterError (FunctionBlock)\nSMC_GroupJog (FunctionBlock)\nSMC_GroupJog2 (FunctionBlock)\nSMC_GroupUpdateContinueData (FunctionBlock)\nSMC_GroupWait (FunctionBlock)\nSMC_MoveAdditionalAxes (FunctionBlock)\ninternal\nDivers\nKernel_CP\nFile and Project Information\nLibrary Reference\n3SLicense\nLibrary Identification\nLibrary Properties\nCmpApp\nLibrary Identification\nLibrary Properties\nCmpIecTask\nLibrary Identification\nLibrary Properties\nCmpLog\nLibrary Identification\nLibrary Properties\nFloatingPointUtils\nLibrary Identification\nLibrary Properties\nSM3_Basic\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nSM3_CPKernelDefaults\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nSM3_CommonPublic\nLibrary Identification\nLibrary Properties\nSM3_Dynamics\nLibrary Identification\nLibrary Properties\nSM3_Error\nLibrary Identification\nLibrary Properties\nSM3_RBase\nLibrary Identification\nLibrary Properties\nSM3_RCP\nLibrary Identification\nLibrary Properties\nSM3_RError\nLibrary Identification\nLibrary Properties\nSM3_Ramps\nLibrary Identification\nLibrary Properties\nSM3_Shared\nLibrary Identification\nLibrary Properties\nSM3_StringUtils\nLibrary Identification\nLibrary Properties\nSM3_TrajectoryGeneration\nLibrary Identification\nLibrary Properties\nSM3_Transformation\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysTarget\nLibrary Identification\nLibrary Properties\nSysTime\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nSM3_Robotics\nDocs\n»\nSM3_Robotics\n»\nPOUs\n»\nMovement\n»\nGroupInterrupt\n»\nSMC_GroupInterruptAt (FB)\nSMC_GroupInterruptAt (FB)\nÂ¶\nFUNCTION_BLOCK SMC_GroupInterruptAt\nThis is a variant of\nMC_GroupInterrupt\n. While\nMC_GroupInterrupt\ninterrupts\nthe on-going motion immediately, this function block allows specifying the\nexact position on the path where the motion shall be interrupted.\nNote\nThe position on the path has to be known, i.e. the movement that shall\nbe interrupted has to already be commanded before this function block\nis executed. Otherwise, an error will be reported.\nThis function block does not reverse on the path. If it is not\npossible to reach the specified position without a reversal, the\non-going motion is interrupted at the nearest possible position.\nInOut:\nScope\nName\nType\nComment\nInout\nAxisGroup\nAXIS_GROUP_REF_SM3\nReference to a group of axis\ncontinueData\nSMC_AXIS_GROUP_CONTINUE_DATA\nWritten when getting\nDone\nInput\nExecute\nBOOL\nA rising edge starts the function block.\nPosition\nSMC_GroupInterruptPosition\nThe position where the ongoing motion shall be interrupted.\nOutput\nDone\nBOOL\nZero velocity reached\nBusy\nBOOL\nThe FB is not finished\nInterrupting\nBOOL\nSignals that the FB is currently interrupting\nCommandAborted\nBOOL\nCommand is aborted by another command\nError\nBOOL\nSignals that an error has occurred within the function block\nErrorID\nSMC_ERROR\nError identification\nmvtIdInterruptPosition\nSMC_Movement_Id\nMovemnet Id corresponding to the interrupt position",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "AxisGroup",
+          "Type": "AXIS_GROUP_REF_SM3",
+          "Comment": "Reference to a group of axis"
+        },
+        [
+          "continueData",
+          "SMC_AXIS_GROUP_CONTINUE_DATA",
+          "Written when gettingDone"
+        ],
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Comment": "A rising edge starts the function block."
+        },
+        [
+          "Position",
+          "SMC_GroupInterruptPosition",
+          "The position where the ongoing motion shall be interrupted."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Done",
+          "Type": "BOOL",
+          "Comment": "Zero velocity reached"
+        },
+        [
+          "Busy",
+          "BOOL",
+          "The FB is not finished"
+        ],
+        [
+          "Interrupting",
+          "BOOL",
+          "Signals that the FB is currently interrupting"
+        ],
+        [
+          "CommandAborted",
+          "BOOL",
+          "Command is aborted by another command"
+        ],
+        [
+          "Error",
+          "BOOL",
+          "Signals that an error has occurred within the function block"
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ],
+        [
+          "mvtIdInterruptPosition",
+          "SMC_Movement_Id",
+          "Movemnet Id corresponding to the interrupt position"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_GetTanVec3D (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/GeoInfo-Help-Functions/SMC_GetTanVec3D.html",
+  "page_title": "SMC_GetTanVec3D (FUN)",
+  "text": "\nFUNCTION SMC_GetTanVec3D : BOOL\nWrites the tangential vector at\nt\n[0,\n1]\non\npg\nin\npv\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SMC_GetTanVec3D",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Input",
+          "Name": "pv",
+          "Type": "POINTER TO SMC_VECTOR3D"
+        },
+        [
+          "pg",
+          "POINTER TOSMC_GEOINFO"
+        ],
+        [
+          "t",
+          "LREAL"
+        ]
+      ]
+    }
+  ]
+}

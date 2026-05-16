@@ -1,0 +1,123 @@
+{
+  "library": "DNP3",
+  "title": "AnalogOutputPointObserver (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/PointObserver/AnalogOutputPointObserver.html",
+  "page_title": "AnalogOutputPointObserver (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL AnalogOutputPointObserver EXTENDS\nPointObserver\nIMPLEMENTS IAnalogOutputPointObserver\nDNP3 Master datapoint observer for a datapoint of DNP3 object group 40 âanalog output statusâ.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment",
+        "Inherited from"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "itfMaster",
+          "Type": "IMaster",
+          "Initial": "",
+          "Comment": "Connect to a Master.",
+          "Inherited from": "PointObserver"
+        },
+        [
+          "xEnable",
+          "BOOL",
+          "",
+          "Enable the PointObserver.",
+          "PointObserver"
+        ],
+        [
+          "pointNumber",
+          "UINT",
+          "",
+          "Datapoint number.",
+          "PointObserver"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "xError",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "An error occured.",
+          "Inherited from": "PointObserver"
+        },
+        [
+          "eErrorID",
+          "Error",
+          "",
+          "The specific error.",
+          "PointObserver"
+        ],
+        [
+          "modified",
+          "BOOL",
+          "",
+          "Data received since last call.",
+          "PointObserver"
+        ],
+        [
+          "sequenceNumber",
+          "UDINT",
+          "",
+          "Sequence number of received data.",
+          "PointObserver"
+        ],
+        {
+          "Scope": "Input",
+          "Name": "valueType",
+          "Type": "AnyNumberType",
+          "Initial": "AnyNumberType.TYPE_REAL",
+          "Comment": "The value type must be chosen.",
+          "Inherited from": ""
+        },
+        [
+          "valuePointer",
+          "POINTER TO BYTE",
+          "0",
+          "The POINTER TO value representation of output variable value\ncan be used if needed.",
+          ""
+        ],
+        [
+          "enableClip",
+          "BOOL",
+          "FALSE",
+          "Allow to clip the received value to numerical range determined by valueType.\nIf set to FALSE, an error is signaled, if value received from Outstation\nis out of range which can be represented by output variable value.",
+          ""
+        ],
+        {
+          "Scope": "Output",
+          "Name": "value",
+          "Type": "AnyNumber",
+          "Initial": "",
+          "Comment": "Value received from Outstation.\nType must be chosen by setting input valueType.\nThe AnyNumber POINTER TO value representation can be used if needed, to do so configure input valuePointer accordingly.",
+          "Inherited from": ""
+        },
+        [
+          "flags",
+          "USINT",
+          "",
+          "Flags received from Outstation. Flag values are ORâdcombinations of the following:DNPDEFS_DBAS_FLAG_ON_LINE - the point has been readsuccessfullyDNPDEFS_DBAS_FLAG_RESTART - the field device that originated thedata object has been restarted. This device may be the deviced\nreporting this data object.DNPDEFS_DBAS_FLAG_COMM_LOST - the device reporting this data objecthas lost communication with the originator of the data objectDNPDEFS_DBAS_FLAG_REMOTE_FORCED - the state of the binary objecthas been forced to its current state at the originating deviceDNPDEFS_DBAS_FLAG_LOCAL_FORCED - the state of the binary objecthas been forced to its current state at the device reporting\nthis data objectDNPDEFS_DBAS_FLAG_OVER_RANGE - the digitized signal or calculationis greater than the type specified in TMWTYPES_ANALOG_VALUE. If the\nSCL determines that the value returned cannot fit in the type\nspecified by the object variation read it will set this OVER_RANGE bit.DNPDEFS_DBAS_FLAG_REFERENCE_CHK - the reference signal used todigitize the signal is not stable, and the resulting digitized\nvalue may not be correct.",
+          ""
+        ],
+        [
+          "hasTimeStamp",
+          "BOOL",
+          "",
+          "Update received from Outstation has a valid time stamp.",
+          ""
+        ],
+        [
+          "timeStamp",
+          "LDATE_AND_TIME",
+          "",
+          "Time stamp reported - valid if hasTimeStamp = TRUE, invalid\notherwise.",
+          ""
+        ]
+      ]
+    }
+  ]
+}

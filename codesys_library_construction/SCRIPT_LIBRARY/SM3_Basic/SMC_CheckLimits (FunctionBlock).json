@@ -1,0 +1,71 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_CheckLimits (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/Diagnostics/SMC_CheckLimits.html",
+  "page_title": "SMC_CheckLimits (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_CheckLimits\nThis function block may be employed for checking whether the current set points\nof the drive exceed the maximum values configured in the controller.\nThe result of the check will be indicated by output\nbLimitsExceeded\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "bEnable",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUE: Starts the execution of function block."
+        },
+        [
+          "bCheckVel",
+          "BOOL",
+          "TRUE",
+          "TRUE: Checks the velocity."
+        ],
+        [
+          "bCheckAccDec",
+          "BOOL",
+          "FALSE",
+          "TRUE: Checks the set acceleration and the set\ndeceleration."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bBusy",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUE: Execution of function block has nor been finished\nyet."
+        },
+        [
+          "bError",
+          "BOOL",
+          "",
+          "TRUE: Error has occurred within the function block."
+        ],
+        [
+          "iErrorID",
+          "SMC_ERROR",
+          "",
+          "Error identification"
+        ],
+        [
+          "bLimitsExceeded",
+          "BOOL",
+          "",
+          "TRUE: The current set points exceed the limits which are defined within the PLC configuration\nand stored withinAXIS_REF_SM3(fSWMaxVelocity,fSWMaxAccelerationorfSWMaxDeceleration)."
+        ]
+      ]
+    }
+  ]
+}

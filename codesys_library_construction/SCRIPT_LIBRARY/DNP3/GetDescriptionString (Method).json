@@ -1,0 +1,23 @@
+{
+  "library": "DNP3",
+  "title": "GetDescriptionString (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Outstation/Points/pou-Point/GetDescriptionString.html",
+  "page_title": "Point.GetDescriptionString (METH)",
+  "text": "\nMETHOD GetDescriptionString : STRING\nReturns Point description as STRING\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetDescriptionString",
+          "Type": "STRING"
+        }
+      ]
+    }
+  ]
+}

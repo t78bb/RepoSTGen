@@ -1,0 +1,57 @@
+{
+  "library": "DNP3",
+  "title": "MasterConfigurationIP (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/MasterConfigurationIP.html",
+  "page_title": "MasterConfigurationIP (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL MasterConfigurationIP EXTENDS\nMasterConfiguration\nIMPLEMENTS IMasterConfigurationIP\nFunction block representing an Master IP configuration.\nA Master needs to be configured regarding its\noutstation address\neither IP- or COM-settings\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment",
+        "Inherited from"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "address",
+          "Type": "UINT",
+          "Initial": "0",
+          "Comment": "The master address.",
+          "Inherited from": "MasterConfiguration"
+        },
+        [
+          "name",
+          "STRING",
+          "",
+          "The master name.",
+          "MasterConfiguration"
+        ],
+        [
+          "outstationAddress",
+          "UINT",
+          "0",
+          "The outstation address where to connect to.",
+          "MasterConfiguration"
+        ],
+        [
+          "ipAddress",
+          "STRING",
+          "â127.0.0.1â",
+          "The IP address used by the outstation.",
+          ""
+        ],
+        [
+          "port",
+          "UINT",
+          "20000",
+          "The port the outstation is reachable.",
+          ""
+        ]
+      ]
+    }
+  ]
+}

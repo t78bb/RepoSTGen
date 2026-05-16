@@ -1,0 +1,36 @@
+{
+  "library": "AlarmManager",
+  "title": "SetAcknowledge (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/pou-IAlarm8/SetAcknowledge.html",
+  "page_title": "IAlarm8.SetAcknowledge (METH)",
+  "text": "\nMETHOD SetAcknowledge : BOOL\nFunction to directly acknowledge an alarm with additional information as an alternative to IAlarmHandler.AcknowledgeOneOfGroup.\nAdd a comment from a certain user or leave both fields empty if no comment is needed.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetAcknowledge",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "pwsComment",
+          "Type": "POINTER TO WSTRING",
+          "Comment": "Optional: Provide additional information about the reason of\nthe acknowledgement."
+        },
+        [
+          "pwsUserId",
+          "POINTER TO WSTRING",
+          "Optional: Provide a user that made the comment."
+        ]
+      ]
+    }
+  ]
+}

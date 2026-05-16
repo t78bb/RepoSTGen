@@ -1,0 +1,28 @@
+{
+  "library": "MemoryUtils",
+  "title": "Malloc (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/MemoryUtils/Current/MemoryUtils/Functionblocks/pou-MemoryManager/Public/Malloc.html",
+  "page_title": "MemoryManager.Malloc (METH)",
+  "text": "\nMETHOD Malloc : POINTER TO BYTE\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "Malloc",
+          "Type": "POINTER TO BYTE"
+        },
+        {
+          "Scope": "Output",
+          "Name": "eError",
+          "Type": "ERROR"
+        }
+      ]
+    }
+  ]
+}

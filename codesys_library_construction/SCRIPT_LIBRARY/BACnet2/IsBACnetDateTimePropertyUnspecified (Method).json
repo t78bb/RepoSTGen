@@ -1,0 +1,31 @@
+{
+  "library": "BACnet2",
+  "title": "IsBACnetDateTimePropertyUnspecified (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/BACnetObjects/base/pou-BACnetObjectBase/Utilities/typed-property-access/IsBACnetDateTimePropertyUnspecified.html",
+  "page_title": "BACnetObjectBase.IsBACnetDateTimePropertyUnspecified (METH)",
+  "text": "\nMETHOD IsBACnetDateTimePropertyUnspecified : BOOL\nChecks, if the specified IEC_BACNET_DATE_TIME-property (propID) of this BACnet-Object is set to unspecified.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "IsBACnetDateTimePropertyUnspecified",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "propID",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_ID",
+          "Comment": "The ID of the property to check."
+        }
+      ]
+    }
+  ]
+}

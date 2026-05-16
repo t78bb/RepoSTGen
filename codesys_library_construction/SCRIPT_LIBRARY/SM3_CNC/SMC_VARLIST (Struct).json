@@ -1,0 +1,37 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_VARLIST (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_Data-types/File/SMC_VARLIST.html",
+  "page_title": "SMC_VARLIST (STRUCT)",
+  "text": "\nTYPE SMC_VARLIST : STRUCT\nThe standard IEC 61131-3 provides no possibility to determine the value\nof a variable by its symbolic name represented as a string.\nThis however is necessary, if the variable functionality, which is\navailable for the user by\nSMC_CNC_REF\n, also should be available for\nreading in the CNC program from a file.\nThis can be managed by using the structure\nSMC_VARLIST\n.\nExample\nAssume a CNC program in a file, containing the two variables\ng_rTestX\n(REAL) and\ng_byCommand\n(BYTE):\nN0\nG$g_byCommand$\nX$g_rTestX$\nIn order to link this syntax to IEC variables and to make the g-code understandable for\nSMC_ReadNCFile\n,\none would use\nSMC_VARLIST\nand declare e.g. the following:\ng_byCommand\n:\nBYTE\n;\ng_rTest\n:\nREAL\n;\nasv\n:\nARRAY\n[0..1]\nOF\nSMC_SingleVar\n:=\n[\n(strVarName := 'G_BYCOMMAND', eVarType := SMC_TYPE_BYTE, pAdr := ADR(g_byCommand)),\n(strVarName := 'G_RTESTX', eVarType := SMC_TYPE_REAL, pAdr := ADR(g_rTest))]\n;\nvl\n:\nSMC_VarList\n:=\n(\nwNumberVars\n:=\n2\n,\npsvVarList\n:=\nADR\n(\nasv\n[0]\n));\nIf a variable cannot be replaced,\nSMC_ReadNCFile\nwill return an error.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "wVarListID",
+          "Type": "WORD",
+          "Initial": "16#BBFA",
+          "Comment": "Internal use"
+        },
+        {
+          "Name": "wNumberVars",
+          "Type": "WORD",
+          "Initial": "0",
+          "Comment": "Contains the number of all used variables"
+        },
+        {
+          "Name": "psvVarList",
+          "Type": "POINTER TOSMC_SINGLEVAR",
+          "Initial": "0",
+          "Comment": "Pointer to the first element of an array ofSMC_SingleVar"
+        }
+      ]
+    }
+  ]
+}

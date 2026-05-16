@@ -1,0 +1,189 @@
+{
+  "library": "MQTT Client SL",
+  "title": "MQTT_REASON_CODE (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/MQTT Client SL/Current/MQTT-Client/Common/Enums/V5/MQTT_REASON_CODE.html",
+  "page_title": "MQTT_REASON_CODE (ENUM)",
+  "text": "\nTYPE MQTT_REASON_CODE :\nMQTT V5 reason codes\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Name": "Success",
+          "Initial": "0"
+        },
+        {
+          "Name": "Granted_QoS_1",
+          "Initial": "1"
+        },
+        {
+          "Name": "Granted_QoS_2",
+          "Initial": "2"
+        },
+        {
+          "Name": "Disconnect_with_Will_Message",
+          "Initial": "4"
+        },
+        {
+          "Name": "No_matching_subscribers",
+          "Initial": "16"
+        },
+        {
+          "Name": "No_subscription_existed",
+          "Initial": "17"
+        },
+        {
+          "Name": "Continue_authentication",
+          "Initial": "24"
+        },
+        {
+          "Name": "Re_authenticate",
+          "Initial": "25"
+        },
+        {
+          "Name": "Unspecified_error",
+          "Initial": "128"
+        },
+        {
+          "Name": "Malformed_Packet",
+          "Initial": "129"
+        },
+        {
+          "Name": "Protocol_Error",
+          "Initial": "130"
+        },
+        {
+          "Name": "Implementation_specific_error",
+          "Initial": "131"
+        },
+        {
+          "Name": "Unsupported_Protocol_Version",
+          "Initial": "132"
+        },
+        {
+          "Name": "Client_Identifier_not_valid",
+          "Initial": "133"
+        },
+        {
+          "Name": "Bad_User_Name_or_Password",
+          "Initial": "134"
+        },
+        {
+          "Name": "Not_authorized",
+          "Initial": "135"
+        },
+        {
+          "Name": "Server_unavailable",
+          "Initial": "136"
+        },
+        {
+          "Name": "Server_busy",
+          "Initial": "137"
+        },
+        {
+          "Name": "Banned",
+          "Initial": "138"
+        },
+        {
+          "Name": "Server_shutting_down",
+          "Initial": "139"
+        },
+        {
+          "Name": "Bad_authentication_method",
+          "Initial": "140"
+        },
+        {
+          "Name": "Keep_Alive_timeout",
+          "Initial": "141"
+        },
+        {
+          "Name": "Session_taken_over",
+          "Initial": "142"
+        },
+        {
+          "Name": "Topic_Filter_invalid",
+          "Initial": "143"
+        },
+        {
+          "Name": "Topic_Name_invalid",
+          "Initial": "144"
+        },
+        {
+          "Name": "Packet_Identifier_in_use",
+          "Initial": "145"
+        },
+        {
+          "Name": "Packet_Identifier_not_found",
+          "Initial": "146"
+        },
+        {
+          "Name": "Receive_Maximum_exceeded",
+          "Initial": "147"
+        },
+        {
+          "Name": "Topic_Alias_invalid",
+          "Initial": "148"
+        },
+        {
+          "Name": "Packet_too_large",
+          "Initial": "149"
+        },
+        {
+          "Name": "Message_rate_too_high",
+          "Initial": "150"
+        },
+        {
+          "Name": "Quota_exceeded",
+          "Initial": "151"
+        },
+        {
+          "Name": "Administrative_action",
+          "Initial": "152"
+        },
+        {
+          "Name": "Payload_format_invalid",
+          "Initial": "153"
+        },
+        {
+          "Name": "Retain_not_supported",
+          "Initial": "154"
+        },
+        {
+          "Name": "QoS_not_supported",
+          "Initial": "155"
+        },
+        {
+          "Name": "Use_another_server",
+          "Initial": "156"
+        },
+        {
+          "Name": "Server_moved",
+          "Initial": "157"
+        },
+        {
+          "Name": "Shared_Subscriptions_not_supported",
+          "Initial": "158"
+        },
+        {
+          "Name": "Connection_rate_exceeded",
+          "Initial": "159"
+        },
+        {
+          "Name": "Maximum_connect_time",
+          "Initial": "160"
+        },
+        {
+          "Name": "Subscription_Identifiers_not_supported",
+          "Initial": "161"
+        },
+        {
+          "Name": "Wildcard_Subscriptions_not_supported",
+          "Initial": "162"
+        }
+      ]
+    }
+  ]
+}

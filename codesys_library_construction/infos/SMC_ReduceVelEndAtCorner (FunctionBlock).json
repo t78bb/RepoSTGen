@@ -1,0 +1,94 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_ReduceVelEndAtCorner (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/SoftMotion-Function-Blocks/SMC_ReduceVelEndAtCorner.html",
+  "page_title": "SMC_ReduceVelEndAtCorner (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_ReduceVelEndAtCorner\nReduces the end velocity if there is a corner between two consecutive\npath elements.\nA corner is a difference in tangents or a difference in the velocity\nof the additional axes A/B/C.\nThe velocity is reduced linearly from the programmed velocity to zero\nas the angle between the tangents goes from\ndMinAngleToAct\nto\ndAngleTol\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "bExecute",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Starts on the rising edge"
+        },
+        [
+          "poqDataIn",
+          "POINTER TOSMC_OUTQUEUE",
+          "",
+          "Input path queue"
+        ],
+        [
+          "nSizeOutQueue",
+          "UDINT",
+          "",
+          "The size ofbyBufferOutQueuein bytes"
+        ],
+        [
+          "pbyBufferOutQueue",
+          "POINTER TO ARRAY [0..0]\nOF SMC_GEOINFO",
+          "",
+          "The buffer for the output queue"
+        ],
+        [
+          "dAngleTol",
+          "LREAL",
+          "0.1",
+          "The maximum angle tolerance (in angular degrees).  If the actual\nangle between two elements is equal to or larger than this value,\nthe end velocity is reduced to zero.NoteUse the same value here as for input dAngleTol ofSMC_CheckVelocities.\nThe value must be positive."
+        ],
+        [
+          "dMinAngleToAct",
+          "LREAL",
+          "",
+          "The minimum angle (in angular degrees).\nIf the actual angle between two elements is not greater than this\nvalue, the end velocity is not reduced.\nThe value must be less thandAngleToland non-negative."
+        ],
+        [
+          "dMaxVelDifferenceABC",
+          "LREAL",
+          "1",
+          "The maximum allowed velocity difference (or velocity jump) of the\nadditional axes A,B,C between two consecutive elements.\nThe end velocity will be reduced until the actual velocity difference is\nat most this value.\nThe value must be non-negative."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bDone",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Indicates the entire input path has been processed"
+        },
+        [
+          "bBusy",
+          "BOOL",
+          "",
+          "Indicates the function block is still busy processing"
+        ],
+        [
+          "bError",
+          "BOOL",
+          "",
+          "An error has occurred"
+        ],
+        [
+          "wErrorID",
+          "SMC_ERROR",
+          "",
+          "Error-ID"
+        ],
+        [
+          "poqDataOut",
+          "POINTER TOSMC_OUTQUEUE",
+          "",
+          "The queue for the output path"
+        ]
+      ]
+    }
+  ]
+}

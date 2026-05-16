@@ -1,0 +1,8 @@
+{
+  "library": "AlarmManager",
+  "title": "IAlarmGroup (Interface)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/IAlarmGroup.html",
+  "page_title": "IAlarmGroup (ITF)",
+  "text": "\nINTERFACE IAlarmGroup EXTENDS __SYSTEM.IQueryInterface\nRepresents an alarm group of the alarm configuration\nMethods:\nGetInternalID\nGetName\nStructure:\nGetInternalID (Method)\nGetName (Method)",
+  "tables": []
+}

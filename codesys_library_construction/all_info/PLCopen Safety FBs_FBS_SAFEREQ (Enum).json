@@ -1,0 +1,78 @@
+{
+  "library": "PLCopen Safety FBs",
+  "title": "FBS_SAFEREQ (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/PLCopen Safety FBs/Current/PLCopenSafetyFBs/Enums/FBS_SAFEREQ.html",
+  "page_title": "FBS_SAFEREQ (ENUM)",
+  "text": "PLCopenSafetyFBs\nEnums\nFBS_ANTI (Enum)\nFBS_EDM (Enum)\nFBS_ENSWITCH (Enum)\nFBS_ENSWITCH2 (Enum)\nFBS_EQUI (Enum)\nFBS_ESPE (Enum)\nFBS_ESTOP (Enum)\nFBS_GUARD (Enum)\nFBS_GUARDLOCK2 (Enum)\nFBS_MODESEL (Enum)\nFBS_OUTCONTROL (Enum)\nFBS_PSE (Enum)\nFBS_RESBUT (Enum)\nFBS_SAFEREQ (Enum)\nFBS_TESTSEN (Enum)\nFBS_TWOHAND (Enum)\nFunction Blocks\nSF_Antivalent (FunctionBlock)\nSF_EDM (FunctionBlock)\nSF_ESPE (FunctionBlock)\nSF_EmergencyStop (FunctionBlock)\nSF_EnableSwitch (FunctionBlock)\nSF_EnableSwitch_2 (FunctionBlock)\nSF_Equivalent (FunctionBlock)\nSF_Guard (FunctionBlock)\nSF_GuardLocking_2 (FunctionBlock)\nSF_ModeSelector (FunctionBlock)\nSF_OutControl (FunctionBlock)\nSF_PSE (FunctionBlock)\nSF_ResetButton (FunctionBlock)\nSF_SafetyRequest (FunctionBlock)\nSF_TestableSafetySensor (FunctionBlock)\nSF_TwoHandControlTypeII (FunctionBlock)\nSF_TwoHandControlTypeIII (FunctionBlock)\nFile and Project Information\nLibrary Reference\nStandard\nLibrary Identification\nLibrary Properties\nSysTimeCore\nLibrary Identification\nLibrary Properties\nPLCopen Safety FBs\nDocs\n»\nPLCopenSafetyFBs\n»\nEnums\n»\nFBS_SAFEREQ (ENUM)\nFBS_SAFEREQ (ENUM)\nÂ¶\nTYPE FBS_SAFEREQ :\nDefinition of SF_SafetyRequest function block states and its diagnostic values.\nAttributes:\nqualified_only\nInOut:\nName\nInitial\nComment\nIDLE\n16#0\nThe function block is not active (initial state).\nINIT\n16#8401\nState after Activate is set to TRUE or after a rising\ntrigger at Reset.\nWAIT_FOR_CONF_OPMODE\n16#8804\nOperation mode with Acknowledge of safe mode.\nWAIT_FOR_CONF\n16#8002\nWaiting for confirmation from the drive (system interface).\nOP_MODE\n16#8802\nOperation mode without Acknowledge of safe mode.\nWAIT_FOR_OPMODE\n16#8004\nError was removed. However S_OpMode must be set to TRUE or\nS_Acknowledge must become TRUE before the FB can be\ncontinued.\nSAFE_MODE\n16#8000\nActuator is in a safe mode.\nERR_ACK_LOST\n16#C010\nAcknowledgment lost while in the Safe state.\nERR_MONTIME\n16#C020\nS_OpMode request could not be completed within the\nmonitoring time.\nERR_RESET_1\n16#C001\nStatic Reset detected in state 8401 Init.\nERR_RESET_2\n16#C014\nStatic Reset detected in state C002 (Acknowledge Lost).\nERR_RESET_3\n16#C011\nStatic Reset detected in state C003 (MonitoringTime\nElapsed).",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "IDLE",
+          "Initial": "16#0",
+          "Comment": "The function block is not active (initial state)."
+        },
+        {
+          "Name": "INIT",
+          "Initial": "16#8401",
+          "Comment": "State after Activate is set to TRUE or after a rising\ntrigger at Reset."
+        },
+        {
+          "Name": "WAIT_FOR_CONF_OPMODE",
+          "Initial": "16#8804",
+          "Comment": "Operation mode with Acknowledge of safe mode."
+        },
+        {
+          "Name": "WAIT_FOR_CONF",
+          "Initial": "16#8002",
+          "Comment": "Waiting for confirmation from the drive (system interface)."
+        },
+        {
+          "Name": "OP_MODE",
+          "Initial": "16#8802",
+          "Comment": "Operation mode without Acknowledge of safe mode."
+        },
+        {
+          "Name": "WAIT_FOR_OPMODE",
+          "Initial": "16#8004",
+          "Comment": "Error was removed. However S_OpMode must be set to TRUE or\nS_Acknowledge must become TRUE before the FB can be\ncontinued."
+        },
+        {
+          "Name": "SAFE_MODE",
+          "Initial": "16#8000",
+          "Comment": "Actuator is in a safe mode."
+        },
+        {
+          "Name": "ERR_ACK_LOST",
+          "Initial": "16#C010",
+          "Comment": "Acknowledgment lost while in the Safe state."
+        },
+        {
+          "Name": "ERR_MONTIME",
+          "Initial": "16#C020",
+          "Comment": "S_OpMode request could not be completed within the\nmonitoring time."
+        },
+        {
+          "Name": "ERR_RESET_1",
+          "Initial": "16#C001",
+          "Comment": "Static Reset detected in state 8401 Init."
+        },
+        {
+          "Name": "ERR_RESET_2",
+          "Initial": "16#C014",
+          "Comment": "Static Reset detected in state C002 (Acknowledge Lost)."
+        },
+        {
+          "Name": "ERR_RESET_3",
+          "Initial": "16#C011",
+          "Comment": "Static Reset detected in state C003 (MonitoringTime\nElapsed)."
+        }
+      ]
+    }
+  ]
+}

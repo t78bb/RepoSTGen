@@ -1,0 +1,32 @@
+{
+  "library": "Standard64",
+  "title": "AtomicWriteLReal (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/Standard64/Current/Atomic-Read-Write-Functions/AtomicWriteLReal.html",
+  "page_title": "AtomicWriteLReal (FUN)",
+  "text": "\nFUNCTION AtomicWriteLReal : BOOL\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "AtomicWriteLReal",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Input",
+          "Name": "pDest",
+          "Type": "POINTER TO LREAL"
+        },
+        [
+          "lrValue",
+          "LREAL"
+        ]
+      ]
+    }
+  ]
+}

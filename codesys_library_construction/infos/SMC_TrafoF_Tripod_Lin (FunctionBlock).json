@@ -1,0 +1,107 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_TrafoF_Tripod_Lin (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_Trafo_POUs/SoftMotion-Transformations/Parallel-Systems/Tripod_Lin/SMC_TrafoF_Tripod_Lin.html",
+  "page_title": "SMC_TrafoF_Tripod_Lin (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_TrafoF_Tripod_Lin\nForward transformation for tripod\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "DriveA",
+          "Type": "AXIS_REF_SM3",
+          "Initial": "",
+          "Comment": "The 0 position of DriveA\nis at the point where the axis, along which\nthe drive moves, intersects the plane where\nthedOuterRadiusis measured. Can be\nadjusted bydOffsetA."
+        },
+        [
+          "DriveB",
+          "AXIS_REF_SM3",
+          "",
+          "The 0 position of DriveB\nis at the point where the axis, along which\nthe drive moves, intersects the plane where\nthedOuterRadiusis measured. Can be\nadjusted bydOffsetB."
+        ],
+        [
+          "DriveC",
+          "AXIS_REF_SM3",
+          "",
+          "The 0 position of DriveC\nis at the point where the axis, along which\nthe drive moves, intersects the plane where\nthedOuterRadiusis measured. Can be\nadjusted bydOffsetC."
+        ],
+        {
+          "Scope": "Input",
+          "Name": "dOuterRadius",
+          "Type": "LREAL",
+          "Initial": "",
+          "Comment": "Radius of outer ring"
+        },
+        [
+          "dInnerRadius",
+          "LREAL",
+          "",
+          "Radius of inner ring"
+        ],
+        [
+          "dLength",
+          "LREAL",
+          "",
+          "Length of linkage"
+        ],
+        [
+          "dDistance",
+          "LREAL",
+          "",
+          "Distance between the two connecting rods for each arm"
+        ],
+        [
+          "dRotationOffset",
+          "LREAL",
+          "0",
+          "Angle between x-axis and first rail"
+        ],
+        [
+          "dAxisAngle",
+          "LREAL",
+          "",
+          "Absolute angle between rails and z-axis"
+        ],
+        [
+          "dOffsetA",
+          "LREAL",
+          "",
+          "Offset added to the position ofDriveAbefore the transformation\nis performed."
+        ],
+        [
+          "dOffsetB",
+          "LREAL",
+          "",
+          "Offset added to the position ofDriveBbefore the transformation\nis performed."
+        ],
+        [
+          "dOffsetC",
+          "LREAL",
+          "",
+          "Offset added to the position ofDriveCbefore the transformation\nis performed."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "pi",
+          "Type": "SMC_PosInfo",
+          "Initial": "",
+          "Comment": "Position of the inner ringâs center (x,y,z)"
+        },
+        [
+          "bError",
+          "BOOL",
+          "",
+          ""
+        ]
+      ]
+    }
+  ]
+}

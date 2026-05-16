@@ -1,0 +1,476 @@
+{
+  "metadata": {
+    "comparison_timestamp": "2026-03-03T15:22:32.740284",
+    "baseline_file": "F:\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\evaluation_summary_20260123_160251.json",
+    "compare_file": "F:\\项目级st补全\\repo_gen_project\\output\\20260228_全流程1\\evaluation_summary_20260302_022406.json",
+    "baseline_timestamp": "2026-01-23T16:02:51.195395",
+    "compare_timestamp": null
+  },
+  "overall_comparison": {
+    "total_projects": {
+      "baseline": 30,
+      "compare": 25,
+      "diff": -5
+    },
+    "success_count": {
+      "baseline": 25,
+      "compare": 0,
+      "diff": -25
+    },
+    "failed_count": {
+      "baseline": 5,
+      "compare": 0,
+      "diff": -5
+    },
+    "total_files": {
+      "baseline": 98,
+      "compare": 0,
+      "diff": -98
+    },
+    "average_scores": {
+      "codebleu": {
+        "baseline": 0.46018,
+        "compare": 0.0,
+        "absolute_diff": -0.46018,
+        "relative_diff_percent": -100.0
+      },
+      "ngram_match_score": {
+        "baseline": 0.160742,
+        "compare": 0.0,
+        "absolute_diff": -0.160742,
+        "relative_diff_percent": -100.0
+      },
+      "weighted_ngram_match_score": {
+        "baseline": 0.321391,
+        "compare": 0.0,
+        "absolute_diff": -0.321391,
+        "relative_diff_percent": -100.0
+      },
+      "syntax_match_score": {
+        "baseline": 0.618024,
+        "compare": 0.0,
+        "absolute_diff": -0.618024,
+        "relative_diff_percent": -100.0
+      },
+      "dataflow_match_score": {
+        "baseline": 0.516072,
+        "compare": 0.0,
+        "absolute_diff": -0.516072,
+        "relative_diff_percent": -100.0
+      }
+    }
+  },
+  "project_lists_comparison": {
+    "success": {
+      "baseline_count": 25,
+      "compare_count": 0,
+      "common": [],
+      "only_in_baseline": [
+        "repoeval_Builder_Application_RPI",
+        "repoeval_Command1",
+        "repoeval_Decorator_Application",
+        "repoeval_GreatExampleOfAdvantages",
+        "repoeval_Interation_HowTo",
+        "repoeval_PID_controller",
+        "repoeval_PT1Filter",
+        "repoeval_ProductionLine",
+        "repoeval_Proxy_Application",
+        "repoeval_Robotics_DynamicModel",
+        "repoeval_Wrappers",
+        "repoeval_assembly-station",
+        "repoeval_barrier",
+        "repoeval_counter",
+        "repoeval_electronic_cam_motion",
+        "repoeval_electronic_gear_motion",
+        "repoeval_elevator",
+        "repoeval_four-level_elevator_control",
+        "repoeval_isScaleOutput",
+        "repoeval_measurement_control",
+        "repoeval_open-type_dual-axis_winding_machine",
+        "repoeval_plc_hello_mixing_tank",
+        "repoeval_readwriteFile",
+        "repoeval_three-axis_CNC_motion",
+        "repoeval_traffic_light"
+      ],
+      "only_in_compare": [],
+      "newly_successful": [],
+      "newly_failed": []
+    },
+    "failed": {
+      "baseline_count": 5,
+      "compare_count": 0,
+      "common": [],
+      "only_in_baseline": [
+        "repoeval_FB50_虚轴控制",
+        "repoeval_can",
+        "repoeval_core",
+        "repoeval_healthydata",
+        "repoeval_modbus"
+      ],
+      "only_in_compare": []
+    }
+  },
+  "project_statistics_comparison": {
+    "repoeval_Builder_Application_RPI": {
+      "status": "缺失项目",
+      "baseline_exists": true,
+      "compare_exists": false,
+      "total_files": 5,
+      "successful_evaluations": 5,
+      "average_scores": {
+        "codebleu": 0.5834732716064638,
+        "ngram_match_score": 0.2706830030980696,
+        "weighted_ngram_match_score": 0.5144904334124831,
+        "syntax_match_score": 0.6309166196122717,
+        "dataflow_match_score": 0.7178030303030304
+      }
+    },
+    "repoeval_Command1": {
+      "status": "缺失项目",
+      "baseline_exists": true,
+      "compare_exists": false,
+      "total_files": 12,
+      "successful_evaluations": 12,
+      "average_scores": {
+        "codebleu": 0.5751326631621005,
+        "ngram_match_score": 0.1193529676131097,
+        "weighted_ngram_match_score": 0.6381537604896285,
+        "syntax_match_score": 0.5615424430641821,
+        "dataflow_match_score": 0.06481481481481481
+      }
+    },
+    "repoeval_Decorator_Application": {
+      "status": "缺失项目",
+      "baseline_exists": true,
+      "compare_exists": false,
+      "total_files": 8,
+      "successful_evaluations": 8,
+      "average_scores": {
+        "codebleu": 0.47846967567649834,
+        "ngram_match_score": 0.13027634994052528,
+        "weighted_ngram_match_score": 0.29477397409643114,
+        "syntax_match_score": 0.5900253048079135,
+        "dataflow_match_score": 0.5238030738611233
+      }
+    },
+    "repoeval_GreatExampleOfAdvantages": {
+      "status": "缺失项目",
+      "baseline_exists": true,
+      "compare_exists": false,
+      "total_files": 2,
+      "successful_evaluations": 2,
+      "average_scores": {
+        "codebleu": 0.3546692389312942,
+        "ngram_match_score": 0.010456620533267907,
+        "weighted_ngram_match_score": 0.030644092638339133,
+        "syntax_match_score": 0.6384458077709612,
+        "dataflow_match_score": 0.2391304347826087
+      }
+    },
+    "repoeval_Interation_HowTo": {
+      "status": "缺失项目",
+      "baseline_exists": true,
+      "compare_exists": false,
+      "total_files": 2,
+      "successful_evaluations": 2,
+      "average_scores": {
+        "codebleu": 0.527083264141444,
+        "ngram_match_score": 0.24208622698881807,
+        "weighted_ngram_match_score": 0.2652547660848949,
+        "syntax_match_score": 0.7884920634920635,
+        "dataflow_match_score": 0.8125
+      }
+    },
+    "repoeval_PID_controller": {
+      "status": "缺失项目",
+      "baseline_exists": true,
+      "compare_exists": false,
+      "total_files": 4,
+      "successful_evaluations": 4,
+      "average_scores": {
+        "codebleu": 0.2784982715868315,
+        "ngram_match_score": 0.09814050634693089,
+        "weighted_ngram_match_score": 0.1302762168729204,
+        "syntax_match_score": 0.0922922502334267,
+        "dataflow_match_score": 0.793284112894048
+      }
+    },
+    "repoeval_PT1Filter": {
+      "status": "缺失项目",
+      "baseline_exists": true,
+      "compare_exists": false,
+      "total_files": 1,
+      "successful_evaluations": 1,
+      "average_scores": {
+        "codebleu": 0.6329328591279657,
+        "ngram_match_score": 0.3524501567004628,
+        "weighted_ngram_match_score": 0.5040270425232647,
+        "syntax_match_score": 0.9152542372881356,
+        "dataflow_match_score": 0.76
+      }
+    },
+    "repoeval_ProductionLine": {
+      "status": "缺失项目",
+      "baseline_exists": true,
+      "compare_exists": false,
+      "total_files": 6,
+      "successful_evaluations": 6,
+      "average_scores": {
+        "codebleu": 0.5734156294037938,
+        "ngram_match_score": 0.16893180470141456,
+        "weighted_ngram_match_score": 0.35825012650670357,
+        "syntax_match_score": 0.882166860916861,
+        "dataflow_match_score": 0.5509803921568628
+      }
+    },
+    "repoeval_Proxy_Application": {
+      "status": "缺失项目",
+      "baseline_exists": true,
+      "compare_exists": false,
+      "total_files": 2,
+      "successful_evaluations": 2,
+      "average_scores": {
+        "codebleu": 0.535674493758651,
+        "ngram_match_score": 0.07520815372032587,
+        "weighted_ngram_match_score": 0.44468615439296394,
+        "syntax_match_score": 0.7299465240641712,
+        "dataflow_match_score": 0.39285714285714285
+      }
+    },
+    "repoeval_Robotics_DynamicModel": {
+      "status": "缺失项目",
+      "baseline_exists": true,
+      "compare_exists": false,
+      "total_files": 2,
+      "successful_evaluations": 2,
+      "average_scores": {
+        "codebleu": 0.8744200013647869,
+        "ngram_match_score": 0.7695877445788367,
+        "weighted_ngram_match_score": 0.955378084929485,
+        "syntax_match_score": 0.9635036496350364,
+        "dataflow_match_score": 0.8092105263157895
+      }
+    },
+    "repoeval_Wrappers": {
+      "status": "缺失项目",
+      "baseline_exists": true,
+      "compare_exists": false,
+      "total_files": 1,
+      "successful_evaluations": 1,
+      "average_scores": {
+        "codebleu": 0.46017655747666664,
+        "ngram_match_score": 0.08865264687336134,
+        "weighted_ngram_match_score": 0.3243906259585835,
+        "syntax_match_score": 0.4864864864864865,
+        "dataflow_match_score": 0.9411764705882353
+      }
+    },
+    "repoeval_assembly-station": {
+      "status": "缺失项目",
+      "baseline_exists": true,
+      "compare_exists": false,
+      "total_files": 1,
+      "successful_evaluations": 1,
+      "average_scores": {
+        "codebleu": 0.24243221898879624,
+        "ngram_match_score": 0.04905871561247271,
+        "weighted_ngram_match_score": 0.06983446182489458,
+        "syntax_match_score": 0.6190476190476191,
+        "dataflow_match_score": 0.23178807947019867
+      }
+    },
+    "repoeval_barrier": {
+      "status": "缺失项目",
+      "baseline_exists": true,
+      "compare_exists": false,
+      "total_files": 13,
+      "successful_evaluations": 13,
+      "average_scores": {
+        "codebleu": 0.3884557275241371,
+        "ngram_match_score": 0.1826095138216524,
+        "weighted_ngram_match_score": 0.3288398469573235,
+        "syntax_match_score": 0.6502596923574124,
+        "dataflow_match_score": 0.39211385696016027
+      }
+    },
+    "repoeval_counter": {
+      "status": "缺失项目",
+      "baseline_exists": true,
+      "compare_exists": false,
+      "total_files": 1,
+      "successful_evaluations": 1,
+      "average_scores": {
+        "codebleu": 0.38940861230472434,
+        "ngram_match_score": 0.015339533325349042,
+        "weighted_ngram_match_score": 0.08991396351259592,
+        "syntax_match_score": 0.6666666666666666,
+        "dataflow_match_score": 0.7857142857142857
+      }
+    },
+    "repoeval_electronic_cam_motion": {
+      "status": "缺失项目",
+      "baseline_exists": true,
+      "compare_exists": false,
+      "total_files": 4,
+      "successful_evaluations": 4,
+      "average_scores": {
+        "codebleu": 0.3505397113206005,
+        "ngram_match_score": 0.04764699757129064,
+        "weighted_ngram_match_score": 0.10802573381410495,
+        "syntax_match_score": 0.7535595624456068,
+        "dataflow_match_score": 0.4929265514513998
+      }
+    },
+    "repoeval_electronic_gear_motion": {
+      "status": "缺失项目",
+      "baseline_exists": true,
+      "compare_exists": false,
+      "total_files": 3,
+      "successful_evaluations": 3,
+      "average_scores": {
+        "codebleu": 0.3895957850052901,
+        "ngram_match_score": 0.0495189795396449,
+        "weighted_ngram_match_score": 0.08602532493597621,
+        "syntax_match_score": 0.7160218312099245,
+        "dataflow_match_score": 0.7068170043356147
+      }
+    },
+    "repoeval_elevator": {
+      "status": "缺失项目",
+      "baseline_exists": true,
+      "compare_exists": false,
+      "total_files": 5,
+      "successful_evaluations": 5,
+      "average_scores": {
+        "codebleu": 0.4916583185995612,
+        "ngram_match_score": 0.16090942907328126,
+        "weighted_ngram_match_score": 0.29566402650318135,
+        "syntax_match_score": 0.793059818821782,
+        "dataflow_match_score": 0.717
+      }
+    },
+    "repoeval_four-level_elevator_control": {
+      "status": "缺失项目",
+      "baseline_exists": true,
+      "compare_exists": false,
+      "total_files": 3,
+      "successful_evaluations": 3,
+      "average_scores": {
+        "codebleu": 0.38959432168233143,
+        "ngram_match_score": 0.13956575981221378,
+        "weighted_ngram_match_score": 0.26393852704941434,
+        "syntax_match_score": 0.6141561961074156,
+        "dataflow_match_score": 0.540716803760282
+      }
+    },
+    "repoeval_isScaleOutput": {
+      "status": "缺失项目",
+      "baseline_exists": true,
+      "compare_exists": false,
+      "total_files": 1,
+      "successful_evaluations": 1,
+      "average_scores": {
+        "codebleu": 0.755258821331407,
+        "ngram_match_score": 0.4999221354015408,
+        "weighted_ngram_match_score": 0.5774511780931011,
+        "syntax_match_score": 0.9436619718309859,
+        "dataflow_match_score": 1.0
+      }
+    },
+    "repoeval_measurement_control": {
+      "status": "缺失项目",
+      "baseline_exists": true,
+      "compare_exists": false,
+      "total_files": 1,
+      "successful_evaluations": 1,
+      "average_scores": {
+        "codebleu": 0.1488095238095238,
+        "ngram_match_score": 0.0,
+        "weighted_ngram_match_score": 0.0,
+        "syntax_match_score": 0.0,
+        "dataflow_match_score": 0.5952380952380952
+      }
+    },
+    "repoeval_open-type_dual-axis_winding_machine": {
+      "status": "缺失项目",
+      "baseline_exists": true,
+      "compare_exists": false,
+      "total_files": 5,
+      "successful_evaluations": 5,
+      "average_scores": {
+        "codebleu": 0.33348789517499544,
+        "ngram_match_score": 0.06378317621220782,
+        "weighted_ngram_match_score": 0.10697392449761751,
+        "syntax_match_score": 0.4677111466568233,
+        "dataflow_match_score": 0.49548333333333333
+      }
+    },
+    "repoeval_plc_hello_mixing_tank": {
+      "status": "缺失项目",
+      "baseline_exists": true,
+      "compare_exists": false,
+      "total_files": 6,
+      "successful_evaluations": 6,
+      "average_scores": {
+        "codebleu": 0.3562310745999792,
+        "ngram_match_score": 0.08016061358975989,
+        "weighted_ngram_match_score": 0.1362562177730469,
+        "syntax_match_score": 0.46079667047408984,
+        "dataflow_match_score": 0.7477107965630202
+      }
+    },
+    "repoeval_readwriteFile": {
+      "status": "缺失项目",
+      "baseline_exists": true,
+      "compare_exists": false,
+      "total_files": 2,
+      "successful_evaluations": 2,
+      "average_scores": {
+        "codebleu": 0.5859159570620027,
+        "ngram_match_score": 0.40366551454943955,
+        "weighted_ngram_match_score": 0.40398106062847644,
+        "syntax_match_score": 0.8585840058694058,
+        "dataflow_match_score": 0.6774332472006891
+      }
+    },
+    "repoeval_three-axis_CNC_motion": {
+      "status": "缺失项目",
+      "baseline_exists": true,
+      "compare_exists": false,
+      "total_files": 5,
+      "successful_evaluations": 5,
+      "average_scores": {
+        "codebleu": 0.41637413495184605,
+        "ngram_match_score": 0.21484828687187218,
+        "weighted_ngram_match_score": 0.2366131491906939,
+        "syntax_match_score": 0.4669314998089842,
+        "dataflow_match_score": 0.5471036039358339
+      }
+    },
+    "repoeval_traffic_light": {
+      "status": "缺失项目",
+      "baseline_exists": true,
+      "compare_exists": false,
+      "total_files": 3,
+      "successful_evaluations": 3,
+      "average_scores": {
+        "codebleu": 0.459070680140164,
+        "ngram_match_score": 0.23361953679280534,
+        "weighted_ngram_match_score": 0.2336573358146342,
+        "syntax_match_score": 0.6134502923976608,
+        "dataflow_match_score": 0.4222222222222222
+      }
+    }
+  },
+  "summary": {
+    "total_projects_change": -5,
+    "success_count_change": -25,
+    "failed_count_change": -5,
+    "newly_successful_projects": 0,
+    "newly_failed_projects": 0,
+    "codebleu_change": -100.0,
+    "improved_projects": 0,
+    "degraded_projects": 0,
+    "unchanged_projects": 0
+  }
+}

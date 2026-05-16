@@ -1,0 +1,23 @@
+{
+  "library": "SM3_Robotics",
+  "title": "GetVersion (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/Library-Information/GetVersion.html",
+  "page_title": "GetVersion (FUN)",
+  "text": "\nFUNCTION GetVersion : VERSION\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetVersion",
+          "Type": "VERSION"
+        }
+      ]
+    }
+  ]
+}

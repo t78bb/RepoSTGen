@@ -1,0 +1,32 @@
+{
+  "library": "Standard64",
+  "title": "AtomicWriteULInt (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/Standard64/Current/Atomic-Read-Write-Functions/AtomicWriteULInt.html",
+  "page_title": "AtomicWriteULInt (FUN)",
+  "text": "\nFUNCTION AtomicWriteULInt : BOOL\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "AtomicWriteULInt",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Input",
+          "Name": "pDest",
+          "Type": "POINTER TO ULINT"
+        },
+        [
+          "uliValue",
+          "ULINT"
+        ]
+      ]
+    }
+  ]
+}

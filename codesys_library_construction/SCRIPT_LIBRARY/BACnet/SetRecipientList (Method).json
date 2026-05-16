@@ -1,0 +1,36 @@
+{
+  "library": "BACnet",
+  "title": "SetRecipientList (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/NotificationClass/pou-BACnetNotificationClass/SetRecipientList.html",
+  "page_title": "BACnetNotificationClass.SetRecipientList (METH)",
+  "text": "\nMETHOD SetRecipientList : CmpBACnet.IEC_BACNET_STATUS\nSets the Recipient_List-List of this BACnet object.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetRecipientList",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "uiListCount",
+          "Type": "CmpBACnet.IEC_BACNET_ELEMENT_COUNT",
+          "Comment": "The length of the list in the following pointer."
+        },
+        [
+          "pList",
+          "POINTER TO\nCmpBACnet.IEC_BACNET_DESTINATION",
+          "The list data containing elements according to the given\ncount."
+        ]
+      ]
+    }
+  ]
+}

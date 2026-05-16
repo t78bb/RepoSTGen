@@ -1,0 +1,28 @@
+{
+  "library": "SM3_CNC",
+  "title": "SetDelimiters (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/ReadNCFile2/pou-SMC_ReadNCFromStream/SetDelimiters.html",
+  "page_title": "SMC_ReadNCFromStream.SetDelimiters (METH)",
+  "text": "\nMETHOD FINAL SetDelimiters : BOOL\nReconfigures delimiters for comment, string and variable tokens.\nReturns\nTRUE\nif configuration was accepted and the FB isnât busy,\nFALSE\notherwise. This method needs to be called before\nSMC_ReadNCFromStream\nis called.\nDelimiter tokens may start with every character in\naby*StartDelim\n,\nbut must end with the character in\naby*EndDelim\nwith the same array\nindex as the starting character. Only the following values/characters are\nallowed as delimiters:\n33  ! , 34 \" , 35  # , 36  $ , 37  % , 38  & , 39  ' ,\n40  ( , 41  ) , 42  * , 43  + , 44  , , 45  - , 47  / ,\n58  : , 59  ; , 60  < , 61  = , 62  > , 63  ? , 64  @ ,\n91  [ , 92  \\ , 93  ] , 94  ^ , 96  Â´ , 123  { , 124  | ,\n125  } , 126  ~\nA maximum of 3 different pairs of delimiters can be configured for each\ntoken type.\nDelimiters will be checked for ambiguitiy against each other.\nOnly operator characters not used as delimiter will be recognized\nas operators.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetDelimiters",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Inout Const",
+          "Name": "delimCfg",
+          "Type": "SMC_NCScanner_DelimConfig"
+        }
+      ]
+    }
+  ]
+}

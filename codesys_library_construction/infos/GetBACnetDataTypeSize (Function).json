@@ -1,0 +1,31 @@
+{
+  "library": "BACnet",
+  "title": "GetBACnetDataTypeSize (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/Utilities/BACnetUtilities/BACnetProperties/GetBACnetDataTypeSize.html",
+  "page_title": "GetBACnetDataTypeSize (FUN)",
+  "text": "\nFUNCTION GetBACnetDataTypeSize : UDINT\nReturns the size of the IEC-Struct corresponding to a specific BACnet-Data-Type.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetBACnetDataTypeSize",
+          "Type": "UDINT",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "dataID",
+          "Type": "CmpBACnet.IEC_BACNET_DATA_TYPE",
+          "Comment": "The BACnet data type to get its size for."
+        }
+      ]
+    }
+  ]
+}

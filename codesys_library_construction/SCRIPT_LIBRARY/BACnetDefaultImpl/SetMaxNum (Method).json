@@ -1,0 +1,36 @@
+{
+  "library": "BACnetDefaultImpl",
+  "title": "SetMaxNum (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnetDefaultImpl/Current/BACnetDefaultImpl/Function-Blocks/pou-ClientCreatableObjects/SetMaxNum.html",
+  "page_title": "ClientCreatableObjects.SetMaxNum (METH)",
+  "text": "\nMETHOD SetMaxNum : BOOL\nSets the maximum number of client creatable objects of given type.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetMaxNum",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "objType",
+          "Type": "CmpBACnet.IEC_BACNET_OBJECT_TYPE",
+          "Comment": "object type, actually supported OBJ_ANALOG_INPUT := 0 ..\nOBJ_LIGHTING_OUTPUT := 54"
+        },
+        [
+          "maxNum",
+          "DINT",
+          "maximum number of client creatable objects of given type, -1\n=> no limits, 0 => not allowed"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC3_CheckPositionLagMode (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/DataTypes/DriveInterface/SMC3_CheckPositionLagMode.html",
+  "page_title": "SMC3_CheckPositionLagMode (ENUM)",
+  "text": "\nTYPE SMC3_CheckPositionLagMode :\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "SMC3_PCL_OFF",
+          "Comment": "No check"
+        },
+        {
+          "Name": "SMC3_PCL_DISABLE",
+          "Comment": "Disables (bRegulatorOnâFALSE) after position lag\nerror has occured."
+        },
+        {
+          "Name": "SMC3_PCL_HALT",
+          "Comment": "Halts (bDriveStartâFALSE) after position lag error\nhas occured."
+        },
+        {
+          "Name": "SMC3_PCL_ENABLE",
+          "Comment": "Generates error but stay enabled/started."
+        }
+      ]
+    }
+  ]
+}

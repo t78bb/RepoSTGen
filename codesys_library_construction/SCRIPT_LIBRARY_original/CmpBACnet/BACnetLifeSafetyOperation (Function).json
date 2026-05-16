@@ -1,0 +1,56 @@
+{
+  "library": "CmpBACnet",
+  "title": "BACnetLifeSafetyOperation (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/CmpBACnet/Current/BACnetClientAPI/BACnetLifeSafetyOperation.html",
+  "page_title": "BACnetLifeSafetyOperation (FUN)",
+  "text": "Deutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nMenu\nSearch\nDeutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nBACnetAsyncTransactionToken (Struct)\nBACnetClientAPI\nBACnetAcknowledgeAlarm (Function)\nBACnetAddListElement (Function)\nBACnetCancelPendingConfirmedRequest (Function)\nBACnetConfPrivateTransfer (Function)\nBACnetConfTextMessage (Function)\nBACnetCreateObject (Function)\nBACnetCreateObjectResult (Struct)\nBACnetDeleteObject (Function)\nBACnetDeviceCommControl (Function)\nBACnetGetAlarmSummary (Function)\nBACnetGetEnrollmentSummary (Function)\nBACnetGetEventInfo (Function)\nBACnetLifeSafetyOperation (Function)\nBACnetReadAllPropertyDataContents (Function)\nBACnetReadFile (Function)\nBACnetReadProperty (Function)\nBACnetReadPropertyMultiple (Function)\nBACnetReadRange (Function)\nBACnetReinitializeDevice (Function)\nBACnetRemoveListElement (Function)\nBACnetSubscribeCOV (Function)\nBACnetSubscribeCOVProperty (Function)\nBACnetUnconfPrivateTransfer (Function)\nBACnetUnconfTextMessage (Function)\nBACnetWhoHas (Function)\nBACnetWhoIs (Function)\nBACnetWriteFile (Function)\nBACnetWriteGroup (Function)\nBACnetWriteProperty (Function)\nBACnetWritePropertyMultiple (Function)\nadvanced\nBACnetBackupBACnetDevice (Function)\nBACnetCloseClientCustomer (Function)\nBACnetGetClientDeviceCommunication (Function)\nBACnetOpenClientCustomer (Function)\nBACnetRegisterClientCommunicationStateCallback (Function)\nBACnetRegisterClientDataPoint (Function)\nBACnetRegisterClientEventNotification (Function)\nBACnetRegisterClientUnsubscribeCompletionCallback (Function)\nBACnetRestartAllClients (Function)\nBACnetRestoreBACnetDevice (Function)\nBACnetSetClientDeviceCommunication (Function)\nBACnetSetClientDeviceFixAddress (Function)\nBACnetSetClientDeviceFixSubscribeCovTime (Function)\nBACnetSetClientGlobalCommTimingParameters (Function)\nBACnetSetClientGlobalMaxDeviceActions (Function)\nBACnetUnregisterClientDataPoint (Function)\nBACnetUnregisterClientEventNotification (Function)\nFile and Project Information\nLibrary Reference\n3SLicense\nLibrary Identification\nLibrary Properties\nCAA Ressource Manager Extern\nLibrary Identification\nLibrary Properties\nCAA Types Extern\nLibrary Identification\nLibrary Properties\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nCmpEventMgr\nLibrary Identification\nLibrary Properties\nCmpLog\nLibrary Identification\nLibrary Properties\nCmpSettings\nLibrary Identification\nLibrary Properties\nComponent Manager\nLibrary Identification\nLibrary Properties\nIoStandard\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysTarget\nLibrary Identification\nLibrary Properties\nSysTask\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nCmpBACnet\nDocs\n»\nBACnetClientAPI\n»\nBACnetLifeSafetyOperation (FUN)\nBACnetLifeSafetyOperation (FUN)\nÂ¶\nFUNCTION BACnetLifeSafetyOperation :\nIEC_BACNET_STATUS\nSends a LifeSafetyOperation request.\nSends the requests to provide a mechanism for transporting specific instructions from an\noperator to silence, audible or visual notification appliances or reset\nnotification appliances. This service may be used in fire, life safety and security\nsystems. Because the present version of this BACnet API does not support a default processing\nfor this service, the destination has to include a Hook procedure to process it. This\nroutine may control APDU properties like APDU length, segmentation and timeout for both\nrequests and responses. This routine can execute asynchronously, so this routine will\nreturn to the caller before the BACnet reply is received so that the application keeps\nrunning. In this case the response information will be received by the thread that\nis responsible for receiving asynchronous responses. An optional\nBACNET_SIMPLE_ACK_COMPLETE_CB routine, which has to be provided by the BACnet application,\nshall be used to process this information. If a number of asynchronous requests are\nsent, the responses will be queued and identified by their transaction handles. If the\napplication does not supply the BACNET_SIMPLE_ACK_COMPLETE_CB routine, then this\nroutine sends a request and waits for reply.\nreturn IEC_BACNET_STATUS\nInOut:\nScope\nName\nType\nComment\nReturn\nBACnetLifeSafetyOperation\nIEC_BACNET_STATUS\nInput\npSourceAddress\nPOINTER TO\nIEC_BACNET_ADDRESS\nIf the BACnet application has only one device constructed and installed, this can\nbe NULL. In this case the MAC address of this device will be used. Otherwise this\nshall be the MAC address returned on device object construction.\npDestinationAddress\nPOINTER TO\nIEC_BACNET_ADDRESS\nThis is the MAC address of the device to which the request\nshould be sent.\npServiceInfo\nPOINTER TO\nIEC_BACNET_LIFE_SAFETY_INFO\nA pointer to hold the request information data structure.\npAPDUParams\nPOINTER TO\nIEC_BACNET_APDU_PROPERTIES\nA pointer to the APDU-Properties structure which sets APDU properties for this\ntransaction only. This does not change global defaults or settings for the application\nAPDU Properties. This argument may be NULL. In this case APDU properties  are used\nwhich were specified in the device object properties of the applications device which\nsends the request.\npTransactionToken\nPOINTER TO\nBACnetAsyncTransactionToken\nTransaction token of the asynchronous call - see\nBACnetAsyncTransactionToken\n.\npError\nPOINTER TO\nIEC_BACNET_ERROR\nA pointer to a structure to hold BACnet Error information. pError may be NULL if the\napplication isnât interested in detailed error information.\ntop\nCODESYS Group | We\nsoftware\nAutomation.\nto software\n['sɒftwɛər]\ntransitive verb\n__softwared/softwaring\n: to develop software\n// to software automation: to develop software for automation purposes\nThe CODESYS Group is the manufacturer of CODESYS, the leading hardware-independent\n                                    IEC 61131-3 automation software for developing and engineering controller\n                                    applications.\nCODESYS® is a registered trademark.\nCODESYS GmbH\nA member of the CODESYS Group\nMemminger Straße 151, 87439 Kempten\nGermany\nTel.:\n+49-831-54031-0\ninfo@codesys.com\nLegal Notice\nPrivacy Policy\nLinkedIn\nYoutube\nRSS\nDownloads\nLogin\nCODESYS Store\n© 2022 CODESYS GmbH\n| A member of the CODESYS Group",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "BACnetLifeSafetyOperation",
+          "Type": "IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "pSourceAddress",
+          "Type": "POINTER TOIEC_BACNET_ADDRESS",
+          "Comment": "If the BACnet application has only one device constructed and installed, this can\nbe NULL. In this case the MAC address of this device will be used. Otherwise this\nshall be the MAC address returned on device object construction."
+        },
+        [
+          "pDestinationAddress",
+          "POINTER TOIEC_BACNET_ADDRESS",
+          "This is the MAC address of the device to which the request\nshould be sent."
+        ],
+        [
+          "pServiceInfo",
+          "POINTER TOIEC_BACNET_LIFE_SAFETY_INFO",
+          "A pointer to hold the request information data structure."
+        ],
+        [
+          "pAPDUParams",
+          "POINTER TOIEC_BACNET_APDU_PROPERTIES",
+          "A pointer to the APDU-Properties structure which sets APDU properties for this\ntransaction only. This does not change global defaults or settings for the application\nAPDU Properties. This argument may be NULL. In this case APDU properties  are used\nwhich were specified in the device object properties of the applications device which\nsends the request."
+        ],
+        [
+          "pTransactionToken",
+          "POINTER TOBACnetAsyncTransactionToken",
+          "Transaction token of the asynchronous call - seeBACnetAsyncTransactionToken."
+        ],
+        [
+          "pError",
+          "POINTER TOIEC_BACNET_ERROR",
+          "A pointer to a structure to hold BACnet Error information. pError may be NULL if the\napplication isnât interested in detailed error information."
+        ]
+      ]
+    }
+  ]
+}

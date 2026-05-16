@@ -1,0 +1,76 @@
+{
+  "library": "DNP3",
+  "title": "Outstation (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Outstation/Outstation.html#",
+  "page_title": "Outstation (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL Outstation IMPLEMENTS IOutstation, CmpDNP3.IOutstationDataCallback, CmpDNP3.IDNP3SessionStatisticsCallback, CmpEventMgr.ICmpEventCallback\nFunction block representing a DNP3 outstation.\nAn Outstation needs to be configured regarding its\ndata model (datapoints and there type/variation etc.)\ncommunication (TCP vs. serial)\nOutstation datapoints of same type are grouped in a datapoint group.\nDatapoint groups needed for a specific Outstation do specify the\nOutstationDataModel\nwhich is connected to\nOutstation\ninput dataModel.\nA specific\nOutstationConfiguration\n(actually either\nOutstationConfigurationIP\nor\nOutstationConfigurationCOM\n) is also connected to\nOutstation\ninput configuration.\nIf the\nOutstation\nis enabled, the dataModel and the configuration is checked for consistency.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "xEnable",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Enables the Outstation.\nThe data model and the configuration is checked, in case of errors, xError / eErrorID is set accordingly,\notherwise xBusy is set to TRUE"
+        },
+        [
+          "DataModel",
+          "IOutstationDataModel",
+          "_nullDataModel",
+          "Outstation data model - this is a configuration, changes are\nignored after Outstation was enabled."
+        ],
+        [
+          "Configuration",
+          "IOutstationConfiguration",
+          "_nullConfiguration",
+          "Outstation configuration - this is a configuration, changes\nare ignored after Outstation was enabled."
+        ],
+        [
+          "udiLogOptions",
+          "UDINT",
+          "OutstationLoggingOptions.None",
+          "LoggingOptions can be combined using OR"
+        ],
+        [
+          "enableSessionStatistics",
+          "BOOL",
+          "FALSE",
+          "Enable session statistics."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "xBusy",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "The Outstation is operational."
+        },
+        [
+          "xError",
+          "BOOL",
+          "",
+          "An error occured."
+        ],
+        [
+          "eErrorID",
+          "Error",
+          "",
+          "The specific error."
+        ],
+        [
+          "itfOutstation",
+          "IOutstation",
+          "",
+          "Interface IOutstation"
+        ]
+      ]
+    }
+  ]
+}

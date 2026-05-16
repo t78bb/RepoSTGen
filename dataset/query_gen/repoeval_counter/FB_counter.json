@@ -1,0 +1,6 @@
+{
+  "requirement": "This code should implement a function block named FB_Counter that manages a counter with three input signals: bUp (BOOL), bDown (BOOL), and bReset (BOOL), and one output integer nValue. The function block should increment nValue by 1 if bUp is TRUE, decrement nValue by 1 if bDown is TRUE, and reset nValue to 0 if bReset is TRUE. Each input condition is evaluated independently, allowing simultaneous operations on nValue based on the state of the inputs.",
+  "provide_code": "FUNCTION_BLOCK FB_Counter\nVAR_INPUT\n\tbUp:BOOL;\t\t\t(*递增信号输入*)\n\tbDown:BOOL;\t\t\t(*递减信号输入*)\n\tbReset:BOOL;\t\t(*复位、清零信号输入*)\nEND_VAR\nVAR_OUTPUT\n\tnValue:INT;\t\t\t(*输出数值*)\nEND_VAR",
+  "function_name": "FB_counter",
+  "requirement_cn": "该代码应实现一个名为 FB_Counter 的功能块，用于管理一个计数器，包括三个输入信号：bUp（BOOL）、bDown（BOOL）和 bReset（BOOL），以及一个输出整数 nValue。如果 bUp 为 TRUE，则功能块应使 nValue 增加 1；如果 bDown 为 TRUE，则使 nValue 减少 1；如果 bReset 为 TRUE，则将 nValue 重置为 0。每个输入条件独立评估，允许基于输入状态对 nValue 进行同时操作。"
+}

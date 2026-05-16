@@ -1,0 +1,8 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "SendToComAdress (Property)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_RMP_ReliableMessageProtocol/AC_RMP_FBCommunication/pou-IRMPFBCommunication/SendToComAdress.html",
+  "page_title": "IRMPFBCommunication.SendToComAdress (PROP)",
+  "text": "\nPROPERTY SendToComAdress : UDINT\nThis property returns the ComAddress of the application messages are send to (given via\nInitializeCommunicationParameters).",
+  "tables": []
+}

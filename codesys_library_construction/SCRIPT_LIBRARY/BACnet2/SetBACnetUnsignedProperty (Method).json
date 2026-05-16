@@ -1,0 +1,30 @@
+{
+  "library": "BACnet2",
+  "title": "SetBACnetUnsignedProperty (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/BACnetObjects/base/pou-BACnetObjectBase/Utilities/typed-property-access/SetBACnetUnsignedProperty.html",
+  "page_title": "BACnetObjectBase.SetBACnetUnsignedProperty (METH)",
+  "text": "\nMETHOD SetBACnetUnsignedProperty\nSets the BACnet-Unsigned-Value of the specified Property (propID) of this BACnet-Object.\nThe used functions are no client, meaning, that the access of the property is not restricted by write or read access restrictions.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "propID",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_ID",
+          "Comment": "The ID of the property to set."
+        },
+        [
+          "uiVal",
+          "CmpBACnet.IEC_BACNET_UNSIGNED",
+          "The UINT value to set for the property."
+        ]
+      ]
+    }
+  ]
+}

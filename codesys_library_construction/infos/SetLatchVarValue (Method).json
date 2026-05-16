@@ -1,0 +1,30 @@
+{
+  "library": "AlarmManager",
+  "title": "SetLatchVarValue (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/pou-IAlarm3/SetLatchVarValue.html",
+  "page_title": "IAlarm3.SetLatchVarValue (METH)",
+  "text": "\nMETHOD SetLatchVarValue\nSets an ITypedValue instance, describing the current value of an optional latch variable.\nThis method is an enhancement/a replacement of methods IAlarm2.SetLatchVar1Value and\nIAlarm2.SetLatchVar2Value.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "iWhichLatchVar",
+          "Type": "INT",
+          "Comment": "The 1-based index of the latch variable. Specify 1 to obtain the same result like\nmethod IAlarm.GetLatchVar1Value and 2 to obtain the same result like\nmethod IAlarm.GetLatchVar2Value. All greater values correspond to the optional\nadditional latch variables."
+        },
+        [
+          "itfTypedValueLatchVar",
+          "ITypedValue",
+          "An instance of ITypedValue containing the value to set"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_GWord_Iterator (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/GSentence/SMC_GWord_Iterator.html",
+  "page_title": "SMC_GWord_Iterator (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL SMC_GWord_Iterator\nThis iterator allows to iterate all g-words of a g-sentence.\nIt can be retrieved from the sentence-queue for the first sentence\n(\nSMC_GSentenceQueue.GetGWordIterator\n), or for any sentence from\na sentence iterator (\nSMC_GSentence_Iterator.GetGWordIterator\n).\nFor each sentence, a g-expression token iterator (\nSMC_GExpToken_Iterator\n)\ncan be created.\nMethods:\nAdvance\nGetCount\nGetGExpTokenIterator\nGetValue\nInit\nIsValid\nStructure:\nAdvance (Method)\nGetCount (Method)\nGetGExpTokenIterator (Method)\nGetValue (Method)\nInit (Method)\nIsValid (Method)",
+  "tables": []
+}

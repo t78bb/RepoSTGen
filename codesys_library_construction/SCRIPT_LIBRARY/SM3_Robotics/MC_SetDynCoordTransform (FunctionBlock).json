@@ -1,0 +1,77 @@
+{
+  "library": "SM3_Robotics",
+  "title": "MC_SetDynCoordTransform (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/AdministrativeConfiguration/Coordinate-systems/MC_SetDynCoordTransform.html",
+  "page_title": "MC_SetDynCoordTransform (FB)",
+  "text": "\nFUNCTION_BLOCK MC_SetDynCoordTransform\nThis FB couples two axis groups via a dynamic coordinate transformation.\nThe coordinate transformation is fixed to the tool coordinate system\nof the master axis group.\nThis FB may be called with a new rising edge on Execute only after the\nconfigured dynamic coordinate system is no longer in use by any movement,\notherwise error SMC_AXIS_GROUP_PCS_STILL_IN_USE will be returned.\nSee output\nInUse\n.\nNote\nFor common special cases of a dynamic PCS, the function blocks,\nMC_TrackConveyorBelt\n, and\nMC_TrackRotaryTable\ncan be used.\nThe function block\nSMC_SetDynCoordTransformEx\nprovides a more\ngeneral interface.\nThis FB does not start a movement (administrative FB). The movement is\ninitiated by a command with a target position in the PCS.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "AxisGroup",
+          "Type": "AXIS_GROUP_REF_SM3",
+          "Comment": "Reference to an axis group"
+        },
+        [
+          "MasterAxisGroup",
+          "AXIS_GROUP_REF_SM3",
+          "Reference to the master axis group"
+        ],
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Comment": "Sets the coordinate transformation on rising edge"
+        },
+        [
+          "CoordTransform",
+          "MC_COORD_REF",
+          "The relative position and orientation of the PCS with respect to\nthe tool coordinate system of the master axis group."
+        ],
+        [
+          "CoordSystem",
+          "SMC_COORD_SYSTEM",
+          "Which PCS is to be set (PCS_1 or PCS_2)"
+        ],
+        [
+          "Name",
+          "STRING",
+          "The name of the coordinate system."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Done",
+          "Type": "BOOL",
+          "Comment": "The transformation has been set successfully"
+        },
+        [
+          "Busy",
+          "BOOL",
+          "The FB is not finished"
+        ],
+        [
+          "InUse",
+          "BOOL",
+          "Signals that the axis group still needs the\nreferenced dynamic coordinate system.\nA new rising edge ofExecutewill lead to the errorSMC_AXIS_GROUP_PCS_STILL_IN_USE.\nFor this information to be up-to-date, the function block\nhas to be called continuously\n(even if alreadyDone).\nA dynamic coordinate system becomesInUsewhen a movement\nto a position in the coordinate system is commanded.\nIt remainsInUseuntil the target position of a movement to\na different coordinate system has been reached."
+        ],
+        [
+          "Error",
+          "BOOL",
+          "Signals that an error has occurred within the function block"
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

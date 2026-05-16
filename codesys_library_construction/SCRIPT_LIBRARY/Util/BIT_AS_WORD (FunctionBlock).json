@@ -1,0 +1,106 @@
+{
+  "library": "Util",
+  "title": "BIT_AS_WORD (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/BitByte-Functions/BIT_AS_WORD.html",
+  "page_title": "BIT_AS_WORD (FB)",
+  "text": "\nFUNCTION_BLOCK BIT_AS_WORD\nConverts 16 input values of data type BOOL into an output value of the data type WORD\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "B00",
+          "Type": "BOOL",
+          "Comment": "Input bit 0"
+        },
+        [
+          "B01",
+          "BOOL",
+          "Input bit 1"
+        ],
+        [
+          "B02",
+          "BOOL",
+          "Input bit 2"
+        ],
+        [
+          "B03",
+          "BOOL",
+          "Input bit 3"
+        ],
+        [
+          "B04",
+          "BOOL",
+          "Input bit 4"
+        ],
+        [
+          "B05",
+          "BOOL",
+          "Input bit 5"
+        ],
+        [
+          "B06",
+          "BOOL",
+          "Input bit 6"
+        ],
+        [
+          "B07",
+          "BOOL",
+          "Input bit 7"
+        ],
+        [
+          "B08",
+          "BOOL",
+          "Input bit 8"
+        ],
+        [
+          "B09",
+          "BOOL",
+          "Input bit 9"
+        ],
+        [
+          "B10",
+          "BOOL",
+          "Input bit 10"
+        ],
+        [
+          "B11",
+          "BOOL",
+          "Input bit 11"
+        ],
+        [
+          "B12",
+          "BOOL",
+          "Input bit 12"
+        ],
+        [
+          "B13",
+          "BOOL",
+          "Input bit 13"
+        ],
+        [
+          "B14",
+          "BOOL",
+          "Input bit 14"
+        ],
+        [
+          "B15",
+          "BOOL",
+          "Input bit 15"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "W",
+          "Type": "WORD",
+          "Comment": "Output value"
+        }
+      ]
+    }
+  ]
+}

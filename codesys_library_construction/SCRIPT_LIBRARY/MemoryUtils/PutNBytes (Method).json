@@ -1,0 +1,27 @@
+{
+  "library": "MemoryUtils",
+  "title": "PutNBytes (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/MemoryUtils/Current/MemoryUtils/Functionblocks/pou-ByteBuffer/PutNBytes.html",
+  "page_title": "ByteBuffer.PutNBytes (METH)",
+  "text": "\nMETHOD PutNBytes\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "pbySource",
+          "Type": "POINTER TO BYTE"
+        },
+        [
+          "uiCount",
+          "UINT"
+        ]
+      ]
+    }
+  ]
+}

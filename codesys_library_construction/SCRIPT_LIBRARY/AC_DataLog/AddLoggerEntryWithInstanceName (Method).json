@@ -1,0 +1,27 @@
+{
+  "library": "AC_DataLog",
+  "title": "AddLoggerEntryWithInstanceName (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_DataLog/Current/AC_DataLog/DataLogStorage/pou-DataLogStorageBase/private/AddLoggerEntryWithInstanceName.html",
+  "page_title": "DataLogStorageBase.AddLoggerEntryWithInstanceName (METH)",
+  "text": "\nMETHOD PROTECTED AddLoggerEntryWithInstanceName\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "udiClass",
+          "Type": "UDINT"
+        },
+        [
+          "sInfo",
+          "STRING"
+        ]
+      ]
+    }
+  ]
+}

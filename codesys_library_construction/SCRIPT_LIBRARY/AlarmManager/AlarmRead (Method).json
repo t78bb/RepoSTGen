@@ -1,0 +1,30 @@
+{
+  "library": "AlarmManager",
+  "title": "AlarmRead (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Alarm-storage-API/pou-IAlarmStorageReaderConsumer/AlarmRead.html",
+  "page_title": "IAlarmStorageReaderConsumer.AlarmRead (METH)",
+  "text": "\nMETHOD AlarmRead\nNotification, that the static part of an alarm has been read from the alarm storage.\nThe dynamic part of the alarm (i.e. the latch variables) will be passed by subsequent\ncalls to method LatchVariableRead\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "diWhichRow",
+          "Type": "DINT",
+          "Comment": "A 0-based index of the row read from TblAlarm"
+        },
+        [
+          "staticData",
+          "AlarmStorageStaticData",
+          "An AlarmStorageStaticData variable containing data of the\nalarm"
+        ]
+      ]
+    }
+  ]
+}

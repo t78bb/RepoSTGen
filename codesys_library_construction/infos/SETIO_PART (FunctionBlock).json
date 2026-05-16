@@ -1,0 +1,61 @@
+{
+  "library": "CommFB",
+  "title": "SETIO_PART (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/CommFB/Current/CommFB/SETIO_PART.html",
+  "page_title": "SETIO_PART (FB)",
+  "text": "\nFUNCTION_BLOCK SETIO_PART\nThe SETIO_PART function block sets the output data for a subset of the output data associated to a slot or subslot of a Field Device.\nThe output data are addressed within the slot or subslot through the OFFSET and LEN parameters.\nThe SETIO_PART function block sets the output data to the Host Controller interface into the cyclically written output data of the Field Device.\nThe function block is invoked by a 1 of the EN input. If the Output data are stored successfully and the Field Device is still cyclically communicating, the ENO output is set to 1.\nIf the Output data are stored successfully and the Field Device is still cyclically communicating, the ENO output is set to 1\nNever use GETIO-/SETIO_PART FBs concurrently with %I/%Q-Input/Output-Mapping for the same slot/subslot !\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "EN",
+          "Type": "BOOL",
+          "Comment": "Enable"
+        },
+        [
+          "ID",
+          "DWORD",
+          "Identifier of a slot / subslot of a Field Device"
+        ],
+        [
+          "OFFSET",
+          "INT",
+          "Offset of the subset of output data"
+        ],
+        [
+          "LEN",
+          "INT",
+          "Length of the output data to write"
+        ],
+        [
+          "OUTPUTS",
+          "POINTER TO BYTE",
+          "IO data object to write"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "ENO",
+          "Type": "BOOL",
+          "Comment": "Flag indication sending data OK"
+        },
+        [
+          "STATUS",
+          "DWORD",
+          "Last detected status"
+        ],
+        [
+          "ERROR",
+          "BOOL",
+          "Flag indication an error"
+        ]
+      ]
+    }
+  ]
+}

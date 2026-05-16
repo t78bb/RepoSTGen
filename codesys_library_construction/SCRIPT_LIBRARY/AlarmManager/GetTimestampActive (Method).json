@@ -1,0 +1,23 @@
+{
+  "library": "AlarmManager",
+  "title": "GetTimestampActive (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/pou-IAlarm/Access-to-timestamps/GetTimestampActive.html",
+  "page_title": "IAlarm.GetTimestampActive (METH)",
+  "text": "\nMETHOD GetTimestampActive :\nTimestamp\nReturns the timestamp, when the alarm went into state âactiveâ\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetTimestampActive",
+          "Type": "Timestamp"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "library": "Util",
+  "title": "PD (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/Controller/PD.html",
+  "page_title": "PD (FB)",
+  "text": "Analog Monitors\nHYSTERESIS (FunctionBlock)\nLIMITALARM (FunctionBlock)\nBCD Conversions\nBCD_TO_BYTE (Function)\nBCD_TO_DWORD (Function)\nBCD_TO_INT (Function)\nBCD_TO_WORD (Function)\nBYTE_TO_BCD (Function)\nDWORD_TO_BCD (Function)\nINT_TO_BCD (Function)\nWORD_TO_BCD (Function)\nBit/Byte Functions\nBIT_AS_BYTE (FunctionBlock)\nBIT_AS_DWORD (FunctionBlock)\nBIT_AS_WORD (FunctionBlock)\nBYTE_AS_BIT (FunctionBlock)\nDWORD_AS_BIT (FunctionBlock)\nEXTRACT (Function)\nGETBIT (Function)\nPACK (Function)\nPUTBIT (Function)\nSETBIT (Function)\nSWITCHBIT (Function)\nUNPACK (FunctionBlock)\nWORD_AS_BIT (FunctionBlock)\nConstants\nTextBlockSize (ParamList)\nController\nPD (FunctionBlock)\nPID\n(FB)\nTemperature control with PID and LIMIT\nPID_FIXCYCLE (FunctionBlock)\nDatatypes\nGEN_MODE (Enum)\nPOINT (Struct)\nPT_SIZE (Struct)\nEncoding\nBASE64 (Function)\nFunction Manipulators\nCHARCURVE (FunctionBlock)\nRAMP_INT (FunctionBlock)\nRAMP_REAL (FunctionBlock)\nGray Conversions\nBYTE_TO_GRAY (Function)\nDWORD_TO_GRAY (Function)\nGRAY_TO_BYTE (Function)\nGRAY_TO_DWORD (Function)\nGRAY_TO_WORD (Function)\nWORD_TO_GRAY (Function)\nHEX/ASCII Functions\nBYTE_TO_HEXinASCII (Function)\nHEXinASCII_TO_BYTE (Function)\nWORD_AS_STRING (Function)\nLibrary Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nMathematical Functions\nDERIVATIVE (FunctionBlock)\nINTEGRAL (FunctionBlock)\nLIN_TRAFO (FunctionBlock)\nROTATION_DIFFERENCE (FunctionBlock)\nSTATISTICS_INT (FunctionBlock)\nSTATISTICS_REAL (FunctionBlock)\nVARIANCE (FunctionBlock)\nSignals\nBLINK (FunctionBlock)\nFREQ_MEASURE (FunctionBlock)\nGEN (FunctionBlock)\nTimerSwitch\nEnums\nERROR (Enum)\nPERIOD (Enum)\nWEEKDAY (Enum)\nFunctionBlocks\nDateTimeProvider (FunctionBlock)\nGetDateTime (Method)\nTimerSwitch (FunctionBlock)\nIDateTimeProvider\nFunctions\nCombineDateTime (Function)\nDateTimeFromWeek (Function)\nDayOfWeek (Function)\nGetDateTime (Function)\nGetLocalDateTime (Function)\nGetTimeStampsDifference (Function)\nIsLeapYear (Function)\nJoinDateTime (Function)\nLocalDateTime (Function)\nSeparateDateTime (Function)\nSplitDateTime (Function)\nWeekOfYear (Function)\nGlobalConstants\nDAY_FLAGS (GVL)\nTSW (GVL)\nInterfaces\nIDateTimeProvider (Interface)\nGetDateTime (Method)\nStructs\nDateTime (Struct)\nSchedule (Struct)\nSegment (Struct)\nTimeZone (Struct)\nTypes\nDAY (Alias)\nDAYS (Alias)\nHOUR (Alias)\nMILLISECOND (Alias)\nMINUTE (Alias)\nMONTH (Alias)\nSECOND (Alias)\nTZ_NAME (Alias)\nWEEK (Alias)\nYEAR (Alias)\nFile and Project Information\nLibrary Reference\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysTimeRtc\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nUtil\nDocs\n»\nController\n»\nPD (FB)\nPD (FB)\nÂ¶\nFUNCTION_BLOCK PD\nRepresents a PD controller\nA PD controller continuously calculates\nan error value e(t) as the difference between a desired set point and a measured process variable. The PD controller\napplies a correction based on proportional and derivative terms (sometimes denoted P and D respectively)\nwhich give their name to the controller type.\nY_OFFSET\n,\nY_MIN\nand\nY_MAX\nare used for the transformation of the manipulated variable\nwithin a prescribed range.\nMANUAL\ncan be used to switch on and off manual operation.\nRESET\nserves to reset the\ncontroller. In normal operation (\nMANUAL\n=\nRESET\n=\nLIMITS_ACTIVE\n=\nFALSE\n) the controller calculates\nthe controller error e as difference\nSET_POINT\nâ\nACTUAL\n, generates the derivation with respect\nto time\n\\(\\frac{\\delta e}{\\delta t}\\)\nand stores these values internally.\nThe output, that is the manipulated variable\nY\n, is calculated as follows:\n\\(Y = KP \\cdot (e + TV \\frac{\\delta e}{\\delta t}) + Y_{OFFSET}\\)\nSo besides the P-part also the current change of the controller error (D-part) influences the\nmanipulated variable. Additionally\nY\nis limited on a range prescribed by\nY_MIN\nand\nY_MAX\n. If\nY\nexceeds these limits,\nLIMITS_ACTIVE\nwill get\nTRUE\n. If no limitation of the manipulated variable is desired,\nY_MIN\nand\nY_MAX\nhave to be set to 0. As long as\nMANUAL=TRUE\n,\nY_MANUAL\nwill be written to\nY\n.\nA P controller can be easily created by setting\nTV=0\n.\nFor more information see:\nPID\n.\nInOut:\nScope\nName\nType\nInitial\nComment\nInput\nACTUAL\nREAL\nActual value, process variable\nSET_POINT\nREAL\nSpecified value, set point\nKP\nREAL\nProportionality constant P\nTV\nREAL\nRate time, derivative time D [sec]. If set to 0, than it\nworks a P controller\nY_MANUAL\nREAL\nY\nis set to this value as long as\nMANUAL\n=\nTRUE\nY_OFFSET\nREAL\nOffset for manipulated variable\nY_MIN\nREAL\nMinimum value for manipulated variable. If no limitation is\ndesired, it must be be set to 0\nY_MAX\nREAL\nMaximum value for manipulated variable. If no limitation is\ndesired, it must be be set to 0\nMANUAL\nBOOL\nTRUE\n: Manual:\nY\nis not influenced by controller\nFALSE\n: Controller determines\nY\nRESET\nBOOL\nTRUE\n: Set\nY\noutput to\nY_OFFSET\nOutput\nY\nREAL\nManipulated variable, set value\nLIMITS_ACTIVE\nBOOL\nFALSE\nTRUE\n:\nY\nhas exceeded the given limits\nY_MIN\n,\nY_MAX\nand is limited to these values",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "ACTUAL",
+          "Type": "REAL",
+          "Initial": "",
+          "Comment": "Actual value, process variable"
+        },
+        [
+          "SET_POINT",
+          "REAL",
+          "",
+          "Specified value, set point"
+        ],
+        [
+          "KP",
+          "REAL",
+          "",
+          "Proportionality constant P"
+        ],
+        [
+          "TV",
+          "REAL",
+          "",
+          "Rate time, derivative time D [sec]. If set to 0, than it\nworks a P controller"
+        ],
+        [
+          "Y_MANUAL",
+          "REAL",
+          "",
+          "Yis set to this value as long asMANUAL=TRUE"
+        ],
+        [
+          "Y_OFFSET",
+          "REAL",
+          "",
+          "Offset for manipulated variable"
+        ],
+        [
+          "Y_MIN",
+          "REAL",
+          "",
+          "Minimum value for manipulated variable. If no limitation is\ndesired, it must be be set to 0"
+        ],
+        [
+          "Y_MAX",
+          "REAL",
+          "",
+          "Maximum value for manipulated variable. If no limitation is\ndesired, it must be be set to 0"
+        ],
+        [
+          "MANUAL",
+          "BOOL",
+          "",
+          "TRUE: Manual:Yis not influenced by controllerFALSE: Controller determinesY"
+        ],
+        [
+          "RESET",
+          "BOOL",
+          "",
+          "TRUE: SetYoutput toY_OFFSET"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Y",
+          "Type": "REAL",
+          "Initial": "",
+          "Comment": "Manipulated variable, set value"
+        },
+        [
+          "LIMITS_ACTIVE",
+          "BOOL",
+          "FALSE",
+          "TRUE:Yhas exceeded the given limitsY_MIN,Y_MAXand is limited to these values"
+        ]
+      ]
+    }
+  ]
+}

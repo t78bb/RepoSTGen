@@ -1,0 +1,48 @@
+{
+  "library": "String Builder Base",
+  "title": "STATS (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Builder Base/Current/BuilderBase/Structs/STATS.html",
+  "page_title": "STATS (STRUCT)",
+  "text": "\nTYPE STATS : STRUCT\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "udiLength",
+          "Type": "UDINT",
+          "Comment": "number of bytes"
+        },
+        {
+          "Name": "udiRuneCount",
+          "Type": "UDINT",
+          "Comment": "number of runes"
+        },
+        {
+          "Name": "udiSegmentSize",
+          "Type": "UDINT",
+          "Comment": ""
+        },
+        {
+          "Name": "udiCapacity",
+          "Type": "UDINT",
+          "Comment": ""
+        },
+        {
+          "Name": "udiBytesLeft",
+          "Type": "UDINT",
+          "Comment": ""
+        },
+        {
+          "Name": "xASCII",
+          "Type": "BOOL",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

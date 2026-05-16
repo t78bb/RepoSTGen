@@ -1,0 +1,25 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "ChangeFrame (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/GenVisu/pou-AC_Visu_Base/ChangeFrame.html",
+  "page_title": "AC_Visu_Base.ChangeFrame (METH)",
+  "text": "\nMETHOD FINAL ChangeFrame\nChanges the current frame and adds it to the\nhistory buffer.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "uiIdx",
+          "Type": "UINT",
+          "Comment": "The index of the frame to switch to"
+        }
+      ]
+    }
+  ]
+}

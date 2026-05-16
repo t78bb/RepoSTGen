@@ -1,0 +1,31 @@
+{
+  "library": "BACnet",
+  "title": "SetScheduleDefault (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/Schedule/pou-BACnetSchedule/SetScheduleDefault.html",
+  "page_title": "BACnetSchedule.SetScheduleDefault (METH)",
+  "text": "\nMETHOD SetScheduleDefault : CmpBACnet.IEC_BACNET_STATUS\nSets the contents of the Schedule_Default-Property of this BACnet-Object.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetScheduleDefault",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "value",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_CONTENTS",
+          "Comment": "The default value to set."
+        }
+      ]
+    }
+  ]
+}

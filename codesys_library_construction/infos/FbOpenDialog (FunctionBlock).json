@@ -1,0 +1,89 @@
+{
+  "library": "Visu Utils",
+  "title": "FbOpenDialog (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/Visu Utils/Current/VisuUtils/VisuActionUtilities/Function-Blocks/FbOpenDialog.html",
+  "page_title": "FbOpenDialog (FB)",
+  "text": "\nFUNCTION_BLOCK FbOpenDialog EXTENDS FbExecuteSingleVisuActionBase\nHandles the action open dialog\nTo use this function block in the programm set the according inputvalues\nand start the dialog open action with\nxExecute\n=\nTRUE\n.\nThe fb-instance should be declarated within a permanent setting, e.g. a GVL, and not within a temporary setting, e.g. a function.\nTherefore, the action will still be available, when called, later on.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment",
+        "Inherited from"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "xExecute",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Rising edge: Starts defined operationFALSE: Resets the defined operation after ready condition was reached",
+          "Inherited from": "ETrig"
+        },
+        {
+          "Scope": "Output",
+          "Name": "xDone",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUE: Ready condition reached",
+          "Inherited from": "ETrig"
+        },
+        [
+          "xBusy",
+          "BOOL",
+          "",
+          "TRUE: Operation is running",
+          "ETrig"
+        ],
+        [
+          "xError",
+          "BOOL",
+          "",
+          "TRUE: Error condition reached",
+          "ETrig"
+        ],
+        {
+          "Scope": "Input",
+          "Name": "itfClientFilter",
+          "Type": "IVisualizationClientFilter",
+          "Initial": "",
+          "Comment": "With this filter, the clients, where the action should happen, are specified.Use standard filter from  GVL Globals, e.g.VU.Globals.CurrentClient, or use a own implentation of the interface.",
+          "Inherited from": "FbExecuteSingleVisuActionBase"
+        },
+        {
+          "Scope": "Output",
+          "Name": "eError",
+          "Type": "ERROR",
+          "Initial": "",
+          "Comment": "",
+          "Inherited from": "FbExecuteSingleVisuActionBase"
+        },
+        {
+          "Scope": "Input",
+          "Name": "sDialogName",
+          "Type": "STRING",
+          "Initial": "",
+          "Comment": "Mandatory value: name of the dialog",
+          "Inherited from": ""
+        },
+        [
+          "xModal",
+          "BOOL",
+          "TRUE",
+          "Optional setting for dialog usage (modal or not modal).TRUE: modal: only input in the dialog is possible (defaultvalue)FALSE: not modal: usage of visu beneath dialog is possible, too.",
+          ""
+        ],
+        [
+          "pTopLeftPosition",
+          "POINTER TO\nVisuStructPoint",
+          "",
+          "Optional position to open:centered (default): use no input pointon position X/Y: set values accordingly in the VisuStructPoint",
+          ""
+        ]
+      ]
+    }
+  ]
+}

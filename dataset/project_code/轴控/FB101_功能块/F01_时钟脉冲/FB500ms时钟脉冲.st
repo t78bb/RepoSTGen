@@ -1,0 +1,20 @@
+FUNCTION_BLOCK FB_500ms时钟脉冲
+VAR_INPUT
+	Input: BOOL;
+END_VAR
+VAR_OUTPUT
+	Output: BOOL;
+END_VAR
+VAR
+	TON1: TON;
+	TON2: TON;
+END_VAR
+
+TON1(IN:= Input AND NOT TON2.Q, PT:= T#0.5S, Q=> , ET=> );
+TON2(IN:= Input AND TON1.Q, PT:= T#0.5S, Q=> , ET=> );
+
+IF TON1.Q THEN
+	Output:=TRUE;
+	ELSE
+	Output:=FALSE;	
+END_IF

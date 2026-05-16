@@ -1,0 +1,28 @@
+{
+  "library": "BACnetDefaultImpl",
+  "title": "GetStopWhenFull (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnetDefaultImpl/Current/BACnetDefaultImpl/Function-Blocks/LoggingObjects/pou-TrendLog/proxy/GetStopWhenFull.html",
+  "page_title": "TrendLog.GetStopWhenFull (METH)",
+  "text": "\nMETHOD PROTECTED GetStopWhenFull : BOOL\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetStopWhenFull",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Input",
+          "Name": "instNumber",
+          "Type": "DWORD"
+        }
+      ]
+    }
+  ]
+}

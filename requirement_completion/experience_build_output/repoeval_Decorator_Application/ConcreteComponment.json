@@ -1,0 +1,17 @@
+{
+  "模糊点列表": [
+    {
+      "模糊点类型": "初始化方法及默认值设置",
+      "模糊点描述": "原始需求未明确是否需要特定的初始化方法和默认值",
+      "差异细节": "模型生成代码中没有定义初始化方法和默认值，而参考代码中包含fb_init方法，并设置了默认的sDescription为'Plain Component'和rValue为4.0",
+      "精准需求描述": "定义一个初始化方法fb_init，该方法应设置对象的sDescription为'Plain Component'和rValue为4.0"
+    },
+    {
+      "模糊点类型": "方法定义",
+      "模糊点描述": "原始需求未明确是否需要定义获取描述和值的方法",
+      "差异细节": "模型生成代码中没有定义获取描述和值的方法，而参考代码中定义了getDescription和getValue方法",
+      "精准需求描述": "定义两个方法，getDescription和getValue，分别用于返回对象的sDescription和rValue"
+    }
+  ],
+  "case_id": "repoeval_Decorator_Application/ConcreteComponment"
+}

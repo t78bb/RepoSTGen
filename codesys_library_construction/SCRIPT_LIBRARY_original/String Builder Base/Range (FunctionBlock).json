@@ -1,0 +1,23 @@
+{
+  "library": "String Builder Base",
+  "title": "Range (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Builder Base/Current/BuilderBase/Function-Blocks/Range.html",
+  "page_title": "Range (FB)",
+  "text": "BuilderBase\nAliases\nConstants (GVL)\nIStringRepresentation (Alias)\nRUNE (Alias)\nEnums\nENCODING (Enum)\nERROR (Enum)\nFunction Blocks\nRange (FunctionBlock)\nIRange\nSetInitialValue (Method)\nFunctions\nCreateRange (Function)\nCreateRangePool (Function)\nInterfaces\nIBuilder (Interface)\nGetBuilderStats (Method)\nReset (Method)\nSegments\nWriteIString (Method)\nWriteMemSegment (Method)\nWriteRune (Method)\nWriteString (Method)\nWriteWString (Method)\nICharmap (Interface)\nDecode (Method)\nEncode (Method)\nInternals\n_RangePool (FunctionBlock)\nProtected\nStructs\nSTATS (Struct)\nLibrary Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nFile and Project Information\nLibrary Reference\nMemory Block Manager\nLibrary Identification\nLibrary Properties\nString Segments\nLibrary Identification\nLibrary Properties\nUTF-8 Encoding Support\nLibrary Identification\nLibrary Properties\nString Builder Base\nDocs\n»\nBuilderBase\n»\nFunction\nBlocks\n»\nRange (FB)\nRange (FB)\nÂ¶\nFUNCTION_BLOCK Range EXTENDS MBM.Disposable IMPLEMENTS STR.IRange\nRune by rune Iteration over the content of\nitfBuilder\n.\nInOut:\nScope\nName\nType\nInput Const\nitfBuilder\nIBuilder\nMethods:\nSetInitialValue\nGetNextRune\nReset\nUngetLastRune\nStructure:\nIRange\nGetNextRune (Method)\nReset (Method)\nUngetLastRune (Method)\nSetInitialValue (Method)",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input Const",
+          "Name": "itfBuilder",
+          "Type": "IBuilder"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "GetLibVersionNumber (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/Library-Information/GetLibVersionNumber.html",
+  "page_title": "GetLibVersionNumber (FUN)",
+  "text": "\nFUNCTION GetLibVersionNumber : DWORD\nThis function has been automatically generated from the project information.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetLibVersionNumber",
+          "Type": "DWORD"
+        }
+      ]
+    }
+  ]
+}

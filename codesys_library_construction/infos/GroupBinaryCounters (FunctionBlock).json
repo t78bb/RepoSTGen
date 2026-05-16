@@ -1,0 +1,52 @@
+{
+  "library": "DNP3",
+  "title": "GroupBinaryCounters (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Outstation/Groups/GroupBinaryCounters.html",
+  "page_title": "GroupBinaryCounters (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL GroupBinaryCounters EXTENDS GroupBinaryCountersBase\nGroup of datapoints of type Binary Counter.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment",
+        "Inherited from"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "tScanPeriod",
+          "Type": "TIME",
+          "Initial": "TIME#0ms",
+          "Comment": "Scan period for datapoints within group.\nIf tScanPeriod is set to T#0MS, the OutstationDataModel.tScanPeriod is used.\nCan be configured per datapoint as well.",
+          "Inherited from": "GroupBase"
+        },
+        {
+          "Scope": "Output",
+          "Name": "itfGroup",
+          "Type": "IGroupBinaryCounters",
+          "Initial": "",
+          "Comment": "",
+          "Inherited from": "GroupBinaryCountersBase"
+        },
+        {
+          "Scope": "Input",
+          "Name": "aPoints",
+          "Type": "POINTER TOBinaryCounter",
+          "Initial": "",
+          "Comment": "Pointer to array of BinaryCounter",
+          "Inherited from": ""
+        },
+        [
+          "numPoints",
+          "UINT",
+          "",
+          "Number of Points",
+          ""
+        ]
+      ]
+    }
+  ]
+}

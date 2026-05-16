@@ -1,0 +1,41 @@
+{
+  "library": "SysFile",
+  "title": "SysFileOpen (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SysFile/Current/SysFileOpen.html",
+  "page_title": "SysFileOpen (FUN)",
+  "text": "Deutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nMenu\nSearch\nDeutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nACCESS_MODE (Enum)\nSYS_FILETIME (Struct)\nSYS_FILE_STATUS (Enum)\nSysFileClose (Function)\nSysFileCopy (Function)\nSysFileDelete (Function)\nSysFileDeleteByHandle (Function)\nSysFileEOF (Function)\nSysFileFlush (Function)\nSysFileGetName (Function)\nSysFileGetName2 (Function)\nSysFileGetPath (Function)\nSysFileGetPos (Function)\nSysFileGetSize (Function)\nSysFileGetSizeByHandle (Function)\nSysFileGetStatus (Function)\nSysFileGetStatus2 (Function)\nSysFileGetTime (Function)\nSysFileOpen (Function)\nSysFileRead (Function)\nSysFileRename (Function)\nSysFileSetPos (Function)\nSysFileTruncate (Function)\nSysFileWrite (Function)\nFile and Project Information\nLibrary Reference\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nSysFile\nDocs\n»\nSysFileOpen (FUN)\nSysFileOpen (FUN)\nÂ¶\nFUNCTION SysFileOpen : RTS_IEC_HANDLE\nOpen or create file. A standard path will be added to the filename, if no path is specified in the file name.\nIf a file extension is specified in the settings, this path will be used (see category settings).\nNote\nFile name can contain an absolute or relative path to the file. Path entries\nmust be separated with a Slash (/)  and not with a Backslash (\\)!\nInOut:\nScope\nName\nType\nComment\nReturn\nSysFileOpen\nRTS_IEC_HANDLE\nHandle to the file or RTS_INVALID_HANDLE if failed\nInput\nszFile\nSTRING\nFile name. File name can contain an absolute or relative path to the file.\nPath entries must be separated with a Slash (/)  and not with a Backslash (\\)!\nam\nACCESS_MODE\nRequested access mode to the file. See\nACCESS_MODE\nfor details.\nHere find some examples:\nAM_READ\nIf file does not exist, an error is returned. If the file exists, the file\nwill be opened\nAM_WRITE\nIf file does not exist, a new file will be created. If the file exists,\nit will be overwritten!\nAM_APPEND\nIf the file does not exist, an error is returned. If the file exists, the file\nwill be opened\npResult\nPOINTER TO RTS_IEC_RESULT\nPointer to runtime system error code (see CmpErrors.library)\ntop\nCODESYS Group | We\nsoftware\nAutomation.\nto software\n['sɒftwɛər]\ntransitive verb\n__softwared/softwaring\n: to develop software\n// to software automation: to develop software for automation purposes\nThe CODESYS Group is the manufacturer of CODESYS, the leading hardware-independent\n                                    IEC 61131-3 automation software for developing and engineering controller\n                                    applications.\nCODESYS® is a registered trademark.\nCODESYS GmbH\nA member of the CODESYS Group\nMemminger Straße 151, 87439 Kempten\nGermany\nTel.:\n+49-831-54031-0\ninfo@codesys.com\nLegal Notice\nPrivacy Policy\nLinkedIn\nYoutube\nRSS\nDownloads\nLogin\nCODESYS Store\n© 2022 CODESYS GmbH\n| A member of the CODESYS Group",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SysFileOpen",
+          "Type": "RTS_IEC_HANDLE",
+          "Comment": "Handle to the file or RTS_INVALID_HANDLE if failed"
+        },
+        {
+          "Scope": "Input",
+          "Name": "szFile",
+          "Type": "STRING",
+          "Comment": "File name. File name can contain an absolute or relative path to the file.\nPath entries must be separated with a Slash (/)  and not with a Backslash (\\)!"
+        },
+        [
+          "am",
+          "ACCESS_MODE",
+          "Requested access mode to the file. SeeACCESS_MODEfor details.Here find some examples:AM_READIf file does not exist, an error is returned. If the file exists, the file\nwill be openedAM_WRITEIf file does not exist, a new file will be created. If the file exists,\nit will be overwritten!AM_APPENDIf the file does not exist, an error is returned. If the file exists, the file\nwill be opened"
+        ],
+        [
+          "pResult",
+          "POINTER TO RTS_IEC_RESULT",
+          "Pointer to runtime system error code (see CmpErrors.library)"
+        ]
+      ]
+    }
+  ]
+}

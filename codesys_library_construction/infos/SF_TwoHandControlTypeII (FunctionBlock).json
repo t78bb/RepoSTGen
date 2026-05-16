@@ -1,0 +1,70 @@
+{
+  "library": "PLCopen Safety FBs",
+  "title": "SF_TwoHandControlTypeII (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/PLCopen Safety FBs/Current/PLCopenSafetyFBs/Function-Blocks/SF_TwoHandControlTypeII.html",
+  "page_title": "SF_TwoHandControlTypeII (FB)",
+  "text": "\nFUNCTION_BLOCK SF_TwoHandControlTypeII\nThis function block provides the two-hand control functionality (see EN 574, Section 4 Type II).\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "Activate",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "Activation of the FB."
+        },
+        [
+          "S_Button1",
+          "BOOL",
+          "FALSE",
+          "Input of button 1, FALSE: Button 1 released, TRUE: Button 1\nactuated."
+        ],
+        [
+          "S_Button2",
+          "BOOL",
+          "FALSE",
+          "Input of button 2, FALSE: Button 2 released, TRUE: Button 2\nactuated."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Ready",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "Activation of the FB. TRUE indicates that the FB is\nactivated and the outputs results are valid, FALSE the FB is\nnot active and the program is not executed."
+        },
+        [
+          "S_TwoHandOut",
+          "BOOL",
+          "FALSE",
+          "Safety related output signal. FALSE: No correct two hand\noperation. TRUE: S_Button1 and S_Button2 inputs are TRUE and\nno error occurred. Correct two hand operation."
+        ],
+        [
+          "SafetyDemand",
+          "BOOL",
+          "FALSE",
+          "Output indicating that the FB is active and the primary\nsafety function is demanded (e.g. related to the safety\nfunctionality)."
+        ],
+        [
+          "Error",
+          "BOOL",
+          "FALSE",
+          "Error flag"
+        ],
+        [
+          "DiagCode",
+          "WORD",
+          "0",
+          "Diagnostic register"
+        ]
+      ]
+    }
+  ]
+}

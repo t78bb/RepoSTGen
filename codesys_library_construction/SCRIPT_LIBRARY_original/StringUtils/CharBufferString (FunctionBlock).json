@@ -1,0 +1,50 @@
+{
+  "library": "StringUtils",
+  "title": "CharBufferString (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/StringUtils/Current/Public-Parts/CharBufferString.html",
+  "page_title": "CharBufferString (FB)",
+  "text": "Deutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nMenu\nSearch\nDeutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nPublic Parts\nAnsi\nCharToUpper (Function)\nStrCaseCmpA (Function)\nStrCaseCmpEndA (Function)\nStrCaseCmpStartA (Function)\nStrCaseFindA (Function)\nStrCmpA (Function)\nStrCmpEndA (Function)\nStrCmpStartA (Function)\nStrConcatA (Function)\nStrCpyA (Function)\nStrDeleteA (Function)\nStrFindA (Function)\nStrIsNullOrEmptyA (Function)\nStrLenA (Function)\nStrMidA (Function)\nStrPadLeftA (Function)\nStrPadRightA (Function)\nStrReplaceA (Function)\nStrToLowerA (Function)\nStrToUpperA (Function)\nStrTrimA (Function)\nStrTrimEndA (Function)\nStrTrimStartA (Function)\nCharBufferPtr (Alias)\nCharBufferString (FunctionBlock)\nCapacity (Property)\nCharAt (Method)\nCharAtEquals (Method)\nCharacters (Property)\nCopy (Method)\nCopyFrom (Method)\nCopyFrom2 (Method)\nDelete (Method)\nFB_Exit (Method)\nFB_Init (Method)\nFind (Method)\nFindFrom (Method)\nFromString (Method)\nInit (Method)\nInitialize (Method)\nInsert (Method)\nLength (Property)\nMid (Method)\nReplace (Method)\nStringType (Property)\nILocalizedDateTimeNames (Interface)\nGetDayLong (Method)\nGetDayShort (Method)\nGetMonthLong (Method)\nGetMonthShort (Method)\nPrintf (Function)\nStuSprintf (Function)\nStuSprintfW (Function)\nUTF8\nConvertUTF16toUTF8 (Function)\nConvertUTF8toUTF16 (Function)\nGVL_UTF8 (GVL)\nIsLegalUTF8 (Function)\nIsSpaceCharacter (Function)\nUnicode\nStrCaseCmpW (Function)\nStrCaseFindW (Function)\nStrCmpW (Function)\nStrConcatW (Function)\nStrCpyW (Function)\nStrDeleteW (Function)\nStrFindW (Function)\nStrIsNullOrEmptyW (Function)\nStrLenW (Function)\nStrMidW (Function)\nStrPadLeftW (Function)\nStrPadRightW (Function)\nStrReplaceW (Function)\nStrTrimEndW (Function)\nStrTrimStartW (Function)\nStrTrimW (Function)\nWCharToUpper (Function)\nFile and Project Information\nLibrary Reference\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nComponent Manager\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysTimeRtc\nLibrary Identification\nLibrary Properties\nStringUtils\nDocs\n»\nPublic\nParts\n»\nCharBufferString (FB)\nCharBufferString (FB)\nÂ¶\nFUNCTION_BLOCK CharBufferString\nThis function block encapsulates the data of a string based on a byte array, i.e. contains\nthe CharBufferPtr variable pointing to the buffer and the information about the type of\n(i.e. one-byte string or two-byte string)\nInOut:\nScope\nName\nType\nComment\nInput\nm_uiBufferSize\nUINT\nThe size of the buffer (in bytes), where the string is\nstored.\nm_cbpBuffer\nCharBufferPtr\nThe buffer, where the string is stored this instance\nrepresents\nm_Type\n__SYSTEM.TYPE_CLASS\nA __SYSTEM.TYPE_CLASS value indicating type of the string\nm_AsString\nPOINTER TO STRING(255)\nTwo additional pointers to the buffer used for easier debugging.\nIn the monitoring view the corresponding pointer shows the current\nvalue of the buffer as (w)string.\nm_AsWString\nPOINTER TO WSTRING(255)\nm_bAllocated\nBOOL\nFlag indicating, whether the memory for storing the string was allocated\ndynamically and has to be freed later\nProperties:\nCapacity\nCharacters\nLength\nStringType\nMethods:\nCharAt\nCharAtEquals\nCopy\nCopyFrom\nCopyFrom2\nDelete\nFB_Exit\nFB_Init\nFind\nFindFrom\nFromString\nInit\nInitialize\nInsert\nMid\nReplace\nStructure:\nCapacity (Property)\nCharAt (Method)\nCharAtEquals (Method)\nCharacters (Property)\nCopy (Method)\nCopyFrom (Method)\nCopyFrom2 (Method)\nDelete (Method)\nFB_Exit (Method)\nFB_Init (Method)\nFind (Method)\nFindFrom (Method)\nFromString (Method)\nInit (Method)\nInitialize (Method)\nInsert (Method)\nLength (Property)\nMid (Method)\nReplace (Method)\nStringType (Property)\ntop\nCODESYS Group | We\nsoftware\nAutomation.\nto software\n['sɒftwɛər]\ntransitive verb\n__softwared/softwaring\n: to develop software\n// to software automation: to develop software for automation purposes\nThe CODESYS Group is the manufacturer of CODESYS, the leading hardware-independent\n                                    IEC 61131-3 automation software for developing and engineering controller\n                                    applications.\nCODESYS® is a registered trademark.\nCODESYS GmbH\nA member of the CODESYS Group\nMemminger Straße 151, 87439 Kempten\nGermany\nTel.:\n+49-831-54031-0\ninfo@codesys.com\nLegal Notice\nPrivacy Policy\nLinkedIn\nYoutube\nRSS\nDownloads\nLogin\nCODESYS Store\n© 2022 CODESYS GmbH\n| A member of the CODESYS Group",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "m_uiBufferSize",
+          "Type": "UINT",
+          "Comment": "The size of the buffer (in bytes), where the string is\nstored."
+        },
+        [
+          "m_cbpBuffer",
+          "CharBufferPtr",
+          "The buffer, where the string is stored this instance\nrepresents"
+        ],
+        [
+          "m_Type",
+          "__SYSTEM.TYPE_CLASS",
+          "A __SYSTEM.TYPE_CLASS value indicating type of the string"
+        ],
+        [
+          "m_AsString",
+          "POINTER TO STRING(255)",
+          "Two additional pointers to the buffer used for easier debugging.\nIn the monitoring view the corresponding pointer shows the current\nvalue of the buffer as (w)string."
+        ],
+        [
+          "m_AsWString",
+          "POINTER TO WSTRING(255)",
+          ""
+        ],
+        [
+          "m_bAllocated",
+          "BOOL",
+          "Flag indicating, whether the memory for storing the string was allocated\ndynamically and has to be freed later"
+        ]
+      ]
+    }
+  ]
+}

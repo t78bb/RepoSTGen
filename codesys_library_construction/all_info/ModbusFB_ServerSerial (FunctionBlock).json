@@ -1,0 +1,220 @@
+{
+  "library": "ModbusFB",
+  "title": "ServerSerial (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/ModbusFB/Current/ModbusFB/Function-Blocks/Server/ServerSerial.html",
+  "page_title": "ServerSerial (FB)",
+  "text": "Library Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nModbusFB\nEnums\nError (Enum)\nExceptionCodes (Enum)\nFunctionCodes (Enum)\nLoggingOptions (Enum)\nPrimaryTables (Enum)\nRtuAscii (Enum)\nSerialSubFunctionCodes (Enum)\nFunction Blocks\nClient\nClient (FunctionBlock)\nClientRequest (FunctionBlock)\nClientRequestMaskWriteRegister (FunctionBlock)\nClientRequestRead (FunctionBlock)\nClientRequestReadBits (FunctionBlock)\nClientRequestReadCoils (FunctionBlock)\nClientRequestReadDiscreteInputs (FunctionBlock)\nClientRequestReadHoldingRegisters (FunctionBlock)\nClientRequestReadInputRegisters (FunctionBlock)\nClientRequestReadRegisters (FunctionBlock)\nClientRequestReadWriteMultipleRegisters (FunctionBlock)\nClientRequestWriteMultiple (FunctionBlock)\nClientRequestWriteMultipleCoils (FunctionBlock)\nClientRequestWriteMultipleRegisters (FunctionBlock)\nClientRequestWriteSingle (FunctionBlock)\nClientRequestWriteSingleCoil (FunctionBlock)\nClientRequestWriteSingleRegister (FunctionBlock)\nClientSerial (FunctionBlock)\nClientTCP (FunctionBlock)\nServer\nExampleDataModel (FunctionBlock)\nServer (FunctionBlock)\nServerSerial (FunctionBlock)\nServerTCP (FunctionBlock)\nUtil\nByteBuffer (FunctionBlock)\nGlobalConstants\nConstants (GVL)\nParameter (ParamList)\nStructs\nRequestData (Struct)\nRequestDataDiagnostics (Struct)\nRequestDataMaskWriteRegister (Struct)\nRequestDataRead (Struct)\nRequestDataReadWriteMultipleRegisters (Struct)\nRequestDataWriteMultiple (Struct)\nRequestDataWriteSingle (Struct)\nRequestUnion (Union)\nSupportedFcs (Struct)\nTableDefinition (Struct)\nTableDefinitions (Struct)\nTableSection (Struct)\nFile and Project Information\nLibrary Reference\n3SLicense\nLibrary Identification\nLibrary Properties\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nCmpLog\nLibrary Identification\nLibrary Properties\nCommon Behaviour Model\nLibrary Identification\nLibrary Properties\nComponent Manager\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nStringUtils\nLibrary Identification\nLibrary Properties\nSysCom\nLibrary Identification\nLibrary Properties\nSysCpuHandling\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysSocket\nLibrary Identification\nLibrary Properties\nSysTarget\nLibrary Identification\nLibrary Properties\nSysTimeCore\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nModbusFB\nDocs\n»\nModbusFB\n»\nFunction\nBlocks\n»\nServer\n»\nServerSerial (FB)\nServerSerial (FB)\nÂ¶\nFUNCTION_BLOCK ServerSerial EXTENDS\nServer\nIMPLEMENTS ISysComUser\nMODBUS serial server (slave).\nFor details about supported function codes and âdata modelâ see\nServer\n.\nPlease note: some input variables related to connection configuration are read when rising edge on xEnable occurs.\nTo change connection configuration the application needs to\n- disconnect (xEnable := FALSE and execute the FB)\n- modify the related input variables\n- connect (xEnable := TRUE and execute the FB)\nThe\nServer\nprovides some statistics of received valid requests messages and sent reply messages.\nInvalid messages are dropped at the communication level, so doesnt appear in the statistics.\nTo analyse situations where invalid reply messages might occur, you can use udiLogOptions with LoggingOptions.WarnOnReceivedInvalidFrames.\nThe maximum number of serial ports usable with ClientSerial / ServerSerial is limited to MAX_NUM_COMPORTS.\nIn case there is a need to use more serial ports, anyone can set the library parameter MAX_NUM_COMPORTS within an application - see Library Manager -> ModbusFB -> Parameter -> MAX_NUM_COMPORTS.\nPlease visit\nhttps://forge.codesys.com/prj/codesys-example/modbus/home\nto find examples.\nInOut:\nScope\nName\nType\nInitial\nComment\nInherited from\nInput\nxEnable\nBOOL\nFALSE\nEnables the server, take over the configuration information fcsSupported and dataModel.\nIf the âdata modelâ (tableDefinitions) contains configuration errors, the Server will not got busy (xBusy = FALSE).\nServer\nfcsSupported\nSupportedFcs\nConstants.SUPPORTED_FCS_SIMPLE_SERVER\nSupported âfunction codesâ, accepted at xEnable FALSE => TRUE.\nIn case fcsSupported is not assigned by the application it defaults to\nConstants.SUPPORTED_FCS_SIMPLE_SERVER\n.\nServer\ndataModel\nTableDefinitions\nâdata modelâ, accepted at xEnable FALSE => TRUE.\nServer\ntInactivityInfoTime\nUDINT\n0\nâinactivity info timeâ (in milliseconds).\nIf no valid requests are received in this time xInactive is signaling inactivity - default = 0 -> no âinactivity infoâ.\nServer\nOutput\nxRunning\nBOOL\nServer is up and running, waiting for requests.\nServer\nxError\nBOOL\nError\nServer\neErrorID\nError\nError status\nServer\nxInactive\nBOOL\nNo valid requests received for tInactivityTimeOut.\nServer\nudiNumMsgRecv\nUDINT\nRequest statistics: number of request messages received\nsince enabling the Server.\nServer\nudiNumMsgReply\nUDINT\nRequest statistics: number of reply messages send since\nenabling the Server.\nServer\nudiNumMsgExcReply\nUDINT\nRequest statistics: number of exception reply messages send\nsince enabling the Server.\nServer\nudiNumMsgExcReplyIllFct\nUDINT\nRequest statistics: number of exception reply messages send\nsince enabling the Server, signaling illegal function.\nServer\nudiNumMsgExcReplyIllDataAdr\nUDINT\nRequest statistics: number of exception reply messages send\nsince enabling the Server, signaling illegal data address.\nServer\nudiNumMsgExcReplyIllDataValue\nUDINT\nRequest statistics: number of exception reply messages send\nsince enabling the Server, signaling illegal data value.\nServer\nxReadRequest\nBOOL\nRead request(s) happened since last call, rejected requests\nincluded.\nServer\nudiNumReadRequests\nUDINT\nRequest statistics: read request counter, rejected requests\nincluded.\nServer\nxWriteRequest\nBOOL\nWrite request(s) happened since last call, rejected requests\nincluded.\nServer\nudiNumWriteRequests\nUDINT\nRequest statistics: write request counter, rejected requests\nincluded.\nServer\nInput\nuiUnitId\nUINT\n1\nUnit-Id / Slave address. Only read when rising edge on xEnable occurs.\nSlave address has to be in range 1 .. 247 according to MODBUS standard.\niPort\nSysCom.SYS_COM_PORTS\nSysCom.SYS_COM_PORTS.SYS_COMPORT_NONE\nSerial port. Only read when rising edge on xEnable occurs.\ndwBaudrate\nSysCom.SYS_COM_BAUDRATE\nSysCom.SYS_COM_BAUDRATE.SYS_BR_115200\nBaud rate. Only read when rising edge on xEnable occurs.\nbyDataBits\nBYTE\n8\nNumber of data bits/BYTE, 5-8. Only read when rising edge on\nxEnable occurs.\neParity\nSysCom.SYS_COM_PARITY\nSysCom.SYS_COM_PARITY.SYS_NOPARITY\nParity. Only read when rising edge on xEnable occurs.\neStopBits\nSysCom.SYS_COM_STOPBITS\nSysCom.SYS_COM_STOPBITS.SYS_ONESTOPBIT\nStop bits. Only read when rising edge on xEnable occurs.\neDTRcontrol\nSysCom.SYS_COM_DTR_CONTROL\nSysCom.SYS_COM_DTR_CONTROL.SYS_DTR_CONTROL_DISABLE\nDTR control. Only read when rising edge on xEnable occurs.\neRTScontrol\nSysCom.SYS_COM_RTS_CONTROL\nSysCom.SYS_COM_RTS_CONTROL.SYS_RTS_CONTROL_DISABLE\nRTS control. Only read when rising edge on xEnable occurs.\neRtuAscii\nRtuAscii\nRtuAscii.RTU\nRTU / ASCII. Only read when rising edge on xEnable occurs.\nudiLogOptions\nUDINT\nLoggingOptions.ServerStartStop\nLogging options.\nMethods:\nCheckDataModel\n, inherited from\nServer\nInitDataModel\n, inherited from\nServer\nLogDataModel\n, inherited from\nServer\nLogStatusInfo\nResetRequestStatistics\n, inherited from\nServer\nSupportFc\n, inherited from\nServer\nSupportsFc\n, inherited from\nServer\nStructure:\nLog\nLogStatusInfo (Method)",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment",
+        "Inherited from"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "xEnable",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "Enables the server, take over the configuration information fcsSupported and dataModel.\nIf the âdata modelâ (tableDefinitions) contains configuration errors, the Server will not got busy (xBusy = FALSE).",
+          "Inherited from": "Server"
+        },
+        [
+          "fcsSupported",
+          "SupportedFcs",
+          "Constants.SUPPORTED_FCS_SIMPLE_SERVER",
+          "Supported âfunction codesâ, accepted at xEnable FALSE => TRUE.\nIn case fcsSupported is not assigned by the application it defaults toConstants.SUPPORTED_FCS_SIMPLE_SERVER.",
+          "Server"
+        ],
+        [
+          "dataModel",
+          "TableDefinitions",
+          "",
+          "âdata modelâ, accepted at xEnable FALSE => TRUE.",
+          "Server"
+        ],
+        [
+          "tInactivityInfoTime",
+          "UDINT",
+          "0",
+          "âinactivity info timeâ (in milliseconds).\nIf no valid requests are received in this time xInactive is signaling inactivity - default = 0 -> no âinactivity infoâ.",
+          "Server"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "xRunning",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Server is up and running, waiting for requests.",
+          "Inherited from": "Server"
+        },
+        [
+          "xError",
+          "BOOL",
+          "",
+          "Error",
+          "Server"
+        ],
+        [
+          "eErrorID",
+          "Error",
+          "",
+          "Error status",
+          "Server"
+        ],
+        [
+          "xInactive",
+          "BOOL",
+          "",
+          "No valid requests received for tInactivityTimeOut.",
+          "Server"
+        ],
+        [
+          "udiNumMsgRecv",
+          "UDINT",
+          "",
+          "Request statistics: number of request messages received\nsince enabling the Server.",
+          "Server"
+        ],
+        [
+          "udiNumMsgReply",
+          "UDINT",
+          "",
+          "Request statistics: number of reply messages send since\nenabling the Server.",
+          "Server"
+        ],
+        [
+          "udiNumMsgExcReply",
+          "UDINT",
+          "",
+          "Request statistics: number of exception reply messages send\nsince enabling the Server.",
+          "Server"
+        ],
+        [
+          "udiNumMsgExcReplyIllFct",
+          "UDINT",
+          "",
+          "Request statistics: number of exception reply messages send\nsince enabling the Server, signaling illegal function.",
+          "Server"
+        ],
+        [
+          "udiNumMsgExcReplyIllDataAdr",
+          "UDINT",
+          "",
+          "Request statistics: number of exception reply messages send\nsince enabling the Server, signaling illegal data address.",
+          "Server"
+        ],
+        [
+          "udiNumMsgExcReplyIllDataValue",
+          "UDINT",
+          "",
+          "Request statistics: number of exception reply messages send\nsince enabling the Server, signaling illegal data value.",
+          "Server"
+        ],
+        [
+          "xReadRequest",
+          "BOOL",
+          "",
+          "Read request(s) happened since last call, rejected requests\nincluded.",
+          "Server"
+        ],
+        [
+          "udiNumReadRequests",
+          "UDINT",
+          "",
+          "Request statistics: read request counter, rejected requests\nincluded.",
+          "Server"
+        ],
+        [
+          "xWriteRequest",
+          "BOOL",
+          "",
+          "Write request(s) happened since last call, rejected requests\nincluded.",
+          "Server"
+        ],
+        [
+          "udiNumWriteRequests",
+          "UDINT",
+          "",
+          "Request statistics: write request counter, rejected requests\nincluded.",
+          "Server"
+        ],
+        {
+          "Scope": "Input",
+          "Name": "uiUnitId",
+          "Type": "UINT",
+          "Initial": "1",
+          "Comment": "Unit-Id / Slave address. Only read when rising edge on xEnable occurs.\nSlave address has to be in range 1 .. 247 according to MODBUS standard.",
+          "Inherited from": ""
+        },
+        [
+          "iPort",
+          "SysCom.SYS_COM_PORTS",
+          "SysCom.SYS_COM_PORTS.SYS_COMPORT_NONE",
+          "Serial port. Only read when rising edge on xEnable occurs.",
+          ""
+        ],
+        [
+          "dwBaudrate",
+          "SysCom.SYS_COM_BAUDRATE",
+          "SysCom.SYS_COM_BAUDRATE.SYS_BR_115200",
+          "Baud rate. Only read when rising edge on xEnable occurs.",
+          ""
+        ],
+        [
+          "byDataBits",
+          "BYTE",
+          "8",
+          "Number of data bits/BYTE, 5-8. Only read when rising edge on\nxEnable occurs.",
+          ""
+        ],
+        [
+          "eParity",
+          "SysCom.SYS_COM_PARITY",
+          "SysCom.SYS_COM_PARITY.SYS_NOPARITY",
+          "Parity. Only read when rising edge on xEnable occurs.",
+          ""
+        ],
+        [
+          "eStopBits",
+          "SysCom.SYS_COM_STOPBITS",
+          "SysCom.SYS_COM_STOPBITS.SYS_ONESTOPBIT",
+          "Stop bits. Only read when rising edge on xEnable occurs.",
+          ""
+        ],
+        [
+          "eDTRcontrol",
+          "SysCom.SYS_COM_DTR_CONTROL",
+          "SysCom.SYS_COM_DTR_CONTROL.SYS_DTR_CONTROL_DISABLE",
+          "DTR control. Only read when rising edge on xEnable occurs.",
+          ""
+        ],
+        [
+          "eRTScontrol",
+          "SysCom.SYS_COM_RTS_CONTROL",
+          "SysCom.SYS_COM_RTS_CONTROL.SYS_RTS_CONTROL_DISABLE",
+          "RTS control. Only read when rising edge on xEnable occurs.",
+          ""
+        ],
+        [
+          "eRtuAscii",
+          "RtuAscii",
+          "RtuAscii.RTU",
+          "RTU / ASCII. Only read when rising edge on xEnable occurs.",
+          ""
+        ],
+        [
+          "udiLogOptions",
+          "UDINT",
+          "LoggingOptions.ServerStartStop",
+          "Logging options.",
+          ""
+        ]
+      ]
+    }
+  ]
+}

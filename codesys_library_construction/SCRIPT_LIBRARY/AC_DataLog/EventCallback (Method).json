@@ -1,0 +1,31 @@
+{
+  "library": "AC_DataLog",
+  "title": "EventCallback (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_DataLog/Current/AC_DataLog/DataLogChannel/pou-DataLogChannel/EventCallback/EventCallback.html",
+  "page_title": "DataLogChannel.EventCallback (METH)",
+  "text": "\nMETHOD EventCallback : UDINT\nThe interface ICmpEventCallback must be registered for an event. If this event is posted, this callback method is called.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "EventCallback",
+          "Type": "UDINT",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "pEventParam",
+          "Type": "POINTER TO EventParam",
+          "Comment": "Pointer to the event parameters, see Struct EventParam"
+        }
+      ]
+    }
+  ]
+}

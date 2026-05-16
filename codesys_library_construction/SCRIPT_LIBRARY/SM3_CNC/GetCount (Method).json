@@ -1,0 +1,23 @@
+{
+  "library": "SM3_CNC",
+  "title": "GetCount (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/GSentence/pou-SMC_GWord_Iterator/GetCount.html",
+  "page_title": "SMC_GWord_Iterator.GetCount (METH)",
+  "text": "\nMETHOD GetCount : UDINT\nReturns the total number of gwords of the iterator,\nindependent of how many times\nSMC_GWord_Iterator.Advance\nhas been called.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetCount",
+          "Type": "UDINT"
+        }
+      ]
+    }
+  ]
+}

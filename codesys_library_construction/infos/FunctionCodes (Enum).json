@@ -1,0 +1,118 @@
+{
+  "library": "ModbusFB",
+  "title": "FunctionCodes (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/ModbusFB/Current/ModbusFB/Enums/FunctionCodes.html",
+  "page_title": "FunctionCodes (ENUM)",
+  "text": "\nTYPE FunctionCodes :\nMODBUS function codes.\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "InvalidFunctionCode",
+          "Initial": "0",
+          "Comment": ""
+        },
+        {
+          "Name": "ReadCoils",
+          "Initial": "1",
+          "Comment": ""
+        },
+        {
+          "Name": "ReadDiscreteInputs",
+          "Initial": "2",
+          "Comment": ""
+        },
+        {
+          "Name": "ReadHoldingRegisters",
+          "Initial": "3",
+          "Comment": ""
+        },
+        {
+          "Name": "ReadInputRegisters",
+          "Initial": "4",
+          "Comment": ""
+        },
+        {
+          "Name": "WriteSingleCoil",
+          "Initial": "5",
+          "Comment": ""
+        },
+        {
+          "Name": "WriteSingleRegister",
+          "Initial": "6",
+          "Comment": ""
+        },
+        {
+          "Name": "ReadExceptionStatus",
+          "Initial": "7",
+          "Comment": "serial line only"
+        },
+        {
+          "Name": "Diagnostics",
+          "Initial": "8",
+          "Comment": "serial line only"
+        },
+        {
+          "Name": "GetCommEventCounter",
+          "Initial": "11",
+          "Comment": "serial line only"
+        },
+        {
+          "Name": "GetCommEventLog",
+          "Initial": "12",
+          "Comment": "serial line only"
+        },
+        {
+          "Name": "WriteMultipleCoils",
+          "Initial": "15",
+          "Comment": ""
+        },
+        {
+          "Name": "WriteMultipleRegisters",
+          "Initial": "16",
+          "Comment": ""
+        },
+        {
+          "Name": "ReportServerID",
+          "Initial": "17",
+          "Comment": "serial line only"
+        },
+        {
+          "Name": "ReadFileRecord",
+          "Initial": "20",
+          "Comment": ""
+        },
+        {
+          "Name": "WriteFileRecord",
+          "Initial": "21",
+          "Comment": ""
+        },
+        {
+          "Name": "MaskWriteRegister",
+          "Initial": "22",
+          "Comment": ""
+        },
+        {
+          "Name": "ReadWriteMultipleRegisters",
+          "Initial": "23",
+          "Comment": ""
+        },
+        {
+          "Name": "ReadFifoQueue",
+          "Initial": "24",
+          "Comment": ""
+        },
+        {
+          "Name": "EncapsulatedInterfaceTransport",
+          "Initial": "43",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

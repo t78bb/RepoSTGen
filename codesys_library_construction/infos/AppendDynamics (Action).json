@@ -1,0 +1,8 @@
+{
+  "library": "SM3_CNC",
+  "title": "AppendDynamics (Action)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/File/ReadNCFile/Token/pou-SMC_ReadNCTokens/AppendDynamics.html",
+  "page_title": "SMC_ReadNCTokens.AppendDynamics (ACT)",
+  "text": "\nAppend special source line word",
+  "tables": []
+}

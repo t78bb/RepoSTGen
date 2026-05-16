@@ -1,0 +1,8 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_AdaptAddAxes (Action)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/SoftMotion-Function-Blocks/pou-SMC_LimitDynamics/SMC_AdaptAddAxes.html",
+  "page_title": "SMC_LimitDynamics.SMC_AdaptAddAxes (ACT)",
+  "text": "\ncheck max acceleration",
+  "tables": []
+}

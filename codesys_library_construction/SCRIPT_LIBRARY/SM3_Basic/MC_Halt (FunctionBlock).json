@@ -1,0 +1,77 @@
+{
+  "library": "SM3_Basic",
+  "title": "MC_Halt (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/Movement/MC_Halt.html",
+  "page_title": "MC_Halt (FB)",
+  "text": "\nFUNCTION_BLOCK MC_Halt\nThis function block stops the referenced axis in a controlled manner. If actions of other function blocks are running at this time,\nthe actions are aborted. The axis enters the\ndiscrete_motion\nstate until the velocity 0 is reached.\nIf the\nDone\noutput of\nMC_Halt\nis set, the state of the axis changes to\nstandstill\n.\nAs long as\nMC_Halt\nis active, a new motion command can be issued that interrupts the execution of\nMC_Halt\n.\nUnlike\nMC_Stop\n,\nMC_Halt\ncan also be overwritten.\nNote\nOverwriting the execution of\nMC_Halt\nA driverless vehicle detects an obstacle and is stopped with\nMC_Halt\n.\nThe obstacle is removed before the vehicle comes to a\nstandstill\n. By issuing a new motion command,\nMC_Halt\nis aborted and the trip is resumed without having come to a\nstandstill\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "TRUE: Starts execution."
+        },
+        [
+          "Deceleration",
+          "LREAL",
+          "0",
+          "Modulo value of the deceleration in [u/sÂ²]."
+        ],
+        [
+          "Jerk",
+          "LREAL",
+          "0",
+          "Jerk in [u/sÂ³]"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Done",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "TRUE: Velocity 0 has been achieved."
+        },
+        [
+          "Busy",
+          "BOOL",
+          "FALSE",
+          "TRUE: Function block is in operation."
+        ],
+        [
+          "CommandAborted",
+          "BOOL",
+          "FALSE",
+          "TRUE: Execution has been interrupted by another function\nblock instance operating on the axis."
+        ],
+        [
+          "Error",
+          "BOOL",
+          "FALSE",
+          "TRUE: Error has occurred."
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "0",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

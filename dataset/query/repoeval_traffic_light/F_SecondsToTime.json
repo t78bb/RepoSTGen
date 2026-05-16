@@ -1,0 +1,5 @@
+{
+  "requirement": "This code is intended to implement the conversion of a given number of seconds (DWORD) into a TIME data type by multiplying the seconds by 1000 to obtain milliseconds.",
+  "provide_code": "FUNCTION F_SecondsToTime : TIME\nVAR_INPUT\n\tdwSeconds\t:\tDWORD;\t\t//输入的秒数\nEND_VAR",
+  "function_name": "F_SecondsToTime"
+}

@@ -1,0 +1,11 @@
+{
+  "模糊点列表": [
+    {
+      "模糊点类型": "IO映射",
+      "模糊点描述": "原始需求未明确说明电源控制函数的具体参数",
+      "差异细节": "模型生成代码中fbPower1和fbPower2函数仅使用了Axis和Enable参数，而参考代码中使用了Axis, Enable, bDriveStart, bRegulatorOn参数",
+      "精准需求描述": "电源控制函数应包括启动驱动和调节器的控制，即在电源使能时同时启动驱动和调节器"
+    }
+  ],
+  "case_id": "repoeval_electronic_cam_motion/FB_DualAxisPower"
+}

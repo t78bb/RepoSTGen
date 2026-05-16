@@ -1,0 +1,51 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_CoordinateTransformation3D (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/Coordinate-Transformations/SMC_CoordinateTransformation3D.html",
+  "page_title": "SMC_CoordinateTransformation3D (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_CoordinateTransformation3D\nThis function block will calculate the coordinates of\na point given in respect of the new coordinate system and\ntransformed to the old coordinate system.\nFor this purpose, the coordinate transformation is defined\nby the translation of the origin and the new unit vectors\n(given in respect of the old coordinate system).\nFor detailed information of transformation modules see\nthe overview on kinematic transformations in the CNC\nonline help.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "piIn",
+          "Type": "SMC_PosInfo",
+          "Comment": "Point in new coordinates"
+        },
+        [
+          "vX",
+          "SMC_Vector3D",
+          "Unit vector of new coordinate system"
+        ],
+        [
+          "vY",
+          "SMC_Vector3D",
+          "Unit vector of new coordinate system"
+        ],
+        [
+          "vZ",
+          "SMC_Vector3D",
+          "Unit vector of new coordinate system"
+        ],
+        [
+          "vTranslation",
+          "SMC_Vector3D",
+          "Translation vector for origin = origin of\nnew coordinate system in old coordinates"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "piOut",
+          "Type": "SMC_PosInfo",
+          "Comment": "Point in old coordinates"
+        }
+      ]
+    }
+  ]
+}

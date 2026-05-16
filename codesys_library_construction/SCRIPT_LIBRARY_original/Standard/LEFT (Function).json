@@ -1,0 +1,36 @@
+{
+  "library": "Standard",
+  "title": "LEFT (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/Standard/Current/String-Functions/LEFT.html",
+  "page_title": "LEFT (FUN)",
+  "text": "Deutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nMenu\nSearch\nDeutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nBistable Function Blocks\nRS (FunctionBlock)\nSR (FunctionBlock)\nCounter\nCTD (FunctionBlock)\nCTU (FunctionBlock)\nCTUD (FunctionBlock)\nMiscellaneous\nRTC (FunctionBlock)\nString Functions\nCONCAT (Function)\nDELETE (Function)\nFIND (Function)\nINSERT (Function)\nLEFT (Function)\nLEN (Function)\nMID (Function)\nREPLACE (Function)\nRIGHT (Function)\nTimer\nTOF (FunctionBlock)\nTON (FunctionBlock)\nTP (FunctionBlock)\nTrigger\nF_TRIG (FunctionBlock)\nR_TRIG (FunctionBlock)\nFile and Project Information\nLibrary Reference\nStandard\nDocs\n»\nString\nFunctions\n»\nLEFT (FUN)\nLEFT (FUN)\nÂ¶\nFUNCTION LEFT : STRING(255)\nReturns a specific number of characters of a string, starting from left\nLEFT\n(STR,\nSIZE)\nmeans: Return the first\nSIZE\ncharacters from the left in string\nSTR\n(* Example declaration *)\nVarSTRING1\n:\nSTRING\n;\n(* Example in ST , result is 'SUS' *)\nVarSTRING1\n:=\nLEFT\n(\n'SUSI'\n,\n3\n);\nInOut:\nScope\nName\nType\nComment\nReturn\nLEFT\nSTRING(255)\nResulting string\nInput\nSTR\nSTRING(255)\nString to be analyzed\nSIZE\nINT\nNumber of characters\ntop\nCODESYS Group | We\nsoftware\nAutomation.\nto software\n['sɒftwɛər]\ntransitive verb\n__softwared/softwaring\n: to develop software\n// to software automation: to develop software for automation purposes\nThe CODESYS Group is the manufacturer of CODESYS, the leading hardware-independent\n                                    IEC 61131-3 automation software for developing and engineering controller\n                                    applications.\nCODESYS® is a registered trademark.\nCODESYS GmbH\nA member of the CODESYS Group\nMemminger Straße 151, 87439 Kempten\nGermany\nTel.:\n+49-831-54031-0\ninfo@codesys.com\nLegal Notice\nPrivacy Policy\nLinkedIn\nYoutube\nRSS\nDownloads\nLogin\nCODESYS Store\n© 2022 CODESYS GmbH\n| A member of the CODESYS Group",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "LEFT",
+          "Type": "STRING(255)",
+          "Comment": "Resulting string"
+        },
+        {
+          "Scope": "Input",
+          "Name": "STR",
+          "Type": "STRING(255)",
+          "Comment": "String to be analyzed"
+        },
+        [
+          "SIZE",
+          "INT",
+          "Number of characters"
+        ]
+      ]
+    }
+  ]
+}

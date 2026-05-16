@@ -1,0 +1,6 @@
+{
+  "requirement": "This code should implement a method named `SetWaitTime` that returns a boolean value. It must accept two inputs: `MotorI` of type `MotorI` and `SequenceDelay` of type `TIME`. It should also provide an output `MotorO` of type `MotorO`. The method should initialize an internal timer `WaitTimer` of type `TON` and set an internal variable `InternalSequenceDelay` to the value of `SequenceDelay`. The method should handle cases where `SequenceDelay` might be zero or negative by ensuring that `InternalSequenceDelay` is set correctly regardless of these values.",
+  "provide_code": "METHOD SetWaitTime : BOOL\nVAR_INPUT\n\tMotorI:MotorI;\n\tSequenceDelay:TIME;\nEND_VAR\nVAR_OUTPUT\n\tMotorO:MotorO;\nEND_VAR",
+  "function_name": "Motor_SetWaitTime",
+  "requirement_cn": "这段代码应实现一个名为 `SetWaitTime` 的方法，返回布尔值。它必须接受两个输入：类型为 `MotorI` 的 `MotorI` 和类型为 `TIME` 的 `SequenceDelay`。它还应提供一个类型为 `MotorO` 的输出 `MotorO`。该方法应初始化一个类型为 `TON` 的内部定时器 `WaitTimer`，并将内部变量 `InternalSequenceDelay` 设置为 `SequenceDelay` 的值。该方法应处理 `SequenceDelay` 可能为零或负值的情况，确保无论这些值如何，`InternalSequenceDelay` 都被正确设置。"
+}

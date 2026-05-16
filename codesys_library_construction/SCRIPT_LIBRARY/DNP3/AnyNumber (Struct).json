@@ -1,0 +1,37 @@
+{
+  "library": "DNP3",
+  "title": "AnyNumber (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Types/AnyNumber/AnyNumber.html#",
+  "page_title": "AnyNumber (STRUCT)",
+  "text": "\nTYPE AnyNumber : STRUCT\nAnyNumber represents a numeric value either as value or POINTER TO value with variable base type.\nSupported base types:\nSINT (8bit -128 .. 127)\nUSINT (8bit 0 .. 255)\nINT (16bit -32768 .. 32767)\nUINT (16bit 0 .. 65535)\nDINT (32bit -2147483648 .. 2147483647)\nUDINT (32bit 0 .. 4294967295)\nREAL (32bit float)\nDOUBLE (64bit float)\nThe base type is initialized to AnyNumberType.TYPE_NONE, which will be detected as invalid base type on read operations,\nso ensure to set the base type properly.\nUsing the POINTER TO value representation requires the POINTER TO value <> 0 (set u.p.p* according to baseType).\nThe POINTER TO value is initialized to 0, which will be detected as invalid on read / write operations,\nso ensure to set the POINTER TO value properly.\nThere are functions to support certain operations using AnyNumber:\ncompare base type - see\n|AnyNumberBaseTypeEquals|\ncheck for consistency - see\nAnyNumberCheck\ncompare - see\nAnyNumberCompare\nassigment - see\nAnyNumberAssign\narithmetic - see\nAnyNumberArithmetic\nInitialization of AnyNumber is a bit eloquent, but no matter of this simple:\nExample:\n/// AnyNumber base type REAL with value representation\nany1_REAL_value : DNP3.AnyNumber := (\nbaseType:=DNP3.AnyNumberType.TYPE_REAL, /// init the base type\nu:=(val:=(valREAL:=42)) /// init the value\n);\n/// AnyNumber base type REAL with POINTER TO value representation\n/// The value to point to â¦\nany2_value : REAL;\n/// Now the AnyNumber pointing to any2_value\nany2_REAL_POINTER_TO_value : DNP3.AnyNumber := (\nbaseType:=DNP3.AnyNumberType.TYPE_REAL, /// init the base type\nisPtr:=TRUE, /// select POINTER TO value representation\nu:=(p:=(pREAL:=ADR(any2_value))) /// init the POINTER TO\n);\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "baseType",
+          "Type": "AnyNumberType",
+          "Initial": "AnyNumberType.TYPE_NONE",
+          "Comment": "Base type"
+        },
+        {
+          "Name": "isPtr",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "isPtr = TRUE=>represents a POINTER TO value"
+        },
+        {
+          "Name": "u",
+          "Type": "AnyNumberUnion",
+          "Initial": "",
+          "Comment": "Data holding either the value or POINTER TO value according to baseType.\nFor value representation access u.val.val*\nFor POINTER TO value representation access u.p.p* according to baseType."
+        }
+      ]
+    }
+  ]
+}

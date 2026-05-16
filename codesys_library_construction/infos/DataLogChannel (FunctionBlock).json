@@ -1,0 +1,70 @@
+{
+  "library": "AC_DataLog",
+  "title": "DataLogChannel (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_DataLog/Current/AC_DataLog/DataLogChannel/DataLogChannel.html",
+  "page_title": "DataLogChannel (FB)",
+  "text": "\nFUNCTION_BLOCK DataLogChannel EXTENDS AC.Module IMPLEMENTS\nIDataLogChannel\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "itfDataLogStorage",
+          "Type": "IDataLogStorage",
+          "Initial": "",
+          "Comment": "Slot"
+        },
+        [
+          "xEnable",
+          "BOOL",
+          "TRUE",
+          "Parameters"
+        ],
+        [
+          "xSaveInFirstCycle",
+          "BOOL",
+          "TRUE",
+          ""
+        ],
+        [
+          "tSaveCyclic",
+          "TIME",
+          "TIME#0ms",
+          ""
+        ],
+        [
+          "xCRCCheck",
+          "BOOL",
+          "TRUE",
+          ""
+        ],
+        {
+          "Scope": "Output",
+          "Name": "xActionOngoing",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": ""
+        },
+        [
+          "uiNumVars",
+          "UINT",
+          "",
+          ""
+        ],
+        [
+          "uiNumLogEntriesCreated",
+          "UINT",
+          "",
+          ""
+        ]
+      ]
+    }
+  ]
+}

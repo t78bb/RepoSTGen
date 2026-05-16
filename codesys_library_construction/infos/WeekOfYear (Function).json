@@ -1,0 +1,41 @@
+{
+  "library": "Util",
+  "title": "WeekOfYear (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/TimerSwitch/Functions/WeekOfYear.html",
+  "page_title": "WeekOfYear (FUN)",
+  "text": "\nFUNCTION WeekOfYear :\nERROR\nCalculates the appropriate values of the ISO week date parts that matches the parameter\nuliDateTime\n.\nWeekOfYear(JoinDateTime(2008,\n12,\n29,\n0,\n0,\n0,\n0))\n=>\nuiYear:=2009\n,\nuiWeek:=1,\neWeekday:=WEEKDAY.MONDAY\nWeekOfYear(JoinDateTime(2010,\n1,\n3,\n0,\n0,\n0,\n0))\n=>\nuiYear:=2009\n,\nuiWeek:=53,\neWeekday:=WEEKDAY.SUNDAY\nSee:\nhttps://en.wikipedia.org/wiki/ISO_week_date\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "WeekOfYear",
+          "Type": "ERROR"
+        },
+        {
+          "Scope": "Input",
+          "Name": "uliDateTime",
+          "Type": "ULINT"
+        },
+        {
+          "Scope": "Output",
+          "Name": "uiYear",
+          "Type": "YEAR"
+        },
+        [
+          "uiWeek",
+          "WEEK"
+        ],
+        [
+          "eWeekday",
+          "WEEKDAY"
+        ]
+      ]
+    }
+  ]
+}

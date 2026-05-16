@@ -1,0 +1,31 @@
+{
+  "library": "BACnet",
+  "title": "GetDevObjPropReferenceFromContents (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/Utilities/BACnetUtilities/FromBACnetContents/GetDevObjPropReferenceFromContents.html",
+  "page_title": "GetDevObjPropReferenceFromContents (FUN)",
+  "text": "\nFUNCTION GetDevObjPropReferenceFromContents :\nBACnetDevObjPropReference\nTries to evaluate property contents as BACnetDevObjPropReference data type. If the contents are not of type BACnetDevObjPropReference\n0 is returned.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetDevObjPropReferenceFromContents",
+          "Type": "BACnetDevObjPropReference",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "conts",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_CONTENTS",
+          "Comment": "The contents to be evaluated asBACnetDevObjPropReference."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "library": "DNP3",
+  "title": "AnyNumberPointerUnion (Union)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Types/AnyNumber/AnyNumberPointerUnion.html",
+  "page_title": "AnyNumberPointerUnion (UNION)",
+  "text": "\nTYPE AnyNumberPointerUnion : UNION\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "pSINT",
+          "Type": "POINTER TO SINT",
+          "Initial": "0",
+          "Comment": "POINTER TO value represention for SINT"
+        },
+        {
+          "Name": "pUSINT",
+          "Type": "POINTER TO USINT",
+          "Initial": "0",
+          "Comment": "POINTER TO value represention for USINT"
+        },
+        {
+          "Name": "pINT",
+          "Type": "POINTER TO INT",
+          "Initial": "0",
+          "Comment": "POINTER TO value represention for INT"
+        },
+        {
+          "Name": "pUINT",
+          "Type": "POINTER TO UINT",
+          "Initial": "0",
+          "Comment": "POINTER TO value represention for UINT"
+        },
+        {
+          "Name": "pDINT",
+          "Type": "POINTER TO DINT",
+          "Initial": "0",
+          "Comment": "POINTER TO value represention for DINT"
+        },
+        {
+          "Name": "pUDINT",
+          "Type": "POINTER TO UDINT",
+          "Initial": "0",
+          "Comment": "POINTER TO value represention for UDINT"
+        },
+        {
+          "Name": "pREAL",
+          "Type": "POINTER TO REAL",
+          "Initial": "0",
+          "Comment": "POINTER TO value represention for REAL"
+        },
+        {
+          "Name": "pLREAL",
+          "Type": "POINTER TO LREAL",
+          "Initial": "0",
+          "Comment": "POINTER TO value represention for LREAL"
+        }
+      ]
+    }
+  ]
+}

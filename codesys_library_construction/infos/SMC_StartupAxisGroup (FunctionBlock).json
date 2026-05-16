@@ -1,0 +1,23 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_StartupAxisGroup (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/Additional/SMC_StartupAxisGroup.html",
+  "page_title": "SMC_StartupAxisGroup (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_StartupAxisGroup\nThis function block comprises a set of often used function blocks and is\nused for testing and commissioning an axis group. Please note, that there is a compatible visualization template.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "AxisGroup",
+          "Type": "AXIS_GROUP_REF_SM3"
+        }
+      ]
+    }
+  ]
+}

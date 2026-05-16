@@ -1,0 +1,79 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_AXIS_GROUP_COMPATIBILITY_OPTIONS (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/Basic-types/SMC_AXIS_GROUP_COMPATIBILITY_OPTIONS.html",
+  "page_title": "SMC_AXIS_GROUP_COMPATIBILITY_OPTIONS (STRUCT)",
+  "text": "\nTYPE SMC_AXIS_GROUP_COMPATIBILITY_OPTIONS : STRUCT\nDeprecated, no longer used.  This structure will be removed in future\nversions.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "bBlendHalfOfFirstElemOnly",
+          "Type": "BOOL",
+          "Initial": "TRUE",
+          "Comment": "Deprecated, no longer used.  This setting will be removed in future\nversions."
+        },
+        {
+          "Name": "bBlendingDefaultWeightingUpdate",
+          "Type": "BOOL",
+          "Initial": "TRUE",
+          "Comment": "Deprecated, no longer used.  This setting will be removed in future\nversions."
+        },
+        {
+          "Name": "bTMStartVelocityUpdate",
+          "Type": "BOOL",
+          "Initial": "TRUE",
+          "Comment": "Deprecated, no longer used.  This setting will be removed in future\nversions."
+        },
+        {
+          "Name": "bBlendingMaxCutRatioUpdate",
+          "Type": "BOOL",
+          "Initial": "TRUE",
+          "Comment": "Deprecated, no longer used.  This setting will be removed in future\nversions."
+        },
+        {
+          "Name": "bLineBlendingImprovedWeighting",
+          "Type": "BOOL",
+          "Initial": "TRUE",
+          "Comment": "Deprecated, no longer used.  This setting will be removed in future\nversions."
+        },
+        {
+          "Name": "bSmallBlendingMinLength",
+          "Type": "BOOL",
+          "Initial": "TRUE",
+          "Comment": "Deprecated, no longer used.  This setting will be removed in future\nversions."
+        },
+        {
+          "Name": "bImprovedSymmetricBlending",
+          "Type": "BOOL",
+          "Initial": "TRUE",
+          "Comment": "Deprecated, no longer used.  This setting will be removed in future\nversions."
+        },
+        {
+          "Name": "bPTP_PI_CompositeBlending",
+          "Type": "BOOL",
+          "Initial": "TRUE",
+          "Comment": "Deprecated, no longer used.  This setting will be removed in future\nversions."
+        },
+        {
+          "Name": "bCPCompositeBlending",
+          "Type": "BOOL",
+          "Initial": "TRUE",
+          "Comment": "Deprecated, no longer used.  This setting will be removed in future\nversions."
+        },
+        {
+          "Name": "bOmitBlendingSameTangentCurvature",
+          "Type": "BOOL",
+          "Initial": "TRUE",
+          "Comment": "Deprecated, no longer used.  This setting will be removed in future\nversions."
+        }
+      ]
+    }
+  ]
+}

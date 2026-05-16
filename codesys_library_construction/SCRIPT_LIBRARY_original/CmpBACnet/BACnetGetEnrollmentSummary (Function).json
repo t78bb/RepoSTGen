@@ -1,0 +1,61 @@
+{
+  "library": "CmpBACnet",
+  "title": "BACnetGetEnrollmentSummary (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/CmpBACnet/Current/BACnetClientAPI/BACnetGetEnrollmentSummary.html",
+  "page_title": "BACnetGetEnrollmentSummary (FUN)",
+  "text": "Deutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nMenu\nSearch\nDeutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nBACnetAsyncTransactionToken (Struct)\nBACnetClientAPI\nBACnetAcknowledgeAlarm (Function)\nBACnetAddListElement (Function)\nBACnetCancelPendingConfirmedRequest (Function)\nBACnetConfPrivateTransfer (Function)\nBACnetConfTextMessage (Function)\nBACnetCreateObject (Function)\nBACnetCreateObjectResult (Struct)\nBACnetDeleteObject (Function)\nBACnetDeviceCommControl (Function)\nBACnetGetAlarmSummary (Function)\nBACnetGetEnrollmentSummary (Function)\nBACnetGetEventInfo (Function)\nBACnetLifeSafetyOperation (Function)\nBACnetReadAllPropertyDataContents (Function)\nBACnetReadFile (Function)\nBACnetReadProperty (Function)\nBACnetReadPropertyMultiple (Function)\nBACnetReadRange (Function)\nBACnetReinitializeDevice (Function)\nBACnetRemoveListElement (Function)\nBACnetSubscribeCOV (Function)\nBACnetSubscribeCOVProperty (Function)\nBACnetUnconfPrivateTransfer (Function)\nBACnetUnconfTextMessage (Function)\nBACnetWhoHas (Function)\nBACnetWhoIs (Function)\nBACnetWriteFile (Function)\nBACnetWriteGroup (Function)\nBACnetWriteProperty (Function)\nBACnetWritePropertyMultiple (Function)\nadvanced\nBACnetBackupBACnetDevice (Function)\nBACnetCloseClientCustomer (Function)\nBACnetGetClientDeviceCommunication (Function)\nBACnetOpenClientCustomer (Function)\nBACnetRegisterClientCommunicationStateCallback (Function)\nBACnetRegisterClientDataPoint (Function)\nBACnetRegisterClientEventNotification (Function)\nBACnetRegisterClientUnsubscribeCompletionCallback (Function)\nBACnetRestartAllClients (Function)\nBACnetRestoreBACnetDevice (Function)\nBACnetSetClientDeviceCommunication (Function)\nBACnetSetClientDeviceFixAddress (Function)\nBACnetSetClientDeviceFixSubscribeCovTime (Function)\nBACnetSetClientGlobalCommTimingParameters (Function)\nBACnetSetClientGlobalMaxDeviceActions (Function)\nBACnetUnregisterClientDataPoint (Function)\nBACnetUnregisterClientEventNotification (Function)\nFile and Project Information\nLibrary Reference\n3SLicense\nLibrary Identification\nLibrary Properties\nCAA Ressource Manager Extern\nLibrary Identification\nLibrary Properties\nCAA Types Extern\nLibrary Identification\nLibrary Properties\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nCmpEventMgr\nLibrary Identification\nLibrary Properties\nCmpLog\nLibrary Identification\nLibrary Properties\nCmpSettings\nLibrary Identification\nLibrary Properties\nComponent Manager\nLibrary Identification\nLibrary Properties\nIoStandard\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysTarget\nLibrary Identification\nLibrary Properties\nSysTask\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nCmpBACnet\nDocs\n»\nBACnetClientAPI\n»\nBACnetGetEnrollmentSummary (FUN)\nBACnetGetEnrollmentSummary (FUN)\nÂ¶\nFUNCTION BACnetGetEnrollmentSummary :\nIEC_BACNET_STATUS\nSends an GetEnrollmentSummary request\nObtains a summary of event-initiating objects within the given device. Several\ndifferent filters may be applied to define the search criteria. This routine generates\nan GetEnrollmentSummary service request.\nAsynchron call, which fills pResult with the call result in an asynchronus manner. As soon as pInfoBufferStatus\nis\nIEC_BACNET_STATUS.BACNET_STATUS_OK\nthe data in pResult is valid.\nInOut:\nScope\nName\nType\nComment\nReturn\nBACnetGetEnrollmentSummary\nIEC_BACNET_STATUS\nA status indicating if the operation worked.\nInput\npSourceAddress\nPOINTER TO\nIEC_BACNET_ADDRESS\nIf the BACnet application has only one device constructed and installed, this can\nbe 0. In this case the MAC address of this device will be used. Otherwise this\nshall be the MAC address returned on device object construction.\npDestinationAddress\nPOINTER TO\nIEC_BACNET_ADDRESS\nThis is the MAC address of the device to which the request\nshould be sent.\npFilter\nPOINTER TO\nIEC_BACNET_ENROLLMENT_FILTER\nThis argument contains five filters: enrollment, event state, event type, priority,\nand notification class. Some of these filters are optional.\npAPDUParams\nPOINTER TO\nIEC_BACNET_APDU_PROPERTIES\nA pointer to the APDU-Properties structure which sets APDU properties for this\ntransaction only. This does not change global defaults or settings for the application\nAPDU Properties. This argument may be 0. In this case APDU properties  are used\nwhich were specified in the device object properties of the applications device which\nsends the request.\npInfoBuffer\nPOINTER TO\nIEC_BACNET_ENROLLMENT_INFO\nA pointer to a memory block into which to place summary information, which is a list\nof Enrollment Summary items. Each item of datatype\nIEC_BACNET_ENROLLMENT_SUMMARY\nconsists of the following parameters: the Object ID of the appropriate object, its\nevent type, event state, notification priority, and notification class property\nvalues.\nThe application may initialize the pSummaries member of the\nIEC_BACNET_ENROLLMENT_INFO\nstruture with a 0 pointer and bufferCount and summaryCount with 0 too. In this\ncase the memory for the response is allocated by the API and the application is\nresponsible to release it with a call to\nBACnetFreeStackAllocatedMemory\nif the\nbuffer is no longer needed.\npTransactionToken\nPOINTER TO\nBACnetAsyncTransactionToken\nTransaction token of the asynchronous call - see\nBACnetAsyncTransactionToken\n.\npError\nPOINTER TO\nIEC_BACNET_ERROR\nA pointer to a structure to hold BACnet Error information. pError may be 0 if the\napplication isnât interested in detailed error information.\ntop\nCODESYS Group | We\nsoftware\nAutomation.\nto software\n['sɒftwɛər]\ntransitive verb\n__softwared/softwaring\n: to develop software\n// to software automation: to develop software for automation purposes\nThe CODESYS Group is the manufacturer of CODESYS, the leading hardware-independent\n                                    IEC 61131-3 automation software for developing and engineering controller\n                                    applications.\nCODESYS® is a registered trademark.\nCODESYS GmbH\nA member of the CODESYS Group\nMemminger Straße 151, 87439 Kempten\nGermany\nTel.:\n+49-831-54031-0\ninfo@codesys.com\nLegal Notice\nPrivacy Policy\nLinkedIn\nYoutube\nRSS\nDownloads\nLogin\nCODESYS Store\n© 2022 CODESYS GmbH\n| A member of the CODESYS Group",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "BACnetGetEnrollmentSummary",
+          "Type": "IEC_BACNET_STATUS",
+          "Comment": "A status indicating if the operation worked."
+        },
+        {
+          "Scope": "Input",
+          "Name": "pSourceAddress",
+          "Type": "POINTER TOIEC_BACNET_ADDRESS",
+          "Comment": "If the BACnet application has only one device constructed and installed, this can\nbe 0. In this case the MAC address of this device will be used. Otherwise this\nshall be the MAC address returned on device object construction."
+        },
+        [
+          "pDestinationAddress",
+          "POINTER TOIEC_BACNET_ADDRESS",
+          "This is the MAC address of the device to which the request\nshould be sent."
+        ],
+        [
+          "pFilter",
+          "POINTER TOIEC_BACNET_ENROLLMENT_FILTER",
+          "This argument contains five filters: enrollment, event state, event type, priority,\nand notification class. Some of these filters are optional."
+        ],
+        [
+          "pAPDUParams",
+          "POINTER TOIEC_BACNET_APDU_PROPERTIES",
+          "A pointer to the APDU-Properties structure which sets APDU properties for this\ntransaction only. This does not change global defaults or settings for the application\nAPDU Properties. This argument may be 0. In this case APDU properties  are used\nwhich were specified in the device object properties of the applications device which\nsends the request."
+        ],
+        [
+          "pInfoBuffer",
+          "POINTER TOIEC_BACNET_ENROLLMENT_INFO",
+          "A pointer to a memory block into which to place summary information, which is a list\nof Enrollment Summary items. Each item of datatypeIEC_BACNET_ENROLLMENT_SUMMARYconsists of the following parameters: the Object ID of the appropriate object, its\nevent type, event state, notification priority, and notification class property\nvalues.\nThe application may initialize the pSummaries member of theIEC_BACNET_ENROLLMENT_INFOstruture with a 0 pointer and bufferCount and summaryCount with 0 too. In this\ncase the memory for the response is allocated by the API and the application is\nresponsible to release it with a call toBACnetFreeStackAllocatedMemoryif the\nbuffer is no longer needed."
+        ],
+        [
+          "pTransactionToken",
+          "POINTER TOBACnetAsyncTransactionToken",
+          "Transaction token of the asynchronous call - seeBACnetAsyncTransactionToken."
+        ],
+        [
+          "pError",
+          "POINTER TOIEC_BACNET_ERROR",
+          "A pointer to a structure to hold BACnet Error information. pError may be 0 if the\napplication isnât interested in detailed error information."
+        ]
+      ]
+    }
+  ]
+}

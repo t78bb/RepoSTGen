@@ -1,0 +1,31 @@
+{
+  "library": "BACnet2",
+  "title": "SetContent (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/Utilities/BACnetUtilities/BACnetProperties/property-proxies/pou-ISingleValue_of_OCTETSTRING/SetContent.html",
+  "page_title": "ISingleValue_of_OCTETSTRING.SetContent (METH)",
+  "text": "\nMETHOD SetContent : CmpBACnet.IEC_BACNET_STATUS\nSet the whole content of this property.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetContent",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Inout Const",
+          "Name": "data",
+          "Type": "CmpBACnet.IEC_BACNET_OCTET_STRING",
+          "Comment": "Property content to set."
+        }
+      ]
+    }
+  ]
+}

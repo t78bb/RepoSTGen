@@ -1,0 +1,56 @@
+{
+  "library": "CmpBACnet",
+  "title": "BACnetGetAlarmSummary (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/CmpBACnet/Current/BACnetClientAPI/BACnetGetAlarmSummary.html",
+  "page_title": "BACnetGetAlarmSummary (FUN)",
+  "text": "Deutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nMenu\nSearch\nDeutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nBACnetAsyncTransactionToken (Struct)\nBACnetClientAPI\nBACnetAcknowledgeAlarm (Function)\nBACnetAddListElement (Function)\nBACnetCancelPendingConfirmedRequest (Function)\nBACnetConfPrivateTransfer (Function)\nBACnetConfTextMessage (Function)\nBACnetCreateObject (Function)\nBACnetCreateObjectResult (Struct)\nBACnetDeleteObject (Function)\nBACnetDeviceCommControl (Function)\nBACnetGetAlarmSummary (Function)\nBACnetGetEnrollmentSummary (Function)\nBACnetGetEventInfo (Function)\nBACnetLifeSafetyOperation (Function)\nBACnetReadAllPropertyDataContents (Function)\nBACnetReadFile (Function)\nBACnetReadProperty (Function)\nBACnetReadPropertyMultiple (Function)\nBACnetReadRange (Function)\nBACnetReinitializeDevice (Function)\nBACnetRemoveListElement (Function)\nBACnetSubscribeCOV (Function)\nBACnetSubscribeCOVProperty (Function)\nBACnetUnconfPrivateTransfer (Function)\nBACnetUnconfTextMessage (Function)\nBACnetWhoHas (Function)\nBACnetWhoIs (Function)\nBACnetWriteFile (Function)\nBACnetWriteGroup (Function)\nBACnetWriteProperty (Function)\nBACnetWritePropertyMultiple (Function)\nadvanced\nBACnetBackupBACnetDevice (Function)\nBACnetCloseClientCustomer (Function)\nBACnetGetClientDeviceCommunication (Function)\nBACnetOpenClientCustomer (Function)\nBACnetRegisterClientCommunicationStateCallback (Function)\nBACnetRegisterClientDataPoint (Function)\nBACnetRegisterClientEventNotification (Function)\nBACnetRegisterClientUnsubscribeCompletionCallback (Function)\nBACnetRestartAllClients (Function)\nBACnetRestoreBACnetDevice (Function)\nBACnetSetClientDeviceCommunication (Function)\nBACnetSetClientDeviceFixAddress (Function)\nBACnetSetClientDeviceFixSubscribeCovTime (Function)\nBACnetSetClientGlobalCommTimingParameters (Function)\nBACnetSetClientGlobalMaxDeviceActions (Function)\nBACnetUnregisterClientDataPoint (Function)\nBACnetUnregisterClientEventNotification (Function)\nFile and Project Information\nLibrary Reference\n3SLicense\nLibrary Identification\nLibrary Properties\nCAA Ressource Manager Extern\nLibrary Identification\nLibrary Properties\nCAA Types Extern\nLibrary Identification\nLibrary Properties\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nCmpEventMgr\nLibrary Identification\nLibrary Properties\nCmpLog\nLibrary Identification\nLibrary Properties\nCmpSettings\nLibrary Identification\nLibrary Properties\nComponent Manager\nLibrary Identification\nLibrary Properties\nIoStandard\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysTarget\nLibrary Identification\nLibrary Properties\nSysTask\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nCmpBACnet\nDocs\n»\nBACnetClientAPI\n»\nBACnetGetAlarmSummary (FUN)\nBACnetGetAlarmSummary (FUN)\nÂ¶\nFUNCTION BACnetGetAlarmSummary :\nIEC_BACNET_STATUS\nSend an GetAlarmSummary request\nThis routine generates a Get Alarm Summary service request. It is used by a client\nBACnet user to obtain a summary of âalarm-activeâ objects within the given device\nthat is capable of alarm processing. The âalarm-activeâ objects are objects that have\nany value but\nIEC_BACNET_EVENT_STATE.STATE_NORMAL\nfor the Event_State property and\nIEC_BACNET_NOTIFY_TYPE.NOTIFY_TYPE_ALARM\nfor the Notify_Type property.\nInOut:\nScope\nName\nType\nComment\nReturn\nBACnetGetAlarmSummary\nIEC_BACNET_STATUS\nA status indicating if the operation worked.\nInput\npSourceAddress\nPOINTER TO\nIEC_BACNET_ADDRESS\nIf the BACnet application has only one device constructed and installed, this can\nbe 0. In this case the MAC address of this device will be used. Otherwise this\nshall be the MAC address returned on device object construction.\npDestinationAddress\nPOINTER TO\nIEC_BACNET_ADDRESS\nThis is the MAC address of the device to which the request\nshould be sent.\npAPDUParams\nPOINTER TO\nIEC_BACNET_APDU_PROPERTIES\nA pointer to the APDU-Properties structure which sets APDU properties for this\ntransaction only. This does not change global defaults or settings for the application\nAPDU Properties. This argument may be 0. In this case APDU properties  are used\nwhich were specified in the device object properties of the applications device which\nsends the request.\npInfoBuffer\nPOINTER TO\nIEC_BACNET_ALARM_INFO\nA pointer to a memory block of datatype\nIEC_BACNET_ALARM_INFO\nin which to place summary\ninformation, which is a list of Alarm Summary items. Each item of datatype\nIEC_BACNET_ALARM_SUMMARY\nconsists of three parameters: Object ID of the appropriate\nobject, the Event State of this object, and Acked Transitions property values.\nThe application may initialize the pSummaries member of the\nIEC_BACNET_ALARM_INFO\nstruture with a 0 pointer and bufferCount and summaryCount with 0 too. In this\ncase the memory for the response is allocated by the API and the application is\nresponsible to release it with a call to\nBACnetFreeStackAllocatedMemory\nif the\nbuffer is no longer needed.\npTransactionToken\nPOINTER TO\nBACnetAsyncTransactionToken\nTransaction token of the asynchronous call - see\nBACnetAsyncTransactionToken\n.\npError\nPOINTER TO\nIEC_BACNET_ERROR\nA pointer to a structure to hold BACnet Error information. pError may be 0 if the\napplication isnât interested in detailed error information.\ntop\nCODESYS Group | We\nsoftware\nAutomation.\nto software\n['sɒftwɛər]\ntransitive verb\n__softwared/softwaring\n: to develop software\n// to software automation: to develop software for automation purposes\nThe CODESYS Group is the manufacturer of CODESYS, the leading hardware-independent\n                                    IEC 61131-3 automation software for developing and engineering controller\n                                    applications.\nCODESYS® is a registered trademark.\nCODESYS GmbH\nA member of the CODESYS Group\nMemminger Straße 151, 87439 Kempten\nGermany\nTel.:\n+49-831-54031-0\ninfo@codesys.com\nLegal Notice\nPrivacy Policy\nLinkedIn\nYoutube\nRSS\nDownloads\nLogin\nCODESYS Store\n© 2022 CODESYS GmbH\n| A member of the CODESYS Group",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "BACnetGetAlarmSummary",
+          "Type": "IEC_BACNET_STATUS",
+          "Comment": "A status indicating if the operation worked."
+        },
+        {
+          "Scope": "Input",
+          "Name": "pSourceAddress",
+          "Type": "POINTER TOIEC_BACNET_ADDRESS",
+          "Comment": "If the BACnet application has only one device constructed and installed, this can\nbe 0. In this case the MAC address of this device will be used. Otherwise this\nshall be the MAC address returned on device object construction."
+        },
+        [
+          "pDestinationAddress",
+          "POINTER TOIEC_BACNET_ADDRESS",
+          "This is the MAC address of the device to which the request\nshould be sent."
+        ],
+        [
+          "pAPDUParams",
+          "POINTER TOIEC_BACNET_APDU_PROPERTIES",
+          "A pointer to the APDU-Properties structure which sets APDU properties for this\ntransaction only. This does not change global defaults or settings for the application\nAPDU Properties. This argument may be 0. In this case APDU properties  are used\nwhich were specified in the device object properties of the applications device which\nsends the request."
+        ],
+        [
+          "pInfoBuffer",
+          "POINTER TOIEC_BACNET_ALARM_INFO",
+          "A pointer to a memory block of datatypeIEC_BACNET_ALARM_INFOin which to place summary\ninformation, which is a list of Alarm Summary items. Each item of datatypeIEC_BACNET_ALARM_SUMMARYconsists of three parameters: Object ID of the appropriate\nobject, the Event State of this object, and Acked Transitions property values.\nThe application may initialize the pSummaries member of theIEC_BACNET_ALARM_INFOstruture with a 0 pointer and bufferCount and summaryCount with 0 too. In this\ncase the memory for the response is allocated by the API and the application is\nresponsible to release it with a call toBACnetFreeStackAllocatedMemoryif the\nbuffer is no longer needed."
+        ],
+        [
+          "pTransactionToken",
+          "POINTER TOBACnetAsyncTransactionToken",
+          "Transaction token of the asynchronous call - seeBACnetAsyncTransactionToken."
+        ],
+        [
+          "pError",
+          "POINTER TOIEC_BACNET_ERROR",
+          "A pointer to a structure to hold BACnet Error information. pError may be 0 if the\napplication isnât interested in detailed error information."
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "library": "BACnet",
+  "title": "GetExceptionEntry (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/Schedule/pou-BACnetSchedule/ExceptionSchedule/GetExceptionEntry.html",
+  "page_title": "BACnetSchedule.GetExceptionEntry (METH)",
+  "text": "\nMETHOD GetExceptionEntry : CmpBACnet.IEC_BACNET_STATUS\nGets a entry with index nIndex of the Exception_Schedule-Property of this BACnet-Object. The returned data (pSpecialEvt) is\nallocated by the stack and therefore has to be freed after usage using\nFreeStackAllocatedMemory\nagain!\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetExceptionEntry",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "nIndex",
+          "Type": "CmpBACnet.IEC_BACNET_ELEMENT_COUNT",
+          "Comment": "The 1 based index of the exception entry to get."
+        },
+        {
+          "Scope": "Output",
+          "Name": "pSpecialEvt",
+          "Type": "POINTER TO\nCmpBACnet.IEC_BACNET_SPECIAL_EVENT",
+          "Comment": "The returned Pointer gets filled with the data of IEC_BACNET_EVENT_PARAMETER AND (!) the data referenced within evtParams.\nAfter usage, useFreeStackAllocatedMemory, to free the used memory again."
+        }
+      ]
+    }
+  ]
+}

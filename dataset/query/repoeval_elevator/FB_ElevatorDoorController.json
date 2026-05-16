@@ -1,0 +1,5 @@
+{
+  "requirement": "This code is intended to implement an elevator door control system that manages door opening and closing processes based on arrival at the target floor and door sensor states.",
+  "provide_code": "FUNCTION_BLOCK FB_ElevatorDoorController\nVAR_INPUT\n\tbArrivedAtTarget\t:\tBOOL;\t\t// 到达目标楼层\n\tbDoorClosed\t\t\t:\tBOOL;\t\t// 门已关闭传感器\nEND_VAR\nVAR_OUTPUT\n\tbOpenDoor\t\t\t:\tBOOL;\t\t// 开门命令\n\tbCloseDoor\t\t\t:\tBOOL;\t\t// 关门命令\n\tbDoorOpen\t\t\t:\tBOOL;\t\t// 门打开状态\n\tbDoorReady\t\t\t:\tBOOL;\t\t// 门准备好（可以移动）\nEND_VAR",
+  "function_name": "FB_ElevatorDoorController"
+}

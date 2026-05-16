@@ -1,0 +1,40 @@
+{
+  "library": "StringUtils",
+  "title": "Printf (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/StringUtils/Current/Public-Parts/Printf.html",
+  "page_title": "Printf (FUN)",
+  "text": "\nFUNCTION Printf\nThis function performs a âformatted printingâ of the value <pValue> points to.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "cbsResult",
+          "Type": "REFERENCE TOCharBufferString",
+          "Comment": "The buffer, where the result will be returned"
+        },
+        [
+          "cbsFormat",
+          "REFERENCE TOCharBufferString",
+          "The format string used for formatting the value"
+        ],
+        [
+          "pValue",
+          "POINTER TO BYTE",
+          "A pointer to the begin of the piece of memory, where the value to format is\nstored."
+        ],
+        [
+          "typeClass",
+          "__SYSTEM.TYPE_CLASS",
+          "A __SYSTEM.TYPE_CLASS value describing the type of the value\nto format"
+        ]
+      ]
+    }
+  ]
+}

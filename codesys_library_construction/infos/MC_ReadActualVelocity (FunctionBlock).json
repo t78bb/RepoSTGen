@@ -1,0 +1,65 @@
+{
+  "library": "SM3_Basic",
+  "title": "MC_ReadActualVelocity (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/Diagnostics/MC_ReadActualVelocity.html",
+  "page_title": "MC_ReadActualVelocity (FB)",
+  "text": "\nFUNCTION_BLOCK MC_ReadActualVelocity\nAs long as\nEnable**\nremains\n``TRUE\n, the function block will return the value of the current velocity.\nValid\nwill be set to\nTRUE\n, as soon as data output\nVelocity\nbecomes valid.\nIf\nEnable\nis reset, the data will loose its validity and\nValid\nwill also be reset regardless of new data available.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3",
+          "Initial": "",
+          "Comment": "Reference to axis"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Enable",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "WhileTRUE, the parameter values are read out\ncontinuously."
+        },
+        {
+          "Scope": "Output",
+          "Name": "Valid",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "TRUE: Valid outputs are available."
+        },
+        [
+          "Busy",
+          "BOOL",
+          "FALSE",
+          "TRUE: Execution of function block has not been finished\nyet."
+        ],
+        [
+          "Error",
+          "BOOL",
+          "FALSE",
+          "TRUE: Error has occurred within the function block."
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "0",
+          "Error identification"
+        ],
+        [
+          "Velocity",
+          "LREAL",
+          "0",
+          "Value of current velocity (in axisâ unit [u/s])"
+        ]
+      ]
+    }
+  ]
+}

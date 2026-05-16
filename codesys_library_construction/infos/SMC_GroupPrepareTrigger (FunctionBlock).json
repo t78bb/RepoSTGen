@@ -1,0 +1,82 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_GroupPrepareTrigger (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/AdministrativeConfiguration/Trigger/SMC_GroupPrepareTrigger.html",
+  "page_title": "SMC_GroupPrepareTrigger (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_GroupPrepareTrigger\nThis function block prepares a trigger for the next commanded movement.\nNote\nPrepared triggers are attached to the movement commanded by the next\nmovement function block that is called with a rising edge on its\nExecute\ninput.  Movement function blocks that are called without a rising\nedge are ignored.\nThe movement has to be commanded in the same cycle as this function block.\nOtherwise, the trigger will be aborted.\nPrepared triggers will be attached to the next commanded movement,\nirregardless of whether it will be accepted.\nTriggers cannot be prepared for wait (\nSMC_GroupWait\n), halt (\nMC_GroupHalt\n)\nor stop (\nMC_GroupStop\n) movements.  An error will be reported for any\ntrigger that is prepared when one of those movements is commanded.\nThe maximum number of triggers per movements is can be configured by changing\nthe library parameter MAX_NUM_TRIGGERS_PER_MOVEMENT of SM3_CPKernelDefaults.\nEither\nPrepared\nor\nError\nwill be reported immediately after\ncalling this function block with a rising edge on the\nExecute\ninput.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "AxisGroup",
+          "Type": "AXIS_GROUP_REF_SM3",
+          "Comment": "Reference to a group of axis"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Comment": "A rising edge starts the function block."
+        },
+        [
+          "PositionType",
+          "SMC_TriggerPositionType",
+          "Determines how the trigger position is to be interpreted."
+        ],
+        [
+          "Position",
+          "SMC_TriggerPosition",
+          "The position of the trigger."
+        ],
+        [
+          "TriggerName",
+          "STRING",
+          "The name of the trigger."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Done",
+          "Type": "BOOL",
+          "Comment": "The trigger has been successfully attached to a movement"
+        },
+        [
+          "Busy",
+          "BOOL",
+          "The function block is not finished"
+        ],
+        [
+          "Prepared",
+          "BOOL",
+          "The trigger has been successfully prepared and will be\nattached to the next commanded movement."
+        ],
+        [
+          "CommandAborted",
+          "BOOL",
+          "The trigger has been aborted"
+        ],
+        [
+          "Error",
+          "BOOL",
+          "Signals that an error has occurred within the function block"
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ],
+        [
+          "TriggerId",
+          "SMC_TRIGGER_ID",
+          "The trigger id. Only valid if the function block is Â´Â´DoneÂ´Â´"
+        ]
+      ]
+    }
+  ]
+}

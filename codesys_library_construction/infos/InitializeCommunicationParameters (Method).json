@@ -1,0 +1,36 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "InitializeCommunicationParameters (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_RMP_ReliableMessageProtocol/AC_RMP_FBCommunication/pou-IRMPFBCommunication/InitializeCommunicationParameters.html",
+  "page_title": "IRMPFBCommunication.InitializeCommunicationParameters (METH)",
+  "text": "\nMETHOD InitializeCommunicationParameters : BOOL\nThis method is called before the Cyclic-RMP-Communication AND provides you with\nthe communication addresses of the application to receive messages from and to send messages to.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "InitializeCommunicationParameters",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "uiSendToComAddress",
+          "Type": "UINT",
+          "Comment": "The communication address of the application to send data via any network to; use\nthis address to identify the FB receiving from this FB via the network"
+        },
+        [
+          "uiReceiveComAddress",
+          "UINT",
+          "The communication address of the application to receive data via any network (local); use\nthis address to identify the FB sending to this FB via the network"
+        ]
+      ]
+    }
+  ]
+}

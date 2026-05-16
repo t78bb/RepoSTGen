@@ -1,0 +1,47 @@
+{
+  "library": "BACnet",
+  "title": "InitializeEmptyPropertyInstance (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/Utilities/BACnetUtilities/BACnetProperties/InitializeEmptyPropertyInstance.html",
+  "page_title": "InitializeEmptyPropertyInstance (FUN)",
+  "text": "\nFUNCTION InitializeEmptyPropertyInstance : BOOL\nInitializes a property (prop) with its (working) defaults (mostly empty) considering constant array sizes, lists and special property types.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "InitializeEmptyPropertyInstance",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "objTyp",
+          "Type": "CmpBACnet.IEC_BACNET_OBJECT_TYPE",
+          "Comment": "The object instance which has the desired property."
+        },
+        [
+          "accessID",
+          "CmpBACnet.IEC_BACNET_ACCESS",
+          "The access specifier used for initializing the property\ninstance."
+        ],
+        [
+          "propID",
+          "CmpBACnet.IEC_BACNET_PROPERTY_ID",
+          "The property ID of the property for which the instance data\nshall be initialized."
+        ],
+        {
+          "Scope": "Inout",
+          "Name": "prop",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_INSTANCE",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

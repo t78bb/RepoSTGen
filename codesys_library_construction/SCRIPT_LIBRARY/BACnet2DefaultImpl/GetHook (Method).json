@@ -1,0 +1,28 @@
+{
+  "library": "BACnet2DefaultImpl",
+  "title": "GetHook (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2DefaultImpl/Current/BACnetDefaultImpl/Function-Blocks/pou-UTCTimeSync_SvcAppHook/GetHook.html",
+  "page_title": "UTCTimeSync_SvcAppHook.GetHook (METH)",
+  "text": "\nMETHOD GetHook : BACnet.IBACnetServerPluginHook\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetHook",
+          "Type": "BACnet.IBACnetServerPluginHook"
+        },
+        {
+          "Scope": "Input",
+          "Name": "index",
+          "Type": "UINT"
+        }
+      ]
+    }
+  ]
+}

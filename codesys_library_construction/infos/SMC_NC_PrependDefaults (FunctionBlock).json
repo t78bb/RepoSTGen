@@ -1,0 +1,97 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_NC_PrependDefaults (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/ReadNCFile2/SMC_NC_PrependDefaults.html",
+  "page_title": "SMC_NC_PrependDefaults (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_NC_PrependDefaults\nThis function block is used internally by\n|SMC_ReadNCFileFromStream|\nto prepend a sentence containing the given defaults,\ne.g. âN0 G17 F25 E1000 E-2000â.\nIf\n|SMC_ReadNCFileFromStream|\nor\nSMC_ReadNCFile2\nis used, there is\nnot need to use this function block.\nImportant: this function block will prepend the defaults again after a\njump command in the out queue.  So it should be used before any buffering\nfunction blocks such the jump buffer.\nIt should be called before\nSMC_NCNavigator\nas well, because the navigator\nwill handle the jumps to unknown jump targets.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "sentencesOut",
+          "Type": "SMC_GSentenceQueue",
+          "Comment": "The output sentence queue"
+        },
+        [
+          "sentencesIn",
+          "SMC_GSentenceQueue",
+          "The input sentence queue"
+        ],
+        {
+          "Scope": "Input",
+          "Name": "bExecute",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        [
+          "bAbort",
+          "BOOL",
+          "IfTRUE, the current processing of this function block\nis aborted"
+        ],
+        [
+          "fDefaultVel",
+          "LREAL",
+          "Default velocity; used if the velocity (F-word) is not specified inside\nthe CNC file."
+        ],
+        [
+          "fDefaultAccel",
+          "LREAL",
+          "Default acceleration; used if acceleration (E+ word) is not specified\ninside the CNC file"
+        ],
+        [
+          "fDefaultDecel",
+          "LREAL",
+          "Default deceleration (E- word); used if deceleration is not specified\ninside the CNC file"
+        ],
+        [
+          "fDefaultVelFF",
+          "LREAL",
+          "Default velocity for fast forward (G0), FF word.\nIt is used if no velocity is specified inside the CNC file."
+        ],
+        [
+          "fDefaultAccelFF",
+          "LREAL",
+          "Default acceleration for fast forward (G0), EF+ word.\nIt is used if no acceleration is specified inside the CNC file."
+        ],
+        [
+          "fDefaultDecelFF",
+          "LREAL",
+          "Default deceleration for fast forward (G0), EF- word.\nA non-negative value is expected. It is used if no deceleration\nis specified inside the CNC file."
+        ],
+        [
+          "b3DMode",
+          "BOOL",
+          "IfTRUE, a G17 command (activation of 3D-mode) is\nexecuted implicitly."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bBusy",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        [
+          "bError",
+          "BOOL",
+          ""
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          ""
+        ],
+        [
+          "errorPos",
+          "SMC_NC_SourcePosition",
+          ""
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "library": "AlarmManagerToOpcUaConnector",
+  "title": "ICustomAlarmToOpcUaMapping (Interface)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManagerToOpcUaConnector/Current/Curstom-Mapping/ICustomAlarmToOpcUaMapping.html",
+  "page_title": "ICustomAlarmToOpcUaMapping (ITF)",
+  "text": "\nINTERFACE ICustomAlarmToOpcUaMapping\nThis interface is used to register a custom set of methods used to convert events into the OPC UA value range.\nMethods:\nMapPriority\nStructure:\nMapPriority (Method)",
+  "tables": []
+}

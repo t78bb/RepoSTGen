@@ -1,0 +1,6 @@
+{
+  "requirement": "This code should implement a method named `ConcreteDecoratorA_getValue` that returns a `REAL` value representing the decorated cost of a component. It should take an input variable `tempInputComponent` of type `Component_Interface`. The method calculates the decorated cost by retrieving the base cost from `tempInputComponent.getValue()` and then adding a fixed decoration value, which is `0.5`. The method should handle the scenario where `tempInputComponent` is properly initialized and able to return a valid `REAL` value through its `getValue` method.",
+  "provide_code": "//Illustrative method of the pattern\nMETHOD getValue : REAL\nVAR_INPUT\n\t//Reference to store the component to be decorated\n\ttempInputComponent : Component_Interface;\nEND_VAR",
+  "function_name": "ConcreteDecoratorA_getValue",
+  "requirement_cn": "该代码应实现一个名为 `ConcreteDecoratorA_getValue` 的方法，返回一个表示组件装饰后成本的 `REAL` 类型值。它应该接受一个类型为 `Component_Interface` 的输入变量 `tempInputComponent`。该方法通过从 `tempInputComponent.getValue()` 获取基础成本，然后加上一个固定的装饰值 `0.5` 来计算装饰成本。该方法应处理 `tempInputComponent` 已正确初始化并能通过其 `getValue` 方法返回有效 `REAL` 值的情况。"
+}

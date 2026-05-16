@@ -1,0 +1,23 @@
+{
+  "library": "BACnet",
+  "title": "PreStartBACnetStack (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetServerPlugin/pou-IBACnetServerPlugin/PreStartBACnetStack.html",
+  "page_title": "IBACnetServerPlugin.PreStartBACnetStack (METH)",
+  "text": "\nMETHOD PreStartBACnetStack : UDINT\nGets called prior of\nBACnetServer.StartBACnetStack\n.\nReturn CmpErrors.Errors.ERR_OK if successfully.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "PreStartBACnetStack",
+          "Type": "UDINT"
+        }
+      ]
+    }
+  ]
+}

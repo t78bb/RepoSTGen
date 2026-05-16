@@ -1,0 +1,48 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_TrafoConfig_4AxisPalletizer (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_Trafo_Data-types/SMC_TrafoConfig_4AxisPalletizer.html",
+  "page_title": "SMC_TrafoConfig_4AxisPalletizer (STRUCT)",
+  "text": "\nTYPE SMC_TrafoConfig_4AxisPalletizer : STRUCT\nThese parameters describe a 4-axis palletizer robot\nas used by the transformations\nSMC_Trafo_4AxisPalletizer\nand\nSMC_TrafoF_4AxisPalletizer.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "d1",
+          "Type": "LREAL",
+          "Comment": "Denavit-Hartenberg Parameter d1 [u]"
+        },
+        {
+          "Name": "a1",
+          "Type": "LREAL",
+          "Comment": "Denavit-Hartenberg Parameter a1 [u]"
+        },
+        {
+          "Name": "a2",
+          "Type": "LREAL",
+          "Comment": "Denavit-Hartenberg Parameter a2 [u]"
+        },
+        {
+          "Name": "a3",
+          "Type": "LREAL",
+          "Comment": "Denavit-Hartenberg Parameter a3 [u]"
+        },
+        {
+          "Name": "a4",
+          "Type": "LREAL",
+          "Comment": "Denavit-Hartenberg Parameter a4 [u["
+        },
+        {
+          "Name": "d5",
+          "Type": "LREAL",
+          "Comment": "Denavit-Hartenberg Parameter d5 [u]"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "library": "BACnet2",
+  "title": "GetPersistenceInfos (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/Persistence/pou-IBACnetPersistence/GetPersistenceInfos.html",
+  "page_title": "IBACnetPersistence.GetPersistenceInfos (METH)",
+  "text": "\nMETHOD GetPersistenceInfos : CmpBACnet.IEC_BACNET_STATUS\nGets information which objects had been stored.\nThis method allocates pInfo, the caller has to free pInfo using\nIBACnetPersistence.FreePersistenceInfos\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetPersistenceInfos",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Output",
+          "Name": "numInfo",
+          "Type": "UDINT",
+          "Comment": "Number of stored objects."
+        },
+        [
+          "pInfo",
+          "POINTER TOBACnetPersistenceInfo",
+          "Array of information about stored objects."
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "library": "BACnet",
+  "title": "GetDateRangeFromContents (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/Utilities/BACnetUtilities/FromBACnetContents/GetDateRangeFromContents.html",
+  "page_title": "GetDateRangeFromContents (FUN)",
+  "text": "\nFUNCTION GetDateRangeFromContents :\nBACnetDateRange\nTries to evaluate property contents as BACnetDateRange data type. If the contents are not of type BACnetDateRange\n1970-1-1 is returned.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetDateRangeFromContents",
+          "Type": "BACnetDateRange",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "conts",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_CONTENTS",
+          "Comment": "The contents to be evaluated asBACnetDateRange."
+        }
+      ]
+    }
+  ]
+}

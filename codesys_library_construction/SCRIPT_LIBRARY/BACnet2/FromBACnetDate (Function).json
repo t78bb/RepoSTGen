@@ -1,0 +1,31 @@
+{
+  "library": "BACnet2",
+  "title": "FromBACnetDate (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/Utilities/BACnetUtilities/FromBACnetDataTypes/FromBACnetDate.html",
+  "page_title": "FromBACnetDate (FUN)",
+  "text": "\nFUNCTION FromBACnetDate : DATE\nReturns a DATE corresponding to the given IEC_BACNET_DATE.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "FromBACnetDate",
+          "Type": "DATE",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "bacDat",
+          "Type": "CmpBACnet.IEC_BACNET_DATE",
+          "Comment": "The BACnet date to convert to a DATE."
+        }
+      ]
+    }
+  ]
+}

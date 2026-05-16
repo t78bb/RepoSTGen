@@ -1,0 +1,23 @@
+{
+  "library": "SM3_CNC",
+  "title": "ExpTokenQueueFull (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/GSentence/pou-SMC_GSentenceQueue/ExpTokenQueueFull.html",
+  "page_title": "SMC_GSentenceQueue.ExpTokenQueueFull (METH)",
+  "text": "\nMETHOD ExpTokenQueueFull : BOOL\nReturns whether the word queue is full.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "ExpTokenQueueFull",
+          "Type": "BOOL"
+        }
+      ]
+    }
+  ]
+}

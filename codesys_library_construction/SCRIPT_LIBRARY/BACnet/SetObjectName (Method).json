@@ -1,0 +1,30 @@
+{
+  "library": "BACnet",
+  "title": "SetObjectName (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/pou-IBACnetObjectBase/SetObjectName.html",
+  "page_title": "IBACnetObjectBase.SetObjectName (METH)",
+  "text": "\nMETHOD SetObjectName\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "wStrInput",
+          "Type": "WSTRING(255)",
+          "Comment": "The WSTRING value to set Object_Name to."
+        },
+        [
+          "strType",
+          "CmpBACnet.IEC_BACNET_STRING_TYPE",
+          "The BACnet string type the WSTRING value is converted to\nwhen setting the Object_Name."
+        ]
+      ]
+    }
+  ]
+}

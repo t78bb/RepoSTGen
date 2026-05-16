@@ -1,0 +1,51 @@
+{
+  "library": "MemoryUtils",
+  "title": "BitCpy (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/MemoryUtils/Current/MemoryUtils/Functions/BitCpy.html",
+  "page_title": "BitCpy (FUN)",
+  "text": "\nFUNCTION BitCpy : BOOL\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "BitCpy",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "pDest",
+          "Type": "POINTER TO BYTE",
+          "Comment": ""
+        },
+        [
+          "wDstStartBit",
+          "WORD",
+          ""
+        ],
+        [
+          "pSource",
+          "POINTER TO BYTE",
+          ""
+        ],
+        [
+          "wSrcStartBit",
+          "WORD",
+          ""
+        ],
+        [
+          "wSize",
+          "WORD",
+          "Size in bits"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "QueueSendMessage (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_RMP_ReliableMessageProtocol/pou-RMPService/Send/QueueSendMessage.html",
+  "page_title": "RMPService.QueueSendMessage (METH)",
+  "text": "\nMETHOD FINAL QueueSendMessage : UINT\nreturn values: 16#FFFF -> buffer full\n16#fffe: -> receiver app not connected ot this app\n16#FFF0 -> local devi\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "QueueSendMessage",
+          "Type": "UINT"
+        },
+        {
+          "Scope": "Input",
+          "Name": "udiSenderID",
+          "Type": "UDINT"
+        },
+        [
+          "udiReceiverID",
+          "UDINT"
+        ],
+        [
+          "tValidity",
+          "TIME"
+        ],
+        [
+          "pmdData",
+          "POINTER TO ARRAY [0..63] OF BYTE"
+        ]
+      ]
+    }
+  ]
+}

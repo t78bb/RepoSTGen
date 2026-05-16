@@ -1,0 +1,31 @@
+{
+  "library": "BACnet2",
+  "title": "FromBACnetBitString (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/Utilities/BACnetUtilities/FromBACnetDataTypes/FromBACnetBitString.html",
+  "page_title": "FromBACnetBitString (FUN)",
+  "text": "\nFUNCTION FromBACnetBitString : STRING\nReturns a STRING corresponding to the given IEC_BACNET_BIT_STRING (i.e. in the form â1011011â).\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "FromBACnetBitString",
+          "Type": "STRING",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "bitStr",
+          "Type": "CmpBACnet.IEC_BACNET_BIT_STRING",
+          "Comment": "The BACnet bit string to convert to a STRING."
+        }
+      ]
+    }
+  ]
+}

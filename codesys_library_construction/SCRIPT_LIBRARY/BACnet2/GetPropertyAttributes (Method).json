@@ -1,0 +1,37 @@
+{
+  "library": "BACnet2",
+  "title": "GetPropertyAttributes (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/PropertyConfiguration/pou-IBACnetPropertyConfiguration/GetPropertyAttributes.html",
+  "page_title": "IBACnetPropertyConfiguration.GetPropertyAttributes (METH)",
+  "text": "\nMETHOD GetPropertyAttributes : BOOL\nGets the property attributes of a given object property.\nReturns FALSE, if no propAttr for objID/propID is provided.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetPropertyAttributes",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Input",
+          "Name": "objID",
+          "Type": "CmpBACnet.IEC_BACNET_OBJECT_ID"
+        },
+        [
+          "propID",
+          "CmpBACnet.IEC_BACNET_PROPERTY_ID"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "propAttr",
+          "Type": "BACnetPropertyAttributes"
+        }
+      ]
+    }
+  ]
+}

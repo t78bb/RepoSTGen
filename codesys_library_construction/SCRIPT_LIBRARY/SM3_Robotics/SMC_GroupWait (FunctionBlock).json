@@ -1,0 +1,95 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_GroupWait (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/Movement/SMC_GroupWait.html",
+  "page_title": "SMC_GroupWait (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL SMC_GroupWait\nProgrammed waiting on the path.\nSMC_GroupWait\nbehaves like a buffered movement command, leading\nto a wait for a given time between two movements.\nIt is not possible to blend into or from waiting.\nThe waiting time starts right after the previously commanded\nmovement has finished.\nThe waiting time between the two surrounding movements will be\nexactly the configured time.\nIf a waiting command follows a tracking movement, the axis group will\ntrack the endpoint of the preceding movement for the specified time.\nIf the axes are not in standstill, but not controlled by the axis group,\nand waiting is commanded, the axis group will report the error\nSMC_AXIS_GROUP_IDLE_WAIT_AXES_MOVING\n.\nAs set-values are updated once per bus cycle, waiting times different from\na multiple of the bus cycle time will just appear as a smoother start-up\nof the subsequent movement.\nNote\nBuffered movements always start at the beginning of a task cycle.\nThis means that there is an implicit wait of at most one task cycle\nbetween any two consecutive buffered movements.  The duration of this\nimplicit wait can be reduced by\nSMC_GroupWait\nwith a shorter wait\ntime.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "AxisGroup",
+          "Type": "AXIS_GROUP_REF_SM3",
+          "Initial": "",
+          "Comment": "Reference to a group of axes"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Start the action at rising edge"
+        },
+        [
+          "WaitTime",
+          "LREAL",
+          "",
+          "The time to wait on the path, in seconds.\nMay not be negative."
+        ],
+        [
+          "Name",
+          "STRING",
+          "âSMC_GroupWaitâ",
+          "The name of the movement."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Done",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Standstill has been reached"
+        },
+        [
+          "Busy",
+          "BOOL",
+          "",
+          "The FB is not finished"
+        ],
+        [
+          "Active",
+          "BOOL",
+          "",
+          "Indicates that the FB has control on the axis"
+        ],
+        [
+          "CommandAborted",
+          "BOOL",
+          "",
+          "Command is aborted by another command"
+        ],
+        [
+          "CommandAccepted",
+          "BOOL",
+          "",
+          "The command has been accepted by the axis group.\nIf the output becomesTRUE, the function block instance can be used to\ncommand the next movement with a new rising edge onExecute.\nWhile the output isFALSE, keep calling the function block without\na new rising edge ofExecute.\nThe output is reset toFALSEon a falling edge ofExecute."
+        ],
+        [
+          "Error",
+          "BOOL",
+          "",
+          "Signals that an error has occurred within the function block"
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "",
+          "Error identification"
+        ],
+        [
+          "MovementId",
+          "SMC_Movement_Id",
+          "",
+          "The unique identifier of the movement.  Valid ifCommandAcceptedorDoneisTRUE."
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "library": "String Segments",
+  "title": "GetString (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Segments/Current/Strings/Functionblocks/pou-_StringPool/IStringPool/GetString.html",
+  "page_title": "_StringPool.GetString (METH)",
+  "text": "\nMETHOD GetString :\nIString\nReturns a\nIString\ninstance out of this\nStringPool\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetString",
+          "Type": "IString",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "psValue",
+          "Type": "POINTER TO BYTE",
+          "Initial": "0",
+          "Comment": "optional address of a utf-8 encoded, zero terminated byte\narray (string), used as inital value"
+        },
+        {
+          "Scope": "Output",
+          "Name": "udiSize",
+          "Type": "UDINT",
+          "Initial": "",
+          "Comment": ""
+        },
+        [
+          "eErrorID",
+          "ERROR",
+          "",
+          ""
+        ]
+      ]
+    }
+  ]
+}

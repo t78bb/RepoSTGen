@@ -1,0 +1,33 @@
+{
+  "library": "Util",
+  "title": "ERROR (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/TimerSwitch/Enums/ERROR.html",
+  "page_title": "ERROR (ENUM)",
+  "text": "\nTYPE ERROR :\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Name": "NO_ERROR",
+          "Initial": "0"
+        },
+        {
+          "Name": "WRONG_CONFIGURATION",
+          "Initial": "2"
+        },
+        {
+          "Name": "RTC_HIGHRES_NOT_SUPPORTED",
+          "Initial": ""
+        },
+        {
+          "Name": "SYS_TIMEZONE_NOT_SUPPORTED",
+          "Initial": ""
+        }
+      ]
+    }
+  ]
+}

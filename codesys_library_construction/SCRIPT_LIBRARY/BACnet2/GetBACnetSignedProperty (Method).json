@@ -1,0 +1,31 @@
+{
+  "library": "BACnet2",
+  "title": "GetBACnetSignedProperty (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/BACnetObjects/base/pou-BACnetObjectBase/Utilities/typed-property-access/GetBACnetSignedProperty.html",
+  "page_title": "BACnetObjectBase.GetBACnetSignedProperty (METH)",
+  "text": "\nMETHOD GetBACnetSignedProperty : CmpBACnet.IEC_BACNET_SIGNED\nReturns the BACnet-Signed-Value of the specified Property (propID) of this BACnet-Object.\nThe used functions are no client, meaning, that the access of the property is not restricted by write or read access restrictions.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetBACnetSignedProperty",
+          "Type": "CmpBACnet.IEC_BACNET_SIGNED",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "propID",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_ID",
+          "Comment": "The ID of the property to get."
+        }
+      ]
+    }
+  ]
+}

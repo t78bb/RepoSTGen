@@ -1,0 +1,28 @@
+{
+  "library": "BACnet2",
+  "title": "FreeUpdatePropertiesBuffer (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/Persistence/pou-IBACnetPersistence/FreeUpdatePropertiesBuffer.html",
+  "page_title": "IBACnetPersistence.FreeUpdatePropertiesBuffer (METH)",
+  "text": "\nMETHOD FreeUpdatePropertiesBuffer : CmpBACnet.IEC_BACNET_STATUS\nDeallocate buffer allocated from\nIBACnetPersistence.UpdateProperties\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "FreeUpdatePropertiesBuffer",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS"
+        },
+        {
+          "Scope": "Input",
+          "Name": "pBuffer",
+          "Type": "POINTER TO BYTE"
+        }
+      ]
+    }
+  ]
+}

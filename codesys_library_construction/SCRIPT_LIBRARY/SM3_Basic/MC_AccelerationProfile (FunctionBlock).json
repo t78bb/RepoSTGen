@@ -1,0 +1,89 @@
+{
+  "library": "SM3_Basic",
+  "title": "MC_AccelerationProfile (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/Movement/MC_AccelerationProfile.html",
+  "page_title": "MC_AccelerationProfile (FB)",
+  "text": "\nFUNCTION_BLOCK MC_AccelerationProfile\nThis function block follows a trajectory given by an array of\n(time, acceleration) values.\nNote\nIf\nAxis\ndoes not reach standstill after this movement and no subsequent\nmovement is commanded in the same cycle when\nDone\nis set, then\nAxis\nswitches to the\nerrorstop\nstate and reports error\nSMC_MOVING_WITHOUT_ACTIVE_MOVEMENT\n.\nThe number of points of the profile is limited to 100.  If more is required,\nMC_CamIn\nwith a virtual master axis offers a much more flexible functionality,\nalso supporting periodic operation and ramping in.  See also the warnings below\nfor further restrictions of this function block.\nSee also\nMC_PositionProfile\nand\nMC_VelocityProfile\n.\nWarning\nMC_MoveSuperimposed\nis not supported on top of\nMC_AccelerationProfile\n.\nMC_SetOverride\ndoes not influence\nMC_AccelerationProfile\nForecasts that are set up by\nSMC_SetForecast\nare not supported.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3",
+          "Initial": "",
+          "Comment": "Reference to axis"
+        },
+        [
+          "TimeAcceleration",
+          "MC_TA_REF",
+          "",
+          "Reference to time/acceleration description"
+        ],
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Rising edge: Starts the execution of the function block."
+        },
+        [
+          "ArraySize",
+          "INT",
+          "",
+          "Dimension of the array"
+        ],
+        [
+          "AccelerationScale",
+          "LREAL",
+          "1",
+          "Overall acceleration scaling factor"
+        ],
+        [
+          "Offset",
+          "LREAL",
+          "",
+          "Overall acceleration offset ([u/sÂ²])"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Done",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUE: Profile has been completed."
+        },
+        [
+          "Busy",
+          "BOOL",
+          "",
+          "TRUE: Execution of the function block has not been\nfinished."
+        ],
+        [
+          "CommandAborted",
+          "BOOL",
+          "",
+          "TRUE: The command has been aborted by another command."
+        ],
+        [
+          "Error",
+          "BOOL",
+          "",
+          "TRUE: Error has occurred within the function block."
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

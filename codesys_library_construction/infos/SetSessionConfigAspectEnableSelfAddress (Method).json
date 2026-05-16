@@ -1,0 +1,34 @@
+{
+  "library": "DNP3",
+  "title": "SetSessionConfigAspectEnableSelfAddress (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Outstation/pou-OutstationConfiguration/SetSessionConfigAspectEnableSelfAddress.html",
+  "page_title": "OutstationConfiguration.SetSessionConfigAspectEnableSelfAddress (METH)",
+  "text": "\nMETHOD SetSessionConfigAspectEnableSelfAddress :\nError\nSet optional outstation session configuration aspect - enable self-address.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetSessionConfigAspectEnableSelfAddress",
+          "Type": "Error",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "enableSelfAddress",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "Specify whether or not to enable self address functionality on this\nthis Outstation device as specified by DNP Technical Bulletin 2003-003\nSelf-Address Reservation. Outstation will respond to address 0xfffc as\nthough it received a request for its configured address. It will\nrespond with its own address so the master can automatically\ndiscover the Outstation address"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "library": "AlarmManager_Itfs",
+  "title": "StructFilteringName (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager_Itfs/Current/StructFilteringName.html",
+  "page_title": "StructFilteringName (STRUCT)",
+  "text": "ALARM_ID (Alias)\nStructFilteringName (Struct)\nTIMESTAMP (Alias)\nFile and Project Information\nLibrary Reference\nData Server Interfaces\nLibrary Identification\nLibrary Properties\nAlarm Manager Interfaces\nDocs\n»\nStructFilteringName (STRUCT)\nStructFilteringName (STRUCT)\nÂ¶\nTYPE StructFilteringName : STRUCT\nThis structure is used to pass the name of remote device and the name of âalarm group/alarm classâ to filter on.\nInOut:\nName\nType\nComment\nsRemoteDevice\nSTRING\nThe name of the remote device where the group/class belongs to.\nIt must be empty in case of local group/class\nsName\nSTRING\nThe name of group/class to filter",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "sRemoteDevice",
+          "Type": "STRING",
+          "Comment": "The name of the remote device where the group/class belongs to.\nIt must be empty in case of local group/class"
+        },
+        {
+          "Name": "sName",
+          "Type": "STRING",
+          "Comment": "The name of group/class to filter"
+        }
+      ]
+    }
+  ]
+}

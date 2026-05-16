@@ -1,0 +1,6 @@
+{
+  "requirement": "This code should implement a function block named FB_Wrapper with input 'in' of type BOOL and output 'out' of type BOOL. It should manage an array 'fb_teste' of three instances of FB_Teste, initializing each instance with specific delay times using SetTempo method (4 seconds for the first instance, 1 second for the second, and 2 seconds for the third). The function block should iterate over the array 'fb_teste' and depending on the input 'in', either call mLiga() or mDesliga() method on each instance. Additionally, it should implement a method named Map that assigns the input 'in' to the 'entrada' property of each FB_Teste instance in the array and sets the output 'out' to the 'saida' property of the last processed FB_Teste instance in the loop.",
+  "provide_code": "FUNCTION_BLOCK FB_Wrapper\nVAR_INPUT\n\tin:BOOL;\nEND_VAR\nVAR_OUTPUT\n\tout:BOOL;\nEND_VAR",
+  "function_name": "FB_Wrapper",
+  "requirement_cn": "这段代码应实现一个名为 FB_Wrapper 的功能块，输入变量 'in' 类型为 BOOL，输出变量 'out' 类型为 BOOL。它应该管理一个包含三个 FB_Teste 实例的数组 'fb_teste'，并使用 SetTempo 方法为每个实例初始化特定的延迟时间（第一个实例 4 秒，第二个实例 1 秒，第三个实例 2 秒）。功能块应遍历数组 'fb_teste'，根据输入 'in' 调用每个实例的 mLiga() 方法或 mDesliga() 方法。此外，它应实现一个名为 Map 的方法，该方法将输入 'in' 分配给数组中每个 FB_Teste 实例的 'entrada' 属性，并将输出 'out' 设置为循环中最后处理的 FB_Teste 实例的 'saida' 属性。"
+}

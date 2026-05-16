@@ -1,0 +1,36 @@
+{
+  "library": "Standard",
+  "title": "CONCAT (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/Standard/Current/String-Functions/CONCAT.html",
+  "page_title": "CONCAT (FUN)",
+  "text": "Deutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nMenu\nSearch\nDeutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nBistable Function Blocks\nRS (FunctionBlock)\nSR (FunctionBlock)\nCounter\nCTD (FunctionBlock)\nCTU (FunctionBlock)\nCTUD (FunctionBlock)\nMiscellaneous\nRTC (FunctionBlock)\nString Functions\nCONCAT (Function)\nDELETE (Function)\nFIND (Function)\nINSERT (Function)\nLEFT (Function)\nLEN (Function)\nMID (Function)\nREPLACE (Function)\nRIGHT (Function)\nTimer\nTOF (FunctionBlock)\nTON (FunctionBlock)\nTP (FunctionBlock)\nTrigger\nF_TRIG (FunctionBlock)\nR_TRIG (FunctionBlock)\nFile and Project Information\nLibrary Reference\nStandard\nDocs\n»\nString\nFunctions\n»\nCONCAT (FUN)\nCONCAT (FUN)\nÂ¶\nFUNCTION CONCAT : STRING(255)\nConcatenates two strings\nCONCAT(STR1,STR2)\nmeans: Connect\nSTR1\nand\nSTR2\nto a single string\nSTR1STR2\n.\n(* Example declaration *)\nVarSTRING1\n:\nSTRING\n;\n(* Example in ST , result is 'SUSIWILLI' *)\nVarSTRING1\n:=\nCONCAT\n(\n'SUSI'\n,\n'WILLI'\n);\nInOut:\nScope\nName\nType\nComment\nReturn\nCONCAT\nSTRING(255)\nConcatenated string, max. 255 characters. If the result doesnât fit into these 255 bytes, it will be silently truncated. No error is produced.\nInput\nSTR1\nSTRING(255)\nString 1 to be concatenated, max. 255 characters\nSTR2\nSTRING(255)\nString 2 to be concatenated, max. 255 characters\ntop\nCODESYS Group | We\nsoftware\nAutomation.\nto software\n['sɒftwɛər]\ntransitive verb\n__softwared/softwaring\n: to develop software\n// to software automation: to develop software for automation purposes\nThe CODESYS Group is the manufacturer of CODESYS, the leading hardware-independent\n                                    IEC 61131-3 automation software for developing and engineering controller\n                                    applications.\nCODESYS® is a registered trademark.\nCODESYS GmbH\nA member of the CODESYS Group\nMemminger Straße 151, 87439 Kempten\nGermany\nTel.:\n+49-831-54031-0\ninfo@codesys.com\nLegal Notice\nPrivacy Policy\nLinkedIn\nYoutube\nRSS\nDownloads\nLogin\nCODESYS Store\n© 2022 CODESYS GmbH\n| A member of the CODESYS Group",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "CONCAT",
+          "Type": "STRING(255)",
+          "Comment": "Concatenated string, max. 255 characters. If the result doesnât fit into these 255 bytes, it will be silently truncated. No error is produced."
+        },
+        {
+          "Scope": "Input",
+          "Name": "STR1",
+          "Type": "STRING(255)",
+          "Comment": "String 1 to be concatenated, max. 255 characters"
+        },
+        [
+          "STR2",
+          "STRING(255)",
+          "String 2 to be concatenated, max. 255 characters"
+        ]
+      ]
+    }
+  ]
+}

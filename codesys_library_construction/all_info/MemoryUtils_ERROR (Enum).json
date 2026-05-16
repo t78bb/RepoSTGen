@@ -1,0 +1,28 @@
+{
+  "library": "MemoryUtils",
+  "title": "ERROR (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/MemoryUtils/Current/MemoryUtils/Enums/ERROR.html",
+  "page_title": "ERROR (ENUM)",
+  "text": "Deutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nMenu\nSearch\nDeutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nMemoryUtils\nEnums\nByteOrder (Enum)\nERROR (Enum)\nFunctionblocks\nByteBuffer (FunctionBlock)\nAlign2 (Method)\nAlign4 (Method)\nGetByte (Method)\nGetDWord (Method)\nGetDataPointer (Method)\nGetLWord (Method)\nGetNBytes (Method)\nGetNDWords (Method)\nGetNLWords (Method)\nGetNWords (Method)\nGetWord (Method)\nNeedsSwapping (Property)\nPadding (Method)\nPutByte (Method)\nPutDWord (Method)\nPutLWord (Method)\nPutNBytes (Method)\nPutNDWords (Method)\nPutNLWords (Method)\nPutNWords (Method)\nPutWord (Method)\nResetPosition (Method)\nSkip (Method)\nMemoryManager (FunctionBlock)\nPrivate\nPublic\nFunctions\nBitCpy (Function)\nMemCmp (Function)\nMemCpy (Function)\nMemSet (Function)\nSwapping\nMemForceSwap (Function)\nSwap (Function)\nSwapLocalToIntel (Function)\nSwapLocalToMotorola (Function)\nFile and Project Information\nLibrary Reference\nCAA Callback Extern\nLibrary Identification\nLibrary Properties\nCAA Memory Block Manager Extern\nLibrary Identification\nLibrary Properties\nCAA Types Extern\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nSysCpuHandling\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nMemoryUtils\nDocs\n»\nMemoryUtils\n»\nEnums\n»\nERROR (ENUM)\nERROR (ENUM)\nÂ¶\nTYPE ERROR :\nInOut:\nName\nInitial\nComment\nNO_ERROR\n0\nNO_MEMORY\nNo more memory available. Set AutoExtend = TRUE, or free\nsome memory malloc at the MemoryManager\ntop\nCODESYS Group | We\nsoftware\nAutomation.\nto software\n['sɒftwɛər]\ntransitive verb\n__softwared/softwaring\n: to develop software\n// to software automation: to develop software for automation purposes\nThe CODESYS Group is the manufacturer of CODESYS, the leading hardware-independent\n                                    IEC 61131-3 automation software for developing and engineering controller\n                                    applications.\nCODESYS® is a registered trademark.\nCODESYS GmbH\nA member of the CODESYS Group\nMemminger Straße 151, 87439 Kempten\nGermany\nTel.:\n+49-831-54031-0\ninfo@codesys.com\nLegal Notice\nPrivacy Policy\nLinkedIn\nYoutube\nRSS\nDownloads\nLogin\nCODESYS Store\n© 2022 CODESYS GmbH\n| A member of the CODESYS Group",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "NO_ERROR",
+          "Initial": "0",
+          "Comment": ""
+        },
+        {
+          "Name": "NO_MEMORY",
+          "Initial": "",
+          "Comment": "No more memory available. Set AutoExtend = TRUE, or free\nsome memory malloc at the MemoryManager"
+        }
+      ]
+    }
+  ]
+}

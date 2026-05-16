@@ -1,0 +1,58 @@
+{
+  "library": "Util",
+  "title": "DateTime (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/TimerSwitch/Structs/DateTime.html",
+  "page_title": "DateTime (STRUCT)",
+  "text": "\nTYPE DateTime : STRUCT\nTwo formats are supported:\nAbsolute format: defines an exact time. âuiYearâ, âuiMonthâ, âuiDayâ, âuiHourâ, âuiMinuteâ and âuiSecondâ define the exact time. âuiWeekdayâ is of no importance.\nDay of the month format: is selected by setting âuiYearâ to 0. âuiWeekdayâ defines a weekday and âuiDayâ specifies the day of the month in a value range of 1..5.\nThis notation makes it possible to define the first Sunday in April as well as the last Thursday in October\n(âuiDayâ = 1 corresponds to the first weekday in a month, âuiDayâ = 5 corresponds to the last weekday in a month)\nNote\nThe following applies for the summer time in Europe:\nThe switch to summer time is done on the last Sunday in March. At 2:00 a.m. the clock is set ahead by one hour.\nThe following applies for the winter time (standard time) in Europe:\nThe switch to winter time is done on the last Sunday in October. At 3:00 a.m. the clock is set back by one hour.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "uiYear",
+          "Type": "YEAR",
+          "Comment": ""
+        },
+        {
+          "Name": "uiMonth",
+          "Type": "MONTH",
+          "Comment": ""
+        },
+        {
+          "Name": "uiDay",
+          "Type": "DAY",
+          "Comment": "If Year = 0, then 1..5 1 => first day in this month, 5 =>\nlast day in this month"
+        },
+        {
+          "Name": "uiHour",
+          "Type": "HOUR",
+          "Comment": ""
+        },
+        {
+          "Name": "uiMinute",
+          "Type": "MINUTE",
+          "Comment": ""
+        },
+        {
+          "Name": "uiSecond",
+          "Type": "SECOND",
+          "Comment": ""
+        },
+        {
+          "Name": "uiMilliseconds",
+          "Type": "MILLISECOND",
+          "Comment": ""
+        },
+        {
+          "Name": "eWeekday",
+          "Type": "WEEKDAY",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

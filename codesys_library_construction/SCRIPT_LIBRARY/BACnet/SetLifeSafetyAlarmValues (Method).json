@@ -1,0 +1,36 @@
+{
+  "library": "BACnet",
+  "title": "SetLifeSafetyAlarmValues (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/LifeSafetyZone/pou-BACnetLifeSafetyZone/SetLifeSafetyAlarmValues.html",
+  "page_title": "BACnetLifeSafetyZone.SetLifeSafetyAlarmValues (METH)",
+  "text": "\nMETHOD SetLifeSafetyAlarmValues : CmpBACnet.IEC_BACNET_STATUS\nSets the Life_Safety_Alarm_Values of this BACnet object.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetLifeSafetyAlarmValues",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "uiListCount",
+          "Type": "CmpBACnet.IEC_BACNET_ELEMENT_COUNT",
+          "Comment": "The length of the list in the following pointer"
+        },
+        [
+          "pList",
+          "POINTER TO\nCmpBACnet.IEC_BACNET_LIFE_SAFETY_STATE",
+          "The list data containing elements according to the given\ncount."
+        ]
+      ]
+    }
+  ]
+}

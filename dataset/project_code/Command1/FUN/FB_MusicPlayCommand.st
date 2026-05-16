@@ -1,0 +1,4 @@
+FUNCTION_BLOCK PUBLIC FB_MusicPlayCommand IMPLEMENTS I_Command
+VAR
+	refCDPlayer : REFERENCE TO FB_CDPlayer;
+END_VAR

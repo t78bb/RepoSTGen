@@ -1,0 +1,23 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "CallPrioLowStart (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_Module/pou-Module/StandardCalls/CallPrioLowStart.html",
+  "page_title": "Module.CallPrioLowStart (METH)",
+  "text": "\nMETHOD CallPrioLowStart : BOOL\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "CallPrioLowStart",
+          "Type": "BOOL"
+        }
+      ]
+    }
+  ]
+}

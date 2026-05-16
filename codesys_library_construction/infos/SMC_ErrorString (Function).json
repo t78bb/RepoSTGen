@@ -1,0 +1,36 @@
+{
+  "library": "SM3_Error",
+  "title": "SMC_ErrorString (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Error/Current/SM3_Error/SMC_ErrorString.html",
+  "page_title": "SMC_ErrorString (FUN)",
+  "text": "\nFUNCTION SMC_ErrorString : STRING(100)\nDepending on the inputs\nErrorID\nand\nLanguage\nthe function\nSMC_ErrorString\nwill return a string representing the error.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "ErrorID",
+          "Type": "SMC_ERROR",
+          "Comment": "Error identification"
+        },
+        [
+          "Language",
+          "SMC_LANGUAGE_TYPE",
+          "Desired language"
+        ],
+        {
+          "Scope": "Return",
+          "Name": "SMC_ErrorString",
+          "Type": "STRING(100)",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "library": "SM3_CNC",
+  "title": "SetEndOfData (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/GSentence/pou-SMC_GSentenceQueue/SetEndOfData.html",
+  "page_title": "SMC_GSentenceQueue.SetEndOfData (METH)",
+  "text": "\nMETHOD PUBLIC SetEndOfData\nMarks the end of data flag of the queue.",
+  "tables": []
+}

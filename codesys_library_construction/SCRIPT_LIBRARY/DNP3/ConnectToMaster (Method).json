@@ -1,0 +1,28 @@
+{
+  "library": "DNP3",
+  "title": "ConnectToMaster (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/PointObserver/pou-PointObserver/ConnectToMaster.html",
+  "page_title": "PointObserver.ConnectToMaster (METH)",
+  "text": "\nMETHOD ConnectToMaster :\nError\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "ConnectToMaster",
+          "Type": "Error"
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfMaster",
+          "Type": "IMaster"
+        }
+      ]
+    }
+  ]
+}

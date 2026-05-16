@@ -1,0 +1,28 @@
+{
+  "library": "3S Storage",
+  "title": "StorageGetPath (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/3S Storage/Current/_3SStorage/Instances/pou-Storage/StorageGetPath.html",
+  "page_title": "Storage.StorageGetPath (METH)",
+  "text": "\nMETHOD StorageGetPath : STO.ERROR\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "StorageGetPath",
+          "Type": "STO.ERROR"
+        },
+        {
+          "Scope": "Inout",
+          "Name": "sPath",
+          "Type": "CAA.FILENAME"
+        }
+      ]
+    }
+  ]
+}

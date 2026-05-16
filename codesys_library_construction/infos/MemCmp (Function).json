@@ -1,0 +1,41 @@
+{
+  "library": "MemoryUtils",
+  "title": "MemCmp (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/MemoryUtils/Current/MemoryUtils/Functions/MemCmp.html",
+  "page_title": "MemCmp (FUN)",
+  "text": "\nFUNCTION MemCmp : BOOL\nMemCmp compares two memory buffers.\nThis function compares the data at âpbyMem1â\nof âdwSizeâ bytes with the data at âpbyMem2â.\nIf the data is fully equal, the function\nreturns TRUE. Otherwise the function returns\nFALSE.\nIf dwSize is 0, the function returns TRUE,\nas zero compared bytes are always equal.\nNote, that this function (similar to memcmp in C)\nmakes no additional checks of input parameters.\nThe caller has to take care about the validity\nof pointers and sizes, passed to this function.\nAs the function implements no error handling,\nthe exact count of âdwSizeâ bytes is compared.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "MemCmp",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "pbyMem1",
+          "Type": "POINTER TO BYTE",
+          "Comment": "Pointer to memory which should be compared"
+        },
+        [
+          "pbyMem2",
+          "POINTER TO BYTE",
+          "Pointer to memory which should be compared"
+        ],
+        [
+          "dwSize",
+          "DWORD",
+          "Number of bytes to compare"
+        ]
+      ]
+    }
+  ]
+}

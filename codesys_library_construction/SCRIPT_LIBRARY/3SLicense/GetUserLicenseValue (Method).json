@@ -1,0 +1,65 @@
+{
+  "library": "3SLicense",
+  "title": "GetUserLicenseValue (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/3SLicense/Current/pou-OLM_OnlineLicenseManager/GetUserLicenseValue.html",
+  "page_title": "OLM_OnlineLicenseManager.GetUserLicenseValue (METH)",
+  "text": "\nMETHOD GetUserLicenseValue : UDINT\nThis method allows to ask for the license value of a component (specified by udiLicenseID)\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        [
+          "Return",
+          "GetUserLicenseValue",
+          "UDINT",
+          "Possible values:0no valid license installed16#FFFFFFFFdemo mode (lasts for 30 min)elselicense value; interpretation depends on component",
+          "0",
+          "no valid license installed",
+          "16#FFFFFFFF",
+          "demo mode (lasts for 30 min)",
+          "else",
+          "license value; interpretation depends on component"
+        ],
+        [
+          "0",
+          "no valid license installed"
+        ],
+        [
+          "16#FFFFFFFF",
+          "demo mode (lasts for 30 min)"
+        ],
+        [
+          "else",
+          "license value; interpretation depends on component"
+        ],
+        {
+          "Scope": "Input",
+          "Name": "udiLicenseID",
+          "Type": "UDINT",
+          "Comment": "ID of the component that asks for its license value\n(centrally assigned by 3S)"
+        }
+      ]
+    },
+    {
+      "headers": [
+        "0",
+        "no valid license installed"
+      ],
+      "rows": [
+        {
+          "0": "16#FFFFFFFF",
+          "no valid license installed": "demo mode (lasts for 30 min)"
+        },
+        {
+          "0": "else",
+          "no valid license installed": "license value; interpretation depends on component"
+        }
+      ]
+    }
+  ]
+}

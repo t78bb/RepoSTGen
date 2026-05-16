@@ -1,0 +1,46 @@
+{
+  "library": "DNP3",
+  "title": "ETHdeviceHelper (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/ETHdeviceHelper.html",
+  "page_title": "ETHdeviceHelper (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL ETHdeviceHelper\nETHdeviceHelper provides application support to use a CODESYS Ethernet adapter in conjunction with\nOutstationConfigurationIP\n.localIP.\nPlace an ETHdeviceHelper underneath a CODESYS Ethernet adapter within the CODESYS device tree.\nConfigure the CODESYS Ethernet adapter acordingly and assign ETHdeviceHelper.IPaddress to OutstationConfigurationIP.localIP if/when appropriate.\nETHdeviceHelper allows to check:\nif there is a valid IP\nif configured IP (of related CODESYS Ethernet adapter) equals actual IP\nThis information can be used to enable / disable an\nOutstation\naccordingly.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "checkIPasConfigured",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "Check, if the actual IP equals configured IP - in case not\nset xError."
+        },
+        {
+          "Scope": "Output",
+          "Name": "xError",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Error - no valid Ethernet adapter selected or invalid\nconfiguration"
+        },
+        [
+          "isValidIPaddress",
+          "BOOL",
+          "",
+          "The Ethernet adapter does have a valid IP address."
+        ],
+        [
+          "IPaddress",
+          "STRING",
+          "",
+          "Actual IP address of Ethernet adapter"
+        ]
+      ]
+    }
+  ]
+}

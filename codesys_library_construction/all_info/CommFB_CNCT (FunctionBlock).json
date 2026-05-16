@@ -1,0 +1,64 @@
+{
+  "library": "CommFB",
+  "title": "CNCT (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/CommFB/Current/CommFB/CNCT.html",
+  "page_title": "CNCT (FB)",
+  "text": "CommFB\nAINFO_TYPE (Union)\nAddressConcept (GVL)\nAddress Concept\nGenerating a CommFB-ID\nProfibus DP\nProfinet IO\nDevice Diagnosis\nAddress Conversion\nAddresses\nADDR_TO_ID (FunctionBlock)\nADDR_TYPE (Union)\nCREATE_ID (FunctionBlock)\nDP_ADDR (Struct)\nDP_DEVICE_ID (Struct)\nID_TO_ADDR (FunctionBlock)\nIO_SYSTEM_TYPE (Enum)\nPN_ADDR (Struct)\nPN_DEVICE_ID (Struct)\nSUBSLOT_ID (Function)\nCNCT (FunctionBlock)\nConstants (GVL)\nDP Address\nADDR (Function)\nID (Function)\nSLOT_ID (Function)\nDP_AINFO (Struct)\nDP_DIAG (Struct)\nErrorCode (Enum)\nErrorCode1_RW (Enum)\nFieldDevice\nPRVREC (FunctionBlock)\nPRVREC_MODE (Enum)\nRCVREC (FunctionBlock)\nRCVREC_MODE (Enum)\nSALARM (FunctionBlock)\nGETIO_PART (FunctionBlock)\nPN_AINFO (Struct)\nRALARM (FunctionBlock)\nRALARM_MODE (Enum)\nRDIAG (FunctionBlock)\nRDREC (FunctionBlock)\nSETIO_PART (FunctionBlock)\nWRREC (FunctionBlock)\nImages\nLibrary Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nFile and Project Information\nLibrary Reference\nIoDriver Profibus2 Interfaces\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nCommFB\nDocs\n»\nCommFB\n»\nCNCT (FB)\nCNCT (FB)\nÂ¶\nFUNCTION_BLOCK CNCT\nThis function block establishes a Profinet DeviceAccess-AR or a Profibus-DPV2 connection.\nSupervisors need this connections to access a Field Device, e.g. for writing parameters.\nOne instance of a CNCT function block provides one instance of a peer-to-peer connection to a Field Device. Only one connection to the same Field Device can be established.\nA connection is established when the REQ input is equal to TRUE. The IO Subsystem remains connected as long as the function block is called with REQ = TRUE or an error is indicated.\nThe variable given D_ADDR input shall identify the destination Field Device. The ID output identifies the established connection to this Field Device (used for the functions blocks\nRDREC\nand\nWRREC\n.\nIf the connection is established successfully, the VALID output indicates that the connection can be used.\nNote\nIn case of inactivity, which means there are no read-/write-services transfered on the established connection, the connection may be aborted by the IO subsystem (e.g. after 20 sec.)\nNote\nThe CNCT function block defines a connection to a slot or subslot of a Field Device and returns a handle via the ID output.\nThis connection establishes an Application Relationship (AR) to the Field Device. If another connection and handle is needed to the same Field Device the existing AR may be used.\nCode-Example: establish a Supervisor connection\nPROGRAM\nPLC_PRG\nVAR\ncnct\n:\nCommFB.CNCT\n;\nstartConnect\n:\nBOOL\n;\n//establish a Supervisor connection\nrdrec\n:\nCommFB.RDREC\n;\nloadData\n:\nBOOL\n;\nbuffer\n:\nARRAY\n[0..255]\nOF\nBYTE\n;\nEND_VAR\ncnct.D_ADDR.SYSTEM\n:=\nCommfB.IO_SYSTEM_TYPE.PROFINET_IO\n;\ncnct.D_ADDR.PN.D.STATIONNAME\n:=\n'pnDevice'\n;\ncnct.D_ADDR.PN.D.VENDOR\n:=\n16#011D\n;\n//get this data from GSDML or DCP_Identify / Scan\ncnct.D_ADDR.PN.D.DEVICE\n:=\n16#02EE\n;\ncnct.D_ADDR.PN.D.INSTANCE\n:=\n0\n;\ncnct.D_ADDR.PN.SLOT\n:=\n0\n;\ncnct.D_ADDR.PN.SUBSLOT\n:=\n1\n;\ncnct.REQ\n:=\nstartConnect\n;\ncnct\n();\nIF\n(\ncnct.VALID\n)\nTHEN\nloadData\n:=\nTRUE\n;\nELSIF\n(\ncnct.ERROR\n)\nTHEN\n//re-connect, if connection timed out\nstartConnect\n:=\n(\ncnct.STATUS\n=\nCommFB.ErrorCode.TIMEOUT\n);\nEND_IF\n// Read Diagnosis-Data\nrdrec.REQ\n:=\nloadData\n;\nrdrec.ID\n:=\ncnct.ID\n;\nrdrec.INDEX\n:=\nTO_INT\n(\nProfinetCommon.DiagnosisRecordIndex.Device\n);\nrdrec.MLEN\n:=\nTO_INT\n(\nSIZEOF\n(\nbuffer\n));\nrdrec.RECORD\n:=\nADR\n(\nbuffer\n);\nrdrec\n();\nIF\n(\nrdrec.REQ\n)\nTHEN\nIF\n(\nrdrec.VALID\n)\nTHEN\nloadData\n:=\nFALSE\n;\nstartConnect\n:=\nFALSE\n;\n//Release connection\nEND_IF\nEND_IF\nrdrec.REQ\n:=\nrdrec.BUSY\n;\nInOut:\nScope\nName\nType\nInitial\nComment\nInput\nREQ\nBOOL\nStart Request\nD_ADDR\nADDR_TYPE\nData structure to define the address of a slot of a PROFIBUS\nDP-slave or a subslot of a PROFINET IO Device\nOutput\nVALID\nBOOL\nConnection is valid\nERROR\nBOOL\nError detected\nBUSY\nBOOL\nFB is busy\nSTATUS\nDWORD\nLast detected status\nID\nDWORD\nConstants.INVALID_ID\nIdentifier of a PROFIBUS DP-slave or a subslot of a PROFINET\nIO Device. Use for\nRDREC\nor\nWRREC\n(Class 2 /\nSupervisor Access)",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "REQ",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Start Request"
+        },
+        [
+          "D_ADDR",
+          "ADDR_TYPE",
+          "",
+          "Data structure to define the address of a slot of a PROFIBUS\nDP-slave or a subslot of a PROFINET IO Device"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "VALID",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Connection is valid"
+        },
+        [
+          "ERROR",
+          "BOOL",
+          "",
+          "Error detected"
+        ],
+        [
+          "BUSY",
+          "BOOL",
+          "",
+          "FB is busy"
+        ],
+        [
+          "STATUS",
+          "DWORD",
+          "",
+          "Last detected status"
+        ],
+        [
+          "ID",
+          "DWORD",
+          "Constants.INVALID_ID",
+          "Identifier of a PROFIBUS DP-slave or a subslot of a PROFINET\nIO Device. Use forRDRECorWRREC(Class 2 /\nSupervisor Access)"
+        ]
+      ]
+    }
+  ]
+}

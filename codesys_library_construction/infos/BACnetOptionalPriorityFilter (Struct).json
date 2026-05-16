@@ -1,0 +1,25 @@
+{
+  "library": "BACnet2",
+  "title": "BACnetOptionalPriorityFilter (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/Structs/BACnetOptionalPriorityFilter.html",
+  "page_title": "BACnetOptionalPriorityFilter (STRUCT)",
+  "text": "\nTYPE BACnetOptionalPriorityFilter : STRUCT\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Name": "fValueIsValid",
+          "Type": "BOOL"
+        },
+        {
+          "Name": "value",
+          "Type": "STRING"
+        }
+      ]
+    }
+  ]
+}

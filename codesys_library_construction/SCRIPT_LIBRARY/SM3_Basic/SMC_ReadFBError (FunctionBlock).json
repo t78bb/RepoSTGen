@@ -1,0 +1,77 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_ReadFBError (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/Diagnostics/FBError/SMC_ReadFBError.html",
+  "page_title": "SMC_ReadFBError (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_ReadFBError\nThis function block serves to read the oldest information on function block errors.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "bEnable",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "TRUE: Starts the execution of the function block."
+        },
+        {
+          "Scope": "Output",
+          "Name": "bValid",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "TRUE: Parameter is available."
+        },
+        [
+          "bBusy",
+          "BOOL",
+          "",
+          "TRUE: Execution of function block is not finished."
+        ],
+        [
+          "bFBError",
+          "BOOL",
+          "FALSE",
+          "TRUE: Error has occurred within the function block."
+        ],
+        [
+          "nFBErrorID",
+          "SMC_ERROR",
+          "0",
+          "Error identification"
+        ],
+        [
+          "pbyErrorInstance",
+          "POINTER TO BYTE",
+          "",
+          "Points to the function block instance that reported this\nerror."
+        ],
+        [
+          "strErrorInstance",
+          "STRING",
+          "",
+          ""
+        ],
+        [
+          "tTimeStamp",
+          "TIME",
+          "",
+          "Time stamp of the error"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "library": "BACnet",
+  "title": "SetBACnetTimeProperty (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/pou-IBACnetObjectBase/Utilities/SetBACnetTimeProperty.html",
+  "page_title": "IBACnetObjectBase.SetBACnetTimeProperty (METH)",
+  "text": "\nMETHOD SetBACnetTimeProperty\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "propID",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_ID"
+        },
+        [
+          "tim",
+          "TIME"
+        ]
+      ]
+    }
+  ]
+}

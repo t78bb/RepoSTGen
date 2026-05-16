@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现根据输入参数计算特定物理公式的结果，其中涉及质量、水平距离和垂直距离的关系。",
+  "provide_code": "FUNCTION_BLOCK CheckF\nVAR_INPUT\n\tlM\t:\tLREAL;\n\tlL\t:\tLREAL;\n\tlH\t:\tLREAL;\nEND_VAR\nVAR_OUTPUT\n\tlF\t:\tLREAL;\nEND_VAR"
+}

@@ -1,0 +1,61 @@
+{
+  "library": "CommFB",
+  "title": "SETIO_PART (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/CommFB/Current/CommFB/SETIO_PART.html",
+  "page_title": "SETIO_PART (FB)",
+  "text": "CommFB\nAINFO_TYPE (Union)\nAddressConcept (GVL)\nAddress Concept\nGenerating a CommFB-ID\nProfibus DP\nProfinet IO\nDevice Diagnosis\nAddress Conversion\nAddresses\nADDR_TO_ID (FunctionBlock)\nADDR_TYPE (Union)\nCREATE_ID (FunctionBlock)\nDP_ADDR (Struct)\nDP_DEVICE_ID (Struct)\nID_TO_ADDR (FunctionBlock)\nIO_SYSTEM_TYPE (Enum)\nPN_ADDR (Struct)\nPN_DEVICE_ID (Struct)\nSUBSLOT_ID (Function)\nCNCT (FunctionBlock)\nConstants (GVL)\nDP Address\nADDR (Function)\nID (Function)\nSLOT_ID (Function)\nDP_AINFO (Struct)\nDP_DIAG (Struct)\nErrorCode (Enum)\nErrorCode1_RW (Enum)\nFieldDevice\nPRVREC (FunctionBlock)\nPRVREC_MODE (Enum)\nRCVREC (FunctionBlock)\nRCVREC_MODE (Enum)\nSALARM (FunctionBlock)\nGETIO_PART (FunctionBlock)\nPN_AINFO (Struct)\nRALARM (FunctionBlock)\nRALARM_MODE (Enum)\nRDIAG (FunctionBlock)\nRDREC (FunctionBlock)\nSETIO_PART (FunctionBlock)\nWRREC (FunctionBlock)\nImages\nLibrary Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nFile and Project Information\nLibrary Reference\nIoDriver Profibus2 Interfaces\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nCommFB\nDocs\n»\nCommFB\n»\nSETIO_PART (FB)\nSETIO_PART (FB)\nÂ¶\nFUNCTION_BLOCK SETIO_PART\nThe SETIO_PART function block sets the output data for a subset of the output data associated to a slot or subslot of a Field Device.\nThe output data are addressed within the slot or subslot through the OFFSET and LEN parameters.\nThe SETIO_PART function block sets the output data to the Host Controller interface into the cyclically written output data of the Field Device.\nThe function block is invoked by a 1 of the EN input. If the Output data are stored successfully and the Field Device is still cyclically communicating, the ENO output is set to 1.\nIf the Output data are stored successfully and the Field Device is still cyclically communicating, the ENO output is set to 1\nNever use GETIO-/SETIO_PART FBs concurrently with %I/%Q-Input/Output-Mapping for the same slot/subslot !\nInOut:\nScope\nName\nType\nComment\nInput\nEN\nBOOL\nEnable\nID\nDWORD\nIdentifier of a slot / subslot of a Field Device\nOFFSET\nINT\nOffset of the subset of output data\nLEN\nINT\nLength of the output data to write\nOUTPUTS\nPOINTER TO BYTE\nIO data object to write\nOutput\nENO\nBOOL\nFlag indication sending data OK\nSTATUS\nDWORD\nLast detected status\nERROR\nBOOL\nFlag indication an error",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "EN",
+          "Type": "BOOL",
+          "Comment": "Enable"
+        },
+        [
+          "ID",
+          "DWORD",
+          "Identifier of a slot / subslot of a Field Device"
+        ],
+        [
+          "OFFSET",
+          "INT",
+          "Offset of the subset of output data"
+        ],
+        [
+          "LEN",
+          "INT",
+          "Length of the output data to write"
+        ],
+        [
+          "OUTPUTS",
+          "POINTER TO BYTE",
+          "IO data object to write"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "ENO",
+          "Type": "BOOL",
+          "Comment": "Flag indication sending data OK"
+        },
+        [
+          "STATUS",
+          "DWORD",
+          "Last detected status"
+        ],
+        [
+          "ERROR",
+          "BOOL",
+          "Flag indication an error"
+        ]
+      ]
+    }
+  ]
+}

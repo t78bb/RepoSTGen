@@ -1,0 +1,8 @@
+{
+  "library": "String Segments",
+  "title": "IStringRepresentation (Interface)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Segments/Current/Strings/Interfaces/IStringRepresentation.html",
+  "page_title": "IStringRepresentation (ITF)",
+  "text": "\nINTERFACE IStringRepresentation EXTENDS __SYSTEM.IQueryInterface\nMethods:\nLen\nToIString\nStructure:\nLen (Method)\nToIString (Method)",
+  "tables": []
+}

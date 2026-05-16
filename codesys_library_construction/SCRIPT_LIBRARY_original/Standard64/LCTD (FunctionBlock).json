@@ -1,0 +1,46 @@
+{
+  "library": "Standard64",
+  "title": "LCTD (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/Standard64/Current/Counter/LCTD.html",
+  "page_title": "LCTD (FB)",
+  "text": "Deutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nMenu\nSearch\nDeutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nAtomic Read-Write Functions\nAtomicReadLInt (Function)\nAtomicReadLReal (Function)\nAtomicReadLTime (Function)\nAtomicReadLWord (Function)\nAtomicReadULInt (Function)\nAtomicWriteLInt (Function)\nAtomicWriteLReal (Function)\nAtomicWriteLTime (Function)\nAtomicWriteLWord (Function)\nAtomicWriteULInt (Function)\nCounter\nLCTD (FunctionBlock)\nLCTU (FunctionBlock)\nLCTUD (FunctionBlock)\nString Functions\nWCONCAT (Function)\nWDELETE (Function)\nWFIND (Function)\nWINSERT (Function)\nWLEFT (Function)\nWLEN (Function)\nWMID (Function)\nWREPLACE (Function)\nWRIGHT (Function)\nTimer\nLTOF (FunctionBlock)\nLTON (FunctionBlock)\nLTP (FunctionBlock)\nFile and Project Information\nLibrary Reference\nStandard64\nDocs\n»\nCounter\n»\nLCTD (FB)\nLCTD (FB)\nÂ¶\nFUNCTION_BLOCK PUBLIC LCTD\nDecrements a given value\n(* Example declaration *)\nLCTDInst\n:\nLCTD\n;\n(* Example in ST *)\nLCTDInst\n(\nCD\n:=\nVarBOOL1\n,\nLOAD\n:=\nVarBOOL2\n,\nPV\n:=\nVarLWORD1\n);\nVarBOOL3\n:=\nCTDInst.Q\n;\nVarLWORD2\n:=\nCTDInst.CV\n;\nInOut:\nScope\nName\nType\nComment\nInput\nCD\nBOOL\nRising edge: Decrementing\nCV\nby one\nLOAD\nBOOL\nTRUE\n: Set\nCV\nto the start value\nPV\nPV\nLWORD\nStart value for decrementing\nOutput\nQ\nBOOL\nTRUE\nif\nCV\n=\n0\nCV\nLWORD\nCurrent counter value\ntop\nCODESYS Group | We\nsoftware\nAutomation.\nto software\n['sɒftwɛər]\ntransitive verb\n__softwared/softwaring\n: to develop software\n// to software automation: to develop software for automation purposes\nThe CODESYS Group is the manufacturer of CODESYS, the leading hardware-independent\n                                    IEC 61131-3 automation software for developing and engineering controller\n                                    applications.\nCODESYS® is a registered trademark.\nCODESYS GmbH\nA member of the CODESYS Group\nMemminger Straße 151, 87439 Kempten\nGermany\nTel.:\n+49-831-54031-0\ninfo@codesys.com\nLegal Notice\nPrivacy Policy\nLinkedIn\nYoutube\nRSS\nDownloads\nLogin\nCODESYS Store\n© 2022 CODESYS GmbH\n| A member of the CODESYS Group",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "CD",
+          "Type": "BOOL",
+          "Comment": "Rising edge: DecrementingCVby one"
+        },
+        [
+          "LOAD",
+          "BOOL",
+          "TRUE: SetCVto the start valuePV"
+        ],
+        [
+          "PV",
+          "LWORD",
+          "Start value for decrementing"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Q",
+          "Type": "BOOL",
+          "Comment": "TRUEifCV=0"
+        },
+        [
+          "CV",
+          "LWORD",
+          "Current counter value"
+        ]
+      ]
+    }
+  ]
+}

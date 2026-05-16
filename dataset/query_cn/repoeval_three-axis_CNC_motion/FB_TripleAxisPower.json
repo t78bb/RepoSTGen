@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现对三轴伺服电机的电源控制、状态监测以及错误处理。",
+  "provide_code": "FUNCTION_BLOCK FB_TripleAxisPower\nVAR_INPUT\n\tAxisX\t\t\t:\tSM3_Basic.AXIS_REF_SM3\t\t\t//X轴引用\n\tAxisY\t\t\t:\tSM3_Basic.AXIS_REF_SM3\t\t\t//Y轴引用\n\tAxisZ\t\t\t:\tSM3_Basic.AXIS_REF_SM3\t\t\t//Z轴引用\n\tbServoEnable\t:\tBOOL;\t\t\t\t//伺服使能信号\nEND_VAR\nVAR_OUTPUT\n\tbReady\t\t\t:\tBOOL;\t\t\t\t//三轴都准备就绪\n\tbAxisXReady\t\t:\tBOOL;\t\t\t\t//X轴准备就绪\n\tbAxisYReady\t\t:\tBOOL;\t\t\t\t//Y轴准备就绪\n\tbAxisZReady\t\t:\tBOOL;\t\t\t\t//Z轴准备就绪\n\tbError\t\t\t:\tBOOL;\t\t\t\t//错误标志\n\tsErrorString\t:\tSTRING;\t\t\t\t//错误信息字符串\nEND_VAR"
+}

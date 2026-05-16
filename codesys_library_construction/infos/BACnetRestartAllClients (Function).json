@@ -1,0 +1,23 @@
+{
+  "library": "CmpBACnet",
+  "title": "BACnetRestartAllClients (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/CmpBACnet/Current/BACnetClientAPI/advanced/BACnetRestartAllClients.html",
+  "page_title": "BACnetRestartAllClients (FUN)",
+  "text": "\nFUNCTION BACnetRestartAllClients :\nIEC_BACNET_STATUS\nResets for all registered devices their communication state to INIT.\nCalling this function will reset the communication state for all registered devices,\nobjects and properties to itâs initial state. The advanced BACnet client API will\nre-establish the communication to all devices as if they have been registered\nfor the first time.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "BACnetRestartAllClients",
+          "Type": "IEC_BACNET_STATUS"
+        }
+      ]
+    }
+  ]
+}

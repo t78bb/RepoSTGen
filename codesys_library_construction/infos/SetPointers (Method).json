@@ -1,0 +1,46 @@
+{
+  "library": "SM3_CNC",
+  "title": "SetPointers (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/GSentence/pou-SMC_GSentenceQueue/SetPointers.html",
+  "page_title": "SMC_GSentenceQueue.SetPointers (METH)",
+  "text": "\nMETHOD SetPointers : BOOL\nIf user defined buffers are used (see\nSMC_GSentenceQueue.InitP\n), the\npointers should be refreshed each cycle (for online change).\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetPointers",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "pBufSentences",
+          "Type": "POINTER TOSMC_GSentence",
+          "Comment": "Pointer to the sentence buffer"
+        },
+        [
+          "pBufGWords",
+          "POINTER TOSMC_GWord",
+          "Size of the sentence buffer in bytes.  Must hold at least 2\nsentences."
+        ],
+        [
+          "pBufGExpTokens",
+          "POINTER TO\nSMC_GExpression_Token",
+          "Pointer to the expression token buffer"
+        ],
+        [
+          "pBufAddData",
+          "POINTER TO BYTE",
+          "Pointer to the additional data buffer"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "library": "CmpBACnet2",
+  "title": "BACnetAuditAcknowledgeAlarm (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/CmpBACnet2/Current/BACnetClientAPI/BACnetAuditAcknowledgeAlarm.html",
+  "page_title": "BACnetAuditAcknowledgeAlarm (FUN)",
+  "text": "\nFUNCTION BACnetAuditAcknowledgeAlarm :\nIEC_BACNET_STATUS\nSends an AcknowledgeAlarm request\nReturn:\nIEC_BACNET_STATUS\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "BACnetAuditAcknowledgeAlarm",
+          "Type": "IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "pSourceAddress",
+          "Type": "POINTER TOIEC_BACNET_ADDRESS",
+          "Comment": "If the BACnet application has only one device constructed and installed, this can\nbe NULL. In this case the MAC address of this device will be used. Otherwise this\nshall be the MAC address returned on device object construction."
+        },
+        [
+          "pDestinationAddress",
+          "POINTER TOIEC_BACNET_ADDRESS",
+          "This is the MAC address of the device to which the request\nshould be sent."
+        ],
+        [
+          "pAckAlarmParams",
+          "POINTER TOIEC_BACNET_ACK_ALARM_INFO",
+          "A pointer to the structure which holds all service\nparameters needed to initiate the request."
+        ],
+        [
+          "pValueSrc",
+          "POINTER TOIEC_BACNET_AUDIT_VALUE_SOURCE",
+          "A pointer to a data structure which contains the value source information for generating\nan logged and/or reported audit notification for this initiated request."
+        ],
+        [
+          "pAPDUParams",
+          "POINTER TOIEC_BACNET_APDU_PROPERTIES",
+          "A pointer to the structure which contains a set of APDU properties to control the\ntiming and size of transmitted frames for this request. It temporarily overwrites the\nglobal APDU settings made in the source device from which this request is sent and which\nparameters would control this request if this pointer is NULL."
+        ],
+        [
+          "pTransactionToken",
+          "POINTER TOBACnetAsyncTransactionToken",
+          "Transaction token of the asynchronous call - seeBACnetAsyncTransactionToken."
+        ],
+        [
+          "pError",
+          "POINTER TOIEC_BACNET_ERROR",
+          "In case of any service execution error the error result will be stored in the structure\nthis pointer references. This parameter may be NULL if the application isnât interested\nin detailed error information."
+        ]
+      ]
+    }
+  ]
+}

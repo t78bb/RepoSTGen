@@ -1,0 +1,107 @@
+{
+  "library": "DNP3",
+  "title": "MasterCommandFreezeAtTime (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/Commands/MasterCommandFreezeAtTime.html",
+  "page_title": "MasterCommandFreezeAtTime (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL MasterCommandFreezeAtTime EXTENDS\nMasterCommand\nMaster command FreezeAtTime\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment",
+        "Inherited from"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "xExecute",
+          "Type": "BOOL",
+          "Comment": "Execute the command (xExecute FALSE â> TRUE).",
+          "Inherited from": "MasterCommand"
+        },
+        [
+          "itfMaster",
+          "IMaster",
+          "Interface IMaster",
+          "MasterCommand"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "xDone",
+          "Type": "BOOL",
+          "Comment": "Command executed successfully.",
+          "Inherited from": "MasterCommand"
+        },
+        [
+          "xError",
+          "BOOL",
+          "Error during command executions",
+          "MasterCommand"
+        ],
+        [
+          "eErrorID",
+          "Error",
+          "Specific error during command executions.",
+          "MasterCommand"
+        ],
+        {
+          "Scope": "Input",
+          "Name": "noAck",
+          "Type": "BOOL",
+          "Comment": "donât ask for application layer response",
+          "Inherited from": ""
+        },
+        [
+          "objectGroup",
+          "USINT",
+          "objectGroup (20 counters or 30 analog inputs)",
+          ""
+        ],
+        [
+          "qualifier",
+          "AddressQualifier",
+          "address qualifier, must be all,or 8/16 bit start/stop",
+          ""
+        ],
+        [
+          "timeDateEnum",
+          "FreezeTimeDateField",
+          "time-date field schedule interpretation",
+          ""
+        ],
+        [
+          "freezeTime",
+          "LDATE_AND_TIME",
+          "time in UTC to perform freeze",
+          ""
+        ],
+        [
+          "freezeInterval",
+          "TIME",
+          "time interval to perfrom periodic freezes (milliseconds)",
+          ""
+        ],
+        [
+          "start",
+          "UINT",
+          "start point if qualifier is 8/16 bit start/stop",
+          ""
+        ],
+        [
+          "stopOrQty",
+          "UINT",
+          "stop point if qualifier is 8/16 bit start/top or quantityif qualifier is 8/16 bit limited quantity",
+          ""
+        ],
+        [
+          "feedbackRequested",
+          "BOOL",
+          "if true automatically read the object group whenfreeze command is complete.\nNOTE: if device supports events this should be set to\nfalse to prevent reading all of the object groupâs data in addition to\nreceiving its events.",
+          ""
+        ]
+      ]
+    }
+  ]
+}

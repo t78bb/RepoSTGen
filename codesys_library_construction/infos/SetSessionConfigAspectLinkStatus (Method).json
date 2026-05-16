@@ -1,0 +1,40 @@
+{
+  "library": "DNP3",
+  "title": "SetSessionConfigAspectLinkStatus (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Outstation/pou-OutstationConfiguration/SetSessionConfigAspectLinkStatus.html",
+  "page_title": "OutstationConfiguration.SetSessionConfigAspectLinkStatus (METH)",
+  "text": "\nMETHOD SetSessionConfigAspectLinkStatus :\nError\nSet optional outstation session configuration aspect - link status.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetSessionConfigAspectLinkStatus",
+          "Type": "Error",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "linkStatusPeriod",
+          "Type": "UDINT",
+          "Initial": "0",
+          "Comment": "How often to send link status requests\nif no DNP3 frames have been received on this session.\nIn DNP3 IP Networking spec this is called keep-alive interval\nEnabling keep-alives is REQUIRED when using TCP\nA value of zero will turn off keep alives."
+        },
+        [
+          "linkStatusTimeoutDisconnect",
+          "BOOL",
+          "TRUE",
+          "Disconnect/reconnect a connection when link status request times out.\nThe spec says to do this when using TCP, however when configuring multiple\nsessions over a single TCP channel you may not want this behavior when a\nsingle session times out. This is probably more likely when configuring\na master session."
+        ]
+      ]
+    }
+  ]
+}

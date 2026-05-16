@@ -1,0 +1,46 @@
+{
+  "library": "StringUtils",
+  "title": "FB_Init (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/StringUtils/Current/Public-Parts/pou-CharBufferString/FB_Init.html",
+  "page_title": "CharBufferString.FB_Init (METH)",
+  "text": "\nMETHOD FB_Init : BOOL\nFB_Init method used for allocating the memory used for storing the string\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "FB_Init",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "bInitRetains",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        [
+          "bInCopyCode",
+          "BOOL",
+          ""
+        ],
+        [
+          "uiBufferSize",
+          "UINT",
+          "The size of the buffer (in bytes), where the string is stored.\nIf this value is 0, no memory is allocated and the CharBufferPtr pointer\nhas to be set by calling the Initialize method"
+        ],
+        [
+          "stringType",
+          "__SYSTEM.TYPE_CLASS",
+          "A __SYSTEM.TYPE_CLASS value indicating type of the string"
+        ]
+      ]
+    }
+  ]
+}

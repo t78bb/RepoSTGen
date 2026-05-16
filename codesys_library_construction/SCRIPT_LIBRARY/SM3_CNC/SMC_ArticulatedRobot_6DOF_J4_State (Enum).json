@@ -1,0 +1,29 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_ArticulatedRobot_6DOF_J4_State (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_Trafo_Data-types/SMC_ArticulatedRobot_6DOF_J4_State.html",
+  "page_title": "SMC_ArticulatedRobot_6DOF_J4_State (ENUM)",
+  "text": "\nTYPE SMC_ArticulatedRobot_6DOF_J4_State :\nThe possible configuration states of joint 4 of the 6DOF robot arm.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "SMC_AR_HANDDOWN",
+          "Comment": "The hand is pointing âdownâ, i.e. q4 > 0"
+        },
+        {
+          "Name": "SMC_AR_HANDUP",
+          "Comment": "The hand is pointing âupâ, i.e. q4 < 0"
+        },
+        {
+          "Name": "SMC_AR_HANDSTRAIGHT",
+          "Comment": "The hand is straight (q4 ~ 0), singular case"
+        }
+      ]
+    }
+  ]
+}

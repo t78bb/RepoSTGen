@@ -1,0 +1,23 @@
+{
+  "library": "SM3_Basic",
+  "title": "GetCompany (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/Project-Information/GetCompany.html",
+  "page_title": "GetCompany (FUN)",
+  "text": "\nFUNCTION GetCompany : WSTRING\nThis function has been automatically generated from the project information.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetCompany",
+          "Type": "WSTRING"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "library": "Util",
+  "title": "GETBIT (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/BitByte-Functions/GETBIT.html",
+  "page_title": "GETBIT (FUN)",
+  "text": "\nFUNCTION GETBIT : BOOL\nReturns the bit value at position N of value X\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GETBIT",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "X",
+          "Type": "LWORD",
+          "Comment": "Variable from which the bit is chosen, value has to be unsigned"
+        },
+        [
+          "N",
+          "BYTE",
+          "The bitnumer 0â¦(size of datatype)"
+        ]
+      ]
+    }
+  ]
+}

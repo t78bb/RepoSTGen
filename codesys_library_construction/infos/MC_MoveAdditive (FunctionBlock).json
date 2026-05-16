@@ -1,0 +1,82 @@
+{
+  "library": "SM3_Basic",
+  "title": "MC_MoveAdditive (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/Movement/MC_MoveAdditive.html",
+  "page_title": "MC_MoveAdditive (FB)",
+  "text": "\nFUNCTION_BLOCK MC_MoveAdditive\nThis function block causes a controlled motion that adds the specified distance to the last specified target position.\nThe axis is thereby in the\ndiscrete_motion\nmode. The current target position can result from a preceding motion of\nMC_MoveAdditive\nthat was aborted.\nIf the function block runs in the\ncontinuous_motion\nmode, the specified distance is added to the current position during the processing time.\nExample\nUse of\nMC_MoveAdditive\nThe illustration shows how the\nFirst\ninstance of the type\nMC_MoveAbsolute\nand the\nSecond\ninstance of the type\nMC_MoveAdditive\nare combined.\nThe axis is in the\ndiscrete_motion\nmode.\nIn the left-hand part of the illustration\nSecond\nis called after\nFirst\n. If\nFirst\nhas reached the specified position of 6000,\nthe velocity is 0 and the\nDone\nis set,\nSecond\nwill cause the axis to move to the position 10000.\nIn the right-hand part of the illustration, the execution is started by\nSecond\nwhile\nFirst\nis still operating.\nThe motion of\nFirst\nis interrupted and aborted by the\nTest\nsignal which is transmitted during the constant velocity phase of\nFirst\n.\nThe distance 4000 is added to the last commended position of 60000. Then\nSecond\nmoves the axis to the resulting position 10000.\nSequence of two complete actions: Sequential execution of two complete motions\nSecond motion interrupts first motion: Motion of âSecondâ interrupts the motion of âFirstâ\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3",
+          "Comment": "Reference to axis"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Comment": "TRUE: Starts execution"
+        },
+        [
+          "Distance",
+          "LREAL",
+          "Relative distance for the motion in technical unit [u]"
+        ],
+        [
+          "Velocity",
+          "LREAL",
+          "Maximum velocityIs always positive in [u/s].Does not need to be achieved."
+        ],
+        [
+          "Acceleration",
+          "LREAL",
+          "AccelerationIs always positive in [u/sÂ²].Increasing motor energy"
+        ],
+        [
+          "Deceleration",
+          "LREAL",
+          "DecelerationIs always positive in [u/sÂ²].Decreasing motor energy"
+        ],
+        [
+          "Jerk",
+          "LREAL",
+          "Is always positive in [u/sÂ³]."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Done",
+          "Type": "BOOL",
+          "Comment": "TRUE: Distance has been achieved."
+        },
+        [
+          "Busy",
+          "BOOL",
+          "TRUE: Function block is in operation."
+        ],
+        [
+          "CommandAborted",
+          "BOOL",
+          "TRUE: Execution has been interrupted by another function\nblock instance operating on the axis."
+        ],
+        [
+          "Error",
+          "BOOL",
+          "TRUE: Error has occurred."
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

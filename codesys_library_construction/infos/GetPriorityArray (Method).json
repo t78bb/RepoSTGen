@@ -1,0 +1,31 @@
+{
+  "library": "BACnet",
+  "title": "GetPriorityArray (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/PositiveIntegerValue/pou-BACnetPositiveIntegerValue/GetPriorityArray.html",
+  "page_title": "BACnetPositiveIntegerValue.GetPriorityArray (METH)",
+  "text": "\nMETHOD GetPriorityArray : CmpBACnet.IEC_BACNET_STATUS\nGets the Priority-Array of this BACnet object. The returned pointer pPrioArray is\nallocated with the corresponding data, whereas the user has to use FreeStackAllocatedMemory,\nto free the allocated memory after data usage.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetPriorityArray",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Output",
+          "Name": "pPrioArray",
+          "Type": "POINTER TO ARRAY [1..16]\nOF\nCmpBACnet.IEC_BACNET_PRIORITY_ARRAY_ITEM",
+          "Comment": "The returned Pointer gets filled with the data of the Priority Array AND (!) the data referenced within the array\n(i.e. strings, etc.).\nAfter usage, useFreeStackAllocatedMemory, to free the used memory again."
+        }
+      ]
+    }
+  ]
+}

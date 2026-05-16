@@ -1,0 +1,45 @@
+{
+  "library": "String Segments",
+  "title": "Constants (GVL)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Segments/Current/Strings/Aliases/Constants.html",
+  "page_title": "Constants (GVL)",
+  "text": "\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Constant",
+          "Name": "c_diRuneError",
+          "Type": "RUNE",
+          "Initial": "UTF8.c_diRuneError",
+          "Comment": "The âerrorâ Rune or âUnicode replacement characterâ"
+        },
+        [
+          "c_diMaxRune",
+          "DINT",
+          "UTF8.c_diMaxRune",
+          ""
+        ],
+        [
+          "c_liMinIndex",
+          "LINT",
+          "-4294967295",
+          ""
+        ],
+        [
+          "c_liMaxIndex",
+          "LINT",
+          "4294967294",
+          ""
+        ]
+      ]
+    }
+  ]
+}

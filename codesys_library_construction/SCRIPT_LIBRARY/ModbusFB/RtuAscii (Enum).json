@@ -1,0 +1,25 @@
+{
+  "library": "ModbusFB",
+  "title": "RtuAscii (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/ModbusFB/Current/ModbusFB/Enums/RtuAscii.html",
+  "page_title": "RtuAscii (ENUM)",
+  "text": "\nTYPE RtuAscii :\nMODBUS serial RTU vs. ASCII mode.\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Name": "RTU",
+          "Initial": "0"
+        },
+        {
+          "Name": "ASCII",
+          "Initial": "1"
+        }
+      ]
+    }
+  ]
+}

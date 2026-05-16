@@ -1,0 +1,5 @@
+{
+  "requirement": "This code is intended to implement a state-based mechanism to reset and verify the error status of two axes (AxisX and AxisY) in a motion control system.",
+  "provide_code": "FUNCTION_BLOCK ResetAxis\nVAR_INPUT \n\tbExec\t:\tBOOL;\nEND_VAR",
+  "function_name": "ResetAxis"
+}

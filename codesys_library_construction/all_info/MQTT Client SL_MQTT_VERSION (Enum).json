@@ -1,0 +1,28 @@
+{
+  "library": "MQTT Client SL",
+  "title": "MQTT_VERSION (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/MQTT Client SL/Current/MQTT-Client/Common/Enums/MQTT_VERSION.html",
+  "page_title": "MQTT_VERSION (ENUM)",
+  "text": "MQTT Client\nCommon\nEnums\nCOMMUNICATION_MODE (Enum)\nFILTER_MODE (Enum)\nMQTT_ERROR (Enum)\nMQTT_QOS (Enum)\nMQTT_VERSION (Enum)\nV5\nFunction Blocks\nMQTTClient (FunctionBlock)\nMQTTPublish (FunctionBlock)\nMQTTSubscribe (FunctionBlock)\nParams\nMQTTParam (ParamList)\nStructs\nMQTTV5\nUTF-8\nConvertUTF16toUTF8 (Function)\nConvertUTF8toUTF16 (Function)\nFile and Project Information\nLibrary Reference\n3SLicense\nLibrary Identification\nLibrary Properties\nCAA FB Factory\nLibrary Identification\nLibrary Properties\nCAA Types Extern\nLibrary Identification\nLibrary Properties\nCmpCrypto\nLibrary Identification\nLibrary Properties\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nCmpLog\nLibrary Identification\nLibrary Properties\nCmpSchedule\nLibrary Identification\nLibrary Properties\nCmpX509Cert\nLibrary Identification\nLibrary Properties\nCommon Behaviour Model\nLibrary Identification\nLibrary Properties\nComponent Manager\nLibrary Identification\nLibrary Properties\nElement Collections\nLibrary Identification\nLibrary Properties\nMemoryUtils\nLibrary Identification\nLibrary Properties\nNet Base Services\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nStringUtils\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysSocket2\nLibrary Identification\nLibrary Properties\nSysSocket2 Implementation\nLibrary Identification\nLibrary Properties\nSysTime\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nWeb Socket Client SL\nLibrary Identification\nLibrary Properties\nMQTT Client SL\nDocs\n»\nMQTT\nClient\n»\nCommon\n»\nEnums\n»\nMQTT_VERSION (ENUM)\nMQTT_VERSION (ENUM)\nÂ¶\nTYPE MQTT_VERSION :\nSupported MQTT versions\nAttributes:\nqualified_only\nInOut:\nName\nInitial\nComment\nV3_1_1\n0\nMQTT V3.1.1\nV5\n1\nMQTTT V5",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "V3_1_1",
+          "Initial": "0",
+          "Comment": "MQTT V3.1.1"
+        },
+        {
+          "Name": "V5",
+          "Initial": "1",
+          "Comment": "MQTTT V5"
+        }
+      ]
+    }
+  ]
+}

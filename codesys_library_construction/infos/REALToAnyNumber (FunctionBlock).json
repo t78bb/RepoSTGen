@@ -1,0 +1,28 @@
+{
+  "library": "DNP3",
+  "title": "REALToAnyNumber (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/AnyNumberConverter/REALToAnyNumber.html",
+  "page_title": "REALToAnyNumber (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL REALToAnyNumber\nConvert REAL to an AnyNumber with baseType = AnyNumberType.TYPE_REAL.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "in",
+          "Type": "REAL"
+        },
+        {
+          "Scope": "Output",
+          "Name": "out",
+          "Type": "AnyNumber"
+        }
+      ]
+    }
+  ]
+}

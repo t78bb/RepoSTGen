@@ -1,0 +1,23 @@
+{
+  "library": "DNP3",
+  "title": "IntegrityPoll (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/pou-Master/Commands/IntegrityPoll.html",
+  "page_title": "Master.IntegrityPoll (METH)",
+  "text": "\nMETHOD IntegrityPoll :\nError\nIssue an integrity data poll\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "IntegrityPoll",
+          "Type": "Error"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "library": "Util",
+  "title": "POINT (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/Datatypes/POINT.html",
+  "page_title": "POINT (STRUCT)",
+  "text": "\nTYPE POINT : STRUCT\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Name": "X",
+          "Type": "DINT"
+        },
+        {
+          "Name": "Y",
+          "Type": "DINT"
+        }
+      ]
+    }
+  ]
+}

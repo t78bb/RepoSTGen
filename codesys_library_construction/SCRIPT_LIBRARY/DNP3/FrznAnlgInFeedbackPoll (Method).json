@@ -1,0 +1,23 @@
+{
+  "library": "DNP3",
+  "title": "FrznAnlgInFeedbackPoll (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/pou-Master/Commands/FrznAnlgInFeedbackPoll.html",
+  "page_title": "Master.FrznAnlgInFeedbackPoll (METH)",
+  "text": "\nMETHOD FrznAnlgInFeedbackPoll :\nError\nIssue an operate feedback request.\nThis will send a read for class 1 2 and 3 events,\nand frozen analog input values\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "FrznAnlgInFeedbackPoll",
+          "Type": "Error"
+        }
+      ]
+    }
+  ]
+}

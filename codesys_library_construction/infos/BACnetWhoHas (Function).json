@@ -1,0 +1,51 @@
+{
+  "library": "CmpBACnet",
+  "title": "BACnetWhoHas (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/CmpBACnet/Current/BACnetClientAPI/BACnetWhoHas.html",
+  "page_title": "BACnetWhoHas (FUN)",
+  "text": "\nFUNCTION BACnetWhoHas :\nIEC_BACNET_STATUS\nSends a who-Has request.\nSends a BACnet Who-Has request to a local or remote device or network. This routine\nallows an application to discover BACnet Devices whose local databases contain a given\nnamed object, or a given Object Identifier. The I-Have service is used to respond to\nWho-Has service requests.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "BACnetWhoHas",
+          "Type": "IEC_BACNET_STATUS",
+          "Comment": "A status indicating whether the operation worked."
+        },
+        {
+          "Scope": "Input",
+          "Name": "pSourceAddress",
+          "Type": "POINTER TOIEC_BACNET_ADDRESS",
+          "Comment": "If the BACnet application has only one device constructed and installed, this can\nbe 0. In this case the MAC address of this device will be used. Otherwise this\nshall be the MAC address returned on device object construction."
+        },
+        [
+          "pDestinationAddress",
+          "POINTER TOIEC_BACNET_ADDRESS",
+          "This is the MAC address of the device to which the request\nshould be sent."
+        ],
+        [
+          "filterMin",
+          "IEC_BACNET_DWORD",
+          "Optional argument for the Who-Is request, which limit the lower range of Device\ninstance numbers expected to respond to the Who-Is request. This argument is\nomitted from the request if both parameters have the value âBACNET_NO_FILTERâ (use -1)."
+        ],
+        [
+          "filterMax",
+          "IEC_BACNET_DWORD",
+          "Optional argument for the Who-Is request, which limit the upper range of Device\ninstance numbers expected to respond to the Who-Is request. This argument is\nomitted from the request if both parameters have the value âBACNET_NO_FILTERâ (use -1)."
+        ],
+        [
+          "objectSpec",
+          "POINTER TOIEC_BACNET_WHO_HAS_PARAM",
+          "A pointer to a data structure which includes either the Object Identifier or Object\nName of the object which is requested, and a tag field that indicates which of these\ntwo possibilities was chosen."
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_TA (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/DataTypes/Movement/SMC_TA.html",
+  "page_title": "SMC_TA (STRUCT)",
+  "text": "\nTYPE SMC_TA : STRUCT\nThis\nSTRUCT\ndefines one point on the trajectory defined by\nMC_TA_REF\nand consists of a pair of time and acceleration values.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "delta_time",
+          "Type": "TIME",
+          "Initial": "TIME#0ms",
+          "Comment": "Period of time between reaching the last and the current point"
+        },
+        {
+          "Name": "acceleration",
+          "Type": "LREAL",
+          "Initial": "0",
+          "Comment": "(Absolute-/relative-)acceleration at this point"
+        }
+      ]
+    }
+  ]
+}

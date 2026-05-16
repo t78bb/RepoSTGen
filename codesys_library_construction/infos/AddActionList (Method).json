@@ -1,0 +1,36 @@
+{
+  "library": "BACnet",
+  "title": "AddActionList (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/Command/pou-BACnetCommand/AddActionList.html",
+  "page_title": "BACnetCommand.AddActionList (METH)",
+  "text": "\nMETHOD AddActionList : CmpBACnet.IEC_BACNET_STATUS\nAdds a action list and action list text to the Action-BACnet-Propetrty and Action_Text-BACnetProperty of this BACnet-Command-Object at the same time.\nSo both description and action are added simultaneously (inputs actionList with corresponding description actionListText). The entries of the action list\n(actionList) may be initialized using the helper functions InitializeActionCommandBACnetBinaryPV,â¦ of this FB.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "AddActionList",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "actionList",
+          "Type": "CmpBACnet.IEC_BACNET_ACTION_LIST",
+          "Comment": "The action list to add to the Action-Property."
+        },
+        [
+          "actionListText",
+          "WSTRING(255)",
+          "The action text to add to the Action_Text-Property."
+        ]
+      ]
+    }
+  ]
+}

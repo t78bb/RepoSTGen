@@ -1,0 +1,41 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_ParameterNumber_CoE (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/Parameter-access/SMC_ParameterNumber_CoE.html",
+  "page_title": "SMC_ParameterNumber_CoE (FUN)",
+  "text": "\nFUNCTION SMC_ParameterNumber_CoE : DINT\nThis function translates from a CANopen object index/subindex\npair to a SoftMotion parameter number that can be used with\nfunction blocks like\nMC_ReadParameter\n,\nMC_ReadBoolParameter\n,\nMC_WriteParameter\n, and\nMC_WriteBoolParameter\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "index",
+          "Type": "UINT",
+          "Comment": "The object index, e.g. 16#6061"
+        },
+        [
+          "subIndex",
+          "USINT",
+          "The object subindex, e.g. 0"
+        ],
+        [
+          "dataLength",
+          "USINT",
+          "The data length in bytes (1, 2, or 4).\nOnly used when writing a parameter."
+        ],
+        {
+          "Scope": "Return",
+          "Name": "SMC_ParameterNumber_CoE",
+          "Type": "DINT",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

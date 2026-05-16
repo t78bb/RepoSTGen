@@ -1,0 +1,25 @@
+{
+  "library": "StringUtils",
+  "title": "StrToLowerA (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/StringUtils/Current/Public-Parts/Ansi/StrToLowerA.html",
+  "page_title": "StrToLowerA (FUN)",
+  "text": "\nFUNCTION StrToLowerA\nConverts all letters to lower case.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "pString",
+          "Type": "CharBufferPtr",
+          "Comment": "Pointer to the string."
+        }
+      ]
+    }
+  ]
+}

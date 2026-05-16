@@ -1,0 +1,23 @@
+{
+  "library": "AlarmManager",
+  "title": "GetTimestampInactive (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/pou-IAlarm/Access-to-timestamps/GetTimestampInactive.html",
+  "page_title": "IAlarm.GetTimestampInactive (METH)",
+  "text": "\nMETHOD GetTimestampInactive :\nTimestamp\nReturns the timestamp, when the alarm went into state âwaiting for confirmationâ\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetTimestampInactive",
+          "Type": "Timestamp"
+        }
+      ]
+    }
+  ]
+}

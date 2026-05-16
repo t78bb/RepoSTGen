@@ -1,0 +1,47 @@
+{
+  "library": "AC_Alarming",
+  "title": "GetEventAlarmID (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_Alarming/Current/ExtenderFB/pou-IACAlarmExtender2/GetEventAlarmID.html",
+  "page_title": "IACAlarmExtender2.GetEventAlarmID (METH)",
+  "text": "\nMETHOD GetEventAlarmID : BOOL\nThis method gets information about an Event-Alarm of a certain module.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetEventAlarmID",
+          "Type": "BOOL",
+          "Comment": "The return value indicates whether an Event-Alarm could be\nfound."
+        },
+        {
+          "Scope": "Input",
+          "Name": "inst",
+          "Type": "AC.IModule",
+          "Comment": "The module instance the Event-Alarm belongs to."
+        },
+        [
+          "pEventTargetID",
+          "POINTER TO STRING",
+          "The target of the Event-Alarm"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "alarmGroupID",
+          "Type": "AlarmManager.ALARMGROUP_ID",
+          "Comment": "The alarm-groupId of the found Event-Alarm"
+        },
+        [
+          "alarmID",
+          "AlarmManager.ALARM_ID",
+          "The alarmId of the found Event-Alarm"
+        ]
+      ]
+    }
+  ]
+}

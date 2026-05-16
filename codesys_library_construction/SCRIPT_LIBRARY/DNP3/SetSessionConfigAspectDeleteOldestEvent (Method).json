@@ -1,0 +1,34 @@
+{
+  "library": "DNP3",
+  "title": "SetSessionConfigAspectDeleteOldestEvent (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Outstation/pou-OutstationConfiguration/SetSessionConfigAspectDeleteOldestEvent.html",
+  "page_title": "OutstationConfiguration.SetSessionConfigAspectDeleteOldestEvent (METH)",
+  "text": "\nMETHOD SetSessionConfigAspectDeleteOldestEvent :\nError\nSet optional outstation session configuration aspect - delete oldest event.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetSessionConfigAspectDeleteOldestEvent",
+          "Type": "Error",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "deleteOldestEvent",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "If this is TRUE the event with the earliest timeStamp will be\ndeleted when a new event is added to an event queue that is full."
+        }
+      ]
+    }
+  ]
+}

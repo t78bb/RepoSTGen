@@ -1,0 +1,62 @@
+{
+  "library": "SML_Basic",
+  "title": "MC_WriteParameter_SML (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SML_Basic/Current/PLCopen/MC_WriteParameter_SML.html",
+  "page_title": "MC_WriteParameter_SML (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL MC_WriteParameter_SML\nWrites the value of a SoftMotion or axis specific parameter.\nFor the list of all SoftMotion parameter numbers see\nAxis_REF_SML\n.\nThe value of parameters is converted from\nLREAL\n.\nTo write an axis specific parameter, the axis specific parameter number must be negated.\nFor CANOpen based parameter, the axis specific parameter number is built from the\nobject length 16#UV (1 Byte), object number 16#ABCD (2 Bytes) and the subindex 16#EF (1 Byte): 16#UVABCDEF.\nExample: write object 16#6070, subindex 0: ParameterNumber:= -16#04607000.\nNote\nAxis specific parameters are interpreted as unsigned values\nand converted from\nLREAL\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SML",
+          "Comment": "Reference to the axis"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Comment": "Rising edge: Writing is started"
+        },
+        [
+          "ParameterNumber",
+          "DINT",
+          "Number of the parameter"
+        ],
+        [
+          "Value",
+          "LREAL",
+          "Value to be written"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Done",
+          "Type": "BOOL",
+          "Comment": "The value was written successfully"
+        },
+        [
+          "Busy",
+          "BOOL",
+          "The FB is not finished and new output values are to be\nexpected"
+        ],
+        [
+          "Error",
+          "BOOL",
+          "An error occurred"
+        ],
+        [
+          "ErrorID",
+          "SML_ERROR",
+          "The error number"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "library": "Util",
+  "title": "CombineDateTime (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/TimerSwitch/Functions/CombineDateTime.html",
+  "page_title": "CombineDateTime (FUN)",
+  "text": "\nFUNCTION CombineDateTime : ULINT\nCombines the IEC data typed parts to a timestamp.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "CombineDateTime",
+          "Type": "ULINT",
+          "Initial": "",
+          "Comment": "date and time in milliseconds since 1.1.1970 00:00:00.000"
+        },
+        {
+          "Scope": "Input",
+          "Name": "datDate",
+          "Type": "DATE",
+          "Initial": "",
+          "Comment": ""
+        },
+        [
+          "todTime",
+          "TOD",
+          "",
+          ""
+        ],
+        {
+          "Scope": "Output",
+          "Name": "eErrorID",
+          "Type": "ERROR",
+          "Initial": "ERROR.NO_ERROR",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

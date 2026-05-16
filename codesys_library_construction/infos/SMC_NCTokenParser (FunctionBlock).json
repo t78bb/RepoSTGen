@@ -1,0 +1,72 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_NCTokenParser (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/Parser/SMC_NCTokenParser.html",
+  "page_title": "SMC_NCTokenParser (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_NCTokenParser\nThe parser between the\nSMC_NCTokenizer\nand the\nSMC_NCInterpreter\n.\nThe parser transforms the stream of tokens to a sequence of g-code\nsentences ready to be interpreted.\nNote\nUsually,\nSMC_ReadNCFile2\nor\nSMC_ReadNCFromStream\nshould be used,\nwhich contain the parser.  It is not necessary to use this function\nblock directly in most cases.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "tokens",
+          "Type": "SMC_TokenQueue",
+          "Comment": "Input: token queue"
+        },
+        [
+          "sentences",
+          "SMC_GSentenceQueue",
+          "Output: sentence queue"
+        ],
+        {
+          "Scope": "Input",
+          "Name": "bExecute",
+          "Type": "BOOL",
+          "Comment": "WhileTRUE, the function block is active."
+        },
+        [
+          "bAbort",
+          "BOOL",
+          "IfTRUE, the current processing of this function block\nis aborted"
+        ],
+        [
+          "symbolTable",
+          "SMC_INCSymbolTable",
+          "The symbol table used to look up variables and sub programs."
+        ],
+        [
+          "pCustomFunTable",
+          "POINTER TOSMC_NC_GFunctionTable",
+          "Allows to define custom functions that can be used in G-Code expressions.\nIf there are no custom G-Code functions, this input is null."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bBusy",
+          "Type": "BOOL",
+          "Comment": "TRUEwhile execution of function block is not finished."
+        },
+        [
+          "bError",
+          "BOOL",
+          "TRUEsignals that an error has occurred within\nthe function block."
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification,SMC_ERROR"
+        ],
+        [
+          "errorPos",
+          "SMC_NC_SourcePosition",
+          "The source-position where an error has been detected."
+        ]
+      ]
+    }
+  ]
+}

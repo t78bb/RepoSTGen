@@ -1,0 +1,29 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_SMOOTHBSPLINE_MODE (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_Data-types/SoftMotion-CNC/SMC_SMOOTHBSPLINE_MODE.html",
+  "page_title": "SMC_SMOOTHBSPLINE_MODE (ENUM)",
+  "text": "\nTYPE SMC_SMOOTHBSPLINE_MODE :\nThe mode determines how\nSMC_SmoothBSpline\ndetermines the knot vectors.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "SMC_SMOOTHBSPLINE_UNIFORM",
+          "Comment": "Uniform knot vector"
+        },
+        {
+          "Name": "SMC_SMOOTHBSPLINE_CHORDLENGTH",
+          "Comment": "Distance of knots proportional to chord length between\ncontrol points"
+        },
+        {
+          "Name": "SMC_SMOOTHBSPLINE_CENTRIPETAL",
+          "Comment": "Distance of knots proportional to square root of chord\nlength between control points"
+        }
+      ]
+    }
+  ]
+}

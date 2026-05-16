@@ -1,0 +1,32 @@
+{
+  "library": "BACnet",
+  "title": "MemoryToString (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/Utilities/ToString/MemoryToString.html",
+  "page_title": "MemoryToString (FUN)",
+  "text": "\nFUNCTION MemoryToString : STRING\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "MemoryToString",
+          "Type": "STRING"
+        },
+        {
+          "Scope": "Input",
+          "Name": "pMem",
+          "Type": "POINTER TO BYTE"
+        },
+        [
+          "udiMemSize",
+          "UDINT"
+        ]
+      ]
+    }
+  ]
+}

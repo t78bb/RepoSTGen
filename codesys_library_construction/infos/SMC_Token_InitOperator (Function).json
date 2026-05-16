@@ -1,0 +1,33 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_Token_InitOperator (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/File/ReadNCFile/Token/Constructors/SMC_Token_InitOperator.html",
+  "page_title": "SMC_Token_InitOperator (FUN)",
+  "text": "\nFUNCTION SMC_Token_InitOperator\nConstructor function for tokens of type operator.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "tk",
+          "Type": "SMC_Token"
+        },
+        {
+          "Scope": "Input",
+          "Name": "value",
+          "Type": "STRING"
+        },
+        {
+          "Scope": "Inout Const",
+          "Name": "srcPos",
+          "Type": "SMC_NC_SourcePosition"
+        }
+      ]
+    }
+  ]
+}

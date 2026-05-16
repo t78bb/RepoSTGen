@@ -1,0 +1,8 @@
+{
+  "library": "AlarmManager_Itfs",
+  "title": "ALARM_ID (Alias)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager_Itfs/Current/ALARM_ID.html",
+  "page_title": "ALARM_ID (ALIAS)",
+  "text": "\nTYPE ALARM_ID : UINT\nThis type represents the alarm IDs within an alarm group",
+  "tables": []
+}

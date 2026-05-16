@@ -1,0 +1,31 @@
+{
+  "library": "Standard",
+  "title": "F_TRIG (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/Standard/Current/Trigger/F_TRIG.html",
+  "page_title": "F_TRIG (FB)",
+  "text": "\nFUNCTION_BLOCK F_TRIG\nDetects a falling edge of a boolean signal\n(* Example declaration *)\nFTRIGInst\n:\nF_TRIG\n;\n(* Example in ST *)\nFTRIGInst\n(\nCLK\n:=\nVarBOOL1\n);\nVarBOOL2\n:=\nFTRIGInst.Q\n;\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "CLK",
+          "Type": "BOOL",
+          "Comment": "Boolean signal to be checked"
+        },
+        {
+          "Scope": "Output",
+          "Name": "Q",
+          "Type": "BOOL",
+          "Comment": "TRUE: Falling edge detected"
+        }
+      ]
+    }
+  ]
+}

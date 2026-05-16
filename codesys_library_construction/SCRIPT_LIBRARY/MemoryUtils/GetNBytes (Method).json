@@ -1,0 +1,27 @@
+{
+  "library": "MemoryUtils",
+  "title": "GetNBytes (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/MemoryUtils/Current/MemoryUtils/Functionblocks/pou-ByteBuffer/GetNBytes.html",
+  "page_title": "ByteBuffer.GetNBytes (METH)",
+  "text": "\nMETHOD GetNBytes\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "pbyTarget",
+          "Type": "POINTER TO BYTE"
+        },
+        [
+          "nBytes",
+          "UINT"
+        ]
+      ]
+    }
+  ]
+}

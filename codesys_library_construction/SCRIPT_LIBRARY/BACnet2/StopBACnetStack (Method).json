@@ -1,0 +1,23 @@
+{
+  "library": "BACnet2",
+  "title": "StopBACnetStack (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/BACnetServer/pou-IBACnetServer/StopBACnetStack.html",
+  "page_title": "IBACnetServer.StopBACnetStack (METH)",
+  "text": "\nMETHOD StopBACnetStack : CmpBACnet.IEC_BACNET_STATUS\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "StopBACnetStack",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS"
+        }
+      ]
+    }
+  ]
+}

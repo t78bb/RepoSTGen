@@ -1,0 +1,23 @@
+{
+  "library": "AlarmManager",
+  "title": "GetTriggerValue (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/pou-IAlarm/Access-to-values/GetTriggerValue.html",
+  "page_title": "IAlarm.GetTriggerValue (METH)",
+  "text": "\nMETHOD GetTriggerValue : ITypedValue\nReturns a ITypedValue instance, describing the value\nof the observed expression, that triggered the alarm\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetTriggerValue",
+          "Type": "ITypedValue"
+        }
+      ]
+    }
+  ]
+}

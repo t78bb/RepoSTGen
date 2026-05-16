@@ -1,0 +1,8 @@
+{
+  "library": "AlarmManager",
+  "title": "ActiveAlarmsChanged (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/pou-IAlarmManagerClient/ActiveAlarmsChanged.html",
+  "page_title": "IAlarmManagerClient.ActiveAlarmsChanged (METH)",
+  "text": "\nMETHOD ActiveAlarmsChanged\nNotification by the alarm manager, that the list of active alarms has changed..\nThe IAlarmManagerClient instance can retrieve the list of active alarms by\ncalling IAlarmHandler2.GetActiveAlarms.",
+  "tables": []
+}

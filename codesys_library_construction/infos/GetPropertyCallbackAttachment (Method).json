@@ -1,0 +1,37 @@
+{
+  "library": "BACnet",
+  "title": "GetPropertyCallbackAttachment (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/pou-IBACnetObjectBase/GetPropertyCallbackAttachment.html",
+  "page_title": "IBACnetObjectBase.GetPropertyCallbackAttachment (METH)",
+  "text": "\nMETHOD GetPropertyCallbackAttachment : CmpBACnet.IEC_BACNET_STATUS\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetPropertyCallbackAttachment",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS"
+        },
+        {
+          "Scope": "Input",
+          "Name": "ePropertyID",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_ID"
+        },
+        {
+          "Scope": "Output",
+          "Name": "xReadCallbackAttached",
+          "Type": "BOOL"
+        },
+        [
+          "xWriteCallbackAttached",
+          "BOOL"
+        ]
+      ]
+    }
+  ]
+}

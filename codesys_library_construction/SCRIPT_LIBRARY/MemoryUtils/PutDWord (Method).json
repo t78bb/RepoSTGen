@@ -1,0 +1,23 @@
+{
+  "library": "MemoryUtils",
+  "title": "PutDWord (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/MemoryUtils/Current/MemoryUtils/Functionblocks/pou-ByteBuffer/PutDWord.html",
+  "page_title": "ByteBuffer.PutDWord (METH)",
+  "text": "\nMETHOD PutDWord\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "dwDWORD",
+          "Type": "DWORD"
+        }
+      ]
+    }
+  ]
+}

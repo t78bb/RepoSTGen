@@ -1,0 +1,8 @@
+{
+  "library": "String Segments",
+  "title": "IRangePool (Interface)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Segments/Current/Strings/Interfaces/IRangePool.html",
+  "page_title": "IRangePool (ITF)",
+  "text": "\nINTERFACE IRangePool EXTENDS MBM.|dIDisposable|\nMethods:\nGetPoolStatus\nGetRange\nStructure:\nGetPoolStatus (Method)\nGetRange (Method)",
+  "tables": []
+}

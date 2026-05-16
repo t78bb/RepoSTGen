@@ -1,0 +1,23 @@
+{
+  "library": "BACnet",
+  "title": "GetAddressBindingsCount (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetServer/pou-IBACnetServer/DeviceAddressBindings/GetAddressBindingsCount.html",
+  "page_title": "IBACnetServer.GetAddressBindingsCount (METH)",
+  "text": "\nMETHOD GetAddressBindingsCount : UDINT\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetAddressBindingsCount",
+          "Type": "UDINT"
+        }
+      ]
+    }
+  ]
+}

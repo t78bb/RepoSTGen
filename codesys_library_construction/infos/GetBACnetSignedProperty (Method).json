@@ -1,0 +1,28 @@
+{
+  "library": "BACnet",
+  "title": "GetBACnetSignedProperty (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/pou-IBACnetObjectBase/Utilities/GetBACnetSignedProperty.html",
+  "page_title": "IBACnetObjectBase.GetBACnetSignedProperty (METH)",
+  "text": "\nMETHOD GetBACnetSignedProperty : DINT\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetBACnetSignedProperty",
+          "Type": "DINT"
+        },
+        {
+          "Scope": "Input",
+          "Name": "propID",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_ID"
+        }
+      ]
+    }
+  ]
+}

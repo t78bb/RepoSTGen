@@ -1,0 +1,23 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_DriveBasic_GlobalVariables (GVL)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/Globals/SMC_DriveBasic_GlobalVariables.html",
+  "page_title": "SMC_DriveBasic_GlobalVariables (GVL)",
+  "text": "\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Name": "g_bSMCMotorolaByteOrder",
+          "Type": "BOOL",
+          "Initial": "FALSE"
+        }
+      ]
+    }
+  ]
+}

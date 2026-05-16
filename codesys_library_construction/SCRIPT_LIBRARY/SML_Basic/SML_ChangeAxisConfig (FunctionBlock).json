@@ -1,0 +1,72 @@
+{
+  "library": "SML_Basic",
+  "title": "SML_ChangeAxisConfig (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SML_Basic/Current/Additional/SML_ChangeAxisConfig.html",
+  "page_title": "SML_ChangeAxisConfig (FB)",
+  "text": "\nFUNCTION_BLOCK SML_ChangeAxisConfig\nModifies the axis configuration.\nThe gearing ratio, the movement type and the modulo period of the drive may be modified.\nAfter a change of the configuration, the axis is automatically restarted with\nSML_ReinitDrive\nin order to guarantee that all variables are initialized in a correct way.\nNote\nThe axis must be in state\nPowerOff\nto change the configuration.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SML",
+          "Comment": "Reference to the axis"
+        },
+        {
+          "Scope": "Input",
+          "Name": "bExecute",
+          "Type": "BOOL",
+          "Comment": "Rising edge: The action is started"
+        },
+        [
+          "dwRatioTechUnitsDenom",
+          "DWORD",
+          "Conversion factor from [inc] to [u], denominator"
+        ],
+        [
+          "iRatioTechUnitsNum",
+          "DINT",
+          "Conversion factor from [inc] to [u], numerator"
+        ],
+        [
+          "fModuloPeriodU",
+          "LREAL",
+          "The modulo period in [u]"
+        ],
+        [
+          "iMovementType",
+          "SML_MOVEMENTTYPE",
+          "The new movement type of the axis"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bDone",
+          "Type": "BOOL",
+          "Comment": "The reinitialization is finished"
+        },
+        [
+          "bBusy",
+          "BOOL",
+          "The FB is not finished and new output values are to be\nexpected"
+        ],
+        [
+          "bError",
+          "BOOL",
+          "An error has occured"
+        ],
+        [
+          "eError",
+          "SML_ERROR",
+          "Error number"
+        ]
+      ]
+    }
+  ]
+}

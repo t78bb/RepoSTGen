@@ -1,0 +1,56 @@
+{
+  "library": "CmpBACnet",
+  "title": "BACnetDeleteObject (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/CmpBACnet/Current/BACnetClientAPI/BACnetDeleteObject.html",
+  "page_title": "BACnetDeleteObject (FUN)",
+  "text": "\nFUNCTION BACnetDeleteObject :\nIEC_BACNET_STATUS\nSends a DeleteObject request.\nSends a request to remote device to delete an existing object. This service cannot be\napplied to Device object. This routine may control APDU properties like APDU length,\nsegmentation and timeout for both request and response. This routine can execute\nasynchronously, i.e. this routine will return to the caller before the BACnet reply\ncomes so that the applications can keep running. In this case the response information\nwill be received by the thread that is responsible for receiving asynchronous responses.\nAn optional BACNET_SIMPLE_ACK_COMPLETE_CB routine, which is provided by the BACnetc\napplication, shall be used to process this information. If a number of asynchronous\nrequests are sent, the responses shall be queued and identified by the transaction\nhandles. If application does not supply the BACNET_SIMPLE_ACK_COMPLETE_CB routine;\nthen the BACnetDeleteObject routine sends a request and waits for reply.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "BACnetDeleteObject",
+          "Type": "IEC_BACNET_STATUS",
+          "Comment": "A status indicating if the operation worked."
+        },
+        {
+          "Scope": "Input",
+          "Name": "pSourceAddress",
+          "Type": "POINTER TOIEC_BACNET_ADDRESS",
+          "Comment": "If the BACnet application has only one device constructed and installed, this can\nbe 0. In this case the MAC address of this device will be used. Otherwise this\nshall be the MAC address returned on device object construction."
+        },
+        [
+          "pDestinationAddress",
+          "POINTER TOIEC_BACNET_ADDRESS",
+          "This is the MAC address of the device to which the request\nshould be sent."
+        ],
+        [
+          "pObjectID",
+          "POINTER TOIEC_BACNET_OBJECT_ID",
+          "A pointer to the memory block to convey the Object\nIdentifier of the Object to delete."
+        ],
+        [
+          "pAPDUParams",
+          "POINTER TOIEC_BACNET_APDU_PROPERTIES",
+          "A pointer to the APDU-Properties structure which sets APDU properties for this\ntransaction only. This does not change global defaults or settings for the application\nAPDU Properties. This argument may be 0. In this case APDU properties  are used\nwhich were specified in the device object properties of the applications device which\nsends the request."
+        ],
+        [
+          "pTransactionToken",
+          "POINTER TOBACnetAsyncTransactionToken",
+          "Transaction token of the asynchronous call - seeBACnetAsyncTransactionToken."
+        ],
+        [
+          "pError",
+          "POINTER TOIEC_BACNET_ERROR",
+          "A pointer to a structure to hold BACnet Error information. pError may be 0 if the\napplication isnât interested in detailed error information."
+        ]
+      ]
+    }
+  ]
+}

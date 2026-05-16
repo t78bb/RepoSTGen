@@ -1,0 +1,37 @@
+{
+  "library": "3S Storage",
+  "title": "StorageGetTableId (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/3S Storage/Current/_3SStorage/Instances/pou-Storage/IStorage2/StorageGetTableId.html",
+  "page_title": "Storage.StorageGetTableId (METH)",
+  "text": "Deutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nMenu\nSearch\nDeutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\n_3SStorage\nExternal\nFunctions\nStorage\nInstances\nStorage (FunctionBlock)\nIStorage2\nStorageClear (Method)\nStorageClose (Method)\nStorageEncoding (Property)\nStorageGetMetrics (Method)\nStorageGetPath (Method)\nStorageIsReadOnly (Property)\nStorageLockingState (Property)\nStorageNumOfTables (Property)\nStorageOpenFile (Method)\nStorageReorg (Method)\nStorageSchemaVersion (Property)\nStorageUserVersion (Property)\nStorageVersion (Property)\nTableOpen (Method)\nTransactionBegin (Method)\nUtilityGetCurrentDateAndTime (Method)\nUtilityRandomness (Method)\n_3SStorageVersionConstants (GVL)\nFile and Project Information\nLibrary Reference\nCAA FB Factory\nLibrary Identification\nLibrary Properties\nCAA Storage\nLibrary Identification\nLibrary Properties\nCAA Types Extern\nLibrary Identification\nLibrary Properties\n3S Storage\nDocs\n»\n_3SStorage\n»\nInstances\n»\nStorage\n(FB)\n»\nIStorage2\n»\nStorage.StorageGetTableId (METH)\nStorage.StorageGetTableId (METH)\nÂ¶\nMETHOD StorageGetTableId : STO.ERROR\nDetermines the id of a given table.\nInOut:\nScope\nName\nType\nComment\nReturn\nStorageGetTableId\nSTO.ERROR\nThe error code. Can return ERROR.NOT_IMPLEMENTED for non-\nsqlite implementations\nInout\nsTable\nSTRING\nThe name of the table\nOutput\nidTable\nCAA.IDENT\nReturns id of the table.\ntop\nCODESYS Group | We\nsoftware\nAutomation.\nto software\n['sɒftwɛər]\ntransitive verb\n__softwared/softwaring\n: to develop software\n// to software automation: to develop software for automation purposes\nThe CODESYS Group is the manufacturer of CODESYS, the leading hardware-independent\n                                    IEC 61131-3 automation software for developing and engineering controller\n                                    applications.\nCODESYS® is a registered trademark.\nCODESYS GmbH\nA member of the CODESYS Group\nMemminger Straße 151, 87439 Kempten\nGermany\nTel.:\n+49-831-54031-0\ninfo@codesys.com\nLegal Notice\nPrivacy Policy\nLinkedIn\nYoutube\nRSS\nDownloads\nLogin\nCODESYS Store\n© 2022 CODESYS GmbH\n| A member of the CODESYS Group",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "StorageGetTableId",
+          "Type": "STO.ERROR",
+          "Comment": "The error code. Can return ERROR.NOT_IMPLEMENTED for non-\nsqlite implementations"
+        },
+        {
+          "Scope": "Inout",
+          "Name": "sTable",
+          "Type": "STRING",
+          "Comment": "The name of the table"
+        },
+        {
+          "Scope": "Output",
+          "Name": "idTable",
+          "Type": "CAA.IDENT",
+          "Comment": "Returns id of the table."
+        }
+      ]
+    }
+  ]
+}

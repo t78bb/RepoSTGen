@@ -1,0 +1,23 @@
+{
+  "library": "DNP3",
+  "title": "DelayMeasurement (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/pou-Master/Commands/DelayMeasurement.html",
+  "page_title": "Master.DelayMeasurement (METH)",
+  "text": "\nMETHOD DelayMeasurement :\nError\nIssue an delay measurement request.\nThis is an optional step in a time synchronization, typically only\nused for serial channels.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "DelayMeasurement",
+          "Type": "Error"
+        }
+      ]
+    }
+  ]
+}

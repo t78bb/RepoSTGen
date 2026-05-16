@@ -1,0 +1,8 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_IGSentenceModifier (Interface)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/ReadNCFile2/SMC_IGSentenceModifier.html",
+  "page_title": "SMC_IGSentenceModifier (ITF)",
+  "text": "\nINTERFACE SMC_IGSentenceModifier\nInterface to modify the g-code sentence stream, used by\nSMC_ReadNCFromStream\nand\nSMC_ReadNCFile2\n.\nMethods:\nCall\nStart\nStructure:\nCall (Method)\nStart (Method)",
+  "tables": []
+}

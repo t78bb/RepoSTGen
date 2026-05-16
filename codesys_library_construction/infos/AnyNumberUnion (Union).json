@@ -1,0 +1,25 @@
+{
+  "library": "DNP3",
+  "title": "AnyNumberUnion (Union)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Types/AnyNumber/AnyNumberUnion.html",
+  "page_title": "AnyNumberUnion (UNION)",
+  "text": "\nTYPE AnyNumberUnion : UNION\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Name": "val",
+          "Type": "AnyNumberValueUnion"
+        },
+        {
+          "Name": "p",
+          "Type": "AnyNumberPointerUnion"
+        }
+      ]
+    }
+  ]
+}

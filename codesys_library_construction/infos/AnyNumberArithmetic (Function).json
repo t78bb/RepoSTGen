@@ -1,0 +1,41 @@
+{
+  "library": "DNP3",
+  "title": "AnyNumberArithmetic (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Functions/AnyNumber/AnyNumberArithmetic.html",
+  "page_title": "AnyNumberArithmetic (FUN)",
+  "text": "\nFUNCTION AnyNumberArithmetic :\nError\nDoes an arithmetic operation for two AnyNumber (left, right) and store into result.\nReturns Error.AnyNumberError if left and right are not consistent.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "AnyNumberArithmetic",
+          "Type": "Error"
+        },
+        {
+          "Scope": "Input",
+          "Name": "left",
+          "Type": "REFERENCE TOAnyNumber"
+        },
+        [
+          "right",
+          "REFERENCE TOAnyNumber"
+        ],
+        [
+          "operation",
+          "AnyNumberArithmeticOperation"
+        ],
+        {
+          "Scope": "Inout",
+          "Name": "result",
+          "Type": "AnyNumber"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "library": "BACnet",
+  "title": "GetEntryCount (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/Calendar/pou-BACnetCalendar/GetEntryCount.html",
+  "page_title": "BACnetCalendar.GetEntryCount (METH)",
+  "text": "\nMETHOD GetEntryCount : CmpBACnet.IEC_BACNET_STATUS\nGets the number of calendar entries in the Date_List-Property of this BACnet-Calendar-Object.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetEntryCount",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Output",
+          "Name": "count",
+          "Type": "CmpBACnet.IEC_BACNET_ELEMENT_COUNT",
+          "Comment": "The count of entries in the Date_List-Property in this\nobject."
+        }
+      ]
+    }
+  ]
+}

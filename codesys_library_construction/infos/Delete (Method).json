@@ -1,0 +1,31 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "Delete (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_RMP_ReliableMessageProtocol/pou-RMPMessageBuffer/Delete.html",
+  "page_title": "RMPMessageBuffer.Delete (METH)",
+  "text": "\nMETHOD FINAL Delete : BOOL\nThis method frees a queue entry and may only be called on lockes messages\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "Delete",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "uiIndex",
+          "Type": "UINT",
+          "Comment": "The index of the buffered message to be deleted"
+        }
+      ]
+    }
+  ]
+}

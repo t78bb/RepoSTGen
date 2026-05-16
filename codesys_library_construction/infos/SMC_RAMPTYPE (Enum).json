@@ -1,0 +1,33 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_RAMPTYPE (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/DataTypes/DriveInterface/SMC_RAMPTYPE.html",
+  "page_title": "SMC_RAMPTYPE (ENUM)",
+  "text": "\nTYPE SMC_RAMPTYPE :\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Name": "trapez",
+          "Initial": "0"
+        },
+        {
+          "Name": "sinsquare",
+          "Initial": "1"
+        },
+        {
+          "Name": "quadratic_ramp",
+          "Initial": "2"
+        },
+        {
+          "Name": "quadratic_smooth_ramp",
+          "Initial": "3"
+        }
+      ]
+    }
+  ]
+}

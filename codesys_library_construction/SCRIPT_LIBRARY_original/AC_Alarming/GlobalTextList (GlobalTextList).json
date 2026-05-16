@@ -1,0 +1,43 @@
+{
+  "library": "AC_Alarming",
+  "title": "GlobalTextList (GlobalTextList)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_Alarming/Current/GlobalTextList.html",
+  "page_title": "GlobalTextList (Text List)",
+  "text": "ExtenderFB\nACAlarmExtender (FunctionBlock)\nAcknowledgeAllAlarmsOfModule (Method)\nExecute (Method)\nGetActiveAlarmsOfModule (Method)\nGetEventAlarmID (Method)\nGetID (Property)\nInit (Method)\nInit2 (Method)\nInitSortedModuleAlarms (Method)\nAlarmInfo (Struct)\nAlarmingCall (Enum)\nIACAlarmExtender (Interface)\nInit (Method)\nIACAlarmExtender2 (Interface)\nGetEventAlarmID (Method)\nInit2 (Method)\nIACAlarmExtender3 (Interface)\nAcknowledgeAllAlarmsOfModule (Method)\nGetActiveAlarmsOfModule (Method)\nInitSortedModuleAlarms (Method)\nModuleAlarmInfo (Struct)\nModuleCall (Struct)\nModuleEvent (Struct)\nFunctions\nRaiseModuleEvent (Function)\nReplaceAlarmPlaceholderString (Function)\nGlobalTextList (GlobalTextList)\nModuleInterface\nIModuleAlarming (Interface)\nConsumeModuleAlarm (Method)\nVisualization\nFile and Project Information\nLibrary Reference\nAC_ModuleBase\nLibrary Identification\nLibrary Properties\nAlarmManager\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nStringUtils\nLibrary Identification\nLibrary Properties\nVisuElem3DPath\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElemCamDisplayer\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElemMeter\nLibrary Identification\nLibrary Properties\nVisuElemTextEditor\nLibrary Identification\nLibrary Properties\nVisuElemTrace\nLibrary Identification\nLibrary Properties\nVisuElemXYChart\nLibrary Identification\nLibrary Properties\nVisuElems\nLibrary Identification\nLibrary Properties\nVisuElemsAlarm\nLibrary Identification\nLibrary Properties\nVisuElemsDateTime\nLibrary Identification\nLibrary Properties\nVisuElemsSpecialControls\nLibrary Identification\nLibrary Properties\nVisuElemsWinControls\nLibrary Identification\nLibrary Properties\nVisuNativeControl\nLibrary Identification\nLibrary Properties\nAC_Alarming\nDocs\n»\nGlobalTextList (Text List)\nGlobalTextList (Text List)\nÂ¶\nID\nDefault\nen\nde\n1\nACK\nall\nvisible\nACK all visible\nAlle sichtbaren Alarme bestÃ¤tigen\n0\nACK\nselected\nACK selected\nSelektierte Alarme bestÃ¤tigen\n3\nFreeze\nScrl\nPos\nFreeze Scrl Pos\nScrl Position einfrieren\n2\nHistory\nHistory\nHistorie",
+  "tables": [
+    {
+      "headers": [
+        "ID",
+        "Default",
+        "en",
+        "de"
+      ],
+      "rows": [
+        {
+          "ID": "1",
+          "Default": "ACKallvisible",
+          "en": "ACK all visible",
+          "de": "Alle sichtbaren Alarme bestÃ¤tigen"
+        },
+        {
+          "ID": "0",
+          "Default": "ACKselected",
+          "en": "ACK selected",
+          "de": "Selektierte Alarme bestÃ¤tigen"
+        },
+        {
+          "ID": "3",
+          "Default": "FreezeScrlPos",
+          "en": "Freeze Scrl Pos",
+          "de": "Scrl Position einfrieren"
+        },
+        {
+          "ID": "2",
+          "Default": "History",
+          "en": "History",
+          "de": "Historie"
+        }
+      ]
+    }
+  ]
+}

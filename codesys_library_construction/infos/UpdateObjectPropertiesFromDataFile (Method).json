@@ -1,0 +1,28 @@
+{
+  "library": "BACnet2DefaultImpl",
+  "title": "UpdateObjectPropertiesFromDataFile (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2DefaultImpl/Current/BACnetDefaultImpl/Function-Blocks/LoggingObjects/pou-TrendLog/private/UpdateObjectPropertiesFromDataFile.html",
+  "page_title": "TrendLog.UpdateObjectPropertiesFromDataFile (METH)",
+  "text": "\nMETHOD PROTECTED UpdateObjectPropertiesFromDataFile : RTS_IEC_RESULT\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "UpdateObjectPropertiesFromDataFile",
+          "Type": "RTS_IEC_RESULT"
+        },
+        {
+          "Scope": "Input",
+          "Name": "instNumber",
+          "Type": "DWORD"
+        }
+      ]
+    }
+  ]
+}

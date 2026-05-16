@@ -1,0 +1,113 @@
+{
+  "library": "MQTT Client SL",
+  "title": "MQTTConnackProperties (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/MQTT Client SL/Current/MQTT-Client/Common/Structs/MQTTV5/Properties/MQTTConnackProperties.html",
+  "page_title": "MQTTConnackProperties (STRUCT)",
+  "text": "\nTYPE MQTTConnackProperties : STRUCT\nProperties of CONNACK, AUTH and DISCONNECT packets (MQTT V5).\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "udiSessionExpiryInterval",
+          "Type": "UDINT",
+          "Comment": "Session Expiry Interval in seconds."
+        },
+        {
+          "Name": "wsAssignedClientIdentifier",
+          "Type": "WSTRING",
+          "Comment": "Assigned Client Identifier: If the Client connects using a zero length Client Identifier,\nthe Server MUST respond with a CONNACK containing an Assigned Client Identifier."
+        },
+        {
+          "Name": "uiServerKeepAlive",
+          "Type": "UINT",
+          "Comment": "The Keep Alive is a time interval measured in seconds.\nIt is the maximum time interval that is permitted to elapse between the point at\nwhich the Client finishes transmitting one MQTT Control Packet and the point it starts sending the next.\nThe server Keep Alive interval overwrites the value of the input tPingInterval."
+        },
+        {
+          "Name": "xAuthPacketReceived",
+          "Type": "BOOL",
+          "Comment": "TRUE, if a AUTH Packet has been received.\nThe data is stored in wsAuthenticationMethod, bAuthenticationData and udiAuthenticationDataSize.\nThe ReasonCode is stored in MQTTClient.eReaonCode.\nThe response to the server can be send via the method MQTTClient.SendAuth()."
+        },
+        {
+          "Name": "wsAuthenticationMethod",
+          "Type": "WSTRING",
+          "Comment": "Name of the authentication method"
+        },
+        {
+          "Name": "bAuthenticationData",
+          "Type": "ARRAY\n[0..MQTTParam.g_udiMaxAuthDataSize]\nOF BYTE",
+          "Comment": "Binary Data containing authentication data"
+        },
+        {
+          "Name": "udiAuthenticationDataSize",
+          "Type": "UDINT",
+          "Comment": "Size of pbAuthenticationData"
+        },
+        {
+          "Name": "wsResponseInformation",
+          "Type": "WSTRING",
+          "Comment": "Basis for Response Topics."
+        },
+        {
+          "Name": "wsServerReference",
+          "Type": "WSTRING",
+          "Comment": "String which can be used to identify another Server to use.\nThe Server uses a Server Reference in either a CONNACK or DISCONNECT packet with Reason code\nof 0x9C (Use another server) or Reason Code 0x9D (Server moved)."
+        },
+        {
+          "Name": "wsReasonString",
+          "Type": "WSTRING",
+          "Comment": "String representing the reason for the disconnect."
+        },
+        {
+          "Name": "uiReceiveMaximum",
+          "Type": "UINT",
+          "Comment": "The Server uses this value to limit the number of QoS 1 and QoS 2 publications that it is willing to\nprocess concurrently for the Client."
+        },
+        {
+          "Name": "uiTopicAliasMaximum",
+          "Type": "UINT",
+          "Comment": "The maximum value of topic aliases."
+        },
+        {
+          "Name": "bMaximumQoS",
+          "Type": "BYTE",
+          "Comment": "Maximum allowed QoS of the server.\nA value of 255 means that the value has not been set."
+        },
+        {
+          "Name": "bRetainAvailable",
+          "Type": "BYTE",
+          "Comment": "Retain Available: A  value of 0 means that retained messages are not supported.\nA value of 1 means retained messages are supported.\nA value of 255 means that the value has not been set."
+        },
+        {
+          "Name": "udiMaximumPacketSize",
+          "Type": "UDINT",
+          "Comment": "Maximum packet size of the server\nA value of 0 means that the value has not been set."
+        },
+        {
+          "Name": "bWildcardSubscriptionAvailable",
+          "Type": "BYTE",
+          "Comment": "Wildcard Subscription Available: A value is 0 means that Wildcard Subscriptions are not supported.\nA value of 1 means Wildcard Subscriptions are supported.\nA value of 255 means that the value has not been set."
+        },
+        {
+          "Name": "bSubscriptionIdentifierAvailable",
+          "Type": "BYTE",
+          "Comment": "Subscription Identifiers Available: A value is 0 means that Subscription Identifiers are not supported.\nA value of 1 means Subscription Identifiers are supported.\nA value of 255 means that the value has not been set."
+        },
+        {
+          "Name": "bSharedSubscriptionAvailable",
+          "Type": "BYTE",
+          "Comment": "Shared Subscription Available: A value of 1 means Shared 1356 Subscriptions are supported.\nIf not present, then Shared Subscriptions are supported.\nA value of 255 means that the value has not been set."
+        },
+        {
+          "Name": "userProperties",
+          "Type": "ARRAY\n[0..(MQTTParam.g_udiMaxUserProperties\n- 1)] OFMQTTStringPair",
+          "Comment": "Received user prperties"
+        }
+      ]
+    }
+  ]
+}

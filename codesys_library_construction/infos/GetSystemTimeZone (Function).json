@@ -1,0 +1,28 @@
+{
+  "library": "BACnet2DefaultImpl",
+  "title": "GetSystemTimeZone (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2DefaultImpl/Current/BACnetDefaultImpl/Functions/GetSystemTimeZone.html",
+  "page_title": "GetSystemTimeZone (FUN)",
+  "text": "\nFUNCTION GetSystemTimeZone : Util.ERROR\nDetermines the time zone set for the current controller and fills the passed structure with the corresponding data.\nSee:\ntzTimeZone\nin\n|GetLocalDateTime|\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetSystemTimeZone",
+          "Type": "Util.ERROR"
+        },
+        {
+          "Scope": "Inout",
+          "Name": "tzTimeZone",
+          "Type": "TimeZone"
+        }
+      ]
+    }
+  ]
+}

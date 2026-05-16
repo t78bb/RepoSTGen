@@ -1,0 +1,137 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_TRAFOF_GantryCutter2 (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_Trafo_POUs/SoftMotion-Transformations/Gantry-systems/SMC_TRAFOF_GantryCutter2.html",
+  "page_title": "SMC_TRAFOF_GantryCutter2 (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_TRAFOF_GantryCutter2\nForward transformation for two-dimensional gantries\nwith a cutter knife.\nThe rotation axis is controlled in such a way\nthat the knife is aligned along the path tangent.\nNote\nFor more information see Gantry Cutter.\nFor detailed information on transformations\nsee overview to\nSM_Trafo_POUs\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "DriveX",
+          "Type": "AXIS_REF_SM3",
+          "Initial": "",
+          "Comment": "Reference to axis X"
+        },
+        [
+          "DriveY",
+          "AXIS_REF_SM3",
+          "",
+          "Reference to axis Y"
+        ],
+        [
+          "DriveR",
+          "AXIS_REF_SM3",
+          "",
+          "Reference to rotation axis"
+        ],
+        {
+          "Scope": "Input",
+          "Name": "dOffsetX",
+          "Type": "LREAL",
+          "Initial": "",
+          "Comment": "Offset x-position. Similar toSMC_TRAFO_Gantry2"
+        },
+        [
+          "dOffsetY",
+          "LREAL",
+          "",
+          "Offset y-position. Similar toSMC_TRAFO_Gantry2"
+        ],
+        [
+          "dOffsetR",
+          "LREAL",
+          "",
+          "Offset of rotation axis"
+        ],
+        [
+          "iDirectionR",
+          "INT",
+          "1",
+          "Direction of rotation"
+        ],
+        [
+          "minX",
+          "LREAL",
+          "",
+          "Minimum x-position limiting move range\n(for visualization purpose)"
+        ],
+        [
+          "maxX",
+          "LREAL",
+          "",
+          "Maximum x-position limiting move range\n(for visualization purpose)"
+        ],
+        [
+          "minY",
+          "LREAL",
+          "",
+          "Minimum y-position limiting move range\n(for visualization purpose)"
+        ],
+        [
+          "maxY",
+          "LREAL",
+          "",
+          "Maximum y position limiting move range\n(for visualization purpose)"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "dx",
+          "Type": "LREAL",
+          "Initial": "",
+          "Comment": "X-coordinate of resulting position"
+        },
+        [
+          "dy",
+          "LREAL",
+          "",
+          "Y-coordinate of resulting position"
+        ],
+        [
+          "dr",
+          "LREAL",
+          "",
+          "Rotation of resulting position in degrees"
+        ],
+        [
+          "dnx",
+          "LREAL",
+          "",
+          "X-coordinate of normed position"
+        ],
+        [
+          "dny",
+          "LREAL",
+          "",
+          "Y-Coordinate of normed position."
+        ],
+        [
+          "ratio",
+          "LREAL",
+          "",
+          "Ratio x-interval / y-interval"
+        ],
+        [
+          "dnOffsetX",
+          "LREAL",
+          "",
+          "X-coordinate of normed offset position"
+        ],
+        [
+          "dnOffsetY",
+          "LREAL",
+          "",
+          "Y-Coordinate of normed offset position."
+        ]
+      ]
+    }
+  ]
+}

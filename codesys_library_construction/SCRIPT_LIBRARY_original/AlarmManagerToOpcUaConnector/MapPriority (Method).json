@@ -1,0 +1,28 @@
+{
+  "library": "AlarmManagerToOpcUaConnector",
+  "title": "MapPriority (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManagerToOpcUaConnector/Current/Curstom-Mapping/pou-ICustomAlarmToOpcUaMapping/MapPriority.html",
+  "page_title": "ICustomAlarmToOpcUaMapping.MapPriority (METH)",
+  "text": "AlarmManagerToOpcUaConnector\nVariables (GVL)\nCurstom Mapping\nICustomAlarmToOpcUaMapping (Interface)\nMapPriority (Method)\nFile and Project Information\nLibrary Reference\nAlarmManager\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nCmpApp\nLibrary Identification\nLibrary Properties\nCmpDynamicText\nLibrary Identification\nLibrary Properties\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nCmpEventMgr\nLibrary Identification\nLibrary Properties\nCmpOPCUAProviderAlarmConfiguration Implementation\nLibrary Identification\nLibrary Properties\nCmpOPCUAProviderAlarmConfiguration Interfaces\nLibrary Identification\nLibrary Properties\nCmpOPCUAServer Interfaces\nLibrary Identification\nLibrary Properties\nCmpOPCUAStack\nLibrary Identification\nLibrary Properties\nComponent Manager\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nStringUtils\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysTask\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nAlarmManagerToOpcUaConnector\nDocs\n»\nCurstom\nMapping\n»\nICustomAlarmToOpcUaMapping\n(ITF)\n»\nICustomAlarmToOpcUaMapping.MapPriority (METH)\nICustomAlarmToOpcUaMapping.MapPriority (METH)\nÂ¶\nMETHOD MapPriority : UDINT\nThis function is called to convert he priority of the AlarmConfiguration (0 (highest) .. 255(lowest))\ninto the OPC UA severity range (1(lowest) .. 1000(highest)).\nInOut:\nScope\nName\nType\nReturn\nMapPriority\nUDINT\nInput\nSeverityAlarm\nUSINT",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "MapPriority",
+          "Type": "UDINT"
+        },
+        {
+          "Scope": "Input",
+          "Name": "SeverityAlarm",
+          "Type": "USINT"
+        }
+      ]
+    }
+  ]
+}

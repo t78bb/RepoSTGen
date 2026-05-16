@@ -1,0 +1,46 @@
+{
+  "library": "AlarmManager",
+  "title": "AlarmStateChanged (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/pou-IAlarmStateChangedListener/AlarmStateChanged.html",
+  "page_title": "IAlarmStateChangedListener.AlarmStateChanged (METH)",
+  "text": "\nMETHOD AlarmStateChanged : BOOL\nThis method will be called if a AlarmStateChangedListener was registered and the\nalarm state changed.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "AlarmStateChanged",
+          "Type": "BOOL",
+          "Comment": "<c>TRUE</c> in case the corresponding action to this event was successfull,\n<c>FALSE</c> otherwise."
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfAlarm5",
+          "Type": "IAlarm5",
+          "Comment": "The alarm which changed its state"
+        },
+        [
+          "eOldState",
+          "AlarmState",
+          "The old state the alarm went in"
+        ],
+        [
+          "eNewState",
+          "AlarmState",
+          "The new state to which the alarm changes"
+        ],
+        [
+          "eStateTransition",
+          "AlarmStateTransition",
+          "The AlarmStateTransition decribing how the alarm reached the new state\ni.e. the way within the state graph"
+        ]
+      ]
+    }
+  ]
+}

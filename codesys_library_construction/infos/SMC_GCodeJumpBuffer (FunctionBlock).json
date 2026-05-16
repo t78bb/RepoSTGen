@@ -1,0 +1,107 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_GCodeJumpBuffer (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/SoftMotion-Function-Blocks/DecoderBuffer/SMC_GCodeJumpBuffer.html",
+  "page_title": "SMC_GCodeJumpBuffer (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_GCodeJumpBuffer\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "ncprogIn",
+          "Type": "SMC_CNC_REF",
+          "Initial": "",
+          "Comment": "CNC program input"
+        },
+        {
+          "Scope": "Input",
+          "Name": "bExecute",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Rising edge starts operation."
+        },
+        [
+          "pBuffer",
+          "POINTER TOSMC_GCODE_WORD",
+          "",
+          "Memory for internal buffer"
+        ],
+        [
+          "dwBufferSize",
+          "UDINT",
+          "",
+          "Size ofpBuffer"
+        ],
+        [
+          "pBufferOut",
+          "POINTER TOSMC_GCODE_WORD",
+          "",
+          "Memory forncprogOut"
+        ],
+        [
+          "dwBufferOutSize",
+          "UDINT",
+          "",
+          "Size ofpBufferOutin byte"
+        ],
+        [
+          "historyBuffer",
+          "SMC_ISentenceHistory",
+          "",
+          "A  function block keeping track of all G-Code sentence numbers\nthat have been processed and removed from the jump buffer.\nIf no buffer is provided, the default implementationSMC_MonotoneSentenceHistorywill be used."
+        ],
+        [
+          "udiRefillWindowSizePercentage",
+          "UDINT",
+          "10",
+          "The amount of elements that is read and removed in one cycle and added in the next cycle, when no jump has been requested (ifncprogOut.bRestart=FALSE).\nProvided in percent of the current buffer level and defaults to a minimum value of 10.\nA larger center window will slightly improve reading performance for long cycle times, while reducing the bufferâs chances to\nhave a requested jump target actually buffered."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bBusy",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": ""
+        },
+        [
+          "bDone",
+          "BOOL",
+          "",
+          ""
+        ],
+        [
+          "bError",
+          "BOOL",
+          "",
+          ""
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "",
+          ""
+        ],
+        [
+          "ncprogOut",
+          "SMC_CNC_REF",
+          "",
+          "CNC program output toSMC_NCDecoder"
+        ],
+        [
+          "bExecuteDecoder",
+          "BOOL",
+          "",
+          "Set toTRUEas soon asncprogOutis filled sufficiently to be\ninterpreted bySMC_NCDecoder;"
+        ]
+      ]
+    }
+  ]
+}

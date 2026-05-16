@@ -1,0 +1,27 @@
+{
+  "library": "ModbusFB",
+  "title": "GetNWords (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/ModbusFB/Current/ModbusFB/Function-Blocks/Util/pou-ByteBuffer/GetNWords.html",
+  "page_title": "ByteBuffer.GetNWords (METH)",
+  "text": "\nMETHOD GetNWords\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "pDest",
+          "Type": "POINTER TO BYTE"
+        },
+        [
+          "uiWords",
+          "UINT"
+        ]
+      ]
+    }
+  ]
+}

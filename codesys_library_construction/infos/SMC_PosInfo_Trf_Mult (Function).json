@@ -1,0 +1,42 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_PosInfo_Trf_Mult (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/Posinfo-Functions/SMC_PosInfo_Trf_Mult.html",
+  "page_title": "SMC_PosInfo_Trf_Mult (FUN)",
+  "text": "\nFUNCTION SMC_PosInfo_Trf_Mult : BOOL\nMultiplies two transformations described by PosInfo objects.\nThe combined transformation is that of first applying trfRhs and\nthen applying trfLhs, that is trfC(x) = (trfLhs Â° trfRhs) (x) = trfLhs(trfRhs(x)).\nA transformation is given as an offset + an optional rotation (only\nused if orientation convention is not ADDAXES).\nCan be used in order to manually transform positions\nfrom one coordinate system (PCS) to the other (MCS),\ninstead of using G54 and\nSMC_NCDecoder\n(e.g. for jogging applications).\nGiven the representation of PCS in MCS-coordinates inside trfLhs\nand the desired position in PCS-coordinates inside trfRhs,\ntrfC will hold the same position in MCS-coordinates.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SMC_PosInfo_Trf_Mult",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Inout",
+          "Name": "trfC",
+          "Type": "SMC_POSINFO"
+        },
+        {
+          "Scope": "Inout Const",
+          "Name": "trfLhs",
+          "Type": "SMC_POSINFO"
+        },
+        [
+          "trfRhs",
+          "SMC_POSINFO"
+        ],
+        {
+          "Scope": "Input",
+          "Name": "eOriConv",
+          "Type": "SMC_ORI_CONVENTION"
+        }
+      ]
+    }
+  ]
+}

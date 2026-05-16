@@ -1,0 +1,5 @@
+{
+  "requirement": "This code is intended to implement manual control logic for operating a mixer, medium valves, and a drain valve based on HMI commands and feedback signals using latch logic.",
+  "provide_code": "FUNCTION_BLOCK FB_ManualControl\nVAR_INPUT\n\t// HMI命令输入\n\tbMixerRunCmd\t\t:\tBOOL;\n\tbMixerStopCmd\t\t:\tBOOL;\n\tbMedium1OpenCmd\t\t:\tBOOL;\n\tbMedium1CloseCmd\t:\tBOOL;\n\tbMedium2OpenCmd\t\t:\tBOOL;\n\tbMedium2CloseCmd\t:\tBOOL;\n\tbDrainOpenCmd\t\t:\tBOOL;\n\tbDrainCloseCmd\t\t:\tBOOL;\n\t\n\t// 设备反馈输入\n\tbMixerRunning\t\t:\tBOOL;\n\tbMedium1Opened\t\t:\tBOOL;\n\tbMedium2Opened\t\t:\tBOOL;\n\tbDrainOpened\t\t:\tBOOL;\nEND_VAR\nVAR_OUTPUT\n\t// 设备控制输出\n\tbMixerRunCmdOut\t\t:\tBOOL;\n\tbMedium1OpenCmdOut\t:\tBOOL;\n\tbMedium2OpenCmdOut\t:\tBOOL;\n\tbDrainOpenCmdOut\t:\tBOOL;\nEND_VAR",
+  "function_name": "FB_ManualControl"
+}

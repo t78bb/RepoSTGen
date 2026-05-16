@@ -1,0 +1,31 @@
+{
+  "library": "SM3_Basic",
+  "title": "ImagePool_sm3 (ImagePool)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/Visualization/Original/ImagePool_sm3.html",
+  "page_title": "ImagePool_sm3 (Image Pool)",
+  "text": "\nID\nFile name\nImage\nLink type\nlogo\nlogo.bmp\nEmbedded\nplc-mc-logo\nplc-mc-logo.bmp\nEmbedded",
+  "tables": [
+    {
+      "headers": [
+        "ID",
+        "File name",
+        "Image",
+        "Link type"
+      ],
+      "rows": [
+        {
+          "ID": "logo",
+          "File name": "logo.bmp",
+          "Image": "",
+          "Link type": "Embedded"
+        },
+        {
+          "ID": "plc-mc-logo",
+          "File name": "plc-mc-logo.bmp",
+          "Image": "",
+          "Link type": "Embedded"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "library": "BACnet2DefaultImpl",
+  "title": "SetDir (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2DefaultImpl/Current/BACnetDefaultImpl/Functions/pou-Directory/SetDir.html",
+  "page_title": "Directory.SetDir (METH)",
+  "text": "\nMETHOD SetDir : RTS_IEC_RESULT\nSets the actual dir and open it for reading.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetDir",
+          "Type": "RTS_IEC_RESULT"
+        },
+        {
+          "Scope": "Input",
+          "Name": "dir",
+          "Type": "FileNameString"
+        }
+      ]
+    }
+  ]
+}

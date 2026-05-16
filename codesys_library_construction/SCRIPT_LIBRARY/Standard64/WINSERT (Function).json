@@ -1,0 +1,36 @@
+{
+  "library": "Standard64",
+  "title": "WINSERT (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/Standard64/Current/String-Functions/WINSERT.html",
+  "page_title": "WINSERT (FUN)",
+  "text": "\nFUNCTION WINSERT : WSTRING(255)\nInsert STR2 into STR1 after\nthe POS-th wcharacter position.\nPOS = 0 inserts before the first wcharacter.\nPOS = 1 inserts after the first wcharacter.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "WINSERT",
+          "Type": "WSTRING(255)"
+        },
+        {
+          "Scope": "Input",
+          "Name": "STR1",
+          "Type": "WSTRING(255)"
+        },
+        [
+          "STR2",
+          "WSTRING(255)"
+        ],
+        [
+          "POS",
+          "INT"
+        ]
+      ]
+    }
+  ]
+}

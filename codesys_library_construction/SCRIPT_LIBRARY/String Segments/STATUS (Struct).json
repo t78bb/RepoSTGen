@@ -1,0 +1,25 @@
+{
+  "library": "String Segments",
+  "title": "STATUS (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Segments/Current/Strings/Structs/STATUS.html",
+  "page_title": "STATUS (STRUCT)",
+  "text": "\nTYPE STATUS : STRUCT\nThe current status of a\nIRangePool\ninstance\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Name": "udiCapacity",
+          "Type": "UDINT"
+        },
+        {
+          "Name": "udiRangesLeft",
+          "Type": "UDINT"
+        }
+      ]
+    }
+  ]
+}

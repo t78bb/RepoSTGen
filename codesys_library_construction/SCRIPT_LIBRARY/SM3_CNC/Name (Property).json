@@ -1,0 +1,8 @@
+{
+  "library": "SM3_CNC",
+  "title": "Name (Property)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/File/ReadNCFile/Stream/pou-SMC_StringStream2/Name.html",
+  "page_title": "SMC_StringStream2.Name (PROP)",
+  "text": "\nPROPERTY Name : STRING(255)",
+  "tables": []
+}

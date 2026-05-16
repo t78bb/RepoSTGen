@@ -1,0 +1,36 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_GetObjFromHistory (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/OutQueue-Functions/SMC_GetObjFromHistory.html",
+  "page_title": "SMC_GetObjFromHistory (FUN)",
+  "text": "\nFUNCTION SMC_GetObjFromHistory : POINTER TO SMC_GEOINFO\nReturns an object that has been deleted but not yet overwritten.\nFor\nN\n>=\n0,\nSMC_GetObjFromHistory(poq,\nN)\n=\nSMC_GetObj(poq,\nN)\n.\nFor negative\nN\n, the objects from the history are retrieved.\n(\nN=-1\ngets the newest object from history,\nsmaller\nN\nget older elements).\nThe valid range for\nN\nis\n-SMC_GetHistoryCount(poq)\n...\nSMC_GetCount(poq)\n-\n1\n.\ntask-safety: call from consumer task only\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SMC_GetObjFromHistory",
+          "Type": "POINTER TOSMC_GEOINFO",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "poq",
+          "Type": "POINTER TOSMC_OUTQUEUE",
+          "Comment": "The out queue"
+        },
+        [
+          "N",
+          "DINT",
+          "Index of the object, counting is started withN=0"
+        ]
+      ]
+    }
+  ]
+}

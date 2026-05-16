@@ -1,0 +1,41 @@
+{
+  "library": "Standard",
+  "title": "RTC (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/Standard/Current/Miscellaneous/RTC.html",
+  "page_title": "RTC (FB)",
+  "text": "\nFUNCTION_BLOCK RTC\nCalculates the elapsed time since a given start time\nUsage Examples:\nThis function block can be used as an operation hour counter, when\nPDT\nis set to\nDT#1970-01-01-00-00:00\n, or is simply not connected.\nThis function block can be used to return the current date and time,\nby adjusting the FB to the current local time. Just, set the input\nPDT\nto the current local time, on the rising edge of\nEN\n.\nNote\nThis counter will have an overflow at the 7th February, 2106.\n(* Example in ST *)\nRTC\n(\nEN\n:=\nVarBOOL1\n,\nPDT\n:=\nDT#2006-03-30-14:00:00\n,\nQ\n=>\nVarBOOL2\n,\nCDT\n=>\nVarTimeCur\n);\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "EN",
+          "Type": "BOOL",
+          "Comment": "Rising edge:CDTis set toPDTandCDTstarts increasing.Falling edge:CDTis set toDT#1970-01-01-00:00:00."
+        },
+        [
+          "PDT",
+          "DT",
+          "Preset date and time"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Q",
+          "Type": "BOOL",
+          "Comment": "TRUEas long asCDTis counting"
+        },
+        [
+          "CDT",
+          "DT",
+          "Date and time, elapsed sincePDT"
+        ]
+      ]
+    }
+  ]
+}

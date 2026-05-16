@@ -1,0 +1,28 @@
+{
+  "library": "BACnet",
+  "title": "GetFullMethodeNameString (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetServerPlugin/pou-BACnetServerPluginBase/Logging/GetFullMethodeNameString.html",
+  "page_title": "BACnetServerPluginBase.GetFullMethodeNameString (METH)",
+  "text": "\nMETHOD GetFullMethodeNameString : STRING\nGets a descriptive name of a BACnetServerPlugin implementation method for debugging or logging purpose.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetFullMethodeNameString",
+          "Type": "STRING"
+        },
+        {
+          "Scope": "Input",
+          "Name": "sMethodName",
+          "Type": "STRING"
+        }
+      ]
+    }
+  ]
+}

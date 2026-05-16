@@ -1,0 +1,6 @@
+{
+  "requirement": "This code should implement a method named Motor_TurnOff that takes an input of type MotorI and outputs a modified MotorO. The method should set the Coil attribute of the MotorO instance to false, effectively turning off the motor represented by MotorO. The method signature should return a BOOL indicating the success or failure of the operation, although the provided implementation does not specify conditions under which it might fail.",
+  "provide_code": "METHOD TurnOff : BOOL\nVAR_INPUT\n\tMotorI:MotorI;\nEND_VAR\nVAR_OUTPUT\n\tMotorO:MotorO;\nEND_VAR",
+  "function_name": "Motor_TurnOff",
+  "requirement_cn": "该代码应实现一个名为 Motor_TurnOff 的方法，该方法接受一个类型为 MotorI 的输入，并输出修改后的 MotorO。该方法应将 MotorO 实例的 Coil 属性设置为 false，有效地关闭由 MotorO 表示的电机。方法签名应返回一个 BOOL，表示操作的成功或失败，尽管提供的实现没有指定可能失败的条件。"
+}

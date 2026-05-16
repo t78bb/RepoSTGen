@@ -1,0 +1,67 @@
+{
+  "library": "CommFB",
+  "title": "RALARM (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/CommFB/Current/CommFB/RALARM.html",
+  "page_title": "RALARM (FB)",
+  "text": "\nFUNCTION_BLOCK RALARM\nThe RALARM function block is used to receive alarm information of alarms from a PROFIBUS DP or a PROFINET IO subsystem.\nCode-Example: receive Alarm\nPROGRAM\nPLC_PRG\nVAR\nralarm\n:\nCommFB.RALARM\n;\nalarm\n:\nCommFB.AINFO_TYPE\n;\nconvertID\n:\nCommFB.ID_TO_ADDR\n;\naddr\n:\nCommFB.ADDR_TYPE\n;\nmessage\n:\nSTRING\n;\nEND_VAR\nralarm.EN\n:=\nTRUE\n;\nralarm.MODE\n:=\nCommFB.RALARM_MODE.ALL_ALARMS\n;\n// receive all alarms from all devices connected to the controller\nralarm.F_ID\n:=\nPN_Controller.MasterID\n;\n// Filter ID, if MODE = ALL_ALARMS use MasterID here, else the ID of a slot/subslot\nralarm\n(\nainfo\n:=\nalarm\n);\nWHILE\n(\nralarm.NEW\n)\nDO\nconvertID\n(\nEN\n:=\nTRUE\n,\nID\n:=\nralarm.ID\n,\nADDR\n:=\naddr\n);\nIF\n(\nconvertID.ENO\n)\nTHEN\nIF\n(\naddr.SYSTEM\n=\nCommFB.IO_SYSTEM_TYPE.PROFINET_IO\n)\nTHEN\nmessage\n:=\n'Station '\n;\nmessage\n:=\nconcat\n(\nmessage\n,\naddr.PN.D.STATIONNAME\n);\nmessage\n:=\nconcat\n(\nmessage\n,\n' (Slot = '\n);\nmessage\n:=\nconcat\n(\nmessage\n,\nTO_STRING\n(\naddr.PN.SLOT\n));\nmessage\n:=\nconcat\n(\nmessage\n,\n') sends an alarm !'\n);\n//Log Alarm to PLC-Logger\nCmpLog.LogAdd2\n(\nCmpLog.LogConstants.LOG_STD_LOGGER\n,\n555\n,\nCmpLog.LogClass.LOG_WARNING\n,\n0\n,\n0\n,\nmessage\n);\nEND_IF\nEND_IF\nralarm\n(\nainfo\n:=\nalarm\n);\n// exec-again\nEND_WHILE\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "EN",
+          "Type": "BOOL",
+          "Comment": "Enable"
+        },
+        [
+          "MODE",
+          "INT",
+          "Function specifier, see RALARM_MODE enum"
+        ],
+        [
+          "F_ID",
+          "DWORD",
+          "Slot / subslot identification to filter the alarms to receive.\n| If MODE = RALARM_MODE.ALL_ALARMS user MasterID"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "ENO",
+          "Type": "BOOL",
+          "Comment": "Function enabled, no error"
+        },
+        [
+          "NEW",
+          "BOOL",
+          "New alarm received"
+        ],
+        [
+          "STATUS",
+          "DWORD",
+          "Host Controller interface status"
+        ],
+        [
+          "ID",
+          "DWORD",
+          "Identifier of the slot / subslot the alarm is received from\n(see:AddressConcept)"
+        ],
+        [
+          "LEN",
+          "INT",
+          "Length of the received data record"
+        ],
+        {
+          "Scope": "Inout",
+          "Name": "AINFO",
+          "Type": "AINFO_TYPE",
+          "Comment": "Alarm data that has been received"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_BlockSearch (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/SoftMotion-Function-Blocks/BlockSearch/SMC_BlockSearch.html",
+  "page_title": "SMC_BlockSearch (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_BlockSearch\nThis function block shortens the path from start up to\nthe position that is stored in\nSMC_BlockSearchPos\n.\nFrom this position, the original path is put on.\nSMC_BlockSearch\nruns in the context of path preprocessing\nand is typically inserted right before\nSMC_CheckVelocities\n.\nNote\nSMC_BlockSearch\nrequires the position values from\nSMC_BlockSearchSavePos\n, which must have been executed before.\nNote\nThe element to restart with is identified by its sourceline number.\nSo, there will be ambiguities when dealing with subprograms\n(we will restart with the first element holding the correct sourceline number,\nwhich, in general, is part of the main program).\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "ePos",
+          "Type": "SMC_BlockSearchPos",
+          "Comment": "Position information. Requires connection to outputePosofSMC_BlockSearchSavePos"
+        },
+        {
+          "Scope": "Input",
+          "Name": "bExecute",
+          "Type": "BOOL",
+          "Comment": "Risign edge: Enables the function block"
+        },
+        [
+          "bAbort",
+          "BOOL",
+          "TRUE: Aborts the processing of the function block"
+        ],
+        [
+          "bAppend",
+          "BOOL",
+          "FALSE: Starts emptyingpoqDataOuton a rising edge\natbExecute"
+        ],
+        [
+          "poqDataIn",
+          "POINTER TOSMC_OUTQUEUE",
+          "Pointer to data of structureSMC_OUTQUEUEcontaining the\npath objects of typSMC_GEOINFO, that are interpolated."
+        ],
+        [
+          "bStartFromSavedPos",
+          "BOOL",
+          "TRUE: Enables the function block to shorten the path from start up to the position, that is stored inSMC_BlockSearchPos.FALSE: Disables the function block"
+        ],
+        [
+          "nSizeOutQueue",
+          "UDINT",
+          "Size in bytes of the data bufferpbyBufferOutQueue, in which the path elements are copied.\nIf the value is set, it may not be changed except after a reset."
+        ],
+        [
+          "pbyBufferOutQueue",
+          "POINTER TO ARRAY [0..0]\nOF SMC_GEOINFO",
+          "Pointer to the first byte of the storage area created for the path elements.\nIf the value is set, it may not be changed except after a reset."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bDone",
+          "Type": "BOOL",
+          "Comment": "TRUE: input date frompoqDataInhave been precessed fully.\nAfter that, the function block performs no action until a reset is detected.\nWhenbExecuteis set toFALSE,bDoneis reset toFALSE."
+        },
+        [
+          "bBusy",
+          "BOOL",
+          "TRUE: Function block in execution"
+        ],
+        [
+          "bError",
+          "BOOL",
+          "TRUE: Error has occurred"
+        ],
+        [
+          "wErrorID",
+          "SMC_ERROR",
+          "Error identificationPossible valuesSMC_BS_SAVEDPOS_NOT_REACHED: Stored position has not been found. Probably wrong path.SMC_BS_NO_POS_STORED:ePoscontains no stored position. Possible cause is thatSMC_BlockSearchSavePoswas not executed or in a wrong way."
+        ],
+        [
+          "poqDataOut",
+          "POINTER TOSMC_OUTQUEUE",
+          "Pointer to data of structureSMC_OUTQUEUEcontaining the\npath elements of typeSMC_GEOINFOthat have been\nprocessed"
+        ]
+      ]
+    }
+  ]
+}

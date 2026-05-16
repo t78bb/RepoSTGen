@@ -1,0 +1,67 @@
+{
+  "library": "SM3_Robotics",
+  "title": "MC_GroupReadActualVelocity (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/Diagnostics/MC_GroupReadActualVelocity.html",
+  "page_title": "MC_GroupReadActualVelocity (FB)",
+  "text": "Library Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nGetVersion (Function)\nIsLibReleased (Function)\nSM3_Robotics\nBasic types\nIDENT_IN_GROUP_REF_SM3 (Alias)\nMC_CIRC_PATHCHOICE (Enum)\nMC_COORD_REF (Struct)\nMC_EXECUTION_MODE (Enum)\nMC_TRANSITION_MODE (Enum)\nSMC_AXIS_GROUP_COMPATIBILITY_OPTIONS (Struct)\nSMC_AXIS_GROUP_CONTINUE_DATA (FunctionBlock)\nSMC_AXIS_GROUP_STATE (Enum)\nSMC_CIRC_MODE (Enum)\nSMC_DYN_LIMITS (Alias)\nSMC_IDynamicCS (Interface)\nSMC_ORIENTATION_MODE (Enum)\nSMC_POS_REF (Union)\nSMC_PTP_MOVEMENT_TYPE (Enum)\nSMC_READ_TOOL_MODE (Enum)\nPOUs\nAdditional\nSMC_AxisDistanceAxes (Enum)\nSMC_AxisDistanceSubMode (Enum)\nSMC_AxisDistanceTransition (FunctionBlock)\nSMC_AxisDistanceTransitionParam (Function)\nSMC_CornerDistance (FunctionBlock)\nSMC_CornerDistanceTransitionParam (Function)\nSMC_StartVelocity (FunctionBlock)\nSMC_StartVelocityAxes (Enum)\nSMC_StartVelocityTransitionParam (Function)\nSMC_StartupAxisGroup (FunctionBlock)\nAdministrative/Configuration\nAxisGroup\nComputation\nCoordinate systems\nDynamics\nKinematics\nTrigger\nAxisGroup\nAXIS_GROUP_REF_SM3 (FunctionBlock)\nHelpers\nMovements\nDiagnostics\nMC_GroupReadActualAcceleration (FunctionBlock)\nMC_GroupReadActualPosition (FunctionBlock)\nMC_GroupReadActualVelocity (FunctionBlock)\nMC_GroupReadConfiguration (FunctionBlock)\nMC_GroupReadError (FunctionBlock)\nMC_GroupReadStatus (FunctionBlock)\nMC_ReadCoordinateTransform (FunctionBlock)\nMC_ReadKinTransform (FunctionBlock)\nSMC_GroupAddOffset (FunctionBlock)\nSMC_GroupAdditionalAxesTargetPositions (FunctionBlock)\nSMC_GroupConvertPosition (FunctionBlock)\nSMC_GroupGetContinuePosition (FunctionBlock)\nSMC_GroupGetContinueToolOffset (FunctionBlock)\nSMC_GroupReadPathAcceleration (FunctionBlock)\nSMC_GroupReadPathDynamics (FunctionBlock)\nSMC_GroupReadPathVelocity (FunctionBlock)\nSMC_GroupReadPlanningStatistics (FunctionBlock)\nSMC_GroupReadPositionInMovement (FunctionBlock)\nSMC_GroupReadRemainingTrajectoryDuration (FunctionBlock)\nSMC_GroupReadSetAcceleration (FunctionBlock)\nSMC_GroupReadSetJerk (FunctionBlock)\nSMC_GroupReadSetPosition (FunctionBlock)\nSMC_GroupReadSetVelocity (FunctionBlock)\nSMC_GroupTargetPosition (FunctionBlock)\nSMC_ReadKinTransformForAxis (FunctionBlock)\nMovement\nAdditionalAxes\nGroupInterrupt\nMC_GroupContinue (FunctionBlock)\nMC_GroupHalt (FunctionBlock)\nMC_GroupInterrupt (FunctionBlock)\nMC_GroupStop (FunctionBlock)\nMC_MoveCircularAbsolute (FunctionBlock)\nMC_MoveCircularRelative (FunctionBlock)\nMC_MoveDirectAbsolute (FunctionBlock)\nMC_MoveDirectRelative (FunctionBlock)\nMC_MoveLinearAbsolute (FunctionBlock)\nMC_MoveLinearRelative (FunctionBlock)\nSMC_GroupEnableResumeAfterError (FunctionBlock)\nSMC_GroupJog (FunctionBlock)\nSMC_GroupJog2 (FunctionBlock)\nSMC_GroupUpdateContinueData (FunctionBlock)\nSMC_GroupWait (FunctionBlock)\nSMC_MoveAdditionalAxes (FunctionBlock)\ninternal\nDivers\nKernel_CP\nFile and Project Information\nLibrary Reference\n3SLicense\nLibrary Identification\nLibrary Properties\nCmpApp\nLibrary Identification\nLibrary Properties\nCmpIecTask\nLibrary Identification\nLibrary Properties\nCmpLog\nLibrary Identification\nLibrary Properties\nFloatingPointUtils\nLibrary Identification\nLibrary Properties\nSM3_Basic\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nSM3_CPKernelDefaults\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nSM3_CommonPublic\nLibrary Identification\nLibrary Properties\nSM3_Dynamics\nLibrary Identification\nLibrary Properties\nSM3_Error\nLibrary Identification\nLibrary Properties\nSM3_RBase\nLibrary Identification\nLibrary Properties\nSM3_RCP\nLibrary Identification\nLibrary Properties\nSM3_RError\nLibrary Identification\nLibrary Properties\nSM3_Ramps\nLibrary Identification\nLibrary Properties\nSM3_Shared\nLibrary Identification\nLibrary Properties\nSM3_StringUtils\nLibrary Identification\nLibrary Properties\nSM3_TrajectoryGeneration\nLibrary Identification\nLibrary Properties\nSM3_Transformation\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysTarget\nLibrary Identification\nLibrary Properties\nSysTime\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nSM3_Robotics\nDocs\n»\nSM3_Robotics\n»\nPOUs\n»\nDiagnostics\n»\nMC_GroupReadActualVelocity (FB)\nMC_GroupReadActualVelocity (FB)\nÂ¶\nFUNCTION_BLOCK MC_GroupReadActualVelocity\nThis function block returns the current velocity of an axis group\nin the selected coordinate system.\nThis is an administrative FB, since no movement is generated.\nInOut:\nScope\nName\nType\nComment\nInout\nAxisGroup\nAXIS_GROUP_REF_SM3\nReference to a group of axes\nInput\nEnable\nBOOL\nGet the velocity of the axis group\nin the selected coordinate system while enabled\nCoordSystem\nSMC_COORD_SYSTEM\nApplicable coordinate system\nOutput\nValid\nBOOL\nTRUE\nif valid outputs are available\nBusy\nBOOL\nThe FB is not finished\nError\nBOOL\nSignals that an error has occurred within the function block\nErrorID\nSMC_ERROR\nError identification\nVelocity\nSMC_POS_REF\nCurrent velocity of the group.  If a cartesian coordinate system is\nselected,\nVelocity.c\ncontains the cartesian velocity:\n(X,Y,Z) is the velocity vector in u/s, (A,B,C) is the angular velocity\naround the x, y, z axis in Â°/s.\nAdditionalAxesVelocities\nSMC_ADDITIONAL_AXES_VALUES_ARRAY\nCurrent velocities of the groupâs additional axes.",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "AxisGroup",
+          "Type": "AXIS_GROUP_REF_SM3",
+          "Comment": "Reference to a group of axes"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Enable",
+          "Type": "BOOL",
+          "Comment": "Get the velocity of the axis group\nin the selected coordinate system while enabled"
+        },
+        [
+          "CoordSystem",
+          "SMC_COORD_SYSTEM",
+          "Applicable coordinate system"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Valid",
+          "Type": "BOOL",
+          "Comment": "TRUEif valid outputs are available"
+        },
+        [
+          "Busy",
+          "BOOL",
+          "The FB is not finished"
+        ],
+        [
+          "Error",
+          "BOOL",
+          "Signals that an error has occurred within the function block"
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ],
+        [
+          "Velocity",
+          "SMC_POS_REF",
+          "Current velocity of the group.  If a cartesian coordinate system is\nselected,Velocity.ccontains the cartesian velocity:\n(X,Y,Z) is the velocity vector in u/s, (A,B,C) is the angular velocity\naround the x, y, z axis in Â°/s."
+        ],
+        [
+          "AdditionalAxesVelocities",
+          "SMC_ADDITIONAL_AXES_VALUES_ARRAY",
+          "Current velocities of the groupâs additional axes."
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "library": "BACnetDefaultImpl",
+  "title": "GetRecordsByPosition (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnetDefaultImpl/Current/BACnetDefaultImpl/Function-Blocks/LoggingObjects/Internal/pou-LogObjectsBase/GetRecordsByPosition.html",
+  "page_title": "LogObjectsBase.GetRecordsByPosition (METH)",
+  "text": "\nMETHOD PROTECTED GetRecordsByPosition : RTS_IEC_RESULT\nAllocates readRangeResult.itemData.buffer.pBuffer needs to be deallocated using FreeReadRangeResult().\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetRecordsByPosition",
+          "Type": "RTS_IEC_RESULT"
+        },
+        {
+          "Scope": "Input",
+          "Name": "instNumber",
+          "Type": "DWORD"
+        },
+        [
+          "startPos",
+          "CmpBACnet.IEC_BACNET_UNSIGNED"
+        ],
+        [
+          "numRecords",
+          "CmpBACnet.IEC_BACNET_SIGNED"
+        ],
+        {
+          "Scope": "Inout",
+          "Name": "readRangeResult",
+          "Type": "CmpBACnet.IEC_BACNET_READ_RANGE_RESULT"
+        }
+      ]
+    }
+  ]
+}

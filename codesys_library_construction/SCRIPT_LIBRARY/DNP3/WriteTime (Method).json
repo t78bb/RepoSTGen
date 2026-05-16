@@ -1,0 +1,23 @@
+{
+  "library": "DNP3",
+  "title": "WriteTime (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/pou-Master/Commands/WriteTime.html",
+  "page_title": "Master.WriteTime (METH)",
+  "text": "\nMETHOD WriteTime :\nError\nIssue an write time request.\nThis sets the time on the remote device, this request is typically\nonly used for serial channels.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "WriteTime",
+          "Type": "Error"
+        }
+      ]
+    }
+  ]
+}

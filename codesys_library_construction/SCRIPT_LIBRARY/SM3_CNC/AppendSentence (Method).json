@@ -1,0 +1,28 @@
+{
+  "library": "SM3_CNC",
+  "title": "AppendSentence (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/GSentence/pou-SMC_GSentenceQueue/AppendSentence.html",
+  "page_title": "SMC_GSentenceQueue.AppendSentence (METH)",
+  "text": "\nMETHOD AppendSentence : BOOL\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "AppendSentence",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Inout Const",
+          "Name": "gSentence",
+          "Type": "SMC_GSentence"
+        }
+      ]
+    }
+  ]
+}

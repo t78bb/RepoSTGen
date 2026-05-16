@@ -1,0 +1,5 @@
+{
+  "requirement": "This code is intended to implement a gear coupling and decoupling control system for two axes with configurable parameters such as gear ratio, acceleration, and deceleration, while monitoring the coupling status and handling errors.",
+  "provide_code": "FUNCTION_BLOCK FB_GearCoupling\nVAR_INPUT\n\tMaster\t\t\t\t:\tSM3_Basic.AXIS_REF_SM3;\t\t//主轴引用\n\tSlave\t\t\t\t:\tSM3_Basic.AXIS_REF_SM3;\t\t//从轴引用\n\tbCouple\t\t\t\t:\tBOOL;\t\t\t//TRUE=耦合，FALSE=解耦\n\tnRatioNumerator\t\t:\tINT := 1;\t\t//传动比分子\n\tnRatioDenominator\t:\tINT := 1;\t\t//传动比分母\n\trAcceleration\t\t:\tREAL := 10000.0;//加速度\n\trDeceleration\t\t:\tREAL := 10000.0;//减速度\nEND_VAR\nVAR_OUTPUT\n\tbInGear\t\t\t\t:\tBOOL;\t\t\t//耦合状态\n\tbCouplingDone\t\t:\tBOOL;\t\t\t//耦合完成\n\tbDecouplingDone\t\t:\tBOOL;\t\t\t//解耦完成\n\tbError\t\t\t\t:\tBOOL;\t\t\t//错误标志\n\tnErrorID\t\t\t:\tDWORD;\t\t\t//错误代码\nEND_VAR",
+  "function_name": "FB_GearCoupling"
+}

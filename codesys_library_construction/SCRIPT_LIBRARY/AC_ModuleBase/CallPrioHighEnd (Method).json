@@ -1,0 +1,23 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "CallPrioHighEnd (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_Module/pou-Module/StandardCalls/CallPrioHighEnd.html",
+  "page_title": "Module.CallPrioHighEnd (METH)",
+  "text": "\nMETHOD CallPrioHighEnd : BOOL\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "CallPrioHighEnd",
+          "Type": "BOOL"
+        }
+      ]
+    }
+  ]
+}

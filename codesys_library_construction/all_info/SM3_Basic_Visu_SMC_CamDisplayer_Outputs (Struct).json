@@ -1,0 +1,33 @@
+{
+  "library": "SM3_Basic_Visu",
+  "title": "SMC_CamDisplayer_Outputs (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic_Visu/Current/SM3_Basic_Visu/SMC_CamDisplayer_Outputs.html",
+  "page_title": "SMC_CamDisplayer_Outputs (STRUCT)",
+  "text": "GlobalTextList (GlobalTextList)\nSM3_Basic_Visu\nSMC_Basic_Visu_LibParams (ParamList)\nSMC_Basic_Visu_TL_CamDisplayer (TextList)\nSMC_Basic_Visu_TL_CamSegmentType (TextList)\nSMC_CamDisplayer_Dynamics (Struct)\nSMC_CamDisplayer_Outputs (Struct)\nSMC_CamSegmentType_HasAccBound (Function)\nSMC_CamSegmentType_HasJerkBound (Function)\nSMC_CamSegmentType_HasLambdaParam (Function)\nSMC_CamSegmentType_HasVelBound (Function)\nFile and Project Information\nLibrary Reference\nSM3_Basic\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nSM3_CamBuilder\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nSM3_Error\nLibrary Identification\nLibrary Properties\nSM3_Math\nLibrary Identification\nLibrary Properties\nSM3_RBase\nLibrary Identification\nLibrary Properties\nSM3_Ramps\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nVisuDialogs\nLibrary Identification\nLibrary Properties\nVisuElem3DPath\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElemCamDisplayer\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElemMeter\nLibrary Identification\nLibrary Properties\nVisuElemTextEditor\nLibrary Identification\nLibrary Properties\nVisuElemTrace\nLibrary Identification\nLibrary Properties\nVisuElemXYChart\nLibrary Identification\nLibrary Properties\nVisuElems\nLibrary Identification\nLibrary Properties\nVisuElemsAlarm\nLibrary Identification\nLibrary Properties\nVisuElemsDateTime\nLibrary Identification\nLibrary Properties\nVisuElemsSpecialControls\nLibrary Identification\nLibrary Properties\nVisuElemsWinControls\nLibrary Identification\nLibrary Properties\nVisuInputs\nLibrary Identification\nLibrary Properties\nVisuNativeControl\nLibrary Identification\nLibrary Properties\nSM3_Basic_Visu\nDocs\n»\nSM3_Basic_Visu\n»\nSMC_CamDisplayer_Outputs (STRUCT)\nSMC_CamDisplayer_Outputs (STRUCT)\nÂ¶\nTYPE SMC_CamDisplayer_Outputs : STRUCT\nData structure containing all outputs of the\n|SMC_Visu_CamDisplayer|\n.\nInOut:\nName\nType\nComment\ncursor\nSMC_CamDisplayer_Dynamics\nCam dynamics at the current cursor position.\nsegmentLeft\nSMC_CamDisplayer_Dynamics\nCam dynamics at the left bound of the current segment.\nsegmentRight\nSMC_CamDisplayer_Dynamics\nCam dynamics at the right bound of the current segment.",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "cursor",
+          "Type": "SMC_CamDisplayer_Dynamics",
+          "Comment": "Cam dynamics at the current cursor position."
+        },
+        {
+          "Name": "segmentLeft",
+          "Type": "SMC_CamDisplayer_Dynamics",
+          "Comment": "Cam dynamics at the left bound of the current segment."
+        },
+        {
+          "Name": "segmentRight",
+          "Type": "SMC_CamDisplayer_Dynamics",
+          "Comment": "Cam dynamics at the right bound of the current segment."
+        }
+      ]
+    }
+  ]
+}

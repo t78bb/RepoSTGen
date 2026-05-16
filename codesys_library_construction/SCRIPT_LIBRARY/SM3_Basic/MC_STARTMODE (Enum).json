@@ -1,0 +1,41 @@
+{
+  "library": "SM3_Basic",
+  "title": "MC_STARTMODE (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/DataTypes/CAM/MC_STARTMODE.html",
+  "page_title": "MC_STARTMODE (ENUM)",
+  "text": "\nTYPE MC_STARTMODE :\nThe different start modes for\nMC_CamIn\n.  See\nthe explanations there for details.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "absolute",
+          "Comment": "Immediate start to absolute slave position from cam table."
+        },
+        {
+          "Name": "relative",
+          "Comment": "Immediate start, relative to the current slave position."
+        },
+        {
+          "Name": "ramp_in",
+          "Comment": "Ramp-in with a trajectory."
+        },
+        {
+          "Name": "ramp_in_pos",
+          "Comment": "Ramp-in with a trajectory, in positive direction."
+        },
+        {
+          "Name": "ramp_in_neg",
+          "Comment": "Ramp-in with a trajectory, in negative direction."
+        },
+        {
+          "Name": "ramp_in_dist",
+          "Comment": "Distance-based ramping-in."
+        }
+      ]
+    }
+  ]
+}

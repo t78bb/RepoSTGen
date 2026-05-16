@@ -1,0 +1,23 @@
+{
+  "library": "SM3_Robotics",
+  "title": "IsLibReleased (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/Library-Information/IsLibReleased.html",
+  "page_title": "IsLibReleased (FUN)",
+  "text": "\nFUNCTION IsLibReleased : BOOL\nThis function has been automatically generated from the project information.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "IsLibReleased",
+          "Type": "BOOL"
+        }
+      ]
+    }
+  ]
+}

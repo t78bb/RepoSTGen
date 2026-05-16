@@ -1,0 +1,38 @@
+{
+  "library": "CommFB",
+  "title": "RALARM_MODE (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/CommFB/Current/CommFB/RALARM_MODE.html",
+  "page_title": "RALARM_MODE (ENUM)",
+  "text": "\nTYPE RALARM_MODE :\nFilter scope of\nRALARM\n.F_ID input.\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "ALL_ALARMS",
+          "Initial": "1",
+          "Comment": "If the Host Controller interface has received an alarm, all\nfunction block outputs are updated. The alarm is\nacknowledged."
+        },
+        {
+          "Name": "ALARM_BY_ID",
+          "Initial": "2",
+          "Comment": "Receive an alarm for the slot or subslot the identification\nof which is given in F_ID input, all function block outputs\nare updated. The alarm is acknowledged"
+        },
+        {
+          "Name": "ALARM_BY_SLOT",
+          "Initial": "3",
+          "Comment": "Receive an alarm for the slot the identification of which is\ngiven in F_ID input AND for all of itâs subslots"
+        },
+        {
+          "Name": "ALARM_BY_DEVICE",
+          "Initial": "4",
+          "Comment": "Receive an alarm for the device the identification of which\nis given in F_ID input AND for all of itâs slots and\nsubslots"
+        }
+      ]
+    }
+  ]
+}

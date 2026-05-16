@@ -1,0 +1,65 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_SetCustomRampType (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/AdministrativeConfiguration/SMC_SetCustomRampType.html",
+  "page_title": "SMC_SetCustomRampType (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_SetCustomRampType\nSets the ramp type of an axis to a new value.\nIn contrast to\nSMC_SetRampType\n, user-defined ramptypes (implementing\nSMC_TG_IRAMPTYPE\n) are possible.\nUsually,\niRampType1\nequals\niRampType2\n.\nCan only be used when the axis is in state\nstandstill\nor\npower_off\n.\nThe FB executes synchronously on the rising edge of\nbExecute\n.\nAfter the call, either\nbDone\nor\nbError\nare set.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "bExecute",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": ""
+        },
+        [
+          "iRampType1",
+          "SMC_TG_IRAMPTYPE",
+          "",
+          "The new ramp type for the first ramp of the trajectories,\nusually the acceleration-phase."
+        ],
+        [
+          "iRampType2",
+          "SMC_TG_IRAMPTYPE",
+          "",
+          "The new ramp type for the second ramp of the trajectories,\nusually the deceleration phase."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bDone",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": ""
+        },
+        [
+          "bError",
+          "BOOL",
+          "",
+          ""
+        ],
+        [
+          "eErrorID",
+          "SMC_ERROR",
+          "SMC_NO_ERROR",
+          ""
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "AddMessage (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_RMP_ReliableMessageProtocol/pou-RMPMessageBuffer/AddMessage.html",
+  "page_title": "RMPMessageBuffer.AddMessage (METH)",
+  "text": "\nMETHOD FINAL AddMessage : UINT\nQueues message and returns the handle of this message or 16#FFFF, if the buffer was full\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "AddMessage",
+          "Type": "UINT",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "udiSenderID",
+          "Type": "UDINT",
+          "Comment": "The sender ID of the message"
+        },
+        [
+          "udiReceiverID",
+          "UDINT",
+          "The receiver ID of the message"
+        ],
+        [
+          "tValidity",
+          "TIME",
+          "For send lists: tExpirationTime is the time distance, how long this message shall be kept in the receive queue\nfor receive lists: tExpirationTime is the point in time, when it hat to be deleted if not acknowledged"
+        ],
+        [
+          "pmdData",
+          "POINTER TO ARRAY [0..63]\nOF BYTE",
+          "Data"
+        ]
+      ]
+    }
+  ]
+}

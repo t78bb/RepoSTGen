@@ -1,0 +1,29 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC3_BrakeSetState (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/DataTypes/AdministrativeConfiguration/SMC3_BrakeSetState.html",
+  "page_title": "SMC3_BrakeSetState (ENUM)",
+  "text": "\nTYPE SMC3_BrakeSetState :\nThe function block\nSMC3_BrakeControl\nuses this values to determine how the drive sets the mechanical brake.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "SMC_BRAKE_AUTO",
+          "Comment": "The opening and closing of the brake is handled by the drive\nitself."
+        },
+        {
+          "Name": "SMC_BRAKE_OPEN",
+          "Comment": "The brake is open."
+        },
+        {
+          "Name": "SMC_BRAKE_CLOSE",
+          "Comment": "The brake is closed."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "library": "PLCopen Safety FBs",
+  "title": "FBS_MODESEL (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/PLCopen Safety FBs/Current/PLCopenSafetyFBs/Enums/FBS_MODESEL.html",
+  "page_title": "FBS_MODESEL (ENUM)",
+  "text": "\nTYPE FBS_MODESEL :\nDefinition of SF_ModeSelector function block states and its diagnostic values.\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "IDLE",
+          "Initial": "16#0",
+          "Comment": "The function block is not active (initial state)."
+        },
+        {
+          "Name": "MODE_SELECTED",
+          "Initial": "16#8000",
+          "Comment": "Valid mode selection, but NOT yet locked."
+        },
+        {
+          "Name": "MODE_LOCKED",
+          "Initial": "16#8010",
+          "Comment": "Valid mode selection is locked."
+        },
+        {
+          "Name": "MODE_CHANGED",
+          "Initial": "16#8802",
+          "Comment": "State after activation or when S_ModeX has changed (unless\nlocked) or after Reset of an error state."
+        },
+        {
+          "Name": "ERR_SHORTCIRCUIT",
+          "Initial": "16#C010",
+          "Comment": "The FB detected that two or more S_ModeX are TRUE, e.g.,\nshort-circuit of cables."
+        },
+        {
+          "Name": "ERR_SHORTCIRCUIT_RESREQ",
+          "Initial": "16#C410",
+          "Comment": "No more short short-circuit of cables (Only one S_ModeX OR\nno S_ModeX), the error can be reset"
+        },
+        {
+          "Name": "ERR_OPENCIRCUIT",
+          "Initial": "16#C020",
+          "Comment": "The FB detected that all S_ModeX are FALSE: The period\nfollowing a falling S_ModeX trigger exceeds ModeMonitorTime,\ne.g. open-circuit of cables."
+        },
+        {
+          "Name": "ERR_OPENCIRCUIT_RESREQ",
+          "Initial": "16#C420",
+          "Comment": "No more One S_ModeX is TRUE, the error can be reset"
+        },
+        {
+          "Name": "ERR_RESET_1",
+          "Initial": "16#C011",
+          "Comment": "Static Reset signal detected in state C410."
+        },
+        {
+          "Name": "ERR_RESET_2",
+          "Initial": "16#C021",
+          "Comment": "Static Reset signal detected in state C420."
+        }
+      ]
+    }
+  ]
+}

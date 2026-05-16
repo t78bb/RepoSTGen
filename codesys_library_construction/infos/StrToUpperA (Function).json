@@ -1,0 +1,25 @@
+{
+  "library": "StringUtils",
+  "title": "StrToUpperA (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/StringUtils/Current/Public-Parts/Ansi/StrToUpperA.html",
+  "page_title": "StrToUpperA (FUN)",
+  "text": "\nFUNCTION StrToUpperA\nConverts all letters to upper case.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "pString",
+          "Type": "CharBufferPtr",
+          "Comment": "Pointer to the string."
+        }
+      ]
+    }
+  ]
+}

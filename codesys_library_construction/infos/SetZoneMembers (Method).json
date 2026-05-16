@@ -1,0 +1,36 @@
+{
+  "library": "BACnet",
+  "title": "SetZoneMembers (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/LifeSafetyZone/pou-BACnetLifeSafetyZone/SetZoneMembers.html",
+  "page_title": "BACnetLifeSafetyZone.SetZoneMembers (METH)",
+  "text": "\nMETHOD SetZoneMembers : CmpBACnet.IEC_BACNET_STATUS\nSets the Zone_Members of this BACnet object.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetZoneMembers",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "uiListCount",
+          "Type": "CmpBACnet.IEC_BACNET_ELEMENT_COUNT",
+          "Comment": "The length of the list in the following pointer"
+        },
+        [
+          "pList",
+          "POINTER TO\nCmpBACnet.IEC_BACNET_DEV_OBJ_REFERENCE",
+          "The list data containing elements according to the given\ncount."
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "library": "Util",
+  "title": "TextBlockSize (ParamList)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/Constants/TextBlockSize.html",
+  "page_title": "TextBlockSize (PARAMS)",
+  "text": "\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Constant",
+          "Name": "iBlockSize",
+          "Type": "INT",
+          "Initial": "22800",
+          "Comment": "Block size of the string to be encoded; must be divisible\nthrough 3"
+        }
+      ]
+    }
+  ]
+}

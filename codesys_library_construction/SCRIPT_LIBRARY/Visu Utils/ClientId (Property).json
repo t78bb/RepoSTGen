@@ -1,0 +1,8 @@
+{
+  "library": "Visu Utils",
+  "title": "ClientId (Property)",
+  "url": "https://content.helpme-codesys.com/en/libs/Visu Utils/Current/VisuUtils/VisuActionUtilities/Interfaces/pou-IVisualizationClient/ClientId.html",
+  "page_title": "IVisualizationClient.ClientId (PROP)",
+  "text": "\nPROPERTY ClientId : INT\nThe global client ID, which is set, if the according setting in the visumanager is active.\nSee\nVisuElemBase.VisuStructGlobalClientData.GlobalClientID",
+  "tables": []
+}

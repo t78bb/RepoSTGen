@@ -1,0 +1,31 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "GetMessage (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_RMP_ReliableMessageProtocol/pou-RMPMessageBuffer/GetMessage.html",
+  "page_title": "RMPMessageBuffer.GetMessage (METH)",
+  "text": "\nMETHOD FINAL GetMessage : POINTER TO RMPBufferedMessage\nReturns pointer to message number uiIndex [0..] of buffer\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetMessage",
+          "Type": "POINTER TORMPBufferedMessage",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "uiIndex",
+          "Type": "UINT",
+          "Comment": "The index of the message to get from the buffer"
+        }
+      ]
+    }
+  ]
+}

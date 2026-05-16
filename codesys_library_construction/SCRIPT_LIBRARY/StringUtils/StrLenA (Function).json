@@ -1,0 +1,31 @@
+{
+  "library": "StringUtils",
+  "title": "StrLenA (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/StringUtils/Current/Public-Parts/Ansi/StrLenA.html",
+  "page_title": "StrLenA (FUN)",
+  "text": "\nFUNCTION StrLenA : DINT\nThis function determines the length of a string by searching for a terminating\nzero character. The function will do its work either with native\nIEC-Strings or with strings coming from external functions. It will return -1 if\nthe given pointer to String is equal NULL\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "StrLenA",
+          "Type": "DINT",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "pstData",
+          "Type": "CharBufferPtr",
+          "Comment": "simply a pointer to byte"
+        }
+      ]
+    }
+  ]
+}

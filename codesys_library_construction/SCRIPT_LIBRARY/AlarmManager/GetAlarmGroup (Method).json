@@ -1,0 +1,23 @@
+{
+  "library": "AlarmManager",
+  "title": "GetAlarmGroup (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/pou-IAlarm/GetAlarmGroup.html",
+  "page_title": "IAlarm.GetAlarmGroup (METH)",
+  "text": "\nMETHOD GetAlarmGroup :\nIAlarmGroup\nReturns the alarm group the alarm belongs to. The return value might be NULL if\nthe alarm from the alarm storage contains an invalid (i.e. no longer exisiting)\nalarm group id.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetAlarmGroup",
+          "Type": "IAlarmGroup"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "library": "BACnetDefaultImpl",
+  "title": "Close (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnetDefaultImpl/Current/BACnetDefaultImpl/Functions/pou-Directory/Close.html",
+  "page_title": "Directory.Close (METH)",
+  "text": "\nMETHOD Close : RTS_IEC_RESULT\nClose the dir.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "Close",
+          "Type": "RTS_IEC_RESULT"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+query-id,corpus-id,score
+healthydata/0,healthydata_FUN_fileSave_close.st_0-17,1
+healthydata/1,healthydata_FUN_fileSave_createDir.st_0-19,1
+healthydata/2,healthydata_FUN_fileSave_new.st_0-25,1
+healthydata/2,healthydata_FUN_fileSave_new.st_0-30,1
+healthydata/2,healthydata_FUN_fileSave_new.st_0-35,1
+healthydata/2,healthydata_FUN_fileSave_new.st_0-40,1
+healthydata/2,healthydata_FUN_fileSave_new.st_0-45,1
+healthydata/2,healthydata_FUN_fileSave_new.st_0-50,1
+healthydata/2,healthydata_FUN_fileSave_new.st_5-55,1
+healthydata/2,healthydata_FUN_fileSave_new.st_10-60,1
+healthydata/2,healthydata_FUN_fileSave_new.st_15-64,1
+healthydata/3,healthydata_FUN_fileSave_write.st_0-25,1
+healthydata/3,healthydata_FUN_fileSave_write.st_0-30,1
+healthydata/3,healthydata_FUN_fileSave_write.st_0-35,1
+healthydata/3,healthydata_FUN_fileSave_write.st_0-39,1

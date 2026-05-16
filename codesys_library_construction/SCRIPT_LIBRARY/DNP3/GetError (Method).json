@@ -1,0 +1,23 @@
+{
+  "library": "DNP3",
+  "title": "GetError (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/PointObserver/pou-PointObserver/GetError.html",
+  "page_title": "PointObserver.GetError (METH)",
+  "text": "\nMETHOD GetError : BOOL\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetError",
+          "Type": "BOOL"
+        }
+      ]
+    }
+  ]
+}

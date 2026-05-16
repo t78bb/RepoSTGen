@@ -1,0 +1,91 @@
+{
+  "library": "CmpBACnet",
+  "title": "BACnetRegisterClientDataPoint (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/CmpBACnet/Current/BACnetClientAPI/advanced/BACnetRegisterClientDataPoint.html",
+  "page_title": "BACnetRegisterClientDataPoint (FUN)",
+  "text": "\nFUNCTION BACnetRegisterClientDataPoint :\nIEC_BACNET_STATUS\nRegisters an device object property reference for data acquisation.\nThis is the main function of the advanced BACnet client API. A user application can\nregister device object property references to local and remote BACnet devices to\nget their property values on an easy way. This function will do most of the work,\nnormally a client application has to manage, just in one call. It checks periodical\nfor the presence and online state for devices and checks for integrity of the values\nNote 1: Local devices OR objects are those which have been created BY calls TO\n|BACnetConstructDevice|\nand\nBACnetConstructObject\nand are objects in the\nstack APIâs own object database.\nNote 2: If different customer register for the same reference but with different modes\nthe following rules apply here: If one customer wants to subscribe the\nother polls the subscriber winns. If both want polling the shorter interval\nwinns. If one customer wants clock aligned polling and the other subscribes\nit will be done both: subscribed AND polled clock aligned.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "BACnetRegisterClientDataPoint",
+          "Type": "IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "hCustomer",
+          "Type": "IEC_BACNET_HANDLE",
+          "Comment": "An handle to an created advanced BACnet client customer created byBACnetOpenClientCustomer."
+        },
+        [
+          "devId",
+          "IEC_BACNET_INST_NUMBER",
+          "The device instance number from the remote or local device from which the value shall\nbe acquired."
+        ],
+        [
+          "pObjId",
+          "POINTER TOIEC_BACNET_OBJECT_ID",
+          "A pointer to the object identifier from the remote or local object from which the\nvalue shall be acquired."
+        ],
+        [
+          "propId",
+          "IEC_BACNET_PROPERTY_ID",
+          "The property identifier from which the value shall be\nacquired."
+        ],
+        [
+          "index",
+          "IEC_BACNET_ARRAY_INDEX",
+          "The property array index from which the value shall be acquired. If the property is\nnot an array the value shall be ::BACNET_VOID_INDEX. If the property is an array\nand the whole array should be acquired the value ::BACNET_ENTIRE_ARRAY shall be\nused here."
+        ],
+        [
+          "bSubscribe",
+          "IEC_BACNET_BOOLEAN",
+          "If set to True the value acquisation will be done by subscribing for the change\nof value service if the device supports this service. If the device doesnât support\nthis service and parameter bPoll is set to False the user application will\nget notified with an error in the BACNET_CLIENT_VALUE_CB callback."
+        ],
+        [
+          "resubscribe",
+          "IEC_BACNET_UNSIGNED",
+          "The resubscribe time in seconds after that the subscrition to the change of value\nservice will be renewed. For more information look at the ::BACNET_SUBSCRIBE_COV_INFO."
+        ],
+        [
+          "bPoll",
+          "IEC_BACNET_BOOLEAN",
+          "If set to True the value acquisation will be done by periodical reading the property\nvalue from the device. If both parameters bSubscribe AND bPoll are set to True the\nsubscrition will be prefered. But if the device doesnât support subscriptions it\nwill be polled as a fallback. If multiple references from the same device need to\nbe polled in the same interval and the device supports the ReadPropertyMultiple\nservice, this service will be used to acquire the values."
+        ],
+        [
+          "pollinterval",
+          "IEC_BACNET_UNSIGNED",
+          "The poll interval defined in seconds in which periodically the value is read from\nthe device. If the nSubscribeMode parameter is set to ::BACNET_SUBSCRIBE_POLL_CLOCKALIGNED\nthe smallest interval will be 60 seconds."
+        ],
+        [
+          "pollClockAlignedIntervalOffset",
+          "IEC_BACNET_UNSIGNED",
+          "The offset which is added to the clock aligned interval at which the acquisation\nwill take place. Example: A value is needed 10 minutes after every full hour so\npollinterval will be set to 3600 seconds and pollClockAlignedIntervalOffset will\nbe set to 600 seconds."
+        ],
+        [
+          "nSubscribeMode",
+          "IEC_BACNET_CLIENT_SUBSCRIBE_MODE",
+          "This defines how the data is acquired."
+        ],
+        [
+          "pICallback",
+          "CmpEventMgr.ICmpEventCallback",
+          "A pointer to the event-callback interface which gets called\non value notification."
+        ],
+        [
+          "pUserArg",
+          "POINTER TO BYTE",
+          "A pointer to data from the user application which is transparent for the API.\nThis pointer will not be modified by the BACnet API. This pointer and the pUserFct\npointer is associated with the given device instance, object identifier, property\nidentifier and property array index group. So for every different combination of\nthose parameters these pointers are stored. This pointer may be NULL."
+        ]
+      ]
+    }
+  ]
+}

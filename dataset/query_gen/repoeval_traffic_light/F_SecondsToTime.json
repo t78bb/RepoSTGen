@@ -1,0 +1,6 @@
+{
+  "requirement": "This code should implement a conversion from seconds to the TIME data type in CODESYS. The function, named F_SecondsToTime, takes an input parameter dwSeconds of type DWORD, representing the number of seconds. It should convert this input by multiplying it by 1000 to convert seconds into milliseconds, and then use the DWORD_TO_TIME function to convert these milliseconds into the TIME data type. The function returns this TIME value. There should be no additional error handling for boundary values or exceptional cases, as the conversion assumes all input values are valid and within the range that DWORD can represent.",
+  "provide_code": "FUNCTION F_SecondsToTime : TIME\nVAR_INPUT\n\tdwSeconds\t:\tDWORD;\t\t//输入的秒数\nEND_VAR",
+  "function_name": "F_SecondsToTime",
+  "requirement_cn": "这段代码应实现在CODESYS中将秒数转换为TIME数据类型的功能。函数名为F_SecondsToTime，接受一个名为dwSeconds的DWORD类型输入参数，代表秒数。应通过将输入秒数乘以1000转换为毫秒，然后使用DWORD_TO_TIME函数将这些毫秒转换为TIME数据类型。函数返回这个TIME值。不需要为边界值或异常情况进行额外的错误处理，因为转换假设所有输入值都是有效的，并且在DWORD可以表示的范围内。"
+}

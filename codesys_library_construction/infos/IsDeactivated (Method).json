@@ -1,0 +1,23 @@
+{
+  "library": "AlarmManager",
+  "title": "IsDeactivated (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/pou-IAlarm/IsDeactivated.html",
+  "page_title": "IAlarm.IsDeactivated (METH)",
+  "text": "\nMETHOD IsDeactivated : BOOL\nIndicates, whether the alarm is currently deactivated (TRUE) or not (FALSE)\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "IsDeactivated",
+          "Type": "BOOL"
+        }
+      ]
+    }
+  ]
+}

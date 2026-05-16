@@ -1,0 +1,70 @@
+{
+  "library": "SM3_CNC_Visu",
+  "title": "SMC_PathCopier (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC_Visu/Current/SM3_CNC_VISU/SMC_PathCopier.html",
+  "page_title": "SMC_PathCopier (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_PathCopier\nThe function block\nSMC_PathCopier\nis designed to visualize a queue\ncurrently used by the interpolator.\nIt reproduces the content of the input queue\npoqCNCPath\ninto its\noutput path\nvs3dt\n.\nIt processes all elements of the queue in the given order.\nIn case of a linear element it adds only the start and end point to the path\nvs3dt\n.\nIn case of curved elements it interpolates this element and adds n points to\nvs3dt\n.\nn depends on the length of the object and the input\ndPrecision\n.\nProcessing is continued until the end of the queue is reached or until the\ntrack\nvs3dt\nis full and no more points can be added to.\nIn the latter case, the function block waits until the first element has\nbeen deleted from the queue and hence the corresponding points can be deleted\nin\nvs3dt\n, too.\nThe function block is busy until the queue gets empty.\nIt is typically used to display the next elements that are to be interpolated.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "bExecute",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "A rising edge starts the function block."
+        },
+        [
+          "bAbort",
+          "BOOL",
+          "",
+          "TRUEaborts the function block."
+        ],
+        [
+          "udiNumberOfPointsInArray",
+          "UDINT",
+          "0",
+          "Number of points which are declared inpBufferof the\nreferred array."
+        ],
+        [
+          "pBuffer",
+          "POINTER TO\nVisuStruct3DPathPoint",
+          "",
+          "Pointer to the allocated array of points."
+        ],
+        [
+          "poqCNCPath",
+          "POINTER TO SMC_OUTQUEUE",
+          "",
+          "Pointer toSMC_OutQueuewhich describes the path."
+        ],
+        [
+          "dPrecision",
+          "LREAL",
+          "1",
+          "Defines the precision of the track, meaning how many points should be computed for\nan element in the queue. A value of 1 indicates that a point should be calculated\nevery 1 unit of the path. A value of 2 indicates that two points should be calculated\nfor every 1 unit of the path."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bBusy",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUE: FB is active"
+        },
+        [
+          "vs3dt",
+          "VisuStruct3DTrack",
+          "",
+          "Track output. To be setup as input of the visu elementPath3D."
+        ]
+      ]
+    }
+  ]
+}

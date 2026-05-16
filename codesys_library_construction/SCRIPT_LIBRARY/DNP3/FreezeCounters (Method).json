@@ -1,0 +1,56 @@
+{
+  "library": "DNP3",
+  "title": "FreezeCounters (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/pou-Master/Commands/FreezeCounters.html",
+  "page_title": "Master.FreezeCounters (METH)",
+  "text": "\nMETHOD FreezeCounters :\nError\nIssue an freeze counters request\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "FreezeCounters",
+          "Type": "Error",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "clear",
+          "Type": "BOOL",
+          "Comment": "clear counters after freeze"
+        },
+        [
+          "noAck",
+          "BOOL",
+          "donât ask for application layer response"
+        ],
+        [
+          "qualifier",
+          "AddressQualifier",
+          "address qualifier, must be all,or 8/16 bit start/stop"
+        ],
+        [
+          "start",
+          "UINT",
+          "start point if qualifier is 8/16 bit start/stop"
+        ],
+        [
+          "stopOrQty",
+          "UINT",
+          "stop point if qualifier is 8/16 bit start/top or quantityif qualifier is 8/16 bit limited quantity"
+        ],
+        [
+          "feedbackRequested",
+          "BOOL",
+          "if true automatically read frozen counters whenfreeze command is complete.\nNOTE: if device supports frozen counter events this should be set to\nfalse to prevent reading all of the frozen counters in addition to\nreceiving the frozen counter events."
+        ]
+      ]
+    }
+  ]
+}

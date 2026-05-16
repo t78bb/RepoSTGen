@@ -1,0 +1,27 @@
+{
+  "library": "ModbusFB",
+  "title": "PutNBytes (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/ModbusFB/Current/ModbusFB/Function-Blocks/Util/pou-ByteBuffer/PutNBytes.html",
+  "page_title": "ByteBuffer.PutNBytes (METH)",
+  "text": "\nMETHOD PutNBytes\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "pSource",
+          "Type": "POINTER TO BYTE"
+        },
+        [
+          "uiBytes",
+          "UINT"
+        ]
+      ]
+    }
+  ]
+}

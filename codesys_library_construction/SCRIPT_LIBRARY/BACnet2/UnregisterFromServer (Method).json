@@ -1,0 +1,23 @@
+{
+  "library": "BACnet2",
+  "title": "UnregisterFromServer (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/BACnetClient/pou-IBACnetClient/UnregisterFromServer.html",
+  "page_title": "IBACnetClient.UnregisterFromServer (METH)",
+  "text": "\nMETHOD UnregisterFromServer : UDINT\nUnregister a BACnet-Client-FB from its parent BACnet-Server-FB.\nUsing this function enables one to dynamically create/delete BACnet-Client-FBs, which were not inserted via the device tree.\nReturn CmpErrors.Errors.ERR_OK if successful.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "UnregisterFromServer",
+          "Type": "UDINT"
+        }
+      ]
+    }
+  ]
+}

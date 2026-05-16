@@ -1,0 +1,62 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_GroupReadRemainingTrajectoryDuration (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/Diagnostics/SMC_GroupReadRemainingTrajectoryDuration.html",
+  "page_title": "SMC_GroupReadRemainingTrajectoryDuration (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_GroupReadRemainingTrajectoryDuration\nFunction block that enables reading the duration of the current trajectory,\nuntil the next standstill is reached.\nThe next standstill position is either before the next buffered movement\nstarts, or at the end of the last movement, whichever comes first.\nA valid duration can only be read if the remaining duration of the trajectory\nis within the\nCurrentPlanningForecast\nreported by\nMC_GroupReadStatus\n.\nThe maximum forecast can be configured by changing\nfPlanningForecastDuration\nof\nSMC_TuneCPKernel\n.\nNote\nThe trajectory duration cannot be read while\nMC_GroupHalt\nor\nMC_GroupStop\nare active.  The output\nValid\nis FALSE in this case.\nThe trajectory duration cannot be read while an\nMC_GroupInterrupt\nis active or the axis group stops due to\nSMC_GroupInterruptAt\n.\nThe output\nValid\nis FALSE in this case.\nThe trajectory duration cannot by read while an\nMC_GroupSetOverride\nwith\nVelFactor\n= 0 or\nPathVelFactor\n= 0 is active.\nThe output\nValid\nis FALSE in this case.\nWhen the axis group has reached standstill and will not immediately start\nmoving again (e.g. because an\nSMC_GroupWait\nis active, or there is no\nfollowup movement), the output\nValid\nis FALSE.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "AxisGroup",
+          "Type": "AXIS_GROUP_REF_SM3",
+          "Comment": "Reference to a group of axes"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Enable",
+          "Type": "BOOL",
+          "Comment": "The trajectory duration is read continuously while enabled."
+        },
+        {
+          "Scope": "Output",
+          "Name": "Valid",
+          "Type": "BOOL",
+          "Comment": "TRUEif theRemainingDurationandMovementIdare\nvalid."
+        },
+        [
+          "Busy",
+          "BOOL",
+          "The FB has not finished."
+        ],
+        [
+          "RemainingDuration",
+          "LREAL",
+          "The remaining duration until the next standstill in seconds."
+        ],
+        [
+          "MovementId",
+          "SMC_Movement_Id",
+          "The ID of the last movement of the trajectory."
+        ],
+        [
+          "Error",
+          "BOOL",
+          "Signals that an error has occurred within the function block"
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "library": "Util",
+  "title": "TimerSwitch (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/TimerSwitch/FunctionBlocks/TimerSwitch.html",
+  "page_title": "TimerSwitch (FB)",
+  "text": "\nFUNCTION_BLOCK PUBLIC FINAL TimerSwitch EXTENDS _LConC IMPLEMENTS ITimeSwitch,\nIDateTimeProvider\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment",
+        "Inherited from"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "xEnable",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUE: Activates the defined operationFALSE: Aborts/resets the defined operation",
+          "Inherited from": "_LConC"
+        },
+        {
+          "Scope": "Output",
+          "Name": "xBusy",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUE: Operation is running",
+          "Inherited from": "_LConC"
+        },
+        [
+          "xError",
+          "BOOL",
+          "",
+          "TRUE: Error condition reached",
+          "_LConC"
+        ],
+        {
+          "Scope": "Input Const",
+          "Name": "itfDateTimeProvider",
+          "Type": "IDateTimeProvider",
+          "Initial": "Globals.g_dtpDateTimeProvider",
+          "Comment": "Source for the current date and time information in\nmilliseconds since 1.1.1970 00:00:00.000",
+          "Inherited from": ""
+        },
+        [
+          "tCompensationSpeed",
+          "TIME",
+          "",
+          "Compensation speed [ms/h] for the transition from one time zone period to another.e.g. t#5000ms => 30d <= 1/(30 Ã 24) Ã 60 Ã 60 Ã 1000e.g. t#150000ms => 24h <= 1/24 Ã 60 Ã 60 Ã 1000",
+          ""
+        ],
+        {
+          "Scope": "Input",
+          "Name": "aslSchedule",
+          "Type": "POINTER TOSchedule",
+          "Initial": "",
+          "Comment": "Switching Schedule",
+          "Inherited from": ""
+        },
+        [
+          "tzTimeZone",
+          "REFERENCE TOTimeZone",
+          "",
+          "Current time zone (Optional - Default:|gc_tzTimeZoneCET|)",
+          ""
+        ],
+        {
+          "Scope": "Output",
+          "Name": "eErrorID",
+          "Type": "ERROR",
+          "Initial": "",
+          "Comment": "",
+          "Inherited from": ""
+        },
+        [
+          "liClockDiff",
+          "LINT",
+          "",
+          "After switching the time zone, a continuously decreasing difference between the current local time\nand the current time within the TimeSwitch is displayed.",
+          ""
+        ],
+        [
+          "eWeekDay",
+          "WEEKDAY",
+          "",
+          "Current day of the week",
+          ""
+        ],
+        [
+          "datToday",
+          "DATE",
+          "",
+          "Current date",
+          ""
+        ],
+        [
+          "todNow",
+          "TOD",
+          "",
+          "Current time of the day",
+          ""
+        ],
+        [
+          "sTimeZone",
+          "TZ_NAME",
+          "",
+          "Name of the current time zone",
+          ""
+        ],
+        [
+          "ePeriod",
+          "PERIOD",
+          "",
+          "Current period of the time zone",
+          ""
+        ],
+        [
+          "dwSwitches",
+          "DWORD",
+          "",
+          "Status of the 32 switches. Bit 0 => switch 1, â¦",
+          ""
+        ]
+      ]
+    }
+  ]
+}

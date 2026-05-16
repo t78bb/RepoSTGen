@@ -1,0 +1,72 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_GSentenceJumpBuffer (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/GSentenceJumpBuffer/SMC_GSentenceJumpBuffer.html",
+  "page_title": "SMC_GSentenceJumpBuffer (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_GSentenceJumpBuffer\nThis function block buffers g-code sentences in order to avoid\na full restart of the g-code file on jumps (G20).\nIt must be used before the\nSMC_NCNavigator\nfunction block.\nNote: this function block is part of\nSMC_ReadNCFile2\n, so it is not\nnecessary to instantiate it by hand.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "sentencesOut",
+          "Type": "SMC_GSentenceQueue",
+          "Comment": "The output sentence queue"
+        },
+        [
+          "sentencesIn",
+          "SMC_GSentenceQueue",
+          "The input sentence queue"
+        ],
+        {
+          "Scope": "Input",
+          "Name": "bExecute",
+          "Type": "BOOL",
+          "Comment": "WhileTRUE, the function block is active."
+        },
+        [
+          "bAbort",
+          "BOOL",
+          "IfTRUE, the current processing of this function block\nis aborted"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bBusy",
+          "Type": "BOOL",
+          "Comment": "TRUEwhile execution of function block is not finished."
+        },
+        [
+          "bError",
+          "BOOL",
+          "TRUEsignals that an error has occurred within\nthe function block."
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification,SMC_ERROR"
+        ],
+        [
+          "errorPos",
+          "SMC_NC_SourcePosition",
+          "The source-position where an error has been detected."
+        ],
+        [
+          "numHits",
+          "UDINT",
+          "The number of jump targets found in the buffer.\nReset at rising edge of bExecute."
+        ],
+        [
+          "numMisses",
+          "UDINT",
+          "The number of jump targets not found in the buffer.\nReset at rising edge of bExecute."
+        ]
+      ]
+    }
+  ]
+}

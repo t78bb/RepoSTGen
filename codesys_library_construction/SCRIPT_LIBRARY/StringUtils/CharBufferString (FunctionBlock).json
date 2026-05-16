@@ -1,0 +1,50 @@
+{
+  "library": "StringUtils",
+  "title": "CharBufferString (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/StringUtils/Current/Public-Parts/CharBufferString.html",
+  "page_title": "CharBufferString (FB)",
+  "text": "\nFUNCTION_BLOCK CharBufferString\nThis function block encapsulates the data of a string based on a byte array, i.e. contains\nthe CharBufferPtr variable pointing to the buffer and the information about the type of\n(i.e. one-byte string or two-byte string)\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "m_uiBufferSize",
+          "Type": "UINT",
+          "Comment": "The size of the buffer (in bytes), where the string is\nstored."
+        },
+        [
+          "m_cbpBuffer",
+          "CharBufferPtr",
+          "The buffer, where the string is stored this instance\nrepresents"
+        ],
+        [
+          "m_Type",
+          "__SYSTEM.TYPE_CLASS",
+          "A __SYSTEM.TYPE_CLASS value indicating type of the string"
+        ],
+        [
+          "m_AsString",
+          "POINTER TO STRING(255)",
+          "Two additional pointers to the buffer used for easier debugging.\nIn the monitoring view the corresponding pointer shows the current\nvalue of the buffer as (w)string."
+        ],
+        [
+          "m_AsWString",
+          "POINTER TO WSTRING(255)",
+          ""
+        ],
+        [
+          "m_bAllocated",
+          "BOOL",
+          "Flag indicating, whether the memory for storing the string was allocated\ndynamically and has to be freed later"
+        ]
+      ]
+    }
+  ]
+}

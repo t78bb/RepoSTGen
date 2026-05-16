@@ -1,0 +1,45 @@
+{
+  "library": "SM3_Drive_ETC",
+  "title": "SMC_ETC_Params (ParamList)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Drive_ETC/Current/SMC_ETC_Params.html",
+  "page_title": "SMC_ETC_Params (PARAMS)",
+  "text": "\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Constant",
+          "Name": "SDO_TIMEOUT_MS",
+          "Type": "UDINT",
+          "Initial": "10000",
+          "Comment": "The timeout used for reading and writing SDOs, in\nmilliseconds."
+        },
+        [
+          "IDN_READ_WRITE_TIMEOUT_MS",
+          "UDINT",
+          "10000",
+          "The timeout used for reading and writing IDNs, in\nmilliseconds."
+        ],
+        [
+          "IDN_RESET_TIMEOUT_MS",
+          "UDINT",
+          "60000",
+          "The timeout used for the IDN 99 reset command, in\nmilliseconds"
+        ],
+        [
+          "IDN_REFERENCE_TIMEOUT_MS",
+          "UDINT",
+          "16#FFFFFFFF",
+          "The timeout used for the IDN 149 reference command, in\nmilliseconds"
+        ]
+      ]
+    }
+  ]
+}

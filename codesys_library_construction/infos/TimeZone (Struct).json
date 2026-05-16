@@ -1,0 +1,28 @@
+{
+  "library": "Util",
+  "title": "TimeZone (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/TimerSwitch/Structs/TimeZone.html",
+  "page_title": "TimeZone (STRUCT)",
+  "text": "\nTYPE TimeZone : STRUCT\nTo handle the local TIME, it is neccecary to always specify the time and date and the time zone that is currently valid.\nThis makes it possible to convert the local time to\nC\noordinated\nU\nniversal\nT\nime and vice versa.\nUTC\nis Coordinated Universal Time. It is a successor to, but distinct from, Greenwich Mean Time (GMT) and\nthe various definitions of Universal Time. UTC is now the worldwide standard for regulating clocks and time measurement.\nAll other timezones are defined relative to UTC, and include offsets like UTC+0800 - hours to add or subtract from UTC\nto derive the local time. No daylight saving time occurs in UTC, making it a useful timezone to perform date arithmetic\nwithout worrying about the confusion and ambiguities caused by daylight saving time transitions,\nyour country changing its timezone, or mobile computers that roam through multiple timezones.\nThe following snippet exposes the definition of UTC\nand\nC\nentral\nE\nurope\nT\nime/\nC\nentral\nE\nurope\nS\nommer\nT\nime.\nVAR_GLOBAL\nCONSTANT\n/// Coordinated Universal Time\ngc_tzTimeZoneUTC\n:\nTimeZone\n:=\n(\nasgPeriod\n:=\n[(sName:='UTC')]\n);\n/// Central Europe Time\ngc_tzTimeZoneCET\n:\nTimeZone\n:=\n(\niBias\n:=\n60\n(* T#1M => minutes *)\n,\nasgPeriod\n:=\n[\n( (* (CEST -> CET) - Last Sunday in Oktober at 03:00:00.000 (CEST) *)\nsName:='CET',\ndtDate := (uiMonth := 10, eWeekday := WEEKDAY.SUNDAY, uiDay := 5, uiHour := 3)\n),( (* (CET -> CEST) - Last Sunday in March at 02:00:00.000 (CET) *)\nsName := 'CEST',\ndtDate := (uiMonth := 3, eWeekday := WEEKDAY.SUNDAY, uiDay := 5, uiHour := 2),\niBias := 60 (* T#1M => minutes *)\n)]\n);\nEND_VAR\nNote\nThe Bias element represents the offset from the Coordinated Universal Time (UTC). This value is in minutes.\nThe offset growing positive in eastern direction starting from the prime meridian.\nThe offset is growing negative in western direction starting from the prime meridian.\nWith the data structure\nTimeZone\nit is possible to specify every\ntimezone of the world and so the functions\ncan handle the local time conversion and the switching from standard to day light saving periodâs if necessary.\nExample\nWith the following expressions the difference between the UTC time zone and an other timezone instance can be calculated.\niBiasUTC_Standard\n:=\ngc_tzTimeZoneCET.iBias\n;\niBiasUTC_Daylight\n:=\ngc_tzTimeZoneCET.iBias\n+\ngc_tzTimeZoneCET.asgPeriod\n[PERIOD.DAYLIGHT]\n.\niBias\n;\nNote\nThe time zone which the current computer is configured for, is not always the time zone suitable for displaying the current time.\nTherefore in the respective application, the possibility should be provided, to be able to select the âcorrectâ time zone\nthat is suitable for the related output option (WebVisu, LogFiles, Email, â¦).\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "iBias",
+          "Type": "INT",
+          "Comment": "Offset in minutes (local time = UTC + iBias)"
+        },
+        {
+          "Name": "asgPeriod",
+          "Type": "ARRAY [1..2] OFSegment",
+          "Comment": "1 =PERIOD.STANDARD, 2 =PERIOD.DAYLIGHT"
+        }
+      ]
+    }
+  ]
+}

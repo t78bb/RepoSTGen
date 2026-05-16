@@ -1,0 +1,27 @@
+{
+  "library": "BACnet",
+  "title": "SetBACnetDateRangeProperty (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/pou-IBACnetObjectBase/Utilities/SetBACnetDateRangeProperty.html",
+  "page_title": "IBACnetObjectBase.SetBACnetDateRangeProperty (METH)",
+  "text": "\nMETHOD SetBACnetDateRangeProperty\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "propID",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_ID"
+        },
+        [
+          "datRng",
+          "BACnetDateRange"
+        ]
+      ]
+    }
+  ]
+}

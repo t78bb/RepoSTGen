@@ -1,0 +1,23 @@
+{
+  "library": "AlarmManager",
+  "title": "SetCurrentUtcOffset (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Functions/SetCurrentUtcOffset.html",
+  "page_title": "SetCurrentUtcOffset (FUN)",
+  "text": "\nFUNCTION SetCurrentUtcOffset : INT\nFunction to store the UTC time offset.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetCurrentUtcOffset",
+          "Type": "INT"
+        }
+      ]
+    }
+  ]
+}

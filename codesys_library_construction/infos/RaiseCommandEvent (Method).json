@@ -1,0 +1,31 @@
+{
+  "library": "DNP3",
+  "title": "RaiseCommandEvent (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Outstation/Points/pou-CommandablePoint/RaiseCommandEvent.html",
+  "page_title": "CommandablePoint.RaiseCommandEvent (METH)",
+  "text": "\nMETHOD RaiseCommandEvent :\nError\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "RaiseCommandEvent",
+          "Type": "Error",
+          "Initial": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "stat",
+          "Type": "USINT",
+          "Initial": "0"
+        }
+      ]
+    }
+  ]
+}

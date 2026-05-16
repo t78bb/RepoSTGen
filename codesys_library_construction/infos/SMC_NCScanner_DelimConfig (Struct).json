@@ -1,0 +1,97 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_NCScanner_DelimConfig (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/File/ReadNCFile/Token/TokenScanner/SMC_NCScanner_DelimConfig.html",
+  "page_title": "SMC_NCScanner_DelimConfig (STRUCT)",
+  "text": "\nTYPE SMC_NCScanner_DelimConfig : STRUCT\nThis structure allows to configure the delimiters used by\nthe tokenizer.  The delimiters determine how comments are\ndetected, what is a valid operator and so on.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "byCmtMultiStartDelim",
+          "Type": "BYTE",
+          "Initial": "40",
+          "Comment": "Start delimiter for single character multi line comments,\npreconfigured with â(â.  Set to 0 to disable single char\ncomments.\nSeeSMC_NCTokenizer.SetDelimiterson how to reconfigure."
+        },
+        {
+          "Name": "byCmtMultiEndDelim",
+          "Type": "BYTE",
+          "Initial": "41",
+          "Comment": "End delimiter for multi line comments, preconfigured with â)â.\nSeeSMC_NCTokenizer.SetDelimiterson how to reconfigure."
+        },
+        {
+          "Name": "wCmtMultiStartDelim",
+          "Type": "WORD",
+          "Initial": "0",
+          "Comment": "Two-character start delimiter for multi line comments.\n(Could be set to â(â or â/â.)\nSeeSMC_NCTokenizer.SetDelimiterson how to reconfigure."
+        },
+        {
+          "Name": "wCmtMultiEndDelim",
+          "Type": "WORD",
+          "Initial": "0",
+          "Comment": "Two-character start delimiter for multi line comments tokens.\n(Could be set to â)â or â/â.)\nSeeSMC_NCTokenizer.SetDelimiterson how to reconfigure."
+        },
+        {
+          "Name": "aCmtSingleStartDelim",
+          "Type": "ARRAY\n[0..(SoftMotion_Token_Constants.c_numDelims\n- 1)] OF BYTE",
+          "Initial": "[37, 0, 0]",
+          "Comment": "Start delimiters for single line comments tokens,\npreconfigured with â%â.\nSeeSMC_NCTokenizer.SetDelimiterson how to reconfigure."
+        },
+        {
+          "Name": "aVarBracketStartDelim",
+          "Type": "ARRAY\n[0..(SoftMotion_Token_Constants.c_numDelims\n- 1)] OF BYTE",
+          "Initial": "[36, 0, 0]",
+          "Comment": "Start delimiters for variable tokens which are in âbracketsâ,\npreconfigured with â$â.\nSeeSMC_NCTokenizer.SetDelimiterson how to reconfigure."
+        },
+        {
+          "Name": "aVarBracketEndDelim",
+          "Type": "ARRAY\n[0..(SoftMotion_Token_Constants.c_numDelims\n- 1)] OF BYTE",
+          "Initial": "[36, 0, 0]",
+          "Comment": "End delimiters for variable tokens which are in âbracketsâ,\npreconfigured with â$â.\nSeeSMC_NCTokenizer.SetDelimiterson how to reconfigure."
+        },
+        {
+          "Name": "aVarPrefixDelim",
+          "Type": "ARRAY\n[0..(SoftMotion_Token_Constants.c_numDelims\n- 1)] OF BYTE",
+          "Initial": "[0, 0, 0]",
+          "Comment": "Delimiters for variable tokens which start with a\nprefix delimiter, preconfigured to 0 (disabled).\nSeeSMC_NCTokenizer.SetDelimiterson how to reconfigure."
+        },
+        {
+          "Name": "aLocalVarPrefixDelim",
+          "Type": "ARRAY\n[0..(SoftMotion_Token_Constants.c_numDelims\n- 1)] OF BYTE",
+          "Initial": "[35, 0, 0]",
+          "Comment": "Delimiters for local variable tokens which start with a\nprefix delimiter, preconfigured to â#â.\nSeeSMC_NCTokenizer.SetDelimiterson how to reconfigure."
+        },
+        {
+          "Name": "aStrStartDelim",
+          "Type": "ARRAY\n[0..(SoftMotion_Token_Constants.c_numDelims\n- 1)] OF BYTE",
+          "Initial": "[34, 39, 0]",
+          "Comment": "Start delimiters for string tokens, preconfigured with â and â.\nSeeSMC_NCTokenizer.SetDelimiterson how to reconfigure."
+        },
+        {
+          "Name": "aStrEndDelim",
+          "Type": "ARRAY\n[0..(SoftMotion_Token_Constants.c_numDelims\n- 1)] OF BYTE",
+          "Initial": "[34, 39, 0]",
+          "Comment": "End delimiters for string tokens, preconfigured with â and â.\nSeeSMC_NCTokenizer.SetDelimiterson how to reconfigure."
+        },
+        {
+          "Name": "aVarNameChrs",
+          "Type": "ARRAY\n[0..(SoftMotion_Token_Constants.c_numVarNameChars\n- 1)] OF BYTE",
+          "Initial": "",
+          "Comment": "Additional characters for variable names.\nmust be of the same size as abyPossibleOperators"
+        },
+        {
+          "Name": "aTwoLetterOperators",
+          "Type": "ARRAY\n[0..(SoftMotion_Token_Constants.c_num2LetterOps\n- 1)] OF WORD",
+          "Initial": "[16#3C3D, 16#3E3D, 16#3C3E, 16#3A3D]",
+          "Comment": "Two-letter operators."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "library": "DNP3",
+  "title": "OctetStringMaxPointNum (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/pou-Master/Datapoints/OctetStringMaxPointNum.html",
+  "page_title": "Master.OctetStringMaxPointNum (METH)",
+  "text": "\nMETHOD OctetStringMaxPointNum : DINT\nMaximum point number of all Octet String datapoints (DNP3 object group 110 âoctet stringsâ) provided by the Outstation.\nReturns -1 if there are no datapoints.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "OctetStringMaxPointNum",
+          "Type": "DINT"
+        }
+      ]
+    }
+  ]
+}

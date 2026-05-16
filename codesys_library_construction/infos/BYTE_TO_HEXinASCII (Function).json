@@ -1,0 +1,31 @@
+{
+  "library": "Util",
+  "title": "BYTE_TO_HEXinASCII (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/HEXASCII-Functions/BYTE_TO_HEXinASCII.html",
+  "page_title": "BYTE_TO_HEXinASCII (FUN)",
+  "text": "\nFUNCTION BYTE_TO_HEXinASCII : WORD\nConverts one byte of binary code into one word in HEX code representing its ASCII value\nThe higher bits in the input are represented by the higher byte in the output.\nUse\nHEXinASCII_TO_BYTE\nfunction for the reverse conversion.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "BYTE_TO_HEXinASCII",
+          "Type": "WORD",
+          "Comment": "ASCII value as WORD of the inputB"
+        },
+        {
+          "Scope": "Input",
+          "Name": "B",
+          "Type": "BYTE",
+          "Comment": "Value in binary code"
+        }
+      ]
+    }
+  ]
+}

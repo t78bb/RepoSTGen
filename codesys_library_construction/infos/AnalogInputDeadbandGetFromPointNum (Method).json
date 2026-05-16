@@ -1,0 +1,37 @@
+{
+  "library": "DNP3",
+  "title": "AnalogInputDeadbandGetFromPointNum (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/pou-Master/Datapoints/AnalogInputDeadbandGetFromPointNum.html",
+  "page_title": "Master.AnalogInputDeadbandGetFromPointNum (METH)",
+  "text": "\nMETHOD AnalogInputDeadbandGetFromPointNum :\nError\nGet the value of Analog Input Deadband datapoint (DNP3 object group 34 âanalog input reporting deadbandsâ) with given point number (0 .. MaxPointNum).\nReturns PointNotExistent, if a datapoint with the given point number doesnt exist, OK otherwise.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "AnalogInputDeadbandGetFromPointNum",
+          "Type": "Error",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "pointNumber",
+          "Type": "UINT",
+          "Comment": "Point number."
+        },
+        {
+          "Scope": "Output",
+          "Name": "value",
+          "Type": "AnyNumber",
+          "Comment": "value"
+        }
+      ]
+    }
+  ]
+}

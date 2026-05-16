@@ -1,0 +1,25 @@
+{
+  "library": "StringUtils",
+  "title": "StrTrimStartA (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/StringUtils/Current/Public-Parts/Ansi/StrTrimStartA.html",
+  "page_title": "StrTrimStartA (FUN)",
+  "text": "\nFUNCTION StrTrimStartA\nRemove leading whitespaces (ASCII 9, 10, 13, 32).\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "pString",
+          "Type": "POINTER TO BYTE",
+          "Comment": "Pointer to the string to be trimmed."
+        }
+      ]
+    }
+  ]
+}

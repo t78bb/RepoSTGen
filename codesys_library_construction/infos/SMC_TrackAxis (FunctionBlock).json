@@ -1,0 +1,82 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_TrackAxis (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/Movement/Direct/SMC_TrackAxis.html",
+  "page_title": "SMC_TrackAxis (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_TrackAxis\nThis function block tracks a master axis.\nThe slave axis will try to follow the master as closely as possible\nwhile repecting the given maximum velocity, acceleration, deceleration,\nand jerk.\nDuring execution, the axis is in state\nsynchronized_motion\n.\nThe function block will keep ownership of the axis until it is\naborted by another movement.  The ownership is kept even if the\nmaster is in standstill and the function block is in sync.\nNote\nThis function block does not support forecasts that are set up by\nSMC_SetForecast\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Master",
+          "Type": "AXIS_REF_SM3",
+          "Comment": ""
+        },
+        [
+          "Slave",
+          "AXIS_REF_SM3",
+          ""
+        ],
+        {
+          "Scope": "Input",
+          "Name": "bExecute",
+          "Type": "BOOL",
+          "Comment": "Rising edge: Starts the execution of the function block."
+        },
+        [
+          "Velocity",
+          "LREAL",
+          "Maximum velocity in technical units per second [u/s].\nMust be positive.\nThis input may change each call.  Changes are taken into\naccount continuously, not only on a rising edge ofbExecute."
+        ],
+        [
+          "Acceleration",
+          "LREAL",
+          "Maximum acceleration in [u/sÂ²].\nMust be positive.\nThis input may change each call.  Changes are taken into\naccount continuously, not only on a rising edge ofbExecute."
+        ],
+        [
+          "Deceleration",
+          "LREAL",
+          "Maximum magnitude of deceleration in [u/sÂ²].\nMust be positive.\nThis input may change each call.  Changes are taken into\naccount continuously, not only on a rising edge ofbExecute."
+        ],
+        [
+          "Jerk",
+          "LREAL",
+          "Maximum magnitude of jerk in [u/sÂ³].\nMust be positive if the axis has a jerk limited velocity profile.\nThis input may change each call.  Changes are taken into\naccount continuously, not only on a rising edge ofbExecute."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bBusy",
+          "Type": "BOOL",
+          "Comment": "TRUE: Execution of the function block has not been\nfinished."
+        },
+        [
+          "bCommandAborted",
+          "BOOL",
+          "TRUE: Command has been aborted by another command."
+        ],
+        [
+          "bError",
+          "BOOL",
+          "TRUE: Error has occurred within the function block."
+        ],
+        [
+          "iErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ],
+        [
+          "bInSync",
+          "BOOL",
+          "Whether the axis is in sync with the given set values."
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "requirement": "This code should implement a function to check if there is any floor between a specified start floor (nStartFloor) and end floor (nEndFloor) where an elevator needs to stop, based on the direction of travel indicated by the boolean input bIncreasing. If bIncreasing is TRUE, the function should iterate from nStartFloor to nEndFloor in an increasing order, and if FALSE, it should iterate in a decreasing order from nEndFloor to nStartFloor. The function should return TRUE as soon as it finds a floor where Tar_Dir.IsStopFloor[i] is TRUE, indicating a required stop at that floor, and otherwise return FALSE if no such floor is found in the specified range.",
+  "provide_code": "FUNCTION F_CheckJobInDirection : BOOL\nVAR_INPUT\n\tnStartFloor\t\t:\tUSINT;\t\t//起始楼层\n\tnEndFloor\t\t:\tUSINT;\t\t//结束楼层\n\tbIncreasing\t\t:\tBOOL;\t\t//TRUE=向上检查（递增），FALSE=向下检查（递减）\nEND_VAR",
+  "function_name": "F_CheckJobInDirection",
+  "requirement_cn": "该代码应实现一个函数，用于检查在指定的起始楼层（nStartFloor）和结束楼层（nEndFloor）之间是否有电梯需要停靠的楼层，根据行进方向由布尔输入bIncreasing指示。如果bIncreasing为TRUE，则函数应从nStartFloor到nEndFloor按递增顺序迭代；如果为FALSE，则应从nEndFloor到nStartFloor按递减顺序迭代。函数应在发现Tar_Dir.IsStopFloor[i]为TRUE的楼层时立即返回TRUE，表示该楼层需要停靠，如果在指定范围内没有找到这样的楼层，则返回FALSE。"
+}

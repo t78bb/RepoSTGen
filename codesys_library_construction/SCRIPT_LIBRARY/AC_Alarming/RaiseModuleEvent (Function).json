@@ -1,0 +1,41 @@
+{
+  "library": "AC_Alarming",
+  "title": "RaiseModuleEvent (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_Alarming/Current/Functions/RaiseModuleEvent.html",
+  "page_title": "RaiseModuleEvent (FUN)",
+  "text": "\nFUNCTION RaiseModuleEvent : BOOL\nThis function raises an event that has been configured as Event-Alarm of an Module-Instance\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "RaiseModuleEvent",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfAlarmHandler",
+          "Type": "AlarmManager.IAlarmHandler",
+          "Comment": "The alarm handler that shall raise an alarm.\nIf this parameter is 0 g_AlarmHandler from AlarmManager library is used"
+        },
+        [
+          "inst",
+          "AC.IModule",
+          "The module instance that defines the Event-Alarm"
+        ],
+        [
+          "pEventID",
+          "POINTER TO STRING",
+          "The Target of the Event-Alarm in the module description"
+        ]
+      ]
+    }
+  ]
+}

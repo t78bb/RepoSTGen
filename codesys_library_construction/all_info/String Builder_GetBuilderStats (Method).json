@@ -1,0 +1,28 @@
+{
+  "library": "String Builder",
+  "title": "GetBuilderStats (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Builder/Current/Builder/Function-Blocks/pou-_Builder/IBuilder/GetBuilderStats.html",
+  "page_title": "_Builder.GetBuilderStats (METH)",
+  "text": "Builder\nAliases\nConstants (GVL)\nEnums\nENCODING (Alias)\nERROR (Alias)\nSTATS (Alias)\nFunction Blocks\nRange (Alias)\n_RangePool (Alias)\nInterfaces\nIBuilder (Folder)\nICharmap (Alias)\nIString (Alias)\nIStringRepresentation (Folder)\nTypes\nRUNE (Alias)\nFunction Blocks\n_Builder (FunctionBlock)\nIBuilder\nIStringRepresentation\nSetInitialValue (Method)\nFunctions\nCreateRange (Function)\nCreateRangePool (Function)\nLibrary Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nFile and Project Information\nLibrary Reference\nImmutable String Segments\nLibrary Identification\nLibrary Properties\nMemory Block Manager\nLibrary Identification\nLibrary Properties\nString Builder Base\nLibrary Identification\nLibrary Properties\nString Conversions\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nUTF-16 Encoding Support\nLibrary Identification\nLibrary Properties\nUTF-8 Encoding Support\nLibrary Identification\nLibrary Properties\nString Builder\nDocs\n»\nBuilder\n»\nFunction\nBlocks\n»\n_Builder\n(FB)\n»\nIBuilder\n»\n_Builder.GetBuilderStats (METH)\n_Builder.GetBuilderStats (METH)\nÂ¶\nMETHOD FINAL GetBuilderStats :\nSTATS\nInOut:\nScope\nName\nType\nReturn\nGetBuilderStats\nSTATS\nOutput\neErrorID\nERROR",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetBuilderStats",
+          "Type": "STATS"
+        },
+        {
+          "Scope": "Output",
+          "Name": "eErrorID",
+          "Type": "ERROR"
+        }
+      ]
+    }
+  ]
+}

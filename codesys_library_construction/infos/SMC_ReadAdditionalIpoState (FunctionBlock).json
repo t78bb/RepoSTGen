@@ -1,0 +1,51 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_ReadAdditionalIpoState (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/SoftMotion-Function-Blocks/SMC_ReadAdditionalIpoState.html",
+  "page_title": "SMC_ReadAdditionalIpoState (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_ReadAdditionalIpoState\nReturns additional state of the CNC interpolator, such as the current\ndecoder coordinate system (DCS) or the active path processing functions.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "Enable",
+          "Type": "BOOL",
+          "Comment": "The function block executes as long asEnableisTRUE."
+        },
+        [
+          "ipo",
+          "SMC_IInterpolator",
+          "The interpolator (SMC_Interpolator or SMC_Interpolator2D)"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Error",
+          "Type": "BOOL",
+          "Comment": "Signals, that an error has occurred within the function\nblock"
+        },
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ],
+        [
+          "Valid",
+          "BOOL",
+          "Indicates whether the output State is valid.\nAs long as there is no error, Valid is TRUE if Enable is TRUE and\nthe interpolator has been started."
+        ],
+        [
+          "State",
+          "SMC_AddGCodeState",
+          "Additional G-Code state"
+        ]
+      ]
+    }
+  ]
+}

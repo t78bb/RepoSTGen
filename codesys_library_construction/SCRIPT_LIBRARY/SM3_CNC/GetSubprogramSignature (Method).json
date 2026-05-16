@@ -1,0 +1,33 @@
+{
+  "library": "SM3_CNC",
+  "title": "GetSubprogramSignature (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/Parser/SymbolTable/pou-SMC_NCSymbolTable/GetSubprogramSignature.html",
+  "page_title": "SMC_NCSymbolTable.GetSubprogramSignature (METH)",
+  "text": "\nMETHOD GetSubprogramSignature :\nSMC_NCSymbolResult\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetSubprogramSignature",
+          "Type": "SMC_NCSymbolResult"
+        },
+        {
+          "Scope": "Inout Const",
+          "Name": "stSubprogramName",
+          "Type": "STRING"
+        },
+        {
+          "Scope": "Inout",
+          "Name": "subSig",
+          "Type": "SMC_NC_SubSignature"
+        }
+      ]
+    }
+  ]
+}

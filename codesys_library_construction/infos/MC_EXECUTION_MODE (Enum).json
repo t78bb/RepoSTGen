@@ -1,0 +1,29 @@
+{
+  "library": "SM3_Robotics",
+  "title": "MC_EXECUTION_MODE (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/Basic-types/MC_EXECUTION_MODE.html",
+  "page_title": "MC_EXECUTION_MODE (ENUM)",
+  "text": "\nTYPE MC_EXECUTION_MODE :\nMC_EXECUTION_MODE provides information on the behavior of administrative\nfunction blocks.\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "Immediately",
+          "Comment": "The functionality is immediately valid and may influence the\non-going motion."
+        },
+        {
+          "Name": "Queued",
+          "Comment": "The new functionality becomes valid when all previous motion commands\nset one of the following output parameters: Done, Aborted or Error.\nThis also implies that the output parameter Busy is set to FALSE."
+        },
+        {
+          "Name": "NextCommanded",
+          "Comment": "The new functionality becomes valid when the next commanded motion\ncommand becomes active."
+        }
+      ]
+    }
+  ]
+}

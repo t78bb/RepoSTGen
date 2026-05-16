@@ -1,0 +1,28 @@
+{
+  "library": "StringUtils",
+  "title": "IsSpaceCharacter (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/StringUtils/Current/Public-Parts/UTF8/IsSpaceCharacter.html",
+  "page_title": "IsSpaceCharacter (FUN)",
+  "text": "\nFUNCTION IsSpaceCharacter : BOOL\nsee\nhttps://docs.microsoft.com/de-de/dotnet/api/system.char.iswhitespace?view=net-6.0#system-char-iswhitespace(system-char\n)\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "IsSpaceCharacter",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Input",
+          "Name": "wCharacter",
+          "Type": "WORD"
+        }
+      ]
+    }
+  ]
+}

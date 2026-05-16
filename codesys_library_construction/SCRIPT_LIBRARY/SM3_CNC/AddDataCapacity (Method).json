@@ -1,0 +1,23 @@
+{
+  "library": "SM3_CNC",
+  "title": "AddDataCapacity (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/GSentence/pou-SMC_GSentenceQueue/AddDataCapacity.html",
+  "page_title": "SMC_GSentenceQueue.AddDataCapacity (METH)",
+  "text": "\nMETHOD AddDataCapacity : UDINT\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "AddDataCapacity",
+          "Type": "UDINT"
+        }
+      ]
+    }
+  ]
+}

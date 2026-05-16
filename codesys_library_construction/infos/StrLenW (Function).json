@@ -1,0 +1,31 @@
+{
+  "library": "StringUtils",
+  "title": "StrLenW (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/StringUtils/Current/Public-Parts/Unicode/StrLenW.html",
+  "page_title": "StrLenW (FUN)",
+  "text": "\nFUNCTION StrLenW : DINT\nThis function determines the length of a string by searching for a terminating\nzero character. The function will do its work either with native\nIEC-WStrings or with strings coming from external functions. It will return -1 if\nthe given pointer to String is equal NULL\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "StrLenW",
+          "Type": "DINT",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "pstData",
+          "Type": "CharBufferPtr",
+          "Comment": "simply a pointer to byte"
+        }
+      ]
+    }
+  ]
+}

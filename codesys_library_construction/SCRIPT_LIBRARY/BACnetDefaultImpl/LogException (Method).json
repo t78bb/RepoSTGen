@@ -1,0 +1,23 @@
+{
+  "library": "BACnetDefaultImpl",
+  "title": "LogException (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnetDefaultImpl/Current/BACnetDefaultImpl/Function-Blocks/pou-PropertyConfiguration/Logging/LogException.html",
+  "page_title": "PropertyConfiguration.LogException (METH)",
+  "text": "\nMETHOD PROTECTED LogException\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "str",
+          "Type": "LoggerString"
+        }
+      ]
+    }
+  ]
+}

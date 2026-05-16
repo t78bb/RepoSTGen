@@ -1,0 +1,31 @@
+{
+  "library": "BACnet",
+  "title": "CheckNetworkSettings (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetServer/pou-BACnetIPdatalink/protected/CheckNetworkSettings.html",
+  "page_title": "BACnetIPdatalink.CheckNetworkSettings (METH)",
+  "text": "\nMETHOD PROTECTED CheckNetworkSettings : BOOL\nChecks, if parent ETH device is configured properly.\nReturns TRUE if the network settings are valid.\nIn case FALSE is returned the BACnetServer will not start.\nIn case there is nothing to check (BACnetIPdatalink underneath BACnetServer or PLC) simply return TRUE.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "CheckNetworkSettings",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "pConnector",
+          "Type": "POINTER TO\nIoConfigConnector",
+          "Comment": "âchildâ connector to parent device, parent device could be\nâCommon.Ethernetâ (Ethernet), âCommon.BACnetâ (BACnetServer)\nor âCommon.PCIâ (PLC)."
+        }
+      ]
+    }
+  ]
+}

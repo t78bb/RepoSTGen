@@ -1,0 +1,28 @@
+{
+  "library": "BACnet",
+  "title": "GetBACnetDateProperty (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/pou-IBACnetObjectBase/Utilities/GetBACnetDateProperty.html",
+  "page_title": "IBACnetObjectBase.GetBACnetDateProperty (METH)",
+  "text": "\nMETHOD GetBACnetDateProperty : DATE\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetBACnetDateProperty",
+          "Type": "DATE"
+        },
+        {
+          "Scope": "Input",
+          "Name": "propID",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_ID"
+        }
+      ]
+    }
+  ]
+}

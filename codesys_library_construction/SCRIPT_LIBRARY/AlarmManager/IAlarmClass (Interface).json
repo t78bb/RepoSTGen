@@ -1,0 +1,8 @@
+{
+  "library": "AlarmManager",
+  "title": "IAlarmClass (Interface)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/IAlarmClass.html",
+  "page_title": "IAlarmClass (ITF)",
+  "text": "\nINTERFACE IAlarmClass EXTENDS __SYSTEM.IQueryInterface\nThis interface represents an alarm class of the alarm configuration\nMethods:\nGetInternalID\nGetName\nGetPriority\nIsAcknowledgeSeparately\nStructure:\nGetInternalID (Method)\nGetName (Method)\nGetPriority (Method)\nIsAcknowledgeSeparately (Method)",
+  "tables": []
+}

@@ -1,0 +1,42 @@
+{
+  "library": "String Builder",
+  "title": "ValidateSegment (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Builder/Current/Builder/Function-Blocks/pou-_Builder/IBuilder/Segments/ValidateSegment.html",
+  "page_title": "_Builder.ValidateSegment (METH)",
+  "text": "\nMETHOD ValidateSegment :\nERROR\nThis method validates the current segment of the builder\nTo get a free segment out of the builder, method\nGetCurrentSegment\ncan be called beforehand\nCheck error return value for better diagnostics\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "ValidateSegment",
+          "Type": "ERROR",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "pbyData",
+          "Type": "POINTER TO BYTE",
+          "Comment": "Pointer to the first byte of the segment"
+        },
+        [
+          "udiSize",
+          "UDINT",
+          "Size of the first segment"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "udiCount",
+          "Type": "UDINT",
+          "Comment": "The amount of validated bytes in builder"
+        }
+      ]
+    }
+  ]
+}

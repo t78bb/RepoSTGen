@@ -1,0 +1,25 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_MOVEMENTTYPE (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/DataTypes/DriveInterface/SMC_MOVEMENTTYPE.html",
+  "page_title": "SMC_MOVEMENTTYPE (ENUM)",
+  "text": "\nTYPE SMC_MOVEMENTTYPE :\nDeprecated.  Use SMC_AXIS_TYPE instead.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Name": "rotary",
+          "Initial": "0"
+        },
+        {
+          "Name": "linear",
+          "Initial": "1"
+        }
+      ]
+    }
+  ]
+}

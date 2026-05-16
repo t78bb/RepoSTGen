@@ -1,0 +1,28 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "RMPVarData (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_RMP_ReliableMessageProtocol/AC_RMP_FBCommunication/RMPVarData.html",
+  "page_title": "RMPVarData (STRUCT)",
+  "text": "\nTYPE RMPVarData : STRUCT\nStructure holding one set of mirror variable data to be transmitted\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "pVarData",
+          "Type": "POINTER TO BYTE",
+          "Comment": "Pointer to the variable to be mirrored"
+        },
+        {
+          "Name": "byVarDataSize",
+          "Type": "BYTE",
+          "Comment": "Size of the variable to be mirrored"
+        }
+      ]
+    }
+  ]
+}

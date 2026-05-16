@@ -1,0 +1,33 @@
+{
+  "library": "SM3_Robotics",
+  "title": "MC_TRANSITION_MODE (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/Basic-types/MC_TRANSITION_MODE.html",
+  "page_title": "MC_TRANSITION_MODE (ENUM)",
+  "text": "\nTYPE MC_TRANSITION_MODE :\nThe transition mode describes how consecutive motion commands are blended.\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "TMNone",
+          "Comment": "No blending."
+        },
+        {
+          "Name": "TMStartVelocity",
+          "Comment": "Velocity based blending.The blending points, Aâ and Bâ are chosen so that blending can be\ndone without decelerating, based on a heuristic.For estimating Aâ and Bâ, the commanded dynamic limits are used, the\noverride and the ancillary axis limits are not considered.\nThe goal is that the override and the ancillary limits donât influence\nthe path in space.TransitionParameter[0] is a factor that influences the blending points\nAâ and Bâ.\nA factor of 1 (100%) means that blending is started when the deceleration\nphase would begin on the unmodified first movement, and finished when the\nacceleration phase would end on the unmodified second movement.\nLarger factors lead to a larger blending area, smaller factors\nlead to a smaller blending area.The value of TransitionParameter[2] determines which axes are considered\nfor the velocity.  SeeSMC_StartVelocityAxes.Note on aborting: the factor is taken into account, too, but\ndepending on the aborting movement, a factor of 1 does not\nnecessarily mean that constant velocity can be kept.It is recommended to use the function blockSMC_StartVelocityto\nset the transition mode and transition parameters of movement\nfunction blocks."
+        },
+        {
+          "Name": "TMCornerDistance",
+          "Comment": "Distance based blending.The value of TransitionParameter[0] specifies the distance between\nthe corner (i.e. the end of the first movement) and the cut points\nwhere the blending starts and ends.NoteIn case of tracking between different coordinate systems and\ntracking with PTP movements, the corner distance is evaluated when\nthe axis group plans the trajectory on the blended path. This means\nthat, when the axis group travels the blending, the distance may be\nslightly different, depending on the movement of the tracked\ncoordinate systems.It is recommended to use the function blockSMC_CornerDistanceto\nset the transition mode and transition parameters of movement\nfunction blocks."
+        },
+        {
+          "Name": "TMAxisDistance",
+          "Comment": "Axis distance based blending.This transition mode blends movements in axis space where the blending point\nis determined by giving a distance of the axes to the end point of the first\nmovement / start point of the second movement.The distance is specified by two values:\nA linear distance (TransitionParameter[0]) for linear axes\nplus a rotary distance (TransitionParameter[1]) for rotary axes.\nThe linear distance has the units of the linear axes (e.g. mm), the rotary\ndistance has the unit angular degrees.The value of TransitionParameter[2] determines which axes are considered\nfor the axis distance. SeeSMC_AxisDistanceAxes.The value of TransitionParameter[3] determines how the\ndistances are interpreted. SeeSMC_AxisDistanceSubMode.It is recommended to use the function blockSMC_AxisDistanceTransitionor\nthe functionSMC_AxisDistanceTransitionParamto set the transition mode\nand/or transition parameters of movement function blocks."
+        }
+      ]
+    }
+  ]
+}

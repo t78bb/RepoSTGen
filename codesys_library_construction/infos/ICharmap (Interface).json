@@ -1,0 +1,8 @@
+{
+  "library": "String Builder Base",
+  "title": "ICharmap (Interface)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Builder Base/Current/BuilderBase/Interfaces/ICharmap.html",
+  "page_title": "ICharmap (ITF)",
+  "text": "\nINTERFACE ICharmap EXTENDS __SYSTEM.IQueryInterface\nMethods:\nDecode\nEncode\nStructure:\nDecode (Method)\nEncode (Method)",
+  "tables": []
+}

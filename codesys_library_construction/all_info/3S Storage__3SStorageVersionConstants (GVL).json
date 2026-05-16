@@ -1,0 +1,31 @@
+{
+  "library": "3S Storage",
+  "title": "_3SStorageVersionConstants (GVL)",
+  "url": "https://content.helpme-codesys.com/en/libs/3S Storage/Current/_3SStorageVersionConstants.html",
+  "page_title": "_3SStorageVersionConstants (GVL)",
+  "text": "Deutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nMenu\nSearch\nDeutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\n_3SStorage\nExternal\nFunctions\nStorage\nInstances\nStorage (FunctionBlock)\nIStorage2\nStorageClear (Method)\nStorageClose (Method)\nStorageEncoding (Property)\nStorageGetMetrics (Method)\nStorageGetPath (Method)\nStorageIsReadOnly (Property)\nStorageLockingState (Property)\nStorageNumOfTables (Property)\nStorageOpenFile (Method)\nStorageReorg (Method)\nStorageSchemaVersion (Property)\nStorageUserVersion (Property)\nStorageVersion (Property)\nTableOpen (Method)\nTransactionBegin (Method)\nUtilityGetCurrentDateAndTime (Method)\nUtilityRandomness (Method)\n_3SStorageVersionConstants (GVL)\nFile and Project Information\nLibrary Reference\nCAA FB Factory\nLibrary Identification\nLibrary Properties\nCAA Storage\nLibrary Identification\nLibrary Properties\nCAA Types Extern\nLibrary Identification\nLibrary Properties\n3S Storage\nDocs\n»\n_3SStorageVersionConstants (GVL)\n_3SStorageVersionConstants (GVL)\nÂ¶\nInOut:\nName\nType\nInitial\nComment\n_3SSTORAGE_VERSION_LARGEROREQUAL_3_5_5_0_\nINT\n0\nThese variables should not be removed, because other libraries or code generation may rely on\nthese variables to identifiy a version of the lib!\n_3SSTORAGE_VERSION_LARGEROREQUAL_3_5_11_10_\nINT\n0\ntop\nCODESYS Group | We\nsoftware\nAutomation.\nto software\n['sɒftwɛər]\ntransitive verb\n__softwared/softwaring\n: to develop software\n// to software automation: to develop software for automation purposes\nThe CODESYS Group is the manufacturer of CODESYS, the leading hardware-independent\n                                    IEC 61131-3 automation software for developing and engineering controller\n                                    applications.\nCODESYS® is a registered trademark.\nCODESYS GmbH\nA member of the CODESYS Group\nMemminger Straße 151, 87439 Kempten\nGermany\nTel.:\n+49-831-54031-0\ninfo@codesys.com\nLegal Notice\nPrivacy Policy\nLinkedIn\nYoutube\nRSS\nDownloads\nLogin\nCODESYS Store\n© 2022 CODESYS GmbH\n| A member of the CODESYS Group",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "_3SSTORAGE_VERSION_LARGEROREQUAL_3_5_5_0_",
+          "Type": "INT",
+          "Initial": "0",
+          "Comment": "These variables should not be removed, because other libraries or code generation may rely on\nthese variables to identifiy a version of the lib!"
+        },
+        {
+          "Name": "_3SSTORAGE_VERSION_LARGEROREQUAL_3_5_11_10_",
+          "Type": "INT",
+          "Initial": "0",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

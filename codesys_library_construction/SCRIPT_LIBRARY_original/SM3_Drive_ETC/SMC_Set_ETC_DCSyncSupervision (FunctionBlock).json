@@ -1,0 +1,59 @@
+{
+  "library": "SM3_Drive_ETC",
+  "title": "SMC_Set_ETC_DCSyncSupervision (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Drive_ETC/Current/SMC_Set_ETC_DCSyncSupervision.html",
+  "page_title": "SMC_Set_ETC_DCSyncSupervision (FB)",
+  "text": "AXIS_REF_ETC_BASE_SM3 (FunctionBlock)\nParameterAccess\nGetSlaveId (Method)\nGlobalTextList (GlobalTextList)\nSMC3_ETC\nvisu templates\nSMC_ETC_InterpolateAxisPosition (Function)\nSMC_ETC_Params (ParamList)\nSMC_ETC_Timestamp_32bitTo64bit (Function)\nSMC_Set_ETC_DCSyncSupervision (FunctionBlock)\nFile and Project Information\nLibrary Reference\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nCmpIecTask\nLibrary Identification\nLibrary Properties\nCmpLog\nLibrary Identification\nLibrary Properties\nIoStandard\nLibrary Identification\nLibrary Properties\nSM3_Basic\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nSM3_ETC_ITF\nLibrary Identification\nLibrary Properties\nSM3_RBase\nLibrary Identification\nLibrary Properties\nSM3_Shared\nLibrary Identification\nLibrary Properties\nSM3_StringUtils\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nVisuElem3DPath\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElemCamDisplayer\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElemMeter\nLibrary Identification\nLibrary Properties\nVisuElemTextEditor\nLibrary Identification\nLibrary Properties\nVisuElemTrace\nLibrary Identification\nLibrary Properties\nVisuElems\nLibrary Identification\nLibrary Properties\nVisuElemsAlarm\nLibrary Identification\nLibrary Properties\nVisuElemsDateTime\nLibrary Identification\nLibrary Properties\nVisuElemsSpecialControls\nLibrary Identification\nLibrary Properties\nVisuElemsWinControls\nLibrary Identification\nLibrary Properties\nVisuInputs\nLibrary Identification\nLibrary Properties\nVisuNativeControl\nLibrary Identification\nLibrary Properties\nSM3_Drive_ETC\nDocs\n»\nSMC_Set_ETC_DCSyncSupervision (FB)\nSMC_Set_ETC_DCSyncSupervision (FB)\nÂ¶\nFUNCTION_BLOCK SMC_Set_ETC_DCSyncSupervision\nThis Function Block can be used to turn On/Off the DC Sync Supervision of an Ethercat axis.\nBy default it is set to true and the the state machine checks whether the\nDistributed Clocks(DC) are in Sync every cycle.\nInOut:\nScope\nName\nType\nInitial\nComment\nInout\nAxis\nAXIS_REF_ETC_Base_SM3\nReference to axis\nInput\nbExecute\nBOOL\nTRUE\n: Enables the execution of the Function Block.\nbSuperviseDCSync\nBOOL\nTRUE\nFALSE\n: Turns Off the DC Sync Supervision. By default it\nis set to True\nOutput\nbDone\nBOOL\nThe execution of the Function Block is finished\nbError\nBOOL\nTRUE\n: Error has occurred within the function block.\nErrorID\nSMC_ERROR\nError identification",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_ETC_Base_SM3",
+          "Initial": "",
+          "Comment": "Reference to axis"
+        },
+        {
+          "Scope": "Input",
+          "Name": "bExecute",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUE: Enables the execution of the Function Block."
+        },
+        [
+          "bSuperviseDCSync",
+          "BOOL",
+          "TRUE",
+          "FALSE: Turns Off the DC Sync Supervision. By default it\nis set to True"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bDone",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "The execution of the Function Block is finished"
+        },
+        [
+          "bError",
+          "BOOL",
+          "",
+          "TRUE: Error has occurred within the function block."
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "library": "BACnet",
+  "title": "SetBACnetObjectIDProperty (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/pou-IBACnetObjectBase/Utilities/SetBACnetObjectIDProperty.html",
+  "page_title": "IBACnetObjectBase.SetBACnetObjectIDProperty (METH)",
+  "text": "\nMETHOD SetBACnetObjectIDProperty\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "propID",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_ID"
+        },
+        [
+          "objID",
+          "CmpBACnet.IEC_BACNET_OBJECT_ID"
+        ]
+      ]
+    }
+  ]
+}

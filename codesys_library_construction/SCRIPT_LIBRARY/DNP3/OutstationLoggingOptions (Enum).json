@@ -1,0 +1,113 @@
+{
+  "library": "DNP3",
+  "title": "OutstationLoggingOptions (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Outstation/OutstationLoggingOptions.html",
+  "page_title": "OutstationLoggingOptions (ENUM)",
+  "text": "\nTYPE OutstationLoggingOptions :\nLogging options - can be combined with bitwise OR operation to enable specific logging.\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "None",
+          "Initial": "16#0",
+          "Comment": ""
+        },
+        {
+          "Name": "StartStop",
+          "Initial": "16#1",
+          "Comment": "Outstation start / stop."
+        },
+        {
+          "Name": "DataModel",
+          "Initial": "16#2",
+          "Comment": "Outstation data model information"
+        },
+        {
+          "Name": "OutstationCallbacks",
+          "Initial": "16#4",
+          "Comment": "Outstation callbacks"
+        },
+        {
+          "Name": "CallbackInfo",
+          "Initial": "16#100",
+          "Comment": "Outstation/Point callback information"
+        },
+        {
+          "Name": "Callbacks",
+          "Initial": "16#200",
+          "Comment": "Outstation/Point callbacks"
+        },
+        {
+          "Name": "PointCallbacks",
+          "Initial": "16#8000",
+          "Comment": "Point callbacks"
+        },
+        {
+          "Name": "PointChanges",
+          "Initial": "16#400",
+          "Comment": "Point changes"
+        },
+        {
+          "Name": "Operate",
+          "Initial": "16#800",
+          "Comment": "Point operate"
+        },
+        {
+          "Name": "Write",
+          "Initial": "16#1000",
+          "Comment": "Point write"
+        },
+        {
+          "Name": "Freeze",
+          "Initial": "16#2000",
+          "Comment": "Point freeze"
+        },
+        {
+          "Name": "Read",
+          "Initial": "16#4000",
+          "Comment": "Point read"
+        },
+        {
+          "Name": "PointAssignClass",
+          "Initial": "16#10000",
+          "Comment": "Point assign class"
+        },
+        {
+          "Name": "PointEvents",
+          "Initial": "16#20000",
+          "Comment": "Point events forced by application"
+        },
+        {
+          "Name": "PointDetails",
+          "Initial": "16#40000",
+          "Comment": "Point details"
+        },
+        {
+          "Name": "PointScans",
+          "Initial": "16#80000",
+          "Comment": "Point scans"
+        },
+        {
+          "Name": "SessionStatistics",
+          "Initial": "16#40000000",
+          "Comment": "Session statistics"
+        },
+        {
+          "Name": "Internals",
+          "Initial": "16#80000000",
+          "Comment": "Internals"
+        },
+        {
+          "Name": "All",
+          "Initial": "16#FFFFFFFF",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

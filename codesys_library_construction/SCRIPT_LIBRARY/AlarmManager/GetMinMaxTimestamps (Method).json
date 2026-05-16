@@ -1,0 +1,46 @@
+{
+  "library": "AlarmManager",
+  "title": "GetMinMaxTimestamps (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Alarm-storage-API/pou-AlarmStorageReader/GetMinMaxTimestamps.html",
+  "page_title": "AlarmStorageReader.GetMinMaxTimestamps (METH)",
+  "text": "\nMETHOD GetMinMaxTimestamps :\nEAlarmStorageReaderErrors\nThis method determines minimum and maximum timestamp stored in the alarm storage.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetMinMaxTimestamps",
+          "Type": "EAlarmStorageReaderErrors",
+          "Comment": "An EAlarmStorageReaderErrors indicating, whether the\nprocessing was successful or not"
+        },
+        {
+          "Scope": "Output",
+          "Name": "liMinTimestamp",
+          "Type": "LINT",
+          "Comment": "Returns minimum timestamp"
+        },
+        [
+          "liMaxTimestamp",
+          "LINT",
+          "Returns maximum timestamp"
+        ],
+        [
+          "xTableIsEmpty",
+          "BOOL",
+          "Indicates, whether the database table is empty. The output parameter liMinTimestamp and\nand liMaxTimestamp contain valid values only if this output parameter is FALSE."
+        ],
+        [
+          "udiCountAlarms",
+          "UDINT",
+          "The number of alarms, that are stored in the alarm storage\nfor the given timestamp"
+        ]
+      ]
+    }
+  ]
+}

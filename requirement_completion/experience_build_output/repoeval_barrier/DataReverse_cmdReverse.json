@@ -1,0 +1,11 @@
+{
+  "模糊点列表": [
+    {
+      "模糊点类型": "报错机制",
+      "模糊点描述": "原始需求未说明对于非'extend'或'retract'输入的处理方式",
+      "差异细节": "模型生成代码在输入既不是'extend'也不是'retract'时保持输入不变，而参考代码对此情况没有明确的处理逻辑",
+      "精准需求描述": "当输入不是'TargetDirect.extend'或'TargetDirect.retract'时，应保持输出与输入一致"
+    }
+  ],
+  "case_id": "repoeval_barrier/DataReverse_cmdReverse"
+}

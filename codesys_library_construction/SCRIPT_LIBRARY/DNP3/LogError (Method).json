@@ -1,0 +1,23 @@
+{
+  "library": "DNP3",
+  "title": "LogError (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/PointObserver/pou-PointObserver/LogError.html",
+  "page_title": "PointObserver.LogError (METH)",
+  "text": "\nMETHOD PROTECTED LogError\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "str",
+          "Type": "LoggerString"
+        }
+      ]
+    }
+  ]
+}

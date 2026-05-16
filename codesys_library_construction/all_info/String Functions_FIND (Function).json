@@ -1,0 +1,53 @@
+{
+  "library": "String Functions",
+  "title": "FIND (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Functions/Current/StrFunc/Functions/FIND.html",
+  "page_title": "FIND (FUN)",
+  "text": "Library Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nStrFunc\nAliases\nIString (Alias)\nEnums\nERROR (Enum)\nFunctions\nCONCAT (Function)\nCOUNT (Function)\nDELETE (Function)\nFIND (Function)\nINSERT (Function)\nLEFT (Function)\nLEN (Function)\nMID (Function)\nREPLACE (Function)\nRIGHT (Function)\nFile and Project Information\nLibrary Reference\nString Segments\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nUTF-8 Encoding Support\nLibrary Identification\nLibrary Properties\nString Functions\nDocs\n»\nStrFunc\n»\nFunctions\n»\nFIND (FUN)\nFIND (FUN)\nÂ¶\nFUNCTION FIND : UDINT\nSearches for the position of a partial string within a string.\nThe find is index based, to search from first position\nudiStart\n:=\n0\nReturn value also returns index of the found rune, e.g. for found first rune it returns\n0\nInOut:\nScope\nName\nType\nInitial\nComment\nReturn\nFIND\nUDINT\nInput\nitfString\nIString\nString within which\nitfPartial\nis searched\nitfPartial\nIString\nString whose position is searched in\nitfString\nudiStart\nUDINT\n0\nThe index position within\nitfString\nfrom where the\nsearch starts\nOutput\neErrorID\nERROR",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "FIND",
+          "Type": "UDINT",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfString",
+          "Type": "IString",
+          "Initial": "",
+          "Comment": "String within whichitfPartialis searched"
+        },
+        [
+          "itfPartial",
+          "IString",
+          "",
+          "String whose position is searched initfString"
+        ],
+        [
+          "udiStart",
+          "UDINT",
+          "0",
+          "The index position withinitfStringfrom where the\nsearch starts"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "eErrorID",
+          "Type": "ERROR",
+          "Initial": "",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

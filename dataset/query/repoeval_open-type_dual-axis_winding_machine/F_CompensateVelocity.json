@@ -1,0 +1,5 @@
+{
+  "requirement": "This code is intended to implement velocity compensation based on positional changes, material thickness, and radius adjustments during unwinding or rewinding operations.",
+  "provide_code": "FUNCTION F_CompensateVelocity : LREAL\nVAR_INPUT\n\tlCurrentVel\t\t:\tLREAL;\t\t//当前速度\n\tlOldPos\t\t\t:\tLREAL;\t\t//上一次位置\n\tlNewPos\t\t\t:\tLREAL;\t\t//当前位置\n\tlRadius\t\t\t:\tLREAL;\t\t//当前半径\n\tlTk\t\t\t\t:\tLREAL;\t\t//材料厚度\n\tbUnwinding\t\t:\tBOOL;\t\t//TRUE=放卷（半径减小），FALSE=收卷（半径增加）\nEND_VAR",
+  "function_name": "F_CompensateVelocity"
+}

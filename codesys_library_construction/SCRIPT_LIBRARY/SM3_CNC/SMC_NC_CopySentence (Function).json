@@ -1,0 +1,33 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_NC_CopySentence (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/GSentence/SMC_NC_CopySentence.html",
+  "page_title": "SMC_NC_CopySentence (FUN)",
+  "text": "\nFUNCTION SMC_NC_CopySentence : BOOL\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SMC_NC_CopySentence",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Inout",
+          "Name": "sentencesOut",
+          "Type": "SMC_GSentenceQueue"
+        },
+        {
+          "Scope": "Inout Const",
+          "Name": "itSentence",
+          "Type": "SMC_GSentence_Iterator"
+        }
+      ]
+    }
+  ]
+}

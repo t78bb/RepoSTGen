@@ -1,0 +1,31 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "GetMessageForReceiver (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_RMP_ReliableMessageProtocol/pou-RMPMessageBuffer/GetMessageForReceiver.html",
+  "page_title": "RMPMessageBuffer.GetMessageForReceiver (METH)",
+  "text": "\nMETHOD FINAL GetMessageForReceiver : UINT\nReturns position of oldest message treceived for uireceiverID (16#FFFF if no message received)\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetMessageForReceiver",
+          "Type": "UINT",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "uiReceiverModuleID",
+          "Type": "UINT",
+          "Comment": "The id of the receiver to get the message from the buffer for"
+        }
+      ]
+    }
+  ]
+}

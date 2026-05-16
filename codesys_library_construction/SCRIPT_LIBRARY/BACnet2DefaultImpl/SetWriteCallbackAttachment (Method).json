@@ -1,0 +1,32 @@
+{
+  "library": "BACnet2DefaultImpl",
+  "title": "SetWriteCallbackAttachment (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2DefaultImpl/Current/BACnetDefaultImpl/Function-Blocks/LoggingObjects/Internal/pou-LogObjectsBase/SetWriteCallbackAttachment.html",
+  "page_title": "LogObjectsBase.SetWriteCallbackAttachment (METH)",
+  "text": "\nMETHOD PROTECTED SetWriteCallbackAttachment : CmpBACnet.IEC_BACNET_STATUS\nSets the WritePropertyCallbackAttachment\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetWriteCallbackAttachment",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS"
+        },
+        {
+          "Scope": "Input",
+          "Name": "bacObj",
+          "Type": "BACnet.BACnetObjectBase"
+        },
+        [
+          "propId",
+          "CmpBACnet.IEC_BACNET_PROPERTY_ID"
+        ]
+      ]
+    }
+  ]
+}

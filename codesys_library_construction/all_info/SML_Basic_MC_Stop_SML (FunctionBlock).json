@@ -1,0 +1,52 @@
+{
+  "library": "SML_Basic",
+  "title": "MC_Stop_SML (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SML_Basic/Current/PLCopen/MC_Stop_SML.html",
+  "page_title": "MC_Stop_SML (FB)",
+  "text": "Additional\nSML_ChangeAxisConfig (FunctionBlock)\nSML_ReinitDrive (FunctionBlock)\nSML_SetOpmode (FunctionBlock)\nSML_StartupDrive (FunctionBlock)\nBase\nAxis_REF_SML (FunctionBlock)\nConfig\nReadStandardConfigParameters (Method)\nReinitAxis (Method)\nError\nSML_ClearFBError (Function)\nSML_ErrorText (Function)\nSML_Language (Enum)\nSML_AXIS_STATE (Enum)\nSML_Constants (GVL)\nSML_ERROR (Enum)\nSML_FBError (Struct)\nSML_Globals (GVL)\nSML_MOVEMENTTYPE (Enum)\nSML_OPMODE (Enum)\nSML_Ramptype (Enum)\nGlobalTextList (GlobalTextList)\nLibrary Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nPLCopen\nMC_Halt_SML (FunctionBlock)\nMC_Home_SML (FunctionBlock)\nMC_MoveAbsolute_SML (FunctionBlock)\nMC_MoveRelative_SML (FunctionBlock)\nMC_MoveVelocity_SML (FunctionBlock)\nMC_Power_SML (FunctionBlock)\nMC_ReadBoolParameter_SML (FunctionBlock)\nMC_ReadParameter_SML (FunctionBlock)\nMC_ReadStatus_SML (FunctionBlock)\nMC_Reset_SML (FunctionBlock)\nMC_Stop_SML (FunctionBlock)\nMC_WriteBoolParameter_SML (FunctionBlock)\nMC_WriteParameter_SML (FunctionBlock)\nVisu_Templates\nHelpers\nTextListForCombobox_SML_MOVEMENTTYPE (TextList)\nTextListForCombobox_SML_OPMODE (TextList)\nStartupDrive\nFile and Project Information\nLibrary Reference\n3SLicense\nLibrary Identification\nLibrary Properties\nCmpApp\nLibrary Identification\nLibrary Properties\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nCmpLog\nLibrary Identification\nLibrary Properties\nCmpSchedule\nLibrary Identification\nLibrary Properties\nComponent Manager\nLibrary Identification\nLibrary Properties\nIoStandard\nLibrary Identification\nLibrary Properties\nSM3_Math\nLibrary Identification\nLibrary Properties\nSM3_Shared\nLibrary Identification\nLibrary Properties\nSM3_StringUtils\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nSysCpuHandling\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysTarget\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nVisuElem3DPath\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElemCamDisplayer\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElemMeter\nLibrary Identification\nLibrary Properties\nVisuElemTextEditor\nLibrary Identification\nLibrary Properties\nVisuElemTrace\nLibrary Identification\nLibrary Properties\nVisuElems\nLibrary Identification\nLibrary Properties\nVisuElemsAlarm\nLibrary Identification\nLibrary Properties\nVisuElemsDateTime\nLibrary Identification\nLibrary Properties\nVisuElemsSpecialControls\nLibrary Identification\nLibrary Properties\nVisuElemsWinControls\nLibrary Identification\nLibrary Properties\nVisuInputs\nLibrary Identification\nLibrary Properties\nVisuNativeControl\nLibrary Identification\nLibrary Properties\nSML_Basic\nDocs\n»\nPLCopen\n»\nMC_Stop_SML (FB)\nMC_Stop_SML (FB)\nÂ¶\nFUNCTION_BLOCK MC_Stop_SML\nExecutes a (blocking) stop on the axis.\nAs long as the\nExecute\ninput is set or the stop is not finished, no other motion\ncommand is possible on the axis, and the axis state is\nStopping\n.  After\nboth the stop is finished and\nExecute\nis reset, the axis status is set to\nStandstill\n.\nNote\nthe deceleration ramp can be set using parameter 2090 (\nfQuickStopDeceleration\n).\nThis diagram illustrates the behavior of\nMC_Stop_SML\n:\nThe example below shows the behavior in combination with\nMC_MoveVelocity_SML\n.\nA rotating axis is ramped down with FB\nMC_Stop_SML\n.\nThe axis rejects motion commands as long as MC_Stop_SML parameter\nExecute\n=\nTRUE\n.\nMC_MoveVelocity_SML\nreports an error indicating the busy\nMC_Stop_SML\ncommand.\nInOut:\nScope\nName\nType\nComment\nInout\nAxis\nAXIS_REF_SML\nReference to the axis\nInput\nExecute\nBOOL\nRising edge: The stop is started\nOutput\nDone\nBOOL\nZero velocity reached\nBusy\nBOOL\nThe FB is not finished and new output values are to be expected\nError\nBOOL\nAn error has occured\nErrorID\nSML_ERROR\nError number",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SML",
+          "Comment": "Reference to the axis"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Comment": "Rising edge: The stop is started"
+        },
+        {
+          "Scope": "Output",
+          "Name": "Done",
+          "Type": "BOOL",
+          "Comment": "Zero velocity reached"
+        },
+        [
+          "Busy",
+          "BOOL",
+          "The FB is not finished and new output values are to be expected"
+        ],
+        [
+          "Error",
+          "BOOL",
+          "An error has occured"
+        ],
+        [
+          "ErrorID",
+          "SML_ERROR",
+          "Error number"
+        ]
+      ]
+    }
+  ]
+}

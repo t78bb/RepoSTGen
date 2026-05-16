@@ -1,0 +1,67 @@
+{
+  "library": "SM3_Robotics",
+  "title": "MC_ReadCoordinateTransform (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/Diagnostics/MC_ReadCoordinateTransform.html",
+  "page_title": "MC_ReadCoordinateTransform (FB)",
+  "text": "\nFUNCTION_BLOCK MC_ReadCoordinateTransform\nThis function block reads the coordinate transformation that is configured\nbetween the world coordinate system (WCS) and a product coordinate system\n(PCS_1, PCS_2) or machine coordinate system (MCS).\nIf a dynamic coordinate system is queried, its current value is returned.\nNote\nThe returned coordiante system is not necessarily the same\nthat is used by the active movement.  Instead, the returned coordinate\nsystem is the one that is effective for new movements.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "AxisGroup",
+          "Type": "AXIS_GROUP_REF_SM3",
+          "Comment": "Reference to a group of axis"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Enable",
+          "Type": "BOOL",
+          "Comment": "Gets the coordinate transformation of the\naxis group continuously while enabled"
+        },
+        [
+          "CoordSystem",
+          "SMC_COORD_SYSTEM",
+          "Which coordinate transformation is to be read.  Allowed values are\nPCS_1, PCS_2, and MCS."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Valid",
+          "Type": "BOOL",
+          "Comment": "TRUEif valid outputs are available"
+        },
+        [
+          "Busy",
+          "BOOL",
+          "The FB is not finished"
+        ],
+        [
+          "Error",
+          "BOOL",
+          "Signals that an error has occurred within the function block"
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ],
+        [
+          "CoordTransform",
+          "MC_COORD_REF",
+          "The coordinate transformation"
+        ],
+        [
+          "Name",
+          "STRING",
+          "The name of the coordinate system."
+        ]
+      ]
+    }
+  ]
+}

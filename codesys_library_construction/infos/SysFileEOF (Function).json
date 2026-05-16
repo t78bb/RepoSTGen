@@ -1,0 +1,31 @@
+{
+  "library": "SysFile",
+  "title": "SysFileEOF (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SysFile/Current/SysFileEOF.html",
+  "page_title": "SysFileEOF (FUN)",
+  "text": "\nFUNCTION SysFileEOF : RTS_IEC_RESULT\nCheck, if end of file is reached\nNote\nEnd of file is only checked after a read operation with SysFileRead! But after a SysFileWrite or SysFileSetPos call, the function\nreturns ERR_FAILED (no end of file)!\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SysFileEOF",
+          "Type": "RTS_IEC_RESULT",
+          "Comment": "Returns the runtime system error code (see CmpErrors.library):ERR_OK: End of file reached at reading beyond the end of the fileERR_FAILED: No end of file reachedERR_PARAMETER: hFile is invalid"
+        },
+        {
+          "Scope": "Input",
+          "Name": "hFile",
+          "Type": "RTS_IEC_HANDLE",
+          "Comment": "Handle of the file"
+        }
+      ]
+    }
+  ]
+}

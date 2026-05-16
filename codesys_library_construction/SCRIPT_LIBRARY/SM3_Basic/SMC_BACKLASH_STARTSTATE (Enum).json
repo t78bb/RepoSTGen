@@ -1,0 +1,33 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_BACKLASH_STARTSTATE (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/DataTypes/Movement/SMC_BACKLASH_STARTSTATE.html",
+  "page_title": "SMC_BACKLASH_STARTSTATE (ENUM)",
+  "text": "\nTYPE SMC_BACKLASH_STARTSTATE :\nDescribes the status of the axis at the time when backlash compensation\nmodule starts.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "SMC_BL_START_NEGATIVE",
+          "Initial": "-1",
+          "Comment": "The slave axis is under traction in negative direction,\nthat is: a movement in negative direction needs no compensation;\nin case of a movement in positive direction the doublefBacklashdistance will be made up."
+        },
+        {
+          "Name": "SMC_BL_START_NONE",
+          "Initial": "0",
+          "Comment": "The slave axis is not under traction; a movement in positive or\nnegative direction will cause a corresponding compensating movement\nof distancefBacklash."
+        },
+        {
+          "Name": "SMC_BL_START_POSITIVE",
+          "Initial": "1",
+          "Comment": "The slave axis is under traction in positive direction,\nthat is: a movement in positive direction needs no compensation;\nin case if a movement in negative direction the doublefBacklashdistance will be made up."
+        }
+      ]
+    }
+  ]
+}

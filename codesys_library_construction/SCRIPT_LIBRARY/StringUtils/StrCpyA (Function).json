@@ -1,0 +1,41 @@
+{
+  "library": "StringUtils",
+  "title": "StrCpyA (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/StringUtils/Current/Public-Parts/Ansi/StrCpyA.html",
+  "page_title": "StrCpyA (FUN)",
+  "text": "\nFUNCTION StrCpyA : DINT\nDoes a strcpy from the source string pStr to the buffer pBuffer. pBuffer must not be NULL!\nWill return the number of copied characters including the terminating â\\0â or â\\0â\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "StrCpyA",
+          "Type": "DINT",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "pBuffer",
+          "Type": "CharBufferPtr",
+          "Comment": ""
+        },
+        [
+          "iBufferSize",
+          "DINT",
+          "the size in bytes of the buffer"
+        ],
+        [
+          "pStr",
+          "CharBufferPtr",
+          "the source as a pointer to string"
+        ]
+      ]
+    }
+  ]
+}

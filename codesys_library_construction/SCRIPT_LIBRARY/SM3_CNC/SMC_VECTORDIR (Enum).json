@@ -1,0 +1,38 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_VECTORDIR (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_Trafo_Data-types/SMC_VECTORDIR.html",
+  "page_title": "SMC_VECTORDIR (ENUM)",
+  "text": "\nTYPE SMC_VECTORDIR :\nThis enumeration variable is used as an input variable at\nSMC_CalcDirectionFromVector\nto define if the angle of the vector itself,\nits inverse or one of the two perpendiculars shall be used.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "SMC_tangential",
+          "Initial": "0",
+          "Comment": "No offset; tangential direction"
+        },
+        {
+          "Name": "SMC_orthogonal_r",
+          "Initial": "-90",
+          "Comment": "Offset -90; orthogonal direction clockwise"
+        },
+        {
+          "Name": "SMC_orthogonal_l",
+          "Initial": "90",
+          "Comment": "Offset 90; orthogonal direction counterclockwise"
+        },
+        {
+          "Name": "SMC_opp_tangential",
+          "Initial": "180",
+          "Comment": "Offset 180; opposite directionInputeDirindcates, whether the direction is calculated\nparallel to the path tangent (MC_tangential),\nopponent (SMC_opp_tangent) or orthogonal (SMC_orthogonal_r=rightof the path tangent, SMC_orthogonal_l = left of the path tangent)."
+        }
+      ]
+    }
+  ]
+}

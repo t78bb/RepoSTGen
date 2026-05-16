@@ -1,0 +1,40 @@
+{
+  "library": "DNP3",
+  "title": "SetSessionConfigAspectRestartDelay (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Outstation/pou-OutstationConfiguration/SetSessionConfigAspectRestartDelay.html",
+  "page_title": "OutstationConfiguration.SetSessionConfigAspectRestartDelay (METH)",
+  "text": "\nMETHOD SetSessionConfigAspectRestartDelay :\nError\nSet optional outstation session configuration aspect - restart delay.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetSessionConfigAspectRestartDelay",
+          "Type": "Error",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "warmRestartDelay",
+          "Type": "UINT",
+          "Initial": "2000",
+          "Comment": "The time, in ms, a master must wait after receiving a response to a\nwarm restart request. This value is encoded in a time delay fine object\nin the response which limits it to 65535 ms."
+        },
+        [
+          "coldRestartDelay",
+          "UINT",
+          "5000",
+          "The time, in ms, a master must wait after receiving a response to a\ncold restart request. This value is encoded in a time delay fine object\nin the response which limits it to 65535 ms."
+        ]
+      ]
+    }
+  ]
+}

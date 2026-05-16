@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现关闭插座的命令功能。",
+  "provide_code": "FUNCTION_BLOCK PUBLIC FB_SocketOffCommand IMPLEMENTS I_Command"
+}

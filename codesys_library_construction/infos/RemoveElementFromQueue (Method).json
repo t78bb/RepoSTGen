@@ -1,0 +1,28 @@
+{
+  "library": "AC_DataLog",
+  "title": "RemoveElementFromQueue (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_DataLog/Current/AC_DataLog/DataLogStorage/pou-DataLogStorageBase/private/RemoveElementFromQueue.html",
+  "page_title": "DataLogStorageBase.RemoveElementFromQueue (METH)",
+  "text": "\nMETHOD FINAL PROTECTED RemoveElementFromQueue : BOOL\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "RemoveElementFromQueue",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfElement",
+          "Type": "COL.IElement"
+        }
+      ]
+    }
+  ]
+}

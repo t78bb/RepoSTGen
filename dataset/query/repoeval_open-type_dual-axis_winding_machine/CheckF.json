@@ -1,0 +1,5 @@
+{
+  "requirement": "This code is intended to implement a calculation for a force value (lF) based on mass (lM), length (lL), and height (lH) using a specific formula when height (lH) is non-zero.",
+  "provide_code": "FUNCTION_BLOCK CheckF\nVAR_INPUT\n\tlM\t:\tLREAL;\n\tlL\t:\tLREAL;\n\tlH\t:\tLREAL;\nEND_VAR\nVAR_OUTPUT\n\tlF\t:\tLREAL;\nEND_VAR",
+  "function_name": "CheckF"
+}

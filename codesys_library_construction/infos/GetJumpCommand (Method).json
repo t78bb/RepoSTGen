@@ -1,0 +1,28 @@
+{
+  "library": "SM3_CNC",
+  "title": "GetJumpCommand (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/GSentence/pou-SMC_GSentenceQueue/GetJumpCommand.html",
+  "page_title": "SMC_GSentenceQueue.GetJumpCommand (METH)",
+  "text": "\nMETHOD GetJumpCommand :\nSMC_GJUMP_COMMAND\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetJumpCommand",
+          "Type": "SMC_GJUMP_COMMAND"
+        },
+        {
+          "Scope": "Output",
+          "Name": "jumpTarget",
+          "Type": "SMC_GJUMP_TARGET"
+        }
+      ]
+    }
+  ]
+}

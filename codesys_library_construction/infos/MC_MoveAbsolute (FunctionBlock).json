@@ -1,0 +1,113 @@
+{
+  "library": "SM3_Basic",
+  "title": "MC_MoveAbsolute (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/Movement/MC_MoveAbsolute.html",
+  "page_title": "MC_MoveAbsolute (FB)",
+  "text": "\nFUNCTION_BLOCK MC_MoveAbsolute\nThis function block causes the axis to be moved to an absolute position and uses the values for\nVelocity\n,\nDeceleration\n,\nAcceleration\nand\nJerk\n.\nIf no further actions are pending, the execution ends with velocity 0. (See:\nstandstill\n)\nExample\nUse of\nMC_MoveAbsolute\nThe following illustration shows two possibilities for combining two instances (\nFirst\nand\nSecond\n) of the type\nMC_MoveAbsolute\n.\nIn the left-hand part of the diagram the\nSecond\ninstance is called after the\nFirst\ninstance.\nIf\nFirst\nhas reached the specified position of 6000 and the input\nVelocity\nis 0, then the\nDone\noutput will cause the\nSecond\ninstance to move the axis to the position 10000.\nIn the right-hand part of the diagram, the execution is started by\nSecond\nwhile\nFirst\nis still operating.\nThe motion caused by\nFirst\nis interrupted and aborted by the\nTest\nsignal which is transmitted during the constant velocity phase of\nFirst\n.\nSecond\nsteers directly to position 10000, even though position 6000 has not yet been reached.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUE: Starts execution."
+        },
+        [
+          "Position",
+          "LREAL",
+          "",
+          "Target position of the motion in technical units [u],\ncan be negative or positive."
+        ],
+        [
+          "Velocity",
+          "LREAL",
+          "",
+          "Maximum velocity in techincal units per second [u/s].Is always positive.Is not necessarily reached."
+        ],
+        [
+          "Acceleration",
+          "LREAL",
+          "",
+          "Acceleration in [u/sÂ²].Is always positive.Increasing motor energy"
+        ],
+        [
+          "Deceleration",
+          "LREAL",
+          "",
+          "Deceleration in [u/sÂ²].Is always positive.Decreasing motor energy"
+        ],
+        [
+          "Jerk",
+          "LREAL",
+          "",
+          "Maximum magnitude of jerk in [u/sÂ³]"
+        ],
+        [
+          "Direction",
+          "MC_Direction",
+          "shortest",
+          "The direction is used for modulo axes to determine the modulo-period in\nwhich the target position is reached.\nFor finite axes, the input is ignored."
+        ],
+        [
+          "BufferMode",
+          "MC_BUFFER_MODE",
+          "",
+          "Defines the chronological sequence of the FB relative to the previous\nblock.  If the function block is Busy, then only BufferMode=Aborting\nis allowed."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Done",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUE: End position has been reached."
+        },
+        [
+          "Busy",
+          "BOOL",
+          "",
+          "TRUE: Function block is in operation.If no further actions are pending, the execution ends with velocity 0."
+        ],
+        [
+          "Active",
+          "BOOL",
+          "",
+          "Indicates that the FB has control on the axis"
+        ],
+        [
+          "CommandAborted",
+          "BOOL",
+          "",
+          "TRUE: The execution is interrupted by an other function\nblock."
+        ],
+        [
+          "Error",
+          "BOOL",
+          "",
+          "TRUE: Error has occurred."
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "模糊点列表": [
+    {
+      "模糊点类型": "方法实现",
+      "模糊点描述": "原始需求未明确是否需要通过特定方法控制bActive的状态",
+      "差异细节": "模型生成代码中bActive的状态由bSocketState变量控制，而参考代码通过On和Off方法直接设置bActive的状态",
+      "精准需求描述": "应提供On和Off方法，分别用于将bActive设置为true和false"
+    }
+  ],
+  "case_id": "repoeval_Command1/FB_Socket"
+}

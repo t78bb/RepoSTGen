@@ -1,0 +1,43 @@
+{
+  "library": "CommFB",
+  "title": "DP_AINFO (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/CommFB/Current/CommFB/DP_AINFO.html",
+  "page_title": "DP_AINFO (STRUCT)",
+  "text": "CommFB\nAINFO_TYPE (Union)\nAddressConcept (GVL)\nAddress Concept\nGenerating a CommFB-ID\nProfibus DP\nProfinet IO\nDevice Diagnosis\nAddress Conversion\nAddresses\nADDR_TO_ID (FunctionBlock)\nADDR_TYPE (Union)\nCREATE_ID (FunctionBlock)\nDP_ADDR (Struct)\nDP_DEVICE_ID (Struct)\nID_TO_ADDR (FunctionBlock)\nIO_SYSTEM_TYPE (Enum)\nPN_ADDR (Struct)\nPN_DEVICE_ID (Struct)\nSUBSLOT_ID (Function)\nCNCT (FunctionBlock)\nConstants (GVL)\nDP Address\nADDR (Function)\nID (Function)\nSLOT_ID (Function)\nDP_AINFO (Struct)\nDP_DIAG (Struct)\nErrorCode (Enum)\nErrorCode1_RW (Enum)\nFieldDevice\nPRVREC (FunctionBlock)\nPRVREC_MODE (Enum)\nRCVREC (FunctionBlock)\nRCVREC_MODE (Enum)\nSALARM (FunctionBlock)\nGETIO_PART (FunctionBlock)\nPN_AINFO (Struct)\nRALARM (FunctionBlock)\nRALARM_MODE (Enum)\nRDIAG (FunctionBlock)\nRDREC (FunctionBlock)\nSETIO_PART (FunctionBlock)\nWRREC (FunctionBlock)\nImages\nLibrary Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nFile and Project Information\nLibrary Reference\nIoDriver Profibus2 Interfaces\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nCommFB\nDocs\n»\nCommFB\n»\nDP_AINFO (STRUCT)\nDP_AINFO (STRUCT)\nÂ¶\nTYPE DP_AINFO : STRUCT\nAlarm information of a profibus device (see:\nRALARM\n).\n(see IEC 61158-6)\nInOut:\nName\nType\nComment\nD_LEN\nBYTE\nLength of the alarm information: 4 .. 63 bytes\nATYPE\nBYTE\nAlarm Type\nSLOT\nBYTE\nSlot number\nASPEC\nBYTE\nAlarm Specifier\nBit 0 to 1:\n0: no further differentiation\n1: Alarm appears and the related module is disturbed\n2: Alarm disappears and the related module has no further errors\n3: Alarm disappears and the related module is still disturbed\nBit 2: Additional acknowledge\nBit 3 to 7: Sequence number of alarm\nADD_INFO\nARRAY [0..58] OF BYTE\nAdditional alarm information",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "D_LEN",
+          "Type": "BYTE",
+          "Comment": "Length of the alarm information: 4 .. 63 bytes"
+        },
+        {
+          "Name": "ATYPE",
+          "Type": "BYTE",
+          "Comment": "Alarm Type"
+        },
+        {
+          "Name": "SLOT",
+          "Type": "BYTE",
+          "Comment": "Slot number"
+        },
+        {
+          "Name": "ASPEC",
+          "Type": "BYTE",
+          "Comment": "Alarm SpecifierBit 0 to 1:0: no further differentiation1: Alarm appears and the related module is disturbed2: Alarm disappears and the related module has no further errors3: Alarm disappears and the related module is still disturbedBit 2: Additional acknowledgeBit 3 to 7: Sequence number of alarm"
+        },
+        {
+          "Name": "ADD_INFO",
+          "Type": "ARRAY [0..58] OF BYTE",
+          "Comment": "Additional alarm information"
+        }
+      ]
+    }
+  ]
+}

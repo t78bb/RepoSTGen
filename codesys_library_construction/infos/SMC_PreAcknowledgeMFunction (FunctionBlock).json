@@ -1,0 +1,64 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_PreAcknowledgeMFunction (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/SoftMotion-Function-Blocks/M_Functions/SMC_PreAcknowledgeMFunction.html",
+  "page_title": "SMC_PreAcknowledgeMFunction (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_PreAcknowledgeMFunction\nThis function block serves to acknowledge an M-function\neven before the interpolator reaches it. If an M-function\nis acknowledged in advance, a stop at the M-function is avoided.\nThe function block should be executed in the same task\nas the interpolator.\nIt operates on the queue that is fed into\nSMC_CheckVelocities\n.\nNote\nTo pre-acknowledge a G75 command, set input\niM\nto -2.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "bEnable",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUE: the function block is active"
+        },
+        [
+          "iM",
+          "INT",
+          "",
+          "Number of the M-function"
+        ],
+        [
+          "poqDataIn",
+          "POINTER TOSMC_OutQueue",
+          "",
+          "Points on theSMC_OUTQUEUEstructure object containing\ntheSMC_GEOINFOobjects of the interpolating path.\nThis must be the queue that is also fed intoSMC_CheckVelocities."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bDone",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "This variable will be set toTRUEas soon as the\ninput data (poqDataIn) has been processed completely.\nHereafter, the function block will not perform any further actions\nuntil a reset will be done.\nIf inputbExecuteisFALSE,bDonewill be reset toFALSE."
+        },
+        [
+          "bBusy",
+          "BOOL",
+          "",
+          "TRUEwhile execution of function block is not finished"
+        ],
+        [
+          "bError",
+          "BOOL",
+          "",
+          "Signals that an error has occurred within the function block"
+        ],
+        [
+          "wErrorID",
+          "SMC_ERROR",
+          "SMC_NO_ERROR",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

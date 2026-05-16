@@ -1,0 +1,52 @@
+{
+  "library": "DNP3",
+  "title": "AnalogOutputCommandGetFromPointNum (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/pou-Master/Datapoints/AnalogOutputCommandGetFromPointNum.html",
+  "page_title": "Master.AnalogOutputCommandGetFromPointNum (METH)",
+  "text": "\nMETHOD AnalogOutputCommandGetFromPointNum :\nError\nGet the value of Analog Output Command datapoint (DNP3 object group 41 âanalog outputsâ) with given point number (0 .. MaxPointNum).\nReturns PointNotExistent, if a datapoint with the given point number doesnt exist, OK otherwise.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "AnalogOutputCommandGetFromPointNum",
+          "Type": "Error",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "pointNumber",
+          "Type": "UINT",
+          "Comment": "Point number."
+        },
+        {
+          "Scope": "Output",
+          "Name": "value",
+          "Type": "AnyNumber",
+          "Comment": "Value"
+        },
+        [
+          "status",
+          "USINT",
+          "Status"
+        ],
+        [
+          "hasTimeStamp",
+          "BOOL",
+          "Has a valid time stamp."
+        ],
+        [
+          "timeStamp",
+          "LDATE_AND_TIME",
+          "Time stamp reported - valid if hasTimeStamp = TRUE, invalid\notherwise."
+        ]
+      ]
+    }
+  ]
+}

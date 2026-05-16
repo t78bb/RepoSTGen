@@ -1,0 +1,36 @@
+{
+  "library": "BACnet",
+  "title": "SetAlarmValues (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/MultistateValue/pou-BACnetMultistateValue/SetAlarmValues.html",
+  "page_title": "BACnetMultistateValue.SetAlarmValues (METH)",
+  "text": "\nMETHOD SetAlarmValues : CmpBACnet.IEC_BACNET_STATUS\nSets the Alarm_Values-List of this BACnet object.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetAlarmValues",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "uiListCount",
+          "Type": "CmpBACnet.IEC_BACNET_ELEMENT_COUNT",
+          "Comment": "The length of the list in the following pointer."
+        },
+        [
+          "pList",
+          "POINTER TO\nCmpBACnet.IEC_BACNET_UNSIGNED",
+          "The list data containing elements according to the given\ncount."
+        ]
+      ]
+    }
+  ]
+}

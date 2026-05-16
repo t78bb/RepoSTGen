@@ -1,0 +1,25 @@
+{
+  "library": "SML_Basic",
+  "title": "SML_MOVEMENTTYPE (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SML_Basic/Current/Base/SML_MOVEMENTTYPE.html",
+  "page_title": "SML_MOVEMENTTYPE (ENUM)",
+  "text": "\nTYPE SML_MOVEMENTTYPE :\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Name": "SML_MT_MODULO",
+          "Initial": "0"
+        },
+        {
+          "Name": "SML_MT_FINITE",
+          "Initial": "1"
+        }
+      ]
+    }
+  ]
+}

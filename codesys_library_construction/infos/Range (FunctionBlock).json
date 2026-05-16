@@ -1,0 +1,23 @@
+{
+  "library": "String Builder Base",
+  "title": "Range (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Builder Base/Current/BuilderBase/Function-Blocks/Range.html",
+  "page_title": "Range (FB)",
+  "text": "\nFUNCTION_BLOCK Range EXTENDS MBM.Disposable IMPLEMENTS STR.IRange\nRune by rune Iteration over the content of\nitfBuilder\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input Const",
+          "Name": "itfBuilder",
+          "Type": "IBuilder"
+        }
+      ]
+    }
+  ]
+}

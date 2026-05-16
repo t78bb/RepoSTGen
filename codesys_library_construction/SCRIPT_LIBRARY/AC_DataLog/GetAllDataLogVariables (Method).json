@@ -1,0 +1,27 @@
+{
+  "library": "AC_DataLog",
+  "title": "GetAllDataLogVariables (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_DataLog/Current/AC_DataLog/DataLogChannel/pou-DataLogChannel/IDataLogChannel/GetAllDataLogVariables.html",
+  "page_title": "DataLogChannel.GetAllDataLogVariables (METH)",
+  "text": "\nMETHOD GetAllDataLogVariables\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Output",
+          "Name": "pDataLogInstList",
+          "Type": "POINTER TODataLogInstanceList"
+        },
+        [
+          "uiNumList",
+          "UINT"
+        ]
+      ]
+    }
+  ]
+}

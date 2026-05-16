@@ -1,0 +1,23 @@
+{
+  "library": "AlarmManager",
+  "title": "AckInsteadOfConfirm (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/pou-IAlarmClass2/AckInsteadOfConfirm.html",
+  "page_title": "IAlarmClass2.AckInsteadOfConfirm (METH)",
+  "text": "\nMETHOD AckInsteadOfConfirm : BOOL\nIs the setting âAcknowledge instead of confirmâ set\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "AckInsteadOfConfirm",
+          "Type": "BOOL"
+        }
+      ]
+    }
+  ]
+}

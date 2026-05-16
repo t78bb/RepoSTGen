@@ -1,0 +1,40 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "OnClientCreatedOrDestroyed_2 (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/GenVisu/OnClientCreatedOrDestroyed_2.html",
+  "page_title": "OnClientCreatedOrDestroyed_2 (FUN)",
+  "text": "\nFUNCTION OnClientCreatedOrDestroyed_2\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "pAC_Visu_Base",
+          "Type": "POINTER TOAC_Visu_Base",
+          "Comment": "Pointer to the newly added/destroyed visu client"
+        },
+        [
+          "itfModuleTree",
+          "IModuleTree",
+          "The module tree"
+        ],
+        [
+          "iClientID",
+          "INT",
+          "The visu client ID"
+        ],
+        [
+          "xCreated",
+          "BOOL",
+          "Is the client created or removed"
+        ]
+      ]
+    }
+  ]
+}

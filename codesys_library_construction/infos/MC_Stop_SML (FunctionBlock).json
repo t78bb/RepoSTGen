@@ -1,0 +1,52 @@
+{
+  "library": "SML_Basic",
+  "title": "MC_Stop_SML (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SML_Basic/Current/PLCopen/MC_Stop_SML.html",
+  "page_title": "MC_Stop_SML (FB)",
+  "text": "\nFUNCTION_BLOCK MC_Stop_SML\nExecutes a (blocking) stop on the axis.\nAs long as the\nExecute\ninput is set or the stop is not finished, no other motion\ncommand is possible on the axis, and the axis state is\nStopping\n.  After\nboth the stop is finished and\nExecute\nis reset, the axis status is set to\nStandstill\n.\nNote\nthe deceleration ramp can be set using parameter 2090 (\nfQuickStopDeceleration\n).\nThis diagram illustrates the behavior of\nMC_Stop_SML\n:\nThe example below shows the behavior in combination with\nMC_MoveVelocity_SML\n.\nA rotating axis is ramped down with FB\nMC_Stop_SML\n.\nThe axis rejects motion commands as long as MC_Stop_SML parameter\nExecute\n=\nTRUE\n.\nMC_MoveVelocity_SML\nreports an error indicating the busy\nMC_Stop_SML\ncommand.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SML",
+          "Comment": "Reference to the axis"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Comment": "Rising edge: The stop is started"
+        },
+        {
+          "Scope": "Output",
+          "Name": "Done",
+          "Type": "BOOL",
+          "Comment": "Zero velocity reached"
+        },
+        [
+          "Busy",
+          "BOOL",
+          "The FB is not finished and new output values are to be expected"
+        ],
+        [
+          "Error",
+          "BOOL",
+          "An error has occured"
+        ],
+        [
+          "ErrorID",
+          "SML_ERROR",
+          "Error number"
+        ]
+      ]
+    }
+  ]
+}

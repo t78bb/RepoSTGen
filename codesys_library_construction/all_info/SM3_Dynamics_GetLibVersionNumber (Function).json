@@ -1,0 +1,23 @@
+{
+  "library": "SM3_Dynamics",
+  "title": "GetLibVersionNumber (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Dynamics/Current/Library-Information/GetLibVersionNumber.html",
+  "page_title": "GetLibVersionNumber (FUN)",
+  "text": "Library Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nSM3_Dynamics\nISMDynamics\nDynLoad (Struct)\nDynSpatialInertia (Struct)\nDynUnits (Struct)\nDynamicsParams (Struct)\nISMDynamics (Interface)\nAxesStateToTorque (Method)\nFile and Project Information\nLibrary Reference\nSM3_Error\nLibrary Identification\nLibrary Properties\nSM3_Math\nLibrary Identification\nLibrary Properties\nSM3_RBase\nLibrary Identification\nLibrary Properties\nSM3_Dynamics\nDocs\n»\nLibrary\nInformation\n»\nGetLibVersionNumber (FUN)\nGetLibVersionNumber (FUN)\nÂ¶\nFUNCTION GetLibVersionNumber : DWORD\nThis function has been automatically generated from the project information.\nInOut:\nScope\nName\nType\nReturn\nGetLibVersionNumber\nDWORD",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetLibVersionNumber",
+          "Type": "DWORD"
+        }
+      ]
+    }
+  ]
+}

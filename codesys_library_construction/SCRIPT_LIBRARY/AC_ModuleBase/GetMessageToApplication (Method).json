@@ -1,0 +1,31 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "GetMessageToApplication (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_RMP_ReliableMessageProtocol/pou-RMPMessageBuffer/GetMessageToApplication.html",
+  "page_title": "RMPMessageBuffer.GetMessageToApplication (METH)",
+  "text": "\nMETHOD FINAL GetMessageToApplication : UINT\nReturns position of oldest message to be transmitted to uiApplicationID (16#FFFF if no message to transmit)\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetMessageToApplication",
+          "Type": "UINT",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "uiReceiverAppID",
+          "Type": "UINT",
+          "Comment": "The ID of the receiver application to get the message from\nthe buffer for"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "library": "BACnet2",
+  "title": "FromBACnetTime (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/Utilities/BACnetUtilities/FromBACnetDataTypes/FromBACnetTime.html",
+  "page_title": "FromBACnetTime (FUN)",
+  "text": "\nFUNCTION FromBACnetTime : TIME\nReturns a TIME corresponding to the given IEC_BACNET_TIME.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "FromBACnetTime",
+          "Type": "TIME",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "bacTime",
+          "Type": "CmpBACnet.IEC_BACNET_TIME",
+          "Comment": "The BACnet time to convert to TIME."
+        }
+      ]
+    }
+  ]
+}

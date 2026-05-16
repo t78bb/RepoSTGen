@@ -1,0 +1,41 @@
+{
+  "library": "CmpBACnet",
+  "title": "BACnetUnregisterClientEventNotification (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/CmpBACnet/Current/BACnetClientAPI/advanced/BACnetUnregisterClientEventNotification.html",
+  "page_title": "BACnetUnregisterClientEventNotification (FUN)",
+  "text": "\nFUNCTION BACnetUnregisterClientEventNotification :\nIEC_BACNET_STATUS\nReleases an device notification class reference from event acquisation.\nThe user application can remove device notification class references from event\nacquisation which it doesnât need anymore. If the user application has registered an\ncallback for unsubscribe completion, it will get notified about the successful or\nunsuccessful unsubscription asynchronously.\nReturns\nBACNET_STATUS_BUSY: if unsubscription is pending. The registered unsubscribe-complete\ncallback will be called on completion\nBACNET_STATUS_OK:   unsubscription completed. The registered unsubscribe-complete\ncallback WILL NOT BE CALLED\nOTHER:              some other failure in given parameters has been detected\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "BACnetUnregisterClientEventNotification",
+          "Type": "IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "hCustomer",
+          "Type": "IEC_BACNET_HANDLE",
+          "Comment": "An handle to an created advanced BACnet client customer created byBACnetOpenClientCustomer."
+        },
+        [
+          "devId",
+          "IEC_BACNET_INST_NUMBER",
+          "The device instance number from the remote or local device from which the events or\nalarms shall NOT be acquired anymore."
+        ],
+        [
+          "notifClass",
+          "IEC_BACNET_INST_NUMBER",
+          "The notification class object instance number from the remote or local device from\nwhich the events or alarms shall NOT be acquired anymore."
+        ]
+      ]
+    }
+  ]
+}

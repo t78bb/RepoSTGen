@@ -1,0 +1,90 @@
+{
+  "library": "AlarmManager",
+  "title": "TL_AlarmStatus (TextList)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/TL_AlarmStatus.html",
+  "page_title": "TL_AlarmStatus (Text List)",
+  "text": "\nID\nDefault\nen\nde\nfr\nit\nes\nzh-CHS\nru\nAlm_Normal\nNormal\nNormal\nNormal\nNormal\nNormale\nNormal\néå¸¸\nÐÐ¾ÑÐ¼Ð°Ð»ÑÐ½Ð¾\nAlm_Active\nActive\nActive\nAktiv\nActive\nAttivo\nActivo\næ¿æ´»\nÐÐºÑÐ¸Ð²Ð½Ð¾\nAlm_WaitingForConfirmation\nWaitingForConfirmation\nWaiting for confirmation\nWarte auf Quittierung\nAttend acquittement\nIn attesa di conferma\nEsperando confirmaciÃ³n\nç­å¾ç¡®è®¤\nÐÐ¶Ð¸Ð´Ð°Ð½Ð¸Ðµ Ð¿Ð¾Ð´ÑÐ²ÐµÑÐ¶Ð´ÐµÐ½Ð¸Ñ\nAlm_ActiveAcknowledged\nActive,\nacknowledged\nActive, acknowledged\nAktiv, quittiert\nActive, acquittÃ©e\nAttivo, confermato\nActivo, confirmado\næ¿æ´»ï¼ç¡®è®¤\nÐÐºÑÐ¸Ð²Ð½Ð¾, Ð¿Ð¾Ð´ÑÐ²ÐµÑÐ¶Ð´ÐµÐ½Ð¾\nAlm_Pending\nPending\nPending\nAnstehend\nEn attente\nIn attesa\nPendiente\nç­å¾\nÐÐ¶Ð¸Ð´Ð°Ð½Ð¸Ðµ\nAlm_InactiveUnacknowledged\nInactive,\nunacknowledged",
+  "tables": [
+    {
+      "headers": [
+        "ID",
+        "Default",
+        "en",
+        "de",
+        "fr",
+        "it",
+        "es",
+        "zh-CHS",
+        "ru"
+      ],
+      "rows": [
+        {
+          "ID": "Alm_Normal",
+          "Default": "Normal",
+          "en": "Normal",
+          "de": "Normal",
+          "fr": "Normal",
+          "it": "Normale",
+          "es": "Normal",
+          "zh-CHS": "éå¸¸",
+          "ru": "ÐÐ¾ÑÐ¼Ð°Ð»ÑÐ½Ð¾"
+        },
+        {
+          "ID": "Alm_Active",
+          "Default": "Active",
+          "en": "Active",
+          "de": "Aktiv",
+          "fr": "Active",
+          "it": "Attivo",
+          "es": "Activo",
+          "zh-CHS": "æ¿æ´»",
+          "ru": "ÐÐºÑÐ¸Ð²Ð½Ð¾"
+        },
+        {
+          "ID": "Alm_WaitingForConfirmation",
+          "Default": "WaitingForConfirmation",
+          "en": "Waiting for confirmation",
+          "de": "Warte auf Quittierung",
+          "fr": "Attend acquittement",
+          "it": "In attesa di conferma",
+          "es": "Esperando confirmaciÃ³n",
+          "zh-CHS": "ç­å¾ç¡®è®¤",
+          "ru": "ÐÐ¶Ð¸Ð´Ð°Ð½Ð¸Ðµ Ð¿Ð¾Ð´ÑÐ²ÐµÑÐ¶Ð´ÐµÐ½Ð¸Ñ"
+        },
+        {
+          "ID": "Alm_ActiveAcknowledged",
+          "Default": "Active,acknowledged",
+          "en": "Active, acknowledged",
+          "de": "Aktiv, quittiert",
+          "fr": "Active, acquittÃ©e",
+          "it": "Attivo, confermato",
+          "es": "Activo, confirmado",
+          "zh-CHS": "æ¿æ´»ï¼ç¡®è®¤",
+          "ru": "ÐÐºÑÐ¸Ð²Ð½Ð¾, Ð¿Ð¾Ð´ÑÐ²ÐµÑÐ¶Ð´ÐµÐ½Ð¾"
+        },
+        {
+          "ID": "Alm_Pending",
+          "Default": "Pending",
+          "en": "Pending",
+          "de": "Anstehend",
+          "fr": "En attente",
+          "it": "In attesa",
+          "es": "Pendiente",
+          "zh-CHS": "ç­å¾",
+          "ru": "ÐÐ¶Ð¸Ð´Ð°Ð½Ð¸Ðµ"
+        },
+        {
+          "ID": "Alm_InactiveUnacknowledged",
+          "Default": "Inactive,unacknowledged",
+          "en": "",
+          "de": "",
+          "fr": "",
+          "it": "",
+          "es": "",
+          "zh-CHS": "",
+          "ru": ""
+        }
+      ]
+    }
+  ]
+}

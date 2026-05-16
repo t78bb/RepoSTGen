@@ -1,0 +1,8 @@
+{
+  "library": "DNP3",
+  "title": "IPointObserver (Interface)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Interfaces/IPointObserver.html",
+  "page_title": "IPointObserver (ITF)",
+  "text": "\nINTERFACE IPointObserver EXTENDS __SYSTEM.IQueryInterface\nInterface to access a PointObserver\nProperties:\nEnabled\nIsModified\nKey\nNum\nTyp\nMethods:\nEquals\nGetError\nGetErrorId\nGetSequenceNumber\nToString\nStructure:\nEnabled (Property)\nEquals (Method)\nGetError (Method)\nGetErrorId (Method)\nGetSequenceNumber (Method)\nIsModified (Property)\nKey (Property)\nNum (Property)\nToString (Method)\nTyp (Property)",
+  "tables": []
+}

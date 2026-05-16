@@ -1,0 +1,6 @@
+{
+  "requirement": "This code should implement a FUNCTION_BLOCK named Home with no input or output variables. It should contain two internal methods, GroundFloor() and TopFloor(), which are called sequentially within the block. The specific implementations or return types of these methods are not detailed, but they are assumed to be part of the Home block's functionality. The code should handle any necessary initializations or configurations required for these methods to execute properly, although specifics on error handling or boundary conditions are not provided.",
+  "provide_code": "FUNCTION_BLOCK Home\nVAR_INPUT\nEND_VAR\nVAR_OUTPUT\nEND_VAR",
+  "function_name": "Home",
+  "requirement_cn": "该代码应实现一个名为 Home 的 FUNCTION_BLOCK，其中不包含输入或输出变量。它应包含两个内部方法，GroundFloor() 和 TopFloor()，这两个方法在块内依次调用。这些方法的具体实现或返回类型没有详细说明，但假定它们是 Home 块功能的一部分。代码应处理执行这些方法所需的任何必要初始化或配置，尽管未提供有关错误处理或边界条件的具体信息。"
+}

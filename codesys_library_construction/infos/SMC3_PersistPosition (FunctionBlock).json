@@ -1,0 +1,83 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC3_PersistPosition (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/AdministrativeConfiguration/SMC3_PersistPosition.html",
+  "page_title": "SMC3_PersistPosition (FB)",
+  "text": "\nFUNCTION_BLOCK SMC3_PersistPosition\nThis function block serves to persist the axis position of an\naxis with an absolute encoder.\nThis function block assumes that the encoder has a range from\n0 to maxPersistedValue or from\n-maxPersistedValue/2 .. maxPersistedValue/2.\nFor persisting the position of a logical axis, see\nSMC3_PersistPositionLogical\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3",
+          "Initial": "",
+          "Comment": "Reference to axis"
+        },
+        [
+          "PersistentData",
+          "SMC3_PersistPosition_Data",
+          "",
+          "Reference to the data stored persistently."
+        ],
+        {
+          "Scope": "Input",
+          "Name": "bEnable",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUE: Activates FB, else inactive."
+        },
+        [
+          "maxPersistedValue",
+          "DWORD",
+          "16#FFFFFFFF",
+          "The range of the encoder.  This is the maximum value\nreturned from the encoder after it is turned on.\n(In case the encoder returns negative values,  the range is assumedfrom -maxPersistedValue/2 .. maxPersistedValue/2."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bPositionRestored",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUE: The position has been restored during the last\nstart-up of the axis."
+        },
+        [
+          "bPositionStored",
+          "BOOL",
+          "",
+          "TRUE: The position has been stored during the last call."
+        ],
+        [
+          "bBusy",
+          "BOOL",
+          "",
+          "TRUE: FB is not idle."
+        ],
+        [
+          "bError",
+          "BOOL",
+          "",
+          "TRUE: Error has occurred within the function block."
+        ],
+        [
+          "eErrorID",
+          "SMC_ERROR",
+          "",
+          "Error identification"
+        ],
+        [
+          "eRestoringDiag",
+          "SMC3_PersistPositionDiag",
+          "SMC3_PersistPositionDiag.SMC3_PPD_RESTORING_OK",
+          "Diagnostic information about restoring"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现根据区域和逻辑地址编号解析对应的物理索引编号及动作方向。",
+  "provide_code": "FUNCTION_BLOCK mdbsLogicToPhy\t//modbus华中挡板地址编号对应本地索引编号\nVAR_INPUT\n\tsection\t\t:INT;\t//区域限定 1:skyExt, 2:skyRet, 3:grdExt, 4:grdRet)\n\tlgcIdx\t\t:INT;\t//华中对应的地址\t10,14{1..10}  17,20{1..11}\nEND_VAR\nVAR_OUTPUT\n\tlevel\t\t:INT;\t//1->地轨\t2->天轨\n\tphyIdx\t\t:INT;\t//内存物理地址对应数组索引\n\tdirect\t\t:TargetDirect;\nEND_VAR"
+}

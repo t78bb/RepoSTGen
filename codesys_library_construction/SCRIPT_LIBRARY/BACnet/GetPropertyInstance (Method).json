@@ -1,0 +1,37 @@
+{
+  "library": "BACnet",
+  "title": "GetPropertyInstance (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/pou-IBACnetObjectBase/GetPropertyInstance.html",
+  "page_title": "IBACnetObjectBase.GetPropertyInstance (METH)",
+  "text": "\nMETHOD GetPropertyInstance : CmpBACnet.IEC_BACNET_STATUS\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetPropertyInstance",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS"
+        },
+        {
+          "Scope": "Input",
+          "Name": "ePropertyID",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_ID"
+        },
+        [
+          "nIndex",
+          "DINT"
+        ],
+        {
+          "Scope": "Inout",
+          "Name": "propertyContents",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_CONTENTS"
+        }
+      ]
+    }
+  ]
+}

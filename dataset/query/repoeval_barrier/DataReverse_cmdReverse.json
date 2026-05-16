@@ -1,0 +1,5 @@
+{
+  "requirement": "This code is intended to implement a function that reverses the direction of a given input command between \"extend\" and \"retract\".",
+  "provide_code": "FUNCTION cmdReverse : TargetDirect\nVAR_INPUT\n\tinput\t\t:TargetDirect;\nEND_VAR",
+  "function_name": "DataReverse_cmdReverse"
+}

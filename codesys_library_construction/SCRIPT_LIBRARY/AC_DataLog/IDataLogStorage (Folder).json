@@ -1,0 +1,8 @@
+{
+  "library": "AC_DataLog",
+  "title": "IDataLogStorage (Folder)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_DataLog/Current/AC_DataLog/DataLogStorage/IDataLogStorage.html",
+  "page_title": "IDataLogStorage (ITF)",
+  "text": "\nINTERFACE IDataLogStorage EXTENDS AC.IModule\nMethods:\nAddEntry\nOnAppStop\nOnResetOrigin\nStructure:\nAddEntry (Method)\nOnAppStop (Method)\nOnResetOrigin (Method)",
+  "tables": []
+}

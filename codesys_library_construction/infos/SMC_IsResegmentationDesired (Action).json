@@ -1,0 +1,8 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_IsResegmentationDesired (Action)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/SoftMotion-Function-Blocks/pou-SMC_Interpolator/SMC_IsResegmentationDesired.html",
+  "page_title": "SMC_Interpolator.SMC_IsResegmentationDesired (ACT)",
+  "text": "\nIf dOverride or single step change, or if the queue changed\nand the velocity profile has been computed up to the end of the queue,\nor if an m-function has been preacknowledged (bRecheckVelocities),\na fresh computation of the segments is desired.",
+  "tables": []
+}

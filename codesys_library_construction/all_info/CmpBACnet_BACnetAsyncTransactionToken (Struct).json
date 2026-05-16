@@ -1,0 +1,43 @@
+{
+  "library": "CmpBACnet",
+  "title": "BACnetAsyncTransactionToken (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/CmpBACnet/Current/BACnetAsyncTransactionToken.html",
+  "page_title": "BACnetAsyncTransactionToken (STRUCT)",
+  "text": "Deutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nMenu\nSearch\nDeutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nBACnetAsyncTransactionToken (Struct)\nBACnetClientAPI\nBACnetAcknowledgeAlarm (Function)\nBACnetAddListElement (Function)\nBACnetCancelPendingConfirmedRequest (Function)\nBACnetConfPrivateTransfer (Function)\nBACnetConfTextMessage (Function)\nBACnetCreateObject (Function)\nBACnetCreateObjectResult (Struct)\nBACnetDeleteObject (Function)\nBACnetDeviceCommControl (Function)\nBACnetGetAlarmSummary (Function)\nBACnetGetEnrollmentSummary (Function)\nBACnetGetEventInfo (Function)\nBACnetLifeSafetyOperation (Function)\nBACnetReadAllPropertyDataContents (Function)\nBACnetReadFile (Function)\nBACnetReadProperty (Function)\nBACnetReadPropertyMultiple (Function)\nBACnetReadRange (Function)\nBACnetReinitializeDevice (Function)\nBACnetRemoveListElement (Function)\nBACnetSubscribeCOV (Function)\nBACnetSubscribeCOVProperty (Function)\nBACnetUnconfPrivateTransfer (Function)\nBACnetUnconfTextMessage (Function)\nBACnetWhoHas (Function)\nBACnetWhoIs (Function)\nBACnetWriteFile (Function)\nBACnetWriteGroup (Function)\nBACnetWriteProperty (Function)\nBACnetWritePropertyMultiple (Function)\nadvanced\nBACnetBackupBACnetDevice (Function)\nBACnetCloseClientCustomer (Function)\nBACnetGetClientDeviceCommunication (Function)\nBACnetOpenClientCustomer (Function)\nBACnetRegisterClientCommunicationStateCallback (Function)\nBACnetRegisterClientDataPoint (Function)\nBACnetRegisterClientEventNotification (Function)\nBACnetRegisterClientUnsubscribeCompletionCallback (Function)\nBACnetRestartAllClients (Function)\nBACnetRestoreBACnetDevice (Function)\nBACnetSetClientDeviceCommunication (Function)\nBACnetSetClientDeviceFixAddress (Function)\nBACnetSetClientDeviceFixSubscribeCovTime (Function)\nBACnetSetClientGlobalCommTimingParameters (Function)\nBACnetSetClientGlobalMaxDeviceActions (Function)\nBACnetUnregisterClientDataPoint (Function)\nBACnetUnregisterClientEventNotification (Function)\nFile and Project Information\nLibrary Reference\n3SLicense\nLibrary Identification\nLibrary Properties\nCAA Ressource Manager Extern\nLibrary Identification\nLibrary Properties\nCAA Types Extern\nLibrary Identification\nLibrary Properties\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nCmpEventMgr\nLibrary Identification\nLibrary Properties\nCmpLog\nLibrary Identification\nLibrary Properties\nCmpSettings\nLibrary Identification\nLibrary Properties\nComponent Manager\nLibrary Identification\nLibrary Properties\nIoStandard\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysTarget\nLibrary Identification\nLibrary Properties\nSysTask\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nCmpBACnet\nDocs\n»\nBACnetAsyncTransactionToken (STRUCT)\nBACnetAsyncTransactionToken (STRUCT)\nÂ¶\nTYPE BACnetAsyncTransactionToken : STRUCT\nA transaction token for BACnet âasynchronous callsâ.\nFor all âasynchronous callsâ there is a callback in CODESYS runtime component CmpBACnet, which getâs called\nasynchronously after the IEC-code has startet the âasynchronous callâ.\nThis had been chosen as the best solution to avoid the complexitity of handling those callbacks via âIEC-Eventsâ.\nThe callback in CODESYS runtime component CmpBACnet sets a request status, which can be checked by the IEC-code,\nthis mechanism is referenced as âcaller status pollingâ later on.\nBACnetAsyncTransactionToken is used to identify transactions of âasynchronous callsâ like\nBACnetReadProperty\n,\nand to allow\nBACnetCancelPendingConfirmedRequest\nif needed.\nBACnetAsyncTransactionToken transports a pointer to the request status, to allow âcaller status pollingâ.\nThe caller had to provide the memory pointed to by this pointer.\nInOut:\nName\nType\nInitial\nComment\ntransactionID\nUDINT\n0\nUnique ID to identify the transaction.\nSet the transactionID prio to the âasynchronous callâ.\nReset the transactionID to 0 after the âasynchronous callâ is done or after a call to\nBACnetCancelPendingConfirmedRequest\n.\npStatus\nPOINTER TO\nIEC_BACNET_STATUS\n0\nAsynchronous Status of the call.\nIf this value switches from\nIEC_BACNET_STATUS.BACNET_STATUS_BUSY\nto another state,\nfor example\nIEC_BACNET_STATUS.BACNET_STATUS_OK\n, the asynchronous call has finished.\ncallbackDone\nUDINT\n0\ninternal information to keep track of transaction status\ncancelled\nUDINT\n0\ninternal information to keep track of transaction status\ntop\nCODESYS Group | We\nsoftware\nAutomation.\nto software\n['sɒftwɛər]\ntransitive verb\n__softwared/softwaring\n: to develop software\n// to software automation: to develop software for automation purposes\nThe CODESYS Group is the manufacturer of CODESYS, the leading hardware-independent\n                                    IEC 61131-3 automation software for developing and engineering controller\n                                    applications.\nCODESYS® is a registered trademark.\nCODESYS GmbH\nA member of the CODESYS Group\nMemminger Straße 151, 87439 Kempten\nGermany\nTel.:\n+49-831-54031-0\ninfo@codesys.com\nLegal Notice\nPrivacy Policy\nLinkedIn\nYoutube\nRSS\nDownloads\nLogin\nCODESYS Store\n© 2022 CODESYS GmbH\n| A member of the CODESYS Group",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "transactionID",
+          "Type": "UDINT",
+          "Initial": "0",
+          "Comment": "Unique ID to identify the transaction.\nSet the transactionID prio to the âasynchronous callâ.\nReset the transactionID to 0 after the âasynchronous callâ is done or after a call toBACnetCancelPendingConfirmedRequest."
+        },
+        {
+          "Name": "pStatus",
+          "Type": "POINTER TOIEC_BACNET_STATUS",
+          "Initial": "0",
+          "Comment": "Asynchronous Status of the call.\nIf this value switches fromIEC_BACNET_STATUS.BACNET_STATUS_BUSYto another state,\nfor exampleIEC_BACNET_STATUS.BACNET_STATUS_OK, the asynchronous call has finished."
+        },
+        {
+          "Name": "callbackDone",
+          "Type": "UDINT",
+          "Initial": "0",
+          "Comment": "internal information to keep track of transaction status"
+        },
+        {
+          "Name": "cancelled",
+          "Type": "UDINT",
+          "Initial": "0",
+          "Comment": "internal information to keep track of transaction status"
+        }
+      ]
+    }
+  ]
+}

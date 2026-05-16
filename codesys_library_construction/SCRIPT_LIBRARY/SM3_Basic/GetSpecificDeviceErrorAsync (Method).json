@@ -1,0 +1,52 @@
+{
+  "library": "SM3_Basic",
+  "title": "GetSpecificDeviceErrorAsync (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/DriveInterface/AXIS_REF/pou-AXIS_REF_SM3/CAA-Device-Diagnosis/GetSpecificDeviceErrorAsync.html",
+  "page_title": "AXIS_REF_SM3.GetSpecificDeviceErrorAsync (METH)",
+  "text": "\nMETHOD GetSpecificDeviceErrorAsync : DED.PROC_STATE\nReturns the specific device error of the current node;\ninterpretation is fieldbus dependent; you can also use the function block\nGetSpecificDeviceError\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetSpecificDeviceErrorAsync",
+          "Type": "DED.PROC_STATE",
+          "Comment": "eState"
+        },
+        {
+          "Scope": "Input",
+          "Name": "eCmd",
+          "Type": "DED.PROC_CMD",
+          "Comment": "eCommand"
+        },
+        [
+          "pData",
+          "CAA.PVOID",
+          "Pointer to memory"
+        ],
+        [
+          "szSize",
+          "CAA.SIZE",
+          "Size of memory in bytes where pData is pointing to"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "szCount",
+          "Type": "CAA.SIZE",
+          "Comment": "Number of Bytes written to pData"
+        },
+        [
+          "eError",
+          "DED.ERROR",
+          "Error code if method fails"
+        ]
+      ]
+    }
+  ]
+}

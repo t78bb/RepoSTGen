@@ -1,0 +1,8 @@
+{
+  "library": "ModbusFB",
+  "title": "Freeze (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/ModbusFB/Current/ModbusFB/Function-Blocks/Util/pou-ByteBuffer/Freeze.html",
+  "page_title": "ByteBuffer.Freeze (METH)",
+  "text": "\nMETHOD Freeze\nMake subsequent Put*() calls be ignored - this is reset at Init().",
+  "tables": []
+}

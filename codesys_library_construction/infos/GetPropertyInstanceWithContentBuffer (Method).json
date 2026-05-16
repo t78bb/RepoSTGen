@@ -1,0 +1,37 @@
+{
+  "library": "BACnet",
+  "title": "GetPropertyInstanceWithContentBuffer (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/pou-IBACnetObjectBase/GetPropertyInstanceWithContentBuffer.html",
+  "page_title": "IBACnetObjectBase.GetPropertyInstanceWithContentBuffer (METH)",
+  "text": "\nMETHOD GetPropertyInstanceWithContentBuffer : CmpBACnet.IEC_BACNET_STATUS\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetPropertyInstanceWithContentBuffer",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS"
+        },
+        {
+          "Scope": "Input",
+          "Name": "ePropertyID",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_ID"
+        },
+        [
+          "nIndex",
+          "DINT"
+        ],
+        {
+          "Scope": "Inout",
+          "Name": "propertyContents",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_CONTENTS"
+        }
+      ]
+    }
+  ]
+}

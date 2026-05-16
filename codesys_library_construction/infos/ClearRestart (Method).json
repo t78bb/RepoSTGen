@@ -1,0 +1,23 @@
+{
+  "library": "DNP3",
+  "title": "ClearRestart (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/pou-Master/Commands/ClearRestart.html",
+  "page_title": "Master.ClearRestart (METH)",
+  "text": "\nMETHOD ClearRestart :\nError\nIssue a clear restart request\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "ClearRestart",
+          "Type": "Error"
+        }
+      ]
+    }
+  ]
+}

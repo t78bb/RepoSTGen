@@ -1,0 +1,36 @@
+{
+  "library": "BACnet",
+  "title": "GetListOfGroupMembers (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/Group/pou-BACnetGroup/GetListOfGroupMembers.html",
+  "page_title": "BACnetGroup.GetListOfGroupMembers (METH)",
+  "text": "\nMETHOD GetListOfGroupMembers : CmpBACnet.IEC_BACNET_STATUS\nGets the List_Of_Group_Members of this BACnet object. The returned pointer is\nallocated with the corresponding data, whereas the user has to use\nFreeStackAllocatedMemory\n,\nto free the allocated memory after data usage.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetListOfGroupMembers",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Output",
+          "Name": "uiListCount",
+          "Type": "CmpBACnet.IEC_BACNET_ELEMENT_COUNT",
+          "Comment": "The length of the list in the following pointer"
+        },
+        [
+          "pList",
+          "POINTER TO\nCmpBACnet.IEC_BACNET_READ_ACCESS_SPEC",
+          "The returned Pointer gets filled with the data of the List AND (!) the data referenced within\nthat list (i.e. strings, etc.).\nAfter usage, useFreeStackAllocatedMemory, to free the used memory."
+        ]
+      ]
+    }
+  ]
+}

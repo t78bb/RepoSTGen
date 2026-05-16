@@ -1,0 +1,47 @@
+{
+  "library": "DNP3",
+  "title": "AnyNumberConvertToUDINT (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Functions/AnyNumber/AnyNumberConvertToUDINT.html",
+  "page_title": "AnyNumberConvertToUDINT (FUN)",
+  "text": "\nFUNCTION AnyNumberConvertToUDINT :\nError\nConvert an AnyNumber to UDINT\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "AnyNumberConvertToUDINT",
+          "Type": "Error",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "in",
+          "Type": "AnyNumber",
+          "Initial": "",
+          "Comment": ""
+        },
+        [
+          "enableClip",
+          "BOOL",
+          "FALSE",
+          "Allow to clip the value to numerical range of output variable out.\nIf set to FALSE, AnyNumberError is returned, if in is out of range which can be represented by output variable out."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "out",
+          "Type": "UDINT",
+          "Initial": "",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

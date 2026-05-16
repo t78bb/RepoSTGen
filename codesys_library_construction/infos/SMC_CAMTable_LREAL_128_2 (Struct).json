@@ -1,0 +1,63 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_CAMTable_LREAL_128_2 (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/DataTypes/CAM/SMC_CAMTable_LREAL_128_2.html",
+  "page_title": "SMC_CAMTable_LREAL_128_2 (STRUCT)",
+  "text": "\nTYPE SMC_CAMTable_LREAL_128_2 : STRUCT\nThis\nSTRUCT\nrepresents a non equidistant curve table.\nThe table can handle 128 elements of type\nLREAL\n.\nThe values provided for the non equidistant curve table have two different\nunits: Technical and table units. This can be used for scaling and\noffset purposes.\nNon equidistant curve tables scale both the slave and master values.\nHow the scaling factor and offset is calculated, is shown as an example\nfor the slave values. The same formulas are used to calculate the\ncorresponding values for the master values.\nfSlaveScale = (fEditorSlaveMax - fEditorSlaveMin) / (fTableSlaveMax - fTableSlaveMin)\nfSlaveOffset = fEditorSlaveMin - (fTableSlaveMin * fSlaveScale)\nThe slave value in technical units is then calculated as follows:\nfSlaveValue = fSlaveValueTableUnit * fSlaveScale + fSlaveOffset\nExample\nfTableMasterMin\n= 0\nfTableMasterMax\n= 1\nfEditorMasterMin\n= 2\nfEditorMasterMax\n= 4\nA master value of 0.5 in table units will result in a master value\nof 3 in technical units.\nNote\nNon equidistant curve tables created with the cam editor will always have\nequal values for the table and editor values (i.e. no scaling is done).\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "Table",
+          "Type": "ARRAY [0..127] OF ARRAY\n[0..1] OF LREAL",
+          "Comment": "Array of master/slave position pairs in table units. Index 0 refers to\nthe master, index 1 to the slave.\nThe master values in the array must be filled in ascending order and must\nstart with the master start position and end with the master end position.\nFor each master value, the corresponding slave value must be set."
+        },
+        {
+          "Name": "fEditorMasterMin",
+          "Type": "REAL",
+          "Comment": "The minimum master value in technical units."
+        },
+        {
+          "Name": "fEditorMasterMax",
+          "Type": "REAL",
+          "Comment": "The maximum master value in technical units."
+        },
+        {
+          "Name": "fEditorSlaveMin",
+          "Type": "REAL",
+          "Comment": "The minimum slave value in technical units."
+        },
+        {
+          "Name": "fEditorSlaveMax",
+          "Type": "REAL",
+          "Comment": "The maximum slave value in technical units."
+        },
+        {
+          "Name": "fTableMasterMin",
+          "Type": "REAL",
+          "Comment": "The minimum master value in table units."
+        },
+        {
+          "Name": "fTableMasterMax",
+          "Type": "REAL",
+          "Comment": "The maximum master value in table units."
+        },
+        {
+          "Name": "fTableSlaveMin",
+          "Type": "REAL",
+          "Comment": "The minimum slave value in table units."
+        },
+        {
+          "Name": "fTableSlaveMax",
+          "Type": "REAL",
+          "Comment": "The maximum slave value in table units."
+        }
+      ]
+    }
+  ]
+}

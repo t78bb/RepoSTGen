@@ -1,0 +1,28 @@
+{
+  "library": "BACnetDefaultImpl",
+  "title": "LogObjectAddrString (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnetDefaultImpl/Current/BACnetDefaultImpl/Function-Blocks/LoggingObjects/Internal/pou-LogObjectsBase/Logging/LogObjectAddrString.html",
+  "page_title": "LogObjectsBase.LogObjectAddrString (METH)",
+  "text": "\nMETHOD PROTECTED LogObjectAddrString : STRING\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "LogObjectAddrString",
+          "Type": "STRING"
+        },
+        {
+          "Scope": "Input",
+          "Name": "instanceNumber",
+          "Type": "DWORD"
+        }
+      ]
+    }
+  ]
+}

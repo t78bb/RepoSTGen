@@ -1,0 +1,23 @@
+{
+  "library": "BACnetDefaultImpl",
+  "title": "UnregisterTimeProvider (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnetDefaultImpl/Current/BACnetDefaultImpl/Function-Blocks/pou-DeviceDateTime/UnregisterTimeProvider.html",
+  "page_title": "DeviceDateTime.UnregisterTimeProvider (METH)",
+  "text": "\nMETHOD UnregisterTimeProvider : UDINT\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "UnregisterTimeProvider",
+          "Type": "UDINT"
+        }
+      ]
+    }
+  ]
+}

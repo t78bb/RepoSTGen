@@ -1,0 +1,32 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "Receive (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_RMP_ReliableMessageProtocol/pou-RMPService/Receive/Receive.html",
+  "page_title": "RMPService.Receive (METH)",
+  "text": "\nMETHOD FINAL Receive : UDINT\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "Receive",
+          "Type": "UDINT"
+        },
+        {
+          "Scope": "Input",
+          "Name": "uiReceiverModuleID",
+          "Type": "UINT"
+        },
+        [
+          "pmd",
+          "POINTER TO ARRAY [0..63] OF BYTE"
+        ]
+      ]
+    }
+  ]
+}

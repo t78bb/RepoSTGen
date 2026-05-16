@@ -1,0 +1,220 @@
+{
+  "library": "ModbusFB",
+  "title": "ServerSerial (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/ModbusFB/Current/ModbusFB/Function-Blocks/Server/ServerSerial.html",
+  "page_title": "ServerSerial (FB)",
+  "text": "\nFUNCTION_BLOCK ServerSerial EXTENDS\nServer\nIMPLEMENTS ISysComUser\nMODBUS serial server (slave).\nFor details about supported function codes and âdata modelâ see\nServer\n.\nPlease note: some input variables related to connection configuration are read when rising edge on xEnable occurs.\nTo change connection configuration the application needs to\n- disconnect (xEnable := FALSE and execute the FB)\n- modify the related input variables\n- connect (xEnable := TRUE and execute the FB)\nThe\nServer\nprovides some statistics of received valid requests messages and sent reply messages.\nInvalid messages are dropped at the communication level, so doesnt appear in the statistics.\nTo analyse situations where invalid reply messages might occur, you can use udiLogOptions with LoggingOptions.WarnOnReceivedInvalidFrames.\nThe maximum number of serial ports usable with ClientSerial / ServerSerial is limited to MAX_NUM_COMPORTS.\nIn case there is a need to use more serial ports, anyone can set the library parameter MAX_NUM_COMPORTS within an application - see Library Manager -> ModbusFB -> Parameter -> MAX_NUM_COMPORTS.\nPlease visit\nhttps://forge.codesys.com/prj/codesys-example/modbus/home\nto find examples.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment",
+        "Inherited from"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "xEnable",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "Enables the server, take over the configuration information fcsSupported and dataModel.\nIf the âdata modelâ (tableDefinitions) contains configuration errors, the Server will not got busy (xBusy = FALSE).",
+          "Inherited from": "Server"
+        },
+        [
+          "fcsSupported",
+          "SupportedFcs",
+          "Constants.SUPPORTED_FCS_SIMPLE_SERVER",
+          "Supported âfunction codesâ, accepted at xEnable FALSE => TRUE.\nIn case fcsSupported is not assigned by the application it defaults toConstants.SUPPORTED_FCS_SIMPLE_SERVER.",
+          "Server"
+        ],
+        [
+          "dataModel",
+          "TableDefinitions",
+          "",
+          "âdata modelâ, accepted at xEnable FALSE => TRUE.",
+          "Server"
+        ],
+        [
+          "tInactivityInfoTime",
+          "UDINT",
+          "0",
+          "âinactivity info timeâ (in milliseconds).\nIf no valid requests are received in this time xInactive is signaling inactivity - default = 0 -> no âinactivity infoâ.",
+          "Server"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "xRunning",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Server is up and running, waiting for requests.",
+          "Inherited from": "Server"
+        },
+        [
+          "xError",
+          "BOOL",
+          "",
+          "Error",
+          "Server"
+        ],
+        [
+          "eErrorID",
+          "Error",
+          "",
+          "Error status",
+          "Server"
+        ],
+        [
+          "xInactive",
+          "BOOL",
+          "",
+          "No valid requests received for tInactivityTimeOut.",
+          "Server"
+        ],
+        [
+          "udiNumMsgRecv",
+          "UDINT",
+          "",
+          "Request statistics: number of request messages received\nsince enabling the Server.",
+          "Server"
+        ],
+        [
+          "udiNumMsgReply",
+          "UDINT",
+          "",
+          "Request statistics: number of reply messages send since\nenabling the Server.",
+          "Server"
+        ],
+        [
+          "udiNumMsgExcReply",
+          "UDINT",
+          "",
+          "Request statistics: number of exception reply messages send\nsince enabling the Server.",
+          "Server"
+        ],
+        [
+          "udiNumMsgExcReplyIllFct",
+          "UDINT",
+          "",
+          "Request statistics: number of exception reply messages send\nsince enabling the Server, signaling illegal function.",
+          "Server"
+        ],
+        [
+          "udiNumMsgExcReplyIllDataAdr",
+          "UDINT",
+          "",
+          "Request statistics: number of exception reply messages send\nsince enabling the Server, signaling illegal data address.",
+          "Server"
+        ],
+        [
+          "udiNumMsgExcReplyIllDataValue",
+          "UDINT",
+          "",
+          "Request statistics: number of exception reply messages send\nsince enabling the Server, signaling illegal data value.",
+          "Server"
+        ],
+        [
+          "xReadRequest",
+          "BOOL",
+          "",
+          "Read request(s) happened since last call, rejected requests\nincluded.",
+          "Server"
+        ],
+        [
+          "udiNumReadRequests",
+          "UDINT",
+          "",
+          "Request statistics: read request counter, rejected requests\nincluded.",
+          "Server"
+        ],
+        [
+          "xWriteRequest",
+          "BOOL",
+          "",
+          "Write request(s) happened since last call, rejected requests\nincluded.",
+          "Server"
+        ],
+        [
+          "udiNumWriteRequests",
+          "UDINT",
+          "",
+          "Request statistics: write request counter, rejected requests\nincluded.",
+          "Server"
+        ],
+        {
+          "Scope": "Input",
+          "Name": "uiUnitId",
+          "Type": "UINT",
+          "Initial": "1",
+          "Comment": "Unit-Id / Slave address. Only read when rising edge on xEnable occurs.\nSlave address has to be in range 1 .. 247 according to MODBUS standard.",
+          "Inherited from": ""
+        },
+        [
+          "iPort",
+          "SysCom.SYS_COM_PORTS",
+          "SysCom.SYS_COM_PORTS.SYS_COMPORT_NONE",
+          "Serial port. Only read when rising edge on xEnable occurs.",
+          ""
+        ],
+        [
+          "dwBaudrate",
+          "SysCom.SYS_COM_BAUDRATE",
+          "SysCom.SYS_COM_BAUDRATE.SYS_BR_115200",
+          "Baud rate. Only read when rising edge on xEnable occurs.",
+          ""
+        ],
+        [
+          "byDataBits",
+          "BYTE",
+          "8",
+          "Number of data bits/BYTE, 5-8. Only read when rising edge on\nxEnable occurs.",
+          ""
+        ],
+        [
+          "eParity",
+          "SysCom.SYS_COM_PARITY",
+          "SysCom.SYS_COM_PARITY.SYS_NOPARITY",
+          "Parity. Only read when rising edge on xEnable occurs.",
+          ""
+        ],
+        [
+          "eStopBits",
+          "SysCom.SYS_COM_STOPBITS",
+          "SysCom.SYS_COM_STOPBITS.SYS_ONESTOPBIT",
+          "Stop bits. Only read when rising edge on xEnable occurs.",
+          ""
+        ],
+        [
+          "eDTRcontrol",
+          "SysCom.SYS_COM_DTR_CONTROL",
+          "SysCom.SYS_COM_DTR_CONTROL.SYS_DTR_CONTROL_DISABLE",
+          "DTR control. Only read when rising edge on xEnable occurs.",
+          ""
+        ],
+        [
+          "eRTScontrol",
+          "SysCom.SYS_COM_RTS_CONTROL",
+          "SysCom.SYS_COM_RTS_CONTROL.SYS_RTS_CONTROL_DISABLE",
+          "RTS control. Only read when rising edge on xEnable occurs.",
+          ""
+        ],
+        [
+          "eRtuAscii",
+          "RtuAscii",
+          "RtuAscii.RTU",
+          "RTU / ASCII. Only read when rising edge on xEnable occurs.",
+          ""
+        ],
+        [
+          "udiLogOptions",
+          "UDINT",
+          "LoggingOptions.ServerStartStop",
+          "Logging options.",
+          ""
+        ]
+      ]
+    }
+  ]
+}

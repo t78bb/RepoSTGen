@@ -1,0 +1,8 @@
+{
+  "library": "String Segments",
+  "title": "IRange (Interface)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Segments/Current/Strings/Interfaces/IRange.html",
+  "page_title": "IRange (ITF)",
+  "text": "\nINTERFACE IRange EXTENDS MBM.|dIDisposable|\nRune by rune Iteration over the content of a string like instance.\nMethods:\nGetNextRune\nReset\nUngetLastRune\nStructure:\nGetNextRune (Method)\nReset (Method)\nUngetLastRune (Method)",
+  "tables": []
+}

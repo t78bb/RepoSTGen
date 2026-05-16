@@ -1,0 +1,30 @@
+{
+  "library": "BACnet",
+  "title": "SetBACnetDoubleProperty (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/pou-BACnetObjectBase/Utilities/SetBACnetDoubleProperty.html",
+  "page_title": "BACnetObjectBase.SetBACnetDoubleProperty (METH)",
+  "text": "\nMETHOD SetBACnetDoubleProperty\nSets the BACnet-Double-Value of the specified Property (propID) of this BACnet-Object using a DOUBLE. The used functions are\nno client, meaning, that the access of the property is not restricted by write or read access restrictions.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "propID",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_ID",
+          "Comment": "The ID of the property to set."
+        },
+        [
+          "rVal",
+          "CmpBACnet.IEC_BACNET_DOUBLE",
+          "The DOUBLE value to set for the property."
+        ]
+      ]
+    }
+  ]
+}

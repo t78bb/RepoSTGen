@@ -1,0 +1,31 @@
+{
+  "library": "Visu Utils",
+  "title": "GetRemoteTargetVisuVersion (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/Visu Utils/Current/VisuUtils/VisuActionUtilities/Interfaces/pou-IVisualizationClient/GetRemoteTargetVisuVersion.html",
+  "page_title": "IVisualizationClient.GetRemoteTargetVisuVersion (METH)",
+  "text": "VisuUtils\nVisuActionUtilities\nFunction Blocks\nFBFileTransfer (FunctionBlock)\nFbChangeVisu (FunctionBlock)\nFbCloseDialog (FunctionBlock)\nFbIterateClients (FunctionBlock)\nFbOpenDialog (FunctionBlock)\nFbOpenDialogExtended (FunctionBlock)\nFunctions\nFctGetNextVisu (Function)\nFctGetPreviousVisu (Function)\nFctHandleEventsWithinCycleStart (Function)\nFctHandleEventsWithinCycleStop (Function)\nGlobalVariables\nGlobals (GVL)\nPublicVariables (GVL)\nInterfaces\nIVisualizationClient (Interface)\nIVisualizationClientFilter (Interface)\nIVisualizationClientIteration (Interface)\nIVisualizationClientRaw (Interface)\nTypes\nEnum\nFile and Project Information\nLibrary Reference\nCmpIecTask\nLibrary Identification\nLibrary Properties\nCmpVisuHandler\nLibrary Identification\nLibrary Properties\nCommon Behaviour Model\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysSem\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nVisuElemBase\nLibrary Identification\nLibrary Properties\nVisu Utils\nDocs\n»\nVisuUtils\n»\nVisuActionUtilities\n»\nInterfaces\n»\nIVisualizationClient\n(ITF)\n»\nIVisualizationClient.GetRemoteTargetVisuVersion (METH)\nIVisualizationClient.GetRemoteTargetVisuVersion (METH)\nÂ¶\nMETHOD GetRemoteTargetVisuVersion : VERSION\nReturns the device version of the given client.\nThis information is only available for remote targetvisualizations starting with 3.5.11.0.\nInOut:\nScope\nName\nType\nComment\nReturn\nGetRemoteTargetVisuVersion\nVERSION\nOutput\nxIsValid\nBOOL\nTRUE\n: Version is valid",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetRemoteTargetVisuVersion",
+          "Type": "VERSION",
+          "Comment": ""
+        },
+        {
+          "Scope": "Output",
+          "Name": "xIsValid",
+          "Type": "BOOL",
+          "Comment": "TRUE: Version is valid"
+        }
+      ]
+    }
+  ]
+}

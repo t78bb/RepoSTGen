@@ -1,0 +1,38 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_GSentence_DynCall (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/GSentence/SMC_GSentence_DynCall.html",
+  "page_title": "SMC_GSentence_DynCall (STRUCT)",
+  "text": "\nTYPE SMC_GSentence_DynCall : STRUCT\nA dynamic subprogram call using an expression for the subprogram name\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "sentenceNumber",
+          "Type": "UDINT",
+          "Comment": ""
+        },
+        {
+          "Name": "types",
+          "Type": "ARRAY\n[0..(SMC_CNC_LibParams.EVAL_STACK_SIZE\n- 1)] OF\nSMC_GVar_Type_Ext",
+          "Comment": "The type information about all arguments\nto DYNCALL.  The first argument is the subprogram name."
+        },
+        {
+          "Name": "nArgs",
+          "Type": "UDINT",
+          "Comment": "The number of arguments (including the subprogram name), at\nleast 1."
+        },
+        {
+          "Name": "symbolTable",
+          "Type": "SMC_INCSymbolTable",
+          "Comment": "The symbol table is passed to the interpreter as part\nof the sentence data."
+        }
+      ]
+    }
+  ]
+}

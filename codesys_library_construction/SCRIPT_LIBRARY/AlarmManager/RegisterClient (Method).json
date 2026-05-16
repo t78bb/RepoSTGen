@@ -1,0 +1,41 @@
+{
+  "library": "AlarmManager",
+  "title": "RegisterClient (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/pou-IAlarmHandler2/RegisterClient.html",
+  "page_title": "IAlarmHandler2.RegisterClient (METH)",
+  "text": "\nMETHOD RegisterClient : UDINT\nRegisters an instance IAlarmManagerClient at the alarm mannager.\nThe return value indicates, whether registering was successful\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "RegisterClient",
+          "Type": "UDINT",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfAlarmManagerClient",
+          "Type": "IAlarmManagerClient",
+          "Comment": "The IAlarmManagerClient instance to register"
+        },
+        [
+          "parritfAlarmsFromHistory",
+          "POINTER TO ARRAY [0..0]\nOF IAlarm2",
+          "This parameter specifies, whether the client will also be used to\naccess the alarm history (will be able if both the parameters parritfAlarmsFromHistory\nand iCountAlarmsFromHistory are <> 0).\nThis parameter also indicates the maximum numbers of rows of the alarm\nhistory, that will be returned to the client by a call to method\nGetAlarmsFromStorage."
+        ],
+        [
+          "iCountAlarmsFromHistory",
+          "INT",
+          "The effective size of the array above"
+        ]
+      ]
+    }
+  ]
+}

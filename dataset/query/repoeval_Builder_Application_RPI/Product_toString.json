@@ -1,0 +1,5 @@
+{
+  "requirement": "This code is intended to implement a method for concatenating multiple string components of a product object into a single string representation.",
+  "provide_code": "//Method to be used in the visualization element for an easier String handling\nMETHOD toString : STRING\nVAR_INPUT\n\t//List of possible parts to be build in a final Product object\n\tmainPart \t: STRING;\n\tpart1 \t\t: STRING;\n\tpart2 \t\t: STRING;\n\tpart3 \t\t: STRING;\nEND_VAR\nVAR_OUTPUT\nEND_VAR",
+  "function_name": "Product_toString"
+}

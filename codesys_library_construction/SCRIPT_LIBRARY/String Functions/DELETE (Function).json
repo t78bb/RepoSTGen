@@ -1,0 +1,52 @@
+{
+  "library": "String Functions",
+  "title": "DELETE (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Functions/Current/StrFunc/Functions/DELETE.html",
+  "page_title": "DELETE (FUN)",
+  "text": "\nFUNCTION DELETE :\nIString\nDeletes a number of runes from a string\nReturns 0 in case of\neErrorID\n<>\nERROR.NO_ERROR\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "DELETE",
+          "Type": "IString",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfString",
+          "Type": "IString",
+          "Comment": "The original String, will not be modified"
+        },
+        [
+          "udiCount",
+          "UDINT",
+          "Length of the partial string to be deleted, number of runes"
+        ],
+        [
+          "udiStart",
+          "UDINT",
+          "Position initfStringafter which the deletion startsRunes counted from leftMust be greater than 0 (SeeRIGHT, if the right part of a string is needed)"
+        ],
+        [
+          "itfResource",
+          "IString",
+          "The resource that this function is working on. It will\ncontain the result after the function call and will also be\nreturned by this function so it can be used in nested calls."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "eErrorID",
+          "Type": "ERROR",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

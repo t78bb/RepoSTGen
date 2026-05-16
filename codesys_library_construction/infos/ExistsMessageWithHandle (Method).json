@@ -1,0 +1,31 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "ExistsMessageWithHandle (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_RMP_ReliableMessageProtocol/pou-RMPMessageBuffer/ExistsMessageWithHandle.html",
+  "page_title": "RMPMessageBuffer.ExistsMessageWithHandle (METH)",
+  "text": "\nMETHOD FINAL ExistsMessageWithHandle : BOOL\nChecks if message with handle uiHandle exists\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "ExistsMessageWithHandle",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "uiHandle",
+          "Type": "UINT",
+          "Comment": "Handle associated with the message"
+        }
+      ]
+    }
+  ]
+}

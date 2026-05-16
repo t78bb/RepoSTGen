@@ -1,0 +1,31 @@
+{
+  "library": "AC_Alarming",
+  "title": "AcknowledgeAllAlarmsOfModule (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_Alarming/Current/ExtenderFB/pou-IACAlarmExtender3/AcknowledgeAllAlarmsOfModule.html",
+  "page_title": "IACAlarmExtender3.AcknowledgeAllAlarmsOfModule (METH)",
+  "text": "ExtenderFB\nACAlarmExtender (FunctionBlock)\nAcknowledgeAllAlarmsOfModule (Method)\nExecute (Method)\nGetActiveAlarmsOfModule (Method)\nGetEventAlarmID (Method)\nGetID (Property)\nInit (Method)\nInit2 (Method)\nInitSortedModuleAlarms (Method)\nAlarmInfo (Struct)\nAlarmingCall (Enum)\nIACAlarmExtender (Interface)\nInit (Method)\nIACAlarmExtender2 (Interface)\nGetEventAlarmID (Method)\nInit2 (Method)\nIACAlarmExtender3 (Interface)\nAcknowledgeAllAlarmsOfModule (Method)\nGetActiveAlarmsOfModule (Method)\nInitSortedModuleAlarms (Method)\nModuleAlarmInfo (Struct)\nModuleCall (Struct)\nModuleEvent (Struct)\nFunctions\nRaiseModuleEvent (Function)\nReplaceAlarmPlaceholderString (Function)\nGlobalTextList (GlobalTextList)\nModuleInterface\nIModuleAlarming (Interface)\nConsumeModuleAlarm (Method)\nVisualization\nFile and Project Information\nLibrary Reference\nAC_ModuleBase\nLibrary Identification\nLibrary Properties\nAlarmManager\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nStringUtils\nLibrary Identification\nLibrary Properties\nVisuElem3DPath\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElemCamDisplayer\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElemMeter\nLibrary Identification\nLibrary Properties\nVisuElemTextEditor\nLibrary Identification\nLibrary Properties\nVisuElemTrace\nLibrary Identification\nLibrary Properties\nVisuElemXYChart\nLibrary Identification\nLibrary Properties\nVisuElems\nLibrary Identification\nLibrary Properties\nVisuElemsAlarm\nLibrary Identification\nLibrary Properties\nVisuElemsDateTime\nLibrary Identification\nLibrary Properties\nVisuElemsSpecialControls\nLibrary Identification\nLibrary Properties\nVisuElemsWinControls\nLibrary Identification\nLibrary Properties\nVisuNativeControl\nLibrary Identification\nLibrary Properties\nAC_Alarming\nDocs\n»\nExtenderFB\n»\nIACAlarmExtender3\n(ITF)\n»\nIACAlarmExtender3.AcknowledgeAllAlarmsOfModule (METH)\nIACAlarmExtender3.AcknowledgeAllAlarmsOfModule (METH)\nÂ¶\nMETHOD AcknowledgeAllAlarmsOfModule : BOOL\nThis method acknowledges all active alarms that belong to\nmodule instance identified by\nitfModule\n.\nNote\nFor using this method one must activate the option to sort\nalarms per module in the options of the Alarm-Generator.\nInOut:\nScope\nName\nType\nComment\nReturn\nAcknowledgeAllAlarmsOfModule\nBOOL\nThe return value indicates if it was possible to acknowledge\nthe alarms that belong to\nitfModule\n.\nInput\nitfModule\nAC.IModule\nThe module whose alarms shall be acknowledged.",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "AcknowledgeAllAlarmsOfModule",
+          "Type": "BOOL",
+          "Comment": "The return value indicates if it was possible to acknowledge\nthe alarms that belong toitfModule."
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfModule",
+          "Type": "AC.IModule",
+          "Comment": "The module whose alarms shall be acknowledged."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "library": "BACnet2",
+  "title": "FromBACnetTimeStamp (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/Utilities/BACnetUtilities/FromBACnetDataTypes/FromBACnetTimeStamp.html",
+  "page_title": "FromBACnetTimeStamp (FUN)",
+  "text": "\nFUNCTION FromBACnetTimeStamp :\nBACnetTimeStamp\nReturns a BACnetTimeStamp corresponding to the given IEC_BACNET_TIME_STAMP.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "FromBACnetTimeStamp",
+          "Type": "BACnetTimeStamp",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "bacTimeStamp",
+          "Type": "CmpBACnet.IEC_BACNET_TIME_STAMP",
+          "Comment": "The BACnet time stamp to convert to a BACnetTimeStamp."
+        }
+      ]
+    }
+  ]
+}

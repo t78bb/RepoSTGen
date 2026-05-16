@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现基于两轴中心距离、测量起始和结束位置、高度偏移量及材料厚度的半径计算。",
+  "provide_code": "FUNCTION F_CalculateRadius : LREAL\nVAR_INPUT\n\tlD\t\t\t\t:\tLREAL;\t\t//两轴中心距离\n\tlHold\t\t\t:\tLREAL;\t\t//测量开始时的AxisV位置\n\tlHnew\t\t\t:\tLREAL;\t\t//测量结束时的AxisV位置\n\tlTk\t\t\t\t:\tLREAL;\t\t//材料厚度\n\tlOffset\t\t\t:\tLREAL;\t\t//高度偏移量\nEND_VAR"
+}

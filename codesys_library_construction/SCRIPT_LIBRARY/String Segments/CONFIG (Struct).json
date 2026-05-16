@@ -1,0 +1,29 @@
+{
+  "library": "String Segments",
+  "title": "CONFIG (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Segments/Current/Strings/Structs/CONFIG.html",
+  "page_title": "CONFIG (STRUCT)",
+  "text": "\nTYPE CONFIG : STRUCT\nThe current status of a\nIStringPool\ninstance\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Name": "udiStringSize",
+          "Type": "UDINT"
+        },
+        {
+          "Name": "udiCapacity",
+          "Type": "UDINT"
+        },
+        {
+          "Name": "udiStringsLeft",
+          "Type": "UDINT"
+        }
+      ]
+    }
+  ]
+}

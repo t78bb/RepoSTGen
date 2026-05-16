@@ -1,0 +1,42 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_EstimateDeadTime (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/Diagnostics/SMC_EstimateDeadTime.html",
+  "page_title": "SMC_EstimateDeadTime (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_EstimateDeadTime\nThis function block estimates the dead time between the fActPosition\nand the fSetPosition at the beginning of this bus task cycle.\nTo use it, move the axis with constant velocity, e.g. with\nMC_MoveVelocity\n.\nOnce the drive has reached the velocity, the output\nDeadTimeCycles\ncontains an estimate of the dead time, measured in bus task cycles.\nNote\nTaking the average or median value over several value results in\na more accurate estimate.  You can use the âStatisticsâ command of\nthe trace editor.  Add the output\nDeadTimeCycles\nto a trace\nobject, record a few seconds while the drive is moving with constant\nvelocity, then select this range in the trace using two cursors.\nThe âStatisticsâ command can be found in the context menu inside the\ntrace editor (right click on a diagram), or in the trace menu.\nThe value computed here can be configured as the dead time in the\nbasic page of the SoftMotion drive configuration editor.\nIt is the value that is stored in\nAxis.fSetActTimeLagCycles\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3",
+          "Comment": "Reference to axis"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Enable",
+          "Type": "BOOL",
+          "Comment": "Only outputs an estimate if enabled"
+        },
+        {
+          "Scope": "Output",
+          "Name": "Valid",
+          "Type": "BOOL",
+          "Comment": "Whether the dead time is valid."
+        },
+        [
+          "DeadTimeCycles",
+          "LREAL",
+          "The estimated dead time in cycles.  Measured between\nthe fActPostion, and the fSetPosition at the beginning of\nthe cycle."
+        ]
+      ]
+    }
+  ]
+}

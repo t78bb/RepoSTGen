@@ -1,0 +1,25 @@
+{
+  "library": "BACnet",
+  "title": "BACnetDateRange (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/Structs/BACnetDateRange.html",
+  "page_title": "BACnetDateRange (STRUCT)",
+  "text": "\nTYPE BACnetDateRange : STRUCT\nHelper Structure for CODESYS-Typed date ranges.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Name": "startDate",
+          "Type": "DATE"
+        },
+        {
+          "Name": "endDate",
+          "Type": "DATE"
+        }
+      ]
+    }
+  ]
+}

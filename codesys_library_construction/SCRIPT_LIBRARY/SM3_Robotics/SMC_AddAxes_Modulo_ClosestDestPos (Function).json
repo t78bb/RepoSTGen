@@ -1,0 +1,37 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_AddAxes_Modulo_ClosestDestPos (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/AxisGroup/Movements/SMC_AddAxes_Modulo_ClosestDestPos.html",
+  "page_title": "SMC_AddAxes_Modulo_ClosestDestPos (FUN)",
+  "text": "\nFUNCTION SMC_AddAxes_Modulo_ClosestDestPos\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "closestDest",
+          "Type": "SMRB.AddAxesVec"
+        },
+        {
+          "Scope": "Inout Const",
+          "Name": "dest",
+          "Type": "SMRB.AddAxesVec"
+        },
+        [
+          "start",
+          "SMRB.AddAxesVec"
+        ],
+        {
+          "Scope": "Input",
+          "Name": "paInfos",
+          "Type": "POINTER TO SMRCP.AxisInfo"
+        }
+      ]
+    }
+  ]
+}

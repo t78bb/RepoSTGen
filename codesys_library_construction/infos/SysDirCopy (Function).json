@@ -1,0 +1,46 @@
+{
+  "library": "SysDir",
+  "title": "SysDirCopy (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SysDir/Current/SysDirCopy.html",
+  "page_title": "SysDirCopy (FUN)",
+  "text": "\nFUNCTION SysDirCopy : RTS_IEC_RESULT\nCopies the contents of szSourceDir to szDestDir.\nNonexisting destination path will be created.\nDepending of the parameters, all subdirectories and its content will be copied too, and existing files will be overwritten.\nNOTE: Empty direcories will be copied if xRecursive is TRUE.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SysDirCopy",
+          "Type": "RTS_IEC_RESULT",
+          "Comment": "Returns the runtime system error code (see\nCmpErrors_Itf.library)"
+        },
+        {
+          "Scope": "Input",
+          "Name": "szDestDir",
+          "Type": "REFERENCE TO STRING",
+          "Comment": "Name of destination directory"
+        },
+        [
+          "szSourceDir",
+          "REFERENCE TO STRING",
+          "Name of source directory"
+        ],
+        [
+          "xRecursive",
+          "BOOL",
+          "TRUE: all subdirectories and their contents are copied,\nFALSE: subdirectories are omitted"
+        ],
+        [
+          "xOverwrite",
+          "BOOL",
+          "TRUE: existing files are overwritten, FALSE: existing files\nare left untouched"
+        ]
+      ]
+    }
+  ]
+}

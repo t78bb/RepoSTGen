@@ -1,0 +1,43 @@
+{
+  "library": "ModbusFB",
+  "title": "RequestDataReadWriteMultipleRegisters (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/ModbusFB/Current/ModbusFB/Structs/RequestDataReadWriteMultipleRegisters.html",
+  "page_title": "RequestDataReadWriteMultipleRegisters (STRUCT)",
+  "text": "\nTYPE RequestDataReadWriteMultipleRegisters : STRUCT\nRepresents a write request for ReadWriteMultipleRegisters.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Name": "uiReadStartAddress",
+          "Type": "UINT",
+          "Initial": "0"
+        },
+        {
+          "Name": "uiQuantityRead",
+          "Type": "UINT",
+          "Initial": "1"
+        },
+        {
+          "Name": "uiWriteStartAddress",
+          "Type": "UINT",
+          "Initial": "0"
+        },
+        {
+          "Name": "uiQuantityWrite",
+          "Type": "UINT",
+          "Initial": "1"
+        },
+        {
+          "Name": "usiWriteByteCount",
+          "Type": "USINT",
+          "Initial": "0"
+        }
+      ]
+    }
+  ]
+}

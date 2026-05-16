@@ -1,0 +1,89 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_ChangeDynamicLimits (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/AdministrativeConfiguration/SMC_ChangeDynamicLimits.html",
+  "page_title": "SMC_ChangeDynamicLimits (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_ChangeDynamicLimits\nSets the dynamic limits (maximum velocity, acceleration, jerk, torque)\nfor an axis.\nMay only be called if the axis is in state\npower_off\nor\nstandstill\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "bExecute",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Rising edge: Changes the limits."
+        },
+        [
+          "fMaxVelocity",
+          "LREAL",
+          "",
+          "The maximum velocity in u/s.  Must be positive."
+        ],
+        [
+          "fMaxAcceleration",
+          "LREAL",
+          "",
+          "The maximum acceleration in u/sÂ².  Must be positive."
+        ],
+        [
+          "fMaxDeceleration",
+          "LREAL",
+          "",
+          "The maximum deceleration in u/sÂ².  Must be positive."
+        ],
+        [
+          "fMaxJerk",
+          "LREAL",
+          "",
+          "The maximum jerk in u/sÂ³.  Must be positive."
+        ],
+        [
+          "fMaxTorque",
+          "LREAL",
+          "FPU.GetLRealSpecialVal(FPU.ESpecial_FP_Value.PosInf)",
+          "The maximum torque or force in Nm or N.\nThe torque limit is interpreted based on the gearbox output.\nUseSMC_SetAdditionalConversionFactorsto take the gearbox into account."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bDone",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUE: New limits have been set."
+        },
+        [
+          "bError",
+          "BOOL",
+          "",
+          "TRUE: An error has occurred."
+        ],
+        [
+          "bBusy",
+          "BOOL",
+          "",
+          "TRUE: The function block is in operation."
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

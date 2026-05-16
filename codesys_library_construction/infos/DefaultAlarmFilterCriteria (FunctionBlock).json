@@ -1,0 +1,8 @@
+{
+  "library": "AlarmManager",
+  "title": "DefaultAlarmFilterCriteria (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Function-blocks/DefaultAlarmFilterCriteria.html",
+  "page_title": "DefaultAlarmFilterCriteria (FB)",
+  "text": "\nFUNCTION_BLOCK DefaultAlarmFilterCriteria IMPLEMENTS IAlarmFilterCriteria\nThis function block provides filter criteria, that does not filter any alarms.",
+  "tables": []
+}

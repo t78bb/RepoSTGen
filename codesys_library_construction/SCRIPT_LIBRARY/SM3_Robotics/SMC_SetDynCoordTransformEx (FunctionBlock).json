@@ -1,0 +1,77 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_SetDynCoordTransformEx (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/AdministrativeConfiguration/Coordinate-systems/SMC_SetDynCoordTransformEx.html",
+  "page_title": "SMC_SetDynCoordTransformEx (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_SetDynCoordTransformEx\nThis FB sets a dynamic product coordinate system (PCS).\nA movement commanded in this dynamic PCS will automatically âtrackâ this\ncoordinate system.  Simple examples are PCS that are fixed to a conveyor belt\nor a rotary table.\nThis FB may be called with a new rising edge on Execute only after the\nconfigured dynamic coordinate system is no longer in use by any movement,\notherwise error SMC_AXIS_GROUP_PCS_STILL_IN_USE will be returned.\nSee output\nInUse\n.\nNote\nFor special cases of a dynamic PCS, the function blocks,\nMC_SetDynCoordTransform\n,\nMC_TrackConveyorBelt\nand\nMC_TrackRotaryTable\ncan be used.\nThis FB does not start a movement (administrative FB). The movement is\ninitiated by a command in the defined PCS.\nThe PCS is defined in world coordinates, i.e.\ndynPCS\nreturns the\ncurrent pose of the PCS relative to the WCS.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "AxisGroup",
+          "Type": "AXIS_GROUP_REF_SM3",
+          "Comment": "Reference to a group of axis"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Comment": "Sets the coordinate transformation on rising edge"
+        },
+        [
+          "dynPCS",
+          "SMRB.ICoordinateSystem",
+          "The dynamic coordinate transformation.  It returns the current\npose of the PCS relative to the WCS.\nThe FB that implementsSMC_IDynamicCSshall not be changed\nas long as it is used by active or upcoming movements.  (See outputInUse.)"
+        ],
+        [
+          "CoordSystem",
+          "SMC_COORD_SYSTEM",
+          "Which PCS is to be set (PCS_1 or PCS_2)"
+        ],
+        [
+          "StrInstancePath",
+          "STRING",
+          "The instance path for error logging (if not setStrInstancePathadopts the instance path of this FB)"
+        ],
+        [
+          "Name",
+          "STRING",
+          "The name of the coordinate system."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Done",
+          "Type": "BOOL",
+          "Comment": "The transformation has been set successfully"
+        },
+        [
+          "Busy",
+          "BOOL",
+          "The FB is not finished"
+        ],
+        [
+          "InUse",
+          "BOOL",
+          "Signals that the axis group still needs the\nreferenced dynamic coordinate system.\nA new rising edge ofExecutewill lead to the errorSMC_AXIS_GROUP_PCS_STILL_IN_USE.\nFor this information to be up-to-date, the function block\nhas to be called continuously\n(even if alreadyDone).\nA dynamic coordinate system becomesInUsewhen a movement\nto a position in the coordinate system is commanded.\nIt remainsInUseuntil the target position of a movement to\na different coordinate system has been reached."
+        ],
+        [
+          "Error",
+          "BOOL",
+          "Signals that an error has occurred within the function block"
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

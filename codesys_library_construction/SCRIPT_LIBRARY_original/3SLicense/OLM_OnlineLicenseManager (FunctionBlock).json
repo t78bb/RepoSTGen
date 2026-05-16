@@ -1,0 +1,8 @@
+{
+  "library": "3SLicense",
+  "title": "OLM_OnlineLicenseManager (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/3SLicense/Current/OLM_OnlineLicenseManager.html",
+  "page_title": "OLM_OnlineLicenseManager (FB)",
+  "text": "OLM_OnlineLicenseManager (FunctionBlock)\nDemoModeExpiredID (Method)\nDemoModeStartedID (Method)\nGetUserLicenseValue (Method)\nLicenseMissingID (Method)\nFile and Project Information\nLibrary Reference\nCAA Types Extern\nLibrary Identification\nLibrary Properties\nCmpApp\nLibrary Identification\nLibrary Properties\nCmpCodeMeter\nLibrary Identification\nLibrary Properties\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nCmpEventMgr\nLibrary Identification\nLibrary Properties\nCmpLog\nLibrary Identification\nLibrary Properties\nComponent Manager\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nSysCpuHandling\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\n3SLicense\nDocs\n»\nOLM_OnlineLicenseManager (FB)\nOLM_OnlineLicenseManager (FB)\nÂ¶\nFUNCTION_BLOCK OLM_OnlineLicenseManager\nThis FB manages the access to license values.\nThere is one global instance of it with the name\ng_olm\n.\nMethods:\nDemoModeExpiredID\nDemoModeStartedID\nGetUserLicenseValue\nLicenseMissingID\nStructure:\nDemoModeExpiredID (Method)\nDemoModeStartedID (Method)\nGetUserLicenseValue (Method)\nLicenseMissingID (Method)",
+  "tables": []
+}

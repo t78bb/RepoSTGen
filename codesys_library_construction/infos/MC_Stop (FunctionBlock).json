@@ -1,0 +1,62 @@
+{
+  "library": "SM3_Basic",
+  "title": "MC_Stop (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/Movement/MC_Stop.html",
+  "page_title": "MC_Stop (FB)",
+  "text": "\nFUNCTION_BLOCK MC_Stop\nMC_Stop\nplaces the axis in the\nstopping\nstate.\nAs a result, currently running motions of function block\ninstances are aborted.\n(The only exception is a running\nMC_Stop\ninstance, which is not\naborted. Instead, the just started\nMC_Stop\ninstance returns an error.)\nAs long as the axis is in the stopping state, no other instance can\nexecute a motion on it.\nIf the axis reaches the velocity value zero, the\nDone\noutput is set\nto\nTRUE\n. As long as the\nExecute\ninput is\nTRUE\n, the axis\nremains in the stopping state.\nIf\nExecute\ngoes to\nFALSE\nand the\nDone\noutput is\nTRUE\n,\nthe axis enters the\nstandstill\nstate.\nHint\nIn versions before CODESYS V3.5 SP4, the behavior was such that the\naxis went from\nstopping\nto\nstandstill\nas soon as the velocity\nvalue reached zero.\nExample\nUse of\nMC_Stop\nThe illustration shows how the\nFB2\ninstance of the type\nMC_Stop\nis combined with the\nFB1\ninstance of the type\nMC_MoveVelocity\n.\nThe rotary axis is ramped down by\nFB2\n.\nThe axis does not execute any motion commands as long as\nFB2.Execute\nis\nTRUE\n.\nFB1\noutputs an error message indicating that the\nFB2\ninstance\nis active.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3",
+          "Comment": "Reference to the axis"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Comment": "TRUE: Starts execution on rising edge."
+        },
+        [
+          "Deceleration",
+          "LREAL",
+          "Maximum deceleration, positive, in [u/sÂ²]"
+        ],
+        [
+          "Jerk",
+          "LREAL",
+          "Maximum jerk, positive, in [u/sÂ³]"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Done",
+          "Type": "BOOL",
+          "Comment": "TRUE: The axis has reached the velocity 0."
+        },
+        [
+          "Busy",
+          "BOOL",
+          "TRUE: Function block is in operation."
+        ],
+        [
+          "Error",
+          "BOOL",
+          "TRUE: An error has occurred."
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "library": "ModbusFB",
+  "title": "PutNBytesReverse (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/ModbusFB/Current/ModbusFB/Function-Blocks/Util/pou-ByteBuffer/PutNBytesReverse.html",
+  "page_title": "ByteBuffer.PutNBytesReverse (METH)",
+  "text": "\nMETHOD PutNBytesReverse\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "pSource",
+          "Type": "POINTER TO BYTE"
+        },
+        [
+          "uiBytes",
+          "UINT"
+        ]
+      ]
+    }
+  ]
+}

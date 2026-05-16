@@ -1,0 +1,28 @@
+{
+  "library": "MQTT Client SL",
+  "title": "MQTTStringPair (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/MQTT Client SL/Current/MQTT-Client/Common/Structs/MQTTV5/Properties/MQTTStringPair.html",
+  "page_title": "MQTTStringPair (STRUCT)",
+  "text": "\nTYPE MQTTStringPair : STRUCT\nKey-value pair for user properties (MQTT V5)\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "wsKey",
+          "Type": "WSTRING(MQTTParam.g_udiMaxUserPropertyValueLength)",
+          "Comment": "The key"
+        },
+        {
+          "Name": "wsValue",
+          "Type": "WSTRING(MQTTParam.g_udiMaxUserPropertyValueLength)",
+          "Comment": "The value"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "library": "BACnet2DefaultImpl",
+  "title": "SysTimeDateToString (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2DefaultImpl/Current/BACnetDefaultImpl/Functions/SysTimeDateToString.html",
+  "page_title": "SysTimeDateToString (FUN)",
+  "text": "\nFUNCTION SysTimeDateToString : STRING(255)\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SysTimeDateToString",
+          "Type": "STRING(255)"
+        },
+        {
+          "Scope": "Input",
+          "Name": "std",
+          "Type": "SysTimeDate"
+        }
+      ]
+    }
+  ]
+}

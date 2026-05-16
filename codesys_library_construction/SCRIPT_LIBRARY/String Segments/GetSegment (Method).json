@@ -1,0 +1,46 @@
+{
+  "library": "String Segments",
+  "title": "GetSegment (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Segments/Current/Strings/Functionblocks/pou-_UTF8String/IString/GetSegment.html",
+  "page_title": "_UTF8String.GetSegment (METH)",
+  "text": "\nMETHOD FINAL GetSegment : POINTER TO BYTE\nThis method returns the memory segment of string instance\nReturn value POINTER TO BYTE is the pointer to the first byte of the memory\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetSegment",
+          "Type": "POINTER TO BYTE",
+          "Comment": ""
+        },
+        {
+          "Scope": "Output",
+          "Name": "udiSize",
+          "Type": "UDINT",
+          "Comment": "Size of the memory in bytes"
+        },
+        [
+          "udiLength",
+          "UDINT",
+          "Number of bytes currently allocated to the string data"
+        ],
+        [
+          "xASCII",
+          "BOOL",
+          "All characters are in the ASCII range"
+        ],
+        [
+          "eErrorID",
+          "ERROR",
+          ""
+        ]
+      ]
+    }
+  ]
+}

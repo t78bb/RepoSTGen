@@ -1,0 +1,38 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_DynLoad (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/AdministrativeConfiguration/AxisGroup/SMC_DynLoad.html",
+  "page_title": "SMC_DynLoad (STRUCT)",
+  "text": "\nTYPE SMC_DynLoad : STRUCT\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "Name",
+          "Type": "STRING",
+          "Comment": ""
+        },
+        {
+          "Name": "PrincipalAxes",
+          "Type": "MC_COORD_REF",
+          "Comment": "The principal axes of inertia, relative to the TCS.\n[X] = [Y] = [Z] = u\n[A] = [B] = [C] = Â°"
+        },
+        {
+          "Name": "PrincipalMoments",
+          "Type": "ARRAY [0..2] OF LREAL",
+          "Comment": "The principal moments of inertia in kg*uÂ²."
+        },
+        {
+          "Name": "Mass",
+          "Type": "LREAL",
+          "Comment": "The mass in kg."
+        }
+      ]
+    }
+  ]
+}

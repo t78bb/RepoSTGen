@@ -1,0 +1,28 @@
+{
+  "library": "DNP3",
+  "title": "AnyNumberConvertFromREAL (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Functions/AnyNumber/AnyNumberConvertFromREAL.html",
+  "page_title": "AnyNumberConvertFromREAL (FUN)",
+  "text": "\nFUNCTION AnyNumberConvertFromREAL\nConvert REAL to AnyNumber\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "in",
+          "Type": "REAL"
+        },
+        {
+          "Scope": "Output",
+          "Name": "out",
+          "Type": "AnyNumber"
+        }
+      ]
+    }
+  ]
+}

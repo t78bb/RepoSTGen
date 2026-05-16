@@ -1,0 +1,29 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_TrafoResult_4AxisPalletizer (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_Trafo_Data-types/SMC_TrafoResult_4AxisPalletizer.html",
+  "page_title": "SMC_TrafoResult_4AxisPalletizer (ENUM)",
+  "text": "\nTYPE SMC_TrafoResult_4AxisPalletizer :\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Name": "T4AP_Result_OK",
+          "Initial": "0"
+        },
+        {
+          "Name": "T4AP_Result_InvalidConfig",
+          "Initial": "1"
+        },
+        {
+          "Name": "T4AP_Result_OutOfWorkingSpace",
+          "Initial": "2"
+        }
+      ]
+    }
+  ]
+}

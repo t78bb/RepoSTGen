@@ -1,0 +1,35 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "RMPConnection (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_RMP_ReliableMessageProtocol/RMPConnection.html",
+  "page_title": "RMPConnection (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL RMPConnection\nThis function block is used internally by the application composer during generation.\nThis function block represents a connection between different composer applications using the\nRMP (Reliable Message Protocoll).\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "uiRemoteAppID",
+          "Type": "UINT",
+          "Comment": "Application ID of receiver"
+        },
+        [
+          "pMessage",
+          "POINTER TORMPExchangeData",
+          "Pointer to the message that is transmitted between the 2\napps"
+        ],
+        [
+          "xTransmitConnection",
+          "BOOL",
+          "Signals if this instance is managing a transmit or receive\nconnection"
+        ]
+      ]
+    }
+  ]
+}

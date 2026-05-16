@@ -1,0 +1,8 @@
+{
+  "library": "SML_Basic",
+  "title": "ReinitAxis (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SML_Basic/Current/Base/pou-Axis_REF_SML/Config/ReinitAxis.html",
+  "page_title": "Axis_REF_SML.ReinitAxis (METH)",
+  "text": "\nMETHOD PROTECTED ReinitAxis\nCalled when SML_ReinitDrive is executed, in wCommunicationState = 210.",
+  "tables": []
+}

@@ -1,0 +1,125 @@
+{
+  "library": "SM3_Basic",
+  "title": "MC_GearInPos (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/Movement/MasterSlave/MC_GearInPos.html",
+  "page_title": "MC_GearInPos (FB)",
+  "text": "GlobalTextList (GlobalTextList)\nImages\nLibrary Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nProject Information\nGetBooleanProperty (Function)\nGetCompany (Function)\nGetNumberProperty (Function)\nGetTextProperty (Function)\nGetTextProperty2 (Function)\nGetTitle (Function)\nGetVersion (Function)\nGetVersionProperty (Function)\nSM3_Basic\nDataTypes\nAdditional\nMC_CAMSWITCH_REF (Struct)\nMC_CAMSWITCH_TR (Struct)\nMC_OUTPUT_REF (Alias)\nMC_TAPPETMODE (Enum)\nMC_TRACK_REF (Alias)\nMC_TRACK_TR (Struct)\nTRIGGER_REF (Struct)\nAdministrative/Configuration\nSMC3_BrakeSetState (Enum)\nSMC3_PersistPositionDiag (Enum)\nSMC3_PersistPosition_Data (Struct)\nSMC_AXIS_AUTORESTART_MODE (Enum)\nCAM\nCamSegment\nMC_CAM_ID (Struct)\nMC_CAM_REF (FunctionBlock)\nMC_STARTMODE (Enum)\nSMC_CAMTAPPETACTION (Enum)\nSMC_CAMTAPPETTYPE (Enum)\nSMC_CAMTable_LREAL_128_1 (Struct)\nSMC_CAMTable_LREAL_128_2 (Struct)\nSMC_CAMTable_LREAL_256_1 (Struct)\nSMC_CAMTable_LREAL_256_2 (Struct)\nSMC_CAMTable_REAL_128_1 (Struct)\nSMC_CAMTable_REAL_128_2 (Struct)\nSMC_CAMTable_REAL_256_1 (Struct)\nSMC_CAMTable_REAL_256_2 (Struct)\nSMC_CAMTable_UDINT_128_1 (Struct)\nSMC_CAMTable_UDINT_128_2 (Struct)\nSMC_CAMTable_UDINT_256_1 (Struct)\nSMC_CAMTable_UDINT_256_2 (Struct)\nSMC_CAMTable_UINT_128_1 (Struct)\nSMC_CAMTable_UINT_128_2 (Struct)\nSMC_CAMTable_UINT_256_1 (Struct)\nSMC_CAMTable_UINT_256_2 (Struct)\nSMC_CAMTappet (Struct)\nSMC_CAMXYVA (Struct)\nSMC_CAM_TYPE (Enum)\nDiagnostics\nSMC_CommunicationState (Enum)\nSMC_LOGGERMODE (Enum)\nDriveInterface\nMC_DIRECTION (Enum)\nSMC3_CaptureDescription (Struct)\nSMC3_CheckPositionLagMode (Enum)\nSMC3_DriveAcyclicTel (Struct)\nSMC3_MappingEntry (Alias)\nSMC3_ParamCommunicationMethod_Enum (Enum)\nSMC_AXIS_STATE (Enum)\nSMC_AXIS_TYPE (Enum)\nSMC_CONTROLLER_MODE (Enum)\nSMC_ENCODER_REF (Struct)\nSMC_FBERROR (Struct)\nSMC_MOTOR_TYPE (Enum)\nSMC_MOVEMENTTYPE (Enum)\nSMC_RAMPTYPE (Enum)\nSMC_SWITCHING_STATE (Enum)\nSMC_ValueSelect (Enum)\nMovement\nMC_TA_REF (Struct)\nMC_TP_REF (Struct)\nMC_TV_REF (Struct)\nSMC_BACKLASH_MODE (Enum)\nSMC_BACKLASH_STARTSTATE (Enum)\nSMC_HOMING_MODE (Enum)\nSMC_TA (Struct)\nSMC_TP (Struct)\nSMC_TV (Struct)\nDriveInterface\nAXIS_REF\nAXIS_REF_SM3 (FunctionBlock)\nIAxisRef (Interface)\nSMC3_ReinitDrive (FunctionBlock)\nSMC_AxisChangeSettings (FunctionBlock)\nSMC_AxisReadSettings (FunctionBlock)\nAXIS_REF_LOGICAL\nAXIS_REF_LOGICAL_SM3 (FunctionBlock)\nAXIS_REF_MAPPING\nAXIS_REF_MAPPING_SM3 (FunctionBlock)\nAXIS_REF_VIRTUAL\nAXIS_REF_VIRTUAL_SM3 (FunctionBlock)\nENCODER_REF\nENCODER_REF_SM3 (FunctionBlock)\nFREE_ENCODER_REF\nFREE_ENCODER_REF (FunctionBlock)\nGlobals\nLibParams (ParamList)\nSMC_DriveBasic_GlobalVariables (GVL)\nSM_PLCOpen_GlobalVariables (GVL)\nPOUs\nAdditional\nMC_AbortTrigger (FunctionBlock)\nMC_DigitalCamSwitch (FunctionBlock)\nMC_TouchProbe (FunctionBlock)\nSMC_CAMSWITCH_TOGGLE_EVENT (Struct)\nSMC_CAMSWITCH_TOGGLE_EVENTS (Struct)\nSMC_CAMSWITCH_TRACKS_EVENTS (Alias)\nSMC_DigitalCamSwitch_HighPrecision (FunctionBlock)\nSMC_FreeEncoder (FunctionBlock)\nSMC_Logical_Axis (FunctionBlock)\nSMC_StartupDrive (FunctionBlock)\nSMC_VIRTUAL_AXIS (FunctionBlock)\nAdministrative/Configuration\nMC_Power (FunctionBlock)\nMC_Reset (FunctionBlock)\nMC_SetPosition (FunctionBlock)\nSMC3_BrakeControl (FunctionBlock)\nSMC3_PersistPosition (FunctionBlock)\nSMC3_PersistPositionLogical (FunctionBlock)\nSMC3_PersistPositionSingleturn (FunctionBlock)\nSMC_ChangeAxisScalingLinear (FunctionBlock)\nSMC_ChangeAxisScalingRotary (FunctionBlock)\nSMC_ChangeDynamicLimits (FunctionBlock)\nSMC_ChangeGearingRatio (FunctionBlock)\nSMC_GetForecast (FunctionBlock)\nSMC_GetTravelTime (FunctionBlock)\nSMC_SetAdditionalConversionFactors (FunctionBlock)\nSMC_SetControllerMode (FunctionBlock)\nSMC_SetCustomRampType (FunctionBlock)\nSMC_SetForecast (FunctionBlock)\nSMC_SetMovementType (FunctionBlock)\nSMC_SetRampType (FunctionBlock)\nSMC_SetSoftwareLimits (FunctionBlock)\nCAM\nMC_CamTableSelect (FunctionBlock)\nSMC_CAMBounds (FunctionBlock)\nSMC_CAMBounds_Pos (FunctionBlock)\nSMC_CamEditor (FunctionBlock)\nSMC_CamRegister (FunctionBlock)\nSMC_CamTableEvaluate (Function)\nSMC_GetCamSlaveSetPosition (FunctionBlock)\nSMC_GetTappetValue (FunctionBlock)\nSMC_ReadCAM (FunctionBlock)\nSMC_WriteCAM (FunctionBlock)\nDiagnostics\nFBError\nMC_ReadActualPosition (FunctionBlock)\nMC_ReadActualTorque (FunctionBlock)\nMC_ReadActualVelocity (FunctionBlock)\nMC_ReadAxisError (FunctionBlock)\nMC_ReadStatus (FunctionBlock)\nSMC3_BrakeStatus (FunctionBlock)\nSMC_AxisDiagnosticLog (FunctionBlock)\nSMC_CheckAxisCommunication (FunctionBlock)\nSMC_CheckLimits (FunctionBlock)\nSMC_EstimateDeadTime (FunctionBlock)\nSMC_GetMaxSetAccDec (FunctionBlock)\nSMC_GetMaxSetVelocity (FunctionBlock)\nSMC_GetTrackingError (FunctionBlock)\nSMC_InPosition (FunctionBlock)\nSMC_MeasureDistance (FunctionBlock)\nSMC_ReadSetPosition (FunctionBlock)\nSMC_ReadSetValues (FunctionBlock)\nMovement\nDirect\nMC_AccelerationProfile (FunctionBlock)\nMC_Halt (FunctionBlock)\nMC_HaltSuperImposed (FunctionBlock)\nMC_Home (FunctionBlock)\nMC_Jog (FunctionBlock)\nMC_MoveAbsolute (FunctionBlock)\nMC_MoveAdditive (FunctionBlock)\nMC_MoveRelative (FunctionBlock)\nMC_MoveSuperImposed (FunctionBlock)\nMC_MoveVelocity (FunctionBlock)\nMC_PositionProfile (FunctionBlock)\nMC_SetOverride (FunctionBlock)\nMC_Stop (FunctionBlock)\nMC_VelocityProfile (FunctionBlock)\nMaster/Slave\nSMC_BacklashCompensation (FunctionBlock)\nSMC_GetOverride (FunctionBlock)\nSMC_Homing (FunctionBlock)\nSMC_Inch (FunctionBlock)\nSMC_MoveContinuousAbsolute (FunctionBlock)\nSMC_MoveContinuousRelative (FunctionBlock)\nParameter access\nMC_ReadBoolParameter (FunctionBlock)\nMC_ReadParameter (FunctionBlock)\nMC_WriteBoolParameter (FunctionBlock)\nMC_WriteParameter (FunctionBlock)\nSMC_ParameterNumber_CoE (Function)\nSMC_ParameterNumber_SoE (Function)\nSMC_GetCyclicMapping (Function)\ninternal\nTrajectories\nVisualization\nGenerated\nFramed visu helpers\nOriginal\nImagePool_sm3 (ImagePool)\nSM3_Basic_GetVersion (Function)\nFile and Project Information\nLibrary Reference\n3SLicense\nLibrary Identification\nLibrary Properties\nBase Interfaces\nLibrary Identification\nLibrary Properties\nCAA Callback Extern\nLibrary Identification\nLibrary Properties\nCAA Device Diagnosis\nLibrary Identification\nLibrary Properties\nCAA Types Extern\nLibrary Identification\nLibrary Properties\nCmpApp\nLibrary Identification\nLibrary Properties\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nCmpEventMgr\nLibrary Identification\nLibrary Properties\nCmpIecTask\nLibrary Identification\nLibrary Properties\nCmpLog\nLibrary Identification\nLibrary Properties\nComponent Manager\nLibrary Identification\nLibrary Properties\nEmpty\nLibrary Identification\nLibrary Properties\nFloatingPointUtils\nLibrary Identification\nLibrary Properties\nIoDriver Interfaces\nLibrary Identification\nLibrary Properties\nIoStandard\nLibrary Identification\nLibrary Properties\nSM3_CommonPublic\nLibrary Identification\nLibrary Properties\nSM3_Error\nLibrary Identification\nLibrary Properties\nSM3_Math\nLibrary Identification\nLibrary Properties\nSM3_RBase\nLibrary Identification\nLibrary Properties\nSM3_Ramps\nLibrary Identification\nLibrary Properties\nSM3_Shared\nLibrary Identification\nLibrary Properties\nSM3_StringUtils\nLibrary Identification\nLibrary Properties\nSM3_TrajectoryGeneration\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nSysCpuHandling\nLibrary Identification\nLibrary Properties\nSysFile\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysTarget\nLibrary Identification\nLibrary Properties\nSysTime\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nVisuElem3DPath\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElemCamDisplayer\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElemMeter\nLibrary Identification\nLibrary Properties\nVisuElemTextEditor\nLibrary Identification\nLibrary Properties\nVisuElemTrace\nLibrary Identification\nLibrary Properties\nVisuElemXYChart\nLibrary Identification\nLibrary Properties\nVisuElems\nLibrary Identification\nLibrary Properties\nVisuElemsAlarm\nLibrary Identification\nLibrary Properties\nVisuElemsDateTime\nLibrary Identification\nLibrary Properties\nVisuElemsSpecialControls\nLibrary Identification\nLibrary Properties\nVisuElemsWinControls\nLibrary Identification\nLibrary Properties\nVisuInputs\nLibrary Identification\nLibrary Properties\nVisuNativeControl\nLibrary Identification\nLibrary Properties\nSM3_Basic\nDocs\n»\nSM3_Basic\n»\nPOUs\n»\nMovement\n»\nMaster/Slave\n»\nMC_GearInPos (FB)\nMC_GearInPos (FB)\nÂ¶\nFUNCTION_BLOCK MC_GearInPos\nMC_GearInPos\ncouples the slave axis to the master axis taking into\naccount a specific positional relationship.\nImportant\nIn certain cases, it may be impossible to avoid a reversal of the slave.\n(Even if the slave velocity is not opposite to the master.)\nOne example is a slave with a small positive velocity and a large\nnegative acceleration. It may not be possible to ramp down the\nacceleration fast enough to prevent the velocity from becoming negative.\nNote\nMC_GearInPos\nshould be called after the motion FB controlling\nthe\nMaster\naxis has been called.  Otherwise, the\nSlave\naxis\nwill lag behind the\nMaster\naxis.\nTiming diagram\nWith\nBufferMode\nAborting, any previous motion is continued until the\nmaster crosses the position\nMasterSyncPosition\nâ\nMasterStartDistance\nin the correct direction.\nAt that point in time the output\nStartSync\nis set. When a stop\ncommand is executed on the slave axis before the synchronization\nhas happened, it will inhibit the synchronization and the function block\nissues\nCommandAborted\n=\nTRUE\n.\nIf the\nMasterStartDistance\nis not specified (indicated by a non-positive\nvalue), the function block calculates the setting start distancepoint so\nthat synchronization starts at the current master position.\nWith\nBufferMode\nBuffered or BlendingPrevious, the input\nMasterStartDistance\ncannot be provided (i.e. must be set to 0).\nThe reason for this is that as soon as the previous movement finished,\nMC_GearInPos must take over the axis and continue the movement, it cannot\nwait until the master sync position has been reached.\n(If the master is in standstill when the previous movement is finished,\nthen an error\nSMC_GIP_CANNOT_START_SYNC\nis reported.)\nTiming Diagram of\nMC_GearInPos\nÂ¶\nDifferent examples of gearing\nÂ¶\nInOut:\nScope\nName\nType\nInitial\nComment\nInout\nMaster\nAXIS_REF_SM3\nReference to master axis\nSlave\nAXIS_REF_SM3\nReference to slave axis\nInput\nExecute\nBOOL\nRising edge: Starts the execution of the function block.\nRatioNumerator\nDINT\n1\nGear ratio numerator\nRatioDenominator\nDINT\n1\nGear ratio denominator\nMasterSyncPosition\nLREAL\nMaster position where the axes run in sync.\nSlaveSyncPosition\nLREAL\nSlave position where the axes run in sync.\nMasterStartDistance\nLREAL\nMaster distance for the gear in procedure (where the slave axis will\nbe started for getting into synchronization).\nIn other words, the slave is brought into sync with the master during\nthis distance, i.e. from\nMasterSyncPosition\n-\nMasterStartDistance\nuntil\nMasterSyncPosition\n.\nIf\nMasterStartDistance\nis 0 (or negative), then the slave movement\nis started immediately, provided that the master is not in standstill.\nIf BufferMode <> Aborting, then the MasterStartDistance must be 0\n(or negative).\nBufferMode\nMC_BUFFER_MODE\nDefines the chronological sequence of the FB relative to the previous block.\nOnly the BufferModes\nAborting\n,\nBuffered\nand\nBlendingPrevious\nare\nsupported.\nBlendingPrevious\nmeans that the configured velocity (including the direction)\nof the previous movement is used as the blending velocity, even if this movement\nhas the opposite direction.\nIf the function block is Busy, then only BufferMode=Aborting\nis allowed.\nAvoidReversal\nBOOL\nFALSE\n: Signals that the reversal of the slave is physically possible\nand acceptable.\nTRUE\n: Signals that a reversal of the modulo slave has to be avoided,\ne.g. because it is physically impossible or might lead to damage.\nIt works only with modulo slave axes.\nIf a reversal cannot be avoided, the axis is stopped with an error.\nBehavior:\nIf the slave axis is a modulo axis and the master\nvelocity (times the sign of the gear ratio) is not opposite\nto the\nslave\nvelocity\n, then\nMC_GearInPos\ntries to avoid\na reversal of the slave.\nIt tries to âstretchâ the slave movement by increasing the distance\nthe slave travels by up to 5 slave periods.\nIf this âstretchingâ is not successful, an error is reported.\nIf the slave velocity is opposite to the master velocity\ntimes the sign of the gear ratio,\nan error is reported.\nIf the slave axis is not a modulo axis, an error is reported on the\nrising edge of the Execute input.\nOutput\nStartSync\nBOOL\nTRUE\n: Commanded gearing has been started.\nInSync\nBOOL\nTRUE\n: Cmmanded gearing has been completed.\nBusy\nBOOL\nTRUE\n: Execution of the function block has not been\nfinished.\nActive\nBOOL\nIndicates that the FB has control on the axis\nCommandAborted\nBOOL\nFALSE\nTRUE\n: Execution has been interrupted by another function block\ninstance operating on the axis.\nError\nBOOL\nTRUE\n: Error has occurred within the function block.\nErrorID\nSMC_ERROR\nError identification",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Master",
+          "Type": "AXIS_REF_SM3",
+          "Initial": "",
+          "Comment": "Reference to master axis"
+        },
+        [
+          "Slave",
+          "AXIS_REF_SM3",
+          "",
+          "Reference to slave axis"
+        ],
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Rising edge: Starts the execution of the function block."
+        },
+        [
+          "RatioNumerator",
+          "DINT",
+          "1",
+          "Gear ratio numerator"
+        ],
+        [
+          "RatioDenominator",
+          "DINT",
+          "1",
+          "Gear ratio denominator"
+        ],
+        [
+          "MasterSyncPosition",
+          "LREAL",
+          "",
+          "Master position where the axes run in sync."
+        ],
+        [
+          "SlaveSyncPosition",
+          "LREAL",
+          "",
+          "Slave position where the axes run in sync."
+        ],
+        [
+          "MasterStartDistance",
+          "LREAL",
+          "",
+          "Master distance for the gear in procedure (where the slave axis will\nbe started for getting into synchronization).\nIn other words, the slave is brought into sync with the master during\nthis distance, i.e. fromMasterSyncPosition-MasterStartDistanceuntilMasterSyncPosition.IfMasterStartDistanceis 0 (or negative), then the slave movement\nis started immediately, provided that the master is not in standstill.\nIf BufferMode <> Aborting, then the MasterStartDistance must be 0\n(or negative)."
+        ],
+        [
+          "BufferMode",
+          "MC_BUFFER_MODE",
+          "",
+          "Defines the chronological sequence of the FB relative to the previous block.\nOnly the BufferModesAborting,BufferedandBlendingPreviousare\nsupported.BlendingPreviousmeans that the configured velocity (including the direction)\nof the previous movement is used as the blending velocity, even if this movement\nhas the opposite direction.\nIf the function block is Busy, then only BufferMode=Aborting\nis allowed."
+        ],
+        [
+          "AvoidReversal",
+          "BOOL",
+          "",
+          "FALSE: Signals that the reversal of the slave is physically possible\nand acceptable.TRUE: Signals that a reversal of the modulo slave has to be avoided,\ne.g. because it is physically impossible or might lead to damage.It works only with modulo slave axes.If a reversal cannot be avoided, the axis is stopped with an error.Behavior:If the slave axis is a modulo axis and the master\nvelocity (times the sign of the gear ratio) is not oppositeto theslavevelocity, thenMC_GearInPostries to avoid\na reversal of the slave.It tries to âstretchâ the slave movement by increasing the distance\nthe slave travels by up to 5 slave periods.If this âstretchingâ is not successful, an error is reported.If the slave velocity is opposite to the master velocity\ntimes the sign of the gear ratio,an error is reported.If the slave axis is not a modulo axis, an error is reported on the\nrising edge of the Execute input."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "StartSync",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUE: Commanded gearing has been started."
+        },
+        [
+          "InSync",
+          "BOOL",
+          "",
+          "TRUE: Cmmanded gearing has been completed."
+        ],
+        [
+          "Busy",
+          "BOOL",
+          "",
+          "TRUE: Execution of the function block has not been\nfinished."
+        ],
+        [
+          "Active",
+          "BOOL",
+          "",
+          "Indicates that the FB has control on the axis"
+        ],
+        [
+          "CommandAborted",
+          "BOOL",
+          "FALSE",
+          "TRUE: Execution has been interrupted by another function block\ninstance operating on the axis."
+        ],
+        [
+          "Error",
+          "BOOL",
+          "",
+          "TRUE: Error has occurred within the function block."
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

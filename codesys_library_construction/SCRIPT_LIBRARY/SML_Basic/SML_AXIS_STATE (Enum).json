@@ -1,0 +1,45 @@
+{
+  "library": "SML_Basic",
+  "title": "SML_AXIS_STATE (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SML_Basic/Current/Base/SML_AXIS_STATE.html",
+  "page_title": "SML_AXIS_STATE (ENUM)",
+  "text": "\nTYPE SML_AXIS_STATE :\nThe possible axis states according to PLCopen.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Name": "SML_AS_PowerOff",
+          "Initial": "0"
+        },
+        {
+          "Name": "SML_AS_ErrorStop",
+          "Initial": "1"
+        },
+        {
+          "Name": "SML_AS_Stopping",
+          "Initial": "2"
+        },
+        {
+          "Name": "SML_AS_Standstill",
+          "Initial": "3"
+        },
+        {
+          "Name": "SML_AS_DiscreteMotion",
+          "Initial": "4"
+        },
+        {
+          "Name": "SML_AS_ContinuousMotion",
+          "Initial": "5"
+        },
+        {
+          "Name": "SML_AS_Homing",
+          "Initial": "7"
+        }
+      ]
+    }
+  ]
+}

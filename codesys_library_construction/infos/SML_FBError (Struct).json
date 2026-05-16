@@ -1,0 +1,33 @@
+{
+  "library": "SML_Basic",
+  "title": "SML_FBError (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/SML_Basic/Current/Base/SML_FBError.html",
+  "page_title": "SML_FBError (STRUCT)",
+  "text": "\nTYPE SML_FBERROR : STRUCT\nRepresents an error event that occurred while executing an SML function block\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "eError",
+          "Type": "SML_ERROR",
+          "Comment": "The error identifier"
+        },
+        {
+          "Name": "pbyErrorInstance",
+          "Type": "POINTER TO BYTE",
+          "Comment": "A pointer to the FB instance that detected the error"
+        },
+        {
+          "Name": "tTimeStamp",
+          "Type": "TIME",
+          "Comment": "The time of the error event"
+        }
+      ]
+    }
+  ]
+}

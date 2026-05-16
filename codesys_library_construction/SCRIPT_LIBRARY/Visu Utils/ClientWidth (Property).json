@@ -1,0 +1,8 @@
+{
+  "library": "Visu Utils",
+  "title": "ClientWidth (Property)",
+  "url": "https://content.helpme-codesys.com/en/libs/Visu Utils/Current/VisuUtils/VisuActionUtilities/Interfaces/pou-IVisualizationClient/ClientWidth.html",
+  "page_title": "IVisualizationClient.ClientWidth (PROP)",
+  "text": "\nPROPERTY ClientWidth : INT\nReturns the width of the client",
+  "tables": []
+}

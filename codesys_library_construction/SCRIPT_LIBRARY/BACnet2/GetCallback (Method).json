@@ -1,0 +1,31 @@
+{
+  "library": "BACnet2",
+  "title": "GetCallback (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/BACnetServerPlugin/pou-IBACnetServerPlugin/GetCallback.html",
+  "page_title": "IBACnetServerPlugin.GetCallback (METH)",
+  "text": "\nMETHOD GetCallback :\nIBACnetServerPluginCallback\nGets a callback.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetCallback",
+          "Type": "IBACnetServerPluginCallback",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "index",
+          "Type": "UINT",
+          "Comment": "index of the callback."
+        }
+      ]
+    }
+  ]
+}

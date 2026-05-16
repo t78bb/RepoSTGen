@@ -1,0 +1,41 @@
+{
+  "library": "AC_Alarming",
+  "title": "ConsumeModuleAlarm (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_Alarming/Current/ModuleInterface/pou-IModuleAlarming/ConsumeModuleAlarm.html",
+  "page_title": "IModuleAlarming.ConsumeModuleAlarm (METH)",
+  "text": "\nMETHOD ConsumeModuleAlarm : BOOL\nThis method is called is an alarm was issued for a module which defined a module call.\nIf true is returned the alarm was consumed by this function and will be no further treated.\nThis means returning true will stop the transmission of this alarm to other modules.\nIf false is returned other modules will still be alarmed\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "ConsumeModuleAlarm",
+          "Type": "BOOL",
+          "Comment": "True is returned if the alarm does not need to be issued further (i.e. by the module\nparents), or false if it needs to be issued further."
+        },
+        {
+          "Scope": "Input",
+          "Name": "inst",
+          "Type": "AC.IModule",
+          "Comment": "The module instance for which the alarm was issued"
+        },
+        [
+          "alarm",
+          "AlarmManager.IAlarm",
+          "The alarm for which a transition occured (see the\nAlarmManager library for details)"
+        ],
+        [
+          "transition",
+          "AlarmManager.AlarmStateTransition",
+          "The transition type, which occured for the alarm (see the\nAlarmManager library for details)"
+        ]
+      ]
+    }
+  ]
+}

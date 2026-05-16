@@ -1,0 +1,23 @@
+{
+  "library": "AlarmManager",
+  "title": "IsAcknowledgeSeparately (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/pou-IAlarmClass/IsAcknowledgeSeparately.html",
+  "page_title": "IAlarmClass.IsAcknowledgeSeparately (METH)",
+  "text": "\nMETHOD IsAcknowledgeSeparately : BOOL\nReturns the flag, that indicates, whether alarm belonging to this alarm class\nhave to acknowledged separately\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "IsAcknowledgeSeparately",
+          "Type": "BOOL"
+        }
+      ]
+    }
+  ]
+}

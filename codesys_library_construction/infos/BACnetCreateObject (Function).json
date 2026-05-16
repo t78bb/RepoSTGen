@@ -1,0 +1,66 @@
+{
+  "library": "CmpBACnet",
+  "title": "BACnetCreateObject (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/CmpBACnet/Current/BACnetClientAPI/BACnetCreateObject.html",
+  "page_title": "BACnetCreateObject (FUN)",
+  "text": "\nFUNCTION BACnetCreateObject :\nIEC_BACNET_STATUS\nSends a CreateObject request.\nSends a request to create a new instance of an object which may be as standard as\nvendor-specified object. This service may provide initialization of the properties\nof the newly created standard objects or the property values may be written later.\nThis routine may control APDU properties like APDU length, segmentation and timeout\nfor both request and response. This routine can execute asynchronously, i.e. this\nroutine will return to the caller before the BACnet reply comes so that the\napplications can keep running. In this case the response information will be received\nby the thread which is responsible for receiving asynchronous responses. An optional\nBACNET_CREATE_OBJECT_COMPLETE_CB routine, which is provided by the BACnet application,\nshall be used to process this information. If a number of asynchronous requests are\nsent, the responses shall be queued and identified by the transaction handles. If the\napplication does not supply the BACNET_CREATE_OBJECT_COMPLETE_CB routine; then this\nroutine sends a request and waits for reply.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "BACnetCreateObject",
+          "Type": "IEC_BACNET_STATUS",
+          "Comment": "A status indicating if the operation worked."
+        },
+        {
+          "Scope": "Input",
+          "Name": "pSourceAddress",
+          "Type": "POINTER TOIEC_BACNET_ADDRESS",
+          "Comment": "If the BACnet application has only one device constructed and installed, this can\nbe 0. In this case the MAC address of this device will be used. Otherwise this\nshall be the MAC address returned on device object construction."
+        },
+        [
+          "pDestinationAddress",
+          "POINTER TOIEC_BACNET_ADDRESS",
+          "This is the MAC address of the device to which the request\nshould be sent."
+        ],
+        [
+          "pServiceInfo",
+          "POINTER TOIEC_BACNET_CREATE_OBJECT_INFO",
+          "A pointer to the request information data structure. This data structure specifies\neither Object Type or ObjectID to create a new instance of an object and a list of\nproperty values."
+        ],
+        [
+          "pAPDUParams",
+          "POINTER TOIEC_BACNET_APDU_PROPERTIES",
+          "A pointer to the APDU-Properties structure which sets APDU properties for this\ntransaction only. This does not change global defaults or settings for the application\nAPDU Properties. This argument may be 0. In this case APDU properties  are used\nwhich were specified in the device object properties of the applications device which\nsends the request."
+        ],
+        [
+          "pTransactionToken",
+          "POINTER TOBACnetAsyncTransactionToken",
+          "Transaction token of the asynchronous call - seeBACnetAsyncTransactionToken."
+        ],
+        [
+          "pError",
+          "POINTER TOIEC_BACNET_ERROR",
+          "A pointer to a structure to hold BACnet Error information. pError may be 0 if the\napplication isnât interested in detailed error information."
+        ],
+        [
+          "pObjectID",
+          "POINTER TOBACnetCreateObjectResult",
+          "A pointer to the memory block to return the object Identifier of a newly created object,\nplus the âfirst failedâ property which may be 0. SeeBACnetCreateObjectResult"
+        ],
+        [
+          "pFirstFailed",
+          "POINTER TOIEC_BACNET_UNSIGNED",
+          "A pointer to a buffer in which to place the sequence number of the first element\nin the pElements list which cannot be added to the property. pFirstFailed may be\n0."
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "library": "AlarmManager",
+  "title": "RegisterAlarmStateChangedListener (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/pou-IAlarmHandler4/RegisterAlarmStateChangedListener.html",
+  "page_title": "IAlarmHandler4.RegisterAlarmStateChangedListener (METH)",
+  "text": "\nMETHOD RegisterAlarmStateChangedListener : BOOL\nRegisters a listener for a change in the alarm state in order to give the possibility to\ncall its method AlarmStateChanged() in case the alarm state changed.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "RegisterAlarmStateChangedListener",
+          "Type": "BOOL",
+          "Comment": "<c>TRUE</c> when there was no previous listener registered,\n<c>FALSE</c> otherwise"
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfAlarmStateChangedListener",
+          "Type": "IAlarmStateChangedListener",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

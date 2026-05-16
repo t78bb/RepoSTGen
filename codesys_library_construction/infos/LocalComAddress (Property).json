@@ -1,0 +1,8 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "LocalComAddress (Property)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_Module/pou-ProxyInstance/LocalComAddress.html",
+  "page_title": "ProxyInstance.LocalComAddress (PROP)",
+  "text": "\nPROPERTY FINAL LocalComAddress : UDINT\nThe local communication address of the proxy instance.",
+  "tables": []
+}

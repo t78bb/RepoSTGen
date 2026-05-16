@@ -1,0 +1,72 @@
+{
+  "library": "SM3_Robotics",
+  "title": "MC_GroupSetPosition (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/AdministrativeConfiguration/AxisGroup/MC_GroupSetPosition.html",
+  "page_title": "MC_GroupSetPosition (FB)",
+  "text": "\nFUNCTION_BLOCK MC_GroupSetPosition\nAllows to set the position of all axes of an axis group.\nThis function block calls\nMC_SetPosition\nfor all axes\nof the group.\nThis function block must be called in state\nGroupStandby\nwithout following a dynamic coordinate system.\nMust not be commanded in the same cycle after commanding\nMC_GroupContinue\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "AxisGroup",
+          "Type": "Axis_Group_Ref_SM3",
+          "Comment": "Reference to group of axes"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Comment": "Execution starts on the rising edge"
+        },
+        [
+          "Position",
+          "SMC_POS_REF",
+          "The new position of the axes."
+        ],
+        [
+          "Relative",
+          "BOOL",
+          "RELATIVE = True, ABSOLUTE = False (Default)"
+        ],
+        [
+          "CoordSystem",
+          "SMC_COORD_SYSTEM",
+          "Applicable coordinate system"
+        ],
+        [
+          "AdditionalAxes",
+          "IAdditionalAxesMovement",
+          ""
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Done",
+          "Type": "BOOL",
+          "Comment": "TRUEif position has been set"
+        },
+        [
+          "Busy",
+          "BOOL",
+          "TRUEif execution of the function block is not finished"
+        ],
+        [
+          "Error",
+          "BOOL",
+          "Signals an error occurred within the function block during\nexecution"
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "library": "CmpBACnet",
+  "title": "BACnetConfPrivateTransfer (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/CmpBACnet/Current/BACnetClientAPI/BACnetConfPrivateTransfer.html",
+  "page_title": "BACnetConfPrivateTransfer (FUN)",
+  "text": "\nFUNCTION BACnetConfPrivateTransfer :\nIEC_BACNET_STATUS\nConfirmedPrivateTransfer completion routine.\nSends a request to invoke proprietary or non-standard confirmed service in a remote\ndevice. This routine may control APDU properties like APDU length, segmentation, and\ntimeout for both request and response. This routine can execute asynchronously, so\nthis routine will return to the caller before the BACnet reply is received so that the\napplications keeps running. In this case the response information will be received\nby the thread which is responsible for receiving asynchronous responses. An optional\nBACNET_PRIVATE_XFER_COMPLETE_CB routine, which has to be provided by the BACnet application,\nwill be used to process this information. If a number of asynchronous requests are\nsent, the responses will be queued and identified by the transaction handles. If the\napplication does not supply the BACNET_PRIVATE_XFER_COMPLETE_CB routine, then the\nBACnetConfPrivateTransfer routine sends a request and waits for reply.\nreturn IEC_BACNET_STATUS\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "BACnetConfPrivateTransfer",
+          "Type": "IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "pSourceAddress",
+          "Type": "POINTER TOIEC_BACNET_ADDRESS",
+          "Comment": "If the BACnet application has only one device constructed and installed, this can\nbe 0. In this case the MAC address of this device will be used. Otherwise this\nshall be the MAC address returned on device object construction."
+        },
+        [
+          "pDestinationAddress",
+          "POINTER TOIEC_BACNET_ADDRESS",
+          "This is the MAC address of the device to which the request\nshould be sent."
+        ],
+        [
+          "pServiceInfo",
+          "POINTER TOIEC_BACNET_PRIVATE_TRANSFER_INFO",
+          "A pointer to the service information data structure. This data structure is to\ntransport the service parameters to the destination device."
+        ],
+        [
+          "pAPDUParams",
+          "POINTER TOIEC_BACNET_APDU_PROPERTIES",
+          "A pointer to the APDU-Properties structure which sets APDU properties for this\ntransaction only. This does not change global defaults or settings for the application\nAPDU Properties. This argument may be NULL. In this case APDU properties  are used\nwhich were specified in the device object properties of the applications device which\nsends the request."
+        ],
+        [
+          "pTransactionToken",
+          "POINTER TOBACnetAsyncTransactionToken",
+          "Transaction token of the asynchronous call - seeBACnetAsyncTransactionToken."
+        ],
+        [
+          "pResult",
+          "POINTER TOIEC_BACNET_PRIVATE_TRANSFER_INFO",
+          "A pointer to a buffer to hold the Result data if successful executed (datatype\nIEC_BACNET_PRIVATE_TRANSFER_INFO).\nThe application may initialize the parameters member of the IEC_BACNET_PRIVATE_TRANSFER_INFO\nstruture with a NULL pointer and bufferSize with 0 too. In this\ncase the memory for the response is allocated by the API and the application is\nresponsible to release it with a call to BACnetFreeStackAllocatedMemory if the\nbuffer is no longer needed."
+        ],
+        [
+          "pError",
+          "POINTER TOIEC_BACNET_ERROR",
+          "A pointer to a structure to hold BACnet Error information. pError may be NULL if the\napplication isnât interested in detailed error information."
+        ]
+      ]
+    }
+  ]
+}

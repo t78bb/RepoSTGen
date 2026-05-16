@@ -1,0 +1,62 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_GroupPower (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/AdministrativeConfiguration/AxisGroup/SMC_GroupPower.html",
+  "page_title": "SMC_GroupPower (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_GroupPower\nAllows to power up all axes of a group.\nCalling this function block will simply call\nMC_Power\nfor all axes\nof the group.\nThis function block is not tied to the state of the axis group, and\nit does not influence the state of the axis group.\nIt can, for example, be called while the axis group is still in\nstate\nGroupDisabled\n.  After the output\nStatus\nbecomes\nTRUE\n,\nthe group state will still be\nGroupDisabled\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "AxisGroup",
+          "Type": "Axis_Group_Ref_SM3",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "Enable",
+          "Type": "BOOL",
+          "Comment": "SetEnabletoTRUEto enable execution of the\nfunction block"
+        },
+        [
+          "bRegulatorOn",
+          "BOOL",
+          "SetbRegulatorOntoTRUEto enable the power stage"
+        ],
+        [
+          "bDriveStart",
+          "BOOL",
+          "SetbDriveStarttoTRUEto disable the quickstop\nmechanism"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Status",
+          "Type": "BOOL",
+          "Comment": "TRUEif axis is ready to move"
+        },
+        [
+          "Busy",
+          "BOOL",
+          "TRUEif execution of the function block is not finished"
+        ],
+        [
+          "Error",
+          "BOOL",
+          "Signals an error occurred within the function block during\nexecution"
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

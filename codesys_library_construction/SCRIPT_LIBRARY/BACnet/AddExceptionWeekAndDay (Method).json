@@ -1,0 +1,56 @@
+{
+  "library": "BACnet",
+  "title": "AddExceptionWeekAndDay (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/Schedule/pou-BACnetSchedule/ExceptionSchedule/AddExceptionWeekAndDay.html",
+  "page_title": "BACnetSchedule.AddExceptionWeekAndDay (METH)",
+  "text": "\nMETHOD AddExceptionWeekAndDay : CmpBACnet.IEC_BACNET_STATUS\nAdds a week and day entry (i.e. weekly at day) to the Exception_Schedule-Property of this BACnet-Object.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "AddExceptionWeekAndDay",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "month",
+          "Type": "CmpBACnet.IEC_BACNET_MONTH",
+          "Comment": "The month of the exception date."
+        },
+        [
+          "weekOfMonth",
+          "CmpBACnet.IEC_BACNET_WEEK_OF_MONTH",
+          "The week of the month of the exception date."
+        ],
+        [
+          "dayOfWeek",
+          "CmpBACnet.IEC_BACNET_DAY_OF_WEEK",
+          "The day of the week of the exception date."
+        ],
+        [
+          "pEntries",
+          "POINTER TO\nCmpBACnet.IEC_BACNET_TIME_VALUE",
+          "The times and values during the week and day dates which\ncorrespond to the exception date."
+        ],
+        [
+          "entryCount",
+          "CmpBACnet.IEC_BACNET_ELEMENT_COUNT",
+          "The number of times and values for the exceptions."
+        ],
+        [
+          "eventPriority",
+          "BYTE",
+          "The priority with which the values are written."
+        ]
+      ]
+    }
+  ]
+}

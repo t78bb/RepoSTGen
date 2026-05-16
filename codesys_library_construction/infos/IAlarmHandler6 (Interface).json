@@ -1,0 +1,8 @@
+{
+  "library": "AlarmManager",
+  "title": "IAlarmHandler6 (Interface)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/IAlarmHandler6.html",
+  "page_title": "IAlarmHandler6 (ITF)",
+  "text": "\nINTERFACE IAlarmHandler6 EXTENDS\nIAlarmHandler5\nThis is an extension of the IAlarmHandler5 interface which provides functionality to\nset or acknowledge alarm comments.\nMethods:\nAcknowledgeAllOfGroupWithComment\nAcknowledgeAllWithComment\nAcknowledgeOneOfGroupWithComment\nSetComment\nAcknowledgeAll\n, inherited from\nIAlarmHandler\nAcknowledgeAllOfGroup\n, inherited from\nIAlarmHandler\nAcknowledgeOneOfGroup\n, inherited from\nIAlarmHandler\nGetActiveAlarms\n, inherited from\nIAlarmHandler2\nGetAlarmsFromStorage\n, inherited from\nIAlarmHandler2\nGetCountAlarmsFromStorage\n, inherited from\nIAlarmHandler2\nRaiseEvent\n, inherited from\nIAlarmHandler\nRegisterAlarmStateChangedListener\n, inherited from\nIAlarmHandler4\nRegisterClient\n, inherited from\nIAlarmHandler2\nUnregisterClient\n, inherited from\nIAlarmHandler2\nStructure:\nAcknowledgeAllOfGroupWithComment (Method)\nAcknowledgeAllWithComment (Method)\nAcknowledgeOneOfGroupWithComment (Method)\nSetComment (Method)",
+  "tables": []
+}

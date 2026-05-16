@@ -1,0 +1,32 @@
+{
+  "library": "StringUtils",
+  "title": "Delete (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/StringUtils/Current/Public-Parts/pou-CharBufferString/Delete.html",
+  "page_title": "CharBufferString.Delete (METH)",
+  "text": "\nMETHOD Delete : DINT\nDeletes <iLength> characters our string, beginning at the <iPosition>-th character position.\n<iPosition> = 1 is the first character.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "Delete",
+          "Type": "DINT"
+        },
+        {
+          "Scope": "Input",
+          "Name": "iLength",
+          "Type": "INT"
+        },
+        [
+          "iPosition",
+          "INT"
+        ]
+      ]
+    }
+  ]
+}

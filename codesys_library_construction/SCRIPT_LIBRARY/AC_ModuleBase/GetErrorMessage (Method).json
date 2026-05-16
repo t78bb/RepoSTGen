@@ -1,0 +1,32 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "GetErrorMessage (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_Module/pou-Module/ErrorHandling/GetErrorMessage.html",
+  "page_title": "Module.GetErrorMessage (METH)",
+  "text": "\nMETHOD GetErrorMessage : STRING(255)\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetErrorMessage",
+          "Type": "STRING(255)"
+        },
+        {
+          "Scope": "Input",
+          "Name": "uiErrorNumber",
+          "Type": "UINT"
+        },
+        [
+          "sLanguage",
+          "STRING"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,195 @@
+{
+  "library": "AlarmManager",
+  "title": "AlarmStorageRow (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Alarm-storage-API/AlarmStorageRow.html",
+  "page_title": "AlarmStorageRow (FB)",
+  "text": "\nFUNCTION_BLOCK AlarmStorageRow\nThis function block contains the data, that will be written into the alarm storage.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "udiAlarmID",
+          "Type": "UDINT",
+          "Initial": "",
+          "Comment": "The internal IDs of the alarm, the alarm class and the alarm\ngroup"
+        },
+        [
+          "udiAlarmClassID",
+          "UDINT",
+          "",
+          ""
+        ],
+        [
+          "udiAlarmGroupID",
+          "UDINT",
+          "",
+          ""
+        ],
+        [
+          "liTimestapLast",
+          "TIMESTAMP",
+          "",
+          "The several timestamps of the alarm"
+        ],
+        [
+          "liTimestapActive",
+          "TIMESTAMP",
+          "",
+          ""
+        ],
+        [
+          "liTimestapInactive",
+          "TIMESTAMP",
+          "",
+          ""
+        ],
+        [
+          "liTimestapAcknowledge",
+          "TIMESTAMP",
+          "",
+          ""
+        ],
+        [
+          "iOffsetLast",
+          "INT",
+          "-1",
+          "The several offsets of the alarm"
+        ],
+        [
+          "iOffsetActive",
+          "INT",
+          "-1",
+          ""
+        ],
+        [
+          "iOffsetInactive",
+          "INT",
+          "-1",
+          ""
+        ],
+        [
+          "iOffsetAcknowledge",
+          "INT",
+          "-1",
+          ""
+        ],
+        [
+          "usiPriority",
+          "USINT",
+          "",
+          "The priority of the alarm class the alarm belongs to"
+        ],
+        [
+          "eState",
+          "AlarmState",
+          "",
+          "The current state of the alarm"
+        ],
+        [
+          "ePrevState",
+          "AlarmState",
+          "",
+          "The previous state of the alarm"
+        ],
+        [
+          "byTriggerValueType",
+          "BYTE",
+          "",
+          "The several values attached to the alarm. For each value we store the type class value\nas BYTE and an 8 byte value representing the value."
+        ],
+        [
+          "liTriggerValueVal",
+          "LINT",
+          "",
+          ""
+        ],
+        [
+          "pLatchVariables",
+          "POINTER TO ARRAY [0..10]\nOF LatchVariable",
+          "",
+          "Will be set by the code generation and contains the memory, where the latch variables\ncan be stored (the size 0..10 is only for debug reasons)"
+        ],
+        [
+          "usiCountLatchVariables",
+          "USINT",
+          "",
+          ""
+        ],
+        [
+          "itfAlarm",
+          "IAlarm",
+          "",
+          "The IAlarm instance, where the data of this structure comes\nfrom"
+        ],
+        [
+          "idRow",
+          "CAA.IDENT",
+          "",
+          "The row ID of the alarm in the alarm storage,\nor the original row id for remote alarm"
+        ],
+        [
+          "xIdRowValid",
+          "BOOL",
+          "",
+          ""
+        ],
+        [
+          "xForceUpdate",
+          "BOOL",
+          "",
+          "If the above row id is valid, used only in distributed alarm handling\nIndicating whether the row should only be updated"
+        ],
+        [
+          "sRemoteDeviceName",
+          "STRING",
+          "",
+          "The name of the remote device in case of remote alarm"
+        ],
+        [
+          "cmtActive",
+          "AlarmComment",
+          "",
+          "Alarm comments including user ids"
+        ],
+        [
+          "cmtActiveAck",
+          "AlarmComment",
+          "",
+          ""
+        ],
+        [
+          "cmtWaitingConf",
+          "AlarmComment",
+          "",
+          ""
+        ],
+        [
+          "cmtNormal",
+          "AlarmComment",
+          "",
+          ""
+        ],
+        [
+          "xInvalid",
+          "BOOL",
+          "",
+          "Likely after an online there might not be enough information for storing a deleted alarm\nTherefore, these are treated as invalid."
+        ],
+        [
+          "xWrittenToStorage",
+          "BOOL",
+          "",
+          ""
+        ]
+      ]
+    }
+  ]
+}

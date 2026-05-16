@@ -1,0 +1,23 @@
+{
+  "library": "BACnet",
+  "title": "LogInfo (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetServerPlugin/pou-BACnetServerPluginBase/Logging/LogInfo.html",
+  "page_title": "BACnetServerPluginBase.LogInfo (METH)",
+  "text": "\nMETHOD LogInfo\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "str",
+          "Type": "LoggerString"
+        }
+      ]
+    }
+  ]
+}

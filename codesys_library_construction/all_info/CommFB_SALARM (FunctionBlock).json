@@ -1,0 +1,71 @@
+{
+  "library": "CommFB",
+  "title": "SALARM (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/CommFB/Current/CommFB/FieldDevice/SALARM.html",
+  "page_title": "SALARM (FB)",
+  "text": "CommFB\nAINFO_TYPE (Union)\nAddressConcept (GVL)\nAddress Concept\nGenerating a CommFB-ID\nProfibus DP\nProfinet IO\nDevice Diagnosis\nAddress Conversion\nAddresses\nADDR_TO_ID (FunctionBlock)\nADDR_TYPE (Union)\nCREATE_ID (FunctionBlock)\nDP_ADDR (Struct)\nDP_DEVICE_ID (Struct)\nID_TO_ADDR (FunctionBlock)\nIO_SYSTEM_TYPE (Enum)\nPN_ADDR (Struct)\nPN_DEVICE_ID (Struct)\nSUBSLOT_ID (Function)\nCNCT (FunctionBlock)\nConstants (GVL)\nDP Address\nADDR (Function)\nID (Function)\nSLOT_ID (Function)\nDP_AINFO (Struct)\nDP_DIAG (Struct)\nErrorCode (Enum)\nErrorCode1_RW (Enum)\nFieldDevice\nPRVREC (FunctionBlock)\nPRVREC_MODE (Enum)\nRCVREC (FunctionBlock)\nRCVREC_MODE (Enum)\nSALARM (FunctionBlock)\nGETIO_PART (FunctionBlock)\nPN_AINFO (Struct)\nRALARM (FunctionBlock)\nRALARM_MODE (Enum)\nRDIAG (FunctionBlock)\nRDREC (FunctionBlock)\nSETIO_PART (FunctionBlock)\nWRREC (FunctionBlock)\nImages\nLibrary Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nFile and Project Information\nLibrary Reference\nIoDriver Profibus2 Interfaces\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nCommFB\nDocs\n»\nCommFB\n»\nFieldDevice\n»\nSALARM (FB)\nSALARM (FB)\nÂ¶\nFUNCTION_BLOCK SALARM\nA Field Device can generate alarms to its associated Host Controller to inform it e.g. about certain process events or other events to state there are\nsome limitations of the capabilities of the Field Device for diagnostic reasons. The Host application may use the\nRALARM\nfunction block to receive these alarms.\nThe ID parameter identifies the slot of the Field Device the alarm is generated for. The ATYPE input shall contain the\nalarm type. The ASPEC input shall contain the alarm specifier. The LEN input contains the length in byte of the additional\nalarm information stored in the AINFO parameter.\nThe Variable given as AINFO parameter shall be at least of LEN byte.\nIf the alarm is transmitted successfully, the VALID output indicates that the alarm was received by the Host Controller.\nIf an error occurred, the ERROR output indicates an error and the STATUS output contains the error code.\nCode-Example\nPROGRAM\nSendAlarm\nVAR\nsender\n:\nCommFB.SALARM\n;\nalarmPayload\n:\nARRAY\n[0..3]\nOF\nBYTE\n:=\n[0, 1, 2, 3]\n;\n// encoding for Profinet: USI (UInt16), ARRAY[0..n] OF BYTE;\nID\n:\nDWORD\n:=\nCommFB.Constants.INVALID_ID\n;\nEND_VAR\nID\n:=\nCommFB.SUBSLOT_ID\n(\nEN\n:=\nTRUE\n,\nID\n:=\nPN_Device.DeviceID\n,\nSLOT\n:=\n2\n,\nSUBSLOT\n:=\n1\n);\nsender.ID\n:=\nID\n;\nsender.ATYPE\n:=\nProfinetCommon.AlarmType.PROCESS\n;\nsender.ASPEC\n:=\n0\n;\n// 0 for process-alarm\nsender.LEN\n:=\nSIZEOF\n(\nalarmPayload\n);\nsender.AINFO\n:=\nADR\n(\nalarmPayload\n);\nsender\n();\nIF\n(\nsender.DONE\nOR\nsender.ERROR\n)\nTHEN\nsender\n(\nREQ\n:=\nFALSE\n);\nEND_IF\nInOut:\nScope\nName\nType\nComment\nInput\nREQ\nBOOL\nThe function is invoked when the REQ input is equal to 1.\nID\nDWORD\nHandle of the slot of the alarm source\nATYPE\nUINT\nType of the alarm\nASPEC\nUINT\nSpecifier of the alarm\nLEN\nUINT\nLength of AINFO data in bytes\nAINFO\nPOINTER TO BYTE\nAdditional alarm information\nOutput\nDONE\nBOOL\nIndicates that the alarm was received by the Host Controller\nBUSY\nBOOL\nFB is busy\nERROR\nBOOL\nError detected\nSTATUS\nDWORD\nLast detected status",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "REQ",
+          "Type": "BOOL",
+          "Comment": "The function is invoked when the REQ input is equal to 1."
+        },
+        [
+          "ID",
+          "DWORD",
+          "Handle of the slot of the alarm source"
+        ],
+        [
+          "ATYPE",
+          "UINT",
+          "Type of the alarm"
+        ],
+        [
+          "ASPEC",
+          "UINT",
+          "Specifier of the alarm"
+        ],
+        [
+          "LEN",
+          "UINT",
+          "Length of AINFO data in bytes"
+        ],
+        [
+          "AINFO",
+          "POINTER TO BYTE",
+          "Additional alarm information"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "DONE",
+          "Type": "BOOL",
+          "Comment": "Indicates that the alarm was received by the Host Controller"
+        },
+        [
+          "BUSY",
+          "BOOL",
+          "FB is busy"
+        ],
+        [
+          "ERROR",
+          "BOOL",
+          "Error detected"
+        ],
+        [
+          "STATUS",
+          "DWORD",
+          "Last detected status"
+        ]
+      ]
+    }
+  ]
+}

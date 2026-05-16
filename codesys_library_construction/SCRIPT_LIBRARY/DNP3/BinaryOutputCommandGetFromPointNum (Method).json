@@ -1,0 +1,47 @@
+{
+  "library": "DNP3",
+  "title": "BinaryOutputCommandGetFromPointNum (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/pou-Master/Datapoints/BinaryOutputCommandGetFromPointNum.html",
+  "page_title": "Master.BinaryOutputCommandGetFromPointNum (METH)",
+  "text": "\nMETHOD BinaryOutputCommandGetFromPointNum :\nError\nGet the value of Binary Output Command datapoint (DNP3 object group 12 âbinary output commandsâ) with given point number (0 .. MaxPointNum).\nReturns PointNotExistent, if a datapoint with the given point number doesnt exist, OK otherwise.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "BinaryOutputCommandGetFromPointNum",
+          "Type": "Error",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "pointNumber",
+          "Type": "UINT",
+          "Comment": "Point number."
+        },
+        {
+          "Scope": "Output",
+          "Name": "status",
+          "Type": "USINT",
+          "Comment": "status received from Outstation. Top bit(0x80) is Commanded\nState."
+        },
+        [
+          "hasTimeStamp",
+          "BOOL",
+          "Has a valid time stamp."
+        ],
+        [
+          "timeStamp",
+          "LDATE_AND_TIME",
+          "Time stamp reported - valid if hasTimeStamp = TRUE, invalid\notherwise."
+        ]
+      ]
+    }
+  ]
+}

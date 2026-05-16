@@ -1,0 +1,25 @@
+{
+  "library": "BACnet",
+  "title": "BACnetSetpointReference (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/Structs/BACnetSetpointReference.html",
+  "page_title": "BACnetSetpointReference (STRUCT)",
+  "text": "\nTYPE BACnetSetpointReference : STRUCT\nHelper Structure for CODESYS-Typed set point references.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Name": "propPresent",
+          "Type": "BOOL"
+        },
+        {
+          "Name": "prop",
+          "Type": "CmpBACnet.IEC_BACNET_OBJ_PROP_REFERENCE"
+        }
+      ]
+    }
+  ]
+}

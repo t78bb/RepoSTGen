@@ -1,0 +1,23 @@
+{
+  "library": "BACnet2DefaultImpl",
+  "title": "GetDir (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2DefaultImpl/Current/BACnetDefaultImpl/Functions/pou-Directory/GetDir.html",
+  "page_title": "Directory.GetDir (METH)",
+  "text": "\nMETHOD GetDir :\nFileNameString\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetDir",
+          "Type": "FileNameString"
+        }
+      ]
+    }
+  ]
+}

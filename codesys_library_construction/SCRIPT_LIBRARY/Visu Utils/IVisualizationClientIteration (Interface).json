@@ -1,0 +1,8 @@
+{
+  "library": "Visu Utils",
+  "title": "IVisualizationClientIteration (Interface)",
+  "url": "https://content.helpme-codesys.com/en/libs/Visu Utils/Current/VisuUtils/VisuActionUtilities/Interfaces/IVisualizationClientIteration.html",
+  "page_title": "IVisualizationClientIteration (ITF)",
+  "text": "\nINTERFACE IVisualizationClientIteration EXTENDS __SYSTEM.IQueryInterface\nThis interface can be implemented to iterate over all currently active clients\nMethods:\nEndIteration\nHandleClient\nStartIteration\nStructure:\nEndIteration (Method)\nHandleClient (Method)\nStartIteration (Method)",
+  "tables": []
+}

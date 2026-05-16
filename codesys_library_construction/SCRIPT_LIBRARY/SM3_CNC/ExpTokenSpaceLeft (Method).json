@@ -1,0 +1,23 @@
+{
+  "library": "SM3_CNC",
+  "title": "ExpTokenSpaceLeft (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/GSentence/pou-SMC_GSentenceQueue/ExpTokenSpaceLeft.html",
+  "page_title": "SMC_GSentenceQueue.ExpTokenSpaceLeft (METH)",
+  "text": "\nMETHOD ExpTokenSpaceLeft : UDINT\nReturns how many words may be appended to the queue.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "ExpTokenSpaceLeft",
+          "Type": "UDINT"
+        }
+      ]
+    }
+  ]
+}

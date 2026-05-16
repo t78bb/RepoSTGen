@@ -1,0 +1,25 @@
+{
+  "library": "AlarmManager",
+  "title": "EAlarmByteOrder (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Service/EAlarmByteOrder.html",
+  "page_title": "EAlarmByteOrder (ENUM)",
+  "text": "\nTYPE EAlarmByteOrder :\nThis enumeration defines the possible byte orders on PLCs.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name"
+      ],
+      "rows": [
+        {
+          "Name": "Intel"
+        },
+        {
+          "Name": "Motorola"
+        },
+        {
+          "Name": "Unknown"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现根据输入的轨道类型、挡板索引、方向和比例阀百分比控制对应轨道的伸缩动作。",
+  "provide_code": "FUNCTION_BLOCK CommandExecutor0\nVAR_INPUT\n\tlevel\t\t:INT;\t\t\t//1->地轨\t2->天轨\n\tidx\t\t\t:INT;\t\t\t//挡板索引编号\n\tdirect\t\t:TargetDirect;\t//方向\n\tpercent\t\t:REAL;\t\t\t//比例阀百分比 传入0-100\nEND_VAR\nVAR_OUTPUT\nEND_VAR"
+}

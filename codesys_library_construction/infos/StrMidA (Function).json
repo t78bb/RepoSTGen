@@ -1,0 +1,50 @@
+{
+  "library": "StringUtils",
+  "title": "StrMidA (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/StringUtils/Current/Public-Parts/Ansi/StrMidA.html",
+  "page_title": "StrMidA (FUN)",
+  "text": "\nFUNCTION StrMidA\nReturn <iLength> characters of <pst>, beginning at the <iPosition>-th character position.\n<iPosition> = 1 is the first character. This function has been adapted from StrMidW\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "pst",
+          "Type": "POINTER TO BYTE",
+          "Comment": ""
+        },
+        [
+          "uiInputBufferSize",
+          "UINT",
+          "The size of the buffer, where pwst points to"
+        ],
+        [
+          "iLength",
+          "INT",
+          ""
+        ],
+        [
+          "iPosition",
+          "INT",
+          ""
+        ],
+        [
+          "pstResult",
+          "POINTER TO BYTE",
+          "The buffer, where the result will be returned"
+        ],
+        [
+          "uiResultBufferSize",
+          "UINT",
+          "The size of the buffer (in bytes), where the result will be\nreturned"
+        ]
+      ]
+    }
+  ]
+}

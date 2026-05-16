@@ -1,0 +1,25 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_AxisDistanceAxes (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/Additional/SMC_AxisDistanceAxes.html",
+  "page_title": "SMC_AxisDistanceAxes (ENUM)",
+  "text": "\nTYPE SMC_AxisDistanceAxes :\nDetermines which axes are considered for transition mode\nMC_TRANSITION_MODE.TMAxisDistance\n.\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "KINEMATIC",
+          "Comment": "Only the kinematic axes are considered.  This has the consequence\nthat the path is not altered if additional axes are added to\na movement."
+        },
+        {
+          "Name": "KINEMATIC_AND_ADDITIONAL",
+          "Comment": "The kinematic and additional axes are considered."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "library": "AlarmManager",
+  "title": "GetAlarmClass (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/pou-IAlarm/GetAlarmClass.html",
+  "page_title": "IAlarm.GetAlarmClass (METH)",
+  "text": "\nMETHOD GetAlarmClass :\nIAlarmClass\nReturns the alarm class the alarm belongs to. The return value might be NULL if\nthe alarm from the alarm storage contains an invalid (i.e. no longer exisiting)\nalarm class id.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetAlarmClass",
+          "Type": "IAlarmClass"
+        }
+      ]
+    }
+  ]
+}

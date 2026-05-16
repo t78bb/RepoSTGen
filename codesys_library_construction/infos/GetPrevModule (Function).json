@@ -1,0 +1,31 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "GetPrevModule (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_Module/TreeNavigation/GetPrevModule.html",
+  "page_title": "GetPrevModule (FUN)",
+  "text": "\nFUNCTION GetPrevModule :\nIModule\nReturns the previous module in depth-first preorder of the module tree.\nReturns 0 if (and only if) itfM is the first module in the preorder of the tree.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetPrevModule",
+          "Type": "IModule",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfM",
+          "Type": "IModule",
+          "Comment": "The module instance that is queried for the previous\ninstance  (must not be 0)"
+        }
+      ]
+    }
+  ]
+}

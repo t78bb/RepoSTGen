@@ -1,0 +1,8 @@
+{
+  "library": "AC_DataLog",
+  "title": "IDataLogManager (Interface)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_DataLog/Current/AC_DataLog/DataLogManager/IDataLogManager.html",
+  "page_title": "IDataLogManager (ITF)",
+  "text": "\nINTERFACE IDataLogManager EXTENDS AC.IModule\nMethods:\nExternaLogAllChannels\nStructure:\nExternaLogAllChannels (Method)",
+  "tables": []
+}

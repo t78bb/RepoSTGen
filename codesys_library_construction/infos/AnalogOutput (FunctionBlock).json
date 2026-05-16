@@ -1,0 +1,195 @@
+{
+  "library": "DNP3",
+  "title": "AnalogOutput (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Outstation/Points/AnalogOutput.html",
+  "page_title": "AnalogOutput (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL AnalogOutput EXTENDS\nCommandablePoint\nDNP3 datapoint of type Analog Output.\nAn instance of AnalogOutput does represent an combination of an instance of a datapoint of DNP3 object group 40 âanalog output statusâ\nand optionally an instance of a datapoint of DNP3 object group 41 âanalog outputsâ.\nAnalogOutput allows for DNP3 master read access and - if needed / configured - also for âcommandingâ that means DNP3 acknowledged master write access (select / operate).\nTo enable âcommandingâ (in fact the instance of DNP3 object group 41 âanalog outputsâ) set EnableCommand to TRUE.\nDNP3 Analog Output provides the option to use certain data types to represent the value (using AnyNumber):\nSINT (8bit -128 .. 127)\nUSINT (16bit 0 .. 255)\nINT (16bit -32768 .. 32767)\nUINT (16bit 0 .. 65535)\nDINT (32bit -2147483648 .. 2147483647)\nUDINT (32bit 0 .. 4294967295)\nREAL\nDOUBLE\nAny one of the types listed can be used for value, lowLimit, highLimit and deadBand,\nall variables have to be of same base type.\nPlease be aware:\nAnyNumber\nprovides a value representation as well as a POINTER TO value representation.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment",
+        "Inherited from"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "Description",
+          "Type": "STRING",
+          "Initial": "",
+          "Comment": "Description of the datapoint - this is a configuration,\nchanges are ignored after Outstation was enabled.",
+          "Inherited from": "Point"
+        },
+        [
+          "Number",
+          "DINT",
+          "-1",
+          "Point number - this is a configuration, changes are ignored after Outstation was enabled..\nThe point number can be configured if needed to either:start with Point number > 0have gaps in Point numbersIf set to -1 (the default) the OutstationDataModel (more precisely the related âGroupâ) takes care to set the Point number internally:starting at 0, if first Point number is not set explicitly.increment by 1In case you set Point number explicitly please keep it consistent:Point numbers need to be >= 0Point numbers need to be ascending",
+          "Point"
+        ],
+        [
+          "EventClass",
+          "USINT",
+          "Constants.TMWDEFS_CLASS_MASK_ONE",
+          "The initial event class - this is a configuration, changes are ignored after Outstation was enabled.\nOperational event class may be changed by a master.",
+          "Point"
+        ],
+        [
+          "EventMode",
+          "PointEventMode",
+          "PointEventMode.EVENT_MODE_SOE",
+          "The event mode - this is a configuration, changes are ignored after Outstation was enabled.\nOnly used if the sampling rate is set within the outstation configuration.",
+          "Point"
+        ],
+        [
+          "tScanPeriod",
+          "TIME",
+          "TIME#0ms",
+          "Scan period for datapoint.\nIf tScanPeriod is set to T#0MS, the Group related tScanPeriod or the OutstationDataModel.tScanPeriod is used.",
+          "Point"
+        ],
+        [
+          "udiLogOptions",
+          "UDINT",
+          "OutstationLoggingOptions.None",
+          "LoggingOptions can be combined using OR.",
+          "Point"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "xError",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "An error occured.",
+          "Inherited from": "Point"
+        },
+        [
+          "eErrorID",
+          "Error",
+          "",
+          "The specific error.",
+          "Point"
+        ],
+        {
+          "Scope": "Input",
+          "Name": "flags",
+          "Type": "BYTE",
+          "Initial": "Constants.DNPDEFS_DBAS_FLAG_ON_LINE",
+          "Comment": "Flags used by the point. Can be changed in case a point goes offline or any other error.\nIf set to 0, the variation without flags will be used by DNP3",
+          "Inherited from": "PointWithFlags"
+        },
+        [
+          "EnableCommand",
+          "BOOL",
+          "FALSE",
+          "Enable / disable commanding (from DNP3 master) - this is a\nconfiguration, changes are ignored after Outstation was\nenabled.",
+          "CommandablePoint"
+        ],
+        [
+          "CmdEventClass",
+          "USINT",
+          "Constants.TMWDEFS_CLASS_MASK_ONE",
+          "The initial command event class - this is a configuration, changes are ignored after Outstation was enabled.\nOperational command event class may be changed by a master.",
+          "CommandablePoint"
+        ],
+        [
+          "CmdEventMode",
+          "PointEventMode",
+          "PointEventMode.EVENT_MODE_SOE",
+          "The command event mode - this is a configuration, changes are ignored after Outstation was enabled.\nOnly used if the sampling rate is set within the outstation configuration.",
+          "CommandablePoint"
+        ],
+        [
+          "rejectCommand",
+          "BOOL",
+          "FALSE",
+          "Reject master commands, only relevant, if EnableCommand is\nset to TRUE.",
+          "CommandablePoint"
+        ],
+        [
+          "eCommandRejectReason",
+          "CommandRejectReason",
+          "CommandRejectReason.Local",
+          "Let the master know, for which reason a command was rejected\n(xEnableCommand = FALSE).",
+          "CommandablePoint"
+        ],
+        [
+          "resetCommand",
+          "BOOL",
+          "FALSE",
+          "Reset an active master command and use local command value again at rising edge (FALSE â> TRUE).\nAt / after reset, the local command value is used as a resultingValue until next master command.",
+          "CommandablePoint"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "commandActive",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "A master command was accepted and is active right now.\nThe command value issued with the master command is used as a resultingValue until a command reset happens - see resetCommand.",
+          "Inherited from": "CommandablePoint"
+        },
+        {
+          "Scope": "Input",
+          "Name": "EventWithTimeStamp",
+          "Type": "BOOL",
+          "Initial": "TRUE",
+          "Comment": "Enable / disable if events will be send with / without\ntimestamp - this is a configuration, changes are ignored\nafter Outstation was enabled.",
+          "Inherited from": ""
+        },
+        [
+          "value",
+          "AnyNumber",
+          "",
+          "The command value to use, in most cases using the POINTER TO\nvalue representation is appropriate.",
+          ""
+        ],
+        [
+          "lowLimit",
+          "AnyNumber",
+          "",
+          "The low limit to operate with - default is -INF",
+          ""
+        ],
+        [
+          "highLimit",
+          "AnyNumber",
+          "",
+          "The high limit to operate with - default is +INF.",
+          ""
+        ],
+        [
+          "deadBand",
+          "AnyNumber",
+          "",
+          "The deadband to operate with - default is 1.0.",
+          ""
+        ],
+        [
+          "enableStatusValue",
+          "BOOL",
+          "",
+          "Enable / disable the feedback (or status) value.",
+          ""
+        ],
+        [
+          "statusValue",
+          "AnyNumber",
+          "",
+          "Optional feedback (or status) value to use, in most cases using the POINTER TO value representation is appropriate.\nIf the feedback (or status) value is disabled, the resulting command value will be utilized as feedback value.",
+          ""
+        ],
+        {
+          "Scope": "Output",
+          "Name": "resultingValue",
+          "Type": "AnyNumber",
+          "Initial": "",
+          "Comment": "The resulting command value, results from value or accepted\nmaster command request.",
+          "Inherited from": ""
+        }
+      ]
+    }
+  ]
+}

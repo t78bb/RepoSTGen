@@ -1,0 +1,8 @@
+{
+  "library": "AC_DataLog",
+  "title": "DataLogVarDescForQueue_FB (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_DataLog/Current/AC_DataLog/Queue/DataLogVarDescForQueue_FB.html",
+  "page_title": "DataLogVarDescForQueue_FB (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL DataLogVarDescForQueue_FB EXTENDS FBF.InstanceBase IMPLEMENTS IDataLogQueueNode\nMethods:\nNodeDispose\nElementCompareTo\nElementEquals\nElementHashCode\nStructure:\nIElement\nElementCompareTo (Method)\nElementEquals (Method)\nElementHashCode (Method)\nNodeDispose (Method)",
+  "tables": []
+}

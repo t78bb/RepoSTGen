@@ -1,0 +1,8 @@
+{
+  "library": "AlarmManager",
+  "title": "OffsetLast (Property)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/pou-IAlarm5/Access-to-offsets/OffsetLast.html",
+  "page_title": "IAlarm5.OffsetLast (PROP)",
+  "text": "\nPROPERTY OffsetLast : INT\nOffset of the last alarm state transition",
+  "tables": []
+}

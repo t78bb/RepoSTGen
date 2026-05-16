@@ -1,0 +1,238 @@
+{
+  "library": "MQTT Client SL",
+  "title": "MQTT_ERROR (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/MQTT Client SL/Current/MQTT-Client/Common/Enums/MQTT_ERROR.html",
+  "page_title": "MQTT_ERROR (ENUM)",
+  "text": "\nTYPE MQTT_ERROR :\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "NO_ERROR",
+          "Initial": "0",
+          "Comment": "No error"
+        },
+        {
+          "Name": "TCP_INIT_ERROR",
+          "Initial": "1",
+          "Comment": "Unable to initialize the TCP socket"
+        },
+        {
+          "Name": "TCP_READ_ERROR",
+          "Initial": "2",
+          "Comment": "Error while reading response"
+        },
+        {
+          "Name": "TCP_WRITE_ERROR",
+          "Initial": "3",
+          "Comment": "Error while sending the request"
+        },
+        {
+          "Name": "MAX_RESPONSE_SIZE_EXCEEDED",
+          "Initial": "4",
+          "Comment": "Size of incoming packet exceeds the maximum packet size. See\nMQTTParam.g_udiMaxPacketSize"
+        },
+        {
+          "Name": "DECODE_REMAINING_LENGTH_MALFORMED",
+          "Initial": "5",
+          "Comment": "Malformation during Decoding of Remaining Length of Packet"
+        },
+        {
+          "Name": "RESPONSE_PACKET_EMPTY",
+          "Initial": "6",
+          "Comment": "The Response Packet is empty"
+        },
+        {
+          "Name": "INVALID_PACKET_TYPE",
+          "Initial": "7",
+          "Comment": "Invalid Packet Type in first byte of Fixed Header"
+        },
+        {
+          "Name": "INVALID_PACKET_BIT_FLAGS",
+          "Initial": "8",
+          "Comment": "Invalid Packet Bit Flags in first byte of Fixed Header"
+        },
+        {
+          "Name": "INVALID_PACKET",
+          "Initial": "9",
+          "Comment": "Invalid Packet"
+        },
+        {
+          "Name": "KEEP_ALIVE_TIME_EXCEEDED",
+          "Initial": "10",
+          "Comment": "Keep Alive Time is too much"
+        },
+        {
+          "Name": "WRONG_SESSION_PRESENT_CONNACK",
+          "Initial": "11",
+          "Comment": "Wrong Session Present in CONNACK packet"
+        },
+        {
+          "Name": "UNACCEPTABLE_PROTOCOL_VERION",
+          "Initial": "12",
+          "Comment": "Connection to Broker is Refused, because of Unacceptable\nProtocol Version"
+        },
+        {
+          "Name": "IDENTIFIER_REJECTED",
+          "Initial": "13",
+          "Comment": "Connection to Broker is Refused, because of Rejection of\nClient Identifier"
+        },
+        {
+          "Name": "SERVER_UNAVAILABLE",
+          "Initial": "14",
+          "Comment": "Connection to Broker is Refused, because the Server Broker\nis not available"
+        },
+        {
+          "Name": "BAD_USER_NAME_PASSWORD",
+          "Initial": "15",
+          "Comment": "Connection to Broker is Refused, because of Bad User name or\nBad Password"
+        },
+        {
+          "Name": "NOT_AUTHORIZED",
+          "Initial": "16",
+          "Comment": "Connection to Broker is Refused, because of Not Authorized\naccess"
+        },
+        {
+          "Name": "TOPIC_FILTER_EMPTY",
+          "Initial": "17",
+          "Comment": "Topic Filter is empty ââ, MUST be at least one character\nlong"
+        },
+        {
+          "Name": "TOPIC_NAME_NOT_ALLOWED_WILDCARD",
+          "Initial": "18",
+          "Comment": "Topic Name contains Wildcards, what is not allowed. Only\nTopic Filter can contain these"
+        },
+        {
+          "Name": "TOPIC_INVALID_LENGTH",
+          "Initial": "19",
+          "Comment": "Topic Length out of valid range (valid range: 1 - 1024)"
+        },
+        {
+          "Name": "TOPIC_IS_EMPTY",
+          "Initial": "20",
+          "Comment": "Topic name is empty"
+        },
+        {
+          "Name": "SUBSCRIBE_FAILURE",
+          "Initial": "21",
+          "Comment": "Subscription Failure"
+        },
+        {
+          "Name": "ADD_MQTT_PACKET_COLLECTION_ERROR",
+          "Initial": "22",
+          "Comment": "Collection Error while trying to add a mqtt packet to the\nstack"
+        },
+        {
+          "Name": "ADD_SUBSCRIBER_COLLECTION_ERROR",
+          "Initial": "23",
+          "Comment": "Collection Error while trying to add a subscriber to the\nstack"
+        },
+        {
+          "Name": "REMOVE_SUBSCRIBER_COLLECTION_ERROR",
+          "Initial": "24",
+          "Comment": "Collection Error while trying to remove a subscriber from\nthe stack"
+        },
+        {
+          "Name": "ACKNOWLEDGE_TIMEOUT",
+          "Initial": "25",
+          "Comment": "Client waits for ping response from Server, but Server does\nnot response within a given time interval (2 * ping\ninterval)"
+        },
+        {
+          "Name": "ALLOCATED_PAYLOAD_SIZE_EXCEEDED",
+          "Initial": "26",
+          "Comment": "The Size of the received payload is more than given\nallocated memory"
+        },
+        {
+          "Name": "MAX_NUMBER_OF_PACKETS_EXCEEDED",
+          "Initial": "27",
+          "Comment": "The maximum size of packets has been exceeded"
+        },
+        {
+          "Name": "CAN_NOT_ADD_ELEMENT_TO_QUEUE",
+          "Initial": "28",
+          "Comment": "Can not add the element to queue (maybe the maximum size has\nbeen exceeded)"
+        },
+        {
+          "Name": "QUERYINTERFACE_ERROR",
+          "Initial": "29",
+          "Comment": "Call of function __QUERYINTERFACE failed (internal error)"
+        },
+        {
+          "Name": "TIME_OUT",
+          "Initial": "30",
+          "Comment": "Action returned with timeout error."
+        },
+        {
+          "Name": "INVALID_LICENSE",
+          "Initial": "31",
+          "Comment": "No valid license found or demo mode has expired."
+        },
+        {
+          "Name": "CLIENT_NOT_CONNECTED",
+          "Initial": "32",
+          "Comment": "The MQTT client is not connected to a broker."
+        },
+        {
+          "Name": "RESOLVE_HOSTNAME_FAILED",
+          "Initial": "33",
+          "Comment": "The hostname can not be resolved."
+        },
+        {
+          "Name": "MAX_REQUEST_SIZE_EXCEEDED",
+          "Initial": "34",
+          "Comment": "Size of publish packet packet exceeds the maximum packet\nsize"
+        },
+        {
+          "Name": "UNSUPPORTED_VERSION",
+          "Initial": "35",
+          "Comment": "Unsupported MQTT version"
+        },
+        {
+          "Name": "OPERATION_NOT_SUCCESSFUL",
+          "Initial": "36",
+          "Comment": "The operation was not successful. See eReasonCode for more\ninformation. (MQTT V5 only)"
+        },
+        {
+          "Name": "SEND_QUOTA_LIMIT_REACHED",
+          "Initial": "37",
+          "Comment": "The send quota limit has been reached. Try to publish the\nmessage later."
+        },
+        {
+          "Name": "INVALID_REASON_CODE",
+          "Initial": "38",
+          "Comment": "The reason code is not allowed in this context."
+        },
+        {
+          "Name": "MAX_RECEIVE_BUFFER_SIZE_EXCEEDED",
+          "Initial": "39",
+          "Comment": "Size of incoming packets exceeds the maximum size of the\nreceive buffer. See MQTTParam.g_udiMaxReceiveBufferSize"
+        },
+        {
+          "Name": "MAX_TOPIC_LEVEL_EXCEEDED",
+          "Initial": "40",
+          "Comment": "The maximum topic level has been exceeded."
+        },
+        {
+          "Name": "MAX_STRING_LENGTH_EXCEEDED",
+          "Initial": "41",
+          "Comment": "The maximum length of a STRING has been exceeded (Maximum\nlength: 1024)."
+        },
+        {
+          "Name": "MAX_CORRELATION_DATA_LENGTH_EXCEEDED",
+          "Initial": "42",
+          "Comment": "The maximum size of Correlation Data has been exceeded. See\nMQTTParam.g_udiMaxCorrelationDataSize"
+        },
+        {
+          "Name": "MAX_NUMBER_OF_PUBLISHER_AND_SUBSCRIBER_EXCEEDED",
+          "Initial": "43",
+          "Comment": "The maximum number of publishers and subscribers has been\nexceeded. See MQTTParam.g_udiMaxPublishersAndSubscribers"
+        }
+      ]
+    }
+  ]
+}

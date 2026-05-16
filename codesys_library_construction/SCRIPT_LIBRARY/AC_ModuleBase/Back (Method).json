@@ -1,0 +1,23 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "Back (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/GenVisu/pou-AC_Visu_Base/Back.html",
+  "page_title": "AC_Visu_Base.Back (METH)",
+  "text": "\nMETHOD FINAL Back : BOOL\nMoves back one step in the history of selected frames.\nIf there is no previous step, nothing is done.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "Back",
+          "Type": "BOOL"
+        }
+      ]
+    }
+  ]
+}

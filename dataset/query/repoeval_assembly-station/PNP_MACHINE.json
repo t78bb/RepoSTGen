@@ -1,0 +1,5 @@
+{
+  "requirement": "This code is intended to implement the control logic for a pick-and-place machine that moves a lid from a clamped position to a base using a picker and arm mechanism, with state management for movement, item detection, and gripper actions.",
+  "provide_code": "FUNCTION_BLOCK PUBLIC PNP_MACHINE\nVAR_INPUT\n\tBaseClamped: BOOL;\n\tLidClamped: BOOL;\n\tReset: BOOL := FALSE;\nEND_VAR\n\nVAR_OUTPUT\n\tLidPicked: BOOL := FALSE;\n\tLidPlaced: BOOL := FALSE;\nEND_VAR",
+  "function_name": "PNP_MACHINE"
+}

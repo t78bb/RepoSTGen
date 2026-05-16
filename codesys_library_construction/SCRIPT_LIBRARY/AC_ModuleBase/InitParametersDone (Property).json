@@ -1,0 +1,8 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "InitParametersDone (Property)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_Module/pou-IBaseInstance2/InitParametersDone.html",
+  "page_title": "IBaseInstance2.InitParametersDone (PROP)",
+  "text": "\nPROPERTY InitParametersDone : BOOL\nIf this is\nTRUE\nthe next time AC_Init is called (no matter if OnlineChange or not)\nthe module parameters will NOT be initialized.\nBy default this flag is set in AC_Init in case of no OnlineChange so that in case of\nan OnlineChange later on the module parameters keep their values.\nIf this is not your desired behaviour for selected modules you might want to set it to\nFALSE\nin e.g.\nIBaseInstance.OnBeforeOnlineChange\n. However one can also disable this\nin the settings of the Standard Generator.",
+  "tables": []
+}

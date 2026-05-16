@@ -1,0 +1,27 @@
+{
+  "library": "BACnet2",
+  "title": "BACnetServer (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/BACnetServer/BACnetServer.html",
+  "page_title": "BACnetServer (FB)",
+  "text": "\nFUNCTION_BLOCK PUBLIC FINAL BACnetServer IMPLEMENTS IBACnetServerInternal, CmpEventMgr.ICmpEventCallback,\nIBACnetEventConsumer\nFB representing the BACnet-Server, which is the core of any BACnet-Application. Each BACnet-Server gets assigned one\nBACnet-Device-Object, which is initialized together with the BACnet-Server (properties of the BACnet-Device-Object are\npart of the BACnet-Server-CODESYS-Device as parameters). All BACnet-Object (BACnet-Object-CODESYS-Devices) added as childs\nof a BACnet-Server are consequently under the corresponding BACnet-Device-Object. This BACnet-Server-FB is responsible for\nstarting the BACnet-Server on the CODESYSControl-Component side (using CmpBACnet.BACnetServerInit), which eventually makes\nall BACnet-Objects under this BACnet-Server visible in the BACnet network.\nThere are two options for starting/stopping the BACnetServer which could be configured.\nThe first option âAutoStart=TRUEâ starts the BACnetServer when the application owning the BACnetServer-FB is loaded.\nThe second option âAutoStart=FALSEâ allows programmatic start/stop of the BACnetServer, using BACnetServer.StartBACnetStack() / StopBACnetStack().\nThis option should be used, if object initialization data needs to be computed (not configured in the device tree),\nto ensure the BACnetServer is started with consistent object definitions.\nApart from this the BACnet-Server-FB gives the functionality to register FBs implementing IBACnetEventConsumer for Hooks and Callbacks.\nMoreover some additional functionalities for specific services are provided.\nTo get an idea how to use most important BACnet server features and services please refer to several examples provided with(in) the CODESYS BACnet package.\nBACnet_example.project - the basics including\n- server side / client side read / write property\n- notifications\n- calendar/scheduler\n- commandable objects (priority array)\n- client subscribe COV\n- client create / delete object\n- client UTC time sync\nBACnet_DeviceDiscovery.project - how to do device discovery\nBACnet_LoggingServer.project - how to use BACnetDefaultImpl to make Trend log work on your PLC\nBACnet_LimitBACnetDeviceObjectPropertyReference.project - how to ensure implementation limitations of BACnetDefaultImpl.TrendLog\nBACnet_PersistentServer.project - how to use BACnetDefaultImpl to make BACnet objects and object properties persistent on your PLC\nBACnet_Routing.project - how to use multiple BACnet âdata linksâ for BACnet routing\nBACnet_Routing.project - how to use multiple BACnet âdata linksâ for BACnet routing\nBACnet_BBMD_example.project - how to use multiple CODESYS BACnet devices in a network setup involving BBMD\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Output",
+          "Name": "ConfCOVNotificationStatus",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Initial": "CmpBACnet.IEC_BACNET_STATUS.BACNET_STATUS_NOT_INITIALIZED",
+          "Comment": "Status-Variable holding the callâs status after a call of\nConfCOVNotification."
+        }
+      ]
+    }
+  ]
+}

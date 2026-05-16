@@ -1,0 +1,153 @@
+{
+  "library": "DNP3",
+  "title": "OutstationDataModelExample (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Outstation/OutstationDataModelExample.html",
+  "page_title": "OutstationDataModelExample (FB)",
+  "text": "\nFUNCTION_BLOCK OutstationDataModelExample\nThis function block provides an example data model for Outstation, including simulated application data.\nIt provides:\n- 8 x AnalogInput\n- 4 x AnalogOutput\n- 4 x BinaryCounter\n- 4 x BinaryInput\n- 4 x BinaryOutput\n- 4 x DoubleBitInput\n- 4 x OctetString\nall points with consecutive point number starting at 0.\nThe method ModifyApplicationData() can be used to simulate volatile application data.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "anlgIns",
+          "Type": "ARRAY [0..7] OFAnalogInput",
+          "Initial": "[STRUCT(Description := âMyAnlgIn_1â, EventClass := Constants.TMWDEFS_CLASS_MASK_ONE, EnableFreeze := TRUE, EnableMasterAccessDeadband := TRUE, udiLogOptions := OutstationLoggingOptions.Freeze, value := STRUCT(baseType := AnyNumberType.TYPE_LREAL, isPtr := TRUE, u := STRUCT(p := STRUCT(pLREAL := ADR(anlgInData1)))), deadband := STRUCT(baseType := AnyNumberType.TYPE_LREAL, isPtr := FALSE, u := STRUCT(val := STRUCT(valLREAL := 0.1))), enableWriteDeadband := TRUE), STRUCT(Description := âMyAnlgIn_2â, number := 2, EventClass := Constants.TMWDEFS_CLASS_MASK_TWO, EnableFreeze := FALSE, EnableMasterAccessDeadband := TRUE, value := STRUCT(baseType := AnyNumberType.TYPE_REAL, isPtr := TRUE, u := STRUCT(p := STRUCT(pREAL := ADR(anlgInData2)))), deadband := STRUCT(baseType := AnyNumberType.TYPE_REAL, isPtr := FALSE, u := STRUCT(val := STRUCT(valREAL := 0.2))), enableWriteDeadband := TRUE), STRUCT(Description := âMyAnlgIn_3â, EventClass := Constants.TMWDEFS_CLASS_MASK_THREE, EnableFreeze := TRUE, EnableMasterAccessDeadband := FALSE, value := STRUCT(baseType := AnyNumberType.TYPE_UDINT, isPtr := TRUE, u := STRUCT(p := STRUCT(pUDINT := ADR(anlgInData3)))), deadband := STRUCT(baseType := AnyNumberType.TYPE_UDINT, isPtr := FALSE, u := STRUCT(val := STRUCT(valUDINT := 1)))), STRUCT(Description := âMyAnlgIn_4â, number := 10, EventClass := Constants.TMWDEFS_CLASS_MASK_ONE, value := STRUCT(baseType := AnyNumberType.TYPE_DINT, isPtr := TRUE, u := STRUCT(p := STRUCT(pDINT := ADR(anlgInData4)))), deadband := STRUCT(baseType := AnyNumberType.TYPE_DINT, isPtr := FALSE, u := STRUCT(val := STRUCT(valDINT := 1)))), STRUCT(Description := âMyAnlgIn_5â, EventClass := Constants.TMWDEFS_CLASS_MASK_ONE, value := STRUCT(baseType := AnyNumberType.TYPE_UINT, isPtr := TRUE, u := STRUCT(p := STRUCT(pUINT := ADR(anlgInData5)))), deadband := STRUCT(baseType := AnyNumberType.TYPE_UINT, isPtr := FALSE, u := STRUCT(val := STRUCT(valUINT := 1)))), STRUCT(Description := âMyAnlgIn_6â, EventClass := Constants.TMWDEFS_CLASS_MASK_ONE, value := STRUCT(baseType := AnyNumberType.TYPE_INT, isPtr := TRUE, u := STRUCT(p := STRUCT(pINT := ADR(anlgInData6)))), deadband := STRUCT(baseType := AnyNumberType.TYPE_INT, isPtr := FALSE, u := STRUCT(val := STRUCT(valINT := 1)))), STRUCT(Description := âMyAnlgIn_7â, EventClass := Constants.TMWDEFS_CLASS_MASK_ONE, value := STRUCT(baseType := AnyNumberType.TYPE_USINT, isPtr := TRUE, u := STRUCT(p := STRUCT(pUSINT := ADR(anlgInData7)))), deadband := STRUCT(baseType := AnyNumberType.TYPE_USINT, isPtr := FALSE, u := STRUCT(val := STRUCT(valUSINT := 1)))), STRUCT(Description := âMyAnlgIn_8â, EventClass := Constants.TMWDEFS_CLASS_MASK_ONE, value := STRUCT(baseType := AnyNumberType.TYPE_SINT, isPtr := TRUE, u := STRUCT(p := STRUCT(pSINT := ADR(anlgInData8)))), deadband := STRUCT(baseType := AnyNumberType.TYPE_SINT, isPtr := FALSE, u := STRUCT(val := STRUCT(valSINT := 1))))]",
+          "Comment": "All my AnalogInput"
+        },
+        [
+          "numAnlgIns",
+          "UINT",
+          "(SIZEOF(anlgIns) / SIZEOF(anlgIns[0]))",
+          "Number of AnalogInputs"
+        ],
+        [
+          "grpAnlgIns",
+          "GroupAnalogInputs",
+          "STRUCT(aPoints := ADR(anlgIns), numPoints := numAnlgIns)",
+          "The âGroupâ containing all the AnalogInputs"
+        ],
+        [
+          "anlgOuts",
+          "ARRAY [0..3] OFAnalogOutput",
+          "[STRUCT(Description := âMyAnlgOut_1â, EventClass := Constants.TMWDEFS_CLASS_MASK_ONE, EnableCommand := TRUE, rejectCommand := FALSE, value := STRUCT(baseType := AnyNumberType.TYPE_REAL, isPtr := TRUE, u := STRUCT(p := STRUCT(pREAL := ADR(anlgOutData[0]))))), STRUCT(Description := âMyAnlgOut_2â, EventClass := Constants.TMWDEFS_CLASS_MASK_TWO, value := STRUCT(baseType := AnyNumberType.TYPE_REAL, isPtr := TRUE, u := STRUCT(p := STRUCT(pREAL := ADR(anlgOutData[1]))))), STRUCT(Description := âMyAnlgOut_3â, EventClass := Constants.TMWDEFS_CLASS_MASK_THREE, EnableCommand := TRUE, rejectCommand := FALSE, value := STRUCT(baseType := AnyNumberType.TYPE_REAL, isPtr := TRUE, u := STRUCT(p := STRUCT(pREAL := ADR(anlgOutData[2]))))), STRUCT(Description := âMyAnlgOut_4â, EventClass := Constants.TMWDEFS_CLASS_MASK_TWO, value := STRUCT(baseType := AnyNumberType.TYPE_REAL, isPtr := TRUE, u := STRUCT(p := STRUCT(pREAL := ADR(anlgOutData[3])))))]",
+          "Now the same boilerplate for other Point types used in this\nâdata modelâ â¦"
+        ],
+        [
+          "numAnlgOuts",
+          "UINT",
+          "(SIZEOF(anlgOuts) / SIZEOF(anlgOuts[0]))",
+          ""
+        ],
+        [
+          "grpAnlgOuts",
+          "GroupAnalogOutputs",
+          "STRUCT(aPoints := ADR(anlgOuts), numPoints := numAnlgOuts)",
+          ""
+        ],
+        [
+          "binCntr",
+          "ARRAY [0..3] OFBinaryCounter",
+          "[STRUCT(Description := âMyBinCntr_1â, EventClass := Constants.TMWDEFS_CLASS_MASK_ONE, EnableFreeze := TRUE, udiLogOptions := OutstationLoggingOptions.Freeze, value := STRUCT(baseType := AnyNumberType.TYPE_UDINT, isPtr := TRUE, u := STRUCT(p := STRUCT(pUDINT := ADR(binCntrData[0]))))), STRUCT(Description := âMyBinCntr_2â, EventClass := Constants.TMWDEFS_CLASS_MASK_TWO, value := STRUCT(baseType := AnyNumberType.TYPE_UDINT, isPtr := TRUE, u := STRUCT(p := STRUCT(pUDINT := ADR(binCntrData[1]))))), STRUCT(Description := âMyBinCntr_3â, EventClass := Constants.TMWDEFS_CLASS_MASK_ONE, EnableFreeze := TRUE, value := STRUCT(baseType := AnyNumberType.TYPE_UDINT, isPtr := TRUE, u := STRUCT(p := STRUCT(pUDINT := ADR(binCntrData[2]))))), STRUCT(Description := âMyBinCntr_4â, EventClass := Constants.TMWDEFS_CLASS_MASK_TWO, value := STRUCT(baseType := AnyNumberType.TYPE_UDINT, isPtr := TRUE, u := STRUCT(p := STRUCT(pUDINT := ADR(binCntrData[3])))))]",
+          ""
+        ],
+        [
+          "numBinCntr",
+          "UINT",
+          "(SIZEOF(binCntr) / SIZEOF(binCntr[0]))",
+          ""
+        ],
+        [
+          "grpBinCntrs",
+          "GroupBinaryCounters",
+          "STRUCT(aPoints := ADR(binCntr), numPoints := numBinCntr)",
+          ""
+        ],
+        [
+          "binIns",
+          "ARRAY [0..3] OFBinaryInput",
+          "[STRUCT(Description := âMyBinIn_1â, number := 10, EventClass := Constants.TMWDEFS_CLASS_MASK_ONE, pValue := ADR(binInData[0])), STRUCT(Description := âMyBinIn_2â, EventClass := Constants.TMWDEFS_CLASS_MASK_TWO, pValue := ADR(binInData[1])), STRUCT(Description := âMyBinIn_3â, number := 20, EventClass := Constants.TMWDEFS_CLASS_MASK_THREE, pValue := ADR(binInData[2])), STRUCT(Description := âMyBinIn_4â, EventClass := Constants.TMWDEFS_CLASS_MASK_TWO, pValue := ADR(binInData[3]))]",
+          ""
+        ],
+        [
+          "numBinIns",
+          "UINT",
+          "(SIZEOF(binIns) / SIZEOF(binIns[0]))",
+          ""
+        ],
+        [
+          "grpBinIns",
+          "GroupBinaryInputs",
+          "STRUCT(aPoints := ADR(binIns), numPoints := numBinIns)",
+          ""
+        ],
+        [
+          "binOuts",
+          "ARRAY [0..3] OFBinaryOutput",
+          "[STRUCT(Description := âMyBinOut_1â, EventClass := Constants.TMWDEFS_CLASS_MASK_ONE, EnableCommand := TRUE, rejectCommand := FALSE, pValue := ADR(binOutData[0])), STRUCT(Description := âMyBinOut_2â, EventClass := Constants.TMWDEFS_CLASS_MASK_TWO, pValue := ADR(binOutData[1])), STRUCT(Description := âMyBinOut_3â, EventClass := Constants.TMWDEFS_CLASS_MASK_ONE, EnableCommand := TRUE, rejectCommand := FALSE, pValue := ADR(binOutData[2])), STRUCT(Description := âMyBinOut_4â, EventClass := Constants.TMWDEFS_CLASS_MASK_TWO, pValue := ADR(binOutData[3]))]",
+          ""
+        ],
+        [
+          "numBinOuts",
+          "UINT",
+          "(SIZEOF(binOuts) / SIZEOF(binOuts[0]))",
+          ""
+        ],
+        [
+          "grpBinOuts",
+          "GroupBinaryOutputs",
+          "STRUCT(aPoints := ADR(binOuts), numPoints := numBinOuts)",
+          ""
+        ],
+        [
+          "dblIns",
+          "ARRAY [0..3] OFDoubleBitInput",
+          "[STRUCT(Description := âMyDblIn_1â, EventClass := Constants.TMWDEFS_CLASS_MASK_ONE, pValue := ADR(dblInData[0])), STRUCT(Description := âMyDblIn_2â, EventClass := Constants.TMWDEFS_CLASS_MASK_TWO, pValue := ADR(dblInData[1])), STRUCT(Description := âMyDblIn_3â, EventClass := Constants.TMWDEFS_CLASS_MASK_ONE, pValue := ADR(dblInData[2])), STRUCT(Description := âMyDblIn_4â, EventClass := Constants.TMWDEFS_CLASS_MASK_TWO, pValue := ADR(dblInData[3]))]",
+          ""
+        ],
+        [
+          "numDblIns",
+          "UINT",
+          "(SIZEOF(dblIns) / SIZEOF(dblIns[0]))",
+          ""
+        ],
+        [
+          "grpDblIns",
+          "GroupDoubleBitInputs",
+          "STRUCT(aPoints := ADR(dblIns), numPoints := numDblIns)",
+          ""
+        ],
+        [
+          "octStrs",
+          "ARRAY [0..3] OFOctetString",
+          "[STRUCT(Description := âMyOctStr_1â, EventClass := Constants.TMWDEFS_CLASS_MASK_ONE, pBufIn := ADR(octetStringData[0]), maxLengthIn := ANY_TO_USINT((SIZEOF(octetStringData[0]) / SIZEOF(octetStringData[0][0]))), lengthIn := 4), STRUCT(Description := âMyOctStr_2â, EventClass := Constants.TMWDEFS_CLASS_MASK_TWO, pBufIn := ADR(octetStringData[1]), maxLengthIn := ANY_TO_USINT((SIZEOF(octetStringData[1]) / SIZEOF(octetStringData[1][0]))), lengthIn := 8), STRUCT(Description := âMyOctStr_3â, EventClass := Constants.TMWDEFS_CLASS_MASK_TWO, pBufIn := ADR(octetStringData[2]), maxLengthIn := ANY_TO_USINT((SIZEOF(octetStringData[2]) / SIZEOF(octetStringData[2][0]))), lengthIn := 4), STRUCT(Description := âMyOctStr_4â, EventClass := Constants.TMWDEFS_CLASS_MASK_TWO, pBufIn := ADR(octetStringData[3]), maxLengthIn := ANY_TO_USINT((SIZEOF(octetStringData[3]) / SIZEOF(octetStringData[3][0]))), lengthIn := 8)]",
+          ""
+        ],
+        [
+          "numOctStrs",
+          "UINT",
+          "(SIZEOF(octStrs) / SIZEOF(octStrs[0]))",
+          ""
+        ],
+        [
+          "grpOctStrs",
+          "GroupOctetStrings",
+          "STRUCT(aPoints := ADR(octStrs), numPoints := numOctStrs)",
+          ""
+        ],
+        [
+          "outstationDatamodel",
+          "OutstationDataModel",
+          "STRUCT(groupAnalogInputs := grpAnlgIns, groupAnalogOutputs := grpAnlgOuts, groupBinaryCounters := grpBinCntrs, groupBinaryInputs := grpBinIns, groupBinaryOutputs := grpBinOuts, groupDoubleBitInputs := grpDblIns, groupOctetStrings := grpOctStrs)",
+          "Thats the final result weâre aiming here for - the Outstation âdata modelâ.\nPlease note: some groups may not be set, in this case the Outstation simply doesnt provide Points related to this group."
+        ]
+      ]
+    }
+  ]
+}

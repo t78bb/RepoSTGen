@@ -1,0 +1,36 @@
+{
+  "library": "AlarmManager",
+  "title": "AlarmDeactivationStateChanged (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/pou-IAlarmStateChangedListener2/AlarmDeactivationStateChanged.html",
+  "page_title": "IAlarmStateChangedListener2.AlarmDeactivationStateChanged (METH)",
+  "text": "\nMETHOD AlarmDeactivationStateChanged : BOOL\nThis method will be called if a AlarmStateChangedListener was registered and the\nalarm deactivation changed.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "AlarmDeactivationStateChanged",
+          "Type": "BOOL",
+          "Comment": "<c>TRUE</c> in case the corresponding action to this event was successfull,\n<c>FALSE</c> otherwise."
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfAlarm5",
+          "Type": "IAlarm5",
+          "Comment": "The alarm which changed its deactivation state"
+        },
+        [
+          "xNewDeactivationState",
+          "BOOL",
+          "The new deactivation state of the alarm"
+        ]
+      ]
+    }
+  ]
+}

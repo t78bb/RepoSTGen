@@ -1,0 +1,29 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_TriggerPositionType (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/AdministrativeConfiguration/Trigger/SMC_TriggerPositionType.html",
+  "page_title": "SMC_TriggerPositionType (ENUM)",
+  "text": "\nTYPE SMC_TriggerPositionType :\nThe possible ways to define a trigger position on a movement.\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "MvtRelative",
+          "Comment": "Defines a relative position on the movement.\nIt has to have a value between -1.0 and 1.0. Other values lead to an error.\nThe value 0.0 is the start of the movement, 1.0 is the end of the movement.\nNegative values are relative to the end of the movement, i.e. -0.1 is\nthe same position as +0.9."
+        },
+        {
+          "Name": "MvtDistance",
+          "Comment": "Defines a distance in user units on the movement.\nPositive values represent a distance from the start of the movement,\nnegative values a distance from the end of the movement.If any coordinate system of the movement is dynamic, all coordinate\nsystems must be the same. Otherwise,SMC_GroupPrepareTriggerreports an error.Only assignable to CP movements. If the commanded movement is a PTP\nmovement,SMC_GroupPrepareTriggerreports an error."
+        },
+        {
+          "Name": "PlaneIntersection",
+          "Comment": "Defines a trigger position as the intersection of a movement with\na plane.  SeeSMC_TriggerPosition_Plane.  If there is no intersection,\nan error is reported bySMC_GroupReadTrigger.  If there is more than\none intersection, the first intersection is used as the trigger position.\n(This also includes the case of infinitely many intersections, for\nexample if the movement is a line that is inside the plane.)If any coordinate system of the movement is dynamic, all coordinate\nsystems must be the same, including the one in which the plane is\ndefined.  Otherwise,SMC_GroupPrepareTriggerreports an error.Only assignable to CP movements. If the commanded movement is a PTP\nmovement,SMC_GroupPrepareTriggerreports an error."
+        }
+      ]
+    }
+  ]
+}

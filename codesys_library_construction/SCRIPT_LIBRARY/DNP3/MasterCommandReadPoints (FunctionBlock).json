@@ -1,0 +1,83 @@
+{
+  "library": "DNP3",
+  "title": "MasterCommandReadPoints (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/Commands/MasterCommandReadPoints.html",
+  "page_title": "MasterCommandReadPoints (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL MasterCommandReadPoints EXTENDS\nMasterCommand\nMaster command ReadPoints\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment",
+        "Inherited from"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "xExecute",
+          "Type": "BOOL",
+          "Comment": "Execute the command (xExecute FALSE â> TRUE).",
+          "Inherited from": "MasterCommand"
+        },
+        [
+          "itfMaster",
+          "IMaster",
+          "Interface IMaster",
+          "MasterCommand"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "xDone",
+          "Type": "BOOL",
+          "Comment": "Command executed successfully.",
+          "Inherited from": "MasterCommand"
+        },
+        [
+          "xError",
+          "BOOL",
+          "Error during command executions",
+          "MasterCommand"
+        ],
+        [
+          "eErrorID",
+          "Error",
+          "Specific error during command executions.",
+          "MasterCommand"
+        ],
+        {
+          "Scope": "Input",
+          "Name": "group",
+          "Type": "USINT",
+          "Comment": "object group for read request",
+          "Inherited from": ""
+        },
+        [
+          "variation",
+          "USINT",
+          "object variation to read",
+          ""
+        ],
+        [
+          "qualifier",
+          "AddressQualifier",
+          "address qualifier, must be 8/16 bit indexed\nQUAL_8BIT_INDEX or QUAL_16BIT_INDEX",
+          ""
+        ],
+        [
+          "numPoints",
+          "UINT",
+          "number of points to read",
+          ""
+        ],
+        [
+          "pPoints",
+          "POINTER TO UINT",
+          "pointer to array of point numbers to read",
+          ""
+        ]
+      ]
+    }
+  ]
+}

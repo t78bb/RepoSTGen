@@ -1,0 +1,8 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "IBaseInstance2 (Interface)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_Module/IBaseInstance2.html",
+  "page_title": "IBaseInstance2 (ITF)",
+  "text": "\nINTERFACE IBaseInstance2 EXTENDS\nIBaseInstance\nProperties:\nInitParametersDone\nComAddress\n, inherited from\nIBaseInstance\nInstanceName\n, inherited from\nIBaseInstance\nMethods:\nInit\n, inherited from\nIBaseInstance\nMain\n, inherited from\nIBaseInstance\nOnAfterOnlineChange\n, inherited from\nIBaseInstance\nOnBeforeOnlineChange\n, inherited from\nIBaseInstance\nStructure:\nInitParametersDone (Property)",
+  "tables": []
+}

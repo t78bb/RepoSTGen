@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现将以秒为单位的时间值转换为以TIME类型表示的时间值。",
+  "provide_code": "FUNCTION F_SecondsToTime : TIME\nVAR_INPUT\n\tdwSeconds\t:\tDWORD;\t\t//输入的秒数\nEND_VAR"
+}

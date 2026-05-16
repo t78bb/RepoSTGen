@@ -1,0 +1,27 @@
+{
+  "library": "SM3_CNC",
+  "title": "GetString (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/File/ReadNCFile/Token/pou-SMC_Token/GetString.html",
+  "page_title": "SMC_Token.GetString (METH)",
+  "text": "\nMETHOD FINAL GetString\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Output",
+          "Name": "pbyString",
+          "Type": "POINTER TO BYTE"
+        },
+        [
+          "iSize",
+          "INT"
+        ]
+      ]
+    }
+  ]
+}

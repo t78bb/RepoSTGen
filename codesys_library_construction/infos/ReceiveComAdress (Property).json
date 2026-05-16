@@ -1,0 +1,8 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "ReceiveComAdress (Property)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_RMP_ReliableMessageProtocol/AC_RMP_FBCommunication/pou-IRMPFBCommunication/ReceiveComAdress.html",
+  "page_title": "IRMPFBCommunication.ReceiveComAdress (PROP)",
+  "text": "\nPROPERTY ReceiveComAdress : UDINT\nThis property returns the ComAddress of the application messages are received from (given via\nInitializeCommunicationParameters).",
+  "tables": []
+}

@@ -1,0 +1,28 @@
+{
+  "library": "Standard64",
+  "title": "AtomicReadLWord (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/Standard64/Current/Atomic-Read-Write-Functions/AtomicReadLWord.html",
+  "page_title": "AtomicReadLWord (FUN)",
+  "text": "\nFUNCTION AtomicReadLWord : LWORD\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "AtomicReadLWord",
+          "Type": "LWORD"
+        },
+        {
+          "Scope": "Input",
+          "Name": "pSrc",
+          "Type": "POINTER TO LWORD"
+        }
+      ]
+    }
+  ]
+}

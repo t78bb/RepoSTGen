@@ -1,0 +1,28 @@
+{
+  "library": "BACnet",
+  "title": "NumClientCreatedObjects (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetServer/pou-IBACnetServer/Services/NumClientCreatedObjects.html",
+  "page_title": "IBACnetServer.NumClientCreatedObjects (METH)",
+  "text": "\nMETHOD NumClientCreatedObjects : DINT\nReturns the number of client created objects of given type.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "NumClientCreatedObjects",
+          "Type": "DINT"
+        },
+        {
+          "Scope": "Input",
+          "Name": "objType",
+          "Type": "CmpBACnet.IEC_BACNET_OBJECT_TYPE"
+        }
+      ]
+    }
+  ]
+}

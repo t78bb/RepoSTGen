@@ -1,0 +1,8 @@
+{
+  "library": "AlarmManager",
+  "title": "IAlarmStorageReaderConsumer2 (Interface)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Alarm-storage-API/IAlarmStorageReaderConsumer2.html",
+  "page_title": "IAlarmStorageReaderConsumer2 (ITF)",
+  "text": "\nINTERFACE IAlarmStorageReaderConsumer2 EXTENDS\nIAlarmStorageReaderConsumer\nExtension of interface IAlarmStorageReaderConsumer to get or set the byte order of the database.\nProperties:\nByteOrder\nMethods:\nAlarmRead\n, inherited from\nIAlarmStorageReaderConsumer\nBeforeReading\n, inherited from\nIAlarmStorageReaderConsumer\nLatchVariableRead\n, inherited from\nIAlarmStorageReaderConsumer\nReadingDataCompleted\n, inherited from\nIAlarmStorageReaderConsumer\nStructure:\nByteOrder (Property)",
+  "tables": []
+}

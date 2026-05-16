@@ -1,0 +1,23 @@
+{
+  "library": "BACnetDefaultImpl",
+  "title": "ls_log (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnetDefaultImpl/Current/BACnetDefaultImpl/Functions/pou-Directory/ls_log.html",
+  "page_title": "Directory.ls_log (METH)",
+  "text": "\nMETHOD ls_log : BOOL\nList all dir elements to logger.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "ls_log",
+          "Type": "BOOL"
+        }
+      ]
+    }
+  ]
+}

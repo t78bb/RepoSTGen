@@ -1,0 +1,52 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_BrakingDistance (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/internal/Trajectories/SMC_BrakingDistance.html",
+  "page_title": "SMC_BrakingDistance (FUN)",
+  "text": "\nFUNCTION SMC_BrakingDistance : LREAL\nComputes the (signed) braking distance from a given velocity\nand acceleration to velocity 0 and acceleration 0.\nThe signed distance is the difference between the position where\nstandstill is reached and the current position.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout Const",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "v0",
+          "Type": "LREAL",
+          "Comment": "Velocity at start"
+        },
+        [
+          "a0",
+          "LREAL",
+          "Acceleration at start"
+        ],
+        [
+          "Deceleration",
+          "LREAL",
+          "Maximum deceleration in u/s^2 (positive)"
+        ],
+        [
+          "Jerk",
+          "LREAL",
+          "Maximum jerk in u/s^3 (positive)"
+        ],
+        {
+          "Scope": "Return",
+          "Name": "SMC_BrakingDistance",
+          "Type": "LREAL",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

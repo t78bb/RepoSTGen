@@ -1,0 +1,31 @@
+{
+  "library": "AlarmManager",
+  "title": "ClearHistory (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/pou-IAlarmHandler10/ClearHistory.html",
+  "page_title": "IAlarmHandler10.ClearHistory (METH)",
+  "text": "\nMETHOD ClearHistory : BOOL\nClears the alarm history of the alarm configuration.\nIf xKeepActiveAlarms = FALSE all alarms are cleared in the history. Log messages can\noccur during further state transitions of the active alarms until the alarm has reached\nthe state âNormalâ.\nRecommended is xKeepActiveAlarms = TRUE\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "ClearHistory",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "xKeepActiveAlarms",
+          "Type": "BOOL",
+          "Comment": "If true only the history entries in state âNormalâ are cleared."
+        }
+      ]
+    }
+  ]
+}

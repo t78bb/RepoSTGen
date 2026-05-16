@@ -1,0 +1,28 @@
+{
+  "library": "BACnet2DefaultImpl",
+  "title": "GetCallback (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2DefaultImpl/Current/BACnetDefaultImpl/Function-Blocks/pou-LimitDeviceObjectPropertyReferencesToCertainTypes/GetCallback.html",
+  "page_title": "LimitDeviceObjectPropertyReferencesToCertainTypes.GetCallback (METH)",
+  "text": "\nMETHOD GetCallback : BACnet.IBACnetServerPluginCallback\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetCallback",
+          "Type": "BACnet.IBACnetServerPluginCallback"
+        },
+        {
+          "Scope": "Input",
+          "Name": "index",
+          "Type": "UINT"
+        }
+      ]
+    }
+  ]
+}

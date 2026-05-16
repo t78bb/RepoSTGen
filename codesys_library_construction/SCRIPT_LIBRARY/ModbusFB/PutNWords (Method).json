@@ -1,0 +1,27 @@
+{
+  "library": "ModbusFB",
+  "title": "PutNWords (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/ModbusFB/Current/ModbusFB/Function-Blocks/Util/pou-ByteBuffer/PutNWords.html",
+  "page_title": "ByteBuffer.PutNWords (METH)",
+  "text": "\nMETHOD PutNWords\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "pSource",
+          "Type": "POINTER TO BYTE"
+        },
+        [
+          "uiWords",
+          "UINT"
+        ]
+      ]
+    }
+  ]
+}

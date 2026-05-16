@@ -1,0 +1,38 @@
+{
+  "library": "CommFB",
+  "title": "RALARM_MODE (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/CommFB/Current/CommFB/RALARM_MODE.html",
+  "page_title": "RALARM_MODE (ENUM)",
+  "text": "CommFB\nAINFO_TYPE (Union)\nAddressConcept (GVL)\nAddress Concept\nGenerating a CommFB-ID\nProfibus DP\nProfinet IO\nDevice Diagnosis\nAddress Conversion\nAddresses\nADDR_TO_ID (FunctionBlock)\nADDR_TYPE (Union)\nCREATE_ID (FunctionBlock)\nDP_ADDR (Struct)\nDP_DEVICE_ID (Struct)\nID_TO_ADDR (FunctionBlock)\nIO_SYSTEM_TYPE (Enum)\nPN_ADDR (Struct)\nPN_DEVICE_ID (Struct)\nSUBSLOT_ID (Function)\nCNCT (FunctionBlock)\nConstants (GVL)\nDP Address\nADDR (Function)\nID (Function)\nSLOT_ID (Function)\nDP_AINFO (Struct)\nDP_DIAG (Struct)\nErrorCode (Enum)\nErrorCode1_RW (Enum)\nFieldDevice\nPRVREC (FunctionBlock)\nPRVREC_MODE (Enum)\nRCVREC (FunctionBlock)\nRCVREC_MODE (Enum)\nSALARM (FunctionBlock)\nGETIO_PART (FunctionBlock)\nPN_AINFO (Struct)\nRALARM (FunctionBlock)\nRALARM_MODE (Enum)\nRDIAG (FunctionBlock)\nRDREC (FunctionBlock)\nSETIO_PART (FunctionBlock)\nWRREC (FunctionBlock)\nImages\nLibrary Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nFile and Project Information\nLibrary Reference\nIoDriver Profibus2 Interfaces\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nCommFB\nDocs\n»\nCommFB\n»\nRALARM_MODE (ENUM)\nRALARM_MODE (ENUM)\nÂ¶\nTYPE RALARM_MODE :\nFilter scope of\nRALARM\n.F_ID input.\nAttributes:\nqualified_only\nInOut:\nName\nInitial\nComment\nALL_ALARMS\n1\nIf the Host Controller interface has received an alarm, all\nfunction block outputs are updated. The alarm is\nacknowledged.\nALARM_BY_ID\n2\nReceive an alarm for the slot or subslot the identification\nof which is given in F_ID input, all function block outputs\nare updated. The alarm is acknowledged\nALARM_BY_SLOT\n3\nReceive an alarm for the slot the identification of which is\ngiven in F_ID input AND for all of itâs subslots\nALARM_BY_DEVICE\n4\nReceive an alarm for the device the identification of which\nis given in F_ID input AND for all of itâs slots and\nsubslots",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "ALL_ALARMS",
+          "Initial": "1",
+          "Comment": "If the Host Controller interface has received an alarm, all\nfunction block outputs are updated. The alarm is\nacknowledged."
+        },
+        {
+          "Name": "ALARM_BY_ID",
+          "Initial": "2",
+          "Comment": "Receive an alarm for the slot or subslot the identification\nof which is given in F_ID input, all function block outputs\nare updated. The alarm is acknowledged"
+        },
+        {
+          "Name": "ALARM_BY_SLOT",
+          "Initial": "3",
+          "Comment": "Receive an alarm for the slot the identification of which is\ngiven in F_ID input AND for all of itâs subslots"
+        },
+        {
+          "Name": "ALARM_BY_DEVICE",
+          "Initial": "4",
+          "Comment": "Receive an alarm for the device the identification of which\nis given in F_ID input AND for all of itâs slots and\nsubslots"
+        }
+      ]
+    }
+  ]
+}

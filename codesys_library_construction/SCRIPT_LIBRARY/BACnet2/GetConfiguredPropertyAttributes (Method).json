@@ -1,0 +1,37 @@
+{
+  "library": "BACnet2",
+  "title": "GetConfiguredPropertyAttributes (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/BACnetServer/pou-IBACnetServer/PropertyAttributes/GetConfiguredPropertyAttributes.html",
+  "page_title": "IBACnetServer.GetConfiguredPropertyAttributes (METH)",
+  "text": "\nMETHOD GetConfiguredPropertyAttributes : BOOL\nGets the configured attributes of the specified BACnet-Property (propID) of the specified BACnet-Object (objID).\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetConfiguredPropertyAttributes",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Input",
+          "Name": "objID",
+          "Type": "CmpBACnet.IEC_BACNET_OBJECT_ID"
+        },
+        [
+          "propID",
+          "CmpBACnet.IEC_BACNET_PROPERTY_ID"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "result",
+          "Type": "BACnetPropertyAttributes"
+        }
+      ]
+    }
+  ]
+}

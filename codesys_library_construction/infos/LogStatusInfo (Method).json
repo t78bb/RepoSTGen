@@ -1,0 +1,8 @@
+{
+  "library": "ModbusFB",
+  "title": "LogStatusInfo (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/ModbusFB/Current/ModbusFB/Function-Blocks/Server/pou-ServerTCP/Log/LogStatusInfo.html",
+  "page_title": "ServerTCP.LogStatusInfo (METH)",
+  "text": "\nMETHOD LogStatusInfo\nWrite status information to logger.",
+  "tables": []
+}

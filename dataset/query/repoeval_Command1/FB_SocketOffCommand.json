@@ -1,0 +1,5 @@
+{
+  "requirement": "This code is intended to implement a command for turning off a socket using the I_Command interface.",
+  "provide_code": "FUNCTION_BLOCK PUBLIC FB_SocketOffCommand IMPLEMENTS I_Command",
+  "function_name": "FB_SocketOffCommand"
+}

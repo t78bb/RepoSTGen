@@ -1,0 +1,64 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_KinConfigActivateAutomaticPeriods (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/AdministrativeConfiguration/Kinematics/SMC_KinConfigActivateAutomaticPeriods.html",
+  "page_title": "SMC_KinConfigActivateAutomaticPeriods (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_KinConfigActivateAutomaticPeriods\nThis function block allows activating automatic periods on\nrotary axes with multiple periods.  With automatic periods\nactive, instead of a specific period the closest period to the\ncurrent position is chosen when e.g. determining the target\nposition of a movement.\nThis function block does not change the state of an the\nAxisGroup\n.\nInstead, a configuration based on\nKinematicConfigIn\n, but with\nactivated automatic periods, is prepared and written to\nKinematicConfigOut\n.\nThe function block\nSMC_SetKinConfiguration\ncan be used to change\nthe configuration of the axis group to this value.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "AxisGroup",
+          "Type": "AXIS_GROUP_REF_SM3",
+          "Comment": "Reference to a group of axis"
+        },
+        {
+          "Scope": "Input",
+          "Name": "ConfigDataIn",
+          "Type": "TRAFO.CONFIGDATA",
+          "Comment": "The input config data"
+        },
+        {
+          "Scope": "Output",
+          "Name": "ConfigDataOut",
+          "Type": "TRAFO.CONFIGDATA",
+          "Comment": "The output config data with activated automatic periods."
+        },
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Comment": "Converts the config data on rising edge"
+        },
+        {
+          "Scope": "Output",
+          "Name": "Done",
+          "Type": "BOOL",
+          "Comment": "The config data has been converted successfully"
+        },
+        [
+          "Busy",
+          "BOOL",
+          "The FB is not finished"
+        ],
+        [
+          "Error",
+          "BOOL",
+          "Signals that an error has occurred within the function block"
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

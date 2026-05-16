@@ -1,0 +1,28 @@
+{
+  "library": "BACnet",
+  "title": "GetGroupMemberCount (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/Global-Group/pou-BACnetGlobalGroup/GetGroupMemberCount.html",
+  "page_title": "BACnetGlobalGroup.GetGroupMemberCount (METH)",
+  "text": "\nMETHOD GetGroupMemberCount : CmpBACnet.IEC_BACNET_STATUS\nGets the count of group-members and group-members-names entries in the Group_Members-BACnet-Property and Group_Member_Names-BACnetProperty of this BACnet-Global-Group-Object.\nBoth the count of group-members and group-members-names have to be the same, so can be aquired at once.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetGroupMemberCount",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS"
+        },
+        {
+          "Scope": "Output",
+          "Name": "count",
+          "Type": "CmpBACnet.IEC_BACNET_ELEMENT_COUNT"
+        }
+      ]
+    }
+  ]
+}

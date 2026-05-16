@@ -1,0 +1,42 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_AxisReadSettings (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/DriveInterface/AXIS_REF/SMC_AxisReadSettings.html",
+  "page_title": "SMC_AxisReadSettings (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_AxisReadSettings\nThis function block can be used to read advanced settings of an axis.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "bEnable",
+          "Type": "BOOL",
+          "Comment": "TRUE: Activates FB, else inactive."
+        },
+        {
+          "Scope": "Output",
+          "Name": "bUpdateIOsInStop",
+          "Type": "BOOL",
+          "Comment": "Current value of the Update the IOs flag if the application\nis stopped."
+        },
+        [
+          "bAutoRestart",
+          "BOOL",
+          "Current value of the auto restart flag."
+        ]
+      ]
+    }
+  ]
+}

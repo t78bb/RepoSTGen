@@ -1,0 +1,8 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "DepthFirstRange (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_Module/TreeNavigation/DepthFirstRange.html",
+  "page_title": "DepthFirstRange (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL DepthFirstRange IMPLEMENTS\nIModuleRangeForward\nThe range of all instances in depth-first preorder of the\nmodule tree, starting at a given instance.\nProperties:\nFirst\nIsEmpty\nMethods:\nInit\nPopFirst\nStructure:\nFirst (Property)\nInit (Method)\nIsEmpty (Property)\nPopFirst (Method)",
+  "tables": []
+}

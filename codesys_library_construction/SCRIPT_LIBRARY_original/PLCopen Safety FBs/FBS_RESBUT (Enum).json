@@ -1,0 +1,58 @@
+{
+  "library": "PLCopen Safety FBs",
+  "title": "FBS_RESBUT (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/PLCopen Safety FBs/Current/PLCopenSafetyFBs/Enums/FBS_RESBUT.html",
+  "page_title": "FBS_RESBUT (ENUM)",
+  "text": "PLCopenSafetyFBs\nEnums\nFBS_ANTI (Enum)\nFBS_EDM (Enum)\nFBS_ENSWITCH (Enum)\nFBS_ENSWITCH2 (Enum)\nFBS_EQUI (Enum)\nFBS_ESPE (Enum)\nFBS_ESTOP (Enum)\nFBS_GUARD (Enum)\nFBS_GUARDLOCK2 (Enum)\nFBS_MODESEL (Enum)\nFBS_OUTCONTROL (Enum)\nFBS_PSE (Enum)\nFBS_RESBUT (Enum)\nFBS_SAFEREQ (Enum)\nFBS_TESTSEN (Enum)\nFBS_TWOHAND (Enum)\nFunction Blocks\nSF_Antivalent (FunctionBlock)\nSF_EDM (FunctionBlock)\nSF_ESPE (FunctionBlock)\nSF_EmergencyStop (FunctionBlock)\nSF_EnableSwitch (FunctionBlock)\nSF_EnableSwitch_2 (FunctionBlock)\nSF_Equivalent (FunctionBlock)\nSF_Guard (FunctionBlock)\nSF_GuardLocking_2 (FunctionBlock)\nSF_ModeSelector (FunctionBlock)\nSF_OutControl (FunctionBlock)\nSF_PSE (FunctionBlock)\nSF_ResetButton (FunctionBlock)\nSF_SafetyRequest (FunctionBlock)\nSF_TestableSafetySensor (FunctionBlock)\nSF_TwoHandControlTypeII (FunctionBlock)\nSF_TwoHandControlTypeIII (FunctionBlock)\nFile and Project Information\nLibrary Reference\nStandard\nLibrary Identification\nLibrary Properties\nSysTimeCore\nLibrary Identification\nLibrary Properties\nPLCopen Safety FBs\nDocs\n»\nPLCopenSafetyFBs\n»\nEnums\n»\nFBS_RESBUT (ENUM)\nFBS_RESBUT (ENUM)\nÂ¶\nTYPE FBS_RESBUT :\nDefinition of SF_ResetButton function block states and its diagnostic values.\nAttributes:\nqualified_only\nInOut:\nName\nInitial\nComment\nIDLE\n16#0\nThe function block is not active (initial state).\nWAIT_R_TRIG\n16#83E2\nThe function block is enabled. Wait for R_TRIG at ResetIn.\nWAIT_F_TRIG\n16#83F2\nResetIn is TRUE. Wait for F_TRIG at ResetIn.\nRESET_DETECTED\n16#8000\nValid reset behavior was detected. The state is valid for at\nleast one cycle and will automatically transfer to 16#83E2.\nERR_PARAM\n16#C000\nTrailingMinimum > TrailingMaximum OR TrailingMinimum < 100\nmsec\nERR_RESET\n16#C001\nResetIn is TRUE while waiting for NOT ResetIn.\nERR_TRAIL_MAX\n16#C3E0\nTrailingMaximum elapsed before detecting F_TRIG at ResetIn.\nWaiting for R_TRIG at ResetIn.\nERR_TRAIL_MIN\n16#C3F0\nF_TRIG at ResetIn detected before TrailingMinimum elapsed.\nWaiting for R_TRIG at ResetIn.",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "IDLE",
+          "Initial": "16#0",
+          "Comment": "The function block is not active (initial state)."
+        },
+        {
+          "Name": "WAIT_R_TRIG",
+          "Initial": "16#83E2",
+          "Comment": "The function block is enabled. Wait for R_TRIG at ResetIn."
+        },
+        {
+          "Name": "WAIT_F_TRIG",
+          "Initial": "16#83F2",
+          "Comment": "ResetIn is TRUE. Wait for F_TRIG at ResetIn."
+        },
+        {
+          "Name": "RESET_DETECTED",
+          "Initial": "16#8000",
+          "Comment": "Valid reset behavior was detected. The state is valid for at\nleast one cycle and will automatically transfer to 16#83E2."
+        },
+        {
+          "Name": "ERR_PARAM",
+          "Initial": "16#C000",
+          "Comment": "TrailingMinimum > TrailingMaximum OR TrailingMinimum < 100\nmsec"
+        },
+        {
+          "Name": "ERR_RESET",
+          "Initial": "16#C001",
+          "Comment": "ResetIn is TRUE while waiting for NOT ResetIn."
+        },
+        {
+          "Name": "ERR_TRAIL_MAX",
+          "Initial": "16#C3E0",
+          "Comment": "TrailingMaximum elapsed before detecting F_TRIG at ResetIn.\nWaiting for R_TRIG at ResetIn."
+        },
+        {
+          "Name": "ERR_TRAIL_MIN",
+          "Initial": "16#C3F0",
+          "Comment": "F_TRIG at ResetIn detected before TrailingMinimum elapsed.\nWaiting for R_TRIG at ResetIn."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "library": "CommFB",
+  "title": "ADDR_TO_ID (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/CommFB/Current/CommFB/Addresses/ADDR_TO_ID.html#",
+  "page_title": "ADDR_TO_ID (FB)",
+  "text": "CommFB\nAINFO_TYPE (Union)\nAddressConcept (GVL)\nAddress Concept\nGenerating a CommFB-ID\nProfibus DP\nProfinet IO\nDevice Diagnosis\nAddress Conversion\nAddresses\nADDR_TO_ID (FunctionBlock)\nADDR_TYPE (Union)\nCREATE_ID (FunctionBlock)\nDP_ADDR (Struct)\nDP_DEVICE_ID (Struct)\nID_TO_ADDR (FunctionBlock)\nIO_SYSTEM_TYPE (Enum)\nPN_ADDR (Struct)\nPN_DEVICE_ID (Struct)\nSUBSLOT_ID (Function)\nCNCT (FunctionBlock)\nConstants (GVL)\nDP Address\nADDR (Function)\nID (Function)\nSLOT_ID (Function)\nDP_AINFO (Struct)\nDP_DIAG (Struct)\nErrorCode (Enum)\nErrorCode1_RW (Enum)\nFieldDevice\nPRVREC (FunctionBlock)\nPRVREC_MODE (Enum)\nRCVREC (FunctionBlock)\nRCVREC_MODE (Enum)\nSALARM (FunctionBlock)\nGETIO_PART (FunctionBlock)\nPN_AINFO (Struct)\nRALARM (FunctionBlock)\nRALARM_MODE (Enum)\nRDIAG (FunctionBlock)\nRDREC (FunctionBlock)\nSETIO_PART (FunctionBlock)\nWRREC (FunctionBlock)\nImages\nLibrary Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nFile and Project Information\nLibrary Reference\nIoDriver Profibus2 Interfaces\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nCommFB\nDocs\n»\nCommFB\n»\nAddresses\n»\nADDR_TO_ID (FB)\nADDR_TO_ID (FB)\nÂ¶\nFUNCTION_BLOCK ADDR_TO_ID\nThe function block ADDR_TO_ID converts the physical identification of a slot of a PROFIBUS DP-slave or subslot of a PROFINET IO Device to a handle which can be used with the Communication Function Blocks.\nCode-Example: get ID with ADDR_TO_ID\nPROGRAM\nPLC_PRG\nVAR\nID\n:\nDWORD\n:=\nCommFB.Constants.INVALID_ID\n;\nconvertAddr\n:\nCommFB.ADDR_TO_ID\n;\naddr\n:\nCommFB.ADDR_TYPE\n;\nerrorCode\n:\nUDINT\n;\nEND_VAR\naddr.SYSTEM\n:=\nCommFB.IO_SYSTEM_TYPE.PROFINET_IO\n;\naddr.PN.MASTER\n:=\nPN_Controller.MasterID\n;\naddr.PN.D.STATIONNAME\n:=\n'wago1'\n;\n//addr.PN.D.INSTANCE := ?;      Instance Nr - not relevant for ADDR_TO_ID()\n//addr.PN.D.DEVICE := ?;        Device-ID   - not relevant for ADDR_TO_ID()\n//addr.PN.D.VENDOR := ?;        Vendor-ID   - not relevant for ADDR_TO_ID()\naddr.PN.API\n:=\n0\n;\naddr.PN.SLOT\n:=\n2\n;\naddr.PN.SUBSLOT\n:=\n1\n;\nconvertAddr\n(\nEN\n:=\nTRUE\n,\nADDR\n:=\naddr\n);\nIF\n(\nconvertAddr.ENO\n)\nTHEN\nID\n:=\nconvertAddr.ID\n;\n// --> use this ID in RDREC, WRREC etc.\nELSE\nerrorCode\n:=\nconvertAddr.STATUS\n;\n//failed !\nEND_IF\nInOut:\nScope\nName\nType\nInitial\nComment\nInput\nEN\nBOOL\nTRUE\nEnable\nInout\nADDR\nADDR_TYPE\nData structure to define the address of a slot of a PROFIBUS\nDP-slave or a subslot of a PROFINET IO Device\nOutput\nENO\nBOOL\nFlag\nSTATUS\nDWORD\nLast detected status\nID\nDWORD\nHandle",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "EN",
+          "Type": "BOOL",
+          "Initial": "TRUE",
+          "Comment": "Enable"
+        },
+        {
+          "Scope": "Inout",
+          "Name": "ADDR",
+          "Type": "ADDR_TYPE",
+          "Initial": "",
+          "Comment": "Data structure to define the address of a slot of a PROFIBUS\nDP-slave or a subslot of a PROFINET IO Device"
+        },
+        {
+          "Scope": "Output",
+          "Name": "ENO",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Flag"
+        },
+        [
+          "STATUS",
+          "DWORD",
+          "",
+          "Last detected status"
+        ],
+        [
+          "ID",
+          "DWORD",
+          "",
+          "Handle"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "library": "SM3_CNC",
+  "title": "WordQueueFull (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/GSentence/pou-SMC_GSentenceQueue/WordQueueFull.html",
+  "page_title": "SMC_GSentenceQueue.WordQueueFull (METH)",
+  "text": "\nMETHOD WordQueueFull : BOOL\nReturns whether the word queue is full.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "WordQueueFull",
+          "Type": "BOOL"
+        }
+      ]
+    }
+  ]
+}

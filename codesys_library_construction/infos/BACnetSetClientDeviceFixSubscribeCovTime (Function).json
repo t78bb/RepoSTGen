@@ -1,0 +1,36 @@
+{
+  "library": "CmpBACnet",
+  "title": "BACnetSetClientDeviceFixSubscribeCovTime (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/CmpBACnet/Current/BACnetClientAPI/advanced/BACnetSetClientDeviceFixSubscribeCovTime.html",
+  "page_title": "BACnetSetClientDeviceFixSubscribeCovTime (FUN)",
+  "text": "\nFUNCTION BACnetSetClientDeviceFixSubscribeCovTime :\nIEC_BACNET_STATUS\nFunction sets or deletes an fix daily timepoint for sending resubscribes instead of using an configured intervall.\nThis Function sets or deletes an fix daily timepoint for sending resubscribes instead of using an\nconfigured intervall. Main use of this function is to be able to separate resubscribe attempts\nfor devices so that the will not be sent at the same time as this would happen if using the same\nintervall for many registered objects in different devices which could put heavy traffinc on the\nnetwork.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "BACnetSetClientDeviceFixSubscribeCovTime",
+          "Type": "IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "devId",
+          "Type": "IEC_BACNET_INST_NUMBER",
+          "Comment": "The device instance number for which an fixed timepoint for\nsending COV/COVP resubscribe requests shall be set or\ndeleted."
+        },
+        [
+          "pSubscribeTime",
+          "POINTER TOIEC_BACNET_TIME",
+          "A pointer to an BACnet time structure containing the timepoint for fixed sending of the\nCOV/COVP resubscribe requests. A NULL pointer removes the fix timepoint and reverts using\ngiven intervalls configured with functionBACnetRegisterClientDataPoint."
+        ]
+      ]
+    }
+  ]
+}

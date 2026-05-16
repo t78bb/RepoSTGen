@@ -1,0 +1,59 @@
+{
+  "library": "String Segments",
+  "title": "CreateStringPool (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Segments/Current/Strings/Functions/CreateStringPool.html",
+  "page_title": "CreateStringPool (FUN)",
+  "text": "\nFUNCTION CreateStringPool :\nIStringPool\nCreates a pool for\nIString\ninstances in the specified memory space\nThe size of the strings is specified via\nudiStringSize\nExample for a\n_StringPool\ninstance\nwith\na\ncapacity\nof\n10\n``IString\ninstances with a size of minimal 80 bytes each:\naxwMemory\n:\nARRAY\n[0..209]\nOF\n__XWORD\n;\nfbStringPool\n:\nSTR._StringPool\n:=\n(\nudiStringSize\n:=\n80\n,\npbyPool\n:=\nADR\n(\naxwMemory\n),\nudiPoolSize\n:=\nSIZEOF\n(\naxwMemory\n));\nstPoolConfig\n:\nSTR.CONFIG\n:=\nfbStringPool.GetPoolConfig\n();\n// -> udiStringSize = 87 | udiCapacity = 10\nPlease take a look to the function blocks in the Library âGeneric String Baseâ\nYou can use the\nGSB.StringPool\nfunction block, which performs this task in a much more convenient way\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "CreateStringPool",
+          "Type": "IStringPool",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "udiStringSize",
+          "Type": "UDINT",
+          "Initial": "",
+          "Comment": ""
+        },
+        [
+          "pbyPool",
+          "POINTER TO BYTE",
+          "",
+          "Pointer to the first byte of the memory.This address should aligned to a__XWORDboundary!"
+        ],
+        [
+          "udiPoolSize",
+          "UDINT",
+          "",
+          "Size of the allocated memory for the range.This size must not be smaller thanSIZEOF(STR._StringPool), because it includes an instance of_StringPool(FB)"
+        ],
+        [
+          "usiExtensionFactor",
+          "USINT",
+          "0",
+          "Optional extension factor of theIStringPoolinstance"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "eErrorID",
+          "Type": "ERROR",
+          "Initial": "",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

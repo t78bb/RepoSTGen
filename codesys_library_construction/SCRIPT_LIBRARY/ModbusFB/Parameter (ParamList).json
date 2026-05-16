@@ -1,0 +1,27 @@
+{
+  "library": "ModbusFB",
+  "title": "Parameter (ParamList)",
+  "url": "https://content.helpme-codesys.com/en/libs/ModbusFB/Current/ModbusFB/GlobalConstants/Parameter.html",
+  "page_title": "Parameter (PARAMS)",
+  "text": "\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Constant",
+          "Name": "MAX_NUM_COMPORTS",
+          "Type": "UINT",
+          "Initial": "10",
+          "Comment": "Maximum number of COM ports"
+        }
+      ]
+    }
+  ]
+}

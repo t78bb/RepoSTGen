@@ -1,0 +1,91 @@
+{
+  "library": "CmpBACnet",
+  "title": "BACnetRegisterClientDataPoint (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/CmpBACnet/Current/BACnetClientAPI/advanced/BACnetRegisterClientDataPoint.html",
+  "page_title": "BACnetRegisterClientDataPoint (FUN)",
+  "text": "Deutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nMenu\nSearch\nDeutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nBACnetAsyncTransactionToken (Struct)\nBACnetClientAPI\nBACnetAcknowledgeAlarm (Function)\nBACnetAddListElement (Function)\nBACnetCancelPendingConfirmedRequest (Function)\nBACnetConfPrivateTransfer (Function)\nBACnetConfTextMessage (Function)\nBACnetCreateObject (Function)\nBACnetCreateObjectResult (Struct)\nBACnetDeleteObject (Function)\nBACnetDeviceCommControl (Function)\nBACnetGetAlarmSummary (Function)\nBACnetGetEnrollmentSummary (Function)\nBACnetGetEventInfo (Function)\nBACnetLifeSafetyOperation (Function)\nBACnetReadAllPropertyDataContents (Function)\nBACnetReadFile (Function)\nBACnetReadProperty (Function)\nBACnetReadPropertyMultiple (Function)\nBACnetReadRange (Function)\nBACnetReinitializeDevice (Function)\nBACnetRemoveListElement (Function)\nBACnetSubscribeCOV (Function)\nBACnetSubscribeCOVProperty (Function)\nBACnetUnconfPrivateTransfer (Function)\nBACnetUnconfTextMessage (Function)\nBACnetWhoHas (Function)\nBACnetWhoIs (Function)\nBACnetWriteFile (Function)\nBACnetWriteGroup (Function)\nBACnetWriteProperty (Function)\nBACnetWritePropertyMultiple (Function)\nadvanced\nBACnetBackupBACnetDevice (Function)\nBACnetCloseClientCustomer (Function)\nBACnetGetClientDeviceCommunication (Function)\nBACnetOpenClientCustomer (Function)\nBACnetRegisterClientCommunicationStateCallback (Function)\nBACnetRegisterClientDataPoint (Function)\nBACnetRegisterClientEventNotification (Function)\nBACnetRegisterClientUnsubscribeCompletionCallback (Function)\nBACnetRestartAllClients (Function)\nBACnetRestoreBACnetDevice (Function)\nBACnetSetClientDeviceCommunication (Function)\nBACnetSetClientDeviceFixAddress (Function)\nBACnetSetClientDeviceFixSubscribeCovTime (Function)\nBACnetSetClientGlobalCommTimingParameters (Function)\nBACnetSetClientGlobalMaxDeviceActions (Function)\nBACnetUnregisterClientDataPoint (Function)\nBACnetUnregisterClientEventNotification (Function)\nFile and Project Information\nLibrary Reference\n3SLicense\nLibrary Identification\nLibrary Properties\nCAA Ressource Manager Extern\nLibrary Identification\nLibrary Properties\nCAA Types Extern\nLibrary Identification\nLibrary Properties\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nCmpEventMgr\nLibrary Identification\nLibrary Properties\nCmpLog\nLibrary Identification\nLibrary Properties\nCmpSettings\nLibrary Identification\nLibrary Properties\nComponent Manager\nLibrary Identification\nLibrary Properties\nIoStandard\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysTarget\nLibrary Identification\nLibrary Properties\nSysTask\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nCmpBACnet\nDocs\n»\nBACnetClientAPI\n»\nadvanced\n»\nBACnetRegisterClientDataPoint (FUN)\nBACnetRegisterClientDataPoint (FUN)\nÂ¶\nFUNCTION BACnetRegisterClientDataPoint :\nIEC_BACNET_STATUS\nRegisters an device object property reference for data acquisation.\nThis is the main function of the advanced BACnet client API. A user application can\nregister device object property references to local and remote BACnet devices to\nget their property values on an easy way. This function will do most of the work,\nnormally a client application has to manage, just in one call. It checks periodical\nfor the presence and online state for devices and checks for integrity of the values\nNote 1: Local devices OR objects are those which have been created BY calls TO\n|BACnetConstructDevice|\nand\nBACnetConstructObject\nand are objects in the\nstack APIâs own object database.\nNote 2: If different customer register for the same reference but with different modes\nthe following rules apply here: If one customer wants to subscribe the\nother polls the subscriber winns. If both want polling the shorter interval\nwinns. If one customer wants clock aligned polling and the other subscribes\nit will be done both: subscribed AND polled clock aligned.\nInOut:\nScope\nName\nType\nComment\nReturn\nBACnetRegisterClientDataPoint\nIEC_BACNET_STATUS\nInput\nhCustomer\nIEC_BACNET_HANDLE\nAn handle to an created advanced BACnet client customer created by\nBACnetOpenClientCustomer\n.\ndevId\nIEC_BACNET_INST_NUMBER\nThe device instance number from the remote or local device from which the value shall\nbe acquired.\npObjId\nPOINTER TO\nIEC_BACNET_OBJECT_ID\nA pointer to the object identifier from the remote or local object from which the\nvalue shall be acquired.\npropId\nIEC_BACNET_PROPERTY_ID\nThe property identifier from which the value shall be\nacquired.\nindex\nIEC_BACNET_ARRAY_INDEX\nThe property array index from which the value shall be acquired. If the property is\nnot an array the value shall be ::BACNET_VOID_INDEX. If the property is an array\nand the whole array should be acquired the value ::BACNET_ENTIRE_ARRAY shall be\nused here.\nbSubscribe\nIEC_BACNET_BOOLEAN\nIf set to True the value acquisation will be done by subscribing for the change\nof value service if the device supports this service. If the device doesnât support\nthis service and parameter bPoll is set to False the user application will\nget notified with an error in the BACNET_CLIENT_VALUE_CB callback.\nresubscribe\nIEC_BACNET_UNSIGNED\nThe resubscribe time in seconds after that the subscrition to the change of value\nservice will be renewed. For more information look at the ::BACNET_SUBSCRIBE_COV_INFO.\nbPoll\nIEC_BACNET_BOOLEAN\nIf set to True the value acquisation will be done by periodical reading the property\nvalue from the device. If both parameters bSubscribe AND bPoll are set to True the\nsubscrition will be prefered. But if the device doesnât support subscriptions it\nwill be polled as a fallback. If multiple references from the same device need to\nbe polled in the same interval and the device supports the ReadPropertyMultiple\nservice, this service will be used to acquire the values.\npollinterval\nIEC_BACNET_UNSIGNED\nThe poll interval defined in seconds in which periodically the value is read from\nthe device. If the nSubscribeMode parameter is set to ::BACNET_SUBSCRIBE_POLL_CLOCKALIGNED\nthe smallest interval will be 60 seconds.\npollClockAlignedIntervalOffset\nIEC_BACNET_UNSIGNED\nThe offset which is added to the clock aligned interval at which the acquisation\nwill take place. Example: A value is needed 10 minutes after every full hour so\npollinterval will be set to 3600 seconds and pollClockAlignedIntervalOffset will\nbe set to 600 seconds.\nnSubscribeMode\nIEC_BACNET_CLIENT_SUBSCRIBE_MODE\nThis defines how the data is acquired.\npICallback\nCmpEventMgr.ICmpEventCallback\nA pointer to the event-callback interface which gets called\non value notification.\npUserArg\nPOINTER TO BYTE\nA pointer to data from the user application which is transparent for the API.\nThis pointer will not be modified by the BACnet API. This pointer and the pUserFct\npointer is associated with the given device instance, object identifier, property\nidentifier and property array index group. So for every different combination of\nthose parameters these pointers are stored. This pointer may be NULL.\ntop\nCODESYS Group | We\nsoftware\nAutomation.\nto software\n['sɒftwɛər]\ntransitive verb\n__softwared/softwaring\n: to develop software\n// to software automation: to develop software for automation purposes\nThe CODESYS Group is the manufacturer of CODESYS, the leading hardware-independent\n                                    IEC 61131-3 automation software for developing and engineering controller\n                                    applications.\nCODESYS® is a registered trademark.\nCODESYS GmbH\nA member of the CODESYS Group\nMemminger Straße 151, 87439 Kempten\nGermany\nTel.:\n+49-831-54031-0\ninfo@codesys.com\nLegal Notice\nPrivacy Policy\nLinkedIn\nYoutube\nRSS\nDownloads\nLogin\nCODESYS Store\n© 2022 CODESYS GmbH\n| A member of the CODESYS Group",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "BACnetRegisterClientDataPoint",
+          "Type": "IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "hCustomer",
+          "Type": "IEC_BACNET_HANDLE",
+          "Comment": "An handle to an created advanced BACnet client customer created byBACnetOpenClientCustomer."
+        },
+        [
+          "devId",
+          "IEC_BACNET_INST_NUMBER",
+          "The device instance number from the remote or local device from which the value shall\nbe acquired."
+        ],
+        [
+          "pObjId",
+          "POINTER TOIEC_BACNET_OBJECT_ID",
+          "A pointer to the object identifier from the remote or local object from which the\nvalue shall be acquired."
+        ],
+        [
+          "propId",
+          "IEC_BACNET_PROPERTY_ID",
+          "The property identifier from which the value shall be\nacquired."
+        ],
+        [
+          "index",
+          "IEC_BACNET_ARRAY_INDEX",
+          "The property array index from which the value shall be acquired. If the property is\nnot an array the value shall be ::BACNET_VOID_INDEX. If the property is an array\nand the whole array should be acquired the value ::BACNET_ENTIRE_ARRAY shall be\nused here."
+        ],
+        [
+          "bSubscribe",
+          "IEC_BACNET_BOOLEAN",
+          "If set to True the value acquisation will be done by subscribing for the change\nof value service if the device supports this service. If the device doesnât support\nthis service and parameter bPoll is set to False the user application will\nget notified with an error in the BACNET_CLIENT_VALUE_CB callback."
+        ],
+        [
+          "resubscribe",
+          "IEC_BACNET_UNSIGNED",
+          "The resubscribe time in seconds after that the subscrition to the change of value\nservice will be renewed. For more information look at the ::BACNET_SUBSCRIBE_COV_INFO."
+        ],
+        [
+          "bPoll",
+          "IEC_BACNET_BOOLEAN",
+          "If set to True the value acquisation will be done by periodical reading the property\nvalue from the device. If both parameters bSubscribe AND bPoll are set to True the\nsubscrition will be prefered. But if the device doesnât support subscriptions it\nwill be polled as a fallback. If multiple references from the same device need to\nbe polled in the same interval and the device supports the ReadPropertyMultiple\nservice, this service will be used to acquire the values."
+        ],
+        [
+          "pollinterval",
+          "IEC_BACNET_UNSIGNED",
+          "The poll interval defined in seconds in which periodically the value is read from\nthe device. If the nSubscribeMode parameter is set to ::BACNET_SUBSCRIBE_POLL_CLOCKALIGNED\nthe smallest interval will be 60 seconds."
+        ],
+        [
+          "pollClockAlignedIntervalOffset",
+          "IEC_BACNET_UNSIGNED",
+          "The offset which is added to the clock aligned interval at which the acquisation\nwill take place. Example: A value is needed 10 minutes after every full hour so\npollinterval will be set to 3600 seconds and pollClockAlignedIntervalOffset will\nbe set to 600 seconds."
+        ],
+        [
+          "nSubscribeMode",
+          "IEC_BACNET_CLIENT_SUBSCRIBE_MODE",
+          "This defines how the data is acquired."
+        ],
+        [
+          "pICallback",
+          "CmpEventMgr.ICmpEventCallback",
+          "A pointer to the event-callback interface which gets called\non value notification."
+        ],
+        [
+          "pUserArg",
+          "POINTER TO BYTE",
+          "A pointer to data from the user application which is transparent for the API.\nThis pointer will not be modified by the BACnet API. This pointer and the pUserFct\npointer is associated with the given device instance, object identifier, property\nidentifier and property array index group. So for every different combination of\nthose parameters these pointers are stored. This pointer may be NULL."
+        ]
+      ]
+    }
+  ]
+}

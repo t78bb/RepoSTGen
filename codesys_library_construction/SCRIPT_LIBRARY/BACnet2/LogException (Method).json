@@ -1,0 +1,23 @@
+{
+  "library": "BACnet2",
+  "title": "LogException (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/BACnetServerPlugin/pou-BACnetServerPluginBase/Logging/LogException.html",
+  "page_title": "BACnetServerPluginBase.LogException (METH)",
+  "text": "\nMETHOD LogException\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "str",
+          "Type": "LoggerString"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "library": "SM3_Basic",
+  "title": "MC_Jog (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/Movement/MC_Jog.html",
+  "page_title": "MC_Jog (FB)",
+  "text": "\nFUNCTION_BLOCK MC_Jog\nMC_Jog\ncauses a continuous motion on the axis.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3",
+          "Initial": "",
+          "Comment": "Reference to axis"
+        },
+        {
+          "Scope": "Input",
+          "Name": "JogForward",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUE: Axis is moved with the specified dynamic valuesVelocity,Acceleration,DecelerationandJerkin a positive direction.No motion is executed ifJogBackwardisTRUEat the same time."
+        },
+        [
+          "JogBackward",
+          "BOOL",
+          "",
+          "TRUE: Axis is moved with the specified dynamic valuesVelocity,Acceleration,DecelerationandJerkin a negative direction.No motion is executed ifJogForwardisTRUEat the same time."
+        ],
+        [
+          "Velocity",
+          "LREAL",
+          "",
+          "Velocity in [u/s]"
+        ],
+        [
+          "Acceleration",
+          "LREAL",
+          "",
+          "Acceleration in [u/sÂ²]"
+        ],
+        [
+          "Deceleration",
+          "LREAL",
+          "",
+          "Deceleration in [u/sÂ²]"
+        ],
+        [
+          "Jerk",
+          "LREAL",
+          "",
+          "Jerk in [u/sÂ³]"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Busy",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "TRUE: Function block is in operation during an active motion afterJogForwardorJogBackwardhas been set.FALSE: Axis has been decelerated to velocity value zero afterJogForwardorJogBackwardhas been set toFALSE."
+        },
+        [
+          "CommandAborted",
+          "BOOL",
+          "FALSE",
+          "TRUE: Execution is interrupted by another function block instance operating onAxis.CommandAbortedremains set as long asJogForwardorJogBackwardhas been set but for at least one cycle`."
+        ],
+        [
+          "Error",
+          "BOOL",
+          "",
+          "TRUE: Error has occurred whileJogForwardorJogBackwardhas been set for at least one cycle."
+        ],
+        [
+          "ErrorId",
+          "SMC_Error",
+          "",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

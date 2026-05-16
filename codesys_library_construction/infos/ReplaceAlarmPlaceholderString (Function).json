@@ -1,0 +1,41 @@
+{
+  "library": "AC_Alarming",
+  "title": "ReplaceAlarmPlaceholderString (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_Alarming/Current/Functions/ReplaceAlarmPlaceholderString.html",
+  "page_title": "ReplaceAlarmPlaceholderString (FUN)",
+  "text": "\nFUNCTION ReplaceAlarmPlaceholderString : STRING\nThis function can be used to replace placeholders in a message (i.e.\nlatch variables as âLATCHVAR1â or âLATCHVAR2â) by some strings. This function\ncan be used to get the resulting alarm message for display when getting a module call\nafter an alarm was issued.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "ReplaceAlarmPlaceholderString",
+          "Type": "STRING",
+          "Comment": "The replaced string."
+        },
+        {
+          "Scope": "Input",
+          "Name": "strMessage",
+          "Type": "STRING",
+          "Comment": "Message which has a placeholder to be replaced"
+        },
+        [
+          "strPlaceholder",
+          "STRING",
+          "The placeholder"
+        ],
+        [
+          "strReplacement",
+          "STRING",
+          "The string the placeholder shall be replaced with"
+        ]
+      ]
+    }
+  ]
+}

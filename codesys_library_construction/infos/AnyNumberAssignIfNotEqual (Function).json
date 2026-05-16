@@ -1,0 +1,43 @@
+{
+  "library": "DNP3",
+  "title": "AnyNumberAssignIfNotEqual (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Functions/AnyNumber/AnyNumberAssignIfNotEqual.html",
+  "page_title": "AnyNumberAssignIfNotEqual (FUN)",
+  "text": "\nFUNCTION AnyNumberAssignIfNotEqual :\nError\nAssign AnyNumber from source to dest if dest is not equal to source.\nThis assignment does not convert (base) type - so dest.baseType needs to be equal to source.baseType.\nIn case dest.baseType is default (AnyNumberType.TYPE_NONE) the dest.baseType will be set to source.baseType.\nIn case dest.isPtr = TRUE, the according POINTER (TO data - AnyNumber.u.p.p*) needs to be set prior to AnyNumberAssign().\nReturns Error.AnyNumberError if source or dest are not consistent.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "AnyNumberAssignIfNotEqual",
+          "Type": "Error",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "source",
+          "Type": "REFERENCE TOAnyNumber",
+          "Comment": ""
+        },
+        {
+          "Scope": "Inout",
+          "Name": "dest",
+          "Type": "AnyNumber",
+          "Comment": ""
+        },
+        {
+          "Scope": "Output",
+          "Name": "destChanged",
+          "Type": "BOOL",
+          "Comment": "Set to TRUE if source was not equal to dest and dest had\nbeen updated, FALSE otherwise."
+        }
+      ]
+    }
+  ]
+}

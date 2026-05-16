@@ -1,0 +1,173 @@
+{
+  "library": "SML_Basic",
+  "title": "SML_ERROR (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SML_Basic/Current/Base/SML_ERROR.html",
+  "page_title": "SML_ERROR (ENUM)",
+  "text": "\nTYPE SML_ERROR :\nThe possible results of SML operations\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Name": "SML_NO_ERROR",
+          "Initial": "0"
+        },
+        {
+          "Name": "SML_DI_GENERAL_COMMUNICATION_ERROR",
+          "Initial": "1"
+        },
+        {
+          "Name": "SML_DI_AXIS_ERROR",
+          "Initial": "2"
+        },
+        {
+          "Name": "SML_WRONG_OPMODE",
+          "Initial": "21"
+        },
+        {
+          "Name": "SML_AXIS_NOT_READY_FOR_MOTION",
+          "Initial": "34"
+        },
+        {
+          "Name": "SML_MA_MR_MODULO_ACT_POS_NOT_MAPPED",
+          "Initial": "35"
+        },
+        {
+          "Name": "SML_MV_INVALID_VELACCDEC_VALUES",
+          "Initial": "36"
+        },
+        {
+          "Name": "SML_RAG_ERROR_DURING_STARTUP",
+          "Initial": "80"
+        },
+        {
+          "Name": "SML_RAG_ERROR_WRITING_COMSTATE",
+          "Initial": "81"
+        },
+        {
+          "Name": "SML_RAG_ERROR_READING_COMSTATE",
+          "Initial": "82"
+        },
+        {
+          "Name": "SML_CGR_ZERO_VALUES",
+          "Initial": "90"
+        },
+        {
+          "Name": "SML_CGR_AXIS_POWERED",
+          "Initial": "91"
+        },
+        {
+          "Name": "SML_CGR_MODULOPERIOD_NOT_INTEGRAL",
+          "Initial": "93"
+        },
+        {
+          "Name": "SML_CGR_MOVEMENTTYPE_INVALID",
+          "Initial": "94"
+        },
+        {
+          "Name": "SML_CGR_MODULOPERIOD_NON_POSITIVE",
+          "Initial": "95"
+        },
+        {
+          "Name": "SML_CGR_MODULOPERIOD_TOO_SMALL",
+          "Initial": "96"
+        },
+        {
+          "Name": "SML_CGR_MODULOPERIOD_TOO_LARGE",
+          "Initial": "97"
+        },
+        {
+          "Name": "SML_R_NO_ERROR_TO_RESET",
+          "Initial": "120"
+        },
+        {
+          "Name": "SML_R_DRIVE_DOESNT_ANSWER",
+          "Initial": "121"
+        },
+        {
+          "Name": "SML_R_ERROR_NOT_RESETTABLE",
+          "Initial": "122"
+        },
+        {
+          "Name": "SML_R_DRIVE_DOESNT_ANSWER_IN_TIME",
+          "Initial": "123"
+        },
+        {
+          "Name": "SML_RP_PARAM_UNKNOWN",
+          "Initial": "130"
+        },
+        {
+          "Name": "SML_RP_REQUESTING_ERROR",
+          "Initial": "131"
+        },
+        {
+          "Name": "SML_RP_RCV_PARAM_CONVERSION_ERROR",
+          "Initial": "132"
+        },
+        {
+          "Name": "SML_RP_LOCAL_PARAM_NOT_DONE_IMMEDIATELY",
+          "Initial": "133"
+        },
+        {
+          "Name": "SML_RP_CANNOT_SEND_MSG",
+          "Initial": "134"
+        },
+        {
+          "Name": "SML_WP_PARAM_INVALID",
+          "Initial": "140"
+        },
+        {
+          "Name": "SML_WP_SENDING_ERROR",
+          "Initial": "141"
+        },
+        {
+          "Name": "SML_WP_TMT_PARAM_CONVERSION_ERROR",
+          "Initial": "142"
+        },
+        {
+          "Name": "SML_WP_LOCAL_PARAM_NOT_DONE_IMMEDIATELY",
+          "Initial": "143"
+        },
+        {
+          "Name": "SML_WP_CANNOT_SEND_MSG",
+          "Initial": "144"
+        },
+        {
+          "Name": "SML_H_AXIS_WASNT_STANDSTILL",
+          "Initial": "170"
+        },
+        {
+          "Name": "SML_MS_AXIS_IN_ERRORSTOP",
+          "Initial": "183"
+        },
+        {
+          "Name": "SML_TIMEOUT_CHANGING_OPMODE",
+          "Initial": "10000"
+        },
+        {
+          "Name": "SML_INTERNAL_UNKNOWN_CMD",
+          "Initial": "10001"
+        },
+        {
+          "Name": "SML_CANNOT_START_MOVEMENT",
+          "Initial": "10003"
+        },
+        {
+          "Name": "SML_CANNOT_START_HOMING",
+          "Initial": "10004"
+        },
+        {
+          "Name": "SML_STOP_ALREADY_ACTIVE",
+          "Initial": "10005"
+        },
+        {
+          "Name": "SML_POWER_ALREADY_ACTIVE",
+          "Initial": "10006"
+        }
+      ]
+    }
+  ]
+}

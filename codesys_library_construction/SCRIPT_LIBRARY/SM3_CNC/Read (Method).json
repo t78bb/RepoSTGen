@@ -1,0 +1,36 @@
+{
+  "library": "SM3_CNC",
+  "title": "Read (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/File/ReadNCFile/Stream/pou-SMC_ITextStream/Read.html",
+  "page_title": "SMC_ITextStream.Read (METH)",
+  "text": "\nMETHOD Read : __XWORD\nReads at most\nnBufSize\nASCII characters from the stream into\npDst\n.\nIf an error occurs, 0 is returned, otherwise the number of characters read.\nNote\nThe number of characters read may be less than\nnBufSize\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "Read",
+          "Type": "__XWORD",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "pDst",
+          "Type": "POINTER TO BYTE",
+          "Comment": "The destination buffer, needs at least space fornBufSizecharacters"
+        },
+        [
+          "nBufSize",
+          "__XWORD",
+          "The size of the destination buffer in bytes"
+        ]
+      ]
+    }
+  ]
+}

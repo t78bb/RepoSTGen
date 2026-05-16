@@ -1,0 +1,34 @@
+{
+  "library": "DNP3",
+  "title": "SetSessionConfigAspectRespondNeedTime (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Outstation/pou-OutstationConfiguration/SetSessionConfigAspectRespondNeedTime.html",
+  "page_title": "OutstationConfiguration.SetSessionConfigAspectRespondNeedTime (METH)",
+  "text": "\nMETHOD SetSessionConfigAspectRespondNeedTime :\nError\nSet optional outstation session configuration aspect - respond need-time.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetSessionConfigAspectRespondNeedTime",
+          "Type": "Error",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "respondNeedTime",
+          "Type": "BOOL",
+          "Initial": "TRUE",
+          "Comment": "Specifies whether this device will set the Need Time IIN bit\nin response to this session at startup and after the clock valid\nperiod has elapsed. If this bit is set the master will respond\nwith a time synchronization request. Typically this parameter\nshould be true for one session for each Outstation device. Set this\nparameter to FALSE if report by exception is not supported\nor there is no reason this device needs to be synchronized from\nthe master."
+        }
+      ]
+    }
+  ]
+}

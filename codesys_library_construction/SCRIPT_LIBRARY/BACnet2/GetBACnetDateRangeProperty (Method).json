@@ -1,0 +1,31 @@
+{
+  "library": "BACnet2",
+  "title": "GetBACnetDateRangeProperty (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/BACnetObjects/base/pou-BACnetObjectBase/Utilities/typed-property-access/GetBACnetDateRangeProperty.html",
+  "page_title": "BACnetObjectBase.GetBACnetDateRangeProperty (METH)",
+  "text": "\nMETHOD GetBACnetDateRangeProperty :\nBACnetDateRange\nReturns the BACnet-DateRange-Value OF the specified PROPERTY (propID) OF THIS BACnet-Object as a BACnetDateRange STRUCT.\nThe used functions are no client, meaning, that the access of the property is not restricted by write or read access restrictions.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetBACnetDateRangeProperty",
+          "Type": "BACnetDateRange",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "propID",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_ID",
+          "Comment": "The ID of the property to get."
+        }
+      ]
+    }
+  ]
+}

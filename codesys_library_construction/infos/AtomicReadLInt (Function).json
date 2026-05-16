@@ -1,0 +1,28 @@
+{
+  "library": "Standard64",
+  "title": "AtomicReadLInt (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/Standard64/Current/Atomic-Read-Write-Functions/AtomicReadLInt.html",
+  "page_title": "AtomicReadLInt (FUN)",
+  "text": "\nFUNCTION AtomicReadLInt : LINT\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "AtomicReadLInt",
+          "Type": "LINT"
+        },
+        {
+          "Scope": "Input",
+          "Name": "pSrc",
+          "Type": "POINTER TO LINT"
+        }
+      ]
+    }
+  ]
+}

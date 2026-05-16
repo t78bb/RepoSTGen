@@ -1,0 +1,47 @@
+{
+  "library": "String Builder Base",
+  "title": "WriteMemSegment (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Builder Base/Current/BuilderBase/Interfaces/pou-IBuilder/WriteMemSegment.html",
+  "page_title": "IBuilder.WriteMemSegment (METH)",
+  "text": "\nMETHOD WriteMemSegment : UDINT\nAppends the contents of\npbyMemory\nto the buffer.\nIt returns the number of bytes written.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "WriteMemSegment",
+          "Type": "UDINT",
+          "Initial": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "pbyMemory",
+          "Type": "POINTER TO BYTE",
+          "Initial": ""
+        },
+        [
+          "udiSize",
+          "UDINT",
+          ""
+        ],
+        [
+          "eEncoding",
+          "ENCODING",
+          "ENCODING.UTF8"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "eErrorID",
+          "Type": "ERROR",
+          "Initial": ""
+        }
+      ]
+    }
+  ]
+}

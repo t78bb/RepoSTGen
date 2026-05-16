@@ -1,0 +1,28 @@
+{
+  "library": "DNP3",
+  "title": "GetCurrentDateTime (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Functions/GetCurrentDateTime.html",
+  "page_title": "GetCurrentDateTime (FUN)",
+  "text": "\nFUNCTION GetCurrentDateTime :\nError\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetCurrentDateTime",
+          "Type": "Error"
+        },
+        {
+          "Scope": "Input",
+          "Name": "tmwDateTime",
+          "Type": "REFERENCE TO CmpDNP3.IEC_TMWDTIME"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "library": "BACnet2",
+  "title": "GetBACnetArraySizeOfProperty (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/BACnetObjects/base/pou-BACnetObjectBase/Utilities/typed-property-access/GetBACnetArraySizeOfProperty.html",
+  "page_title": "BACnetObjectBase.GetBACnetArraySizeOfProperty (METH)",
+  "text": "\nMETHOD GetBACnetArraySizeOfProperty : CmpBACnet.IEC_BACNET_STATUS\nReturns the number of elements in a BACnetARRAY property.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetBACnetArraySizeOfProperty",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "ePropertyID",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_ID",
+          "Comment": "The ID of the property to get the array size from."
+        },
+        {
+          "Scope": "Output",
+          "Name": "arraySize",
+          "Type": "CmpBACnet.IEC_BACNET_ELEMENT_COUNT",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

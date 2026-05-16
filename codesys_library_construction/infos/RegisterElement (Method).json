@@ -1,0 +1,28 @@
+{
+  "library": "SM3_CNC",
+  "title": "RegisterElement (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/SoftMotion-Function-Blocks/DecoderBuffer/pou-SMC_MonotoneSentenceHistory/RegisterElement.html",
+  "page_title": "SMC_MonotoneSentenceHistory.RegisterElement (METH)",
+  "text": "\nMETHOD RegisterElement : SMC_ERROR\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "RegisterElement",
+          "Type": "SMC_ERROR"
+        },
+        {
+          "Scope": "Input",
+          "Name": "udiElement",
+          "Type": "UDINT"
+        }
+      ]
+    }
+  ]
+}

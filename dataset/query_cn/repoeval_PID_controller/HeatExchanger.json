@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现基于热交换器系统的过程值计算，用于模拟系统响应和控制输出的动态行为。",
+  "provide_code": "// AJ Jaworowski 2015-02-22\n// Following the recipe by  Peter Nachtwey\n// http://www.controlguru.com/wp/p80.html\nFUNCTION_BLOCK HeatExchanger\nVAR_INPUT\n\tKp: REAL; //System gain\n\tTp: REAL; //Process time\n\tCO: REAL; //Output from controller\n\tDead_t: REAL; //The time before the system responds to the disturbance\n\tC: REAL; //Initial steady state value\n\tSample_time: TIME;\nEND_VAR\nVAR_OUTPUT\n\tPV: REAL; //Process value at t1\nEND_VAR"
+}

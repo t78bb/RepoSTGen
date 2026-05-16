@@ -1,0 +1,77 @@
+{
+  "library": "SML_Basic",
+  "title": "MC_MoveAbsolute_SML (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SML_Basic/Current/PLCopen/MC_MoveAbsolute_SML.html",
+  "page_title": "MC_MoveAbsolute_SML (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL MC_MoveAbsolute_SML\nCommands a controlled motion to a specified absolute position.\nNote\nThe motion completes with velocity zero.\nFor modulo axes, it is drive dependent which modulo period is selected\nfor the final position.\nThe following figure shows two examples of the combination of two instances\nof\nMC_MoveAbsolute_SML\n:\nThe left part of the timing diagram illustrates the case if the second\nFB is called after the first one. If the first reaches the commanded\nposition of 6000 (and the velocity is 0), then the output\nDone\ncauses the\nsecond FB to move to position 10000.\nThe right part of the timing diagram illustrates the case if the second FB\nstarts the execution while the first FB is still executing. In this case\nthe first motion is interrupted and aborted by the\nTest\nsignal during the\nconstant velocity phase of the first FB. The second FB moves directly to\nposition 10000, although the position of 6000 is not reached yet.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "Axis_REF_SML",
+          "Comment": "Reference to the axis"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Comment": "Rising edge: The motion is started"
+        },
+        [
+          "Position",
+          "LREAL",
+          "Commanded position for the motion (may be negative) (in\ntechnical units [u])"
+        ],
+        [
+          "Velocity",
+          "LREAL",
+          "Value of the maximum velocity (always positive) (not\nnecessarily reached) [u/s]"
+        ],
+        [
+          "Acceleration",
+          "LREAL",
+          "Value of the acceleration (always positive) (increasing\nenergy of the motor) [u/sÂ²]"
+        ],
+        [
+          "Deceleration",
+          "LREAL",
+          "Value of the deceleration (always positive) (decreasing\nenergy of the motor) [u/sÂ²]"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Done",
+          "Type": "BOOL",
+          "Comment": "Commanded position reached"
+        },
+        [
+          "Busy",
+          "BOOL",
+          "The motion is not finished and new output values are to be\nexpected"
+        ],
+        [
+          "CommandAborted",
+          "BOOL",
+          "The motion was interrupted by a motion command acting on the\nsame axis"
+        ],
+        [
+          "Error",
+          "BOOL",
+          "Signals that an error has occured"
+        ],
+        [
+          "ErrorID",
+          "SML_ERROR",
+          "Error number"
+        ]
+      ]
+    }
+  ]
+}

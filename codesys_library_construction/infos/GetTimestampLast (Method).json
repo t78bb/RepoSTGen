@@ -1,0 +1,23 @@
+{
+  "library": "AlarmManager",
+  "title": "GetTimestampLast (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/pou-IAlarm/Access-to-timestamps/GetTimestampLast.html",
+  "page_title": "IAlarm.GetTimestampLast (METH)",
+  "text": "\nMETHOD GetTimestampLast :\nTimestamp\nReturns the timestamp of the last alarm state transition\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetTimestampLast",
+          "Type": "Timestamp"
+        }
+      ]
+    }
+  ]
+}

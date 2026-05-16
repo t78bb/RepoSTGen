@@ -1,0 +1,8 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "ReceiveCounter (Property)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_RMP_ReliableMessageProtocol/AC_RMP_FBCommunication/pou-IRMPFBCommunication/ReceiveCounter.html",
+  "page_title": "IRMPFBCommunication.ReceiveCounter (PROP)",
+  "text": "\nPROPERTY ReceiveCounter : UDINT\nThis property returns the count of received full data sets; as long as no data was received, this\nproperty shall return 0.",
+  "tables": []
+}

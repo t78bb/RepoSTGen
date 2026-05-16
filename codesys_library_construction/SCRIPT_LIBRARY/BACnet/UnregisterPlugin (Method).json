@@ -1,0 +1,28 @@
+{
+  "library": "BACnet",
+  "title": "UnregisterPlugin (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetServer/pou-IBACnetServer/Plugins/UnregisterPlugin.html",
+  "page_title": "IBACnetServer.UnregisterPlugin (METH)",
+  "text": "\nMETHOD UnregisterPlugin : UDINT\nUnregisters a\nIBACnetServerPlugin\nfrom\nBACnetServer\n.\nReturn CmpErrors.Errors.ERR_OK if succesfully unregistered.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "UnregisterPlugin",
+          "Type": "UDINT"
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfPlugin",
+          "Type": "IBACnetServerPlugin"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "library": "AlarmManager",
+  "title": "EAlarmStorageReaderErrors (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Alarm-storage-API/EAlarmStorageReaderErrors.html",
+  "page_title": "EAlarmStorageReaderErrors (ENUM)",
+  "text": "\nTYPE EAlarmStorageReaderErrors :\nThis enumeration defines the errors, that can occur during accessing the alarm\nstorage using the public interface.\nNote: Error codes from 30400 to 30549 represent errors from the underlying\nCAA Storage component. See STO.ERROR\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "NoError",
+          "Initial": "CmpErrors.Errors.ERR_OK",
+          "Comment": "No error"
+        },
+        {
+          "Name": "WrongParameter",
+          "Initial": "CmpErrors.Errors.ERR_PARAMETER",
+          "Comment": "A required parameter is invalid, e.g. NULL is passed, where\nan instance is required"
+        },
+        {
+          "Name": "NoMemory",
+          "Initial": "CmpErrors.Errors.ERR_NOMEMORY",
+          "Comment": "Unable to allocate an internally used buffer resp. unable to\nstore a value"
+        },
+        {
+          "Name": "NoObject",
+          "Initial": "CmpErrors.Errors.ERR_NO_OBJECT",
+          "Comment": "The specified object was not found"
+        },
+        {
+          "Name": "AdditionalReadCallRequired",
+          "Initial": "CmpErrors.Errors.ERR_PENDING",
+          "Comment": "This is not really an error, but the information, that all the data cannot be read\nby a single call and additional method calls are necessary"
+        },
+        {
+          "Name": "InvalidCall",
+          "Initial": "20002",
+          "Comment": "The call to a method is invalid, because this method cannot\nbe called in this context."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "library": "BACnet",
+  "title": "CheckIfFileIsAvailableAtAll (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/File/pou-BACnetFile/CheckIfFileIsAvailableAtAll.html",
+  "page_title": "BACnetFile.CheckIfFileIsAvailableAtAll (METH)",
+  "text": "\nMETHOD CheckIfFileIsAvailableAtAll : BOOL\nReturns if a given file is vailable or not.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "CheckIfFileIsAvailableAtAll",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "fileID",
+          "Type": "DWORD",
+          "Comment": "The file ID for whose file the availability gets checked."
+        }
+      ]
+    }
+  ]
+}

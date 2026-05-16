@@ -1,0 +1,23 @@
+{
+  "library": "String Builder Base",
+  "title": "Reset (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Builder Base/Current/BuilderBase/Function-Blocks/pou-Range/IRange/Reset.html",
+  "page_title": "Range.Reset (METH)",
+  "text": "\nMETHOD FINAL Reset : STR.ERROR\nSet back the original state of this\nIRange\ninstance\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "Reset",
+          "Type": "STR.ERROR"
+        }
+      ]
+    }
+  ]
+}

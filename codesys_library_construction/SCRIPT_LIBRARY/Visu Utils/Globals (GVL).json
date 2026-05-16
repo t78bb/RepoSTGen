@@ -1,0 +1,43 @@
+{
+  "library": "Visu Utils",
+  "title": "Globals (GVL)",
+  "url": "https://content.helpme-codesys.com/en/libs/Visu Utils/Current/VisuUtils/VisuActionUtilities/GlobalVariables/Globals.html",
+  "page_title": "Globals (GVL)",
+  "text": "\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "AllClients",
+          "Type": "FBAcceptsAllClients",
+          "Comment": "Function block to do action on all clients"
+        },
+        {
+          "Name": "CurrentClient",
+          "Type": "FBAcceptsCurrentClient",
+          "Comment": "Function block to do action on current client. Can only be\nused, when action is called out of the visualization."
+        },
+        {
+          "Name": "OnlyTargetVisu",
+          "Type": "FBAcceptsTargetVisuOnly",
+          "Comment": "Function block to do action on target visu."
+        },
+        {
+          "Name": "OnlyRemoteTargetVisu",
+          "Type": "FBAcceptsRemoteTargetVisuOnly",
+          "Comment": "Function block to do action on remote target visu."
+        },
+        {
+          "Name": "OnlyWebVisu",
+          "Type": "FBAcceptsWebVisuOnly",
+          "Comment": "Function block to do action on remote target visu."
+        }
+      ]
+    }
+  ]
+}

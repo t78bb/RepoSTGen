@@ -1,0 +1,23 @@
+{
+  "library": "ModbusFB",
+  "title": "CheckDataModel (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/ModbusFB/Current/ModbusFB/Function-Blocks/Server/pou-Server/DataModel/CheckDataModel.html",
+  "page_title": "Server.CheckDataModel (METH)",
+  "text": "\nMETHOD CheckDataModel : UDINT\nChecks the âdata modelâ for errors / consistency problems, returns the number of errors in the âdata modelâ, 0 if no errors.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "CheckDataModel",
+          "Type": "UDINT"
+        }
+      ]
+    }
+  ]
+}

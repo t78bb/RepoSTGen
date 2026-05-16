@@ -1,0 +1,46 @@
+{
+  "library": "Standard64",
+  "title": "LCTU (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/Standard64/Current/Counter/LCTU.html",
+  "page_title": "LCTU (FB)",
+  "text": "\nFUNCTION_BLOCK PUBLIC LCTU\nIncrements a given value\n(* Example declaration *)\nLCTUInst\n:\nLCTU\n;\n(* Example in ST *)\nLCTUInst\n(\nCU\n:=\nVarBOOL1\n,\nRESET\n:=\nVarBOOL2\n,\nPV\n:=\nVarLWORD1\n);\nVarBOOL3\n:=\nCTUInst.Q\n;\nVarLWORD2\n:=\nCTUInst.CV\n;\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "CU",
+          "Type": "BOOL",
+          "Comment": "Rising edge: IncrementingCVby one"
+        },
+        [
+          "RESET",
+          "BOOL",
+          "TRUE: ResetCVto 0"
+        ],
+        [
+          "PV",
+          "LWORD",
+          "Upper limit for incrementing"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Q",
+          "Type": "BOOL",
+          "Comment": "TRUEifCV>=PV"
+        },
+        [
+          "CV",
+          "LWORD",
+          "Current counter value"
+        ]
+      ]
+    }
+  ]
+}

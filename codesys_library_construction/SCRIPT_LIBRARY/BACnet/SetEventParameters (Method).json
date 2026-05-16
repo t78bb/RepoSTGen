@@ -1,0 +1,31 @@
+{
+  "library": "BACnet",
+  "title": "SetEventParameters (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/EventEnrollment/pou-BACnetEventEnrollment/SetEventParameters.html",
+  "page_title": "BACnetEventEnrollment.SetEventParameters (METH)",
+  "text": "\nMETHOD SetEventParameters : CmpBACnet.IEC_BACNET_STATUS\nSets the value of the Event_Parameters-Property of this BACnet-EventEnrollment-Property.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetEventParameters",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "evtParam",
+          "Type": "CmpBACnet.IEC_BACNET_EVENT_PARAMETER",
+          "Comment": "The event parameters structure to set for the\nEvent_Parameters-Property."
+        }
+      ]
+    }
+  ]
+}

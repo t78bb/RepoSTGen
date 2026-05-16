@@ -1,0 +1,8 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_IDynamicCS (Interface)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/Basic-types/SMC_IDynamicCS.html",
+  "page_title": "SMC_IDynamicCS (ITF)",
+  "text": "\nINTERFACE SMC_IDynamicCS EXTENDS SMRB.ICoordinateSystem\nSee interface\nICoordinateSystem\nin library SM3_RBase.",
+  "tables": []
+}

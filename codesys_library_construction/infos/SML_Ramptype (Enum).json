@@ -1,0 +1,28 @@
+{
+  "library": "SML_Basic",
+  "title": "SML_Ramptype (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SML_Basic/Current/Base/SML_Ramptype.html",
+  "page_title": "SML_Ramptype (ENUM)",
+  "text": "\nTYPE SML_Ramptype :\nThe possible velocity ramp types for motion profiles.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "SML_RT_Trapez",
+          "Initial": "0",
+          "Comment": "Trapezoidal velocity ramp"
+        },
+        {
+          "Name": "SML_RT_Sin2",
+          "Initial": "1",
+          "Comment": "sin^2 velocity ramp"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "library": "MemoryUtils",
+  "title": "GetDWord (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/MemoryUtils/Current/MemoryUtils/Functionblocks/pou-ByteBuffer/GetDWord.html",
+  "page_title": "ByteBuffer.GetDWord (METH)",
+  "text": "\nMETHOD GetDWord : DWORD\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetDWord",
+          "Type": "DWORD"
+        }
+      ]
+    }
+  ]
+}

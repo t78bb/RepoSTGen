@@ -1,0 +1,31 @@
+{
+  "library": "StringUtils",
+  "title": "StrDeleteA (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/StringUtils/Current/Public-Parts/Ansi/StrDeleteA.html",
+  "page_title": "StrDeleteA (FUN)",
+  "text": "\nFUNCTION StrDeleteA\nDeletes <iLength> characters of <pwst>, beginning at the <iPosition>-th character position.\n<iPosition> = 1 is the first character. This function has been adapted from StrDeleteW\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "pby",
+          "Type": "POINTER TO BYTE"
+        },
+        [
+          "iLength",
+          "INT"
+        ],
+        [
+          "iPosition",
+          "INT"
+        ]
+      ]
+    }
+  ]
+}

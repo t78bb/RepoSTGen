@@ -1,0 +1,47 @@
+{
+  "library": "DNP3",
+  "title": "IndexedTimeGetFromPointNum (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/pou-Master/Datapoints/IndexedTimeGetFromPointNum.html",
+  "page_title": "Master.IndexedTimeGetFromPointNum (METH)",
+  "text": "\nMETHOD IndexedTimeGetFromPointNum :\nError\nGet the value of Indexed Time datapoint (DNP3 object group 50 âtime and dateâ variation 4) with given point number (0 .. MaxPointNum).\nReturns PointNotExistent, if a datapoint with the given point number doesnt exist, OK otherwise.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "IndexedTimeGetFromPointNum",
+          "Type": "Error",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "pointNumber",
+          "Type": "UINT",
+          "Comment": "Point number."
+        },
+        {
+          "Scope": "Output",
+          "Name": "indexedTime",
+          "Type": "LDATE_AND_TIME",
+          "Comment": "indexed absolute time"
+        },
+        [
+          "intervalCount",
+          "UDINT",
+          "interval count"
+        ],
+        [
+          "intervalUnit",
+          "BYTE",
+          "interval unit"
+        ]
+      ]
+    }
+  ]
+}

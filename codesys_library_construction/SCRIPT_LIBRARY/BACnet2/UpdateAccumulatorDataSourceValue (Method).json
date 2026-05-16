@@ -1,0 +1,32 @@
+{
+  "library": "BACnet2",
+  "title": "UpdateAccumulatorDataSourceValue (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/BACnetServer/pou-IBACnetServer/Services/UpdateAccumulatorDataSourceValue.html",
+  "page_title": "IBACnetServer.UpdateAccumulatorDataSourceValue (METH)",
+  "text": "\nMETHOD UpdateAccumulatorDataSourceValue : CmpBACnet.IEC_BACNET_STATUS\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "UpdateAccumulatorDataSourcevalue",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS"
+        },
+        {
+          "Scope": "Input",
+          "Name": "objInstNumber",
+          "Type": "CmpBACnet.IEC_BACNET_DWORD"
+        },
+        [
+          "xPulsevalue",
+          "BOOL"
+        ]
+      ]
+    }
+  ]
+}

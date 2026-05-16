@@ -1,0 +1,250 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_Interpolator (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/SoftMotion-Function-Blocks/SMC_Interpolator.html",
+  "page_title": "SMC_Interpolator (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_Interpolator IMPLEMENTS\nSMC_IInterpolator\nThis function block is used to convert a continuous path described\nby\nSMC_GEOINFO\nobjects into discrete path position points\ntaking into account a defined velocity profile and time pattern.\nAfterwards, these position points will typically be transformed by\nthe IEC-program (e.g. to drive-axis-positions) and sent to the drives.\nNote\nAt the end of a path run, the input path queue is empty.\nIf you want to process the same outline once again, you either have to\ntransform the CNC program via decoder and path preprocessing modules\nto a\nSMC_OUTQUEUE\nstructure, or you have to use the function block\nSMC_RestoreQueue\n(also part of SM3_CNC). This is only possible if\nthe path queue is big enough to hold the complete path.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "bExecute",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Execution starts on the rising edge."
+        },
+        [
+          "poqDataIn",
+          "POINTER TOSMC_OUTQUEUE",
+          "",
+          "This variable points to theSMC_OUTQUEUEstructure object,\nwhich contains theSMC_GEOINFOobjects of the path;\ntypically it points to the outputpoqDataOutofSMC_CheckVelocities."
+        ],
+        [
+          "bSlow_Stop",
+          "BOOL",
+          "",
+          "If this variable is set toFALSE, the path will be passed non-stop.\nOtherwise, theSMC_Interpolatorwill be caused to reduce the\nvelocity to 0 according to the defined velocity profile (byVelMode),\nand the maximum delay of the currentSMC_GEOINFOobject\n(dDecel, see below) and to wait untilbSlow_Stopwill be reset toFALSE."
+        ],
+        [
+          "bEmergency_Stop",
+          "BOOL",
+          "",
+          "As soon as this input getsTRUE, theSMC_Interpolatorwill cause an immediate stop, this means that the position\nwill be retained. Hence, the velocity will be set to 0 immediately."
+        ],
+        [
+          "bWaitAtNextStop",
+          "BOOL",
+          "",
+          "As long as this variable isFALSE(default), the path\nis passed non-stop.\nOtherwise, theSMC_Interpolatorwill be caused to retain\nthe position at the next regular stop this means at position points\nwhere the velocity is 0, typically at path angles and to pause untilbWaitAtNextStopwill be reset toFALSE."
+        ],
+        [
+          "dOverride",
+          "LREAL",
+          "1",
+          "This variable can be used to handle the override.\nThe active override is determined byMAX(0,dOverride).\nThe scheduled velocity of the particular objects will get scaled\nbydOverride; thus the scheduled velocity can be increased\nresp. reduced in online mode.\nFor exampledOverride=1(default) effects that the\nprogrammed scheduled velocities will be executed, whereasdOverride=2would double them.Please regard: The override can be modified at any time,\nbut the modification will only be applied, if no acceleration\nor deceleration is currently in progress."
+        ],
+        [
+          "iVelMode",
+          "SMC_INT_VELMODE",
+          "TRAPEZOID",
+          "This input defines the velocity profile as defined inSMC_INT_VELMODE."
+        ],
+        [
+          "dwIpoTime",
+          "DWORD",
+          "",
+          "This variable has to be set for each call.\nIt represents the cycle time in Î¼sec."
+        ],
+        [
+          "dLastWayPos",
+          "LREAL",
+          "",
+          "This input allows the user to measure the stretch of the\npath that is racked out by the interpolator.\nOutputdWayPosis the sum ofdLastWayPosand\nthe distance covered within the current cycle.\nIfdLastWayPosis set equal to outputdWayPos,dWayPoswill always be incremented by the current path segment\nand the result will be the total length of the path travelled.dLastWayPoscan be (re)set to 0 or to a different value\nat any time."
+        ],
+        [
+          "bAbort",
+          "BOOL",
+          "",
+          "This input set toTRUEwill abort the function block and reset the\noutputs. A rising edge ofbExecuteis required to start the\ninterpolator again after aborting."
+        ],
+        [
+          "bSingleStep",
+          "BOOL",
+          "",
+          "This input effects that the interpolator will stop at the transition\nbetween two path objects (also at transitions with identical tangent)\nfor the duration of one cycle.\nIfbSingleStepis set toTRUEduring the move, the interpolator\nwill stop at the end of that object, that can be reached without\nexceeding the scheduled deceleration value.If the interpolator should stop at the next possible stop position\n(i.e. at points where the velocity is 0),bWaitAtNextStopmust be used."
+        ],
+        [
+          "bAcknM",
+          "BOOL",
+          "",
+          "This input can be used to acknowledge an M-function.\nIf the input isTRUE, the outputwMwill be cleared and the\npath processing will be continued."
+        ],
+        [
+          "bAcknProbe",
+          "BOOL",
+          "",
+          "This input is used to acknowledge a PROBE-movement such as G31.\nOn a rising edge, the outputudiActiveProbewill be cleared and the\npath processing will be continued.\nMake sure to stop the interpolator (bSlow_Stop/bQuick_Stop) and to copy\nthe actual position of the machine toSMC_NCInterpreter.piStartPosition\nbefore acknowledging the probe."
+        ],
+        [
+          "bQuick_Stop",
+          "BOOL",
+          "",
+          "If this input isTRUE, the interpolator will reduce the\nvelocity to zero, untilbQuick_Stopis reset toFALSE.\nThe reduction is done according to the defined velocity profile\n(byVelMode) and the deceleration given by the maximum\nofdQuickDecelerationand the delay currently programmed in the path.\nIf a quadratic velocity mode is used, then the jerk is limited bymax(dJerkMax,dQuickStopJerk)."
+        ],
+        [
+          "dQuickDeceleration",
+          "LREAL",
+          "",
+          "Deceleration value used forbQuick_Stop"
+        ],
+        [
+          "dJerkMax",
+          "LREAL",
+          "",
+          "Magnitude of the maximum allowed jerk: Itâs only used for the\nquadratic velocity modes. It must be positive and can be changed\nwhile the interpolator is running. The value will become active\n- at the start of the interpolator\n- or once a standstill has been reached (between two G-code commands,due to a stop or caused by adOverridevalue of 0)."
+        ],
+        [
+          "dQuickStopJerk",
+          "LREAL",
+          "",
+          "The magnitude of the jerk is used by a quick stop for ramping down\nthe acceleration if one of the quadratic velocity modes is selected."
+        ],
+        [
+          "bSuppressSystemMFunctions",
+          "BOOL",
+          "",
+          "If this option is set, then the output wM will not be set\nfor internal M-functions created by G75 or G4 commands."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bDone",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "This variable will be set toTRUEas soon as the\ninput data (poqDataIn) has been processed completely.\nThe function block will not perform any further actions\nuntil a reset is done.\nIf inputbExecuteisFALSE,bDonewill be reset toFALSE."
+        },
+        [
+          "bBusy",
+          "BOOL",
+          "",
+          "TRUEwhile execution of function block is not finished"
+        ],
+        [
+          "bError",
+          "BOOL",
+          "",
+          "Signals that an error has occurred within the function block"
+        ],
+        [
+          "wErrorID",
+          "SMC_ERROR",
+          "",
+          "Error identification"
+        ],
+        [
+          "piSetPosition",
+          "SMC_POSINFO",
+          "",
+          "It reflects the calculated set position and contains the cartesian coordinates\nof the next position as well as the state of the additional axis.SMC_POSINFO"
+        ],
+        [
+          "iStatus",
+          "SMC_INT_STATUS",
+          "IPO_INIT",
+          "This enumeration variable reflects the current status of the function block defined inSMC_INT_STATUS.Possible states:IPO_UNKNOWN(0): internal state that may not occur after a complete pass of theSMC_Interpolator.IPO_INIT(1): initialization state; poqDataIn is not filled completely.IPO_ACCEL(2): acceleratingIPO_CONSTANT(3): moving with constant velocityIPO_DECEL(4): deceleratingIPO_FINISHED(5): path is finished.\nAny furtherSMC_GEOINFOobjects arriving afterwards inpoqDataInwill not be processed.IPO_WAIT(6): waiting because one of the following situations has occurred:bEmergency_Stop=TRUEbSlow_Stop=TRUEanddVel=0bWait_At_Next_Stop=TRUEanddVel=0An M-Function has been reached and not yet acknowledgedIPO_INCREASING_ACCEL(7): increasing accelerationIPO_DECREASING_ACCEL(8): decreasing accelerationIPO_INCREASING_DECEL(9): increasing decelerationIPO_DECREASING_DECEL(10): decreasing deceleration"
+        ],
+        [
+          "bWorking",
+          "BOOL",
+          "",
+          "This output is intended to be connected to inputbEnableofSMC_ControlAxisByPos.It will beTRUEif (and only if) the processing of the list\nhas been started and not yet finished"
+        ],
+        [
+          "iActObjectSourceNo",
+          "DINT",
+          "-1",
+          "Value of memberiSourceLine_Noof activeSMC_GEOINFOobject ofpoqDataIn-queue.\nIf theSMC_Interpolatordoes not work (any longer)\n(bWorking=FALSE), the value is set to â-1â."
+        ],
+        [
+          "dActObjectLength",
+          "LREAL",
+          "",
+          "The length of the current object; valid ifbWorking=TRUE."
+        ],
+        [
+          "dActObjectLengthRemaining",
+          "LREAL",
+          "",
+          "The remaning length of the current object; valid ifbWorking=TRUE."
+        ],
+        [
+          "dVel",
+          "LREAL",
+          "",
+          "This variable contains the current path velocity."
+        ],
+        [
+          "vecActTangent",
+          "SMC_VECTOR3D",
+          "",
+          "This structure contains the path tangent, a unit vector."
+        ],
+        [
+          "iLastSwitch",
+          "INT",
+          "",
+          "This output contains the number of the last switch passed.Note: If several switches have been passed within one cycle,\nonly the last one will be mentioned."
+        ],
+        [
+          "dwSwitches",
+          "DWORD",
+          "",
+          "ThisDWORDdescribes the current switch status of all switches 1 32.\nBit0 of theDWORDrepresents switch1, Bit31 represents switch32.\nIn contrast toiLastSwitch, this bit-field will also hold\nmultiple switches in one cycle."
+        ],
+        [
+          "dWayPos",
+          "LREAL",
+          "",
+          "See inputdLastWAyPos."
+        ],
+        [
+          "wM",
+          "WORD",
+          "",
+          "If the interpolator passes an M-function, this output will be set to\nthe value associated to the M-function. The interpolator\nwill stop until the M-function is acknowledged by inputbAcknM."
+        ],
+        [
+          "udiActProbe",
+          "UDINT",
+          "",
+          "The number of the active probe command (G31), or zero if no\nprobe is active."
+        ],
+        [
+          "adToolLength",
+          "ARRAY [0..2] OF LREAL",
+          "",
+          "Parameters for tool length compensation (set by G43 I/J/K)"
+        ],
+        [
+          "Act_Object",
+          "POINTER TOSMC_GEOINFO",
+          "",
+          "Pointer to the currently interpolated path element. Possibly\n0."
+        ],
+        [
+          "actObjectId",
+          "SMC_GCodeObjectId",
+          "",
+          "The identifier of the currently interpolated path object."
+        ]
+      ]
+    }
+  ]
+}

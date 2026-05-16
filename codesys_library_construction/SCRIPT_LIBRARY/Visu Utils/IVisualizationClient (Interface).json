@@ -1,0 +1,8 @@
+{
+  "library": "Visu Utils",
+  "title": "IVisualizationClient (Interface)",
+  "url": "https://content.helpme-codesys.com/en/libs/Visu Utils/Current/VisuUtils/VisuActionUtilities/Interfaces/IVisualizationClient.html",
+  "page_title": "IVisualizationClient (ITF)",
+  "text": "\nINTERFACE IVisualizationClient EXTENDS __SYSTEM.IQueryInterface\nShows the information, needed to choose a client (with the client filter).\nSee also IVisualizationClientRaw if the pointer to the VisuStructClientData is needed.\nNote\nThis interface is not intended for being implemented by functionblocks outside this library as it might be extended in the future.\nProperties:\nClientDevicePixelRatio\nClientHeight\nClientId\nClientType\nClientWidth\nCurrentVisuName\nInputType\nNextVisuName\nPreviousVisuName\nUserGroupId\nUserName\nMethods:\nGetClientName\nGetIPv4Address\nGetRemoteTargetVisuId\nGetRemoteTargetVisuVersion\nStructure:\nClientDevicePixelRatio (Property)\nClientHeight (Property)\nClientId (Property)\nClientType (Property)\nClientWidth (Property)\nCurrentVisuName (Property)\nGetClientName (Method)\nGetIPv4Address (Method)\nGetRemoteTargetVisuId (Method)\nGetRemoteTargetVisuVersion (Method)\nInputType (Property)\nNextVisuName (Property)\nPreviousVisuName (Property)\nUserGroupId (Property)\nUserName (Property)",
+  "tables": []
+}

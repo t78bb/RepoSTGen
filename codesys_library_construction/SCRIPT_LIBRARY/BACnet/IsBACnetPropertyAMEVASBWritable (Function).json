@@ -1,0 +1,36 @@
+{
+  "library": "BACnet",
+  "title": "IsBACnetPropertyAMEVASBWritable (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/Utilities/BACnetUtilities/BACnetProperties/IsBACnetPropertyAMEVASBWritable.html",
+  "page_title": "IsBACnetPropertyAMEVASBWritable (FUN)",
+  "text": "\nFUNCTION IsBACnetPropertyAMEVASBWritable : BOOL\nIs the Property writable following a given PICs (following AMEV-AS-B).\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "IsBACnetPropertyAMEVASBWritable",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "objTyp",
+          "Type": "CmpBACnet.IEC_BACNET_OBJECT_TYPE",
+          "Comment": "The object type to check."
+        },
+        [
+          "propID",
+          "CmpBACnet.IEC_BACNET_PROPERTY_ID",
+          "The property ID within the given object type to check."
+        ]
+      ]
+    }
+  ]
+}

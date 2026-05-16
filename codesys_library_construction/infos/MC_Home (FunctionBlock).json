@@ -1,0 +1,62 @@
+{
+  "library": "SM3_Basic",
+  "title": "MC_Home (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/Movement/MC_Home.html",
+  "page_title": "MC_Home (FB)",
+  "text": "\nFUNCTION_BLOCK MC_Home\nMC_Home causes the axis to perform the âsearch homeâ sequence.\nThe details of this sequence are manufacturer dependent and can be set by the axis parameters.\nThe\nPosition\ninput is used to set the absolute position when a reference signal is detected.\nThe function block terminates with\nstandstill\n.\nNote\nThis function block does not support forecasts that are set up by\nSMC_SetForecast\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Comment": "Rising edge: Starts the execution of the function block."
+        },
+        [
+          "Position",
+          "LREAL",
+          "Absolute position when the reference signal is detected [u]."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Done",
+          "Type": "BOOL",
+          "Comment": "TRUE:standstillhas been achieved."
+        },
+        [
+          "Busy",
+          "BOOL",
+          "TRUE: Execution of function block has not been finished."
+        ],
+        [
+          "CommandAborted",
+          "BOOL",
+          "TRUE: Command has been aborted by another command."
+        ],
+        [
+          "Error",
+          "BOOL",
+          "TRUE: Error has occurred within the function block."
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

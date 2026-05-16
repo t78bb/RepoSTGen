@@ -1,0 +1,31 @@
+{
+  "library": "Visu Utils",
+  "title": "GetClientName (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/Visu Utils/Current/VisuUtils/VisuActionUtilities/Interfaces/pou-IVisualizationClient/GetClientName.html",
+  "page_title": "IVisualizationClient.GetClientName (METH)",
+  "text": "\nMETHOD GetClientName : STRING\nReturns the name of the given client if specified in the according configuration of\nthe client which is dependent on the concrete type of client.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetClientName",
+          "Type": "STRING",
+          "Comment": ""
+        },
+        {
+          "Scope": "Output",
+          "Name": "xIsValid",
+          "Type": "BOOL",
+          "Comment": "TRUE: The client name is configured"
+        }
+      ]
+    }
+  ]
+}

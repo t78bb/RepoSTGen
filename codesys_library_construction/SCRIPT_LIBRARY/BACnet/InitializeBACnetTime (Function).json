@@ -1,0 +1,37 @@
+{
+  "library": "BACnet",
+  "title": "InitializeBACnetTime (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/Utilities/BACnetUtilities/InitializeBACnetDataTypes/InitializeBACnetTime.html",
+  "page_title": "InitializeBACnetTime (FUN)",
+  "text": "\nFUNCTION InitializeBACnetTime : BOOL\nInitializes a IEC_BACNET_TIME according to a given TIME.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "InitializeBACnetTime",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "tim",
+          "Type": "TIME",
+          "Comment": "The TIME to use for initialization."
+        },
+        {
+          "Scope": "Inout",
+          "Name": "bacTime",
+          "Type": "CmpBACnet.IEC_BACNET_TIME",
+          "Comment": "The BACnet time to operate on."
+        }
+      ]
+    }
+  ]
+}

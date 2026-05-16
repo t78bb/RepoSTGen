@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现通过MQTT协议向指定主题发布字符串消息的功能。",
+  "provide_code": "FUNCTION_BLOCK FirstPublish\nVAR_INPUT\nEND_VAR\nVAR_OUTPUT\nEND_VAR"
+}

@@ -1,0 +1,30 @@
+{
+  "library": "3SLicense",
+  "title": "DemoModeStartedID (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/3SLicense/Current/pou-OLM_OnlineLicenseManager/DemoModeStartedID.html",
+  "page_title": "OLM_OnlineLicenseManager.DemoModeStartedID (METH)",
+  "text": "\nMETHOD DemoModeStartedID\nWith this method a component can propagade in a uniform way that it is running in demo mode and will - after a certain time - stop.\nThis method should be called after it is clear that the license will stay in demo mode, in particular the (possibly later / after initialization phase) confirmation of dynamic licenses should be taken into account.\nTherefore it is recommended for the OEM to confirm dynamic licenses\nduring the initialization\n(after global init slot 40000) and\nbefore the application\nis started.\nIn contrast to the method DemoModeStarted, this function will post the message only once, and so the caller doesnât have to take care and make sure to call it only once by himself\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "strComponent",
+          "Type": "STRING",
+          "Comment": "name of the component"
+        },
+        [
+          "udiLicenseID",
+          "UDINT",
+          "license ID of the component"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_CNC_REF (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_Data-types/SoftMotion-CNC/SMC_CNC_REF.html",
+  "page_title": "SMC_CNC_REF (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_CNC_REF\nThis function block manages the parsed G-code files.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "wCNCREFStructID",
+          "Type": "WORD",
+          "Initial": "16#BA56",
+          "Comment": "The fix value ofwCNCREFStructIDallows the module to check\ninternally if the consigned structure variable is of typeSMC_CNC_REF."
+        },
+        [
+          "bRestart",
+          "BOOL",
+          "",
+          "In case of jumps implemented within the IEC program (G20),bRestartwill be set bySMC_NCDecoderin order to cause the\ngenerator of the data structure to reinitialize all pointers\nand to regenerate the data structure."
+        ],
+        [
+          "diJmpTarget",
+          "DINT",
+          "0",
+          "The jump target (sentence number); only valid, ifbRestart=TRUE;"
+        ],
+        [
+          "nElements",
+          "UDINT",
+          "",
+          "Number ofSMC_GCODE_WORDstructures at pgc."
+        ],
+        [
+          "diReadPos",
+          "UDINT",
+          "0",
+          "For internal use"
+        ],
+        [
+          "udiBuffer",
+          "UDINT",
+          "16#FFFFFFFF",
+          "For internal use"
+        ],
+        [
+          "pgc",
+          "POINTER TOSMC_GCODE_WORD",
+          "0",
+          "Pointer on first structure of typeSMC_GCODE_WORD."
+        ],
+        [
+          "piStartPosition",
+          "SMC_POSINFO",
+          "",
+          "Start position of CNC program."
+        ],
+        [
+          "strProgramName",
+          "STRING",
+          "ââ",
+          "Name of CNC program."
+        ],
+        [
+          "xPartofLM",
+          "BOOL",
+          "",
+          "If the input isTRUE,\nthe function block is maintained by managers.\nSet by the programming system, when it creates an instance."
+        ],
+        [
+          "bEndOfData",
+          "BOOL",
+          "TRUE",
+          "IfTRUE, no further data is supposed to be appended"
+        ]
+      ]
+    }
+  ]
+}

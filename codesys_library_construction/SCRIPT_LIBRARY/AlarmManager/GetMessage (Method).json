@@ -1,0 +1,31 @@
+{
+  "library": "AlarmManager",
+  "title": "GetMessage (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/pou-IAlarm/GetMessage.html",
+  "page_title": "IAlarm.GetMessage (METH)",
+  "text": "\nMETHOD GetMessage : CharBufferPtr\nReturns the message text, that has been configured for the alarm. The result\nis a pointer to the buffer, where the message text is stored\nPlease remark: This function is accessing localization information and is therefore not recommended for calls from realtime tasks\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetMessage",
+          "Type": "CharBufferPtr",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "stringType",
+          "Type": "__SYSTEM.TYPE_CLASS",
+          "Comment": "A __SYSTEM.TYPE_CLASS indicating, which type of string has\nto be retrieved"
+        }
+      ]
+    }
+  ]
+}

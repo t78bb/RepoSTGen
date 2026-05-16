@@ -1,0 +1,41 @@
+{
+  "library": "DNP3",
+  "title": "SetConfigAspectAutoUpdate (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/pou-MasterConfiguration/SetConfigAspectAutoUpdate.html",
+  "page_title": "MasterConfiguration.SetConfigAspectAutoUpdate (METH)",
+  "text": "\nMETHOD SetConfigAspectAutoUpdate :\nError\nSet optional configuration aspect - automatic cyclic reads for either all points of a given Object group or only the points used by PointObservers.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetConfigAspectAutoUpdate",
+          "Type": "Error",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "pointType",
+          "Type": "PointType",
+          "Comment": "Point type to set the automatic read mode for."
+        },
+        [
+          "mode",
+          "AutoUpdateMode",
+          "Auto update mode."
+        ],
+        [
+          "period",
+          "TIME",
+          "Auto update read period."
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_VARTYPE (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_Data-types/File/SMC_VARTYPE.html",
+  "page_title": "SMC_VARTYPE (ENUM)",
+  "text": "\nTYPE SMC_VARTYPE :\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Name": "SMC_TYPE_UNKNOWN",
+          "Initial": "-1"
+        },
+        {
+          "Name": "SMC_TYPE_BOOL",
+          "Initial": "0"
+        },
+        {
+          "Name": "SMC_TYPE_INT",
+          "Initial": "1"
+        },
+        {
+          "Name": "SMC_TYPE_BYTE",
+          "Initial": "2"
+        },
+        {
+          "Name": "SMC_TYPE_WORD",
+          "Initial": "3"
+        },
+        {
+          "Name": "SMC_TYPE_DINT",
+          "Initial": "4"
+        },
+        {
+          "Name": "SMC_TYPE_DWORD",
+          "Initial": "5"
+        },
+        {
+          "Name": "SMC_TYPE_REAL",
+          "Initial": "6"
+        },
+        {
+          "Name": "SMC_TYPE_TIME",
+          "Initial": "7"
+        },
+        {
+          "Name": "SMC_TYPE_STRING",
+          "Initial": "8"
+        },
+        {
+          "Name": "SMC_TYPE_ARRAY",
+          "Initial": "9"
+        },
+        {
+          "Name": "SMC_TYPE_ENUM",
+          "Initial": "10"
+        },
+        {
+          "Name": "SMC_TYPE_USERDEF",
+          "Initial": "11"
+        },
+        {
+          "Name": "SMC_TYPE_BITORBYTE",
+          "Initial": "12"
+        },
+        {
+          "Name": "SMC_TYPE_POINTER",
+          "Initial": "13"
+        },
+        {
+          "Name": "SMC_TYPE_SINT",
+          "Initial": "14"
+        },
+        {
+          "Name": "SMC_TYPE_USINT",
+          "Initial": "15"
+        },
+        {
+          "Name": "SMC_TYPE_UINT",
+          "Initial": "16"
+        },
+        {
+          "Name": "SMC_TYPE_UDINT",
+          "Initial": "17"
+        },
+        {
+          "Name": "SMC_TYPE_DATE",
+          "Initial": "18"
+        },
+        {
+          "Name": "SMC_TYPE_TOD",
+          "Initial": "19"
+        },
+        {
+          "Name": "SMC_TYPE_DT",
+          "Initial": "20"
+        },
+        {
+          "Name": "SMC_TYPE_VOID",
+          "Initial": "21"
+        },
+        {
+          "Name": "SMC_TYPE_LREAL",
+          "Initial": "22"
+        },
+        {
+          "Name": "SMC_TYPE_REF",
+          "Initial": "23"
+        }
+      ]
+    }
+  ]
+}

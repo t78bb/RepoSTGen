@@ -1,0 +1,52 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_MeasureDistance (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/Diagnostics/SMC_MeasureDistance.html",
+  "page_title": "SMC_MeasureDistance (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_MeasureDistance\nThis function block may be employed on a rotary axis to measure the covered distance by regarding the wrap.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "bExecute",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Output",
+          "Name": "fDistance",
+          "Type": "LREAL",
+          "Comment": ""
+        },
+        [
+          "bBusy",
+          "BOOL",
+          "Travelled distance since start of measurement."
+        ],
+        [
+          "bError",
+          "BOOL",
+          "TRUE: Execution of the function block has nor been\nfinished yet."
+        ],
+        [
+          "nErrorID",
+          "SMC_ERROR",
+          "TRUE: Error has occurred within the function block."
+        ]
+      ]
+    }
+  ]
+}

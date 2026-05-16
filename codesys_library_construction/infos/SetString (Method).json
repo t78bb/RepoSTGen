@@ -1,0 +1,32 @@
+{
+  "library": "SM3_CNC",
+  "title": "SetString (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/File/ReadNCFile/Token/pou-SMC_Token/SetString.html",
+  "page_title": "SMC_Token.SetString (METH)",
+  "text": "\nMETHOD FINAL SetString : BOOL\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "pbyString",
+          "Type": "POINTER TO BYTE"
+        },
+        [
+          "iSize",
+          "INT"
+        ],
+        {
+          "Scope": "Return",
+          "Name": "SetString",
+          "Type": "BOOL"
+        }
+      ]
+    }
+  ]
+}

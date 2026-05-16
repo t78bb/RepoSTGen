@@ -1,0 +1,23 @@
+{
+  "library": "BACnet",
+  "title": "DumpDataBase (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/Persistence/pou-IBACnetPersistence/DumpDataBase.html",
+  "page_title": "IBACnetPersistence.DumpDataBase (METH)",
+  "text": "\nMETHOD DumpDataBase : CmpBACnet.IEC_BACNET_STATUS\nDumps the object database to persistent storage.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "DumpDataBase",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS"
+        }
+      ]
+    }
+  ]
+}

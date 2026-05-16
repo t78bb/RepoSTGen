@@ -1,0 +1,42 @@
+{
+  "library": "String Builder",
+  "title": "GetNextSegment (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Builder/Current/Builder/Function-Blocks/pou-_Builder/IBuilder/Segments/GetNextSegment.html",
+  "page_title": "_Builder.GetNextSegment (METH)",
+  "text": "\nMETHOD FINAL GetNextSegment : POINTER TO BYTE\nReturns the pointer to the next segment of the builder\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetNextSegment",
+          "Type": "POINTER TO BYTE",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "pbyCurSegment",
+          "Type": "POINTER TO BYTE",
+          "Comment": "Start pointer of the current segment"
+        },
+        {
+          "Scope": "Output",
+          "Name": "udiSize",
+          "Type": "UDINT",
+          "Comment": "Size in bytes of the next segment"
+        },
+        [
+          "eErrorID",
+          "ERROR",
+          "Check error message for better diagnostics"
+        ]
+      ]
+    }
+  ]
+}

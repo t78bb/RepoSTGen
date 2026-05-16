@@ -1,0 +1,5 @@
+{
+  "requirement": "This code is intended to implement a file writing operation that writes a specified number of bytes from a buffer to a file, with error handling and status signaling.",
+  "provide_code":"FUNCTION_BLOCK WriteFile\nVAR_INPUT\n\tbExec\t:\tBOOL;\n\twriteBuffer\t:\tARRAY[0..255] OF BYTE;\n\twriteNum\t:\tUDINT;\n\tfileName\t:\tSTRING;\nEND_VAR\nVAR_OUTPUT\n\tbDone\t:\tBOOL;\n\tbBusy\t:\tBOOL;\n\tbErr\t:\tBOOL;\n\tnErrId\t:\tUDINT;\nEND_VAR",
+  "function_name": "WriteFile"
+}

@@ -1,0 +1,31 @@
+{
+  "library": "AlarmManager",
+  "title": "AlarmStorageConvertToTimestamp (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Alarm-storage-API/AlarmStorageConvertToTimestamp.html",
+  "page_title": "AlarmStorageConvertToTimestamp (FUN)",
+  "text": "\nFUNCTION AlarmStorageConvertToTimestamp :\nTimestamp\nThis function provides the inverse functionality of function AlarmStorageConvertFromTimestamp.\nConverts SYSTIMEDATE (UTC value) into a timestamp.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "AlarmStorageConvertToTimestamp",
+          "Type": "Timestamp",
+          "Comment": "The timestamp in the alarm storage format."
+        },
+        {
+          "Scope": "Input",
+          "Name": "timeDate",
+          "Type": "SYSTIMEDATE",
+          "Comment": "A SYSTIMEDATE struct containing the date and time (UTC)"
+        }
+      ]
+    }
+  ]
+}

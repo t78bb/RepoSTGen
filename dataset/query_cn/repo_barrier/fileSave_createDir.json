@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现根据输入的文件路径和设备名称创建对应的目录。",
+  "provide_code": "FUNCTION_BLOCK fileSave\nVAR_INPUT\n\tfilePath \t:STRING;\n\tdevName\t\t: STRING ;\n\tintervalt\t:INT;\nEND_VAR"
+}

@@ -1,0 +1,2943 @@
+{
+  "library": "SM3_Error",
+  "title": "SMC_ERROR (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Error/Current/SM3_Error/SMC_ERROR.html",
+  "page_title": "SMC_ERROR (ENUM)",
+  "text": "\nTYPE SMC_ERROR :\nThe enumeration\nSMC_ERROR\ncontains all error numbers that can be returned by SoftMotion function blocks.\nSMC_ErrorString\ngenerates an error string output.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "SMC_NO_ERROR",
+          "Initial": "0",
+          "Comment": "No error"
+        },
+        {
+          "Name": "SMC_DI_GENERAL_COMMUNICATION_ERROR",
+          "Initial": "1",
+          "Comment": "Communication error. The fieldbus slave is no longer in\nstate operational."
+        },
+        {
+          "Name": "SMC_DI_AXIS_ERROR",
+          "Initial": "2",
+          "Comment": "Axis error"
+        },
+        {
+          "Name": "SMC_DI_FIELDBUS_LOST_SYNCRONICITY",
+          "Initial": "3",
+          "Comment": "Fieldbus has lost synchronicity"
+        },
+        {
+          "Name": "SMC_DI_SWLIMITS_EXCEEDED",
+          "Initial": "10",
+          "Comment": "Position outside of permissible range ofSWLimit"
+        },
+        {
+          "Name": "SMC_DI_HWLIMITS_EXCEEDED",
+          "Initial": "11",
+          "Comment": "Hardware end switch is active"
+        },
+        {
+          "Name": "SMC_DI_LINEAR_AXIS_OUTOFRANGE",
+          "Initial": "12",
+          "Comment": "This error occurs if a linear axis has more than 2^15 32-bit overflows\nof the position in increments"
+        },
+        {
+          "Name": "SMC_DI_HALT_OR_QUICKSTOP_NOT_SUPPORTED",
+          "Initial": "13",
+          "Comment": "Drive statusHaltorQuickstopis not supported"
+        },
+        {
+          "Name": "SMC_DI_VOLTAGE_DISABLED",
+          "Initial": "14",
+          "Comment": "Drive has no power"
+        },
+        {
+          "Name": "SMC_DI_IRREGULAR_ACTPOSITION",
+          "Initial": "15",
+          "Comment": "This error is no longer used"
+        },
+        {
+          "Name": "SMC_DI_POSITIONLAGERROR",
+          "Initial": "16",
+          "Comment": "Position lag error. Difference between set and current\nposition exceeds the given limit"
+        },
+        {
+          "Name": "SMC_DI_HOMING_ERROR",
+          "Initial": "17",
+          "Comment": "Homing error reported by axis"
+        },
+        {
+          "Name": "SMC_DI_LICENSING_ERROR",
+          "Initial": "18",
+          "Comment": "A problem with the license occurred"
+        },
+        {
+          "Name": "SMC_DI_DRIVE_LIMIT_ACTIVE",
+          "Initial": "19",
+          "Comment": "A limit of the drive is active, for example an iÂ²t error has\noccurred."
+        },
+        {
+          "Name": "SMC_REGULATOR_OR_START_NOT_SET",
+          "Initial": "20",
+          "Comment": "Controller enable not done or brake applied"
+        },
+        {
+          "Name": "SMC_WRONG_CONTROLLER_MODE",
+          "Initial": "21",
+          "Comment": "Axis in wrong controller mode"
+        },
+        {
+          "Name": "SMC_INVALID_ACTION_FOR_LOGICAL",
+          "Initial": "25",
+          "Comment": "Invalid action at logical axis"
+        },
+        {
+          "Name": "SMC_AXIS_IS_NOT_OPERATIONAL",
+          "Initial": "27",
+          "Comment": "Axis is not operationalwCommunicationState<>100"
+        },
+        {
+          "Name": "SMC_AXIS_NOT_FOLLOWING_SETVALUES",
+          "Initial": "28",
+          "Comment": "Axis is currently not following the set values"
+        },
+        {
+          "Name": "SMC_FB_WASNT_CALLED_DURING_MOTION",
+          "Initial": "30",
+          "Comment": "Motion creating module has not been called again before end\nof the motion"
+        },
+        {
+          "Name": "SMC_AXIS_IS_NO_AXIS_REF",
+          "Initial": "31",
+          "Comment": "Type of givenAXIS_REFvariable is notAXIS_REF"
+        },
+        {
+          "Name": "SMC_AXIS_REF_CHANGED_DURING_OPERATION",
+          "Initial": "32",
+          "Comment": "AXIS_REFvariable has been exchanged while the module\nwas active."
+        },
+        {
+          "Name": "SMC_FB_ACTIVE_AXIS_DISABLED",
+          "Initial": "33",
+          "Comment": "Axis disabled while being moved.MC_Power.bRegulatorOn"
+        },
+        {
+          "Name": "SMC_AXIS_NOT_READY_FOR_MOTION",
+          "Initial": "34",
+          "Comment": "Axis in its current state cannot execute a motion command, because the\naxis doesnât signal currently that it follows the target values."
+        },
+        {
+          "Name": "SMC_AXIS_ERROR_DURING_MOTION",
+          "Initial": "35",
+          "Comment": "The drive reported an error during an ongoing movement."
+        },
+        {
+          "Name": "SMC_FB_CALLED_FROM_WRONG_TASK",
+          "Initial": "36",
+          "Comment": "The function block was called from the wrong task."
+        },
+        {
+          "Name": "SMC_INVALID_DISTRIBUTED_CLOCKS_SETTINGS",
+          "Initial": "37",
+          "Comment": "The distributed clock settings of the EtherCAT slave are invalid.\nIf both SYNC0 and SYNC1 are enabled, we expect that the SYNC0\ncycle time is not greater than the SYNC1 cycle time, and that\nthe SYNC1 cycle time is an integer multiple of the SYNC0 cycle time."
+        },
+        {
+          "Name": "SMC_INVALID_TIMESTAMP",
+          "Initial": "38",
+          "Comment": "The timestamp is invalid, no actual position is available for\nSMC_ETC_InterpolateAxisPosition.  Check whether the library parameter\nLibParams.gc_SMC_ACT_VALUE_BUFFER_SIZE_BASE2_EXP is sufficiently\nlarge."
+        },
+        {
+          "Name": "SMC_AXIS_ERROR_DUE_TO_FB_ERROR",
+          "Initial": "39",
+          "Comment": "Axis error due to a severe FB error in the active motion function\nblock."
+        },
+        {
+          "Name": "SMC_VD_MAX_VELOCITY_EXCEEDED",
+          "Initial": "40",
+          "Comment": "Maximum velocityfMaxVelocityexceeded"
+        },
+        {
+          "Name": "SMC_VD_MAX_ACCELERATION_EXCEEDED",
+          "Initial": "41",
+          "Comment": "Maximum accelerationfMaxAccelerationexceeded"
+        },
+        {
+          "Name": "SMC_VD_MAX_DECELERATION_EXCEEDED",
+          "Initial": "42",
+          "Comment": "Maximum decelerationfMaxDecelerationexceeded"
+        },
+        {
+          "Name": "SMC_3SH_INVALID_VELACC_VALUES",
+          "Initial": "50",
+          "Comment": "Invalid velocity, acceleration, deceleration, or jerk values"
+        },
+        {
+          "Name": "SMC_3SH_MODE_NEEDS_HWLIMIT",
+          "Initial": "51",
+          "Comment": "Mode requests for safety reasons use of end switches."
+        },
+        {
+          "Name": "SMC_FRC_NO_FREE_HANDLE",
+          "Initial": "60",
+          "Comment": "No free handle has been sent to open file."
+        },
+        {
+          "Name": "SMC_MAC_INITIALIZATION_FAILED",
+          "Initial": "65",
+          "Comment": "Initialization of SMC_MultiAcyclicCommunicator not\nsuccessful"
+        },
+        {
+          "Name": "SMC_MAC_INVALID_TASK_HANDLE",
+          "Initial": "66",
+          "Comment": "The axis has got an invalid handle"
+        },
+        {
+          "Name": "SMC_MAC_TOO_MANY_TASKS",
+          "Initial": "67",
+          "Comment": "Too many tasks with SDO-producing axes"
+        },
+        {
+          "Name": "SMC_MAC_ATOMIC_ADD_FAILED",
+          "Initial": "68",
+          "Comment": "Atomic add failed"
+        },
+        {
+          "Name": "SMC_SDO_INVALID_DATALENGTH",
+          "Initial": "69",
+          "Comment": "SDO-read lead to invalid datalength (> 4)"
+        },
+        {
+          "Name": "SMC_SCM_NOT_SUPPORTED",
+          "Initial": "70",
+          "Comment": "Mode not supported"
+        },
+        {
+          "Name": "SMC_SCM_AXIS_IN_WRONG_STATE",
+          "Initial": "71",
+          "Comment": "In current mode, controller mode cannot be changed."
+        },
+        {
+          "Name": "SMC_SCM_INTERRUPTED",
+          "Initial": "72",
+          "Comment": "SMC_SetControllerModehas been interrupted byMC_Stoporerrorstop."
+        },
+        {
+          "Name": "SMC_ST_WRONG_CONTROLLER_MODE",
+          "Initial": "75",
+          "Comment": "Axis not in correct controller mode.  Deprecated, no longer returned bySMC_SetTorque."
+        },
+        {
+          "Name": "SMC_RAG_ERROR_DURING_STARTUP",
+          "Initial": "80",
+          "Comment": "Error at startup of the axis group"
+        },
+        {
+          "Name": "SMC_RAG_ERROR_AXIS_NOT_INITIALIZED",
+          "Initial": "81",
+          "Comment": "The axis is not yet in the required state."
+        },
+        {
+          "Name": "SMC_PP_WRONG_AXIS_TYPE",
+          "Initial": "85",
+          "Comment": "The function block does not support virtual or logical axes."
+        },
+        {
+          "Name": "SMC_PP_NUMBER_OF_ABSOLUTE_BITS_INVALID",
+          "Initial": "86",
+          "Comment": "The number of absolute bits is invalid, must be in the range\n8 .. 32."
+        },
+        {
+          "Name": "SMC_NEGATIVE_MODULO_PERIOD",
+          "Initial": "87",
+          "Comment": "The modulo period is negative, this is not supported."
+        },
+        {
+          "Name": "SMC_CGR_ZERO_VALUES",
+          "Initial": "90",
+          "Comment": "The value zero is invalid for iRatioTechUnitsNum and\ndwRatioTechUnitsDenom."
+        },
+        {
+          "Name": "SMC_CGR_DRIVE_POWERED",
+          "Initial": "91",
+          "Comment": "Gearing parameters must not be changed as long as the drive\nis under control."
+        },
+        {
+          "Name": "SMC_CGR_INVALID_POSPERIOD",
+          "Initial": "92",
+          "Comment": "Invalid modulo period (<= 0 or greater than half the bus\nbandwidth)"
+        },
+        {
+          "Name": "SMC_CGR_POSPERIOD_NOT_INTEGRAL",
+          "Initial": "93",
+          "Comment": "The modulo period in increments is not an integer, but the modulo-handling\nis done by the drive."
+        },
+        {
+          "Name": "SMC_FRACTION_TECH_UNITS_INVALID",
+          "Initial": "94",
+          "Comment": "The fraction describing the conversion between increments and technical\nunits is not initialized properly.  (Zero numerator or denumerator.)"
+        },
+        {
+          "Name": "SMC_SCALING_PARAMETERS_NOT_POSITIVE",
+          "Initial": "95",
+          "Comment": "The scaling parameters (increments per turn, gear settings, units in application)\nmust be all positive."
+        },
+        {
+          "Name": "SMC_SCALING_SETTINGS_TOO_LARGE",
+          "Initial": "96",
+          "Comment": "The scaling parameters (increments per turn, gear settings, units in application)\nare too large to fit into a fraction with 32 bit numerator and denominator."
+        },
+        {
+          "Name": "SMC_MODULO_PERIOD_TOO_MANY_DIGITS",
+          "Initial": "97",
+          "Comment": "The modulo period has too many digits.  The modulo period times the denominator\nof the fraction from user units to increments must be an integer."
+        },
+        {
+          "Name": "SMC_P_FTASKCYCLE_EMPTY",
+          "Initial": "110",
+          "Comment": "Axis contain no information on cycle time (fTaskCycle = 0)."
+        },
+        {
+          "Name": "SMC_R_NO_ERROR_TO_RESET",
+          "Initial": "120",
+          "Comment": "There is no error to reset."
+        },
+        {
+          "Name": "SMC_R_DRIVE_DOESNT_ANSWER",
+          "Initial": "121",
+          "Comment": "An error occurred trying to acknowledge the drive error."
+        },
+        {
+          "Name": "SMC_R_ERROR_NOT_RESETTABLE",
+          "Initial": "122",
+          "Comment": "The drive error could not be reset."
+        },
+        {
+          "Name": "SMC_R_DRIVE_DOESNT_ANSWER_IN_TIME",
+          "Initial": "123",
+          "Comment": "This error is no longer used and kept only for compatibility reasons.\nSee errorSMC_R_ERROR_NOT_RESETTABLE."
+        },
+        {
+          "Name": "SMC_R_CANNOT_RESET_COMMUNICATION_ERROR",
+          "Initial": "124",
+          "Comment": "A communication error cannot be acknowledged usingMC_Reset.  SeeSMC3_ReinitDrive."
+        },
+        {
+          "Name": "SMC_RP_PARAM_UNKNOWN",
+          "Initial": "130",
+          "Comment": "Parameter number unknown"
+        },
+        {
+          "Name": "SMC_RP_REQUESTING_ERROR",
+          "Initial": "131",
+          "Comment": "Error during transmission to the drives. See error number in\nfunction block instanceReadDriveParameter."
+        },
+        {
+          "Name": "SMC_RP_DRIVE_PARAMETER_NOT_MAPPED",
+          "Initial": "132",
+          "Comment": "No assignment for drive parameters available"
+        },
+        {
+          "Name": "SMC_RP_PARAM_CONVERSION_ERROR",
+          "Initial": "133",
+          "Comment": "Conversion of the value to / from the drive parameters failed.Unknown SoftMotion parameters"
+        },
+        {
+          "Name": "SMC_WP_PARAM_INVALID",
+          "Initial": "140",
+          "Comment": "Parameter number unknown or writing not allowed"
+        },
+        {
+          "Name": "SMC_WP_SENDING_ERROR",
+          "Initial": "141",
+          "Comment": "See error number in function block instanceWriteDriveParameter"
+        },
+        {
+          "Name": "SMC_WP_DRIVE_PARAMETER_NOT_MAPPED",
+          "Initial": "142",
+          "Comment": "No assignment for drive parameters available"
+        },
+        {
+          "Name": "SMC_WP_PARAM_CONVERSION_ERROR",
+          "Initial": "143",
+          "Comment": "Conversion of the value to / from the drive parameters failedUnknown SoftMotion parameters"
+        },
+        {
+          "Name": "SMC_H_AXIS_WASNT_STANDSTILL",
+          "Initial": "170",
+          "Comment": "Axis was not in standstill state."
+        },
+        {
+          "Name": "SMC_H_AXIS_DIDNT_START_HOMING",
+          "Initial": "171",
+          "Comment": "Drive did not start homing."
+        },
+        {
+          "Name": "SMC_H_AXIS_DIDNT_ANSWER",
+          "Initial": "172",
+          "Comment": "Drive did not reply, when homing was done."
+        },
+        {
+          "Name": "SMC_H_ERROR_WHEN_STOPPING",
+          "Initial": "173",
+          "Comment": "Error at stop after homing. Deceleration may not be set."
+        },
+        {
+          "Name": "SMC_H_AXIS_IN_ERRORSTOP",
+          "Initial": "174",
+          "Comment": "Drive is in errorstop status. Homing cannot be executed."
+        },
+        {
+          "Name": "SMC_H_SET_OP_MODE_HOMING_FAILED",
+          "Initial": "175",
+          "Comment": "Drive could not be switched to homing mode."
+        },
+        {
+          "Name": "SMC_H_CHECK_SET_OP_MODE_HOMING_FAILED",
+          "Initial": "176",
+          "Comment": "Drive did not report that it is in homing mode."
+        },
+        {
+          "Name": "SMC_H_PRE_HOMING_CHECKS_FAILED",
+          "Initial": "177",
+          "Comment": "Pre homing checks failed."
+        },
+        {
+          "Name": "SMC_MS_UNKNOWN_STOPPING_ERROR",
+          "Initial": "180",
+          "Comment": "Unknown error at stop"
+        },
+        {
+          "Name": "SMC_MS_INVALID_ACCDEC_VALUES",
+          "Initial": "181",
+          "Comment": "Invalid velocity, acceleration, deceleration, or jerk values"
+        },
+        {
+          "Name": "SMC_MS_DIRECTION_NOT_APPLICABLE",
+          "Initial": "182",
+          "Comment": "Direction = shortest not applicable"
+        },
+        {
+          "Name": "SMC_MS_AXIS_IN_ERRORSTOP",
+          "Initial": "183",
+          "Comment": "Drive is in errorstop status. Stop cannot be executed"
+        },
+        {
+          "Name": "SMC_BLOCKING_MC_STOP_WASNT_CALLED",
+          "Initial": "184",
+          "Comment": "Instance ofMC_Stopblocking the axis byExecute=TRUEhas not been called yet. MC_Stop (Execute=FALSE) has to be called."
+        },
+        {
+          "Name": "SMC_MS_AXIS_ALREADY_STOPPING",
+          "Initial": "185",
+          "Comment": "Cannot interrupt an ongoing MC_Stop"
+        },
+        {
+          "Name": "SMC_UNKNOWN_TASK_INTERVAL",
+          "Initial": "200",
+          "Comment": "The task interval of the bus task could not be determined."
+        },
+        {
+          "Name": "SMC_MA_INVALID_VELACC_VALUES",
+          "Initial": "201",
+          "Comment": "Invalidvelocityoraccelerationvalues"
+        },
+        {
+          "Name": "SMC_MA_INVALID_DIRECTION",
+          "Initial": "202",
+          "Comment": "Direction error"
+        },
+        {
+          "Name": "SMC_MR_INVALID_VELACC_VALUES",
+          "Initial": "226",
+          "Comment": "Invalidvelocityoraccelerationvalues"
+        },
+        {
+          "Name": "SMC_MR_INVALID_DIRECTION",
+          "Initial": "227",
+          "Comment": "Direction error"
+        },
+        {
+          "Name": "SMC_OVR_INVALID_OVERRIDE_FACTORS",
+          "Initial": "231",
+          "Comment": "Invalid velocity, acceleration or jerk override factor"
+        },
+        {
+          "Name": "SMC_INVALID_AXIS_FORECAST",
+          "Initial": "235",
+          "Comment": "Invalid (either negative or too large) axis forecast"
+        },
+        {
+          "Name": "SMC_AXIS_FORECAST_NOT_SUPPORTED",
+          "Initial": "236",
+          "Comment": "Axis does not support setting a forecast"
+        },
+        {
+          "Name": "SMC_MAD_INVALID_VELACC_VALUES",
+          "Initial": "251",
+          "Comment": "Invalidvelocityoraccelerationvalues"
+        },
+        {
+          "Name": "SMC_MAD_INVALID_DIRECTION",
+          "Initial": "252",
+          "Comment": "Direction error"
+        },
+        {
+          "Name": "SMC_MSI_INVALID_VELACC_VALUES",
+          "Initial": "276",
+          "Comment": "Invalid velocity, acceleration, deceleration, or jerk values"
+        },
+        {
+          "Name": "SMC_MSI_INVALID_DIRECTION",
+          "Initial": "277",
+          "Comment": "Direction error"
+        },
+        {
+          "Name": "SMC_MSI_INVALID_EXECUTION_ORDER",
+          "Initial": "278",
+          "Comment": "Except from aborting, donât call a major mvt-FB afterSMC_MoveSuperimposed"
+        },
+        {
+          "Name": "SMC_LOGICAL_NO_REAL_AXIS",
+          "Initial": "300",
+          "Comment": "No longer used; only for compatibility"
+        },
+        {
+          "Name": "SMC_MV_INVALID_ACCDEC_VALUES",
+          "Initial": "301",
+          "Comment": "Invalid velocity, acceleration, deceleration, or jerk values"
+        },
+        {
+          "Name": "SMC_MV_DIRECTION_NOT_APPLICABLE",
+          "Initial": "302",
+          "Comment": "Direction=shortest/fastestnot applicable"
+        },
+        {
+          "Name": "SMC_PP_ARRAYSIZE",
+          "Initial": "325",
+          "Comment": "Erroneous array size"
+        },
+        {
+          "Name": "SMC_PP_STEP0MS",
+          "Initial": "326",
+          "Comment": "Step time = t#0s"
+        },
+        {
+          "Name": "SMC_VP_ARRAYSIZE",
+          "Initial": "350",
+          "Comment": "Erroneous array size"
+        },
+        {
+          "Name": "SMC_VP_STEP0MS",
+          "Initial": "351",
+          "Comment": "Step time = t#0s"
+        },
+        {
+          "Name": "SMC_AP_ARRAYSIZE",
+          "Initial": "375",
+          "Comment": "Erroneous array size"
+        },
+        {
+          "Name": "SMC_AP_STEP0MS",
+          "Initial": "376",
+          "Comment": "Step time = t#0s"
+        },
+        {
+          "Name": "SMC_TP_TRIGGEROCCUPIED",
+          "Initial": "400",
+          "Comment": "Trigger already active"
+        },
+        {
+          "Name": "SMC_TP_COULDNT_SET_WINDOW",
+          "Initial": "401",
+          "Comment": "DriveInterface does not support the window function."
+        },
+        {
+          "Name": "SMC_TP_COMM_ERROR",
+          "Initial": "402",
+          "Comment": "Communication error"
+        },
+        {
+          "Name": "SMC_TRIGGER_OUT_OF_RANGE",
+          "Initial": "403",
+          "Comment": "The trigger number is not in the allowed range."
+        },
+        {
+          "Name": "SMC_LATCH_IN_CONTROLLER_NOT_SUPPORTED",
+          "Initial": "404",
+          "Comment": "The mode latch in controller got deprecated and is\nnot supported anymore."
+        },
+        {
+          "Name": "SMC_AT_TRIGGERNOTOCCUPIED",
+          "Initial": "410",
+          "Comment": "Trigger already de-allocated"
+        },
+        {
+          "Name": "SMC_MCR_INVALID_VELACC_VALUES",
+          "Initial": "426",
+          "Comment": "Invalid velocity, acceleration, deceleration, or jerk values"
+        },
+        {
+          "Name": "SMC_MCR_INVALID_DIRECTION",
+          "Initial": "427",
+          "Comment": "Invalid direction"
+        },
+        {
+          "Name": "SMC_MCA_INVALID_VELACC_VALUES",
+          "Initial": "451",
+          "Comment": "Invalid velocity, acceleration, deceleration, or jerk values"
+        },
+        {
+          "Name": "SMC_MCA_INVALID_DIRECTION",
+          "Initial": "452",
+          "Comment": "Invalid direction"
+        },
+        {
+          "Name": "SMC_MCA_DIRECTION_NOT_APPLICABLE",
+          "Initial": "453",
+          "Comment": "Direction = fastest not applicable"
+        },
+        {
+          "Name": "SMC_SDL_INVALID_AXIS_STATE",
+          "Initial": "475",
+          "Comment": "SMC_ChangeDynamicLimitsmay only be called in state standstill.\nor power_off."
+        },
+        {
+          "Name": "SMC_SDL_INVALID_VELACC_VALUES",
+          "Initial": "476",
+          "Comment": "Invalid velocity, acceleration, deceleration, or jerk values"
+        },
+        {
+          "Name": "SMC_SACF_INVALID_DYNAMIC_FACTOR",
+          "Initial": "480",
+          "Comment": "SMC_SetAdditionalConversionFactors: One of the factors has\nan invalid value."
+        },
+        {
+          "Name": "SMC_INVALID_VELACCJERK_VALUES",
+          "Initial": "501",
+          "Comment": "InvalidVelocity,Acceleration,Deceleration, orJerkvalues"
+        },
+        {
+          "Name": "SMC_INVALID_DIRECTION",
+          "Initial": "502",
+          "Comment": "InvalidDirection"
+        },
+        {
+          "Name": "SMC_CR_NO_TAPPETS_IN_CAM",
+          "Initial": "600",
+          "Comment": "Cam does not contain any tappets."
+        },
+        {
+          "Name": "SMC_CR_TOO_MANY_TAPPETS",
+          "Initial": "601",
+          "Comment": "Tappet group ID exceedsMAX_NUM_TAPPETS"
+        },
+        {
+          "Name": "SMC_CR_MORE_THAN_32_ACCESSES",
+          "Initial": "602",
+          "Comment": "More than 32 accesses on oneCAM_REF"
+        },
+        {
+          "Name": "SMC_CI_NO_CAM_SELECTED",
+          "Initial": "625",
+          "Comment": "No cam selected"
+        },
+        {
+          "Name": "SMC_CI_MASTER_OUT_OF_SCALE",
+          "Initial": "626",
+          "Comment": "Master axis out of valid range"
+        },
+        {
+          "Name": "SMC_CI_RAMPIN_NEEDS_VELACC_VALUES",
+          "Initial": "627",
+          "Comment": "Velocityandaccelerationvalues must be specified\nforramp_infunction"
+        },
+        {
+          "Name": "SMC_CI_SCALING_INCORRECT",
+          "Initial": "628",
+          "Comment": "Scaling variablesfEditor/TableMasterMin/Maxare not\ncorrect"
+        },
+        {
+          "Name": "SMC_CI_TOO_MANY_TAPPETS_PER_CYCLE",
+          "Initial": "629",
+          "Comment": "Too many tappets became active during one cycle"
+        },
+        {
+          "Name": "SMC_CI_MORE_THAN_32_ACCESSES",
+          "Initial": "630",
+          "Comment": "More than 32 accesses on oneCAM_REF"
+        },
+        {
+          "Name": "SMC_CI_MASTER_SYNC_POSITION_OUT_OF_SCALE",
+          "Initial": "631",
+          "Comment": "MasterSyncPosition out of valid range"
+        },
+        {
+          "Name": "SMC_CI_AVOID_REVERSAL_FOR_FINITE_AXIS",
+          "Initial": "632",
+          "Comment": "InputAvoidReversalmust not be set for finite slave\naxes."
+        },
+        {
+          "Name": "SMC_CI_MASTERSTARTDISTANCE_MUST_BE_ZERO_BUFFERED",
+          "Initial": "633",
+          "Comment": "If BufferMode is not Aborting, then MasterStartDistance must\nnot be positive."
+        },
+        {
+          "Name": "SMC_CI_CAM_CHANGED_DURING_RAMP_IN_DIST",
+          "Initial": "634",
+          "Comment": "The input CamTableId changed while ramping in with start\nmode ramp_in_dist"
+        },
+        {
+          "Name": "SMC_CB_NOT_IMPLEMENTED",
+          "Initial": "640",
+          "Comment": "Function block for the given cam format is not implemented"
+        },
+        {
+          "Name": "SMC_GI_RATIO_DENOM",
+          "Initial": "675",
+          "Comment": "RatioDenominator= 0"
+        },
+        {
+          "Name": "SMC_GI_INVALID_ACC",
+          "Initial": "676",
+          "Comment": "Accelerationinvalid"
+        },
+        {
+          "Name": "SMC_GI_INVALID_DEC",
+          "Initial": "677",
+          "Comment": "Decelerationinvalid"
+        },
+        {
+          "Name": "SMC_GI_MASTER_REGULATOR_CHANGED",
+          "Initial": "678",
+          "Comment": "Master changed regulator state (on -> off or off -> on)\nwhile coupling with slave was active."
+        },
+        {
+          "Name": "SMC_GI_INVALID_JERK",
+          "Initial": "679",
+          "Comment": "Jerkinvalid"
+        },
+        {
+          "Name": "SMC_PH_INVALID_VELACCDEC",
+          "Initial": "725",
+          "Comment": "Velocityandacceleration/decelerationvalues\ninvalid"
+        },
+        {
+          "Name": "SMC_PH_ROTARYAXIS_PERIOD0",
+          "Initial": "726",
+          "Comment": "Rotation axis withfPositionPeriod= 0"
+        },
+        {
+          "Name": "SMC_MASTER_REGULATOR_CHANGED",
+          "Initial": "727",
+          "Comment": "Master changed regulator state (on -> off or off -> on)\nwhile coupling with slave was active."
+        },
+        {
+          "Name": "SMC_NO_CAM_REF_TYPE",
+          "Initial": "750",
+          "Comment": "Type of given cam is not MC_CAM_REF."
+        },
+        {
+          "Name": "SMC_CAM_TABLE_DOES_NOT_COVER_MASTER_SCALE",
+          "Initial": "751",
+          "Comment": "Master area,xStartandxEnd, fromCamTableis\nnot covered by curve data."
+        },
+        {
+          "Name": "SMC_CAM_TABLE_EMPTY_MASTER_RANGE",
+          "Initial": "752",
+          "Comment": "Cam data table has empty master range."
+        },
+        {
+          "Name": "SMC_CAM_TABLE_INVALID_MASTER_MINMAX",
+          "Initial": "753",
+          "Comment": "Cam data master has invalid max-, min-values."
+        },
+        {
+          "Name": "SMC_CAM_TABLE_INVALID_SLAVE_MINMAX",
+          "Initial": "754",
+          "Comment": "Cam data slave has invalid max-, min-values."
+        },
+        {
+          "Name": "SMC_CAM_INVALID_ELEMENT_COUNT",
+          "Initial": "755",
+          "Comment": "The element count of the cam must be > 0."
+        },
+        {
+          "Name": "SMC_CAM_UNKNOWN_SEGMENT_TYPE",
+          "Initial": "756",
+          "Comment": "Unknown cam segment type encountered."
+        },
+        {
+          "Name": "SMC_SAFE_CAM_REF_ONLY_ONE_ACCESS_ALLOWED_AT_A_TIME",
+          "Initial": "757",
+          "Comment": "CAM_REF_MULTICORE_SAFE can only be accessed by 1 read or 1\nwrite at a time."
+        },
+        {
+          "Name": "SMC_CAM_REF_INSUFFICIENT_MEMORY",
+          "Initial": "758",
+          "Comment": "The data array of MC_CAM_REF is too small to fit all cam\nelements."
+        },
+        {
+          "Name": "SMC_GIP_MASTER_DIRECTION_CHANGE",
+          "Initial": "775",
+          "Comment": "Obsolete: During coupling of slave axis, master axis has\nchanged direction of rotation."
+        },
+        {
+          "Name": "SMC_GIP_SLAVE_REVERSAL_CANNOT_BE_AVOIDED",
+          "Initial": "776",
+          "Comment": "Obsolete: InputAvoidReversalis set, but slave reversal\ncannot be avoided."
+        },
+        {
+          "Name": "SMC_GIP_AVOID_REVERSAL_FOR_FINITE_AXIS",
+          "Initial": "777",
+          "Comment": "InputAvoidReversalmust not be set for finite slave\naxes."
+        },
+        {
+          "Name": "SMC_GIP_MASTERSTARTDISTANCE_MUST_BE_ZERO_BUFFERED",
+          "Initial": "778",
+          "Comment": "If BufferMode is not Aborting, then MasterStartDistance must\nnot be positive."
+        },
+        {
+          "Name": "SMC_GIP_CANNOT_START_SYNC",
+          "Initial": "779",
+          "Comment": "The synchronisation cannot be started.  This can happen when GearInPos is commanded\nas a buffered or blending movement and the master is in standstill when it becomes\nactive."
+        },
+        {
+          "Name": "SMC_RAMP_IN_MASTER_DIRECTION_CHANGED",
+          "Initial": "780",
+          "Comment": "During coupling of slave axis, master axis has changed\ndirection of rotation."
+        },
+        {
+          "Name": "SMC_RAMP_IN_SLAVE_REVERSAL_CANNOT_BE_AVOIDED",
+          "Initial": "781",
+          "Comment": "InputAvoidReversalis set, but slave reversal cannot be\navoided."
+        },
+        {
+          "Name": "SMC_DCS_ON_OFF_COMPENSATION_REQUIRES_FORECAST",
+          "Initial": "790",
+          "Comment": "Using a negative On or OffCompensation requires setting a\nforecast."
+        },
+        {
+          "Name": "SMC_DCS_ON_OFF_COMPENSATION_EXCEEDS_FORECAST",
+          "Initial": "791",
+          "Comment": "The forecast must not be less than the maximum absolute value of all\nnegative On/OffCompensations."
+        },
+        {
+          "Name": "SMC_DCS_SWITCHES_MUST_BE_ORDERED_BY_POSITION",
+          "Initial": "792",
+          "Comment": "Switches on the same track must be ordered by position."
+        },
+        {
+          "Name": "SMC_DCS_SWITCHES_MUST_NOT_OVERLAP",
+          "Initial": "793",
+          "Comment": "Switches on the same track must not overlap."
+        },
+        {
+          "Name": "SMC_DCS_INVALID_TRACK_NUMBER",
+          "Initial": "794",
+          "Comment": "Switch has an invalid track number."
+        },
+        {
+          "Name": "SMC_DCS_MAX_SWITCHES_PER_TRACK_EXCEEDED",
+          "Initial": "795",
+          "Comment": "Maximum number of switches for a track exceeded."
+        },
+        {
+          "Name": "SMC_DCS_SWITCH_POSITION_OUTSIDE_MODULO_PERIOD",
+          "Initial": "796",
+          "Comment": "At least one of the switches lies outside the modulo period\nof the axis."
+        },
+        {
+          "Name": "SMC_DCS_CAM_SWITCH_POINTER_NOT_SET",
+          "Initial": "797",
+          "Comment": "TheSwitches.CamSwitchPtris not set."
+        },
+        {
+          "Name": "SMC_BC_BL_TOO_BIG",
+          "Initial": "800",
+          "Comment": "Gear backlashfBacklashtoo large (> position periode/2)"
+        },
+        {
+          "Name": "SMC_QPROF_DIVERGES",
+          "Initial": "825",
+          "Comment": "Internal error: computation of quadratic trajectory failed"
+        },
+        {
+          "Name": "SMC_QPROF_INVALID_PARAMETER",
+          "Initial": "826",
+          "Comment": "Internal error: computation of quadratic trajectory failed"
+        },
+        {
+          "Name": "SMC_QPROF_NO_RESULT",
+          "Initial": "827",
+          "Comment": "Internal error: computation of quadratic trajectory failed"
+        },
+        {
+          "Name": "SMC_QPROF_INVALID_NEW_LBD",
+          "Initial": "828",
+          "Comment": "Internal error: computation of quadratic trajectory failed"
+        },
+        {
+          "Name": "SMC_QPROF_BAD_NEGOTIATION",
+          "Initial": "829",
+          "Comment": "Internal error: computation of quadratic trajectory failed"
+        },
+        {
+          "Name": "SMC_QPROF_INVALID_INTERVAL",
+          "Initial": "830",
+          "Comment": "Internal error: computation of quadratic trajectory failed"
+        },
+        {
+          "Name": "SMC_QPROF_NOT_ENOUGH_PHASES",
+          "Initial": "831",
+          "Comment": "Internal error: computation of quadratic trajectory failed"
+        },
+        {
+          "Name": "SMC_TG_INTERNAL_ERROR",
+          "Initial": "832",
+          "Comment": "Internal error: computation of quadratic trajectory failed"
+        },
+        {
+          "Name": "SMC_SRT_NOT_STANDSTILL_OR_POWEROFF",
+          "Initial": "850",
+          "Comment": "Action only permitted instandstillorpower_off."
+        },
+        {
+          "Name": "SMC_SRT_INVALID_RAMPTYPE",
+          "Initial": "851",
+          "Comment": "Invalid ramp type"
+        },
+        {
+          "Name": "SMC_SMT_NOT_STANDSTILL_OR_POWEROFF",
+          "Initial": "852",
+          "Comment": "Action only permitted instandstillorpower_off."
+        },
+        {
+          "Name": "SMC_SMT_INVALID_MOVEMENTTYPE_OR_POSITIONPERIOD",
+          "Initial": "853",
+          "Comment": "Invalid motion type or position period"
+        },
+        {
+          "Name": "SMC_SMT_AXIS_NOT_VIRTUAL",
+          "Initial": "854",
+          "Comment": "Function block only applicable to virtual axis."
+        },
+        {
+          "Name": "SMC_NO_LICENSE",
+          "Initial": "1000",
+          "Comment": "Target is not licensed for CNC."
+        },
+        {
+          "Name": "SMC_INT_VEL_ZERO",
+          "Initial": "1001",
+          "Comment": "Path cannot be processed because setvelocity=0."
+        },
+        {
+          "Name": "SMC_INT_NO_STOP_AT_END",
+          "Initial": "1002",
+          "Comment": "Last object of path has end velocity <> 0."
+        },
+        {
+          "Name": "SMC_INT_DATA_UNDERRUN",
+          "Initial": "1003",
+          "Comment": "Warning: GEOINFO-List processed inDataInbut end of list not reached.Reason:EndOfListof the queue inDataInnot be setSMC_Interpolatorfaster than path generating function blocks"
+        },
+        {
+          "Name": "SMC_INT_VEL_NONZERO_AT_STOP",
+          "Initial": "1004",
+          "Comment": "Velocity at Stop > 0"
+        },
+        {
+          "Name": "SMC_INT_TOO_MANY_RECURSIONS",
+          "Initial": "1005",
+          "Comment": "Too muchSMC_Interpolatorrecursions. SoftMotion error"
+        },
+        {
+          "Name": "SMC_INT_NO_CHECKVELOCITIES",
+          "Initial": "1006",
+          "Comment": "SMC_CheckVelocitiesis not the last processed function\nblock, that accesses to the OutQueue-data bypoqDataIn."
+        },
+        {
+          "Name": "SMC_INT_PATH_EXCEEDED",
+          "Initial": "1007",
+          "Comment": "Internal or numeric error"
+        },
+        {
+          "Name": "SMC_INT_VEL_ACC_DEC_ZERO",
+          "Initial": "1008",
+          "Comment": "Velocityandacceleration/decelerationis null\nor to low"
+        },
+        {
+          "Name": "SMC_INT_DWIPOTIME_ZERO",
+          "Initial": "1009",
+          "Comment": "FB called withdwIpoTime=0"
+        },
+        {
+          "Name": "SMC_INT_JERK_NONPOSITIVE",
+          "Initial": "1010",
+          "Comment": "Jerkinvalid becausejerkmust be positive"
+        },
+        {
+          "Name": "SMC_INT_QPROF_DIVERGES",
+          "Initial": "1011",
+          "Comment": "Internal error. Computation of the quadratic velocity\nprofile does not converge."
+        },
+        {
+          "Name": "SMC_INT_INVLALID_VELOCITY_MODE",
+          "Initial": "1012",
+          "Comment": "Invalid velocity mode"
+        },
+        {
+          "Name": "SMC_INT_TOO_MANY_AXES_INTERPOLATED",
+          "Initial": "1013",
+          "Comment": "More than the allowed number of axes has been interpolated.\nYou are using a restricted version."
+        },
+        {
+          "Name": "SMC_INT_DEGENERATE_SEGMENT",
+          "Initial": "1014",
+          "Comment": "The segment is numerically degenerate: It is very short and\nat the end of the queue. It should be ignored."
+        },
+        {
+          "Name": "SMC_HIGH_CURVATURE_SPLINE",
+          "Initial": "1015",
+          "Comment": "Computation of interpolation point failed because the curvature of the spline is too high.\nTry changing the path to avoid sharp corners."
+        },
+        {
+          "Name": "SMC_INT_PROBE_ACKNOWLEDGED_WHILE_MOVING",
+          "Initial": "1016",
+          "Comment": "A probe (G31) must not be acknowledged while the interpolator is moving.  Stop the interpolator first,\nusing the inputs bSlow_Stop, bQuick_Stop, or bEmergency_Stop."
+        },
+        {
+          "Name": "SMC_INT_PROBE_NOT_ACKNOWLEDGED",
+          "Initial": "1017",
+          "Comment": "A probe (G31) has not been acknowledged."
+        },
+        {
+          "Name": "SMC_INT_PROBE_INTERNAL_ERROR",
+          "Initial": "1018",
+          "Comment": "An internal error ocurred while acknowledging the probe\n(G31)."
+        },
+        {
+          "Name": "SMC_INT2DIR_BUFFER_TOO_SMALL",
+          "Initial": "1050",
+          "Comment": "Warning:poqDataInofOutQueueis created too small.\nAdherence of stops not guaranteed."
+        },
+        {
+          "Name": "SMC_INT2DIR_PATH_FITS_NOT_IN_QUEUE",
+          "Initial": "1051",
+          "Comment": "Path does not go completely in queue."
+        },
+        {
+          "Name": "SMC_XINT_INVALID_DIRECTION",
+          "Initial": "1070",
+          "Comment": "Direction input has an invalid value."
+        },
+        {
+          "Name": "SMC_XINT_NOINTERSECTION",
+          "Initial": "1071",
+          "Comment": "Could not determine position on CNC path for the given\nx-position."
+        },
+        {
+          "Name": "SMC_WAR_INT_OUTQUEUE_TOO_SMALL",
+          "Initial": "1080",
+          "Comment": "Warning:poqDataInofOutQueueis created too small.\nAdherence of stops not guaranteed"
+        },
+        {
+          "Name": "SMC_WAR_END_VELOCITIES_INCORRECT",
+          "Initial": "1081",
+          "Comment": "Warning: Final velocities inconsistent"
+        },
+        {
+          "Name": "SMC_CV_ACC_DEC_VEL_NONPOSITIVE",
+          "Initial": "1100",
+          "Comment": "Invalid velocity, acceleration, deceleration, or jerk values"
+        },
+        {
+          "Name": "SMC_CA_INVALID_ACCDEC_VALUES",
+          "Initial": "1120",
+          "Comment": "Invalid velocity, acceleration, deceleration, or jerk values"
+        },
+        {
+          "Name": "SMC_TOK_INCOMPLETE_TOKEN_AT_END_OF_INPUT",
+          "Initial": "1130",
+          "Comment": "The input has been exhausted, but there is still an\nunfinished token"
+        },
+        {
+          "Name": "SMC_TOK_NOT_A_VALID_TOKEN",
+          "Initial": "1131",
+          "Comment": "The input does not match any token type"
+        },
+        {
+          "Name": "SMC_TOK_AMBIGUOUS_INPUT",
+          "Initial": "1132",
+          "Comment": "The input is ambiguous, it could be more than one token type"
+        },
+        {
+          "Name": "SMC_TOK_STRING_TOO_LONG_FOR_TOKEN",
+          "Initial": "1133",
+          "Comment": "The string is too long to be stored in a token.\n(Too long string literal, variable name or identifier?)"
+        },
+        {
+          "Name": "SMC_TOK_INVALID_NUMLIT",
+          "Initial": "1134",
+          "Comment": "Invalid number literal."
+        },
+        {
+          "Name": "SMC_PRS_FUNC_DECL_TOO_FEW_ARGUMENTS",
+          "Initial": "1150",
+          "Comment": "Too few arguments provided for function or subprogram inside\nG-Code"
+        },
+        {
+          "Name": "SMC_PRS_FUNC_DECL_TOO_MANY_ARGUMENTS",
+          "Initial": "1151",
+          "Comment": "Too many arguments provided for function or subprogram\ninside G-Code"
+        },
+        {
+          "Name": "SMC_PRS_FUNC_DECL_WRONG_ARGUMENT_TYPE",
+          "Initial": "1152",
+          "Comment": "Argument types do not match the function or subprogram\ndeclaration"
+        },
+        {
+          "Name": "SMC_PRS_LOCAL_VAR_NOT_FOUND",
+          "Initial": "1153",
+          "Comment": "Could not find local variable on stack"
+        },
+        {
+          "Name": "SMC_PRS_INVALID_STRING",
+          "Initial": "1154",
+          "Comment": "Could not read string from token"
+        },
+        {
+          "Name": "SMC_PRS_TOO_MANY_CLOSING_BRACKETS",
+          "Initial": "1155",
+          "Comment": "Got more closing than opening brackets"
+        },
+        {
+          "Name": "SMC_PRS_TOO_MANY_OPENING_BRACKETS",
+          "Initial": "1156",
+          "Comment": "Got more opening than closing brackets"
+        },
+        {
+          "Name": "SMC_PRS_NO_SUCH_INFIX_OPERATOR",
+          "Initial": "1157",
+          "Comment": "Did not find infix-operator"
+        },
+        {
+          "Name": "SMC_PRS_NO_SUCH_PREFIX_OPERATOR",
+          "Initial": "1158",
+          "Comment": "Did not find prefix-operator"
+        },
+        {
+          "Name": "SMC_PRS_OPERATOR_INVALID_PRECEDENCE",
+          "Initial": "1159",
+          "Comment": "Got two operators with equal precedence but non-equal\nassociativity"
+        },
+        {
+          "Name": "SMC_PRS_NOT_A_TERM",
+          "Initial": "1160",
+          "Comment": "Expected a valid term"
+        },
+        {
+          "Name": "SMC_PRS_EXPRESSION_INVALID_SEQUENCE",
+          "Initial": "1161",
+          "Comment": "Found invalid sequence of tokens inside expression"
+        },
+        {
+          "Name": "SMC_PRS_TOO_MANY_TERMS",
+          "Initial": "1162",
+          "Comment": "Got more terms than expected"
+        },
+        {
+          "Name": "SMC_PRS_STACK_OVERFLOW",
+          "Initial": "1163",
+          "Comment": "Could not parse an expression because the stack is too small"
+        },
+        {
+          "Name": "SMC_PRS_VAR_NAME_ALREADY_USED",
+          "Initial": "1164",
+          "Comment": "The name of a subprogram parameter or variable is already used for a different\nsubprogram parameter or variable."
+        },
+        {
+          "Name": "SMC_PRS_INCOMPLETE_SENTENCE_IN_TOKEN_QUEUE",
+          "Initial": "1165",
+          "Comment": "The input token queue of the g-code parser does not hold a complete\ng-code sentence."
+        },
+        {
+          "Name": "SMC_PRS_TOO_MANY_SUBPROGRAMS",
+          "Initial": "1167",
+          "Comment": "The subprogram declaration could not be stored because the symbol table capacity\nhas been exceeded.\nThe capacity of the symbol table can be changed with the library parameter\nSMC_CNC_LibParams.MAX_SUBPROGRAMS."
+        },
+        {
+          "Name": "SMC_PRS_TOO_MANY_SUBPROGRAM_PARAMETERS",
+          "Initial": "1168",
+          "Comment": "The maximum number of subprogram parameters has been exceeded.\nThis maximum number can be changed with the library parameter\nSMC_CNC_LibParams.MAX_SUBPROGRAM_PARAMS."
+        },
+        {
+          "Name": "SMC_PRS_SUBPROGRAM_LOOKUP_FAILED",
+          "Initial": "1169",
+          "Comment": "The lookup of the subprogram declaration failed.  Maybe the subprogram name is\nincorrect, or the search path for subprograms is incomplete.\nIs the file name all lower case?"
+        },
+        {
+          "Name": "SMC_PRS_VAR_NOT_FOUND",
+          "Initial": "1170",
+          "Comment": "Did not find variable in symbol table"
+        },
+        {
+          "Name": "SMC_PRS_TOKEN_TYPE_UNKNOWN",
+          "Initial": "1171",
+          "Comment": "Token type unknown"
+        },
+        {
+          "Name": "SMC_PRS_GOT_NO_TERM",
+          "Initial": "1172",
+          "Comment": "No term after G-address"
+        },
+        {
+          "Name": "SMC_PRS_INVALID_VAR_TYPE",
+          "Initial": "1173",
+          "Comment": "Unknown variable type (not LREAL, BOOL, or STRING)."
+        },
+        {
+          "Name": "SMC_PRS_UNEXPECTED_TOKEN",
+          "Initial": "1174",
+          "Comment": "A token of a different type (e.g. an operator or identifier)\nwas expected here."
+        },
+        {
+          "Name": "SMC_PRS_ID3_EXPECTED",
+          "Initial": "1175",
+          "Comment": "An identifier with length three or longer was expected here."
+        },
+        {
+          "Name": "SMC_PRS_ID_TOO_LONG",
+          "Initial": "1176",
+          "Comment": "The identifier is too long (more than 80 characters)."
+        },
+        {
+          "Name": "SMC_PRS_GADDRESS_EXPECTED",
+          "Initial": "1177",
+          "Comment": "A G-address (such as âGâ, âFâ, âXâ) was expected here."
+        },
+        {
+          "Name": "SMC_PRS_NWORD_EXPECTED",
+          "Initial": "1178",
+          "Comment": "An N-word (such as âN10â) was expected here."
+        },
+        {
+          "Name": "SMC_PRS_NWORD_INVALID_SENTENCE_NUMBER",
+          "Initial": "1179",
+          "Comment": "The sentence number is not in the range [0, â¦,\n16#FFFFFFFF]."
+        },
+        {
+          "Name": "SMC_PRS_NWORD_SENTENCE_NUMBER_NO_NUMBER_LITERAL",
+          "Initial": "1180",
+          "Comment": "The sentence number must be a number literal.  (For example,\nexpressions are not allowed.)"
+        },
+        {
+          "Name": "SMC_PRS_USE_OF_RESERVED_KEYWORD",
+          "Initial": "1181",
+          "Comment": "The identifier is a keyword reserved for future use that\ncannot be used here."
+        },
+        {
+          "Name": "SMC_PRS_SUBPROGRAMS_SIGNATURE_MISMATCH",
+          "Initial": "1182",
+          "Comment": "The subprogram declaration has already been read with a different\nsignature or an error."
+        },
+        {
+          "Name": "SMC_PRS_INITIAL_VALUE_HAS_WRONG_TYPE",
+          "Initial": "1183",
+          "Comment": "The initial value has the wrong type for this local variable"
+        },
+        {
+          "Name": "SMC_PRS_TOO_MANY_LOCAL_VARIABLES",
+          "Initial": "1184",
+          "Comment": "The maximum number of local variables has been exceeded.\nThis maximum number can be changed with the library parameter\nSMC_CNC_LibParams.MAX_SUBPROGRAM_PARAMS."
+        },
+        {
+          "Name": "SMC_PRS_SUBPROG_MUST_BE_FIRST_SENTENCE",
+          "Initial": "1185",
+          "Comment": "A subprogram declaration must be the first sentence in a\ng-code file."
+        },
+        {
+          "Name": "SMC_PRS_ONLY_ONE_SUBPROGRAM_PER_FILE_ALLOWED",
+          "Initial": "1186",
+          "Comment": "Only one subprogram is allowed in a g-code file."
+        },
+        {
+          "Name": "SMC_PRS_LET_AFTER_REGULAR_SENTENCE",
+          "Initial": "1187",
+          "Comment": "A LET declaration is not allowed after a regular g-code\nsentence."
+        },
+        {
+          "Name": "SMC_PRS_UNMATCHED_END_SUBPROGRAM",
+          "Initial": "1188",
+          "Comment": "The END_SUBPROGRAM sentence is not matched by a subprogram\ndeclaration."
+        },
+        {
+          "Name": "SMC_PRS_UNEXPECTED_TOKENS_AFTER_SUBPROGRAM",
+          "Initial": "1189",
+          "Comment": "After END_SUBPROGRAM, no more tokens are allowed."
+        },
+        {
+          "Name": "SMC_PRS_MISSING_END_SUBPROGRAM",
+          "Initial": "1190",
+          "Comment": "A subprogram is not terminated by END_SUBPROGRAM."
+        },
+        {
+          "Name": "SMC_PRS_USE_OF_KEYWORD",
+          "Initial": "1191",
+          "Comment": "The identifier is a keyword that cannot be used here."
+        },
+        {
+          "Name": "SMC_PRS_DYNCALL_EXPECTED_SUBNAME_EXP",
+          "Initial": "1192",
+          "Comment": "The first argument to a DYNCALL must be an expression\nfor the subprogram name."
+        },
+        {
+          "Name": "SMC_PRS_DYNCALL_EXPECTED_SUBNAME_TYPE_STRING",
+          "Initial": "1193",
+          "Comment": "The first argument to a DYNCALL (subprogram name)\nmust have type STRING."
+        },
+        {
+          "Name": "SMC_DEC_ACC_TOO_LITTLE",
+          "Initial": "1200",
+          "Comment": "Accelerationvalue impermissible"
+        },
+        {
+          "Name": "SMC_DEC_RET_TOO_LITTLE",
+          "Initial": "1201",
+          "Comment": "Decelerationvalue impermissible"
+        },
+        {
+          "Name": "SMC_DEC_OUTQUEUE_RAN_EMPTY",
+          "Initial": "1202",
+          "Comment": "Data underrun. Queue has been read and is empty."
+        },
+        {
+          "Name": "SMC_DEC_JUMP_TO_UNKNOWN_LINE",
+          "Initial": "1203",
+          "Comment": "Jump to line cannot be executed because line number is\nunknown."
+        },
+        {
+          "Name": "SMC_DEC_INVALID_SYNTAX",
+          "Initial": "1204",
+          "Comment": "Syntax invalid"
+        },
+        {
+          "Name": "SMC_DEC_3DMODE_OBJECT_NOT_SUPPORTED",
+          "Initial": "1205",
+          "Comment": "Objects are not supported in 3D mode."
+        },
+        {
+          "Name": "SMC_DEC_NEGATIVE_PERIOD",
+          "Initial": "1206",
+          "Comment": "Negative value as a period of additional axes invalid"
+        },
+        {
+          "Name": "SMC_DEC_DIMENSIONS_EXCLUSIVE_AU",
+          "Initial": "1207",
+          "Comment": "Not both axes A and U are interpolated. PA and PU are\nmutually exclusive."
+        },
+        {
+          "Name": "SMC_DEC_DIMENSIONS_EXCLUSIVE_BV",
+          "Initial": "1208",
+          "Comment": "Not both axes B and V are interpolated. PB and PV are\nmutually exclusive."
+        },
+        {
+          "Name": "SMC_DEC_DIMENSIONS_EXCLUSIVE_CW",
+          "Initial": "1209",
+          "Comment": "Not both axes C and W are interpolated. PC and PW are\nmutually exclusive."
+        },
+        {
+          "Name": "SMC_DEC_DCS_NOT_ALL_OF_ABC_GIVEN",
+          "Initial": "1210",
+          "Comment": "For G54/G55/G56, either all of A,B,C or none must be given if\norientation mode is not equal to SMC_ORI_CONVENTION.ADDAXES."
+        },
+        {
+          "Name": "SMC_DEC_DCS_2D_NOT_IN_XY_PLANE",
+          "Initial": "1211",
+          "Comment": "The z-axis of the decoder CS must be equal to the z-axis of the\nmachine CS."
+        },
+        {
+          "Name": "SMC_DEC_CIRCLE_NON_UNIFORM_SCALING",
+          "Initial": "1212",
+          "Comment": "Scaling would distort commanded circle or ellipse."
+        },
+        {
+          "Name": "SMC_DEC_ROTATION_AFFECTS_SCALING",
+          "Initial": "1213",
+          "Comment": "New relative rotation of the DCS (G55) would affect the\nscaling"
+        },
+        {
+          "Name": "SMC_DEC_DCS_NOT_ALL_OF_IJK_GIVEN",
+          "Initial": "1214",
+          "Comment": "For G54/G55/G56, either all of I,J,K or none must be given."
+        },
+        {
+          "Name": "SMC_IPR_LOCAL_VAR_UNKNOWN_TYPE",
+          "Initial": "1250",
+          "Comment": "Local variable cannot be read due to invalid type"
+        },
+        {
+          "Name": "SMC_IPR_LVALUE_WRONG_TYPE",
+          "Initial": "1251",
+          "Comment": "The variable thatâs supposed to be written on does not have\nthe correct type."
+        },
+        {
+          "Name": "SMC_IPR_EVAL_STACK_OVERFLOW",
+          "Initial": "1252",
+          "Comment": "Could not evaluate an expression because the evaluation stack is too small.\nYou can change the size of the eval stack with the library parameter\nSMC_CNC_LibParams.EVAL_STACK_SIZE."
+        },
+        {
+          "Name": "SMC_IPR_NOT_A_NUMBER",
+          "Initial": "1253",
+          "Comment": "Numeric term became NaN"
+        },
+        {
+          "Name": "SMC_IPR_DIVISION_BY_ZERO",
+          "Initial": "1254",
+          "Comment": "Division by zero"
+        },
+        {
+          "Name": "SMC_IPR_INVALID_SCALING_FACTORS",
+          "Initial": "1255",
+          "Comment": "Invalid scaling factors"
+        },
+        {
+          "Name": "SMC_IPR_INTERPRETER_STACK_IMBALANCE",
+          "Initial": "1256",
+          "Comment": "On subprogram return, the interpreter stack ran empty.\nInternal error."
+        },
+        {
+          "Name": "SMC_IPR_INTERPRETER_STACK_OVERFLOW",
+          "Initial": "1257",
+          "Comment": "The interpreter stack is too small.  Too many local variables in\nthe g-code or too many subprograms active."
+        },
+        {
+          "Name": "SMC_IPR_INVALID_INTERPRETER_STACK_BUFFER",
+          "Initial": "1258",
+          "Comment": "The given buffer for the interpreter stack is either 0 or smaller\nthan 1024 bytes."
+        },
+        {
+          "Name": "SMC_IPR_BUFFER_TOO_SMALL",
+          "Initial": "1259",
+          "Comment": "The buffer for the outqueue is too small."
+        },
+        {
+          "Name": "SMC_NO_PROBE_ALLOWED",
+          "Initial": "1260",
+          "Comment": "For this sentence type the PROBE word is not allowed"
+        },
+        {
+          "Name": "SMC_AT_MOST_ONE_PROBE_ALLOWED",
+          "Initial": "1261",
+          "Comment": "At most one probe word is allowed per sentence"
+        },
+        {
+          "Name": "SMC_PROBE_NON_POSITIVE",
+          "Initial": "1262",
+          "Comment": "The probe number must be positive"
+        },
+        {
+          "Name": "SMC_PROBE_TOO_LARGE",
+          "Initial": "1263",
+          "Comment": "The probe number exceeds an unsigned 32 bit integer"
+        },
+        {
+          "Name": "SMC_NO_HFUN_ON_PROBE_ALLOWED",
+          "Initial": "1264",
+          "Comment": "H-functions not allowed for probe movements (G31)."
+        },
+        {
+          "Name": "SMC_ARC_2DMODE_K_AND_T_DETERMINE_APEX",
+          "Initial": "1265",
+          "Comment": "In 2.5D mode, both K and T define the apex.  Only one may be\nused."
+        },
+        {
+          "Name": "SMC_ARC_RADIUS_AND_APEX_OR_CENTER_GIVEN",
+          "Initial": "1266",
+          "Comment": "If the radius is used with R, apex (T/K) and center (I/J/K)\nmust not be used."
+        },
+        {
+          "Name": "SMC_ARC_CENTER_NOT_GIVEN",
+          "Initial": "1267",
+          "Comment": "The center (I/J/K) must be given if no radius is given."
+        },
+        {
+          "Name": "SMC_ARC_DISTANCE_LARGER_THAN_DIAMETER",
+          "Initial": "1268",
+          "Comment": "The distance of start and end-position is larger than two times\nthe radius.\nSee SMC_NCIntepreter.dCircleTolerance."
+        },
+        {
+          "Name": "SMC_ARC_DISTANCE_TOO_SMALL",
+          "Initial": "1269",
+          "Comment": "The distance between start- and endposition is almost zero."
+        },
+        {
+          "Name": "SMC_ARC_APEX_TOO_SMALL",
+          "Initial": "1270",
+          "Comment": "The given apex is too small (almost zero)."
+        },
+        {
+          "Name": "SMC_ARC_APEX_TOO_LARGE",
+          "Initial": "1271",
+          "Comment": "The given apex is larger than 1080."
+        },
+        {
+          "Name": "SMC_ARC_CENTER_NOT_ON_PERPENDICULAR_BISECTOR",
+          "Initial": "1272",
+          "Comment": "The center point is too far from the perpendicular bisector\nof the start and end point.\nSee SMC_NCIntepreter.dCircleTolerance."
+        },
+        {
+          "Name": "SMC_CNC_INVALID_TWO_LETTER_TOKEN",
+          "Initial": "1273",
+          "Comment": "Invalid two letter token."
+        },
+        {
+          "Name": "SMC_CNC_ONLY_ONE_G_OR_M_WORD_ALLOWED",
+          "Initial": "1274",
+          "Comment": "Only one G or M word is allowed per G-Code sentence."
+        },
+        {
+          "Name": "SMC_DEC_UNKNOWN_GWORD",
+          "Initial": "1275",
+          "Comment": "This G-word is not supported."
+        },
+        {
+          "Name": "SMC_CNC_POS_VALUES_NOT_SUPPORTED",
+          "Initial": "1276",
+          "Comment": "Position values (X/Y/Z/A/B/C/P/Q/U/V/W) are not supported for\nthis G-code sentence."
+        },
+        {
+          "Name": "SMC_CNC_SPLINE_ABORTED_BY_G75",
+          "Initial": "1277",
+          "Comment": "The preceeding spline has been aborted by G75."
+        },
+        {
+          "Name": "SMC_DNCCS_NO_DATA",
+          "Initial": "1280",
+          "Comment": "No data available at all"
+        },
+        {
+          "Name": "SMC_DNCCS_TOO_MANY_CALLSTACKS",
+          "Initial": "1281",
+          "Comment": "Too many different callstacks between current state of\ninterpreter and iObjNo"
+        },
+        {
+          "Name": "SMC_DNCCS_INVALID_PROGRAM_INDEX",
+          "Initial": "1282",
+          "Comment": "Invalid program index"
+        },
+        {
+          "Name": "SMC_DNCCS_TOO_MANY_PROGRAMS",
+          "Initial": "1283",
+          "Comment": "Too many different programs"
+        },
+        {
+          "Name": "SMC_DNCCS_WRONG_TASK",
+          "Initial": "1284",
+          "Comment": "FB called in wrong task"
+        },
+        {
+          "Name": "SMC_GCV_BUFFER_TOO_SMALL",
+          "Initial": "1300",
+          "Comment": "Buffer too small"
+        },
+        {
+          "Name": "SMC_GCV_BUFFER_WRONG_TYPE",
+          "Initial": "1301",
+          "Comment": "Buffer elements have wrong type."
+        },
+        {
+          "Name": "SMC_GCV_UNKNOWN_IPO_LINE",
+          "Initial": "1302",
+          "Comment": "Current line of the Interpolator could not be found."
+        },
+        {
+          "Name": "SMC_CNC_INTERNAL_ERROR",
+          "Initial": "1400",
+          "Comment": "Internal error in CNC"
+        },
+        {
+          "Name": "SMC_PATH_MAX_HPOINTS_EXCEEDED",
+          "Initial": "1401",
+          "Comment": "The path element cannot hold H Switch points more than MAX_IPOSWITCHES.\nAdjust the switching points with different âOâ values or reduce the number of\nH points per path element."
+        },
+        {
+          "Name": "SMC_TRC_G75_NOT_ALLOWED",
+          "Initial": "1410",
+          "Comment": "G75 not allowed during tool radius correction"
+        },
+        {
+          "Name": "SMC_TRC_QUEUE_FULL_NON_CARTESIAN",
+          "Initial": "1411",
+          "Comment": "Queue full, but no further cartesian element"
+        },
+        {
+          "Name": "SMC_TRC_SPLINE3D_5_NOT_SUPPORTED",
+          "Initial": "1412",
+          "Comment": "Tool radius correction does not support movement type\nSPLINE3D_5"
+        },
+        {
+          "Name": "SMC_TRC_ELLIPSES_NOT_SUPPORTED",
+          "Initial": "1413",
+          "Comment": "Tool radius correction does not support ellipses"
+        },
+        {
+          "Name": "SMC_TRC_PLANE_CHANGE_NOT_ALLOWED",
+          "Initial": "1414",
+          "Comment": "Plane change not allowed during tool radius correction"
+        },
+        {
+          "Name": "SMC_CNC_INVALID_GEOINFO",
+          "Initial": "1415",
+          "Comment": "An invalid path element has been created, probably due to invalid input\nvalues (too large tool radius or similar)"
+        },
+        {
+          "Name": "SMC_CNC_CANNOT_APPEND_TO_OUTQUEUE",
+          "Initial": "1416",
+          "Comment": "A path element could not be appended to the out queue.\nInternal error of a path preprocessing function block."
+        },
+        {
+          "Name": "SMC_CNC_APPEND_ON_FIRST_RISING_EDGE",
+          "Initial": "1417",
+          "Comment": "The input bAppend must not be TRUE on the first rising\nedge of Execute."
+        },
+        {
+          "Name": "SMC_PROBE_G31_NOT_ALLOWED",
+          "Initial": "1418",
+          "Comment": "This function block does not support probe movements / G31."
+        },
+        {
+          "Name": "SMC_AL_ELLIPSES_NOT_SUPPORTED",
+          "Initial": "1430",
+          "Comment": "Avoid loops does not support ellipses"
+        },
+        {
+          "Name": "SMC_NAV_MAX_SUBPROGRAM_NESTING_EXCEEDED",
+          "Initial": "1450",
+          "Comment": "The maximum nesting level for subprogram calls has been exceeded.\nThis maximum can be changed with the library parameter\nSMC_CNC_LibParams.MAX_SUBPROGRAM_NESTING_DEPTH."
+        },
+        {
+          "Name": "SMC_NAV_RETURN_FROM_MAIN",
+          "Initial": "1451",
+          "Comment": "A return statement from the main g-code program is not\nallowed."
+        },
+        {
+          "Name": "SMC_NAV_SUBPROGRAM_DECLARATION_NOT_FOUND",
+          "Initial": "1452",
+          "Comment": "The declaration of a subprogram has not been found in the subprogram\nCNC file."
+        },
+        {
+          "Name": "SMC_NAV_NOT_ENOUGH_SPACE_FOR_COMPLETE_SENTENCE",
+          "Initial": "1453",
+          "Comment": "The next g-code sentence could not be added to the output sentence\nqueue because there was not enough space left."
+        },
+        {
+          "Name": "SMC_NO_CNC_REF_TYPE",
+          "Initial": "1500",
+          "Comment": "Given CNC program is not of typeSMC_CNC_REF"
+        },
+        {
+          "Name": "SMC_NO_OUTQUEUE_TYPE",
+          "Initial": "1501",
+          "Comment": "Given OutQueue is not of typeSMC_OUTQUEUE"
+        },
+        {
+          "Name": "SMC_GEOINFO_BUFFER_MISALIGNED",
+          "Initial": "1502",
+          "Comment": "4-byte aligned buffer part is not used inpbyBuffer"
+        },
+        {
+          "Name": "SMC_3D_MODE_NOT_SUPPORTED",
+          "Initial": "1600",
+          "Comment": "Function block only works with 2D paths."
+        },
+        {
+          "Name": "SMC_SAA_SMOOTHAREA_TOO_LARGE",
+          "Initial": "1700",
+          "Comment": "Range for smoothing too large"
+        },
+        {
+          "Name": "SMC_SAA_SP_INVALID_INPUT",
+          "Initial": "1701",
+          "Comment": "Invalid inputdSmoothingPart]0..1]"
+        },
+        {
+          "Name": "SMC_SA_QUEUE_NOT_IN_BUFFER",
+          "Initial": "1800",
+          "Comment": "SMC_SegmentAnalyzerdetects thatOutQueuebuffer is\nfull but not completed. The function block can only operate\nwhenOutQueuefits the buffer completely."
+        },
+        {
+          "Name": "SMC_SA_QUEUE_CHANGED_DURING_OP",
+          "Initial": "1801",
+          "Comment": "OutQueuebuffer changed while the function block is\noperating on them."
+        },
+        {
+          "Name": "SMC_OS_INVALID_PARAMETER",
+          "Initial": "1820",
+          "Comment": "Invalid input value in dSplittingParameter"
+        },
+        {
+          "Name": "SMC_BSSP_IPO_NOT_ACTIVE",
+          "Initial": "1830",
+          "Comment": "Position cannot be saved. Interpolator is inactive"
+        },
+        {
+          "Name": "SMC_BS_SAVEDPOS_NOT_REACHED",
+          "Initial": "1831",
+          "Comment": "Saved position has not been found so far. It is probably on\na different path."
+        },
+        {
+          "Name": "SMC_BS_NO_POS_STORED",
+          "Initial": "1832",
+          "Comment": "Structure passed in ePos contains no saved position.SMC_BlockSearchSavePosis not executed or in a wrong\nway."
+        },
+        {
+          "Name": "SMC_INVALID_FEATURE_FLAG",
+          "Initial": "1900",
+          "Comment": "Feature flag must be in the range {1, .., 31}."
+        },
+        {
+          "Name": "SMC_SMB_HFUN_NOT_SUPPORTED",
+          "Initial": "1901",
+          "Comment": "Function block does not support h-functions."
+        },
+        {
+          "Name": "SMC_SMB_ONLY_3DMODE",
+          "Initial": "1902",
+          "Comment": "Function block only works in 3D-Mode."
+        },
+        {
+          "Name": "SMC_SMB_ERROR_COMPUTING_SPLINE",
+          "Initial": "1903",
+          "Comment": "Internal error computing the spline."
+        },
+        {
+          "Name": "SMC_SMM_INVALID_PARAM_NUMBER",
+          "Initial": "1910",
+          "Comment": "wAdditionalParameter is too big"
+        },
+        {
+          "Name": "SMC_ORIENTATION_UNKNOWN",
+          "Initial": "1911",
+          "Comment": "The tangent is zero and no previous orientation has been computed\nsince the last rising edge of Enable."
+        },
+        {
+          "Name": "SMC_NOT_IMPLEMENTED",
+          "Initial": "1949",
+          "Comment": "Feature is not implemented."
+        },
+        {
+          "Name": "SMC_INVALID_PARAMETER",
+          "Initial": "1950",
+          "Comment": "The value of one of the inputs is invalid."
+        },
+        {
+          "Name": "SMC_BLENDING_NOT_SUPPORTED_BY_PREVIOUS_MOVEMENT",
+          "Initial": "1951",
+          "Comment": "The previous movement does not support blending."
+        },
+        {
+          "Name": "SMC_BUFFERED_NOT_SUPPORTED_BY_PREVIOUS_MOVEMENT",
+          "Initial": "1952",
+          "Comment": "The previous movement does not support buffered movements."
+        },
+        {
+          "Name": "SMC_INHERIT_OWNER_ACTIVE_MOVEMENT_NOT_CALLED",
+          "Initial": "1953",
+          "Comment": "Cannot inherit owner because the active movement\nhas not been not called yet in this cycle.  Internal error."
+        },
+        {
+          "Name": "SMC_MOVING_WITHOUT_ACTIVE_MOVEMENT",
+          "Initial": "1954",
+          "Comment": "The axis is moving but there is no active movement function block.\nMissing follow-up movement after movement that does not\nend in standstill?"
+        },
+        {
+          "Name": "SMC_BUFFER_MODE_NOT_SUPPORTED",
+          "Initial": "1955",
+          "Comment": "The configured BufferMode is not supported by the commanded\nmovement."
+        },
+        {
+          "Name": "SMC_ERROR_IN_A_PREVIOUS_MOVEMENT",
+          "Initial": "1956",
+          "Comment": "An error occured in a previous movement."
+        },
+        {
+          "Name": "SMC_MORE_THAN_ONE_MOVEMENT_PER_INSTANCE",
+          "Initial": "1957",
+          "Comment": "Only one busy buffered/blending movement per FB instance is\nallowed."
+        },
+        {
+          "Name": "SMC_SUPERIMPOSED_FB_WASNT_CALLED",
+          "Initial": "1958",
+          "Comment": "A superimposed FB (MC_MoveSuperimposed or MC_HaltSuperimposed) that\ncontrolled the superimposed movement has not been called in this task\ncycle."
+        },
+        {
+          "Name": "SMC_RNCF_FILE_DOESNT_EXIST",
+          "Initial": "2000",
+          "Comment": "File does not exist"
+        },
+        {
+          "Name": "SMC_RNCF_NO_BUFFER",
+          "Initial": "2001",
+          "Comment": "No buffer allocated"
+        },
+        {
+          "Name": "SMC_RNCF_BUFFER_TOO_SMALL",
+          "Initial": "2002",
+          "Comment": "Buffer too small"
+        },
+        {
+          "Name": "SMC_RNCF_DATA_UNDERRUN",
+          "Initial": "2003",
+          "Comment": "Data underrun. Buffer has been read, is empty."
+        },
+        {
+          "Name": "SMC_RNCF_VAR_COULDNT_BE_REPLACED",
+          "Initial": "2004",
+          "Comment": "Placeholder variable could not be replaced."
+        },
+        {
+          "Name": "SMC_RNCF_NOT_VARLIST",
+          "Initial": "2005",
+          "Comment": "Inputpvldoes not point to aSMC_VARLISTobject."
+        },
+        {
+          "Name": "SMC_RNCF_NO_STRINGBUFFER",
+          "Initial": "2006",
+          "Comment": "InputpStringBufferis not used or does not point to a\nvariable of typeSMC_StringBuffer"
+        },
+        {
+          "Name": "SMC_RNCF_STRINGBUFFER_OVERRUN",
+          "Initial": "2007",
+          "Comment": "In the CNC program more different strings are used than the\nstring buffer can hold."
+        },
+        {
+          "Name": "SMC_RNCF_SUBPROGRAM_FILE_NOT_FOUND",
+          "Initial": "2008",
+          "Comment": "The file for a subprogram could not be found."
+        },
+        {
+          "Name": "SMC_RNCF_FILE_CANNOT_DETERMINE_SIZE",
+          "Initial": "2009",
+          "Comment": "The file size could not be determined."
+        },
+        {
+          "Name": "SMC_RNCQ_FILE_DOESNT_EXIST",
+          "Initial": "2050",
+          "Comment": "File could not be opened."
+        },
+        {
+          "Name": "SMC_RNCQ_NO_BUFFER",
+          "Initial": "2051",
+          "Comment": "No buffer defined"
+        },
+        {
+          "Name": "SMC_RNCQ_BUFFER_TOO_SMALL",
+          "Initial": "2052",
+          "Comment": "Buffer too small"
+        },
+        {
+          "Name": "SMC_RNCQ_UNEXPECTED_EOF",
+          "Initial": "2053",
+          "Comment": "Unexpected end of file"
+        },
+        {
+          "Name": "SMC_ADL_FILE_CANNOT_BE_OPENED",
+          "Initial": "2100",
+          "Comment": "File could not be opened"
+        },
+        {
+          "Name": "SMC_ADL_BUFFER_OVERRUN",
+          "Initial": "2101",
+          "Comment": "Buffer overrun.WriteToFilemust be called more\nfrequently."
+        },
+        {
+          "Name": "SMC_RCAM_FILE_DOESNT_EXIST",
+          "Initial": "2200",
+          "Comment": "File could not be opened."
+        },
+        {
+          "Name": "SMC_RCAM_TOO_MUCH_DATA",
+          "Initial": "2201",
+          "Comment": "Saved cam too big"
+        },
+        {
+          "Name": "SMC_RCAM_WRONG_COMPILE_TYPE",
+          "Initial": "2202",
+          "Comment": "Wrong compilation mode"
+        },
+        {
+          "Name": "SMC_RCAM_WRONG_VERSION",
+          "Initial": "2203",
+          "Comment": "File has wrong version"
+        },
+        {
+          "Name": "SMC_RCAM_UNEXPECTED_EOF",
+          "Initial": "2204",
+          "Comment": "Unexpected end of file"
+        },
+        {
+          "Name": "SMC_RCAM_WRITE_ERROR",
+          "Initial": "2205",
+          "Comment": "Error writing to the cam file"
+        },
+        {
+          "Name": "SMC_RCAM_READ_ERROR",
+          "Initial": "2206",
+          "Comment": "Error reading from the cam file"
+        },
+        {
+          "Name": "SMC_WDPF_CHANNEL_OCCUPIED",
+          "Initial": "3001",
+          "Comment": "This error is obsolete and is maintained only for compatibility.SMC_WDPF_TIMEOUT_PREPARING_LIST"
+        },
+        {
+          "Name": "SMC_WDPF_CANNOT_CREATE_FILE",
+          "Initial": "3002",
+          "Comment": "This error is obsolete and is maintained only for compatibility.\nFile could not be created."
+        },
+        {
+          "Name": "SMC_WDPF_ERROR_WHEN_READING_PARAMS",
+          "Initial": "3003",
+          "Comment": "This error is obsolete and is maintained only for compatibility.\nError at reading the parameters."
+        },
+        {
+          "Name": "SMC_WDPF_TIMEOUT_PREPARING_LIST",
+          "Initial": "3004",
+          "Comment": "This error is obsolete and is maintained only for compatibility.\nTimeout during preparing the parameter list."
+        },
+        {
+          "Name": "SMC_ENC_DENOM_ZERO",
+          "Initial": "5000",
+          "Comment": "Nominator of the conversion factordwRatioTechUnitsDenomof the Encoder reference is 0"
+        },
+        {
+          "Name": "SMC_ENC_AXISUSEDBYOTHERFB",
+          "Initial": "5001",
+          "Comment": "Other module trying to process motion on the Encoder axis"
+        },
+        {
+          "Name": "SMC_ENC_FILTER_DEPTH_INVALID",
+          "Initial": "5002",
+          "Comment": "Filter depth is invalid"
+        },
+        {
+          "Name": "SMC_INTERNAL_ERROR_INIT_MOVEMENT",
+          "Initial": "6000",
+          "Comment": "An internal error occurred during initialization of a new\nmovement."
+        },
+        {
+          "Name": "SMC_INVALID_AXIS_TYPE",
+          "Initial": "6001",
+          "Comment": "Invalid axis type, not finite or modulo (internal error)"
+        },
+        {
+          "Name": "SMC_PCCQ_POINTBUFFERTOOSMALL",
+          "Initial": "10000",
+          "Comment": "BufferpBuffertoo small"
+        },
+        {
+          "Name": "SMC_PCCQ_INPUTBUFFERFULLBUTNOTFINALIZED",
+          "Initial": "10001",
+          "Comment": "The function block must be applied to a path that fits\ncompletely in the buffer."
+        },
+        {
+          "Name": "SMC_PCCQ_PATH_NOT_COMPLETELY_IN_INPUT_BUFFER",
+          "Initial": "10002",
+          "Comment": "The path is not completely contained in the buffer."
+        },
+        {
+          "Name": "SMC_AXIS_GROUP_WRONG_STATE",
+          "Initial": "11000",
+          "Comment": "The axis group is in the wrong state for the requested\noperation."
+        },
+        {
+          "Name": "SMC_AXIS_GROUP_TOO_MANY_AXES",
+          "Initial": "11001",
+          "Comment": "More than the maximum allowed number of axes has been added\nto an axis group."
+        },
+        {
+          "Name": "SMC_AXIS_GROUP_INVALID_DYNLIMITS",
+          "Initial": "11002",
+          "Comment": "The dynamic limits of a single axis are invalid.\n(fSWMaxVelocity/Acceleration/Deceleration/Jerk)"
+        },
+        {
+          "Name": "SMC_AXIS_GROUP_INVALID_COORD_SYSTEM",
+          "Initial": "11004",
+          "Comment": "The given coordinate system is invalid for the requested\noperation"
+        },
+        {
+          "Name": "SMC_AXIS_GROUP_SINGLE_AXIS_ERROR",
+          "Initial": "11005",
+          "Comment": "An axis of the axis group is in state error"
+        },
+        {
+          "Name": "SMC_MOVE_INVALID_BUFFER_MODE",
+          "Initial": "11006",
+          "Comment": "The given buffer mode is not supported"
+        },
+        {
+          "Name": "SMC_MOVE_INVALID_DYNAMIC_FACTOR",
+          "Initial": "11007",
+          "Comment": "The dynamic factor is not in the range ]0 .. 1]"
+        },
+        {
+          "Name": "SMC_MOVE_INVALID_DYNAMICS",
+          "Initial": "11008",
+          "Comment": "The dynamic limits for the movement are invalid."
+        },
+        {
+          "Name": "SMC_AXIS_GROUP_AXIS_NOT_PART_OF_GROUP",
+          "Initial": "11009",
+          "Comment": "The given axis is not part of the axis group."
+        },
+        {
+          "Name": "SMC_AXIS_GROUP_NOT_SUPPORTED",
+          "Initial": "11010",
+          "Comment": "The requested operation is not supported"
+        },
+        {
+          "Name": "SMC_AXIS_GROUP_KINEMATICS_NOT_SET",
+          "Initial": "11011",
+          "Comment": "No kinematic configuration has been configured."
+        },
+        {
+          "Name": "SMC_AXIS_GROUP_WRONG_NUMBER_OF_AXES",
+          "Initial": "11012",
+          "Comment": "The number of axes is not equal to the number of axes\nneeded by the kinematic transformation"
+        },
+        {
+          "Name": "SMC_AXIS_GROUP_INTERRUPTED_BY_SINGLE_AXIS",
+          "Initial": "11013",
+          "Comment": "A coordinated movement has been interrupted by a single\naxis movement."
+        },
+        {
+          "Name": "SMC_AXIS_GROUP_FOLLOW_SETVALUES",
+          "Initial": "11014",
+          "Comment": "An error in an axis of the axis group occurred while\nfollowing the computed set values."
+        },
+        {
+          "Name": "SMC_AXIS_GROUP_TOO_MANY_DEPENDENCIES",
+          "Initial": "11015",
+          "Comment": "An axis group cannot depend on more than one master axis\ngroup."
+        },
+        {
+          "Name": "SMC_AXIS_GROUP_MUTUAL_DEPENDENCY",
+          "Initial": "11016",
+          "Comment": "An axis group A may not depend on another axis group that\ndepends on A."
+        },
+        {
+          "Name": "SMC_AXIS_GROUP_DEPENDENCY_IN_DIFFERENT_TASK",
+          "Initial": "11017",
+          "Comment": "A dependant axis group must be executed in the same task."
+        },
+        {
+          "Name": "SMC_AXIS_GROUP_AXIS_IN_DIFFERENT_TASK",
+          "Initial": "11018",
+          "Comment": "An axis belonging to an axis group must be executed in the\nsame task."
+        },
+        {
+          "Name": "SMC_AXIS_GROUP_PCS_STILL_IN_USE",
+          "Initial": "11019",
+          "Comment": "A second activation of the function block occurred while the PCS\nwas still used by buffered motion commands."
+        },
+        {
+          "Name": "SMC_AXIS_GROUP_CMD_ABORTED_DUE_TO_ERROR",
+          "Initial": "11020",
+          "Comment": "An error ocurred in a previous motion command."
+        },
+        {
+          "Name": "SMC_AXIS_GROUP_INVALID_PARAMETER",
+          "Initial": "11021",
+          "Comment": "A parameter of an administrative function block is invalid."
+        },
+        {
+          "Name": "SMC_AXIS_GROUP_UNSUPPORTED_RAMPTYPE",
+          "Initial": "11022",
+          "Comment": "One of the axes of the group uses an unsupported ramp type.\nOnly trapez and quadratic are supported."
+        },
+        {
+          "Name": "SMC_MOVE_INVALID_TRANSITION_PARAMETER",
+          "Initial": "11023",
+          "Comment": "invalid transition parameter"
+        },
+        {
+          "Name": "SMC_AXIS_GROUP_CPTR_CANNOT_FOLLOW",
+          "Initial": "11025",
+          "Comment": "CP-Tracking: Cannot keep the path;\ntry to reduce the dynamics on the path and / or the dynamics when entering CP-Tracking."
+        },
+        {
+          "Name": "SMC_AXIS_GROUP_CONTINUE_WRONG_POSITION",
+          "Initial": "11026",
+          "Comment": "Current position does not allow continuation.  When continuing in a dynamic\ncoordinate system (e.g. in a PCS that is following a rotary table), this error\nmight be caused by not having used SMC_GroupUpdateContinueData."
+        },
+        {
+          "Name": "SMC_AXIS_GROUP_CONTINUE_BUFFER_TOO_SMALL",
+          "Initial": "11027",
+          "Comment": "Buffer in continueData is too small;\nbig external movement-queue-buffer in use."
+        },
+        {
+          "Name": "SMC_AXIS_GROUP_CONTINUE_WRONG_CHECKSUM",
+          "Initial": "11028",
+          "Comment": "The checksum stored in the continue data is wrong.\nThe continue data either was not written by MC_GroupInterrupt,\nor was modified afterwards."
+        },
+        {
+          "Name": "SMC_AXIS_GROUP_IDLE_WAIT_AXES_MOVING",
+          "Initial": "11029",
+          "Comment": "Commanded SMC_GroupWait while axes were moving\nindependently from the axis group (single axis movement or similar)."
+        },
+        {
+          "Name": "SMC_AXIS_INVERSE_TRAFO_EXCEEDING_POSLIMITS",
+          "Initial": "11030",
+          "Comment": "Inverse transformation lead to axis values exceeding the\nconfigured limits."
+        },
+        {
+          "Name": "SMC_AXIS_GROUP_CANNOT_ADD_SAME_AXIS",
+          "Initial": "11031",
+          "Comment": "Prohibit adding the same axis to an axis group twice"
+        },
+        {
+          "Name": "SMC_AXIS_GROUP_TRANSFORMATION_NOT_SET",
+          "Initial": "11032",
+          "Comment": "No transformation is set."
+        },
+        {
+          "Name": "SMC_AXIS_GROUP_NON_RESUMABLE_ERROR",
+          "Initial": "11033",
+          "Comment": "The path cannot be resumed after the current axis group\nerror."
+        },
+        {
+          "Name": "SMC_AXIS_GROUP_CONTINUE_DATA_NOT_WRITTEN",
+          "Initial": "11034",
+          "Comment": "The continue data for MC_GroupContinue has not been written correctly.\n(MC_GroupInterrupt not called / non-resumable axis group error)"
+        },
+        {
+          "Name": "SMC_AXIS_GROUP_INVALID_INTERRUPT_POSITION",
+          "Initial": "11036",
+          "Comment": "The commanded interrupt position is invalid."
+        },
+        {
+          "Name": "SMC_RELATIVE_MOVEMENT_TRACKING_CS",
+          "Initial": "11037",
+          "Comment": "The commanded relative movement is not supported.\nIts start position (end position of preceding movement) and distance are given\nin two different coordinate systems (CS) with at least one being dynamic"
+        },
+        {
+          "Name": "SMC_RELATIVE_MOVEMENT_ABORTING_TRACKING",
+          "Initial": "11038",
+          "Comment": "The commanded relative movement is not supported.\nIt is Aborting and aborts a\n- track-in (from a static CS to a dynamic CS),\n- track-out (from a dynamic CS to a static CS) or\n- re-track (from a dynamic CS to another dynamic CS) movement."
+        },
+        {
+          "Name": "SMC_CIRCULAR_MOVEMENT_TRACKING_CS",
+          "Initial": "11039",
+          "Comment": "The commanded circular movement is not supported.\nIts start position (end position of preceding movement) and target\nposition are given in two different coordinate systems (CS) with at\nleast one being dynamic."
+        },
+        {
+          "Name": "SMC_CIRCULAR_MOVEMENT_ABORTING_TRACKING_CS",
+          "Initial": "11040",
+          "Comment": "The commanded aborting circular movement is not supported.\nIts start position (current position) and target position are given in two\ndifferent coordinate systems (CS) with at least one being dynamic, or\nthe aborted movement is PTP tracking."
+        },
+        {
+          "Name": "SMC_AXIS_GROUP_CONTINUE_POSITION_WRONG_CHECKSUM",
+          "Initial": "11041",
+          "Comment": "The checksum of the continue position is wrong.\nThe continue position either was not written by MC_GroupInterrupt,\nwas modified afterwards, or an online change was executed when the\ncontinue position was still in use.\nPlease note: The checksum is only checked when the continue position\ncannot be expressed as a constant value, because it changes with time\n(e.g. when a track in movement should be continued)."
+        },
+        {
+          "Name": "SMC_CIRCULAR_TRACKING_TOOL_CHANGE_NOT_SUPPORTED",
+          "Initial": "11042",
+          "Comment": "A circular movement with a tool change is only supported in a static\ncoordinate system."
+        },
+        {
+          "Name": "SMC_AXIS_GROUP_COULD_NOT_WRITE_CONTINUE_DATA",
+          "Initial": "11043",
+          "Comment": "Continue data could not be written.  This can happen when\ntrying to write continue data while moving to another continue\nposition."
+        },
+        {
+          "Name": "SMC_MODULO_AXIS_FOR_NON_ROTARY_JOINT",
+          "Initial": "11044",
+          "Comment": "A modulo axis is not allowed for joints of the kinematics\nthat are not rotary."
+        },
+        {
+          "Name": "SMC_MODULO_AXIS_FOR_LIMITED_ROTARY_JOINT",
+          "Initial": "11045",
+          "Comment": "A modulo axis is not allowed for rotary joints that have a limited\nrange. (The range comes from the kinematic transformation.)"
+        },
+        {
+          "Name": "SMC_MODULO_AXIS_PERIOD_NOT_360",
+          "Initial": "11046",
+          "Comment": "A modulo axis for a rotary joint must have modulo period\n360."
+        },
+        {
+          "Name": "SMC_FB_WASNT_CALLED_DURING_EXECUTION",
+          "Initial": "11047",
+          "Comment": "The FB was not called for at least one cycle"
+        },
+        {
+          "Name": "SMC_NO_EVALUATION_POSSIBLE_FOR_TIME_OFFSET",
+          "Initial": "11048",
+          "Comment": "The value could not be evaluated for the given time offset."
+        },
+        {
+          "Name": "SMC_INVALID_SOURCE_TYPE_FOR_TIME_OFFSET",
+          "Initial": "11049",
+          "Comment": "Values with time offset can only be evaluated for source\ntype set."
+        },
+        {
+          "Name": "SMC_INVALID_TIME_OFFSET",
+          "Initial": "11050",
+          "Comment": "Invalid time offset. Must be >=0."
+        },
+        {
+          "Name": "SMC_TIME_OFFSET_TOO_LARGE",
+          "Initial": "11051",
+          "Comment": "The time offset is too large (larger than the forecast\nduration, see SMC_TuneCPKernel.fPlanningForecastDuration)."
+        },
+        {
+          "Name": "SMC_AXIS_GROUP_MAX_NUM_ADDITIONAL_AXES_EXCEEDED",
+          "Initial": "11052",
+          "Comment": "More than the maximum number of additional axes where added to the axis group.\nThe maximum number of additional axes can be increased by changing the library\nparameterMAX_NUM_ADDITIONAL_AXES``in``SM3_CPKernelDefaults."
+        },
+        {
+          "Name": "SMC_INVALID_COORD_SYSTEM_FOR_TIME_OFFSET",
+          "Initial": "11053",
+          "Comment": "Values with time offset cannot only be evaluated for this\ncoordinate system."
+        },
+        {
+          "Name": "SMC_KERNEL_PTP_INTERNAL_ERROR",
+          "Initial": "11100",
+          "Comment": "Internal error in the kernel"
+        },
+        {
+          "Name": "SMC_KERNEL_PTP_INVALID_TASKCYCLETIME",
+          "Initial": "11101",
+          "Comment": "Task cycle time not positive"
+        },
+        {
+          "Name": "SMC_TRAFO_INVALID_PARAMETERS",
+          "Initial": "12000",
+          "Comment": "The parameter values of the transformation are invalid."
+        },
+        {
+          "Name": "SMC_TRAFO_INVALID_CONSTELLATION",
+          "Initial": "12001",
+          "Comment": "The requested position is outside of the working area of the\ntransformation."
+        },
+        {
+          "Name": "SMC_TRAFO_INVALID_COUPLING",
+          "Initial": "12002",
+          "Comment": "The orientation part cannot work together with the position part of\nthe kinematics.\nEither, the position part doesnât implement ISMPositionKinematics2,\nor the orientation cannot deal with the position partâs image of\norientations."
+        },
+        {
+          "Name": "SMC_TRAFO_NOT_INITIALIZED",
+          "Initial": "12003",
+          "Comment": "The FB implements ISMKinematicWithInitialization, but hasnât been\nInitialized yet."
+        },
+        {
+          "Name": "SMC_TRAFO_NO_TOOL_WITH_OFFSET_ALLOWED",
+          "Initial": "12004",
+          "Comment": "Special error for positioning part of Kin_4Axis_Palletizer,\nwhich implements ISMPositionKinematics_Offset2, but cannot\nactually cope with offsets <> 0."
+        },
+        {
+          "Name": "SMC_AXIS_GROUP_TOOL_OFFSET_INCOMPATIBLE_WITH_KINEMATICS",
+          "Initial": "12005",
+          "Comment": "The configured tool offset is not compatible with the\nkinematics used"
+        },
+        {
+          "Name": "SMC_TRAFO_INVALID_AXIS_LIMITS",
+          "Initial": "12006",
+          "Comment": "The configured position limits of one or more axes are not\nvalid for the kinematics."
+        },
+        {
+          "Name": "SMC_AXIS_GROUP_PATH_DEVIATION_TOO_HIGH",
+          "Initial": "12007",
+          "Comment": "This error code has been replaced by SMC_AXIS_GROUP_MAX_AXIS_LAG_EXCEEDED,\nSMC_AXIS_GROUP_MAX_POSITION_LAG_EXCEEDED and SMC_AXIS_GROUP_MAX_ORIENTATION_LAG_EXCEEDED."
+        },
+        {
+          "Name": "SMC_AXIS_POSITION_EXCEEDS_POSLIMITS",
+          "Initial": "12008",
+          "Comment": "The given axis position exceeds the position limits of an\naxis."
+        },
+        {
+          "Name": "SMC_AXIS_GROUP_NO_DYNAMIC_MODEL_CONFIGURED",
+          "Initial": "12009",
+          "Comment": "No dynamic model has been configured for the axis group."
+        },
+        {
+          "Name": "SMC_DYNAMICS_NUM_TORQUES_NEQ_NUM_AXES",
+          "Initial": "12010",
+          "Comment": "The number of torques returned by the dynamic model is different from the\nnumber of axes."
+        },
+        {
+          "Name": "SMC_AXIS_GROUP_MAX_AXIS_LAG_EXCEEDED",
+          "Initial": "12020",
+          "Comment": "The axis lag is higher than the allowed tolerance.\nWhen tracking is used, this indicates that the tracked object is accelerating/\ndecelerating too quickly for the robot to follow.\nSeeSMC_SetPathTolerance."
+        },
+        {
+          "Name": "SMC_AXIS_GROUP_MAX_POSITION_LAG_EXCEEDED",
+          "Initial": "12021",
+          "Comment": "The position lag of the TCP is higher than the allowed tolerance.\nWhen tracking is used, this indicates that the tracked object is accelerating/\ndecelerating too quickly for the robot to follow.\nSeeSMC_SetPathTolerance."
+        },
+        {
+          "Name": "SMC_AXIS_GROUP_MAX_ORIENTATION_LAG_EXCEEDED",
+          "Initial": "12022",
+          "Comment": "The orientation lag of the TCP is higher than the allowed tolerance.\nWhen tracking is used, this indicates that the tracked object is accelerating/\ndecelerating too quickly for the robot to follow.\nSeeSMC_SetPathTolerance."
+        },
+        {
+          "Name": "SMC_CP_CACHE_FULL",
+          "Initial": "12100",
+          "Comment": "The cache of the CP planner is too small."
+        },
+        {
+          "Name": "SMC_CP_EVAL_ERROR",
+          "Initial": "12101",
+          "Comment": "The evaluation of the position on a path element failed\n(internal error)."
+        },
+        {
+          "Name": "SMC_CP_NON_CONTINUABLE_STATE",
+          "Initial": "12102",
+          "Comment": "Non-continuable state reached (internal error)."
+        },
+        {
+          "Name": "SMC_CP_MAX_LENGTH_EXCEEDED",
+          "Initial": "12103",
+          "Comment": "Maximum trajectory length exceeded (internal error)."
+        },
+        {
+          "Name": "SMC_CP_ACCELERATION_TOO_HIGH",
+          "Initial": "12104",
+          "Comment": "Path acceleration too high (invalid state, internal error)."
+        },
+        {
+          "Name": "SMC_CP_MAX_ITERATIONS_EXCEEDED",
+          "Initial": "12105",
+          "Comment": "Maximum number of iterations exceeded (internal error)."
+        },
+        {
+          "Name": "SMC_CP_NO_TRAJECTORY",
+          "Initial": "12106",
+          "Comment": "No trajectory could be computed (internal error)."
+        },
+        {
+          "Name": "SMC_CP_OUT_QUEUE_FULL",
+          "Initial": "12107",
+          "Comment": "The out-queue is full (internal error)."
+        },
+        {
+          "Name": "SMC_CP_QUEUE_UNDERRUN",
+          "Initial": "12108",
+          "Comment": "The computation of the trajectory could not be performed in real time.\nThe fill level of the sync buffer between the planning task and the bus\ntask was too low.Possible reasons:The task configuration of the planning task is not set correctly.\nPlease see the online help chapter âDiagnosis of Problems with\nMovementsâ for good settings.The performance of the PLC is not sufficient.\nPossible measures to avoid the error:use a separate, dedicated CPU core for the planning taskincrease the bus task intervalincrease the planning interval and/or the sync buffer\nduration usingSMC_TuneCPKernelThe current fill level of the sync buffer can be monitored using\ntheCurrentSyncBufferDurationouptput ofMC_GroupReadStatus."
+        },
+        {
+          "Name": "SMC_CP_INVALID_QUEUE",
+          "Initial": "12109",
+          "Comment": "Invalid queue (invalid size or pointer)"
+        },
+        {
+          "Name": "SMC_CP_BLENDING_INTERNAL_ERROR",
+          "Initial": "12110",
+          "Comment": "An internal error occurred while blending two CP movements"
+        },
+        {
+          "Name": "SMC_CP_CIRCLE_COLLINEAR_POINTS",
+          "Initial": "12111",
+          "Comment": "The three points that define the circle are collinear."
+        },
+        {
+          "Name": "SMC_CP_CIRCLE_CENTER_NOT_ON_BISECTOR",
+          "Initial": "12112",
+          "Comment": "The center point is not on the perpendicular bisector of the\nstart and end point."
+        },
+        {
+          "Name": "SMC_CP_CIRCLE_RADIUS_ZERO",
+          "Initial": "12113",
+          "Comment": "The radius is zero"
+        },
+        {
+          "Name": "SMC_CP_CIRCLE_DISTANCE_LARGER_THAN_DIAMETER",
+          "Initial": "12114",
+          "Comment": "The distance between start and end point is larger than the diameter.\n(When trying to create a circle usingSMC_Circ_Mode.Radius.)"
+        },
+        {
+          "Name": "SMC_CP_CIRCLE_START_AND_ENDPOINT_EQUAL",
+          "Initial": "12115",
+          "Comment": "The start and end point are equal\n(SMC_Circ_Mode.Radius)."
+        },
+        {
+          "Name": "SMC_CP_BLENDING_DEGENERATE_SPLINE",
+          "Initial": "12116",
+          "Comment": "The blending spline is degenerate (too short or non-regular)"
+        },
+        {
+          "Name": "SMC_CP_ELEMENT_TOO_SHORT",
+          "Initial": "12117",
+          "Comment": "The path element cannot be created because it is too short."
+        },
+        {
+          "Name": "SMC_CP_COULD_NOT_CUT_PATH",
+          "Initial": "12118",
+          "Comment": "The path could not be cut for aborting movement (internal\nerror)."
+        },
+        {
+          "Name": "SMC_CP_INVALID_ANGULAR_VEL_ACC",
+          "Initial": "12119",
+          "Comment": "The given angular velocity or acceleration is invalid (quaternion with\nnon-zero real part, internal error)."
+        },
+        {
+          "Name": "SMC_CP_INVALID_ORIENTATION",
+          "Initial": "12120",
+          "Comment": "The given orientation is invalid (non-orthonormal matrix or non-unit\nquaternion, internal error)."
+        },
+        {
+          "Name": "SMC_CP_TIME_BUDGET_EXCEEDED",
+          "Initial": "12121",
+          "Comment": "The given time budget for the computation is exceeded\n(internal error)."
+        },
+        {
+          "Name": "SMC_AXIS_GROUP_AXIS_LIMIT_VIOLATED",
+          "Initial": "12122",
+          "Comment": "A limit of an axis has been violated.  This can happen if a CP movement\nis done too close to a singularity or if the path has a very high curvature."
+        },
+        {
+          "Name": "SMC_CP_CONFIGS_DIFFER",
+          "Initial": "12125",
+          "Comment": "The kinematic configuration of the start position differs from\nthe end position.  The CP movement would pass a\nsingularity."
+        },
+        {
+          "Name": "SMC_CP_BUS_TASK_NOT_CALLED",
+          "Initial": "12126",
+          "Comment": "This error is obsolete and is maintained only for compatibility.\nIf a CP-halt/-stop is commanded, some information has to be\ntransferred to the bus task. We expect this to happen\nbefore the next cycle of the slow task."
+        },
+        {
+          "Name": "SMC_CP_NO_ROOT_IN_INTERVAL_FOUND",
+          "Initial": "12127",
+          "Comment": "The stop trajectory could not be found in the interval.\n(internal error)"
+        },
+        {
+          "Name": "SMC_CP_KIN_DOES_NOT_SUPPORT_AXIS_ORIENTATION_IPO",
+          "Initial": "12128",
+          "Comment": "The kinematics does not support the orientation mode\nâAxisâ for continuous path movements."
+        },
+        {
+          "Name": "SMC_CP_AXIS_ORIENTATION_IPO_NOT_SUPPORTED_FOR_CPTR",
+          "Initial": "12129",
+          "Comment": "The axis orientation interpolation mode is not supported\nfor CP movements with a dynamic PCS (tracking)."
+        },
+        {
+          "Name": "SMC_CP_INVALID_PATH_ELEM",
+          "Initial": "12130",
+          "Comment": "An invalid path element has been created (internal error)"
+        },
+        {
+          "Name": "SMC_CP_TRANSITION_NOT_SMOOTH",
+          "Initial": "12131",
+          "Comment": "The transition between two path elements is not G2 continuous,\nand there is no stop (internal error)"
+        },
+        {
+          "Name": "SMC_CP_AXIS_ORIENTATION_IPO_CONFIG_DIFFERS",
+          "Initial": "12132",
+          "Comment": "Axis orientation interpolation mode is used, but between\nthe start end end position, there is a singularity of the\nposition kinematics."
+        },
+        {
+          "Name": "SMC_CP_AXIS_ORIENTATION_IPO_OFFSET2_NOT_IMPLEMENTED",
+          "Initial": "12133",
+          "Comment": "The position kinematics has configurations but does not\nimplement the interface ISMPositionKinematics_Offset2.\nIn this case, axis orientation interpolation is not\npossible."
+        },
+        {
+          "Name": "SMC_CP_ROTARY_AXIS_PERIOD_MISMATCH",
+          "Initial": "12134",
+          "Comment": "The target position of a rotary axis will not be reached\nin the commanded period.\n(E.g. the commanded target position\nis -170Â°, but the target will be reached with position 190Â°\ninstead.)\nThis means that the chosen interpolation to the target position\nis not compatible with the commanded position.\nFor PTP movements (MC_MoveDirect*), this error can happen if\nthe previous movement is a CP movement (MC_MoveLinear*,\nMC_MoveCircular*), and if the CP movement is very long.\nTo avoid the problem, the CP movement should be divided\ninto two or more shorter movements.  The problem can occur\nif a rotary axis has to move 360Â° or more during the CP\nmovement."
+        },
+        {
+          "Name": "SMC_CP_ROTARY_AXIS_RANGE_VIOLATION",
+          "Initial": "12135",
+          "Comment": "A rotary axis has violated the allowed axis range during\na CP movement.  The CP movment is not in the working area."
+        },
+        {
+          "Name": "SMC_CP_COMPUTE_TARGET_DISCONTINUITY",
+          "Initial": "12136",
+          "Comment": "The target trajectory could not be computed due to a\ndiscontinuity of the end position (internal error)."
+        },
+        {
+          "Name": "SMC_CP_TRAJECTORY_NOT_SMOOTH",
+          "Initial": "12137",
+          "Comment": "The trajectory is not smooth, the phase end states do not\nequal the the current state (internal error)."
+        },
+        {
+          "Name": "SMC_CP_ERROR_CREATING_PARAM_TRANSFORM",
+          "Initial": "12138",
+          "Comment": "A parameter transformation could not be created (internal\nerror)."
+        },
+        {
+          "Name": "SMC_CP_PTP_DATA_NUMBER_OF_AXES",
+          "Initial": "12139",
+          "Comment": "Error generating path-invariant PTP element (internal\nerror)."
+        },
+        {
+          "Name": "SMC_CP_NEGATIVE_PATH_VELOCITY",
+          "Initial": "12140",
+          "Comment": "Error while computing a new trajectory: the path velocity after\nphase 1 (positive jerk of length dTau1) is negative (internal error)."
+        },
+        {
+          "Name": "SMC_CP_TRANSITIONING_FROM_SINGLE_AXIS_MOVEMENT_NOT_SUPPORTED",
+          "Initial": "12141",
+          "Comment": "Transitioning from a single axis movement to a continuous path\nmovement is not supported."
+        },
+        {
+          "Name": "SMC_CP_PLANNER_NO_PROGRESS",
+          "Initial": "12142",
+          "Comment": "The CP-planner did not make any progress.  This is an internal error\nThat can be triggered by very sharp corners (e.g. blending between\nshort elements or with small corner distance)."
+        },
+        {
+          "Name": "SMC_CP_INTERNAL_EVAL_CACHE_ERROR",
+          "Initial": "12143",
+          "Comment": "Internal error in the evaluation cache of the CP-planner."
+        },
+        {
+          "Name": "SMC_CP_INVALID_ROOT_ACC_TOO_HIGH",
+          "Initial": "12144",
+          "Comment": "The acceleration at the trajectory end is too high for a\nvalid root (internal error)."
+        },
+        {
+          "Name": "SMC_CP_INVALID_ROOT_TRAJECTORY_TOO_LARGE",
+          "Initial": "12145",
+          "Comment": "The stop trajectory is too large. Reduce the velocity or\nincrease the acceleration and jerk limits."
+        },
+        {
+          "Name": "SMC_CP_EMPTY_TRAJECTORY",
+          "Initial": "12146",
+          "Comment": "The trajectory is empty, i.e. has no phases (internal\nerror)."
+        },
+        {
+          "Name": "SMC_CP_FORECAST_TOO_LARGE",
+          "Initial": "12147",
+          "Comment": "The forecast duration is too large given the configured planning\ninterval and sync buffer duration.\nTo avoid this error, either reduce the forecast duration, reduce the\nsync buffer duration, or increase the planning interval.  See SMC_TuneCPKernel\nfor more details."
+        },
+        {
+          "Name": "SMC_CP_INVALID_ROOT_ENDPOS_NOT_GREATER_STARTPOS",
+          "Initial": "12148",
+          "Comment": "The end position of the trajectory is not greater than the\nstart position (internal error)."
+        },
+        {
+          "Name": "SMC_CP_AXIS_VELOCITY_LIMIT_EXCEEDED_WHITHOUT_MOVING",
+          "Initial": "12150",
+          "Comment": "Axis velocity limit exceeded whithout moving on the path."
+        },
+        {
+          "Name": "SMC_CP_AXIS_ACCELERATION_LIMIT_EXCEEDED_WHITHOUT_MOVING",
+          "Initial": "12151",
+          "Comment": "Axis acceleration limit exceeded whithout moving on the\npath."
+        },
+        {
+          "Name": "SMC_CP_AXIS_JERK_LIMIT_EXCEEDED_WHITHOUT_MOVING",
+          "Initial": "12152",
+          "Comment": "Axis jerk limit exceeded whithout moving on the path."
+        },
+        {
+          "Name": "SMC_CP_AXIS_TORQUE_LIMIT_EXCEEDED_WHITHOUT_MOVING",
+          "Initial": "12153",
+          "Comment": "Axis torque/force limit exceeded whithout moving on the\npath."
+        },
+        {
+          "Name": "SMC_GROUPJOG2_MAX_DISTANCE_NON_POSITIVE",
+          "Initial": "12200",
+          "Comment": "Either MaxLinearDistance or MaxAngularDistance of\nSMC_GroupJog2 is non-positive."
+        },
+        {
+          "Name": "SMC_GROUPJOG2_DYNAMIC_CS_NOT_SUPPORTED",
+          "Initial": "12201",
+          "Comment": "SMC_GroupJog2 does not support jogging in dynamic coordinate\nsystems."
+        },
+        {
+          "Name": "SMC_TRIGGER_TOO_MANY_TRIGGERS_PREPARED",
+          "Initial": "12300",
+          "Comment": "Too many triggers have been prepared for the next movement."
+        },
+        {
+          "Name": "SMC_TRIGGER_UNSUPPORTED_MOVEMENT_TYPE",
+          "Initial": "12301",
+          "Comment": "Triggers for wait commands and for halt/stop commands are\nnot supported."
+        },
+        {
+          "Name": "SMC_TRIGGER_INVALID_POS_TYPE",
+          "Initial": "12302",
+          "Comment": "The given trigger position type is not valid."
+        },
+        {
+          "Name": "SMC_TRIGGER_RELATIVE_POSITION_OUT_OF_RANGE",
+          "Initial": "12303",
+          "Comment": "The relative trigger position must be in the range [-1, 1]."
+        },
+        {
+          "Name": "SMC_TRIGGER_PLANE_NORMAL_NOT_A_UNIT",
+          "Initial": "12304",
+          "Comment": "The normal vector for a trigger plane must be a unit-vector."
+        },
+        {
+          "Name": "SMC_TRIGGER_PLANE_DISTANCE_NEGATIVE",
+          "Initial": "12305",
+          "Comment": "The distance of the trigger plane must be non-negative."
+        },
+        {
+          "Name": "SMC_TRIGGER_PLANE_COORD_SYSTEM_INVALID",
+          "Initial": "12306",
+          "Comment": "The coordinate system of the trigger plane must not be ACS\nor TCS."
+        },
+        {
+          "Name": "SMC_TRIGGER_DISTANCE_OUT_OF_RANGE",
+          "Initial": "12307",
+          "Comment": "The trigger distance must be in the range [-len, len], where len\nis the length of the movement."
+        },
+        {
+          "Name": "SMC_TRIGGER_PLANE_NO_INTERSECTION",
+          "Initial": "12308",
+          "Comment": "No intersection between the trigger plane and the movement."
+        },
+        {
+          "Name": "SMC_TRIGGER_TRACKING_TRANSITION_NOT_SUPPORTED",
+          "Initial": "12309",
+          "Comment": "Triggers not supported for tracking movements between different\ncoordinate systems."
+        },
+        {
+          "Name": "SMC_TRIGGER_PTP_NOT_SUPPORTED",
+          "Initial": "12310",
+          "Comment": "Triggers with position type MvtDistance and PlaneInstersection are\nnot supported for PTP movements."
+        },
+        {
+          "Name": "SMC_CAM_BUILDER_FULL",
+          "Initial": "12400",
+          "Comment": "The cam builder is full. No new cam segments can be added."
+        },
+        {
+          "Name": "SMC_CAM_BUILDER_INVALID_MASTER_DISTANCE",
+          "Initial": "12401",
+          "Comment": "The master distance of a cam segment must be > 0."
+        },
+        {
+          "Name": "SMC_CAM_BUILDER_GAP_BETWEEN_SEGMENTS",
+          "Initial": "12402",
+          "Comment": "The new segment does not connect to the master end position\nof the previous segment."
+        },
+        {
+          "Name": "SMC_CAM_BUILDER_NO_IMPLICIT_LEFT_BOUNDARY_ALLOWED",
+          "Initial": "12403",
+          "Comment": "No implicit left boundary allowed, because the last segment\nhas an implicit right boundary."
+        },
+        {
+          "Name": "SMC_CAM_BUILDER_INVALID_IMPLICIT_CAM_SEGMENT_MASTER_DISTANCE",
+          "Initial": "12404",
+          "Comment": "x0 of the new segment results in a master distance <=0 for\nthe previous implicit segment."
+        },
+        {
+          "Name": "SMC_CAM_BUILDER_CAM_REF_INSUFFICIENT_MEMORY",
+          "Initial": "12405",
+          "Comment": "The cam builder has more segments than the MC_CAM_REF can\nstore."
+        },
+        {
+          "Name": "SMC_CAM_BUILDER_LAST_SEGMENT_HAS_IMPLICIT_RIGHT_BOUNDARY",
+          "Initial": "12406",
+          "Comment": "The last segment has an implicit right boundary."
+        },
+        {
+          "Name": "SMC_CAM_BUILDER_INVALID_CAM_REF_INITIALIZATION",
+          "Initial": "12407",
+          "Comment": "MC_CAM_REF init error, due to a null pointer to the cam\nsegments."
+        },
+        {
+          "Name": "SMC_CAM_BUILDER_ERROR_PENDING",
+          "Initial": "12408",
+          "Comment": "The data of the cam builder cannot be written to the\nMC_CAM_REF, because an error is pending."
+        },
+        {
+          "Name": "SMC_CAM_BUILDER_CONTINUITY_REQUIREMENT_VIOLATED",
+          "Initial": "12409",
+          "Comment": "The continuity check of the cam builder detected a violated\ncontinuity requirement."
+        },
+        {
+          "Name": "SMC_CAM_BUILDER_MASTER_DISTANCE_TOO_SHORT",
+          "Initial": "12410",
+          "Comment": "The master distance of the cam segment is too short."
+        },
+        {
+          "Name": "SMC_CAM_BUILDER_IMPLICIT_CAM_SEGMENT_DISTANCE_TOO_SHORT",
+          "Initial": "12411",
+          "Comment": "The master distance of the previous implicit segment is too\nshort."
+        },
+        {
+          "Name": "SMC_CAM_BUILDER_CAM_REF_INVALID_ARRAY_SIZE",
+          "Initial": "12412",
+          "Comment": "Array size is limited to 32767 SMC_CAM_SEGMENT entries and\nmust be a multiple of this data type."
+        },
+        {
+          "Name": "SMC_CAM_BUILDER_MODIFIED_SINE_INVALID_LAMBDA_OR_ACC_PARAM",
+          "Initial": "12415",
+          "Comment": "The given lambda or acceleration parameter Ca* of this\nsegment is invalid."
+        },
+        {
+          "Name": "SMC_CAM_BUILDER_MODIFIED_SINE_ACC_PARAM_RIGHT_BOUND_IMPLICIT",
+          "Initial": "12416",
+          "Comment": "A modified sine segment defined by the acceleration\nparameter Ca* must not have an implicit right boundary."
+        },
+        {
+          "Name": "SMC_CAM_BUILDER_INVALID_COMPILE_TYPE",
+          "Initial": "12417",
+          "Comment": "MC_CAM_REF has an unsupported compile type."
+        },
+        {
+          "Name": "SMC_MOVEMENT_INTERNAL_ERROR",
+          "Initial": "13001",
+          "Comment": "Internal error in a movement."
+        },
+        {
+          "Name": "SMC_MOVEMENT_GET_POS_INTERNAL_ERROR",
+          "Initial": "13002",
+          "Comment": "Internal error while trying to get a position in a movement."
+        },
+        {
+          "Name": "SMC_CPTR_INTERNAL_ERROR",
+          "Initial": "13003",
+          "Comment": "Internal error in the CPTR kernel."
+        },
+        {
+          "Name": "SMC_CP_IPO_INTERNAL_ERROR",
+          "Initial": "13004",
+          "Comment": "Internal error while interpolating in the CP kernel."
+        },
+        {
+          "Name": "SMC_CP_ADD_NEW_MOVEMENT_INTERNAL_ERROR",
+          "Initial": "13005",
+          "Comment": "Internal error while adding a new movement to the CP kernel."
+        },
+        {
+          "Name": "SMC_AXIS_GROUP_COORDINATION_INTERNAL_ERROR",
+          "Initial": "13006",
+          "Comment": "Internal error while coordinating kernels."
+        },
+        {
+          "Name": "SMC_AXIS_GROUP_ADD_MOVEMENT_INTERNAL_ERROR",
+          "Initial": "13007",
+          "Comment": "Internal error while adding movements to the axis group."
+        },
+        {
+          "Name": "SMC_AXIS_GROUP_READ_AXIS_STATES_INTERNAL_ERROR",
+          "Initial": "13008",
+          "Comment": "Internal error while reading the state of one of the groupâs\naxes."
+        },
+        {
+          "Name": "SMC_AXIS_GROUP_READ_VEL_INTERNAL_ERROR",
+          "Initial": "13009",
+          "Comment": "Internal error while trying to read the velocity."
+        },
+        {
+          "Name": "SMC_AXIS_GROUP_READ_ACC_INTERNAL_ERROR",
+          "Initial": "13010",
+          "Comment": "Internal error while trying to read the acceleration."
+        },
+        {
+          "Name": "SMC_AXIS_GROUP_INVALID_STATE_INTERNAL_ERROR",
+          "Initial": "13011",
+          "Comment": "Internal error: The axis group is in an invalid state."
+        },
+        {
+          "Name": "SMC_AXIS_GROUP_PCS_INTERNAL_ERROR",
+          "Initial": "13012",
+          "Comment": "Internal error while handling a PCS."
+        },
+        {
+          "Name": "SMC_AXIS_GROUP_INTERRUPT_INTERNAL_ERROR",
+          "Initial": "13013",
+          "Comment": "An internal error occured during an interrupt."
+        },
+        {
+          "Name": "SMC_CONTINUE_DATA_READ_INTERNAL_ERROR",
+          "Initial": "13014",
+          "Comment": "Internal error while reading continue data."
+        },
+        {
+          "Name": "SMC_CONTINUE_DATA_WRITE_INTERNAL_ERROR",
+          "Initial": "13015",
+          "Comment": "Internal error while writing continue data."
+        },
+        {
+          "Name": "SMC_PATH_ELEM_INTERNAL_ERROR",
+          "Initial": "13016",
+          "Comment": "Internal error in a path element."
+        },
+        {
+          "Name": "SMC_PATH_ELEM_ESTIMATE_LIMITS_INTERNAL_ERROR",
+          "Initial": "13017",
+          "Comment": "Internal error while estimating the limits of a path\nelement."
+        },
+        {
+          "Name": "SMC_PATH_ELEM_ZERO_LEN_INTERNAL_ERROR",
+          "Initial": "13018",
+          "Comment": "Internal error in a zero-length path element."
+        },
+        {
+          "Name": "SMC_PATH_ELEM_BLEND_INTERNAL_ERROR",
+          "Initial": "13019",
+          "Comment": "Internal error in a blending element."
+        },
+        {
+          "Name": "SMC_PATH_ELEM_BLEND_GEO_INTERNAL_ERROR",
+          "Initial": "13020",
+          "Comment": "Internal error in the geometric part of a path element."
+        },
+        {
+          "Name": "SMC_PATH_ELEM_BLEND_ORI_INTERNAL_ERROR",
+          "Initial": "13021",
+          "Comment": "Internal error in the orientation part of a path element."
+        },
+        {
+          "Name": "SMC_PATH_ELEM_BLEND_AS_INTERNAL_ERROR",
+          "Initial": "13022",
+          "Comment": "Internal error in an axis space element."
+        },
+        {
+          "Name": "SMC_ELEM_FUN_CART_INTERNAL_ERROR",
+          "Initial": "13023",
+          "Comment": "Internal error in an element function."
+        },
+        {
+          "Name": "SMC_CP_HALT_STOP_INTERNAL_ERROR",
+          "Initial": "13024",
+          "Comment": "Internal error during cp halt or stop."
+        },
+        {
+          "Name": "SMC_TRJ_PLANNING_INIT_INTERNAL_ERROR",
+          "Initial": "13025",
+          "Comment": "Internal error while initializing trajectory planning."
+        },
+        {
+          "Name": "SMC_TRJ_PLANNING_GEN_SAMPLES_INTERNAL_ERROR",
+          "Initial": "13026",
+          "Comment": "Internal error while generating samples."
+        },
+        {
+          "Name": "SMC_TRJ_PLANNING_PATH_OUT_INTERNAL_ERROR",
+          "Initial": "13027",
+          "Comment": "Internal error while creating the output path."
+        },
+        {
+          "Name": "SMC_TRJ_PLANNING_EVAL_AXIS_INTERNAL_ERROR",
+          "Initial": "13028",
+          "Comment": "Internal error while evaluating axis values."
+        },
+        {
+          "Name": "SMC_TRJ_PLANNING_LOOKAHEAD_INTERNAL_ERROR",
+          "Initial": "13029",
+          "Comment": "Internal error in planning lookahead."
+        },
+        {
+          "Name": "SMC_AXIS_GROUP_READ_JERK_INTERNAL_ERROR",
+          "Initial": "13030",
+          "Comment": "Internal error while trying to read the jerk."
+        },
+        {
+          "Name": "SMC_AXIS_GROUP_WRITE_CONTINUE_POS_INTERNAL_ERROR",
+          "Initial": "13031",
+          "Comment": "Internal error while writing the continue position."
+        },
+        {
+          "Name": "SMC_CP_TRANSITION_CHECK_FAILED",
+          "Initial": "13032",
+          "Comment": "Internal error while checking whether the path is\ncontinuous."
+        },
+        {
+          "Name": "SMC_ABORTING_INTERNAL_ERROR",
+          "Initial": "13033",
+          "Comment": "Internal error while aborting."
+        },
+        {
+          "Name": "SMC_LINE_TO_REL_STANDSTILL_INTERNAL_ERROR",
+          "Initial": "13034",
+          "Comment": "Internal error while creating a line to relative standstill."
+        },
+        {
+          "Name": "SMC_PATH_ELEM_POSE_EVAL_INTERNAL_ERROR",
+          "Initial": "13035",
+          "Comment": "Internal error while evaluating a pose on a path element."
+        },
+        {
+          "Name": "SMC_CS_REF_COUNT_INTERNAL_ERROR",
+          "Initial": "13036",
+          "Comment": "Internal error in coordinate system reference counting."
+        },
+        {
+          "Name": "SMC_PATH_QUEUE_INTERNAL_ERROR",
+          "Initial": "13037",
+          "Comment": "Internal error in the path queue."
+        },
+        {
+          "Name": "SMC_PATH_ELEM_QUEUE_INTERNAL_ERROR",
+          "Initial": "13038",
+          "Comment": "Internal error in the path queue."
+        },
+        {
+          "Name": "SMC_ELEM_FUN_QUEUE_INTERNAL_ERROR",
+          "Initial": "13039",
+          "Comment": "Internal error in the element function queue."
+        },
+        {
+          "Name": "SMC_MAC_DUPLICATE_CALLER_INTERNAL_ERROR",
+          "Initial": "13040",
+          "Comment": "Internal error in the multi acyclic communicator due to a\nduplicate SDO caller."
+        },
+        {
+          "Name": "SMC_MAC_INTERNAL_ERROR",
+          "Initial": "13041",
+          "Comment": "Internal error in the multi acyclic communicator."
+        },
+        {
+          "Name": "SMC_READ_POSITION_INTERNAL_ERROR",
+          "Initial": "13042",
+          "Comment": "Internal error when reading the axis group position."
+        },
+        {
+          "Name": "SMC_ELEM_FUN_PROJECT_POINT_INTERNAL_ERROR",
+          "Initial": "13043",
+          "Comment": "Internal error in function GeoPrim_ProjectPoint"
+        },
+        {
+          "Name": "SMC_CAM_EVAL_INTERNAL_ERROR",
+          "Initial": "13044",
+          "Comment": "Internal error during cam table evaluation"
+        },
+        {
+          "Name": "SMC_CAM_BUILDER_INTERNAL_ERROR_INVALID_CAM_SEGMENT_TYPE",
+          "Initial": "13045",
+          "Comment": "Internal error when evaluating the cam segment type."
+        },
+        {
+          "Name": "SMC_CAM_BUILDER_INTERNAL_ERROR_INVALID_DESCRIPTION_TYPE",
+          "Initial": "13046",
+          "Comment": "Internal error when evaluating the cam segment description\ntype."
+        },
+        {
+          "Name": "SMC_CAM_BUILDER_INTERNAL_ERROR_IMPLICIT_BOUNDARY_CANNOT_BE_EVALUATED",
+          "Initial": "13047",
+          "Comment": "Internal error when trying to evaluate an implicit boundary."
+        },
+        {
+          "Name": "SMC_CAM_BUILDER_INTERNAL_ERROR_OUT_OF_BOUNDS",
+          "Initial": "13048",
+          "Comment": "Internal error when trying to access cam segments out of\nbounds."
+        },
+        {
+          "Name": "SMC_AXIS_MOVEMENTS_INTERNAL_ERROR",
+          "Initial": "13070",
+          "Comment": "Internal error in the axis movements."
+        },
+        {
+          "Name": "SMC_STOP_INTERNAL_ERROR",
+          "Initial": "13071",
+          "Comment": "Internal error in MC_Stop."
+        }
+      ]
+    }
+  ]
+}

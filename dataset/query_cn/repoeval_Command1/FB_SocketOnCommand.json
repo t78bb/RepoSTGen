@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现用于控制套接字的命令功能块。",
+  "provide_code": "FUNCTION_BLOCK PUBLIC FB_SocketOnCommand IMPLEMENTS I_Command"
+}

@@ -1,0 +1,53 @@
+{
+  "library": "String Segments",
+  "title": "CreateRangePool (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Segments/Current/Strings/Functions/CreateRangePool.html",
+  "page_title": "CreateRangePool (FUN)",
+  "text": "\nFUNCTION CreateRangePool :\nIRangePool\nCreates a pool for\nIRange\ninstances in the specified memory space\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "CreateRangePool",
+          "Type": "IRangePool",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "pbyPool",
+          "Type": "POINTER TO BYTE",
+          "Initial": "",
+          "Comment": "Pointer to the first byte of the memory.This address should aligned to a__XWORDboundary!"
+        },
+        [
+          "udiPoolSize",
+          "UDINT",
+          "",
+          "Size of the allocated memory for the range pool.This size must not be smaller thanSIZEOF(_RangePool), because it includes an instance of_RangePool(FB)"
+        ],
+        [
+          "usiExtensionFactor",
+          "USINT",
+          "0",
+          "Optional extension factor of theIRangePoolinstance"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "eErrorID",
+          "Type": "ERROR",
+          "Initial": "",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

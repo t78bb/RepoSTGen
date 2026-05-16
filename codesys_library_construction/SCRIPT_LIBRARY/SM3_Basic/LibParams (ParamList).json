@@ -1,0 +1,57 @@
+{
+  "library": "SM3_Basic",
+  "title": "LibParams (ParamList)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/Globals/LibParams.html",
+  "page_title": "LibParams (PARAMS)",
+  "text": "\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Constant",
+          "Name": "gc_SMC_FILE_MAXCAMEL",
+          "Type": "INT",
+          "Initial": "128",
+          "Comment": "The maximum number of cam segments / points that can be read\nbySMC_ReadCam."
+        },
+        [
+          "gc_SMC_FILE_MAXCAMTAP",
+          "INT",
+          "128",
+          "The maximum number of cam tappets that can be read bySMC_ReadCam."
+        ],
+        [
+          "gc_SMC_ACT_VALUE_BUFFER_SIZE_BASE2_EXP",
+          "UINT (1..30)",
+          "4",
+          "The base 2 exponent for the act value buffer size.  Must be between 1 and 30.\nThe size of the buffer will be 2^``gc_SMC_ACT_VALUE_BUFFER_SIZE_BASE2_EXP``.\nThis buffer is required for using|SMC_ETC_InterpolateAxisPosition|."
+        ],
+        [
+          "gc_SMC_DIGITAL_CAM_SWITCH_NUM_TRACKS",
+          "UDINT",
+          "32",
+          "The number of tracks forSMC_DigitalCamSwitch_HighPrecision."
+        ],
+        [
+          "gc_SMC_DIGITAL_CAM_SWITCH_MAX_SWITCHES",
+          "UDINT",
+          "8",
+          "The maximum number of switches per track forSMC_DigitalCamSwitch_HighPrecision."
+        ],
+        [
+          "gc_SMC_DIGITAL_CAM_SWITCH_MAX_TOGGLE_EVENTS_BASE2_EXP",
+          "UINT",
+          "3",
+          "The base 2 exponent for the maximum number of events per track forSMC_DigitalCamSwitch_HighPrecision.  Must be >= 1.\nThe maximum number of events per track will be\n2^``gc_SMC_DIGITAL_CAM_SWITCH_MAX_TOGGLE_EVENTS_BASE2_EXP``."
+        ]
+      ]
+    }
+  ]
+}

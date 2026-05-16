@@ -1,0 +1,31 @@
+{
+  "library": "Util",
+  "title": "BYTE_TO_BCD (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/BCD-Conversions/BYTE_TO_BCD.html",
+  "page_title": "BYTE_TO_BCD (FUN)",
+  "text": "\nFUNCTION BYTE_TO_BCD : BYTE\nConverts one byte in binary code in the range of 0..99 into one byte in BCD code\nUse\nBCD_TO_BYTE\nfor the reverse conversion.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "BYTE_TO_BCD",
+          "Type": "BYTE",
+          "Comment": "Value in BCD code for the inputB"
+        },
+        {
+          "Scope": "Input",
+          "Name": "B",
+          "Type": "BYTE",
+          "Comment": "Value in binary code"
+        }
+      ]
+    }
+  ]
+}

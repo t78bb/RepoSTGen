@@ -1,0 +1,36 @@
+{
+  "library": "String Builder",
+  "title": "GetCurrentSegment (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Builder/Current/Builder/Function-Blocks/pou-_Builder/IBuilder/Segments/GetCurrentSegment.html",
+  "page_title": "_Builder.GetCurrentSegment (METH)",
+  "text": "\nMETHOD GetCurrentSegment :\nERROR\nReturns the available memory of the free segment\nCheck error return value for better diagnostics\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetCurrentSegment",
+          "Type": "ERROR",
+          "Comment": ""
+        },
+        {
+          "Scope": "Output",
+          "Name": "pbyData",
+          "Type": "POINTER TO BYTE",
+          "Comment": "Pointer to the first byte of the free segment"
+        },
+        [
+          "udiSize",
+          "UDINT",
+          "Data size of the free segment"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "library": "String Builder Base",
+  "title": "CreateRange (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Builder Base/Current/BuilderBase/Functions/CreateRange.html",
+  "page_title": "CreateRange (FUN)",
+  "text": "\nFUNCTION CreateRange : STR.IRange\nReturns a\nSTR.IRange\ninstance placed in the memory area given by the parameters\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "CreateRange",
+          "Type": "STR.IRange"
+        },
+        {
+          "Scope": "Input",
+          "Name": "pbyMemory",
+          "Type": "POINTER TO BYTE"
+        },
+        [
+          "udiMemSize",
+          "UDINT"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "eErrorID",
+          "Type": "STR.ERROR"
+        }
+      ]
+    }
+  ]
+}

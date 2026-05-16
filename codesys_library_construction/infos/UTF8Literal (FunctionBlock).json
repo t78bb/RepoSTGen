@@ -1,0 +1,23 @@
+{
+  "library": "String Segments",
+  "title": "UTF8Literal (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Segments/Current/Strings/Functionblocks/UTF8Literal.html",
+  "page_title": "UTF8Literal (FB)",
+  "text": "\nFUNCTION_BLOCK PUBLIC FINAL UTF8Literal EXTENDS\n_UTF8String\nManaging a UTF-8 encoded âimmutableâ string segment\nModification of the content after creation is not allowed and may result in undefined behavior!\nExample for how to convert a ânormalâ string segment to a\nIString\nInstance.\nThe last line brings back the pointer and the length of the string segment.\nudiLength : UDINT;\nfbsValue : STR.UTF8Literal := (psValue:=ADR(UTF8#'CÃDâ¬Å¡Å¸Å  Ã¯Ã vÃ¤rÃ¿ Ã§Ã´Ãµl'));\npsValue : POINTER TO STRING := fbsValue.GetSegment(udiLength => udiLength);\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input Const",
+          "Name": "psValue",
+          "Type": "POINTER TO STRING"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "library": "DNP3",
+  "title": "IndexedTimePointObserver (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/PointObserver/IndexedTimePointObserver.html",
+  "page_title": "IndexedTimePointObserver (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL IndexedTimePointObserver EXTENDS\nPointObserver\nIMPLEMENTS IIndexedTimePointObserver\nDNP3 Master datapoint observer for a datapoint of DNP3 object group 50 âtime and dateâ variation 4.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment",
+        "Inherited from"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "itfMaster",
+          "Type": "IMaster",
+          "Comment": "Connect to a Master.",
+          "Inherited from": "PointObserver"
+        },
+        [
+          "xEnable",
+          "BOOL",
+          "Enable the PointObserver.",
+          "PointObserver"
+        ],
+        [
+          "pointNumber",
+          "UINT",
+          "Datapoint number.",
+          "PointObserver"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "xError",
+          "Type": "BOOL",
+          "Comment": "An error occured.",
+          "Inherited from": "PointObserver"
+        },
+        [
+          "eErrorID",
+          "Error",
+          "The specific error.",
+          "PointObserver"
+        ],
+        [
+          "modified",
+          "BOOL",
+          "Data received since last call.",
+          "PointObserver"
+        ],
+        [
+          "sequenceNumber",
+          "UDINT",
+          "Sequence number of received data.",
+          "PointObserver"
+        ],
+        [
+          "indexedTime",
+          "LDATE_AND_TIME",
+          "indexed absolute time received from Outstation",
+          ""
+        ],
+        [
+          "intervalCount",
+          "UDINT",
+          "interval count received from Outstation",
+          ""
+        ],
+        [
+          "intervalUnit",
+          "BYTE",
+          "interval unit received from Outstation",
+          ""
+        ]
+      ]
+    }
+  ]
+}

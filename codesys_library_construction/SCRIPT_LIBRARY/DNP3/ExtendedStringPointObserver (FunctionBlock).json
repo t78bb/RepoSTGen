@@ -1,0 +1,102 @@
+{
+  "library": "DNP3",
+  "title": "ExtendedStringPointObserver (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/PointObserver/ExtendedStringPointObserver.html",
+  "page_title": "ExtendedStringPointObserver (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL ExtendedStringPointObserver EXTENDS\nPointObserver\nIMPLEMENTS IExtendedStringPointObserver\nDNP3 Master datapoint observer for a datapoint of DNP3 object group 114 âextended stringsâ.\nUnlike other datapoint observer ExtendedStringPointObserver doesnt provide the received data as an output variable,\nbut writes to an buffer provided by the caller if the datapoint changes.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment",
+        "Inherited from"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "itfMaster",
+          "Type": "IMaster",
+          "Comment": "Connect to a Master.",
+          "Inherited from": "PointObserver"
+        },
+        [
+          "xEnable",
+          "BOOL",
+          "Enable the PointObserver.",
+          "PointObserver"
+        ],
+        [
+          "pointNumber",
+          "UINT",
+          "Datapoint number.",
+          "PointObserver"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "xError",
+          "Type": "BOOL",
+          "Comment": "An error occured.",
+          "Inherited from": "PointObserver"
+        },
+        [
+          "eErrorID",
+          "Error",
+          "The specific error.",
+          "PointObserver"
+        ],
+        [
+          "modified",
+          "BOOL",
+          "Data received since last call.",
+          "PointObserver"
+        ],
+        [
+          "sequenceNumber",
+          "UDINT",
+          "Sequence number of received data.",
+          "PointObserver"
+        ],
+        {
+          "Scope": "Input",
+          "Name": "pStrBuf",
+          "Type": "POINTER TO USINT",
+          "Comment": "Pointer to buffer where to store the Octet String value",
+          "Inherited from": ""
+        },
+        [
+          "maxLenStrBuf",
+          "UINT",
+          "Maximum number of bytes to store in pStrBuf",
+          ""
+        ],
+        {
+          "Scope": "Output",
+          "Name": "strLen",
+          "Type": "UINT",
+          "Comment": "number of bytes in buffer",
+          "Inherited from": ""
+        },
+        [
+          "flags",
+          "USINT",
+          "Flags received from Outstation. Flag values are ORâdcombinations of the following:DNPDEFS_DBAS_FLAG_ON_LINE - the point has been readsuccessfullyDNPDEFS_DBAS_FLAG_RESTART - the field device that originated thedata object has been restarted. This device may be the deviced\nreporting this data object.DNPDEFS_DBAS_FLAG_COMM_LOST - the device reporting this data objecthas lost communication with the originator of the data objectDNPDEFS_DBAS_FLAG_REMOTE_FORCED - the state of the binary objecthas been forced to its current state at the originating device",
+          ""
+        ],
+        [
+          "hasTimeStamp",
+          "BOOL",
+          "Update received from Outstation has a valid time stamp.",
+          ""
+        ],
+        [
+          "timeStamp",
+          "LDATE_AND_TIME",
+          "Time stamp reported - valid if hasTimeStamp = TRUE, invalid\notherwise.",
+          ""
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "library": "BACnet2",
+  "title": "SetPropertyAccessRight (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/BACnetObjects/base/pou-BACnetObjectBase/SetPropertyAccessRight.html",
+  "page_title": "BACnetObjectBase.SetPropertyAccessRight (METH)",
+  "text": "\nMETHOD SetPropertyAccessRight : CmpBACnet.IEC_BACNET_STATUS\nSets the client side access rights for a specified BACnet-Property of this BACnet-Object (propID). These restrictions only hold for\nclient side access of the specified BACnet-Property.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetPropertyAccessRight",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "propID",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_ID",
+          "Comment": "The property ID of the property for which the access rights\nshall be set."
+        },
+        [
+          "accessRight",
+          "CmpBACnet.IEC_BACNET_ACCESS",
+          "The BACnet access rights to set for the property."
+        ]
+      ]
+    }
+  ]
+}

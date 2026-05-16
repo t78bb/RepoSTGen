@@ -1,0 +1,152 @@
+{
+  "library": "MQTT Client SL",
+  "title": "MQTTSubscribe (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/MQTT Client SL/Current/MQTT-Client/Common/Function-Blocks/MQTTSubscribe.html",
+  "page_title": "MQTTSubscribe (FB)",
+  "text": "MQTT Client\nCommon\nEnums\nCOMMUNICATION_MODE (Enum)\nFILTER_MODE (Enum)\nMQTT_ERROR (Enum)\nMQTT_QOS (Enum)\nMQTT_VERSION (Enum)\nV5\nFunction Blocks\nMQTTClient (FunctionBlock)\nMQTTPublish (FunctionBlock)\nMQTTSubscribe (FunctionBlock)\nParams\nMQTTParam (ParamList)\nStructs\nMQTTV5\nUTF-8\nConvertUTF16toUTF8 (Function)\nConvertUTF8toUTF16 (Function)\nFile and Project Information\nLibrary Reference\n3SLicense\nLibrary Identification\nLibrary Properties\nCAA FB Factory\nLibrary Identification\nLibrary Properties\nCAA Types Extern\nLibrary Identification\nLibrary Properties\nCmpCrypto\nLibrary Identification\nLibrary Properties\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nCmpLog\nLibrary Identification\nLibrary Properties\nCmpSchedule\nLibrary Identification\nLibrary Properties\nCmpX509Cert\nLibrary Identification\nLibrary Properties\nCommon Behaviour Model\nLibrary Identification\nLibrary Properties\nComponent Manager\nLibrary Identification\nLibrary Properties\nElement Collections\nLibrary Identification\nLibrary Properties\nMemoryUtils\nLibrary Identification\nLibrary Properties\nNet Base Services\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nStringUtils\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysSocket2\nLibrary Identification\nLibrary Properties\nSysSocket2 Implementation\nLibrary Identification\nLibrary Properties\nSysTime\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nWeb Socket Client SL\nLibrary Identification\nLibrary Properties\nMQTT Client SL\nDocs\n»\nMQTT\nClient\n»\nCommon\n»\nFunction\nBlocks\n»\nMQTTSubscribe (FB)\nMQTTSubscribe (FB)\nÂ¶\nFUNCTION_BLOCK MQTTSubscribe EXTENDS CBML.LCon IMPLEMENTS ISubscriber\nFunction block to subscribe (receive) messages from a MQTT broker\nInOut:\nScope\nName\nType\nInitial\nComment\nInherited from\nInput\nxEnable\nBOOL\nTRUE\n: Activates the defined operation\nFALSE\n: Aborts/resets the defined operation\nLCon\nOutput\nxDone\nBOOL\nTRUE\n: Ready condition reached\nLCon\nxBusy\nBOOL\nTRUE\n: Operation is running\nLCon\nxError\nBOOL\nTRUE\n: Error condition reached\nLCon\nInput\neSubscribeQoS\nMQTT_QOS\nQoS-Level for Subscribe\npbPayload\nPOINTER TO BYTE\nPointer to memory for incoming payload\nudiMaxPayloadSize\nUDINT\nMaximum Size of incoming payload\neFilterMode\nFILTER_MODE\nFILTER_MODE.FILTER_ON\nFilter mode for incoming telegrams. Default:\nFILTER_MODE.FILTER_ON\nmQTTSubscribeProperties\nREFERENCE TO\nMQTTSubscribeProperties\nSubscribe proerties (MQTT V5 only)\nudiTimeout\nUDINT\n1000000\nTime in Âµs in which an subcription acknowledgement (SUBACK)\nmust be received.\nInout\nmqttClient\nMQTTClient\nFunction block MQTTClient\nwsTopicFilter\nWSTRING(1024)\nTopic Filter\nOutput\neMQTTError\nMQTT_ERROR\nMQTT Error Type\nxReceived\nBOOL\nFALSE as long as there is no message, TRUE if a message got\nreceived, in new cyclus then again FALSE\nudiPayloadSize\nUDINT\nSize of the received message\nxSubscribeActive\nBOOL\nFALSE\nFALSE: When there is no active subscription, TRUE:\nSubscriber is listening\nwsLastTopic\nWSTRING(1024)\nThe real topic value from the publish packet that is\ncorresponding to this topic filter\nmQTTPublishProperties\nMQTTPublishProperties\nLast received publish properties\nProperties:\nBeforeSubscribed\nFilterMode\nSubscribeActive\nMethods:\nResetAction\nStructure:\nBeforeSubscribed (Property)\nFilterMode (Property)\nResetAction (Method)\nSubscribeActive (Property)",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment",
+        "Inherited from"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "xEnable",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUE: Activates the defined operationFALSE: Aborts/resets the defined operation",
+          "Inherited from": "LCon"
+        },
+        {
+          "Scope": "Output",
+          "Name": "xDone",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUE: Ready condition reached",
+          "Inherited from": "LCon"
+        },
+        [
+          "xBusy",
+          "BOOL",
+          "",
+          "TRUE: Operation is running",
+          "LCon"
+        ],
+        [
+          "xError",
+          "BOOL",
+          "",
+          "TRUE: Error condition reached",
+          "LCon"
+        ],
+        {
+          "Scope": "Input",
+          "Name": "eSubscribeQoS",
+          "Type": "MQTT_QOS",
+          "Initial": "",
+          "Comment": "QoS-Level for Subscribe",
+          "Inherited from": ""
+        },
+        [
+          "pbPayload",
+          "POINTER TO BYTE",
+          "",
+          "Pointer to memory for incoming payload",
+          ""
+        ],
+        [
+          "udiMaxPayloadSize",
+          "UDINT",
+          "",
+          "Maximum Size of incoming payload",
+          ""
+        ],
+        [
+          "eFilterMode",
+          "FILTER_MODE",
+          "FILTER_MODE.FILTER_ON",
+          "Filter mode for incoming telegrams. Default:\nFILTER_MODE.FILTER_ON",
+          ""
+        ],
+        [
+          "mQTTSubscribeProperties",
+          "REFERENCE TOMQTTSubscribeProperties",
+          "",
+          "Subscribe proerties (MQTT V5 only)",
+          ""
+        ],
+        [
+          "udiTimeout",
+          "UDINT",
+          "1000000",
+          "Time in Âµs in which an subcription acknowledgement (SUBACK)\nmust be received.",
+          ""
+        ],
+        {
+          "Scope": "Inout",
+          "Name": "mqttClient",
+          "Type": "MQTTClient",
+          "Initial": "",
+          "Comment": "Function block MQTTClient",
+          "Inherited from": ""
+        },
+        [
+          "wsTopicFilter",
+          "WSTRING(1024)",
+          "",
+          "Topic Filter",
+          ""
+        ],
+        {
+          "Scope": "Output",
+          "Name": "eMQTTError",
+          "Type": "MQTT_ERROR",
+          "Initial": "",
+          "Comment": "MQTT Error Type",
+          "Inherited from": ""
+        },
+        [
+          "xReceived",
+          "BOOL",
+          "",
+          "FALSE as long as there is no message, TRUE if a message got\nreceived, in new cyclus then again FALSE",
+          ""
+        ],
+        [
+          "udiPayloadSize",
+          "UDINT",
+          "",
+          "Size of the received message",
+          ""
+        ],
+        [
+          "xSubscribeActive",
+          "BOOL",
+          "FALSE",
+          "FALSE: When there is no active subscription, TRUE:\nSubscriber is listening",
+          ""
+        ],
+        [
+          "wsLastTopic",
+          "WSTRING(1024)",
+          "",
+          "The real topic value from the publish packet that is\ncorresponding to this topic filter",
+          ""
+        ],
+        [
+          "mQTTPublishProperties",
+          "MQTTPublishProperties",
+          "",
+          "Last received publish properties",
+          ""
+        ]
+      ]
+    }
+  ]
+}

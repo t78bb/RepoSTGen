@@ -1,0 +1,47 @@
+{
+  "library": "AlarmManager",
+  "title": "GetInstanceAlarm (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/pou-IAlarmHandler7/GetInstanceAlarm.html",
+  "page_title": "IAlarmHandler7.GetInstanceAlarm (METH)",
+  "text": "\nMETHOD GetInstanceAlarm :\nIAlarm8\nProvides access to alarm specific data of instantiated function blocks using the alarm group template that this block is associated with.\nReturns NULL if no alarm is found.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetInstanceAlarm",
+          "Type": "IAlarm8",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "pFBInstance",
+          "Type": "POINTER TO BYTE",
+          "Comment": "Pointer to the template FB instance. Use THIS when inside\nthe fucntion block."
+        },
+        [
+          "uiTemplateAlarmId",
+          "ALARM_ID",
+          "Alarm ID within the related alarm group template."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "usiAlarmGroupID",
+          "Type": "ALARMGROUP_ID",
+          "Comment": "Id of the related alarm group.\nCan be used to acknowledge this alarm by using methods like IAlarmHandler.AcknowlegeOneOfGroup."
+        },
+        [
+          "uiAlarmid",
+          "ALARM_ID",
+          "Alarm ID of this alarm in the related alarm group.\nCan be used to acknowledge this alarm by using methods like IAlarmHandler.AcknowlegeOneOfGroup."
+        ]
+      ]
+    }
+  ]
+}

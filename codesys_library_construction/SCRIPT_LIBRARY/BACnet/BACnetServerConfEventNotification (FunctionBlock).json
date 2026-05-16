@@ -1,0 +1,138 @@
+{
+  "library": "BACnet",
+  "title": "BACnetServerConfEventNotification (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetServer/Async/BACnetServerConfEventNotification.html",
+  "page_title": "BACnetServerConfEventNotification (FB)",
+  "text": "\nFUNCTION_BLOCK PUBLIC FINAL BACnetServerConfEventNotification EXTENDS\nBACnetClientBase\nCommon Behaviour Model conform (ETrigA) FB to send a ConfirmedEventNotification-Request in the BACnet-Network.\nIf execution completed successfully and xDone is TRUE, the request was successful.\nIn any other case eStatus and errorResult may hold additional information of what failed.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment",
+        "Inherited from"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "xExecute",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Rising edge: Starts defined operationFALSE: Resets the defined operation after ready condition was reached",
+          "Inherited from": "ETrigATo"
+        },
+        [
+          "xAbort",
+          "BOOL",
+          "",
+          "TRUE: Aborts the operation",
+          "ETrigATo"
+        ],
+        [
+          "udiTimeOut",
+          "UDINT",
+          "",
+          "Max. operating time for executing\n[Âµs], 0: No operating time limit",
+          "ETrigATo"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "xDone",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUE: Ready condition reached",
+          "Inherited from": "ETrigATo"
+        },
+        [
+          "xBusy",
+          "BOOL",
+          "",
+          "TRUE: Operation is running",
+          "ETrigATo"
+        ],
+        [
+          "xError",
+          "BOOL",
+          "",
+          "TRUE: Error condition reached",
+          "ETrigATo"
+        ],
+        [
+          "xAborted",
+          "BOOL",
+          "",
+          "TRUE: Abort condition reached",
+          "ETrigATo"
+        ],
+        {
+          "Scope": "Input",
+          "Name": "dwTargetDeviceNumber",
+          "Type": "DWORD",
+          "Initial": "",
+          "Comment": "The device number of the targeted device in the BACnet-\nNetwork.",
+          "Inherited from": "BACnetClientBase"
+        },
+        [
+          "pTargetDeviceAddress",
+          "POINTER TO\nCmpBACnet.IEC_BACNET_ADDRESS",
+          "0",
+          "Optional: The device address of the targeted device in the BACnet-Network. If\nan adress is given the given device number is ignored.",
+          "BACnetClientBase"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "eStatus",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Initial": "CmpBACnet.IEC_BACNET_STATUS.BACNET_STATUS_OK",
+          "Comment": "If an error occured, the error state.",
+          "Inherited from": "BACnetClientBase"
+        },
+        [
+          "errorResult",
+          "CmpBACnet.IEC_BACNET_ERROR",
+          "STRUCT(tag := CmpBACnet.IEC_BACNET_FAILURE_TYPE._FAILURE_MAX_SIZE)",
+          "If an error occured (this means eStatus <> BACNET_STATUS_OK), whereas the sent BACnet-Request was answered\nwith an specific error information, the latter is contained in this structure.",
+          "BACnetClientBase"
+        ],
+        [
+          "iState",
+          "DINT",
+          "0",
+          "The State in which the FB is during execution:0: No execution, resetted state1: Searching for the Target-Device and a valid address for it2: Sending the BACnet-Request into the network3: Waiting for the answer (if there is one) to the BACnet-Request made in 24: Finishing the call, setting of the output variables",
+          "BACnetClientBase"
+        ],
+        {
+          "Scope": "Input",
+          "Name": "initObject",
+          "Type": "CmpBACnet.IEC_BACNET_OBJECT_ID",
+          "Initial": "",
+          "Comment": "This parameter, of type BACnetObjectIdentifier, specifies the\nObject_Identifier of the object that is initiating the notification.",
+          "Inherited from": ""
+        },
+        [
+          "messageText",
+          "CmpBACnet.IEC_BACNET_STRING",
+          "",
+          "This optional parameter, of type CharacterString, contains a string of\nprintable characters. This parameter may be used to transport a message to\nbe logged or displayed, which pertains to the occurrence of the event.\nSet string type to BACNET_STRING_NONE for no message text to be sent.",
+          ""
+        ],
+        [
+          "pMandatoryParams",
+          "POINTER TO\nCmpBACnet.IEC_BACNET_EN_MANDATORY",
+          "",
+          "A pointer to the mandatory service parameters.",
+          ""
+        ],
+        [
+          "pConditionalParams",
+          "POINTER TO\nCmpBACnet.IEC_BACNET_EN_CONDITIONAL",
+          "",
+          "A pointer to the conditional service parameters.",
+          ""
+        ]
+      ]
+    }
+  ]
+}

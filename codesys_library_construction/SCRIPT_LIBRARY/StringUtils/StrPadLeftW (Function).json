@@ -1,0 +1,46 @@
+{
+  "library": "StringUtils",
+  "title": "StrPadLeftW (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/StringUtils/Current/Public-Parts/Unicode/StrPadLeftW.html",
+  "page_title": "StrPadLeftW (FUN)",
+  "text": "\nFUNCTION StrPadLeftW : BOOL\nThis function generate a padding string and concatenates it with pstFrom to pstTo if the iBufferSize from pstTo is big enough.\nThe function will do its work either with native\nIEC-Strings or with strings coming from external functions.\nIt will return FALSE and does no concatenation if one of the strings is NULL\nor the buffer size is not big enough.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "StrPadLeftW",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "wPadChar",
+          "Type": "WORD",
+          "Comment": "The padding character filling the space from left"
+        },
+        [
+          "pstFrom",
+          "CharBufferPtr",
+          "simply a pointer to byte"
+        ],
+        [
+          "pstTo",
+          "CharBufferPtr",
+          "simply a pointer to byte"
+        ],
+        [
+          "diBufferSize",
+          "DINT",
+          "the buffer size of pstTo"
+        ]
+      ]
+    }
+  ]
+}

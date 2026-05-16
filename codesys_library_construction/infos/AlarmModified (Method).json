@@ -1,0 +1,25 @@
+{
+  "library": "AlarmManager",
+  "title": "AlarmModified (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Alarm-storage-API/pou-IAlarmStorageListener/AlarmModified.html",
+  "page_title": "IAlarmStorageListener.AlarmModified (METH)",
+  "text": "\nMETHOD AlarmModified\nNotification, that data of an already stored alarm has been modified in the alarm storage.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "alarm",
+          "Type": "AlarmStorageRow",
+          "Comment": "An instance of AlarmStorageRow describing the data of the alarm."
+        }
+      ]
+    }
+  ]
+}

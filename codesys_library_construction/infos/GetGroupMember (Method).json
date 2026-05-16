@@ -1,0 +1,42 @@
+{
+  "library": "BACnet",
+  "title": "GetGroupMember (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/Global-Group/pou-BACnetGlobalGroup/GetGroupMember.html",
+  "page_title": "BACnetGlobalGroup.GetGroupMember (METH)",
+  "text": "\nMETHOD GetGroupMember : CmpBACnet.IEC_BACNET_STATUS\nGets a group member (given by a BACnet-Object-Reference) and its name at index nIndex from the Group_Members-Property and\nthe Group_Member_Names-Property of this BACnet-Object. Both the group member and its name are aquired simulatenously by\nthis function.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetGroupMember",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "nIndex",
+          "Type": "CmpBACnet.IEC_BACNET_ELEMENT_COUNT",
+          "Comment": "The 1 based index of the group member to get."
+        },
+        {
+          "Scope": "Output",
+          "Name": "groupMember",
+          "Type": "CmpBACnet.IEC_BACNET_DEV_OBJ_PROP_REFERENCE",
+          "Comment": "The gotten group member after the method call."
+        },
+        [
+          "groupMemberName",
+          "WSTRING(255)",
+          "The name of the gotten group member after the method call."
+        ]
+      ]
+    }
+  ]
+}

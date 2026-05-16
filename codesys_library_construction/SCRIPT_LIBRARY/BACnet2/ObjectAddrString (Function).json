@@ -1,0 +1,36 @@
+{
+  "library": "BACnet2",
+  "title": "ObjectAddrString (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/Utilities/ToString/ObjectAddrString.html",
+  "page_title": "ObjectAddrString (FUN)",
+  "text": "\nFUNCTION ObjectAddrString : STRING\nProvides descriptive object address string.\nShould be used for debugging / logging only.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "ObjectAddrString",
+          "Type": "STRING"
+        },
+        {
+          "Scope": "Input",
+          "Name": "devInstNumber",
+          "Type": "CmpBACnet.IEC_BACNET_INST_NUMBER"
+        },
+        [
+          "objID",
+          "CmpBACnet.IEC_BACNET_OBJECT_ID"
+        ],
+        [
+          "objName",
+          "STRING"
+        ]
+      ]
+    }
+  ]
+}

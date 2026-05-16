@@ -1,0 +1,28 @@
+{
+  "library": "IoStandard",
+  "title": "ConfigGetParameterLength (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/IoStandard/Current/Config-Access-Help-Functions-internal/ConfigGetParameterLength.html",
+  "page_title": "ConfigGetParameterLength (FUN)",
+  "text": "\nFUNCTION ConfigGetParameterLength : DWORD\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "ConfigGetParameterLength",
+          "Type": "DWORD"
+        },
+        {
+          "Scope": "Input",
+          "Name": "pParameter",
+          "Type": "POINTER TO IoConfigParameter"
+        }
+      ]
+    }
+  ]
+}

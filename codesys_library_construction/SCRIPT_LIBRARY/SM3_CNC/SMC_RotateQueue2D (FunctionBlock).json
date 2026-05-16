@@ -1,0 +1,88 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_RotateQueue2D (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/Queue-manipulation/SMC_RotateQueue2D.html",
+  "page_title": "SMC_RotateQueue2D (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_RotateQueue2D\nThis function block will rotate the path stored in\npoqDataIn\naround\nthe z-axis by the angle given by\ndPhi\n[Â°].\nA positive angle effects a positive rotation in mathematical sense\n(counterclockwise).\nThe input variable\npoqDataIn\nis a pointer to the structure\nSMC_OUTQUEUE\n,\nwhich describes the path to get rotated. The initialization value\nFALSE\nof input variable\nbEnable\nwill bar the rotation of the path.\nAs soon as\nbEnable\nis set to\nTRUE\nall\nSMC_GEOINFO\nobjects found\nin\npoqDataIn\nwill be processed. When\nbEnable\nis reset to\nFALSE\n,\nthe module will not execute any further modifications.\nThe initialization of input variable\nbReset\nwith\nFALSE\neffects,\nthat the\nSMC_GEOINFO\nobjects currently found in\npoqDataIn\nwill\nnot get rotated, but only those that will be added.\nAs, during the processing, a sudden change of the characteristic\nparameter\ndPhi\nof the rotation might cause the path to be broken,\nmodifications to the corresponding input will not be taken into account,\nuntil\nSMC_OUTQUEUE\nwill be empty at\npoqDataIn\nor until a\nReset (\nbReset\n) will be done.\nIn order to effect a rotation within the\n(x,y)\n-plane around a\ncenter differing from\n(0,0)\n, e.g. around the point\n(xP,yP)\n,\na translation by the vector\n(-xP,-yP,0)\nhas to be carried out first ,\nfollowed by the rotation by the desired angle\ndPhi\nand followed again\nby a retranslation with vector\n(xP,yP,0)\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "bExecute",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "Rising edge: Starts execution; whileTRUE, the function\nblock is active`"
+        },
+        [
+          "bAppend",
+          "BOOL",
+          "FALSE",
+          "IfFALSEat a rising edge ofbExecute,\nthe output queuepoqDataOutis emptied."
+        ],
+        [
+          "poqDataIn",
+          "POINTER TOSMC_OUTQUEUE",
+          "SMC_NULL",
+          "Pointer on a sufficiently large, free data area (buffer)\nthat is allocated in the IEC application."
+        ],
+        [
+          "dPhi",
+          "LREAL",
+          "0",
+          "Angle of rotation"
+        ],
+        [
+          "nSizeOutQueue",
+          "UDINT",
+          "0",
+          "This variable contains the size of the data buffer,\nthe list ofSMC_GEOINFOstructure objects will be written to.\nThis buffer must be at least five times as big as aSMC_GEOINFOstructure itself. Otherwise,SMC_NCDecoderwill\nnot execute any actions at all. Its size may be predefined,\nbut may be modified later only during a reset.\nIt is recommended to create the buffer as described by the example below:ExampleBuf:ArrayofSMC_GeoInfoThe appropriate buffer size will then be retrieved\nby use of the operatorsizeof(ExampleBuf)."
+        ],
+        [
+          "pbyBufferOutQueue",
+          "POINTER TO ARRAY [0..0]\nOF SMC_GEOINFO",
+          "SMC_NULL",
+          "This input must point to the first byte of the memory area\nthat is allocated for theSMC_OUTQUEUEstructure.\nThis area must be at least as big as defined innSizeOutQueue.\nTypically the allocation of the memory buffer is done in the\ndeclaration part of the IEC-program by defining an array ofSMC_GEOINFO(e.g.BUF:ARRAY[1..50]OFSMC_GEOINFO;\nfor a buffer that can store 50 path elements).The value may be predefined, but may be modified later on only during a reset."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bDone",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "This variable will be set toTRUEas soon as the\ninput data ofpoqDataInhas been processed completely.\nThereafter the module will not perform any further actions\nuntil it will be reset. If inputbExecuteisFALSE,bDonewill be reset toFALSE."
+        },
+        [
+          "bBusy",
+          "BOOL",
+          "FALSE",
+          "TRUE, while execution of function block is not finished"
+        ],
+        [
+          "bError",
+          "BOOL",
+          "FALSE",
+          "Signals, that an error has occurred within the function\nblock"
+        ],
+        [
+          "wErrorID",
+          "SMC_ERROR",
+          "SMC_NO_ERROR",
+          "Error identification"
+        ],
+        [
+          "poqDataOut",
+          "POINTER TOSMC_OUTQUEUE",
+          "SMC_NULL",
+          "Pointer to resultingSMC_OUTQUEUE"
+        ]
+      ]
+    }
+  ]
+}

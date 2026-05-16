@@ -1,0 +1,28 @@
+{
+  "library": "BACnet2",
+  "title": "BBMD_Info (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/Structs/BBMD_Info.html",
+  "page_title": "BBMD_Info (STRUCT)",
+  "text": "\nTYPE BBMD_Info : STRUCT\nBBMD BDT entry\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Name": "addr",
+          "Type": "ARRAY [0..3] OF BYTE",
+          "Initial": "[0, 0, 0, 0]"
+        },
+        {
+          "Name": "port",
+          "Type": "WORD",
+          "Initial": "47808"
+        }
+      ]
+    }
+  ]
+}

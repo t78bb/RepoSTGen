@@ -1,0 +1,5 @@
+{
+  "requirement": "This code is intended to implement a standby command functionality for an air conditioning system.",
+  "provide_code": "FUNCTION_BLOCK PUBLIC FB_AirConStandbyCommand IMPLEMENTS I_Command",
+  "function_name": "FB_AirConStandbyCommand"
+}

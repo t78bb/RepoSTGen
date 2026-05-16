@@ -1,0 +1,31 @@
+{
+  "library": "Standard",
+  "title": "R_TRIG (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/Standard/Current/Trigger/R_TRIG.html",
+  "page_title": "R_TRIG (FB)",
+  "text": "\nFUNCTION_BLOCK R_TRIG\nDetects a rising edge of a boolean signal\n(* Example declaration *)\nRTRIGInst\n:\nR_TRIG\n;\n(* Example in ST *)\nRTRIGInst\n(\nCLK\n:=\nVarBOOL1\n);\nVarBOOL2\n:=\nRTRIGInst.Q\n;\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "CLK",
+          "Type": "BOOL",
+          "Comment": "Boolean signal to be checked"
+        },
+        {
+          "Scope": "Output",
+          "Name": "Q",
+          "Type": "BOOL",
+          "Comment": "TRUE: Rising edge detected"
+        }
+      ]
+    }
+  ]
+}

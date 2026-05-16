@@ -1,0 +1,38 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_BACKLASH_MODE (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/DataTypes/Movement/SMC_BACKLASH_MODE.html",
+  "page_title": "SMC_BACKLASH_MODE (ENUM)",
+  "text": "\nTYPE SMC_BACKLASH_MODE :\nThe mode of backlash compensation.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "SMC_BL_AUTO",
+          "Initial": "2",
+          "Comment": "The direction in which the master axis moves determines the\ncompensation direction"
+        },
+        {
+          "Name": "SMC_BL_POSITIVE",
+          "Initial": "1",
+          "Comment": "Compensation in positive direction, independent of the movement\nof the master axis."
+        },
+        {
+          "Name": "SMC_BL_NEGATIVE",
+          "Initial": "-1",
+          "Comment": "Compensation in negative direction, independent of the movement\nof the master axis."
+        },
+        {
+          "Name": "SMC_BL_OFF",
+          "Initial": "0",
+          "Comment": "No backlash compensation"
+        }
+      ]
+    }
+  ]
+}

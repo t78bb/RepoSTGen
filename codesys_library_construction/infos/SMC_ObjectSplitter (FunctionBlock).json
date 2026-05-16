@@ -1,0 +1,100 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_ObjectSplitter (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/SoftMotion-Function-Blocks/SMC_ObjectSplitter.html",
+  "page_title": "SMC_ObjectSplitter (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_ObjectSplitter\nThis function can be used if a velocity optimizer (like\nSMC_LimitDynamics\n)\nis applied to the queue. The limitation of\nSMC_LimitDynamics\nalways affects\na complete object.  This means that, the smaller the objects, the better\nthe result of the limitiation.\nObjects without geometrical expansion (like M-functions) or geometrical\ncurvature (like straight lines) remain unchanged.\nWith eMode, it is defined, how the division is done:\nif\nFIX\nis set, every curved object is divided in\nso many objects as defined in\ndSplittingParameter\n.\nif\nLENGTH\nis set, every object is divided so,\nthat it has the length\ndSplittingParameter\nat most.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "bExecute",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Execution starts on the rising edge."
+        },
+        [
+          "bAbort",
+          "BOOL",
+          "",
+          ""
+        ],
+        [
+          "bAppend",
+          "BOOL",
+          "",
+          ""
+        ],
+        [
+          "poqDataIn",
+          "POINTER TOSMC_OUTQUEUE",
+          "",
+          "Input path queue"
+        ],
+        [
+          "eMode",
+          "SMC_OBJECTSPLITTERMODE",
+          "",
+          "Splitting mode"
+        ],
+        [
+          "dSplittingParameter",
+          "LREAL",
+          "1",
+          "Parameters foreMode"
+        ],
+        [
+          "nSizeOutQueue",
+          "UDINT",
+          "",
+          "The size ofpbyBufferOutQueuein bytes"
+        ],
+        [
+          "pbyBufferOutQueue",
+          "POINTER TO ARRAY [0..0]\nOF SMC_GEOINFO",
+          "",
+          ""
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bDone",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "This output will be set toTRUEas soon as the\ninput path has been processed completely."
+        },
+        [
+          "bBusy",
+          "BOOL",
+          "",
+          "TRUE, while execution of function block is not finished"
+        ],
+        [
+          "bError",
+          "BOOL",
+          "",
+          "It signals that an error has occurred within the function\nblock"
+        ],
+        [
+          "wErrorID",
+          "SMC_ERROR",
+          "",
+          "Error identification"
+        ],
+        [
+          "poqDataOut",
+          "POINTER TOSMC_OUTQUEUE",
+          "",
+          ""
+        ]
+      ]
+    }
+  ]
+}

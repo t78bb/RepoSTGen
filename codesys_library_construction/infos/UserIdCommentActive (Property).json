@@ -1,0 +1,8 @@
+{
+  "library": "AlarmManager",
+  "title": "UserIdCommentActive (Property)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/pou-IAlarm7/UserIdCommentActive.html",
+  "page_title": "IAlarm7.UserIdCommentActive (PROP)",
+  "text": "\nPROPERTY UserIdCommentActive : POINTER TO WSTRING\nOptional user id that can be provided with the comment for the state âActiveâ.",
+  "tables": []
+}

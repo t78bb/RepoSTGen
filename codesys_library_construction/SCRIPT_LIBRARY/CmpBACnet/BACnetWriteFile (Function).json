@@ -1,0 +1,61 @@
+{
+  "library": "CmpBACnet",
+  "title": "BACnetWriteFile (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/CmpBACnet/Current/BACnetClientAPI/BACnetWriteFile.html",
+  "page_title": "BACnetWriteFile (FUN)",
+  "text": "\nFUNCTION BACnetWriteFile :\nIEC_BACNET_STATUS\nSends an AtomicWriteFile request.\nWrite an octet string into a specified position in a specified file. The file may be\naccessed as records or as a stream of octets. Choice is defined by the value of\nFile_Access_Method property of the File object. Since the present version of this API\ndoes not support default processing of this service, the destination has to include a\nhook procedure to process it. This routine may control APDU properties like APDU length,\nsegmentation, and timeout for both request and in response. This routine can execute\nasynchronously, i.e. this routine will return to the caller before the BACnet reply\ncomes so that the applications can keep running. In this case the response information\nwill be received by the thread which is responsible for receiving asynchronous responses.\nAn optional BACNET_WRITE_FILE_COMPLETE_CB routine, which is provided by the BACnet\napplication, shall be used to process this information. If a number of asynchronous\nrequests are sent, the responses shall be queued and identified by the transaction handles.\nIf the application does not supply the BACNET_WRITE_FILE_COMPLETE_CB routine; then the\nBACnetWriteFile routine sends a request and waits for reply.\nAsynchron call, which fills pResult with the call result in an asynchronus manner. As soon as pResultStatus\nis\nIEC_BACNET_STATUS.BACNET_STATUS_OK\nthe data in pResult is valid.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "BACnetWriteFile",
+          "Type": "IEC_BACNET_STATUS",
+          "Comment": "A status indicating whether the operation worked."
+        },
+        {
+          "Scope": "Input",
+          "Name": "pSourceAddress",
+          "Type": "POINTER TOIEC_BACNET_ADDRESS",
+          "Comment": "If the BACnet application has only one device constructed and installed, this can\nbe 0. In this case the MAC address of this device will be used. Otherwise this\nshall be the MAC address returned on device object construction."
+        },
+        [
+          "pDestinationAddress",
+          "POINTER TOIEC_BACNET_ADDRESS",
+          "This is the MAC address of the device to which the request\nshould be sent."
+        ],
+        [
+          "pWriteInfo",
+          "POINTER TOIEC_BACNET_WRITE_FILE_INFO",
+          "A pointer to the service request information data structure. This data structure\ncontains the objectID, File Access Type (IEC_BACNET_FILE_ACCESS_TYPE.FILE_ACCESS_STREAMorIEC_BACNET_FILE_ACCESS_TYPE.FILE_ACCESS_RECORD) and Write File Data information."
+        ],
+        [
+          "pAPDUParams",
+          "POINTER TOIEC_BACNET_APDU_PROPERTIES",
+          "A pointer to the APDU-Properties structure which sets APDU properties for this\ntransaction only. This does not change global defaults or settings for the application\nAPDU Properties. This argument may be 0. In this case APDU properties  are used\nwhich were specified in the device object properties of the applications device which\nsends the request."
+        ],
+        [
+          "pResult",
+          "POINTER TOIEC_BACNET_WRITE_FILE_RESULT",
+          "A pointer to a buffer to hold the Result data if successful writing (datatypeIEC_BACNET_WRITE_FILE_RESULT)."
+        ],
+        [
+          "pTransactionToken",
+          "POINTER TOBACnetAsyncTransactionToken",
+          "Transaction token of the asynchronous call - seeBACnetAsyncTransactionToken."
+        ],
+        [
+          "pError",
+          "POINTER TOIEC_BACNET_ERROR",
+          "A pointer to a structure to hold BACnet Error information. pError may be 0 if the\napplication isnât interested in detailed error information."
+        ]
+      ]
+    }
+  ]
+}

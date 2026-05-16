@@ -1,0 +1,8 @@
+{
+  "library": "AlarmManager",
+  "title": "IAlarmStorageListener (Interface)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Alarm-storage-API/IAlarmStorageListener.html",
+  "page_title": "IAlarmStorageListener (ITF)",
+  "text": "\nINTERFACE IAlarmStorageListener EXTENDS __SYSTEM.IQueryInterface\nThis interface must be implemented by function blocks, that have to be informed\nif both new alarms have been written into the alarm storage and existing alarms\nhave been updated.\nMethods:\nAlarmAdded\nAlarmModified\nStructure:\nAlarmAdded (Method)\nAlarmModified (Method)",
+  "tables": []
+}

@@ -1,0 +1,32 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_InvertDirection (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/GeoInfo-Help-Functions/SMC_InvertDirection.html",
+  "page_title": "SMC_InvertDirection (FUN)",
+  "text": "\nFUNCTION SMC_InvertDirection : BOOL\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SMC_InvertDirection",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Input",
+          "Name": "pgiDst",
+          "Type": "POINTER TOSMC_GEOINFO"
+        },
+        [
+          "pgiSrc",
+          "POINTER TOSMC_GEOINFO"
+        ]
+      ]
+    }
+  ]
+}

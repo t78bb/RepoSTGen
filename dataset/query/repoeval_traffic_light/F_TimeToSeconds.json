@@ -1,0 +1,5 @@
+{
+  "requirement": "This code is intended to implement the conversion of a TIME input value into its equivalent number of seconds as a DWORD.",
+  "provide_code": "FUNCTION F_TimeToSeconds : DWORD\nVAR_INPUT\n\ttTime\t:\tTIME;\t\t//输入的时间\nEND_VAR",
+  "function_name": "F_TimeToSeconds"
+}

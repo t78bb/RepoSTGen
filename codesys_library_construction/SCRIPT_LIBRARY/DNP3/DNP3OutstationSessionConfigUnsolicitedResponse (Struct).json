@@ -1,0 +1,115 @@
+{
+  "library": "DNP3",
+  "title": "DNP3OutstationSessionConfigUnsolicitedResponse (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Outstation/DNP3OutstationSessionConfigUnsolicitedResponse.html",
+  "page_title": "DNP3OutstationSessionConfigUnsolicitedResponse (STRUCT)",
+  "text": "\nTYPE DNP3OutstationSessionConfigUnsolicitedResponse : STRUCT\nParameters for outstation session related to unsolicited responses.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "unsolDontSendInitialNull",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "Determines whether an initial Null unsolicited response is sent.\nAccording to the DNP Specification if unsolicited responses are supported\nâunsolAllowed==trueâ then an initial null UR shall be sent until an\napplication confirm is received from the master. Some masters do not handle\nthe initial UR Null response but do support URs.\nSetting this to true will disable the sending of the initial Null UR."
+        },
+        {
+          "Name": "sendUnsolWhenOnline",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "Determines whether unsolicited null responses will be sent when session\ncomes âonlineâ (meaning connected). Specs say send initial unsolicited\nnull response on restart.\nPrevious versions of SCL would also send unsolicited null response when\na session reconnected. Add this configuration to allow user to maintain\nthat behavior by setting this to TMWDEFS_TRUE if desired."
+        },
+        {
+          "Name": "unsolSendIdenticalRetry",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "Determines whether to try to send identical unsolicited retries.\nIf set to FALSE, regenerated unsolicited retries will be sent.\nThe DNP Specification allows for either identical retries with the\nsame events and sequence number or regenerated retries which may\ncontain additional new events, different IIN bits, etc, with a\ndifferent sequence number.\nIf set to TMWDEFS_TRUE, identical retries will be sent until confirmed by the\nmaster or until the retry sequence is completed. Set unsolOfflineRetryDelay\nto UNSOL_NORETRY to limit identical or regenerated retries to unsolMaxRetries"
+        },
+        {
+          "Name": "unsolClassMask",
+          "Type": "USINT",
+          "Initial": "Constants.TMWDEFS_CLASS_MASK_NONE",
+          "Comment": "Specify the initial/new state of the unsolicited event mask. This mask\nis used to determine which event class(es) will generate unsolicited\nresponses. According to the DNP specification, unsolicited responses\nshould be disabled until an âEnable Unsolicited Responseâ request is\nreceived from the master. Hence this value should generally be\nTMWDEFS_CLASS_MASK_NONE, but some masters do not generate the âEnable\nUnsolicited Responseâ message, in which case they must be enabled here."
+        },
+        {
+          "Name": "unsolSendByClass",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "If this is TMWDEFS_TRUE, only unsolicited events in the class whose timer\ntimer expires or count is exceeded will be sent. Otherwise unsolicited\nevents in all classes will be sent."
+        },
+        {
+          "Name": "unsolMaxRetries",
+          "Type": "UINT",
+          "Initial": "3",
+          "Comment": "Specify the maximum number of unsolicited retries before changing to\nthe âofflineâ retry period described below. This parameter allows you\nto specify up to 65535 retries. If you want an infinite number of\nretries at the same time period, set unsolOfflineRetryDelay to the\nsame value as unsolRetryDelay."
+        },
+        {
+          "Name": "unsolRetryDelay",
+          "Type": "TIME",
+          "Initial": "TIME#5s0ms",
+          "Comment": "Specifies the time, in milliseconds, to delay after an unsolicited confirm\ntimeout before retrying the unsolicited response."
+        },
+        {
+          "Name": "unsolOfflineRetryDelay",
+          "Type": "TIME",
+          "Initial": "TIME#30s0ms",
+          "Comment": "Specifies the time, in milliseconds, to delay after an unsolicited\ntimeout before retrying the unsolicited response after unsolMaxRetries\nhave been attempted. To disable retries after unsolMaxRetries set this\nvalue to UNSOL_NORETRY or TMWDEFS_DAYS(31) which means this unsolicited\nwill not be retried. A new unsolicited response may be generated when\nconditions warrant."
+        },
+        {
+          "Name": "unsolOfflineDelayOnce",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "Specifies whether to continue using unsolOfflineRetryDelay value or to\nuse it for one time period and then revert back to unsolRetryDelay till\nunsolMaxRetries is once again exceeded."
+        },
+        {
+          "Name": "unsolClass1MaxDelay",
+          "Type": "TIME",
+          "Initial": "TIME#5s0ms",
+          "Comment": "If unsolicited responses are enabled, unsolClassXMaxDelay specifies\nthe maximum amount of time in milliseconds after an event in the\ncorresponding class is received before an unsolicited response will\nbe generated."
+        },
+        {
+          "Name": "unsolClass2MaxDelay",
+          "Type": "TIME",
+          "Initial": "TIME#5s0ms",
+          "Comment": ""
+        },
+        {
+          "Name": "unsolClass3MaxDelay",
+          "Type": "TIME",
+          "Initial": "TIME#5s0ms",
+          "Comment": ""
+        },
+        {
+          "Name": "unsolClass1MaxEvents",
+          "Type": "USINT",
+          "Initial": "5",
+          "Comment": "If unsolicited responses are enabled, unsolClassXMaxEvents specifies\nthe maximum number of events in the corresponding class to be allowed\nbefore an unsolicited response will be generated."
+        },
+        {
+          "Name": "unsolClass2MaxEvents",
+          "Type": "USINT",
+          "Initial": "5",
+          "Comment": ""
+        },
+        {
+          "Name": "unsolClass3MaxEvents",
+          "Type": "USINT",
+          "Initial": "5",
+          "Comment": ""
+        },
+        {
+          "Name": "unsolConfirmTimeout",
+          "Type": "TIME",
+          "Initial": "TIME#5s0ms",
+          "Comment": "Unsolicited confirm timeout specifies how long the Outstation DNP device will\nwait for an application layer confirmation from the master for an\nUNSOLICITED response. This in combination with unsolRetryDelay or\nunsolOfflineRetryDelay will determine how frequently an unsolicited response\nwill be resent."
+        }
+      ]
+    }
+  ]
+}

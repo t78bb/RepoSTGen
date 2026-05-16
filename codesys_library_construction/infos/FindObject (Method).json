@@ -1,0 +1,37 @@
+{
+  "library": "BACnet",
+  "title": "FindObject (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetServer/pou-IBACnetServer/Objects/FindObject.html",
+  "page_title": "IBACnetServer.FindObject (METH)",
+  "text": "\nMETHOD FindObject : BOOL\nSearch for object with given ID.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "FindObject",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "objID",
+          "Type": "CmpBACnet.IEC_BACNET_OBJECT_ID",
+          "Comment": ""
+        },
+        {
+          "Scope": "Inout",
+          "Name": "bacObj",
+          "Type": "BACnetObjectBase",
+          "Comment": "Empty BACnetObjectBase-Structure, which will be initialized\nwith the BACnet-Object if we found th object searched for."
+        }
+      ]
+    }
+  ]
+}

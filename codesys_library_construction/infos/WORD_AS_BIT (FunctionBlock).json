@@ -1,0 +1,106 @@
+{
+  "library": "Util",
+  "title": "WORD_AS_BIT (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/BitByte-Functions/WORD_AS_BIT.html",
+  "page_title": "WORD_AS_BIT (FB)",
+  "text": "\nFUNCTION_BLOCK WORD_AS_BIT\nConverts an input value of data type WORD into 16 outputs of data type BOOL\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "W",
+          "Type": "WORD",
+          "Comment": "Input value"
+        },
+        {
+          "Scope": "Output",
+          "Name": "B00",
+          "Type": "BOOL",
+          "Comment": "Output bit 0"
+        },
+        [
+          "B01",
+          "BOOL",
+          "Output bit 1"
+        ],
+        [
+          "B02",
+          "BOOL",
+          "Output bit 2"
+        ],
+        [
+          "B03",
+          "BOOL",
+          "Output bit 3"
+        ],
+        [
+          "B04",
+          "BOOL",
+          "Output bit 4"
+        ],
+        [
+          "B05",
+          "BOOL",
+          "Output bit 5"
+        ],
+        [
+          "B06",
+          "BOOL",
+          "Output bit 6"
+        ],
+        [
+          "B07",
+          "BOOL",
+          "Output bit 7"
+        ],
+        [
+          "B08",
+          "BOOL",
+          "Ãutput bit 8"
+        ],
+        [
+          "B09",
+          "BOOL",
+          "Output bit 9"
+        ],
+        [
+          "B10",
+          "BOOL",
+          "Output bit 10"
+        ],
+        [
+          "B11",
+          "BOOL",
+          "Output bit 11"
+        ],
+        [
+          "B12",
+          "BOOL",
+          "Output bit 12"
+        ],
+        [
+          "B13",
+          "BOOL",
+          "Output bit 13"
+        ],
+        [
+          "B14",
+          "BOOL",
+          "Output bit 14"
+        ],
+        [
+          "B15",
+          "BOOL",
+          "Output bit 15"
+        ]
+      ]
+    }
+  ]
+}

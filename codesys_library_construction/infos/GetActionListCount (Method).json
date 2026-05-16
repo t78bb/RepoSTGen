@@ -1,0 +1,31 @@
+{
+  "library": "BACnet",
+  "title": "GetActionListCount (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/Command/pou-BACnetCommand/GetActionListCount.html",
+  "page_title": "BACnetCommand.GetActionListCount (METH)",
+  "text": "\nMETHOD GetActionListCount : CmpBACnet.IEC_BACNET_STATUS\nGets the count of action list and action list text entries in the Action-BACnet-Property and Action_Text-BACnetProperty of this BACnet-Command-Object.\nBoth the count of action lists and action texts have to be the same, so can be aquired at once.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetActionListCount",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Output",
+          "Name": "count",
+          "Type": "CmpBACnet.IEC_BACNET_ELEMENT_COUNT",
+          "Comment": "The count of action list in the Actio-Property of this\nobject."
+        }
+      ]
+    }
+  ]
+}

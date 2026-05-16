@@ -1,0 +1,76 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_TRAFO_GantryCutter2 (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_Trafo_POUs/SoftMotion-Transformations/Gantry-systems/SMC_TRAFO_GantryCutter2.html",
+  "page_title": "SMC_TRAFO_GantryCutter2 (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_TRAFO_GantryCutter2\nReverse transformation for two-dimensional gantry systems with\none rotation axis being controlled in such a way\nthat the knife will point along the path tangent.\nNote\nFor detailed information on transformations\nsee overview to\nSM_Trafo_POUs\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "pi",
+          "Type": "SMC_PosInfo",
+          "Initial": "",
+          "Comment": "Target position vector (x,y), output of interpolator"
+        },
+        [
+          "v",
+          "SMC_VECTOR3D",
+          "",
+          "Vector of current path tangent, output of interpolator"
+        ],
+        [
+          "dOffsetX",
+          "LREAL",
+          "",
+          "Additional offset for x-axis"
+        ],
+        [
+          "dOffsetY",
+          "LREAL",
+          "",
+          "Additional offset for y-axis"
+        ],
+        [
+          "dOffsetR",
+          "LREAL",
+          "",
+          "Additional offset for rotational axis"
+        ],
+        [
+          "iDirectionR",
+          "INT",
+          "1",
+          "Direction of rotaion."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "dx",
+          "Type": "LREAL",
+          "Initial": "",
+          "Comment": "Resulting position for x-axis"
+        },
+        [
+          "dy",
+          "LREAL",
+          "",
+          "Resulting position for y-axis."
+        ],
+        [
+          "dr",
+          "LREAL",
+          "",
+          "Rotation of resulting position in degrees"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "library": "BACnet2",
+  "title": "RegisterToServer (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/BACnetClient/pou-IBACnetClient/RegisterToServer.html",
+  "page_title": "IBACnetClient.RegisterToServer (METH)",
+  "text": "\nMETHOD RegisterToServer : UDINT\nRegister an empty/freshly created BACnet-Client-FB with its parent BACnet-Server-FB.\nIf the FB was created by a device this initialization is automatically done during Initialization.\nUsing this function enables one to dynamically create BACnet-Client-FBs, which were not inserted via the device tree.\nReturn CmpErrors.Errors.ERR_OK if successful.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "RegisterToServer",
+          "Type": "UDINT"
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfBACnetServer",
+          "Type": "IBACnetServer"
+        }
+      ]
+    }
+  ]
+}

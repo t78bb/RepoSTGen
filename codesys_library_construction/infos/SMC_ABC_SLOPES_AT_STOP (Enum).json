@@ -1,0 +1,29 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_ABC_SLOPES_AT_STOP (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_Data-types/SoftMotion-CNC/SMC_ABC_SLOPES_AT_STOP.html",
+  "page_title": "SMC_ABC_SLOPES_AT_STOP (ENUM)",
+  "text": "\nTYPE SMC_ABC_SLOPES_AT_STOP :\nDetermines how\nSMC_RecomputeABCSlopes\nsets the slopes of A/B/C\nat a stop between two elements.\nWe call the element preceding the stop the first element and the\nelement following the stop the second element.\nNote that either the first element or the second element may\nnot exist (at the beginning and end of the path).\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "SET_ZERO",
+          "Comment": "The slopes at the end of the first element and at the\nstart of the second element are set to zero."
+        },
+        {
+          "Name": "SET_LINEAR",
+          "Comment": "The slopes at the end of the first element and at the\nstart of the second element are set so that that the\ninterpolation of the additional axis is linear."
+        },
+        {
+          "Name": "DONT_CHANGE",
+          "Comment": "The slopes at the end of the first element and at the start\nof the second element are not changed."
+        }
+      ]
+    }
+  ]
+}

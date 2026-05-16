@@ -1,0 +1,31 @@
+{
+  "library": "AC_DataLog",
+  "title": "BiasToString (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_DataLog/Current/AC_DataLog/Functions/BiasToString.html",
+  "page_title": "BiasToString (FUN)",
+  "text": "\nFUNCTION BiasToString : STRING\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "BiasToString",
+          "Type": "STRING",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "iBias",
+          "Type": "INT",
+          "Comment": "The bias in minutes"
+        }
+      ]
+    }
+  ]
+}

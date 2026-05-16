@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现一个具有递增、递减和清零功能的计数器。",
+  "provide_code": "FUNCTION_BLOCK FB_Counter\nVAR_INPUT\n\tbUp:BOOL;\t\t\t(*递增信号输入*)\n\tbDown:BOOL;\t\t\t(*递减信号输入*)\n\tbReset:BOOL;\t\t(*复位、清零信号输入*)\nEND_VAR\nVAR_OUTPUT\n\tnValue:INT;\t\t\t(*输出数值*)\nEND_VAR"
+}

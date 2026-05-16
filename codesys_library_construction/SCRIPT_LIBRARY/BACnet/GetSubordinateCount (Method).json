@@ -1,0 +1,31 @@
+{
+  "library": "BACnet",
+  "title": "GetSubordinateCount (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/StructuredView/pou-BACnetStructuredView/GetSubordinateCount.html",
+  "page_title": "BACnetStructuredView.GetSubordinateCount (METH)",
+  "text": "\nMETHOD GetSubordinateCount : CmpBACnet.IEC_BACNET_STATUS\nGets the number of subordinates and a subordinate anotations in the Subordinate_List-Property and\nthe Subordinate_Annotations-Property of this BACnet-Object. Both the subordinate and its annotation have to have the\nsame number of entries, so only one count is returned.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetSubordinateCount",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Output",
+          "Name": "count",
+          "Type": "CmpBACnet.IEC_BACNET_ELEMENT_COUNT",
+          "Comment": "The count of subordinates after the method call."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "library": "SM3_CNC",
+  "title": "GetTextProperty (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/Projektinformationen/GetTextProperty.html",
+  "page_title": "GetTextProperty (FUN)",
+  "text": "\nFUNCTION GetTextProperty : WSTRING\nThis function has been automatically generated from the project information.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetTextProperty",
+          "Type": "WSTRING"
+        },
+        {
+          "Scope": "Input",
+          "Name": "stKey",
+          "Type": "WSTRING"
+        }
+      ]
+    }
+  ]
+}

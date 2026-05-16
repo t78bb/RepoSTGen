@@ -1,0 +1,62 @@
+{
+  "library": "SM3_Basic",
+  "title": "MC_ReadParameter (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/Parameter-access/MC_ReadParameter.html",
+  "page_title": "MC_ReadParameter (FB)",
+  "text": "\nFUNCTION_BLOCK MC_ReadParameter\nMC_ReadParameter\nreturns the value of the SoftMotion parameter\nspecified in input\nParameterNumber\n.\nIf necessary, the returned variable\nValue\nwill be converted to\nLREAL\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3",
+          "Comment": "Reference to axis"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Enable",
+          "Type": "BOOL",
+          "Comment": "TRUE: Enables the execution of the function block.\nWhileTRUE, the outputvalueprovides the parameter value\ncontinuously for reading out."
+        },
+        [
+          "ParameterNumber",
+          "DINT",
+          "You can find a description of the most used parameter numbers inAXIS_REF_SM3.\nNegative values are fieldbus specific parameters.\nSeeSMC_ParameterNumber_CoEandSMC_ParameterNumber_SoEto translate fieldbus object identifiers to parameter numbers."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Valid",
+          "Type": "BOOL",
+          "Comment": "TRUE: Parameter is available."
+        },
+        [
+          "Busy",
+          "BOOL",
+          "TRUE: Execution of the function block has not been\nfinished yet."
+        ],
+        [
+          "Error",
+          "BOOL",
+          "TRUE: Error has occurred during execution."
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ],
+        [
+          "Value",
+          "LREAL",
+          "Value of the parameter specified in\ninput``ParameterNumber``."
+        ]
+      ]
+    }
+  ]
+}

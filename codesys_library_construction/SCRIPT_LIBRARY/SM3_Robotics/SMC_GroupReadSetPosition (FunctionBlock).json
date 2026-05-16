@@ -1,0 +1,77 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_GroupReadSetPosition (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/Diagnostics/SMC_GroupReadSetPosition.html",
+  "page_title": "SMC_GroupReadSetPosition (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_GroupReadSetPosition\nThis function block returns the set-position of an axis group\nin the selected coordinate system.\nTypically, this will be the set-position from the end of the previous\ncycle.  In order to obtain the set-position from the end of the current\ncycle,\nSMC_GroupUpdate\nhas to be called before this function block,\nor a\nTimeOffset\nequal to the task interval has to be supplied.\nThis is an administrative FB, since no movement is generated.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "AxisGroup",
+          "Type": "AXIS_GROUP_REF_SM3",
+          "Comment": "Reference to a group of axes"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Enable",
+          "Type": "BOOL",
+          "Comment": "Get the position in the selected coordinate system of the\naxis group continuously while enabled"
+        },
+        [
+          "CoordSystem",
+          "SMC_COORD_SYSTEM",
+          "Applicable coordinate system"
+        ],
+        [
+          "TimeOffset",
+          "LREAL",
+          "The time offset in seconds when to evaluate the position.\nRelative to the start of the current cycle.\nMust be in [0,fPlanningForecastDuration].fPlanningForecastDurationcan be configured usingSMC_TuneCPKernel.Time offsets > 0 are only supported ifthe offset does not exceed theCurrentPlanningForecastreported byMC_GroupReadStatus, andMC_GroupHalt/MC_GroupStop/MC_GroupInterruptare not active."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Valid",
+          "Type": "BOOL",
+          "Comment": "TRUEif valid outputs are available"
+        },
+        [
+          "Busy",
+          "BOOL",
+          "The FB is not finished"
+        ],
+        [
+          "Error",
+          "BOOL",
+          "Signals that an error has occurred within the function block"
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ],
+        [
+          "Position",
+          "SMC_POS_REF",
+          "Current position of the group"
+        ],
+        [
+          "KinematicConfig",
+          "TRAFO.CONFIGDATA",
+          "Kinematic configuration of current position.\nOnly set if the coordinate system is cartesian (i.e. not set for ACS)\nAutomatic periods are activated for any rotary axis with multiple periods.\nSeeSMC_KinConfigActivateAutomaticPeriodsfor more information.\nA kinematic configuration without automatic periods can be obtained by\nreading an ACS position and converting it to the MCS usingSMC_GroupConvertPosition."
+        ],
+        [
+          "AdditionalAxesPositions",
+          "SMC_ADDITIONAL_AXES_VALUES_ARRAY",
+          "Current positions of the groupâs additional axes."
+        ]
+      ]
+    }
+  ]
+}

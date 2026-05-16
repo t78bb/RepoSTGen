@@ -1,0 +1,31 @@
+{
+  "library": "BACnet2",
+  "title": "IsPropertyExistent (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/BACnetObjects/base/pou-BACnetObjectBase/IsPropertyExistent.html",
+  "page_title": "BACnetObjectBase.IsPropertyExistent (METH)",
+  "text": "\nMETHOD IsPropertyExistent : BOOL\nReturns whether the specified BACnet-Property of this BACnet-Object (propID) exists or not.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "IsPropertyExistent",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "propID",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_ID",
+          "Comment": "The property ID for which the existance shall be determined."
+        }
+      ]
+    }
+  ]
+}

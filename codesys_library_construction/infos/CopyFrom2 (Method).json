@@ -1,0 +1,36 @@
+{
+  "library": "StringUtils",
+  "title": "CopyFrom2 (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/StringUtils/Current/Public-Parts/pou-CharBufferString/CopyFrom2.html",
+  "page_title": "CharBufferString.CopyFrom2 (METH)",
+  "text": "\nMETHOD CopyFrom2 : DINT\nDoes a strcpy from the source string cbsSource into our instance at given position.\nThe return value is the number of characters copied (excluding the 0 character at the end.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "CopyFrom2",
+          "Type": "DINT",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "rsSource",
+          "Type": "REFERENCE TO STRING(255)",
+          "Comment": "The source string, where the characters will be copied from"
+        },
+        [
+          "diTargetOffset",
+          "DINT",
+          "The 1 relative offset within the source string, where the\ncopying to will start"
+        ]
+      ]
+    }
+  ]
+}

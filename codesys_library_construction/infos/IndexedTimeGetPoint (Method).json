@@ -1,0 +1,31 @@
+{
+  "library": "DNP3",
+  "title": "IndexedTimeGetPoint (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Outstation/pou-Outstation/internal/DataCallbacks/IndexedTimeGetPoint.html",
+  "page_title": "Outstation.IndexedTimeGetPoint (METH)",
+  "text": "\nMETHOD IndexedTimeGetPoint : CmpDNP3.IIndexedTimeDataCallback\nGet data callback interface to access IndexedTime\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "IndexedTimeGetPoint",
+          "Type": "CmpDNP3.IIndexedTimeDataCallback",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "pointNum",
+          "Type": "UINT",
+          "Comment": "Number of point"
+        }
+      ]
+    }
+  ]
+}

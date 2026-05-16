@@ -1,0 +1,48 @@
+{
+  "library": "Util",
+  "title": "LocalDateTime (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/TimerSwitch/Functions/LocalDateTime.html",
+  "page_title": "LocalDateTime (FUN)",
+  "text": "\nFUNCTION LocalDateTime : ULINT\nBased on the inputs\nuliDateTime\nand\ntzTimeZone\nthe corresponding local time is calculated\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "LocalDateTime",
+          "Type": "ULINT",
+          "Comment": "The current period and the local date and time in\nmilliseconds since 1.1.1970 00:00:00.000"
+        },
+        {
+          "Scope": "Inout Const",
+          "Name": "tzTimeZone",
+          "Type": "TimeZone",
+          "Comment": "Time zone as base for caclulating local time"
+        },
+        {
+          "Scope": "Input",
+          "Name": "uliDateTime",
+          "Type": "ULINT",
+          "Comment": "UTC timestamp in milliseconds since 1.1.1970 00:00:00.000See:IDateTimeProvider.GetDateTimeorGetDateTime"
+        },
+        {
+          "Scope": "Output",
+          "Name": "eErrorID",
+          "Type": "ERROR",
+          "Comment": ""
+        },
+        [
+          "ePeriod",
+          "PERIOD",
+          ""
+        ]
+      ]
+    }
+  ]
+}

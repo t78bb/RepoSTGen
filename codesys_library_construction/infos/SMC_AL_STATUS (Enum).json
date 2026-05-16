@@ -1,0 +1,33 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_AL_STATUS (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_Data-types/SoftMotion-CNC/SMC_AL_STATUS.html",
+  "page_title": "SMC_AL_STATUS (ENUM)",
+  "text": "\nTYPE SMC_AL_STATUS :\nThis enumeration indicates the current state of the FB instance.\nPossible states:\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "AL_OFF",
+          "Initial": "0",
+          "Comment": "Avoid-Loop-functionality switched off"
+        },
+        {
+          "Name": "AL_ON",
+          "Initial": "1",
+          "Comment": "Avoid-Loop-functionality switched on"
+        },
+        {
+          "Name": "AL_END",
+          "Initial": "2",
+          "Comment": "Processing of the objects terminated"
+        }
+      ]
+    }
+  ]
+}

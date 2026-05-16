@@ -1,0 +1,30 @@
+{
+  "library": "AlarmManager",
+  "title": "AcknowledgeOneOfGroup (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/pou-IAlarmHandler/AcknowledgeOneOfGroup.html",
+  "page_title": "IAlarmHandler.AcknowledgeOneOfGroup (METH)",
+  "text": "\nMETHOD AcknowledgeOneOfGroup\nAcknowledges an alarm of an alarm group.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "usiAlarmGroupID",
+          "Type": "ALARMGROUP_ID",
+          "Comment": "The ID of the alarm group"
+        },
+        [
+          "uiAlarmID",
+          "ALARM_ID",
+          "The ID of the alarm"
+        ]
+      ]
+    }
+  ]
+}

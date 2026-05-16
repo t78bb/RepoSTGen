@@ -1,0 +1,42 @@
+{
+  "library": "BACnet",
+  "title": "BACnetBitStringSetBit (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/Utilities/BACnetUtilities/InitializeBACnetDataTypes/BitStrings/BACnetBitStringSetBit.html",
+  "page_title": "BACnetBitStringSetBit (FUN)",
+  "text": "\nFUNCTION BACnetBitStringSetBit : BOOL\nSets a bit-value for a specific bit in a BACnet-BitString.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "BACnetBitStringSetBit",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "bitIndex",
+          "Type": "UINT",
+          "Comment": "The index of the bit to set"
+        },
+        [
+          "bitValue",
+          "UINT",
+          "The value to set to the specified bit."
+        ],
+        {
+          "Scope": "Inout",
+          "Name": "bitStr",
+          "Type": "CmpBACnet.IEC_BACNET_BIT_STRING",
+          "Comment": "The BACnet bit string to operate on."
+        }
+      ]
+    }
+  ]
+}

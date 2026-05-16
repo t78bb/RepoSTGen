@@ -1,0 +1,46 @@
+{
+  "library": "Standard",
+  "title": "CTD (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/Standard/Current/Counter/CTD.html",
+  "page_title": "CTD (FB)",
+  "text": "\nFUNCTION_BLOCK CTD\nDecrements a given value\n(* Example declaration *)\nCTDInst\n:\nCTD\n;\n(* Example in ST *)\nCTDInst\n(\nCD\n:=\nVarBOOL1\n,\nLOAD\n:=\nVarBOOL2\n,\nPV\n:=\nVarWORD1\n);\nVarBOOL3\n:=\nCTDInst.Q\n;\nVarWORD2\n:=\nCTDInst.CV\n;\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "CD",
+          "Type": "BOOL",
+          "Comment": "Rising edge: DecrementingCVby one"
+        },
+        [
+          "LOAD",
+          "BOOL",
+          "TRUE: SetCVto the start valuePV"
+        ],
+        [
+          "PV",
+          "WORD",
+          "Start value for decrementing"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Q",
+          "Type": "BOOL",
+          "Comment": "TRUEifCV=0"
+        },
+        [
+          "CV",
+          "WORD",
+          "Current counter value"
+        ]
+      ]
+    }
+  ]
+}

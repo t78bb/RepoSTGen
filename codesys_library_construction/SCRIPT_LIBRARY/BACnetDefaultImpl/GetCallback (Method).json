@@ -1,0 +1,28 @@
+{
+  "library": "BACnetDefaultImpl",
+  "title": "GetCallback (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnetDefaultImpl/Current/BACnetDefaultImpl/Function-Blocks/LoggingObjects/pou-TrendLog/GetCallback.html",
+  "page_title": "TrendLog.GetCallback (METH)",
+  "text": "\nMETHOD GetCallback : BACnet.IBACnetServerPluginCallback\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetCallback",
+          "Type": "BACnet.IBACnetServerPluginCallback"
+        },
+        {
+          "Scope": "Input",
+          "Name": "index",
+          "Type": "UINT"
+        }
+      ]
+    }
+  ]
+}

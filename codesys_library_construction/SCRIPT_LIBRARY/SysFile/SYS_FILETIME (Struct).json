@@ -1,0 +1,33 @@
+{
+  "library": "SysFile",
+  "title": "SYS_FILETIME (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/SysFile/Current/SYS_FILETIME.html",
+  "page_title": "SYS_FILETIME (STRUCT)",
+  "text": "\nTYPE SYS_FILETIME : STRUCT\nFile TIME\nTimestamps of the specified file.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "tCreation",
+          "Type": "UDINT",
+          "Comment": "Creation time of the file"
+        },
+        {
+          "Name": "tLastAccess",
+          "Type": "UDINT",
+          "Comment": "Time of as access to the file"
+        },
+        {
+          "Name": "tLastModification",
+          "Type": "UDINT",
+          "Comment": "Time of last modification"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_NCLookupFile (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/ReadNCFile2/SMC_NCLookupFile.html",
+  "page_title": "SMC_NCLookupFile (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL SMC_NCLookupFile IMPLEMENTS\nSMC_INCLookup\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "aSubProgramDirs",
+          "Type": "ARRAY [0..4] OF\nSTRING(174)",
+          "Comment": "An array of up to 5 directories where subprograms are searched.\nFor a subprogram with name âSUBâ, the file âsub.cncâ (lower-case)\nis searched in each of the given directories, starting with\ndirectory aSubProgramDirs[0], in ascending order.  The first match\nis used.\nThe first empty directory name ends the search."
+        }
+      ]
+    }
+  ]
+}

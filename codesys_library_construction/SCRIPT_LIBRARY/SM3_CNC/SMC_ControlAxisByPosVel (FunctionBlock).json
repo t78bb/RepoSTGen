@@ -1,0 +1,113 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_ControlAxisByPosVel (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/Direct-Axis-Control/SMC_ControlAxisByPosVel.html",
+  "page_title": "SMC_ControlAxisByPosVel (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_ControlAxisByPosVel\nThis function block writes the set position\nfSetPosition\nand the\nset velocity\nfSetVelocity\nto the axis drive structure\nand monitors axis for jumps in a similar way to\nSMC_ControlAxisByPos\n.\nSMC_ControlAxisByPosVel\nis mostly used with CNC and an\ninstance of the\nSMC_Interpolator\n.\nNote\nFor direct checking of the set value of the axis,\none of the\nSMC_Follow*\nblocks should be used.\nSee also:\nSMC_ControlAxisByPos\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3",
+          "Initial": "",
+          "Comment": "Reference to axisSee also:AXIS_REF_SM3"
+        },
+        {
+          "Scope": "Input",
+          "Name": "iStatus",
+          "Type": "SMC_INT_STATUS",
+          "Initial": "",
+          "Comment": "Status of the instance ofSMC_Interpolator"
+        },
+        [
+          "bEnable",
+          "BOOL",
+          "",
+          "TRUE: Starts execution"
+        ],
+        [
+          "bAvoidGaps",
+          "BOOL",
+          "TRUE",
+          "TRUE: Monitoring of position and velocityIf the velocity exceeds the limit valuefSWMaxVelocitywhich is set inAxisand configured in the drive dialog\nwith the maximum values setting,\nthenbStopIpois set toTRUE.\nThe axis is moved with the valuesfGapVelocity,fGapAcceleration,fGapDecelerationandfGapJerkto the set position and brought to the set velocity.\nOn reaching the set valuesbStopIpois set toFALSE."
+        ],
+        [
+          "fSetPosition",
+          "LREAL",
+          "",
+          "Set position of the axis.\nTypically connected to the output of the transformation block."
+        ],
+        [
+          "fSetVelocity",
+          "LREAL",
+          "",
+          "Set velocity in [u/s]"
+        ],
+        [
+          "fGapVelocity",
+          "LREAL",
+          "",
+          "Velocity for the bypassing of the jump in [u/s]"
+        ],
+        [
+          "fGapAcceleration",
+          "LREAL",
+          "",
+          "Acceleration for the bypassing of the jump in [u/s2]"
+        ],
+        [
+          "fGapDeceleration",
+          "LREAL",
+          "1E+15",
+          "Deceleration for the bypassing of the jump in [u/s2]Note: also used ifbAvoidGapsisFALSE,\nfor stopping when disabled"
+        ],
+        [
+          "fGapJerk",
+          "LREAL",
+          "1E+16",
+          "Jerk for the bypassing of the jump in [u/s3]Note: also used ifbAvoidGapsisFALSE,\nfor stopping when disabled"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bBusy",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUE: Function block operating"
+        },
+        [
+          "bCommandAborted",
+          "BOOL",
+          "",
+          "TRUE: Execution was interrupted by another\nfunction block instance operating onAxis."
+        ],
+        [
+          "bError",
+          "BOOL",
+          "",
+          "TRUE: Error has occurred"
+        ],
+        [
+          "iErrorID",
+          "SMC_ERROR",
+          "",
+          "Error identification"
+        ],
+        [
+          "bStopIpo",
+          "BOOL",
+          "",
+          "TRUE: Jump in velocity or position occurred and\nadaptation to new position is runningIfbStopIpois connected to the EmergencyStop input of theSMC_Interpolatorinstance, the interpolator waits until the\naxis is correctly positioned.See also:SMC_ERROR"
+        ]
+      ]
+    }
+  ]
+}

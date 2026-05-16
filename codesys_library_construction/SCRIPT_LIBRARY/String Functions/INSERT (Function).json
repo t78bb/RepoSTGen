@@ -1,0 +1,52 @@
+{
+  "library": "String Functions",
+  "title": "INSERT (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Functions/Current/StrFunc/Functions/INSERT.html",
+  "page_title": "INSERT (FUN)",
+  "text": "\nFUNCTION INSERT :\nIString\nInserts a partial string into another string at a specific position\nReturns 0 in case of\neErrorID\n<>\nERROR.NO_ERROR\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "INSERT",
+          "Type": "IString",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfString",
+          "Type": "IString",
+          "Comment": "String into whichitfPartialis inserted"
+        },
+        [
+          "itfPartial",
+          "IString",
+          "String to be inserted intoitfString"
+        ],
+        [
+          "udiStart",
+          "UDINT",
+          "Insert position.0: Inserts before the first rune1: Inserts after the first rune."
+        ],
+        [
+          "itfResource",
+          "IString",
+          "The resource that this function is working on. It will\ncontain the result after the function call and will also be\nreturned by this function so it can be used in nested calls."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "eErrorID",
+          "Type": "ERROR",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

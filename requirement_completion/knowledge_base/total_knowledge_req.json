@@ -1,0 +1,989 @@
+{
+  "IO映射": [
+    {
+      "模糊点描述": "原始需求未说明是否需要使用外部IO映射来控制机器动作",
+      "精准需求示例": "实现控制逻辑时，应使用外部IO映射来控制机器的移动和抓取动作，包括但不限于移动Z轴、移动X轴和物品检测。这些动作应通过外部信号触发，并通过相应的输出信号控制机器动作。",
+      "case_id": "repoeval_assembly-station/PNP_MACHINE",
+      "requirement": "This code is intended to implement the control logic for a pick-and-place machine that moves a lid from a clamped position to a base using a picker and arm mechanism, with state management for movement, item detection, and gripper actions."
+    },
+    {
+      "模糊点描述": "原始需求未明确指定如何处理不同SWMC_ID对应的CAN通道",
+      "精准需求示例": "根据SWMC_ID, 将数据发送到对应的CAN通道，每个通道应有独立的消息对象和发送计数器",
+      "case_id": "repoeval_barrier/CAN_Send_Data_SWMC",
+      "requirement": "This code is intended to implement the transmission of CAN messages to specific channels based on the provided SWMC_ID, with configurable message identifiers and data payloads."
+    },
+    {
+      "模糊点描述": "原始需求未明确说明如何根据方向控制挡板的伸缩",
+      "精准需求示例": "应使用direct变量来确定挡板的伸缩方向，其中extend表示伸展，retract表示收缩，stop表示停止操作",
+      "case_id": "repoeval_barrier/CommandExecutor0",
+      "requirement": "This code is intended to implement a command execution system for controlling the extension and retraction percentages of ground and sky tracks based on input parameters such as track level, index, direction, and proportional valve percentage."
+    },
+    {
+      "模糊点描述": "原始需求未明确说明逻辑索引到物理索引的具体映射规则",
+      "精准需求示例": "应明确指定每个逻辑索引对应的物理索引，包括非连续索引和特殊情况的处理，如逻辑索引11映射到物理索引0",
+      "case_id": "repoeval_barrier/mdbsLogicToPhy",
+      "requirement": "This code is intended to implement a mapping logic that translates modbus logical addresses into local physical indices, specifying the level (sky or ground), direction (extend or retract), and corresponding physical index for different sections and logical indices."
+    },
+    {
+      "模糊点描述": "原始需求未明确说明具体的level和idx映射关系",
+      "精准需求示例": "需提供一个完整的devNo到level和idx的映射表，包括所有有效的devNo值及其对应的level和idx",
+      "case_id": "repoeval_barrier/mdbsNumToIdx",
+      "requirement": "This code is intended to implement a mapping function that converts a device number (devNo) into corresponding level and index values based on predefined cases."
+    },
+    {
+      "模糊点描述": "原始需求未明确说明每个区域和物理索引对应的具体逻辑索引映射关系",
+      "精准需求示例": "需明确指定每个区域（如grdExt, grdRet, skyExt, skyRet）中每个物理索引（如1, 2, 3等）对应的具体逻辑索引值",
+      "case_id": "repoeval_barrier/mdbsPhyToLogic",
+      "requirement": "This code is intended to implement a mapping system that translates physical index values within specified sections into corresponding logical register addresses."
+    },
+    {
+      "模糊点描述": "原始需求未明确指定如何操作UI界面的按钮变量",
+      "精准需求示例": "根据输入的挡板索引和方向，应具体操作UI界面的按钮变量，包括设置btnStop, btnExtend, btnRetract的状态",
+      "case_id": "repoeval_barrier/setButtonByDirect",
+      "requirement": "This code is intended to implement the control of UI button states for ground and sky tracks based on input parameters for level, index, and direction."
+    },
+    {
+      "模糊点描述": "原始需求未明确是否需要通过方法来设置灯光级别",
+      "精准需求示例": "应通过一个公共方法来接收新的灯光级别值，并将其赋值给输出变量",
+      "case_id": "repoeval_Command1/FB_Lamp",
+      "requirement": "This code is intended to implement a function block for controlling or representing the level of a lamp using a BYTE output variable."
+    },
+    {
+      "模糊点描述": "原始需求未明确说明是否需要实现状态机来控制轴的电源和状态读取",
+      "精准需求示例": "实现一个状态机来控制双轴的电源使能和状态读取，确保在电源完全使能后再进行状态检查",
+      "case_id": "repoeval_electronic_cam_motion/FB_DualAxisPower",
+      "requirement": "This code is intended to implement dual-axis power control and readiness monitoring for two axes with error handling."
+    },
+    {
+      "模糊点描述": "原始需求未明确指定如何映射和处理输入和输出变量",
+      "精准需求示例": "应明确指定状态机的完成状态通过外部可访问的输出变量'Done'来报告，而不是仅通过内部变量",
+      "case_id": "repoeval_electronic_cam_motion/ResetAxis",
+      "requirement": "This code is intended to implement a state-based mechanism to reset and verify the error status of two axes (AxisX and AxisY) in a motion control system."
+    },
+    {
+      "模糊点描述": "原始需求未明确指定使用的轴引用类型",
+      "精准需求示例": "应使用通用的'AXIS_REF'类型作为轴引用，以支持不同的轴控制硬件",
+      "case_id": "repoeval_electronic_gear_motion/FB_DualAxisPower",
+      "requirement": "This code is intended to implement dual-axis power control and readiness monitoring for two axes with error handling."
+    },
+    {
+      "模糊点描述": "原始需求未明确说明主轴和从轴的数据类型",
+      "精准需求示例": "主轴和从轴应使用AXIS_REF类型进行引用",
+      "case_id": "repoeval_electronic_gear_motion/FB_GearCoupling",
+      "requirement": "This code is intended to implement a gear coupling and decoupling control system for two axes with configurable parameters such as gear ratio, acceleration, and deceleration, while monitoring the coupling status and handling errors."
+    },
+    {
+      "模糊点描述": "原始需求未明确说明如何处理启动和停止信号的边缘检测",
+      "精准需求示例": "应使用边缘检测功能块（如R_TRIG）来处理启动和停止信号的上升沿，以简化代码并减少错误",
+      "case_id": "repoeval_electronic_gear_motion/FB_GearMotionControl",
+      "requirement": "This code is intended to implement a dual-axis gear motion control system with start, stop, coupling, and decoupling functionalities, ensuring synchronized motion between a master and slave axis."
+    },
+    {
+      "模糊点描述": "原始需求未明确指定用于检查停靠请求的具体变量",
+      "精准需求示例": "应明确指定一个布尔数组变量，用于表示每个楼层是否有停靠请求，例如使用Tar_Dir.IsStopFloor[i]表示第i楼层是否有停靠请求",
+      "case_id": "repoeval_four-level_elevator_control/F_CheckJobInDirection",
+      "requirement": "This code is intended to implement a check to determine whether there are any elevator stop requests between a specified start floor and end floor in a given direction."
+    },
+    {
+      "模糊点描述": "原始需求未明确指示是否需要同时更新相关的LED指示器状态",
+      "精准需求示例": "在清除上升或下降停靠标志时，应同时关闭对应楼层的上升或下降方向的LED指示器",
+      "case_id": "repoeval_four-level_elevator_control/F_ClearFloorStop",
+      "requirement": "This code is intended to implement the functionality for clearing elevator stop requests and associated indicators for a specified floor based on input conditions."
+    },
+    {
+      "模糊点描述": "原始需求未明确指出当电梯目标楼层与当前楼层相同时的处理方式",
+      "精准需求示例": "当目标楼层等于当前楼层时，函数应保持输出为TRUE，表示电梯保持当前状态不变",
+      "case_id": "repoeval_four-level_elevator_control/F_SetElevatorDirection",
+      "requirement": "This code is intended to implement the determination of an elevator's movement direction based on the current floor and target floor."
+    },
+    {
+      "模糊点描述": "原始需求未明确是否需要使用全局变量映射进行MQTT客户端的输入输出",
+      "精准需求示例": "应该使用全局变量映射来管理MQTT客户端的输入输出，以便于集中管理和配置",
+      "case_id": "repoeval_GreatExampleOfAdvantages/MQTT_STUFF",
+      "requirement": "This code is intended to implement an MQTT client functionality that connects to a broker, subscribes to a topic, and publishes a birth message upon successful connection."
+    },
+    {
+      "模糊点描述": "原始需求未明确指定发布消息的有效载荷内容",
+      "精准需求示例": "发布的消息有效载荷应为预设变量sendPayload的值",
+      "case_id": "repoeval_Interation_HowTo/FirstPublish",
+      "requirement": "This code is intended to implement an MQTT message publishing functionality with a predefined topic, payload, and quality of service settings."
+    },
+    {
+      "模糊点描述": "原始需求未明确指定发布消息的主题",
+      "精准需求示例": "发布的消息主题应为'TestTopic/FromCodesys'",
+      "case_id": "repoeval_Interation_HowTo/FirstPublish",
+      "requirement": "This code is intended to implement an MQTT message publishing functionality with a predefined topic, payload, and quality of service settings."
+    },
+    {
+      "模糊点描述": "原始需求未明确指定iStatus各值对应的输出Y1到Y6的状态",
+      "精准需求示例": "需明确指定iStatus的每个值或值的范围对应的输出Y1到Y6的具体状态。例如，当iStatus为2到10，221，222时，Y1和Y6应为TRUE，其余为FALSE；当iStatus为11, 12时，Y2和Y6应为TRUE，其余为FALSE；以此类推。",
+      "case_id": "repoeval_open-type_dual-axis_winding_machine/StaDisplay",
+      "requirement": "This code is intended to implement a status-based control system that sets the values of six boolean outputs (Y1 to Y6) based on the input integer status (iStatus)."
+    },
+    {
+      "模糊点描述": "原始需求未明确在填充状态时是否需要检查阀门是否已关闭",
+      "精准需求示例": "在填充状态时，应检查罐体是否已满，若已满则等待两个介质阀门完全关闭后才能进入混合状态",
+      "case_id": "repoeval_plc_hello_mixing_tank/FB_AutoSequence",
+      "requirement": "This code is intended to implement an automated sequence control for a tank system, managing filling, mixing, and draining operations based on sensor feedback and configured parameters."
+    },
+    {
+      "模糊点描述": "原始需求未明确指定是否使用锁存器来维持输出状态",
+      "精准需求示例": "所有输出命令应直接根据输入命令和设备状态决定，不使用锁存器",
+      "case_id": "repoeval_plc_hello_mixing_tank/FB_ManualControl",
+      "requirement": "This code is intended to implement manual control logic for operating a mixer, medium valves, and a drain valve based on HMI commands and feedback signals using latch logic."
+    },
+    {
+      "模糊点描述": "原始需求未明确说明是否需要使用触发器来检测回零完成信号",
+      "精准需求示例": "系统应使用上升沿触发器来检测每个轴的回零完成信号，确保只在状态首次变为完成时更新状态。",
+      "case_id": "repoeval_three-axis_CNC_motion/FB_TripleAxisHoming",
+      "requirement": "This code is intended to implement a triple-axis homing procedure for a CNC system, managing the homing process, status monitoring, and error handling for the X, Y, and Z axes."
+    },
+    {
+      "模糊点描述": "原始需求未明确是否需要在电源控制功能块中同时控制伺服使能、调节器和驱动启动",
+      "精准需求示例": "电源控制功能块应同时控制伺服使能、调节器和驱动启动，确保所有相关信号在伺服使能时同步激活",
+      "case_id": "repoeval_three-axis_CNC_motion/FB_TripleAxisPower",
+      "requirement": "This code is intended to implement a control mechanism for enabling and monitoring the power status of three servo motor axes (X, Y, Z) with error handling functionality."
+    },
+    {
+      "模糊点描述": "原始需求未明确在停止功能块中是否需要设置特定的减速参数",
+      "精准需求示例": "在执行轴的停止功能时，应设置减速参数为100，以确保轴能平稳停止。",
+      "case_id": "repoeval_three-axis_CNC_motion/INIT_CNC_System",
+      "requirement": "This code is intended to implement the initialization of a CNC system by resetting G-code processing, axis control, homing, and stop functionalities for three axes."
+    }
+  ],
+  "函数块配置": [
+    {
+      "模糊点描述": "原始需求未明确每个函数块实例的延迟配置",
+      "精准需求示例": "每个函数块实例应具有可配置的延迟时间，第一个实例延迟4秒，第二个实例延迟1秒，第三个实例延迟2秒",
+      "case_id": "repoeval_Wrappers/FB_Wrapper",
+      "requirement": "This code is intended to implement the control of three instances of a function block, each with a configurable delay, based on an input boolean signal."
+    }
+  ],
+  "函数调用": [
+    {
+      "模糊点描述": "原始需求未明确指定如何执行命令对象的方法",
+      "精准需求示例": "当开关状态变为激活时，应调用与该开关关联的命令对象的 Execute 方法",
+      "case_id": "repoeval_Command1/FB_SwitchPanel",
+      "requirement": "This code is intended to implement a control mechanism that triggers the execution of commands associated with switches when their state changes to active."
+    }
+  ],
+  "初始化方法": [
+    {
+      "模糊点描述": "原始需求未明确是否需要实现初始化方法",
+      "精准需求示例": "需要在FUNCTION_BLOCK中实现一个名为FB_init的初始化方法，该方法负责处理实例的初始化，包括设置是否保留变量和是否复制代码",
+      "case_id": "repoeval_Command1/FB_AirConComfortCommand",
+      "requirement": "This code is intended to implement a command interface for controlling an air conditioning system."
+    },
+    {
+      "模糊点描述": "原始需求未明确是否需要实现初始化方法以处理实例变量的引用传递",
+      "精准需求示例": "应实现FB_init方法，该方法接受一个空调系统的引用作为输入，并在实例中设置或更新这个引用",
+      "case_id": "repoeval_Command1/FB_AirConStandbyCommand",
+      "requirement": "This code is intended to implement a standby command functionality for an air conditioning system."
+    },
+    {
+      "模糊点描述": "原始需求未说明是否需要初始化方法以及如何处理初始化参数",
+      "精准需求示例": "需要实现一个名为FB_init的初始化方法，该方法接收初始化保留变量的布尔值和是否复制代码的布尔值，同时接收灯的引用和新亮度级别作为参数，并正确初始化这些值",
+      "case_id": "repoeval_Command1/FB_LampSetLevelCommand",
+      "requirement": "This code is intended to implement a command for setting the brightness level of a lamp."
+    },
+    {
+      "模糊点描述": "原始需求未明确是否需要初始化方法来设置CD播放器的引用",
+      "精准需求示例": "应实现一个FB_init方法，该方法接受一个CD播放器的引用作为输入参数，如果引用有效，则将其赋给FB_MusicStopCommand的实例变量，否则将实例变量设置为0",
+      "case_id": "repoeval_Command1/FB_MusicStopCommand",
+      "requirement": "This code is intended to implement a command to stop music playback on a CD player."
+    }
+  ],
+  "初始化方法及默认值设置": [
+    {
+      "模糊点描述": "原始需求未明确是否需要特定的初始化方法和默认值",
+      "精准需求示例": "定义一个初始化方法fb_init，该方法应设置对象的sDescription为'Plain Component'和rValue为4.0",
+      "case_id": "repoeval_Decorator_Application/ConcreteComponment",
+      "requirement": "This code is intended to implement a basic object creation functionality with a description and value, designed to be decorated and comply with a component interface."
+    }
+  ],
+  "初始化机制": [
+    {
+      "模糊点描述": "原始需求未明确是否需要实现初始化方法以及如何处理新的socket引用",
+      "精准需求示例": "应在FUNCTION_BLOCK中实现一个FB_init方法，该方法接受一个socket引用作为参数，如果引用有效则更新内部socket引用，否则将其设置为0",
+      "case_id": "repoeval_Command1/FB_SocketOnCommand",
+      "requirement": "This code is intended to implement a command interface for controlling a socket functionality."
+    }
+  ],
+  "功能实现": [
+    {
+      "模糊点描述": "原始需求未明确是否需要在待机命令中激活空调并设置特定温度",
+      "精准需求示例": "在执行空调系统的待机命令时，应激活空调并将温度设置为17.5度",
+      "case_id": "repoeval_Command1/FB_AirConStandbyCommand",
+      "requirement": "This code is intended to implement a standby command functionality for an air conditioning system."
+    },
+    {
+      "模糊点描述": "原始需求未明确是否需要实现对CD播放器的控制方法",
+      "精准需求示例": "实现对CD播放器的控制，包括启动、停止、设置音量和跟踪号的方法。每个方法应当能够修改播放器的活动状态、音量和当前跟踪号。",
+      "case_id": "repoeval_Command1/FB_CDPlayer",
+      "requirement": "This code is intended to implement a functional block for controlling a CD player, providing outputs for player activity status, volume level, and current track number."
+    }
+  ],
+  "变量使用": [
+    {
+      "模糊点描述": "原始需求未明确是否需要使用输入变量名",
+      "精准需求示例": "系统应使用输入变量 'stName' 来初始化一个新的字符串变量 'name'，该变量用于记录或显示当前操作的标识。",
+      "case_id": "repoeval_measurement_control/Tank",
+      "requirement": "This code is intended to implement a control mechanism for a tank system that adjusts its level and temperature within specified minimum and maximum thresholds."
+    }
+  ],
+  "变量使用和处理": [
+    {
+      "模糊点描述": "原始需求未明确是否需要使用临时变量来逐步构建最终的字符串",
+      "精准需求示例": "在构建最终的字符串表示时，应使用一个临时变量来逐步连接各个部分，确保每一步的连接都可以单独处理和验证",
+      "case_id": "repoeval_Builder_Application_RPI/Product_toString",
+      "requirement": "This code is intended to implement a method for concatenating multiple string components of a product object into a single string representation."
+    }
+  ],
+  "变量初始化和引用": [
+    {
+      "模糊点描述": "原始需求未明确Director类中concreteBuilder变量的初始化方式和引用方式",
+      "精准需求示例": "Director类的concreteBuilder变量应在类的初始化时通过inputConcreteBuilder初始化，并在所有引用中使用THIS^.concreteBuilder来确保引用的一致性和正确性。",
+      "case_id": "repoeval_Builder_Application_RPI/Director",
+      "requirement": "This code is intended to implement a Director class that delegates the construction of a final product object to a specified ConcreteBuilder."
+    }
+  ],
+  "变量命名和结构": [
+    {
+      "模糊点描述": "原始需求未明确指定变量命名和中间计算步骤的结构",
+      "精准需求示例": "需明确指定使用的变量名及其对应的计算步骤，例如将角度转换为弧度的变量应命名为rRadians，计算平移后坐标的变量应命名为rTranslatedX和rTranslatedY",
+      "case_id": "repoeval_VisuElements/RotationCalculation",
+      "requirement": "This code is intended to implement the calculation of the new coordinates of a point after rotating it around a specified center by a given angle."
+    }
+  ],
+  "变量和属性的使用": [
+    {
+      "模糊点描述": "原始需求未明确指出应该使用哪个属性或变量来获取描述",
+      "精准需求示例": "应使用对象的sDescription字符串属性来获取其描述",
+      "case_id": "repoeval_Decorator_Application/ConcreteComponment_getDescription",
+      "requirement": "This code is intended to implement a method for retrieving the description of an object as a string."
+    }
+  ],
+  "变量定义": [
+    {
+      "模糊点描述": "原始需求未明确是否需要在方法内定义额外的变量",
+      "精准需求示例": "方法内不应定义额外的局部变量，直接使用对象的属性rValue获取并返回其值",
+      "case_id": "repoeval_Decorator_Application/ConcreteComponment_getValue",
+      "requirement": "This code is intended to implement a method for retrieving the plain real value of an object, representing its cost without additional modifications or decorations."
+    }
+  ],
+  "变量引用与字符串常量使用": [
+    {
+      "模糊点描述": "原始需求未明确说明装饰描述的来源",
+      "精准需求示例": "装饰描述应该是一个可配置的实例变量，允许在实例化装饰器时动态指定",
+      "case_id": "repoeval_Decorator_Application/ConcreteDecoratorA_getDescription",
+      "requirement": "This code is intended to implement a functionality for decorating a component's description by concatenating its original description with an additional decorator description."
+    }
+  ],
+  "变量范围": [
+    {
+      "模糊点描述": "原始输出范围的最大值是否固定，最小值是否完全由eSignalType类型决定？是否需要明确上下限的具体值或动态计算逻辑？",
+      "精准需求示例": "原始输出范围的最大值固定为65535.0，最小值由eSignalType类型决定，具体值通过CASE语句设置：对于eSignalType_0mA_20mA、eSignalType_4mA_20mA和eSignalType_0V_5V，最小值为0.0；对于eSignalType_m5V_5V，最小值为-65535.0；其他类型默认最小值为-65535.0。",
+      "case_id": "extern_signal_range"
+    },
+    {
+      "模糊点描述": "原始需求未明确指定对于超出已定义SWMC_ID的处理方式",
+      "精准需求示例": "对于未定义的SWMC_ID，应返回一个包含默认值的数据结构，其中ID为0，所有数据字节为0",
+      "case_id": "repoeval_barrier/CAN_Read_Data_SWMC",
+      "requirement": "This code is intended to implement the retrieval and processing of CAN bus data frames based on specified SWMC control IDs and buffer indices."
+    },
+    {
+      "模糊点描述": "原始需求未明确说明是否需要对COB-ID进行转换处理",
+      "精准需求示例": "COB-ID应该通过公式 (COB-ID - 8) / 32 进行转换后再使用",
+      "case_id": "repoeval_barrier/CAN_Read_Data_SWMC",
+      "requirement": "This code is intended to implement the retrieval and processing of CAN bus data frames based on specified SWMC control IDs and buffer indices."
+    },
+    {
+      "模糊点描述": "原始需求未明确指定支持的SWMC_ID数量",
+      "精准需求示例": "代码应支持至少6个不同的SWMC_ID，每个ID对应不同的CAN通道配置",
+      "case_id": "repoeval_barrier/CAN_Send_Data_SWMC",
+      "requirement": "This code is intended to implement the transmission of CAN messages to specific channels based on the provided SWMC_ID, with configurable message identifiers and data payloads."
+    },
+    {
+      "模糊点描述": "原始需求未明确说明如何处理负值百分比",
+      "精准需求示例": "输入的百分比值percent应直接用于计算扩展百分比，如果percent为负，则该值应用于计算收缩百分比，并取其绝对值",
+      "case_id": "repoeval_barrier/CommandExecutor",
+      "requirement": "This code is intended to implement a control mechanism for setting the extension and retraction percentages of proportional valves for ground or overhead tracks based on input level, index, and percentage values."
+    },
+    {
+      "模糊点描述": "原始需求未明确说明如何处理已关闭或未分配的文件句柄",
+      "精准需求示例": "在尝试关闭文件前，应检查文件句柄是否已被分配，即 fileHandle 不应为 0",
+      "case_id": "repoeval_barrier/fileSave_close",
+      "requirement": "This code is intended to implement a file-saving mechanism that closes an open file handle if it is not already closed."
+    },
+    {
+      "模糊点描述": "原始需求未明确说明处理的devNo值的范围",
+      "精准需求示例": "需明确devNo的有效输入范围，例如指定处理的devNo值应大于40000",
+      "case_id": "repoeval_barrier/mdbsNumToIdx",
+      "requirement": "This code is intended to implement a mapping function that converts a device number (devNo) into corresponding level and index values based on predefined cases."
+    },
+    {
+      "模糊点描述": "原始需求未说明挡板索引编号的有效范围",
+      "精准需求示例": "挡板索引编号应在有效范围内，对于地轨，有效范围是0到10（包含0和10），对于天轨，有效范围是小于等于10",
+      "case_id": "repoeval_barrier/setButtonByDirect",
+      "requirement": "This code is intended to implement the control of UI button states for ground and sky tracks based on input parameters for level, index, and direction."
+    },
+    {
+      "模糊点描述": "原始需求未明确指定构建产品所需的步骤数量和具体步骤",
+      "精准需求示例": "构建产品时，应按照四个步骤设置部件：主部件、部件1、部件2、部件3，每个部件的具体规格分别对应specifications数组的第1至第4个元素",
+      "case_id": "repoeval_Builder_Application_RPI/Director_Construct",
+      "requirement": "This code is intended to implement a builder design pattern for constructing a Product object step by step using a ConcreteBuilder instance."
+    },
+    {
+      "模糊点描述": "原始需求未明确说明装饰器模式中的增加值是否可配置",
+      "精准需求示例": "装饰器模式应允许通过实例变量配置增加值，以便在不同实例中使用不同的增加值",
+      "case_id": "repoeval_Decorator_Application/ConcreteDecoratorA_getValue",
+      "requirement": "This code is intended to implement a decorator pattern functionality that modifies the behavior of a component by adding a fixed value (e.g., 0.5) to its existing value."
+    },
+    {
+      "模糊点描述": "原始需求未明确指定订阅和发布消息的主题是否应该相同",
+      "精准需求示例": "客户端应该使用动态生成的主题进行订阅，并在同一主题上发布出生消息",
+      "case_id": "repoeval_GreatExampleOfAdvantages/MQTT_STUFF",
+      "requirement": "This code is intended to implement an MQTT client functionality that connects to a broker, subscribes to a topic, and publishes a birth message upon successful connection."
+    },
+    {
+      "模糊点描述": "原始需求未明确指定消息质量服务等级",
+      "精准需求示例": "消息发布时应使用MQTT.QoS.ExactlyOnce作为消息的服务质量等级",
+      "case_id": "repoeval_Interation_HowTo/FirstPublish",
+      "requirement": "This code is intended to implement an MQTT message publishing functionality with a predefined topic, payload, and quality of service settings."
+    },
+    {
+      "模糊点描述": "原始需求未明确说明是否需要初始化特定的消息接收处理",
+      "精准需求示例": "需要有一个专门的接收器（receiver）初始化用于查找并处理特定主题的消息",
+      "case_id": "repoeval_Interation_HowTo/FirstSubscription",
+      "requirement": "This code is intended to implement an MQTT subscription mechanism that subscribes to a specific topic with a callback collector for processing received messages."
+    },
+    {
+      "模糊点描述": "原始需求未明确指定如何处理超出范围的温度和水位值",
+      "精准需求示例": "当水位或温度超出设定的最大或最小阈值时，系统应逐步调整水位或温度，每次调整增加或减少1单位，直到水位或温度回到指定范围内。",
+      "case_id": "repoeval_measurement_control/Tank",
+      "requirement": "This code is intended to implement a control mechanism for a tank system that adjusts its level and temperature within specified minimum and maximum thresholds."
+    },
+    {
+      "模糊点描述": "原始需求未明确说明iStatus的有效值范围及对应的输出行为",
+      "精准需求示例": "需明确iStatus的有效值范围，并为每个有效范围定义具体的输出行为。例如，当iStatus为2到10，221，222时，应设置Y1为TRUE，Y6为TRUE，其余为FALSE；当iStatus为11, 12时，应设置Y2为TRUE，Y6为TRUE，其余为FALSE；以此类推。对于未明确指定的iStatus值，应定义默认的输出行为。",
+      "case_id": "repoeval_open-type_dual-axis_winding_machine/StaDisplay",
+      "requirement": "This code is intended to implement a status-based control system that sets the values of six boolean outputs (Y1 to Y6) based on the input integer status (iStatus)."
+    },
+    {
+      "模糊点描述": "原始需求未明确液位限制的实现细节",
+      "精准需求示例": "液位的限制应通过使用LIMIT函数实现，确保液位始终保持在最小和最大值之间",
+      "case_id": "repoeval_plc_hello_mixing_tank/FB_TankLevelSimulator",
+      "requirement": "This code is intended to implement a tank level simulation that calculates and updates the liquid level based on valve states, fill and drain rates, and ensures the level remains within specified bounds."
+    },
+    {
+      "模糊点描述": "原始需求未明确说明密码验证机制的实现细节",
+      "精准需求示例": "应实现一个动态密码验证机制，其中包括一个临时密码变量用于存储用户输入的密码，和一个静态密码变量用于存储系统设定的真实密码。当用户请求访问时，系统需要比较这两个密码是否匹配，以验证用户的访问权限。",
+      "case_id": "repoeval_Proxy_Application/Proxy",
+      "requirement": "This code is intended to implement a proxy pattern for protecting access to a subject using a password validation mechanism."
+    },
+    {
+      "模糊点描述": "原始需求未明确指定变量类型和转换方法",
+      "精准需求示例": "使用UINT类型存储时间秒数，并直接从TIME类型转换为UINT，确保时间秒数的处理和存储在32位无符号整数范围内",
+      "case_id": "repoeval_traffic_light/FB_CountdownTimer",
+      "requirement": "This code is intended to implement a countdown timer that calculates the remaining seconds based on the elapsed time and total time."
+    },
+    {
+      "模糊点描述": "原始需求未明确指定时间到秒的转换精度",
+      "精准需求示例": "将时间转换为秒时应使用整数截断，确保不保留任何小数部分",
+      "case_id": "repoeval_traffic_light/FB_CountdownTimer",
+      "requirement": "This code is intended to implement a countdown timer that calculates the remaining seconds based on the elapsed time and total time."
+    },
+    {
+      "模糊点描述": "原始需求未明确指出是否需要跟踪鼠标左键的前一个状态以区分点击事件的开始和结束",
+      "精准需求示例": "应该跟踪鼠标左键的前一个状态，以便区分鼠标左键的按下和释放事件，从而更准确地处理单击和双击事件",
+      "case_id": "repoeval_VisuElements/MouseEventHandler",
+      "requirement": "This code is intended to implement a mouse event handler that detects and processes single clicks, double clicks, right clicks, middle clicks, and mouse movement events, providing the event type and position."
+    }
+  ],
+  "循环周期": [
+    {
+      "模糊点描述": "原始需求未明确是否需要使用状态机来管理复位流程",
+      "精准需求示例": "复位功能应通过状态机实现，具体包括初始化、读取状态、执行复位和完成状态等步骤，以确保流程的清晰和可管理性",
+      "case_id": "repoeval_electronic_cam_motion/FB_DualAxisReset",
+      "requirement": "This code is intended to implement a dual-axis reset functionality with status monitoring and error handling for two motion control axes."
+    },
+    {
+      "模糊点描述": "原始需求未明确说明门的开启和关闭是否应该有延时处理",
+      "精准需求示例": "电梯门在接收到开门或关门信号后，应延迟2秒后执行开门或关门操作",
+      "case_id": "repoeval_elevator/FB_ElevatorDoorController",
+      "requirement": "This code is intended to implement an elevator door control system that manages door opening and closing processes based on arrival at the target floor and door sensor states."
+    },
+    {
+      "模糊点描述": "原始需求未明确在检查目标楼层请求时是否应立即退出循环",
+      "精准需求示例": "在检查是否有更高或更低楼层的请求时，一旦找到第一个符合条件的请求，应立即退出循环以提高效率",
+      "case_id": "repoeval_elevator/FB_ElevatorMovement",
+      "requirement": "This code is intended to implement elevator movement control logic based on current floor, door readiness, and target floor requests."
+    },
+    {
+      "模糊点描述": "原始需求未明确说明状态机的实现和状态转换条件",
+      "精准需求示例": "实现一个状态机来管理不同的家庭模式和错误处理，每个状态应明确定义转换条件和相应的动作",
+      "case_id": "repoeval_open-type_dual-axis_winding_machine/SeekHome",
+      "requirement": "This code is intended to implement a homing sequence for a motion control axis with various homing modes, velocity profiles, and error handling."
+    },
+    {
+      "模糊点描述": "原始需求未明确说明处理逻辑的执行频率",
+      "精准需求示例": "处理逻辑应仅在当前时间与上次执行时间的间隔超过样本时间时执行",
+      "case_id": "repoeval_PID_controller/HeatExchanger",
+      "requirement": "This code is intended to implement a heat exchanger process simulation with a dead time and steady-state adjustment based on input parameters and sampling intervals."
+    },
+    {
+      "模糊点描述": "原始需求未明确说明如何处理时间间隔和循环更新",
+      "精准需求示例": "系统应当每隔设定的Sample_time更新一次温度，而不是每次调用函数时都进行更新。",
+      "case_id": "repoeval_PID_controller/HeatExchanger2",
+      "requirement": "This code is intended to implement a heat exchanger model that calculates room temperature over time based on input parameters such as heat source, thermal conductance, thermal capacity, and temperature differences."
+    },
+    {
+      "模糊点描述": "原始需求未明确说明PID控制器的更新频率或循环条件",
+      "精准需求示例": "PID控制器应每隔设定的SampleTime更新其计算和输出，以确保控制的稳定性和准确性",
+      "case_id": "repoeval_PID_controller/PID_controller",
+      "requirement": "This code is intended to implement a PID (Proportional-Integral-Derivative) controller for process control with configurable parameters, output limits, and anti-windup mechanisms."
+    },
+    {
+      "模糊点描述": "原始需求未明确说明更新频率的实现机制",
+      "精准需求示例": "水位更新应仅在距上次更新超过样本时间时进行，使用系统当前时间与上次更新时间的比较来控制更新频率",
+      "case_id": "repoeval_PID_controller/Tank",
+      "requirement": "This code is intended to implement a simulation of a tank system that calculates and updates the fluid level based on input and output flow rates, with constraints on minimum and maximum levels and periodic updates."
+    },
+    {
+      "模糊点描述": "原始需求未明确指定在混合状态后应直接进入哪个状态",
+      "精准需求示例": "在混合状态完成后，应检查混合电机是否已停止运行，确认停止后才能进入排空状态",
+      "case_id": "repoeval_plc_hello_mixing_tank/FB_AutoSequence",
+      "requirement": "This code is intended to implement an automated sequence control for a tank system, managing filling, mixing, and draining operations based on sensor feedback and configured parameters."
+    },
+    {
+      "模糊点描述": "原始需求未明确指定模式切换的逻辑处理方式",
+      "精准需求示例": "当系统处于自动模式时，仅在接收到手动模式切换命令时切换到手动模式；当系统处于手动模式时，仅在接收到自动模式切换命令时切换到自动模式",
+      "case_id": "repoeval_plc_hello_mixing_tank/FB_ModeController",
+      "requirement": "This code is intended to implement a mode controller that switches between automatic and manual modes based on input commands and indicates when the mode has changed."
+    },
+    {
+      "模糊点描述": "原始需求未明确指定定时器停止的条件",
+      "精准需求示例": "在电机线圈被激活后，应停止定时器",
+      "case_id": "repoeval_ProductionLine/Motor_TurnOn",
+      "requirement": "This code is intended to implement a mechanism to turn on a motor by activating its coil after a specified delay, provided there is no fault status."
+    },
+    {
+      "模糊点描述": "原始需求未明确说明如何处理连续的左键点击事件以区分单击和双击",
+      "精准需求示例": "在检测到第一次左键点击后，启动一个计时器等待一定时间（如300毫秒），如果在此时间内再次检测到左键点击，则认定为双击事件；如果时间结束后没有再次点击，则认定为单击事件",
+      "case_id": "repoeval_VisuElements/MouseEventHandler",
+      "requirement": "This code is intended to implement a mouse event handler that detects and processes single clicks, double clicks, right clicks, middle clicks, and mouse movement events, providing the event type and position."
+    },
+    {
+      "模糊点描述": "原始需求未明确说明单击和双击事件的状态管理方式",
+      "精准需求示例": "实现节点的展开/折叠和选择应通过状态机管理，其中状态1代表等待第一次点击，状态2代表等待第二次点击或超时，以确保单击和双击逻辑的准确执行",
+      "case_id": "repoeval_VisuElements/NodeExpandCollapse",
+      "requirement": "This code is intended to implement a double-click mechanism for expanding or collapsing a node and single-click functionality for selecting a node."
+    }
+  ],
+  "报错机制": [
+    {
+      "模糊点描述": "原始需求未明确是否需要实现复位功能的详细行为",
+      "精准需求示例": "复位功能应彻底重置所有内部状态和输出变量，包括任何与机器操作相关的内部标志和IO映射状态，确保机器可以从初始状态重新开始操作。",
+      "case_id": "repoeval_assembly-station/PNP_MACHINE",
+      "requirement": "This code is intended to implement the control logic for a pick-and-place machine that moves a lid from a clamped position to a base using a picker and arm mechanism, with state management for movement, item detection, and gripper actions."
+    },
+    {
+      "模糊点描述": "原始需求未说明对于非'extend'或'retract'输入的处理方式",
+      "精准需求示例": "当输入不是'TargetDirect.extend'或'TargetDirect.retract'时，应保持输出与输入一致",
+      "case_id": "repoeval_barrier/DataReverse_cmdReverse",
+      "requirement": "This code is intended to implement a function that reverses the direction of a given input command between \"extend\" and \"retract\"."
+    },
+    {
+      "模糊点描述": "原始需求未明确说明文件打开失败时的错误处理方式",
+      "精准需求示例": "在文件打开失败时，应设置lineCount为-1，并记录错误码到日志",
+      "case_id": "repoeval_barrier/fileSave_new",
+      "requirement": "This code is intended to implement a file-saving functionality that generates a timestamped file name based on the current system time and device name, and opens the file for writing."
+    },
+    {
+      "模糊点描述": "原始需求未明确文件打开失败时的错误处理机制",
+      "精准需求示例": "在文件打开或写入失败时，应记录错误状态，并在可能的情况下重试或记录错误日志",
+      "case_id": "repoeval_barrier/fileSave_write",
+      "requirement": "This code is intended to implement a file-saving functionality that logs formatted data, including line count, time interval, position, speed, and state, into a file at specified intervals."
+    },
+    {
+      "模糊点描述": "原始需求未明确指定函数块错误的处理方式",
+      "精准需求示例": "在函数块发生错误时，应返回特定的错误描述字符串'Function Block Error'",
+      "case_id": "repoeval_electronic_cam_motion/F_AxisStatusToString",
+      "requirement": "This code is intended to implement a function that converts axis status information into a corresponding descriptive string based on priority order."
+    },
+    {
+      "模糊点描述": "原始需求未明确指定状态检查的优先级顺序",
+      "精准需求示例": "应明确状态检查的优先级顺序，例如首先检查'Errorstop'，然后是'Disabled'，接着是'Homing'，依此类推",
+      "case_id": "repoeval_electronic_cam_motion/F_AxisStatusToString",
+      "requirement": "This code is intended to implement a function that converts axis status information into a corresponding descriptive string based on priority order."
+    },
+    {
+      "模糊点描述": "原始需求未明确说明错误处理的具体实现方式",
+      "精准需求示例": "在每个状态转换过程中检查错误，并立即更新错误标志，如果检测到错误则停止进一步操作",
+      "case_id": "repoeval_electronic_cam_motion/FB_DualAxisPower",
+      "requirement": "This code is intended to implement dual-axis power control and readiness monitoring for two axes with error handling."
+    },
+    {
+      "模糊点描述": "原始需求未明确是否需要在复位前进行状态检查",
+      "精准需求示例": "在执行复位操作前，应检查每个轴的当前状态，确认无错误或异常后再进行复位",
+      "case_id": "repoeval_electronic_cam_motion/FB_DualAxisReset",
+      "requirement": "This code is intended to implement a dual-axis reset functionality with status monitoring and error handling for two motion control axes."
+    },
+    {
+      "模糊点描述": "原始需求未明确是否在状态机的每个状态中都应检查错误并立即停止操作",
+      "精准需求示例": "在每个状态转换前，应检查相关功能块的错误状态。如果检测到错误，应立即停止进一步操作并重置状态机到初始状态",
+      "case_id": "repoeval_electronic_cam_motion/ResetAxis",
+      "requirement": "This code is intended to implement a state-based mechanism to reset and verify the error status of two axes (AxisX and AxisY) in a motion control system."
+    },
+    {
+      "模糊点描述": "原始需求未明确是否需要主动控制电源状态",
+      "精准需求示例": "系统应当具备主动控制每个轴的电源状态的功能，包括启动驱动和调节器",
+      "case_id": "repoeval_electronic_gear_motion/FB_DualAxisPower",
+      "requirement": "This code is intended to implement dual-axis power control and readiness monitoring for two axes with error handling."
+    },
+    {
+      "模糊点描述": "原始需求未明确说明内部错误的处理方式",
+      "精准需求示例": "系统应具备内部错误检测机制，当检测到内部错误时，应设置错误标志并记录错误代码",
+      "case_id": "repoeval_electronic_gear_motion/FB_GearCoupling",
+      "requirement": "This code is intended to implement a gear coupling and decoupling control system for two axes with configurable parameters such as gear ratio, acceleration, and deceleration, while monitoring the coupling status and handling errors."
+    },
+    {
+      "模糊点描述": "原始需求未明确说明在哪些条件下应该设置错误标志",
+      "精准需求示例": "当任何子功能块（如齿轮耦合控制、主轴或从轴的移动或停止功能块）报告错误时，应设置主控制功能块的错误标志",
+      "case_id": "repoeval_electronic_gear_motion/FB_GearMotionControl",
+      "requirement": "This code is intended to implement a dual-axis gear motion control system with start, stop, coupling, and decoupling functionalities, ensuring synchronized motion between a master and slave axis."
+    },
+    {
+      "模糊点描述": "原始需求未明确是否需要实现电梯移动的延时机制",
+      "精准需求示例": "在电梯开始移动前，应实现一个延时机制，延时时间为500毫秒，确保电梯移动操作的平滑性和安全性",
+      "case_id": "repoeval_elevator/FB_ElevatorMovement",
+      "requirement": "This code is intended to implement elevator movement control logic based on current floor, door readiness, and target floor requests."
+    },
+    {
+      "模糊点描述": "原始需求未明确指定连接失败时的错误处理机制",
+      "精准需求示例": "在MQTT客户端连接失败时，应该通过适当的错误处理机制（如重试或记录错误日志）来处理这种情况",
+      "case_id": "repoeval_GreatExampleOfAdvantages/MQTT_STUFF",
+      "requirement": "This code is intended to implement an MQTT client functionality that connects to a broker, subscribes to a topic, and publishes a birth message upon successful connection."
+    },
+    {
+      "模糊点描述": "原始需求未明确是否需要使用字符串形式发布消息",
+      "精准需求示例": "发布消息时应使用字符串形式，设置PublishAsString为TRUE",
+      "case_id": "repoeval_Interation_HowTo/FirstPublish",
+      "requirement": "This code is intended to implement an MQTT message publishing functionality with a predefined topic, payload, and quality of service settings."
+    },
+    {
+      "模糊点描述": "原始需求未明确说明消息处理的回调机制",
+      "精准需求示例": "接收到的消息应通过一个回调收集器（CallbackCollector）进行处理，该收集器负责管理所有消息的回调函数",
+      "case_id": "repoeval_Interation_HowTo/FirstSubscription",
+      "requirement": "This code is intended to implement an MQTT subscription mechanism that subscribes to a specific topic with a callback collector for processing received messages."
+    },
+    {
+      "模糊点描述": "原始需求未明确在物理范围为零时的返回值",
+      "精准需求示例": "当物理范围（rPhyMax - rPhyMin）为零时，函数应返回默认的安全值0",
+      "case_id": "repoeval_isScaleOutput/F_isScaleOutput",
+      "requirement": "This code should implement a scaling function that converts a physical output value (rOutput) within a specified process range (rPhyMin to rPhyMax) into an integer value suitable for the analog output terminal type (eTerminal), where the return represents a raw analog output register, the terminal type affects only the minimum of the raw output, all terminal types share the same maximum raw output, the mapping should linearly scale the physical range to the raw output range and internally compute any range offset as needed, outputs must be saturated within the raw output bounds, and if the physical range is zero, the function should return a default safe value to avoid division by zero."
+    },
+    {
+      "模糊点描述": "原始需求未说明在半径调整计算中如何处理除零错误",
+      "精准需求示例": "在执行半径调整计算时，若计算的新半径小于或等于0.01，则应保持当前速度不变，避免除零错误",
+      "case_id": "repoeval_open-type_dual-axis_winding_machine/F_CompensateVelocity",
+      "requirement": "This code is intended to implement velocity compensation based on positional changes, material thickness, and radius adjustments during unwinding or rewinding operations."
+    },
+    {
+      "模糊点描述": "原始需求未明确说明在何种情况下应该触发错误",
+      "精准需求示例": "在任何运动命令（如MC_MoveVelocity, MC_MoveAbsolute等）执行失败时，应设置错误标志并记录相应的错误ID",
+      "case_id": "repoeval_open-type_dual-axis_winding_machine/SeekHome",
+      "requirement": "This code is intended to implement a homing sequence for a motion control axis with various homing modes, velocity profiles, and error handling."
+    },
+    {
+      "模糊点描述": "原始需求未明确函数返回值的具体用途和设置",
+      "精准需求示例": "函数应始终返回一个布尔值TRUE，表示函数已成功执行并更新了液位状态",
+      "case_id": "repoeval_plc_hello_mixing_tank/F_UpdateLimitSwitches",
+      "requirement": "This code is intended to implement a function that updates the status of liquid level switches based on the current tank level and predefined full and empty thresholds."
+    },
+    {
+      "模糊点描述": "原始需求未明确液位计算的具体实现方式",
+      "精准需求示例": "液位的更新应通过直接计算表达式实现，其中液位的增加或减少基于阀门状态的实时评估，使用布尔值转换为实数的方法",
+      "case_id": "repoeval_plc_hello_mixing_tank/FB_TankLevelSimulator",
+      "requirement": "This code is intended to implement a tank level simulation that calculates and updates the liquid level based on valve states, fill and drain rates, and ensures the level remains within specified bounds."
+    },
+    {
+      "模糊点描述": "原始需求未明确是否使用方法来处理故障状态的重置",
+      "精准需求示例": "应使用独立的方法来处理故障状态的重置，并且该方法应当通过上升沿触发器来检测故障重置信号的变化，以确保只在信号的上升沿时重置故障状态",
+      "case_id": "repoeval_ProductionLine/Motor",
+      "requirement": "This code is intended to implement a motor control function block with fault handling and timing functionalities."
+    },
+    {
+      "模糊点描述": "原始需求未明确是否使用方法来处理故障状态的设置",
+      "精准需求示例": "应使用独立的方法来处理故障状态的设置，并且在检测到过载时，除了设置故障状态外，还应调用TurnOff方法来关闭电机",
+      "case_id": "repoeval_ProductionLine/Motor",
+      "requirement": "This code is intended to implement a motor control function block with fault handling and timing functionalities."
+    },
+    {
+      "模糊点描述": "原始需求未明确是否使用方法来设置等待时间",
+      "精准需求示例": "应使用独立的方法来设置等待时间，该方法应当接收一个时间参数并将其设置为内部序列延迟",
+      "case_id": "repoeval_ProductionLine/Motor",
+      "requirement": "This code is intended to implement a motor control function block with fault handling and timing functionalities."
+    },
+    {
+      "模糊点描述": "原始需求未明确是否使用方法来控制电机的开关",
+      "精准需求示例": "应使用独立的方法来控制电机的开关，TurnOn方法应当检查故障状态并在无故障时启动等待定时器，TurnOff方法应直接关闭电机",
+      "case_id": "repoeval_ProductionLine/Motor",
+      "requirement": "This code is intended to implement a motor control function block with fault handling and timing functionalities."
+    },
+    {
+      "模糊点描述": "原始需求未明确指定如何检测重置信号",
+      "精准需求示例": "使用上升沿触发器来检测MotorI.FaultReset信号的上升沿，以此作为重置故障状态的触发条件",
+      "case_id": "repoeval_ProductionLine/Motor_ResetFault",
+      "requirement": "This code is intended to implement a fault reset mechanism for a motor system by detecting a reset signal and clearing the fault status."
+    },
+    {
+      "模糊点描述": "原始需求未明确是否需要在检测到过载后延迟执行故障处理",
+      "精准需求示例": "在检测到电机过载后，应延迟一定时间（具体时间由系统设计决定）再执行故障状态设置和电机关闭操作",
+      "case_id": "repoeval_ProductionLine/Motor_SetFault",
+      "requirement": "This code is intended to implement a fault detection mechanism for a motor that sets a fault status and turns off the motor when an overload condition is detected."
+    },
+    {
+      "模糊点描述": "原始需求未明确指定检查故障状态的变量",
+      "精准需求示例": "应当检查输出变量MotorO的FaultStatus来决定是否启动电机",
+      "case_id": "repoeval_ProductionLine/Motor_TurnOn",
+      "requirement": "This code is intended to implement a mechanism to turn on a motor by activating its coil after a specified delay, provided there is no fault status."
+    },
+    {
+      "模糊点描述": "原始需求未明确说明密码错误时的处理逻辑",
+      "精准需求示例": "当用户输入的密码与系统设定的密码不匹配时，系统应拒绝用户的访问请求，并向用户提供明确的错误信息，指出密码错误。",
+      "case_id": "repoeval_Proxy_Application/Proxy",
+      "requirement": "This code is intended to implement a proxy pattern for protecting access to a subject using a password validation mechanism."
+    },
+    {
+      "模糊点描述": "原始需求未明确当时间常数为零时的处理机制",
+      "精准需求示例": "当时间常数为零时，输出应直接等于输入，无需进行任何滤波处理。对于时间常数小于零的情况，应当有明确的处理策略，例如输出等于输入或者触发错误处理。",
+      "case_id": "repoeval_PT1Filter/FB_PT1Filter",
+      "requirement": "This code is intended to implement a first-order low-pass filter (PT1 filter) for smoothing input data with configurable gain and time constant."
+    },
+    {
+      "模糊点描述": "原始需求未明确在输入与输出差异极小（小于1E-6）时的处理机制",
+      "精准需求示例": "当输入与输出的差异小于1E-6时，应直接将输入值赋给输出，以避免由于极小的数值差异引起的不必要的计算和潜在的数值问题。",
+      "case_id": "repoeval_PT1Filter/FB_PT1Filter",
+      "requirement": "This code is intended to implement a first-order low-pass filter (PT1 filter) for smoothing input data with configurable gain and time constant."
+    },
+    {
+      "模糊点描述": "原始需求未明确说明文件打开失败时的错误处理方式",
+      "精准需求示例": "在文件打开失败时，应检查错误代码是否非零，若非零则设置错误标志和错误代码",
+      "case_id": "repoeval_readwriteFile/ReadFile",
+      "requirement": "This code is intended to implement a file reading functionality that reads data from a specified file into a buffer, handles errors, and manages file operations such as opening, reading, and closing."
+    },
+    {
+      "模糊点描述": "原始需求未明确说明文件读取失败时的错误处理方式",
+      "精准需求示例": "在文件读取失败时，应检查错误代码是否非零，若非零则设置错误标志和错误代码",
+      "case_id": "repoeval_readwriteFile/ReadFile",
+      "requirement": "This code is intended to implement a file reading functionality that reads data from a specified file into a buffer, handles errors, and manages file operations such as opening, reading, and closing."
+    },
+    {
+      "模糊点描述": "原始需求未明确说明文件关闭失败时的错误处理方式",
+      "精准需求示例": "在文件关闭失败时，应检查错误代码是否非零，若非零则设置错误标志和错误代码",
+      "case_id": "repoeval_readwriteFile/ReadFile",
+      "requirement": "This code is intended to implement a file reading functionality that reads data from a specified file into a buffer, handles errors, and manages file operations such as opening, reading, and closing."
+    },
+    {
+      "模糊点描述": "原始需求未明确说明如何处理文件打开失败的情况",
+      "精准需求示例": "在文件打开失败时，应检查错误代码，如果错误代码为0，则不设置错误状态，否则设置错误状态并提供错误代码",
+      "case_id": "repoeval_readwriteFile/WriteFile",
+      "requirement": "This code is intended to implement a file writing operation that writes a specified number of bytes from a buffer to a file, with error handling and status signaling."
+    },
+    {
+      "模糊点描述": "原始需求未明确说明如何处理文件写入操作的结果",
+      "精准需求示例": "在文件写入操作后，应检查写入的字节数和错误代码，如果写入的字节数为0或错误代码不为0，则设置错误状态并提供错误代码",
+      "case_id": "repoeval_readwriteFile/WriteFile",
+      "requirement": "This code is intended to implement a file writing operation that writes a specified number of bytes from a buffer to a file, with error handling and status signaling."
+    },
+    {
+      "模糊点描述": "原始需求未明确说明如何处理文件关闭操作的结果",
+      "精准需求示例": "在文件关闭操作后，应检查错误代码，如果错误代码为0，则认为操作成功，否则设置错误状态并提供错误代码",
+      "case_id": "repoeval_readwriteFile/WriteFile",
+      "requirement": "This code is intended to implement a file writing operation that writes a specified number of bytes from a buffer to a file, with error handling and status signaling."
+    },
+    {
+      "模糊点描述": "原始需求未明确指定错误信息的国际化处理",
+      "精准需求示例": "系统应支持错误信息的国际化处理，使用SMC_ERRORSTRING函数根据系统设置的语言显示错误信息。",
+      "case_id": "repoeval_three-axis_CNC_motion/FB_TripleAxisHoming",
+      "requirement": "This code is intended to implement a triple-axis homing procedure for a CNC system, managing the homing process, status monitoring, and error handling for the X, Y, and Z axes."
+    },
+    {
+      "模糊点描述": "原始需求未明确指定错误信息的格式和内容",
+      "精准需求示例": "在检测到错误时，应使用统一的错误字符串生成函数，该函数应根据错误ID和预设的语言生成详细的错误描述。若无错误发生，错误字符串应明确返回 'CNC_NO_ERROR'",
+      "case_id": "repoeval_three-axis_CNC_motion/FB_TripleAxisPower",
+      "requirement": "This code is intended to implement a control mechanism for enabling and monitoring the power status of three servo motor axes (X, Y, Z) with error handling functionality."
+    },
+    {
+      "模糊点描述": "原始需求未明确指定如何生成和显示错误信息",
+      "精准需求示例": "在检测到错误时，应使用SMC_ERRORSTRING函数，传入错误ID和语言参数，以生成和显示错误信息",
+      "case_id": "repoeval_three-axis_CNC_motion/FB_TripleAxisReset",
+      "requirement": "This code is intended to implement a reset functionality for three axes (X, Y, Z) with status monitoring and error handling."
+    },
+    {
+      "模糊点描述": "原始需求未明确说明错误信息的格式和内容",
+      "精准需求示例": "错误信息应该通过一个标准化函数生成，该函数接受错误ID和语言设置，并输出格式化的错误字符串",
+      "case_id": "repoeval_three-axis_CNC_motion/FB_TripleAxisStop",
+      "requirement": "This code is intended to implement a coordinated stop function for three axes (X, Y, Z) with deceleration control and error handling."
+    },
+    {
+      "模糊点描述": "原始需求未明确是否在初始化过程中需要检查错误并更新初始化成功状态",
+      "精准需求示例": "在初始化过程中，任何子功能块（如轴停止）发生错误时，应更新初始化成功状态为FALSE，并记录错误信息。",
+      "case_id": "repoeval_three-axis_CNC_motion/INIT_CNC_System",
+      "requirement": "This code is intended to implement the initialization of a CNC system by resetting G-code processing, axis control, homing, and stop functionalities for three axes."
+    }
+  ],
+  "描述信息的设置和获取": [
+    {
+      "模糊点描述": "原始需求未明确如何设置和获取装饰类的描述信息",
+      "精准需求示例": "应实现一个getDescription方法，该方法返回装饰后的描述信息，该信息为原始组件描述与装饰类特定描述的组合",
+      "case_id": "repoeval_Decorator_Application/ConcreteDecoratorC",
+      "requirement": "This code is intended to implement a decorating class that extends functionality and responsibilities of a component in a dynamic creation environment."
+    }
+  ],
+  "数据类型处理": [
+    {
+      "模糊点描述": "原始需求未明确说明在转换过程中是否需要处理浮点数的舍入问题",
+      "精准需求示例": "在将TIME转换为秒数时，应先将TIME转换为毫秒的DWORD值，然后除以1000.0得到浮点数，使用TRUNC函数处理浮点数以舍去小数部分，最后将结果转换为DWORD类型",
+      "case_id": "repoeval_traffic_light/F_TimeToSeconds",
+      "requirement": "This code is intended to implement the conversion of a TIME input value into its equivalent number of seconds as a DWORD."
+    }
+  ],
+  "方法定义": [
+    {
+      "模糊点描述": "原始需求未明确是否需要定义获取描述和值的方法",
+      "精准需求示例": "定义两个方法，getDescription和getValue，分别用于返回对象的sDescription和rValue",
+      "case_id": "repoeval_Decorator_Application/ConcreteComponment",
+      "requirement": "This code is intended to implement a basic object creation functionality with a description and value, designed to be decorated and comply with a component interface."
+    }
+  ],
+  "方法实现": [
+    {
+      "模糊点描述": "原始需求未明确是否需要实现特定的字符串处理方法",
+      "精准需求示例": "实现一个方法，该方法能够将产品的各个部分（mainPart, part1, part2, part3）连接成一个字符串，并返回这个字符串",
+      "case_id": "repoeval_Builder_Application_RPI/Product",
+      "requirement": "This code is intended to implement a blueprint for dynamically creating a product object with customizable parts based on client specifications."
+    },
+    {
+      "模糊点描述": "原始需求未明确是否需要特定的方法来执行命令",
+      "精准需求示例": "需要在FUNCTION_BLOCK中实现一个名为Execute的方法，该方法负责激活空调系统并设置温度",
+      "case_id": "repoeval_Command1/FB_AirConComfortCommand",
+      "requirement": "This code is intended to implement a command interface for controlling an air conditioning system."
+    },
+    {
+      "模糊点描述": "原始需求未说明是否需要实现特定的方法来执行命令",
+      "精准需求示例": "需要实现一个名为Execute的方法，该方法在被调用时应设置灯的亮度级别",
+      "case_id": "repoeval_Command1/FB_LampSetLevelCommand",
+      "requirement": "This code is intended to implement a command for setting the brightness level of a lamp."
+    },
+    {
+      "模糊点描述": "原始需求未明确是否需要特定的方法来执行停止音乐的命令",
+      "精准需求示例": "应实现一个Execute方法，在该方法中检查CD播放器引用的有效性并调用Stop方法",
+      "case_id": "repoeval_Command1/FB_MusicStopCommand",
+      "requirement": "This code is intended to implement a command to stop music playback on a CD player."
+    },
+    {
+      "模糊点描述": "原始需求未明确是否需要单独的方法来控制激活状态",
+      "精准需求示例": "需要实现两个公开方法，On和Off，分别用于将bActive设置为true和false",
+      "case_id": "repoeval_Command1/FB_Socket",
+      "requirement": "This code is intended to implement a function block for managing a socket with an output indicating its active status."
+    },
+    {
+      "模糊点描述": "原始需求未说明是否需要实现Execute方法以及其具体行为",
+      "精准需求示例": "FB_SocketOffCommand功能块应实现Execute方法，该方法应检查refSocket是否有效，如果有效，则调用其On方法",
+      "case_id": "repoeval_Command1/FB_SocketOffCommand",
+      "requirement": "This code is intended to implement a command for turning off a socket using the I_Command interface."
+    },
+    {
+      "模糊点描述": "原始需求未明确是否需要实现特定的方法来执行命令",
+      "精准需求示例": "应在FUNCTION_BLOCK中实现一个Execute方法，该方法用于检查socket引用的有效性并执行开启操作",
+      "case_id": "repoeval_Command1/FB_SocketOnCommand",
+      "requirement": "This code is intended to implement a command interface for controlling a socket functionality."
+    },
+    {
+      "模糊点描述": "原始需求未明确是否需要实现获取和设置动态属性的方法",
+      "精准需求示例": "实现公共方法Get_Method返回动态整数属性iProp的值，和公共方法Set_Method用于设置动态整数属性iProp的值",
+      "case_id": "repoeval_Proxy_Application/Realsubject",
+      "requirement": "This code is intended to implement a function block named \"Realsubject\" that adheres to the \"Subject_Interface\" and includes a dynamically creatable integer property for getting and setting values."
+    }
+  ],
+  "方法实现与控制逻辑": [
+    {
+      "模糊点描述": "原始需求未明确是否需要单独的激活和停用方法",
+      "精准需求示例": "功能块应包含Activate和Deactivate方法，用于控制空调的激活状态。Activate方法将bActive设置为TRUE，Deactivate方法将bActive设置为FALSE。",
+      "case_id": "repoeval_Command1/FB_AirConditioning",
+      "requirement": "This code is intended to implement a functional block for air conditioning control with outputs for activation status and temperature."
+    },
+    {
+      "模糊点描述": "原始需求未明确是否需要单独的设置温度方法",
+      "精准需求示例": "功能块应包含SetTemperature方法，该方法接受一个实数类型参数lrNewTemperature，并将其设置为当前温度lrTemperature。",
+      "case_id": "repoeval_Command1/FB_AirConditioning",
+      "requirement": "This code is intended to implement a functional block for air conditioning control with outputs for activation status and temperature."
+    }
+  ],
+  "方法实现与结构": [
+    {
+      "模糊点描述": "原始需求未明确是否需要实现特定的方法如Execute和FB_init",
+      "精准需求示例": "需实现Execute方法，该方法包含对CD播放器的引用验证和操作指令；同时实现FB_init方法，用于初始化CD播放器的引用",
+      "case_id": "repoeval_Command1/FB_MusicPlayCommand",
+      "requirement": "This code is intended to implement a music play command functionality for a CD player."
+    }
+  ],
+  "方法实现和功能": [
+    {
+      "模糊点描述": "原始需求未明确是否需要实现获取和设置产品部件的方法",
+      "精准需求示例": "应实现方法来设置和获取产品的主要部件和其他部件，这些方法应允许在构建过程中动态地修改和访问产品的状态",
+      "case_id": "repoeval_Builder_Application_RPI/ConcreteBuilder",
+      "requirement": "This code is intended to implement a concrete builder class for constructing a product object based on client-provided specifications and guidance from a director class."
+    }
+  ],
+  "方法实现和功能扩展": [
+    {
+      "模糊点描述": "原始需求未明确说明装饰器类是否应实现额外的方法来输出装饰后的描述和值",
+      "精准需求示例": "装饰器类应实现两个方法：getDescription和getValue，分别用于输出装饰后的描述和值。getDescription方法应返回组件原有描述与装饰描述的组合，getValue方法应返回组件原有值加上装饰值",
+      "case_id": "repoeval_Decorator_Application/ConcreteDecoratorA",
+      "requirement": "This code is intended to implement a decorator pattern for dynamically adding responsibilities and functionality to a component."
+    },
+    {
+      "模糊点描述": "原始需求未明确如何实现和扩展组件的getDescription和getValue方法",
+      "精准需求示例": "ConcreteDecoratorB类应提供getDescription和getValue方法，这些方法应动态地返回装饰后的描述和值，其中getDescription方法返回基础组件的描述与'Decorator B'的连接，getValue方法返回基础组件的值增加0.35",
+      "case_id": "repoeval_Decorator_Application/ConcreteDecoratorB",
+      "requirement": "This code is intended to implement a decorator pattern that adds responsibilities and functionality to a component in a dynamic and extensible manner."
+    },
+    {
+      "模糊点描述": "原始需求未明确描述和值获取方法的具体实现",
+      "精准需求示例": "应实现一个getValue方法，该方法返回装饰后的组件值，该值为原始组件值加上装饰类特定的增量",
+      "case_id": "repoeval_Decorator_Application/ConcreteDecoratorC",
+      "requirement": "This code is intended to implement a decorating class that extends functionality and responsibilities of a component in a dynamic creation environment."
+    }
+  ],
+  "方法实现和调用": [
+    {
+      "模糊点描述": "原始需求未明确是否需要在Director类中实现具体的构建方法",
+      "精准需求示例": "Director类应包含一个Construct方法，该方法通过调用concreteBuilder的Set_Main_Part, Set_Part1, Set_Part2, Set_Part3方法按顺序构建产品的各个部分，并通过Get_Result方法获取最终产品对象。",
+      "case_id": "repoeval_Builder_Application_RPI/Director",
+      "requirement": "This code is intended to implement a Director class that delegates the construction of a final product object to a specified ConcreteBuilder."
+    }
+  ],
+  "时间格式": [
+    {
+      "模糊点描述": "原始需求未明确说明时间戳的具体格式",
+      "精准需求示例": "时间戳应使用格式'YYYY-MM-DD_HH-MM-SS_MMM'，包括年、月、日、小时、分钟、秒和毫秒",
+      "case_id": "repoeval_barrier/fileSave_new",
+      "requirement": "This code is intended to implement a file-saving functionality that generates a timestamped file name based on the current system time and device name, and opens the file for writing."
+    }
+  ],
+  "构造函数和初始化": [
+    {
+      "模糊点描述": "原始需求未明确是否需要在构造函数中接收和初始化规格参数",
+      "精准需求示例": "构造函数应接收一个规格参数数组，并在实例化时初始化这些规格参数到类的内部存储中",
+      "case_id": "repoeval_Builder_Application_RPI/ConcreteBuilder",
+      "requirement": "This code is intended to implement a concrete builder class for constructing a product object based on client-provided specifications and guidance from a director class."
+    }
+  ],
+  "构造函数和初始化方法": [
+    {
+      "模糊点描述": "原始需求未明确是否需要在类的构造或初始化时设置默认值",
+      "精准需求示例": "在ConcreteDecoratorB类的实例化过程中，应通过构造函数或初始化方法设置sDescription为'Decorator B'和rValue为0.35",
+      "case_id": "repoeval_Decorator_Application/ConcreteDecoratorB",
+      "requirement": "This code is intended to implement a decorator pattern that adds responsibilities and functionality to a component in a dynamic and extensible manner."
+    },
+    {
+      "模糊点描述": "原始需求未明确是否需要在类的实例化时调用构造函数进行初始化",
+      "精准需求示例": "在类的实例化时，应调用fb_init方法进行初始化，该方法应接收两个布尔参数和一个组件接口引用，以设置类的初始状态",
+      "case_id": "repoeval_Decorator_Application/ConcreteDecoratorC",
+      "requirement": "This code is intended to implement a decorating class that extends functionality and responsibilities of a component in a dynamic creation environment."
+    }
+  ],
+  "构造函数和初始化逻辑": [
+    {
+      "模糊点描述": "原始需求未明确说明是否需要在装饰器类中实现构造函数和初始化逻辑",
+      "精准需求示例": "装饰器类应实现一个构造函数fb_init，该函数负责初始化装饰器类的实例，包括设置描述和默认值，并调用超类的构造函数以传递被装饰组件",
+      "case_id": "repoeval_Decorator_Application/ConcreteDecoratorA",
+      "requirement": "This code is intended to implement a decorator pattern for dynamically adding responsibilities and functionality to a component."
+    }
+  ],
+  "状态机实现": [
+    {
+      "模糊点描述": "原始需求未明确说明是否应使用状态机来管理电梯门的状态转换",
+      "精准需求示例": "电梯门控制应通过一个状态机实现，具体状态包括：空闲、开门延时、开门、等待关门、关门。每个状态下的行为和转换条件应明确定义",
+      "case_id": "repoeval_elevator/FB_ElevatorDoorController",
+      "requirement": "This code is intended to implement an elevator door control system that manages door opening and closing processes based on arrival at the target floor and door sensor states."
+    }
+  ],
+  "计算公式": [
+    {
+      "模糊点描述": "原始需求未明确指定计算力的具体公式",
+      "精准需求示例": "计算力的公式应为 lF := 9.8 * lM / (2 * COS(ATAN(lL / lH))) 当 lH 不为零时",
+      "case_id": "repoeval_open-type_dual-axis_winding_machine/CheckF",
+      "requirement": "This code is intended to implement a calculation for a force value (lF) based on mass (lM), length (lL), and height (lH) using a specific formula when height (lH) is non-zero."
+    },
+    {
+      "模糊点描述": "原始需求未明确指定半径计算的具体公式",
+      "精准需求示例": "半径的计算应使用公式 R = |√(D²+(Hnew+offset)²) - √(D²+(Hold+offset)²)| / π + Tk，其中 D 是两轴中心距离，Hnew 是测量结束时的高度，Hold 是测量开始时的高度，offset 是高度偏移量，Tk 是材料厚度",
+      "case_id": "repoeval_open-type_dual-axis_winding_machine/F_CalculateRadius",
+      "requirement": "This code is intended to implement a calculation for the radius based on the distances, height positions, material thickness, and height offset using a specific mathematical formula."
+    }
+  ],
+  "路径格式": [
+    {
+      "模糊点描述": "原始需求未明确指出路径字符串的格式",
+      "精准需求示例": "在filePath和devName拼接时，应在两者之间插入'/'字符以形成正确的文件路径格式",
+      "case_id": "repoeval_barrier/fileSave_createDir",
+      "requirement": "This code is intended to implement the creation of a directory path by concatenating a file path and device name, and then creating the directory if it does not already exist."
+    }
+  ],
+  "输入输出处理": [
+    {
+      "模糊点描述": "原始需求未明确如何处理输入信号对函数块的控制",
+      "精准需求示例": "当输入信号为真时，应调用每个函数块实例的mLiga方法；当输入信号为假时，应调用每个函数块实例的mDesliga方法",
+      "case_id": "repoeval_Wrappers/FB_Wrapper",
+      "requirement": "This code is intended to implement the control of three instances of a function block, each with a configurable delay, based on an input boolean signal."
+    }
+  ],
+  "逻辑处理": [
+    {
+      "模糊点描述": "原始需求未明确指出在开门命令时是否需要同时考虑楼层呼叫命令",
+      "精准需求示例": "开门动画只在同时接收到开门命令和楼层呼叫命令时增加动画值，且不超过最大动画值",
+      "case_id": "repoeval_elevator/F_UpdateDoorAnimation",
+      "requirement": "This code is intended to implement the update logic for door animation values based on open, close, and floor call commands within specified constraints."
+    },
+    {
+      "模糊点描述": "原始需求未明确指出当位置未变化时的速度处理逻辑",
+      "精准需求示例": "如果检测到位置未发生变化（即新位置与旧位置相同），则应直接返回当前速度，不进行任何调整",
+      "case_id": "repoeval_open-type_dual-axis_winding_machine/F_CompensateVelocity",
+      "requirement": "This code is intended to implement velocity compensation based on positional changes, material thickness, and radius adjustments during unwinding or rewinding operations."
+    },
+    {
+      "模糊点描述": "原始需求未明确说明在设备未达到目标状态时如何处理命令标志",
+      "精准需求示例": "如果设备状态为打开，则应复位打开命令；如果设备状态为关闭，则应复位关闭命令",
+      "case_id": "repoeval_plc_hello_mixing_tank/F_ResetDeviceCommands",
+      "requirement": "This code is intended to implement the automatic reset of command flags for a device's mixer, medium valves, and drain valve based on their current operational states."
+    }
+  ],
+  "逻辑执行顺序": [
+    {
+      "模糊点描述": "原始需求未明确指定递增、递减和复位信号的处理顺序",
+      "精准需求示例": "递增、递减和复位信号应该被独立处理，即使复位信号激活，也应该先处理递增和递减信号，然后再复位计数器",
+      "case_id": "repoeval_counter/FB_counter",
+      "requirement": "This code is intended to implement a counter that increments, decrements, or resets its value based on input signals."
+    }
+  ],
+  "错误处理": [
+    {
+      "模糊点描述": "原始需求未明确指定当 lH 为零时的处理方式",
+      "精准需求示例": "当 lH 为零时，不应计算或输出 lF 的值",
+      "case_id": "repoeval_open-type_dual-axis_winding_machine/CheckF",
+      "requirement": "This code is intended to implement a calculation for a force value (lF) based on mass (lM), length (lL), and height (lH) using a specific formula when height (lH) is non-zero."
+    }
+  ],
+  "默认温度设置": [
+    {
+      "模糊点描述": "原始需求未明确设置的默认温度值",
+      "精准需求示例": "空调系统被激活时，应设置的默认温度为20.0度",
+      "case_id": "repoeval_Command1/FB_AirConComfortCommand",
+      "requirement": "This code is intended to implement a command interface for controlling an air conditioning system."
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "library": "DNP3",
+  "title": "OctetStringGetFromPointNum (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/pou-Master/Datapoints/OctetStringGetFromPointNum.html",
+  "page_title": "Master.OctetStringGetFromPointNum (METH)",
+  "text": "\nMETHOD OctetStringGetFromPointNum :\nError\nGet the value of Octet String datapoint (DNP3 object group 110 âoctet stringsâ) with given point number (0 .. MaxPointNum).\nReturns PointNotExistent, if a datapoint with the given point number doesnt exist, OK otherwise.\nThe caller has to provide a buffer where to store the Octet String value.\nEventually the Octet value exceeds the provided buffer, in this case Error.NoMemory will be returned,\nnevertheless the first maxLenStrBuf bytes of value are copied to pStrBuf.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "OctetStringGetFromPointNum",
+          "Type": "Error",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "pointNumber",
+          "Type": "UINT",
+          "Comment": "Point number."
+        },
+        [
+          "pStrBuf",
+          "POINTER TO USINT",
+          "Pointer to buffer where to store the Octet String value"
+        ],
+        [
+          "maxLenStrBuf",
+          "UINT",
+          "Maximum number of bytes to store in pStrBuf"
+        ],
+        {
+          "Scope": "Inout",
+          "Name": "strLen",
+          "Type": "UINT",
+          "Comment": "number of bytes in value"
+        }
+      ]
+    }
+  ]
+}

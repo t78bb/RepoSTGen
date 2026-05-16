@@ -1,0 +1,216 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_Interpolator2Dir (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/SoftMotion-Function-Blocks/SMC_Interpolator2Dir.html",
+  "page_title": "SMC_Interpolator2Dir (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL SMC_Interpolator2Dir IMPLEMENTS\nSMC_IInterpolator\nThis function block is similar to function block\nSMC_Interpolator\n,\nregarding function and allocation of inputs and outputs,\nbut it is able to interpolate a path also in the opposite direction.\nReverse interpolation:\nIf\ndOverride\nhas a negative value,\nSMC_Interpolator2Dir\ninterpolates in the opposite direction.\nFor example, if this input is assigned to an analog velocity input\nof a hand wheel, you can move forward and backward with the desired\nvelocity.\nThe use of the function block depends on the following preconditions:\nIf input\nbStartAtEnd\nis\nTRUE\n, the path has to be stored\ncompletely in structure\npoqDataIn\n.\nIf the path does not fit completely, you can define how many elements\nof the queue are reserved for moving backward.\n(\nSMC_QueueSetReservedEntries\n)\nFor example, if you want to move 10 elements backwards, you must reserve\n13 (10 + 3) elements (three elements are reserved as a safety buffer).\nThe queue needs to be large enough, because the reserved\nelements are no longer available for the look ahead.\nThe use of\nSMC_Interpolator2Dir\nrequires the additional call\nof\nSMC_Interpolator2Dir_SlowTask\n.  This call must be done in the same\ntask that reads the g-code, performs the path preprocessing, and fills the\nSMC_OutQueue\nof the interpolator.\nReversing of probe movements / G31 is not supported. Going backwards is limited\nto the movement after the last probe movement / G31.\nSee\nSMC_Interpolator\nfor a description of all inputs and outputs.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "bExecute",
+          "Type": "BOOL",
+          "Initial": ""
+        },
+        [
+          "poqDataIn",
+          "POINTER TOSMC_OUTQUEUE",
+          ""
+        ],
+        [
+          "bSlow_Stop",
+          "BOOL",
+          ""
+        ],
+        [
+          "bEmergency_Stop",
+          "BOOL",
+          ""
+        ],
+        [
+          "bWaitAtNextStop",
+          "BOOL",
+          ""
+        ],
+        [
+          "dOverride",
+          "LREAL",
+          "1"
+        ],
+        [
+          "iVelMode",
+          "SMC_INT_VELMODE",
+          "TRAPEZOID"
+        ],
+        [
+          "dwIpoTime",
+          "DWORD",
+          ""
+        ],
+        [
+          "dLastWayPos",
+          "LREAL",
+          ""
+        ],
+        [
+          "bAbort",
+          "BOOL",
+          ""
+        ],
+        [
+          "bSingleStep",
+          "BOOL",
+          ""
+        ],
+        [
+          "bAcknM",
+          "BOOL",
+          ""
+        ],
+        [
+          "bAcknProbe",
+          "BOOL",
+          ""
+        ],
+        [
+          "bQuick_Stop",
+          "BOOL",
+          ""
+        ],
+        [
+          "dQuickDeceleration",
+          "LREAL",
+          "0"
+        ],
+        [
+          "dJerkMax",
+          "LREAL",
+          ""
+        ],
+        [
+          "dQuickStopJerk",
+          "LREAL",
+          ""
+        ],
+        [
+          "bStartAtEnd",
+          "BOOL",
+          ""
+        ],
+        [
+          "bSuppressSystemMFunctions",
+          "BOOL",
+          ""
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bEndOfPath",
+          "Type": "BOOL",
+          "Initial": ""
+        },
+        [
+          "bBusy",
+          "BOOL",
+          ""
+        ],
+        [
+          "bError",
+          "BOOL",
+          ""
+        ],
+        [
+          "wErrorID",
+          "SMC_ERROR",
+          ""
+        ],
+        [
+          "piSetPosition",
+          "SMC_POSINFO",
+          ""
+        ],
+        [
+          "iStatus",
+          "SMC_INT_STATUS",
+          "IPO_INIT"
+        ],
+        [
+          "bWorking",
+          "BOOL",
+          ""
+        ],
+        [
+          "iActObjectSourceNo",
+          "DINT",
+          "-1"
+        ],
+        [
+          "dActObjectLength",
+          "LREAL",
+          ""
+        ],
+        [
+          "dActObjectLengthRemaining",
+          "LREAL",
+          ""
+        ],
+        [
+          "dVel",
+          "LREAL",
+          ""
+        ],
+        [
+          "vecActTangent",
+          "SMC_VECTOR3D",
+          ""
+        ],
+        [
+          "iLastSwitch",
+          "INT",
+          ""
+        ],
+        [
+          "dwSwitches",
+          "DWORD",
+          ""
+        ],
+        [
+          "dWayPos",
+          "LREAL",
+          ""
+        ],
+        [
+          "nDirection",
+          "SMC_Direction",
+          ""
+        ],
+        [
+          "wM",
+          "WORD",
+          ""
+        ],
+        [
+          "udiActProbe",
+          "UDINT",
+          ""
+        ],
+        [
+          "adToolLength",
+          "ARRAY [0..2] OF LREAL",
+          ""
+        ],
+        [
+          "ipo",
+          "SMC_Interpolator",
+          ""
+        ]
+      ]
+    }
+  ]
+}

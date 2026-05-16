@@ -1,0 +1,28 @@
+{
+  "library": "SM3_CNC",
+  "title": "GetValue (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/GSentence/pou-SMC_GWord_Iterator/GetValue.html",
+  "page_title": "SMC_GWord_Iterator.GetValue (METH)",
+  "text": "\nMETHOD GetValue : BOOL\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetValue",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Inout",
+          "Name": "gw",
+          "Type": "SMC_GWORD"
+        }
+      ]
+    }
+  ]
+}

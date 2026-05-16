@@ -1,0 +1,166 @@
+{
+  "library": "BACnet",
+  "title": "BACnetClientSubscribeCOVProperty (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetClient/BACnetClientProperty/BACnetClientSubscribeCOVProperty.html",
+  "page_title": "BACnetClientSubscribeCOVProperty (FB)",
+  "text": "\nFUNCTION_BLOCK PUBLIC FINAL BACnetClientSubscribeCOVProperty EXTENDS\nBACnetClientBase\nCommon Behaviour Model conform (ETrigA) FB to execute a Subscribe-COV-Property-Request in the BACnet-Network.\nIf execution completed successfully and xDone is TRUE, the COV-Property-Subscription was successful.\nIn any other case eStatus and errorResult may hold additional information of what failed.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment",
+        "Inherited from"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "xExecute",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Rising edge: Starts defined operationFALSE: Resets the defined operation after ready condition was reached",
+          "Inherited from": "ETrigATo"
+        },
+        [
+          "xAbort",
+          "BOOL",
+          "",
+          "TRUE: Aborts the operation",
+          "ETrigATo"
+        ],
+        [
+          "udiTimeOut",
+          "UDINT",
+          "",
+          "Max. operating time for executing\n[Âµs], 0: No operating time limit",
+          "ETrigATo"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "xDone",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUE: Ready condition reached",
+          "Inherited from": "ETrigATo"
+        },
+        [
+          "xBusy",
+          "BOOL",
+          "",
+          "TRUE: Operation is running",
+          "ETrigATo"
+        ],
+        [
+          "xError",
+          "BOOL",
+          "",
+          "TRUE: Error condition reached",
+          "ETrigATo"
+        ],
+        [
+          "xAborted",
+          "BOOL",
+          "",
+          "TRUE: Abort condition reached",
+          "ETrigATo"
+        ],
+        {
+          "Scope": "Input",
+          "Name": "dwTargetDeviceNumber",
+          "Type": "DWORD",
+          "Initial": "",
+          "Comment": "The device number of the targeted device in the BACnet-\nNetwork.",
+          "Inherited from": "BACnetClientBase"
+        },
+        [
+          "pTargetDeviceAddress",
+          "POINTER TO\nCmpBACnet.IEC_BACNET_ADDRESS",
+          "0",
+          "Optional: The device address of the targeted device in the BACnet-Network. If\nan adress is given the given device number is ignored.",
+          "BACnetClientBase"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "eStatus",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Initial": "CmpBACnet.IEC_BACNET_STATUS.BACNET_STATUS_OK",
+          "Comment": "If an error occured, the error state.",
+          "Inherited from": "BACnetClientBase"
+        },
+        [
+          "errorResult",
+          "CmpBACnet.IEC_BACNET_ERROR",
+          "STRUCT(tag := CmpBACnet.IEC_BACNET_FAILURE_TYPE._FAILURE_MAX_SIZE)",
+          "If an error occured (this means eStatus <> BACNET_STATUS_OK), whereas the sent BACnet-Request was answered\nwith an specific error information, the latter is contained in this structure.",
+          "BACnetClientBase"
+        ],
+        [
+          "iState",
+          "DINT",
+          "0",
+          "The State in which the FB is during execution:0: No execution, resetted state1: Searching for the Target-Device and a valid address for it2: Sending the BACnet-Request into the network3: Waiting for the answer (if there is one) to the BACnet-Request made in 24: Finishing the call, setting of the output variables",
+          "BACnetClientBase"
+        ],
+        {
+          "Scope": "Input",
+          "Name": "xSubscribe",
+          "Type": "BOOL",
+          "Initial": "TRUE",
+          "Comment": "Describes whether the COV subsciption shall be made/renewed\nor deleted.",
+          "Inherited from": ""
+        },
+        [
+          "xIssueConfirmedNotifications",
+          "BOOL",
+          "",
+          "Describes whether confirmed or unconfirmed COV notification\nshall be send by the COV-Provider.",
+          ""
+        ],
+        [
+          "lifetime",
+          "CmpBACnet.IEC_BACNET_UNSIGNED",
+          "",
+          "Lifetime of the COV-Subscription in seconds. Use 0 for\ninfinite lifetime.",
+          ""
+        ],
+        [
+          "monitoredObjType",
+          "CmpBACnet.IEC_BACNET_OBJECT_TYPE",
+          "",
+          "Object type of the monitored object under the targeted\ndevice.",
+          ""
+        ],
+        [
+          "monitoredObjInst",
+          "CmpBACnet.IEC_BACNET_DWORD",
+          "",
+          "Object instance of the monitored object under the targeted\ndevice.",
+          ""
+        ],
+        [
+          "monitoredPropID",
+          "CmpBACnet.IEC_BACNET_PROPERTY_ID",
+          "",
+          "Property-ID of the property under the targeted object the\nCOV subcription shall be made for.",
+          ""
+        ],
+        [
+          "monitoredPropIndex",
+          "CmpBACnet.IEC_BACNET_SIGNED",
+          "",
+          "Element index in the targeted property for which the COV\nsubscription shall be made for.",
+          ""
+        ],
+        [
+          "covIncrement",
+          "CmpBACnet.IEC_BACNET_REAL",
+          "",
+          "The COV increment the COV subscription shall use.",
+          ""
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "library": "SML_Basic",
+  "title": "MC_ReadStatus_SML (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SML_Basic/Current/PLCopen/MC_ReadStatus_SML.html",
+  "page_title": "MC_ReadStatus_SML (FB)",
+  "text": "\nFUNCTION_BLOCK MC_ReadStatus_SML\nReturns the axis state according to the PLCopen the state diagram for a given axis.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "Axis_REF_SML",
+          "Comment": "Reference to the axis"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Enable",
+          "Type": "BOOL",
+          "Comment": "The status is updated continuously while enabled"
+        },
+        {
+          "Scope": "Output",
+          "Name": "Valid",
+          "Type": "BOOL",
+          "Comment": "The status is valid"
+        },
+        [
+          "Busy",
+          "BOOL",
+          "The FB is not finished and new output values are to be\nexpected"
+        ],
+        [
+          "Error",
+          "BOOL",
+          "An error has occurred"
+        ],
+        [
+          "ErrorID",
+          "SML_ERROR",
+          "The error number"
+        ],
+        [
+          "ErrorStop",
+          "BOOL",
+          "The axis is in stateErrorStop"
+        ],
+        [
+          "Disabled",
+          "BOOL",
+          "The axis is in stateDisabled"
+        ],
+        [
+          "Stopping",
+          "BOOL",
+          "The axis is in stateStopping"
+        ],
+        [
+          "Homing",
+          "BOOL",
+          "The axis is in stateHoming"
+        ],
+        [
+          "Standstill",
+          "BOOL",
+          "The axis is in stateStandstill"
+        ],
+        [
+          "DiscreteMotion",
+          "BOOL",
+          "The axis is in stateDiscreteMotion"
+        ],
+        [
+          "ContinuousMotion",
+          "BOOL",
+          "The axis is in stateContinuousMotion"
+        ]
+      ]
+    }
+  ]
+}

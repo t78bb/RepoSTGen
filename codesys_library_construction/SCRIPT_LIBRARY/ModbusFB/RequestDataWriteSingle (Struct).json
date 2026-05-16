@@ -1,0 +1,23 @@
+{
+  "library": "ModbusFB",
+  "title": "RequestDataWriteSingle (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/ModbusFB/Current/ModbusFB/Structs/RequestDataWriteSingle.html",
+  "page_title": "RequestDataWriteSingle (STRUCT)",
+  "text": "\nTYPE RequestDataWriteSingle : STRUCT\nRepresents a write request for WriteSingleCoil and WriteSingleRegister.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Name": "uiAddress",
+          "Type": "UINT",
+          "Initial": "0"
+        }
+      ]
+    }
+  ]
+}

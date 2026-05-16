@@ -1,0 +1,48 @@
+{
+  "library": "BACnet",
+  "title": "GetWeeklyEntry (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/Schedule/pou-BACnetSchedule/WeeklySchedule/GetWeeklyEntry.html",
+  "page_title": "BACnetSchedule.GetWeeklyEntry (METH)",
+  "text": "\nMETHOD GetWeeklyEntry : CmpBACnet.IEC_BACNET_STATUS\nGets the weekly entry for a specific day dayOfWeek at the index nIndex in the Weekly_Schedule-Property of this BACnet-Object.\nThere are two options how to deal with the content buffer (value).\n1.) the caller provides the content buffer large enough to hold the content.\nThis works just for plain content data, because otherwise the caller can not\ndetermine the needed size of the content buffer a-priori.\nIn case the content is of complex data type, GetWeeklyEntry returns BACNET_STATUS_INVALID_VALUE.\n2.) stack allocated content buffer\nFor this option provide value.buffer.pBuffer = 0 and free the stack allocated content buffer\nafter usage FreeStackAllocatedMemory(value.buffer.pBuffer)\nChoosing one of the options, please be aware, that the Weekly_Schedule-Property of your\nSchedule object might be writable, so clients can add weekly entries of  complex type\neven if your application isnât doing so.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetWeeklyEntry",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "dayOfWeek",
+          "Type": "CmpBACnet.IEC_BACNET_DAY_OF_WEEK",
+          "Comment": "The day of the week for which to get a weekly entry."
+        },
+        [
+          "nIndex",
+          "CmpBACnet.IEC_BACNET_ELEMENT_COUNT",
+          "The 1 based index of the entry of the week day to get."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "tim",
+          "Type": "TIME",
+          "Comment": "The time of the entry after calling the method."
+        },
+        {
+          "Scope": "Inout",
+          "Name": "value",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_CONTENTS",
+          "Comment": "The value of the entry after calling this method.\nThe value.buffer.pBuffer has to have an allocated memory, which fits the dataâs needs (is at least allocated big enough!)!"
+        }
+      ]
+    }
+  ]
+}

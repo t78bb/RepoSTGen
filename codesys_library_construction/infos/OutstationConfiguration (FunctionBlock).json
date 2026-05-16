@@ -1,0 +1,51 @@
+{
+  "library": "DNP3",
+  "title": "OutstationConfiguration (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Outstation/OutstationConfiguration.html",
+  "page_title": "OutstationConfiguration (FB)",
+  "text": "\nFUNCTION_BLOCK ABSTRACT OutstationConfiguration IMPLEMENTS IOutstationConfiguration\nFunction block representing an Outstation configuration.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "address",
+          "Type": "UINT",
+          "Initial": "0",
+          "Comment": "The outstation address."
+        },
+        [
+          "name",
+          "STRING",
+          "",
+          "The outstation name."
+        ],
+        [
+          "validateMaster",
+          "BOOL",
+          "FALSE",
+          "Validate the master address. This allows only the master\nwith âmasterAddressâ a connection."
+        ],
+        [
+          "masterAddress",
+          "UINT",
+          "0",
+          "The master address which is allowed to connect."
+        ],
+        [
+          "enableUnsolicitedResponse",
+          "BOOL",
+          "FALSE",
+          "Enable or disable the unsolicited responses using a default configuration represented by defaults provided by CmpDNP3OutstationSessionConfigUnsolicitedResponse.\nIf disabled the client will not be able to enable them."
+        ]
+      ]
+    }
+  ]
+}

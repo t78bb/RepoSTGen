@@ -1,0 +1,28 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_CalcStartPnt (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/GeoInfo-Help-Functions/SMC_CalcStartPnt.html",
+  "page_title": "SMC_CalcStartPnt (FUN)",
+  "text": "\nFUNCTION SMC_CalcStartPnt : BOOL\nThis function calculates the start point\npiStartPos\nof a\nSMC_GEOINFO\nobject.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SMC_CalcStartPnt",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Input",
+          "Name": "pg",
+          "Type": "POINTER TOSMC_GEOINFO"
+        }
+      ]
+    }
+  ]
+}

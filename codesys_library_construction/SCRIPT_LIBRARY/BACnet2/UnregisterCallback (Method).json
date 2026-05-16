@@ -1,0 +1,32 @@
+{
+  "library": "BACnet2",
+  "title": "UnregisterCallback (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/BACnetServer/pou-IBACnetServer/HooksCallbacks/UnregisterCallback.html",
+  "page_title": "IBACnetServer.UnregisterCallback (METH)",
+  "text": "\nMETHOD UnregisterCallback : CmpBACnet.IEC_BACNET_STATUS\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "UnregisterCallback",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS"
+        },
+        {
+          "Scope": "Input",
+          "Name": "eCallbackType",
+          "Type": "CmpBACnet.IEC_BACNET_CALLBACK_TYPE"
+        },
+        [
+          "itfEvent",
+          "IBACnetEventConsumer"
+        ]
+      ]
+    }
+  ]
+}

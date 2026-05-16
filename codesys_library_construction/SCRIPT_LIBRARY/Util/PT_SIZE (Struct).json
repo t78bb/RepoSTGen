@@ -1,0 +1,28 @@
+{
+  "library": "Util",
+  "title": "PT_SIZE (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/Datatypes/PT_SIZE.html",
+  "page_title": "PT_SIZE (STRUCT)",
+  "text": "\nTYPE PT_SIZE : STRUCT\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "pString",
+          "Type": "POINTER TO BYTE",
+          "Comment": "Pointer to the text"
+        },
+        {
+          "Name": "uiSize",
+          "Type": "UINT",
+          "Comment": "Size of the text"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_CAMSWITCH_TOGGLE_EVENTS (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/Additional/SMC_CAMSWITCH_TOGGLE_EVENTS.html",
+  "page_title": "SMC_CAMSWITCH_TOGGLE_EVENTS (STRUCT)",
+  "text": "\nTYPE SMC_CAMSWITCH_TOGGLE_EVENTS : STRUCT\nThe list of future toggle events of\nSMC_DigitalCamSwitch_HighPrecision\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "a",
+          "Type": "ARRAY\n[1..g_SMC_DIGITAL_CAM_SWITCH_MAX_TOGGLE_EVENTS]\nOFSMC_CAMSWITCH_TOGGLE_EVENT",
+          "Comment": "Array of future toggle events, sorted in ascending order by\nthe switching time."
+        },
+        {
+          "Name": "numEvents",
+          "Type": "UDINT",
+          "Comment": "Number of toggle events stored in the array."
+        }
+      ]
+    }
+  ]
+}

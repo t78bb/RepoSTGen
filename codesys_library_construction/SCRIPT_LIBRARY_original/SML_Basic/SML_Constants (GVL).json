@@ -1,0 +1,75 @@
+{
+  "library": "SML_Basic",
+  "title": "SML_Constants (GVL)",
+  "url": "https://content.helpme-codesys.com/en/libs/SML_Basic/Current/Base/SML_Constants.html",
+  "page_title": "SML_Constants (GVL)",
+  "text": "Additional\nSML_ChangeAxisConfig (FunctionBlock)\nSML_ReinitDrive (FunctionBlock)\nSML_SetOpmode (FunctionBlock)\nSML_StartupDrive (FunctionBlock)\nBase\nAxis_REF_SML (FunctionBlock)\nConfig\nReadStandardConfigParameters (Method)\nReinitAxis (Method)\nError\nSML_ClearFBError (Function)\nSML_ErrorText (Function)\nSML_Language (Enum)\nSML_AXIS_STATE (Enum)\nSML_Constants (GVL)\nSML_ERROR (Enum)\nSML_FBError (Struct)\nSML_Globals (GVL)\nSML_MOVEMENTTYPE (Enum)\nSML_OPMODE (Enum)\nSML_Ramptype (Enum)\nGlobalTextList (GlobalTextList)\nLibrary Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nPLCopen\nMC_Halt_SML (FunctionBlock)\nMC_Home_SML (FunctionBlock)\nMC_MoveAbsolute_SML (FunctionBlock)\nMC_MoveRelative_SML (FunctionBlock)\nMC_MoveVelocity_SML (FunctionBlock)\nMC_Power_SML (FunctionBlock)\nMC_ReadBoolParameter_SML (FunctionBlock)\nMC_ReadParameter_SML (FunctionBlock)\nMC_ReadStatus_SML (FunctionBlock)\nMC_Reset_SML (FunctionBlock)\nMC_Stop_SML (FunctionBlock)\nMC_WriteBoolParameter_SML (FunctionBlock)\nMC_WriteParameter_SML (FunctionBlock)\nVisu_Templates\nHelpers\nTextListForCombobox_SML_MOVEMENTTYPE (TextList)\nTextListForCombobox_SML_OPMODE (TextList)\nStartupDrive\nFile and Project Information\nLibrary Reference\n3SLicense\nLibrary Identification\nLibrary Properties\nCmpApp\nLibrary Identification\nLibrary Properties\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nCmpLog\nLibrary Identification\nLibrary Properties\nCmpSchedule\nLibrary Identification\nLibrary Properties\nComponent Manager\nLibrary Identification\nLibrary Properties\nIoStandard\nLibrary Identification\nLibrary Properties\nSM3_Math\nLibrary Identification\nLibrary Properties\nSM3_Shared\nLibrary Identification\nLibrary Properties\nSM3_StringUtils\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nSysCpuHandling\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysTarget\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nVisuElem3DPath\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElemCamDisplayer\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElemMeter\nLibrary Identification\nLibrary Properties\nVisuElemTextEditor\nLibrary Identification\nLibrary Properties\nVisuElemTrace\nLibrary Identification\nLibrary Properties\nVisuElems\nLibrary Identification\nLibrary Properties\nVisuElemsAlarm\nLibrary Identification\nLibrary Properties\nVisuElemsDateTime\nLibrary Identification\nLibrary Properties\nVisuElemsSpecialControls\nLibrary Identification\nLibrary Properties\nVisuElemsWinControls\nLibrary Identification\nLibrary Properties\nVisuInputs\nLibrary Identification\nLibrary Properties\nVisuNativeControl\nLibrary Identification\nLibrary Properties\nSML_Basic\nDocs\n»\nBase\n»\nSML_Constants (GVL)\nSML_Constants (GVL)\nÂ¶\nInOut:\nScope\nName\nType\nInitial\nConstant\ng_SML_NUMBER_FB_ERRORS\nDINT\n6\ng_SML_NUMBER_OF_SIMULTANEOUS_TELEGRAMS\nDINT\n4\ng_SML_SIZE_CMD_MSG_STORE\nUDINT\n512\ng_SML_CMD_SLOT_STOP\nUDINT\n0\ng_SML_CMD_SLOT_HOME\nUDINT\n1\ng_SML_CMD_SLOT_MOVE\nUDINT\n2\ng_SML_CMD_SLOT_READ\nUDINT\n3\ng_SML_CMD_SLOT_WRITE\nUDINT\n4\ng_SML_CMD_NUM_SLOTS\nUDINT\n5\ng_SML_CW_QUEUE_SIZE\nUDINT\n8\ng_strSoftMotion_SML\nSTRING(16)\nâSoftMotionâ",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Scope": "Constant",
+          "Name": "g_SML_NUMBER_FB_ERRORS",
+          "Type": "DINT",
+          "Initial": "6"
+        },
+        [
+          "g_SML_NUMBER_OF_SIMULTANEOUS_TELEGRAMS",
+          "DINT",
+          "4"
+        ],
+        [
+          "g_SML_SIZE_CMD_MSG_STORE",
+          "UDINT",
+          "512"
+        ],
+        [
+          "g_SML_CMD_SLOT_STOP",
+          "UDINT",
+          "0"
+        ],
+        [
+          "g_SML_CMD_SLOT_HOME",
+          "UDINT",
+          "1"
+        ],
+        [
+          "g_SML_CMD_SLOT_MOVE",
+          "UDINT",
+          "2"
+        ],
+        [
+          "g_SML_CMD_SLOT_READ",
+          "UDINT",
+          "3"
+        ],
+        [
+          "g_SML_CMD_SLOT_WRITE",
+          "UDINT",
+          "4"
+        ],
+        [
+          "g_SML_CMD_NUM_SLOTS",
+          "UDINT",
+          "5"
+        ],
+        [
+          "g_SML_CW_QUEUE_SIZE",
+          "UDINT",
+          "8"
+        ],
+        [
+          "g_strSoftMotion_SML",
+          "STRING(16)",
+          "âSoftMotionâ"
+        ]
+      ]
+    }
+  ]
+}

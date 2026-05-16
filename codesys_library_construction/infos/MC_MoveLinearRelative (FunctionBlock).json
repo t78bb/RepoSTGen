@@ -1,0 +1,179 @@
+{
+  "library": "SM3_Robotics",
+  "title": "MC_MoveLinearRelative (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/Movement/MC_MoveLinearRelative.html",
+  "page_title": "MC_MoveLinearRelative (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL MC_MoveLinearRelative\nThis function block commands a linear movement of an axis group\nby the specified relative distance in the specified coordinate system.\nNote\nThe velocity/acc-/deceleration/jerk of each axis are properties\nof each axis and not specified within this function block.\nSee also inputs\nVelFactor\n,\nAccFactor\nand\nJerkFactor\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "AxisGroup",
+          "Type": "AXIS_GROUP_REF_SM3",
+          "Initial": "",
+          "Comment": "Reference to a group of axes"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Start the motion at rising edge"
+        },
+        [
+          "Distance",
+          "SMC_POS_REF",
+          "",
+          "Relative distance in the specified coordinate system"
+        ],
+        [
+          "Velocity",
+          "LREAL",
+          "",
+          "Maximum path velocity [u/s] for the coordinate system in\nwhich the path is defined. Always positive. Not necessarily reached."
+        ],
+        [
+          "Acceleration",
+          "LREAL",
+          "",
+          "Maximum path acceleration [u/sÂ²]. Always positive. Not\nnecessarily reached."
+        ],
+        [
+          "Deceleration",
+          "LREAL",
+          "",
+          "Maximum path deceleration [u/sÂ²]. Always positive. Not\nnecessarily reached."
+        ],
+        [
+          "Jerk",
+          "LREAL",
+          "",
+          "Maximum path jerk [u/sÂ³]. Always positive. Not necessarily\nreached."
+        ],
+        [
+          "CoordSystem",
+          "SMC_COORD_SYSTEM",
+          "",
+          "Applicable coordinate system"
+        ],
+        [
+          "BufferMode",
+          "MC_BUFFER_MODE",
+          "",
+          "Defines the chronological sequence of the FB relative to the\nprevious block."
+        ],
+        [
+          "TransitionMode",
+          "MC_TRANSITION_MODE",
+          "",
+          "Defined the blending in case of a blending buffer mode"
+        ],
+        [
+          "TransitionParameter",
+          "ARRAY\n[0..(SMC_RCNST.MAX_TRANS_PARAMS\n- 1)] OF LREAL",
+          "",
+          "Parameters for blending"
+        ],
+        [
+          "OrientationMode",
+          "SMC_ORIENTATION_MODE",
+          "",
+          "Determines how the orientation is interpolated."
+        ],
+        [
+          "VelFactor",
+          "LREAL",
+          "1",
+          "The maximum velocity of each axis is multiplied by this factor, which\nmust be in the range ]0, 1]."
+        ],
+        [
+          "AccFactor",
+          "LREAL",
+          "1",
+          "The maximum acceleration of each axis is multiplied by this factor, which\nmust be in the range ]0, 1]."
+        ],
+        [
+          "JerkFactor",
+          "LREAL",
+          "1",
+          "The maximum jerk of each axis is multiplied by this factor, which\nmust be in the range ]0, 1]."
+        ],
+        [
+          "TorqueFactor",
+          "LREAL",
+          "1",
+          "The maximum torque of each axis is multiplied by this factor, which\nmust be in the range ]0, 1].  A dynamic model must have been set usingSMC_GroupSetDynamicsfor this factor to have an effect."
+        ],
+        [
+          "AdditionalAxes",
+          "IAdditionalAxesMovement",
+          "",
+          "If an instance ofSMC_MoveAdditionalAxesAbsoluteorSMC_MoveAdditionalAxesRelativeis assigned to this input, the additional axes of the axis group will perform\nthe specified movement while this function block is active.\nSet to0if no additional axes movement has to be performed or if there are no\nadditional axes."
+        ],
+        [
+          "Name",
+          "STRING",
+          "âMC_MoveLinearRelativeâ",
+          "The name of the movement."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Done",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Commanded end positions reached for all axes"
+        },
+        [
+          "Busy",
+          "BOOL",
+          "",
+          "The FB is not finished"
+        ],
+        [
+          "Active",
+          "BOOL",
+          "",
+          "Indicates that the FB has control on the axis"
+        ],
+        [
+          "CommandAborted",
+          "BOOL",
+          "",
+          "Command is aborted by another command"
+        ],
+        [
+          "CommandAccepted",
+          "BOOL",
+          "",
+          "The command has been accepted by the axis group.\nIf the output becomesTRUE, the function block instance can be used to\ncommand the next movement with a new rising edge onExecute.\nWhile the output isFALSE, keep calling the function block without\na new rising edge ofExecute.\nThe output is reset toFALSEon a falling edge ofExecute."
+        ],
+        [
+          "Error",
+          "BOOL",
+          "",
+          "Signals that an error has occurred within the function block"
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "",
+          "Error identification"
+        ],
+        [
+          "MovementId",
+          "SMC_Movement_Id",
+          "",
+          "The unique identifier of the movement.  Valid ifCommandAcceptedorDoneisTRUE."
+        ]
+      ]
+    }
+  ]
+}

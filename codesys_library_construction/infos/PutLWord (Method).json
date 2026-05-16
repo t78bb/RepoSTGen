@@ -1,0 +1,23 @@
+{
+  "library": "MemoryUtils",
+  "title": "PutLWord (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/MemoryUtils/Current/MemoryUtils/Functionblocks/pou-ByteBuffer/PutLWord.html",
+  "page_title": "ByteBuffer.PutLWord (METH)",
+  "text": "\nMETHOD PutLWord\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "lwLWORD",
+          "Type": "LWORD"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "requirement": "This code is intended to implement a counter that increments, decrements, or resets its value based on input signals.",
+  "provide_code": "FUNCTION_BLOCK FB_Counter\nVAR_INPUT\n\tbUp:BOOL;\t\t\t(*递增信号输入*)\n\tbDown:BOOL;\t\t\t(*递减信号输入*)\n\tbReset:BOOL;\t\t(*复位、清零信号输入*)\nEND_VAR\nVAR_OUTPUT\n\tnValue:INT;\t\t\t(*输出数值*)\nEND_VAR",
+  "function_name": "FB_counter"
+}

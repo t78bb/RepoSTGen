@@ -1,0 +1,28 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_NC_TokenQueue_Completed (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/ReadNCFile2/SMC_NC_TokenQueue_Completed.html",
+  "page_title": "SMC_NC_TokenQueue_Completed (FUN)",
+  "text": "\nFUNCTION SMC_NC_TokenQueue_Completed : BOOL\nReutnrs whether a token queue has been completely\nprocessed, which means that it is empty and has\nEndOfData set.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SMC_NC_TokenQueue_Completed",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Inout Const",
+          "Name": "tokens",
+          "Type": "SMC_TokenQueue"
+        }
+      ]
+    }
+  ]
+}

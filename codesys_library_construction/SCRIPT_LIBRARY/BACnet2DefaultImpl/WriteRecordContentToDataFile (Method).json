@@ -1,0 +1,41 @@
+{
+  "library": "BACnet2DefaultImpl",
+  "title": "WriteRecordContentToDataFile (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2DefaultImpl/Current/BACnetDefaultImpl/Function-Blocks/LoggingObjects/Internal/pou-LogObjectsBase/Files/DataFiles/WriteRecordContentToDataFile.html",
+  "page_title": "LogObjectsBase.WriteRecordContentToDataFile (METH)",
+  "text": "\nMETHOD PROTECTED WriteRecordContentToDataFile : RTS_IEC_RESULT\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "WriteRecordContentToDataFile",
+          "Type": "RTS_IEC_RESULT"
+        },
+        {
+          "Scope": "Input",
+          "Name": "instNumber",
+          "Type": "DWORD"
+        },
+        [
+          "sequence",
+          "CmpBACnet.IEC_BACNET_UNSIGNED"
+        ],
+        [
+          "timeStamp",
+          "CmpBACnet.IEC_BACNET_DATE_TIME"
+        ],
+        {
+          "Scope": "Inout",
+          "Name": "recordContent",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_CONTENTS"
+        }
+      ]
+    }
+  ]
+}

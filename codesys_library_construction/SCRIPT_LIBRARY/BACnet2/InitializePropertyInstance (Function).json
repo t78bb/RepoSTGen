@@ -1,0 +1,62 @@
+{
+  "library": "BACnet2",
+  "title": "InitializePropertyInstance (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/Utilities/BACnetUtilities/BACnetProperties/InitializePropertyInstance.html",
+  "page_title": "InitializePropertyInstance (FUN)",
+  "text": "\nFUNCTION InitializePropertyInstance : BOOL\nInitializes a IEC_BACNET_PROPERTY_INSTANCE with the given parameters and data.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "InitializePropertyInstance",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "ePropAccess",
+          "Type": "CmpBACnet.IEC_BACNET_ACCESS",
+          "Comment": "The access specifier to use for initialization."
+        },
+        [
+          "ePropID",
+          "CmpBACnet.IEC_BACNET_PROPERTY_ID",
+          "The property ID to use for initialization."
+        ],
+        [
+          "ePropDataType",
+          "CmpBACnet.IEC_BACNET_DATA_TYPE",
+          "The data type to use for initialization."
+        ],
+        [
+          "uiNumOfElements",
+          "UDINT",
+          "The number of elements to use for initialization."
+        ],
+        [
+          "uiDataSize",
+          "UDINT",
+          "The data size to use for initialization."
+        ],
+        [
+          "pData",
+          "POINTER TO BYTE",
+          "The data to use for initialization."
+        ],
+        {
+          "Scope": "Inout",
+          "Name": "propInst",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_INSTANCE",
+          "Comment": "After a successfull call the initialized property instance\ndata is written to this structure."
+        }
+      ]
+    }
+  ]
+}

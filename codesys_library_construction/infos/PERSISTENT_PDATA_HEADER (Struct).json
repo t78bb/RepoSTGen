@@ -1,0 +1,53 @@
+{
+  "library": "BACnet2DefaultImpl",
+  "title": "PERSISTENT_PDATA_HEADER (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2DefaultImpl/Current/BACnetDefaultImpl/Structs/PERSISTENT_PDATA_HEADER.html",
+  "page_title": "PERSISTENT_PDATA_HEADER (STRUCT)",
+  "text": "\nTYPE PERSISTENT_PDATA_HEADER : STRUCT\nstructure which contains PERSISTENT data header information\nfor each object as header in the data fileâ¦\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "magicCode",
+          "Type": "UDINT",
+          "Comment": "should be PDATA_HEADER_MAGIC"
+        },
+        {
+          "Name": "version",
+          "Type": "WORD",
+          "Comment": "version field for future use"
+        },
+        {
+          "Name": "headerSize",
+          "Type": "WORD",
+          "Comment": "size of the header structure"
+        },
+        {
+          "Name": "entrySize",
+          "Type": "WORD",
+          "Comment": "size of (W_PDATA_ENTRY)"
+        },
+        {
+          "Name": "objectID",
+          "Type": "CmpBACnet.IEC_BACNET_OBJECT_ID",
+          "Comment": "the object ID"
+        },
+        {
+          "Name": "deviceId",
+          "Type": "CmpBACnet.IEC_BACNET_UNSIGNED",
+          "Comment": "device of object"
+        },
+        {
+          "Name": "clientCreated",
+          "Type": "BOOL",
+          "Comment": "was client created object"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_LINE_3D (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_Data-types/SoftMotion-CNC/SMC_LINE_3D.html",
+  "page_title": "SMC_LINE_3D (STRUCT)",
+  "text": "\nTYPE SMC_LINE_3D : STRUCT\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Name": "P",
+          "Type": "SMC_Vector3D"
+        },
+        {
+          "Name": "v",
+          "Type": "SMC_Vector3D"
+        }
+      ]
+    }
+  ]
+}

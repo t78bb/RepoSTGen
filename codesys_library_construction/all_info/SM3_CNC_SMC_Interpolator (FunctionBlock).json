@@ -1,0 +1,250 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_Interpolator (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/SoftMotion-Function-Blocks/SMC_Interpolator.html",
+  "page_title": "SMC_Interpolator (FB)",
+  "text": "GlobalTextList (GlobalTextList)\nImagePool_cnc_sm3 (ImagePool)\nImages\nLibrary Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nProjektinformationen\nGetBooleanProperty (Function)\nGetCompany (Function)\nGetNumberProperty (Function)\nGetTextProperty (Function)\nGetTextProperty2 (Function)\nGetTitle (Function)\nGetVersion (Function)\nGetVersionProperty (Function)\nSM3_CNC_GetVersion (Function)\nSMC_CNC_LibParams (ParamList)\nSM_CNC_Data types\nFile\nSMC_SINGLEVAR (Struct)\nSMC_TOKENTYPE (Enum)\nSMC_VARLIST (Struct)\nSMC_VARTYPE (Enum)\nSoftMotion CNC\nSMC_ABC_SLOPES_AT_STOP (Enum)\nSMC_ABC_SLOPES_NO_STOP (Enum)\nSMC_ADDAXIS (Enum)\nSMC_AL_STATUS (Enum)\nSMC_CNC_REF (FunctionBlock)\nSMC_DEC_STATUS (Enum)\nSMC_DIRECTION (Enum)\nSMC_GAddress (Alias)\nSMC_GCODEVIEWER_DATA (Struct)\nSMC_GCODE_TEXT (Struct)\nSMC_GCODE_WORD (Struct)\nSMC_GCodeObjectId (Struct)\nSMC_GEOINFO (Struct)\nSMC_GWord (Struct)\nSMC_INT_STATUS (Enum)\nSMC_INT_VELMODE (Enum)\nSMC_LINE_3D (Struct)\nSMC_MOVTYP (Enum)\nSMC_M_PARAMETERS (Struct)\nSMC_OBJECTSPLITTERMODE (Enum)\nSMC_ORI_CONVENTION (Enum)\nSMC_OUTQUEUE (FunctionBlock)\nbFull (Property)\nSMC_PLANE_H (Struct)\nSMC_POSINFO (Struct)\nSMC_SEGMENT (Struct)\nSMC_SEGMENTTYPE (Enum)\nSMC_SMOOTHBSPLINE_MODE (Enum)\nSMC_SMOOTHPATHADDAXMODE (Enum)\nSMC_SMOOTHPATHMODE (Enum)\nSMC_Seg (Struct)\nSMC_TC_STATUS (Enum)\nSMC_TOOLCORRMODE (Enum)\nSMC_VECTOR6D (Struct)\nSM_CNC_POUs\nFile\nReadNCFile\nSMC_ReadNCFile (FunctionBlock)\nStream\nToken\nSMC_ReadNCQueue (FunctionBlock)\nCloseFile (Action)\nhelp functions\nSMC_StringBuffer (FunctionBlock)\nNC2\nGSentence\nSMC_GExpToken_Iterator (FunctionBlock)\nSMC_GJUMP_COMMAND (Enum)\nSMC_GJUMP_TARGET (Union)\nSMC_GSentence (Struct)\nSMC_GSentenceQueue (FunctionBlock)\nSMC_GSentence_DynCall (Struct)\nSMC_GSentence_GWords (Struct)\nSMC_GSentence_GWords_Create (Function)\nSMC_GSentence_Iterator (FunctionBlock)\nSMC_GSentence_Let (Struct)\nSMC_GSentence_SubCall (Struct)\nSMC_GSentence_SubRet (Struct)\nSMC_GSentence_Type (Enum)\nSMC_GSentence_Union (Union)\nSMC_GVarDecl (Struct)\nSMC_GVar_Type (Enum)\nSMC_GWord_Iterator (FunctionBlock)\nSMC_NC_CopySentence (Function)\nSMC_NC_CopySentenceChecked (Function)\nGSentenceJumpBuffer\nSMC_GSentenceJumpBuffer (FunctionBlock)\nInterpreter\nCallstack\nSMC_NCInterpreter (FunctionBlock)\nParser\nExpressions\nSMC_NCTokenParser (FunctionBlock)\nSMC_NC_SourcePosition (Struct)\nSymbolTable\nReadNCFile2\nSMC_IGSentenceModifier (Interface)\nSMC_INCLookup (Interface)\nSMC_ITokenModifier (Interface)\nSMC_NCLookupFile (FunctionBlock)\nSMC_NCNavigator (FunctionBlock)\nSMC_NC_CanProcessTokens (Function)\nSMC_NC_FindProgramFile (Function)\nSMC_NC_PrependDefaults (FunctionBlock)\nSMC_NC_TokenQueue_Completed (Function)\nSMC_ReadNCFile2 (FunctionBlock)\nSMC_ReadNCFromStream (FunctionBlock)\nSoftMotion CNC\nCoordinate Transformations\nSMC_CoordinateTransformation3D (FunctionBlock)\nSMC_DetermineCuboidBearing (FunctionBlock)\nSMC_InvCoordinateTransformation3D (FunctionBlock)\nSMC_TeachCoordinateSystem (FunctionBlock)\nSMC_UnitVectorToRPY (FunctionBlock)\nDirect Axis Control\nSMC_ControlAxisByPos (FunctionBlock)\nSMC_ControlAxisByPosVel (FunctionBlock)\nSMC_ControlAxisByVel (FunctionBlock)\nGCode Viewer\nSMC_GCodeViewer (FunctionBlock)\nGeoInfo Help Functions\nSMC_AdaptHelpMarks (Function)\nSMC_CalcEndPnt (Function)\nSMC_CalcLengthGeo (Function)\nSMC_CalcStartPnt (Function)\nSMC_CutEnd (Function)\nSMC_CutStart (Function)\nSMC_GeoinfoInit (Function)\nSMC_GetAccVec (Function)\nSMC_GetAddAxValue (Function)\nSMC_GetClosestPnt (Function)\nSMC_GetLengthOfPrefix (Function)\nSMC_GetPnt (Function)\nSMC_GetPntPI (Function)\nSMC_GetTanVec (Function)\nSMC_GetTanVec3D (Function)\nSMC_InvertDirection (Function)\nSMC_RampInCorr (Function)\nSMC_RampOutCorr (Function)\nSMC_RecalculateHelpMarks (Function)\nSMC_SingleCorr (Function)\nOutQueue Functions\nSMC_AppendObj (Function)\nSMC_DeleteObj (Function)\nSMC_GetCount (Function)\nSMC_GetHistoryCount (Function)\nSMC_GetLastObj (Function)\nSMC_GetObj (Function)\nSMC_GetObjFromEnd (Function)\nSMC_GetObjFromHistory (Function)\nSMC_OutQueueInit (Function)\nSMC_OutQueueIsSyncing (Function)\nSMC_OutQueue_IsFull (Function)\nSMC_RestoreQueue (Function)\nSMC_SetObj (Function)\nSMC_SetQueueCapacity (Function)\nPosinfo Functions\nSMC_PosInfo_Trf_Inverse (Function)\nSMC_PosInfo_Trf_Mult (Function)\nQueue manipulation\nSMC_QueueSetReservedEntries (FunctionBlock)\nSMC_RotateQueue2D (FunctionBlock)\nSMC_ScaleQueue3D (FunctionBlock)\nSMC_TranslateQueue3D (FunctionBlock)\nSoftMotion Function Blocks\nBlockSearch\nDecoderBuffer\nInterpolator_Help_Functions\nM_Functions\nNCDecoder_Help_Functions\nSMC_AddGCodeState (Struct)\nSMC_AvoidLoop (FunctionBlock)\nSMC_CheckForLimits (FunctionBlock)\nSMC_CheckVelocities (FunctionBlock)\nSMC_ExtendedVelocityChecks (FunctionBlock)\nSMC_Interpolator (FunctionBlock)\nSMC_Interpolator2Dir (FunctionBlock)\nSMC_Interpolator2Dir_SlowTask (FunctionBlock)\nSMC_LimitCircularVelocity (FunctionBlock)\nSMC_LimitDynamics (FunctionBlock)\nSMC_NCDecoder (FunctionBlock)\nSMC_ObjectSplitter (FunctionBlock)\nSMC_ReadAdditionalIpoState (FunctionBlock)\nSMC_RecomputeABCSlopes (FunctionBlock)\nSMC_ReduceVelEndAtCorner (FunctionBlock)\nSMC_RoundPath (FunctionBlock)\nSMC_SegmentAnalyzer (FunctionBlock)\nSMC_SetInterpreterStartPosition (FunctionBlock)\nSMC_SmoothAddAxes (FunctionBlock)\nSMC_SmoothBSpline (FunctionBlock)\nSMC_SmoothMerge (FunctionBlock)\nSMC_SmoothPath (FunctionBlock)\nSMC_ToolCorr (FunctionBlock)\nSMC_ToolLengthCorr (FunctionBlock)\nSMC_ToolRadiusCorr (FunctionBlock)\nSMC_XInterpolator (FunctionBlock)\nSM_Trafo_Data types\nSMC_ArticulatedRobot_6DOF_J0_State (Enum)\nSMC_ArticulatedRobot_6DOF_J1_State (Enum)\nSMC_ArticulatedRobot_6DOF_J4_State (Enum)\nSMC_TrafoConfig_4AxisPalletizer (Struct)\nSMC_TrafoConfig_ArticulatedRobot_6DOF (Struct)\nSMC_TrafoResult_4AxisPalletizer (Enum)\nSMC_TrafoResult_ArticulatedRobot_6DOF (Enum)\nSMC_VECTORDIR (Enum)\nSM_Trafo_POUs\nForward and inverse transformation\nSMC_TRAFOV_\nSoftMotion Transformations\nGantry systems\nParallel Systems\nRobot Kinematiks\nScara System\nWrapper\nadditional FBs\nVisu_Templates\nFile\nCNC\nSM_CNC_Visualizations\nFBs\nCNC\nDirect Axis Control\nTranslation & Rotation & Scaling\nhelp visu\nSM_Trafo_Visualizations\nTrafo templates\nGantry\nParallel\nRobot\nScara\nVisu_Templates_New\nFramed Visu Helpers\nTextListForCombobox_MC_DIRECTION (TextList)\nTextListForCombobox_SMC_ABC_SLOPES_AT_STOP (TextList)\nTextListForCombobox_SMC_ABC_SLOPES_NO_STOP (TextList)\nTextListForCombobox_SMC_AL_STATUS (TextList)\nTextListForCombobox_SMC_DEC_STATUS (TextList)\nTextListForCombobox_SMC_DIRECTION (TextList)\nTextListForCombobox_SMC_ERROR (TextList)\nTextListForCombobox_SMC_INT_STATUS (TextList)\nTextListForCombobox_SMC_INT_VELMODE (TextList)\nTextListForCombobox_SMC_ORI_CONVENTION (TextList)\nTextListForCombobox_SMC_SMOOTHBSPLINE_MODE (TextList)\nTextListForCombobox_SMC_SMOOTHPATHADDAXMODE (TextList)\nTextListForCombobox_SMC_SMOOTHPATHMODE (TextList)\nTextListForCombobox_SMC_TC_STATUS (TextList)\nTextListForCombobox_SMC_TOOLCORRMODE (TextList)\nFile and Project Information\nLibrary Reference\n3SLicense\nLibrary Identification\nLibrary Properties\nBase Interfaces\nLibrary Identification\nLibrary Properties\nCmpLog\nLibrary Identification\nLibrary Properties\nFloatingPointUtils\nLibrary Identification\nLibrary Properties\nMatrix\nLibrary Identification\nLibrary Properties\nSM3_Basic\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nSM3_RBase\nLibrary Identification\nLibrary Properties\nSM3_Shared\nLibrary Identification\nLibrary Properties\nSM3_Transformation\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nSysFile\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysTarget\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nVisuElem3DPath\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElemCamDisplayer\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElemMeter\nLibrary Identification\nLibrary Properties\nVisuElemTextEditor\nLibrary Identification\nLibrary Properties\nVisuElemTrace\nLibrary Identification\nLibrary Properties\nVisuElems\nLibrary Identification\nLibrary Properties\nVisuElemsAlarm\nLibrary Identification\nLibrary Properties\nVisuElemsDateTime\nLibrary Identification\nLibrary Properties\nVisuElemsSpecialControls\nLibrary Identification\nLibrary Properties\nVisuElemsWinControls\nLibrary Identification\nLibrary Properties\nVisuInputs\nLibrary Identification\nLibrary Properties\nVisuNativeControl\nLibrary Identification\nLibrary Properties\nSM3_CNC\nDocs\n»\nSM_CNC_POUs\n»\nSoftMotion\nCNC\n»\nSoftMotion\nFunction\nBlocks\n»\nSMC_Interpolator (FB)\nSMC_Interpolator (FB)\nÂ¶\nFUNCTION_BLOCK SMC_Interpolator IMPLEMENTS\nSMC_IInterpolator\nThis function block is used to convert a continuous path described\nby\nSMC_GEOINFO\nobjects into discrete path position points\ntaking into account a defined velocity profile and time pattern.\nAfterwards, these position points will typically be transformed by\nthe IEC-program (e.g. to drive-axis-positions) and sent to the drives.\nNote\nAt the end of a path run, the input path queue is empty.\nIf you want to process the same outline once again, you either have to\ntransform the CNC program via decoder and path preprocessing modules\nto a\nSMC_OUTQUEUE\nstructure, or you have to use the function block\nSMC_RestoreQueue\n(also part of SM3_CNC). This is only possible if\nthe path queue is big enough to hold the complete path.\nInOut:\nScope\nName\nType\nInitial\nComment\nInput\nbExecute\nBOOL\nExecution starts on the rising edge.\npoqDataIn\nPOINTER TO\nSMC_OUTQUEUE\nThis variable points to the\nSMC_OUTQUEUE\nstructure object,\nwhich contains the\nSMC_GEOINFO\nobjects of the path;\ntypically it points to the output\npoqDataOut\nof\nSMC_CheckVelocities\n.\nbSlow_Stop\nBOOL\nIf this variable is set to\nFALSE\n, the path will be passed non-stop.\nOtherwise, the\nSMC_Interpolator\nwill be caused to reduce the\nvelocity to 0 according to the defined velocity profile (\nbyVelMode\n),\nand the maximum delay of the current\nSMC_GEOINFO\nobject\n(\ndDecel\n, see below) and to wait until\nbSlow_Stop\nwill be reset to\nFALSE\n.\nbEmergency_Stop\nBOOL\nAs soon as this input gets\nTRUE\n, the\nSMC_Interpolator\nwill cause an immediate stop, this means that the position\nwill be retained. Hence, the velocity will be set to 0 immediately.\nbWaitAtNextStop\nBOOL\nAs long as this variable is\nFALSE\n(default), the path\nis passed non-stop.\nOtherwise, the\nSMC_Interpolator\nwill be caused to retain\nthe position at the next regular stop this means at position points\nwhere the velocity is 0, typically at path angles and to pause until\nbWaitAtNextStop\nwill be reset to\nFALSE\n.\ndOverride\nLREAL\n1\nThis variable can be used to handle the override.\nThe active override is determined by\nMAX(0,\ndOverride)\n.\nThe scheduled velocity of the particular objects will get scaled\nby\ndOverride\n; thus the scheduled velocity can be increased\nresp. reduced in online mode.\nFor example\ndOverride=1\n(default) effects that the\nprogrammed scheduled velocities will be executed, whereas\ndOverride=2\nwould double them.\nPlease regard: The override can be modified at any time,\nbut the modification will only be applied, if no acceleration\nor deceleration is currently in progress.\niVelMode\nSMC_INT_VELMODE\nTRAPEZOID\nThis input defines the velocity profile as defined in\nSMC_INT_VELMODE\n.\ndwIpoTime\nDWORD\nThis variable has to be set for each call.\nIt represents the cycle time in Î¼sec.\ndLastWayPos\nLREAL\nThis input allows the user to measure the stretch of the\npath that is racked out by the interpolator.\nOutput\ndWayPos\nis the sum of\ndLastWayPos\nand\nthe distance covered within the current cycle.\nIf\ndLastWayPos\nis set equal to output\ndWayPos\n,\ndWayPos\nwill always be incremented by the current path segment\nand the result will be the total length of the path travelled.\ndLastWayPos\ncan be (re)set to 0 or to a different value\nat any time.\nbAbort\nBOOL\nThis input set to\nTRUE\nwill abort the function block and reset the\noutputs. A rising edge of\nbExecute\nis required to start the\ninterpolator again after aborting.\nbSingleStep\nBOOL\nThis input effects that the interpolator will stop at the transition\nbetween two path objects (also at transitions with identical tangent)\nfor the duration of one cycle.\nIf\nbSingleStep\nis set to\nTRUE\nduring the move, the interpolator\nwill stop at the end of that object, that can be reached without\nexceeding the scheduled deceleration value.\nIf the interpolator should stop at the next possible stop position\n(i.e. at points where the velocity is 0),\nbWaitAtNextStop\nmust be used.\nbAcknM\nBOOL\nThis input can be used to acknowledge an M-function.\nIf the input is\nTRUE\n, the output\nwM\nwill be cleared and the\npath processing will be continued.\nbAcknProbe\nBOOL\nThis input is used to acknowledge a PROBE-movement such as G31.\nOn a rising edge, the output\nudiActiveProbe\nwill be cleared and the\npath processing will be continued.\nMake sure to stop the interpolator (bSlow_Stop/bQuick_Stop) and to copy\nthe actual position of the machine to\nSMC_NCInterpreter\n.piStartPosition\nbefore acknowledging the probe.\nbQuick_Stop\nBOOL\nIf this input is\nTRUE\n, the interpolator will reduce the\nvelocity to zero, until\nbQuick_Stop\nis reset to\nFALSE\n.\nThe reduction is done according to the defined velocity profile\n(\nbyVelMode\n) and the deceleration given by the maximum\nof\ndQuickDeceleration\nand the delay currently programmed in the path.\nIf a quadratic velocity mode is used, then the jerk is limited by\nmax(dJerkMax,\ndQuickStopJerk)\n.\ndQuickDeceleration\nLREAL\nDeceleration value used for\nbQuick_Stop\ndJerkMax\nLREAL\nMagnitude of the maximum allowed jerk: Itâs only used for the\nquadratic velocity modes. It must be positive and can be changed\nwhile the interpolator is running. The value will become active\n- at the start of the interpolator\n- or once a standstill has been reached (between two G-code commands,\ndue to a stop or caused by a\ndOverride\nvalue of 0).\ndQuickStopJerk\nLREAL\nThe magnitude of the jerk is used by a quick stop for ramping down\nthe acceleration if one of the quadratic velocity modes is selected.\nbSuppressSystemMFunctions\nBOOL\nIf this option is set, then the output wM will not be set\nfor internal M-functions created by G75 or G4 commands.\nOutput\nbDone\nBOOL\nThis variable will be set to\nTRUE\nas soon as the\ninput data (\npoqDataIn\n) has been processed completely.\nThe function block will not perform any further actions\nuntil a reset is done.\nIf input\nbExecute\nis\nFALSE\n,\nbDone\nwill be reset to\nFALSE\n.\nbBusy\nBOOL\nTRUE\nwhile execution of function block is not finished\nbError\nBOOL\nSignals that an error has occurred within the function block\nwErrorID\nSMC_ERROR\nError identification\npiSetPosition\nSMC_POSINFO\nIt reflects the calculated set position and contains the cartesian coordinates\nof the next position as well as the state of the additional axis.\nSMC_POSINFO\niStatus\nSMC_INT_STATUS\nIPO_INIT\nThis enumeration variable reflects the current status of the function block defined in\nSMC_INT_STATUS\n.\nPossible states:\nIPO_UNKNOWN\n(0): internal state that may not occur after a complete pass of the\nSMC_Interpolator\n.\nIPO_INIT\n(1): initialization state; poqDataIn is not filled completely.\nIPO_ACCEL\n(2): accelerating\nIPO_CONSTANT\n(3): moving with constant velocity\nIPO_DECEL\n(4): decelerating\nIPO_FINISHED\n(5): path is finished.\nAny further\nSMC_GEOINFO\nobjects arriving afterwards in\npoqDataIn\nwill not be processed.\nIPO_WAIT\n(6): waiting because one of the following situations has occurred:\nbEmergency_Stop\n=\nTRUE\nbSlow_Stop\n=\nTRUE\nand\ndVel\n=\n0\nbWait_At_Next_Stop\n=\nTRUE\nand\ndVel\n=\n0\nAn M-Function has been reached and not yet acknowledged\nIPO_INCREASING_ACCEL\n(7): increasing acceleration\nIPO_DECREASING_ACCEL\n(8): decreasing acceleration\nIPO_INCREASING_DECEL\n(9): increasing deceleration\nIPO_DECREASING_DECEL\n(10): decreasing deceleration\nbWorking\nBOOL\nThis output is intended to be connected to input\nbEnable\nof\nSMC_ControlAxisByPos\n.\nIt will be\nTRUE\nif (and only if) the processing of the list\nhas been started and not yet finished\niActObjectSourceNo\nDINT\n-1\nValue of member\niSourceLine_No\nof active\nSMC_GEOINFO\nobject of\npoqDataIn\n-queue.\nIf the\nSMC_Interpolator\ndoes not work (any longer)\n(\nbWorking\n=\nFALSE\n), the value is set to â-1â.\ndActObjectLength\nLREAL\nThe length of the current object; valid if\nbWorking\n=\nTRUE\n.\ndActObjectLengthRemaining\nLREAL\nThe remaning length of the current object; valid if\nbWorking\n=\nTRUE\n.\ndVel\nLREAL\nThis variable contains the current path velocity.\nvecActTangent\nSMC_VECTOR3D\nThis structure contains the path tangent, a unit vector.\niLastSwitch\nINT\nThis output contains the number of the last switch passed.\nNote: If several switches have been passed within one cycle,\nonly the last one will be mentioned.\ndwSwitches\nDWORD\nThis\nDWORD\ndescribes the current switch status of all switches 1 32.\nBit0 of the\nDWORD\nrepresents switch1, Bit31 represents switch32.\nIn contrast to\niLastSwitch\n, this bit-field will also hold\nmultiple switches in one cycle.\ndWayPos\nLREAL\nSee input\ndLastWAyPos\n.\nwM\nWORD\nIf the interpolator passes an M-function, this output will be set to\nthe value associated to the M-function. The interpolator\nwill stop until the M-function is acknowledged by input\nbAcknM\n.\nudiActProbe\nUDINT\nThe number of the active probe command (G31), or zero if no\nprobe is active.\nadToolLength\nARRAY [0..2] OF LREAL\nParameters for tool length compensation (set by G43 I/J/K)\nAct_Object\nPOINTER TO\nSMC_GEOINFO\nPointer to the currently interpolated path element. Possibly\n0.\nactObjectId\nSMC_GCodeObjectId\nThe identifier of the currently interpolated path object.\nMethods:\nGetCurrentObject\nHandleStop\nStructure:\nGetCurrentObject (Method)\nSMC_CheckForBlindPos (Action)\nSMC_DoBeforeLeave (Action)\nSMC_InterpolatorInit (Action)\nSMC_InterpolatorNewObject (Action)\nSMC_IsResegmentationDesired (Action)\nSMC_ResetOutputs (Action)\nToplevel\nHandleStop (Method)",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "bExecute",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Execution starts on the rising edge."
+        },
+        [
+          "poqDataIn",
+          "POINTER TOSMC_OUTQUEUE",
+          "",
+          "This variable points to theSMC_OUTQUEUEstructure object,\nwhich contains theSMC_GEOINFOobjects of the path;\ntypically it points to the outputpoqDataOutofSMC_CheckVelocities."
+        ],
+        [
+          "bSlow_Stop",
+          "BOOL",
+          "",
+          "If this variable is set toFALSE, the path will be passed non-stop.\nOtherwise, theSMC_Interpolatorwill be caused to reduce the\nvelocity to 0 according to the defined velocity profile (byVelMode),\nand the maximum delay of the currentSMC_GEOINFOobject\n(dDecel, see below) and to wait untilbSlow_Stopwill be reset toFALSE."
+        ],
+        [
+          "bEmergency_Stop",
+          "BOOL",
+          "",
+          "As soon as this input getsTRUE, theSMC_Interpolatorwill cause an immediate stop, this means that the position\nwill be retained. Hence, the velocity will be set to 0 immediately."
+        ],
+        [
+          "bWaitAtNextStop",
+          "BOOL",
+          "",
+          "As long as this variable isFALSE(default), the path\nis passed non-stop.\nOtherwise, theSMC_Interpolatorwill be caused to retain\nthe position at the next regular stop this means at position points\nwhere the velocity is 0, typically at path angles and to pause untilbWaitAtNextStopwill be reset toFALSE."
+        ],
+        [
+          "dOverride",
+          "LREAL",
+          "1",
+          "This variable can be used to handle the override.\nThe active override is determined byMAX(0,dOverride).\nThe scheduled velocity of the particular objects will get scaled\nbydOverride; thus the scheduled velocity can be increased\nresp. reduced in online mode.\nFor exampledOverride=1(default) effects that the\nprogrammed scheduled velocities will be executed, whereasdOverride=2would double them.Please regard: The override can be modified at any time,\nbut the modification will only be applied, if no acceleration\nor deceleration is currently in progress."
+        ],
+        [
+          "iVelMode",
+          "SMC_INT_VELMODE",
+          "TRAPEZOID",
+          "This input defines the velocity profile as defined inSMC_INT_VELMODE."
+        ],
+        [
+          "dwIpoTime",
+          "DWORD",
+          "",
+          "This variable has to be set for each call.\nIt represents the cycle time in Î¼sec."
+        ],
+        [
+          "dLastWayPos",
+          "LREAL",
+          "",
+          "This input allows the user to measure the stretch of the\npath that is racked out by the interpolator.\nOutputdWayPosis the sum ofdLastWayPosand\nthe distance covered within the current cycle.\nIfdLastWayPosis set equal to outputdWayPos,dWayPoswill always be incremented by the current path segment\nand the result will be the total length of the path travelled.dLastWayPoscan be (re)set to 0 or to a different value\nat any time."
+        ],
+        [
+          "bAbort",
+          "BOOL",
+          "",
+          "This input set toTRUEwill abort the function block and reset the\noutputs. A rising edge ofbExecuteis required to start the\ninterpolator again after aborting."
+        ],
+        [
+          "bSingleStep",
+          "BOOL",
+          "",
+          "This input effects that the interpolator will stop at the transition\nbetween two path objects (also at transitions with identical tangent)\nfor the duration of one cycle.\nIfbSingleStepis set toTRUEduring the move, the interpolator\nwill stop at the end of that object, that can be reached without\nexceeding the scheduled deceleration value.If the interpolator should stop at the next possible stop position\n(i.e. at points where the velocity is 0),bWaitAtNextStopmust be used."
+        ],
+        [
+          "bAcknM",
+          "BOOL",
+          "",
+          "This input can be used to acknowledge an M-function.\nIf the input isTRUE, the outputwMwill be cleared and the\npath processing will be continued."
+        ],
+        [
+          "bAcknProbe",
+          "BOOL",
+          "",
+          "This input is used to acknowledge a PROBE-movement such as G31.\nOn a rising edge, the outputudiActiveProbewill be cleared and the\npath processing will be continued.\nMake sure to stop the interpolator (bSlow_Stop/bQuick_Stop) and to copy\nthe actual position of the machine toSMC_NCInterpreter.piStartPosition\nbefore acknowledging the probe."
+        ],
+        [
+          "bQuick_Stop",
+          "BOOL",
+          "",
+          "If this input isTRUE, the interpolator will reduce the\nvelocity to zero, untilbQuick_Stopis reset toFALSE.\nThe reduction is done according to the defined velocity profile\n(byVelMode) and the deceleration given by the maximum\nofdQuickDecelerationand the delay currently programmed in the path.\nIf a quadratic velocity mode is used, then the jerk is limited bymax(dJerkMax,dQuickStopJerk)."
+        ],
+        [
+          "dQuickDeceleration",
+          "LREAL",
+          "",
+          "Deceleration value used forbQuick_Stop"
+        ],
+        [
+          "dJerkMax",
+          "LREAL",
+          "",
+          "Magnitude of the maximum allowed jerk: Itâs only used for the\nquadratic velocity modes. It must be positive and can be changed\nwhile the interpolator is running. The value will become active\n- at the start of the interpolator\n- or once a standstill has been reached (between two G-code commands,due to a stop or caused by adOverridevalue of 0)."
+        ],
+        [
+          "dQuickStopJerk",
+          "LREAL",
+          "",
+          "The magnitude of the jerk is used by a quick stop for ramping down\nthe acceleration if one of the quadratic velocity modes is selected."
+        ],
+        [
+          "bSuppressSystemMFunctions",
+          "BOOL",
+          "",
+          "If this option is set, then the output wM will not be set\nfor internal M-functions created by G75 or G4 commands."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bDone",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "This variable will be set toTRUEas soon as the\ninput data (poqDataIn) has been processed completely.\nThe function block will not perform any further actions\nuntil a reset is done.\nIf inputbExecuteisFALSE,bDonewill be reset toFALSE."
+        },
+        [
+          "bBusy",
+          "BOOL",
+          "",
+          "TRUEwhile execution of function block is not finished"
+        ],
+        [
+          "bError",
+          "BOOL",
+          "",
+          "Signals that an error has occurred within the function block"
+        ],
+        [
+          "wErrorID",
+          "SMC_ERROR",
+          "",
+          "Error identification"
+        ],
+        [
+          "piSetPosition",
+          "SMC_POSINFO",
+          "",
+          "It reflects the calculated set position and contains the cartesian coordinates\nof the next position as well as the state of the additional axis.SMC_POSINFO"
+        ],
+        [
+          "iStatus",
+          "SMC_INT_STATUS",
+          "IPO_INIT",
+          "This enumeration variable reflects the current status of the function block defined inSMC_INT_STATUS.Possible states:IPO_UNKNOWN(0): internal state that may not occur after a complete pass of theSMC_Interpolator.IPO_INIT(1): initialization state; poqDataIn is not filled completely.IPO_ACCEL(2): acceleratingIPO_CONSTANT(3): moving with constant velocityIPO_DECEL(4): deceleratingIPO_FINISHED(5): path is finished.\nAny furtherSMC_GEOINFOobjects arriving afterwards inpoqDataInwill not be processed.IPO_WAIT(6): waiting because one of the following situations has occurred:bEmergency_Stop=TRUEbSlow_Stop=TRUEanddVel=0bWait_At_Next_Stop=TRUEanddVel=0An M-Function has been reached and not yet acknowledgedIPO_INCREASING_ACCEL(7): increasing accelerationIPO_DECREASING_ACCEL(8): decreasing accelerationIPO_INCREASING_DECEL(9): increasing decelerationIPO_DECREASING_DECEL(10): decreasing deceleration"
+        ],
+        [
+          "bWorking",
+          "BOOL",
+          "",
+          "This output is intended to be connected to inputbEnableofSMC_ControlAxisByPos.It will beTRUEif (and only if) the processing of the list\nhas been started and not yet finished"
+        ],
+        [
+          "iActObjectSourceNo",
+          "DINT",
+          "-1",
+          "Value of memberiSourceLine_Noof activeSMC_GEOINFOobject ofpoqDataIn-queue.\nIf theSMC_Interpolatordoes not work (any longer)\n(bWorking=FALSE), the value is set to â-1â."
+        ],
+        [
+          "dActObjectLength",
+          "LREAL",
+          "",
+          "The length of the current object; valid ifbWorking=TRUE."
+        ],
+        [
+          "dActObjectLengthRemaining",
+          "LREAL",
+          "",
+          "The remaning length of the current object; valid ifbWorking=TRUE."
+        ],
+        [
+          "dVel",
+          "LREAL",
+          "",
+          "This variable contains the current path velocity."
+        ],
+        [
+          "vecActTangent",
+          "SMC_VECTOR3D",
+          "",
+          "This structure contains the path tangent, a unit vector."
+        ],
+        [
+          "iLastSwitch",
+          "INT",
+          "",
+          "This output contains the number of the last switch passed.Note: If several switches have been passed within one cycle,\nonly the last one will be mentioned."
+        ],
+        [
+          "dwSwitches",
+          "DWORD",
+          "",
+          "ThisDWORDdescribes the current switch status of all switches 1 32.\nBit0 of theDWORDrepresents switch1, Bit31 represents switch32.\nIn contrast toiLastSwitch, this bit-field will also hold\nmultiple switches in one cycle."
+        ],
+        [
+          "dWayPos",
+          "LREAL",
+          "",
+          "See inputdLastWAyPos."
+        ],
+        [
+          "wM",
+          "WORD",
+          "",
+          "If the interpolator passes an M-function, this output will be set to\nthe value associated to the M-function. The interpolator\nwill stop until the M-function is acknowledged by inputbAcknM."
+        ],
+        [
+          "udiActProbe",
+          "UDINT",
+          "",
+          "The number of the active probe command (G31), or zero if no\nprobe is active."
+        ],
+        [
+          "adToolLength",
+          "ARRAY [0..2] OF LREAL",
+          "",
+          "Parameters for tool length compensation (set by G43 I/J/K)"
+        ],
+        [
+          "Act_Object",
+          "POINTER TOSMC_GEOINFO",
+          "",
+          "Pointer to the currently interpolated path element. Possibly\n0."
+        ],
+        [
+          "actObjectId",
+          "SMC_GCodeObjectId",
+          "",
+          "The identifier of the currently interpolated path object."
+        ]
+      ]
+    }
+  ]
+}

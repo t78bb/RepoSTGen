@@ -1,0 +1,23 @@
+{
+  "library": "BACnet2",
+  "title": "PostRegister (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/BACnetServerPlugin/pou-IBACnetServerPlugin/PostRegister.html",
+  "page_title": "IBACnetServerPlugin.PostRegister (METH)",
+  "text": "\nMETHOD PostRegister : UDINT\nInitialization, gets called during\nBACnetServer.RegisterPlugin\nafter application service hooks/callbacks are registered.\nReturn CmpErrors.Errors.ERR_OK if successfully.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "PostRegister",
+          "Type": "UDINT"
+        }
+      ]
+    }
+  ]
+}

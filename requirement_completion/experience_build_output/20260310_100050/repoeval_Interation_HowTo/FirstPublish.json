@@ -1,0 +1,17 @@
+{
+  "模糊点列表": [
+    {
+      "模糊点类型": "变量初始化与默认值",
+      "模糊点描述": "原始需求未明确指定Payload的默认值",
+      "差异细节": "模型生成代码中PayloadString默认值为'Hello from Codesys'，而参考代码中默认值为'testPayload'",
+      "精准需求描述": "初始化PayloadString变量时，应设置默认值为'testPayload'"
+    },
+    {
+      "模糊点类型": "函数参数",
+      "模糊点描述": "原始需求未明确是否需要使用PublishAsString和MRetain参数",
+      "差异细节": "模型生成代码未使用PublishAsString和MRetain参数，而参考代码中使用了这两个参数，其中PublishAsString设置为TRUE，MRetain设置为FALSE",
+      "精准需求描述": "在调用publisher函数时，应设置PublishAsString为TRUE和MRetain为FALSE"
+    }
+  ],
+  "case_id": "repoeval_Interation_HowTo/FirstPublish"
+}

@@ -1,0 +1,28 @@
+{
+  "library": "BACnet2DefaultImpl",
+  "title": "ObjectId (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2DefaultImpl/Current/BACnetDefaultImpl/Function-Blocks/LoggingObjects/Internal/pou-LogObjectsBase/ObjectHandling/ObjectId.html",
+  "page_title": "LogObjectsBase.ObjectId (METH)",
+  "text": "\nMETHOD PROTECTED ObjectId : CmpBACnet.IEC_BACNET_OBJECT_ID\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "ObjectId",
+          "Type": "CmpBACnet.IEC_BACNET_OBJECT_ID"
+        },
+        {
+          "Scope": "Input",
+          "Name": "instanceNumber",
+          "Type": "DWORD"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "library": "SM3_Drive_ETC",
+  "title": "SMC_ETC_InterpolateAxisPosition (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Drive_ETC/Current/SMC_ETC_InterpolateAxisPosition.html",
+  "page_title": "SMC_ETC_InterpolateAxisPosition (FUN)",
+  "text": "\nFUNCTION SMC_ETC_InterpolateAxisPosition : SMC_Error\nDetermines the axis position at a given time.\nThe time is given as a EtherCAT distributed clock (DC) system time.\nNote\nThe actual position at\nTimestamp_ns\n, optionally adjusted by the\nDelay\n,\nhas to be contained in the act value buffer of the\nAxis\n.  The size of this\nbuffer can be adjusted using the\ngc_SMC_ACT_VALUE_BUFFER_SIZE_BASE2_EXP\nlibrary parameter of SM3_Basic.\nIf the timestamp is too old (not found in the act value buffer) or too new\n(more than one task interval higher than the timestamp of the latest\nreceived actual position), the error SMC_INVALID_TIMESTAMP is returned.\nThe actual velocity is used if (and only if)  it is transmitted by PDO.\nIn this case, cubic interpolation is used, otherwise linear interpolation.\nFor increased accuracy, transmitting the actual velocity is recommended.\nIf the underlying EtherCAT stack does not support querying the DC\nsystem time, the error SMC_NOT_IMPLEMENTED will be reported.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout Const",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "Timestamp_ns",
+          "Type": "ULINT",
+          "Initial": "",
+          "Comment": "The timestamp at which the axis position is requested.\nThis is the EtherCAT DC system time in nanoseconds.\nThe timestamp must lie within the time span between the oldest available\nactual position (depending on the buffer size; see above) and the timestamp\nof the most recently received actual position plus one task cycle."
+        },
+        [
+          "Delay",
+          "LREAL",
+          "0.0",
+          "Optional delay in seconds that is subtracted from the timestamp.\nNegative values are not supported."
+        ],
+        {
+          "Scope": "Return",
+          "Name": "SMC_ETC_InterpolateAxisPosition",
+          "Type": "SMC_Error",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Scope": "Output",
+          "Name": "Position",
+          "Type": "LREAL",
+          "Initial": "",
+          "Comment": "The position of the axis at the given timestamp."
+        }
+      ]
+    }
+  ]
+}

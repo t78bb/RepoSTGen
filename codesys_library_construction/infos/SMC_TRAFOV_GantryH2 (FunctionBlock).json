@@ -1,0 +1,66 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_TRAFOV_GantryH2 (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_Trafo_POUs/SoftMotion-Transformations/Gantry-systems/SMC_TRAFOV_GantryH2.html",
+  "page_title": "SMC_TRAFOV_GantryH2 (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_TRAFOV_GantryH2\nReverse transformation fortwo-dimensional H-gantry systems,\ntaking into account the path velocity and\npath direction as control variables for the axis.\nNote\nFor detailed information on transformations\nsee overview to\nSM_Trafo_POUs\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "pi",
+          "Type": "SMC_PosInfo",
+          "Comment": "Target position vector (x,y), output of interpolator"
+        },
+        [
+          "dVel",
+          "LREAL",
+          "Path velocity, output of interpolator"
+        ],
+        [
+          "v",
+          "SMC_VECTOR3D",
+          "Tangent path vector, output of interpolator"
+        ],
+        [
+          "dOffsetX",
+          "LREAL",
+          "Additional offset for x-axis"
+        ],
+        [
+          "dOffsetY",
+          "LREAL",
+          "Additional offset for y-axis"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "da",
+          "Type": "LREAL",
+          "Comment": "Resulting position of axis a"
+        },
+        [
+          "dva",
+          "LREAL",
+          "Resulting velocity of axis a"
+        ],
+        [
+          "db",
+          "LREAL",
+          "Resulting position of axis b"
+        ],
+        [
+          "dvb",
+          "LREAL",
+          "Resulting velocity of axis b"
+        ]
+      ]
+    }
+  ]
+}

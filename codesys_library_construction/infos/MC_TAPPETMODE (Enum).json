@@ -1,0 +1,33 @@
+{
+  "library": "SM3_Basic",
+  "title": "MC_TAPPETMODE (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/DataTypes/Additional/MC_TAPPETMODE.html",
+  "page_title": "MC_TAPPETMODE (ENUM)",
+  "text": "\nTYPE MC_TAPPETMODE :\nThis enum specifies the source of the position for tappets (auto, set position, actual position).\nIt is used at the function block\nMC_DigitalCAMSwitch\n. In case of auto detection,\nthe function block decides depending on the control state of the drive if it uses\nthe set values (\nbRegulatorOn\n=\nTRUE\n) or the actual values\n(\nbRegulatorOn\n=\nFALSE\n).\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "tp_mode_auto",
+          "Initial": "0",
+          "Comment": ""
+        },
+        {
+          "Name": "tp_mode_demandposition",
+          "Initial": "1",
+          "Comment": "Auto mode"
+        },
+        {
+          "Name": "tp_mode_actualposition",
+          "Initial": "2",
+          "Comment": "Use set values\nUse actual values"
+        }
+      ]
+    }
+  ]
+}

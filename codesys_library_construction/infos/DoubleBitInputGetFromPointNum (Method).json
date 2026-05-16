@@ -1,0 +1,47 @@
+{
+  "library": "DNP3",
+  "title": "DoubleBitInputGetFromPointNum (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/pou-Master/Datapoints/DoubleBitInputGetFromPointNum.html",
+  "page_title": "Master.DoubleBitInputGetFromPointNum (METH)",
+  "text": "\nMETHOD DoubleBitInputGetFromPointNum :\nError\nGet the value of Double-bit Input datapoint (DNP3 object group 3 âdouble-bit binary inputsâ) with given point number (0 .. MaxPointNum).\nReturns PointNotExistent, if a datapoint with the given point number doesnt exist, OK otherwise.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "DoubleBitInputGetFromPointNum",
+          "Type": "Error",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "pointNumber",
+          "Type": "UINT",
+          "Comment": "Point number."
+        },
+        {
+          "Scope": "Output",
+          "Name": "flags",
+          "Type": "USINT",
+          "Comment": "flags (including value) received from Outstation. Flag values are ORâdcombinations of the following:DNPDEFS_DBAS_FLAG_ON_LINE - the point has been readsuccessfullyDNPDEFS_DBAS_FLAG_RESTART - the field device that originated thedata object has been restarted. This device may be the deviced\nreporting this data object.DNPDEFS_DBAS_FLAG_COMM_LOST - the device reporting this data objecthas lost communication with the originator of the data objectDNPDEFS_DBAS_FLAG_REMOTE_FORCED - the state of the binary objecthas been forced to its current state at the originating deviceDNPDEFS_DBAS_FLAG_LOCAL_FORCED - the state of the binary objecthas been forced to its current state at the device reporting\nthis data objectDNPDEFS_DBAS_FLAG_CHATTER - the binary input point has been filteredin order to remove unneeded transitions in the state of the inputDNPDEFS_DBAS_FLAG_DOUBLE_INTERthe current state of the input (Intermediate -transitioning condition)DNPDEFS_DBAS_FLAG_DOUBLE_OFFthe current state of the input (Off)DNPDEFS_DBAS_FLAG_DOUBLE_ONthe current state of the input (On)DNPDEFS_DBAS_FLAG_DOUBLE_INDETthe current state of the input (Indeterminate -abnormal or custom\ncondition)"
+        },
+        [
+          "hasTimeStamp",
+          "BOOL",
+          "Has a valid time stamp."
+        ],
+        [
+          "timeStamp",
+          "LDATE_AND_TIME",
+          "Time stamp reported - valid if hasTimeStamp = TRUE, invalid\notherwise."
+        ]
+      ]
+    }
+  ]
+}

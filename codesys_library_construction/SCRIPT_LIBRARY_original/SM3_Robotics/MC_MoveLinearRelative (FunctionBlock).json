@@ -1,0 +1,179 @@
+{
+  "library": "SM3_Robotics",
+  "title": "MC_MoveLinearRelative (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/Movement/MC_MoveLinearRelative.html",
+  "page_title": "MC_MoveLinearRelative (FB)",
+  "text": "Library Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nGetVersion (Function)\nIsLibReleased (Function)\nSM3_Robotics\nBasic types\nIDENT_IN_GROUP_REF_SM3 (Alias)\nMC_CIRC_PATHCHOICE (Enum)\nMC_COORD_REF (Struct)\nMC_EXECUTION_MODE (Enum)\nMC_TRANSITION_MODE (Enum)\nSMC_AXIS_GROUP_COMPATIBILITY_OPTIONS (Struct)\nSMC_AXIS_GROUP_CONTINUE_DATA (FunctionBlock)\nSMC_AXIS_GROUP_STATE (Enum)\nSMC_CIRC_MODE (Enum)\nSMC_DYN_LIMITS (Alias)\nSMC_IDynamicCS (Interface)\nSMC_ORIENTATION_MODE (Enum)\nSMC_POS_REF (Union)\nSMC_PTP_MOVEMENT_TYPE (Enum)\nSMC_READ_TOOL_MODE (Enum)\nPOUs\nAdditional\nSMC_AxisDistanceAxes (Enum)\nSMC_AxisDistanceSubMode (Enum)\nSMC_AxisDistanceTransition (FunctionBlock)\nSMC_AxisDistanceTransitionParam (Function)\nSMC_CornerDistance (FunctionBlock)\nSMC_CornerDistanceTransitionParam (Function)\nSMC_StartVelocity (FunctionBlock)\nSMC_StartVelocityAxes (Enum)\nSMC_StartVelocityTransitionParam (Function)\nSMC_StartupAxisGroup (FunctionBlock)\nAdministrative/Configuration\nAxisGroup\nComputation\nCoordinate systems\nDynamics\nKinematics\nTrigger\nAxisGroup\nAXIS_GROUP_REF_SM3 (FunctionBlock)\nHelpers\nMovements\nDiagnostics\nMC_GroupReadActualAcceleration (FunctionBlock)\nMC_GroupReadActualPosition (FunctionBlock)\nMC_GroupReadActualVelocity (FunctionBlock)\nMC_GroupReadConfiguration (FunctionBlock)\nMC_GroupReadError (FunctionBlock)\nMC_GroupReadStatus (FunctionBlock)\nMC_ReadCoordinateTransform (FunctionBlock)\nMC_ReadKinTransform (FunctionBlock)\nSMC_GroupAddOffset (FunctionBlock)\nSMC_GroupAdditionalAxesTargetPositions (FunctionBlock)\nSMC_GroupConvertPosition (FunctionBlock)\nSMC_GroupGetContinuePosition (FunctionBlock)\nSMC_GroupGetContinueToolOffset (FunctionBlock)\nSMC_GroupReadPathAcceleration (FunctionBlock)\nSMC_GroupReadPathDynamics (FunctionBlock)\nSMC_GroupReadPathVelocity (FunctionBlock)\nSMC_GroupReadPlanningStatistics (FunctionBlock)\nSMC_GroupReadPositionInMovement (FunctionBlock)\nSMC_GroupReadRemainingTrajectoryDuration (FunctionBlock)\nSMC_GroupReadSetAcceleration (FunctionBlock)\nSMC_GroupReadSetJerk (FunctionBlock)\nSMC_GroupReadSetPosition (FunctionBlock)\nSMC_GroupReadSetVelocity (FunctionBlock)\nSMC_GroupTargetPosition (FunctionBlock)\nSMC_ReadKinTransformForAxis (FunctionBlock)\nMovement\nAdditionalAxes\nGroupInterrupt\nMC_GroupContinue (FunctionBlock)\nMC_GroupHalt (FunctionBlock)\nMC_GroupInterrupt (FunctionBlock)\nMC_GroupStop (FunctionBlock)\nMC_MoveCircularAbsolute (FunctionBlock)\nMC_MoveCircularRelative (FunctionBlock)\nMC_MoveDirectAbsolute (FunctionBlock)\nMC_MoveDirectRelative (FunctionBlock)\nMC_MoveLinearAbsolute (FunctionBlock)\nMC_MoveLinearRelative (FunctionBlock)\nSMC_GroupEnableResumeAfterError (FunctionBlock)\nSMC_GroupJog (FunctionBlock)\nSMC_GroupJog2 (FunctionBlock)\nSMC_GroupUpdateContinueData (FunctionBlock)\nSMC_GroupWait (FunctionBlock)\nSMC_MoveAdditionalAxes (FunctionBlock)\ninternal\nDivers\nKernel_CP\nFile and Project Information\nLibrary Reference\n3SLicense\nLibrary Identification\nLibrary Properties\nCmpApp\nLibrary Identification\nLibrary Properties\nCmpIecTask\nLibrary Identification\nLibrary Properties\nCmpLog\nLibrary Identification\nLibrary Properties\nFloatingPointUtils\nLibrary Identification\nLibrary Properties\nSM3_Basic\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nSM3_CPKernelDefaults\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nSM3_CommonPublic\nLibrary Identification\nLibrary Properties\nSM3_Dynamics\nLibrary Identification\nLibrary Properties\nSM3_Error\nLibrary Identification\nLibrary Properties\nSM3_RBase\nLibrary Identification\nLibrary Properties\nSM3_RCP\nLibrary Identification\nLibrary Properties\nSM3_RError\nLibrary Identification\nLibrary Properties\nSM3_Ramps\nLibrary Identification\nLibrary Properties\nSM3_Shared\nLibrary Identification\nLibrary Properties\nSM3_StringUtils\nLibrary Identification\nLibrary Properties\nSM3_TrajectoryGeneration\nLibrary Identification\nLibrary Properties\nSM3_Transformation\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysTarget\nLibrary Identification\nLibrary Properties\nSysTime\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nSM3_Robotics\nDocs\n»\nSM3_Robotics\n»\nPOUs\n»\nMovement\n»\nMC_MoveLinearRelative (FB)\nMC_MoveLinearRelative (FB)\nÂ¶\nFUNCTION_BLOCK FINAL MC_MoveLinearRelative\nThis function block commands a linear movement of an axis group\nby the specified relative distance in the specified coordinate system.\nNote\nThe velocity/acc-/deceleration/jerk of each axis are properties\nof each axis and not specified within this function block.\nSee also inputs\nVelFactor\n,\nAccFactor\nand\nJerkFactor\n.\nInOut:\nScope\nName\nType\nInitial\nComment\nInout\nAxisGroup\nAXIS_GROUP_REF_SM3\nReference to a group of axes\nInput\nExecute\nBOOL\nStart the motion at rising edge\nDistance\nSMC_POS_REF\nRelative distance in the specified coordinate system\nVelocity\nLREAL\nMaximum path velocity [u/s] for the coordinate system in\nwhich the path is defined. Always positive. Not necessarily reached.\nAcceleration\nLREAL\nMaximum path acceleration [u/sÂ²]. Always positive. Not\nnecessarily reached.\nDeceleration\nLREAL\nMaximum path deceleration [u/sÂ²]. Always positive. Not\nnecessarily reached.\nJerk\nLREAL\nMaximum path jerk [u/sÂ³]. Always positive. Not necessarily\nreached.\nCoordSystem\nSMC_COORD_SYSTEM\nApplicable coordinate system\nBufferMode\nMC_BUFFER_MODE\nDefines the chronological sequence of the FB relative to the\nprevious block.\nTransitionMode\nMC_TRANSITION_MODE\nDefined the blending in case of a blending buffer mode\nTransitionParameter\nARRAY\n[0..(SMC_RCNST.MAX_TRANS_PARAMS\n- 1)] OF LREAL\nParameters for blending\nOrientationMode\nSMC_ORIENTATION_MODE\nDetermines how the orientation is interpolated.\nVelFactor\nLREAL\n1\nThe maximum velocity of each axis is multiplied by this factor, which\nmust be in the range ]0, 1].\nAccFactor\nLREAL\n1\nThe maximum acceleration of each axis is multiplied by this factor, which\nmust be in the range ]0, 1].\nJerkFactor\nLREAL\n1\nThe maximum jerk of each axis is multiplied by this factor, which\nmust be in the range ]0, 1].\nTorqueFactor\nLREAL\n1\nThe maximum torque of each axis is multiplied by this factor, which\nmust be in the range ]0, 1].  A dynamic model must have been set using\nSMC_GroupSetDynamics\nfor this factor to have an effect.\nAdditionalAxes\nIAdditionalAxesMovement\nIf an instance of\nSMC_MoveAdditionalAxesAbsolute\nor\nSMC_MoveAdditionalAxesRelative\nis assigned to this input, the additional axes of the axis group will perform\nthe specified movement while this function block is active.\nSet to\n0\nif no additional axes movement has to be performed or if there are no\nadditional axes.\nName\nSTRING\nâMC_MoveLinearRelativeâ\nThe name of the movement.\nOutput\nDone\nBOOL\nCommanded end positions reached for all axes\nBusy\nBOOL\nThe FB is not finished\nActive\nBOOL\nIndicates that the FB has control on the axis\nCommandAborted\nBOOL\nCommand is aborted by another command\nCommandAccepted\nBOOL\nThe command has been accepted by the axis group.\nIf the output becomes\nTRUE\n, the function block instance can be used to\ncommand the next movement with a new rising edge on\nExecute\n.\nWhile the output is\nFALSE\n, keep calling the function block without\na new rising edge of\nExecute\n.\nThe output is reset to\nFALSE\non a falling edge of\nExecute\n.\nError\nBOOL\nSignals that an error has occurred within the function block\nErrorID\nSMC_ERROR\nError identification\nMovementId\nSMC_Movement_Id\nThe unique identifier of the movement.  Valid if\nCommandAccepted\nor\nDone\nis\nTRUE\n.",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "AxisGroup",
+          "Type": "AXIS_GROUP_REF_SM3",
+          "Initial": "",
+          "Comment": "Reference to a group of axes"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Start the motion at rising edge"
+        },
+        [
+          "Distance",
+          "SMC_POS_REF",
+          "",
+          "Relative distance in the specified coordinate system"
+        ],
+        [
+          "Velocity",
+          "LREAL",
+          "",
+          "Maximum path velocity [u/s] for the coordinate system in\nwhich the path is defined. Always positive. Not necessarily reached."
+        ],
+        [
+          "Acceleration",
+          "LREAL",
+          "",
+          "Maximum path acceleration [u/sÂ²]. Always positive. Not\nnecessarily reached."
+        ],
+        [
+          "Deceleration",
+          "LREAL",
+          "",
+          "Maximum path deceleration [u/sÂ²]. Always positive. Not\nnecessarily reached."
+        ],
+        [
+          "Jerk",
+          "LREAL",
+          "",
+          "Maximum path jerk [u/sÂ³]. Always positive. Not necessarily\nreached."
+        ],
+        [
+          "CoordSystem",
+          "SMC_COORD_SYSTEM",
+          "",
+          "Applicable coordinate system"
+        ],
+        [
+          "BufferMode",
+          "MC_BUFFER_MODE",
+          "",
+          "Defines the chronological sequence of the FB relative to the\nprevious block."
+        ],
+        [
+          "TransitionMode",
+          "MC_TRANSITION_MODE",
+          "",
+          "Defined the blending in case of a blending buffer mode"
+        ],
+        [
+          "TransitionParameter",
+          "ARRAY\n[0..(SMC_RCNST.MAX_TRANS_PARAMS\n- 1)] OF LREAL",
+          "",
+          "Parameters for blending"
+        ],
+        [
+          "OrientationMode",
+          "SMC_ORIENTATION_MODE",
+          "",
+          "Determines how the orientation is interpolated."
+        ],
+        [
+          "VelFactor",
+          "LREAL",
+          "1",
+          "The maximum velocity of each axis is multiplied by this factor, which\nmust be in the range ]0, 1]."
+        ],
+        [
+          "AccFactor",
+          "LREAL",
+          "1",
+          "The maximum acceleration of each axis is multiplied by this factor, which\nmust be in the range ]0, 1]."
+        ],
+        [
+          "JerkFactor",
+          "LREAL",
+          "1",
+          "The maximum jerk of each axis is multiplied by this factor, which\nmust be in the range ]0, 1]."
+        ],
+        [
+          "TorqueFactor",
+          "LREAL",
+          "1",
+          "The maximum torque of each axis is multiplied by this factor, which\nmust be in the range ]0, 1].  A dynamic model must have been set usingSMC_GroupSetDynamicsfor this factor to have an effect."
+        ],
+        [
+          "AdditionalAxes",
+          "IAdditionalAxesMovement",
+          "",
+          "If an instance ofSMC_MoveAdditionalAxesAbsoluteorSMC_MoveAdditionalAxesRelativeis assigned to this input, the additional axes of the axis group will perform\nthe specified movement while this function block is active.\nSet to0if no additional axes movement has to be performed or if there are no\nadditional axes."
+        ],
+        [
+          "Name",
+          "STRING",
+          "âMC_MoveLinearRelativeâ",
+          "The name of the movement."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Done",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Commanded end positions reached for all axes"
+        },
+        [
+          "Busy",
+          "BOOL",
+          "",
+          "The FB is not finished"
+        ],
+        [
+          "Active",
+          "BOOL",
+          "",
+          "Indicates that the FB has control on the axis"
+        ],
+        [
+          "CommandAborted",
+          "BOOL",
+          "",
+          "Command is aborted by another command"
+        ],
+        [
+          "CommandAccepted",
+          "BOOL",
+          "",
+          "The command has been accepted by the axis group.\nIf the output becomesTRUE, the function block instance can be used to\ncommand the next movement with a new rising edge onExecute.\nWhile the output isFALSE, keep calling the function block without\na new rising edge ofExecute.\nThe output is reset toFALSEon a falling edge ofExecute."
+        ],
+        [
+          "Error",
+          "BOOL",
+          "",
+          "Signals that an error has occurred within the function block"
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "",
+          "Error identification"
+        ],
+        [
+          "MovementId",
+          "SMC_Movement_Id",
+          "",
+          "The unique identifier of the movement.  Valid ifCommandAcceptedorDoneisTRUE."
+        ]
+      ]
+    }
+  ]
+}

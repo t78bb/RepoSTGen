@@ -1,0 +1,38 @@
+{
+  "library": "CommFB",
+  "title": "PN_DEVICE_ID (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/CommFB/Current/CommFB/Addresses/PN_DEVICE_ID.html",
+  "page_title": "PN_DEVICE_ID (STRUCT)",
+  "text": "CommFB\nAINFO_TYPE (Union)\nAddressConcept (GVL)\nAddress Concept\nGenerating a CommFB-ID\nProfibus DP\nProfinet IO\nDevice Diagnosis\nAddress Conversion\nAddresses\nADDR_TO_ID (FunctionBlock)\nADDR_TYPE (Union)\nCREATE_ID (FunctionBlock)\nDP_ADDR (Struct)\nDP_DEVICE_ID (Struct)\nID_TO_ADDR (FunctionBlock)\nIO_SYSTEM_TYPE (Enum)\nPN_ADDR (Struct)\nPN_DEVICE_ID (Struct)\nSUBSLOT_ID (Function)\nCNCT (FunctionBlock)\nConstants (GVL)\nDP Address\nADDR (Function)\nID (Function)\nSLOT_ID (Function)\nDP_AINFO (Struct)\nDP_DIAG (Struct)\nErrorCode (Enum)\nErrorCode1_RW (Enum)\nFieldDevice\nPRVREC (FunctionBlock)\nPRVREC_MODE (Enum)\nRCVREC (FunctionBlock)\nRCVREC_MODE (Enum)\nSALARM (FunctionBlock)\nGETIO_PART (FunctionBlock)\nPN_AINFO (Struct)\nRALARM (FunctionBlock)\nRALARM_MODE (Enum)\nRDIAG (FunctionBlock)\nRDREC (FunctionBlock)\nSETIO_PART (FunctionBlock)\nWRREC (FunctionBlock)\nImages\nLibrary Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nFile and Project Information\nLibrary Reference\nIoDriver Profibus2 Interfaces\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nCommFB\nDocs\n»\nCommFB\n»\nAddresses\n»\nPN_DEVICE_ID (STRUCT)\nPN_DEVICE_ID (STRUCT)\nÂ¶\nTYPE PN_DEVICE_ID : STRUCT\nInOut:\nName\nType\nComment\nSTATIONNAME\nSTRING\nStation name\nINSTANCE\nWORD\nInstance ID\nDEVICE\nWORD\nDevice ID\nVENDOR\nWORD\nVendor ID",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "STATIONNAME",
+          "Type": "STRING",
+          "Comment": "Station name"
+        },
+        {
+          "Name": "INSTANCE",
+          "Type": "WORD",
+          "Comment": "Instance ID"
+        },
+        {
+          "Name": "DEVICE",
+          "Type": "WORD",
+          "Comment": "Device ID"
+        },
+        {
+          "Name": "VENDOR",
+          "Type": "WORD",
+          "Comment": "Vendor ID"
+        }
+      ]
+    }
+  ]
+}

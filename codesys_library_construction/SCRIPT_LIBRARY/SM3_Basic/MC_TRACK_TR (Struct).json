@@ -1,0 +1,33 @@
+{
+  "library": "SM3_Basic",
+  "title": "MC_TRACK_TR (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/DataTypes/Additional/MC_TRACK_TR.html",
+  "page_title": "MC_TRACK_TR (STRUCT)",
+  "text": "\nTYPE MC_TRACK_TR : STRUCT\nPart of the\nMC_TRACK_REF\ndata structure.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "OnCompensation",
+          "Type": "LREAL",
+          "Comment": "A delay (value positive) or an early switch-on (value negative) can be set. The time is given in seconds.\nMay affect whether the switch is inverted or not.\nSee the outputSwitchCorruptedofMC_DigitalCamSwitch.\nAlways used for switching ON, regardless the direction of the axis."
+        },
+        {
+          "Name": "OffCompensation",
+          "Type": "LREAL",
+          "Comment": "A delay (value positive) or an early switch-off (value negative) can be set. The time is given in seconds.\nMay affect whether the switch is inverted or not.\nSee the outputSwitchCorruptedofMC_DigitalCamSwitch.\nNot used in time-based mode.\nAlways used for switching OFF, regardless the direction of the axis."
+        },
+        {
+          "Name": "Hysteresis",
+          "Type": "LREAL",
+          "Comment": "Additionally, a hysteresis can be set, which avoids a permanent switching of the output,\nwhich might occur e.g. if the servo-controller is exactly in switch-position and slightly swinging\naround that position due to the position control.\nA track wonât switch if the distance to the last switching position is smaller than this variable."
+        }
+      ]
+    }
+  ]
+}

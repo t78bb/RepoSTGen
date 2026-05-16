@@ -1,0 +1,62 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_GroupGetContinueToolOffset (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/Diagnostics/SMC_GroupGetContinueToolOffset.html",
+  "page_title": "SMC_GroupGetContinueToolOffset (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_GroupGetContinueToolOffset\nReads the tool offset that was active when the\ncontinueData\nwas written.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout Const",
+          "Name": "AxisGroup",
+          "Type": "AXIS_GROUP_REF_SM3",
+          "Comment": "Reference to the axis group"
+        },
+        [
+          "continueData",
+          "SMC_AXIS_GROUP_CONTINUE_DATA",
+          "The continue data."
+        ],
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Comment": "Reads the tool offset on rising edge"
+        },
+        {
+          "Scope": "Output",
+          "Name": "Done",
+          "Type": "BOOL",
+          "Comment": "The operation has been finished successfully"
+        },
+        [
+          "Busy",
+          "BOOL",
+          "The operation is not finished"
+        ],
+        [
+          "Error",
+          "BOOL",
+          "Signals that an error has occurred within the function block"
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ],
+        [
+          "ToolOffset",
+          "MC_COORD_REF",
+          "The tool offset stored in thecontinueData"
+        ]
+      ]
+    }
+  ]
+}

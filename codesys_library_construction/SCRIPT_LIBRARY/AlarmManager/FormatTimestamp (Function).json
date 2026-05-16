@@ -1,0 +1,45 @@
+{
+  "library": "AlarmManager",
+  "title": "FormatTimestamp (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Functions/deprecated/FormatTimestamp.html",
+  "page_title": "FormatTimestamp (FUN)",
+  "text": "\nFUNCTION FormatTimestamp\nTakes a SYSTIME value and formats it. If the SYSTIME value is 0,\nan empty string is used as result.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "liTimestamp",
+          "Type": "Timestamp",
+          "Initial": "",
+          "Comment": "The timestamp to format"
+        },
+        [
+          "cbsResult",
+          "REFERENCE TO\nCharBufferString",
+          "",
+          "The string, where the result will be stored"
+        ],
+        [
+          "sDateFormatPattern",
+          "STRING",
+          "ââ",
+          "optional date format"
+        ],
+        [
+          "sTimeFormatPattern",
+          "STRING",
+          "ââ",
+          "optionale time format"
+        ]
+      ]
+    }
+  ]
+}

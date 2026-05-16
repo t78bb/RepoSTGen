@@ -1,0 +1,23 @@
+{
+  "library": "SM3_CNC",
+  "title": "SpaceLeft (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/File/ReadNCFile/Token/pou-SMC_TokenQueue/SpaceLeft.html",
+  "page_title": "SMC_TokenQueue.SpaceLeft (METH)",
+  "text": "\nMETHOD SpaceLeft : UDINT\nReturns how many token may be appended to the queue\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SpaceLeft",
+          "Type": "UDINT"
+        }
+      ]
+    }
+  ]
+}

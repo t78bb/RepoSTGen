@@ -1,0 +1,41 @@
+{
+  "library": "Standard",
+  "title": "INSERT (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/Standard/Current/String-Functions/INSERT.html",
+  "page_title": "INSERT (FUN)",
+  "text": "\nFUNCTION INSERT : STRING(255)\nInserts a string into another string at a specific position\nINSERT\n(STR1,\nSTR2,\nPOS)\nmeans: Insert\nSTR2\ninto\nSTR1\nafter position\nPOS\n.\n(* Example declaration *)\nVarSTRING1\n:\nSTRING\n;\n(* Example in ST , result is 'SUXYSI' *)\nVarSTRING1\n:=\nINSERT\n(\n'SUSI'\n,\n'XY'\n,\n2\n);\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "INSERT",
+          "Type": "STRING(255)",
+          "Comment": "Resulting string"
+        },
+        {
+          "Scope": "Input",
+          "Name": "STR1",
+          "Type": "STRING(255)",
+          "Comment": "String into whichSTR2is inserted"
+        },
+        [
+          "STR2",
+          "STRING(255)",
+          "String to be inserted intoSTR1"
+        ],
+        [
+          "POS",
+          "INT",
+          "Insert position. IfPOSis > 255 OR < 0, the result equalsSTR10: Inserts before the first character1: Inserts after the first character."
+        ]
+      ]
+    }
+  ]
+}

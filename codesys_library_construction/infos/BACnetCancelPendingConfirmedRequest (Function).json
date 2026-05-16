@@ -1,0 +1,31 @@
+{
+  "library": "CmpBACnet",
+  "title": "BACnetCancelPendingConfirmedRequest (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/CmpBACnet/Current/BACnetClientAPI/BACnetCancelPendingConfirmedRequest.html",
+  "page_title": "BACnetCancelPendingConfirmedRequest (FUN)",
+  "text": "\nFUNCTION BACnetCancelPendingConfirmedRequest :\nIEC_BACNET_STATUS\nThis function can be used by an BACnet application to cancel pending confirmed\ntransactions directly which would take a long time to terminate if they would\nterminate by normal APDU retries and timeouts. If the application cancels such an\ntransaction the transactions completion function <b>WILL NOT BE CALLED</b>.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "BACnetCancelPendingConfirmedRequest",
+          "Type": "IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "pTransactionToken",
+          "Type": "POINTER TOBACnetAsyncTransactionToken",
+          "Comment": "Transaction token of the asynchronous call - seeBACnetAsyncTransactionToken."
+        }
+      ]
+    }
+  ]
+}

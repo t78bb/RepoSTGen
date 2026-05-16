@@ -1,0 +1,28 @@
+{
+  "library": "DNP3",
+  "title": "AnyNumberConvertFromUSINT (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Functions/AnyNumber/AnyNumberConvertFromUSINT.html",
+  "page_title": "AnyNumberConvertFromUSINT (FUN)",
+  "text": "\nFUNCTION AnyNumberConvertFromUSINT\nConvert USINT to AnyNumber\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "in",
+          "Type": "USINT"
+        },
+        {
+          "Scope": "Output",
+          "Name": "out",
+          "Type": "AnyNumber"
+        }
+      ]
+    }
+  ]
+}

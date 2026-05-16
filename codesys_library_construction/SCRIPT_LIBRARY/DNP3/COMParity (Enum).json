@@ -1,0 +1,33 @@
+{
+  "library": "DNP3",
+  "title": "COMParity (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Types/COMParity.html",
+  "page_title": "COMParity (ENUM)",
+  "text": "\nTYPE COMParity :\nCOM interface parity\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "None",
+          "Initial": "0",
+          "Comment": "No parity"
+        },
+        {
+          "Name": "Odd",
+          "Initial": "",
+          "Comment": "Odd parity"
+        },
+        {
+          "Name": "Even",
+          "Initial": "",
+          "Comment": "Even parity"
+        }
+      ]
+    }
+  ]
+}

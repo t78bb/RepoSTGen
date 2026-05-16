@@ -1,0 +1,27 @@
+{
+  "library": "MemoryUtils",
+  "title": "SwapLocalToMotorola (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/MemoryUtils/Current/MemoryUtils/Functions/Swapping/SwapLocalToMotorola.html",
+  "page_title": "SwapLocalToMotorola (FUN)",
+  "text": "\nFUNCTION SwapLocalToMotorola\nSwaps the given data to motorola byte order. Code is only generated on Intel Byte Order Systems ({IF hasvalue(ByteOrder,âIntelâ)})\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "pAddress",
+          "Type": "POINTER TO BYTE"
+        },
+        [
+          "iSize",
+          "INT"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "library": "BACnet2DefaultImpl",
+  "title": "DateTimeToTimestamp (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2DefaultImpl/Current/BACnetDefaultImpl/Functions/DateTimeToTimestamp.html",
+  "page_title": "DateTimeToTimestamp (FUN)",
+  "text": "\nFUNCTION DateTimeToTimestamp : ULINT\nConverts a Util.DateTime into a timestamp in milliseconds since 1.1.1970 00:00:00.000.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "DateTimeToTimestamp",
+          "Type": "ULINT",
+          "Initial": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "dtm",
+          "Type": "Util.DateTime",
+          "Initial": ""
+        },
+        {
+          "Scope": "Output",
+          "Name": "eErrorID",
+          "Type": "ERROR",
+          "Initial": "ERROR.NO_ERROR"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "library": "AlarmManager",
+  "title": "GetCountLatchVariables (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/pou-IAlarm3/GetCountLatchVariables.html",
+  "page_title": "IAlarm3.GetCountLatchVariables (METH)",
+  "text": "\nMETHOD GetCountLatchVariables : USINT\nReturns the number of latch variables\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetCountLatchVariables",
+          "Type": "USINT"
+        }
+      ]
+    }
+  ]
+}

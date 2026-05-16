@@ -1,0 +1,36 @@
+{
+  "library": "SysFile",
+  "title": "SysFileRename (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SysFile/Current/SysFileRename.html",
+  "page_title": "SysFileRename (FUN)",
+  "text": "\nFUNCTION SysFileRename : RTS_IEC_RESULT\nRename the file.\nA standard path will be added to the filename, if no path is specified.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SysFileRename",
+          "Type": "RTS_IEC_RESULT",
+          "Comment": "Returns the runtime system error code (see\nCmpErrors.library)"
+        },
+        {
+          "Scope": "Input",
+          "Name": "szOldFileName",
+          "Type": "STRING",
+          "Comment": "Old file name. File name can contain an absolute or relative path to the file.\nPath entries must be separated with a Slash (/)  and not with a Backslash (\\)!"
+        },
+        [
+          "szNewFileName",
+          "STRING",
+          "New file name. File name can contain an absolute or relative path to the file.\nPath entries must be separated with a Slash (/)  and not with a Backslash (\\)!"
+        ]
+      ]
+    }
+  ]
+}

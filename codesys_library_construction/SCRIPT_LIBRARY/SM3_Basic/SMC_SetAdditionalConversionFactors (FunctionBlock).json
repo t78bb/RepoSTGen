@@ -1,0 +1,65 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_SetAdditionalConversionFactors (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/AdministrativeConfiguration/SMC_SetAdditionalConversionFactors.html",
+  "page_title": "SMC_SetAdditionalConversionFactors (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_SetAdditionalConversionFactors\nSets conversion factors for the dynamics of an axis.\nSet values are multiplied by the factors before being sent\nto the drive.\nActual values are divided by the factors after having been\nreceived from the drive.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3",
+          "Initial": "",
+          "Comment": "Reference to the axis."
+        },
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Factors are set on a rising edge."
+        },
+        [
+          "TorqueFactor",
+          "LREAL",
+          "1",
+          "The conversion factor for the torque. Must not be 0."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Done",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Signals that the factors have been set."
+        },
+        [
+          "Busy",
+          "BOOL",
+          "",
+          "Signals that the function block is working."
+        ],
+        [
+          "Error",
+          "BOOL",
+          "",
+          "Signals an error."
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

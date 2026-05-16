@@ -1,0 +1,83 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_GroupSetAxisLimitFactors (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/AdministrativeConfiguration/Dynamics/SMC_GroupSetAxisLimitFactors.html",
+  "page_title": "SMC_GroupSetAxisLimitFactors (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_GroupSetAxisLimitFactors\nThis function block sets limit factors for the maximum velocity,\nacceleration, and jerk of each axis. The limits are effective only\nfor movements commanded after this function block returns done.\nCalling this function block does not cause any movement and does\nnot influence the ongoing motion of the axis group.\nThe factors for all axes currently configured in the axis group need\nto be provided. Each individual factor needs to be positive and not\ngreater than 1.\nInitially, all factors are 1. The factors are not reset when the\naxis group is disabled or enabled.  If an axis is removed from\nthe group, the limit factors for this axis are reset.  If the\naxis is added again, later, then the limit factors are 1.\nThe axis group must not be in state GroupDisabled or GroupErrorStop\nwhen this FB receives the rising edge on execute.\nThe factors can be read with\nSMC_GroupReadAxisLimitFactors\n.\nThe factors are used in combination with the ancillary limits, the\nglobal limits, the factors given at the movement function blocks,\nand the override as follows:\nG: the global axis limits stored in the axis configuration,\nM: the factors given at the movement function blocks (inputs\nVelFactor, AccFactor, â¦),\nF: the factors set with this function block,\nO: the current override factors, and\nA: the ancillary axis limits set with\nSMC_GroupSetAncillaryAxisLimits\n.\nThe effective axis limits L are computed from these inputs as\nL = O * min(A, M * F * G).\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "AxisGroup",
+          "Type": "AXIS_GROUP_REF_SM3",
+          "Initial": "",
+          "Comment": "Reference to an axis group"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Sets the factors on rising edge."
+        },
+        [
+          "VelFactors",
+          "ARRAY\n[0..(SMRB.MAX_TOTAL_AXES\n- 1)] OF LREAL",
+          "",
+          "The velocity factors for all axes.  The first n factors are for\nthe axes of the groupâs kinematics. All subsequent factors are for\nthe groupâs additional axes."
+        ],
+        [
+          "AccFactors",
+          "ARRAY\n[0..(SMRB.MAX_TOTAL_AXES\n- 1)] OF LREAL",
+          "",
+          "The acceleration factors for all axes.  The first n factors are for\nthe axes of the groupâs kinematics. All subsequent factors are for\nthe groupâs additional axes."
+        ],
+        [
+          "JerkFactors",
+          "ARRAY\n[0..(SMRB.MAX_TOTAL_AXES\n- 1)] OF LREAL",
+          "",
+          "The jerk factors for all axes.  The first n factors are for\nthe axes of the groupâs kinematics. All subsequent factors are for\nthe groupâs additional axes."
+        ],
+        [
+          "TorqueFactors",
+          "ARRAY\n[0..(SMRB.MAX_TOTAL_AXES\n- 1)] OF LREAL",
+          "[SMRB.MAX_TOTAL_AXES(1)]",
+          "The torque factors for all axes.  A dynamic model must have been set usingSMC_GroupSetDynamicsfor these factors to have an effect.  The first n\nfactors are for the axes of the groupâs kinematics. All subsequent factors\nare for the groupâs additional axes."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Done",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "The limits have been set successfully."
+        },
+        [
+          "Busy",
+          "BOOL",
+          "",
+          "The FB is not finished."
+        ],
+        [
+          "Error",
+          "BOOL",
+          "",
+          "Signals that an error has occurred within the function\nblock."
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

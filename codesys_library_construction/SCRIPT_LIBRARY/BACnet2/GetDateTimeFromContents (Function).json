@@ -1,0 +1,31 @@
+{
+  "library": "BACnet2",
+  "title": "GetDateTimeFromContents (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/Utilities/BACnetUtilities/FromBACnetContents/GetDateTimeFromContents.html",
+  "page_title": "GetDateTimeFromContents (FUN)",
+  "text": "\nFUNCTION GetDateTimeFromContents :\nBACnetDateTime\nTries to evaluate property contents as BACnetDateTime data type. If the contents are not of type BACnetDateTime\n1970-1-1 00:00 is returned.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetDateTimeFromContents",
+          "Type": "BACnetDateTime",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "conts",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_CONTENTS",
+          "Comment": "The contents to be evaluated asBACnetDateTime."
+        }
+      ]
+    }
+  ]
+}

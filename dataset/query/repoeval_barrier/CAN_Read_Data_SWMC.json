@@ -1,0 +1,5 @@
+{
+  "requirement": "This code is intended to implement the retrieval and processing of CAN bus data frames based on specified SWMC control IDs and buffer indices.",
+  "provide_code": "FUNCTION CAN_Read_Data_SWMC : Can_baseframe\nVAR_INPUT\n\tSWMC_ID\t :UINT;\t\t//接收SWMC控制ID\n\tI\t \t :UINT;      //接收缓冲区域\nEND_VAR",
+  "function_name": "CAN_Read_Data_SWMC"
+}

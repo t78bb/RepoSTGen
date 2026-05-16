@@ -1,0 +1,94 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_DetermineCuboidBearing (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/Coordinate-Transformations/SMC_DetermineCuboidBearing.html",
+  "page_title": "SMC_DetermineCuboidBearing (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_DetermineCuboidBearing\nThis function block will determine the position of\na cuboid (corner mark, edge alignment) in the space\nin dependence of 6 (3/2/1) points given:\nFor detailed information of transformation modules see\nthe overview on kinematic transformations in the CNC\nonline help.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "A1",
+          "Type": "SMC_Vector3D",
+          "Initial": "",
+          "Comment": "First of three points that are located on\nthe surface A of a cube and do not lie on a common line."
+        },
+        [
+          "A2",
+          "SMC_Vector3D",
+          "",
+          "Second of three points that are located on\nthe surface A of a cube and do not lie on a common line."
+        ],
+        [
+          "A3",
+          "SMC_Vector3D",
+          "",
+          "Third of three points that are located on\nthe surface A of a cube and do not lie on a common line."
+        ],
+        [
+          "B1",
+          "SMC_Vector3D",
+          "",
+          "First of two points that are located on\nanother cube surface B adjacent to A.\nThe projection of this point on surface A may not\ncoincide with the projection of B2."
+        ],
+        [
+          "B2",
+          "SMC_Vector3D",
+          "",
+          "Second of two points that are located on\nanother cube surface B adjacent to A.\nThe projection of this point on surface A may not\ncoincide with the projection of B1."
+        ],
+        [
+          "C1",
+          "SMC_Vector3D",
+          "",
+          "Point on a further cube surface adjacent to A and B"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "M",
+          "Type": "SMC_Vector3D",
+          "Initial": "",
+          "Comment": "Common corner point of cube surfaces A, B and C"
+        },
+        [
+          "vAB",
+          "SMC_Vector3D",
+          "",
+          "Unit vector on edge line between A and B with start point M"
+        ],
+        [
+          "vBC",
+          "SMC_Vector3D",
+          "",
+          "Unit vector on edge line between B and C with start point M"
+        ],
+        [
+          "vCA",
+          "SMC_Vector3D",
+          "",
+          "Unit vector on edge line between A and C with start point M"
+        ],
+        [
+          "bError",
+          "BOOL",
+          "",
+          "Signals, that an error has occurred within the function block"
+        ],
+        [
+          "nError",
+          "WORD",
+          "0",
+          "Error description:0: No error (bError=FALSE)1: A1,A2,A3 lie on common line2: Projections of B1 and B2 on surface A coincide"
+        ]
+      ]
+    }
+  ]
+}

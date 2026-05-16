@@ -1,0 +1,27 @@
+{
+  "library": "BACnet",
+  "title": "SetBACnetScaleProperty (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/pou-IBACnetObjectBase/Utilities/SetBACnetScaleProperty.html",
+  "page_title": "IBACnetObjectBase.SetBACnetScaleProperty (METH)",
+  "text": "\nMETHOD SetBACnetScaleProperty\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "propID",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_ID"
+        },
+        [
+          "scale",
+          "CmpBACnet.IEC_BACNET_SCALE"
+        ]
+      ]
+    }
+  ]
+}

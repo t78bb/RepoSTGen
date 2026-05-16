@@ -1,0 +1,8 @@
+{
+  "library": "Util",
+  "title": "DateTimeProvider (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/TimerSwitch/FunctionBlocks/DateTimeProvider.html",
+  "page_title": "DateTimeProvider (FB)",
+  "text": "\nFUNCTION_BLOCK PUBLIC FINAL DateTimeProvider IMPLEMENTS\nIDateTimeProvider\nMethods:\nGetDateTime\nStructure:\nGetDateTime (Method)",
+  "tables": []
+}

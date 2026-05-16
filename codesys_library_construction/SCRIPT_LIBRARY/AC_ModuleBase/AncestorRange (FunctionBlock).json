@@ -1,0 +1,8 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "AncestorRange (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_Module/TreeNavigation/AncestorRange.html",
+  "page_title": "AncestorRange (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL AncestorRange IMPLEMENTS\nIModuleRangeForward\nThe range of all ancestors of a module instance, starting\nwith the instance itself and ending with the toplevel instance.\nProperties:\nFirst\nIsEmpty\nMethods:\nInit\nPopFirst\nStructure:\nFirst (Property)\nInit (Method)\nIsEmpty (Property)\nPopFirst (Method)",
+  "tables": []
+}

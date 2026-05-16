@@ -1,0 +1,52 @@
+{
+  "library": "SM3_Basic",
+  "title": "MC_Reset (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/AdministrativeConfiguration/MC_Reset.html",
+  "page_title": "MC_Reset (FB)",
+  "text": "\nFUNCTION_BLOCK MC_Reset\nThis function block brings an axis from state\nerrorstop\nto state\nstandstill\nby resetting (acknowledging) all errors.\nBoth errors of the drive and software errors are reset.\nNote\nIf called in a state other than\nerrorstop\n, the error\nSMC_R_NO_ERROR_TO_RESET\nis returned by the function block.\nIf there is a communication error (see\nSMC_CheckAxisCommunication\n),\nthe error\nSMC_R_CANNOT_RESET_COMMUNICATION_ERROR\nis returned.\nTo reinitialize communication, you can use\nSMC3_ReinitDrive\n.\nIf the drive error cannot be reset, the error\nSMC_R_ERROR_NOT_RESETTABLE\nis returned.\nIf an error occurs trying to reset a driver error, the error\nSMC_R_ERROR_NOT_RESETTABLE\nis returned.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3",
+          "Comment": "Reference to axis"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Comment": "Rising edge: Starts the execution of the function block."
+        },
+        {
+          "Scope": "Output",
+          "Name": "Done",
+          "Type": "BOOL",
+          "Comment": "TRUE: Reset has been executed."
+        },
+        [
+          "Busy",
+          "BOOL",
+          "TRUE: Execution of the function block has not been finished."
+        ],
+        [
+          "Error",
+          "BOOL",
+          "TRUE: Error has occurred within the function block."
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

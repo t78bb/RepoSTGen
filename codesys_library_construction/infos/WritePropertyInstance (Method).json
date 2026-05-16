@@ -1,0 +1,48 @@
+{
+  "library": "BACnet",
+  "title": "WritePropertyInstance (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetServer/pou-IBACnetServer/Services/WritePropertyInstance.html",
+  "page_title": "IBACnetServer.WritePropertyInstance (METH)",
+  "text": "\nMETHOD WritePropertyInstance : CmpBACnet.IEC_BACNET_STATUS\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "WritePropertyInstance",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS"
+        },
+        {
+          "Scope": "Input",
+          "Name": "devInstNumber",
+          "Type": "DWORD"
+        },
+        [
+          "objID",
+          "CmpBACnet.IEC_BACNET_OBJECT_ID"
+        ],
+        [
+          "propID",
+          "CmpBACnet.IEC_BACNET_PROPERTY_ID"
+        ],
+        [
+          "nIndex",
+          "DINT"
+        ],
+        [
+          "priority",
+          "DINT"
+        ],
+        [
+          "value",
+          "CmpBACnet.IEC_BACNET_PROPERTY_CONTENTS"
+        ]
+      ]
+    }
+  ]
+}

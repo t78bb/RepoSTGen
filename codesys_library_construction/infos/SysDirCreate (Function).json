@@ -1,0 +1,31 @@
+{
+  "library": "SysDir",
+  "title": "SysDirCreate (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SysDir/Current/SysDirCreate.html",
+  "page_title": "SysDirCreate (FUN)",
+  "text": "\nFUNCTION SysDirCreate : RTS_IEC_RESULT\nCreates a new directory with the specified name\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SysDirCreate",
+          "Type": "RTS_IEC_RESULT",
+          "Comment": "Returns the runtime system error code (see\nCmpErrors_Itf.library)"
+        },
+        {
+          "Scope": "Input",
+          "Name": "szDir",
+          "Type": "REFERENCE TO STRING",
+          "Comment": "Name of the directory"
+        }
+      ]
+    }
+  ]
+}

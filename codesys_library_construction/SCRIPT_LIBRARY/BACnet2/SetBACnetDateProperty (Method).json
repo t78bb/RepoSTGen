@@ -1,0 +1,30 @@
+{
+  "library": "BACnet2",
+  "title": "SetBACnetDateProperty (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/BACnetObjects/base/pou-BACnetObjectBase/Utilities/typed-property-access/SetBACnetDateProperty.html",
+  "page_title": "BACnetObjectBase.SetBACnetDateProperty (METH)",
+  "text": "\nMETHOD SetBACnetDateProperty\nSets the Date-Value of the specified Property (propID) of this BACnet-Object.\nThe used functions are no client, meaning, that the access of the property is not restricted by write or read access restrictions.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "propID",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_ID",
+          "Comment": "The ID of the property to set."
+        },
+        [
+          "dat",
+          "DATE",
+          "The DATE to set for the property."
+        ]
+      ]
+    }
+  ]
+}

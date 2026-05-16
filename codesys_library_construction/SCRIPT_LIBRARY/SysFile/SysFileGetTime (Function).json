@@ -1,0 +1,36 @@
+{
+  "library": "SysFile",
+  "title": "SysFileGetTime (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SysFile/Current/SysFileGetTime.html",
+  "page_title": "SysFileGetTime (FUN)",
+  "text": "\nFUNCTION SysFileGetTime : RTS_IEC_RESULT\nGet file time of the specified file.\nA standard path will be added to the filename, if no path is specified.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SysFileGetTime",
+          "Type": "RTS_IEC_RESULT",
+          "Comment": "The runtime system error code (see CmpErrors.library)"
+        },
+        {
+          "Scope": "Input",
+          "Name": "szFileName",
+          "Type": "STRING",
+          "Comment": "File name. File name can contain an absolute or relative path to the file.\nPath entries must be separated with a Slash (/)  and not with a Backslash (\\)!"
+        },
+        [
+          "ptFileTime",
+          "POINTER TOSYS_FILETIME",
+          "Pointer to get the file time results."
+        ]
+      ]
+    }
+  ]
+}

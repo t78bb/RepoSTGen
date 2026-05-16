@@ -1,0 +1,37 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_SMOOTHPATHMODE (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_Data-types/SoftMotion-CNC/SMC_SMOOTHPATHMODE.html",
+  "page_title": "SMC_SMOOTHPATHMODE (ENUM)",
+  "text": "\nTYPE SMC_SMOOTHPATHMODE :\nDefines the element type applied for the smoothing of the axes.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "SP_SPLINE3",
+          "Comment": "This mode inserts a spline of 3rd order, with different length of\ntangents that define the spline.\nIn case ofSP_SPLINE3, this length is dependent from the length of\nthe neighbour object."
+        },
+        {
+          "Name": "SP_SPLINE5",
+          "Comment": "This mode inserts a spline of 5th order."
+        },
+        {
+          "Name": "SP_SPLINE3_CV",
+          "Comment": "This mode inserts a spline of 3rd order, with different length of\ntangents that define the spline.\nIn case ofSP_SPLINE3_CV, this length is dependent from the length\nof the part of the neighbor object that has been cut off.\nIn case of two adjacent line objects,SP_SPLINE3_CVwill stay\ninside the convex hull of the original path."
+        },
+        {
+          "Name": "SP_SPLINE5_CV",
+          "Comment": "This 5th oder spline is similar with 3rd order case.\nThereâs no guarantee that the curve will stay inside the convex hull."
+        },
+        {
+          "Name": "SP_SPLINE5_MIN_CURVATURE",
+          "Comment": "Blending with polynomial of 5th degree of minimum curvature"
+        }
+      ]
+    }
+  ]
+}

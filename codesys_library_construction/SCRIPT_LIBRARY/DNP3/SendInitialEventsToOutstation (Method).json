@@ -1,0 +1,28 @@
+{
+  "library": "DNP3",
+  "title": "SendInitialEventsToOutstation (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Outstation/pou-OutstationDataModel/SendInitialEventsToOutstation.html",
+  "page_title": "OutstationDataModel.SendInitialEventsToOutstation (METH)",
+  "text": "\nMETHOD SendInitialEventsToOutstation :\nError\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SendInitialEventsToOutstation",
+          "Type": "Error"
+        },
+        {
+          "Scope": "Input",
+          "Name": "os",
+          "Type": "IOutstation"
+        }
+      ]
+    }
+  ]
+}

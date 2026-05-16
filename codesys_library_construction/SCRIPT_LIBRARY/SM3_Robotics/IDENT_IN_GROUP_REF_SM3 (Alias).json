@@ -1,0 +1,8 @@
+{
+  "library": "SM3_Robotics",
+  "title": "IDENT_IN_GROUP_REF_SM3 (Alias)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/Basic-types/IDENT_IN_GROUP_REF_SM3.html",
+  "page_title": "IDENT_IN_GROUP_REF_SM3 (ALIAS)",
+  "text": "\nTYPE IDENT_IN_GROUP_REF_SM3 : UDINT\n0-based identifier of the axes of an axis group",
+  "tables": []
+}

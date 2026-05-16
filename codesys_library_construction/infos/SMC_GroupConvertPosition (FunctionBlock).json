@@ -1,0 +1,98 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_GroupConvertPosition (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/Diagnostics/SMC_GroupConvertPosition.html",
+  "page_title": "SMC_GroupConvertPosition (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_GroupConvertPosition\nConverts a position between different coordinate systems of an axis group.\nIf one of the coordinate systems is dynamic, the conversion between the\ncoordinate systems is done at the time at the end of the bus task cycle.\nThe tool offset currently set in the axis group is used, not the tool offset\nof the active movement. This can be overriden by the inputs\nUseToolOffsetParameter\nand\nToolOffset\n.\nNote\nthe coordinate system used is not necessarily the one of the\ncurrently active movement. It is always the coordinate system that\nwould be used for new movements.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "AxisGroup",
+          "Type": "AXIS_GROUP_REF_SM3",
+          "Comment": "Reference to a group of axes"
+        },
+        {
+          "Scope": "Inout Const",
+          "Name": "PositionIn",
+          "Type": "SMC_POS_REF",
+          "Comment": "In: Position to be converted"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Enable",
+          "Type": "BOOL",
+          "Comment": "Converts the position while enabled"
+        },
+        [
+          "CoordSystemIn",
+          "SMC_COORD_SYSTEM",
+          "Coordinate system ofPositionIn"
+        ],
+        [
+          "CoordSystemOut",
+          "SMC_COORD_SYSTEM",
+          "Coordinate system ofPositionOut"
+        ],
+        [
+          "aRef",
+          "TRAFO.AXISPOS_REF",
+          "The reference position of the axes.  Only used ifCoordSystemOut=ACSandCoordSystemIn<>ACS."
+        ],
+        [
+          "config",
+          "TRAFO.CONFIGDATA",
+          "The kinematic configuration.  Only used ifCoordSystemOut=ACSandCoordSystemIn<>ACS."
+        ],
+        [
+          "UseToolOffsetParameter",
+          "BOOL",
+          "Whether to use theToolOffsetparameter.\nIf set to FALSE, the last tool offset set bySMC_GroupSetToolis used."
+        ],
+        [
+          "ToolOffset",
+          "MC_COORD_REF",
+          "The tool offset used for converting the position."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Valid",
+          "Type": "BOOL",
+          "Comment": "TRUEif valid outputs are available"
+        },
+        [
+          "Busy",
+          "BOOL",
+          "The FB is not finished"
+        ],
+        [
+          "Error",
+          "BOOL",
+          "Signals that an error has occurred within the function block"
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ],
+        [
+          "PositionOut",
+          "SMC_POS_REF",
+          "The position converted to coordinate systemCoordSystemOut"
+        ],
+        [
+          "configOut",
+          "TRAFO.CONFIGDATA",
+          "The kinematic configuration that belongs to\na cartesian position.\nThe configuration is calculated when an axis position\ngets converted to a cartesian position, i.e.CoordSystemIn=ACSandCoordSystemOut<>ACS.\nOtherwise, the givenconfigis returned.\nFor rotary axes with multiple periods,configOutcontains\nthe periods determined by the axis positions.  Automatic period\nselection can be enabled usingSMC_KinConfigActivateAutomaticPeriods."
+        ]
+      ]
+    }
+  ]
+}

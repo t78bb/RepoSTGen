@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现电梯系统中根据各楼层的呼叫请求更新目标楼层数组。",
+  "provide_code": "FUNCTION F_RegisterCalls\nVAR_INPUT\n\tCallGround\t\t:\tBOOL;\t\t// 0楼呼叫\n\tCallFloor1\t\t:\tBOOL;\t\t// 1楼呼叫\n\tCallFloor2\t\t:\tBOOL;\t\t// 2楼呼叫\n\tCallFloor3\t\t:\tBOOL;\t\t// 3楼呼叫\nEND_VAR\nVAR_IN_OUT\n\tTargetFloors\t:\tARRAY[0..3] OF BOOL;\t// 目标楼层数组\nEND_VAR"
+}

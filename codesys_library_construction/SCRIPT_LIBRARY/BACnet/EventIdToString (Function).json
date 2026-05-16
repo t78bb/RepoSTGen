@@ -1,0 +1,28 @@
+{
+  "library": "BACnet",
+  "title": "EventIdToString (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/Utilities/ToString/EventIdToString.html",
+  "page_title": "EventIdToString (FUN)",
+  "text": "\nFUNCTION EventIdToString : STRING\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "EventIdToString",
+          "Type": "STRING"
+        },
+        {
+          "Scope": "Input",
+          "Name": "evtId",
+          "Type": "DWORD"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现根据设备当前状态自动复位相应的控制命令标志。",
+  "provide_code": "FUNCTION F_ResetDeviceCommands : BOOL\nVAR_IN_OUT\n\t// HMI命令标志（需要复位）\n\tbMixerRunCmd\t\t:\tBOOL;\n\tbMixerStopCmd\t\t:\tBOOL;\n\tbMedium1OpenCmd\t\t:\tBOOL;\n\tbMedium1CloseCmd\t:\tBOOL;\n\tbMedium2OpenCmd\t\t:\tBOOL;\n\tbMedium2CloseCmd\t:\tBOOL;\n\tbDrainOpenCmd\t\t:\tBOOL;\n\tbDrainCloseCmd\t\t:\tBOOL;\nEND_VAR\nVAR_INPUT\n\t// 设备状态反馈\n\tbMixerRunning\t\t:\tBOOL;\n\tbMedium1Opened\t\t:\tBOOL;\n\tbMedium2Opened\t\t:\tBOOL;\n\tbDrainOpened\t\t:\tBOOL;\nEND_VAR"
+}

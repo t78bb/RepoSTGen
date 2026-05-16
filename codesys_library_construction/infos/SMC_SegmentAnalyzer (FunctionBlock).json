@@ -1,0 +1,94 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_SegmentAnalyzer (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/SoftMotion-Function-Blocks/SMC_SegmentAnalyzer.html",
+  "page_title": "SMC_SegmentAnalyzer (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_SegmentAnalyzer\nThis function block analyzes the different segments (acceleration\nconstant velocity, deceleration) of a CNC path,\nindependently of the interpolator function block.\nWith every call, the\nSMC_SegmentAnalyzer\noutputs basic information\nabout the current path segment and adds up the time that will be needed\nfor its interpolation.\nRestrictions:\nThe complete path must fit into the input path queue.\nThe execution on the output path queue by the next\nfunction block (usually\nSMC_Interpolator\n) may only begin, when\nSMC_SegmentAnalyzer\nhas analyzed the queue completely.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "bExecute",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "With a rising edge, the function block gets active"
+        },
+        [
+          "poqDataIn",
+          "POINTER TOSMC_OUTQUEUE",
+          "0",
+          "Input path queue"
+        ],
+        [
+          "iVelMode",
+          "SMC_INT_VELMODE",
+          "TRAPEZOID",
+          "Velocity mode (same asSMC_Interpolator)"
+        ],
+        [
+          "dwIpoTime",
+          "DWORD",
+          "0",
+          "Cycle time of the interpolation task (same asSMC_Interpolator)"
+        ],
+        [
+          "bMFunctionsPreAcknowledged",
+          "BOOL",
+          "FALSE",
+          "If the input is set toTRUE, every M-function is acknowledged\nin advance.\nIf the input is set toFALSE, M-functions cause a stop,\nbut they are acknowledged immediately."
+        ],
+        [
+          "dJerkMax",
+          "LREAL",
+          "0",
+          "The magnitude of the maximum allowed jerk (same asSMC_Interpolator)."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bDone",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "This output will be set toTRUEas soon as the input data frompoqDataInhas been processed completely.\nThe function block will not perform any further actions\nuntil it gets reset."
+        },
+        [
+          "bBusy",
+          "BOOL",
+          "FALSE",
+          "TRUEwhile execution of function block is not finished"
+        ],
+        [
+          "bError",
+          "BOOL",
+          "FALSE",
+          "It signals that an error has occurred within the function\nblock"
+        ],
+        [
+          "wErrorID",
+          "SMC_ERROR",
+          "SMC_NO_ERROR",
+          "Error identification:SMC_SA_QUEUE_NOT_IN_BUFFERSMC_SA_QUEUE_CHANGED_DURING_OP"
+        ],
+        [
+          "segCurrentSegment",
+          "SMC_SEGMENT",
+          "",
+          "Description of the current segment"
+        ],
+        [
+          "dTime",
+          "LREAL",
+          "",
+          "Total (summed) interpolation time over all segments output\nso far."
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "library": "AlarmManager",
+  "title": "AlarmStateTransition (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Enumerations/AlarmStateTransition.html",
+  "page_title": "AlarmStateTransition (ENUM)",
+  "text": "\nTYPE AlarmStateTransition :\nThis enumeration defines the possible state changes an alarm can have.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "NoTransition",
+          "Initial": "0",
+          "Comment": "Value signals, that there is no alarm state transition"
+        },
+        {
+          "Name": "Pending",
+          "Initial": "-1",
+          "Comment": "An inactive alarm is going to be pending (alarm condition is true, but alarm is\nnot yet active)."
+        },
+        {
+          "Name": "Activate",
+          "Initial": "1",
+          "Comment": "An inactive (resp. pending) alarm is going to be active\n(alarm condition is true)."
+        },
+        {
+          "Name": "Deactivate",
+          "Initial": "2",
+          "Comment": "An active alarm is going to be inactive (alarm condition is\nno longer true)."
+        },
+        {
+          "Name": "Acknowledge",
+          "Initial": "3",
+          "Comment": "Alarm is still active and will be acknowledged."
+        },
+        {
+          "Name": "Confirm",
+          "Initial": "4",
+          "Comment": "Alarm is no longer active and will be confirmed."
+        },
+        {
+          "Name": "ReAlarm",
+          "Initial": "5",
+          "Comment": "Alarm gets re-alarmed"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "library": "DNP3",
+  "title": "MasterCommandTimeSync (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/Commands/MasterCommandTimeSync.html",
+  "page_title": "MasterCommandTimeSync (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL MasterCommandTimeSync EXTENDS\nMasterCommand\nMaster command TimeSync\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment",
+        "Inherited from"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "xExecute",
+          "Type": "BOOL",
+          "Comment": "Execute the command (xExecute FALSE â> TRUE).",
+          "Inherited from": "MasterCommand"
+        },
+        [
+          "itfMaster",
+          "IMaster",
+          "Interface IMaster",
+          "MasterCommand"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "xDone",
+          "Type": "BOOL",
+          "Comment": "Command executed successfully.",
+          "Inherited from": "MasterCommand"
+        },
+        [
+          "xError",
+          "BOOL",
+          "Error during command executions",
+          "MasterCommand"
+        ],
+        [
+          "eErrorID",
+          "Error",
+          "Specific error during command executions.",
+          "MasterCommand"
+        ],
+        {
+          "Scope": "Input",
+          "Name": "typ",
+          "Type": "TimeSyncType",
+          "Comment": "type of time synchronization to perform, serial or lan.",
+          "Inherited from": ""
+        },
+        [
+          "measureDelay",
+          "BOOL",
+          "TMWDEFS_TRUE to perform a delay measurement beforethe write time request.",
+          ""
+        ]
+      ]
+    }
+  ]
+}

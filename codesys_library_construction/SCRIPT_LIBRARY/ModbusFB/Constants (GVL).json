@@ -1,0 +1,25 @@
+{
+  "library": "ModbusFB",
+  "title": "Constants (GVL)",
+  "url": "https://content.helpme-codesys.com/en/libs/ModbusFB/Current/ModbusFB/GlobalConstants/Constants.html",
+  "page_title": "Constants (GVL)",
+  "text": "\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Scope": "Constant",
+          "Name": "SUPPORTED_FCS_SIMPLE_SERVER",
+          "Type": "SupportedFcs",
+          "Initial": "STRUCT(ReadCoils := TRUE, ReadDiscreteInputs := TRUE, ReadHoldingRegisters := TRUE, ReadInputRegisters := TRUE, WriteSingleCoil := TRUE, WriteSingleRegister := TRUE, ReadExceptionStatus := FALSE, Diagnostics := FALSE, GetCommEventCounter := FALSE, GetCommEventLog := FALSE, WriteMultipleCoils := TRUE, WriteMultipleRegisters := TRUE, ReportServerID := FALSE, ReadFileRecord := FALSE, WriteFileRecord := FALSE, MaskWriteRegister := TRUE, ReadWriteMultipleRegisters := TRUE, ReadFifoQueue := FALSE)"
+        }
+      ]
+    }
+  ]
+}

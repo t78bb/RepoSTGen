@@ -1,0 +1,23 @@
+{
+  "library": "SM3_CNC",
+  "title": "JumpToTarget (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/GSentence/pou-SMC_GSentenceQueue/JumpToTarget.html",
+  "page_title": "SMC_GSentenceQueue.JumpToTarget (METH)",
+  "text": "\nMETHOD JumpToTarget\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "diJumpTargetIndex",
+          "Type": "DINT"
+        }
+      ]
+    }
+  ]
+}

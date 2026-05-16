@@ -1,0 +1,33 @@
+{
+  "library": "MQTT Client SL",
+  "title": "MQTT_QOS (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/MQTT Client SL/Current/MQTT-Client/Common/Enums/MQTT_QOS.html",
+  "page_title": "MQTT_QOS (ENUM)",
+  "text": "\nTYPE MQTT_QOS :\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "QoS0",
+          "Initial": "0",
+          "Comment": "Send Message 1x, if disconnect from server then send can\nfail."
+        },
+        {
+          "Name": "QoS1",
+          "Initial": "1",
+          "Comment": "Send Message Nx, until Receive is acknowledged."
+        },
+        {
+          "Name": "QoS2",
+          "Initial": "2",
+          "Comment": "Send Message 1x, if disconnect from server then send is\nalways successfully."
+        }
+      ]
+    }
+  ]
+}

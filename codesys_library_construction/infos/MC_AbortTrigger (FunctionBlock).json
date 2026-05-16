@@ -1,0 +1,57 @@
+{
+  "library": "SM3_Basic",
+  "title": "MC_AbortTrigger (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/Additional/MC_AbortTrigger.html",
+  "page_title": "MC_AbortTrigger (FB)",
+  "text": "\nFUNCTION_BLOCK MC_AbortTrigger\nThis function block is designed for aborting function blocks that are connected to trigger events (e.g.\nMC_TouchProbe\n).\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3",
+          "Comment": "Reference to axis"
+        },
+        [
+          "TriggerInput",
+          "TRIGGER_REF",
+          "Reference to trigger signal source"
+        ],
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Comment": "Rising edge: Starts the execution of the function block."
+        },
+        {
+          "Scope": "Output",
+          "Name": "Done",
+          "Type": "BOOL",
+          "Comment": "TRUE: Latching has been aborted successfully."
+        },
+        [
+          "Busy",
+          "BOOL",
+          "TRUE: Execution of function block has not been finished\nyet."
+        ],
+        [
+          "Error",
+          "BOOL",
+          "TRUE: Error has occurred within the function block."
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

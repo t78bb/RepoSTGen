@@ -1,0 +1,37 @@
+{
+  "library": "SML_Basic",
+  "title": "SML_Globals (GVL)",
+  "url": "https://content.helpme-codesys.com/en/libs/SML_Basic/Current/Base/SML_Globals.html",
+  "page_title": "SML_Globals (GVL)",
+  "text": "\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "g_SML_EPS",
+          "Type": "LREAL",
+          "Initial": "1E-06",
+          "Comment": "Epsilon value, initialized bySML_GeneralInit"
+        },
+        {
+          "Name": "g_SML_EPS_STRICT",
+          "Type": "LREAL",
+          "Initial": "1E-15",
+          "Comment": "Strict epsilon value, initialized bySML_GeneralInit"
+        },
+        {
+          "Name": "g_SML_bLicenseInitialized",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Stores whether the SoftMotion Light license has been queried\ninitially"
+        }
+      ]
+    }
+  ]
+}

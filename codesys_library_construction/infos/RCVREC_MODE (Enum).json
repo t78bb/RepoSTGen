@@ -1,0 +1,43 @@
+{
+  "library": "CommFB",
+  "title": "RCVREC_MODE (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/CommFB/Current/CommFB/FieldDevice/RCVREC_MODE.html",
+  "page_title": "RCVREC_MODE (ENUM)",
+  "text": "\nTYPE RCVREC_MODE :\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "CHECK",
+          "Initial": "0",
+          "Comment": "If the Field Device interface has received a process data record, only the outputs NEW, SLOT, INDEX and RLEN are set.\nMultiple calls of this function block with MODE=0 returns the outputs for the same request."
+        },
+        {
+          "Name": "RECEIVE",
+          "Initial": "1",
+          "Comment": "If the Field Device interface has received a process data\nrecord, the function block outputs are updated and the data\nrecord is transferred to the RECORD parameter."
+        },
+        {
+          "Name": "RECEIVE_BY_SLOT",
+          "Initial": "2",
+          "Comment": "If the Field Device interface has received a process data record for the slot or subslot the num-bers of which are given in input F_ID,\nthe function block outputs are updated and the data re-cord is transferred to the RECORD parameter."
+        },
+        {
+          "Name": "POS_RESPONSE",
+          "Initial": "3",
+          "Comment": "The service is responded positively."
+        },
+        {
+          "Name": "NEG_RESPONSE",
+          "Initial": "4",
+          "Comment": "After checking the request to receive a process data record, this function block refuses to accept this record and sends a negative response to the Host Controller.\nThe error reason is given with the inputs CODE1 and CODE2."
+        }
+      ]
+    }
+  ]
+}

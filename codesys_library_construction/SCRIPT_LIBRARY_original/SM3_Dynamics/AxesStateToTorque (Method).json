@@ -1,0 +1,42 @@
+{
+  "library": "SM3_Dynamics",
+  "title": "AxesStateToTorque (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Dynamics/Current/SM3_Dynamics/ISMDynamics/pou-ISMDynamics/AxesStateToTorque.html",
+  "page_title": "ISMDynamics.AxesStateToTorque (METH)",
+  "text": "Library Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nSM3_Dynamics\nISMDynamics\nDynLoad (Struct)\nDynSpatialInertia (Struct)\nDynUnits (Struct)\nDynamicsParams (Struct)\nISMDynamics (Interface)\nAxesStateToTorque (Method)\nFile and Project Information\nLibrary Reference\nSM3_Error\nLibrary Identification\nLibrary Properties\nSM3_Math\nLibrary Identification\nLibrary Properties\nSM3_RBase\nLibrary Identification\nLibrary Properties\nSM3_Dynamics\nDocs\n»\nSM3_Dynamics\n»\nISMDynamics\n»\nISMDynamics\n(ITF)\n»\nISMDynamics.AxesStateToTorque (METH)\nISMDynamics.AxesStateToTorque (METH)\nÂ¶\nMETHOD AxesStateToTorque : SMC_ERROR\nReturns the required axis forces/torques for the given\naxes state.\nInOut:\nScope\nName\nType\nComment\nReturn\nAxesStateToTorque\nSMC_ERROR\nInout\ntorque\nSM3M.SMC_Vec\nThe resulting force or torque for all axes in N or Nm.\nInout Const\naxesState\nSM3M.SMC_DynVecState\nThe dynamic state of all axes. For linear axes in\nu, u/s, u/sÂ², for rotary axes in Â°, Â°/s, Â°/sÂ²\naddParams\nDynamicsParams\nAdditional parameters.",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "AxesStateToTorque",
+          "Type": "SMC_ERROR",
+          "Comment": ""
+        },
+        {
+          "Scope": "Inout",
+          "Name": "torque",
+          "Type": "SM3M.SMC_Vec",
+          "Comment": "The resulting force or torque for all axes in N or Nm."
+        },
+        {
+          "Scope": "Inout Const",
+          "Name": "axesState",
+          "Type": "SM3M.SMC_DynVecState",
+          "Comment": "The dynamic state of all axes. For linear axes in\nu, u/s, u/sÂ², for rotary axes in Â°, Â°/s, Â°/sÂ²"
+        },
+        [
+          "addParams",
+          "DynamicsParams",
+          "Additional parameters."
+        ]
+      ]
+    }
+  ]
+}

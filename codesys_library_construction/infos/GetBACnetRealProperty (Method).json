@@ -1,0 +1,28 @@
+{
+  "library": "BACnet",
+  "title": "GetBACnetRealProperty (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/pou-IBACnetObjectBase/Utilities/GetBACnetRealProperty.html",
+  "page_title": "IBACnetObjectBase.GetBACnetRealProperty (METH)",
+  "text": "\nMETHOD GetBACnetRealProperty : CmpBACnet.IEC_BACNET_REAL\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetBACnetRealProperty",
+          "Type": "CmpBACnet.IEC_BACNET_REAL"
+        },
+        {
+          "Scope": "Input",
+          "Name": "propID",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_ID"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "library": "String Builder Base",
+  "title": "GetNextRune (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Builder Base/Current/BuilderBase/Function-Blocks/pou-Range/IRange/GetNextRune.html",
+  "page_title": "Range.GetNextRune (METH)",
+  "text": "\nMETHOD FINAL GetNextRune : STR.RUNE\nUnpacks the next UTF-8 encoding in a\nIBuilder\ninstance and\nreturns the rune and its length in bytes.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetNextRune",
+          "Type": "STR.RUNE"
+        },
+        {
+          "Scope": "Output",
+          "Name": "udiLength",
+          "Type": "UDINT"
+        },
+        [
+          "eErrorID",
+          "STR.ERROR"
+        ]
+      ]
+    }
+  ]
+}

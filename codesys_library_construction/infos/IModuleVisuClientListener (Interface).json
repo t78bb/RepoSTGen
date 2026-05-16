@@ -1,0 +1,8 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "IModuleVisuClientListener (Interface)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/GenVisu/IModuleVisuClientListener.html",
+  "page_title": "IModuleVisuClientListener (ITF)",
+  "text": "\nINTERFACE IModuleVisuClientListener EXTENDS\nIModule\nModule FunctionBlocks implementing this interface will be called whenever a visu client is de-/registered\nProperties:\nComAddress\n, inherited from\nIBaseInstance\nEnvironment\n, inherited from\nIModule\nFirstErrorInstance\n, inherited from\nIModule\nFirstErrorNumber\n, inherited from\nIModule\nHandle\n, inherited from\nIModule\nInstanceName\n, inherited from\nIBaseInstance\nLastErrorInstance\n, inherited from\nIModule\nLastErrorNumber\n, inherited from\nIModule\nModuleInfo\n, inherited from\nIModule\nMethods:\nClientCreated\nClientDestroyed\nCallPrioHighEnd\n, inherited from\nIModule\nCallPrioHighStart\n, inherited from\nIModule\nCallPrioLowEnd\n, inherited from\nIModule\nCallPrioLowStart\n, inherited from\nIModule\nCallPrioMediumEnd\n, inherited from\nIModule\nCallPrioMediumStart\n, inherited from\nIModule\nClearErrors\n, inherited from\nIModule\nGetErrorMessage\n, inherited from\nIModule\nGetFirstErrorMessage\n, inherited from\nIModule\nGetLastErrorMessage\n, inherited from\nIModule\nInit\n, inherited from\nIBaseInstance\nMain\n, inherited from\nIBaseInstance\nOnAfterOnlineChange\n, inherited from\nIBaseInstance\nOnBeforeOnlineChange\n, inherited from\nIBaseInstance\nStructure:\nClientCreated (Method)\nClientDestroyed (Method)",
+  "tables": []
+}

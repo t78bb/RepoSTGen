@@ -1,0 +1,63 @@
+{
+  "library": "SM3_Robotics",
+  "title": "MC_GroupContinue (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/Movement/MC_GroupContinue.html",
+  "page_title": "MC_GroupContinue (FB)",
+  "text": "\nFUNCTION_BLOCK MC_GroupContinue\nThis function block transfers the axis group back to the situation stored\nin the\ncontinueData\n.\nIt immediately returns\nCommandAborted\nif\nMC_GroupStop\nis active.\nAn error is returned if the axis group is not in state GroupStandby.\nThe axis group must be at the continue-position, which is stored in\ncontinueData\n.  (See\nSMC_GroupGetContinuePosition\n.)\nIf a CP-tracking-movement is to be continued, the axis group needs\nto be following the PCS at this position, otherwise the axes must be\nin state\nstandstill\n.\n..note::\nThe continue data can be recorded using\nMC_GroupInterrupt\nor\nSMC_GroupInterruptAt\n, by calling\nSMC_GroupSaveContinueData\n,\nor automatically on an axis group error when enabled, see\nSMC_GroupEnableResumeAfterError\n.\n..note::\nWhen trying to continue from a position in a dynamic coordinate system,\nthe continue data has to be updated using\nSMC_GroupUpdateContinueData\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "AxisGroup",
+          "Type": "AXIS_GROUP_REF_SM3",
+          "Comment": "Reference to a group of axis"
+        },
+        {
+          "Scope": "Inout Const",
+          "Name": "continueData",
+          "Type": "SMC_AXIS_GROUP_CONTINUE_DATA",
+          "Comment": "The continue data stored byMC_GroupInterrupt."
+        },
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Comment": "Starts the function block on rising edge"
+        },
+        {
+          "Scope": "Output",
+          "Name": "Done",
+          "Type": "BOOL",
+          "Comment": "The operation has been finished successfully"
+        },
+        [
+          "CommandAborted",
+          "BOOL",
+          "The command is aborted by another FB"
+        ],
+        [
+          "Busy",
+          "BOOL",
+          "The FB is not finished"
+        ],
+        [
+          "Error",
+          "BOOL",
+          "Signals that an error has occurred within the function block"
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

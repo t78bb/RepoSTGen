@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现基于设备名称和当前时间生成文件名并创建对应文本文件的功能。",
+  "provide_code": "FUNCTION_BLOCK fileSave\nVAR_INPUT\n\tfilePath \t:STRING;\n\tintervalt\t:INT;\n\tdevName\t\t: STRING ;\nEND_VAR"
+}

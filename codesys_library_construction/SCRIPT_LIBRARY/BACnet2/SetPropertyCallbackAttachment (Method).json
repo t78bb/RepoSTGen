@@ -1,0 +1,41 @@
+{
+  "library": "BACnet2",
+  "title": "SetPropertyCallbackAttachment (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/BACnetObjects/base/pou-BACnetObjectBase/SetPropertyCallbackAttachment.html",
+  "page_title": "BACnetObjectBase.SetPropertyCallbackAttachment (METH)",
+  "text": "\nMETHOD SetPropertyCallbackAttachment : CmpBACnet.IEC_BACNET_STATUS\nSets the current callback status of a property of the BACnet-Object. This status defines if\nthe WRITE- or READ-Callbacks (IEC_BACNET_CALLBACK_TYPE used in BACnetServer.RegisterCallback) are called\nfor the specified property of this object.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetPropertyCallbackAttachment",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "ePropertyID",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_ID",
+          "Comment": "The id of the property to get its callback status for."
+        },
+        [
+          "xReadCallbackAttached",
+          "BOOL",
+          "If the READ-Callback shall be called for the sepcified\nproperty of this object, specify TRUE. Else FALSE."
+        ],
+        [
+          "xWriteCallbackAttached",
+          "BOOL",
+          "If the WRITE-Callback shall be called for the sepcified\nproperty of this object, specify TRUE. Else FALSE."
+        ]
+      ]
+    }
+  ]
+}

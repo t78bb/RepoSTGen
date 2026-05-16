@@ -1,0 +1,62 @@
+{
+  "library": "SML_Basic",
+  "title": "MC_Home_SML (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SML_Basic/Current/PLCopen/MC_Home_SML.html",
+  "page_title": "MC_Home_SML (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL MC_Home_SML\nCommands the axis to perform the Â«search homeÂ» sequence.\nThe details of this sequence are manufacturer specific and can be set by\nthe axisâ parameters. The âPositionâ input is used to set the absolute position\nwhen the reference signal is detected.\nAfter completion, the axis state is\nStandstill\nif it was\nStandstill\nwhen started.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "Axis_REF_SML",
+          "Comment": "Reference to the axis"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Comment": "Rising edge: The homing is started"
+        },
+        [
+          "Position",
+          "LREAL",
+          "Absolute position when the reference signal is detected (in\ntechnical units [u])"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Done",
+          "Type": "BOOL",
+          "Comment": "Reference known and set successfully"
+        },
+        [
+          "Busy",
+          "BOOL",
+          "Homing is not finished and new output values are to be\nexpected"
+        ],
+        [
+          "CommandAborted",
+          "BOOL",
+          "Homing was aborted by a motion command acting on the same\naxis"
+        ],
+        [
+          "Error",
+          "BOOL",
+          "Signals that an error has occured"
+        ],
+        [
+          "ErrorID",
+          "SML_ERROR",
+          "Error number"
+        ]
+      ]
+    }
+  ]
+}

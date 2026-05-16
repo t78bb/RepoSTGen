@@ -1,0 +1,61 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_CAMTappet (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/DataTypes/CAM/SMC_CAMTappet.html",
+  "page_title": "SMC_CAMTappet (STRUCT)",
+  "text": "\nTYPE SMC_CAMTappet : STRUCT\nThis\nSTRUCT\ndescribes the tappets of a cam table as is referenced by\nMC_CAM_REF\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "ctt",
+          "Type": "SMC_CAMTAPPETTYPE",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Name": "cta",
+          "Type": "SMC_CAMTAPPETACTION",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Name": "dwDelay",
+          "Type": "DWORD",
+          "Initial": "",
+          "Comment": "In case ofcta=TAPPETACTION.TAPPETACTION_time,\nthis value determines the delay time in Âµs."
+        },
+        {
+          "Name": "dwDuration",
+          "Type": "DWORD",
+          "Initial": "",
+          "Comment": "In case ofcta=TAPPETACTION.TAPPETACTION_time,\nthis value determines the time in Âµs, for which the tappet\nis switched to on."
+        },
+        {
+          "Name": "iGroupID",
+          "Type": "INT",
+          "Initial": "",
+          "Comment": "Group or track ID of the tappet output that is switched."
+        },
+        {
+          "Name": "x",
+          "Type": "LREAL",
+          "Initial": "",
+          "Comment": "Master position where tappet is switched."
+        },
+        {
+          "Name": "dwActive",
+          "Type": "DWORD",
+          "Initial": "16#FFFFFFFF",
+          "Comment": "Internal variable"
+        }
+      ]
+    }
+  ]
+}

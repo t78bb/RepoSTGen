@@ -1,0 +1,8 @@
+{
+  "library": "AlarmManager",
+  "title": "CommentNormal (Property)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/pou-IAlarm7/CommentNormal.html",
+  "page_title": "IAlarm7.CommentNormal (PROP)",
+  "text": "\nPROPERTY CommentNormal : POINTER TO WSTRING\nOptional comment that can be provided for the state âNormalâ.",
+  "tables": []
+}

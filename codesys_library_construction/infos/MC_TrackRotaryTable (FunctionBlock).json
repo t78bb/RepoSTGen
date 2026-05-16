@@ -1,0 +1,82 @@
+{
+  "library": "SM3_Robotics",
+  "title": "MC_TrackRotaryTable (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/AdministrativeConfiguration/Coordinate-systems/MC_TrackRotaryTable.html",
+  "page_title": "MC_TrackRotaryTable (FB)",
+  "text": "\nFUNCTION_BLOCK MC_TrackRotaryTable\nThis function block tracks a piece on a rotary table.\nBased on the position and orientation of the rotary table\nand on the position and orientation of the piece relative to the\ntable, the tracking is performed using\nSMC_SetDynCoordTransformEx\n.\nThe rotation, angular velocity, etc. of the rotary table is given by a\nsingle axis.\nThis FB may be called with a new rising edge on Execute only after the\nconfigured dynamic coordinate system is no longer in use by any movement,\notherwise error SMC_AXIS_GROUP_PCS_STILL_IN_USE will be returned.\nSee output\nInUse\n.\nNote\nNo dead time compensation is done. In case the axis is an encoder,\nit is recommended to use a logical axis to account for the dead time.\nSee also\nMC_TrackConveyorBelt\n.\nThe function block\nSMC_SetDynCoordTransformEx\nprovides a more\ngeneral interface.\nThis FB does not start a movement (administrative FB). The movement is\ninitiated by a command in PCS.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "AxisGroup",
+          "Type": "AXIS_GROUP_REF_SM3",
+          "Comment": "Reference to the axis group."
+        },
+        [
+          "RotaryTable",
+          "AXIS_REF_SM3",
+          "Reference to the axis of the rotary table.\nThe user units of the axis must be angle degrees (0Â°..360Â°).\nIfRotaryTable.bRegulatorOnis set when the FB is started,\nthe set values will be used.  Otherwise the act values will\nbe used."
+        ],
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Comment": "Start the action at rising edge"
+        },
+        [
+          "RotaryTableOrigin",
+          "MC_COORD_REF",
+          "Specifies the position and orientation of the rotary table\nin world coordinates (WCS).\nThis defines the coordinate system of the rotary table in\nwhich the position of an object lying on the table\ncan be specified.\nThe z-axis of the coordinate system is the axis of rotation\nof the table."
+        ],
+        [
+          "InitialObjectPosition",
+          "MC_COORD_REF",
+          "Specifies the position and orientation of an object lying on\nthe rotary table relative to the table."
+        ],
+        [
+          "CoordSystem",
+          "SMC_COORD_SYSTEM",
+          "Which PCS is to be set (PCS_1 or PCS_2)"
+        ],
+        [
+          "Name",
+          "STRING",
+          "The name of the coordinate system."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Done",
+          "Type": "BOOL",
+          "Comment": "The transformation has been set successfully"
+        },
+        [
+          "Busy",
+          "BOOL",
+          "The FB is not finished"
+        ],
+        [
+          "InUse",
+          "BOOL",
+          "Signals that the axis group still needs the\nreferenced dynamic coordinate system.\nA new rising edge ofExecutewill lead to the errorSMC_AXIS_GROUP_PCS_STILL_IN_USE.\nFor this information to be up-to-date, the function block\nhas to be called continuously\n(even if alreadyDone).\nA dynamic coordinate system becomesInUsewhen a movement\nto a position in the coordinate system is commanded.\nIt remainsInUseuntil the target position of a movement to\na different coordinate system has been reached."
+        ],
+        [
+          "Error",
+          "BOOL",
+          "Signals that an error has occurred within the function block"
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

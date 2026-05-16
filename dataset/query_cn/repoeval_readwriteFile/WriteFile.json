@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现将指定缓冲区的数据写入到指定文件的功能，并提供写入状态和错误反馈。",
+  "provide_code": "FUNCTION_BLOCK WriteFile\nVAR_INPUT\n\tbExec\t:\tBOOL;//功能块触发变量\n\twriteBuffer\t:\tARRAY[0..255] OF BYTE;//写数缓冲区\n\twriteNum\t:\tUDINT;//写入数据的字节数\n\tfileName\t:\tSTRING;//文件的路径\nEND_VAR"
+}

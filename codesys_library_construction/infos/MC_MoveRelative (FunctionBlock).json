@@ -1,0 +1,92 @@
+{
+  "library": "SM3_Basic",
+  "title": "MC_MoveRelative (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/Movement/MC_MoveRelative.html",
+  "page_title": "MC_MoveRelative (FB)",
+  "text": "\nFUNCTION_BLOCK MC_MoveRelative\nThis function block commands a controlled motion of a specified distance.\nThe motion ends in standstill (unless blended to a followup movement).\nExample\nUse of\nMC_MoveRelative\nThe illustration shows how two instances (\nFirst\nand\nSecond\n) of\ntype\nMC_MoveRelative\nare combined.\nIn the left-hand part of the illustration,\nSecond\nis called after\nFirst\n. If\nFirst\nhas reached the specified position distance 6000,\nthe velocity is 0 and\nFirst.Done\nis set.\nThen the\nSecond\ninstance will cause the axis to move to position 10000.\nIn the right-hand part of the illustration, the execution is started by\nSecond\nwhile\nFirst\nis still operating.\nThe motion of\nFirst\nis interrupted and aborted by the\nTest\nsignal,\nwhich is transmitted during the constant velocity phase of\nFirst\n.\nThe distance 4000 is added to the actual position 3250. Then\nSecond\nmoves the axis to the resulting position 7250.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3",
+          "Comment": "Reference to axis"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Comment": "TRUE: Starts execution."
+        },
+        [
+          "Distance",
+          "LREAL",
+          "Relative distance for the motion in technical unit [u]."
+        ],
+        [
+          "Velocity",
+          "LREAL",
+          "Maximum velocity in techincal units per second [u/s].Is always positive.Is not necessarily reached."
+        ],
+        [
+          "Acceleration",
+          "LREAL",
+          "Acceleration in [u/sÂ²].Is always positive.Increasing motor energy"
+        ],
+        [
+          "Deceleration",
+          "LREAL",
+          "Deceleration in [u/sÂ²].Is always positive.Decreasing motor energy"
+        ],
+        [
+          "Jerk",
+          "LREAL",
+          "Maximum magnitude of jerk in [u/sÂ³]"
+        ],
+        [
+          "BufferMode",
+          "MC_BUFFER_MODE",
+          "Defines the chronological sequence of the FB relative to the previous\nblock.  If the function block is Busy, then only BufferMode=Aborting\nis allowed."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Done",
+          "Type": "BOOL",
+          "Comment": "TRUE: Distance has been achieved."
+        },
+        [
+          "Busy",
+          "BOOL",
+          "TRUE: Function block is in operation."
+        ],
+        [
+          "Active",
+          "BOOL",
+          "Indicates that the FB has control on the axis"
+        ],
+        [
+          "CommandAborted",
+          "BOOL",
+          "TRUE: Execution has been interrupted by another function\nblock instance operating on the axis."
+        ],
+        [
+          "Error",
+          "BOOL",
+          "TRUE: Error has occurred."
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

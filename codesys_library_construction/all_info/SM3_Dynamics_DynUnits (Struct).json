@@ -1,0 +1,25 @@
+{
+  "library": "SM3_Dynamics",
+  "title": "DynUnits (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Dynamics/Current/SM3_Dynamics/ISMDynamics/DynUnits.html",
+  "page_title": "DynUnits (STRUCT)",
+  "text": "Library Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nSM3_Dynamics\nISMDynamics\nDynLoad (Struct)\nDynSpatialInertia (Struct)\nDynUnits (Struct)\nDynamicsParams (Struct)\nISMDynamics (Interface)\nAxesStateToTorque (Method)\nFile and Project Information\nLibrary Reference\nSM3_Error\nLibrary Identification\nLibrary Properties\nSM3_Math\nLibrary Identification\nLibrary Properties\nSM3_RBase\nLibrary Identification\nLibrary Properties\nSM3_Dynamics\nDocs\n»\nSM3_Dynamics\n»\nISMDynamics\n»\nDynUnits (STRUCT)\nDynUnits (STRUCT)\nÂ¶\nTYPE DynUnits : STRUCT\nConversion factors from user units to SI units.\n<value in user units> * factor = <value in SI units>\nInOut:\nName\nType\nInitial\nComment\nlengthFactor\nLREAL\n1\nConversion factor for the length from user units u to meters.",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "lengthFactor",
+          "Type": "LREAL",
+          "Initial": "1",
+          "Comment": "Conversion factor for the length from user units u to meters."
+        }
+      ]
+    }
+  ]
+}

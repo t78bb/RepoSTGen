@@ -1,0 +1,21 @@
+{
+  "library": "AlarmManagerToOpcUaConnector",
+  "title": "Variables (GVL)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManagerToOpcUaConnector/Current/AlarmManagerToOpcUaConnector/Variables.html",
+  "page_title": "Variables (GVL)",
+  "text": "\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Name": "symbolcconfigurationmappingInst",
+          "Type": "IAlarmManagerToOpcUaConnector"
+        }
+      ]
+    }
+  ]
+}

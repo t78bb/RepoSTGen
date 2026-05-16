@@ -1,0 +1,23 @@
+{
+  "library": "SM3_CNC",
+  "title": "GetNumber (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/File/ReadNCFile/Token/pou-SMC_Token/GetNumber.html",
+  "page_title": "SMC_Token.GetNumber (METH)",
+  "text": "\nMETHOD FINAL GetNumber\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Output",
+          "Name": "fNumber",
+          "Type": "LREAL"
+        }
+      ]
+    }
+  ]
+}

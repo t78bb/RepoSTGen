@@ -1,0 +1,38 @@
+{
+  "library": "DNP3",
+  "title": "CommandRejectReason (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Enums/CommandRejectReason.html",
+  "page_title": "CommandRejectReason (ENUM)",
+  "text": "\nTYPE CommandRejectReason :\nReason to reject a command tried on a CommandablePoint.\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "NotSupported",
+          "Initial": "4",
+          "Comment": "Executing the command was not accepted because control\noperations are not supported for this point."
+        },
+        {
+          "Name": "Local",
+          "Initial": "7",
+          "Comment": "Executing the command was not accepted because Local/Remote\nswitch is in Local Position."
+        },
+        {
+          "Name": "NotAuthorized",
+          "Initial": "9",
+          "Comment": "Executing the command was not accepted because of\ninsufficient authorization."
+        },
+        {
+          "Name": "AutoInhibit",
+          "Initial": "10",
+          "Comment": "Executing the command was not accepted because it was\nprevented or inhibited by a local automation process."
+        }
+      ]
+    }
+  ]
+}

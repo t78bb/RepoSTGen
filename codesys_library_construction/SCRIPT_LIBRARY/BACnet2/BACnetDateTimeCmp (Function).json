@@ -1,0 +1,32 @@
+{
+  "library": "BACnet2",
+  "title": "BACnetDateTimeCmp (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/Utilities/BACnetUtilities/BACnetDateTimeCmp.html",
+  "page_title": "BACnetDateTimeCmp (FUN)",
+  "text": "\nFUNCTION BACnetDateTimeCmp : INT\nCompares two IEC_BACNET_DATE_TIME\nReturn 0 -> dt1=dt2, -1 -> dt1<dt2, 1 -> dt1>dt2\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "BACnetDateTimeCmp",
+          "Type": "INT"
+        },
+        {
+          "Scope": "Inout",
+          "Name": "dt1",
+          "Type": "CmpBACnet.IEC_BACNET_DATE_TIME"
+        },
+        [
+          "dt2",
+          "CmpBACnet.IEC_BACNET_DATE_TIME"
+        ]
+      ]
+    }
+  ]
+}

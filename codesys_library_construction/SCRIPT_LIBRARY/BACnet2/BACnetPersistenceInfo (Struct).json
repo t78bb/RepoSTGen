@@ -1,0 +1,38 @@
+{
+  "library": "BACnet2",
+  "title": "BACnetPersistenceInfo (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/Persistence/BACnetPersistenceInfo.html",
+  "page_title": "BACnetPersistenceInfo (STRUCT)",
+  "text": "\nTYPE BACnetPersistenceInfo : STRUCT\nInformation which objects had been stored/restored.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Name": "devInstance",
+          "Type": "CmpBACnet.IEC_BACNET_DWORD",
+          "Initial": ""
+        },
+        {
+          "Name": "objID",
+          "Type": "CmpBACnet.IEC_BACNET_OBJECT_ID",
+          "Initial": ""
+        },
+        {
+          "Name": "wasClientCreated",
+          "Type": "BOOL",
+          "Initial": ""
+        },
+        {
+          "Name": "restored",
+          "Type": "BOOL",
+          "Initial": "FALSE"
+        }
+      ]
+    }
+  ]
+}

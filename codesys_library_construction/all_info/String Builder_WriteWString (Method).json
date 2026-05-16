@@ -1,0 +1,37 @@
+{
+  "library": "String Builder",
+  "title": "WriteWString (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Builder/Current/Builder/Function-Blocks/pou-_Builder/IBuilder/WriteWString.html",
+  "page_title": "_Builder.WriteWString (METH)",
+  "text": "Builder\nAliases\nConstants (GVL)\nEnums\nENCODING (Alias)\nERROR (Alias)\nSTATS (Alias)\nFunction Blocks\nRange (Alias)\n_RangePool (Alias)\nInterfaces\nIBuilder (Folder)\nICharmap (Alias)\nIString (Alias)\nIStringRepresentation (Folder)\nTypes\nRUNE (Alias)\nFunction Blocks\n_Builder (FunctionBlock)\nIBuilder\nIStringRepresentation\nSetInitialValue (Method)\nFunctions\nCreateRange (Function)\nCreateRangePool (Function)\nLibrary Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nFile and Project Information\nLibrary Reference\nImmutable String Segments\nLibrary Identification\nLibrary Properties\nMemory Block Manager\nLibrary Identification\nLibrary Properties\nString Builder Base\nLibrary Identification\nLibrary Properties\nString Conversions\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nUTF-16 Encoding Support\nLibrary Identification\nLibrary Properties\nUTF-8 Encoding Support\nLibrary Identification\nLibrary Properties\nString Builder\nDocs\n»\nBuilder\n»\nFunction\nBlocks\n»\n_Builder\n(FB)\n»\nIBuilder\n»\n_Builder.WriteWString (METH)\n_Builder.WriteWString (METH)\nÂ¶\nMETHOD FINAL WriteWString : UDINT\nAppends the contents of\nwsValue\nto the buffer.\nIt returns the number of bytes written.\nInOut:\nScope\nName\nType\nComment\nReturn\nWriteWString\nUDINT\nInout Const\nwsValue\nWSTRING(255)\nEncoding UCS-2\nOutput\neErrorID\nERROR\nCheck error message for better diagnostics",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "WriteWString",
+          "Type": "UDINT",
+          "Comment": ""
+        },
+        {
+          "Scope": "Inout Const",
+          "Name": "wsValue",
+          "Type": "WSTRING(255)",
+          "Comment": "Encoding UCS-2"
+        },
+        {
+          "Scope": "Output",
+          "Name": "eErrorID",
+          "Type": "ERROR",
+          "Comment": "Check error message for better diagnostics"
+        }
+      ]
+    }
+  ]
+}

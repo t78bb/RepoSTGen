@@ -1,0 +1,8 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "ComAddress (Property)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_Module/pou-IBaseInstance/ComAddress.html",
+  "page_title": "IBaseInstance.ComAddress (PROP)",
+  "text": "\nPROPERTY ComAddress : UDINT\nThe communication address.  The most significand 16 bit are the\naddress of the application, the least significand 16 bit are\nthe local address.  Together the address is unique among all instances\nin all applications.",
+  "tables": []
+}

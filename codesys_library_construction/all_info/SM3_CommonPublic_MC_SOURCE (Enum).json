@@ -1,0 +1,29 @@
+{
+  "library": "SM3_CommonPublic",
+  "title": "MC_SOURCE (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CommonPublic/Current/SM3_CommonPublic/MC_SOURCE.html",
+  "page_title": "MC_SOURCE (ENUM)",
+  "text": "SM3_CommonPublic\nMC_BUFFER_MODE (Enum)\nMC_SOURCE (Enum)\nSMC_ADDITIONAL_AXES_VALUES_ARRAY (Alias)\nSMC_COORD_SYSTEM (Enum)\nSMC_Movement_Id (Alias)\nFile and Project Information\nLibrary Reference\nSM3_CPKernelDefaults\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nSM3_CommonPublic\nDocs\n»\nSM3_CommonPublic\n»\nMC_SOURCE (ENUM)\nMC_SOURCE (ENUM)\nÂ¶\nTYPE MC_SOURCE :\nDetermines the source or reference used for position, velocity,\nacceleration, or jerk.\nAttributes:\nqualified_only\nInOut:\nName\nComment\nSAVE\nUse the values computed on the PLC, as a reference.\n(Based on the start of a PLC cycle.)\nSET\nUse the values computed on the PLC, as a reference.\n(Based on the end of a PLC cycle.)\nACT\nUse the actual values in the drive as a reference.",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "SAVE",
+          "Comment": "Use the values computed on the PLC, as a reference.\n(Based on the start of a PLC cycle.)"
+        },
+        {
+          "Name": "SET",
+          "Comment": "Use the values computed on the PLC, as a reference.\n(Based on the end of a PLC cycle.)"
+        },
+        {
+          "Name": "ACT",
+          "Comment": "Use the actual values in the drive as a reference."
+        }
+      ]
+    }
+  ]
+}

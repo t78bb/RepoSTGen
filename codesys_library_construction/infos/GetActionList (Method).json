@@ -1,0 +1,42 @@
+{
+  "library": "BACnet",
+  "title": "GetActionList (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/Command/pou-BACnetCommand/GetActionList.html",
+  "page_title": "BACnetCommand.GetActionList (METH)",
+  "text": "\nMETHOD GetActionList : CmpBACnet.IEC_BACNET_STATUS\nGets a action list and action list text at index nIndex from the Action-BACnet-Propetrty and Action_Text-BACnetProperty of this BACnet-Command-Object at the same time.\nSo both description and action are aquired simultaneously (outputs pActionList and sctionListText).\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetActionList",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "nIndex",
+          "Type": "CmpBACnet.IEC_BACNET_ELEMENT_COUNT",
+          "Comment": "The 1 based index of the action list to get."
+        },
+        {
+          "Scope": "Output",
+          "Name": "pActionList",
+          "Type": "POINTER TO\nCmpBACnet.IEC_BACNET_ACTION_LIST",
+          "Comment": "The returned Pointer gets filled with the data of IEC_BACNET_EVENT_PARAMETER AND (!) the data referenced within evtParams.\nAfter usage, useFreeStackAllocatedMemory, to free the used memory. The pointer only points to a single action list."
+        },
+        [
+          "actionListText",
+          "WSTRING(255)",
+          "The corresponding action text describing the aquired action\nlist."
+        ]
+      ]
+    }
+  ]
+}

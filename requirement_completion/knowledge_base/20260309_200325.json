@@ -1,0 +1,664 @@
+{
+  "构造函数和初始化方法": [
+    {
+      "模糊点描述": "原始需求未明确说明Director类的构造函数和初始化方法的设计",
+      "精准需求示例": "Director类应包含一个初始化方法，该方法接受一个ConcreteBuilder类型的参数用于实例化Director对象。此方法应确保在构建产品对象之前，ConcreteBuilder的实例已正确设置。",
+      "case_id": "repoeval_Builder_Application_RPI/Director"
+    }
+  ],
+  "方法定义和调用": [
+    {
+      "模糊点描述": "原始需求未明确说明是否需要将产品构建过程封装在一个单独的方法中",
+      "精准需求示例": "Director类应定义一个名为Construct的方法，该方法负责按照指定的步骤调用ConcreteBuilder的方法来逐步构建最终产品。",
+      "case_id": "repoeval_Builder_Application_RPI/Director"
+    }
+  ],
+  "构建步骤和部件数量": [
+    {
+      "模糊点描述": "原始需求未明确指定构建产品所需的步骤数量和部件",
+      "精准需求示例": "构建产品时应包括四个步骤：设置主要部件（Main Part），设置部件1（Part1），设置部件2（Part2），设置部件3（Part3）。每个部件的具体规格应从输入的ConcreteBuilder的specifications数组中按顺序获取。",
+      "case_id": "repoeval_Builder_Application_RPI/Director_Construct"
+    }
+  ],
+  "方法实现": [
+    {
+      "模糊点描述": "原始需求未明确是否需要实现字符串处理的方法",
+      "精准需求示例": "需要实现一个方法，该方法能够将产品的所有部分连接成一个字符串并返回这个字符串",
+      "case_id": "repoeval_Builder_Application_RPI/Product"
+    },
+    {
+      "模糊点描述": "原始需求未明确是否需要在执行命令时激活空调和设置特定温度",
+      "精准需求示例": "执行空调待机命令时，应激活空调并将温度设置为17.5°C",
+      "case_id": "repoeval_Command1/FB_AirConStandbyCommand"
+    },
+    {
+      "模糊点描述": "原始需求未明确是否需要实现控制播放状态、音量和曲目的方法",
+      "精准需求示例": "需要实现方法来控制CD播放器的播放状态（开始和停止）、设置音量和曲目，每个方法应当接受一个输入参数并更新相应的输出变量",
+      "case_id": "repoeval_Command1/FB_CDPlayer"
+    },
+    {
+      "模糊点描述": "原始需求未明确是否需要实现Execute方法以及其具体行为",
+      "精准需求示例": "实现Execute方法，该方法应当设置CD播放器的音量为40，曲目为1，并启动播放",
+      "case_id": "repoeval_Command1/FB_MusicPlayCommand"
+    },
+    {
+      "模糊点描述": "原始需求未明确是否需要实现特定的方法来执行停止音乐的命令",
+      "精准需求示例": "应在FB_MusicStopCommand中实现一个名为Execute的方法，该方法负责检查CD播放器的引用有效性并调用停止方法",
+      "case_id": "repoeval_Command1/FB_MusicStopCommand"
+    },
+    {
+      "模糊点描述": "原始需求未明确是否需要通过特定方法控制bActive的状态",
+      "精准需求示例": "应提供On和Off方法，分别用于将bActive设置为true和false",
+      "case_id": "repoeval_Command1/FB_Socket"
+    },
+    {
+      "模糊点描述": "原始需求未明确是否需要在FUNCTION_BLOCK中实现特定的方法",
+      "精准需求示例": "在FB_SocketOffCommand FUNCTION_BLOCK中应实现Execute方法，该方法检查refSocket的有效性并调用Off方法",
+      "case_id": "repoeval_Command1/FB_SocketOffCommand"
+    },
+    {
+      "模糊点描述": "原始需求未明确是否需要单独的执行方法",
+      "精准需求示例": "应在FUNCTION_BLOCK中实现一个名为Execute的方法，该方法负责检查refSocket的有效性并调用其On方法",
+      "case_id": "repoeval_Command1/FB_SocketOnCommand"
+    },
+    {
+      "模糊点描述": "原始需求未明确是否需要实现获取描述和值的方法",
+      "精准需求示例": "应实现两个方法：getDescription返回对象的描述，getValue返回对象的值",
+      "case_id": "repoeval_Decorator_Application/ConcreteComponment"
+    },
+    {
+      "模糊点描述": "原始需求未明确是否需要实现获取和设置整数属性的方法",
+      "精准需求示例": "实现两个方法，一个名为Get_Method用于返回整数属性iProp的值，另一个名为Set_Method用于设置整数属性iProp的值",
+      "case_id": "repoeval_Proxy_Application/Realsubject"
+    }
+  ],
+  "变量使用和方法实现": [
+    {
+      "模糊点描述": "原始需求未明确是否需要使用局部变量来逐步构建最终的字符串",
+      "精准需求示例": "在构建最终的字符串表示时，应使用一个局部变量来逐步连接各个部分，每次连接后的结果应存储在这个局部变量中，最终将这个局部变量的值作为方法的返回值",
+      "case_id": "repoeval_Builder_Application_RPI/Product_toString"
+    }
+  ],
+  "初始化方法": [
+    {
+      "模糊点描述": "原始需求未明确是否需要实现初始化方法以及如何处理空调控制引用的初始化",
+      "精准需求示例": "应实现一个初始化方法，该方法根据输入参数初始化空调控制的引用，如果引用有效则保留，否则设置为0",
+      "case_id": "repoeval_Command1/FB_AirConStandbyCommand"
+    },
+    {
+      "模糊点描述": "原始需求未明确是否需要实现FB_init方法以及其具体行为",
+      "精准需求示例": "实现FB_init方法，该方法应当接受一个CD播放器的引用作为输入，并将其赋值给内部变量，如果引用无效则将内部变量设置为0",
+      "case_id": "repoeval_Command1/FB_MusicPlayCommand"
+    },
+    {
+      "模糊点描述": "原始需求未明确是否需要实现初始化方法来处理CD播放器的引用",
+      "精准需求示例": "应在FB_MusicStopCommand中实现一个名为FB_init的初始化方法，该方法接受一个CD播放器的引用作为输入，并根据输入初始化内部的CD播放器引用",
+      "case_id": "repoeval_Command1/FB_MusicStopCommand"
+    },
+    {
+      "模糊点描述": "原始需求未明确是否需要初始化方法以及如何处理新的socket引用",
+      "精准需求示例": "应实现一个名为FB_init的方法，该方法接受一个新的socket引用，并根据其有效性更新或清除当前的socket引用",
+      "case_id": "repoeval_Command1/FB_SocketOnCommand"
+    }
+  ],
+  "功能实现": [
+    {
+      "模糊点描述": "原始需求未明确是否需要实现设置灯光级别的方法",
+      "精准需求示例": "实现一个公共方法SetLevel，该方法接收一个BYTE类型的输入参数byNewLevel，并将其值赋给输出变量byLevel",
+      "case_id": "repoeval_Command1/FB_Lamp"
+    },
+    {
+      "模糊点描述": "原始需求未明确如何处理输入的呼叫信号以更新目标楼层数组",
+      "精准需求示例": "当接收到特定楼层的呼叫信号时，应将对应楼层在目标楼层数组中的值设置为TRUE",
+      "case_id": "repoeval_elevator/F_RegisterCalls"
+    }
+  ],
+  "报错机制": [
+    {
+      "模糊点描述": "原始需求未明确当引用的灯对象无效时的处理机制",
+      "精准需求示例": "如果传入的灯对象引用无效，则应将该引用设置为0，并且不执行设置亮度的操作",
+      "case_id": "repoeval_Command1/FB_LampSetLevelCommand"
+    },
+    {
+      "模糊点描述": "原始需求未明确在命令执行前进行有效性检查的需求",
+      "精准需求示例": "在执行每个命令前，检查该命令是否有效（非0或非null），只有有效命令才被执行",
+      "case_id": "repoeval_Command1/FB_SwitchPanel"
+    },
+    {
+      "模糊点描述": "原始需求未明确指定客户端ID的生成方式和要求",
+      "精准需求示例": "客户端ID应动态生成，利用系统时间戳确保每次连接的唯一性",
+      "case_id": "repoeval_GreatExampleOfAdvantages/MQTT_STUFF"
+    },
+    {
+      "模糊点描述": "原始需求未明确指定消息处理的回调机制",
+      "精准需求示例": "实现MQTT订阅时，应使用CallbackCollector来管理消息的接收和处理，确保消息处理逻辑与消息接收解耦，提高代码的模块化和可维护性",
+      "case_id": "repoeval_Interation_HowTo/FirstSubscription"
+    },
+    {
+      "模糊点描述": "原始需求未明确说明当Ti为零时的处理机制",
+      "精准需求示例": "当Ti为零时，应自动将Ti设置为最小非零值，例如1，以避免除零错误并允许积分项的计算",
+      "case_id": "repoeval_PID_controller/PID_controller"
+    },
+    {
+      "模糊点描述": "原始需求未明确如何处理输入与输出值非常接近的情况",
+      "精准需求示例": "当输入与输出的差值小于1E-6时，应直接将输出设置为输入值，以避免潜在的除零错误",
+      "case_id": "repoeval_PT1Filter/FB_PT1Filter"
+    },
+    {
+      "模糊点描述": "原始需求未明确故障重置的触发机制",
+      "精准需求示例": "使用上升沿触发器来检测故障重置信号的变化，确保只在信号从低到高变化时重置故障状态",
+      "case_id": "repoeval_ProductionLine/Motor"
+    },
+    {
+      "模糊点描述": "原始需求未明确说明是否需要使用边沿触发逻辑来检测故障重置信号",
+      "精准需求示例": "故障重置信号的检测应使用上升沿触发逻辑，确保只在信号从低到高变化时触发故障状态的重置",
+      "case_id": "repoeval_ProductionLine/Motor_ResetFault"
+    },
+    {
+      "模糊点描述": "原始需求未明确是否需要在故障检测后立即返回故障状态",
+      "精准需求示例": "在检测到电机过载时，应设置故障状态并立即返回故障检测结果",
+      "case_id": "repoeval_ProductionLine/Motor_SetFault"
+    },
+    {
+      "模糊点描述": "原始需求未明确是否需要使用额外的定时器或延迟机制",
+      "精准需求示例": "在设置故障状态前，应使用定时器或延迟机制以确保故障状态的正确设置",
+      "case_id": "repoeval_ProductionLine/Motor_SetFault"
+    },
+    {
+      "模糊点描述": "原始需求未明确说明是否需要在处理鼠标事件时防止事件重复处理",
+      "精准需求示例": "在每个事件处理完成后，设置一个标志（如xEventProcessed）为TRUE，以防止在事件处理周期内重复处理同一事件。在下一个周期开始时，重置此标志。",
+      "case_id": "repoeval_VisuElements/MouseEventHandler"
+    },
+    {
+      "模糊点描述": "原始需求未明确说明系统在检测到错误时的具体行为",
+      "精准需求示例": "系统应具备错误检测功能，能够在检测到移动Z轴、移动X轴或物品检测时的异常行为时触发相应的错误处理。具体实现应包括使用触发器来监控这些动作，并在异常情况下更新系统状态或触发报警。",
+      "case_id": "repoeval_assembly-station/PNP_MACHINE"
+    },
+    {
+      "模糊点描述": "原始需求未明确指定状态检查的顺序和是否需要立即返回",
+      "精准需求示例": "在检测到任何一个状态后，应立即返回该状态的描述字符串，不继续检查其他状态",
+      "case_id": "repoeval_electronic_cam_motion/F_AxisStatusToString"
+    },
+    {
+      "模糊点描述": "原始需求未明确说明错误和状态的检测与处理机制",
+      "精准需求示例": "错误和状态的检测应同时进行，当检测到错误或状态不符合要求时，应立即停止进一步操作，直到错误被清除或状态恢复正常",
+      "case_id": "repoeval_electronic_cam_motion/ResetAxis"
+    },
+    {
+      "模糊点描述": "原始需求未明确在计算轴准备就绪状态时是否应考虑错误状态",
+      "精准需求示例": "在判断轴的准备就绪状态时，应仅考虑状态标志，不应将错误状态作为判断准备就绪的条件",
+      "case_id": "repoeval_electronic_gear_motion/FB_DualAxisPower"
+    },
+    {
+      "模糊点描述": "原始需求未明确说明在哪些情况下应该更新错误状态",
+      "精准需求示例": "在每个状态机的周期结束时，应检查所有相关功能块的错误状态，并更新主控制块的错误状态。",
+      "case_id": "repoeval_electronic_gear_motion/FB_GearMotionControl"
+    },
+    {
+      "模糊点描述": "原始需求未明确在关门过程中是否需要检测门是否已经完全关闭",
+      "精准需求示例": "在关门过程结束时，应检查门是否已经完全关闭，如果未关闭则应保持关门状态直到门完全关闭",
+      "case_id": "repoeval_elevator/FB_ElevatorDoorController"
+    },
+    {
+      "模糊点描述": "原始需求未明确电梯在没有任何楼层请求时的行为",
+      "精准需求示例": "当电梯没有任何楼层请求时，应保持当前状态不变，直到新的楼层请求出现",
+      "case_id": "repoeval_elevator/FB_ElevatorMovement"
+    },
+    {
+      "模糊点描述": "原始需求未明确说明如何处理零或负半径值",
+      "精准需求示例": "在计算补偿速度时，若调整后的半径小于或等于0.01，则保持当前速度不变，避免除零错误",
+      "case_id": "repoeval_open-type_dual-axis_winding_machine/F_CompensateVelocity"
+    },
+    {
+      "模糊点描述": "原始需求未明确说明在执行停止命令后是否应重置错误状态",
+      "精准需求示例": "在执行停止命令后，不应重置错误状态，以保留错误信息直到故障被确认并处理。",
+      "case_id": "repoeval_open-type_dual-axis_winding_machine/SeekHome"
+    },
+    {
+      "模糊点描述": "原始需求未明确说明在不同状态下对设备命令的处理",
+      "精准需求示例": "当bEnable为FALSE时，应清除所有设备控制命令，确保系统不进行任何操作",
+      "case_id": "repoeval_plc_hello_mixing_tank/FB_AutoSequence"
+    },
+    {
+      "模糊点描述": "原始需求未明确说明错误信息的详细内容和格式",
+      "精准需求示例": "在检测到轴回零过程中的错误时，应使用错误ID和当前系统语言设置来生成详细的错误信息，确保错误信息的内容能够详细反映出错误的性质和具体错误位置。",
+      "case_id": "repoeval_three-axis_CNC_motion/FB_TripleAxisHoming"
+    },
+    {
+      "模糊点描述": "原始需求未明确指定错误信息的详细内容和格式",
+      "精准需求示例": "错误信息应通过SMC_ERRORSTRING函数生成，该函数根据错误ID和指定的语言设置生成详细的本地化错误描述。",
+      "case_id": "repoeval_three-axis_CNC_motion/FB_TripleAxisPower"
+    },
+    {
+      "模糊点描述": "原始需求未明确指定错误信息的格式和内容",
+      "精准需求示例": "错误信息应使用SMC_ERRORSTRING函数生成，确保错误信息的统一格式和多语言支持。错误信息的语言设置应为英语。",
+      "case_id": "repoeval_three-axis_CNC_motion/FB_TripleAxisReset"
+    },
+    {
+      "模糊点描述": "原始需求未明确错误处理的优先级",
+      "精准需求示例": "在处理错误时，应按照X轴、Y轴、Z轴的顺序检查并报告错误，确保错误处理的优先级顺序。",
+      "case_id": "repoeval_three-axis_CNC_motion/FB_TripleAxisReset"
+    },
+    {
+      "模糊点描述": "原始需求未明确指定错误信息的格式和语言",
+      "精准需求示例": "在处理错误信息时，应使用错误ID调用SMC_ERRORSTRING函数，并设置语言参数为英语，以格式化错误信息",
+      "case_id": "repoeval_three-axis_CNC_motion/FB_TripleAxisStop"
+    },
+    {
+      "模糊点描述": "原始需求未明确在停止功能块中是否需要设置减速参数",
+      "精准需求示例": "在调用停止功能块时，应设置减速参数Deceleration为100",
+      "case_id": "repoeval_three-axis_CNC_motion/INIT_CNC_System"
+    },
+    {
+      "模糊点描述": "原始需求未明确指定时间转换的精度",
+      "精准需求示例": "时间转换为秒时应使用四舍五入到最接近的整数",
+      "case_id": "repoeval_traffic_light/FB_CountdownTimer"
+    }
+  ],
+  "变量初始化": [
+    {
+      "模糊点描述": "原始需求未明确如何初始化变量",
+      "精准需求示例": "在FB_LampSetLevelCommand的实例化时，应通过FB_init方法初始化refLamp和byNewLevel变量，其中refLamp如果为无效引用则设置为0，byNewLevel应从输入参数获取值",
+      "case_id": "repoeval_Command1/FB_LampSetLevelCommand"
+    },
+    {
+      "模糊点描述": "原始需求未明确说明变量lastTemp的初始条件",
+      "精准需求示例": "在第一次计算迭代中，应将lastTemp初始化为输入的Temp_In，以确保正确的起始温度计算",
+      "case_id": "repoeval_PID_controller/HeatExchanger2"
+    }
+  ],
+  "方法行为": [
+    {
+      "模糊点描述": "原始需求未明确Execute方法应调用的具体Socket操作",
+      "精准需求示例": "Execute方法应当调用refSocket的Off方法以关闭socket",
+      "case_id": "repoeval_Command1/FB_SocketOffCommand"
+    }
+  ],
+  "变量范围": [
+    {
+      "模糊点描述": "原始需求未明确指出命令数组的数据类型和初始化需求",
+      "精准需求示例": "定义一个名为aiCommand的数组，类型为I_Command，大小与arrSwitch相同，初始化时每个元素设置为无效命令（例如null或0）",
+      "case_id": "repoeval_Command1/FB_SwitchPanel"
+    },
+    {
+      "模糊点描述": "原始需求未明确说明装饰字符串的来源",
+      "精准需求示例": "装饰字符串应从组件实例的属性中获取，而不是使用固定的字符串",
+      "case_id": "repoeval_Decorator_Application/ConcreteDecoratorA_getDescription"
+    },
+    {
+      "模糊点描述": "原始需求未明确说明装饰器模式中的增加值是否应该是固定的或可配置的",
+      "精准需求示例": "装饰器应允许通过外部配置设置增加值，而不是使用硬编码的固定值",
+      "case_id": "repoeval_Decorator_Application/ConcreteDecoratorA_getValue"
+    },
+    {
+      "模糊点描述": "原始需求未明确是否需要内部定时器和延迟时间变量",
+      "精准需求示例": "在关闭电机线圈的过程中，需要引入一个内部定时器WaitTimer和一个延迟时间变量InternalSequenceDelay，用于控制关闭操作的时间延迟",
+      "case_id": "repoeval_ProductionLine/Motor_TurnOff"
+    },
+    {
+      "模糊点描述": "原始需求未明确说明需要处理的所有轴状态",
+      "精准需求示例": "应包括并处理'SynchronizedMotion', 'ContinuousMotion', 'DiscreteMotion'等状态，并为每个状态提供相应的描述字符串",
+      "case_id": "repoeval_electronic_cam_motion/F_AxisStatusToString"
+    },
+    {
+      "模糊点描述": "原始需求未明确指定状态机变量的数据类型",
+      "精准需求示例": "状态机变量nState应使用UDINT类型以支持更大的状态数和避免负值",
+      "case_id": "repoeval_electronic_cam_motion/FB_DualAxisReset"
+    },
+    {
+      "模糊点描述": "原始需求未明确在开门时是否应考虑楼层呼叫来决定动画值增加的速率",
+      "精准需求示例": "当开门命令激活且当前动画值未达到最大值时，如果存在楼层呼叫，则动画值每次增加1，否则不增加",
+      "case_id": "repoeval_elevator/F_UpdateDoorAnimation"
+    },
+    {
+      "模糊点描述": "原始需求未明确在关门时动画值的减少是否应考虑当前动画值是否大于0",
+      "精准需求示例": "当关门命令激活且当前动画值大于0时，动画值每次减少1",
+      "case_id": "repoeval_elevator/F_UpdateDoorAnimation"
+    },
+    {
+      "模糊点描述": "原始需求未明确指出在位置不变时的速度处理方式",
+      "精准需求示例": "如果新位置与旧位置相同，则应保持当前速度不变",
+      "case_id": "repoeval_open-type_dual-axis_winding_machine/F_CompensateVelocity"
+    },
+    {
+      "模糊点描述": "原始需求未明确指定iStatus的有效范围和对应的输出值",
+      "精准需求示例": "需明确iStatus的所有可能值及其对应的输出逻辑，例如iStatus为2,3,4,5,6,7,8,9,10,221,222时，Y1应为TRUE，Y2至Y4为FALSE，Y5为FALSE，Y6为TRUE；iStatus为11,12时，Y2应为TRUE，其余输出为FALSE，除Y6为TRUE；以此类推，包括ELSE情况下的默认输出值",
+      "case_id": "repoeval_open-type_dual-axis_winding_machine/StaDisplay"
+    },
+    {
+      "模糊点描述": "原始需求未明确指定变量类型",
+      "精准需求示例": "所有与时间相关的秒数变量应使用UINT类型",
+      "case_id": "repoeval_traffic_light/FB_CountdownTimer"
+    }
+  ],
+  "初始化默认值": [
+    {
+      "模糊点描述": "原始需求未明确指出对象的默认描述和值",
+      "精准需求示例": "在对象初始化时，应设置默认的描述为'Plain Component'和默认值为4.0",
+      "case_id": "repoeval_Decorator_Application/ConcreteComponment"
+    }
+  ],
+  "变量定义": [
+    {
+      "模糊点描述": "原始需求未明确说明是否需要在方法内定义额外的变量",
+      "精准需求示例": "在getDescription方法中，定义一个STRING类型的变量sDescription来存储对象的描述，并定义一个REAL类型的变量rValue来存储对象的数值",
+      "case_id": "repoeval_Decorator_Application/ConcreteComponment_getDescription"
+    },
+    {
+      "模糊点描述": "原始需求未明确是否需要定义和初始化发送的负载数据",
+      "精准需求示例": "定义一个名为sendPayload的字符串变量，并初始化为'testPayload'，用于MQTT消息的负载",
+      "case_id": "repoeval_Interation_HowTo/FirstPublish"
+    }
+  ],
+  "变量定义和初始化": [
+    {
+      "模糊点描述": "原始需求未明确说明是否需要在方法内部定义和初始化对象的描述和值",
+      "精准需求示例": "方法内应定义必要的变量来存储对象的描述和实际值，并初始化这些变量以确保方法可以返回对象的实际成本值",
+      "case_id": "repoeval_Decorator_Application/ConcreteComponment_getValue"
+    }
+  ],
+  "构造函数和初始化逻辑": [
+    {
+      "模糊点描述": "原始需求未明确说明是否需要在类的实例化时进行特定的初始化操作",
+      "精准需求示例": "在类的实例化时，应调用一个构造函数fb_init，该函数初始化类的属性，并设置描述和默认值",
+      "case_id": "repoeval_Decorator_Application/ConcreteDecoratorA"
+    },
+    {
+      "模糊点描述": "原始需求未明确是否需要在类的实例化时进行特定的初始化操作",
+      "精准需求示例": "在ConcreteDecoratorB类的实例化时，应调用基类Decorator的构造函数fb_init，并传递初始化参数bInitRetains和bInCopyCode均为TRUE，同时应传递tempInputComponent作为参数。此外，应在实例化时设置sDescription为'Decorator B'和rValue为0.35。",
+      "case_id": "repoeval_Decorator_Application/ConcreteDecoratorB"
+    },
+    {
+      "模糊点描述": "原始需求未明确是否需要在类的实例化时初始化特定的属性或执行特定的构造逻辑",
+      "精准需求示例": "在类的实例化时，应调用一个构造函数来初始化实例的属性，包括设置描述和默认值",
+      "case_id": "repoeval_Decorator_Application/ConcreteDecoratorC"
+    }
+  ],
+  "方法实现和功能扩展": [
+    {
+      "模糊点描述": "原始需求未明确说明是否需要实现获取描述和值的方法",
+      "精准需求示例": "应实现两个方法：getDescription和getValue，分别用于返回装饰后的组件描述和值，其中getDescription方法应该返回组件原有描述与装饰描述的组合，getValue方法应该返回组件原有值加上装饰值",
+      "case_id": "repoeval_Decorator_Application/ConcreteDecoratorA"
+    },
+    {
+      "模糊点描述": "原始需求未明确是否需要实现获取描述和值的方法，以及这些方法的具体实现细节",
+      "精准需求示例": "应实现两个方法：getDescription和getValue。getDescription方法应返回装饰后的组件描述，即基础组件的描述与'Decorator B'连接。getValue方法应返回装饰后的组件值，即基础组件的值加上0.35。",
+      "case_id": "repoeval_Decorator_Application/ConcreteDecoratorB"
+    },
+    {
+      "模糊点描述": "原始需求未明确说明是否需要实现获取描述和值的方法",
+      "精准需求示例": "类应实现方法来获取装饰后的描述和值，这些方法应返回与被装饰组件相关的增强描述和值",
+      "case_id": "repoeval_Decorator_Application/ConcreteDecoratorC"
+    }
+  ],
+  "变量命名": [
+    {
+      "模糊点描述": "原始需求未明确指定功能块内部实例的命名",
+      "精准需求示例": "功能块内部的实例应该直接命名为'GroundFloor'和'TopFloor'，以反映其代表的楼层",
+      "case_id": "repoeval_GreatExampleOfAdvantages/Home"
+    }
+  ],
+  "IO映射": [
+    {
+      "模糊点描述": "原始需求未明确指定如何处理订阅主题和出生消息主题的生成",
+      "精准需求示例": "订阅主题和出生消息主题应根据实例名称动态生成，确保每个实例的主题唯一",
+      "case_id": "repoeval_GreatExampleOfAdvantages/MQTT_STUFF"
+    },
+    {
+      "模糊点描述": "原始需求未明确指定连接到MQTT代理的URL和超时设置",
+      "精准需求示例": "应明确指定连接到MQTT代理的URL和连接操作的超时时间",
+      "case_id": "repoeval_GreatExampleOfAdvantages/MQTT_STUFF"
+    },
+    {
+      "模糊点描述": "原始需求未明确指定定时器完成后是否需要重置定时器",
+      "精准需求示例": "定时器完成并激活电机线圈后，应重置定时器",
+      "case_id": "repoeval_ProductionLine/Motor_TurnOn"
+    },
+    {
+      "模糊点描述": "原始需求未明确说明是否需要使用外部IO映射来控制机械动作",
+      "精准需求示例": "系统需要通过外部IO映射来控制机械动作，包括移动Z轴、移动X轴和物品检测。具体的IO映射应包括输入信号FIO_iMovingZ, FIO_iMovingX, FIO_iItemDetected和输出信号FIO_oMoveZ, FIO_oGrab, FIO_oMoveX。",
+      "case_id": "repoeval_assembly-station/PNP_MACHINE"
+    },
+    {
+      "模糊点描述": "原始需求未明确说明电源控制函数的具体参数",
+      "精准需求示例": "电源控制函数应包括启动驱动和调节器的控制，即在电源使能时同时启动驱动和调节器",
+      "case_id": "repoeval_electronic_cam_motion/FB_DualAxisPower"
+    },
+    {
+      "模糊点描述": "原始需求未明确是否需要在电源控制中启动驱动器和调节器",
+      "精准需求示例": "在电源控制功能中，应当同时启动驱动器和调节器，确保轴的完全启动和控制",
+      "case_id": "repoeval_electronic_gear_motion/FB_DualAxisPower"
+    },
+    {
+      "模糊点描述": "原始需求未明确指定主轴和从轴引用的数据类型",
+      "精准需求示例": "主轴和从轴引用应使用AXIS_REF类型",
+      "case_id": "repoeval_electronic_gear_motion/FB_GearCoupling"
+    },
+    {
+      "模糊点描述": "原始需求未明确说明主轴和从轴的引用类型",
+      "精准需求示例": "应使用通用的 'AXIS_REF' 类型来引用主轴和从轴，以确保代码的通用性和兼容性。",
+      "case_id": "repoeval_electronic_gear_motion/FB_GearMotionControl"
+    },
+    {
+      "模糊点描述": "原始需求未明确指出在所有传感器均无信号时应如何处理当前楼层值",
+      "精准需求示例": "当所有楼层传感器均未检测到信号时，应保持当前楼层值不变，并返回该楼层值",
+      "case_id": "repoeval_elevator/F_DetectCurrentFloor"
+    },
+    {
+      "模糊点描述": "原始需求未明确每个iStatus值对应的具体输出组合",
+      "精准需求示例": "需详细定义每个iStatus值或值的范围对应的输出组合，确保每个iStatus值都有明确的输出定义，包括在iStatus值不在特定列表中时的默认输出行为",
+      "case_id": "repoeval_open-type_dual-axis_winding_machine/StaDisplay"
+    },
+    {
+      "模糊点描述": "原始需求未明确是否需要在功能块调用时传递轴引用",
+      "精准需求示例": "在初始化CNC系统时，所有涉及轴控制的功能块调用都应传递相应的轴引用",
+      "case_id": "repoeval_three-axis_CNC_motion/INIT_CNC_System"
+    }
+  ],
+  "消息发布控制": [
+    {
+      "模糊点描述": "原始需求未明确是否需要控制消息的发布时机",
+      "精准需求示例": "定义一个名为doPublish的布尔变量，用于控制是否发送MQTT消息",
+      "case_id": "repoeval_Interation_HowTo/FirstPublish"
+    }
+  ],
+  "消息格式": [
+    {
+      "模糊点描述": "原始需求未明确消息的具体发送格式",
+      "精准需求示例": "使用PayloadString参数发送消息，并设置PublishAsString为TRUE，确保消息以字符串格式发送",
+      "case_id": "repoeval_Interation_HowTo/FirstPublish"
+    }
+  ],
+  "消息保留标志": [
+    {
+      "模糊点描述": "原始需求未明确是否需要设置MQTT消息的保留标志",
+      "精准需求示例": "设置MQTT消息的MRetain参数为FALSE，表示不保留消息",
+      "case_id": "repoeval_Interation_HowTo/FirstPublish"
+    }
+  ],
+  "变量初始化和使用": [
+    {
+      "模糊点描述": "原始需求未明确指定初始过程值(PV)的处理方式",
+      "精准需求示例": "初始过程值(PV)应设为140，以确保模拟的一致性和准确性",
+      "case_id": "repoeval_PID_controller/HeatExchanger"
+    }
+  ],
+  "计算公式": [
+    {
+      "模糊点描述": "原始需求未明确过程值(PV)的计算公式",
+      "精准需求示例": "过程值(PV)的计算应使用公式PV := 0.987 * lastPV - 0.00679 * CO + C，以确保模拟的精度和响应特性",
+      "case_id": "repoeval_PID_controller/HeatExchanger"
+    },
+    {
+      "模糊点描述": "原始需求未明确指定计算力的具体公式",
+      "精准需求示例": "当高度非零时，力的计算应使用公式 9.8 * 质量 / (2 * COS(ATAN(长度 / 高度)))",
+      "case_id": "repoeval_open-type_dual-axis_winding_machine/CheckF"
+    },
+    {
+      "模糊点描述": "原始需求未明确指定计算半径的具体公式",
+      "精准需求示例": "半径的计算应使用公式：R = |√(D²+(Hnew+offset)²) - √(D²+(Hold+offset)²)| / π + Tk，其中D是两轴中心距离，Hnew是测量结束时的高度，Hold是测量开始时的高度，offset是高度偏移量，Tk是材料厚度",
+      "case_id": "repoeval_open-type_dual-axis_winding_machine/F_CalculateRadius"
+    }
+  ],
+  "循环周期": [
+    {
+      "模糊点描述": "原始需求未明确说明PID控制器的更新频率和条件",
+      "精准需求示例": "PID控制器应该每隔设定的SampleTime更新一次，而不是每次函数调用都进行更新",
+      "case_id": "repoeval_PID_controller/PID_controller"
+    },
+    {
+      "模糊点描述": "原始需求未明确说明更新操作的执行频率",
+      "精准需求示例": "更新操作应仅在当前时间与上次更新时间的差大于或等于样本时间时执行",
+      "case_id": "repoeval_PID_controller/Tank"
+    },
+    {
+      "模糊点描述": "原始需求未明确指定在故障状态下定时器的输入信号应如何处理",
+      "精准需求示例": "如果电机没有故障状态（FaultStatus为FALSE），则应始终启动定时器",
+      "case_id": "repoeval_ProductionLine/Motor_TurnOn"
+    },
+    {
+      "模糊点描述": "原始需求未明确说明如何处理连续的左键点击事件",
+      "精准需求示例": "在检测到第一次左键点击后，启动一个定时器等待一定时间（如300ms），如果在此时间内再次检测到左键点击，则记录为双击事件；如果时间结束后没有再次点击，则记录为单击事件。",
+      "case_id": "repoeval_VisuElements/MouseEventHandler"
+    },
+    {
+      "模糊点描述": "原始需求未明确说明在单击和双击逻辑中如何处理节点状态的变化",
+      "精准需求示例": "应使用状态机逻辑来处理节点的单击和双击事件。在第一次点击时，应标记节点为选中；如果在设定的双击时间内再次被点击，则切换节点的展开/折叠状态。如果在双击时间内没有第二次点击，则保持节点为选中状态。",
+      "case_id": "repoeval_VisuElements/NodeExpandCollapse"
+    },
+    {
+      "模糊点描述": "原始需求未明确指定是否在每个循环周期中检查bExecute的状态",
+      "精准需求示例": "应在每个循环周期的开始检查bExecute状态，以便及时响应停止执行命令",
+      "case_id": "repoeval_electronic_cam_motion/FB_DualAxisReset"
+    },
+    {
+      "模糊点描述": "原始需求未明确说明状态机的循环周期",
+      "精准需求示例": "状态机的状态转换应当由外部信号bExec触发，使用上升沿触发器来检测bExec的变化，并在检测到上升沿时进行状态转换",
+      "case_id": "repoeval_electronic_cam_motion/ResetAxis"
+    },
+    {
+      "模糊点描述": "原始需求未明确指定耦合和解耦动作的触发机制",
+      "精准需求示例": "耦合和解耦的控制应当在bCouple信号的每次变化时立即响应，无需使用边沿触发器",
+      "case_id": "repoeval_electronic_gear_motion/FB_GearCoupling"
+    },
+    {
+      "模糊点描述": "原始需求未明确说明状态机的运行周期或触发条件",
+      "精准需求示例": "状态机的转换应由启动和停止信号的上升沿触发，确保每个信号变化只触发一次状态转换。",
+      "case_id": "repoeval_electronic_gear_motion/FB_GearMotionControl"
+    },
+    {
+      "模糊点描述": "原始需求未明确指定开门和关门的定时器周期",
+      "精准需求示例": "开门和关门的定时器周期应设置为2秒",
+      "case_id": "repoeval_elevator/FB_ElevatorDoorController"
+    },
+    {
+      "模糊点描述": "原始需求未明确指定电梯移动的延迟时间",
+      "精准需求示例": "电梯在接收到移动指令后，应延迟500毫秒后开始移动",
+      "case_id": "repoeval_elevator/FB_ElevatorMovement"
+    },
+    {
+      "模糊点描述": "原始需求未明确说明状态机的具体实现和状态转换条件",
+      "精准需求示例": "应使用状态机来管理不同的运动状态和错误处理，确保在任何给定的状态下，系统都能正确响应外部事件和内部条件变化。",
+      "case_id": "repoeval_open-type_dual-axis_winding_machine/SeekHome"
+    },
+    {
+      "模糊点描述": "原始需求未明确说明混合操作的时间控制机制",
+      "精准需求示例": "使用TON定时器来控制混合操作的持续时间，确保混合操作精确地持续配置的时间",
+      "case_id": "repoeval_plc_hello_mixing_tank/FB_AutoSequence"
+    },
+    {
+      "模糊点描述": "原始需求未明确说明如何处理轴完成信号的检测逻辑",
+      "精准需求示例": "应使用上升沿触发器来检测每个轴的完成信号，确保只有在完成信号从未完成到完成的瞬间才更新轴的完成状态，避免由于信号抖动导致的状态错误判断。",
+      "case_id": "repoeval_three-axis_CNC_motion/FB_TripleAxisHoming"
+    }
+  ],
+  "变量类型": [
+    {
+      "模糊点描述": "原始需求未明确指定内部状态变量的数据类型",
+      "精准需求示例": "内部状态变量 _rY 应使用 LREAL 类型以提高计算精度",
+      "case_id": "repoeval_PT1Filter/FB_PT1Filter"
+    }
+  ],
+  "代码结构": [
+    {
+      "模糊点描述": "原始需求未明确是否需要将功能分解为独立的方法",
+      "精准需求示例": "将电机控制的主要功能（如故障处理、启动、停止）分解为独立的方法实现，以提高代码的模块化和可维护性",
+      "case_id": "repoeval_ProductionLine/Motor"
+    },
+    {
+      "模糊点描述": "原始需求未明确指出命令复位的结构是否应该使用单独的IF语句还是合并使用IF-ELSE结构",
+      "精准需求示例": "在命令复位逻辑中，应使用IF-ELSE结构来同时处理每个命令的开启和关闭状态，确保在设备状态改变时，相关命令能被适当地复位",
+      "case_id": "repoeval_plc_hello_mixing_tank/F_ResetDeviceCommands"
+    }
+  ],
+  "变量实现": [
+    {
+      "模糊点描述": "原始需求未明确是否需要实现等待计时器",
+      "精准需求示例": "实现一个名为WaitTimer的计时器，用于控制和监视电机操作的等待时间",
+      "case_id": "repoeval_ProductionLine/Motor_SetWaitTime"
+    }
+  ],
+  "变量初始化与构造函数": [
+    {
+      "模糊点描述": "原始需求未明确是否需要在构造函数中初始化实例变量",
+      "精准需求示例": "在FUNCTION_BLOCK的初始化阶段，应通过构造函数或初始化方法来设置refToRealSubject和iTempPassword的值",
+      "case_id": "repoeval_Proxy_Application/Proxy"
+    }
+  ],
+  "方法实现与调用": [
+    {
+      "模糊点描述": "原始需求未明确是否需要单独的方法来处理GET和SET请求",
+      "精准需求示例": "应实现单独的Get_Method和Set_Method方法来分别处理GET和SET请求，并在主逻辑中调用这些方法",
+      "case_id": "repoeval_Proxy_Application/Proxy"
+    }
+  ],
+  "变量优化": [
+    {
+      "模糊点描述": "原始需求未明确是否需要预先计算并存储三角函数值",
+      "精准需求示例": "在进行坐标旋转计算前，应先计算并存储旋转角度的余弦和正弦值，以优化计算效率",
+      "case_id": "repoeval_VisuElements/RotationCalculation"
+    }
+  ],
+  "逻辑处理顺序": [
+    {
+      "模糊点描述": "原始需求未明确指定输入信号处理的优先级顺序",
+      "精准需求示例": "输入信号处理应该按照以下优先级顺序进行：首先检查bReset，如果为TRUE，则重置计数器；如果bReset为FALSE，然后检查bUp和bDown，bUp和bDown可以同时生效，即如果bUp和bDown同时为TRUE，计数器先增加后减少。",
+      "case_id": "repoeval_counter/FB_counter"
+    }
+  ],
+  "逻辑实现": [
+    {
+      "模糊点描述": "原始需求未明确指出是否应使用设备反馈状态来增强控制逻辑",
+      "精准需求示例": "控制输出应结合设备当前状态和HMI命令，例如，如果设备已经处于所需状态，控制输出应保持该状态，直到接收到相反的命令",
+      "case_id": "repoeval_plc_hello_mixing_tank/FB_ManualControl"
+    }
+  ],
+  "变量命名和使用": [
+    {
+      "模糊点描述": "原始需求未明确指定用于检测模式变化的变量命名和更新逻辑",
+      "精准需求示例": "应使用一个变量名为 'eLastMode' 来存储上一次的模式状态，并在每次模式可能改变后更新此变量",
+      "case_id": "repoeval_plc_hello_mixing_tank/FB_ModeController"
+    }
+  ],
+  "模式变化检测逻辑": [
+    {
+      "模糊点描述": "原始需求未明确说明如何检测模式的变化",
+      "精准需求示例": "模式变化应通过比较当前模式和上次模式来检测，若不同则设置 'bModeChanged' 为 TRUE，否则为 FALSE",
+      "case_id": "repoeval_plc_hello_mixing_tank/FB_ModeController"
+    }
+  ],
+  "代码结构/执行逻辑": [
+    {
+      "模糊点描述": "原始需求未明确液位更新的计算方式",
+      "精准需求示例": "液位更新应直接在更新表达式中计算，使用BOOL_TO_REAL转换布尔值为实数，进行液位的增减计算",
+      "case_id": "repoeval_plc_hello_mixing_tank/FB_TankLevelSimulator"
+    }
+  ],
+  "数据处理精度": [
+    {
+      "模糊点描述": "原始需求未明确指出在时间到秒的转换中是否需要处理小数部分",
+      "精准需求示例": "在将TIME转换为秒数时，应确保结果为整数，且应舍去小数部分",
+      "case_id": "repoeval_traffic_light/F_TimeToSeconds"
+    }
+  ]
+}

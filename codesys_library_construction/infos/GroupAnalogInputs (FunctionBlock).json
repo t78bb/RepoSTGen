@@ -1,0 +1,52 @@
+{
+  "library": "DNP3",
+  "title": "GroupAnalogInputs (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Outstation/Groups/GroupAnalogInputs.html",
+  "page_title": "GroupAnalogInputs (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL GroupAnalogInputs EXTENDS GroupAnalogInputsBase\nGroup of datapoints of type Analog Input.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment",
+        "Inherited from"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "tScanPeriod",
+          "Type": "TIME",
+          "Initial": "TIME#0ms",
+          "Comment": "Scan period for datapoints within group.\nIf tScanPeriod is set to T#0MS, the OutstationDataModel.tScanPeriod is used.\nCan be configured per datapoint as well.",
+          "Inherited from": "GroupBase"
+        },
+        {
+          "Scope": "Output",
+          "Name": "itfGroup",
+          "Type": "IGroupAnalogInputs",
+          "Initial": "",
+          "Comment": "",
+          "Inherited from": "GroupAnalogInputsBase"
+        },
+        {
+          "Scope": "Input",
+          "Name": "aPoints",
+          "Type": "POINTER TOAnalogInput",
+          "Initial": "",
+          "Comment": "Pointer to array of AnalogInput",
+          "Inherited from": ""
+        },
+        [
+          "numPoints",
+          "UINT",
+          "",
+          "Number of Points",
+          ""
+        ]
+      ]
+    }
+  ]
+}

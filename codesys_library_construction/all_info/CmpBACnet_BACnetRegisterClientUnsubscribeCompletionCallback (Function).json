@@ -1,0 +1,41 @@
+{
+  "library": "CmpBACnet",
+  "title": "BACnetRegisterClientUnsubscribeCompletionCallback (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/CmpBACnet/Current/BACnetClientAPI/advanced/BACnetRegisterClientUnsubscribeCompletionCallback.html",
+  "page_title": "BACnetRegisterClientUnsubscribeCompletionCallback (FUN)",
+  "text": "Deutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nMenu\nSearch\nDeutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nBACnetAsyncTransactionToken (Struct)\nBACnetClientAPI\nBACnetAcknowledgeAlarm (Function)\nBACnetAddListElement (Function)\nBACnetCancelPendingConfirmedRequest (Function)\nBACnetConfPrivateTransfer (Function)\nBACnetConfTextMessage (Function)\nBACnetCreateObject (Function)\nBACnetCreateObjectResult (Struct)\nBACnetDeleteObject (Function)\nBACnetDeviceCommControl (Function)\nBACnetGetAlarmSummary (Function)\nBACnetGetEnrollmentSummary (Function)\nBACnetGetEventInfo (Function)\nBACnetLifeSafetyOperation (Function)\nBACnetReadAllPropertyDataContents (Function)\nBACnetReadFile (Function)\nBACnetReadProperty (Function)\nBACnetReadPropertyMultiple (Function)\nBACnetReadRange (Function)\nBACnetReinitializeDevice (Function)\nBACnetRemoveListElement (Function)\nBACnetSubscribeCOV (Function)\nBACnetSubscribeCOVProperty (Function)\nBACnetUnconfPrivateTransfer (Function)\nBACnetUnconfTextMessage (Function)\nBACnetWhoHas (Function)\nBACnetWhoIs (Function)\nBACnetWriteFile (Function)\nBACnetWriteGroup (Function)\nBACnetWriteProperty (Function)\nBACnetWritePropertyMultiple (Function)\nadvanced\nBACnetBackupBACnetDevice (Function)\nBACnetCloseClientCustomer (Function)\nBACnetGetClientDeviceCommunication (Function)\nBACnetOpenClientCustomer (Function)\nBACnetRegisterClientCommunicationStateCallback (Function)\nBACnetRegisterClientDataPoint (Function)\nBACnetRegisterClientEventNotification (Function)\nBACnetRegisterClientUnsubscribeCompletionCallback (Function)\nBACnetRestartAllClients (Function)\nBACnetRestoreBACnetDevice (Function)\nBACnetSetClientDeviceCommunication (Function)\nBACnetSetClientDeviceFixAddress (Function)\nBACnetSetClientDeviceFixSubscribeCovTime (Function)\nBACnetSetClientGlobalCommTimingParameters (Function)\nBACnetSetClientGlobalMaxDeviceActions (Function)\nBACnetUnregisterClientDataPoint (Function)\nBACnetUnregisterClientEventNotification (Function)\nFile and Project Information\nLibrary Reference\n3SLicense\nLibrary Identification\nLibrary Properties\nCAA Ressource Manager Extern\nLibrary Identification\nLibrary Properties\nCAA Types Extern\nLibrary Identification\nLibrary Properties\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nCmpEventMgr\nLibrary Identification\nLibrary Properties\nCmpLog\nLibrary Identification\nLibrary Properties\nCmpSettings\nLibrary Identification\nLibrary Properties\nComponent Manager\nLibrary Identification\nLibrary Properties\nIoStandard\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysTarget\nLibrary Identification\nLibrary Properties\nSysTask\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nCmpBACnet\nDocs\n»\nBACnetClientAPI\n»\nadvanced\n»\nBACnetRegisterClientUnsubscribeCompletionCallback (FUN)\nBACnetRegisterClientUnsubscribeCompletionCallback (FUN)\nÂ¶\nFUNCTION BACnetRegisterClientUnsubscribeCompletionCallback :\nIEC_BACNET_STATUS\nRegisters the user application callback for completed unregistrations.\nThis registers a callback routine. This callback can be registered at any time. If the\ncallback is registered more than once, the new callback procedure replaces old one.\nA NULL pointer cancels the callback.\nThis function gives a user application the ability to get notified if an\nunregistration of device object property reference has completed. Depending on\nthe type of registration made (COV, COVP or POLLING), an unregistration may need\nsome time to be processed. The function for initiation of the unregistration\nBACnetUnregisterClientDataPoint\ncompletes directly but the callback is called\nafter the unsubscription for event or value notification in the remote device has\ncompleted. The application may only expect unsubscribe complete callbacks for which\nthe\nBACnetUnregisterClientDataPoint\nfunction call has returned the\nBACNET_STATUS_BUSY. In case that all registered references have been retrievd by\npolling this function callback will also be called for the last customer which\nunregisters the last reference to an device but the referenced object will be the\ndevice and the property will be PROP_ALL and the index BACNET_VOID_INDEX (-1).\nInOut:\nScope\nName\nType\nComment\nReturn\nBACnetRegisterClientUnsubscribeCompletionCallback\nIEC_BACNET_STATUS\nInput\nhCustomer\nIEC_BACNET_HANDLE\nAn handle to an created advanced BACnet client customer created by\nBACnetOpenClientCustomer\n.\npICallback\nCmpEventMgr.ICmpEventCallback\nA pointer to the event-callback interface which gets called which gets called on completion of\nan unregistration.\nTo unregister a NULL pointer shall be used here.\npUserUnsubArg\nPOINTER TO BYTE\nA pointer to data from the user application which is transparent for the API.\nThis pointer will not be modified by the BACnet API. This may be NULL.\ntop\nCODESYS Group | We\nsoftware\nAutomation.\nto software\n['sɒftwɛər]\ntransitive verb\n__softwared/softwaring\n: to develop software\n// to software automation: to develop software for automation purposes\nThe CODESYS Group is the manufacturer of CODESYS, the leading hardware-independent\n                                    IEC 61131-3 automation software for developing and engineering controller\n                                    applications.\nCODESYS® is a registered trademark.\nCODESYS GmbH\nA member of the CODESYS Group\nMemminger Straße 151, 87439 Kempten\nGermany\nTel.:\n+49-831-54031-0\ninfo@codesys.com\nLegal Notice\nPrivacy Policy\nLinkedIn\nYoutube\nRSS\nDownloads\nLogin\nCODESYS Store\n© 2022 CODESYS GmbH\n| A member of the CODESYS Group",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "BACnetRegisterClientUnsubscribeCompletionCallback",
+          "Type": "IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "hCustomer",
+          "Type": "IEC_BACNET_HANDLE",
+          "Comment": "An handle to an created advanced BACnet client customer created byBACnetOpenClientCustomer."
+        },
+        [
+          "pICallback",
+          "CmpEventMgr.ICmpEventCallback",
+          "A pointer to the event-callback interface which gets called which gets called on completion of\nan unregistration.\nTo unregister a NULL pointer shall be used here."
+        ],
+        [
+          "pUserUnsubArg",
+          "POINTER TO BYTE",
+          "A pointer to data from the user application which is transparent for the API.\nThis pointer will not be modified by the BACnet API. This may be NULL."
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "library": "SysFile",
+  "title": "SYS_FILETIME (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/SysFile/Current/SYS_FILETIME.html",
+  "page_title": "SYS_FILETIME (STRUCT)",
+  "text": "Deutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nMenu\nSearch\nDeutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nACCESS_MODE (Enum)\nSYS_FILETIME (Struct)\nSYS_FILE_STATUS (Enum)\nSysFileClose (Function)\nSysFileCopy (Function)\nSysFileDelete (Function)\nSysFileDeleteByHandle (Function)\nSysFileEOF (Function)\nSysFileFlush (Function)\nSysFileGetName (Function)\nSysFileGetName2 (Function)\nSysFileGetPath (Function)\nSysFileGetPos (Function)\nSysFileGetSize (Function)\nSysFileGetSizeByHandle (Function)\nSysFileGetStatus (Function)\nSysFileGetStatus2 (Function)\nSysFileGetTime (Function)\nSysFileOpen (Function)\nSysFileRead (Function)\nSysFileRename (Function)\nSysFileSetPos (Function)\nSysFileTruncate (Function)\nSysFileWrite (Function)\nFile and Project Information\nLibrary Reference\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nSysFile\nDocs\n»\nSYS_FILETIME (STRUCT)\nSYS_FILETIME (STRUCT)\nÂ¶\nTYPE SYS_FILETIME : STRUCT\nFile TIME\nTimestamps of the specified file.\nInOut:\nName\nType\nComment\ntCreation\nUDINT\nCreation time of the file\ntLastAccess\nUDINT\nTime of as access to the file\ntLastModification\nUDINT\nTime of last modification\ntop\nCODESYS Group | We\nsoftware\nAutomation.\nto software\n['sɒftwɛər]\ntransitive verb\n__softwared/softwaring\n: to develop software\n// to software automation: to develop software for automation purposes\nThe CODESYS Group is the manufacturer of CODESYS, the leading hardware-independent\n                                    IEC 61131-3 automation software for developing and engineering controller\n                                    applications.\nCODESYS® is a registered trademark.\nCODESYS GmbH\nA member of the CODESYS Group\nMemminger Straße 151, 87439 Kempten\nGermany\nTel.:\n+49-831-54031-0\ninfo@codesys.com\nLegal Notice\nPrivacy Policy\nLinkedIn\nYoutube\nRSS\nDownloads\nLogin\nCODESYS Store\n© 2022 CODESYS GmbH\n| A member of the CODESYS Group",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "tCreation",
+          "Type": "UDINT",
+          "Comment": "Creation time of the file"
+        },
+        {
+          "Name": "tLastAccess",
+          "Type": "UDINT",
+          "Comment": "Time of as access to the file"
+        },
+        {
+          "Name": "tLastModification",
+          "Type": "UDINT",
+          "Comment": "Time of last modification"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "library": "SML_Basic",
+  "title": "MC_MoveRelative_SML (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SML_Basic/Current/PLCopen/MC_MoveRelative_SML.html",
+  "page_title": "MC_MoveRelative_SML (FB)",
+  "text": "Additional\nSML_ChangeAxisConfig (FunctionBlock)\nSML_ReinitDrive (FunctionBlock)\nSML_SetOpmode (FunctionBlock)\nSML_StartupDrive (FunctionBlock)\nBase\nAxis_REF_SML (FunctionBlock)\nConfig\nReadStandardConfigParameters (Method)\nReinitAxis (Method)\nError\nSML_ClearFBError (Function)\nSML_ErrorText (Function)\nSML_Language (Enum)\nSML_AXIS_STATE (Enum)\nSML_Constants (GVL)\nSML_ERROR (Enum)\nSML_FBError (Struct)\nSML_Globals (GVL)\nSML_MOVEMENTTYPE (Enum)\nSML_OPMODE (Enum)\nSML_Ramptype (Enum)\nGlobalTextList (GlobalTextList)\nLibrary Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nPLCopen\nMC_Halt_SML (FunctionBlock)\nMC_Home_SML (FunctionBlock)\nMC_MoveAbsolute_SML (FunctionBlock)\nMC_MoveRelative_SML (FunctionBlock)\nMC_MoveVelocity_SML (FunctionBlock)\nMC_Power_SML (FunctionBlock)\nMC_ReadBoolParameter_SML (FunctionBlock)\nMC_ReadParameter_SML (FunctionBlock)\nMC_ReadStatus_SML (FunctionBlock)\nMC_Reset_SML (FunctionBlock)\nMC_Stop_SML (FunctionBlock)\nMC_WriteBoolParameter_SML (FunctionBlock)\nMC_WriteParameter_SML (FunctionBlock)\nVisu_Templates\nHelpers\nTextListForCombobox_SML_MOVEMENTTYPE (TextList)\nTextListForCombobox_SML_OPMODE (TextList)\nStartupDrive\nFile and Project Information\nLibrary Reference\n3SLicense\nLibrary Identification\nLibrary Properties\nCmpApp\nLibrary Identification\nLibrary Properties\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nCmpLog\nLibrary Identification\nLibrary Properties\nCmpSchedule\nLibrary Identification\nLibrary Properties\nComponent Manager\nLibrary Identification\nLibrary Properties\nIoStandard\nLibrary Identification\nLibrary Properties\nSM3_Math\nLibrary Identification\nLibrary Properties\nSM3_Shared\nLibrary Identification\nLibrary Properties\nSM3_StringUtils\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nSysCpuHandling\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysTarget\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nVisuElem3DPath\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElemCamDisplayer\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElemMeter\nLibrary Identification\nLibrary Properties\nVisuElemTextEditor\nLibrary Identification\nLibrary Properties\nVisuElemTrace\nLibrary Identification\nLibrary Properties\nVisuElems\nLibrary Identification\nLibrary Properties\nVisuElemsAlarm\nLibrary Identification\nLibrary Properties\nVisuElemsDateTime\nLibrary Identification\nLibrary Properties\nVisuElemsSpecialControls\nLibrary Identification\nLibrary Properties\nVisuElemsWinControls\nLibrary Identification\nLibrary Properties\nVisuInputs\nLibrary Identification\nLibrary Properties\nVisuNativeControl\nLibrary Identification\nLibrary Properties\nSML_Basic\nDocs\n»\nPLCopen\n»\nMC_MoveRelative_SML (FB)\nMC_MoveRelative_SML (FB)\nÂ¶\nFUNCTION_BLOCK FINAL MC_MoveRelative_SML\nCommands a controlled motion of a specified distance relative to the\nposition at the time of the execution.\nNote\nThe motion completes with velocity zero.\nThe following figure shows the example of the combination of two instances\nof\nMC_MoveRelative_SML\n:\nThe left part of the timing diagram illustrates the case if the second\nFB is called after the first one. If first reaches the commanded\ndistance 6000 (and the velocity is 0), then the output\nDone\ncauses the\nsecond FB to move the commanded distance 4000 to the resulting absolute\nposition 10000.\nThe right part of the timing diagram illustrates the case if the second\nFB starts the execution while the first FB is still executing.\nIn this case, the first motion is interrupted and aborted by the\nTest\nsignal during the constant velocity phase of the first FB.\nThe second FB adds the distance 4000 to the actual position of 3250\nto the resulting absolute position of 7250.\nInOut:\nScope\nName\nType\nComment\nInout\nAxis\nAxis_REF_SML\nReference to the axis\nInput\nExecute\nBOOL\nRising edge: The motion is started\nDistance\nLREAL\nRelative distancefor the motion (in technical units [u])\nVelocity\nLREAL\nValue of the maximum velocity (always positive) (not\nnecessarily reached) [u/s]\nAcceleration\nLREAL\nValue of the acceleration (always positive) (increasing\nenergy of the motor) [u/sÂ²]\nDeceleration\nLREAL\nValue of the deceleration (always positive) (decreasing\nenergy of the motor) [u/sÂ²]\nOutput\nDone\nBOOL\nCommanded distance reached\nBusy\nBOOL\nThe motion is not finished and new output values are to be\nexpected\nCommandAborted\nBOOL\nThe motion was interrupted by a motion command acting on the\nsame axis\nError\nBOOL\nSignals that an error has occured\nErrorID\nSML_ERROR\nError number",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "Axis_REF_SML",
+          "Comment": "Reference to the axis"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Comment": "Rising edge: The motion is started"
+        },
+        [
+          "Distance",
+          "LREAL",
+          "Relative distancefor the motion (in technical units [u])"
+        ],
+        [
+          "Velocity",
+          "LREAL",
+          "Value of the maximum velocity (always positive) (not\nnecessarily reached) [u/s]"
+        ],
+        [
+          "Acceleration",
+          "LREAL",
+          "Value of the acceleration (always positive) (increasing\nenergy of the motor) [u/sÂ²]"
+        ],
+        [
+          "Deceleration",
+          "LREAL",
+          "Value of the deceleration (always positive) (decreasing\nenergy of the motor) [u/sÂ²]"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Done",
+          "Type": "BOOL",
+          "Comment": "Commanded distance reached"
+        },
+        [
+          "Busy",
+          "BOOL",
+          "The motion is not finished and new output values are to be\nexpected"
+        ],
+        [
+          "CommandAborted",
+          "BOOL",
+          "The motion was interrupted by a motion command acting on the\nsame axis"
+        ],
+        [
+          "Error",
+          "BOOL",
+          "Signals that an error has occured"
+        ],
+        [
+          "ErrorID",
+          "SML_ERROR",
+          "Error number"
+        ]
+      ]
+    }
+  ]
+}

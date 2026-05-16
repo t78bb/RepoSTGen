@@ -1,0 +1,33 @@
+{
+  "library": "SM3_Basic_Visu",
+  "title": "SMC_CamDisplayer_Outputs (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic_Visu/Current/SM3_Basic_Visu/SMC_CamDisplayer_Outputs.html",
+  "page_title": "SMC_CamDisplayer_Outputs (STRUCT)",
+  "text": "\nTYPE SMC_CamDisplayer_Outputs : STRUCT\nData structure containing all outputs of the\n|SMC_Visu_CamDisplayer|\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "cursor",
+          "Type": "SMC_CamDisplayer_Dynamics",
+          "Comment": "Cam dynamics at the current cursor position."
+        },
+        {
+          "Name": "segmentLeft",
+          "Type": "SMC_CamDisplayer_Dynamics",
+          "Comment": "Cam dynamics at the left bound of the current segment."
+        },
+        {
+          "Name": "segmentRight",
+          "Type": "SMC_CamDisplayer_Dynamics",
+          "Comment": "Cam dynamics at the right bound of the current segment."
+        }
+      ]
+    }
+  ]
+}

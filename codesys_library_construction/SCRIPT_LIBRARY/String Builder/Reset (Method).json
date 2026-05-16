@@ -1,0 +1,25 @@
+{
+  "library": "String Builder",
+  "title": "Reset (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Builder/Current/Builder/Function-Blocks/pou-_Builder/IBuilder/Reset.html",
+  "page_title": "_Builder.Reset (METH)",
+  "text": "\nMETHOD FINAL Reset\nResets the Builder to be empty\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Output",
+          "Name": "eErrorID",
+          "Type": "ERROR",
+          "Comment": "Check error message for better diagnostics"
+        }
+      ]
+    }
+  ]
+}

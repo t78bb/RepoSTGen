@@ -1,0 +1,66 @@
+{
+  "library": "CommFB",
+  "title": "WRREC (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/CommFB/Current/CommFB/WRREC.html",
+  "page_title": "WRREC (FB)",
+  "text": "\nFUNCTION_BLOCK WRREC\nWrite Data Record (WRREC)\nThis function block executes an acyclic write of user or system record-data.\nThe ID parameter identifies the slot or subslot of the Field Device the process data record is written to.\nThe INDEX input of the WRREC function block contains an integer which identifies the data record to be written.\nThe data record shall be stored in the variable given at the RECORD parameter.\nThe LEN input contains the length of the data record to be written in byte.\nThe variable given as RECORD parameter shall be at least of LEN byte.\nThe values of the RECORD and LEN parameters shall not be changed as long as the BUSY output is true.\nIf the data record is written successfully, the DONE output indicates that the read data record is written to the Field Device.\nIf an error occurred, the ERROR output indicates an error and the STATUS output contains the error code.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "REQ",
+          "Type": "BOOL",
+          "Comment": "Request"
+        },
+        [
+          "ID",
+          "DWORD",
+          "Identifier of a slot / subslot of a Field Device (see:AddressConcept)"
+        ],
+        [
+          "INDEX",
+          "INT",
+          "Index of the data record"
+        ],
+        [
+          "LEN",
+          "INT",
+          "Length of the data record"
+        ],
+        [
+          "RECORD",
+          "POINTER TO BYTE",
+          "Data record"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "DONE",
+          "Type": "BOOL",
+          "Comment": "Data record written"
+        },
+        [
+          "BUSY",
+          "BOOL",
+          "FB is busy"
+        ],
+        [
+          "ERROR",
+          "BOOL",
+          "Error detected"
+        ],
+        [
+          "STATUS",
+          "DWORD",
+          "Last detected status"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_XInterpolator (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/SoftMotion-Function-Blocks/SMC_XInterpolator.html",
+  "page_title": "SMC_XInterpolator (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_XInterpolator\nSMC_XInterpolator\nrealizes a mixture of Cam and CNC.\nImagine you want to cut a specified form (described by G-code) out\nof a workpiece`.  The workpiece is moved - by another process -\n(e.g. along the X-axis) and the other axes (Y, Z, etc.)\nshould be controlled according to the current position of the\nworkpiece (X) and the target given by the path outline.\nThe motion of the workpiece always follows the X-direction\n(other cases can be mapped on this by a rotation).\nExample\nIf the XInterpolator is active, it will search the position on the\npath that matches the current x-position and it will copy the corresponding\npath-point in\npiSetPosition\n.  The input path must have a unique position\nfor each x-coordinate.  For example, the following path is valid:\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "X_Axis",
+          "Type": "AXIS_REF_SM3",
+          "Initial": "",
+          "Comment": "X-axis, position of the workpiece"
+        },
+        {
+          "Scope": "Input",
+          "Name": "bExecute",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Starts on rising edge."
+        },
+        [
+          "poqDataIn",
+          "POINTER TOSMC_OUTQUEUE",
+          "",
+          "The input path queue"
+        ],
+        [
+          "dLastWayPos",
+          "LREAL",
+          "",
+          "This input enables the user to measure the path length which is\ncovered by the interpolator.\nOutputdWayPosis the sum ofdLastWayPosand the distance\ncovered within the current cycle.\nIf you setdLastWayPosequal to outputdWayPos,dWayPosalways will be incremented by the current path section\nand you will get the total path length."
+        ],
+        [
+          "bAbort",
+          "BOOL",
+          "",
+          "This input set toTRUEthe processing of an outline will\nbe aborted."
+        ],
+        [
+          "eDirection",
+          "MC_Direction",
+          "positive",
+          "This input determines, whether the workpiece is moved in\npositive (positive) or negative (negative) direction along the X-axis.\nOther values are not allowed."
+        ],
+        [
+          "dXOffset",
+          "LREAL",
+          "",
+          "Offset relative to the X-axis position"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bDone",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "This variable is be set toTRUE, after the input path\nhas been processed completely.\nThe function block will perform no further actions until a reset\nwill be executed."
+        },
+        [
+          "bBusy",
+          "BOOL",
+          "",
+          "TRUE, while execution of function block is not finished"
+        ],
+        [
+          "bError",
+          "BOOL",
+          "",
+          "Signals, that an error has occurred within the function\nblock"
+        ],
+        [
+          "wErrorID",
+          "SMC_ERROR",
+          "",
+          "Error identification"
+        ],
+        [
+          "piSetPosition",
+          "SMC_POSINFO",
+          "",
+          "piSetPositioncontains the cartesian coordinates of the set\npoint as well as the position of the additional axes."
+        ],
+        [
+          "iStatus",
+          "SMC_INT_STATUS",
+          "",
+          "The current status of the module.IPO_UNKNOWN(0)Internal state, which may not occur after acomplete run of SMC_Interpolator.IPO_ACCEL(2) : accelerating.IPO_CONSTANT(3) : running with constant velocity.IPO_DECEL(4) : brakingIPO_FINISHED(5) : Processing of is finished."
+        ],
+        [
+          "bWorking",
+          "BOOL",
+          "",
+          "This output is set toTRUEas long as the processing of the path\nhas been started, but not yet finished.\nOtherwisebWorkingisFALSE."
+        ],
+        [
+          "iActObjectSourceNo",
+          "DINT",
+          "",
+          "Contains entryiSourceLine_Noof the activeSMC_GEOINFOobject of the input path. Set to â-1â,\nif not working (any longer) (bWorking=FALSE)."
+        ],
+        [
+          "dVel",
+          "LREAL",
+          "",
+          "This variable contains the current path velocity."
+        ],
+        [
+          "vecActTangent",
+          "SMC_VECTOR3D",
+          "",
+          "The path tangent in pointpiSetPosition.\nIn case ofdVel=0,vecAct_Tangentwill contain\nzeros only."
+        ],
+        [
+          "iLastSwitch",
+          "INT",
+          "",
+          "This variable contains the number of the last auxiliary mark passed.\nIf within one cycle multiple auxiliary marks shall be passed,\nalways only the last one will be dumped."
+        ],
+        [
+          "dwSwitches",
+          "DWORD",
+          "",
+          "ThisDWORDcontains the current switch status of all\nauxiliary marks between 1 and 32.\nBit0 of theDWORDsignifies auxiliary mark 1,\nBit31 signifies auxiliary mark 32."
+        ],
+        [
+          "dWayPos",
+          "LREAL",
+          "",
+          "See inputdLastWayPosfor a description."
+        ]
+      ]
+    }
+  ]
+}

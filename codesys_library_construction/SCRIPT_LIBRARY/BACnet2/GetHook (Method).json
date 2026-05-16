@@ -1,0 +1,31 @@
+{
+  "library": "BACnet2",
+  "title": "GetHook (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/BACnetServerPlugin/pou-IBACnetServerPlugin/GetHook.html",
+  "page_title": "IBACnetServerPlugin.GetHook (METH)",
+  "text": "\nMETHOD GetHook :\nIBACnetServerPluginHook\nGets a hook.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetHook",
+          "Type": "IBACnetServerPluginHook",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "index",
+          "Type": "UINT",
+          "Comment": "index of the hook."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "library": "DNP3",
+  "title": "SetSessionConfigAspectValidateSourceAddress (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Outstation/pou-OutstationConfiguration/SetSessionConfigAspectValidateSourceAddress.html",
+  "page_title": "OutstationConfiguration.SetSessionConfigAspectValidateSourceAddress (METH)",
+  "text": "\nMETHOD SetSessionConfigAspectValidateSourceAddress :\nError\nSet optional outstation session configuration aspect - validate source address.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetSessionConfigAspectValidateSourceAddress",
+          "Type": "Error",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "validateSourceAddress",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "Specify whether or not to validate source address in received\nframes. DNP3 frames contain both a source address field and a\ndestination address field. If TMWDEFS_FALSE the TMW DNP3 SCL does not\nvalidate the source address and frames whose destination address\nmatches a configured Outstation session will be accepted.\nSetting this to TRUE requires both source and destination\naddresses to match a local Outstation session before the frame is accepted."
+        }
+      ]
+    }
+  ]
+}

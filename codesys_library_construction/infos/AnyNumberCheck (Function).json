@@ -1,0 +1,28 @@
+{
+  "library": "DNP3",
+  "title": "AnyNumberCheck (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Functions/AnyNumber/AnyNumberCheck.html",
+  "page_title": "AnyNumberCheck (FUN)",
+  "text": "\nFUNCTION AnyNumberCheck : BOOL\nDoes check an AnyNumber for consistency.\nReturns TRUE if consistent, otherwise FALSE.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "AnyNumberCheck",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Input",
+          "Name": "in",
+          "Type": "REFERENCE TOAnyNumber"
+        }
+      ]
+    }
+  ]
+}

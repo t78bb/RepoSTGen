@@ -1,0 +1,23 @@
+{
+  "library": "SM3_CNC",
+  "title": "GetCurrentObject (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/SoftMotion-Function-Blocks/pou-SMC_Interpolator2Dir/GetCurrentObject.html",
+  "page_title": "SMC_Interpolator2Dir.GetCurrentObject (METH)",
+  "text": "\nMETHOD GetCurrentObject : POINTER TO SMC_GeoInfo\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetCurrentObject",
+          "Type": "POINTER TOSMC_GeoInfo"
+        }
+      ]
+    }
+  ]
+}

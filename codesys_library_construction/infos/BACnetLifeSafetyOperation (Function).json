@@ -1,0 +1,56 @@
+{
+  "library": "CmpBACnet",
+  "title": "BACnetLifeSafetyOperation (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/CmpBACnet/Current/BACnetClientAPI/BACnetLifeSafetyOperation.html",
+  "page_title": "BACnetLifeSafetyOperation (FUN)",
+  "text": "\nFUNCTION BACnetLifeSafetyOperation :\nIEC_BACNET_STATUS\nSends a LifeSafetyOperation request.\nSends the requests to provide a mechanism for transporting specific instructions from an\noperator to silence, audible or visual notification appliances or reset\nnotification appliances. This service may be used in fire, life safety and security\nsystems. Because the present version of this BACnet API does not support a default processing\nfor this service, the destination has to include a Hook procedure to process it. This\nroutine may control APDU properties like APDU length, segmentation and timeout for both\nrequests and responses. This routine can execute asynchronously, so this routine will\nreturn to the caller before the BACnet reply is received so that the application keeps\nrunning. In this case the response information will be received by the thread that\nis responsible for receiving asynchronous responses. An optional\nBACNET_SIMPLE_ACK_COMPLETE_CB routine, which has to be provided by the BACnet application,\nshall be used to process this information. If a number of asynchronous requests are\nsent, the responses will be queued and identified by their transaction handles. If the\napplication does not supply the BACNET_SIMPLE_ACK_COMPLETE_CB routine, then this\nroutine sends a request and waits for reply.\nreturn IEC_BACNET_STATUS\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "BACnetLifeSafetyOperation",
+          "Type": "IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "pSourceAddress",
+          "Type": "POINTER TOIEC_BACNET_ADDRESS",
+          "Comment": "If the BACnet application has only one device constructed and installed, this can\nbe NULL. In this case the MAC address of this device will be used. Otherwise this\nshall be the MAC address returned on device object construction."
+        },
+        [
+          "pDestinationAddress",
+          "POINTER TOIEC_BACNET_ADDRESS",
+          "This is the MAC address of the device to which the request\nshould be sent."
+        ],
+        [
+          "pServiceInfo",
+          "POINTER TOIEC_BACNET_LIFE_SAFETY_INFO",
+          "A pointer to hold the request information data structure."
+        ],
+        [
+          "pAPDUParams",
+          "POINTER TOIEC_BACNET_APDU_PROPERTIES",
+          "A pointer to the APDU-Properties structure which sets APDU properties for this\ntransaction only. This does not change global defaults or settings for the application\nAPDU Properties. This argument may be NULL. In this case APDU properties  are used\nwhich were specified in the device object properties of the applications device which\nsends the request."
+        ],
+        [
+          "pTransactionToken",
+          "POINTER TOBACnetAsyncTransactionToken",
+          "Transaction token of the asynchronous call - seeBACnetAsyncTransactionToken."
+        ],
+        [
+          "pError",
+          "POINTER TOIEC_BACNET_ERROR",
+          "A pointer to a structure to hold BACnet Error information. pError may be NULL if the\napplication isnât interested in detailed error information."
+        ]
+      ]
+    }
+  ]
+}

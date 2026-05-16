@@ -1,0 +1,65 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_GroupSetTool (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/AdministrativeConfiguration/AxisGroup/SMC_GroupSetTool.html",
+  "page_title": "SMC_GroupSetTool (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_GroupSetTool\nThis function block is used to configure a new tool.\nA tool is described by the tool offset from the flange position and\nthe tool orientation relative to the flange coordinate system.\nThe new tool is considered for all movements commanded after the call\nto this function block.\nPlease note that not all tool offsets are compatible with all kinematics.\nIf the kinematic does not support the given tool offset, an error\nis returned.\nIf the tool is changed between two movements, then blending between the\nmovements is not supported. The second movement is treated as a buffered\nmovement in this case.\nA tool change before a circular movement (\nMC_MoveCircularAbsolute\nor\nMC_MoveCircularRelative\n), is only supported if the coordinate system\nof the start- and end-position of the circular movement is static. (I.e.\nno tracking is done.)\nNote: The tool cannot be changed in state ErrorStop or Disabled.\nHint\nIf you configure a new tool offset after\nMC_GroupInterrupt\nand\nbefore\nMC_GroupContinue\n, then the old tool offset is used for the\ninterrupted movements. The new tool offset is used only for movements\nthat are commanded afterwards.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "AxisGroup",
+          "Type": "AXIS_GROUP_REF_SM3",
+          "Initial": "",
+          "Comment": "Reference to a group of axes"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Executes the FB at the rising edge"
+        },
+        [
+          "ToolOffset",
+          "MC_COORD_REF",
+          "",
+          "Tool offset"
+        ],
+        [
+          "Name",
+          "STRING",
+          "âToolâ",
+          "The name of the tool."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Done",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "The defined tool offset has been added to the axisgroup"
+        },
+        [
+          "Error",
+          "BOOL",
+          "",
+          "Signals that an error has occurred within the function block"
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

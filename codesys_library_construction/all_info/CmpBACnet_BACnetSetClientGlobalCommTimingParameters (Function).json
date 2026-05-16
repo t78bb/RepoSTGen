@@ -1,0 +1,66 @@
+{
+  "library": "CmpBACnet",
+  "title": "BACnetSetClientGlobalCommTimingParameters (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/CmpBACnet/Current/BACnetClientAPI/advanced/BACnetSetClientGlobalCommTimingParameters.html",
+  "page_title": "BACnetSetClientGlobalCommTimingParameters (FUN)",
+  "text": "Deutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nMenu\nSearch\nDeutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nBACnetAsyncTransactionToken (Struct)\nBACnetClientAPI\nBACnetAcknowledgeAlarm (Function)\nBACnetAddListElement (Function)\nBACnetCancelPendingConfirmedRequest (Function)\nBACnetConfPrivateTransfer (Function)\nBACnetConfTextMessage (Function)\nBACnetCreateObject (Function)\nBACnetCreateObjectResult (Struct)\nBACnetDeleteObject (Function)\nBACnetDeviceCommControl (Function)\nBACnetGetAlarmSummary (Function)\nBACnetGetEnrollmentSummary (Function)\nBACnetGetEventInfo (Function)\nBACnetLifeSafetyOperation (Function)\nBACnetReadAllPropertyDataContents (Function)\nBACnetReadFile (Function)\nBACnetReadProperty (Function)\nBACnetReadPropertyMultiple (Function)\nBACnetReadRange (Function)\nBACnetReinitializeDevice (Function)\nBACnetRemoveListElement (Function)\nBACnetSubscribeCOV (Function)\nBACnetSubscribeCOVProperty (Function)\nBACnetUnconfPrivateTransfer (Function)\nBACnetUnconfTextMessage (Function)\nBACnetWhoHas (Function)\nBACnetWhoIs (Function)\nBACnetWriteFile (Function)\nBACnetWriteGroup (Function)\nBACnetWriteProperty (Function)\nBACnetWritePropertyMultiple (Function)\nadvanced\nBACnetBackupBACnetDevice (Function)\nBACnetCloseClientCustomer (Function)\nBACnetGetClientDeviceCommunication (Function)\nBACnetOpenClientCustomer (Function)\nBACnetRegisterClientCommunicationStateCallback (Function)\nBACnetRegisterClientDataPoint (Function)\nBACnetRegisterClientEventNotification (Function)\nBACnetRegisterClientUnsubscribeCompletionCallback (Function)\nBACnetRestartAllClients (Function)\nBACnetRestoreBACnetDevice (Function)\nBACnetSetClientDeviceCommunication (Function)\nBACnetSetClientDeviceFixAddress (Function)\nBACnetSetClientDeviceFixSubscribeCovTime (Function)\nBACnetSetClientGlobalCommTimingParameters (Function)\nBACnetSetClientGlobalMaxDeviceActions (Function)\nBACnetUnregisterClientDataPoint (Function)\nBACnetUnregisterClientEventNotification (Function)\nFile and Project Information\nLibrary Reference\n3SLicense\nLibrary Identification\nLibrary Properties\nCAA Ressource Manager Extern\nLibrary Identification\nLibrary Properties\nCAA Types Extern\nLibrary Identification\nLibrary Properties\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nCmpEventMgr\nLibrary Identification\nLibrary Properties\nCmpLog\nLibrary Identification\nLibrary Properties\nCmpSettings\nLibrary Identification\nLibrary Properties\nComponent Manager\nLibrary Identification\nLibrary Properties\nIoStandard\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysTarget\nLibrary Identification\nLibrary Properties\nSysTask\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nCmpBACnet\nDocs\n»\nBACnetClientAPI\n»\nadvanced\n»\nBACnetSetClientGlobalCommTimingParameters (FUN)\nBACnetSetClientGlobalCommTimingParameters (FUN)\nÂ¶\nFUNCTION BACnetSetClientGlobalCommTimingParameters :\nIEC_BACNET_STATUS\nSets the global communication parameters of the advanced client API.\nThis function gives a user application the ability to configure the used APDU timings\nfor communication with remote BACnet devices. During connection establishment the\nAPDU parameters are read from the remote BACnet devices and used. But in some cases\nit might be useful TO override those parameters.\nTo remove the global timing parameters and use the dynamically assigned ones again\nset nTimeout, nSegmentTimeout AND nRetryCount TO -1.\nTo disable the periodic alive check set nAliveCheckInterval to 0.\nInOut:\nScope\nName\nType\nComment\nReturn\nBACnetSetClientGlobalCommTimingParameters\nIEC_BACNET_STATUS\nInput\nnTimeout\nIEC_BACNET_UNSIGNED\nThis is the APDU timeout in milliseconds (see\n|BACNET_APDU_PROPERTIES|\nfor\nfurther information to this paramter).\nnSegmentTimeout\nIEC_BACNET_UNSIGNED\nThis is the APDU segment timeout in milliseconds (see\n|BACNET_APDU_PROPERTIES|\nfor further information to this paramter).\nnRetryCount\nIEC_BACNET_UNSIGNED\nThis is the APDU retry count (see\n|\nBACNET_APDU_PROPERTIES|for further\ninformation to this paramter).\nnAliveCheckInterval\nIEC_BACNET_UNSIGNED\nThis is the alive check interval in milliseconds in which periodical requests are\nsent to devices to check if they are still alive. If this is set to 0 no\nalive check will be performed at all.\nnErrorAliveCheckInterval\nIEC_BACNET_UNSIGNED\nIn case of an detected communication failure this value is used as the timer\ntrying to establish communication again.\nbReportErrors\nIEC_BACNET_BOOLEAN\nIf set to True special error checking will take place on reception of COV, COVP\nand event notifications. If the API receives an notification for an device object\nproperty reference which is not registered by any customer it will reply an error\nto the sender of the notification. If set to False those notifications will be\npositiv acknowledged.\nbExtendedDeviceInfo\nIEC_BACNET_BOOLEAN\nIf set to True extended device information will be read on connection establishment\nand provided to the user application in the\nIEC_BACNET_REMOTE_DEVICE_CAPS\nstructure.\nbNoUseOfRPM\nIEC_BACNET_BOOLEAN\nIf set to True the polling of all registered object properties will be made using\nthe ReadProperty service and not the ReadPropertyMultiple service event if the\ncorresponding device supports this service.\ntop\nCODESYS Group | We\nsoftware\nAutomation.\nto software\n['sɒftwɛər]\ntransitive verb\n__softwared/softwaring\n: to develop software\n// to software automation: to develop software for automation purposes\nThe CODESYS Group is the manufacturer of CODESYS, the leading hardware-independent\n                                    IEC 61131-3 automation software for developing and engineering controller\n                                    applications.\nCODESYS® is a registered trademark.\nCODESYS GmbH\nA member of the CODESYS Group\nMemminger Straße 151, 87439 Kempten\nGermany\nTel.:\n+49-831-54031-0\ninfo@codesys.com\nLegal Notice\nPrivacy Policy\nLinkedIn\nYoutube\nRSS\nDownloads\nLogin\nCODESYS Store\n© 2022 CODESYS GmbH\n| A member of the CODESYS Group",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "BACnetSetClientGlobalCommTimingParameters",
+          "Type": "IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "nTimeout",
+          "Type": "IEC_BACNET_UNSIGNED",
+          "Comment": "This is the APDU timeout in milliseconds (see|BACNET_APDU_PROPERTIES|for\nfurther information to this paramter)."
+        },
+        [
+          "nSegmentTimeout",
+          "IEC_BACNET_UNSIGNED",
+          "This is the APDU segment timeout in milliseconds (see|BACNET_APDU_PROPERTIES|for further information to this paramter)."
+        ],
+        [
+          "nRetryCount",
+          "IEC_BACNET_UNSIGNED",
+          "This is the APDU retry count (see|BACNET_APDU_PROPERTIES|for further\ninformation to this paramter)."
+        ],
+        [
+          "nAliveCheckInterval",
+          "IEC_BACNET_UNSIGNED",
+          "This is the alive check interval in milliseconds in which periodical requests are\nsent to devices to check if they are still alive. If this is set to 0 no\nalive check will be performed at all."
+        ],
+        [
+          "nErrorAliveCheckInterval",
+          "IEC_BACNET_UNSIGNED",
+          "In case of an detected communication failure this value is used as the timer\ntrying to establish communication again."
+        ],
+        [
+          "bReportErrors",
+          "IEC_BACNET_BOOLEAN",
+          "If set to True special error checking will take place on reception of COV, COVP\nand event notifications. If the API receives an notification for an device object\nproperty reference which is not registered by any customer it will reply an error\nto the sender of the notification. If set to False those notifications will be\npositiv acknowledged."
+        ],
+        [
+          "bExtendedDeviceInfo",
+          "IEC_BACNET_BOOLEAN",
+          "If set to True extended device information will be read on connection establishment\nand provided to the user application in theIEC_BACNET_REMOTE_DEVICE_CAPSstructure."
+        ],
+        [
+          "bNoUseOfRPM",
+          "IEC_BACNET_BOOLEAN",
+          "If set to True the polling of all registered object properties will be made using\nthe ReadProperty service and not the ReadPropertyMultiple service event if the\ncorresponding device supports this service."
+        ]
+      ]
+    }
+  ]
+}

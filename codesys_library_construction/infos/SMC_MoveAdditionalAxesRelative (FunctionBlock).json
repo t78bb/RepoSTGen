@@ -1,0 +1,23 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_MoveAdditionalAxesRelative (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/Movement/AdditionalAxes/SMC_MoveAdditionalAxesRelative.html",
+  "page_title": "SMC_MoveAdditionalAxesRelative (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL SMC_MoveAdditionalAxesRelative IMPLEMENTS IAdditionalAxesMovement\nIf this function block is assigned to the\nAdditionalAxes\ninput of one of the movement\nfunction blocks\nMC_MoveDirectAbsolute\n,\nMC_MoveDirectRelative\n,\nMC_MoveLinearAbsolute\n,\nMC_MoveLinearRelative\n,\nMC_MoveCircularAbsolute\n, or\n|\nMC_MoveCircularRelative, the additional\naxes of the axis group will travel the commanded\nDistances\nwhile the movement function block is\nActive\n.\nThe movement of the additional axes is synchronized with the movement of the movement function block.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "Distances",
+          "Type": "SMC_ADDITIONAL_AXES_VALUES_ARRAY"
+        }
+      ]
+    }
+  ]
+}

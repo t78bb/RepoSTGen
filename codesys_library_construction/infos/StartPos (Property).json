@@ -1,0 +1,8 @@
+{
+  "library": "SM3_CNC",
+  "title": "StartPos (Property)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/SoftMotion-Function-Blocks/pou-SMC_SetInterpreterStartPosition/StartPos.html",
+  "page_title": "SMC_SetInterpreterStartPosition.StartPos (PROP)",
+  "text": "\nPROPERTY StartPos :\nSMC_POSINFO\nReturns the start position for the interpreter.\nIf the start position has not been set yet (by calling the\nfunction block in the bus task), a zero position is returned.\nTo be called from the background task that also calls the\ninterpreter.",
+  "tables": []
+}

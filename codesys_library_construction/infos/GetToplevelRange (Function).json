@@ -1,0 +1,31 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "GetToplevelRange (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_Module/TreeNavigation/GetToplevelRange.html",
+  "page_title": "GetToplevelRange (FUN)",
+  "text": "\nFUNCTION GetToplevelRange :\nSiblingRange\nReturns the range of all toplevel instances.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetToplevelRange",
+          "Type": "SiblingRange",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfMTree",
+          "Type": "IModuleTree",
+          "Comment": "The module tree that holds all instances"
+        }
+      ]
+    }
+  ]
+}

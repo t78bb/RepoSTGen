@@ -1,0 +1,28 @@
+{
+  "library": "BACnet2DefaultImpl",
+  "title": "TimeZoneToString (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2DefaultImpl/Current/BACnetDefaultImpl/Functions/TimeZoneToString.html",
+  "page_title": "TimeZoneToString (FUN)",
+  "text": "\nFUNCTION TimeZoneToString : STRING\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "TimeZoneToString",
+          "Type": "STRING"
+        },
+        {
+          "Scope": "Input",
+          "Name": "tz",
+          "Type": "TimeZone"
+        }
+      ]
+    }
+  ]
+}

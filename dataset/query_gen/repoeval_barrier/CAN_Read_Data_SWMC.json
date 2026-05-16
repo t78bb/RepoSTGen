@@ -1,0 +1,6 @@
+{
+  "requirement": "This code should implement a function named CAN_Read_Data_SWMC that returns a Can_baseframe type structure based on the input SWMC_ID and I. The function should handle different SWMC_ID values (from 1 to 6) by reading from corresponding CAN message buffers (gCan.C1RxMsg to gCan.C6RxMsg) and calculating the frame.id as (RxMsg_CobId - 8) / 32, where RxMsg_CobId is accessed using the index I. The frame.data should be directly assigned from the RxMsg_Byte array using the same index. If SWMC_ID does not match any defined cases (1 to 6), the function should set frame.id to 0 and all elements of frame.data to 0, effectively handling undefined or out-of-range SWMC_ID values.",
+  "provide_code": "FUNCTION CAN_Read_Data_SWMC : Can_baseframe\nVAR_INPUT\n\tSWMC_ID\t :UINT;\t\t//接收SWMC控制ID\n\tI\t \t :UINT;      //接收缓冲区域\nEND_VAR",
+  "function_name": "CAN_Read_Data_SWMC",
+  "requirement_cn": "该代码应实现一个名为 CAN_Read_Data_SWMC 的函数，根据输入的 SWMC_ID 和 I 返回一个 Can_baseframe 类型的结构体。函数应处理不同的 SWMC_ID 值（从1到6），通过读取相应的 CAN 消息缓冲区（gCan.C1RxMsg 至 gCan.C6RxMsg）并计算 frame.id 为 (RxMsg_CobId - 8) / 32，其中 RxMsg_CobId 使用索引 I 访问。frame.data 应直接从 RxMsg_Byte 数组中使用相同的索引赋值。如果 SWMC_ID 与已定义的情况（1到6）不匹配，函数应将 frame.id 设置为0，并将 frame.data 的所有元素设置为0，有效处理未定义或超出范围的 SWMC_ID 值。"
+}

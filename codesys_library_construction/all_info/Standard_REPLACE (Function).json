@@ -1,0 +1,46 @@
+{
+  "library": "Standard",
+  "title": "REPLACE (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/Standard/Current/String-Functions/REPLACE.html",
+  "page_title": "REPLACE (FUN)",
+  "text": "Deutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nMenu\nSearch\nDeutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nBistable Function Blocks\nRS (FunctionBlock)\nSR (FunctionBlock)\nCounter\nCTD (FunctionBlock)\nCTU (FunctionBlock)\nCTUD (FunctionBlock)\nMiscellaneous\nRTC (FunctionBlock)\nString Functions\nCONCAT (Function)\nDELETE (Function)\nFIND (Function)\nINSERT (Function)\nLEFT (Function)\nLEN (Function)\nMID (Function)\nREPLACE (Function)\nRIGHT (Function)\nTimer\nTOF (FunctionBlock)\nTON (FunctionBlock)\nTP (FunctionBlock)\nTrigger\nF_TRIG (FunctionBlock)\nR_TRIG (FunctionBlock)\nFile and Project Information\nLibrary Reference\nStandard\nDocs\n»\nString\nFunctions\n»\nREPLACE (FUN)\nREPLACE (FUN)\nÂ¶\nFUNCTION REPLACE : STRING(255)\nReplaces a specific number of characters of a string by another string\nREPLACE(STR1,\nSTR2,\nL,\nP)\nmeans: Replace\nL\ncharacters from\nSTR1\nby\nSTR2\n, beginning with the character in the\nP\nposition.\nPOS\n=\n0\nor\nPOS\n=\n1\n, are both addressing the first character.\nNote\nThe current implementation is unfortunately not correct for the case\nP=0\n. The implementation cannot be changed for compatibility reasons.\nIf\nP=0\nis used, the parameter\nL\nis internally reduced by one!\nIt is generally recommended to use values in the range specified by IEC 61131-3. The smallest value for\nP\nis specified there as\n1\n.\n(* Example declaration *)\nVarSTRING1\n:\nSTRING\n;\n(* Example in ST , result is 'SKYSI' *)\nVarSTRING1\n:=\nREPLACE\n(\n'SUXYSI'\n,\n'K'\n,\n2\n,\n2\n);\nInOut:\nScope\nName\nType\nComment\nReturn\nREPLACE\nSTRING(255)\nResulting string\nInput\nSTR1\nSTRING(255)\nString of which a part is replaced\nSTR2\nSTRING(255)\nString which replaces a part of\nSTR1\nL\nINT\nNumber of characters, counting from left\nP\nINT\nStart position of the characters to be replaced.\nP\n=\n1\nor\nP\n=\n0\nare both addressing the first character\ntop\nCODESYS Group | We\nsoftware\nAutomation.\nto software\n['sɒftwɛər]\ntransitive verb\n__softwared/softwaring\n: to develop software\n// to software automation: to develop software for automation purposes\nThe CODESYS Group is the manufacturer of CODESYS, the leading hardware-independent\n                                    IEC 61131-3 automation software for developing and engineering controller\n                                    applications.\nCODESYS® is a registered trademark.\nCODESYS GmbH\nA member of the CODESYS Group\nMemminger Straße 151, 87439 Kempten\nGermany\nTel.:\n+49-831-54031-0\ninfo@codesys.com\nLegal Notice\nPrivacy Policy\nLinkedIn\nYoutube\nRSS\nDownloads\nLogin\nCODESYS Store\n© 2022 CODESYS GmbH\n| A member of the CODESYS Group",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "REPLACE",
+          "Type": "STRING(255)",
+          "Comment": "Resulting string"
+        },
+        {
+          "Scope": "Input",
+          "Name": "STR1",
+          "Type": "STRING(255)",
+          "Comment": "String of which a part is replaced"
+        },
+        [
+          "STR2",
+          "STRING(255)",
+          "String which replaces a part ofSTR1"
+        ],
+        [
+          "L",
+          "INT",
+          "Number of characters, counting from left"
+        ],
+        [
+          "P",
+          "INT",
+          "Start position of the characters to be replaced.P=1orP=0are both addressing the first character"
+        ]
+      ]
+    }
+  ]
+}

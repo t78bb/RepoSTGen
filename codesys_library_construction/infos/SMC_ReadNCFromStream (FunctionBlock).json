@@ -1,0 +1,179 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_ReadNCFromStream (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/ReadNCFile2/SMC_ReadNCFromStream.html",
+  "page_title": "SMC_ReadNCFromStream (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_ReadNCFromStream\nSMC_ReadNCFromStream\ncan read an NC-ASCII-file from a stream\nin order to make it available for the\nSMC_NCInterpreter\n.\nThus, an NC program can be read in and interpreted at runtime.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "bExecute",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Rising edge: starts execution."
+        },
+        [
+          "bAppend",
+          "BOOL",
+          "",
+          "IfTRUE`, no default values are added (like G17 for 3D mode).\nIntended to be used together with the inputbAppendofSMC_NCInterpreter.\nNote: must not be TRUE for the first rising edge ofbExecute."
+        ],
+        [
+          "bAbort",
+          "BOOL",
+          "",
+          "IfTRUE, the current processing of this function block\nis aborted"
+        ],
+        [
+          "aStream",
+          "ARRAY\n[0..SMC_CNC_LibParams.MAX_SUBPROGRAM_NESTING_DEPTH]\nOFSMC_ITextStream",
+          "",
+          "An array of streams. aStream[0] has to contain the main program.\nIt must be open and ready for reading.\nThe streams 1 .. N-1 are (only) used to process subprogram calls.\nThe streams must be of the correct type for the implementation\noflookupCNCProgram."
+        ],
+        [
+          "lookupCNCProgram",
+          "SMC_INCLookup",
+          "",
+          "An object that looks up subprograms by name.  Used to open the\nstreams for the subprograms (aSubStreams)."
+        ],
+        [
+          "pvl",
+          "POINTER TOSMC_VARLIST",
+          "",
+          "A variable list defining type and address for each variable that\ncan be used from the g-code.\nIf there are no variables in the g-code, this input is not used."
+        ],
+        [
+          "fDefaultVel",
+          "LREAL",
+          "",
+          "Default velocity; used if the velocity (F-word) is not specified inside\nthe CNC file.\nNote: only applies to the main program, not to subprograms."
+        ],
+        [
+          "fDefaultAccel",
+          "LREAL",
+          "",
+          "Default acceleration; used if acceleration (E+ word) is not specified\ninside the CNC file\nNote: only applies to the main program, not to subprograms."
+        ],
+        [
+          "fDefaultDecel",
+          "LREAL",
+          "",
+          "Default deceleration (E- word); used if deceleration is not specified\ninside the CNC file. A non-negative value is expected.\nNote: only applies to the main program, not to subprograms."
+        ],
+        [
+          "fDefaultVelFF",
+          "LREAL",
+          "",
+          "Default velocity for fast forward (G0), FF word.\nIt is used if no velocity is specified inside the CNC file.\nNote: only applies to the main program, not to subprograms."
+        ],
+        [
+          "fDefaultAccelFF",
+          "LREAL",
+          "",
+          "Default acceleration for fast forward (G0), EF+ word.\nIt is used if no acceleration is specified inside the CNC file.\nNote: only applies to the main program, not to subprograms."
+        ],
+        [
+          "fDefaultDecelFF",
+          "LREAL",
+          "",
+          "Default deceleration for fast forward (G0), EF- word.\nA non-negative value is expected. It is used if no deceleration\nis specified inside the CNC file.\nNote: only applies to the main program, not to subprograms."
+        ],
+        [
+          "b3DMode",
+          "BOOL",
+          "TRUE",
+          "IfTRUE, a G17 command (activation of 3D-mode) is executed implicitly.\nNote: only applies to the main program, not to subprograms."
+        ],
+        [
+          "bStepSuppress",
+          "BOOL",
+          "",
+          "When this input isTRUE, lines of the CNC program starting\nwith â/â will be ignored. Otherwise they will be processed."
+        ],
+        [
+          "bParenthesesAsComments",
+          "BOOL",
+          "TRUE",
+          "Usually, parentheses in g-code are treated as multi-line comments.\nIf bParenthesesAsComments is set to FALSE, however, parentheses\ncan be used in the usual ways to group expressions (â(a+b)*câ) and\nfor subprogram calls (âN10 sub(17)â) in g-code.\nMulti-line comments can be started with â(â and end with â)â.For more control over the delimiters, call the methodSMC_ReadNCFromStream.SetDelimitersbefore calling the main method of this FB.  If SetDelimiters is\ncalled, this input is ignored.NoteRegardless of the value of this input, it is always possible to\nuse curly braces â{}â to group expressions and for subprogram calls."
+        ],
+        [
+          "bDisableJumpBuffer",
+          "BOOL",
+          "",
+          "This input, ifTRUE, disables an internal jump buffer that is used to\nimprove performance of g-code processing if jumps (G20) are used."
+        ],
+        [
+          "pCustomFunTable",
+          "POINTER TOSMC_NC_GFunctionTable",
+          "",
+          "Allows to define custom functions that can be used in G-Code expressions.\nIf there are no custom G-Code functions, this input is null."
+        ],
+        [
+          "aTokenModifier",
+          "ARRAY\n[0..SMC_CNC_LibParams.MAX_SUBPROGRAM_NESTING_DEPTH]\nOFSMC_ITokenModifier",
+          "",
+          "Optional modifier function blocks that can change the tokens\non the fly.  This can be used to translate between G-Code\ndialects.\nLeave 0 if not needed.  Otherwise, set all members of the\narray to valid function block instances."
+        ],
+        [
+          "aSentenceModifier",
+          "ARRAY\n[0..SMC_CNC_LibParams.MAX_SUBPROGRAM_NESTING_DEPTH]\nOFSMC_IGSentenceModifier",
+          "",
+          "Optional modifier function blocks that can change the g-code\nsentences on the fly.  This can be used to translate between G-Code\ndialects.\nLeave 0 if not needed.  Otherwise, set all members of the\narray to valid function block instances."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bBusy",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUEwhile execution of function block is not finished"
+        },
+        [
+          "bError",
+          "BOOL",
+          "",
+          "TRUEsignals that an error has occurred within\nthe function block."
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "",
+          "Error identification"
+        ],
+        [
+          "errorPos",
+          "SMC_NC_SourcePosition",
+          "",
+          "The source-position where an error has been detected."
+        ],
+        [
+          "ErrorProgramName",
+          "STRING",
+          "",
+          "The name of the program where an error has been detected"
+        ],
+        [
+          "nActiveChain",
+          "UDINT",
+          "",
+          "The currently active parsing chain, 0 <= nActiveChain <\nNUM_PARSER_CHAINS."
+        ],
+        {
+          "Scope": "Inout",
+          "Name": "sentences",
+          "Type": "SMC_GSentenceQueue",
+          "Initial": "",
+          "Comment": "Out: The output sentence queue that can be fed intoSMC_NCInterpreter."
+        }
+      ]
+    }
+  ]
+}

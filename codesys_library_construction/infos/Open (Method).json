@@ -1,0 +1,31 @@
+{
+  "library": "SM3_CNC",
+  "title": "Open (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/File/ReadNCFile/Stream/pou-SMC_FileStream2/Open.html",
+  "page_title": "SMC_FileStream2.Open (METH)",
+  "text": "\nMETHOD FINAL Open : SMC_Error\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "Open",
+          "Type": "SMC_Error",
+          "Comment": ""
+        },
+        {
+          "Scope": "Inout Const",
+          "Name": "sFileName",
+          "Type": "STRING(255)",
+          "Comment": "Absolute or relative file path to the input file."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "library": "SM3_CNC",
+  "title": "GetSignature (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/Parser/Expressions/Functions/pou-SMC_NC_IFunction/GetSignature.html",
+  "page_title": "SMC_NC_IFunction.GetSignature (METH)",
+  "text": "\nMETHOD GetSignature\nReturns the signature of the function, consisting of the type of the\nresult, the number of arguments, and type of each argument.\nNote that the type\nSMC_GVar_Type\n.T_OTHER can be used\nfor the return type and for the argument types.  This means\nthat an arbitrary type may be used (T_BOOL, T_LREAL, or T_STRING),\nand that it must be the same type for all uses of T_OTHER in this\nsignature.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Output",
+          "Name": "resultType",
+          "Type": "SMC_GVar_Type",
+          "Comment": "The type of the result of the function."
+        },
+        [
+          "nNumArguments",
+          "UDINT",
+          "The number of arguments the function accepts."
+        ],
+        [
+          "pType",
+          "POINTER TOSMC_GVar_Type",
+          "An array ofnNumArgumentselements, defining the type of\neach argument."
+        ]
+      ]
+    }
+  ]
+}

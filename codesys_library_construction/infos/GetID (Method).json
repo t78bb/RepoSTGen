@@ -1,0 +1,23 @@
+{
+  "library": "AlarmManager",
+  "title": "GetID (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/pou-IAlarmGroup3/GetID.html",
+  "page_title": "IAlarmGroup3.GetID (METH)",
+  "text": "\nMETHOD GetID :\nALARMGROUP_ID\nReturns the ID of the alarm group, that can be used e.g. for calling method IAlarmConfiguration.AcknowledgeOneOfGroup\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetID",
+          "Type": "ALARMGROUP_ID"
+        }
+      ]
+    }
+  ]
+}

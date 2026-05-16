@@ -1,0 +1,173 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_GroupJog2 (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/Movement/SMC_GroupJog2.html",
+  "page_title": "SMC_GroupJog2 (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_GroupJog2\nActivates coordinated jogging of the axis group.\nThis is the recommended function block to jog an axis group.\nIt replaces\nSMC_GroupJog\n.\nJogging is performed in the coordinate system defined by input\nCoordSystem\n.  To jog in machine coordinates, for example, use MCS here.\nSetting ABC_as_ACS allows to use a mixed interpretation of the\nreference axes, X/Y/Z as cartesian position and A/B/C as axis positions\nof the tool kinematics.\nJogging can be triggered by one or more rising edges in the\nForward\nand\nBackward\ninputs.\nThe function block will move all axes i whose inputs\n(Forward[i] XOR Backward[i]) evaluate to TRUE.\nJogging can be stopped by one or more falling edges in the\nForward\nand\nBackward\ninputs.\nNote\nA rising edge that results in both Backward[i] and Forward[i] being TRUE\nis interpreted as a falling edge.\nIf both rising and falling edges are detected, the former prevail.\nWarning\nPlease make sure to set the inputs\nVelFactor\n,\nAccFactor\n, and\nJerkFactor\nto safe values.  These values are crucial when jogging\nin the ACS or when jogging the orientation.  In these cases, the movement\nof the axes may be limited only by the global axis limits muliplied by\nthese factors.  When setting the factors to 1 (corresponding to 100%),\na very fast movement may result, which is not desirable for jogging.\n(Of course, the ancillary limits, axis limits set by\nSMC_GroupSetAxisLimitFactors\n, and the override are also considered.)\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "AxisGroup",
+          "Type": "AXIS_GROUP_REF_SM3",
+          "Initial": "",
+          "Comment": "Reference to a group of axes"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Enable",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Enables coordinated jogging of the axis group."
+        },
+        [
+          "Forward",
+          "ARRAY\n[0..(SMRB.MAX_KIN_AXES -\n1)] OF BOOL",
+          "",
+          "Input to jog the respective coordinate forward."
+        ],
+        [
+          "Backward",
+          "ARRAY\n[0..(SMRB.MAX_KIN_AXES -\n1)] OF BOOL",
+          "",
+          "Input to jog the respective coordinate backward.\nInput to jog the respective additional axis forward."
+        ],
+        [
+          "AdditionalAxesForward",
+          "ARRAY\n[0..(ANY_TO_LINT(SMRB.MAX_ADD_AXES)\n- 1)] OF BOOL",
+          "",
+          ""
+        ],
+        [
+          "AdditionalAxesBackward",
+          "ARRAY\n[0..(ANY_TO_LINT(SMRB.MAX_ADD_AXES)\n- 1)] OF BOOL",
+          "",
+          "Input to jog the respective additional axis backward."
+        ],
+        [
+          "MaxLinearDistance",
+          "LREAL",
+          "",
+          "The maximum linear distance a coordinate is jogged while no\nnew rising edge is detected on the Forward/Backward inputs.\nThe distance must be positive, otherwise an error is reported."
+        ],
+        [
+          "MaxAngularDistance",
+          "LREAL",
+          "",
+          "The maximum angular distance a coordinate is jogged while no\nnew rising edge is detected on the Forward/Backward inputs.\nThe distance must be positive, otherwise an error is reported."
+        ],
+        [
+          "Velocity",
+          "LREAL",
+          "",
+          "Maximum path velocity [u/s]. Always positive. Not\nnecessarily reached."
+        ],
+        [
+          "Acceleration",
+          "LREAL",
+          "",
+          "Maximum path acceleration [u/sÂ²]. Always positive. Not\nnecessarily reached."
+        ],
+        [
+          "Deceleration",
+          "LREAL",
+          "",
+          "Maximum path deceleration [u/sÂ²]. Always positive. Not\nnecessarily reached."
+        ],
+        [
+          "Jerk",
+          "LREAL",
+          "",
+          "Maximum path jerk [u/sÂ³]. Always positive. Not necessarily\nreached."
+        ],
+        [
+          "VelFactor",
+          "LREAL",
+          "",
+          "The maximum velocity of each axis is multiplied by this factor, which\nmust be in the range ]0, 1].\nThe default is 0, which results in an error."
+        ],
+        [
+          "AccFactor",
+          "LREAL",
+          "",
+          "The maximum acceleration of each axis is multiplied by this factor, which\nmust be in the range ]0, 1].\nThe default is 0, which results in an error."
+        ],
+        [
+          "JerkFactor",
+          "LREAL",
+          "",
+          "The maximum jerk of each axis is multiplied by this factor, which\nmust be in the range ]0, 1].\nThe default is 0, which results in an error."
+        ],
+        [
+          "TorqueFactor",
+          "LREAL",
+          "1",
+          "The maximum torque of each axis is multiplied by this factor,\nwhich must be in the range ]0, 1].  A dynamic model must have\nbeen set usingSMC_GroupSetDynamicsfor this factor to have\nan effect."
+        ],
+        [
+          "CoordSystem",
+          "SMC_COORD_SYSTEM",
+          "",
+          "The coordinate system in which to jog.  Jogging in dynamic coordinate\nsystems (e.g. while tracking a conveyor belt) is not supported."
+        ],
+        [
+          "ABC_as_ACS",
+          "BOOL",
+          "",
+          "Mixed jogging. The position is jogged in cartesian space, the\norientation axes are jogged in axis space.\nIf the input CoordSystem equals ACS, then this input is ignored.\nOtherwise, if the input CoordSystem is a cartesian coordinate system,\nthe orientation is jogged in ACS, while the position is jogged in the\ncartesian coordinate system.Forward/Backward[3..5] control the axis positions of the orientation\naxes.\nForward/Backward[0..2] control the (X,Y,Z) position of the TCP.\nWhen jogging the orientation axes, the robot will perform a\ncompensating movement so that the TCP remains stationary.If TRUE, the axis groupâs kinematic transformation must be a so called\ncoupled kinematics, composed of a positioning and an orientation\nkinematics.  It must supportSMC_ORIENTATION_MODE.Axis. If not, the\nerrorSMC_CP_AXIS_ORIENTATION_IPO_OFFSET2_NOT_IMPLEMENTEDorSMC_CP_KIN_DOES_NOT_SUPPORT_AXIS_ORIENTATION_IPOis returned.\nThe FB does not have to be restarted to clear this error, instead the\ninput ABC_as_ACS can be set to FALSE.If FALSE, then, depending on the input CoordSystem, either all axes\nare jogged in axis coordinates (ACS) or the position and orientation\nare jogged in cartesian space.  In this case, Forward/Backward[3..5]\nrotate the TCP around the X-/Y-/Z-Axis of the cartesian coordinate\nsystem."
+        ],
+        [
+          "Name",
+          "STRING",
+          "âSMC_GroupJog2â",
+          "The name of the movement."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Active",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "The FB is currently in control of the axis group."
+        },
+        [
+          "Busy",
+          "BOOL",
+          "",
+          "The FB is not finished"
+        ],
+        [
+          "Error",
+          "BOOL",
+          "",
+          "Signals that an error has occurred within the function block"
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "",
+          "Error identification"
+        ],
+        [
+          "CurrentPosition",
+          "SMC_POS_REF",
+          "",
+          "The current position of the axis group"
+        ],
+        [
+          "CurrentAdditionalAxesPositions",
+          "SMC_ADDITIONAL_AXES_VALUES_ARRAY",
+          "",
+          "Current positions of the groupâs additional axes."
+        ]
+      ]
+    }
+  ]
+}

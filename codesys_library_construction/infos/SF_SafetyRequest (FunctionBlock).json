@@ -1,0 +1,100 @@
+{
+  "library": "PLCopen Safety FBs",
+  "title": "SF_SafetyRequest (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/PLCopen Safety FBs/Current/PLCopenSafetyFBs/Function-Blocks/SF_SafetyRequest.html",
+  "page_title": "SF_SafetyRequest (FB)",
+  "text": "\nFUNCTION_BLOCK SF_SafetyRequest\nThis function block provides the interface to a generic actuator, e.g. a safety drive or safety valve, to place the actuator in a safe state.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "Activate",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "Activation of the FB."
+        },
+        [
+          "S_OpMode",
+          "BOOL",
+          "FALSE",
+          "Requested mode of a generic safe actuator. FALSE: Safe mode\nis requested. TRUE: Operation mode is requested."
+        ],
+        [
+          "S_Acknowledge",
+          "BOOL",
+          "FALSE",
+          "Confirmation of the generic actuator, if actuator is in the\nSafe state. FALSE: Operation mode (non-safe). TRUE: Safe\nmode."
+        ],
+        [
+          "MonitoringTime",
+          "TIME",
+          "TIME#0ms",
+          "Monitoring of the response time between the safety function\nrequest (S_OpMode set to FALSE) and the actuator\nacknowledgment (S_Acknowledge switches to TRUE)."
+        ],
+        [
+          "S_StartReset",
+          "BOOL",
+          "FALSE",
+          "Start behaviour of safety FB"
+        ],
+        [
+          "Reset",
+          "BOOL",
+          "FALSE",
+          "Manual reset of FB"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Ready",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "Activation of the FB. TRUE indicates that the FB is\nactivated and the outputs results are valid, FALSE the FB is\nnot active and the program is not executed."
+        },
+        [
+          "S_SafetyActive",
+          "BOOL",
+          "FALSE",
+          "Confirmation of the Safe state. FALSE: Non-safe state. TRUE:\nSafe state."
+        ],
+        [
+          "S_SafetyRequest",
+          "BOOL",
+          "FALSE",
+          "Request to place the actuator in a safe state. FALSE: Safe\nstate is requested. TRUE: Non-safe state."
+        ],
+        [
+          "SafetyDemand",
+          "BOOL",
+          "FALSE",
+          "Output indicating that the FB is active and the primary\nsafety function is demanded (e.g. related to the safety\nfunctionality)."
+        ],
+        [
+          "ResetRequest",
+          "BOOL",
+          "FALSE",
+          "Output which can be used to signal the operator to press the\nreset functionality to continue."
+        ],
+        [
+          "Error",
+          "BOOL",
+          "FALSE",
+          "Error flag"
+        ],
+        [
+          "DiagCode",
+          "WORD",
+          "0",
+          "Diagnostic register"
+        ]
+      ]
+    }
+  ]
+}

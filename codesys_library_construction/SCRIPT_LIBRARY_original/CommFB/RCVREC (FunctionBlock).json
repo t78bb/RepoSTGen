@@ -1,0 +1,91 @@
+{
+  "library": "CommFB",
+  "title": "RCVREC (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/CommFB/Current/CommFB/FieldDevice/RCVREC.html",
+  "page_title": "RCVREC (FB)",
+  "text": "CommFB\nAINFO_TYPE (Union)\nAddressConcept (GVL)\nAddress Concept\nGenerating a CommFB-ID\nProfibus DP\nProfinet IO\nDevice Diagnosis\nAddress Conversion\nAddresses\nADDR_TO_ID (FunctionBlock)\nADDR_TYPE (Union)\nCREATE_ID (FunctionBlock)\nDP_ADDR (Struct)\nDP_DEVICE_ID (Struct)\nID_TO_ADDR (FunctionBlock)\nIO_SYSTEM_TYPE (Enum)\nPN_ADDR (Struct)\nPN_DEVICE_ID (Struct)\nSUBSLOT_ID (Function)\nCNCT (FunctionBlock)\nConstants (GVL)\nDP Address\nADDR (Function)\nID (Function)\nSLOT_ID (Function)\nDP_AINFO (Struct)\nDP_DIAG (Struct)\nErrorCode (Enum)\nErrorCode1_RW (Enum)\nFieldDevice\nPRVREC (FunctionBlock)\nPRVREC_MODE (Enum)\nRCVREC (FunctionBlock)\nRCVREC_MODE (Enum)\nSALARM (FunctionBlock)\nGETIO_PART (FunctionBlock)\nPN_AINFO (Struct)\nRALARM (FunctionBlock)\nRALARM_MODE (Enum)\nRDIAG (FunctionBlock)\nRDREC (FunctionBlock)\nSETIO_PART (FunctionBlock)\nWRREC (FunctionBlock)\nImages\nLibrary Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nFile and Project Information\nLibrary Reference\nIoDriver Profibus2 Interfaces\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nCommFB\nDocs\n»\nCommFB\n»\nFieldDevice\n»\nRCVREC (FB)\nRCVREC (FB)\nÂ¶\nFUNCTION_BLOCK RCVREC\nA Field Device can receive an acyclic process data record from a Host Controller or a Supervisor (The Host may use the\nWRREC\nfunction block).\nThe application of a programmable field device is informed about this request and can receive the data using the RCVREC function block.\nThis function blocks contains the methods to check, receive and acknowledge a process data record.\nAll aspects of receiving a process data record may use one function block instance, the different methods are distinguished using the MODE input.\nIF a data record is received (with MODE=1 OR MODE=2), the NEW output indicates that the data record is stored in the variable given AT the RECORD parameter.\nIf the function block refuses to accept the data record, the CODE1 input sets the Error Code 1, and the CODE2 input sets the Error Code 2 of the negative response.\nIf an error occurred, the ENO=0 indicates an error and the STATUS output contains the error code.\nNote\nThe application program of the Field Device shall acknowledge the received request, otherwise the Host Controller will get a timeout error or the device stack will send a negative response.\nCode-Example\nPROGRAM\nReceiveData\nVAR\nrecvData\n:\nCommFB.RCVREC\n;\ndata\n:\nARRAY\n[0..64]\nOF\nBYTE\n;\nrecvAll\n:\nCommFB.RCVREC\n;\nparam1\n:\nARRAY\n[0..7]\nOF\nBYTE\n;\nparam2\n:\nARRAY\n[0..7]\nOF\nBYTE\n;\nEND_VAR\n// Variant 1: receive data for a specific slot:\nrecvData.EN\n:=\n1\n;\nrecvData.F_ID\n:=\nCommFB.SUBSLOT_ID\n(\nEN\n:=\nTRUE\n,\nPN_Device.DeviceID\n,\n2\n,\n1\n);\n// get ID of Slot 2 of the specified device\nrecvData.MLEN\n:=\nSIZEOF\n(\ndata\n);\nrecvData.RECORD\n:=\nADR\n(\ndata\n);\nrecvData\n(\nMODE\n:=\nCommFB.RCVREC_MODE.RECEIVE_BY_SLOT\n);\n// receive data and write it to RECORD\nIF\nrecvData.NEW\nTHEN\nIF\n(\nrecvData.INDEX\n=\n10\n)\nTHEN\n// ...process and opt. check received data\nrecvData\n(\nMODE\n:=\nCommFB.RCVREC_MODE.POS_RESPONSE\n);\n// send pos. response to host\nELSE\nrecvData\n(\nMODE\n:=\nCommFB.RCVREC_MODE.NEG_RESPONSE\n,\nCODE1\n:=\nCommFB.ErrorCode1_RW.Invalid_index\n);\n// signal error to host\nEND_IF\nEND_IF\n// Variant 2: check for any request and then (opt.) receive it in a second step\n// MODE := 0  = CommFB.RCVREC_MODE.CHECK\n// MODE := 1  = CommFB.RCVREC_MODE.RECEIVE\n// MODE := 3  = CommFB.RCVREC_MODE.POS_RESPONSE\n// MODE := 4  = CommFB.RCVREC_MODE.NEG_RESPONSE\nrecvAll\n(\nEN\n:=\nTRUE\n,\nMODE\n:=\n0\n);\n// check for new data\nIF\n(\nrecvAll.NEW\n)\nTHEN\n// received data\nIF\n(\nrecvAll.SLOT\n=\n1\nAND\nrecvAll.INDEX\n=\n100\n)\nTHEN\nrecvAll\n(\nMODE\n:=\n1\n,\nMLEN\n:=\nSIZEOF\n(\nparam1\n),\nRECORD\n:=\nADR\n(\nparam1\n));\n// get data\nrecvAll\n(\nMODE\n:=\n3\n);\n// pos. response\nELSIF\n(\nrecvAll.SLOT\n=\n3\nAND\nrecvAll.INDEX\n=\n200\n)\nTHEN\nrecvAll\n(\nMODE\n:=\n1\n,\nMLEN\n:=\nSIZEOF\n(\nparam2\n),\nRECORD\n:=\nADR\n(\nparam2\n));\n// get data\nrecvAll\n(\nMODE\n:=\n3\n);\n// pos. response\nELSE\nrecvAll\n(\nMODE\n:=\n4\n,\nCODE1\n:=\nCommFB.ErrorCode1_RW.Invalid_slot_or_subslot\n);\n// signal error to host\nEND_IF\nEND_IF\nInOut:\nScope\nName\nType\nComment\nInput\nEN\nBOOL\nThe function is invoked by EN=1.\nMODE\nUINT\nFunction specifier, see\nRCVREC_MODE\nF_ID\nDWORD\nSlot / subslot to filter the data records to receive\nMLEN\nUINT\nMaximum length of a data record to receive\nCODE1\nBYTE\nReason for negative response. (see\nErrorCode1_RW\n)\nCODE2\nBYTE\nReason for negative response. (0 or user specific)\nRECORD\nPOINTER TO BYTE\nReceived data record. Shall be at least of MLEN byte\nOutput\nENO\nBOOL\nFunction enabled\nNEW\nBOOL\nNew data record received\nSTATUS\nDWORD\nField Device interface status\nSLOT\nUINT\nSlot the record is received for\nSUBSLOT\nUINT\nSubslot the record is received for\nINDEX\nUINT\nIndex of the received data record\nLEN\nUINT\nLength of the received data record",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "EN",
+          "Type": "BOOL",
+          "Comment": "The function is invoked by EN=1."
+        },
+        [
+          "MODE",
+          "UINT",
+          "Function specifier, seeRCVREC_MODE"
+        ],
+        [
+          "F_ID",
+          "DWORD",
+          "Slot / subslot to filter the data records to receive"
+        ],
+        [
+          "MLEN",
+          "UINT",
+          "Maximum length of a data record to receive"
+        ],
+        [
+          "CODE1",
+          "BYTE",
+          "Reason for negative response. (seeErrorCode1_RW)"
+        ],
+        [
+          "CODE2",
+          "BYTE",
+          "Reason for negative response. (0 or user specific)"
+        ],
+        [
+          "RECORD",
+          "POINTER TO BYTE",
+          "Received data record. Shall be at least of MLEN byte"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "ENO",
+          "Type": "BOOL",
+          "Comment": "Function enabled"
+        },
+        [
+          "NEW",
+          "BOOL",
+          "New data record received"
+        ],
+        [
+          "STATUS",
+          "DWORD",
+          "Field Device interface status"
+        ],
+        [
+          "SLOT",
+          "UINT",
+          "Slot the record is received for"
+        ],
+        [
+          "SUBSLOT",
+          "UINT",
+          "Subslot the record is received for"
+        ],
+        [
+          "INDEX",
+          "UINT",
+          "Index of the received data record"
+        ],
+        [
+          "LEN",
+          "UINT",
+          "Length of the received data record"
+        ]
+      ]
+    }
+  ]
+}

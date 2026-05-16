@@ -1,0 +1,31 @@
+{
+  "library": "BACnet2",
+  "title": "GetBACnetSetpointReferenceProperty (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/BACnetObjects/base/pou-BACnetObjectBase/Utilities/typed-property-access/GetBACnetSetpointReferenceProperty.html",
+  "page_title": "BACnetObjectBase.GetBACnetSetpointReferenceProperty (METH)",
+  "text": "\nMETHOD GetBACnetSetpointReferenceProperty : CmpBACnet.IEC_BACNET_SETPOINT_REFERENCE\nReturns the BACnet-Setpoint-Reference-Value of the specified Property (propID) of this BACnet-Object.\nThe used functions are no client, meaning, that the access of the property is not restricted by write or read access restrictions.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetBACnetSetpointReferenceProperty",
+          "Type": "CmpBACnet.IEC_BACNET_SETPOINT_REFERENCE",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "propID",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_ID",
+          "Comment": "The ID of the property to get."
+        }
+      ]
+    }
+  ]
+}

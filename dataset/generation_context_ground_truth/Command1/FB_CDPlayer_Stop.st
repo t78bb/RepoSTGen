@@ -1,0 +1,2 @@
+
+bPlayerActive := FALSE;

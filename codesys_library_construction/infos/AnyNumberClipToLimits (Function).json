@@ -1,0 +1,41 @@
+{
+  "library": "DNP3",
+  "title": "AnyNumberClipToLimits (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Functions/AnyNumber/AnyNumberClipToLimits.html",
+  "page_title": "AnyNumberClipToLimits (FUN)",
+  "text": "\nFUNCTION AnyNumberClipToLimits :\nError\nClip an AnyNumber to given limits\nThe base type of dest will be set to source base type.\nIn case dest.isPtr = TRUE, the according POINTER (TO data - AnyNumber.u.p.p*) needs to be set prior to AnyNumberAssign().\nReturns Error.AnyNumberError if source, lowLimit, highLimit and dest are not consistent.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "AnyNumberClipToLimits",
+          "Type": "Error"
+        },
+        {
+          "Scope": "Input",
+          "Name": "source",
+          "Type": "REFERENCE TOAnyNumber"
+        },
+        [
+          "lowLimit",
+          "REFERENCE TOAnyNumber"
+        ],
+        [
+          "highLimit",
+          "REFERENCE TOAnyNumber"
+        ],
+        {
+          "Scope": "Inout",
+          "Name": "dest",
+          "Type": "AnyNumber"
+        }
+      ]
+    }
+  ]
+}

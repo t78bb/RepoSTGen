@@ -1,0 +1,141 @@
+{
+  "library": "StringUtils",
+  "title": "GVL_UTF8 (GVL)",
+  "url": "https://content.helpme-codesys.com/en/libs/StringUtils/Current/Public-Parts/UTF8/GVL_UTF8.html",
+  "page_title": "GVL_UTF8 (GVL)",
+  "text": "\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Constant",
+          "Name": "trailingBytesForUTF8",
+          "Type": "ARRAY [0..255] OF BYTE",
+          "Initial": "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5]",
+          "Comment": ""
+        },
+        [
+          "firstByteMark",
+          "ARRAY [0..6] OF BYTE",
+          "[16#0, 16#0, 16#C0, 16#E0, 16#F0, 16#F8, 16#FC]",
+          ""
+        ],
+        [
+          "offsetsFromUTF8",
+          "ARRAY [0..5] OF DWORD",
+          "[16#0, 16#3080, 16#E2080, 16#3C82080, 16#FA082080, 16#82082080]",
+          ""
+        ],
+        [
+          "halfShift",
+          "INT",
+          "10",
+          "used FOR shifting BY 10 bits"
+        ],
+        [
+          "halfBase",
+          "DWORD",
+          "16#10000",
+          ""
+        ],
+        [
+          "halfMask",
+          "DWORD",
+          "16#3FF",
+          ""
+        ],
+        [
+          "UNI_REPLACEMENT_CHAR",
+          "DWORD",
+          "16#FFFD",
+          ""
+        ],
+        [
+          "UNI_MAX_BMP",
+          "DWORD",
+          "16#FFFF",
+          ""
+        ],
+        [
+          "UNI_MAX_UTF16",
+          "DWORD",
+          "16#10FFFF",
+          ""
+        ],
+        [
+          "UNI_MAX_UTF32",
+          "DWORD",
+          "16#7FFFFFFF",
+          ""
+        ],
+        [
+          "UNI_MAX_LEGAL_UTF32",
+          "DWORD",
+          "16#10FFFF",
+          ""
+        ],
+        [
+          "byteMask",
+          "DWORD",
+          "16#BF",
+          ""
+        ],
+        [
+          "byteMark",
+          "DWORD",
+          "16#80",
+          ""
+        ],
+        [
+          "UNI_SUR_HIGH_START",
+          "DWORD",
+          "16#D800",
+          ""
+        ],
+        [
+          "UNI_SUR_HIGH_END",
+          "DWORD",
+          "16#DBFF",
+          ""
+        ],
+        [
+          "UNI_SUR_LOW_START",
+          "DWORD",
+          "16#DC00",
+          ""
+        ],
+        [
+          "UNI_SUR_LOW_END",
+          "DWORD",
+          "16#DFFF",
+          ""
+        ],
+        [
+          "ERR_SOURCE_EXHAUSTED",
+          "UDINT",
+          "16#40A0",
+          ""
+        ],
+        [
+          "ERR_TARGET_EXHAUSTED",
+          "UDINT",
+          "16#40A1",
+          ""
+        ],
+        [
+          "ERR_SOURCE_ILLEGAL",
+          "UDINT",
+          "16#40A2",
+          ""
+        ]
+      ]
+    }
+  ]
+}

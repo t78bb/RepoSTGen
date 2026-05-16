@@ -1,0 +1,8 @@
+{
+  "library": "Util",
+  "title": "DAYS (Alias)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/TimerSwitch/Types/DAYS.html",
+  "page_title": "DAYS (ALIAS)",
+  "text": "\nTYPE DAYS : BYTE\nSee:\nDAY_FLAGS\nfor the possible values of this type.",
+  "tables": []
+}

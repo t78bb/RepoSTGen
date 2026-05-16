@@ -1,0 +1,33 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_TriggerPosition_Plane (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/AdministrativeConfiguration/Trigger/SMC_TriggerPosition_Plane.html",
+  "page_title": "SMC_TriggerPosition_Plane (STRUCT)",
+  "text": "\nTYPE SMC_TriggerPosition_Plane : STRUCT\nDefines a plane.\nThe plane is defined as the set of all vectors v with\n<v, NormalVector> = Distance,\nwhere <,> is the standard scalar product.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "NormalVector",
+          "Type": "SMC_VECTOR3D",
+          "Comment": "The normal vector of the plane, must be a unit vector."
+        },
+        {
+          "Name": "Distance",
+          "Type": "LREAL",
+          "Comment": "The distance of the plane to the origin.  Must be non-\nnegative."
+        },
+        {
+          "Name": "CoordSystem",
+          "Type": "SMC_COORD_SYSTEM",
+          "Comment": "The coordinate system in which the normal vector is\ndefined.  Must be a cartesian coordinate system.  The\nTCS (tool coordinate system) is not supported.If the movement is defined in a dynamic coordinate system,\nthen this coordinate system must be identical to the\ncoordinate system of the start and target position of the\nmovement.Note that the coordinate system is evaluated when the movement\nof this trigger is commanded.  For example, say PCS_1 is changed\nbetween the call ofSMC_GroupPrepareTriggerand the call of the\nmovement function block.  Then the trigger plane is evaluated\nin the changed coordinate system."
+        }
+      ]
+    }
+  ]
+}

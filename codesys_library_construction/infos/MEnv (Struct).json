@@ -1,0 +1,55 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "MEnv (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_Module/MEnv.html",
+  "page_title": "MEnv (STRUCT)",
+  "text": "\nTYPE MEnv : STRUCT\nThe environment that is passed to each instance.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "mtree",
+          "Type": "IModuleTree",
+          "Initial": "",
+          "Comment": "The module tree.  Never 0."
+        },
+        {
+          "Name": "rmps",
+          "Type": "IRmpService",
+          "Initial": "",
+          "Comment": "The RMP messge service. 0 if RMP communication is disabled."
+        },
+        {
+          "Name": "prsman",
+          "Type": "AC_PERSIST.IPersistenceManager",
+          "Initial": "",
+          "Comment": "The persistence manager if created, 0 otherwise."
+        },
+        {
+          "Name": "exts",
+          "Type": "POINTER TOIEnvironmentExtender",
+          "Initial": "",
+          "Comment": "Extenders possibly provided by other composer plugins.ATTENTION: Returned externder FBs might be not initialized properly (depending on activated generators, etc.)"
+        },
+        {
+          "Name": "uiexts",
+          "Type": "UINT",
+          "Initial": "0",
+          "Comment": "Number of possible EnvironmentExtenders"
+        },
+        {
+          "Name": "visus",
+          "Type": "POINTER TO POINTER TO\nAC_Visu_Base",
+          "Initial": "",
+          "Comment": "Pointer to the AC_Visu_FBs for frame changing.ATTENTION: This pointer may be 0 (meaning that i.e. no visus were generated)"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "library": "BACnet",
+  "title": "RemovePropertyReference (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/Schedule/pou-BACnetSchedule/PropertyReferences/RemovePropertyReference.html",
+  "page_title": "BACnetSchedule.RemovePropertyReference (METH)",
+  "text": "\nMETHOD RemovePropertyReference : CmpBACnet.IEC_BACNET_STATUS\nRemoves the device object property reference at index nIndex in the List_Of_Object_Property_References-Property of this BACnet-Object.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "RemovePropertyReference",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "nIndex",
+          "Type": "CmpBACnet.IEC_BACNET_ELEMENT_COUNT",
+          "Initial": "0",
+          "Comment": "The 1 based Index of the reference to remove."
+        }
+      ]
+    }
+  ]
+}

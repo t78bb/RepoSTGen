@@ -1,0 +1,62 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_CheckAxisCommunication (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/Diagnostics/SMC_CheckAxisCommunication.html",
+  "page_title": "SMC_CheckAxisCommunication (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_CheckAxisCommunication\nReturns the current communication state of an axis.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "bEnable",
+          "Type": "BOOL",
+          "Comment": "TRUE: Starts the check"
+        },
+        {
+          "Scope": "Output",
+          "Name": "bValid",
+          "Type": "BOOL",
+          "Comment": "TRUE: The outputs are valid"
+        },
+        [
+          "bError",
+          "BOOL",
+          "TRUE: Error has occurred."
+        ],
+        [
+          "eErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ],
+        [
+          "bOperational",
+          "BOOL",
+          "TRUE: The communication state is operational (100)."
+        ],
+        [
+          "eComState",
+          "SMC_CommunicationState",
+          "The communication state, abstracted as an enumeration."
+        ],
+        [
+          "wComState",
+          "WORD",
+          "The raw value of parameter 1013 (wCommunicationState)"
+        ]
+      ]
+    }
+  ]
+}

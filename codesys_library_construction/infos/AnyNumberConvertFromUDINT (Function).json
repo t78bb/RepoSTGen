@@ -1,0 +1,28 @@
+{
+  "library": "DNP3",
+  "title": "AnyNumberConvertFromUDINT (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Functions/AnyNumber/AnyNumberConvertFromUDINT.html",
+  "page_title": "AnyNumberConvertFromUDINT (FUN)",
+  "text": "\nFUNCTION AnyNumberConvertFromUDINT\nConvert UDINT to AnyNumber\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "in",
+          "Type": "UDINT"
+        },
+        {
+          "Scope": "Output",
+          "Name": "out",
+          "Type": "AnyNumber"
+        }
+      ]
+    }
+  ]
+}

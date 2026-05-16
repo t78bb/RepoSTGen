@@ -1,0 +1,53 @@
+{
+  "library": "DNP3",
+  "title": "AnyNumberType (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Types/AnyNumber/AnyNumberType.html#",
+  "page_title": "AnyNumberType (ENUM)",
+  "text": "\nTYPE AnyNumberType :\nSupported base types for AnyNumber.\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Name": "TYPE_NONE",
+          "Initial": "0"
+        },
+        {
+          "Name": "TYPE_SINT",
+          "Initial": "1"
+        },
+        {
+          "Name": "TYPE_USINT",
+          "Initial": ""
+        },
+        {
+          "Name": "TYPE_INT",
+          "Initial": ""
+        },
+        {
+          "Name": "TYPE_UINT",
+          "Initial": ""
+        },
+        {
+          "Name": "TYPE_DINT",
+          "Initial": ""
+        },
+        {
+          "Name": "TYPE_UDINT",
+          "Initial": ""
+        },
+        {
+          "Name": "TYPE_REAL",
+          "Initial": ""
+        },
+        {
+          "Name": "TYPE_LREAL",
+          "Initial": ""
+        }
+      ]
+    }
+  ]
+}

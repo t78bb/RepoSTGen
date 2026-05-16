@@ -1,0 +1,38 @@
+{
+  "library": "DNP3",
+  "title": "PointEventMode (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Outstation/Points/PointEventMode.html",
+  "page_title": "PointEventMode (ENUM)",
+  "text": "\nTYPE PointEventMode :\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "EVENT_MODE_SOE",
+          "Initial": "ANY_TO_UDINT(CmpDNP3.IEC_TMWDEFS_EVENT_MODE.TMWDEFS_EVENT_MODE_SOE)",
+          "Comment": "Sequence of Events, return all events"
+        },
+        {
+          "Name": "EVENT_MODE_MOST_RECENT",
+          "Initial": "ANY_TO_UDINT(CmpDNP3.IEC_TMWDEFS_EVENT_MODE.TMWDEFS_EVENT_MODE_MOST_RECENT)",
+          "Comment": "Most Recent, only most recent event"
+        },
+        {
+          "Name": "EVENT_MODE_CURRENT",
+          "Initial": "ANY_TO_UDINT(CmpDNP3.IEC_TMWDEFS_EVENT_MODE.TMWDEFS_EVENT_MODE_CURRENT)",
+          "Comment": "For DNP Analog Inputs only, current value"
+        },
+        {
+          "Name": "EVENT_MODE_PER_POINT",
+          "Initial": "ANY_TO_UDINT(CmpDNP3.IEC_TMWDEFS_EVENT_MODE.TMWDEFS_EVENT_MODE_PER_POINT)",
+          "Comment": "For DNP only, allow configuration per point"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "library": "AlarmManager",
+  "title": "IAlarm2 (Interface)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/IAlarm2.html",
+  "page_title": "IAlarm2 (ITF)",
+  "text": "\nINTERFACE IAlarm2 EXTENDS\nIAlarm\nThis interface is only used internally.\nMethods:\nGetAlarmClass\n, inherited from\nIAlarm\nGetAlarmGroup\n, inherited from\nIAlarm\nGetCurrentValue\n, inherited from\nIAlarm\nGetID\n, inherited from\nIAlarm\nGetInternalID\n, inherited from\nIAlarm\nGetLatchVar1Value\n, inherited from\nIAlarm\nGetLatchVar2Value\n, inherited from\nIAlarm\nGetMessage\n, inherited from\nIAlarm\nGetState\n, inherited from\nIAlarm\nGetTimestampAcknowledge\n, inherited from\nIAlarm\nGetTimestampActive\n, inherited from\nIAlarm\nGetTimestampInactive\n, inherited from\nIAlarm\nGetTimestampLast\n, inherited from\nIAlarm\nGetTriggerValue\n, inherited from\nIAlarm\nIsDeactivated\n, inherited from\nIAlarm",
+  "tables": []
+}

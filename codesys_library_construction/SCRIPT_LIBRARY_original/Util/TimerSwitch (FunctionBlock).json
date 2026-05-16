@@ -1,0 +1,131 @@
+{
+  "library": "Util",
+  "title": "TimerSwitch (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/TimerSwitch/FunctionBlocks/TimerSwitch.html",
+  "page_title": "TimerSwitch (FB)",
+  "text": "Analog Monitors\nHYSTERESIS (FunctionBlock)\nLIMITALARM (FunctionBlock)\nBCD Conversions\nBCD_TO_BYTE (Function)\nBCD_TO_DWORD (Function)\nBCD_TO_INT (Function)\nBCD_TO_WORD (Function)\nBYTE_TO_BCD (Function)\nDWORD_TO_BCD (Function)\nINT_TO_BCD (Function)\nWORD_TO_BCD (Function)\nBit/Byte Functions\nBIT_AS_BYTE (FunctionBlock)\nBIT_AS_DWORD (FunctionBlock)\nBIT_AS_WORD (FunctionBlock)\nBYTE_AS_BIT (FunctionBlock)\nDWORD_AS_BIT (FunctionBlock)\nEXTRACT (Function)\nGETBIT (Function)\nPACK (Function)\nPUTBIT (Function)\nSETBIT (Function)\nSWITCHBIT (Function)\nUNPACK (FunctionBlock)\nWORD_AS_BIT (FunctionBlock)\nConstants\nTextBlockSize (ParamList)\nController\nPD (FunctionBlock)\nPID\n(FB)\nTemperature control with PID and LIMIT\nPID_FIXCYCLE (FunctionBlock)\nDatatypes\nGEN_MODE (Enum)\nPOINT (Struct)\nPT_SIZE (Struct)\nEncoding\nBASE64 (Function)\nFunction Manipulators\nCHARCURVE (FunctionBlock)\nRAMP_INT (FunctionBlock)\nRAMP_REAL (FunctionBlock)\nGray Conversions\nBYTE_TO_GRAY (Function)\nDWORD_TO_GRAY (Function)\nGRAY_TO_BYTE (Function)\nGRAY_TO_DWORD (Function)\nGRAY_TO_WORD (Function)\nWORD_TO_GRAY (Function)\nHEX/ASCII Functions\nBYTE_TO_HEXinASCII (Function)\nHEXinASCII_TO_BYTE (Function)\nWORD_AS_STRING (Function)\nLibrary Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nMathematical Functions\nDERIVATIVE (FunctionBlock)\nINTEGRAL (FunctionBlock)\nLIN_TRAFO (FunctionBlock)\nROTATION_DIFFERENCE (FunctionBlock)\nSTATISTICS_INT (FunctionBlock)\nSTATISTICS_REAL (FunctionBlock)\nVARIANCE (FunctionBlock)\nSignals\nBLINK (FunctionBlock)\nFREQ_MEASURE (FunctionBlock)\nGEN (FunctionBlock)\nTimerSwitch\nEnums\nERROR (Enum)\nPERIOD (Enum)\nWEEKDAY (Enum)\nFunctionBlocks\nDateTimeProvider (FunctionBlock)\nGetDateTime (Method)\nTimerSwitch (FunctionBlock)\nIDateTimeProvider\nFunctions\nCombineDateTime (Function)\nDateTimeFromWeek (Function)\nDayOfWeek (Function)\nGetDateTime (Function)\nGetLocalDateTime (Function)\nGetTimeStampsDifference (Function)\nIsLeapYear (Function)\nJoinDateTime (Function)\nLocalDateTime (Function)\nSeparateDateTime (Function)\nSplitDateTime (Function)\nWeekOfYear (Function)\nGlobalConstants\nDAY_FLAGS (GVL)\nTSW (GVL)\nInterfaces\nIDateTimeProvider (Interface)\nGetDateTime (Method)\nStructs\nDateTime (Struct)\nSchedule (Struct)\nSegment (Struct)\nTimeZone (Struct)\nTypes\nDAY (Alias)\nDAYS (Alias)\nHOUR (Alias)\nMILLISECOND (Alias)\nMINUTE (Alias)\nMONTH (Alias)\nSECOND (Alias)\nTZ_NAME (Alias)\nWEEK (Alias)\nYEAR (Alias)\nFile and Project Information\nLibrary Reference\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysTimeRtc\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nUtil\nDocs\n»\nTimerSwitch\n»\nFunctionBlocks\n»\nTimerSwitch (FB)\nTimerSwitch (FB)\nÂ¶\nFUNCTION_BLOCK PUBLIC FINAL TimerSwitch EXTENDS _LConC IMPLEMENTS ITimeSwitch,\nIDateTimeProvider\nInOut:\nScope\nName\nType\nInitial\nComment\nInherited from\nInput\nxEnable\nBOOL\nTRUE\n: Activates the defined operation\nFALSE\n: Aborts/resets the defined operation\n_LConC\nOutput\nxBusy\nBOOL\nTRUE\n: Operation is running\n_LConC\nxError\nBOOL\nTRUE\n: Error condition reached\n_LConC\nInput Const\nitfDateTimeProvider\nIDateTimeProvider\nGlobals.g_dtpDateTimeProvider\nSource for the current date and time information in\nmilliseconds since 1.1.1970 00:00:00.000\ntCompensationSpeed\nTIME\nCompensation speed [ms/h] for the transition from one time zone period to another.\ne.g. t#5000ms => 30d <= 1/(30 Ã 24) Ã 60 Ã 60 Ã 1000\ne.g. t#150000ms => 24h <= 1/24 Ã 60 Ã 60 Ã 1000\nInput\naslSchedule\nPOINTER TO\nSchedule\nSwitching Schedule\ntzTimeZone\nREFERENCE TO\nTimeZone\nCurrent time zone (Optional - Default:\n|gc_tzTimeZoneCET|\n)\nOutput\neErrorID\nERROR\nliClockDiff\nLINT\nAfter switching the time zone, a continuously decreasing difference between the current local time\nand the current time within the TimeSwitch is displayed.\neWeekDay\nWEEKDAY\nCurrent day of the week\ndatToday\nDATE\nCurrent date\ntodNow\nTOD\nCurrent time of the day\nsTimeZone\nTZ_NAME\nName of the current time zone\nePeriod\nPERIOD\nCurrent period of the time zone\ndwSwitches\nDWORD\nStatus of the 32 switches. Bit 0 => switch 1, â¦\nMethods:\nGetDateTime\nStructure:\nIDateTimeProvider\nGetDateTime (Method)",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment",
+        "Inherited from"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "xEnable",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUE: Activates the defined operationFALSE: Aborts/resets the defined operation",
+          "Inherited from": "_LConC"
+        },
+        {
+          "Scope": "Output",
+          "Name": "xBusy",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUE: Operation is running",
+          "Inherited from": "_LConC"
+        },
+        [
+          "xError",
+          "BOOL",
+          "",
+          "TRUE: Error condition reached",
+          "_LConC"
+        ],
+        {
+          "Scope": "Input Const",
+          "Name": "itfDateTimeProvider",
+          "Type": "IDateTimeProvider",
+          "Initial": "Globals.g_dtpDateTimeProvider",
+          "Comment": "Source for the current date and time information in\nmilliseconds since 1.1.1970 00:00:00.000",
+          "Inherited from": ""
+        },
+        [
+          "tCompensationSpeed",
+          "TIME",
+          "",
+          "Compensation speed [ms/h] for the transition from one time zone period to another.e.g. t#5000ms => 30d <= 1/(30 Ã 24) Ã 60 Ã 60 Ã 1000e.g. t#150000ms => 24h <= 1/24 Ã 60 Ã 60 Ã 1000",
+          ""
+        ],
+        {
+          "Scope": "Input",
+          "Name": "aslSchedule",
+          "Type": "POINTER TOSchedule",
+          "Initial": "",
+          "Comment": "Switching Schedule",
+          "Inherited from": ""
+        },
+        [
+          "tzTimeZone",
+          "REFERENCE TOTimeZone",
+          "",
+          "Current time zone (Optional - Default:|gc_tzTimeZoneCET|)",
+          ""
+        ],
+        {
+          "Scope": "Output",
+          "Name": "eErrorID",
+          "Type": "ERROR",
+          "Initial": "",
+          "Comment": "",
+          "Inherited from": ""
+        },
+        [
+          "liClockDiff",
+          "LINT",
+          "",
+          "After switching the time zone, a continuously decreasing difference between the current local time\nand the current time within the TimeSwitch is displayed.",
+          ""
+        ],
+        [
+          "eWeekDay",
+          "WEEKDAY",
+          "",
+          "Current day of the week",
+          ""
+        ],
+        [
+          "datToday",
+          "DATE",
+          "",
+          "Current date",
+          ""
+        ],
+        [
+          "todNow",
+          "TOD",
+          "",
+          "Current time of the day",
+          ""
+        ],
+        [
+          "sTimeZone",
+          "TZ_NAME",
+          "",
+          "Name of the current time zone",
+          ""
+        ],
+        [
+          "ePeriod",
+          "PERIOD",
+          "",
+          "Current period of the time zone",
+          ""
+        ],
+        [
+          "dwSwitches",
+          "DWORD",
+          "",
+          "Status of the 32 switches. Bit 0 => switch 1, â¦",
+          ""
+        ]
+      ]
+    }
+  ]
+}

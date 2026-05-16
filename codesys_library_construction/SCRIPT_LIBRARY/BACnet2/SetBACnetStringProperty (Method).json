@@ -1,0 +1,35 @@
+{
+  "library": "BACnet2",
+  "title": "SetBACnetStringProperty (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/BACnetObjects/base/pou-BACnetObjectBase/Utilities/typed-property-access/SetBACnetStringProperty.html",
+  "page_title": "BACnetObjectBase.SetBACnetStringProperty (METH)",
+  "text": "\nMETHOD SetBACnetStringProperty\nSets the BACnet-String-Value of the specified Property (propID) of this BACnet-Object using a WSTRING.\nThe used functions are no client, meaning, that the access of the property is not restricted by write or read access restrictions.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "propID",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_ID",
+          "Comment": "The ID of the property to set."
+        },
+        [
+          "wStrInput",
+          "WSTRING(255)",
+          "The WSTRING value to set for the property."
+        ],
+        [
+          "strType",
+          "CmpBACnet.IEC_BACNET_STRING_TYPE",
+          "The BACnet string type the WSTRING value is converted to\nwhen setting the property."
+        ]
+      ]
+    }
+  ]
+}

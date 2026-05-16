@@ -1,0 +1,28 @@
+{
+  "library": "MQTT Client SL",
+  "title": "COMMUNICATION_MODE (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/MQTT Client SL/Current/MQTT-Client/Common/Enums/COMMUNICATION_MODE.html",
+  "page_title": "COMMUNICATION_MODE (ENUM)",
+  "text": "\nTYPE COMMUNICATION_MODE :\nCommunication mode\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "TCP",
+          "Initial": "0",
+          "Comment": "Standard TCP/IP communication"
+        },
+        {
+          "Name": "WEB_SOCKET",
+          "Initial": "1",
+          "Comment": "TCP/IP communication via WebSocket (MQTT over WebSocket)"
+        }
+      ]
+    }
+  ]
+}

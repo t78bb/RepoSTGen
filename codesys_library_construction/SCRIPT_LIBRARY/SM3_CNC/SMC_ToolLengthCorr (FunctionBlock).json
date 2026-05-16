@@ -1,0 +1,53 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_ToolLengthCorr (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/SoftMotion-Function-Blocks/SMC_ToolLengthCorr.html",
+  "page_title": "SMC_ToolLengthCorr (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_ToolLengthCorr\nThis function block compensates the tool length offset (e.g. of a drill,\ncommanded with\nG43\n) relative to the tool holder flange. In other words,\nit creates a shifted path by subtracting the given tool length offset\nvector\nadToolLength\nfrom the machineâs flange to the TCP from the set\nposition\npi\n, taking into account its current orientation.\nThe orientation of the flangeâs coordinate system\ngiven by\npiIn.dA\n,\npiIn.dB\n,\npiIn.dC\ngets interpreted according to\neOriConv\n.\nThe following illustration shows a drill mounted to the flange with offset.\nNote, that in this common example the tool length points into\nnegative\nz-direction.\nWith\nbForwardTrafo\nset to\nFALSE\n(default) this function block is\nintented to be used between\nSMC_Interpolator\nand a backward transformation:\nV\nflange\n= V\nTCP\n- R\nABC\n* V\ntool\nWith\nbForwardTrafo\nset to\nTRUE\nthis function block can also be used\nwith a forward transformation:\nV\nTCP\n= V\nflange\n+ R\nABC\n* V\ntool\nNote\nThis function block does not perform a tool radius correction.\nFurthermore the tool length should not be changed while a tool radius\ncorrection is active, since this would lead to a jump in the path.\nNote\nIf the tool length correction creates a path shifted in a 3D direction\nwithout having activated 3D mode,\nSMC_NCDecoder\nsignals error\nSMC_SMB_ONLY_3DMODE\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout Const",
+          "Name": "pi",
+          "Type": "SMC_PosInfo",
+          "Initial": "",
+          "Comment": "The set position as calculated bySMC_Interpolator.\nThe orientation A/B/C of the tool is expected in degrees."
+        },
+        [
+          "adToolLength",
+          "ARRAY [0..2] OF LREAL",
+          "",
+          "The tool lenght offset vector Vtoolfrom flange\nVflangeto TCP VTCP."
+        ],
+        {
+          "Scope": "Input",
+          "Name": "eOriConv",
+          "Type": "SMC_ORI_CONVENTION",
+          "Initial": "SMC_ORI_CONVENTION.ZYZ",
+          "Comment": "Defines the way the orientationpiIn.dA,piIn.dB,piIn.dCis interpreted.\nIf the value is SMC_ORI_CONVENTION.ADDAXES, then no tool length\ncorrection will be performed."
+        },
+        [
+          "bForwardTrafo",
+          "BOOL",
+          "FALSE",
+          "If TRUE, the calculated set positionpiOutis the input of the\nforward transformation instead of the backward transformation"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "piOut",
+          "Type": "SMC_PosInfo",
+          "Initial": "",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

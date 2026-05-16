@@ -1,0 +1,64 @@
+{
+  "library": "BACnet",
+  "title": "AddLogPropertyReference (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/TrendLogMultiple/pou-BACnetTrendLogMultiple/AddLogPropertyReference.html",
+  "page_title": "BACnetTrendLogMultiple.AddLogPropertyReference (METH)",
+  "text": "\nMETHOD AddLogPropertyReference : CmpBACnet.IEC_BACNET_STATUS\nAdds a device object property reference to the Log_DeviceObjectProperty-Property of this BACnet-Object.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "AddLogPropertyReference",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "deviceInstance",
+          "Type": "CmpBACnet.IEC_BACNET_DWORD",
+          "Initial": "",
+          "Comment": "The BACnet device instance number to add a property\nreference for."
+        },
+        [
+          "objInstance",
+          "CmpBACnet.IEC_BACNET_DWORD",
+          "",
+          "The BACnet object instance number to add a property\nreference for."
+        ],
+        [
+          "objType",
+          "CmpBACnet.IEC_BACNET_OBJECT_TYPE",
+          "",
+          "The BACnet object type to add a property reference for."
+        ],
+        [
+          "propID",
+          "CmpBACnet.IEC_BACNET_PROPERTY_ID",
+          "",
+          "The BACnet property ID to add a property reference for."
+        ],
+        [
+          "nIndex",
+          "CmpBACnet.IEC_BACNET_SIGNED",
+          "",
+          "The BACnet index within the reference property to add a\nproperty reference for."
+        ],
+        [
+          "xDevicePresent",
+          "BOOL",
+          "TRUE",
+          "Whether the device is present or not."
+        ]
+      ]
+    }
+  ]
+}

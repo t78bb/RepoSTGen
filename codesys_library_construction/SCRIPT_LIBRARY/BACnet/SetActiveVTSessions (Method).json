@@ -1,0 +1,36 @@
+{
+  "library": "BACnet",
+  "title": "SetActiveVTSessions (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/Device/pou-BACnetDevice/SetActiveVTSessions.html",
+  "page_title": "BACnetDevice.SetActiveVTSessions (METH)",
+  "text": "\nMETHOD SetActiveVTSessions : CmpBACnet.IEC_BACNET_STATUS\nSets the Active_VT_Sessions-List of this BACnet object.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetActiveVTSessions",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "uiListCount",
+          "Type": "CmpBACnet.IEC_BACNET_ELEMENT_COUNT",
+          "Comment": "The length of the list in the following pointer."
+        },
+        [
+          "pList",
+          "POINTER TO\nCmpBACnet.IEC_BACNET_VT_SESSION",
+          "The list data containing elements according to the given\ncount."
+        ]
+      ]
+    }
+  ]
+}

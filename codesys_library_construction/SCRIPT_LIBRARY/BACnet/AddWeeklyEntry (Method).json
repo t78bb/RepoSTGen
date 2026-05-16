@@ -1,0 +1,41 @@
+{
+  "library": "BACnet",
+  "title": "AddWeeklyEntry (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/Schedule/pou-BACnetSchedule/WeeklySchedule/AddWeeklyEntry.html",
+  "page_title": "BACnetSchedule.AddWeeklyEntry (METH)",
+  "text": "\nMETHOD AddWeeklyEntry : CmpBACnet.IEC_BACNET_STATUS\nAdds a weekly entry to the Weekly_Schedule-Property of this BACnet-Object\nFor now dont use this to add weekly entries with complex type,\notherwise GetWeeklyEntry will refuse to get those entries.\nPlease see comment on GetWeeklyEntry related to complex data types.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "AddWeeklyEntry",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "tim",
+          "Type": "TIME",
+          "Comment": "The time of the weekly entry to add."
+        },
+        [
+          "value",
+          "CmpBACnet.IEC_BACNET_PROPERTY_CONTENTS",
+          "The value corresponding to the entry."
+        ],
+        [
+          "dayOfWeek",
+          "CmpBACnet.IEC_BACNET_DAY_OF_WEEK",
+          "The day of the week of the weekly entry to add."
+        ]
+      ]
+    }
+  ]
+}

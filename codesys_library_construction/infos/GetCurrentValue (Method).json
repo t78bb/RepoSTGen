@@ -1,0 +1,23 @@
+{
+  "library": "AlarmManager",
+  "title": "GetCurrentValue (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/pou-IAlarm/Access-to-values/GetCurrentValue.html",
+  "page_title": "IAlarm.GetCurrentValue (METH)",
+  "text": "\nMETHOD GetCurrentValue : ITypedValue\nReturns a ITypedValue instance, describing the current value\nof the observed expression, that triggered the alarm\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetCurrentValue",
+          "Type": "ITypedValue"
+        }
+      ]
+    }
+  ]
+}

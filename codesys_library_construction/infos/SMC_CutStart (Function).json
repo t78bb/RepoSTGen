@@ -1,0 +1,32 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_CutStart (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/GeoInfo-Help-Functions/SMC_CutStart.html",
+  "page_title": "SMC_CutStart (FUN)",
+  "text": "\nFUNCTION SMC_CutStart : BOOL\nDeletes the part between\n0..d\n(t) of object\npg\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SMC_CutStart",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Input",
+          "Name": "pg",
+          "Type": "POINTER TOSMC_GEOINFO"
+        },
+        [
+          "d",
+          "LREAL"
+        ]
+      ]
+    }
+  ]
+}

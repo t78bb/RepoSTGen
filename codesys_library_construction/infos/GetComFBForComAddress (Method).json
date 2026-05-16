@@ -1,0 +1,31 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "GetComFBForComAddress (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_RMP_ReliableMessageProtocol/pou-RMPService/GetComFBForComAddress.html",
+  "page_title": "RMPService.GetComFBForComAddress (METH)",
+  "text": "\nMETHOD GetComFBForComAddress :\nIRMPFBCommunication\nThis functions returns the communication FB used to communicate to or from a given Module ComAddress of a Module.\n..note:\nIf communication FBs are not used for communication this function will always return 0!\n..return:\nIf FB communication was used and a FB communicating to or from the given ComAddress exists the correspnding FB/Interface is returned\nIf no communication FB is available 0 is reutnred.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetComFBForComAddress",
+          "Type": "IRMPFBCommunication",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "udiModuleComAddress",
+          "Type": "UDINT",
+          "Comment": "The ComAddress of the Module for which the CommunicationFB\nshall be received"
+        }
+      ]
+    }
+  ]
+}

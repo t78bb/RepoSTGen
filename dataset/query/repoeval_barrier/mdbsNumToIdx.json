@@ -1,0 +1,5 @@
+{
+  "requirement": "This code is intended to implement a mapping function that converts a device number (devNo) into corresponding level and index values based on predefined cases.",
+  "provide_code": "FUNCTION_BLOCK mdbsNumToIdx\nVAR_INPUT\n\tdevNo\t\t:WORD;\nEND_VAR\nVAR_OUTPUT\n\tlevel\t\t:INT;\n\tidx\t\t\t:INT;\nEND_VAR",
+  "function_name": "mdbsNumToIdx"
+}

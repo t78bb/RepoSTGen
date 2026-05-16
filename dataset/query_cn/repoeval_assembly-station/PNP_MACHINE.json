@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现基于夹具和机械臂的拾取和放置操作流程控制。",
+  "provide_code": "FUNCTION_BLOCK PUBLIC PNP_MACHINE\nVAR_INPUT\n\tBaseClamped: BOOL;\n\tLidClamped: BOOL;\n\tReset: BOOL := FALSE;\nEND_VAR\n\nVAR_OUTPUT\n\tLidPicked: BOOL := FALSE;\n\tLidPlaced: BOOL := FALSE;\nEND_VAR"
+}

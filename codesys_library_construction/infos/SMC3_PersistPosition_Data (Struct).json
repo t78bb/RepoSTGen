@@ -1,0 +1,48 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC3_PersistPosition_Data (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/DataTypes/AdministrativeConfiguration/SMC3_PersistPosition_Data.html",
+  "page_title": "SMC3_PersistPosition_Data (STRUCT)",
+  "text": "\nTYPE SMC3_PersistPosition_Data : STRUCT\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "fOffsetPosition",
+          "Type": "LREAL",
+          "Comment": ""
+        },
+        {
+          "Name": "dwPosOffsetForResiduals",
+          "Type": "DWORD",
+          "Comment": ""
+        },
+        {
+          "Name": "iIncrementsCompensated",
+          "Type": "INT",
+          "Comment": "No longer used by the axis. A value of -1 indicates that the\nrecord was written by a version >= V3.5 SP4."
+        },
+        {
+          "Name": "iTurn",
+          "Type": "INT",
+          "Comment": ""
+        },
+        {
+          "Name": "dwActPosition",
+          "Type": "DWORD",
+          "Comment": ""
+        },
+        {
+          "Name": "wCheckSum",
+          "Type": "WORD",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

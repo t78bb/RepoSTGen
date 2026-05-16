@@ -1,0 +1,28 @@
+{
+  "library": "BACnet",
+  "title": "GetStructuredObject (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetServer/pou-IBACnetServer/Objects/GetStructuredObject.html",
+  "page_title": "IBACnetServer.GetStructuredObject (METH)",
+  "text": "\nMETHOD GetStructuredObject\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "nIndex",
+          "Type": "UDINT"
+        },
+        {
+          "Scope": "Inout",
+          "Name": "bacObj",
+          "Type": "BACnetObjectBase"
+        }
+      ]
+    }
+  ]
+}

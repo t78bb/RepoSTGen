@@ -1,0 +1,31 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_GroupAcceptsMovements (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/AdministrativeConfiguration/AxisGroup/SMC_GroupAcceptsMovements.html",
+  "page_title": "SMC_GroupAcceptsMovements (FUN)",
+  "text": "\nFUNCTION SMC_GroupAcceptsMovements : BOOL\nReturns whether the\nAxisGroup\nwill immediately accept\na non-aborting movement command, i.e. whether the movement\nfunction block will immediately report CommandAccepted.\nNote\nA return value of\nTRUE\nmeans that at least\none non-aborting movement can be accepted.  If there are movements\nalready waiting to be accepted, it is only guaranteed that\nthe movement with the lowest MovementId will be accepted.\nAfter a movement function block reports CommandAccepted,\nthis function can be called again to check whether another\nmovement can be accepted.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SMC_GroupAcceptsMovements",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Inout Const",
+          "Name": "AxisGroup",
+          "Type": "AXIS_GROUP_REF_SM3",
+          "Comment": "Reference to a group of axes"
+        }
+      ]
+    }
+  ]
+}

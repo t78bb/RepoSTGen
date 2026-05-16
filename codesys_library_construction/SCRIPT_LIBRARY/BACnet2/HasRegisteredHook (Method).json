@@ -1,0 +1,33 @@
+{
+  "library": "BACnet2",
+  "title": "HasRegisteredHook (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/BACnetServer/pou-BACnetServer/HooksCallbacks/HasRegisteredHook.html",
+  "page_title": "BACnetServer.HasRegisteredHook (METH)",
+  "text": "\nMETHOD HasRegisteredHook : BOOL\nCheck, if one or more IBACnetEventConsumer (itfEvent) are already registered to a BACnet-Stack-Hook of type eHookType.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "HasRegisteredHook",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Input",
+          "Name": "eHookType",
+          "Type": "CmpBACnet.IEC_BACNET_CB_TYPE"
+        },
+        {
+          "Scope": "Output",
+          "Name": "status",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS"
+        }
+      ]
+    }
+  ]
+}

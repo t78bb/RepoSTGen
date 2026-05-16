@@ -1,0 +1,33 @@
+{
+  "library": "SM3_CNC",
+  "title": "LookUp (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/ReadNCFile2/pou-SMC_NCLookupFile/LookUp.html",
+  "page_title": "SMC_NCLookupFile.LookUp (METH)",
+  "text": "\nMETHOD LookUp : SMC_ERROR\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "LookUp",
+          "Type": "SMC_ERROR"
+        },
+        {
+          "Scope": "Inout Const",
+          "Name": "programName",
+          "Type": "STRING"
+        },
+        {
+          "Scope": "Input",
+          "Name": "stream",
+          "Type": "SMC_ITextStream"
+        }
+      ]
+    }
+  ]
+}

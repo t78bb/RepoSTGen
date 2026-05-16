@@ -1,0 +1,53 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_Seg (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_Data-types/SoftMotion-CNC/SMC_Seg.html",
+  "page_title": "SMC_Seg (STRUCT)",
+  "text": "\nTYPE SMC_Seg : STRUCT\nThis structure is used internally by the\nSMC_Interpolator\n.\nIt represents a path segment of fixed length in which a certain\nacceleration shape is used.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "eType",
+          "Type": "SMC_SEGMENTTYPE",
+          "Comment": "The type of the segment."
+        },
+        {
+          "Name": "dLength",
+          "Type": "LREAL",
+          "Comment": "The length of the segment"
+        },
+        {
+          "Name": "dVelStart",
+          "Type": "LREAL",
+          "Comment": "The start velocity of the segment (non-negative)"
+        },
+        {
+          "Name": "dVelEnd",
+          "Type": "LREAL",
+          "Comment": "The end velocity of the segment (non-negative)"
+        },
+        {
+          "Name": "dAccStart",
+          "Type": "LREAL",
+          "Comment": "The start acceleration (signed)"
+        },
+        {
+          "Name": "dAccEnd",
+          "Type": "LREAL",
+          "Comment": "The end acceleration (signed)"
+        },
+        {
+          "Name": "dJerk",
+          "Type": "LREAL",
+          "Comment": "The jerk (signed), only used for changing acceleration"
+        }
+      ]
+    }
+  ]
+}

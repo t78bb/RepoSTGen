@@ -1,0 +1,94 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_RecomputeABCSlopes (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/SoftMotion-Function-Blocks/SMC_RecomputeABCSlopes.html",
+  "page_title": "SMC_RecomputeABCSlopes (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_RecomputeABCSlopes\nRecomputes the slopes of the additional axes A,B,C so that a smooth movement results.\nThe slope at the end of elemnt i is set as\n(AddAxisValue(i+1) - AddAxisValue(i-1)) /  (ElementLength(i) + ElementLength(i+1)).\nAt a stop, the slope is either set to zero, or set so that the interpolation of\nthe additional axis is linear, depending on the input\nmodeAtStop\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "bExecute",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Starts on the rising edge"
+        },
+        [
+          "poqDataIn",
+          "POINTER TOSMC_OUTQUEUE",
+          "",
+          "Input path queue"
+        ],
+        [
+          "nSizeOutQueue",
+          "UDINT",
+          "",
+          "The size ofpbyBufferOutQueuein bytes"
+        ],
+        [
+          "pbyBufferOutQueue",
+          "POINTER TO ARRAY [0..0]\nOF SMC_GEOINFO",
+          "",
+          "The buffer for the output queue"
+        ],
+        [
+          "dAngleTol",
+          "LREAL",
+          "0.001",
+          "The angle tolerence (in angular degrees) to detect stops\nbetween elements"
+        ],
+        [
+          "modeNoStop",
+          "SMC_ABC_SLOPES_NO_STOP",
+          "",
+          "Determines how the slope is set at element transitions without\na stop.  The default is SET_SMOOTH_CARDINAL."
+        ],
+        [
+          "modeAtStop",
+          "SMC_ABC_SLOPES_AT_STOP",
+          "",
+          "Determines how the slope is set at element transitions with\na stop.  The default, due to compatibility with older versions,\nis SET_ZERO."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bDone",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Indicates the entire input path has been processed"
+        },
+        [
+          "bBusy",
+          "BOOL",
+          "",
+          "Indicates the function block is still busy processing"
+        ],
+        [
+          "bError",
+          "BOOL",
+          "",
+          "An error has occurred"
+        ],
+        [
+          "wErrorID",
+          "SMC_ERROR",
+          "",
+          "Error-ID"
+        ],
+        [
+          "poqDataOut",
+          "POINTER TOSMC_OUTQUEUE",
+          "",
+          "The queue for the output path"
+        ]
+      ]
+    }
+  ]
+}

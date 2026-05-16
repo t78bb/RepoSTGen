@@ -1,0 +1,57 @@
+{
+  "library": "SM3_Robotics",
+  "title": "MC_ReadKinTransform (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/Diagnostics/MC_ReadKinTransform.html",
+  "page_title": "MC_ReadKinTransform (FB)",
+  "text": "\nFUNCTION_BLOCK MC_ReadKinTransform\nThis function block reads the kinematic transformation that is active\nbetween the axis coordinate system (ACS) and the machine coordinate system\n(MCS).\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "AxisGroup",
+          "Type": "AXIS_GROUP_REF_SM3",
+          "Comment": "Reference to a group of axis"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Enable",
+          "Type": "BOOL",
+          "Comment": "Gets the kinematic transformation reference of the\naxis group continuously while enabled"
+        },
+        {
+          "Scope": "Output",
+          "Name": "Valid",
+          "Type": "BOOL",
+          "Comment": "TRUEif valid outputs are available"
+        },
+        [
+          "Busy",
+          "BOOL",
+          "The FB is not finished"
+        ],
+        [
+          "Error",
+          "BOOL",
+          "Signals that an error has occurred within the function block"
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ],
+        [
+          "KinTransform",
+          "TRAFO.MC_KIN_REF_SM3",
+          "The kinematic transformation"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "library": "BACnet2DefaultImpl",
+  "title": "SetReadCallbackAttachment (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2DefaultImpl/Current/BACnetDefaultImpl/Function-Blocks/LoggingObjects/Internal/pou-LogObjectsBase/SetReadCallbackAttachment.html",
+  "page_title": "LogObjectsBase.SetReadCallbackAttachment (METH)",
+  "text": "\nMETHOD PROTECTED SetReadCallbackAttachment : CmpBACnet.IEC_BACNET_STATUS\nSets the ReadPropertyCallbackAttachment\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetReadCallbackAttachment",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS"
+        },
+        {
+          "Scope": "Input",
+          "Name": "bacObj",
+          "Type": "BACnet.BACnetObjectBase"
+        },
+        [
+          "propId",
+          "CmpBACnet.IEC_BACNET_PROPERTY_ID"
+        ]
+      ]
+    }
+  ]
+}

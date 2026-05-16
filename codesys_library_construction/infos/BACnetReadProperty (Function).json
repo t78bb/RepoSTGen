@@ -1,0 +1,61 @@
+{
+  "library": "CmpBACnet",
+  "title": "BACnetReadProperty (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/CmpBACnet/Current/BACnetClientAPI/BACnetReadProperty.html",
+  "page_title": "BACnetReadProperty (FUN)",
+  "text": "\nFUNCTION BACnetReadProperty :\nIEC_BACNET_STATUS\nSends a ReadProperty request\nSends a request to read the value of a property of an object. This routine may send\nasynchronous messages, i.e. this routine will complete its execution before the BACnet\nreply comes so the applications can keep running. The response information will be\nreceived by an internal thread which is responsible for receiving asynchronous\nresponses. An optional BACNET_READ_PROP_COMPLETE_CB routine, which is provided by\nthe BACnet application, may be used to process this information. If a number of\nasynchronous requests are sent, the responses may be queued and identified by the\napplication provided handles. If this routine does not use the BACNET_READ_PROP_COMPLETE_CB\nroutine, then the\nBACnetReadProperty\nroutine sends a request and waits for the reply.\nThis routine may control APDU Properties like APDU length and segmentation and timeout,\nboth during its execution and in response processing.\nAsynchron call, which fills pContents with the call result in an asynchronus manner. As soon as pContentsStatus\nis\nIEC_BACNET_STATUS.BACNET_STATUS_OK\nthe data in pContents is valid.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "BACnetReadProperty",
+          "Type": "IEC_BACNET_STATUS",
+          "Comment": "A status indicating if the operation worked."
+        },
+        {
+          "Scope": "Input",
+          "Name": "pSourceAddress",
+          "Type": "POINTER TOIEC_BACNET_ADDRESS",
+          "Comment": "If the BACnet application has only one device constructed and installed, this can\nbe 0. In this case the MAC address of this device will be used. Otherwise this\nshall be the MAC address returned on device object construction."
+        },
+        [
+          "pDestinationAddress",
+          "POINTER TOIEC_BACNET_ADDRESS",
+          "This is the MAC address of the device to which the request\nshould be sent."
+        ],
+        [
+          "pReadInfo",
+          "POINTER TOIEC_BACNET_READ_INFO",
+          "A pointer to the service information data structure. This data structure identifies\nthe property within the device and includes the object ID, property ID, and array index."
+        ],
+        [
+          "pAPDUParams",
+          "POINTER TOIEC_BACNET_APDU_PROPERTIES",
+          "A pointer to the APDU-Properties structure which sets APDU properties for this\ntransaction only. This does not change global defaults or settings for the application\nAPDU Properties. This argument may be 0. In this case APDU properties  are used\nwhich were specified in the device object properties of the applications device which\nsends the request."
+        ],
+        [
+          "pContents",
+          "POINTER TOIEC_BACNET_PROPERTY_CONTENTS",
+          "Pointer to a property contents buffer structure. This data structure must contain a\npointer to a buffer into which the value is copied. Upon successful completion, the\ncontentsIEC_BACNET_DATA_TYPEtag attribute indicates the datatype of the property.\nThe buffer pointer in the property contents structure may be 0 along with the size.\nIn this case the API will fill the buffer and the application is responsible to release\nit with a call toBACnetFreeStackAllocatedMemoryif the buffer is no longer needed."
+        ],
+        [
+          "pTransactionToken",
+          "POINTER TOBACnetAsyncTransactionToken",
+          "Transaction token of the asynchronous call - seeBACnetAsyncTransactionToken."
+        ],
+        [
+          "pError",
+          "POINTER TOIEC_BACNET_ERROR",
+          "A pointer to a structure to hold BACnet Error information. pError may be 0 if the\napplication isnât interested in detailed error information."
+        ]
+      ]
+    }
+  ]
+}

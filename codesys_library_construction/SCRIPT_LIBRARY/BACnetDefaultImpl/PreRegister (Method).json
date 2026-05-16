@@ -1,0 +1,28 @@
+{
+  "library": "BACnetDefaultImpl",
+  "title": "PreRegister (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnetDefaultImpl/Current/BACnetDefaultImpl/Function-Blocks/LoggingObjects/pou-TrendLog/PreRegister.html",
+  "page_title": "TrendLog.PreRegister (METH)",
+  "text": "\nMETHOD PreRegister : UDINT\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "PreRegister",
+          "Type": "UDINT"
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfServer",
+          "Type": "BACnet.IBACnetServer"
+        }
+      ]
+    }
+  ]
+}

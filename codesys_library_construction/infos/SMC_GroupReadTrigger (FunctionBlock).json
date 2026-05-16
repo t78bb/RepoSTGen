@@ -1,0 +1,57 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_GroupReadTrigger (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/AdministrativeConfiguration/Trigger/SMC_GroupReadTrigger.html",
+  "page_title": "SMC_GroupReadTrigger (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_GroupReadTrigger\nFunction block for reading the status of a trigger that\nwas prepared with\nSMC_GroupPrepareTrigger\nand assigned to\na movement.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "AxisGroup",
+          "Type": "AXIS_GROUP_REF_SM3",
+          "Comment": "Reference to a group of axes"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Enable",
+          "Type": "BOOL",
+          "Comment": "While set to TRUE, the function block continuously\nreads the status of the trigger."
+        },
+        [
+          "TriggerId",
+          "SMC_TRIGGER_ID",
+          "The id of the trigger returned bySMC_GroupPrepareTrigger."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Busy",
+          "Type": "BOOL",
+          "Comment": "The function block is not finished"
+        },
+        [
+          "Error",
+          "BOOL",
+          "Signals that an error has occurred within the function block"
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ],
+        [
+          "TriggerInfo",
+          "SMC_TRIGGER_INFO",
+          "Information on the trigger with idTriggerId."
+        ]
+      ]
+    }
+  ]
+}

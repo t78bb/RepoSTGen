@@ -1,0 +1,34 @@
+{
+  "library": "DNP3",
+  "title": "SetSessionConfigAspectSendObj91RespQual7 (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Outstation/pou-OutstationConfiguration/SetSessionConfigAspectSendObj91RespQual7.html",
+  "page_title": "OutstationConfiguration.SetSessionConfigAspectSendObj91RespQual7 (METH)",
+  "text": "\nMETHOD SetSessionConfigAspectSendObj91RespQual7 :\nError\nSet optional outstation session configuration aspect - send obj 91 response qualifier 7.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetSessionConfigAspectSendObj91RespQual7",
+          "Type": "Error",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "sendObj91RespQual7",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "Parsing Table says send qualifier 5b for activate config response.\nFor backward compatibility with old implementations send qualifier 7 instead."
+        }
+      ]
+    }
+  ]
+}

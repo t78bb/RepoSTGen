@@ -1,0 +1,47 @@
+{
+  "library": "CommFB",
+  "title": "ADDR (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/CommFB/Current/CommFB/DP-Address/ADDR.html#",
+  "page_title": "ADDR (FUN)",
+  "text": "\nFUNCTION ADDR : DWORD\nThis function converts a handle which addresses a slot or a DP-slave into its physical address.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "ADDR",
+          "Type": "DWORD",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "EN",
+          "Type": "BOOL",
+          "Initial": "TRUE",
+          "Comment": ""
+        },
+        [
+          "ID",
+          "DWORD",
+          "",
+          "Slot or device handle"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "ENO",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

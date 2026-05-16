@@ -1,0 +1,100 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_Logical_Axis (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/Additional/SMC_Logical_Axis.html",
+  "page_title": "SMC_Logical_Axis (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_Logical_Axis\nthe need to add a logical axis to the device tree.\nUse the output variable\nAxis\nof type\nAXIS_REF_LOGICAL_SM3\ninstead of\na logical axis.\nIf the function block is restarted, the logical axis is reinitialized.  The\nmaster axis can be changed by restarting the function block.\nNote that instances of this function block must not be assigned to other\ninstances of the same function block.  If you create your own function\nblock containing this function block, it is recommended to add the attribute\nâno_assignâ to your function block as well.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Starts the execution of the function block."
+        },
+        [
+          "wDriveID",
+          "WORD",
+          "1",
+          "Identifier of the logical drive."
+        ],
+        [
+          "iMovementType",
+          "SMC_AXIS_TYPE",
+          "SMC_AXIS_TYPE.modulo",
+          "The type (finite or modulo) of axis."
+        ],
+        [
+          "fPositionPeriod",
+          "LREAL",
+          "360.0",
+          "Length of period for modulo drives in technical units [u]."
+        ],
+        [
+          "eValueReference",
+          "SMC_ValueSelect",
+          "actual",
+          "Master reference value."
+        ],
+        [
+          "usiFilterDepthPosition",
+          "LREAL",
+          "",
+          "Number of cycles the position value is averaged over."
+        ],
+        [
+          "usiFilterDepthVelocity",
+          "LREAL",
+          "",
+          "Number of cycles the velocity value is averaged over."
+        ],
+        [
+          "fTimeShiftCycles",
+          "LREAL",
+          "3",
+          "Time shift relative to master values in cycles."
+        ],
+        [
+          "RealAxis",
+          "REFERENCE TOAXIS_REF_SM3",
+          "",
+          "The real master axis."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Initialized",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "The logical axis is intialized and can be used."
+        },
+        [
+          "InSteadyState",
+          "BOOL",
+          "",
+          "The filter of the logical axis is intialized.InSteadyStateimpliesInitialized."
+        ],
+        [
+          "Error",
+          "BOOL",
+          "",
+          "There is an error."
+        ],
+        [
+          "Axis",
+          "AXIS_REF_LOGICAL_SM3",
+          "",
+          "The logical axis."
+        ]
+      ]
+    }
+  ]
+}

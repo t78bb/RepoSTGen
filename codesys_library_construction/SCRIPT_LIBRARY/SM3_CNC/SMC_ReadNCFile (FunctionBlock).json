@@ -1,0 +1,154 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_ReadNCFile (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/File/ReadNCFile/SMC_ReadNCFile.html",
+  "page_title": "SMC_ReadNCFile (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_ReadNCFile\nSMC_ReadNCFile\ncan read a NC-ASCII-file from the file system of\nthe controller in order to make it available for the\nSMC_NCDecoder\n.\nThus, a NC program can be read in and decoded at runtime.\nNote\nThis function block has been superseeded by\nSMC_ReadNCFile2\nand is kept only for compatibility.  It is recommended to use\nSMC_ReadNCFile2\n, which has additional features like mathematical expressions\nor sub programs in g-code\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "bExecute",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Rising edge: Starts execution. WhileTRUE, the function\nblock is active."
+        },
+        [
+          "sFileName",
+          "STRING(255)",
+          "ââ",
+          "File path"
+        ],
+        [
+          "pvl",
+          "POINTER TOSMC_VARLIST",
+          "",
+          "If there arenât variables in the CNC programm, this input\nisnât set.SMC_VARLIST"
+        ],
+        [
+          "pBuffer",
+          "POINTER TO BYTE",
+          "",
+          "Pointer on a sufficiently large, free data area (buffer) that is allocated in the IEC application.\nIt is strongly recommended to allocate the buffer asARRAY[0..x]OF|ioSMC_GCODE_WORD|in order to make sure to have a correct data alignment.\nA definition ofARRAY[0..x]OFBYTEmay lead to a misaligned data access on some platforms."
+        ],
+        [
+          "dwBufferSize",
+          "DWORD",
+          "",
+          "Size of the buffer in byte"
+        ],
+        [
+          "fDefaultVel",
+          "LREAL",
+          "",
+          "Default velocity; used if velocity is not specified inside\nthe CNC file."
+        ],
+        [
+          "fDefaultAccel",
+          "LREAL",
+          "",
+          "Default acceleration; used if acceleration is not specified\ninside the CNC file"
+        ],
+        [
+          "fDefaultDecel",
+          "LREAL",
+          "",
+          "Default deceleration used if deceleration is not specified\ninside the CNC file"
+        ],
+        [
+          "fDefaultVelFF",
+          "LREAL",
+          "",
+          "Default velocity for fast forward (G0), FF word. It is used\nif no velocity is specified inside the CNC file."
+        ],
+        [
+          "fDefaultAccelFF",
+          "LREAL",
+          "",
+          "Default acceleration for fast forward (G0), EF+ word. It is\nused if no acceleration is specified inside the CNC file."
+        ],
+        [
+          "fDefaultDecelFF",
+          "LREAL",
+          "",
+          "Default deceleration for fast forward (G0), EF- word. A non-\nnegative value is expected used if no deceleration is\nspecified inside the CNC file."
+        ],
+        [
+          "b3DMode",
+          "BOOL",
+          "",
+          "IfTRUE, a G17 command (activation 3D-mode) is executed\nimplicitly."
+        ],
+        [
+          "pStringBuffer",
+          "POINTER TOSMC_StringBuffer",
+          "",
+          "Pointer to an object of typeSMC_StringBuffer.\nThis object is used to store strings that are defined in the G-code program in order to write them to variables using G36&37.\nIf the pointer is not set (0) and string constants are used in the G-code program, an error will be generated.(SMC_RNCF_NO_STRINGBUFFER)."
+        ],
+        [
+          "bEnableSyntaxChecks",
+          "BOOL",
+          "",
+          "Turns on syntax checks that will detect invalid G-code and\nstop with an error in this case"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bDone",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUEif parameter is available"
+        },
+        [
+          "bBusy",
+          "BOOL",
+          "",
+          "TRUEwhile execution of function block is not finished"
+        ],
+        [
+          "bError",
+          "BOOL",
+          "",
+          "TRUEsignals that an error has occurred within\nthe function block."
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "",
+          "Error identification,SMC_ERROR"
+        ],
+        [
+          "bExecuteDecoder",
+          "BOOL",
+          "",
+          "Signal for triggering the input Execute of theSMC_NCDecodermodule."
+        ],
+        [
+          "ncprog",
+          "SMC_CNC_REF",
+          "STRUCT(nElements := 0)",
+          "CNC program, input of the succeedingSMC_NCDecodermodule."
+        ],
+        [
+          "dwFileSize",
+          "DWORD",
+          "",
+          "Size of the file in bytes."
+        ],
+        [
+          "dwPos",
+          "DWORD",
+          "",
+          "Current Position of the cursor in the file."
+        ]
+      ]
+    }
+  ]
+}

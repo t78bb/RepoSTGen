@@ -1,0 +1,28 @@
+{
+  "library": "BACnet",
+  "title": "GetBACnetEnumeratedProperty (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/pou-IBACnetObjectBase/Utilities/GetBACnetEnumeratedProperty.html",
+  "page_title": "IBACnetObjectBase.GetBACnetEnumeratedProperty (METH)",
+  "text": "\nMETHOD GetBACnetEnumeratedProperty : DINT\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetBACnetEnumeratedProperty",
+          "Type": "DINT"
+        },
+        {
+          "Scope": "Input",
+          "Name": "propID",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_ID"
+        }
+      ]
+    }
+  ]
+}

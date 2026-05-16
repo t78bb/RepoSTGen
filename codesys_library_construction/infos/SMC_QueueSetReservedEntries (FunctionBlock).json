@@ -1,0 +1,46 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_QueueSetReservedEntries (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/Queue-manipulation/SMC_QueueSetReservedEntries.html",
+  "page_title": "SMC_QueueSetReservedEntries (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_QueueSetReservedEntries\nThis function block allows to set the number of\nreserved entries in the queue. If the number of free entries\nin the queue reaches this threshold, SMC_OutQueue.bFull will return TRUE.\nThis function block is intended for use with\nSMC_Interpolator2Dir\n.\nIt can be used to set the number of elements that can be interpolated\nin reverse direction.\nNote\nSMC_QueueSetReservedEntries\nis intended to be used after the\nlast path processing function block that copies the queue.\nIt will not work as desired when used after\nSMC_CheckVelocities\nor\nSMC_CheckForLimits\n.\n(These function blocks donât copy the queue but modify it in-place.)\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "bExecute",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": ""
+        },
+        [
+          "poqDataIn",
+          "POINTER TOSMC_OUTQUEUE",
+          "",
+          ""
+        ],
+        [
+          "nNumReservedEntries",
+          "UDINT",
+          "SMC_MIN_RESERVED_QUEUE_ELEMS",
+          "The number of reserved entries, seeSMC_OUTQUEUE.nNumReservedEntries"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "poqDataOut",
+          "Type": "POINTER TOSMC_OUTQUEUE",
+          "Initial": "",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

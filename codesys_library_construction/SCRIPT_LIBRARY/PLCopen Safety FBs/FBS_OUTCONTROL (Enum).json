@@ -1,0 +1,73 @@
+{
+  "library": "PLCopen Safety FBs",
+  "title": "FBS_OUTCONTROL (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/PLCopen Safety FBs/Current/PLCopenSafetyFBs/Enums/FBS_OUTCONTROL.html",
+  "page_title": "FBS_OUTCONTROL (ENUM)",
+  "text": "\nTYPE FBS_OUTCONTROL :\nDefinition of SF_OutControl function block states and its diagnostic values.\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "IDLE",
+          "Initial": "16#0",
+          "Comment": "The function block is not active (initial state)."
+        },
+        {
+          "Name": "INIT",
+          "Initial": "16#8401",
+          "Comment": "Block activation startup inhibit is active. Reset required."
+        },
+        {
+          "Name": "SAFE",
+          "Initial": "16#8802",
+          "Comment": "Triggered safety function."
+        },
+        {
+          "Name": "LOCK",
+          "Initial": "16#8404",
+          "Comment": "Safety function startup inhibit is active. Reset required."
+        },
+        {
+          "Name": "OUTPUT_DISABLE",
+          "Initial": "16#8006",
+          "Comment": "Process control is not active."
+        },
+        {
+          "Name": "OUTPUT_ENABLE",
+          "Initial": "16#8000",
+          "Comment": "Process control is active and safety is enabled."
+        },
+        {
+          "Name": "ERR_RESET_1",
+          "Initial": "16#C001",
+          "Comment": "Static Reset signal in state INIT."
+        },
+        {
+          "Name": "ERR_RESET_2",
+          "Initial": "16#C011",
+          "Comment": "Static Reset signal in state LOCK"
+        },
+        {
+          "Name": "ERR_CONTROL",
+          "Initial": "16#C010",
+          "Comment": "Static signal at ProcessControl in state OUTPUT_DISABLE."
+        },
+        {
+          "Name": "ERR_INIT",
+          "Initial": "16#C020",
+          "Comment": "Simultaneous rising trigger at Reset and ProcessControl in\nstate INIT."
+        },
+        {
+          "Name": "ERR_LOCK",
+          "Initial": "16#C030",
+          "Comment": "Simultaneous rising trigger at Reset and ProcessControl in\nstate LOCK"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_GroupUpdateContinueData (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/Movement/SMC_GroupUpdateContinueData.html",
+  "page_title": "SMC_GroupUpdateContinueData (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_GroupUpdateContinueData\nThis function block updates the continue data in order to keep it in\nsync with the movement of any dynamic coordinate systems. It is necessary\nfor continuing on a path in a dynamic coordinate system, e.g. on a path\nin a PCS that is following a rotary table.\nFailing to use this function block in such a scenario might\nlead to an error when trying to continue.\nStrictly speaking, the function block has to only be called from the\nmoment continue data has been written until the moment it has been used\nand\nMC_GroupContinue\nreports\nDone\n. However, it is possible and\nactually recommended to simply call the function each cycle, regardless\nof whether the continue data is actually in use.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "AxisGroup",
+          "Type": "AXIS_GROUP_REF_SM3",
+          "Comment": "Reference to an axis group."
+        },
+        [
+          "continueData",
+          "SMC_AXIS_GROUP_CONTINUE_DATA",
+          "The continue data that has to be kept up to date."
+        ],
+        {
+          "Scope": "Input",
+          "Name": "Enable",
+          "Type": "BOOL",
+          "Comment": "Enables the feature."
+        },
+        {
+          "Scope": "Output",
+          "Name": "Busy",
+          "Type": "BOOL",
+          "Comment": "The function block has not yet finished."
+        },
+        [
+          "Error",
+          "BOOL",
+          "Signals that an error has occurred within the function block.\nAn error does not stop the execution of this function block\nand it is not necessary to restart the function block in order\nto reset the error."
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

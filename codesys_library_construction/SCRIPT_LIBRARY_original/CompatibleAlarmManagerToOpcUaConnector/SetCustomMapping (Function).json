@@ -1,0 +1,25 @@
+{
+  "library": "CompatibleAlarmManagerToOpcUaConnector",
+  "title": "SetCustomMapping (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/CompatibleAlarmManagerToOpcUaConnector/Current/Curstom-Mapping/SetCustomMapping.html",
+  "page_title": "SetCustomMapping (FUN)",
+  "text": "Curstom Mapping\nSetCustomMapping (Function)\nFile and Project Information\nLibrary Reference\nAlarmManagerToOpcUaConnector\nLibrary Identification\nLibrary Properties\nCompatibleAlarmManagerToOpcUaConnector\nDocs\n»\nCurstom\nMapping\n»\nSetCustomMapping (FUN)\nSetCustomMapping (FUN)\nÂ¶\nFUNCTION SetCustomMapping\nThis functions is used to setup the custom mapping interface.\nInOut:\nScope\nName\nType\nComment\nInput\niMapping\nAlarmManagerToOpcUaConnector.ICustomAlarmToOpcUaMapping\nCallback interface that should be used to map the alarm\npriorities.",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "iMapping",
+          "Type": "AlarmManagerToOpcUaConnector.ICustomAlarmToOpcUaMapping",
+          "Comment": "Callback interface that should be used to map the alarm\npriorities."
+        }
+      ]
+    }
+  ]
+}

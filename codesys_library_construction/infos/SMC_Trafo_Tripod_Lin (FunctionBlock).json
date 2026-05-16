@@ -1,0 +1,124 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_Trafo_Tripod_Lin (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_Trafo_POUs/SoftMotion-Transformations/Parallel-Systems/Tripod_Lin/SMC_Trafo_Tripod_Lin.html",
+  "page_title": "SMC_Trafo_Tripod_Lin (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_Trafo_Tripod_Lin\nInverse transformation for tripod\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "pi",
+          "Type": "SMC_PosInfo",
+          "Initial": "",
+          "Comment": "Position of the inner ringâs center (x,y,z)"
+        },
+        [
+          "dOuterRadius",
+          "LREAL",
+          "",
+          "Radius of outer ring"
+        ],
+        [
+          "dInnerRadius",
+          "LREAL",
+          "",
+          "Radius of inner ring"
+        ],
+        [
+          "dLength",
+          "LREAL",
+          "",
+          "Length of linkage"
+        ],
+        [
+          "dDistance",
+          "LREAL",
+          "",
+          "Distance between the two connecting rods for each arm"
+        ],
+        [
+          "dRotationOffset",
+          "LREAL",
+          "0",
+          "Angle of axis A"
+        ],
+        [
+          "dAxisAngle",
+          "LREAL",
+          "",
+          "Absolute angle between rails and z-axis"
+        ],
+        [
+          "dSingularityTolerance",
+          "LREAL",
+          "1",
+          ""
+        ],
+        [
+          "dOffsetA",
+          "LREAL",
+          "",
+          "Offset that is subtracted from the\nresulting position of drive A."
+        ],
+        [
+          "dOffsetB",
+          "LREAL",
+          "",
+          "Offset that is subtracted from the\nresulting position of drive B."
+        ],
+        [
+          "dOffsetC",
+          "LREAL",
+          "",
+          "Offset that is subtracted from the\nresulting position of drive C."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "dLA",
+          "Type": "LREAL",
+          "Initial": "",
+          "Comment": "Resulting position of drive A. The 0 position\nis at the point where the axis, along which\nthe drive moves, intersects the plane where\nthedOuterRadiusis measured. Can be\nadjusted bydOffsetA."
+        },
+        [
+          "dLB",
+          "LREAL",
+          "",
+          "Resulting position of drive B. The 0 position\nis at the point where the axis, along which\nthe drive moves, intersects the plane where\nthedOuterRadiusis measured. Can be\nadjusted bydOffsetB."
+        ],
+        [
+          "dLC",
+          "LREAL",
+          "",
+          "Resulting position of drive C. The 0 position\nis at the point where the axis, along which\nthe drive moves, intersects the plane where\nthedOuterRadiusis measured. Can be\nadjusted bydOffsetC."
+        ],
+        [
+          "bError",
+          "BOOL",
+          "",
+          "OnlyTRUE, if there is no solution"
+        ],
+        [
+          "bSingularPosition",
+          "BOOL",
+          "",
+          "At least one drive is near a singular position"
+        ],
+        [
+          "bNegativeDrivePosition",
+          "BOOL",
+          "",
+          "At least one driveâs position is calculated to be negative"
+        ]
+      ]
+    }
+  ]
+}

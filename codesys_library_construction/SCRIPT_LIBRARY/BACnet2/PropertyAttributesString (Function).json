@@ -1,0 +1,28 @@
+{
+  "library": "BACnet2",
+  "title": "PropertyAttributesString (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/Utilities/ToString/PropertyAttributesString.html",
+  "page_title": "PropertyAttributesString (FUN)",
+  "text": "\nFUNCTION PropertyAttributesString : STRING\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "PropertyAttributesString",
+          "Type": "STRING"
+        },
+        {
+          "Scope": "Input",
+          "Name": "propAttr",
+          "Type": "BACnetPropertyAttributes"
+        }
+      ]
+    }
+  ]
+}

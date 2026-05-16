@@ -1,0 +1,8 @@
+{
+  "library": "String Segments",
+  "title": "IString (Interface)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Segments/Current/Strings/Interfaces/IString.html",
+  "page_title": "IString (ITF)",
+  "text": "\nINTERFACE IString EXTENDS MBM.|dIDisposable|,\nIStringRepresentation\nHandle a UTF-8 encoded immutable string segment\nMethods:\nGetSegment\nIsASCII\nIsValid\nLen\nStructure:\nGetSegment (Method)\nIsASCII (Method)\nIsValid (Method)\nLen (Method)",
+  "tables": []
+}

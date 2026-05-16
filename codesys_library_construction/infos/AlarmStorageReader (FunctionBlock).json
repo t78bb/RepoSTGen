@@ -1,0 +1,27 @@
+{
+  "library": "AlarmManager",
+  "title": "AlarmStorageReader (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Alarm-storage-API/AlarmStorageReader.html",
+  "page_title": "AlarmStorageReader (FB)",
+  "text": "\nFUNCTION_BLOCK AlarmStorageReader EXTENDS AlarmStorageManager\nThis function block is used to read data from the alarm storage. We use a function block\ninstead of functions to be able to store some state like the already opened table or\nalarm storage.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "_hLock",
+          "Type": "RTS_IEC_HANDLE",
+          "Initial": "RTS_INVALID_HANDLE",
+          "Comment": "Used to synchronize the access to THIS instance, because there\nmight be a potential usage from the application code, not only\nfrom the visualization code"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_CAMBounds_Pos (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/CAM/SMC_CAMBounds_Pos.html",
+  "page_title": "SMC_CAMBounds_Pos (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_CAMBounds_Pos\nIn contrast to\nSMC_CAMBounds\nthis function block calculates only the maximum and minimum position values\nof the slave being coupled in absolute mode to a master which is moved according to a prescribed maximum velocity and acceleration/deceleration.\nThis module is especially helpful when a cam disc is created and modified in online mode and the observance of the maximum values have to be checked in advance.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "CAM",
+          "Type": "MC_CAM_REF",
+          "Initial": "",
+          "Comment": "Reference to cam"
+        },
+        {
+          "Scope": "Input",
+          "Name": "bExecute",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Rising edge: Starts the execution of the function block."
+        },
+        [
+          "dMasterVelMax",
+          "LREAL",
+          "1",
+          "Absolute maximum velocity of master"
+        ],
+        [
+          "dMasterAccMax",
+          "LREAL",
+          "0",
+          "Absolute maximum acceleration/deceleration`` of master"
+        ],
+        [
+          "dMasterScaling",
+          "LREAL",
+          "1",
+          "Scaling factor for master applied to cam"
+        ],
+        [
+          "dSlaveScaling",
+          "LREAL",
+          "1",
+          "Scaling factor for slave applied to cam"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bDone",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUE: Calculation has been terminated"
+        },
+        [
+          "bBusy",
+          "BOOL",
+          "FALSE",
+          "TRUE: Execution of function block has not been finished\nyet yet."
+        ],
+        [
+          "bError",
+          "BOOL",
+          "",
+          "TRUE: Error has occurred within the function block."
+        ],
+        [
+          "nErrorID",
+          "SMC_ERROR",
+          "",
+          "Error identification"
+        ],
+        [
+          "dMaxPos",
+          "LREAL",
+          "",
+          "Maximum slave position value [u]."
+        ],
+        [
+          "dMinPos",
+          "LREAL",
+          "",
+          "Minimum slave position value [u]."
+        ]
+      ]
+    }
+  ]
+}

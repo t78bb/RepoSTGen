@@ -1,0 +1,1568 @@
+{
+  "test_time": "20260125_153729",
+  "output_results": [],
+  "ground_truth_results": [
+    {
+      "directory": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_assembly-station",
+      "project_name": "repoeval_assembly-station",
+      "files": [
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_assembly-station\\readful_result\\PNP_MACHINE.st",
+          "file_name": "PNP_MACHINE.st",
+          "block_name": "PNP_MACHINE",
+          "project_name": "repoeval_assembly-station",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        }
+      ],
+      "total_files": 1,
+      "passed_files": 1,
+      "failed_files": 0,
+      "pass_rate": 100.0
+    },
+    {
+      "directory": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_barrier",
+      "project_name": "repoeval_barrier",
+      "files": [
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_barrier\\readful_result\\CAN_Read_Data_SWMC.st",
+          "file_name": "CAN_Read_Data_SWMC.st",
+          "block_name": "CAN_Read_Data_SWMC",
+          "project_name": "repoeval_barrier",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_barrier\\readful_result\\CAN_Send_Data_SWMC.st",
+          "file_name": "CAN_Send_Data_SWMC.st",
+          "block_name": "CAN_Send_Data_SWMC",
+          "project_name": "repoeval_barrier",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_barrier\\readful_result\\CommandExecutor.st",
+          "file_name": "CommandExecutor.st",
+          "block_name": "CommandExecutor",
+          "project_name": "repoeval_barrier",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_barrier\\readful_result\\CommandExecutor0.st",
+          "file_name": "CommandExecutor0.st",
+          "block_name": "CommandExecutor0",
+          "project_name": "repoeval_barrier",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_barrier\\readful_result\\DataReverse_cmdReverse.st",
+          "file_name": "DataReverse_cmdReverse.st",
+          "block_name": "DataReverse_cmdReverse",
+          "project_name": "repoeval_barrier",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_barrier\\readful_result\\fileSave_close.st",
+          "file_name": "fileSave_close.st",
+          "block_name": "fileSave_close",
+          "project_name": "repoeval_barrier",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_barrier\\readful_result\\fileSave_createDir.st",
+          "file_name": "fileSave_createDir.st",
+          "block_name": "fileSave_createDir",
+          "project_name": "repoeval_barrier",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_barrier\\readful_result\\fileSave_new.st",
+          "file_name": "fileSave_new.st",
+          "block_name": "fileSave_new",
+          "project_name": "repoeval_barrier",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_barrier\\readful_result\\fileSave_write.st",
+          "file_name": "fileSave_write.st",
+          "block_name": "fileSave_write",
+          "project_name": "repoeval_barrier",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_barrier\\readful_result\\mdbsLogicToPhy.st",
+          "file_name": "mdbsLogicToPhy.st",
+          "block_name": "mdbsLogicToPhy",
+          "project_name": "repoeval_barrier",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_barrier\\readful_result\\mdbsNumToIdx.st",
+          "file_name": "mdbsNumToIdx.st",
+          "block_name": "mdbsNumToIdx",
+          "project_name": "repoeval_barrier",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_barrier\\readful_result\\mdbsPhyToLogic.st",
+          "file_name": "mdbsPhyToLogic.st",
+          "block_name": "mdbsPhyToLogic",
+          "project_name": "repoeval_barrier",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_barrier\\readful_result\\setButtonByDirect.st",
+          "file_name": "setButtonByDirect.st",
+          "block_name": "setButtonByDirect",
+          "project_name": "repoeval_barrier",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        }
+      ],
+      "total_files": 13,
+      "passed_files": 13,
+      "failed_files": 0,
+      "pass_rate": 100.0
+    },
+    {
+      "directory": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_Builder_Application_RPI",
+      "project_name": "repoeval_Builder_Application_RPI",
+      "files": [
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_Builder_Application_RPI\\readful_result\\ConcreteBuilder.st",
+          "file_name": "ConcreteBuilder.st",
+          "block_name": "ConcreteBuilder",
+          "project_name": "repoeval_Builder_Application_RPI",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_Builder_Application_RPI\\readful_result\\Director.st",
+          "file_name": "Director.st",
+          "block_name": "Director",
+          "project_name": "repoeval_Builder_Application_RPI",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_Builder_Application_RPI\\readful_result\\Director_Construct.st",
+          "file_name": "Director_Construct.st",
+          "block_name": "Director_Construct",
+          "project_name": "repoeval_Builder_Application_RPI",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_Builder_Application_RPI\\readful_result\\Product.st",
+          "file_name": "Product.st",
+          "block_name": "Product",
+          "project_name": "repoeval_Builder_Application_RPI",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_Builder_Application_RPI\\readful_result\\Product_toString.st",
+          "file_name": "Product_toString.st",
+          "block_name": "Product_toString",
+          "project_name": "repoeval_Builder_Application_RPI",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        }
+      ],
+      "total_files": 5,
+      "passed_files": 5,
+      "failed_files": 0,
+      "pass_rate": 100.0
+    },
+    {
+      "directory": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_can",
+      "project_name": "repoeval_can",
+      "files": [
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_can\\readful_result\\CAN_Read_Data_SWMC.st",
+          "file_name": "CAN_Read_Data_SWMC.st",
+          "block_name": "CAN_Read_Data_SWMC",
+          "project_name": "repoeval_can",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_can\\readful_result\\CAN_Send_Data_SWMC.st",
+          "file_name": "CAN_Send_Data_SWMC.st",
+          "block_name": "CAN_Send_Data_SWMC",
+          "project_name": "repoeval_can",
+          "passed": false,
+          "success": false,
+          "errors_count": 1,
+          "errors": [
+            {
+              "error_desc": "';' expected instead of 'result'",
+              "error_type": "Implementation Section Error",
+              "code_window": "  15: BEGIN\n  16: \t// Initialize the result to FALSE\n  17: \tresult := FALSE;\n  18: \n  19: \t// Perform the CAN data sending operation\n  20: \tIF CAN_Send(SWMC_ID, id, data) THEN\n  21: \t\t// If the CAN_Send function succeeds, set result to TRUE",
+              "line_no": 3,
+              "line_content": ""
+            }
+          ]
+        }
+      ],
+      "total_files": 2,
+      "passed_files": 1,
+      "failed_files": 1,
+      "pass_rate": 50.0
+    },
+    {
+      "directory": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_Command1",
+      "project_name": "repoeval_Command1",
+      "files": [
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_Command1\\readful_result\\FB_AirConComfortCommand.st",
+          "file_name": "FB_AirConComfortCommand.st",
+          "block_name": "FB_AirConComfortCommand",
+          "project_name": "repoeval_Command1",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_Command1\\readful_result\\FB_AirConditioning.st",
+          "file_name": "FB_AirConditioning.st",
+          "block_name": "FB_AirConditioning",
+          "project_name": "repoeval_Command1",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_Command1\\readful_result\\FB_AirConStandbyCommand.st",
+          "file_name": "FB_AirConStandbyCommand.st",
+          "block_name": "FB_AirConStandbyCommand",
+          "project_name": "repoeval_Command1",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_Command1\\readful_result\\FB_CDPlayer.st",
+          "file_name": "FB_CDPlayer.st",
+          "block_name": "FB_CDPlayer",
+          "project_name": "repoeval_Command1",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_Command1\\readful_result\\FB_Lamp.st",
+          "file_name": "FB_Lamp.st",
+          "block_name": "FB_Lamp",
+          "project_name": "repoeval_Command1",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_Command1\\readful_result\\FB_LampSetLevelCommand.st",
+          "file_name": "FB_LampSetLevelCommand.st",
+          "block_name": "FB_LampSetLevelCommand",
+          "project_name": "repoeval_Command1",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_Command1\\readful_result\\FB_MusicPlayCommand.st",
+          "file_name": "FB_MusicPlayCommand.st",
+          "block_name": "FB_MusicPlayCommand",
+          "project_name": "repoeval_Command1",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_Command1\\readful_result\\FB_MusicStopCommand.st",
+          "file_name": "FB_MusicStopCommand.st",
+          "block_name": "FB_MusicStopCommand",
+          "project_name": "repoeval_Command1",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_Command1\\readful_result\\FB_Socket.st",
+          "file_name": "FB_Socket.st",
+          "block_name": "FB_Socket",
+          "project_name": "repoeval_Command1",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_Command1\\readful_result\\FB_SocketOffCommand.st",
+          "file_name": "FB_SocketOffCommand.st",
+          "block_name": "FB_SocketOffCommand",
+          "project_name": "repoeval_Command1",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_Command1\\readful_result\\FB_SocketOnCommand.st",
+          "file_name": "FB_SocketOnCommand.st",
+          "block_name": "FB_SocketOnCommand",
+          "project_name": "repoeval_Command1",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_Command1\\readful_result\\FB_SwitchPanel.st",
+          "file_name": "FB_SwitchPanel.st",
+          "block_name": "FB_SwitchPanel",
+          "project_name": "repoeval_Command1",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        }
+      ],
+      "total_files": 12,
+      "passed_files": 12,
+      "failed_files": 0,
+      "pass_rate": 100.0
+    },
+    {
+      "directory": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_core",
+      "project_name": "repoeval_core",
+      "files": [
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_core\\readful_result\\CommandExecutor.st",
+          "file_name": "CommandExecutor.st",
+          "block_name": "CommandExecutor",
+          "project_name": "repoeval_core",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_core\\readful_result\\CommandExecutor0.st",
+          "file_name": "CommandExecutor0.st",
+          "block_name": "CommandExecutor0",
+          "project_name": "repoeval_core",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        }
+      ],
+      "total_files": 2,
+      "passed_files": 2,
+      "failed_files": 0,
+      "pass_rate": 100.0
+    },
+    {
+      "directory": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_counter",
+      "project_name": "repoeval_counter",
+      "files": [
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_counter\\readful_result\\FB_counter.st",
+          "file_name": "FB_counter.st",
+          "block_name": "FB_counter",
+          "project_name": "repoeval_counter",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        }
+      ],
+      "total_files": 1,
+      "passed_files": 1,
+      "failed_files": 0,
+      "pass_rate": 100.0
+    },
+    {
+      "directory": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_Decorator_Application",
+      "project_name": "repoeval_Decorator_Application",
+      "files": [
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_Decorator_Application\\readful_result\\ConcreteComponment.st",
+          "file_name": "ConcreteComponment.st",
+          "block_name": "ConcreteComponment",
+          "project_name": "repoeval_Decorator_Application",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_Decorator_Application\\readful_result\\ConcreteComponment_getDescription.st",
+          "file_name": "ConcreteComponment_getDescription.st",
+          "block_name": "ConcreteComponment_getDescription",
+          "project_name": "repoeval_Decorator_Application",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_Decorator_Application\\readful_result\\ConcreteComponment_getValue.st",
+          "file_name": "ConcreteComponment_getValue.st",
+          "block_name": "ConcreteComponment_getValue",
+          "project_name": "repoeval_Decorator_Application",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_Decorator_Application\\readful_result\\ConcreteDecoratorA.st",
+          "file_name": "ConcreteDecoratorA.st",
+          "block_name": "ConcreteDecoratorA",
+          "project_name": "repoeval_Decorator_Application",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_Decorator_Application\\readful_result\\ConcreteDecoratorA_getDescription.st",
+          "file_name": "ConcreteDecoratorA_getDescription.st",
+          "block_name": "ConcreteDecoratorA_getDescription",
+          "project_name": "repoeval_Decorator_Application",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_Decorator_Application\\readful_result\\ConcreteDecoratorA_getValue.st",
+          "file_name": "ConcreteDecoratorA_getValue.st",
+          "block_name": "ConcreteDecoratorA_getValue",
+          "project_name": "repoeval_Decorator_Application",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_Decorator_Application\\readful_result\\ConcreteDecoratorB.st",
+          "file_name": "ConcreteDecoratorB.st",
+          "block_name": "ConcreteDecoratorB",
+          "project_name": "repoeval_Decorator_Application",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_Decorator_Application\\readful_result\\ConcreteDecoratorC.st",
+          "file_name": "ConcreteDecoratorC.st",
+          "block_name": "ConcreteDecoratorC",
+          "project_name": "repoeval_Decorator_Application",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        }
+      ],
+      "total_files": 8,
+      "passed_files": 8,
+      "failed_files": 0,
+      "pass_rate": 100.0
+    },
+    {
+      "directory": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_electronic_cam_motion",
+      "project_name": "repoeval_electronic_cam_motion",
+      "files": [
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_electronic_cam_motion\\readful_result\\F_AxisStatusToString.st",
+          "file_name": "F_AxisStatusToString.st",
+          "block_name": "F_AxisStatusToString",
+          "project_name": "repoeval_electronic_cam_motion",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_electronic_cam_motion\\readful_result\\FB_DualAxisPower.st",
+          "file_name": "FB_DualAxisPower.st",
+          "block_name": "FB_DualAxisPower",
+          "project_name": "repoeval_electronic_cam_motion",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_electronic_cam_motion\\readful_result\\FB_DualAxisReset.st",
+          "file_name": "FB_DualAxisReset.st",
+          "block_name": "FB_DualAxisReset",
+          "project_name": "repoeval_electronic_cam_motion",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_electronic_cam_motion\\readful_result\\ResetAxis.st",
+          "file_name": "ResetAxis.st",
+          "block_name": "ResetAxis",
+          "project_name": "repoeval_electronic_cam_motion",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        }
+      ],
+      "total_files": 4,
+      "passed_files": 4,
+      "failed_files": 0,
+      "pass_rate": 100.0
+    },
+    {
+      "directory": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_electronic_gear_motion",
+      "project_name": "repoeval_electronic_gear_motion",
+      "files": [
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_electronic_gear_motion\\readful_result\\FB_DualAxisPower.st",
+          "file_name": "FB_DualAxisPower.st",
+          "block_name": "FB_DualAxisPower",
+          "project_name": "repoeval_electronic_gear_motion",
+          "passed": false,
+          "success": false,
+          "errors_count": 14,
+          "errors": [
+            {
+              "error_desc": "Unknown type: 'AXIS_REF'",
+              "error_type": "Declaration Section Error",
+              "code_window": "   1: It seems like the code provided is a mix of structured text (ST) programming language, commonly used in industrial automation, and comments explaining the functionality. To continue writing the code, I'll expand on the `FB_DualAxisPower` function block and provide additional logic for its operation.\n   2: \n   3: ```structured-text\n   4: FUNCTION_BLOCK FB_DualAxisPower\n   5: VAR_INPUT\n   6: \tAxis1\t\t\t:\tAXIS_REF;\t\t//轴1引用\n   7: \tAxis2\t\t\t:\tAXIS_REF;\t\t//轴2引用",
+              "line_no": 3,
+              "line_content": "FUNCTION_BLOCK FB_DualAxisPower"
+            },
+            {
+              "error_desc": "Unknown type: 'AXIS_REF'",
+              "error_type": "Declaration Section Error",
+              "code_window": "   2: \n   3: ```structured-text\n   4: FUNCTION_BLOCK FB_DualAxisPower\n   5: VAR_INPUT\n   6: \tAxis1\t\t\t:\tAXIS_REF;\t\t//轴1引用\n   7: \tAxis2\t\t\t:\tAXIS_REF;\t\t//轴2引用\n   8: \tbEnable\t\t\t:\tBOOL := TRUE;\t//使能信号",
+              "line_no": 4,
+              "line_content": "VAR_INPUT"
+            },
+            {
+              "error_desc": "Expression of type 'BOOL' expected in this place",
+              "error_type": "Implementation Section Error",
+              "code_window": "  21: // 主逻辑\n  22: IF bEnable THEN\n  23: \t// 检查轴1的电源状态\n  24: \tIF Axis1.PowerOn THEN\n  25: \t\tbAxis1PowerOn := TRUE;\n  26: \t\tbAxis1Ready := Axis1.Ready;\n  27: \tELSE",
+              "line_no": 4,
+              "line_content": "\tIF Axis1.PowerOn THEN"
+            },
+            {
+              "error_desc": "Unknown type: 'AXIS_REF'",
+              "error_type": "Implementation Section Error",
+              "code_window": "  21: // 主逻辑\n  22: IF bEnable THEN\n  23: \t// 检查轴1的电源状态\n  24: \tIF Axis1.PowerOn THEN\n  25: \t\tbAxis1PowerOn := TRUE;\n  26: \t\tbAxis1Ready := Axis1.Ready;\n  27: \tELSE",
+              "line_no": 4,
+              "line_content": "\tIF Axis1.PowerOn THEN"
+            },
+            {
+              "error_desc": "'' contains no definition for 'PowerOn'",
+              "error_type": "Implementation Section Error",
+              "code_window": "  21: // 主逻辑\n  22: IF bEnable THEN\n  23: \t// 检查轴1的电源状态\n  24: \tIF Axis1.PowerOn THEN\n  25: \t\tbAxis1PowerOn := TRUE;\n  26: \t\tbAxis1Ready := Axis1.Ready;\n  27: \tELSE",
+              "line_no": 4,
+              "line_content": "\tIF Axis1.PowerOn THEN"
+            },
+            {
+              "error_desc": "Cannot convert type 'Unknown type: 'Axis1.Ready'' to type 'BOOL'",
+              "error_type": "Implementation Section Error",
+              "code_window": "  23: \t// 检查轴1的电源状态\n  24: \tIF Axis1.PowerOn THEN\n  25: \t\tbAxis1PowerOn := TRUE;\n  26: \t\tbAxis1Ready := Axis1.Ready;\n  27: \tELSE\n  28: \t\tbAxis1PowerOn := FALSE;\n  29: \t\tbAxis1Ready := FALSE;",
+              "line_no": 6,
+              "line_content": "\t\tbAxis1Ready := Axis1.Ready;"
+            },
+            {
+              "error_desc": "Unknown type: 'AXIS_REF'",
+              "error_type": "Implementation Section Error",
+              "code_window": "  23: \t// 检查轴1的电源状态\n  24: \tIF Axis1.PowerOn THEN\n  25: \t\tbAxis1PowerOn := TRUE;\n  26: \t\tbAxis1Ready := Axis1.Ready;\n  27: \tELSE\n  28: \t\tbAxis1PowerOn := FALSE;\n  29: \t\tbAxis1Ready := FALSE;",
+              "line_no": 6,
+              "line_content": "\t\tbAxis1Ready := Axis1.Ready;"
+            },
+            {
+              "error_desc": "'' contains no definition for 'Ready'",
+              "error_type": "Implementation Section Error",
+              "code_window": "  23: \t// 检查轴1的电源状态\n  24: \tIF Axis1.PowerOn THEN\n  25: \t\tbAxis1PowerOn := TRUE;\n  26: \t\tbAxis1Ready := Axis1.Ready;\n  27: \tELSE\n  28: \t\tbAxis1PowerOn := FALSE;\n  29: \t\tbAxis1Ready := FALSE;",
+              "line_no": 6,
+              "line_content": "\t\tbAxis1Ready := Axis1.Ready;"
+            },
+            {
+              "error_desc": "Expression of type 'BOOL' expected in this place",
+              "error_type": "Implementation Section Error",
+              "code_window": "  30: \tEND_IF;\n  31: \n  32: \t// 检查轴2的电源状态\n  33: \tIF Axis2.PowerOn THEN\n  34: \t\tbAxis2PowerOn := TRUE;\n  35: \t\tbAxis2Ready := Axis2.Ready;\n  36: \tELSE",
+              "line_no": 13,
+              "line_content": "\tIF Axis2.PowerOn THEN"
+            },
+            {
+              "error_desc": "Unknown type: 'AXIS_REF'",
+              "error_type": "Implementation Section Error",
+              "code_window": "  30: \tEND_IF;\n  31: \n  32: \t// 检查轴2的电源状态\n  33: \tIF Axis2.PowerOn THEN\n  34: \t\tbAxis2PowerOn := TRUE;\n  35: \t\tbAxis2Ready := Axis2.Ready;\n  36: \tELSE",
+              "line_no": 13,
+              "line_content": "\tIF Axis2.PowerOn THEN"
+            },
+            {
+              "error_desc": "'' contains no definition for 'PowerOn'",
+              "error_type": "Implementation Section Error",
+              "code_window": "  30: \tEND_IF;\n  31: \n  32: \t// 检查轴2的电源状态\n  33: \tIF Axis2.PowerOn THEN\n  34: \t\tbAxis2PowerOn := TRUE;\n  35: \t\tbAxis2Ready := Axis2.Ready;\n  36: \tELSE",
+              "line_no": 13,
+              "line_content": "\tIF Axis2.PowerOn THEN"
+            },
+            {
+              "error_desc": "Cannot convert type 'Unknown type: 'Axis2.Ready'' to type 'BOOL'",
+              "error_type": "Implementation Section Error",
+              "code_window": "  32: \t// 检查轴2的电源状态\n  33: \tIF Axis2.PowerOn THEN\n  34: \t\tbAxis2PowerOn := TRUE;\n  35: \t\tbAxis2Ready := Axis2.Ready;\n  36: \tELSE\n  37: \t\tbAxis2PowerOn := FALSE;\n  38: \t\tbAxis2Ready := FALSE;",
+              "line_no": 15,
+              "line_content": "\t\tbAxis2Ready := Axis2.Ready;"
+            },
+            {
+              "error_desc": "Unknown type: 'AXIS_REF'",
+              "error_type": "Implementation Section Error",
+              "code_window": "  32: \t// 检查轴2的电源状态\n  33: \tIF Axis2.PowerOn THEN\n  34: \t\tbAxis2PowerOn := TRUE;\n  35: \t\tbAxis2Ready := Axis2.Ready;\n  36: \tELSE\n  37: \t\tbAxis2PowerOn := FALSE;\n  38: \t\tbAxis2Ready := FALSE;",
+              "line_no": 15,
+              "line_content": "\t\tbAxis2Ready := Axis2.Ready;"
+            },
+            {
+              "error_desc": "'' contains no definition for 'Ready'",
+              "error_type": "Implementation Section Error",
+              "code_window": "  32: \t// 检查轴2的电源状态\n  33: \tIF Axis2.PowerOn THEN\n  34: \t\tbAxis2PowerOn := TRUE;\n  35: \t\tbAxis2Ready := Axis2.Ready;\n  36: \tELSE\n  37: \t\tbAxis2PowerOn := FALSE;\n  38: \t\tbAxis2Ready := FALSE;",
+              "line_no": 15,
+              "line_content": "\t\tbAxis2Ready := Axis2.Ready;"
+            }
+          ]
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_electronic_gear_motion\\readful_result\\FB_GearCoupling.st",
+          "file_name": "FB_GearCoupling.st",
+          "block_name": "FB_GearCoupling",
+          "project_name": "repoeval_electronic_gear_motion",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_electronic_gear_motion\\readful_result\\FB_GearMotionControl.st",
+          "file_name": "FB_GearMotionControl.st",
+          "block_name": "FB_GearMotionControl",
+          "project_name": "repoeval_electronic_gear_motion",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        }
+      ],
+      "total_files": 3,
+      "passed_files": 2,
+      "failed_files": 1,
+      "pass_rate": 66.67
+    },
+    {
+      "directory": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_elevator",
+      "project_name": "repoeval_elevator",
+      "files": [
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_elevator\\readful_result\\F_DetectCurrentFloor.st",
+          "file_name": "F_DetectCurrentFloor.st",
+          "block_name": "F_DetectCurrentFloor",
+          "project_name": "repoeval_elevator",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_elevator\\readful_result\\F_RegisterCalls.st",
+          "file_name": "F_RegisterCalls.st",
+          "block_name": "F_RegisterCalls",
+          "project_name": "repoeval_elevator",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_elevator\\readful_result\\F_UpdateDoorAnimation.st",
+          "file_name": "F_UpdateDoorAnimation.st",
+          "block_name": "F_UpdateDoorAnimation",
+          "project_name": "repoeval_elevator",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_elevator\\readful_result\\FB_ElevatorDoorController.st",
+          "file_name": "FB_ElevatorDoorController.st",
+          "block_name": "FB_ElevatorDoorController",
+          "project_name": "repoeval_elevator",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_elevator\\readful_result\\FB_ElevatorMovement.st",
+          "file_name": "FB_ElevatorMovement.st",
+          "block_name": "FB_ElevatorMovement",
+          "project_name": "repoeval_elevator",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        }
+      ],
+      "total_files": 5,
+      "passed_files": 5,
+      "failed_files": 0,
+      "pass_rate": 100.0
+    },
+    {
+      "directory": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_FB50_虚轴控制",
+      "project_name": "repoeval_FB50_虚轴控制",
+      "files": [
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_FB50_虚轴控制\\readful_result\\FB_轴停止触发块.st",
+          "file_name": "FB_轴停止触发块.st",
+          "block_name": "FB_轴停止触发块",
+          "project_name": "repoeval_FB50_虚轴控制",
+          "passed": false,
+          "success": false,
+          "errors_count": 1,
+          "errors": [
+            {
+              "error_desc": "编译工具调用失败",
+              "error_type": "系统错误",
+              "code_window": null,
+              "line_no": null,
+              "line_content": null
+            }
+          ]
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_FB50_虚轴控制\\readful_result\\FB_轴控块.st",
+          "file_name": "FB_轴控块.st",
+          "block_name": "FB_轴控块",
+          "project_name": "repoeval_FB50_虚轴控制",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_FB50_虚轴控制\\readful_result\\FB_轴通讯状态块.st",
+          "file_name": "FB_轴通讯状态块.st",
+          "block_name": "FB_轴通讯状态块",
+          "project_name": "repoeval_FB50_虚轴控制",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        }
+      ],
+      "total_files": 3,
+      "passed_files": 2,
+      "failed_files": 1,
+      "pass_rate": 66.67
+    },
+    {
+      "directory": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_four-level_elevator_control",
+      "project_name": "repoeval_four-level_elevator_control",
+      "files": [
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_four-level_elevator_control\\readful_result\\F_CheckJobInDirection.st",
+          "file_name": "F_CheckJobInDirection.st",
+          "block_name": "F_CheckJobInDirection",
+          "project_name": "repoeval_four-level_elevator_control",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_four-level_elevator_control\\readful_result\\F_ClearFloorStop.st",
+          "file_name": "F_ClearFloorStop.st",
+          "block_name": "F_ClearFloorStop",
+          "project_name": "repoeval_four-level_elevator_control",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_four-level_elevator_control\\readful_result\\F_SetElevatorDirection.st",
+          "file_name": "F_SetElevatorDirection.st",
+          "block_name": "F_SetElevatorDirection",
+          "project_name": "repoeval_four-level_elevator_control",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        }
+      ],
+      "total_files": 3,
+      "passed_files": 3,
+      "failed_files": 0,
+      "pass_rate": 100.0
+    },
+    {
+      "directory": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_GreatExampleOfAdvantages",
+      "project_name": "repoeval_GreatExampleOfAdvantages",
+      "files": [
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_GreatExampleOfAdvantages\\readful_result\\Home.st",
+          "file_name": "Home.st",
+          "block_name": "Home",
+          "project_name": "repoeval_GreatExampleOfAdvantages",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_GreatExampleOfAdvantages\\readful_result\\MQTT_STUFF.st",
+          "file_name": "MQTT_STUFF.st",
+          "block_name": "MQTT_STUFF",
+          "project_name": "repoeval_GreatExampleOfAdvantages",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        }
+      ],
+      "total_files": 2,
+      "passed_files": 2,
+      "failed_files": 0,
+      "pass_rate": 100.0
+    },
+    {
+      "directory": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_healthydata",
+      "project_name": "repoeval_healthydata",
+      "files": [
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_healthydata\\readful_result\\fileSave_close.st",
+          "file_name": "fileSave_close.st",
+          "block_name": "fileSave_close",
+          "project_name": "repoeval_healthydata",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_healthydata\\readful_result\\fileSave_createDir.st",
+          "file_name": "fileSave_createDir.st",
+          "block_name": "fileSave_createDir",
+          "project_name": "repoeval_healthydata",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_healthydata\\readful_result\\fileSave_new.st",
+          "file_name": "fileSave_new.st",
+          "block_name": "fileSave_new",
+          "project_name": "repoeval_healthydata",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_healthydata\\readful_result\\fileSave_write.st",
+          "file_name": "fileSave_write.st",
+          "block_name": "fileSave_write",
+          "project_name": "repoeval_healthydata",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        }
+      ],
+      "total_files": 4,
+      "passed_files": 4,
+      "failed_files": 0,
+      "pass_rate": 100.0
+    },
+    {
+      "directory": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_Interation_HowTo",
+      "project_name": "repoeval_Interation_HowTo",
+      "files": [
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_Interation_HowTo\\readful_result\\FirstPublish.st",
+          "file_name": "FirstPublish.st",
+          "block_name": "FirstPublish",
+          "project_name": "repoeval_Interation_HowTo",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_Interation_HowTo\\readful_result\\FirstSubscription.st",
+          "file_name": "FirstSubscription.st",
+          "block_name": "FirstSubscription",
+          "project_name": "repoeval_Interation_HowTo",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        }
+      ],
+      "total_files": 2,
+      "passed_files": 2,
+      "failed_files": 0,
+      "pass_rate": 100.0
+    },
+    {
+      "directory": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_isScaleOutput",
+      "project_name": "repoeval_isScaleOutput",
+      "files": [
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_isScaleOutput\\readful_result\\F_isScaleOutput.st",
+          "file_name": "F_isScaleOutput.st",
+          "block_name": "F_isScaleOutput",
+          "project_name": "repoeval_isScaleOutput",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        }
+      ],
+      "total_files": 1,
+      "passed_files": 1,
+      "failed_files": 0,
+      "pass_rate": 100.0
+    },
+    {
+      "directory": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_measurement_control",
+      "project_name": "repoeval_measurement_control",
+      "files": [
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_measurement_control\\readful_result\\Tank.st",
+          "file_name": "Tank.st",
+          "block_name": "Tank",
+          "project_name": "repoeval_measurement_control",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        }
+      ],
+      "total_files": 1,
+      "passed_files": 1,
+      "failed_files": 0,
+      "pass_rate": 100.0
+    },
+    {
+      "directory": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_modbus",
+      "project_name": "repoeval_modbus",
+      "files": [
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_modbus\\readful_result\\DataReverse_cmdReverse.st",
+          "file_name": "DataReverse_cmdReverse.st",
+          "block_name": "DataReverse_cmdReverse",
+          "project_name": "repoeval_modbus",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_modbus\\readful_result\\mdbsLogicToPhy.st",
+          "file_name": "mdbsLogicToPhy.st",
+          "block_name": "mdbsLogicToPhy",
+          "project_name": "repoeval_modbus",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_modbus\\readful_result\\mdbsNumToIdx.st",
+          "file_name": "mdbsNumToIdx.st",
+          "block_name": "mdbsNumToIdx",
+          "project_name": "repoeval_modbus",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_modbus\\readful_result\\mdbsPhyToLogic.st",
+          "file_name": "mdbsPhyToLogic.st",
+          "block_name": "mdbsPhyToLogic",
+          "project_name": "repoeval_modbus",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_modbus\\readful_result\\setButtonByDirect.st",
+          "file_name": "setButtonByDirect.st",
+          "block_name": "setButtonByDirect",
+          "project_name": "repoeval_modbus",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        }
+      ],
+      "total_files": 5,
+      "passed_files": 5,
+      "failed_files": 0,
+      "pass_rate": 100.0
+    },
+    {
+      "directory": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_open-type_dual-axis_winding_machine",
+      "project_name": "repoeval_open-type_dual-axis_winding_machine",
+      "files": [
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_open-type_dual-axis_winding_machine\\readful_result\\CheckF.st",
+          "file_name": "CheckF.st",
+          "block_name": "CheckF",
+          "project_name": "repoeval_open-type_dual-axis_winding_machine",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_open-type_dual-axis_winding_machine\\readful_result\\F_CalculateRadius.st",
+          "file_name": "F_CalculateRadius.st",
+          "block_name": "F_CalculateRadius",
+          "project_name": "repoeval_open-type_dual-axis_winding_machine",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_open-type_dual-axis_winding_machine\\readful_result\\F_CompensateVelocity.st",
+          "file_name": "F_CompensateVelocity.st",
+          "block_name": "F_CompensateVelocity",
+          "project_name": "repoeval_open-type_dual-axis_winding_machine",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_open-type_dual-axis_winding_machine\\readful_result\\SeekHome.st",
+          "file_name": "SeekHome.st",
+          "block_name": "SeekHome",
+          "project_name": "repoeval_open-type_dual-axis_winding_machine",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_open-type_dual-axis_winding_machine\\readful_result\\StaDisplay.st",
+          "file_name": "StaDisplay.st",
+          "block_name": "StaDisplay",
+          "project_name": "repoeval_open-type_dual-axis_winding_machine",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        }
+      ],
+      "total_files": 5,
+      "passed_files": 5,
+      "failed_files": 0,
+      "pass_rate": 100.0
+    },
+    {
+      "directory": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_PID_controller",
+      "project_name": "repoeval_PID_controller",
+      "files": [
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_PID_controller\\readful_result\\HeatExchanger.st",
+          "file_name": "HeatExchanger.st",
+          "block_name": "HeatExchanger",
+          "project_name": "repoeval_PID_controller",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_PID_controller\\readful_result\\HeatExchanger2.st",
+          "file_name": "HeatExchanger2.st",
+          "block_name": "HeatExchanger2",
+          "project_name": "repoeval_PID_controller",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_PID_controller\\readful_result\\PID_controller.st",
+          "file_name": "PID_controller.st",
+          "block_name": "PID_controller",
+          "project_name": "repoeval_PID_controller",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_PID_controller\\readful_result\\Tank.st",
+          "file_name": "Tank.st",
+          "block_name": "Tank",
+          "project_name": "repoeval_PID_controller",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        }
+      ],
+      "total_files": 4,
+      "passed_files": 4,
+      "failed_files": 0,
+      "pass_rate": 100.0
+    },
+    {
+      "directory": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_plc_hello_mixing_tank",
+      "project_name": "repoeval_plc_hello_mixing_tank",
+      "files": [
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_plc_hello_mixing_tank\\readful_result\\F_ResetDeviceCommands.st",
+          "file_name": "F_ResetDeviceCommands.st",
+          "block_name": "F_ResetDeviceCommands",
+          "project_name": "repoeval_plc_hello_mixing_tank",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_plc_hello_mixing_tank\\readful_result\\F_UpdateLimitSwitches.st",
+          "file_name": "F_UpdateLimitSwitches.st",
+          "block_name": "F_UpdateLimitSwitches",
+          "project_name": "repoeval_plc_hello_mixing_tank",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_plc_hello_mixing_tank\\readful_result\\FB_AutoSequence.st",
+          "file_name": "FB_AutoSequence.st",
+          "block_name": "FB_AutoSequence",
+          "project_name": "repoeval_plc_hello_mixing_tank",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_plc_hello_mixing_tank\\readful_result\\FB_ManualControl.st",
+          "file_name": "FB_ManualControl.st",
+          "block_name": "FB_ManualControl",
+          "project_name": "repoeval_plc_hello_mixing_tank",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_plc_hello_mixing_tank\\readful_result\\FB_ModeController.st",
+          "file_name": "FB_ModeController.st",
+          "block_name": "FB_ModeController",
+          "project_name": "repoeval_plc_hello_mixing_tank",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_plc_hello_mixing_tank\\readful_result\\FB_TankLevelSimulator.st",
+          "file_name": "FB_TankLevelSimulator.st",
+          "block_name": "FB_TankLevelSimulator",
+          "project_name": "repoeval_plc_hello_mixing_tank",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        }
+      ],
+      "total_files": 6,
+      "passed_files": 6,
+      "failed_files": 0,
+      "pass_rate": 100.0
+    },
+    {
+      "directory": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_ProductionLine",
+      "project_name": "repoeval_ProductionLine",
+      "files": [
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_ProductionLine\\readful_result\\Motor.st",
+          "file_name": "Motor.st",
+          "block_name": "Motor",
+          "project_name": "repoeval_ProductionLine",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_ProductionLine\\readful_result\\Motor_ResetFault.st",
+          "file_name": "Motor_ResetFault.st",
+          "block_name": "Motor_ResetFault",
+          "project_name": "repoeval_ProductionLine",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_ProductionLine\\readful_result\\Motor_SetFault.st",
+          "file_name": "Motor_SetFault.st",
+          "block_name": "Motor_SetFault",
+          "project_name": "repoeval_ProductionLine",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_ProductionLine\\readful_result\\Motor_SetWaitTime.st",
+          "file_name": "Motor_SetWaitTime.st",
+          "block_name": "Motor_SetWaitTime",
+          "project_name": "repoeval_ProductionLine",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_ProductionLine\\readful_result\\Motor_TurnOff.st",
+          "file_name": "Motor_TurnOff.st",
+          "block_name": "Motor_TurnOff",
+          "project_name": "repoeval_ProductionLine",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_ProductionLine\\readful_result\\Motor_TurnOn.st",
+          "file_name": "Motor_TurnOn.st",
+          "block_name": "Motor_TurnOn",
+          "project_name": "repoeval_ProductionLine",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        }
+      ],
+      "total_files": 6,
+      "passed_files": 6,
+      "failed_files": 0,
+      "pass_rate": 100.0
+    },
+    {
+      "directory": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_Proxy_Application",
+      "project_name": "repoeval_Proxy_Application",
+      "files": [
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_Proxy_Application\\readful_result\\Proxy.st",
+          "file_name": "Proxy.st",
+          "block_name": "Proxy",
+          "project_name": "repoeval_Proxy_Application",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_Proxy_Application\\readful_result\\Realsubject.st",
+          "file_name": "Realsubject.st",
+          "block_name": "Realsubject",
+          "project_name": "repoeval_Proxy_Application",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        }
+      ],
+      "total_files": 2,
+      "passed_files": 2,
+      "failed_files": 0,
+      "pass_rate": 100.0
+    },
+    {
+      "directory": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_PT1Filter",
+      "project_name": "repoeval_PT1Filter",
+      "files": [
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_PT1Filter\\readful_result\\FB_PT1Filter.st",
+          "file_name": "FB_PT1Filter.st",
+          "block_name": "FB_PT1Filter",
+          "project_name": "repoeval_PT1Filter",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        }
+      ],
+      "total_files": 1,
+      "passed_files": 1,
+      "failed_files": 0,
+      "pass_rate": 100.0
+    },
+    {
+      "directory": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_readwriteFile",
+      "project_name": "repoeval_readwriteFile",
+      "files": [
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_readwriteFile\\readful_result\\ReadFile.st",
+          "file_name": "ReadFile.st",
+          "block_name": "ReadFile",
+          "project_name": "repoeval_readwriteFile",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_readwriteFile\\readful_result\\WriteFile.st",
+          "file_name": "WriteFile.st",
+          "block_name": "WriteFile",
+          "project_name": "repoeval_readwriteFile",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        }
+      ],
+      "total_files": 2,
+      "passed_files": 2,
+      "failed_files": 0,
+      "pass_rate": 100.0
+    },
+    {
+      "directory": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_Robotics_DynamicModel",
+      "project_name": "repoeval_Robotics_DynamicModel",
+      "files": [
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_Robotics_DynamicModel\\readful_result\\Test_DynModel_Scara2_Z_CheckScrewAxis.st",
+          "file_name": "Test_DynModel_Scara2_Z_CheckScrewAxis.st",
+          "block_name": "Test_DynModel_Scara2_Z_CheckScrewAxis",
+          "project_name": "repoeval_Robotics_DynamicModel",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_Robotics_DynamicModel\\readful_result\\Test_DynModel_Scara2_Z_CheckStandstillTorque.st",
+          "file_name": "Test_DynModel_Scara2_Z_CheckStandstillTorque.st",
+          "block_name": "Test_DynModel_Scara2_Z_CheckStandstillTorque",
+          "project_name": "repoeval_Robotics_DynamicModel",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        }
+      ],
+      "total_files": 2,
+      "passed_files": 2,
+      "failed_files": 0,
+      "pass_rate": 100.0
+    },
+    {
+      "directory": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_three-axis_CNC_motion",
+      "project_name": "repoeval_three-axis_CNC_motion",
+      "files": [
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_three-axis_CNC_motion\\readful_result\\FB_TripleAxisHoming.st",
+          "file_name": "FB_TripleAxisHoming.st",
+          "block_name": "FB_TripleAxisHoming",
+          "project_name": "repoeval_three-axis_CNC_motion",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_three-axis_CNC_motion\\readful_result\\FB_TripleAxisPower.st",
+          "file_name": "FB_TripleAxisPower.st",
+          "block_name": "FB_TripleAxisPower",
+          "project_name": "repoeval_three-axis_CNC_motion",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_three-axis_CNC_motion\\readful_result\\FB_TripleAxisReset.st",
+          "file_name": "FB_TripleAxisReset.st",
+          "block_name": "FB_TripleAxisReset",
+          "project_name": "repoeval_three-axis_CNC_motion",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_three-axis_CNC_motion\\readful_result\\FB_TripleAxisStop.st",
+          "file_name": "FB_TripleAxisStop.st",
+          "block_name": "FB_TripleAxisStop",
+          "project_name": "repoeval_three-axis_CNC_motion",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_three-axis_CNC_motion\\readful_result\\INIT_CNC_System.st",
+          "file_name": "INIT_CNC_System.st",
+          "block_name": "INIT_CNC_System",
+          "project_name": "repoeval_three-axis_CNC_motion",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        }
+      ],
+      "total_files": 5,
+      "passed_files": 5,
+      "failed_files": 0,
+      "pass_rate": 100.0
+    },
+    {
+      "directory": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_traffic_light",
+      "project_name": "repoeval_traffic_light",
+      "files": [
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_traffic_light\\readful_result\\F_SecondsToTime.st",
+          "file_name": "F_SecondsToTime.st",
+          "block_name": "F_SecondsToTime",
+          "project_name": "repoeval_traffic_light",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_traffic_light\\readful_result\\F_TimeToSeconds.st",
+          "file_name": "F_TimeToSeconds.st",
+          "block_name": "F_TimeToSeconds",
+          "project_name": "repoeval_traffic_light",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        },
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_traffic_light\\readful_result\\FB_CountdownTimer.st",
+          "file_name": "FB_CountdownTimer.st",
+          "block_name": "FB_CountdownTimer",
+          "project_name": "repoeval_traffic_light",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        }
+      ],
+      "total_files": 3,
+      "passed_files": 3,
+      "failed_files": 0,
+      "pass_rate": 100.0
+    },
+    {
+      "directory": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_Wrappers",
+      "project_name": "repoeval_Wrappers",
+      "files": [
+        {
+          "file_path": "D:\\graduate_project\\项目级st补全\\repo_gen_project\\real_groud_truth最新\\repoeval_Wrappers\\readful_result\\FB_Wrapper.st",
+          "file_name": "FB_Wrapper.st",
+          "block_name": "FB_Wrapper",
+          "project_name": "repoeval_Wrappers",
+          "passed": true,
+          "success": true,
+          "errors_count": 0,
+          "errors": []
+        }
+      ],
+      "total_files": 1,
+      "passed_files": 1,
+      "failed_files": 0,
+      "pass_rate": 100.0
+    }
+  ],
+  "summary": {
+    "total_projects": 30,
+    "total_files": 114,
+    "total_passed_files": 111,
+    "total_failed_files": 3,
+    "overall_pass_rate": 97.37
+  }
+}

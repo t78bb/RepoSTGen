@@ -1,0 +1,41 @@
+{
+  "library": "CmpBACnet",
+  "title": "BACnetUnconfPrivateTransfer (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/CmpBACnet/Current/BACnetClientAPI/BACnetUnconfPrivateTransfer.html",
+  "page_title": "BACnetUnconfPrivateTransfer (FUN)",
+  "text": "\nFUNCTION BACnetUnconfPrivateTransfer :\nIEC_BACNET_STATUS\nSends a UnconfirmedPrivateTransfer request.\nSends a BACnet Unconfirmed-Private-Transfer service request to invoke proprietary or\nnon-standard service in a remote device.\nreturn IEC_BACNET_STATUS\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "BACnetUnconfPrivateTransfer",
+          "Type": "IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "pSourceAddress",
+          "Type": "POINTER TOIEC_BACNET_ADDRESS",
+          "Comment": "If the BACnet application has only one device constructed and installed, this can\nbe NULL. In this case the MAC address of this device will be used. Otherwise this\nshall be the MAC address returned on device object construction."
+        },
+        [
+          "pDestinationAddress",
+          "POINTER TOIEC_BACNET_ADDRESS",
+          "This is the MAC address of the device to which the request\nshould be sent."
+        ],
+        [
+          "pServiceInfo",
+          "POINTER TOIEC_BACNET_PRIVATE_TRANSFER_INFO",
+          "A pointer to the service information data structure. This data structure is to\ntransport the service parameters to the destination device."
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "library": "3S CANopenSafety Slave",
+  "title": "CANopenDeviceSIL2 (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/3S CANopenSafety Slave/Current/_3SCANopenSafetySlave/Function-Blocks/CANopenDeviceSIL2.html",
+  "page_title": "CANopenDeviceSIL2 (FB)",
+  "text": "_3SCANopenSafetySlave\nBufferSizes (ParamList)\nFunction Blocks\nCANopenDeviceSIL2 (FunctionBlock)\nCyclic-Methods-state-independent\nState-Machine\nFile and Project Information\nLibrary Reference\nBase Interfaces\nLibrary Identification\nLibrary Properties\nCANopenSafetyBase\nLibrary Identification\nLibrary Properties\nCANopenSafetyTypes\nLibrary Identification\nLibrary Properties\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nCmpSIL2\nLibrary Identification\nLibrary Properties\nIoDriver Interfaces\nLibrary Identification\nLibrary Properties\nIoDriver Parameter Interfaces\nLibrary Identification\nLibrary Properties\nIoStandard\nLibrary Identification\nLibrary Properties\nSysExcept\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\n3S CANopenSafety Slave\nDocs\n»\n_3SCANopenSafetySlave\n»\nFunction\nBlocks\n»\nCANopenDeviceSIL2 (FB)\nCANopenDeviceSIL2 (FB)\nÂ¶\nFUNCTION_BLOCK CANopenDeviceSIL2 EXTENDS CSB.CANopenSafetyBase\nThis function block implements a CANopen Safety Slave SIL2 I/O driver which is realized through a black channel approach.\nIt sits on top of an unsafe CANopen Slave Stack. Communication between both stacks is realized over shared memory.\nThe function block can be enabled/disabled by\nS_xEnable\n. When\nS_xEnable\ngets\nTRUE\nthe function block checks\nall conditions for safe communication each bus cycle:\nUnsafe stack is in\nOPERATIONAL\nstate\nConfiguration valid object (16#13FE) is set to 16#A5\nSafety configuration signatures are correct\nConsistency of SRDO configuration data\nIf a configuration error is detected (e.g. CRC mismatch)\nS_eError\nchanges from\nNO_ERROR\nto the corresponding error code.\nIf every condition is fulfilled the function block tries starting safe communication.\nOutput\nS_xActive\ngets\nTRUE\nif all SRDOs are sent/received at least one time without any error.\nWhen communication error occurs (e.g. SCT/SRVT timeout, data mismatch, â¦), all SRDO communication is stopped:\nS_xActive\n=\nFALSE\n,\nS_eError\n<>\nNO_ERROR\n.\nErrors can be acknowledged by a rising edge of\nS_xErrorAck\n. Safe communication will be continued.\nNote\nDo not instantiate this function block. It will be instantiated implicitly.\nInOut:\nScope\nName\nType\nInitial\nComment\nInput\nS_xEnable\nBOOL\nTRUE\nTRUE\n: SRDO communication enabled;\nFALSE\n: SRDO\ncommunication stopped\nS_xErrorAck\nBOOL\nFALSE\nPending error (\nS_eError\n<>\nNO_ERROR\n) can be acknowledged\nwith rising edge.\nOutput\nS_xActive\nBOOL\nFALSE\nTRUE\n: safe communication active;\nFALSE\n: safe\ncommunication inactive (in case of error or\nS_xEnable\n=\nFALSE\n)\nS_eError\nCST.ERROR\nCST.ERROR.NO_ERROR\nError code of pending error or\nNO_ERROR\n.\nStructure:\nCyclic-Methods-state-independent\nState-Machine\nState Transitions\nStates\nCheckConfiguration\nCheckConfiguration and Stopped\nOperational",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "S_xEnable",
+          "Type": "BOOL",
+          "Initial": "TRUE",
+          "Comment": "TRUE: SRDO communication enabled;FALSE: SRDO\ncommunication stopped"
+        },
+        [
+          "S_xErrorAck",
+          "BOOL",
+          "FALSE",
+          "Pending error (S_eError<>NO_ERROR) can be acknowledged\nwith rising edge."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "S_xActive",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "TRUE: safe communication active;FALSE: safe\ncommunication inactive (in case of error orS_xEnable=FALSE)"
+        },
+        [
+          "S_eError",
+          "CST.ERROR",
+          "CST.ERROR.NO_ERROR",
+          "Error code of pending error orNO_ERROR."
+        ]
+      ]
+    }
+  ]
+}

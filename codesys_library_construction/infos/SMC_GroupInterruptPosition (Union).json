@@ -1,0 +1,23 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_GroupInterruptPosition (Union)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/Movement/GroupInterrupt/SMC_GroupInterruptPosition.html",
+  "page_title": "SMC_GroupInterruptPosition (UNION)",
+  "text": "\nTYPE SMC_GroupInterruptPosition : UNION\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "mvtRel",
+          "Type": "SMC_GroupInterruptPositionMvtRel",
+          "Comment": "A relative position on the path."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_GetLengthOfPrefix (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/GeoInfo-Help-Functions/SMC_GetLengthOfPrefix.html",
+  "page_title": "SMC_GetLengthOfPrefix (FUN)",
+  "text": "\nFUNCTION SMC_GetLengthOfPrefix : LREAL\nCalculates the length of the prefix of an object\n(from 0 to parameter value d).\nThe object\npg^\nis not modified.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SMC_GetLengthOfPrefix",
+          "Type": "LREAL"
+        },
+        {
+          "Scope": "Input",
+          "Name": "pg",
+          "Type": "POINTER TOSMC_GEOINFO"
+        },
+        [
+          "d",
+          "LREAL"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "library": "AlarmManager",
+  "title": "IAlarmHandler (Interface)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/IAlarmHandler.html",
+  "page_title": "IAlarmHandler (ITF)",
+  "text": "\nINTERFACE IAlarmHandler\nThe generated function blocks for the alarm configurations register\nthemselves at an instance of this interface\nMethods:\nAcknowledgeAll\nAcknowledgeAllOfGroup\nAcknowledgeOneOfGroup\nRaiseEvent\nStructure:\nAcknowledgeAll (Method)\nAcknowledgeAllOfGroup (Method)\nAcknowledgeOneOfGroup (Method)\nRaiseEvent (Method)",
+  "tables": []
+}

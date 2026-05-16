@@ -1,0 +1,216 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_Interpolator2Dir (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/SoftMotion-Function-Blocks/SMC_Interpolator2Dir.html",
+  "page_title": "SMC_Interpolator2Dir (FB)",
+  "text": "GlobalTextList (GlobalTextList)\nImagePool_cnc_sm3 (ImagePool)\nImages\nLibrary Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nProjektinformationen\nGetBooleanProperty (Function)\nGetCompany (Function)\nGetNumberProperty (Function)\nGetTextProperty (Function)\nGetTextProperty2 (Function)\nGetTitle (Function)\nGetVersion (Function)\nGetVersionProperty (Function)\nSM3_CNC_GetVersion (Function)\nSMC_CNC_LibParams (ParamList)\nSM_CNC_Data types\nFile\nSMC_SINGLEVAR (Struct)\nSMC_TOKENTYPE (Enum)\nSMC_VARLIST (Struct)\nSMC_VARTYPE (Enum)\nSoftMotion CNC\nSMC_ABC_SLOPES_AT_STOP (Enum)\nSMC_ABC_SLOPES_NO_STOP (Enum)\nSMC_ADDAXIS (Enum)\nSMC_AL_STATUS (Enum)\nSMC_CNC_REF (FunctionBlock)\nSMC_DEC_STATUS (Enum)\nSMC_DIRECTION (Enum)\nSMC_GAddress (Alias)\nSMC_GCODEVIEWER_DATA (Struct)\nSMC_GCODE_TEXT (Struct)\nSMC_GCODE_WORD (Struct)\nSMC_GCodeObjectId (Struct)\nSMC_GEOINFO (Struct)\nSMC_GWord (Struct)\nSMC_INT_STATUS (Enum)\nSMC_INT_VELMODE (Enum)\nSMC_LINE_3D (Struct)\nSMC_MOVTYP (Enum)\nSMC_M_PARAMETERS (Struct)\nSMC_OBJECTSPLITTERMODE (Enum)\nSMC_ORI_CONVENTION (Enum)\nSMC_OUTQUEUE (FunctionBlock)\nbFull (Property)\nSMC_PLANE_H (Struct)\nSMC_POSINFO (Struct)\nSMC_SEGMENT (Struct)\nSMC_SEGMENTTYPE (Enum)\nSMC_SMOOTHBSPLINE_MODE (Enum)\nSMC_SMOOTHPATHADDAXMODE (Enum)\nSMC_SMOOTHPATHMODE (Enum)\nSMC_Seg (Struct)\nSMC_TC_STATUS (Enum)\nSMC_TOOLCORRMODE (Enum)\nSMC_VECTOR6D (Struct)\nSM_CNC_POUs\nFile\nReadNCFile\nSMC_ReadNCFile (FunctionBlock)\nStream\nToken\nSMC_ReadNCQueue (FunctionBlock)\nCloseFile (Action)\nhelp functions\nSMC_StringBuffer (FunctionBlock)\nNC2\nGSentence\nSMC_GExpToken_Iterator (FunctionBlock)\nSMC_GJUMP_COMMAND (Enum)\nSMC_GJUMP_TARGET (Union)\nSMC_GSentence (Struct)\nSMC_GSentenceQueue (FunctionBlock)\nSMC_GSentence_DynCall (Struct)\nSMC_GSentence_GWords (Struct)\nSMC_GSentence_GWords_Create (Function)\nSMC_GSentence_Iterator (FunctionBlock)\nSMC_GSentence_Let (Struct)\nSMC_GSentence_SubCall (Struct)\nSMC_GSentence_SubRet (Struct)\nSMC_GSentence_Type (Enum)\nSMC_GSentence_Union (Union)\nSMC_GVarDecl (Struct)\nSMC_GVar_Type (Enum)\nSMC_GWord_Iterator (FunctionBlock)\nSMC_NC_CopySentence (Function)\nSMC_NC_CopySentenceChecked (Function)\nGSentenceJumpBuffer\nSMC_GSentenceJumpBuffer (FunctionBlock)\nInterpreter\nCallstack\nSMC_NCInterpreter (FunctionBlock)\nParser\nExpressions\nSMC_NCTokenParser (FunctionBlock)\nSMC_NC_SourcePosition (Struct)\nSymbolTable\nReadNCFile2\nSMC_IGSentenceModifier (Interface)\nSMC_INCLookup (Interface)\nSMC_ITokenModifier (Interface)\nSMC_NCLookupFile (FunctionBlock)\nSMC_NCNavigator (FunctionBlock)\nSMC_NC_CanProcessTokens (Function)\nSMC_NC_FindProgramFile (Function)\nSMC_NC_PrependDefaults (FunctionBlock)\nSMC_NC_TokenQueue_Completed (Function)\nSMC_ReadNCFile2 (FunctionBlock)\nSMC_ReadNCFromStream (FunctionBlock)\nSoftMotion CNC\nCoordinate Transformations\nSMC_CoordinateTransformation3D (FunctionBlock)\nSMC_DetermineCuboidBearing (FunctionBlock)\nSMC_InvCoordinateTransformation3D (FunctionBlock)\nSMC_TeachCoordinateSystem (FunctionBlock)\nSMC_UnitVectorToRPY (FunctionBlock)\nDirect Axis Control\nSMC_ControlAxisByPos (FunctionBlock)\nSMC_ControlAxisByPosVel (FunctionBlock)\nSMC_ControlAxisByVel (FunctionBlock)\nGCode Viewer\nSMC_GCodeViewer (FunctionBlock)\nGeoInfo Help Functions\nSMC_AdaptHelpMarks (Function)\nSMC_CalcEndPnt (Function)\nSMC_CalcLengthGeo (Function)\nSMC_CalcStartPnt (Function)\nSMC_CutEnd (Function)\nSMC_CutStart (Function)\nSMC_GeoinfoInit (Function)\nSMC_GetAccVec (Function)\nSMC_GetAddAxValue (Function)\nSMC_GetClosestPnt (Function)\nSMC_GetLengthOfPrefix (Function)\nSMC_GetPnt (Function)\nSMC_GetPntPI (Function)\nSMC_GetTanVec (Function)\nSMC_GetTanVec3D (Function)\nSMC_InvertDirection (Function)\nSMC_RampInCorr (Function)\nSMC_RampOutCorr (Function)\nSMC_RecalculateHelpMarks (Function)\nSMC_SingleCorr (Function)\nOutQueue Functions\nSMC_AppendObj (Function)\nSMC_DeleteObj (Function)\nSMC_GetCount (Function)\nSMC_GetHistoryCount (Function)\nSMC_GetLastObj (Function)\nSMC_GetObj (Function)\nSMC_GetObjFromEnd (Function)\nSMC_GetObjFromHistory (Function)\nSMC_OutQueueInit (Function)\nSMC_OutQueueIsSyncing (Function)\nSMC_OutQueue_IsFull (Function)\nSMC_RestoreQueue (Function)\nSMC_SetObj (Function)\nSMC_SetQueueCapacity (Function)\nPosinfo Functions\nSMC_PosInfo_Trf_Inverse (Function)\nSMC_PosInfo_Trf_Mult (Function)\nQueue manipulation\nSMC_QueueSetReservedEntries (FunctionBlock)\nSMC_RotateQueue2D (FunctionBlock)\nSMC_ScaleQueue3D (FunctionBlock)\nSMC_TranslateQueue3D (FunctionBlock)\nSoftMotion Function Blocks\nBlockSearch\nDecoderBuffer\nInterpolator_Help_Functions\nM_Functions\nNCDecoder_Help_Functions\nSMC_AddGCodeState (Struct)\nSMC_AvoidLoop (FunctionBlock)\nSMC_CheckForLimits (FunctionBlock)\nSMC_CheckVelocities (FunctionBlock)\nSMC_ExtendedVelocityChecks (FunctionBlock)\nSMC_Interpolator (FunctionBlock)\nSMC_Interpolator2Dir (FunctionBlock)\nSMC_Interpolator2Dir_SlowTask (FunctionBlock)\nSMC_LimitCircularVelocity (FunctionBlock)\nSMC_LimitDynamics (FunctionBlock)\nSMC_NCDecoder (FunctionBlock)\nSMC_ObjectSplitter (FunctionBlock)\nSMC_ReadAdditionalIpoState (FunctionBlock)\nSMC_RecomputeABCSlopes (FunctionBlock)\nSMC_ReduceVelEndAtCorner (FunctionBlock)\nSMC_RoundPath (FunctionBlock)\nSMC_SegmentAnalyzer (FunctionBlock)\nSMC_SetInterpreterStartPosition (FunctionBlock)\nSMC_SmoothAddAxes (FunctionBlock)\nSMC_SmoothBSpline (FunctionBlock)\nSMC_SmoothMerge (FunctionBlock)\nSMC_SmoothPath (FunctionBlock)\nSMC_ToolCorr (FunctionBlock)\nSMC_ToolLengthCorr (FunctionBlock)\nSMC_ToolRadiusCorr (FunctionBlock)\nSMC_XInterpolator (FunctionBlock)\nSM_Trafo_Data types\nSMC_ArticulatedRobot_6DOF_J0_State (Enum)\nSMC_ArticulatedRobot_6DOF_J1_State (Enum)\nSMC_ArticulatedRobot_6DOF_J4_State (Enum)\nSMC_TrafoConfig_4AxisPalletizer (Struct)\nSMC_TrafoConfig_ArticulatedRobot_6DOF (Struct)\nSMC_TrafoResult_4AxisPalletizer (Enum)\nSMC_TrafoResult_ArticulatedRobot_6DOF (Enum)\nSMC_VECTORDIR (Enum)\nSM_Trafo_POUs\nForward and inverse transformation\nSMC_TRAFOV_\nSoftMotion Transformations\nGantry systems\nParallel Systems\nRobot Kinematiks\nScara System\nWrapper\nadditional FBs\nVisu_Templates\nFile\nCNC\nSM_CNC_Visualizations\nFBs\nCNC\nDirect Axis Control\nTranslation & Rotation & Scaling\nhelp visu\nSM_Trafo_Visualizations\nTrafo templates\nGantry\nParallel\nRobot\nScara\nVisu_Templates_New\nFramed Visu Helpers\nTextListForCombobox_MC_DIRECTION (TextList)\nTextListForCombobox_SMC_ABC_SLOPES_AT_STOP (TextList)\nTextListForCombobox_SMC_ABC_SLOPES_NO_STOP (TextList)\nTextListForCombobox_SMC_AL_STATUS (TextList)\nTextListForCombobox_SMC_DEC_STATUS (TextList)\nTextListForCombobox_SMC_DIRECTION (TextList)\nTextListForCombobox_SMC_ERROR (TextList)\nTextListForCombobox_SMC_INT_STATUS (TextList)\nTextListForCombobox_SMC_INT_VELMODE (TextList)\nTextListForCombobox_SMC_ORI_CONVENTION (TextList)\nTextListForCombobox_SMC_SMOOTHBSPLINE_MODE (TextList)\nTextListForCombobox_SMC_SMOOTHPATHADDAXMODE (TextList)\nTextListForCombobox_SMC_SMOOTHPATHMODE (TextList)\nTextListForCombobox_SMC_TC_STATUS (TextList)\nTextListForCombobox_SMC_TOOLCORRMODE (TextList)\nFile and Project Information\nLibrary Reference\n3SLicense\nLibrary Identification\nLibrary Properties\nBase Interfaces\nLibrary Identification\nLibrary Properties\nCmpLog\nLibrary Identification\nLibrary Properties\nFloatingPointUtils\nLibrary Identification\nLibrary Properties\nMatrix\nLibrary Identification\nLibrary Properties\nSM3_Basic\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nSM3_RBase\nLibrary Identification\nLibrary Properties\nSM3_Shared\nLibrary Identification\nLibrary Properties\nSM3_Transformation\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nSysFile\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysTarget\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nVisuElem3DPath\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElemCamDisplayer\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElemMeter\nLibrary Identification\nLibrary Properties\nVisuElemTextEditor\nLibrary Identification\nLibrary Properties\nVisuElemTrace\nLibrary Identification\nLibrary Properties\nVisuElems\nLibrary Identification\nLibrary Properties\nVisuElemsAlarm\nLibrary Identification\nLibrary Properties\nVisuElemsDateTime\nLibrary Identification\nLibrary Properties\nVisuElemsSpecialControls\nLibrary Identification\nLibrary Properties\nVisuElemsWinControls\nLibrary Identification\nLibrary Properties\nVisuInputs\nLibrary Identification\nLibrary Properties\nVisuNativeControl\nLibrary Identification\nLibrary Properties\nSM3_CNC\nDocs\n»\nSM_CNC_POUs\n»\nSoftMotion\nCNC\n»\nSoftMotion\nFunction\nBlocks\n»\nSMC_Interpolator2Dir (FB)\nSMC_Interpolator2Dir (FB)\nÂ¶\nFUNCTION_BLOCK FINAL SMC_Interpolator2Dir IMPLEMENTS\nSMC_IInterpolator\nThis function block is similar to function block\nSMC_Interpolator\n,\nregarding function and allocation of inputs and outputs,\nbut it is able to interpolate a path also in the opposite direction.\nReverse interpolation:\nIf\ndOverride\nhas a negative value,\nSMC_Interpolator2Dir\ninterpolates in the opposite direction.\nFor example, if this input is assigned to an analog velocity input\nof a hand wheel, you can move forward and backward with the desired\nvelocity.\nThe use of the function block depends on the following preconditions:\nIf input\nbStartAtEnd\nis\nTRUE\n, the path has to be stored\ncompletely in structure\npoqDataIn\n.\nIf the path does not fit completely, you can define how many elements\nof the queue are reserved for moving backward.\n(\nSMC_QueueSetReservedEntries\n)\nFor example, if you want to move 10 elements backwards, you must reserve\n13 (10 + 3) elements (three elements are reserved as a safety buffer).\nThe queue needs to be large enough, because the reserved\nelements are no longer available for the look ahead.\nThe use of\nSMC_Interpolator2Dir\nrequires the additional call\nof\nSMC_Interpolator2Dir_SlowTask\n.  This call must be done in the same\ntask that reads the g-code, performs the path preprocessing, and fills the\nSMC_OutQueue\nof the interpolator.\nReversing of probe movements / G31 is not supported. Going backwards is limited\nto the movement after the last probe movement / G31.\nSee\nSMC_Interpolator\nfor a description of all inputs and outputs.\nInOut:\nScope\nName\nType\nInitial\nInput\nbExecute\nBOOL\npoqDataIn\nPOINTER TO\nSMC_OUTQUEUE\nbSlow_Stop\nBOOL\nbEmergency_Stop\nBOOL\nbWaitAtNextStop\nBOOL\ndOverride\nLREAL\n1\niVelMode\nSMC_INT_VELMODE\nTRAPEZOID\ndwIpoTime\nDWORD\ndLastWayPos\nLREAL\nbAbort\nBOOL\nbSingleStep\nBOOL\nbAcknM\nBOOL\nbAcknProbe\nBOOL\nbQuick_Stop\nBOOL\ndQuickDeceleration\nLREAL\n0\ndJerkMax\nLREAL\ndQuickStopJerk\nLREAL\nbStartAtEnd\nBOOL\nbSuppressSystemMFunctions\nBOOL\nOutput\nbEndOfPath\nBOOL\nbBusy\nBOOL\nbError\nBOOL\nwErrorID\nSMC_ERROR\npiSetPosition\nSMC_POSINFO\niStatus\nSMC_INT_STATUS\nIPO_INIT\nbWorking\nBOOL\niActObjectSourceNo\nDINT\n-1\ndActObjectLength\nLREAL\ndActObjectLengthRemaining\nLREAL\ndVel\nLREAL\nvecActTangent\nSMC_VECTOR3D\niLastSwitch\nINT\ndwSwitches\nDWORD\ndWayPos\nLREAL\nnDirection\nSMC_Direction\nwM\nWORD\nudiActProbe\nUDINT\nadToolLength\nARRAY [0..2] OF LREAL\nipo\nSMC_Interpolator\nMethods:\nGetCurrentObject\nStructure:\nGetCurrentObject (Method)\nInterpolator2DirInit (Action)",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "bExecute",
+          "Type": "BOOL",
+          "Initial": ""
+        },
+        [
+          "poqDataIn",
+          "POINTER TOSMC_OUTQUEUE",
+          ""
+        ],
+        [
+          "bSlow_Stop",
+          "BOOL",
+          ""
+        ],
+        [
+          "bEmergency_Stop",
+          "BOOL",
+          ""
+        ],
+        [
+          "bWaitAtNextStop",
+          "BOOL",
+          ""
+        ],
+        [
+          "dOverride",
+          "LREAL",
+          "1"
+        ],
+        [
+          "iVelMode",
+          "SMC_INT_VELMODE",
+          "TRAPEZOID"
+        ],
+        [
+          "dwIpoTime",
+          "DWORD",
+          ""
+        ],
+        [
+          "dLastWayPos",
+          "LREAL",
+          ""
+        ],
+        [
+          "bAbort",
+          "BOOL",
+          ""
+        ],
+        [
+          "bSingleStep",
+          "BOOL",
+          ""
+        ],
+        [
+          "bAcknM",
+          "BOOL",
+          ""
+        ],
+        [
+          "bAcknProbe",
+          "BOOL",
+          ""
+        ],
+        [
+          "bQuick_Stop",
+          "BOOL",
+          ""
+        ],
+        [
+          "dQuickDeceleration",
+          "LREAL",
+          "0"
+        ],
+        [
+          "dJerkMax",
+          "LREAL",
+          ""
+        ],
+        [
+          "dQuickStopJerk",
+          "LREAL",
+          ""
+        ],
+        [
+          "bStartAtEnd",
+          "BOOL",
+          ""
+        ],
+        [
+          "bSuppressSystemMFunctions",
+          "BOOL",
+          ""
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bEndOfPath",
+          "Type": "BOOL",
+          "Initial": ""
+        },
+        [
+          "bBusy",
+          "BOOL",
+          ""
+        ],
+        [
+          "bError",
+          "BOOL",
+          ""
+        ],
+        [
+          "wErrorID",
+          "SMC_ERROR",
+          ""
+        ],
+        [
+          "piSetPosition",
+          "SMC_POSINFO",
+          ""
+        ],
+        [
+          "iStatus",
+          "SMC_INT_STATUS",
+          "IPO_INIT"
+        ],
+        [
+          "bWorking",
+          "BOOL",
+          ""
+        ],
+        [
+          "iActObjectSourceNo",
+          "DINT",
+          "-1"
+        ],
+        [
+          "dActObjectLength",
+          "LREAL",
+          ""
+        ],
+        [
+          "dActObjectLengthRemaining",
+          "LREAL",
+          ""
+        ],
+        [
+          "dVel",
+          "LREAL",
+          ""
+        ],
+        [
+          "vecActTangent",
+          "SMC_VECTOR3D",
+          ""
+        ],
+        [
+          "iLastSwitch",
+          "INT",
+          ""
+        ],
+        [
+          "dwSwitches",
+          "DWORD",
+          ""
+        ],
+        [
+          "dWayPos",
+          "LREAL",
+          ""
+        ],
+        [
+          "nDirection",
+          "SMC_Direction",
+          ""
+        ],
+        [
+          "wM",
+          "WORD",
+          ""
+        ],
+        [
+          "udiActProbe",
+          "UDINT",
+          ""
+        ],
+        [
+          "adToolLength",
+          "ARRAY [0..2] OF LREAL",
+          ""
+        ],
+        [
+          "ipo",
+          "SMC_Interpolator",
+          ""
+        ]
+      ]
+    }
+  ]
+}

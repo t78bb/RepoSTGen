@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现基于建造者模式的具体建造者，用于根据客户端提供的规格动态构建最终产品对象。",
+  "provide_code": "//This is the concrete builder class, reponsible for building the final product object\nFUNCTION_BLOCK ConcreteBuilder IMPLEMENTS ITF_Builder\nVAR_INPUT\nEND_VAR\nVAR_OUTPUT\nEND_VAR"
+}

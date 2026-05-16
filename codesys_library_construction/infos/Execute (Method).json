@@ -1,0 +1,35 @@
+{
+  "library": "AC_Alarming",
+  "title": "Execute (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_Alarming/Current/ExtenderFB/pou-ACAlarmExtender/Execute.html",
+  "page_title": "ACAlarmExtender.Execute (METH)",
+  "text": "\nMETHOD Execute\nExecutes the action. This function is part of the AlarmManager.IAlarmNotifiable interface.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "eCurrTransition",
+          "Type": "AlarmStateTransition",
+          "Comment": "The currently processed alarm state transition. This will be\nevaluated in order to determine, whether the action has to be\nexecuted or not."
+        },
+        [
+          "itfAlarm",
+          "IAlarm",
+          "The alarm, for which the action has to be performed"
+        ],
+        [
+          "pbyAdditionalData",
+          "POINTER TO BYTE",
+          "An optional pointer to a structure variable containing\nadditional parameter"
+        ]
+      ]
+    }
+  ]
+}

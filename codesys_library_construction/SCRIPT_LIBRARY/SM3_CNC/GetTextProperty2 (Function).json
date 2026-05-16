@@ -1,0 +1,28 @@
+{
+  "library": "SM3_CNC",
+  "title": "GetTextProperty2 (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/Projektinformationen/GetTextProperty2.html",
+  "page_title": "GetTextProperty2 (FUN)",
+  "text": "\nFUNCTION GetTextProperty2 : POINTER TO WSTRING\nThis function has been automatically generated from the project information.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetTextProperty2",
+          "Type": "POINTER TO WSTRING"
+        },
+        {
+          "Scope": "Input",
+          "Name": "stKey",
+          "Type": "WSTRING"
+        }
+      ]
+    }
+  ]
+}

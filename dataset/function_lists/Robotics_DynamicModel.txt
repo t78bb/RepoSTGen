@@ -1,0 +1,2 @@
+Help_functions/Test_DynModel_Scara2_Z_CheckScrewAxis.st
+Help_functions/Test_DynModel_Scara2_Z_CheckStandstillTorque.st

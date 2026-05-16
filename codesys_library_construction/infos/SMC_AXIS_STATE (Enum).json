@@ -1,0 +1,58 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_AXIS_STATE (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/DataTypes/DriveInterface/SMC_AXIS_STATE.html",
+  "page_title": "SMC_AXIS_STATE (ENUM)",
+  "text": "\nTYPE SMC_AXIS_STATE :\nPossible axis states according to PLCopen\nNote 1\n:\nFrom any state. An error in the axis has occured.\nNote 2\n:\nFrom any state.\nMC_Power\n.bRegulatorOn =\nFALSE\n. There is no error in the axis.\nNote 3\n:\nMC_Reset\nand\nMC_Power\n.Status =\nFALSE\nNote 4\n:\nMC_Reset\nand\nMC_Power\n.Status =\nTRUE\nand\nMC_Power\n.bRegulatorON =\nTRUE\nNote 5\n:\nMC_Power\n.bRegulatorOn =\nTRUE\nand\nMC_Power\n.Status =\nTRUE\nNote 6\n:\nMC_Stop\n.Done =\nTRUE\nand\nMC_Stop\n.Execute =\nFALSE\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "power_off",
+          "Initial": "0",
+          "Comment": "PLCopen calls this state: âDisabledâ"
+        },
+        {
+          "Name": "errorstop",
+          "Initial": "1",
+          "Comment": ""
+        },
+        {
+          "Name": "stopping",
+          "Initial": "2",
+          "Comment": ""
+        },
+        {
+          "Name": "standstill",
+          "Initial": "3",
+          "Comment": ""
+        },
+        {
+          "Name": "discrete_motion",
+          "Initial": "4",
+          "Comment": ""
+        },
+        {
+          "Name": "continuous_motion",
+          "Initial": "5",
+          "Comment": ""
+        },
+        {
+          "Name": "synchronized_motion",
+          "Initial": "6",
+          "Comment": ""
+        },
+        {
+          "Name": "homing",
+          "Initial": "7",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

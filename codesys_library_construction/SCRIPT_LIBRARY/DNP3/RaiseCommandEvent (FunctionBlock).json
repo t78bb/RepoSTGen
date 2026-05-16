@@ -1,0 +1,58 @@
+{
+  "library": "DNP3",
+  "title": "RaiseCommandEvent (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Outstation/Events/RaiseCommandEvent.html",
+  "page_title": "RaiseCommandEvent (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL RaiseCommandEvent\nRaise an event related to a command of the given datapoint.\nAn instance of RaiseEvent allows to represent an instance of a datapoint of DNP3 object of groups\n13 âbinary output command eventâ\n42 âanalog output command eventâ\nThe DNP3 object group of the event to raise results from the DNP3 object group of the given point.\nFor example: an instance of BinaryOutput does relate to DNP3 object group 10 âbinary outputsâ,\nand so using RaiseCommandEvent for such an instance of BinaryInput does raise an DNP3 object group 13 âbinary output command eventâ.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "xExecute",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Raise event at rising edge (xExecute FALSE â> TRUE)."
+        },
+        [
+          "point",
+          "ICommandablePoint",
+          "",
+          "The commandable point for which to raise the command event."
+        ],
+        [
+          "stat",
+          "USINT",
+          "0",
+          "The status from processing the command.\nFor an instance of BinaryOutput use DNPDEFS_CROB_ST_*.\nFor an instance of AnalogOutput use DNPDEFS_CTLSTAT_*.\nDefault is 0 which means either DNPDEFS_CROB_ST_SUCCESS or DNPDEFS_CTLSTAT_SUCCESS."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "xDone",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Event raised successfully."
+        },
+        [
+          "xError",
+          "BOOL",
+          "",
+          "Error during raise event."
+        ],
+        [
+          "eError",
+          "Error",
+          "",
+          "Specific error during raise event."
+        ]
+      ]
+    }
+  ]
+}

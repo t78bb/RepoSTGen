@@ -1,0 +1,40 @@
+{
+  "library": "String Builder Base",
+  "title": "_RangePool (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Builder Base/Current/BuilderBase/Internals/_RangePool.html",
+  "page_title": "_RangePool (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL _RangePool EXTENDS STR._AbstractRangePool IMPLEMENTS STR.IRangePool\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Inherited from"
+      ],
+      "rows": [
+        {
+          "Scope": "Input Const",
+          "Name": "udiInitialCapacity",
+          "Type": "UDINT",
+          "Inherited from": "_AbstractRangePool"
+        },
+        [
+          "pbyPool",
+          "POINTER TO BYTE",
+          "_AbstractRangePool"
+        ],
+        [
+          "udiPoolSize",
+          "UDINT",
+          "_AbstractRangePool"
+        ],
+        [
+          "usiExtensionFactor",
+          "USINT",
+          "_AbstractRangePool"
+        ]
+      ]
+    }
+  ]
+}

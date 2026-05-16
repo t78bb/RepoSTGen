@@ -1,0 +1,36 @@
+{
+  "library": "SysFile",
+  "title": "SysFileGetPos (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SysFile/Current/SysFileGetPos.html",
+  "page_title": "SysFileGetPos (FUN)",
+  "text": "\nFUNCTION SysFileGetPos : RTS_IEC_RESULT\nGet actual file pointer position\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SysFileGetPos",
+          "Type": "RTS_IEC_RESULT",
+          "Comment": "The runtime system error code (see CmpErrors.library)"
+        },
+        {
+          "Scope": "Input",
+          "Name": "hFile",
+          "Type": "RTS_IEC_HANDLE",
+          "Comment": "Handle of the file"
+        },
+        [
+          "pulPos",
+          "POINTER TO __XWORD",
+          "Pointer to get actual position of the file pointer from the\nbeginning of the file"
+        ]
+      ]
+    }
+  ]
+}

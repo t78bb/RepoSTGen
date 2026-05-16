@@ -1,0 +1,8 @@
+{
+  "library": "AlarmManager",
+  "title": "UserIdCommentWaitingConf (Property)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/pou-IAlarm7/UserIdCommentWaitingConf.html",
+  "page_title": "IAlarm7.UserIdCommentWaitingConf (PROP)",
+  "text": "\nPROPERTY UserIdCommentWaitingConf : POINTER TO WSTRING\nOptional user id that can be provided with the comment for the state âWaiting for confirmationâ\nor âInactive, Unacknowledgedâ if the option âAcknowledge instead of confirmâ is active.",
+  "tables": []
+}

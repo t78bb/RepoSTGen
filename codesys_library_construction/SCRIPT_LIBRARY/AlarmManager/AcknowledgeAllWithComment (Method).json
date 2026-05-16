@@ -1,0 +1,30 @@
+{
+  "library": "AlarmManager",
+  "title": "AcknowledgeAllWithComment (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/pou-IAlarmHandler6/AcknowledgeAllWithComment.html",
+  "page_title": "IAlarmHandler6.AcknowledgeAllWithComment (METH)",
+  "text": "\nMETHOD AcknowledgeAllWithComment\nAcknowledges all active alarms, whose alarm class hasnât the flag âacknowledge separatelyâ set.\nOptionally a comment and the user id can be provided.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout Const",
+          "Name": "wsComment",
+          "Type": "WSTRING",
+          "Comment": "The comment for the state transition"
+        },
+        [
+          "wsUserId",
+          "WSTRING",
+          "The user who provides the comment"
+        ]
+      ]
+    }
+  ]
+}

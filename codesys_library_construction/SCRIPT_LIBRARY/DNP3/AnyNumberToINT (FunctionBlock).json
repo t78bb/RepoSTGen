@@ -1,0 +1,52 @@
+{
+  "library": "DNP3",
+  "title": "AnyNumberToINT (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/AnyNumberConverter/AnyNumberToINT.html",
+  "page_title": "AnyNumberToINT (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL AnyNumberToINT\nConvert an AnyNumber to USINT.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "in",
+          "Type": "AnyNumber",
+          "Initial": "",
+          "Comment": ""
+        },
+        [
+          "enableClip",
+          "BOOL",
+          "FALSE",
+          "Allow to clip the value to numerical range of output variable out.\nIf set to FALSE, AnyNumberError is returned, if in is out of range which can be represented by output variable out."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "out",
+          "Type": "USINT",
+          "Initial": "",
+          "Comment": ""
+        },
+        [
+          "xError",
+          "BOOL",
+          "",
+          ""
+        ],
+        [
+          "eErrorID",
+          "Error",
+          "",
+          ""
+        ]
+      ]
+    }
+  ]
+}

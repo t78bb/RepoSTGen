@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现一个光盘播放器的功能，包括播放状态、音量和曲目信息的管理。",
+  "provide_code": "FUNCTION_BLOCK PUBLIC FB_CDPlayer\nVAR_OUTPUT\n\tbPlayerActive\t\t: BOOL;\n\tbyVolume\t\t\t: BYTE;\n\tbyTrack\t\t\t\t: UINT;\nEND_VAR"
+}

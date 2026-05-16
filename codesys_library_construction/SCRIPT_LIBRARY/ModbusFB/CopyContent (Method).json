@@ -1,0 +1,28 @@
+{
+  "library": "ModbusFB",
+  "title": "CopyContent (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/ModbusFB/Current/ModbusFB/Function-Blocks/Util/pou-ByteBuffer/CopyContent.html",
+  "page_title": "ByteBuffer.CopyContent (METH)",
+  "text": "\nMETHOD CopyContent : BOOL\nCopy content from other ByteBuffer.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "CopyContent",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Inout",
+          "Name": "copyFrom",
+          "Type": "ByteBuffer"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "library": "DNP3",
+  "title": "ColdRestart (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/pou-Master/Commands/ColdRestart.html",
+  "page_title": "Master.ColdRestart (METH)",
+  "text": "\nMETHOD ColdRestart :\nError\nIssue a cold restart request\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "ColdRestart",
+          "Type": "Error"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "library": "AC_Alarming",
+  "title": "IACAlarmExtender2 (Interface)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_Alarming/Current/ExtenderFB/IACAlarmExtender2.html",
+  "page_title": "IACAlarmExtender2 (ITF)",
+  "text": "\nINTERFACE IACAlarmExtender2 EXTENDS\nIACAlarmExtender\nExtension of\nIACAlarmExtender\nfor the usage of Event-Alarms\nMethods:\nGetEventAlarmID\nInit2\nInit\n, inherited from\nIACAlarmExtender\nStructure:\nGetEventAlarmID (Method)\nInit2 (Method)",
+  "tables": []
+}

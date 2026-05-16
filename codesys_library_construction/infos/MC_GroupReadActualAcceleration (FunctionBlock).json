@@ -1,0 +1,67 @@
+{
+  "library": "SM3_Robotics",
+  "title": "MC_GroupReadActualAcceleration (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/Diagnostics/MC_GroupReadActualAcceleration.html",
+  "page_title": "MC_GroupReadActualAcceleration (FB)",
+  "text": "\nFUNCTION_BLOCK MC_GroupReadActualAcceleration\nThis function block returns the current acceleration of an axis group\nin the selected coordinate system.\nThis is an administrative FB, since no movement is generated.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "AxisGroup",
+          "Type": "AXIS_GROUP_REF_SM3",
+          "Comment": "Reference to a group of axes"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Enable",
+          "Type": "BOOL",
+          "Comment": "Get the acceleration of the axis group\nin the selected coordinate system while enabled"
+        },
+        [
+          "CoordSystem",
+          "SMC_COORD_SYSTEM",
+          "Applicable coordinate system"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Valid",
+          "Type": "BOOL",
+          "Comment": "TRUEif valid outputs are available"
+        },
+        [
+          "Busy",
+          "BOOL",
+          "The FB is not finished"
+        ],
+        [
+          "Error",
+          "BOOL",
+          "Signals that an error has occurred within the function block"
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ],
+        [
+          "Acceleration",
+          "SMC_POS_REF",
+          "Current acceleration of the group.  If a cartesian coordinate system is\nselected,Acceleration.ccontains the cartesian acceleration:\n(X,Y,Z) is the acceleration vector in u/sÂ², (A,B,C) is the angular acceleration\naround the x, y, z axis in Â°/sÂ²."
+        ],
+        [
+          "AdditionalAxesAccelerations",
+          "SMC_ADDITIONAL_AXES_VALUES_ARRAY",
+          "Current accelerations of the groupâs additional axes."
+        ]
+      ]
+    }
+  ]
+}

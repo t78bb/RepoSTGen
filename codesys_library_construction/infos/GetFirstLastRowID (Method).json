@@ -1,0 +1,36 @@
+{
+  "library": "AlarmManager",
+  "title": "GetFirstLastRowID (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Alarm-storage-API/pou-AlarmStorageReader/GetFirstLastRowID.html",
+  "page_title": "AlarmStorageReader.GetFirstLastRowID (METH)",
+  "text": "\nMETHOD GetFirstLastRowID :\nEAlarmStorageReaderErrors\nThis method determines first and last row IDs in the alarm storage.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetFirstLastRowID",
+          "Type": "EAlarmStorageReaderErrors",
+          "Comment": "An EAlarmStorageReaderErrors indicating, whether the\nprocessing was successful or not"
+        },
+        {
+          "Scope": "Output",
+          "Name": "diRowIDFirst",
+          "Type": "DINT",
+          "Comment": "First row ID"
+        },
+        [
+          "diRowIDLast",
+          "DINT",
+          "Last row ID"
+        ]
+      ]
+    }
+  ]
+}

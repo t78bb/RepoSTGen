@@ -1,0 +1,53 @@
+{
+  "library": "MQTT Client SL",
+  "title": "MQTTSubscribeProperties (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/MQTT Client SL/Current/MQTT-Client/Common/Structs/MQTTV5/Properties/MQTTSubscribeProperties.html",
+  "page_title": "MQTTSubscribeProperties (STRUCT)",
+  "text": "MQTT Client\nCommon\nEnums\nCOMMUNICATION_MODE (Enum)\nFILTER_MODE (Enum)\nMQTT_ERROR (Enum)\nMQTT_QOS (Enum)\nMQTT_VERSION (Enum)\nV5\nFunction Blocks\nMQTTClient (FunctionBlock)\nMQTTPublish (FunctionBlock)\nMQTTSubscribe (FunctionBlock)\nParams\nMQTTParam (ParamList)\nStructs\nMQTTV5\nUTF-8\nConvertUTF16toUTF8 (Function)\nConvertUTF8toUTF16 (Function)\nFile and Project Information\nLibrary Reference\n3SLicense\nLibrary Identification\nLibrary Properties\nCAA FB Factory\nLibrary Identification\nLibrary Properties\nCAA Types Extern\nLibrary Identification\nLibrary Properties\nCmpCrypto\nLibrary Identification\nLibrary Properties\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nCmpLog\nLibrary Identification\nLibrary Properties\nCmpSchedule\nLibrary Identification\nLibrary Properties\nCmpX509Cert\nLibrary Identification\nLibrary Properties\nCommon Behaviour Model\nLibrary Identification\nLibrary Properties\nComponent Manager\nLibrary Identification\nLibrary Properties\nElement Collections\nLibrary Identification\nLibrary Properties\nMemoryUtils\nLibrary Identification\nLibrary Properties\nNet Base Services\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nStringUtils\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysSocket2\nLibrary Identification\nLibrary Properties\nSysSocket2 Implementation\nLibrary Identification\nLibrary Properties\nSysTime\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nWeb Socket Client SL\nLibrary Identification\nLibrary Properties\nMQTT Client SL\nDocs\n»\nMQTT\nClient\n»\nCommon\n»\nStructs\n»\nMQTTV5\n»\nProperties\n»\nMQTTSubscribeProperties (STRUCT)\nMQTTSubscribeProperties (STRUCT)\nÂ¶\nTYPE MQTTSubscribeProperties : STRUCT\nSubscribe properties (MQTT V5)\nInOut:\nName\nType\nComment\nudiSubscriptionIdentifier\nUDINT\nThe subscription identifier will be returned on the message when it is delivered.\nThis allows the Client to determine which subscription or subscriptions caused the message to be delivered.\nSetting the identifier accelerates the filtering of the telegrams in the subscriber function block.\nudiCorrelationDataSize\nUDINT\nSize of the correlation data receive buffer\n|paCorrelationData|\npaCorrelationData\nPOINTER TO BYTE\nPointer to correlation data reveive buffer. The Correlation\nData is used by the sender of the Request Message to\nidentify which request the Response Message is for when it\nis received.\nuserProperties\nARRAY\n[0..(MQTTParam.g_udiMaxUserProperties\n- 1)] OF\nMQTTStringPair\nUser defined properties\nxNoLocalOption\nBOOL\nNo Local option\nIf the value is TRUE, Application Messages MUST NOT be forwarded to a connection with a\nClientID equal to the ClientID of the publishing connection\nxRetainAsPublished\nBOOL\nRetain As Published option\nIf TRUE, Application Messages forwarded using this subscription keep the RETAIN flag\nthey were published with.\neRetainHandling\nMQTT_RETAIN_HANDLING\nThis option specifies whether retained messages are sent\nwhen the subscription is established.",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "udiSubscriptionIdentifier",
+          "Type": "UDINT",
+          "Comment": "The subscription identifier will be returned on the message when it is delivered.\nThis allows the Client to determine which subscription or subscriptions caused the message to be delivered.\nSetting the identifier accelerates the filtering of the telegrams in the subscriber function block."
+        },
+        {
+          "Name": "udiCorrelationDataSize",
+          "Type": "UDINT",
+          "Comment": "Size of the correlation data receive buffer|paCorrelationData|"
+        },
+        {
+          "Name": "paCorrelationData",
+          "Type": "POINTER TO BYTE",
+          "Comment": "Pointer to correlation data reveive buffer. The Correlation\nData is used by the sender of the Request Message to\nidentify which request the Response Message is for when it\nis received."
+        },
+        {
+          "Name": "userProperties",
+          "Type": "ARRAY\n[0..(MQTTParam.g_udiMaxUserProperties\n- 1)] OFMQTTStringPair",
+          "Comment": "User defined properties"
+        },
+        {
+          "Name": "xNoLocalOption",
+          "Type": "BOOL",
+          "Comment": "No Local option\nIf the value is TRUE, Application Messages MUST NOT be forwarded to a connection with a\nClientID equal to the ClientID of the publishing connection"
+        },
+        {
+          "Name": "xRetainAsPublished",
+          "Type": "BOOL",
+          "Comment": "Retain As Published option\nIf TRUE, Application Messages forwarded using this subscription keep the RETAIN flag\nthey were published with."
+        },
+        {
+          "Name": "eRetainHandling",
+          "Type": "MQTT_RETAIN_HANDLING",
+          "Comment": "This option specifies whether retained messages are sent\nwhen the subscription is established."
+        }
+      ]
+    }
+  ]
+}

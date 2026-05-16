@@ -1,0 +1,96 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "RMPSendMessage (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_RMP_ReliableMessageProtocol/RMPSendMessage.html",
+  "page_title": "RMPSendMessage (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL RMPSendMessage EXTENDS CBML.ETrig\nFunction block that can be used to send a message from\na module to another module. Use this function block for\nsending messages. If sending succeded xDone gets TRUE. If\nan error occurs during sending (i.e. receiving could not be\nassured) xError gets TRUE. Reset xExecute to FALSE before\nreusage of the function block by setting xExecute to TRUE.\nA possible call semantic could be:\nRMPSendMessage(xExecute := TRUE, itfRmp := pEnv^.rmps,\nudiReceiverID := udiProxyCom, uiSenderModuleID:= UDINT_TO_UINT(ComAddress AND 16#FFFF),\ntValidity:=T#1S, mdData := mdData );\nThis function block needs to be called until xDone is TRUE. If so, sending was successfull.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment",
+        "Inherited from"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "xExecute",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Rising edge: Starts defined operationFALSE: Resets the defined operation after ready condition was reached",
+          "Inherited from": "ETrig"
+        },
+        {
+          "Scope": "Output",
+          "Name": "xDone",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUE: Ready condition reached",
+          "Inherited from": "ETrig"
+        },
+        [
+          "xBusy",
+          "BOOL",
+          "",
+          "TRUE: Operation is running",
+          "ETrig"
+        ],
+        [
+          "xError",
+          "BOOL",
+          "",
+          "TRUE: Error condition reached",
+          "ETrig"
+        ],
+        {
+          "Scope": "Inout",
+          "Name": "mdData",
+          "Type": "ARRAY [0..63] OF BYTE",
+          "Initial": "",
+          "Comment": "The data to send",
+          "Inherited from": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfRmp",
+          "Type": "IRmpService",
+          "Initial": "",
+          "Comment": "The RMP (Reliable Message Protocoll) sevrice to use for sending.\nThis service can be aquired via the environment available in any module\nviaIModule(see example of the function block description).",
+          "Inherited from": ""
+        },
+        [
+          "udiReceiverID",
+          "UDINT",
+          "",
+          "32-Bit-ID of receiver. This ID normaly is received, when receiving\na message from a proxy (via Receive ofIRMPServicein an RMP (Reliable Message Protocoll) service",
+          ""
+        ],
+        [
+          "uiSenderModuleID",
+          "UINT",
+          "",
+          "The (local) 16 bit address of the receiver, which equals the\nfirst 16bit of the ComAddress (see AND 16#FFFF)",
+          ""
+        ],
+        [
+          "tValidity",
+          "TIME",
+          "TIME#1s0ms",
+          "The time this message is valid when sending it",
+          ""
+        ],
+        {
+          "Scope": "Output",
+          "Name": "uiError",
+          "Type": "UINT",
+          "Initial": "",
+          "Comment": "If an error occured, the number accounts for one of the following errors:\n1: send buffer full;\n2: message cannot be transmitted before tValidity (connection broken or remote receive buffer full)\n3: receiver application not connected to this app",
+          "Inherited from": ""
+        }
+      ]
+    }
+  ]
+}

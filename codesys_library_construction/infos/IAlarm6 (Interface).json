@@ -1,0 +1,8 @@
+{
+  "library": "AlarmManager",
+  "title": "IAlarm6 (Interface)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/IAlarm6.html",
+  "page_title": "IAlarm6 (ITF)",
+  "text": "\nINTERFACE IAlarm6 EXTENDS\nIAlarm5\nThis is an extension of the IAlarm5 interface that adds a getter and setter for an AlarmGroup-Template\nProperties:\nAlarmGroupTemplate\nKindOf\n, inherited from\nIAlarm4\nOffsetAcknowledge\n, inherited from\nIAlarm5\nOffsetActive\n, inherited from\nIAlarm5\nOffsetInactive\n, inherited from\nIAlarm5\nOffsetLast\n, inherited from\nIAlarm5\nMethods:\nGetAlarmClass\n, inherited from\nIAlarm\nGetAlarmGroup\n, inherited from\nIAlarm\nGetCountLatchVariables\n, inherited from\nIAlarm3\nGetCountMessages\n, inherited from\nIAlarm3\nGetCurrentValue\n, inherited from\nIAlarm\nGetID\n, inherited from\nIAlarm\nGetInternalID\n, inherited from\nIAlarm\nGetLatchVar1Value\n, inherited from\nIAlarm\nGetLatchVar2Value\n, inherited from\nIAlarm\nGetLatchVarValue\n, inherited from\nIAlarm3\nGetMessage\n, inherited from\nIAlarm\nGetMessage2\n, inherited from\nIAlarm3\nGetState\n, inherited from\nIAlarm\nGetTimestampAcknowledge\n, inherited from\nIAlarm\nGetTimestampActive\n, inherited from\nIAlarm\nGetTimestampInactive\n, inherited from\nIAlarm\nGetTimestampLast\n, inherited from\nIAlarm\nGetTriggerValue\n, inherited from\nIAlarm\nIsDeactivated\n, inherited from\nIAlarm\nSetLatchVarValue\n, inherited from\nIAlarm3\nStructure:\nAlarmGroupTemplate (Property)",
+  "tables": []
+}

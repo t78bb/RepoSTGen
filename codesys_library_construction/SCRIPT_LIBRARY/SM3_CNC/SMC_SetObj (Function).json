@@ -1,0 +1,36 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_SetObj (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/OutQueue-Functions/SMC_SetObj.html",
+  "page_title": "SMC_SetObj (FUN)",
+  "text": "\nFUNCTION SMC_SetObj : BOOL\nOverwrites the N-th object in\nSMC_OUTQUEUE\n.\ntask-safety: call from consumer task only\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SMC_SetObj",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Input",
+          "Name": "poq",
+          "Type": "POINTER TOSMC_OUTQUEUE"
+        },
+        [
+          "N",
+          "UINT"
+        ],
+        [
+          "pgi",
+          "POINTER TOSMC_GEOINFO"
+        ]
+      ]
+    }
+  ]
+}

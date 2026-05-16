@@ -1,0 +1,48 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "RMPExchangeData (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_RMP_ReliableMessageProtocol/RMPExchangeData.html",
+  "page_title": "RMPExchangeData (STRUCT)",
+  "text": "\nTYPE RMPExchangeData : STRUCT\nData structure used to transfer the data in the RMP (Reliable Message Protocoll)\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "usiLastReceivedCounter",
+          "Type": "USINT",
+          "Comment": "Bit0-6: acknowledgement mechanism: tells remote MH, which message (usiMessageSendCounter) was received as last\nBit7: toggle bit (mirror of usiMessageSendCounter.7)"
+        },
+        {
+          "Name": "mdData",
+          "Type": "ARRAY [0..63] OF BYTE",
+          "Comment": "Data"
+        },
+        {
+          "Name": "uiReceiverModuleID",
+          "Type": "UINT",
+          "Comment": "ModuleID on receiver application"
+        },
+        {
+          "Name": "uiSenderModuleID",
+          "Type": "UINT",
+          "Comment": "ModuleID on sender application"
+        },
+        {
+          "Name": "tValidity",
+          "Type": "TIME",
+          "Comment": "Validity of this message in ms"
+        },
+        {
+          "Name": "usiMessageSendCounter",
+          "Type": "USINT",
+          "Comment": "Bit0-6: counter that is increased with each sent message (Bit0-6)\nBit7: toggle-bit to check connection"
+        }
+      ]
+    }
+  ]
+}

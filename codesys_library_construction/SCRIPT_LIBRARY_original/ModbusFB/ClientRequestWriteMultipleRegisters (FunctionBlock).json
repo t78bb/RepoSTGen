@@ -1,0 +1,132 @@
+{
+  "library": "ModbusFB",
+  "title": "ClientRequestWriteMultipleRegisters (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/ModbusFB/Current/ModbusFB/Function-Blocks/Client/ClientRequestWriteMultipleRegisters.html",
+  "page_title": "ClientRequestWriteMultipleRegisters (FB)",
+  "text": "Library Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nModbusFB\nEnums\nError (Enum)\nExceptionCodes (Enum)\nFunctionCodes (Enum)\nLoggingOptions (Enum)\nPrimaryTables (Enum)\nRtuAscii (Enum)\nSerialSubFunctionCodes (Enum)\nFunction Blocks\nClient\nClient (FunctionBlock)\nClientRequest (FunctionBlock)\nClientRequestMaskWriteRegister (FunctionBlock)\nClientRequestRead (FunctionBlock)\nClientRequestReadBits (FunctionBlock)\nClientRequestReadCoils (FunctionBlock)\nClientRequestReadDiscreteInputs (FunctionBlock)\nClientRequestReadHoldingRegisters (FunctionBlock)\nClientRequestReadInputRegisters (FunctionBlock)\nClientRequestReadRegisters (FunctionBlock)\nClientRequestReadWriteMultipleRegisters (FunctionBlock)\nClientRequestWriteMultiple (FunctionBlock)\nClientRequestWriteMultipleCoils (FunctionBlock)\nClientRequestWriteMultipleRegisters (FunctionBlock)\nClientRequestWriteSingle (FunctionBlock)\nClientRequestWriteSingleCoil (FunctionBlock)\nClientRequestWriteSingleRegister (FunctionBlock)\nClientSerial (FunctionBlock)\nClientTCP (FunctionBlock)\nServer\nExampleDataModel (FunctionBlock)\nServer (FunctionBlock)\nServerSerial (FunctionBlock)\nServerTCP (FunctionBlock)\nUtil\nByteBuffer (FunctionBlock)\nGlobalConstants\nConstants (GVL)\nParameter (ParamList)\nStructs\nRequestData (Struct)\nRequestDataDiagnostics (Struct)\nRequestDataMaskWriteRegister (Struct)\nRequestDataRead (Struct)\nRequestDataReadWriteMultipleRegisters (Struct)\nRequestDataWriteMultiple (Struct)\nRequestDataWriteSingle (Struct)\nRequestUnion (Union)\nSupportedFcs (Struct)\nTableDefinition (Struct)\nTableDefinitions (Struct)\nTableSection (Struct)\nFile and Project Information\nLibrary Reference\n3SLicense\nLibrary Identification\nLibrary Properties\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nCmpLog\nLibrary Identification\nLibrary Properties\nCommon Behaviour Model\nLibrary Identification\nLibrary Properties\nComponent Manager\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nStringUtils\nLibrary Identification\nLibrary Properties\nSysCom\nLibrary Identification\nLibrary Properties\nSysCpuHandling\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysSocket\nLibrary Identification\nLibrary Properties\nSysTarget\nLibrary Identification\nLibrary Properties\nSysTimeCore\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nModbusFB\nDocs\n»\nModbusFB\n»\nFunction\nBlocks\n»\nClient\n»\nClientRequestWriteMultipleRegisters (FB)\nClientRequestWriteMultipleRegisters (FB)\nÂ¶\nFUNCTION_BLOCK ClientRequestWriteMultipleRegisters EXTENDS\nClientRequestWriteMultiple\nWriteMultipleRegisters client request (FC16).\nFor details about client request see\nClientRequest\n.\nInOut:\nScope\nName\nType\nInitial\nComment\nInherited from\nInput\nxExecute\nBOOL\nRising edge: Starts defined operation\nFALSE\n: Resets the defined operation after ready condition was reached\nETrigTo\nudiTimeOut\nUDINT\nMax. operating time for executing\n[Âµs], 0: No operating time limit\nETrigTo\nOutput\nxDone\nBOOL\nReady condition reached\nETrigTo\nxBusy\nBOOL\nOperation is running\nETrigTo\nxError\nBOOL\nError condition reached\nETrigTo\nInout\nrClient\nClient\nReference to\nClient\n.\nClientRequest\nInput\nuiUnitId\nUINT\n0\nUnit-Id to send the request to.\nClientRequest\nudiReplyTimeout\nUDINT\n(50 * 1000)\nReply timeout in Âµs - accepted maxmimum time between request\nmessage send and reply message receveived - default 50ms.\nClientRequest\nuiMaxRetries\nUINT\n0\nMaximum number of request retries in case of âreply\ntimeoutâ.\nClientRequest\nOutput\neErrorID\nError\nError status\nClientRequest\neException\nExceptionCodes\nRequest exception code.\nClientRequest\nuiRetryCnt\nUINT\n0\nNumber of request retries in case of âreply timeoutâ.\nClientRequest\nInput\nuiStartItem\nUINT\n0\nFirst âdata itemâ to write.\nClientRequestWriteMultiple\nuiQuantity\nUINT\n1\nNumber of âdata itemsâ to write.\nClientRequestWriteMultiple\npData\nPOINTER TO ARRAY [0..0]\nOF UINT\n0\nPointer to write data array.",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment",
+        "Inherited from"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "xExecute",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Rising edge: Starts defined operationFALSE: Resets the defined operation after ready condition was reached",
+          "Inherited from": "ETrigTo"
+        },
+        [
+          "udiTimeOut",
+          "UDINT",
+          "",
+          "Max. operating time for executing\n[Âµs], 0: No operating time limit",
+          "ETrigTo"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "xDone",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Ready condition reached",
+          "Inherited from": "ETrigTo"
+        },
+        [
+          "xBusy",
+          "BOOL",
+          "",
+          "Operation is running",
+          "ETrigTo"
+        ],
+        [
+          "xError",
+          "BOOL",
+          "",
+          "Error condition reached",
+          "ETrigTo"
+        ],
+        {
+          "Scope": "Inout",
+          "Name": "rClient",
+          "Type": "Client",
+          "Initial": "",
+          "Comment": "Reference toClient.",
+          "Inherited from": "ClientRequest"
+        },
+        {
+          "Scope": "Input",
+          "Name": "uiUnitId",
+          "Type": "UINT",
+          "Initial": "0",
+          "Comment": "Unit-Id to send the request to.",
+          "Inherited from": "ClientRequest"
+        },
+        [
+          "udiReplyTimeout",
+          "UDINT",
+          "(50 * 1000)",
+          "Reply timeout in Âµs - accepted maxmimum time between request\nmessage send and reply message receveived - default 50ms.",
+          "ClientRequest"
+        ],
+        [
+          "uiMaxRetries",
+          "UINT",
+          "0",
+          "Maximum number of request retries in case of âreply\ntimeoutâ.",
+          "ClientRequest"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "eErrorID",
+          "Type": "Error",
+          "Initial": "",
+          "Comment": "Error status",
+          "Inherited from": "ClientRequest"
+        },
+        [
+          "eException",
+          "ExceptionCodes",
+          "",
+          "Request exception code.",
+          "ClientRequest"
+        ],
+        [
+          "uiRetryCnt",
+          "UINT",
+          "0",
+          "Number of request retries in case of âreply timeoutâ.",
+          "ClientRequest"
+        ],
+        {
+          "Scope": "Input",
+          "Name": "uiStartItem",
+          "Type": "UINT",
+          "Initial": "0",
+          "Comment": "First âdata itemâ to write.",
+          "Inherited from": "ClientRequestWriteMultiple"
+        },
+        [
+          "uiQuantity",
+          "UINT",
+          "1",
+          "Number of âdata itemsâ to write.",
+          "ClientRequestWriteMultiple"
+        ],
+        [
+          "pData",
+          "POINTER TO ARRAY [0..0]\nOF UINT",
+          "0",
+          "Pointer to write data array.",
+          ""
+        ]
+      ]
+    }
+  ]
+}

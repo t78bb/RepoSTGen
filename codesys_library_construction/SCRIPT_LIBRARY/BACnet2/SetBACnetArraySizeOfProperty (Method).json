@@ -1,0 +1,36 @@
+{
+  "library": "BACnet2",
+  "title": "SetBACnetArraySizeOfProperty (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/BACnetObjects/base/pou-BACnetObjectBase/Utilities/typed-property-access/SetBACnetArraySizeOfProperty.html",
+  "page_title": "BACnetObjectBase.SetBACnetArraySizeOfProperty (METH)",
+  "text": "\nMETHOD SetBACnetArraySizeOfProperty : CmpBACnet.IEC_BACNET_STATUS\nSet the size of a BACnetARRAY property by writing arraySize to element[0].\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetBACnetArraySizeOfProperty",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "ePropertyID",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_ID",
+          "Comment": "The ID of the property to get the array size from."
+        },
+        [
+          "arraySize",
+          "CmpBACnet.IEC_BACNET_ELEMENT_COUNT",
+          "New size of the array"
+        ]
+      ]
+    }
+  ]
+}

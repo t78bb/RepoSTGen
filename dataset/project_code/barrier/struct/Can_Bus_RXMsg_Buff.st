@@ -1,0 +1,6 @@
+TYPE Can_Bus_RXMsg_Buff:
+STRUCT
+	RxMsg_CobId		: UINT;
+	RxMsg_Byte  	: ARRAY[1..8] OF BYTE;
+END_STRUCT
+END_TYPE

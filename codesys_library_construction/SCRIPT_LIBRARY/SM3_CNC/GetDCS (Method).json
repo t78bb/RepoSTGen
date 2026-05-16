@@ -1,0 +1,23 @@
+{
+  "library": "SM3_CNC",
+  "title": "GetDCS (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/SoftMotion-Function-Blocks/pou-SMC_NCDecoder/GetDCS.html",
+  "page_title": "SMC_NCDecoder.GetDCS (METH)",
+  "text": "\nMETHOD GetDCS :\nSMC_PosInfo\nDescribes the transformation from DCS to MCS. Since the transformation\ncan change with every call of the decoder,  this method returns the\ntransformation which is valid at the current leading pointer (iLineNumberDecoded).\ndX, dY, dZ describe the offset of the DCS relative to the MCS.\n(The vector from the origin of the MCS to the origin of the DCS,\nexpressed in MCS coordinates)\ndA1, â¦, dA5 describe the offset of the additional axes P, Q, U, V, W.\nIf eOriConv = SMC_ORI_CONVENTION.ADDAXES, dA, dB, and dC describe\nan offset for each coordinate.\nIf eOriConv <> SMC_ORI_CONVENTION.ADDAXES, then the members dA, dB, dC\ndescribe the rotation from DCS to MCS.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetDCS",
+          "Type": "SMC_PosInfo"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_ReadSetValues (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/Diagnostics/SMC_ReadSetValues.html",
+  "page_title": "SMC_ReadSetValues (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL SMC_ReadSetValues\nReads the set position, velocity, acceleration, and jerk of an axis.\nAllows setting a positive\nTimeOffset\nto read future set values.\nWith\nTimeOffset\n= 0 the set values from the beginning of the\ncurrent cycle are read.\nNote\nReading future set values requires setting a ForecastDuration\nusing\nSMC_SetForecast\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3",
+          "Comment": "Reference to the axis"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Enable",
+          "Type": "BOOL",
+          "Comment": "Read the set values continuously while enabled."
+        },
+        [
+          "TimeOffset",
+          "LREAL",
+          "Time offset relative to the current cycle for which\nthe set values should be read.\nTheTimeOffsetmust be between 0 and the ForecastDuration\nset usingSMC_SetForecast.  If theTimeOffsetis outside\nthis range the error SMC_INVALID_PARAMETER is reported."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Valid",
+          "Type": "BOOL",
+          "Comment": "TRUE: Valid outputs are available."
+        },
+        [
+          "Busy",
+          "BOOL",
+          "TRUE: Execution of the function block has not been\nfinished yet."
+        ],
+        [
+          "Error",
+          "BOOL",
+          "TRUE: Error has occurred within the function block."
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ],
+        [
+          "Position",
+          "LREAL",
+          "The set position"
+        ],
+        [
+          "Velocity",
+          "LREAL",
+          "The set velocity"
+        ],
+        [
+          "Acceleration",
+          "LREAL",
+          "The set acceleration"
+        ],
+        [
+          "Jerk",
+          "LREAL",
+          "The set jerk"
+        ]
+      ]
+    }
+  ]
+}

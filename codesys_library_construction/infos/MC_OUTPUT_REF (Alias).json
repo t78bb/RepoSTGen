@@ -1,0 +1,8 @@
+{
+  "library": "SM3_Basic",
+  "title": "MC_OUTPUT_REF (Alias)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/DataTypes/Additional/MC_OUTPUT_REF.html",
+  "page_title": "MC_OUTPUT_REF (ALIAS)",
+  "text": "\nTYPE MC_OUTPUT_REF : ARRAY [1..32] OF BOOL\nThis data type defines 32 tappet outputs in form of a Boolean array.",
+  "tables": []
+}

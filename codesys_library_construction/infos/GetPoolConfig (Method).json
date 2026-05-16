@@ -1,0 +1,28 @@
+{
+  "library": "String Segments",
+  "title": "GetPoolConfig (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Segments/Current/Strings/Functionblocks/pou-_StringPool/IStringPool/GetPoolConfig.html",
+  "page_title": "_StringPool.GetPoolConfig (METH)",
+  "text": "\nMETHOD FINAL GetPoolConfig :\nCONFIG\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetPoolConfig",
+          "Type": "CONFIG"
+        },
+        {
+          "Scope": "Output",
+          "Name": "eErrorID",
+          "Type": "ERROR"
+        }
+      ]
+    }
+  ]
+}

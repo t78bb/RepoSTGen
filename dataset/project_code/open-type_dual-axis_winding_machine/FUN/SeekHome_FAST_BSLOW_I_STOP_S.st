@@ -1,0 +1,81 @@
+METHOD FAST_BSLOW_I_STOP_S
+VAR_IN_OUT 
+	_Axis	:	AXIS_REF_SM3;
+END_VAR
+VAR_INPUT
+	_xHome	:	BOOL;
+	_xAbort	:	BOOL;
+	_nHomeMode	:	HomeMode;
+	_fFastHomeVel	:	LREAL;
+	_fSlowHomeVel	:	LREAL;
+	_fHomeAcc		:	LREAL;
+	_fHomeDec		:	LREAL;
+	_fHomePos		:	LREAL;
+	_xReferenceSwitch	:	BOOL;//typically is true
+	_nDirection	:	MC_DIRECTION;
+	_xIndexPulse	:	BOOL;
+END_VAR
+VAR_OUTPUT
+	_xBusy	:	BOOL;
+	_xDone	:	BOOL;
+	_xErr	:	BOOL;
+	_iErrId	:	DINT;
+END_VAR
+VAR
+	_fbMoveVel	:	MC_MoveVelocity;
+	_fbMoveAbs	:	MC_MoveAbsolute;
+	_fbHalt		:	MC_Halt;
+	_fbSetPos	:	MC_SetPosition;
+	_fbRtrig		:	R_TRIG;
+	_fbFtrig		:	F_TRIG;
+	_nBDirection	:	MC_DIRECTION;
+	_fTempPos		:	LREAL;
+	_nState		:	USINT;
+	fbRtrig	:	R_TRIG;
+END_VAR
+
+CASE _nState OF
+	31:
+		IF _xReferenceSwitch THEN
+			_nState := 33;//out of ReferenceSwitch
+		ELSE
+			_nState :=32;//in the ReferenceSwitch
+		END_IF
+		
+		_fbMoveAbs(Execute := FALSE,Axis := _Axis);
+		_fbSetPos(Execute := FALSE,Axis := _Axis);
+		_fbMoveVel(Execute := FALSE,Axis := _Axis);
+	32://move out of the ReferenceSwitch
+		_fbMoveVel(Execute := TRUE,Axis := _Axis,Velocity := _fSlowHomeVel,Acceleration := _fHomeAcc,Deceleration := _fHomeDec,Direction := _nBDirection);
+		IF _fbRtrig.Q THEN//left the ReferenceSwitch
+			_nState := 34;
+		END_IF
+		IF _fbMoveVel.Error THEN//meet error
+			_iErrId := _fbMoveVel.ErrorID;
+			_fbMoveVel(Execute := FALSE,Axis := _Axis);
+			_nState := 200;
+		END_IF
+	33://move to ReferenceSwitch
+		_fbMoveVel(Execute := TRUE,Axis := _Axis,Velocity := _fFastHomeVel,Acceleration := _fHomeAcc,Deceleration := _fHomeDec,Direction := _nDirection);
+		IF _fbFtrig.Q THEN//arrive the ReferenceSwitch
+			_fbMoveVel(Execute := FALSE,Axis := _Axis);
+			_nState := 32;
+		END_IF
+		IF _fbMoveVel.Error THEN//meet error
+			_iErrId := _fbMoveVel.ErrorID;
+			_fbMoveVel(Execute := FALSE,Axis := _Axis);
+			_nState := 200;
+		END_IF
+	34:
+		_fbMoveVel(Execute := TRUE,Axis := _Axis,Velocity := _fSlowHomeVel,Acceleration := _fHomeAcc,Deceleration := _fHomeDec,Direction := _nBDirection);
+		IF _xIndexPulse THEN//left the ReferenceSwitch
+			_fTempPos := _Axis.fActPosition;//save the position
+			_fbMoveVel(Execute := FALSE,Axis := _Axis);
+			_nState := 50;
+		END_IF
+		IF _fbMoveVel.Error THEN//meet error
+			_iErrId := _fbMoveVel.ErrorID;
+			_fbMoveVel(Execute := FALSE,Axis := _Axis);
+			_nState := 200;
+		END_IF
+END_CASE

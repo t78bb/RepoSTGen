@@ -1,0 +1,31 @@
+{
+  "library": "BACnet2",
+  "title": "GetDateFromContents (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/Utilities/BACnetUtilities/FromBACnetContents/GetDateFromContents.html",
+  "page_title": "GetDateFromContents (FUN)",
+  "text": "\nFUNCTION GetDateFromContents : DATE\nTries to evaluate property contents as DATE data type. If the contents are not of type DATE\n1970-1-1 is returned.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetDateFromContents",
+          "Type": "DATE",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "conts",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_CONTENTS",
+          "Comment": "The contents to be evaluated as DATE."
+        }
+      ]
+    }
+  ]
+}

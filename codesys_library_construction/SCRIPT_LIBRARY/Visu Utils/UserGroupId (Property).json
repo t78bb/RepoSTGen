@@ -1,0 +1,8 @@
+{
+  "library": "Visu Utils",
+  "title": "UserGroupId (Property)",
+  "url": "https://content.helpme-codesys.com/en/libs/Visu Utils/Current/VisuUtils/VisuActionUtilities/Interfaces/pou-IVisualizationClient/UserGroupId.html",
+  "page_title": "IVisualizationClient.UserGroupId (PROP)",
+  "text": "\nPROPERTY UserGroupId : DWORD\nThe current user group ID, of the user, which is logged in.",
+  "tables": []
+}

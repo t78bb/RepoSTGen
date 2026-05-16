@@ -1,0 +1,62 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_InPosition (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/Diagnostics/SMC_InPosition.html",
+  "page_title": "SMC_InPosition (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_InPosition\nThis function block monitors the offset between the nominal and actual positions of an axis (drag error).\nThis tests whether the drag error lies within a specified value range for over a defined period of time (position window).\nWhen using logical axes, it is possible with the function block to compare a real and a logical axis.\nThis tests whether the logical axis, which is the mapping of a real axis compensated by communication time,\nis close to the values of the real axis. Instead of the deviation between the nominal and actual positions,\nthe deviation of the actual position of the logical axis is used as the nominal position of the real axis.\nThe function block\nSMC_InPosition\ncan be used for this test under the following conditions:\nThe motion type must be identical (limited/modulo).\nIn the case of âmoduloâ, the position period must be the same.\nIdentical offsets must be defined (e.g., set by\nMC_SetPosition\n).\nIf these conditions are not satisfied, then the compared positions will probably never match and therefore\nthere is no point in using the FB. In this case, an error is not issued.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "bEnable",
+          "Type": "BOOL",
+          "Comment": "TRUE: Starts execution of the function block."
+        },
+        [
+          "fPosWindow",
+          "LREAL",
+          "The drive is inside the position window, if fPosWindow >=\nDistance(actual position, set position) [u]."
+        ],
+        [
+          "fPosTime",
+          "LREAL",
+          "Time that the FB has to stay inside the position window\nbeforebInPositionis set [s]."
+        ],
+        [
+          "fTimeOut",
+          "LREAL",
+          "If the time since enabling the FB is larger than this value\nandbInPositionis not set,bTimeOutis set; this\nmechanism is deactivated, iffTimeOut= 0."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bInPosition",
+          "Type": "BOOL",
+          "Comment": "TRUE: Parameter is available."
+        },
+        [
+          "bBusy",
+          "BOOL",
+          "TRUE: Execution of the function block is not finished\nyet."
+        ],
+        [
+          "bTimeOut",
+          "BOOL",
+          "TRUE: Error has occurred within the function block."
+        ]
+      ]
+    }
+  ]
+}

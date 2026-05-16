@@ -1,0 +1,5 @@
+{
+  "requirement": "This code is intended to implement a mouse event handler that detects and processes single clicks, double clicks, right clicks, middle clicks, and mouse movement events, providing the event type and position.",
+  "provide_code": "FUNCTION_BLOCK MouseEventHandler\nVAR_INPUT\n    xLeftClick : BOOL;      (* Left mouse button click *)\n    xRightClick : BOOL;     (* Right mouse button click *)\n    xMiddleClick : BOOL;    (* Middle mouse button click *)\n    xMouseMove : BOOL;      (* Mouse movement detected *)\n    rMouseX : REAL;         (* Current mouse X position *)\n    rMouseY : REAL;         (* Current mouse Y position *)\n    tDblClickTime : TIME := T#300MS;  (* Double click timeout *)\nEND_VAR\n\nVAR_OUTPUT\n    eMouseEvent : INT;      (* Event type: 0=None, 1=SingleClick, 2=DoubleClick, 3=RightClick, 4=MiddleClick *)\n    rEventX : REAL;         (* X position where event occurred *)\n    rEventY : REAL;         (* Y position where event occurred *)\n    xEventActive : BOOL;    (* TRUE when an event is active *)\nEND_VAR",
+  "function_name": "MouseEventHandler"
+}

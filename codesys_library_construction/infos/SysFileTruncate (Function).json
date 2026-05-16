@@ -1,0 +1,36 @@
+{
+  "library": "SysFile",
+  "title": "SysFileTruncate (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SysFile/Current/SysFileTruncate.html",
+  "page_title": "SysFileTruncate (FUN)",
+  "text": "\nFUNCTION SysFileTruncate : RTS_IEC_RESULT\nSet a new filesize. May be larger or smaller than current size.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SysFileTruncate",
+          "Type": "RTS_IEC_RESULT",
+          "Comment": "Returns the runtime system error code (see\nCmpErrors.library)"
+        },
+        {
+          "Scope": "Input",
+          "Name": "hFile",
+          "Type": "RTS_IEC_HANDLE",
+          "Comment": "Handle of the file"
+        },
+        [
+          "ulSizeNew",
+          "__XWORD",
+          "Size to set."
+        ]
+      ]
+    }
+  ]
+}

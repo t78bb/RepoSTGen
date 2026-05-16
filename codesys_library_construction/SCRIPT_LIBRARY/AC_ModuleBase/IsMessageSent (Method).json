@@ -1,0 +1,28 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "IsMessageSent (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_RMP_ReliableMessageProtocol/pou-RMPService/Send/IsMessageSent.html",
+  "page_title": "RMPService.IsMessageSent (METH)",
+  "text": "\nMETHOD FINAL IsMessageSent : BOOL\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "IsMessageSent",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Input",
+          "Name": "uiHandle",
+          "Type": "UINT"
+        }
+      ]
+    }
+  ]
+}

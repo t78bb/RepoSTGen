@@ -1,0 +1,5 @@
+{
+  "requirement": "This code is intended to implement a mechanism to turn on a motor by activating its coil after a specified delay, provided there is no fault status.",
+  "provide_code": "METHOD TurnOn : BOOL\nVAR_INPUT\n\tMotorI:MotorI;\nEND_VAR\nVAR_OUTPUT\n\tMotorO:MotorO;\nEND_VAR",
+  "function_name": "Motor_TurnOn"
+}

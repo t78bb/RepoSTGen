@@ -1,0 +1,23 @@
+{
+  "library": "SM3_CNC",
+  "title": "GetVersion (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/Projektinformationen/GetVersion.html",
+  "page_title": "GetVersion (FUN)",
+  "text": "\nFUNCTION GetVersion : VERSION\nThis function has been automatically generated from the project information.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetVersion",
+          "Type": "VERSION"
+        }
+      ]
+    }
+  ]
+}

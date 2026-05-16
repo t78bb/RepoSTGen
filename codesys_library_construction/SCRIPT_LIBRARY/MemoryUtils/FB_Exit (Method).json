@@ -1,0 +1,25 @@
+{
+  "library": "MemoryUtils",
+  "title": "FB_Exit (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/MemoryUtils/Current/MemoryUtils/Functionblocks/pou-MemoryManager/Private/FB_Exit.html",
+  "page_title": "MemoryManager.FB_Exit (METH)",
+  "text": "\nMETHOD FB_Exit\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "bInCopyCode",
+          "Type": "BOOL",
+          "Comment": "bei TRUE wird die exit-Methode aufgerufen, um die Instanz zu\nverlassen, die hinterher kopiert wird (Online Change)."
+        }
+      ]
+    }
+  ]
+}

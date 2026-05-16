@@ -1,0 +1,11 @@
+{
+  "模糊点列表": [
+    {
+      "模糊点类型": "变量引用",
+      "模糊点描述": "原始需求未明确说明对被装饰组件的引用方式",
+      "差异细节": "模型生成代码使用tempInputComponent.getDescription()获取被装饰组件的描述，而参考代码使用THIS^.tempComponent.getDescription()获取描述",
+      "精准需求描述": "装饰器类应该通过内部实例变量tempComponent引用被装饰组件，并使用此变量获取组件的描述"
+    }
+  ],
+  "case_id": "repoeval_Decorator_Application/ConcreteDecoratorA_getDescription"
+}

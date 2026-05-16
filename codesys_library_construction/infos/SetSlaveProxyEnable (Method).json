@@ -1,0 +1,36 @@
+{
+  "library": "BACnet",
+  "title": "SetSlaveProxyEnable (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/Device/pou-BACnetDevice/SetSlaveProxyEnable.html",
+  "page_title": "BACnetDevice.SetSlaveProxyEnable (METH)",
+  "text": "\nMETHOD SetSlaveProxyEnable : CmpBACnet.IEC_BACNET_STATUS\nSets the Slave_Proxy_Enable-List of this BACnet object.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetSlaveProxyEnable",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "uiListCount",
+          "Type": "CmpBACnet.IEC_BACNET_ELEMENT_COUNT",
+          "Comment": "The length of the list in the following pointer."
+        },
+        [
+          "pList",
+          "POINTER TO\nCmpBACnet.IEC_BACNET_BOOLEAN",
+          "The list data containing elements according to the given\ncount."
+        ]
+      ]
+    }
+  ]
+}

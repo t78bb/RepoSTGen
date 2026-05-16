@@ -1,0 +1,28 @@
+{
+  "library": "SM3_CNC",
+  "title": "SetSubprogramError (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/Parser/SymbolTable/pou-SMC_NCSymbolTable/SetSubprogramError.html",
+  "page_title": "SMC_NCSymbolTable.SetSubprogramError (METH)",
+  "text": "\nMETHOD SetSubprogramError : SMC_ERROR\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetSubprogramError",
+          "Type": "SMC_ERROR"
+        },
+        {
+          "Scope": "Inout Const",
+          "Name": "stName",
+          "Type": "STRING"
+        }
+      ]
+    }
+  ]
+}

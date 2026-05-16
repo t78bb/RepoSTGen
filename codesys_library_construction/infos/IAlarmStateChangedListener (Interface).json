@@ -1,0 +1,8 @@
+{
+  "library": "AlarmManager",
+  "title": "IAlarmStateChangedListener (Interface)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/IAlarmStateChangedListener.html",
+  "page_title": "IAlarmStateChangedListener (ITF)",
+  "text": "\nINTERFACE IAlarmStateChangedListener EXTENDS __SYSTEM.IQueryInterface\nFunction blocks which implement this interface should be registered by\nthe RegisterAlarmStateChangedListener method of the global\nAlarmHandler to be notified in case the alarm state changed.\nMethods:\nAlarmStateChanged\nStructure:\nAlarmStateChanged (Method)",
+  "tables": []
+}

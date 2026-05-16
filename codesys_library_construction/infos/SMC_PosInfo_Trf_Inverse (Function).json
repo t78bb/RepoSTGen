@@ -1,0 +1,38 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_PosInfo_Trf_Inverse (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/Posinfo-Functions/SMC_PosInfo_Trf_Inverse.html",
+  "page_title": "SMC_PosInfo_Trf_Inverse (FUN)",
+  "text": "\nFUNCTION SMC_PosInfo_Trf_Inverse : BOOL\nComputes the inverse transformation of a PosInfo, interpreted as a\ntransformation between coordinate systems.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SMC_PosInfo_Trf_Inverse",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Inout",
+          "Name": "piOut",
+          "Type": "SMC_POSINFO"
+        },
+        {
+          "Scope": "Inout Const",
+          "Name": "piIn",
+          "Type": "SMC_POSINFO"
+        },
+        {
+          "Scope": "Input",
+          "Name": "eOriConv",
+          "Type": "SMC_ORI_CONVENTION"
+        }
+      ]
+    }
+  ]
+}

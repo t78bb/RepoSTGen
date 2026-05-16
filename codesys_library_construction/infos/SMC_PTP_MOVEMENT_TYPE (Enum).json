@@ -1,0 +1,28 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_PTP_MOVEMENT_TYPE (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/Basic-types/SMC_PTP_MOVEMENT_TYPE.html",
+  "page_title": "SMC_PTP_MOVEMENT_TYPE (ENUM)",
+  "text": "\nTYPE SMC_PTP_MOVEMENT_TYPE :\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "Fast",
+          "Initial": "0",
+          "Comment": "Time optimal PTP movement"
+        },
+        {
+          "Name": "Path_Invariant",
+          "Initial": "",
+          "Comment": "For this type of PTP Movement the path in space isindependent of the override and,\nexcept for blending with TransitionModeTMStartVelocity,\nof all dynamic limits of the axes\n(ancillary and global limits for speed, acceleration, deceleration and jerk).with TransitionModeTMCornerDistanceindependent of the type of blending\n(BlendingHigh / Low / Previous / Next).not left at Halt or Stop (MC_GroupHalt/MC_GroupStop).not left when interrupting and continuing (MC_GroupInterrupt/MC_GroupContinue)."
+        }
+      ]
+    }
+  ]
+}

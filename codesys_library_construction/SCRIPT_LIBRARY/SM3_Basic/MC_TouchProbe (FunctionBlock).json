@@ -1,0 +1,87 @@
+{
+  "library": "SM3_Basic",
+  "title": "MC_TouchProbe (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/Additional/MC_TouchProbe.html",
+  "page_title": "MC_TouchProbe (FB)",
+  "text": "\nFUNCTION_BLOCK MC_TouchProbe\nThis function block is designed for recording an axis position when a\ntrigger event is raised.\nNote\nThe function block is intended for single shot operation, that is,\nonly the first event following on a rising edge of\nExecute\nis\nOne function block instance should represent exactly one probing\ncommand.\nExample\nTiming and TouchProbe\nExample\nDefining a window, where trigger events are accepted (for modulo axes).\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3",
+          "Comment": "Reference to axis, the position of which is to be recorded at a\ndefined event at the trigger input."
+        },
+        [
+          "TriggerInput",
+          "TRIGGER_REF",
+          "Reference to trigger signal source"
+        ],
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Comment": "Rising edge: Starts the execution of the function block."
+        },
+        [
+          "WindowOnly",
+          "BOOL",
+          "TRUE: Trigger events will be accepted only within the\nspecified window."
+        ],
+        [
+          "FirstPosition",
+          "LREAL",
+          "Start position from whereon (in positive direction) trigger events will\nbe accepted (in technical units [u]). Only used ifWindowOnly=TRUE."
+        ],
+        [
+          "LastPosition",
+          "LREAL",
+          "End position up to which trigger events will be accepted\n(in technical units [u]). Only used ifWindowOnly=TRUE."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Done",
+          "Type": "BOOL",
+          "Comment": "TRUE: Trigger event has been recorded."
+        },
+        [
+          "Busy",
+          "BOOL",
+          "TRUE: Execution of function block has not been finished\nyet."
+        ],
+        [
+          "Active",
+          "BOOL",
+          "Indicates that the touch probe function is active.  It can take some\ntime to activate the touch probe function.  As long asActiveis FALSE,\ntrigger events may be ignored.  The output is reset ifDone,Error, orCommandAbortedbecome TRUE."
+        ],
+        [
+          "Error",
+          "BOOL",
+          "TRUE: Error occurred within the function block."
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ],
+        [
+          "RecordedPosition",
+          "LREAL",
+          "Position, where trigger event has occurred (in technical\nunits [u])."
+        ],
+        [
+          "CommandAborted",
+          "BOOL",
+          "TRUE: Command has been aborted by another command."
+        ]
+      ]
+    }
+  ]
+}

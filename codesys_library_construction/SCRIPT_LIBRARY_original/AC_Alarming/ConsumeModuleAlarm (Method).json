@@ -1,0 +1,41 @@
+{
+  "library": "AC_Alarming",
+  "title": "ConsumeModuleAlarm (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_Alarming/Current/ModuleInterface/pou-IModuleAlarming/ConsumeModuleAlarm.html",
+  "page_title": "IModuleAlarming.ConsumeModuleAlarm (METH)",
+  "text": "ExtenderFB\nACAlarmExtender (FunctionBlock)\nAcknowledgeAllAlarmsOfModule (Method)\nExecute (Method)\nGetActiveAlarmsOfModule (Method)\nGetEventAlarmID (Method)\nGetID (Property)\nInit (Method)\nInit2 (Method)\nInitSortedModuleAlarms (Method)\nAlarmInfo (Struct)\nAlarmingCall (Enum)\nIACAlarmExtender (Interface)\nInit (Method)\nIACAlarmExtender2 (Interface)\nGetEventAlarmID (Method)\nInit2 (Method)\nIACAlarmExtender3 (Interface)\nAcknowledgeAllAlarmsOfModule (Method)\nGetActiveAlarmsOfModule (Method)\nInitSortedModuleAlarms (Method)\nModuleAlarmInfo (Struct)\nModuleCall (Struct)\nModuleEvent (Struct)\nFunctions\nRaiseModuleEvent (Function)\nReplaceAlarmPlaceholderString (Function)\nGlobalTextList (GlobalTextList)\nModuleInterface\nIModuleAlarming (Interface)\nConsumeModuleAlarm (Method)\nVisualization\nFile and Project Information\nLibrary Reference\nAC_ModuleBase\nLibrary Identification\nLibrary Properties\nAlarmManager\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nStringUtils\nLibrary Identification\nLibrary Properties\nVisuElem3DPath\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElemCamDisplayer\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElemMeter\nLibrary Identification\nLibrary Properties\nVisuElemTextEditor\nLibrary Identification\nLibrary Properties\nVisuElemTrace\nLibrary Identification\nLibrary Properties\nVisuElemXYChart\nLibrary Identification\nLibrary Properties\nVisuElems\nLibrary Identification\nLibrary Properties\nVisuElemsAlarm\nLibrary Identification\nLibrary Properties\nVisuElemsDateTime\nLibrary Identification\nLibrary Properties\nVisuElemsSpecialControls\nLibrary Identification\nLibrary Properties\nVisuElemsWinControls\nLibrary Identification\nLibrary Properties\nVisuNativeControl\nLibrary Identification\nLibrary Properties\nAC_Alarming\nDocs\n»\nModuleInterface\n»\nIModuleAlarming\n(ITF)\n»\nIModuleAlarming.ConsumeModuleAlarm (METH)\nIModuleAlarming.ConsumeModuleAlarm (METH)\nÂ¶\nMETHOD ConsumeModuleAlarm : BOOL\nThis method is called is an alarm was issued for a module which defined a module call.\nIf true is returned the alarm was consumed by this function and will be no further treated.\nThis means returning true will stop the transmission of this alarm to other modules.\nIf false is returned other modules will still be alarmed\nInOut:\nScope\nName\nType\nComment\nReturn\nConsumeModuleAlarm\nBOOL\nTrue is returned if the alarm does not need to be issued further (i.e. by the module\nparents), or false if it needs to be issued further.\nInput\ninst\nAC.IModule\nThe module instance for which the alarm was issued\nalarm\nAlarmManager.IAlarm\nThe alarm for which a transition occured (see the\nAlarmManager library for details)\ntransition\nAlarmManager.AlarmStateTransition\nThe transition type, which occured for the alarm (see the\nAlarmManager library for details)",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "ConsumeModuleAlarm",
+          "Type": "BOOL",
+          "Comment": "True is returned if the alarm does not need to be issued further (i.e. by the module\nparents), or false if it needs to be issued further."
+        },
+        {
+          "Scope": "Input",
+          "Name": "inst",
+          "Type": "AC.IModule",
+          "Comment": "The module instance for which the alarm was issued"
+        },
+        [
+          "alarm",
+          "AlarmManager.IAlarm",
+          "The alarm for which a transition occured (see the\nAlarmManager library for details)"
+        ],
+        [
+          "transition",
+          "AlarmManager.AlarmStateTransition",
+          "The transition type, which occured for the alarm (see the\nAlarmManager library for details)"
+        ]
+      ]
+    }
+  ]
+}

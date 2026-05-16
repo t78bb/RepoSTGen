@@ -1,0 +1,8 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "InstanceName (Property)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_Module/pou-IBaseInstance/InstanceName.html",
+  "page_title": "IBaseInstance.InstanceName (PROP)",
+  "text": "\nPROPERTY InstanceName : STRING(255)\nThe instance name of the node.",
+  "tables": []
+}

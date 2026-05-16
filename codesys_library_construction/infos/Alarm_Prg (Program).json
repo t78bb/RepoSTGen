@@ -1,0 +1,8 @@
+{
+  "library": "AlarmManager",
+  "title": "Alarm_Prg (Program)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Alarm_Prg.html",
+  "page_title": "Alarm_Prg (PRG)",
+  "text": "\nPROGRAM Alarm_Prg\nThis program is the main entry point for the alarm management.\nIt will be called by a task.",
+  "tables": []
+}

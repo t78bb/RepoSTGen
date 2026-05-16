@@ -1,0 +1,8 @@
+{
+  "library": "AlarmManager",
+  "title": "IAlarm (Interface)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/IAlarm.html",
+  "page_title": "IAlarm (ITF)",
+  "text": "\nINTERFACE IAlarm EXTENDS __SYSTEM.IQueryInterface\nThis interface provides functionality to access an alarm object\nMethods:\nGetAlarmClass\nGetAlarmGroup\nGetID\nGetInternalID\nGetMessage\nGetState\nIsDeactivated\nGetCurrentValue\nGetLatchVar1Value\nGetLatchVar2Value\nGetTimestampAcknowledge\nGetTimestampActive\nGetTimestampInactive\nGetTimestampLast\nGetTriggerValue\nStructure:\nAccess-to-timestamps\nGetTimestampAcknowledge (Method)\nGetTimestampActive (Method)\nGetTimestampInactive (Method)\nGetTimestampLast (Method)\nAccess-to-values\nGetCurrentValue (Method)\nGetLatchVar1Value (Method)\nGetLatchVar2Value (Method)\nGetTriggerValue (Method)\nGetAlarmClass (Method)\nGetAlarmGroup (Method)\nGetID (Method)\nGetInternalID (Method)\nGetMessage (Method)\nGetState (Method)\nIsDeactivated (Method)",
+  "tables": []
+}

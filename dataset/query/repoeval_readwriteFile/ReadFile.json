@@ -1,0 +1,5 @@
+{
+  "requirement": "This code is intended to implement a file reading functionality that reads data from a specified file into a buffer, handles errors, and manages file operations such as opening, reading, and closing.",
+  "provide_code": "FUNCTION_BLOCK ReadFile\nVAR_INPUT\n\tbExec\t:\tBOOL;\n\tfileName\t:\tSTRING;\nEND_VAR\nVAR_OUTPUT\n\tReadBuffer\t:\tARRAY[0..255] OF BYTE;\n\tnNumRead\t:\tUDINT;\n\tbDone\t:\tBOOL;\n\tbBusy\t:\tBOOL;\n\tbErr\t:\tBOOL;\n\tnErrId\t:\tUDINT;\nEND_VAR",
+  "function_name": "ReadFile"
+}

@@ -1,0 +1,32 @@
+{
+  "library": "DNP3",
+  "title": "IEC_TMWDTIMETimeStampToLogString (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/PointObserver/pou-PointObserver/IEC_TMWDTIMETimeStampToLogString.html",
+  "page_title": "PointObserver.IEC_TMWDTIMETimeStampToLogString (METH)",
+  "text": "\nMETHOD PROTECTED IEC_TMWDTIMETimeStampToLogString : STRING\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "IEC_TMWDTIMETimeStampToLogString",
+          "Type": "STRING"
+        },
+        {
+          "Scope": "Input",
+          "Name": "hasTimeStamp",
+          "Type": "BOOL"
+        },
+        [
+          "timeStamp",
+          "CmpDNP3.IEC_TMWDTIME"
+        ]
+      ]
+    }
+  ]
+}

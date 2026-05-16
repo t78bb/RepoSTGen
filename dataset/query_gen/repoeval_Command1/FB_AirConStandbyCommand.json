@@ -1,0 +1,6 @@
+{
+  "requirement": "This code should implement a function block named FB_AirConStandbyCommand that controls an air conditioning system. It must include a method Execute to activate the air conditioning and set its temperature to 17.5 degrees Celsius, but only if the reference to the air conditioning system (refAirConditioning) is valid, which is checked using the __ISVALIDREF function. Additionally, it should include an initialization method FB_init with two boolean inputs: bInitRetains, which indicates whether retain variables should be initialized, and bInCopyCode, which indicates if the instance should be moved into the copy code after initialization. In FB_init, if the input reference to the air conditioning system is valid, it should be assigned to the internal reference; otherwise, the internal reference should be set to 0.",
+  "provide_code": "FUNCTION_BLOCK PUBLIC FB_AirConStandbyCommand IMPLEMENTS I_Command",
+  "function_name": "FB_AirConStandbyCommand",
+  "requirement_cn": "该代码应实现一个名为 FB_AirConStandbyCommand 的功能块，用于控制空调系统。它必须包括一个 Execute 方法来激活空调并将其温度设置为 17.5 摄氏度，但前提是空调系统的引用（refAirConditioning）有效，这一点需要通过 __ISVALIDREF 函数来检查。此外，它应该包括一个初始化方法 FB_init，该方法有两个布尔输入：bInitRetains，指示是否应初始化保留变量；bInCopyCode，指示初始化后实例是否应该移动到复制代码中。在 FB_init 中，如果输入的空调系统引用有效，则应将其分配给内部引用；否则，内部引用应设置为 0。"
+}

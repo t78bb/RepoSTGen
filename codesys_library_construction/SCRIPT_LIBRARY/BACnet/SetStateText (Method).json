@@ -1,0 +1,36 @@
+{
+  "library": "BACnet",
+  "title": "SetStateText (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/MultistateValue/pou-BACnetMultistateValue/SetStateText.html",
+  "page_title": "BACnetMultistateValue.SetStateText (METH)",
+  "text": "\nMETHOD SetStateText : CmpBACnet.IEC_BACNET_STATUS\nSets the State_Text-List of this BACnet object.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetStateText",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "uiListCount",
+          "Type": "CmpBACnet.IEC_BACNET_ELEMENT_COUNT",
+          "Comment": "The length of the list in the following pointer."
+        },
+        [
+          "pList",
+          "POINTER TO WSTRING(255)",
+          "The list data containing elements according to the given\ncount."
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_LimitCircularVelocity (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/SoftMotion-Function-Blocks/SMC_LimitCircularVelocity.html",
+  "page_title": "SMC_LimitCircularVelocity (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_LimitCircularVelocity\nThis function block limits the path velocities of circular elements\ndepending on the radius.\nFor a more general function block that limits the path velocity for\nall kinds of path elements, please see\nSMC_LimitDynamics\n.\nIn order to limit the acceleration to a prescribed value,\nthe velocity of the arc at the transition\nsqrt(a*r)\nmust not\nbe exceeded.\nThe function block controls the transition between two elements (line on\ncircular arc, circular arc on line or circular arc on circular arc)\nand adapts the end velocity of the first element so that the\nacceleration jump will not exceed the value\ndMaxAccJump\n.\nFurthermore, the function block limits the acceleration in\nX and Y to the value\ndMaxAcc\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "bExecute",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "Execution starts on the rising edge."
+        },
+        [
+          "bAbort",
+          "BOOL",
+          "FALSE",
+          "IfTRUE, the current processing of this function block\nis aborted"
+        ],
+        [
+          "bAppend",
+          "BOOL",
+          "FALSE",
+          "As long as this input remainsFALSE,poqDataOutQueuewill\nbe cleared at each reset.\nAs long as it remainsTRUE, newly incoming data will be written\nto the end of the DataOutQueue."
+        ],
+        [
+          "poqDataIn",
+          "POINTER TOSMC_OUTQUEUE",
+          "SMC_NULL",
+          "This variable points to theSMC_OUTQUEUEstructure object,\nwhich contains theSMC_GEOINFOobjects of the path;\ntypically it points on the outputpoqDataOutof the\npreceding module (e.g. theSMC_NCDecoder)."
+        ],
+        [
+          "dMaxAcc",
+          "LREAL",
+          "0",
+          "This input variable gives the maximum acceleration value\npermissible for circular arcs.\nA value equal to 0 will cause no check to be done."
+        ],
+        [
+          "dMaxAccJump",
+          "LREAL",
+          "0",
+          "This input variable gives the maximum acceleration jump\nfor a transition of two objects.\nA value equal to 0 will cause no check to be done."
+        ],
+        [
+          "nSizeOutQueue",
+          "UDINT",
+          "0",
+          "This variable contains the size of the data buffer,\nthe list ofSMC_GEOINFOstructure objects will be written to.\nThis buffer must be able to hold at least fiveSMC_GEOINFOobjects.\nOtherwise,SMC_LimitCircularVelocitywill not execute\nany actions at all. Its size may be predefined, but may be\nmodified later only during a reset.\nIt is recommended to create the buffer as described by the example below:ExampleBuf:ARRAY[1..50]ofSMC_GeoInfo.The correct buffer size will then be retrieved by use of\nthe operatorsizeof(ExampleBuf)."
+        ],
+        [
+          "pbyBufferOutQueue",
+          "POINTER TO ARRAY [0..0]\nOF SMC_GEOINFO",
+          "SMC_NULL",
+          "This input must point to the first byte of the memory area\nthat is allocated for theSMC_OUTQUEUEstructure.\nThis area must be at least as big as defined innSizeOutQueue.\nTypically the allocation of the memory buffer is done in the\ndeclaration part of the IEC-program by defining an array\nofSMC_GEOINFO(e.g.BUF:ARRAY[1..50]OFSMC_GEOINFO;\nfor a buffer that can store 50 path elements). The value may be\npredefined, but may be modified later on only during a reset."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bDone",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "This variable will be set toTRUEas soon as the input data\nfrompoqDataInhas been processed completely.\nThereafter, the module will not perform any further actions\nuntil it gets reset.\nIf inputbExecuteisFALSE,bDonewill be reset toFALSE."
+        },
+        [
+          "bBusy",
+          "BOOL",
+          "FALSE",
+          "TRUEwhile execution of function block is not finished"
+        ],
+        [
+          "bError",
+          "BOOL",
+          "FALSE",
+          "Signals that an error has occurred within the function block"
+        ],
+        [
+          "wErrorID",
+          "SMC_ERROR",
+          "SMC_NO_ERROR",
+          "Error identification"
+        ],
+        [
+          "poqDataOut",
+          "POINTER TOSMC_OUTQUEUE",
+          "SMC_NULL",
+          "This output points on theSMC_OUTQUEUEstructure managing\nthe newSMC_GEOINFOobjects."
+        ]
+      ]
+    }
+  ]
+}

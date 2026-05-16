@@ -1,0 +1,62 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_GroupSetAncillaryPathLimits (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/AdministrativeConfiguration/Dynamics/SMC_GroupSetAncillaryPathLimits.html",
+  "page_title": "SMC_GroupSetAncillaryPathLimits (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_GroupSetAncillaryPathLimits\nThis function block configures so called ancillary dynamic path limits\nfor an axis group, that is ancillary limits for the velocity, acceleration,\ndeceleration, and jerk along the path.\nThe ancillary limits allow for an easy programming of different operating\nmodes of a robot, for example a manual mode in which the robot may only move\nslowly for safety reasons.\nThe effective dynamic path limits for a movement are built from the following\ninputs:\nC: the commanded path limits for a movement (inputs Velocity,\nAcceleration, â¦),\nO: the current path override factors, and\nA: the ancillary path limits.\nThe effective path limits L are computed from these inputs as\nL = O * min(A, C).\nNote\nThis function block may not be called in the states\nGroupDisabled\nor\nGroupErrorStop\n, and, if\nExecutionMode\nequals\nImmediately\n, no\nMC_GroupStop\nmay be active.\nNo path limit may be zero or negative.  Otherwise,\nthe function block returns an error.\nMC_GroupStop\nignores ancillary limits.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "AxisGroup",
+          "Type": "AXIS_GROUP_REF_SM3",
+          "Comment": "Reference to an axis group"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Comment": "Sets the limits on rising edge."
+        },
+        [
+          "ExecutionMode",
+          "MC_EXECUTION_MODE",
+          "Describes when the new limits become active."
+        ],
+        [
+          "Limits",
+          "SMC_DYN_LIMITS",
+          "The ancillary dynamic limits.fTorqueMaxis ignored."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Done",
+          "Type": "BOOL",
+          "Comment": "The limits have been set successfully."
+        },
+        [
+          "Busy",
+          "BOOL",
+          "The FB is not finished."
+        ],
+        [
+          "Error",
+          "BOOL",
+          "Signals that an error has occurred within the function\nblock."
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

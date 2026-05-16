@@ -1,0 +1,48 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_HOMING_MODE (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/DataTypes/Movement/SMC_HOMING_MODE.html",
+  "page_title": "SMC_HOMING_MODE (ENUM)",
+  "text": "\nTYPE SMC_HOMING_MODE :\nDefines the homing sequence. Used in function block\nSMC_Homing\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "FAST_BSLOW_S_STOP",
+          "Initial": "0",
+          "Comment": "Move with fast velocity onto the reference switch; invert and move with slow velocity out of the reference switch;\nexecute âset positionâ; stop"
+        },
+        {
+          "Name": "FAST_BSLOW_STOP_S",
+          "Initial": "1",
+          "Comment": "Move with fast velocity onto the reference switch; invert and move with slow velocity out of the reference switch;\nstop; execute âset positionâ"
+        },
+        {
+          "Name": "FAST_BSLOW_I_S_STOP",
+          "Initial": "2",
+          "Comment": "Move with fast velocity onto the reference switch; invert and move with slow velocity out of the reference switch;\nwait for the index pulse; execute âset positionâ; stop"
+        },
+        {
+          "Name": "FAST_SLOW_S_STOP",
+          "Initial": "4",
+          "Comment": "Move with fast velocity onto the reference switch; move with slow velocity out of the reference switch;\nexecute âset positionâ; stop"
+        },
+        {
+          "Name": "FAST_SLOW_STOP_S",
+          "Initial": "5",
+          "Comment": "Move with fast velocity onto the reference switch; move with slow velocity out of the reference switch;\nstop; execute âset positionâ"
+        },
+        {
+          "Name": "FAST_SLOW_I_S_STOP",
+          "Initial": "6",
+          "Comment": "Move with fast velocity onto the reference switch; move with slow velocity out of the reference switch;\nwait for the index pulse; execute âset positionâ; stop"
+        }
+      ]
+    }
+  ]
+}

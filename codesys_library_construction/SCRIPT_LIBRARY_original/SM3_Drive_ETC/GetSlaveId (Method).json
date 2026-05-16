@@ -1,0 +1,23 @@
+{
+  "library": "SM3_Drive_ETC",
+  "title": "GetSlaveId (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Drive_ETC/Current/pou-AXIS_REF_ETC_BASE_SM3/ParameterAccess/GetSlaveId.html",
+  "page_title": "AXIS_REF_ETC_BASE_SM3.GetSlaveId (METH)",
+  "text": "AXIS_REF_ETC_BASE_SM3 (FunctionBlock)\nParameterAccess\nGetSlaveId (Method)\nGlobalTextList (GlobalTextList)\nSMC3_ETC\nvisu templates\nSMC_ETC_InterpolateAxisPosition (Function)\nSMC_ETC_Params (ParamList)\nSMC_ETC_Timestamp_32bitTo64bit (Function)\nSMC_Set_ETC_DCSyncSupervision (FunctionBlock)\nFile and Project Information\nLibrary Reference\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nCmpIecTask\nLibrary Identification\nLibrary Properties\nCmpLog\nLibrary Identification\nLibrary Properties\nIoStandard\nLibrary Identification\nLibrary Properties\nSM3_Basic\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nSM3_ETC_ITF\nLibrary Identification\nLibrary Properties\nSM3_RBase\nLibrary Identification\nLibrary Properties\nSM3_Shared\nLibrary Identification\nLibrary Properties\nSM3_StringUtils\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nVisuElem3DPath\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElemCamDisplayer\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElemMeter\nLibrary Identification\nLibrary Properties\nVisuElemTextEditor\nLibrary Identification\nLibrary Properties\nVisuElemTrace\nLibrary Identification\nLibrary Properties\nVisuElems\nLibrary Identification\nLibrary Properties\nVisuElemsAlarm\nLibrary Identification\nLibrary Properties\nVisuElemsDateTime\nLibrary Identification\nLibrary Properties\nVisuElemsSpecialControls\nLibrary Identification\nLibrary Properties\nVisuElemsWinControls\nLibrary Identification\nLibrary Properties\nVisuInputs\nLibrary Identification\nLibrary Properties\nVisuNativeControl\nLibrary Identification\nLibrary Properties\nSM3_Drive_ETC\nDocs\n»\nAXIS_REF_ETC_BASE_SM3\n(FB)\n»\nParameterAccess\n»\nAXIS_REF_ETC_BASE_SM3.GetSlaveId (METH)\nAXIS_REF_ETC_BASE_SM3.GetSlaveId (METH)\nÂ¶\nMETHOD GetSlaveId : SMC3_ETC_SlaveId\nReturns the physical EtherCAT address and the number of the EtherCAT master\nfor the fieldbus slave of the drive.\nInOut:\nScope\nName\nType\nReturn\nGetSlaveId\nSMC3_ETC_SlaveId",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetSlaveId",
+          "Type": "SMC3_ETC_SlaveId"
+        }
+      ]
+    }
+  ]
+}

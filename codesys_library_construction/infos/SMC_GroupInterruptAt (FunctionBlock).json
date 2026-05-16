@@ -1,0 +1,77 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_GroupInterruptAt (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/Movement/GroupInterrupt/SMC_GroupInterruptAt.html",
+  "page_title": "SMC_GroupInterruptAt (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_GroupInterruptAt\nThis is a variant of\nMC_GroupInterrupt\n. While\nMC_GroupInterrupt\ninterrupts\nthe on-going motion immediately, this function block allows specifying the\nexact position on the path where the motion shall be interrupted.\nNote\nThe position on the path has to be known, i.e. the movement that shall\nbe interrupted has to already be commanded before this function block\nis executed. Otherwise, an error will be reported.\nThis function block does not reverse on the path. If it is not\npossible to reach the specified position without a reversal, the\non-going motion is interrupted at the nearest possible position.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "AxisGroup",
+          "Type": "AXIS_GROUP_REF_SM3",
+          "Comment": "Reference to a group of axis"
+        },
+        [
+          "continueData",
+          "SMC_AXIS_GROUP_CONTINUE_DATA",
+          "Written when gettingDone"
+        ],
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Comment": "A rising edge starts the function block."
+        },
+        [
+          "Position",
+          "SMC_GroupInterruptPosition",
+          "The position where the ongoing motion shall be interrupted."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Done",
+          "Type": "BOOL",
+          "Comment": "Zero velocity reached"
+        },
+        [
+          "Busy",
+          "BOOL",
+          "The FB is not finished"
+        ],
+        [
+          "Interrupting",
+          "BOOL",
+          "Signals that the FB is currently interrupting"
+        ],
+        [
+          "CommandAborted",
+          "BOOL",
+          "Command is aborted by another command"
+        ],
+        [
+          "Error",
+          "BOOL",
+          "Signals that an error has occurred within the function block"
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ],
+        [
+          "mvtIdInterruptPosition",
+          "SMC_Movement_Id",
+          "Movemnet Id corresponding to the interrupt position"
+        ]
+      ]
+    }
+  ]
+}

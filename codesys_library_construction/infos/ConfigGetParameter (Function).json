@@ -1,0 +1,32 @@
+{
+  "library": "IoStandard",
+  "title": "ConfigGetParameter (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/IoStandard/Current/Config-Access-Help-Functions-internal/ConfigGetParameter.html",
+  "page_title": "ConfigGetParameter (FUN)",
+  "text": "\nFUNCTION ConfigGetParameter : POINTER TO IoConfigParameter\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "ConfigGetParameter",
+          "Type": "POINTER TO IoConfigParameter"
+        },
+        {
+          "Scope": "Input",
+          "Name": "pIoConnector",
+          "Type": "POINTER TO IoConfigConnector"
+        },
+        [
+          "dwParameterId",
+          "DWORD"
+        ]
+      ]
+    }
+  ]
+}

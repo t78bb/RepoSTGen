@@ -1,0 +1,31 @@
+{
+  "library": "BACnet2",
+  "title": "FromBACnetDateTime (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/Utilities/BACnetUtilities/FromBACnetDataTypes/FromBACnetDateTime.html",
+  "page_title": "FromBACnetDateTime (FUN)",
+  "text": "\nFUNCTION FromBACnetDateTime :\nBACnetDateTime\nReturns a BACnetDateTime struct corresponding to the given IEC_BACNET_DATE_TIME.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "FromBACnetDateTime",
+          "Type": "BACnetDateTime",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "bacDatTim",
+          "Type": "CmpBACnet.IEC_BACNET_DATE_TIME",
+          "Comment": "The BACnet date time to convert to a BACnetDateTime."
+        }
+      ]
+    }
+  ]
+}

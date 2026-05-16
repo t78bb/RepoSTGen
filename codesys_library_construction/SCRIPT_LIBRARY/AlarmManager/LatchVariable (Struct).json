@@ -1,0 +1,28 @@
+{
+  "library": "AlarmManager",
+  "title": "LatchVariable (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Structures/LatchVariable.html",
+  "page_title": "LatchVariable (STRUCT)",
+  "text": "\nTYPE LatchVariable : STRUCT\nThis structure bundles the type and the value of a latch variable.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "m_byType",
+          "Type": "BYTE",
+          "Comment": "The type of the latch variable. A TypeClass value."
+        },
+        {
+          "Name": "m_liValue",
+          "Type": "LINT",
+          "Comment": "The latch value as ârawâ value"
+        }
+      ]
+    }
+  ]
+}

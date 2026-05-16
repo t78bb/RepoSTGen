@@ -1,0 +1,31 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "PrevSibling (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_Module/pou-IModuleTree/PrevSibling.html",
+  "page_title": "IModuleTree.PrevSibling (METH)",
+  "text": "\nMETHOD PrevSibling :\nIModule\nReturns the previous sibling of a module instance.\nReturns 0 if (and only if) md has no previous sibling.\nNote: can be called for toplevel instances, too.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "PrevSibling",
+          "Type": "IModule",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "md",
+          "Type": "IModule",
+          "Comment": "The module instance that is queried (must not be 0)"
+        }
+      ]
+    }
+  ]
+}

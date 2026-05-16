@@ -1,0 +1,37 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_NC_GFunctionTable (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/Parser/Expressions/Functions/SMC_NC_GFunctionTable.html",
+  "page_title": "SMC_NC_GFunctionTable (STRUCT)",
+  "text": "\nTYPE SMC_NC_GFunctionTable : STRUCT\nA table of functions of type\nSMC_NC_IFunction\n.\nThe function blocks\nSMC_ReadNCFile2\nand\nSMC_ReadNCFromStream\naccept such a table to add additional functions that can be\nused in expressions in the G-Code.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "wVarListID",
+          "Type": "WORD",
+          "Initial": "16#BBFB",
+          "Comment": "In order to make sure we deal with an SMC_NC_GFunctionTable.\nDo not change."
+        },
+        {
+          "Name": "numFunctions",
+          "Type": "UDINT",
+          "Initial": "",
+          "Comment": "The number of functions to be added"
+        },
+        {
+          "Name": "pFunction",
+          "Type": "POINTER TOSMC_NC_GFunction",
+          "Initial": "",
+          "Comment": "Pointer to an array of SMC_NC_GFunction, containing the\nfunctions to be added"
+        }
+      ]
+    }
+  ]
+}

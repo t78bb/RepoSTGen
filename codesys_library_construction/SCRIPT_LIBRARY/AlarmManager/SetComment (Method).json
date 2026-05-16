@@ -1,0 +1,47 @@
+{
+  "library": "AlarmManager",
+  "title": "SetComment (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/pou-IAlarmHandler6/SetComment.html",
+  "page_title": "IAlarmHandler6.SetComment (METH)",
+  "text": "\nMETHOD SetComment : UDINT\nSets the comment and related user id on the current state of an alarm.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetComment",
+          "Type": "UDINT",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "usiAlarmGroupID",
+          "Type": "ALARMGROUP_ID",
+          "Comment": "The ID of the alarm group"
+        },
+        [
+          "uiAlarmID",
+          "ALARM_ID",
+          "The ID of the alarm"
+        ],
+        {
+          "Scope": "Inout Const",
+          "Name": "wsComment",
+          "Type": "WSTRING",
+          "Comment": "The comment on the current alarm state"
+        },
+        [
+          "wsUserId",
+          "WSTRING",
+          "The user who provides the comment"
+        ]
+      ]
+    }
+  ]
+}

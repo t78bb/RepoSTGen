@@ -1,0 +1,23 @@
+{
+  "library": "SM3_CNC",
+  "title": "RemoveFirst (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/File/ReadNCFile/Token/pou-SMC_TokenQueue/RemoveFirst.html",
+  "page_title": "SMC_TokenQueue.RemoveFirst (METH)",
+  "text": "\nMETHOD RemoveFirst : BOOL\nRemoves the first token of the queue.\nInvalidates the pointer returned by a prior call to\nGetFirst\n.\nOnly safe to be called from the consumer task.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "RemoveFirst",
+          "Type": "BOOL"
+        }
+      ]
+    }
+  ]
+}

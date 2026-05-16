@@ -1,0 +1,70 @@
+{
+  "library": "SM3_CNC_Visu",
+  "title": "SMC_PositionTracker (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC_Visu/Current/SM3_CNC_VISU/SMC_PositionTracker.html",
+  "page_title": "SMC_PositionTracker (FB)",
+  "text": "GlobalTextList (GlobalTextList)\nImages\nSM3_CNC_VISU\nSMC_PathCopier (FunctionBlock)\nSMC_PathCopierCompleteQueue (FunctionBlock)\nSMC_PathCopierFile (FunctionBlock)\nSMC_PositionTracker (FunctionBlock)\nFile and Project Information\nLibrary Reference\nSM3_Basic\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nSM3_CNC\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nSM3_Error\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nVisuElem3DPath\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nSM3_CNC_Visu\nDocs\n»\nSM3_CNC_VISU\n»\nSMC_PositionTracker (FB)\nSMC_PositionTracker (FB)\nÂ¶\nFUNCTION_BLOCK SMC_PositionTracker\nThis function block\nSMC_PositionTracker\nis designed to store\npositions and make it available to Path3D elements as a track.\nAs long as\nbEnable\nis\nTRUE\n, the position is stored.\nbClear\ndeletes the buffer.\ndX\n,\ndY\n, and\ndZ\nare containing the\ncoordinates, which should be stored.\nThis function block is designed to record the actual track.\nThe visualization element\nPath3D\nis designed to show both the ideal path\nand the actual track.\nInOut:\nScope\nName\nType\nInitial\nComment\nInput\nbEnable\nBOOL\nTrack positions while\nTRUE\nbClear\nBOOL\nClear output track\ndX\nLREAL\nActual position to be added to the track.\ndY\nLREAL\ndZ\nLREAL\nudiNumberOfPointsInArray\nUDINT\n0\nNumber of points which are declared in\npBuffer\nof the\nreferred array.\npBuffer\nPOINTER TO\nVisuStruct3DPathPoint\nPointer to the allocated array of points.\nOutput\nvs3dt\nVisuStruct3DTrack\nTrack output. To be setup as input of the visu element\nPath3D\n.",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "bEnable",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Track positions whileTRUE"
+        },
+        [
+          "bClear",
+          "BOOL",
+          "",
+          "Clear output track"
+        ],
+        [
+          "dX",
+          "LREAL",
+          "",
+          "Actual position to be added to the track."
+        ],
+        [
+          "dY",
+          "LREAL",
+          "",
+          ""
+        ],
+        [
+          "dZ",
+          "LREAL",
+          "",
+          ""
+        ],
+        [
+          "udiNumberOfPointsInArray",
+          "UDINT",
+          "0",
+          "Number of points which are declared inpBufferof the\nreferred array."
+        ],
+        [
+          "pBuffer",
+          "POINTER TO\nVisuStruct3DPathPoint",
+          "",
+          "Pointer to the allocated array of points."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "vs3dt",
+          "Type": "VisuStruct3DTrack",
+          "Initial": "",
+          "Comment": "Track output. To be setup as input of the visu elementPath3D."
+        }
+      ]
+    }
+  ]
+}

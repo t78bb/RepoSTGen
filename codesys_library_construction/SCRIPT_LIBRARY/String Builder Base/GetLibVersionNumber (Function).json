@@ -1,0 +1,23 @@
+{
+  "library": "String Builder Base",
+  "title": "GetLibVersionNumber (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Builder Base/Current/Library-Information/GetLibVersionNumber.html",
+  "page_title": "GetLibVersionNumber (FUN)",
+  "text": "\nFUNCTION GetLibVersionNumber : DWORD\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetLibVersionNumber",
+          "Type": "DWORD"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "library": "SML_Basic",
+  "title": "SML_Constants (GVL)",
+  "url": "https://content.helpme-codesys.com/en/libs/SML_Basic/Current/Base/SML_Constants.html",
+  "page_title": "SML_Constants (GVL)",
+  "text": "\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Scope": "Constant",
+          "Name": "g_SML_NUMBER_FB_ERRORS",
+          "Type": "DINT",
+          "Initial": "6"
+        },
+        [
+          "g_SML_NUMBER_OF_SIMULTANEOUS_TELEGRAMS",
+          "DINT",
+          "4"
+        ],
+        [
+          "g_SML_SIZE_CMD_MSG_STORE",
+          "UDINT",
+          "512"
+        ],
+        [
+          "g_SML_CMD_SLOT_STOP",
+          "UDINT",
+          "0"
+        ],
+        [
+          "g_SML_CMD_SLOT_HOME",
+          "UDINT",
+          "1"
+        ],
+        [
+          "g_SML_CMD_SLOT_MOVE",
+          "UDINT",
+          "2"
+        ],
+        [
+          "g_SML_CMD_SLOT_READ",
+          "UDINT",
+          "3"
+        ],
+        [
+          "g_SML_CMD_SLOT_WRITE",
+          "UDINT",
+          "4"
+        ],
+        [
+          "g_SML_CMD_NUM_SLOTS",
+          "UDINT",
+          "5"
+        ],
+        [
+          "g_SML_CW_QUEUE_SIZE",
+          "UDINT",
+          "8"
+        ],
+        [
+          "g_strSoftMotion_SML",
+          "STRING(16)",
+          "âSoftMotionâ"
+        ]
+      ]
+    }
+  ]
+}

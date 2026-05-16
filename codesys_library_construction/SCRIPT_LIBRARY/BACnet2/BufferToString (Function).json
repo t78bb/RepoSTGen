@@ -1,0 +1,28 @@
+{
+  "library": "BACnet2",
+  "title": "BufferToString (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/Utilities/StringConversions/BufferToString.html",
+  "page_title": "BufferToString (FUN)",
+  "text": "\nFUNCTION BufferToString : STRING(255)\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "BufferToString",
+          "Type": "STRING(255)"
+        },
+        {
+          "Scope": "Input",
+          "Name": "buffer",
+          "Type": "POINTER TO BYTE"
+        }
+      ]
+    }
+  ]
+}

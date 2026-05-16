@@ -1,0 +1,152 @@
+{
+  "library": "MQTT Client SL",
+  "title": "MQTTSubscribe (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/MQTT Client SL/Current/MQTT-Client/Common/Function-Blocks/MQTTSubscribe.html",
+  "page_title": "MQTTSubscribe (FB)",
+  "text": "\nFUNCTION_BLOCK MQTTSubscribe EXTENDS CBML.LCon IMPLEMENTS ISubscriber\nFunction block to subscribe (receive) messages from a MQTT broker\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment",
+        "Inherited from"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "xEnable",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUE: Activates the defined operationFALSE: Aborts/resets the defined operation",
+          "Inherited from": "LCon"
+        },
+        {
+          "Scope": "Output",
+          "Name": "xDone",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUE: Ready condition reached",
+          "Inherited from": "LCon"
+        },
+        [
+          "xBusy",
+          "BOOL",
+          "",
+          "TRUE: Operation is running",
+          "LCon"
+        ],
+        [
+          "xError",
+          "BOOL",
+          "",
+          "TRUE: Error condition reached",
+          "LCon"
+        ],
+        {
+          "Scope": "Input",
+          "Name": "eSubscribeQoS",
+          "Type": "MQTT_QOS",
+          "Initial": "",
+          "Comment": "QoS-Level for Subscribe",
+          "Inherited from": ""
+        },
+        [
+          "pbPayload",
+          "POINTER TO BYTE",
+          "",
+          "Pointer to memory for incoming payload",
+          ""
+        ],
+        [
+          "udiMaxPayloadSize",
+          "UDINT",
+          "",
+          "Maximum Size of incoming payload",
+          ""
+        ],
+        [
+          "eFilterMode",
+          "FILTER_MODE",
+          "FILTER_MODE.FILTER_ON",
+          "Filter mode for incoming telegrams. Default:\nFILTER_MODE.FILTER_ON",
+          ""
+        ],
+        [
+          "mQTTSubscribeProperties",
+          "REFERENCE TOMQTTSubscribeProperties",
+          "",
+          "Subscribe proerties (MQTT V5 only)",
+          ""
+        ],
+        [
+          "udiTimeout",
+          "UDINT",
+          "1000000",
+          "Time in Âµs in which an subcription acknowledgement (SUBACK)\nmust be received.",
+          ""
+        ],
+        {
+          "Scope": "Inout",
+          "Name": "mqttClient",
+          "Type": "MQTTClient",
+          "Initial": "",
+          "Comment": "Function block MQTTClient",
+          "Inherited from": ""
+        },
+        [
+          "wsTopicFilter",
+          "WSTRING(1024)",
+          "",
+          "Topic Filter",
+          ""
+        ],
+        {
+          "Scope": "Output",
+          "Name": "eMQTTError",
+          "Type": "MQTT_ERROR",
+          "Initial": "",
+          "Comment": "MQTT Error Type",
+          "Inherited from": ""
+        },
+        [
+          "xReceived",
+          "BOOL",
+          "",
+          "FALSE as long as there is no message, TRUE if a message got\nreceived, in new cyclus then again FALSE",
+          ""
+        ],
+        [
+          "udiPayloadSize",
+          "UDINT",
+          "",
+          "Size of the received message",
+          ""
+        ],
+        [
+          "xSubscribeActive",
+          "BOOL",
+          "FALSE",
+          "FALSE: When there is no active subscription, TRUE:\nSubscriber is listening",
+          ""
+        ],
+        [
+          "wsLastTopic",
+          "WSTRING(1024)",
+          "",
+          "The real topic value from the publish packet that is\ncorresponding to this topic filter",
+          ""
+        ],
+        [
+          "mQTTPublishProperties",
+          "MQTTPublishProperties",
+          "",
+          "Last received publish properties",
+          ""
+        ]
+      ]
+    }
+  ]
+}

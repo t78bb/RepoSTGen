@@ -1,0 +1,31 @@
+{
+  "library": "StringUtils",
+  "title": "Replace (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/StringUtils/Current/Public-Parts/pou-CharBufferString/Replace.html",
+  "page_title": "CharBufferString.Replace (METH)",
+  "text": "\nMETHOD Replace\nReplaces <iLengthToReplace> characters of our string by cbsReplaceWith,\nstarting at the <iPosition>-th character position\niPosition = 1 is the first character.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "cbsReplaceWith",
+          "Type": "REFERENCE TOCharBufferString"
+        },
+        [
+          "iLengthToReplace",
+          "INT"
+        ],
+        [
+          "iPosition",
+          "INT"
+        ]
+      ]
+    }
+  ]
+}

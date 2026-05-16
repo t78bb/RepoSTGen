@@ -1,0 +1,31 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "GetInstancePath (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_Module/TreeNavigation/GetInstancePath.html",
+  "page_title": "GetInstancePath (FUN)",
+  "text": "\nFUNCTION GetInstancePath : STRING(255)\nReturns the instance path of a module instance.\nThe instance path is built by concatenating the instance names\nof all ancestors, starting from the toplevel module down until\nto the given instance.  The instance names are separated by dots.l\nIf the resulting instance name is longer than 255 characters, an\nempty string is returned.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetInstancePath",
+          "Type": "STRING(255)",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfM",
+          "Type": "IModule",
+          "Comment": "The module instance for which the instance path is computed\n(must not be 0)"
+        }
+      ]
+    }
+  ]
+}

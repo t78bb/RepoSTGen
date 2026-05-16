@@ -1,0 +1,31 @@
+{
+  "library": "CmpBACnet",
+  "title": "BACnetCloseClientCustomer (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/CmpBACnet/Current/BACnetClientAPI/advanced/BACnetCloseClientCustomer.html",
+  "page_title": "BACnetCloseClientCustomer (FUN)",
+  "text": "\nFUNCTION BACnetCloseClientCustomer :\nIEC_BACNET_STATUS\nCloses an advanced BACnet client customer handle.\nThe user application should call this API function to release all ressources of the\nadvanced BACnet client API.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "BACnetCloseClientCustomer",
+          "Type": "IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "hCustomer",
+          "Type": "IEC_BACNET_HANDLE",
+          "Comment": "An handle to an created advanced BACnet client customer\ncreated by BACnetOpenClientCustomer."
+        }
+      ]
+    }
+  ]
+}

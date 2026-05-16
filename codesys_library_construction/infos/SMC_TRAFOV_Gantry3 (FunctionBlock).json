@@ -1,0 +1,81 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_TRAFOV_Gantry3 (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_Trafo_POUs/SoftMotion-Transformations/Gantry-systems/SMC_TRAFOV_Gantry3.html",
+  "page_title": "SMC_TRAFOV_Gantry3 (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_TRAFOV_Gantry3\nReverse transformation for three-dimensional portal systems.\nIt takes into account the path velocity and path direction\nas control variables for the axis.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "pi",
+          "Type": "SMC_PosInfo",
+          "Comment": "Target position vector (x,y), output of interpolator."
+        },
+        [
+          "dVel",
+          "LREAL",
+          "Velocity"
+        ],
+        [
+          "v",
+          "SMC_VECTOR3D",
+          "Vector of the current tangent, output of interpolator"
+        ],
+        [
+          "dOffsetX",
+          "LREAL",
+          "Additional offset for the x-axis"
+        ],
+        [
+          "dOffsetY",
+          "LREAL",
+          "Additional offset for the y-axis"
+        ],
+        [
+          "dOffsetZ",
+          "LREAL",
+          "Additional offset for the z-axis"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "dx",
+          "Type": "LREAL",
+          "Comment": "Resulting target position for the x-axis"
+        },
+        [
+          "dvx",
+          "LREAL",
+          "Resulting target velocity for the x-axis"
+        ],
+        [
+          "dy",
+          "LREAL",
+          "Resulting target position for the y-axis"
+        ],
+        [
+          "dvy",
+          "LREAL",
+          "Resulting target velocity for the y-axis"
+        ],
+        [
+          "dz",
+          "LREAL",
+          "Resulting target position for the z-axis"
+        ],
+        [
+          "dvz",
+          "LREAL",
+          "Resulting target velocity for the z-axis."
+        ]
+      ]
+    }
+  ]
+}

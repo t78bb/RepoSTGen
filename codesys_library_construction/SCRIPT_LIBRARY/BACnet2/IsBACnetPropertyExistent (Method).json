@@ -1,0 +1,32 @@
+{
+  "library": "BACnet2",
+  "title": "IsBACnetPropertyExistent (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/BACnetServer/pou-IBACnetServer/PropertyAttributes/IsBACnetPropertyExistent.html",
+  "page_title": "IBACnetServer.IsBACnetPropertyExistent (METH)",
+  "text": "\nMETHOD IsBACnetPropertyExistent : BOOL\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "IsBACnetPropertyExistent",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Input",
+          "Name": "objID",
+          "Type": "CmpBACnet.IEC_BACNET_OBJECT_ID"
+        },
+        [
+          "propID",
+          "CmpBACnet.IEC_BACNET_PROPERTY_ID"
+        ]
+      ]
+    }
+  ]
+}

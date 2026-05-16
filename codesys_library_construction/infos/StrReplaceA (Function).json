@@ -1,0 +1,55 @@
+{
+  "library": "StringUtils",
+  "title": "StrReplaceA (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/StringUtils/Current/Public-Parts/Ansi/StrReplaceA.html",
+  "page_title": "StrReplaceA (FUN)",
+  "text": "\nFUNCTION StrReplaceA\nReplaces <iLengthToReplace> characters of pstInput by pstReplaceWith,\nstarting at the <iPosition>-th character position\niPosition = 1 is the first character. This function was adapted from function StrReplaceW\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "pstInput",
+          "Type": "POINTER TO STRING(255)",
+          "Comment": ""
+        },
+        [
+          "uiInputBufferSize",
+          "UINT",
+          "The size of the buffer, where pstInput points to"
+        ],
+        [
+          "pstReplaceWith",
+          "POINTER TO STRING(255)",
+          ""
+        ],
+        [
+          "iLengthInput",
+          "INT",
+          ""
+        ],
+        [
+          "iLengthToReplace",
+          "INT",
+          ""
+        ],
+        [
+          "iLengthToReplaceWith",
+          "INT",
+          ""
+        ],
+        [
+          "iPosition",
+          "INT",
+          ""
+        ]
+      ]
+    }
+  ]
+}

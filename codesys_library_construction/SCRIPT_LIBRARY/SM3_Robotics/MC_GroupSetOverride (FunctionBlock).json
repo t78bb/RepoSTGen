@@ -1,0 +1,101 @@
+{
+  "library": "SM3_Robotics",
+  "title": "MC_GroupSetOverride (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/AdministrativeConfiguration/Dynamics/MC_GroupSetOverride.html",
+  "page_title": "MC_GroupSetOverride (FB)",
+  "text": "\nFUNCTION_BLOCK MC_GroupSetOverride\nThis FB allows to change the velocity, acceleration, or jerk\nof active and commanded movements.\nThe given override factors are valid until a new override is set.\nThe value 0 set to the\nVelFactor\nor\nPathVelFactor\nleads to halt\non the path, if a CP movement (even in case of tracking) is active\nand to an absolute halt otherwise.\nIf\nMC_GroupStop\nis currently active, an error is returned.\nNote\nThe dynamics of\nMC_GroupStop\nare not influenced by the\noverride factors.\nReenabling the axis group does not reset the override factors.\nThe default values of the override factors are 1.\nThe FB does not change the state of the axis group.\nSingle axis override factors set using\nMC_SetOverride\nfor any axis\nof the axis group are overwritten by this function block.\nThis function block sets the same override factors on all axes of the\naxis group.  Individual override factors for each axis can be set using\nMC_SetOverride\nThe axis override factors affect both the axes of the groupâs kinematics\nas well as the groupâs additional axes.\nWarning\nReducing the\nAccFactor\nand/or\nJerkFactor\ncan lead to a position\novershoot, a possible cause of damage.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "AxisGroup",
+          "Type": "AXIS_GROUP_REF_SM3",
+          "Initial": "",
+          "Comment": "Reference to a group of axis"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Enable",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "IfTRUE, we write the value of the override factors continuously.\nIfFALSE, we keep the last value."
+        },
+        [
+          "VelFactor",
+          "LREAL",
+          "1",
+          "Factor for axis velocities, [0 .. 1]"
+        ],
+        [
+          "AccFactor",
+          "LREAL",
+          "1",
+          "Factor for axis accelerations and axis decelerations, ]0 ..\n1]"
+        ],
+        [
+          "JerkFactor",
+          "LREAL",
+          "1",
+          "Factor for axis jerks, ]0 .. 1]"
+        ],
+        [
+          "TorqueFactor",
+          "LREAL",
+          "1",
+          "Factor for axis torques, ]0 .. 1].  A dynamic model must have been\nset usingSMC_GroupSetDynamicsfor these factors to have an effect."
+        ],
+        [
+          "PathVelFactor",
+          "LREAL",
+          "1",
+          "Factor for path velocities, [0 .. 1]"
+        ],
+        [
+          "PathAccFactor",
+          "LREAL",
+          "1",
+          "Factor for path accelerations and path decelerations, ]0 ..\n1]"
+        ],
+        [
+          "PathJerkFactor",
+          "LREAL",
+          "1",
+          "Factor for path jerks, ]0 .. 1]"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Enabled",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Signals that the override factors have been set\nsuccessfully."
+        },
+        [
+          "Busy",
+          "BOOL",
+          "",
+          "The FB is not finished"
+        ],
+        [
+          "Error",
+          "BOOL",
+          "",
+          "Signals that an error has occurred within the function\nblock."
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

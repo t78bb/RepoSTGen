@@ -1,0 +1,51 @@
+{
+  "library": "StringUtils",
+  "title": "StuSprintf (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/StringUtils/Current/Public-Parts/StuSprintf.html",
+  "page_title": "StuSprintf (FUN)",
+  "text": "\nFUNCTION StuSprintf : INT\nDoes a sprintf for the given format string and the given variable. Will not return NULL!\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "StuSprintf",
+          "Type": "INT",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "pstFormat",
+          "Type": "POINTER TO STRING",
+          "Comment": "the formatstring"
+        },
+        [
+          "pVarAdr",
+          "POINTER TO DWORD",
+          "the address of the variable that shall be printed"
+        ],
+        [
+          "udiVarType",
+          "__SYSTEM.TYPE_CLASS",
+          "the type of the variable as a __SYSTEM.TYPE_CLASS value"
+        ],
+        [
+          "pBuffer",
+          "POINTER TO BYTE",
+          "the buffer where the text is to be printed"
+        ],
+        [
+          "dwBufferSize",
+          "UDINT",
+          "the size of the buffer in bytes"
+        ]
+      ]
+    }
+  ]
+}

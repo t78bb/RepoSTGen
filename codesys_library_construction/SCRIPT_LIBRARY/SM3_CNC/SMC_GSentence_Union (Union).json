@@ -1,0 +1,37 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_GSentence_Union (Union)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/GSentence/SMC_GSentence_Union.html",
+  "page_title": "SMC_GSentence_Union (UNION)",
+  "text": "\nTYPE SMC_GSentence_Union : UNION\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Name": "gwords",
+          "Type": "SMC_GSentence_GWords"
+        },
+        {
+          "Name": "subret",
+          "Type": "SMC_GSentence_SubRet"
+        },
+        {
+          "Name": "subcall",
+          "Type": "SMC_GSentence_SubCall"
+        },
+        {
+          "Name": "dyncall",
+          "Type": "SMC_GSentence_DynCall"
+        },
+        {
+          "Name": "let",
+          "Type": "SMC_GSentence_Let"
+        }
+      ]
+    }
+  ]
+}

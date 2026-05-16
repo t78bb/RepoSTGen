@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现设置电机操作的等待时间功能。",
+  "provide_code": "METHOD SetWaitTime : BOOL\nVAR_INPUT\n\tMotorI:MotorI;\n\tSequenceDelay:TIME;\nEND_VAR\nVAR_OUTPUT\n\tMotorO:MotorO;\nEND_VAR"
+}

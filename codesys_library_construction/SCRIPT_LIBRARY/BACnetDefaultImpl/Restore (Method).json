@@ -1,0 +1,23 @@
+{
+  "library": "BACnetDefaultImpl",
+  "title": "Restore (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnetDefaultImpl/Current/BACnetDefaultImpl/Function-Blocks/pou-BackupRestore/Restore.html",
+  "page_title": "BackupRestore.Restore (METH)",
+  "text": "\nMETHOD Restore : CmpBACnet.IEC_BACNET_STATUS\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "Restore",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS"
+        }
+      ]
+    }
+  ]
+}

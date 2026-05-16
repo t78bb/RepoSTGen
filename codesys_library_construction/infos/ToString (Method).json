@@ -1,0 +1,23 @@
+{
+  "library": "DNP3",
+  "title": "ToString (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Outstation/Points/pou-PointWithFlags/ToString.html",
+  "page_title": "PointWithFlags.ToString (METH)",
+  "text": "\nMETHOD ToString : STRING(128)\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "ToString",
+          "Type": "STRING(128)"
+        }
+      ]
+    }
+  ]
+}

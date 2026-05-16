@@ -1,0 +1,25 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_ABC_SLOPES_NO_STOP (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_Data-types/SoftMotion-CNC/SMC_ABC_SLOPES_NO_STOP.html",
+  "page_title": "SMC_ABC_SLOPES_NO_STOP (ENUM)",
+  "text": "\nTYPE SMC_ABC_SLOPES_NO_STOP :\nDetermines how\nSMC_RecomputeABCSlopes\nsets the slopes of A/B/C\nat the transtion between two elements, when there is not stop.\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "SET_SMOOTH_CARDINAL",
+          "Comment": "The slope at the end of element i is set as\n(AddAxisValue(i+1) - AddAxisValue(i-1)) /\n(ElementLength(i) + ElementLength(i+1)).\nThe slope at the start of element i+1 is set\nto the same value."
+        },
+        {
+          "Name": "DONT_CHANGE",
+          "Comment": "The slope is not changed."
+        }
+      ]
+    }
+  ]
+}

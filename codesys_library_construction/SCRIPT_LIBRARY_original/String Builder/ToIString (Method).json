@@ -1,0 +1,53 @@
+{
+  "library": "String Builder",
+  "title": "ToIString (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Builder/Current/Builder/Function-Blocks/pou-_Builder/IStringRepresentation/ToIString.html",
+  "page_title": "_Builder.ToIString (METH)",
+  "text": "Builder\nAliases\nConstants (GVL)\nEnums\nENCODING (Alias)\nERROR (Alias)\nSTATS (Alias)\nFunction Blocks\nRange (Alias)\n_RangePool (Alias)\nInterfaces\nIBuilder (Folder)\nICharmap (Alias)\nIString (Alias)\nIStringRepresentation (Folder)\nTypes\nRUNE (Alias)\nFunction Blocks\n_Builder (FunctionBlock)\nIBuilder\nIStringRepresentation\nSetInitialValue (Method)\nFunctions\nCreateRange (Function)\nCreateRangePool (Function)\nLibrary Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nFile and Project Information\nLibrary Reference\nImmutable String Segments\nLibrary Identification\nLibrary Properties\nMemory Block Manager\nLibrary Identification\nLibrary Properties\nString Builder Base\nLibrary Identification\nLibrary Properties\nString Conversions\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nUTF-16 Encoding Support\nLibrary Identification\nLibrary Properties\nUTF-8 Encoding Support\nLibrary Identification\nLibrary Properties\nString Builder\nDocs\n»\nBuilder\n»\nFunction\nBlocks\n»\n_Builder\n(FB)\n»\nIStringRepresentation\n»\n_Builder.ToIString (METH)\n_Builder.ToIString (METH)\nÂ¶\nMETHOD FINAL ToIString :\nIString\nReturns the accumulated string\nInOut:\nScope\nName\nType\nInitial\nComment\nReturn\nToIString\nIString\nInput\nitfString\nIString\nDefines the output target\nliStart\nLINT\n0\nDefines the rune index from which the content is output\n0 => first rune, -1 => last rune\n[STR.c_liMinIndex\n<=\nliStart\n<=\nSTR.c_liMaxIndex]\nliEnd\nLINT\n-1\nDefines the rune index up to which the content is output\n0 => first rune, -1 => last rune\n[STR.c_liMinIndex\n<=\nliEnd\n<=\nSTR.c_liMaxIndex]\nOutput\neErrorID\nSTR.ERROR",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "ToIString",
+          "Type": "IString",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfString",
+          "Type": "IString",
+          "Initial": "",
+          "Comment": "Defines the output target"
+        },
+        [
+          "liStart",
+          "LINT",
+          "0",
+          "Defines the rune index from which the content is output0 => first rune, -1 => last rune[STR.c_liMinIndex<=liStart<=STR.c_liMaxIndex]"
+        ],
+        [
+          "liEnd",
+          "LINT",
+          "-1",
+          "Defines the rune index up to which the content is output0 => first rune, -1 => last rune[STR.c_liMinIndex<=liEnd<=STR.c_liMaxIndex]"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "eErrorID",
+          "Type": "STR.ERROR",
+          "Initial": "",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

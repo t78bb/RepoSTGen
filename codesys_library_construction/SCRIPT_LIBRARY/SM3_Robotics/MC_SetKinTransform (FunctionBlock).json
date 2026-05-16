@@ -1,0 +1,57 @@
+{
+  "library": "SM3_Robotics",
+  "title": "MC_SetKinTransform (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/AdministrativeConfiguration/Kinematics/MC_SetKinTransform.html",
+  "page_title": "MC_SetKinTransform (FB)",
+  "text": "\nFUNCTION_BLOCK MC_SetKinTransform\nThis function block sets a kinematic transformation between\nthe axis coordinate system (ACS) and the machine coordinate system\n(MCS).\nNote\nA tool offset (see\nSMC_GroupSetTool\n) will be reset\nwhen executing this function block.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "AxisGroup",
+          "Type": "AXIS_GROUP_REF_SM3",
+          "Comment": "Reference to a group of axis"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Comment": "Sets the kinematic transformation on rising edge"
+        },
+        [
+          "KinTransform",
+          "TRAFO.MC_KIN_REF_SM3",
+          "The kinematic transformation"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Done",
+          "Type": "BOOL",
+          "Comment": "The transformation has been set successfully"
+        },
+        [
+          "Busy",
+          "BOOL",
+          "The FB is not finished"
+        ],
+        [
+          "Error",
+          "BOOL",
+          "Signals that an error has occurred within the function block"
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_POSDATA_AddDist (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/AxisGroup/Helpers/SMC_POSDATA_AddDist.html",
+  "page_title": "SMC_POSDATA_AddDist (FUN)",
+  "text": "\nFUNCTION SMC_POSDATA_AddDist\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "p",
+          "Type": "TRAFO.POSDATA"
+        },
+        {
+          "Scope": "Inout Const",
+          "Name": "p0",
+          "Type": "TRAFO.POSDATA"
+        },
+        [
+          "dist",
+          "TRAFO.POSDATA"
+        ],
+        {
+          "Scope": "Input",
+          "Name": "isCartesian",
+          "Type": "BOOL"
+        }
+      ]
+    }
+  ]
+}

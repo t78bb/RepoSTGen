@@ -1,0 +1,23 @@
+{
+  "library": "SM3_Basic",
+  "title": "GetAxisRefPointer (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/DriveInterface/AXIS_REF/pou-IAxisRef/GetAxisRefPointer.html",
+  "page_title": "IAxisRef.GetAxisRefPointer (METH)",
+  "text": "\nMETHOD GetAxisRefPointer : POINTER TO AXIS_REF_SM3\nReturns the pointer to an axis.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetAxisRefPointer",
+          "Type": "POINTER TOAXIS_REF_SM3"
+        }
+      ]
+    }
+  ]
+}

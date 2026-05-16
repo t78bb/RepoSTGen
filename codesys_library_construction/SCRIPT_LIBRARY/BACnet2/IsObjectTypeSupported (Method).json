@@ -1,0 +1,28 @@
+{
+  "library": "BACnet2",
+  "title": "IsObjectTypeSupported (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/BACnetServer/pou-IBACnetServer/Objects/IsObjectTypeSupported.html",
+  "page_title": "IBACnetServer.IsObjectTypeSupported (METH)",
+  "text": "\nMETHOD IsObjectTypeSupported : BOOL\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "IsObjectTypeSupported",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Input",
+          "Name": "objType",
+          "Type": "CmpBACnet.IEC_BACNET_OBJECT_TYPE"
+        }
+      ]
+    }
+  ]
+}

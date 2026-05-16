@@ -1,0 +1,8 @@
+{
+  "library": "Util",
+  "title": "YEAR (Alias)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/TimerSwitch/Types/YEAR.html",
+  "page_title": "YEAR (ALIAS)",
+  "text": "\nTYPE YEAR : UINT (0..2106)\n0 or 1970â¦2106",
+  "tables": []
+}

@@ -1,0 +1,57 @@
+{
+  "library": "SM3_Robotics",
+  "title": "MC_GroupEnable (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/AdministrativeConfiguration/AxisGroup/MC_GroupEnable.html",
+  "page_title": "MC_GroupEnable (FB)",
+  "text": "\nFUNCTION_BLOCK MC_GroupEnable\nThis function block changes the state for a group from\nGroupDisabled\nto\nGroupStandby\n.\nThis is an administrative FB, since no movement is generated.\nNote\nThe command does not influence the power state of any of the\nsingle axes in the group\nThe configuration of the axes (e.g. the dynamic limits) is read on\nenabling.  If the configuration of an axis of the group is changed,\nthese changes are only taken into account if the axis group is disabled\nand enabled again.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "AxisGroup",
+          "Type": "AXIS_GROUP_REF_SM3",
+          "Comment": "Reference to a group of axes"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Comment": "Start the change of state at the rising edge"
+        },
+        [
+          "CompatibilityOptions",
+          "SMC_AXIS_GROUP_COMPATIBILITY_OPTIONS",
+          "Deprecated, no longer used.  This input will be removed in future\nversions."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Done",
+          "Type": "BOOL",
+          "Comment": "Group is in stateGroupStandby"
+        },
+        [
+          "Busy",
+          "BOOL",
+          "The FB is not finished"
+        ],
+        [
+          "Error",
+          "BOOL",
+          "Signals that an error has occurred within the function block"
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

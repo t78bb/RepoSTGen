@@ -1,0 +1,36 @@
+{
+  "library": "Util",
+  "title": "VARIANCE (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/Mathematical-Functions/VARIANCE.html",
+  "page_title": "VARIANCE (FB)",
+  "text": "\nFUNCTION_BLOCK VARIANCE\nCalculates the mathematical variance of a variable over time\nIn this case, over time means that the variance is extended for each call to the function block\nuntil a reset is done.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "IN",
+          "Type": "REAL",
+          "Comment": "Input value"
+        },
+        [
+          "RESET",
+          "BOOL",
+          "Reset"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "OUT",
+          "Type": "REAL",
+          "Comment": "Variance"
+        }
+      ]
+    }
+  ]
+}

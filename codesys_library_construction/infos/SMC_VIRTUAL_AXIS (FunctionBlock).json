@@ -1,0 +1,124 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_VIRTUAL_AXIS (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/Additional/SMC_VIRTUAL_AXIS.html",
+  "page_title": "SMC_VIRTUAL_AXIS (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_VIRTUAL_AXIS\nwithout the need to add a virtual axis device to the\nâSoftmotion general axis poolâ.\nUse the output variable\nAxis\nof type\nAXIS_REF_VIRTUAL_SM3\ninstead\nof a virtual axis.\nAxis\nis being initialized by once calling this FB with the desired\naxis properties (the default values correspond to the virtual axis device\ndescription).\nCalling this FB again does not have any effect (apart from changing the\ninput variables):\nAxis\nwonât be touched again.\nNote that instances of this function block must not be assigned to other\ninstances of the same function block.  If you create your own function\nblock containing this function block, it is recommended to add the attribute\nâno_assignâ to your function block as well.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "wDriveID",
+          "Type": "WORD",
+          "Initial": "1",
+          "Comment": "Identifier of drive"
+        },
+        [
+          "iMovementType",
+          "SMC_MOVEMENTTYPE",
+          "ANY_TO_INT(SMC_AXIS_TYPE.finite)",
+          ""
+        ],
+        [
+          "motorType",
+          "SMC_MOTOR_TYPE",
+          "",
+          ""
+        ],
+        [
+          "fPositionPeriod",
+          "LREAL",
+          "360.0",
+          "Length of Period for modulo drives in technical units [u]"
+        ],
+        [
+          "eRampType",
+          "SMC_RAMPTYPE",
+          "trapez",
+          "Velocity ramp"
+        ],
+        [
+          "fSWMaxVelocity",
+          "LREAL",
+          "",
+          "Maximum velocity (software limit) in [u/s]"
+        ],
+        [
+          "fSWMaxAcceleration",
+          "LREAL",
+          "",
+          "Maximum acceleration (software limit) in [u/sÂ²]"
+        ],
+        [
+          "fSWMaxDeceleration",
+          "LREAL",
+          "",
+          "Maximum deceleration (software limit) in [u/sÂ²]"
+        ],
+        [
+          "fSWMaxJerk",
+          "LREAL",
+          "",
+          "Maximum jerk (software limit) in [u/sÂ³]"
+        ],
+        [
+          "fSWMaxTorque",
+          "LREAL",
+          "FPU.GetLRealSpecialVal(FPU.ESpecial_FP_Value.PosInf)",
+          "Maximum torque or force (software limit) in [Nu] or [N]"
+        ],
+        [
+          "fSWLimitPositive",
+          "LREAL",
+          "1000.0",
+          "Position limit in positive direction in techn. units [u]"
+        ],
+        [
+          "fSWLimitNegative",
+          "LREAL",
+          "0.0",
+          "Position limit in negative direction in techn. units [u]"
+        ],
+        [
+          "fSWLimitDeceleration",
+          "LREAL",
+          "0",
+          "Deceleration [techn. units/sÂ²] which the system will brake\nwith in case of a software limit."
+        ],
+        [
+          "bSWLimitEnable",
+          "BOOL",
+          "FALSE",
+          "TRUE: Enables software end switches."
+        ],
+        [
+          "fSWErrorMaxDistance",
+          "LREAL",
+          "0",
+          "Maximum deceleration distance for ramping down in case of an\nerror [u]."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Axis",
+          "Type": "AXIS_REF_VIRTUAL_SM3",
+          "Initial": "",
+          "Comment": ""
+        },
+        [
+          "bError",
+          "BOOL",
+          "",
+          ""
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "library": "AlarmManager",
+  "title": "GetActiveAlarms (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/pou-IAlarmHandler2/GetActiveAlarms.html",
+  "page_title": "IAlarmHandler2.GetActiveAlarms (METH)",
+  "text": "\nMETHOD GetActiveAlarms : UDINT\nReturns the alarms, that are currently active, according to given filter criteria\nof the IAlarmManagerClient instance. The return value indicates, whether the\nprocessing was successful or not:\n* ERR_OK:              Output parameters of method are valid, client was found\n* ERR_NO_OBJECT:       Client was not found, has been not yet added to the vector\n* ERR_NOTINITIALIZED:  No client has been registered at the alarm manager\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetActiveAlarms",
+          "Type": "UDINT",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfAlarmManagerClient",
+          "Type": "IAlarmManagerClient",
+          "Comment": "The IAlarmManagerClient instance"
+        },
+        {
+          "Scope": "Output",
+          "Name": "parritfActiveAlarms",
+          "Type": "POINTER TO ARRAY [0..0]\nOF IAlarm",
+          "Comment": "Points to an array of IAlarm instances, that are the alarms, that fit the filter\ncriteria and that are currently active."
+        },
+        [
+          "iCountActiveAlarms",
+          "INT",
+          "The effective size of the array above"
+        ]
+      ]
+    }
+  ]
+}

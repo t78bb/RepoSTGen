@@ -1,0 +1,6 @@
+{
+  "requirement": "This code should implement a method named `ConcreteComponment_getValue` that returns a REAL value representing the cost of an object. The method should not require any input parameters and should directly access and return the value of a REAL variable `rValue` associated with the current instance of the object. The method should assume that `rValue` is already initialized and contains the plain value of the object without any additional modifications or calculations.",
+  "provide_code": "//Illustrative method of the pattern\nMETHOD getValue : REAL\nVAR_INPUT\nEND_VAR\nVAR_OUTPUT\nEND_VAR",
+  "function_name": "ConcreteComponment_getValue",
+  "requirement_cn": "这段代码应实现一个名为 `ConcreteComponment_getValue` 的方法，该方法返回一个表示对象成本的 REAL 类型值。该方法不应需要任何输入参数，应直接访问并返回与对象当前实例关联的 REAL 变量 `rValue` 的值。该方法应假设 `rValue` 已经初始化，并且包含了对象的基本值，没有任何额外的修改或计算。"
+}

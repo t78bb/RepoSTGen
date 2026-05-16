@@ -1,0 +1,37 @@
+{
+  "library": "BACnet",
+  "title": "InitializeBACnetDateTime (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/Utilities/BACnetUtilities/InitializeBACnetDataTypes/InitializeBACnetDateTime.html",
+  "page_title": "InitializeBACnetDateTime (FUN)",
+  "text": "\nFUNCTION InitializeBACnetDateTime : BOOL\nInitializes a IEC_BACNET_DATE_TIME according to a given BACnetDateTime.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "InitializeBACnetDateTime",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "dateTime",
+          "Type": "BACnetDateTime",
+          "Comment": "The BACnetDateTime to use for initialization."
+        },
+        {
+          "Scope": "Inout",
+          "Name": "bacDateTime",
+          "Type": "CmpBACnet.IEC_BACNET_DATE_TIME",
+          "Comment": "The BACnet date time to operate on."
+        }
+      ]
+    }
+  ]
+}

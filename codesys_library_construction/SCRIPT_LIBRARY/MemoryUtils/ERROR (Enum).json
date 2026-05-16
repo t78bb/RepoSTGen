@@ -1,0 +1,28 @@
+{
+  "library": "MemoryUtils",
+  "title": "ERROR (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/MemoryUtils/Current/MemoryUtils/Enums/ERROR.html",
+  "page_title": "ERROR (ENUM)",
+  "text": "\nTYPE ERROR :\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "NO_ERROR",
+          "Initial": "0",
+          "Comment": ""
+        },
+        {
+          "Name": "NO_MEMORY",
+          "Initial": "",
+          "Comment": "No more memory available. Set AutoExtend = TRUE, or free\nsome memory malloc at the MemoryManager"
+        }
+      ]
+    }
+  ]
+}

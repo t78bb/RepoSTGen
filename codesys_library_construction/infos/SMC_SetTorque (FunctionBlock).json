@@ -1,0 +1,52 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_SetTorque (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/Movement/Direct/SMC_SetTorque.html",
+  "page_title": "SMC_SetTorque (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_SetTorque\nThis function block applies the given torque to the axis.\nIn controller mode\nSMC_torque\n, this is the set torque that the drive will\nproduce.\nIn controller mode\nSMC_velocity\nor\nSMC_position\n, the torque value can\nbe used by the servo drive to improve the controller loop.  The given torque\nshould be the expected torque of the drive.  This is also called torque\nfeed forward control.\nIn controller mode\nSMC_nocontrol\n, the function block has no effect, no\nerror is reported.\nBy default, the torque is expected to be provided at the motor shaft, not the gear\nbox output.\nA conversion factor can be set using\nSMC_SetAdditionalConversionFactors\n..\nNote\nThis function block does not support forecasts that are set up by\nSMC_SetForecast\n.\nNote\nIf the axis is part of an axis group that is enabled, you have to call SMC_GroupUpdate\nfrom the SM3_Robotics library before calling this function block.\nOtherwise, the torque values are overwritten by the axis group.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3",
+          "Comment": "Reference to axis"
+        },
+        {
+          "Scope": "Input",
+          "Name": "bEnable",
+          "Type": "BOOL",
+          "Comment": "TRUE: Enables the execution of the function block."
+        },
+        [
+          "fTorque",
+          "LREAL",
+          "Torque in Nm (for rotary motors) or N (for linear motors)."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bBusy",
+          "Type": "BOOL",
+          "Comment": "TRUE: Execution of function block has not been finished yet."
+        },
+        [
+          "bError",
+          "BOOL",
+          "TRUE: Error has occurred within the function block."
+        ],
+        [
+          "nErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

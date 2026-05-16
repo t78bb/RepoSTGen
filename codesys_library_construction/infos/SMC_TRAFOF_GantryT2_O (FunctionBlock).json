@@ -1,0 +1,97 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_TRAFOF_GantryT2_O (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_Trafo_POUs/SoftMotion-Transformations/Gantry-systems/SMC_TRAFOF_GantryT2_O.html",
+  "page_title": "SMC_TRAFOF_GantryT2_O (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_TRAFOF_GantryT2_O\nAlternative forward transformation for T-gantry systems with\nstationary drives.\nCompared to\nSMC_TRAFOF_GantryT2\n, the drive configuration is\ndifferent:\nNote\nFor detailed information on transformations\nsee overview to\nSM_Trafo_POUs\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "dOffsetX",
+          "Type": "LREAL",
+          "Comment": "Offset position"
+        },
+        [
+          "dOffsetY",
+          "LREAL",
+          "Offset position"
+        ],
+        [
+          "minX",
+          "LREAL",
+          "Area"
+        ],
+        [
+          "maxX",
+          "LREAL",
+          "Area"
+        ],
+        [
+          "minY",
+          "LREAL",
+          "Area"
+        ],
+        [
+          "maxY",
+          "LREAL",
+          "Area"
+        ],
+        {
+          "Scope": "Inout",
+          "Name": "DriveA",
+          "Type": "AXIS_REF_SM3",
+          "Comment": "X-,Y-drive"
+        },
+        [
+          "DriveB",
+          "AXIS_REF_SM3",
+          "X-,Y-drive"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "dx",
+          "Type": "LREAL",
+          "Comment": "Position"
+        },
+        [
+          "dy",
+          "LREAL",
+          "Position"
+        ],
+        [
+          "dnx",
+          "LREAL",
+          "Normed position"
+        ],
+        [
+          "dny",
+          "LREAL",
+          "Normed position"
+        ],
+        [
+          "ratio",
+          "LREAL",
+          "Ratio area_x / area_y"
+        ],
+        [
+          "dnOffsetX",
+          "LREAL",
+          ""
+        ],
+        [
+          "dnOffsetY",
+          "LREAL",
+          ""
+        ]
+      ]
+    }
+  ]
+}

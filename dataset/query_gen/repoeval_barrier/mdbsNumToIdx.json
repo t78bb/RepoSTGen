@@ -1,0 +1,6 @@
+{
+  "requirement": "This code should implement a function block named mdbsNumToIdx that maps a device number (devNo) to a corresponding level and index based on predefined cases. The input parameter devNo is of type WORD, and the outputs are level and idx, both of type INT. If devNo is greater than 40000, the function block uses a CASE statement to assign values to level and idx based on specific devNo values. For example, devNo values from 41010 to 41080 and 42010, 42020 map to level 1 with varying idx values. Similarly, values from 51010 to 52020, and 53000, 53010 map to level 2 with specific idx values. If devNo does not match any case within the specified range, the outputs level and idx should remain unchanged or be set to a default or error value.",
+  "provide_code": "FUNCTION_BLOCK mdbsNumToIdx\nVAR_INPUT\n\tdevNo\t\t:WORD;\nEND_VAR\nVAR_OUTPUT\n\tlevel\t\t:INT;\n\tidx\t\t\t:INT;\nEND_VAR",
+  "function_name": "mdbsNumToIdx",
+  "requirement_cn": "这段代码应实现一个名为 mdbsNumToIdx 的功能块，该功能块根据预定义的情况将设备编号（devNo）映射到相应的级别和索引。输入参数 devNo 的类型为 WORD，输出为 level 和 idx，类型均为 INT。如果 devNo 大于 40000，则功能块使用 CASE 语句根据特定的 devNo 值为 level 和 idx 赋值。例如，devNo 值从 41010 到 41080 以及 42010、42020 映射到级别 1，具有不同的 idx 值。类似地，从 51010 到 52020 以及 53000、53010 的值映射到级别 2，具有特定的 idx 值。如果 devNo 未匹配指定范围内的任何情况，则输出 level 和 idx 应保持不变或设置为默认值或错误值。"
+}

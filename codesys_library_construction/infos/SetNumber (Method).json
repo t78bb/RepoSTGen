@@ -1,0 +1,23 @@
+{
+  "library": "SM3_CNC",
+  "title": "SetNumber (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/File/ReadNCFile/Token/pou-SMC_Token/SetNumber.html",
+  "page_title": "SMC_Token.SetNumber (METH)",
+  "text": "\nMETHOD FINAL SetNumber\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "fNumber",
+          "Type": "LREAL"
+        }
+      ]
+    }
+  ]
+}

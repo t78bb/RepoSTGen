@@ -1,0 +1,37 @@
+{
+  "library": "BACnet",
+  "title": "InitializeBACnetSetpointReference (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/Utilities/BACnetUtilities/InitializeBACnetDataTypes/InitializeBACnetSetpointReference.html",
+  "page_title": "InitializeBACnetSetpointReference (FUN)",
+  "text": "\nFUNCTION InitializeBACnetSetpointReference : BOOL\nInitializes a IEC_BACNET_SETPOINT_REFERENCE according to a given BACnetSetpointReference struct.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "InitializeBACnetSetpointReference",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "setpointRef",
+          "Type": "BACnetSetpointReference",
+          "Comment": "The BACnetSetpointReference to use for initialization."
+        },
+        {
+          "Scope": "Inout",
+          "Name": "bacSetpointRef",
+          "Type": "CmpBACnet.IEC_BACNET_SETPOINT_REFERENCE",
+          "Comment": "The BACnet set point reference to operate on."
+        }
+      ]
+    }
+  ]
+}

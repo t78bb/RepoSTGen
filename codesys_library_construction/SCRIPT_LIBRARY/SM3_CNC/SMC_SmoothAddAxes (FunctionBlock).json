@@ -1,0 +1,140 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_SmoothAddAxes (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/SoftMotion-Function-Blocks/SMC_SmoothAddAxes.html",
+  "page_title": "SMC_SmoothAddAxes (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_SmoothAddAxes\nThis function smoothes motions of additional axes distributed over several objects.\nThis leads to a constant slope of the additional axes P, Q, U, V, W and to\nthe usage of an optimized polynomial motion profile by the axes A, B and C.\nActivation of smoothing\nSmoothing must be enabled and disabled in G-Code using G71 and G70.\nG71 starts the smoothing, G70 ends the smoothing. The additional axes that should\nbe smoothed are defined by the parameter L<Additional axis number>.\nDefinition of the additional axis number:\nParameter\nAdditional Axis\nL4\nA\nL5\nB\nL6\nC\nL7\nP\nL8\nQ\nL9\nU\nL10\nV\nL11\nW\nExample G-Code\nN0 G1 X100 A0 Q100 F100\nN10 G71 L8    (Turn on smoothing for Q)\nN20 G1 X200\nN30 G71 L4    (Turn on smoothing for A)\nN40 G1 X250\nN50 G1 X300\nN60 G1 X350\nN70 G1 X400 A100\nN80 G70 L4    (Turn off smoothing for A)\nN90 G1 X500 Q0\nN100 G70 L8   (Turn off smoothing for Q)\nNote\nThe output data buffer available to the function block must be large\nenough to contain a complete smoothing range.\nIf the output data buffer has space for n objects, no more than n-3\ninput objects can be smoothed. Otherwise, smoothing is exited with error.\nPROBE movements such as G31 are not supported. The error\nSMC_PROBE_G31_NOT_ALLOWED\nis reported if a PROBE movement\nis encountered while additional axis smoothing is active.\n",
+  "tables": [
+    {
+      "headers": [
+        "Parameter",
+        "Additional Axis"
+      ],
+      "rows": [
+        {
+          "Parameter": "L4",
+          "Additional Axis": "A"
+        },
+        {
+          "Parameter": "L5",
+          "Additional Axis": "B"
+        },
+        {
+          "Parameter": "L6",
+          "Additional Axis": "C"
+        },
+        {
+          "Parameter": "L7",
+          "Additional Axis": "P"
+        },
+        {
+          "Parameter": "L8",
+          "Additional Axis": "Q"
+        },
+        {
+          "Parameter": "L9",
+          "Additional Axis": "U"
+        },
+        {
+          "Parameter": "L10",
+          "Additional Axis": "V"
+        },
+        {
+          "Parameter": "L11",
+          "Additional Axis": "W"
+        }
+      ]
+    },
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "bExecute",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Execution starts on the rising edge."
+        },
+        [
+          "bAbort",
+          "BOOL",
+          "",
+          "IfTRUE, the current processing of this function block\nis aborted"
+        ],
+        [
+          "bAppend",
+          "BOOL",
+          "",
+          "As long as this input is set toFALSE, the DataOut-queue will be\ncleared at each reset.\nAs long as it is set toTRUE, newly incoming data will be written\nto the end of the DataOut-queue."
+        ],
+        [
+          "poqDataIn",
+          "POINTER TOSMC_OUTQUEUE",
+          "",
+          "This input path queue"
+        ],
+        [
+          "dSmoothingPart",
+          "LREAL",
+          "0.5",
+          "In case of the additional axes A, B and C the user can determine,\nwhich part of the path is provided to the additional axes for\nacceleration/deceleration and which part is to operate with a\nconstant velocity.0: No acceleration/deceleration phase is set.1: No constant motion is to be created.0.5: The acceleration phase plus the deceleration phase requiresthe same time than the constant motion."
+        ],
+        [
+          "dAngleTol",
+          "LREAL",
+          "0.001",
+          "For a correct parametrization of the additional axes A, B and C it is\nimportant to know, whether a object crossing leads to a stop.\nThe inputdAngleTol, which is also used in the function blockSMC_CheckVelocitiesand in other preprocessing function blocks,\nis also required here. It should be occupied with always the same value."
+        ],
+        [
+          "nSizeOutQueue",
+          "UDINT",
+          "",
+          "The size of pbyBufferOutQueue in bytes."
+        ],
+        [
+          "pbyBufferOutQueue",
+          "POINTER TO ARRAY [0..0]\nOF SMC_GEOINFO",
+          "",
+          "This input must point to the first byte of the memory area being\nallocated for theSMC_OUTQUEUEstructure.\nThis area must be at least as big as defined innSizeOutQueue.\nTypically the allocation of the memory buffer is done within the\ndeclaration part of the IEC-program by defining a byte-array\n(ExampleBuf:ARRAY[1..50]OFSMC_GEOINFO;).\nThe value may be predefined, but may then be modified during a reset only."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bDone",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "This output will be set toTRUEas soon as the input path\nhas been processed completely.The function block\nwill not perform any further actions until it gets reset."
+        },
+        [
+          "bBusy",
+          "BOOL",
+          "",
+          "TRUE, while execution of function block is not finished"
+        ],
+        [
+          "bError",
+          "BOOL",
+          "",
+          "Signals, that an error has occurred within the function\nblock"
+        ],
+        [
+          "wErrorID",
+          "SMC_ERROR",
+          "",
+          "Error identification"
+        ],
+        [
+          "poqDataOut",
+          "POINTER TOSMC_OUTQUEUE",
+          "",
+          "The output path queue"
+        ]
+      ]
+    }
+  ]
+}

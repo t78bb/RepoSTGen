@@ -1,0 +1,37 @@
+{
+  "library": "String Functions",
+  "title": "LEN (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Functions/Current/StrFunc/Functions/LEN.html",
+  "page_title": "LEN (FUN)",
+  "text": "\nFUNCTION LEN : UDINT\nReturns the number of\nbytes\nof a string\nSee function\nCOUNT\nfor calculating the number of runes\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "LEN",
+          "Type": "UDINT",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfString",
+          "Type": "IString",
+          "Comment": "String to be analyzed"
+        },
+        {
+          "Scope": "Output",
+          "Name": "eErrorID",
+          "Type": "ERROR",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

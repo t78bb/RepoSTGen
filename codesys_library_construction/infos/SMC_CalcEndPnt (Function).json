@@ -1,0 +1,28 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_CalcEndPnt (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/GeoInfo-Help-Functions/SMC_CalcEndPnt.html",
+  "page_title": "SMC_CalcEndPnt (FUN)",
+  "text": "\nFUNCTION SMC_CalcEndPnt : BOOL\nThis function calculates the end point\npiDestPos\nof an\nSMC_GEOINFO\nobject.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SMC_CalcEndPnt",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Input",
+          "Name": "pg",
+          "Type": "POINTER TOSMC_GEOINFO"
+        }
+      ]
+    }
+  ]
+}

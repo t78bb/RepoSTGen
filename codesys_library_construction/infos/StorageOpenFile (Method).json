@@ -1,0 +1,37 @@
+{
+  "library": "3S Storage",
+  "title": "StorageOpenFile (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/3S Storage/Current/_3SStorage/Instances/pou-Storage/StorageOpenFile.html",
+  "page_title": "Storage.StorageOpenFile (METH)",
+  "text": "\nMETHOD StorageOpenFile : STO.ERROR\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "StorageOpenFile",
+          "Type": "STO.ERROR",
+          "Initial": ""
+        },
+        {
+          "Scope": "Inout",
+          "Name": "sPath",
+          "Type": "CAA.FILENAME",
+          "Initial": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "xReadOnly",
+          "Type": "BOOL",
+          "Initial": "FALSE"
+        }
+      ]
+    }
+  ]
+}

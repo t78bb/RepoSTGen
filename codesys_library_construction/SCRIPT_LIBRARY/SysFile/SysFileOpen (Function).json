@@ -1,0 +1,41 @@
+{
+  "library": "SysFile",
+  "title": "SysFileOpen (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SysFile/Current/SysFileOpen.html",
+  "page_title": "SysFileOpen (FUN)",
+  "text": "\nFUNCTION SysFileOpen : RTS_IEC_HANDLE\nOpen or create file. A standard path will be added to the filename, if no path is specified in the file name.\nIf a file extension is specified in the settings, this path will be used (see category settings).\nNote\nFile name can contain an absolute or relative path to the file. Path entries\nmust be separated with a Slash (/)  and not with a Backslash (\\)!\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SysFileOpen",
+          "Type": "RTS_IEC_HANDLE",
+          "Comment": "Handle to the file or RTS_INVALID_HANDLE if failed"
+        },
+        {
+          "Scope": "Input",
+          "Name": "szFile",
+          "Type": "STRING",
+          "Comment": "File name. File name can contain an absolute or relative path to the file.\nPath entries must be separated with a Slash (/)  and not with a Backslash (\\)!"
+        },
+        [
+          "am",
+          "ACCESS_MODE",
+          "Requested access mode to the file. SeeACCESS_MODEfor details.Here find some examples:AM_READIf file does not exist, an error is returned. If the file exists, the file\nwill be openedAM_WRITEIf file does not exist, a new file will be created. If the file exists,\nit will be overwritten!AM_APPENDIf the file does not exist, an error is returned. If the file exists, the file\nwill be opened"
+        ],
+        [
+          "pResult",
+          "POINTER TO RTS_IEC_RESULT",
+          "Pointer to runtime system error code (see CmpErrors.library)"
+        ]
+      ]
+    }
+  ]
+}

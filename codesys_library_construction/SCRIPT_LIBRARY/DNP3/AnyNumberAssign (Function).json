@@ -1,0 +1,33 @@
+{
+  "library": "DNP3",
+  "title": "AnyNumberAssign (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Functions/AnyNumber/AnyNumberAssign.html",
+  "page_title": "AnyNumberAssign (FUN)",
+  "text": "\nFUNCTION AnyNumberAssign :\nError\nAssign AnyNumber from source to dest.\nThis assignment does not convert (base) type - so dest.baseType needs to be equal to source.baseType.\nIn case dest.baseType is default (AnyNumberType.TYPE_NONE) the dest.baseType will be set to source.baseType.\nIn case dest.isPtr = TRUE, the according POINTER (TO data - AnyNumber.u.p.p*) needs to be set prior to AnyNumberAssign().\nReturns Error.AnyNumberError if source or dest are not consistent.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "AnyNumberAssign",
+          "Type": "Error"
+        },
+        {
+          "Scope": "Input",
+          "Name": "source",
+          "Type": "REFERENCE TOAnyNumber"
+        },
+        {
+          "Scope": "Inout",
+          "Name": "dest",
+          "Type": "AnyNumber"
+        }
+      ]
+    }
+  ]
+}

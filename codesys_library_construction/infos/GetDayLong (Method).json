@@ -1,0 +1,31 @@
+{
+  "library": "StringUtils",
+  "title": "GetDayLong (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/StringUtils/Current/Public-Parts/pou-ILocalizedDateTimeNames/GetDayLong.html",
+  "page_title": "ILocalizedDateTimeNames.GetDayLong (METH)",
+  "text": "\nMETHOD GetDayLong :\nCharBufferPtr\nreturns the localized text of the day as whole name.\nIf no localization exists, a defaulttext (textid) should be returned.\nThe stored value, the returnpointer is set to, will be overridden by\nany next call of one of the Get-methods of the implementing functionblock in VisuElemBase.\nTherefore, the result should be used at once. The pointer should not be stored.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetDayLong",
+          "Type": "CharBufferPtr",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "uiDayOfWeek",
+          "Type": "UINT",
+          "Comment": "Day of Week:\n1: Monday, 2: Tuesday,.. 7: Sunday"
+        }
+      ]
+    }
+  ]
+}

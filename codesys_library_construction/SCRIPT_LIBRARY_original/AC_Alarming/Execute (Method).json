@@ -1,0 +1,35 @@
+{
+  "library": "AC_Alarming",
+  "title": "Execute (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_Alarming/Current/ExtenderFB/pou-ACAlarmExtender/Execute.html",
+  "page_title": "ACAlarmExtender.Execute (METH)",
+  "text": "ExtenderFB\nACAlarmExtender (FunctionBlock)\nAcknowledgeAllAlarmsOfModule (Method)\nExecute (Method)\nGetActiveAlarmsOfModule (Method)\nGetEventAlarmID (Method)\nGetID (Property)\nInit (Method)\nInit2 (Method)\nInitSortedModuleAlarms (Method)\nAlarmInfo (Struct)\nAlarmingCall (Enum)\nIACAlarmExtender (Interface)\nInit (Method)\nIACAlarmExtender2 (Interface)\nGetEventAlarmID (Method)\nInit2 (Method)\nIACAlarmExtender3 (Interface)\nAcknowledgeAllAlarmsOfModule (Method)\nGetActiveAlarmsOfModule (Method)\nInitSortedModuleAlarms (Method)\nModuleAlarmInfo (Struct)\nModuleCall (Struct)\nModuleEvent (Struct)\nFunctions\nRaiseModuleEvent (Function)\nReplaceAlarmPlaceholderString (Function)\nGlobalTextList (GlobalTextList)\nModuleInterface\nIModuleAlarming (Interface)\nConsumeModuleAlarm (Method)\nVisualization\nFile and Project Information\nLibrary Reference\nAC_ModuleBase\nLibrary Identification\nLibrary Properties\nAlarmManager\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nStringUtils\nLibrary Identification\nLibrary Properties\nVisuElem3DPath\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElemCamDisplayer\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElemMeter\nLibrary Identification\nLibrary Properties\nVisuElemTextEditor\nLibrary Identification\nLibrary Properties\nVisuElemTrace\nLibrary Identification\nLibrary Properties\nVisuElemXYChart\nLibrary Identification\nLibrary Properties\nVisuElems\nLibrary Identification\nLibrary Properties\nVisuElemsAlarm\nLibrary Identification\nLibrary Properties\nVisuElemsDateTime\nLibrary Identification\nLibrary Properties\nVisuElemsSpecialControls\nLibrary Identification\nLibrary Properties\nVisuElemsWinControls\nLibrary Identification\nLibrary Properties\nVisuNativeControl\nLibrary Identification\nLibrary Properties\nAC_Alarming\nDocs\n»\nExtenderFB\n»\nACAlarmExtender\n(FB)\n»\nACAlarmExtender.Execute (METH)\nACAlarmExtender.Execute (METH)\nÂ¶\nMETHOD Execute\nExecutes the action. This function is part of the AlarmManager.IAlarmNotifiable interface.\nInOut:\nScope\nName\nType\nComment\nInput\neCurrTransition\nAlarmStateTransition\nThe currently processed alarm state transition. This will be\nevaluated in order to determine, whether the action has to be\nexecuted or not.\nitfAlarm\nIAlarm\nThe alarm, for which the action has to be performed\npbyAdditionalData\nPOINTER TO BYTE\nAn optional pointer to a structure variable containing\nadditional parameter",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "eCurrTransition",
+          "Type": "AlarmStateTransition",
+          "Comment": "The currently processed alarm state transition. This will be\nevaluated in order to determine, whether the action has to be\nexecuted or not."
+        },
+        [
+          "itfAlarm",
+          "IAlarm",
+          "The alarm, for which the action has to be performed"
+        ],
+        [
+          "pbyAdditionalData",
+          "POINTER TO BYTE",
+          "An optional pointer to a structure variable containing\nadditional parameter"
+        ]
+      ]
+    }
+  ]
+}

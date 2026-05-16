@@ -1,0 +1,64 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_AxisSettingsFromAxes (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_Trafo_POUs/SoftMotion-Transformations/Wrapper/SMC_AxisSettingsFromAxes.html",
+  "page_title": "SMC_AxisSettingsFromAxes (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_AxisSettingsFromAxes\nReads the axis settings from the given axes and stores\nthem in the output\nAxisSettings\n.\nNote: not all inputs must be connected.  For example, if\nthe kinematics has 3 axes, then only input\nAxis0\n,\nAxis1\n,\nand\nAxis2\nhave to be connected.\nIntended for use with\nSMC_Trafo_Wrapper\nand\nSMC_TrafoF_Wrapper\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "Axis0",
+          "Type": "IAxisRef",
+          "Initial": "",
+          "Comment": "The first axis of the kinematics"
+        },
+        [
+          "Axis1",
+          "IAxisRef",
+          "",
+          "The second axis of the kinematics"
+        ],
+        [
+          "Axis2",
+          "IAxisRef",
+          "",
+          "The third axis of the kinematics"
+        ],
+        [
+          "Axis3",
+          "IAxisRef",
+          "",
+          "The fourth axis of the kinematics"
+        ],
+        [
+          "Axis4",
+          "IAxisRef",
+          "",
+          "The fifth axis of the kinematics"
+        ],
+        [
+          "Axis5",
+          "IAxisRef",
+          "",
+          "The sixth axis of the kinematics"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "AxisSettings",
+          "Type": "ARRAY\n[0..(SMRB.MAX_KIN_AXES -\n1)] OF\nTRAFO.Axis_Settings",
+          "Initial": "[6(STRUCT(limits := STRUCT(xUnlimited := TRUE)))]",
+          "Comment": "The axis settings (e.g. axis ranges) of the axesAxis0..Axis5.\nThis output can be connected to the inputAxisSettingsof\nfunction blockSMC_Trafo_WrapperandSMC_TrafoF_Wrapper."
+        }
+      ]
+    }
+  ]
+}

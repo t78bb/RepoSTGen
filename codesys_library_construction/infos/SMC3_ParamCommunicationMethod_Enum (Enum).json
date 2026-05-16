@@ -1,0 +1,22 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC3_ParamCommunicationMethod_Enum (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/DataTypes/DriveInterface/SMC3_ParamCommunicationMethod_Enum.html",
+  "page_title": "SMC3_ParamCommunicationMethod_Enum (ENUM)",
+  "text": "\nTYPE SMC3_ParamCommunicationMethod_Enum :\n",
+  "tables": [
+    {
+      "headers": [
+        "Name"
+      ],
+      "rows": [
+        {
+          "Name": "SMC3_PCM_AXIS_REF_PARAM"
+        },
+        {
+          "Name": "SMC3_PCM_DRIVE_PARAM"
+        }
+      ]
+    }
+  ]
+}

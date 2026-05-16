@@ -1,0 +1,36 @@
+{
+  "library": "MemoryUtils",
+  "title": "MemForceSwap (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/MemoryUtils/Current/MemoryUtils/Functions/Swapping/MemForceSwap.html",
+  "page_title": "MemForceSwap (FUN)",
+  "text": "\nFUNCTION MemForceSwap : INT\nSwaps the given data - no matter which byte order the target system has.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "MemForceSwap",
+          "Type": "INT"
+        },
+        {
+          "Scope": "Input",
+          "Name": "pbyBuffer",
+          "Type": "POINTER TO BYTE"
+        },
+        [
+          "iSize",
+          "INT"
+        ],
+        [
+          "iCount",
+          "INT"
+        ]
+      ]
+    }
+  ]
+}

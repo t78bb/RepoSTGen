@@ -1,0 +1,87 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_NCNavigator (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/ReadNCFile2/SMC_NCNavigator.html",
+  "page_title": "SMC_NCNavigator (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_NCNavigator\nThis function block selects one of a given number of G-sentence queues.\nThe selection is done based on the called subprogram and controlled\nby\nSMC_NCInterpreter\n.\nAdditionally to subprogram calls and returns, this function block also\nhandles jumps to sentence numbers, jumps to jump targets, and step\nsuppression.\nNote\nThis function block is included in SMC_ReadNCFile2 and is needed\nin CNC applications only in special cases.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "sentences",
+          "Type": "SMC_GSentenceQueue",
+          "Comment": "The output sentence queue that can be fed intoSMC_NCInterpreter.\nNote: this queue must have capacity 1."
+        },
+        {
+          "Scope": "Input",
+          "Name": "bExecute",
+          "Type": "BOOL",
+          "Comment": "A rising edge starts the execution."
+        },
+        [
+          "bAbort",
+          "BOOL",
+          "IfTRUE, the current processing of this function block\nis aborted"
+        ],
+        [
+          "bStepSuppress",
+          "BOOL",
+          "When this input isTRUE, lines of the CNC program starting\nwith â/â will be ignored. Otherwise they will be processed."
+        ],
+        [
+          "pSentenceQueues",
+          "POINTER TOSMC_GSentenceQueue",
+          "Pointer to the first element of an array of sentence queues,\none for each subprogram call depth.  The first is used for\nthe main program.  Note that the last queue is reserved for\nparsing subprogram declarations, so the effective maximum\ncall depth is nNumSentenceQueues - 1.\nRead each cycle, not only at the rising edge of bExecute."
+        ],
+        [
+          "nNumSentenceQueues",
+          "UDINT",
+          "The number of sentence queues.  Must be at least 1."
+        ],
+        [
+          "stSubprogramDeclRequest",
+          "STRING",
+          "If this input is set to an non-empty string,\nthe last sentence queue will be used to read the subprogram\nwith the given name in order to store the declaration in the\nsymbol table.\nRead each cycle, not only at the rising edge of bExecute."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bBusy",
+          "Type": "BOOL",
+          "Comment": "TRUEwhile execution of function block is not finished"
+        },
+        [
+          "bError",
+          "BOOL",
+          "TRUEsignals that an error has occurred within\nthe function block."
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ],
+        [
+          "errorPos",
+          "SMC_NC_SourcePosition",
+          "The source-position where an error has been detected."
+        ],
+        [
+          "RequestedSentenceQueueIdx",
+          "UDINT",
+          "The zero-based index of the active sentence queue."
+        ],
+        [
+          "RequestedProgramName",
+          "STRING",
+          "The program name of the requested sentence queue.\nOnly relevant if RequestedSentenceQueueIdx is increased."
+        ]
+      ]
+    }
+  ]
+}

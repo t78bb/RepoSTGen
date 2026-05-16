@@ -1,0 +1,62 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_GroupSetPathTolerance (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/AdministrativeConfiguration/AxisGroup/SMC_GroupSetPathTolerance.html",
+  "page_title": "SMC_GroupSetPathTolerance (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_GroupSetPathTolerance\nSets the path tolerance that is used for new movements.\nThe path tolerance determines how far the axis group may\ndeviate from the programmed path before it goes to state GroupError.\nIt is useful to allow for some tolerance in tracking applications,\nbecause an unforseen movement of the tracked object (e.g. the conveyor\nbelt) may lead to a deviation from the programmed path.\nThe path tolerance of the axis group is only changed by this function block.\nIt is not affected by\nMC_GroupContinue\n,\nMC_GroupEnable\n,\nMC_GroupDisable\n,\nor other function blocks that operate on the axis group.\nNote\nThe path tolerance does not take effect immediately, but only with the\nnext commanded movement.\nIn the case that the last commanded movement was a tracking movement, when\nthis movement finishes, then the axis group will continue to follow the tracked\ncoordinate system (e.g. a conveyor belt).  During this tracking, the path\ntolerances of the finished movement will be used, not the path tolerances\nset afterwards by this function block.\nIn order to change the used path tolerances, it is possible to command a new\ntracking movement with target position equal to the target position of the\nprevious movement.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "AxisGroup",
+          "Type": "AXIS_GROUP_REF_SM3",
+          "Comment": "Reference to a group of axes"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Comment": "Executes the FB at the rising edge"
+        },
+        [
+          "MaxPositionLag",
+          "LREAL",
+          "The maximum allowed position lag of the TCP in technical units [u].\nMust not be negative."
+        ],
+        [
+          "MaxOrientationLag",
+          "LREAL",
+          "The maximum allowed orientation lag of the TCP in angular degrees [deg].\nMust not be negative."
+        ],
+        [
+          "MaxAxisLag",
+          "TRAFO.AXISPOS_REF",
+          "The maximum allowed position lag of each axis in the units of the\nrespective axis.  No value may be negative."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Done",
+          "Type": "BOOL",
+          "Comment": "The tolerance has been applied to the axisgroup and will be\neffective for new movements."
+        },
+        [
+          "Error",
+          "BOOL",
+          "Signals that an error has occurred within the function block"
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

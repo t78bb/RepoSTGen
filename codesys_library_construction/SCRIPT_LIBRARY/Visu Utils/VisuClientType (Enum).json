@@ -1,0 +1,48 @@
+{
+  "library": "Visu Utils",
+  "title": "VisuClientType (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/Visu Utils/Current/VisuUtils/VisuActionUtilities/Types/Enum/VisuClientType.html",
+  "page_title": "VisuClientType (ENUM)",
+  "text": "\nTYPE VisuClientType :\nThe client type. Similar to VisuElemBase.Visu_ClientType, but only containing the clients, needed here.\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "Unknown",
+          "Initial": "16#0",
+          "Comment": ""
+        },
+        {
+          "Name": "ProgrammingSystem",
+          "Initial": "16#1",
+          "Comment": ""
+        },
+        {
+          "Name": "TargetVisualization",
+          "Initial": "16#4",
+          "Comment": ""
+        },
+        {
+          "Name": "WebVisualization",
+          "Initial": "16#8",
+          "Comment": ""
+        },
+        {
+          "Name": "RemoteTargetVisualization",
+          "Initial": "16#10",
+          "Comment": ""
+        },
+        {
+          "Name": "AllRemoteVisualizations",
+          "Initial": "16#1B",
+          "Comment": "1 | 2 | 8 | 16"
+        }
+      ]
+    }
+  ]
+}

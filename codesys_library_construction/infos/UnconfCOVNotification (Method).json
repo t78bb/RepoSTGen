@@ -1,0 +1,36 @@
+{
+  "library": "BACnet",
+  "title": "UnconfCOVNotification (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetServer/pou-IBACnetServer/Services/UnconfCOVNotification.html",
+  "page_title": "IBACnetServer.UnconfCOVNotification (METH)",
+  "text": "\nMETHOD UnconfCOVNotification : CmpBACnet.IEC_BACNET_STATUS\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "UnconfCOVNotification",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS"
+        },
+        {
+          "Scope": "Input",
+          "Name": "targetDevInst",
+          "Type": "DWORD"
+        },
+        [
+          "pCOVInfo",
+          "POINTER TO CmpBACnet.IEC_BACNET_COV_NOTIF_INFO"
+        ],
+        [
+          "pAPDUParams",
+          "POINTER TO CmpBACnet.IEC_BACNET_APDU_PROPERTIES"
+        ]
+      ]
+    }
+  ]
+}

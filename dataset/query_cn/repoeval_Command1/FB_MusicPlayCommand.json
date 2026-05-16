@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现用于控制CD播放器的音乐播放命令功能。",
+  "provide_code": "FUNCTION_BLOCK PUBLIC FB_MusicPlayCommand IMPLEMENTS I_Command"
+}

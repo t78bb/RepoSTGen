@@ -1,0 +1,40 @@
+{
+  "library": "DNP3",
+  "title": "SetSessionConfigAspectMaxControlRequests (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Outstation/pou-OutstationConfiguration/SetSessionConfigAspectMaxControlRequests.html",
+  "page_title": "OutstationConfiguration.SetSessionConfigAspectMaxControlRequests (METH)",
+  "text": "\nMETHOD SetSessionConfigAspectMaxControlRequests :\nError\nSet optional outstation session configuration aspect - multiple CROB in a single request / maximum number of controls per a single request\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetSessionConfigAspectMaxControlRequests",
+          "Type": "Error",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "allowMultiCROBRequests",
+          "Type": "BOOL",
+          "Initial": "TRUE",
+          "Comment": "Determines whether multiple Control Relay Output Block objects are\nallowed in a single request. The DNP3 specification allows this and\nassumes that each operation will be performed in serial. Some devices\nmay want to limit CROB objects to one per request to simplify processing.\nNOTE: If this is set to TMWDEFS_FALSE, Analog Control Objects will not\nbe allowed in the same request as the single CROB object."
+        },
+        [
+          "maxControlRequests",
+          "USINT",
+          "10",
+          "Determines the maximum number of controls allowed in a single request.\nThis applies to both Binary (CROB) and Analog Control outputs. This must be less than 10."
+        ]
+      ]
+    }
+  ]
+}

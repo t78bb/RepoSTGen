@@ -1,0 +1,37 @@
+{
+  "library": "BACnet2",
+  "title": "InitializeBACnetBitString (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/Utilities/BACnetUtilities/InitializeBACnetDataTypes/InitializeBACnetBitString.html",
+  "page_title": "InitializeBACnetBitString (FUN)",
+  "text": "\nFUNCTION InitializeBACnetBitString : BOOL\nInitializes a IEC_BACNET_BIT_STRING according to a given STRING (i.e. in the form â1101011â).\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "InitializeBACnetBitString",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "str",
+          "Type": "STRING",
+          "Comment": "The STRING used for initialization."
+        },
+        {
+          "Scope": "Inout",
+          "Name": "bitStr",
+          "Type": "CmpBACnet.IEC_BACNET_BIT_STRING",
+          "Comment": "The bit string to operate on."
+        }
+      ]
+    }
+  ]
+}

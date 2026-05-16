@@ -1,0 +1,37 @@
+{
+  "library": "BACnetDefaultImpl",
+  "title": "ReadNumberOfRecordsAndLastSequenceFromDataFile (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnetDefaultImpl/Current/BACnetDefaultImpl/Function-Blocks/LoggingObjects/Internal/pou-LogObjectsBase/Files/DataFiles/ReadNumberOfRecordsAndLastSequenceFromDataFile.html",
+  "page_title": "LogObjectsBase.ReadNumberOfRecordsAndLastSequenceFromDataFile (METH)",
+  "text": "\nMETHOD ReadNumberOfRecordsAndLastSequenceFromDataFile : RTS_IEC_RESULT\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "ReadNumberOfRecordsAndLastSequenceFromDataFile",
+          "Type": "RTS_IEC_RESULT"
+        },
+        {
+          "Scope": "Input",
+          "Name": "instNumber",
+          "Type": "DWORD"
+        },
+        {
+          "Scope": "Output",
+          "Name": "numRecords",
+          "Type": "CmpBACnet.IEC_BACNET_UNSIGNED"
+        },
+        [
+          "lastSequence",
+          "CmpBACnet.IEC_BACNET_UNSIGNED"
+        ]
+      ]
+    }
+  ]
+}

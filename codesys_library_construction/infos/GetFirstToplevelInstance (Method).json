@@ -1,0 +1,23 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "GetFirstToplevelInstance (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_Module/pou-IModuleTree/GetFirstToplevelInstance.html",
+  "page_title": "IModuleTree.GetFirstToplevelInstance (METH)",
+  "text": "\nMETHOD GetFirstToplevelInstance :\nIModule\nReturns the first toplevel instance of the tree.\nReturns 0 if (and only if) the tree is empty.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetFirstToplevelInstance",
+          "Type": "IModule"
+        }
+      ]
+    }
+  ]
+}

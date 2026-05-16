@@ -1,0 +1,28 @@
+{
+  "library": "BACnet2",
+  "title": "PropertyAttributeExistenceString (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/Utilities/ToString/PropertyAttributeExistenceString.html",
+  "page_title": "PropertyAttributeExistenceString (FUN)",
+  "text": "\nFUNCTION PropertyAttributeExistenceString : STRING\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "PropertyAttributeExistenceString",
+          "Type": "STRING"
+        },
+        {
+          "Scope": "Input",
+          "Name": "propAttr",
+          "Type": "BACnetPropertyAttributeExistent"
+        }
+      ]
+    }
+  ]
+}

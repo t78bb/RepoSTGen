@@ -1,0 +1,28 @@
+{
+  "library": "SM3_CNC",
+  "title": "GetFromStart (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/File/ReadNCFile/Token/pou-SMC_TokenQueue/GetFromStart.html",
+  "page_title": "SMC_TokenQueue.GetFromStart (METH)",
+  "text": "\nMETHOD GetFromStart : POINTER TO SMC_Token\nReturns a pointer to the n-th token if the queue is at least n token,\notherwise 0.\nThe pointer is valid until the next call to\nRemoveFirst\n.\nOnly to be called safely from the reading task, or when it is made sure that\nno elements are removed concurrently.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "n",
+          "Type": "UDINT"
+        },
+        {
+          "Scope": "Return",
+          "Name": "GetFromStart",
+          "Type": "POINTER TOSMC_Token"
+        }
+      ]
+    }
+  ]
+}

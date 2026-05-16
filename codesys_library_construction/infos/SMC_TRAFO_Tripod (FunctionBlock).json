@@ -1,0 +1,100 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_TRAFO_Tripod (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_Trafo_POUs/SoftMotion-Transformations/Parallel-Systems/Tripod/SMC_TRAFO_Tripod.html",
+  "page_title": "SMC_TRAFO_Tripod (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_TRAFO_Tripod\nThe transformation module is provided to\nexecute backward transformation of a tripod.\nNote\nFor detailed information on transformation modules\nsee the overview on kinematic transformations in the\nCNC online help.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "pi",
+          "Type": "SMC_PosInfo",
+          "Initial": "",
+          "Comment": "Target position vector (x,y) of centre of the inner ring.\nOutput of interpolator."
+        },
+        [
+          "dInnerRadius",
+          "LREAL",
+          "",
+          "Radius of inner ring"
+        ],
+        [
+          "dOuterRadius",
+          "LREAL",
+          "",
+          "Radius of outer ring"
+        ],
+        [
+          "dLength",
+          "LREAL",
+          "",
+          "Length of linkage"
+        ],
+        [
+          "dDistance",
+          "LREAL",
+          "",
+          "Distance between the two connecting rods for each arm"
+        ],
+        [
+          "dRotationOffset",
+          "LREAL",
+          "0",
+          "Mathematically oriented angle between\naxis A and origin (0,0) in degrees"
+        ],
+        [
+          "dOffsetA",
+          "LREAL",
+          "0",
+          "Additional offset of axis A in SoftMotion units"
+        ],
+        [
+          "dOffsetB",
+          "LREAL",
+          "0",
+          "Additional offset of axis B in SoftMotion units"
+        ],
+        [
+          "dOffsetC",
+          "LREAL",
+          "0",
+          "Additional offset of axis C in SoftMotion units"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bError",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUE, if position is invalid"
+        },
+        [
+          "dA",
+          "LREAL",
+          "",
+          "Position of axis A in degree"
+        ],
+        [
+          "dB",
+          "LREAL",
+          "",
+          "Position of axis B in degree"
+        ],
+        [
+          "dC",
+          "LREAL",
+          "",
+          "Position of axis C in degree"
+        ]
+      ]
+    }
+  ]
+}

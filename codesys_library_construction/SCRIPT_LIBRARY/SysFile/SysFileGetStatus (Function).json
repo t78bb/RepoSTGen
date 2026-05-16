@@ -1,0 +1,31 @@
+{
+  "library": "SysFile",
+  "title": "SysFileGetStatus (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SysFile/Current/SysFileGetStatus.html",
+  "page_title": "SysFileGetStatus (FUN)",
+  "text": "\nFUNCTION SysFileGetStatus :\nSYS_FILE_STATUS\nGet the file status\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SysFileGetStatus",
+          "Type": "SYS_FILE_STATUS",
+          "Comment": "File status. See category file status"
+        },
+        {
+          "Scope": "Input",
+          "Name": "hFile",
+          "Type": "RTS_IEC_HANDLE",
+          "Comment": "Handle of the file"
+        }
+      ]
+    }
+  ]
+}

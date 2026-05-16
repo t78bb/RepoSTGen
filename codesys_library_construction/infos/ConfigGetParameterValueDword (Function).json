@@ -1,0 +1,32 @@
+{
+  "library": "IoStandard",
+  "title": "ConfigGetParameterValueDword (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/IoStandard/Current/Config-Access-Help-Functions-internal/ConfigGetParameterValueDword.html",
+  "page_title": "ConfigGetParameterValueDword (FUN)",
+  "text": "\nFUNCTION ConfigGetParameterValueDword : DWORD\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "ConfigGetParameterValueDword",
+          "Type": "DWORD"
+        },
+        {
+          "Scope": "Input",
+          "Name": "pParameter",
+          "Type": "POINTER TO IoConfigParameter"
+        },
+        [
+          "pResult",
+          "POINTER TO UDINT"
+        ]
+      ]
+    }
+  ]
+}

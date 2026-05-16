@@ -1,0 +1,8 @@
+{
+  "library": "DNP3",
+  "title": "IPoint (Interface)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Interfaces/IPoint.html",
+  "page_title": "IPoint (ITF)",
+  "text": "\nINTERFACE IPoint\nInterface to access a point.\nProperties:\nPointNum\nPointTyp\nMethods:\nGetDescriptionString\nIdentificationToString\nToString\nStructure:\nGetDescriptionString (Method)\nIdentificationToString (Method)\nPointNum (Property)\nPointTyp (Property)\nToString (Method)",
+  "tables": []
+}

@@ -1,0 +1,31 @@
+{
+  "library": "BACnet2",
+  "title": "GetBACnetOptionalPriorityFilterProperty (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/BACnetObjects/base/pou-BACnetObjectBase/Utilities/typed-property-access/GetBACnetOptionalPriorityFilterProperty.html",
+  "page_title": "BACnetObjectBase.GetBACnetOptionalPriorityFilterProperty (METH)",
+  "text": "\nMETHOD GetBACnetOptionalPriorityFilterProperty : CmpBACnet.IEC_BACNET_OPTIONAL_BIT_STRING\nReturns the BACnetOptionalPriorityFilter value of the specified Property (propID) of this BACnet-Object.\nThe used functions are no client, meaning, that the access of the property is not restricted by write or read access restrictions.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetBACnetOptionalPriorityFilterProperty",
+          "Type": "CmpBACnet.IEC_BACNET_OPTIONAL_BIT_STRING",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "propID",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_ID",
+          "Comment": "The ID of the property to get."
+        }
+      ]
+    }
+  ]
+}

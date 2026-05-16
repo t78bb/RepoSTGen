@@ -1,0 +1,259 @@
+{
+  "library": "AC_DataLog",
+  "title": "TL (TextList)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_DataLog/Current/AC_DataLog/TL.html",
+  "page_title": "TL (Text List)",
+  "text": "AC_DataLog\nComponentManager\nRegisterComponent (FunctionBlock)\nInit (Method)\nfb_exit (Method)\nfb_init (Method)\nConstants (GVL)\nDataLogChannel\nDataLogChannel (FunctionBlock)\nEventCallback\nIDataLogChannel\nIModule\nfb_exit (Method)\nDataLogChannel (FunctionBlock)\nEventCallback\nIDataLogChannel\nIModule\nfb_exit (Method)\nIDataLogChannel (Interface)\nEnable (Property)\nGetAllDataLogVariables (Method)\nGetIsActionOngoing (Method)\nLogAll (Method)\nSetIsActionOngoing (Method)\nUseHashValues (Property)\nDataLogInstanceList (Struct)\nDataLogManager\nDataLogManager (FunctionBlock)\nBias (Property)\nCallPrioLowStart (Method)\nExternaLogAllChannels (Method)\nLogBias (Property)\nDataLogManager (FunctionBlock)\nBias (Property)\nCallPrioLowStart (Method)\nExternaLogAllChannels (Method)\nLogBias (Property)\nIDataLogManager (Interface)\nExternaLogAllChannels (Method)\nIDataLogManager2 (Interface)\nBias (Property)\nLogBias (Property)\nDataLogStorage\nCSVStorage\nDataLogStorage_CSV (FunctionBlock)\nDataLogStorage_CSV (FunctionBlock)\nDataLogStorageBase (FunctionBlock)\nIDataLogStorage\nIModule\nfb_exit (Method)\nprivate\nIDataLogStorage (Folder)\nAddEntry (Method)\nOnAppStop (Method)\nOnResetOrigin (Method)\nSQLiteStorage\nDataLogStorage_SQLite (FunctionBlock)\nDataLogStorage_SQLite (FunctionBlock)\nETableType (Enum)\nIDataLogStorage_SQLite (Interface)\nDataLogVarDesc (Struct)\nFunctions\nBiasToString (Function)\nCreateString (Function)\nIP (ImagePool)\nQueue\nDataLogVarDescForQueue (Struct)\nDataLogVarDescForQueue_FB (FunctionBlock)\nIElement\nNodeDispose (Method)\nTL (TextList)\nGlobalTextList (GlobalTextList)\nLibrary Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nFile and Project Information\nLibrary Reference\n3S Storage\nLibrary Identification\nLibrary Properties\nAC_ModuleBase\nLibrary Identification\nLibrary Properties\nAC_Persistence\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nBase Interfaces\nLibrary Identification\nLibrary Properties\nCAA FB Factory\nLibrary Identification\nLibrary Properties\nCAA Mathematics\nLibrary Identification\nLibrary Properties\nCAA Memory\nLibrary Identification\nLibrary Properties\nCAA Storage\nLibrary Identification\nLibrary Properties\nCAA Types Extern\nLibrary Identification\nLibrary Properties\nCmpApp\nLibrary Identification\nLibrary Properties\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nCmpEventMgr\nLibrary Identification\nLibrary Properties\nCmpLog\nLibrary Identification\nLibrary Properties\nCmpSchedule\nLibrary Identification\nLibrary Properties\nComponent Manager\nLibrary Identification\nLibrary Properties\nElement Collections\nLibrary Identification\nLibrary Properties\nFloatingPointUtils\nLibrary Identification\nLibrary Properties\nMemoryUtils\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nStringUtils\nLibrary Identification\nLibrary Properties\nSysCpuHandling\nLibrary Identification\nLibrary Properties\nSysFile\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysTask\nLibrary Identification\nLibrary Properties\nSysTimeCore\nLibrary Identification\nLibrary Properties\nSysTimeRtc\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nUtil\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElem3DPath\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElemCamDisplayer\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElemMeter\nLibrary Identification\nLibrary Properties\nVisuElemTextEditor\nLibrary Identification\nLibrary Properties\nVisuElemTrace\nLibrary Identification\nLibrary Properties\nVisuElemXYChart\nLibrary Identification\nLibrary Properties\nVisuElems\nLibrary Identification\nLibrary Properties\nVisuElemsAlarm\nLibrary Identification\nLibrary Properties\nVisuElemsDateTime\nLibrary Identification\nLibrary Properties\nVisuElemsSpecialControls\nLibrary Identification\nLibrary Properties\nVisuElemsWinControls\nLibrary Identification\nLibrary Properties\nVisuNativeControl\nLibrary Identification\nLibrary Properties\nVisuSymbols\nLibrary Identification\nLibrary Properties\nAC_DataLog\nDocs\n»\nAC_DataLog\n»\nTL (Text List)\nTL (Text List)\nÂ¶\nID\nDefault\nen\nde\nDataLogManager_Desc\nThis\nis\nthe\ntoplevel\ninstance\nfor\nlogging\ndata.\nThis is the toplevel instance for logging data.\nDies ist die Toplevel-Instanz fÃ¼r das Daten-Logging.\nDataLogHighTask_Desc\nIn\nthis\ntask,\ncomparison\nand\ncreation\nof\nentries\nis\ndone.\nIn this task, comparison and creation of entries is done.\nIn dieser Task werden EintrÃ¤ge verglichen und angelegt.\nDataLogLowTask_Desc\nIn\nthis\ntask,\nwriting\nto\nstorage\nis\ndone.\nIn this task, writing to storage is done.\nIn dieser Task wird auf das Speichermedium geschrieben.\nDataLogChannels_Role\nChannels\nfor\nDataLog\nChannels for DataLog\nKanÃ¤le fÃ¼r das Data-Logging\nDataLogChannel_Desc\nThese\nmodules\nsort\nthe\ndata\nlog\nentries.\nThese modules sort the data log entries.\nDiese Module sortieren die DatenprotokolleintrÃ¤ge.\nDataLogStorage_Role\nA\nstorage\nmodule.\nA storage module.\nModul zur Speicherung.\nEnable_Name\nEnable\nEnable\nAktivieren\nEnable_Desc\nFALSE:\nVariables\nstored\nby\nthis\nchannel\nare\nnot\nlogged.\nFALSE: Variables stored by this channel are not logged.\nFALSE: Variablen dieses Kanals werden nicht gelogged.\nSaveInFirstCycle_Name\nSave\nin\nfirst\ncycle\nSave in first cycle\nSpeichere im ersten Zyklus\nSaveInFirstCycle_Desc\nLog\nthe\nvalues\nof\nall\nvariables\nof\nthis\nchannel\nduring\nthe\nfirst\ncycle\nof\nthe\napplication.\nLog the values of all variables of this channel during the first cycle of the application.\nLogge die Werte aller Variablen dieses Kanals wÃ¤hrend des ersten Zyklus der Applikation.\nstorageName_Name\nStorage\nname\nStorage name\nSpeicherungsname\nstorageName_Desc\nName\nof\nthe\nstorage:\nUse\n%CHANNEL_NAME%\nwhen\nusing\nthe\nname\nof\nthe\nchannel\n(parent).\nName of the storage: Use %CHANNEL_NAME% when using the name of the channel (parent).\nName der Speicherung. Benutzen sie $$CHANNEL_NAME$$ um den Namen des Kanales (Vatermodul) zu verwenden\nDataLogStorage_SQLite_Desc\nRepresents\nan\nSQLite\nstorage\nRepresents an SQLite storage\nReprÃ¤sentiert eine SQLite-Speicherung.\nCsvStorage_Desc\nRepresenting\na\nCSV\nstorage\nRepresenting a CSV storage\nReprÃ¤sentiert eine CSV-Speicherung.\nSeperator_Name\nSeperator\nSeperator\nSeperator\nSeperator_Desc\nThe\nseperator\nused\nin\nCSV.\nThe seperator used in CSV.\nSeparator, der in CSV-Dateien verwendet wird.\nbufferSize_Name\nBuffer\nsize\nBuffer size\nPuffergrÃ¶Ãe\nbufferSize_Desc\nSize\nof\nthe\ninternal\nbuffer\nSize of the internal buffer\nGrÃ¶Ãe des internen Puffers\nbufferFillLevel_Name\nBuffer\nfill\nlevel\nBuffer fill level\nPufferfÃ¼llstand\nbufferFillLevel_Desc\nData\nis\nwritten\nonly\nif\nthe\nbuffer\nhas\nreached\na\nfill\nlevel\naccording\nto\nthis\nspecification\nin\npercent.\nA\nvalue\nof\n0\ndeactivates\nbuffering.\nData is written only if the buffer has reached a fill level according to this specification in percent. A value of 0 deactivates buffering.\nDaten werden nur dann geschrieben, wenn der Puffer einen FÃ¼llstand gemÃ¤Ã dieser Angabe in Prozent erreicht hat. 0 deaktiviert die Pufferung.\nSaveCyclic_Name\nSave\nCyclic\nSave Cyclic\nZyklische Speicherung\nSaveCyclic_Desc\nSave\nall\nvariables\nof\nthis\nchannel\ncyclically\nin\nthis\ninterval.\nSet\nto\nT#0S\nto\ndeactivate\nperiodic\nlogging.\nSave all variables of this channel cyclically in this interval. Set to T#0S to deactivate periodic logging.\nAlle Variablen dieses Kanals zyklisch in diesem Intervall speichern. Auf T#0S einstellen, um die periodische Protokollierung zu deaktivieren.\nMaxEntries_Name\nMaximum\nnumber\nof\nentries\nMaximum number of entries\nMaximale Anzahl der EintrÃ¤ge\nMaxEntries_Desc\nMaximum\nnumber\nof\nentries\nallowed\nfor\nthe\ntable\nbelonging\nto\nthis\nmodule.\nThe\nvalue\n0\ndeactivates\nthe\nmaximum\nlimit.\nMaximum number of entries allowed for the table belonging to this module. The value 0 deactivates the maximum limit.\nMaximale Anzahl an EintrÃ¤gen die fÃ¼r die Tabelle, die zu diesem Modul gehÃ¶rt, erlaubt ist. 0 deaktiviert die maximale Grenze.\nCRCCheck_Name\nCRC\nCheck\nCRC Check\nCRC-PrÃ¼fung\nCRCCheck_Desc\nEnable\nCRC\ncheck\nwhen\nlogging\nto\nensure\nconsistent\nlog\nentries.\nEnable CRC check when logging to ensure consistent log entries.\nCRC-PrÃ¼fung wÃ¤hrend des Loggings aktivieren, um die Konsistenz der geloggten EintrÃ¤ge zu sichern.\naddSurroundingSignForStringEntries_Name\nAdd\nenclosing\ncharacters\nAdd enclosing characters\nFÃ¼ge umschlieÃende Zeichen ein\naddSurroundingSignForStringEntries_Desc\nShould\n(W)STRING\nentries\nbe\nenclosed\nby\nthese\ncharacters?\nShould (W)STRING entries be enclosed by these characters?\nSollen (W)STRING EintrÃ¤ge von diesen Zeichen umschlossen werden.\naddSurroundingSignForStringEntries_Group\nEnclosing\ncharacters\nEnclosing characters\nUmschlieÃende Zeichen\nsurroundingSignForStringEntries_Name\nEnclosing\ncharacters\nEnclosing characters\nUmschlieÃendes Zeichen\nsurroundingSignForStringEntries_Desc\nThe\ncharacters\nto\nbe\nused\nfor\nenclosing.\nThe characters to be used for enclosing.\nDie Zeichen, die fÃ¼r das UmschlieÃen verwendet werden sollen.\ndateReplacementString_Name\nFormat\nstring\nfor\nreplacing\n%DATE%\nFormat string for replacing %DATE%\nFormat-String zum Ersetzen von %DATE%\ndateReplacementString_Desc\nThe\nplaceholder\n%DATE%\nin\nthe\nstorage\nname\nwill\nbe\nreplaced\nby\nthe\ncurrent\ndate,\nin\nthe\nformat\nspecified\nby\nthis\nstring.\nThe placeholder %DATE% in the storage name will be replaced by the current date, in the format specified by this string.\nDer Platzhalter %DATE% im Speicherungsnamen wird durch das aktuelle Datum in dem hier spezifizierten Format ersetzt.\nlogBias_Name\nLog\nBias\nLog Bias\nLog Bias\nlogBias_Desc\nWhether\nthe\nBias\noffset\nshall\nbe\nlogged.\nWhether the Bias offset shall be logged.\nGibt an, ob der Bias Offset mit geloggt werden soll.\niBias_Name\nBias\noffset\nBias offset\nBias offset\niBias_Desc\nThe\noffset\nto\nUTC\nin\nminutes.\nThe offset to UTC in minutes.\nDer Offset zu UTC in Minuten.\nlogBias_Group\nBias\nBias\nBias\nlineEnding_Name\nLine\nending\nLine ending\nZeilenumbruch\nlineEnding_Desc\nSign(s)\nfor\nthe\nline\nending\nof\npersistence\nfiles\nSign(s) for the line ending of persistence files\nZeichen, welche einen Zeilenumbruch in der Persistenz-Datei definieren",
+  "tables": [
+    {
+      "headers": [
+        "ID",
+        "Default",
+        "en",
+        "de"
+      ],
+      "rows": [
+        {
+          "ID": "DataLogManager_Desc",
+          "Default": "Thisisthetoplevelinstanceforloggingdata.",
+          "en": "This is the toplevel instance for logging data.",
+          "de": "Dies ist die Toplevel-Instanz fÃ¼r das Daten-Logging."
+        },
+        {
+          "ID": "DataLogHighTask_Desc",
+          "Default": "Inthistask,comparisonandcreationofentriesisdone.",
+          "en": "In this task, comparison and creation of entries is done.",
+          "de": "In dieser Task werden EintrÃ¤ge verglichen und angelegt."
+        },
+        {
+          "ID": "DataLogLowTask_Desc",
+          "Default": "Inthistask,writingtostorageisdone.",
+          "en": "In this task, writing to storage is done.",
+          "de": "In dieser Task wird auf das Speichermedium geschrieben."
+        },
+        {
+          "ID": "DataLogChannels_Role",
+          "Default": "ChannelsforDataLog",
+          "en": "Channels for DataLog",
+          "de": "KanÃ¤le fÃ¼r das Data-Logging"
+        },
+        {
+          "ID": "DataLogChannel_Desc",
+          "Default": "Thesemodulessortthedatalogentries.",
+          "en": "These modules sort the data log entries.",
+          "de": "Diese Module sortieren die DatenprotokolleintrÃ¤ge."
+        },
+        {
+          "ID": "DataLogStorage_Role",
+          "Default": "Astoragemodule.",
+          "en": "A storage module.",
+          "de": "Modul zur Speicherung."
+        },
+        {
+          "ID": "Enable_Name",
+          "Default": "Enable",
+          "en": "Enable",
+          "de": "Aktivieren"
+        },
+        {
+          "ID": "Enable_Desc",
+          "Default": "FALSE:Variablesstoredbythischannelarenotlogged.",
+          "en": "FALSE: Variables stored by this channel are not logged.",
+          "de": "FALSE: Variablen dieses Kanals werden nicht gelogged."
+        },
+        {
+          "ID": "SaveInFirstCycle_Name",
+          "Default": "Saveinfirstcycle",
+          "en": "Save in first cycle",
+          "de": "Speichere im ersten Zyklus"
+        },
+        {
+          "ID": "SaveInFirstCycle_Desc",
+          "Default": "Logthevaluesofallvariablesofthischannelduringthefirstcycleoftheapplication.",
+          "en": "Log the values of all variables of this channel during the first cycle of the application.",
+          "de": "Logge die Werte aller Variablen dieses Kanals wÃ¤hrend des ersten Zyklus der Applikation."
+        },
+        {
+          "ID": "storageName_Name",
+          "Default": "Storagename",
+          "en": "Storage name",
+          "de": "Speicherungsname"
+        },
+        {
+          "ID": "storageName_Desc",
+          "Default": "Nameofthestorage:Use%CHANNEL_NAME%whenusingthenameofthechannel(parent).",
+          "en": "Name of the storage: Use %CHANNEL_NAME% when using the name of the channel (parent).",
+          "de": "Name der Speicherung. Benutzen sie $$CHANNEL_NAME$$ um den Namen des Kanales (Vatermodul) zu verwenden"
+        },
+        {
+          "ID": "DataLogStorage_SQLite_Desc",
+          "Default": "RepresentsanSQLitestorage",
+          "en": "Represents an SQLite storage",
+          "de": "ReprÃ¤sentiert eine SQLite-Speicherung."
+        },
+        {
+          "ID": "CsvStorage_Desc",
+          "Default": "RepresentingaCSVstorage",
+          "en": "Representing a CSV storage",
+          "de": "ReprÃ¤sentiert eine CSV-Speicherung."
+        },
+        {
+          "ID": "Seperator_Name",
+          "Default": "Seperator",
+          "en": "Seperator",
+          "de": "Seperator"
+        },
+        {
+          "ID": "Seperator_Desc",
+          "Default": "TheseperatorusedinCSV.",
+          "en": "The seperator used in CSV.",
+          "de": "Separator, der in CSV-Dateien verwendet wird."
+        },
+        {
+          "ID": "bufferSize_Name",
+          "Default": "Buffersize",
+          "en": "Buffer size",
+          "de": "PuffergrÃ¶Ãe"
+        },
+        {
+          "ID": "bufferSize_Desc",
+          "Default": "Sizeoftheinternalbuffer",
+          "en": "Size of the internal buffer",
+          "de": "GrÃ¶Ãe des internen Puffers"
+        },
+        {
+          "ID": "bufferFillLevel_Name",
+          "Default": "Bufferfilllevel",
+          "en": "Buffer fill level",
+          "de": "PufferfÃ¼llstand"
+        },
+        {
+          "ID": "bufferFillLevel_Desc",
+          "Default": "Dataiswrittenonlyifthebufferhasreachedafilllevelaccordingtothisspecificationinpercent.Avalueof0deactivatesbuffering.",
+          "en": "Data is written only if the buffer has reached a fill level according to this specification in percent. A value of 0 deactivates buffering.",
+          "de": "Daten werden nur dann geschrieben, wenn der Puffer einen FÃ¼llstand gemÃ¤Ã dieser Angabe in Prozent erreicht hat. 0 deaktiviert die Pufferung."
+        },
+        {
+          "ID": "SaveCyclic_Name",
+          "Default": "SaveCyclic",
+          "en": "Save Cyclic",
+          "de": "Zyklische Speicherung"
+        },
+        {
+          "ID": "SaveCyclic_Desc",
+          "Default": "Saveallvariablesofthischannelcyclicallyinthisinterval.SettoT#0Stodeactivateperiodiclogging.",
+          "en": "Save all variables of this channel cyclically in this interval. Set to T#0S to deactivate periodic logging.",
+          "de": "Alle Variablen dieses Kanals zyklisch in diesem Intervall speichern. Auf T#0S einstellen, um die periodische Protokollierung zu deaktivieren."
+        },
+        {
+          "ID": "MaxEntries_Name",
+          "Default": "Maximumnumberofentries",
+          "en": "Maximum number of entries",
+          "de": "Maximale Anzahl der EintrÃ¤ge"
+        },
+        {
+          "ID": "MaxEntries_Desc",
+          "Default": "Maximumnumberofentriesallowedforthetablebelongingtothismodule.Thevalue0deactivatesthemaximumlimit.",
+          "en": "Maximum number of entries allowed for the table belonging to this module. The value 0 deactivates the maximum limit.",
+          "de": "Maximale Anzahl an EintrÃ¤gen die fÃ¼r die Tabelle, die zu diesem Modul gehÃ¶rt, erlaubt ist. 0 deaktiviert die maximale Grenze."
+        },
+        {
+          "ID": "CRCCheck_Name",
+          "Default": "CRCCheck",
+          "en": "CRC Check",
+          "de": "CRC-PrÃ¼fung"
+        },
+        {
+          "ID": "CRCCheck_Desc",
+          "Default": "EnableCRCcheckwhenloggingtoensureconsistentlogentries.",
+          "en": "Enable CRC check when logging to ensure consistent log entries.",
+          "de": "CRC-PrÃ¼fung wÃ¤hrend des Loggings aktivieren, um die Konsistenz der geloggten EintrÃ¤ge zu sichern."
+        },
+        {
+          "ID": "addSurroundingSignForStringEntries_Name",
+          "Default": "Addenclosingcharacters",
+          "en": "Add enclosing characters",
+          "de": "FÃ¼ge umschlieÃende Zeichen ein"
+        },
+        {
+          "ID": "addSurroundingSignForStringEntries_Desc",
+          "Default": "Should(W)STRINGentriesbeenclosedbythesecharacters?",
+          "en": "Should (W)STRING entries be enclosed by these characters?",
+          "de": "Sollen (W)STRING EintrÃ¤ge von diesen Zeichen umschlossen werden."
+        },
+        {
+          "ID": "addSurroundingSignForStringEntries_Group",
+          "Default": "Enclosingcharacters",
+          "en": "Enclosing characters",
+          "de": "UmschlieÃende Zeichen"
+        },
+        {
+          "ID": "surroundingSignForStringEntries_Name",
+          "Default": "Enclosingcharacters",
+          "en": "Enclosing characters",
+          "de": "UmschlieÃendes Zeichen"
+        },
+        {
+          "ID": "surroundingSignForStringEntries_Desc",
+          "Default": "Thecharacterstobeusedforenclosing.",
+          "en": "The characters to be used for enclosing.",
+          "de": "Die Zeichen, die fÃ¼r das UmschlieÃen verwendet werden sollen."
+        },
+        {
+          "ID": "dateReplacementString_Name",
+          "Default": "Formatstringforreplacing%DATE%",
+          "en": "Format string for replacing %DATE%",
+          "de": "Format-String zum Ersetzen von %DATE%"
+        },
+        {
+          "ID": "dateReplacementString_Desc",
+          "Default": "Theplaceholder%DATE%inthestoragenamewillbereplacedbythecurrentdate,intheformatspecifiedbythisstring.",
+          "en": "The placeholder %DATE% in the storage name will be replaced by the current date, in the format specified by this string.",
+          "de": "Der Platzhalter %DATE% im Speicherungsnamen wird durch das aktuelle Datum in dem hier spezifizierten Format ersetzt."
+        },
+        {
+          "ID": "logBias_Name",
+          "Default": "LogBias",
+          "en": "Log Bias",
+          "de": "Log Bias"
+        },
+        {
+          "ID": "logBias_Desc",
+          "Default": "WhethertheBiasoffsetshallbelogged.",
+          "en": "Whether the Bias offset shall be logged.",
+          "de": "Gibt an, ob der Bias Offset mit geloggt werden soll."
+        },
+        {
+          "ID": "iBias_Name",
+          "Default": "Biasoffset",
+          "en": "Bias offset",
+          "de": "Bias offset"
+        },
+        {
+          "ID": "iBias_Desc",
+          "Default": "TheoffsettoUTCinminutes.",
+          "en": "The offset to UTC in minutes.",
+          "de": "Der Offset zu UTC in Minuten."
+        },
+        {
+          "ID": "logBias_Group",
+          "Default": "Bias",
+          "en": "Bias",
+          "de": "Bias"
+        },
+        {
+          "ID": "lineEnding_Name",
+          "Default": "Lineending",
+          "en": "Line ending",
+          "de": "Zeilenumbruch"
+        },
+        {
+          "ID": "lineEnding_Desc",
+          "Default": "Sign(s)forthelineendingofpersistencefiles",
+          "en": "Sign(s) for the line ending of persistence files",
+          "de": "Zeichen, welche einen Zeilenumbruch in der Persistenz-Datei definieren"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "library": "DNP3",
+  "title": "MasterConfiguration (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/MasterConfiguration.html",
+  "page_title": "MasterConfiguration (FB)",
+  "text": "\nFUNCTION_BLOCK ABSTRACT MasterConfiguration IMPLEMENTS IMasterConfiguration\nFunction block representing an Master configuration.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "address",
+          "Type": "UINT",
+          "Initial": "0",
+          "Comment": "The master address."
+        },
+        [
+          "name",
+          "STRING",
+          "",
+          "The master name."
+        ],
+        [
+          "outstationAddress",
+          "UINT",
+          "0",
+          "The outstation address where to connect to."
+        ]
+      ]
+    }
+  ]
+}

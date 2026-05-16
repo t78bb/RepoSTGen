@@ -1,0 +1,28 @@
+{
+  "library": "BACnet2DefaultImpl",
+  "title": "TimeZoneSegmentToString (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2DefaultImpl/Current/BACnetDefaultImpl/Functions/TimeZoneSegmentToString.html",
+  "page_title": "TimeZoneSegmentToString (FUN)",
+  "text": "\nFUNCTION TimeZoneSegmentToString : STRING\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "TimeZoneSegmentToString",
+          "Type": "STRING"
+        },
+        {
+          "Scope": "Input",
+          "Name": "seg",
+          "Type": "Segment"
+        }
+      ]
+    }
+  ]
+}

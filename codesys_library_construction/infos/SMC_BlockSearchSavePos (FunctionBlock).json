@@ -1,0 +1,65 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_BlockSearchSavePos (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/SoftMotion-Function-Blocks/BlockSearch/SMC_BlockSearchSavePos.html",
+  "page_title": "SMC_BlockSearchSavePos (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_BlockSearchSavePos\nThe function block is used to store the current position of a path.\nSMC_BlockSearchSavePos\nmust run in the task of the interpolator.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "ipo",
+          "Type": "SMC_Interpolator",
+          "Initial": "",
+          "Comment": "Instance of the interpolator of the path"
+        },
+        {
+          "Scope": "Input",
+          "Name": "bExecute",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Rising edge: Starts the saving of the current positionFalling edge: Resets the outputePos"
+        },
+        [
+          "bResetInternalVariables",
+          "BOOL",
+          "",
+          "potentially useful input when interpolating the same CNC-program\nseveral times (as a whole), as we store the last object we worked on"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "ePos",
+          "Type": "SMC_BlockSearchPos",
+          "Initial": "",
+          "Comment": "Position information.\nRequires connection to input ePos ofSMC_BlockSearch"
+        },
+        [
+          "bPositionStored",
+          "BOOL",
+          "",
+          "TRUE: Position has been saved"
+        ],
+        [
+          "bError",
+          "BOOL",
+          "FALSE",
+          "TRUE: Error has occurred"
+        ],
+        [
+          "wErrorID",
+          "SMC_ERROR",
+          "SMC_NO_ERROR",
+          "Error identificationPossible valuesSMC_BSSP_IPO_NOT_ACTIVE:When a rising edge is detected atbExecuteandSMC_Interpolatoris disabled, no position can be stored."
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "library": "AC_Alarming",
+  "title": "ACAlarmExtender (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_Alarming/Current/ExtenderFB/ACAlarmExtender.html",
+  "page_title": "ACAlarmExtender (FB)",
+  "text": "\nFUNCTION_BLOCK ACAlarmExtender IMPLEMENTS\nIACAlarmExtender3\n, AlarmManager.IAlarmNotifiable\nThe environment extender function block itself of the alarm generator. It both implements\nIACAlarmExtender3\nand the AlarmManager.IAlarmNotifiable interface. The latter is used\nso that this function block can get the calls of the CODESYS own alarm configuration.\nProperties:\nGetID\nMethods:\nAcknowledgeAllAlarmsOfModule\nExecute\nGetActiveAlarmsOfModule\nGetEventAlarmID\nInit\nInit2\nInitSortedModuleAlarms\nStructure:\nAcknowledgeAllAlarmsOfModule (Method)\nExecute (Method)\nGetActiveAlarmsOfModule (Method)\nGetEventAlarmID (Method)\nGetID (Property)\nInit (Method)\nInit2 (Method)\nInitSortedModuleAlarms (Method)",
+  "tables": []
+}

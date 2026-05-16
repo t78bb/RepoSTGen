@@ -1,0 +1,8 @@
+{
+  "library": "AlarmManager",
+  "title": "IAlarmGroup2 (Interface)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/IAlarmGroup2.html",
+  "page_title": "IAlarmGroup2 (ITF)",
+  "text": "\nINTERFACE IAlarmGroup2 EXTENDS\nIAlarmGroup\nThis interface is only used internally.\nMethods:\nGetInternalID\n, inherited from\nIAlarmGroup\nGetName\n, inherited from\nIAlarmGroup",
+  "tables": []
+}

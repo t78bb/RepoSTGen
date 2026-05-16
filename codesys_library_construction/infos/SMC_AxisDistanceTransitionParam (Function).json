@@ -1,0 +1,52 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_AxisDistanceTransitionParam (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/Additional/SMC_AxisDistanceTransitionParam.html",
+  "page_title": "SMC_AxisDistanceTransitionParam (FUN)",
+  "text": "\nFUNCTION SMC_AxisDistanceTransitionParam : ARRAY [0..(SMC_RCNST.MAX_TRANS_PARAMS - 1)] OF LREAL\nSets the transition parameters for distance based blending in axis space\n(transition mode\nMC_TRANSITION_MODE.TMAxisDistance\n).\nThe output can be connected to the input\nTransitionParameter\nof the movement function blocks.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SMC_AxisDistanceTransitionParam",
+          "Type": "ARRAY\n[0..(SMC_RCNST.MAX_TRANS_PARAMS\n- 1)] OF LREAL",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "LinearDistance",
+          "Type": "LREAL",
+          "Initial": "",
+          "Comment": "The linear distance in user units. Must be non-negative."
+        },
+        [
+          "AngularDistance",
+          "LREAL",
+          "",
+          "The rotary distance in angular degrees. Must be non-\nnegative."
+        ],
+        [
+          "Axes",
+          "SMC_AxisDistanceAxes",
+          "SMC_AxisDistanceAxes.KINEMATIC",
+          "Defines which axes are taken into account for axis distance\nbased blending."
+        ],
+        [
+          "SubMode",
+          "SMC_AxisDistanceSubMode",
+          "SMC_AxisDistanceSubMode.Maximum",
+          "The submode, determines how the distances are interpreted."
+        ]
+      ]
+    }
+  ]
+}

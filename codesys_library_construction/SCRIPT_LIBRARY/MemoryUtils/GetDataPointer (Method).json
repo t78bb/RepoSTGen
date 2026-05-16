@@ -1,0 +1,23 @@
+{
+  "library": "MemoryUtils",
+  "title": "GetDataPointer (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/MemoryUtils/Current/MemoryUtils/Functionblocks/pou-ByteBuffer/GetDataPointer.html",
+  "page_title": "ByteBuffer.GetDataPointer (METH)",
+  "text": "\nMETHOD GetDataPointer : POINTER TO BYTE\nReturns the pointer where pos points to. If pos is outside buffer range function returns 0.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetDataPointer",
+          "Type": "POINTER TO BYTE"
+        }
+      ]
+    }
+  ]
+}

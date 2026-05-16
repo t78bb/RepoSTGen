@@ -1,0 +1,28 @@
+{
+  "library": "SM3_CNC",
+  "title": "ContainsElement (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/SoftMotion-Function-Blocks/DecoderBuffer/pou-SMC_MonotoneSentenceHistory/ContainsElement.html",
+  "page_title": "SMC_MonotoneSentenceHistory.ContainsElement (METH)",
+  "text": "\nMETHOD ContainsElement : BOOL\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "ContainsElement",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Input",
+          "Name": "udiElement",
+          "Type": "UDINT"
+        }
+      ]
+    }
+  ]
+}

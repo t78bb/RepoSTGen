@@ -1,0 +1,28 @@
+{
+  "library": "BACnet",
+  "title": "GetBACnetScaleProperty (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/pou-IBACnetObjectBase/Utilities/GetBACnetScaleProperty.html",
+  "page_title": "IBACnetObjectBase.GetBACnetScaleProperty (METH)",
+  "text": "\nMETHOD GetBACnetScaleProperty : CmpBACnet.IEC_BACNET_SCALE\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetBACnetScaleProperty",
+          "Type": "CmpBACnet.IEC_BACNET_SCALE"
+        },
+        {
+          "Scope": "Input",
+          "Name": "propID",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_ID"
+        }
+      ]
+    }
+  ]
+}

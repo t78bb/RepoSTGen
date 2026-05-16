@@ -1,0 +1,8 @@
+{
+  "library": "SM3_CommonPublic",
+  "title": "SMC_ADDITIONAL_AXES_VALUES_ARRAY (Alias)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CommonPublic/Current/SM3_CommonPublic/SMC_ADDITIONAL_AXES_VALUES_ARRAY.html",
+  "page_title": "SMC_ADDITIONAL_AXES_VALUES_ARRAY (ALIAS)",
+  "text": "SM3_CommonPublic\nMC_BUFFER_MODE (Enum)\nMC_SOURCE (Enum)\nSMC_ADDITIONAL_AXES_VALUES_ARRAY (Alias)\nSMC_COORD_SYSTEM (Enum)\nSMC_Movement_Id (Alias)\nFile and Project Information\nLibrary Reference\nSM3_CPKernelDefaults\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nSM3_CommonPublic\nDocs\n»\nSM3_CommonPublic\n»\nSMC_ADDITIONAL_AXES_VALUES_ARRAY (ALIAS)\nSMC_ADDITIONAL_AXES_VALUES_ARRAY (ALIAS)\nÂ¶\nTYPE SMC_ADDITIONAL_AXES_VALUES_ARRAY : ARRAY[0..TO_LINT(SM3_CPKernelDefaults.LibParams.MAX_NUM_ADDITIONAL_AXES)-1] OF LREAL\nZero-based array of axis values for the additional axes of an axis group.\nHas an entry for each additional axis.  The maximum number of\nadditional axes, and therefore the size of this array, can be configured\nvia the\nMAX_NUM_ADDITIONAL_AXES\nlibrary parameter in the library\nSM3_CPKernelDefaults\n.",
+  "tables": []
+}

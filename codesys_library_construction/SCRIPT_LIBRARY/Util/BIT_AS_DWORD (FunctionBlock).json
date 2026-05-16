@@ -1,0 +1,186 @@
+{
+  "library": "Util",
+  "title": "BIT_AS_DWORD (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/BitByte-Functions/BIT_AS_DWORD.html",
+  "page_title": "BIT_AS_DWORD (FB)",
+  "text": "\nFUNCTION_BLOCK BIT_AS_DWORD\nConverts 32 input values of data type BOOL into an output value of the data type DWORD\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "B00",
+          "Type": "BOOL",
+          "Comment": "Input bit 0"
+        },
+        [
+          "B01",
+          "BOOL",
+          "Input bit 1"
+        ],
+        [
+          "B02",
+          "BOOL",
+          "Input bit 2"
+        ],
+        [
+          "B03",
+          "BOOL",
+          "Input bit 3"
+        ],
+        [
+          "B04",
+          "BOOL",
+          "Input bit 4"
+        ],
+        [
+          "B05",
+          "BOOL",
+          "Input bit 5"
+        ],
+        [
+          "B06",
+          "BOOL",
+          "Input bit 6"
+        ],
+        [
+          "B07",
+          "BOOL",
+          "Input bit 7"
+        ],
+        [
+          "B08",
+          "BOOL",
+          "Input bit 8"
+        ],
+        [
+          "B09",
+          "BOOL",
+          "Input bit 9"
+        ],
+        [
+          "B10",
+          "BOOL",
+          "Input bit 10"
+        ],
+        [
+          "B11",
+          "BOOL",
+          "Input bit 11"
+        ],
+        [
+          "B12",
+          "BOOL",
+          "Input bit 12"
+        ],
+        [
+          "B13",
+          "BOOL",
+          "Input bit 13"
+        ],
+        [
+          "B14",
+          "BOOL",
+          "Input bit 14"
+        ],
+        [
+          "B15",
+          "BOOL",
+          "Input bit 15"
+        ],
+        [
+          "B16",
+          "BOOL",
+          "Input bit 16"
+        ],
+        [
+          "B17",
+          "BOOL",
+          "Input bit 17"
+        ],
+        [
+          "B18",
+          "BOOL",
+          "Input bit 18"
+        ],
+        [
+          "B19",
+          "BOOL",
+          "Input bit 19"
+        ],
+        [
+          "B20",
+          "BOOL",
+          "Input bit 20"
+        ],
+        [
+          "B21",
+          "BOOL",
+          "Input bit 21"
+        ],
+        [
+          "B22",
+          "BOOL",
+          "Input bit 22"
+        ],
+        [
+          "B23",
+          "BOOL",
+          "Input bit 23"
+        ],
+        [
+          "B24",
+          "BOOL",
+          "Input bit 24"
+        ],
+        [
+          "B25",
+          "BOOL",
+          "Input bit 25"
+        ],
+        [
+          "B26",
+          "BOOL",
+          "Input bit 26"
+        ],
+        [
+          "B27",
+          "BOOL",
+          "Input bit 27"
+        ],
+        [
+          "B28",
+          "BOOL",
+          "Input bit 28"
+        ],
+        [
+          "B29",
+          "BOOL",
+          "Input bit 29"
+        ],
+        [
+          "B30",
+          "BOOL",
+          "Input bit 30"
+        ],
+        [
+          "B31",
+          "BOOL",
+          "Input bit 31"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "X",
+          "Type": "DWORD",
+          "Comment": "Output value"
+        }
+      ]
+    }
+  ]
+}

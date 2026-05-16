@@ -1,0 +1,8 @@
+{
+  "library": "AlarmManager",
+  "title": "IAlarmClass2 (Interface)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/IAlarmClass2.html",
+  "page_title": "IAlarmClass2 (ITF)",
+  "text": "\nINTERFACE IAlarmClass2 EXTENDS\nIAlarmClass\nThis interface extends IAlarmClass to provide further information about acknowledgement settings.\nProperties:\nReAlarmTime\nMethods:\nAckInsteadOfConfirm\nAutoResetDigitalAlarms\nGetInternalID\n, inherited from\nIAlarmClass\nGetName\n, inherited from\nIAlarmClass\nGetPriority\n, inherited from\nIAlarmClass\nIsAcknowledgeSeparately\n, inherited from\nIAlarmClass\nStructure:\nAckInsteadOfConfirm (Method)\nAutoResetDigitalAlarms (Method)\nReAlarmTime (Property)",
+  "tables": []
+}

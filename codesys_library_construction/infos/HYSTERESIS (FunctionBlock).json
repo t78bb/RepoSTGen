@@ -1,0 +1,41 @@
+{
+  "library": "Util",
+  "title": "HYSTERESIS (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/Analog-Monitors/HYSTERESIS.html",
+  "page_title": "HYSTERESIS (FB)",
+  "text": "\nFUNCTION_BLOCK HYSTERESIS\nRealizes a hysteresis function\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "IN",
+          "Type": "INT",
+          "Comment": "Input value"
+        },
+        [
+          "HIGH",
+          "INT",
+          "Upper limit"
+        ],
+        [
+          "LOW",
+          "INT",
+          "Lower limit"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "OUT",
+          "Type": "BOOL",
+          "Comment": "TRUE: InputINis less than inputLOWFALSE: InputINis greater than inputHIGH"
+        }
+      ]
+    }
+  ]
+}

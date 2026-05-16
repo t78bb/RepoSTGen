@@ -1,0 +1,46 @@
+{
+  "library": "CmpBACnet",
+  "title": "BACnetBackupBACnetDevice (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/CmpBACnet/Current/BACnetClientAPI/advanced/BACnetBackupBACnetDevice.html",
+  "page_title": "BACnetBackupBACnetDevice (FUN)",
+  "text": "\nFUNCTION BACnetBackupBACnetDevice :\nIEC_BACNET_STATUS\nFunction initiates a backup for an BACnet device.\nThis function will start an backup procedure for the specified device.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "BACnetBackupBACnetDevice",
+          "Type": "IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "pInfo",
+          "Type": "POINTER TOIEC_BACNET_BACKUPRESTORE_INFO",
+          "Comment": "Pointer to information which specifies which device should be backuped and\nwhere the file object data should be stored to be backuped."
+        },
+        [
+          "pICallback",
+          "CmpEventMgr.ICmpEventCallback",
+          "A pointer to the event-callback interface to inform about failures\nand progress information during the procedure execution."
+        ],
+        [
+          "pAPDUParams",
+          "POINTER TOIEC_BACNET_APDU_PROPERTIES",
+          "A pointer to the APDU-Properties structure which sets APDU properties for this\ntransaction only. This does not change global defaults or settings for the application\nAPDU Properties. This argument may be NULL. In this case APDU properties  are used\nwhich were specified in the device object properties of the applications device which\nsends the request."
+        ],
+        [
+          "phTransaction",
+          "POINTER TO BYTE",
+          "The handle which identifies the transaction handled by the user application. The\ngiven handle has to be unique, in case the application needs to separate multiple\npending requests. This handle is transparent for the BACnet API and is returned\nunchanged to the user application in the completion routine callback. This handle may\nbe NULL, but the user application will be unable to cancel pending requests by a call\ntoBACnetCancelPendingConfirmedRequestor to separate them in the callback if multiple\ncompletions are pending in such case."
+        ]
+      ]
+    }
+  ]
+}

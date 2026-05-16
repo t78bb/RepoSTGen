@@ -1,0 +1,36 @@
+{
+  "library": "BACnetDefaultImpl",
+  "title": "PropAddrString (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnetDefaultImpl/Current/BACnetDefaultImpl/Functions/PropAddrString.html",
+  "page_title": "PropAddrString (FUN)",
+  "text": "\nFUNCTION PropAddrString : STRING\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "PropAddrString",
+          "Type": "STRING"
+        },
+        {
+          "Scope": "Input",
+          "Name": "devInstance",
+          "Type": "CmpBACnet.IEC_BACNET_DWORD"
+        },
+        [
+          "objID",
+          "CmpBACnet.IEC_BACNET_OBJECT_ID"
+        ],
+        [
+          "propID",
+          "CmpBACnet.IEC_BACNET_PROPERTY_ID"
+        ]
+      ]
+    }
+  ]
+}

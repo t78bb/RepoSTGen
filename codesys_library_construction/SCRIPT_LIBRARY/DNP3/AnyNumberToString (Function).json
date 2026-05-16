@@ -1,0 +1,28 @@
+{
+  "library": "DNP3",
+  "title": "AnyNumberToString (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Functions/AnyNumber/AnyNumberToString.html",
+  "page_title": "AnyNumberToString (FUN)",
+  "text": "\nFUNCTION AnyNumberToString : STRING\nString representation of AnyNumber\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "AnyNumberToString",
+          "Type": "STRING"
+        },
+        {
+          "Scope": "Input",
+          "Name": "in",
+          "Type": "REFERENCE TOAnyNumber"
+        }
+      ]
+    }
+  ]
+}

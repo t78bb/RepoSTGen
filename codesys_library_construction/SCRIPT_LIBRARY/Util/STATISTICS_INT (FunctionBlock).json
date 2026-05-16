@@ -1,0 +1,52 @@
+{
+  "library": "Util",
+  "title": "STATISTICS_INT (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/Mathematical-Functions/STATISTICS_INT.html",
+  "page_title": "STATISTICS_INT (FB)",
+  "text": "\nFUNCTION_BLOCK STATISTICS_INT\nCalculates minimum, maximum, and average of an input value\nThe calculation is done over time and can be reset in order to start a fresh caluclation/statistic.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "IN",
+          "Type": "INT",
+          "Initial": "",
+          "Comment": "Input value"
+        },
+        [
+          "RESET",
+          "BOOL",
+          "",
+          "TRUE:AVGset to 0,MNandMXto minimum and\nmaximum possible integer values"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "MN",
+          "Type": "INT",
+          "Initial": "32767",
+          "Comment": "Minimum value"
+        },
+        [
+          "MX",
+          "INT",
+          "-32768",
+          "Maximum value"
+        ],
+        [
+          "AVG",
+          "INT",
+          "",
+          "Average value"
+        ]
+      ]
+    }
+  ]
+}

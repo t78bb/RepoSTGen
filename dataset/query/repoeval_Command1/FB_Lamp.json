@@ -1,0 +1,5 @@
+{
+  "requirement": "This code is intended to implement a function block for controlling or representing the level of a lamp using a BYTE output variable.",
+  "provide_code": "FUNCTION_BLOCK PUBLIC FB_Lamp\nVAR_OUTPUT\n\tbyLevel\t\t\t: BYTE;\nEND_VAR",
+  "function_name": "FB_Lamp"
+}

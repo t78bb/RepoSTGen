@@ -1,0 +1,23 @@
+{
+  "library": "AlarmManager",
+  "title": "GetLatchVar1Value (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/pou-IAlarm/Access-to-values/GetLatchVar1Value.html",
+  "page_title": "IAlarm.GetLatchVar1Value (METH)",
+  "text": "\nMETHOD GetLatchVar1Value : ITypedValue\nReturns a ITypedValue instance, describing the current value\nof the optional latch variable 1\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetLatchVar1Value",
+          "Type": "ITypedValue"
+        }
+      ]
+    }
+  ]
+}

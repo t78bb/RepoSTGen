@@ -1,0 +1,25 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "ClientDestroyed (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/GenVisu/pou-IModuleVisuClientListener/ClientDestroyed.html",
+  "page_title": "IModuleVisuClientListener.ClientDestroyed (METH)",
+  "text": "\nMETHOD ClientDestroyed\nThis method will be called when a visu client is deregistered\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "iClientID",
+          "Type": "INT",
+          "Comment": "The ID of the visu client that is being deregistered"
+        }
+      ]
+    }
+  ]
+}

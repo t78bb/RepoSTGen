@@ -1,0 +1,57 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_GroupAdditionalAxesTargetPositions (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/Diagnostics/SMC_GroupAdditionalAxesTargetPositions.html",
+  "page_title": "SMC_GroupAdditionalAxesTargetPositions (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_GroupAdditionalAxesTargetPositions\nThis function block returns the commanded target position\nof an axis groupâs additional axes.\nThere are several reasons why the output\nValid\nmay be\nFALSE\n:\nThe last commanded movement is a halt / stop and has not been\nprocessed yet.\nThe last commanded movement is relative and its start-position\nis not known yet (e.g. because the preceding movement is a halt / stop).\nThis is an administrative FB, since no movement is generated.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "AxisGroup",
+          "Type": "AXIS_GROUP_REF_SM3",
+          "Comment": "Reference to a group of axes"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Enable",
+          "Type": "BOOL",
+          "Comment": "Continuously reads the target positions of the additional axes\nwhileTRUE."
+        },
+        {
+          "Scope": "Output",
+          "Name": "Valid",
+          "Type": "BOOL",
+          "Comment": "TRUEif valid outputs are available"
+        },
+        [
+          "Busy",
+          "BOOL",
+          "The FB is not finished"
+        ],
+        [
+          "Error",
+          "BOOL",
+          "Signals that an error has occurred within the function block"
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ],
+        [
+          "Positions",
+          "SMC_ADDITIONAL_AXES_VALUES_ARRAY",
+          "Target positions of the groupâs additional axes."
+        ]
+      ]
+    }
+  ]
+}

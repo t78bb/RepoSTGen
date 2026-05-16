@@ -1,0 +1,43 @@
+{
+  "library": "Visu Utils",
+  "title": "Globals (GVL)",
+  "url": "https://content.helpme-codesys.com/en/libs/Visu Utils/Current/VisuUtils/VisuActionUtilities/GlobalVariables/Globals.html",
+  "page_title": "Globals (GVL)",
+  "text": "VisuUtils\nVisuActionUtilities\nFunction Blocks\nFBFileTransfer (FunctionBlock)\nFbChangeVisu (FunctionBlock)\nFbCloseDialog (FunctionBlock)\nFbIterateClients (FunctionBlock)\nFbOpenDialog (FunctionBlock)\nFbOpenDialogExtended (FunctionBlock)\nFunctions\nFctGetNextVisu (Function)\nFctGetPreviousVisu (Function)\nFctHandleEventsWithinCycleStart (Function)\nFctHandleEventsWithinCycleStop (Function)\nGlobalVariables\nGlobals (GVL)\nPublicVariables (GVL)\nInterfaces\nIVisualizationClient (Interface)\nIVisualizationClientFilter (Interface)\nIVisualizationClientIteration (Interface)\nIVisualizationClientRaw (Interface)\nTypes\nEnum\nFile and Project Information\nLibrary Reference\nCmpIecTask\nLibrary Identification\nLibrary Properties\nCmpVisuHandler\nLibrary Identification\nLibrary Properties\nCommon Behaviour Model\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysSem\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nVisuElemBase\nLibrary Identification\nLibrary Properties\nVisu Utils\nDocs\n»\nVisuUtils\n»\nVisuActionUtilities\n»\nGlobalVariables\n»\nGlobals (GVL)\nGlobals (GVL)\nÂ¶\nAttributes:\nqualified_only\nInOut:\nName\nType\nComment\nAllClients\nFBAcceptsAllClients\nFunction block to do action on all clients\nCurrentClient\nFBAcceptsCurrentClient\nFunction block to do action on current client. Can only be\nused, when action is called out of the visualization.\nOnlyTargetVisu\nFBAcceptsTargetVisuOnly\nFunction block to do action on target visu.\nOnlyRemoteTargetVisu\nFBAcceptsRemoteTargetVisuOnly\nFunction block to do action on remote target visu.\nOnlyWebVisu\nFBAcceptsWebVisuOnly\nFunction block to do action on remote target visu.",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "AllClients",
+          "Type": "FBAcceptsAllClients",
+          "Comment": "Function block to do action on all clients"
+        },
+        {
+          "Name": "CurrentClient",
+          "Type": "FBAcceptsCurrentClient",
+          "Comment": "Function block to do action on current client. Can only be\nused, when action is called out of the visualization."
+        },
+        {
+          "Name": "OnlyTargetVisu",
+          "Type": "FBAcceptsTargetVisuOnly",
+          "Comment": "Function block to do action on target visu."
+        },
+        {
+          "Name": "OnlyRemoteTargetVisu",
+          "Type": "FBAcceptsRemoteTargetVisuOnly",
+          "Comment": "Function block to do action on remote target visu."
+        },
+        {
+          "Name": "OnlyWebVisu",
+          "Type": "FBAcceptsWebVisuOnly",
+          "Comment": "Function block to do action on remote target visu."
+        }
+      ]
+    }
+  ]
+}

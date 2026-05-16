@@ -1,0 +1,46 @@
+{
+  "library": "BACnet2",
+  "title": "WritePresentValueWithPriority (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/BACnetObjects/pou-BACnetPositiveIntegerValue/WritePresentValueWithPriority.html",
+  "page_title": "BACnetPositiveIntegerValue.WritePresentValueWithPriority (METH)",
+  "text": "\nMETHOD WritePresentValueWithPriority : CmpBACnet.IEC_BACNET_STATUS\nSet the Present_Value with the given priority taking client side restrictions into account (access, priorization, range checks).\nIn contrast to\nSetPropertyInstance\nand PresentValue.Set all access, priorization and range checks are executed by this call and on return\nthe occurred BACnet error code will be returned.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "WritePresentValueWithPriority",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "value",
+          "Type": "CmpBACnet.IEC_BACNET_UNSIGNED",
+          "Initial": "",
+          "Comment": "Value to write."
+        },
+        [
+          "priority",
+          "DINT",
+          "",
+          "The priority to use when writing to Present_Value."
+        ],
+        [
+          "pValueSrc",
+          "POINTER TO\nCmpBACnet.IEC_BACNET_AUDIT_VALUE_SOURCE",
+          "0",
+          "Optional: A pointer to a data structure which contains the value source information for generating\nan logged and/or reported audit notification for this initiated request.\nIf generating an logged and/or reported audit notification for this request is not intended,\npValueSrc can be set to 0."
+        ]
+      ]
+    }
+  ]
+}

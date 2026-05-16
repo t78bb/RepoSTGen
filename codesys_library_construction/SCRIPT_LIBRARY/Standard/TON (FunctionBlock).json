@@ -1,0 +1,41 @@
+{
+  "library": "Standard",
+  "title": "TON (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/Standard/Current/Timer/TON.html",
+  "page_title": "TON (FB)",
+  "text": "\nFUNCTION_BLOCK TON\nImplements a timer with a turn-on delay\n(* Example declaration *)\nTONInst\n:\nTON\n;\n(* Example in ST *)\nTONInst\n(\nIN\n:=\nVarBOOL1\n,\nPT\n:=\nT#5s\n);\nVarBOOL2\n:=\nTONInst.Q\n;\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "IN",
+          "Type": "BOOL",
+          "Comment": "Rising edge: starts delay counterFalling edge: resets delay counter"
+        },
+        [
+          "PT",
+          "TIME",
+          "Time for the delay counter [ms]"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Q",
+          "Type": "BOOL",
+          "Comment": "FALSEifINisFALSETRUEifINisTRUEand delay timePTelapsed"
+        },
+        [
+          "ET",
+          "TIME",
+          "Elapsed time since rising edge atIN"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_StringStream2 (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/File/ReadNCFile/Stream/SMC_StringStream2.html",
+  "page_title": "SMC_StringStream2 (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_StringStream2 IMPLEMENTS\nSMC_ITextStream\nThis function block reads strings and presents the contents\nas a stream of characters to other function blocks such as\nSMC_ReadNCFromStream\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Output",
+          "Name": "refillData",
+          "Type": "BOOL",
+          "Comment": "Indicates that a reset is requested.  The data of the stream must\nbe appended with AppendData from the beginning again."
+        },
+        [
+          "stream",
+          "SMC_ITextStream",
+          ""
+        ]
+      ]
+    }
+  ]
+}

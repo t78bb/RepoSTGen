@@ -1,0 +1,58 @@
+{
+  "library": "SM3_Basic",
+  "title": "MC_CAMSWITCH_TR (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/DataTypes/Additional/MC_CAMSWITCH_TR.html",
+  "page_title": "MC_CAMSWITCH_TR (STRUCT)",
+  "text": "\nTYPE MC_CAMSWITCH_TR : STRUCT\nThis\nSTRUCT\ndescribes the switch positions of the tappets.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "TrackNumber",
+          "Type": "INT",
+          "Comment": "Number of the output; several position ranges per output are\npossible. [1..32]"
+        },
+        {
+          "Name": "FirstOnPosition",
+          "Type": "LREAL",
+          "Comment": "If moving in positive direction, the first position where the switch is on, otherwise the last;\nmay be>LastOnPositionwhich results in an âinvertedâ switch"
+        },
+        {
+          "Name": "LastOnPosition",
+          "Type": "LREAL",
+          "Comment": "If moving in positive direction, the last position where the switch is on, otherwise the first;\nUsed only in caseCamSwitchMode=0"
+        },
+        {
+          "Name": "AxisDirection",
+          "Type": "INT",
+          "Comment": "0 = The output is switched in two directions,1 = The output is only switched in positive direction,2 = The output is only switched in negative direction"
+        },
+        {
+          "Name": "CamSwitchMode",
+          "Type": "INT",
+          "Comment": "0 = The tappets are calculated position-based;1 = The tappets are calculated time-based, whereby only the value of FirstOnPosition will be used\nand the output staysTRUEfor the given time (Duration)."
+        },
+        {
+          "Name": "Duration",
+          "Type": "TIME",
+          "Comment": "Period of time for which the tappet output staysTRUEin\ncase ofCAMSwitchMode=1."
+        },
+        {
+          "Name": "bOn",
+          "Type": "BOOL",
+          "Comment": "internal; used by MC_DigitalCamSwitch"
+        },
+        {
+          "Name": "CounterOff",
+          "Type": "INT",
+          "Comment": "internal; used by MC_DigitalCamSwitch"
+        }
+      ]
+    }
+  ]
+}

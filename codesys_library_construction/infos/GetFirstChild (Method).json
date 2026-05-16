@@ -1,0 +1,31 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "GetFirstChild (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_Module/pou-IModuleTree/GetFirstChild.html",
+  "page_title": "IModuleTree.GetFirstChild (METH)",
+  "text": "\nMETHOD GetFirstChild :\nIModule\nReturns the first child of a given module instance.\nReturns 0 if (and only if) md has no children.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetFirstChild",
+          "Type": "IModule",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "md",
+          "Type": "IModule",
+          "Comment": "The module instance that is queried (must not be 0)"
+        }
+      ]
+    }
+  ]
+}

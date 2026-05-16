@@ -1,0 +1,23 @@
+{
+  "library": "String Segments",
+  "title": "UTF8Literal (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Segments/Current/Strings/Functionblocks/UTF8Literal.html",
+  "page_title": "UTF8Literal (FB)",
+  "text": "Library Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nStrings\nAliases\nConstants (GVL)\nIDisposable (Alias)\nRUNE (Alias)\nEnums\nERROR (Enum)\nFunctionblocks\nRange (FunctionBlock)\nIRange\nSetInitialValue (Method)\nUTF8Literal (FunctionBlock)\nSetInitialValue (Method)\n_RangePool (FunctionBlock)\nProtected\n_StringPool (FunctionBlock)\nIStringPool\nSetInitialValue (Method)\n_UTF8String (FunctionBlock)\nIString\nIStringRepresentation\nFunctions\nCompare (Function)\nCopy (Function)\nCreateRangePool (Function)\nCreateString (Function)\nCreateStringPool (Function)\nIsASCIIString (Function)\nIsValidString (Function)\nLen (Function)\nReset (Function)\nRuneCount (Function)\nSetSegment (Function)\nInterfaces\nIRange (Interface)\nGetNextRune (Method)\nReset (Method)\nUngetLastRune (Method)\nIRangePool (Interface)\nGetPoolStatus (Method)\nGetRange (Method)\nIRangeProvider (Interface)\nGetRange (Method)\nIString (Interface)\nGetSegment (Method)\nIsASCII (Method)\nIsValid (Method)\nLen (Method)\nIStringPool (Interface)\nGetPoolConfig (Method)\nGetString (Method)\nIStringRepresentation (Interface)\nLen (Method)\nToIString (Method)\nStructs\nCONFIG (Struct)\nSTATUS (Struct)\nFile and Project Information\nLibrary Reference\nMemory Block Manager\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nUTF-8 Encoding Support\nLibrary Identification\nLibrary Properties\nString Segments\nDocs\n»\nStrings\n»\nFunctionblocks\n»\nUTF8Literal (FB)\nUTF8Literal (FB)\nÂ¶\nFUNCTION_BLOCK PUBLIC FINAL UTF8Literal EXTENDS\n_UTF8String\nManaging a UTF-8 encoded âimmutableâ string segment\nModification of the content after creation is not allowed and may result in undefined behavior!\nExample for how to convert a ânormalâ string segment to a\nIString\nInstance.\nThe last line brings back the pointer and the length of the string segment.\nudiLength : UDINT;\nfbsValue : STR.UTF8Literal := (psValue:=ADR(UTF8#'CÃDâ¬Å¡Å¸Å  Ã¯Ã vÃ¤rÃ¿ Ã§Ã´Ãµl'));\npsValue : POINTER TO STRING := fbsValue.GetSegment(udiLength => udiLength);\nInOut:\nScope\nName\nType\nInput Const\npsValue\nPOINTER TO STRING\nMethods:\nSetInitialValue\nGetSegment\n, inherited from\n_UTF8String\nIsASCII\n, inherited from\n_UTF8String\nIsValid\n, inherited from\n_UTF8String\nLen\n, inherited from\n_UTF8String\nToIString\n, inherited from\n_UTF8String\nStructure:\nSetInitialValue (Method)",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input Const",
+          "Name": "psValue",
+          "Type": "POINTER TO STRING"
+        }
+      ]
+    }
+  ]
+}

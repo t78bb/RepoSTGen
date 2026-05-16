@@ -1,0 +1,31 @@
+{
+  "library": "AlarmManager",
+  "title": "RemoveAlarmStorageListener (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Alarm-storage-API/pou-AlarmStorageReader/RemoveAlarmStorageListener.html",
+  "page_title": "AlarmStorageReader.RemoveAlarmStorageListener (METH)",
+  "text": "\nMETHOD RemoveAlarmStorageListener :\nEAlarmStorageReaderErrors\nRemoves an IAlarmStorageListener instance.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "RemoveAlarmStorageListener",
+          "Type": "EAlarmStorageReaderErrors",
+          "Comment": "A EAlarmStorageReaderErrors value indicating, whether the processing has been completed successfully or not:EAlarmStorageReaderErrors.NoError: Completed successfullyEAlarmStorageReaderErrors.WrongParameter: If the IAlarmStorageListener instance is invalidEAlarmStorageReaderErrors.NoObject: If the IAlarmStorageListener instance cannot be removed, because was not found,i.e. has not been added with method AddAlarmStorageListenerEAlarmStorageReaderErrors.InvalidCall: If there is no alarm storage is available, where the IAlarmStorageListener instance can be unregistered"
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfAlarmStorageListener",
+          "Type": "IAlarmStorageListener",
+          "Comment": "An instance of IAlarmStorageListener to unregister"
+        }
+      ]
+    }
+  ]
+}

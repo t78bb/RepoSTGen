@@ -1,0 +1,169 @@
+{
+  "library": "DNP3",
+  "title": "FunctionCode (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/FunctionCode.html",
+  "page_title": "FunctionCode (ENUM)",
+  "text": "\nTYPE FunctionCode :\nDNP3 function code\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Name": "FC_CONFIRM",
+          "Initial": "Constants.DNPDEFS_FC_CONFIRM"
+        },
+        {
+          "Name": "FC_READ",
+          "Initial": "Constants.DNPDEFS_FC_READ"
+        },
+        {
+          "Name": "FC_WRITE",
+          "Initial": "Constants.DNPDEFS_FC_WRITE"
+        },
+        {
+          "Name": "FC_SELECT",
+          "Initial": "Constants.DNPDEFS_FC_SELECT"
+        },
+        {
+          "Name": "FC_OPERATE",
+          "Initial": "Constants.DNPDEFS_FC_OPERATE"
+        },
+        {
+          "Name": "FC_DIRECT_OP",
+          "Initial": "Constants.DNPDEFS_FC_DIRECT_OP"
+        },
+        {
+          "Name": "FC_DIRECT_OP_NOACK",
+          "Initial": "Constants.DNPDEFS_FC_DIRECT_OP_NOACK"
+        },
+        {
+          "Name": "FC_FRZ",
+          "Initial": "Constants.DNPDEFS_FC_FRZ"
+        },
+        {
+          "Name": "FC_FRZ_NOACK",
+          "Initial": "Constants.DNPDEFS_FC_FRZ_NOACK"
+        },
+        {
+          "Name": "FC_FRZ_CLEAR",
+          "Initial": "Constants.DNPDEFS_FC_FRZ_CLEAR"
+        },
+        {
+          "Name": "FC_FRZ_CLEAR_NOACK",
+          "Initial": "Constants.DNPDEFS_FC_FRZ_CLEAR_NOACK"
+        },
+        {
+          "Name": "FC_FRZ_TIME",
+          "Initial": "Constants.DNPDEFS_FC_FRZ_TIME"
+        },
+        {
+          "Name": "FC_FRZ_TIME_NOACK",
+          "Initial": "Constants.DNPDEFS_FC_FRZ_TIME_NOACK"
+        },
+        {
+          "Name": "FC_COLD_RESTART",
+          "Initial": "Constants.DNPDEFS_FC_COLD_RESTART"
+        },
+        {
+          "Name": "FC_WARM_RESTART",
+          "Initial": "Constants.DNPDEFS_FC_WARM_RESTART"
+        },
+        {
+          "Name": "FC_INIT_DATA_TO_DFLTS",
+          "Initial": "Constants.DNPDEFS_FC_INIT_DATA_TO_DFLTS"
+        },
+        {
+          "Name": "FC_INIT_APPLICATION",
+          "Initial": "Constants.DNPDEFS_FC_INIT_APPLICATION"
+        },
+        {
+          "Name": "FC_START_APPLICATION",
+          "Initial": "Constants.DNPDEFS_FC_START_APPLICATION"
+        },
+        {
+          "Name": "FC_STOP_APPLICATION",
+          "Initial": "Constants.DNPDEFS_FC_STOP_APPLICATION"
+        },
+        {
+          "Name": "FC_SAVE_CONFIGURATION",
+          "Initial": "Constants.DNPDEFS_FC_SAVE_CONFIGURATION"
+        },
+        {
+          "Name": "FC_ENABLE_UNSOL",
+          "Initial": "Constants.DNPDEFS_FC_ENABLE_UNSOL"
+        },
+        {
+          "Name": "FC_DISABLE_UNSOL",
+          "Initial": "Constants.DNPDEFS_FC_DISABLE_UNSOL"
+        },
+        {
+          "Name": "FC_ASSIGN_CLASS",
+          "Initial": "Constants.DNPDEFS_FC_ASSIGN_CLASS"
+        },
+        {
+          "Name": "FC_DELAY_MEASURE",
+          "Initial": "Constants.DNPDEFS_FC_DELAY_MEASURE"
+        },
+        {
+          "Name": "FC_RECORD_CURRENT_TIME",
+          "Initial": "Constants.DNPDEFS_FC_RECORD_CURRENT_TIME"
+        },
+        {
+          "Name": "FC_OPEN_FILE",
+          "Initial": "Constants.DNPDEFS_FC_OPEN_FILE"
+        },
+        {
+          "Name": "FC_CLOSE_FILE",
+          "Initial": "Constants.DNPDEFS_FC_CLOSE_FILE"
+        },
+        {
+          "Name": "FC_DELETE_FILE",
+          "Initial": "Constants.DNPDEFS_FC_DELETE_FILE"
+        },
+        {
+          "Name": "FC_GET_FILE_INFO",
+          "Initial": "Constants.DNPDEFS_FC_GET_FILE_INFO"
+        },
+        {
+          "Name": "FC_AUTHENTICATE",
+          "Initial": "Constants.DNPDEFS_FC_AUTHENTICATE"
+        },
+        {
+          "Name": "FC_ABORT",
+          "Initial": "Constants.DNPDEFS_FC_ABORT"
+        },
+        {
+          "Name": "FC_ACTIVATE_CONFIG",
+          "Initial": "Constants.DNPDEFS_FC_ACTIVATE_CONFIG"
+        },
+        {
+          "Name": "FC_AUTH_REQUEST",
+          "Initial": "Constants.DNPDEFS_FC_AUTH_REQUEST"
+        },
+        {
+          "Name": "FC_AUTH_REQUEST_NOACK",
+          "Initial": "Constants.DNPDEFS_FC_AUTH_REQUEST_NOACK"
+        },
+        {
+          "Name": "FC_AUTH_SAV6_HDR",
+          "Initial": "Constants.DNPDEFS_FC_AUTH_SAV6_HDR"
+        },
+        {
+          "Name": "FC_RESPONSE",
+          "Initial": "Constants.DNPDEFS_FC_RESPONSE"
+        },
+        {
+          "Name": "FC_UNSOLICITED",
+          "Initial": "Constants.DNPDEFS_FC_UNSOLICITED"
+        },
+        {
+          "Name": "FC_AUTH_RESPONSE",
+          "Initial": "Constants.DNPDEFS_FC_AUTH_RESPONSE"
+        }
+      ]
+    }
+  ]
+}

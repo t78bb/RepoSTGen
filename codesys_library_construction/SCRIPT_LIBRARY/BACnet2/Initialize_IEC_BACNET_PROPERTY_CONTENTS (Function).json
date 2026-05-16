@@ -1,0 +1,23 @@
+{
+  "library": "BACnet2",
+  "title": "Initialize_IEC_BACNET_PROPERTY_CONTENTS (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/Utilities/Mem/Initialize_IEC_BACNET_PROPERTY_CONTENTS.html",
+  "page_title": "Initialize_IEC_BACNET_PROPERTY_CONTENTS (FUN)",
+  "text": "\nFUNCTION Initialize_IEC_BACNET_PROPERTY_CONTENTS\nInitializes a CmpBACnet.IEC_BACNET_PROPERTY_CONTENTS.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "conts",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_CONTENTS"
+        }
+      ]
+    }
+  ]
+}

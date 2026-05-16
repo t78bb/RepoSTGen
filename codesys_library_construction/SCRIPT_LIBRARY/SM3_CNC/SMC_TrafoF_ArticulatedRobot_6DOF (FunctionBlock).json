@@ -1,0 +1,81 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_TrafoF_ArticulatedRobot_6DOF (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_Trafo_POUs/SoftMotion-Transformations/Robot-Kinematiks/SMC_TrafoF_ArticulatedRobot_6DOF.html",
+  "page_title": "SMC_TrafoF_ArticulatedRobot_6DOF (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_TrafoF_ArticulatedRobot_6DOF\nSMC_TrafoF_ArticulatedRobot_6DOF\nimplements the\nmathematic forward transformation of an\narticulated robot with six rotary axes used for\ndeterminating position and orientation of the end effector\nwith the axis angles.\nNote\nAll drives are assumed to be scaeld so that one\ntechnical unit [u] corresponds to one degree.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "config",
+          "Type": "SMC_TrafoConfig_ArticulatedRobot_6DOF",
+          "Comment": "The configuration settings of the robot,SMC_TrafoConfig_ArticulatedRobot_6DOF"
+        },
+        [
+          "Drive0",
+          "AXIS_REF_SM3",
+          "The drive of axis 0,AXIS_REF_SM3"
+        ],
+        [
+          "Drive1",
+          "AXIS_REF_SM3",
+          "The drive of axis 1"
+        ],
+        [
+          "Drive2",
+          "AXIS_REF_SM3",
+          "The drive of axis 2"
+        ],
+        [
+          "Drive3",
+          "AXIS_REF_SM3",
+          "The drive of axis 3"
+        ],
+        [
+          "Drive4",
+          "AXIS_REF_SM3",
+          "The drive of axis 4"
+        ],
+        [
+          "Drive5",
+          "AXIS_REF_SM3",
+          "The drive of axis 5"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "vToolPos",
+          "Type": "SMC_Vector3D",
+          "Comment": "Current position of the tool center point\nin world coordinates"
+        },
+        [
+          "mToolOrientation",
+          "SMC_Matrix3",
+          "Tool orientation as a rotation matrix"
+        ],
+        [
+          "armState",
+          "SMC_ArticulatedRobot_6DOF_J0_State",
+          "State of joint 0"
+        ],
+        [
+          "elbowState",
+          "SMC_ArticulatedRobot_6DOF_J1_State",
+          "State of joint 1"
+        ],
+        [
+          "handState",
+          "SMC_ArticulatedRobot_6DOF_J4_State",
+          "State of joint 4"
+        ]
+      ]
+    }
+  ]
+}

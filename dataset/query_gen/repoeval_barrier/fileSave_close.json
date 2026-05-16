@@ -1,0 +1,6 @@
+{
+  "requirement": "This code should implement the functionality of safely closing a file within a function block named `fileSave_close`. It should accept a `fileHandle` of type DWORD as an input, which represents the handle of the file to be closed. The function should check if `fileHandle` is not zero, indicating that a file is currently open. If true, it should call `SysFileClose` with `fileHandle` as an argument to close the file and then set `fileHandle` to zero to indicate that no file is currently open. There should be no output variables, and the function should handle the case where `fileHandle` is already zero by doing nothing.",
+  "provide_code": "FUNCTION_BLOCK fileSave\nVAR_INPUT\n\tfilePath \t:STRING;\n\tintervalt\t:INT;\nEND_VAR",
+  "function_name": "fileSave_close",
+  "requirement_cn": "这段代码应实现在名为 `fileSave_close` 的功能块中安全关闭文件的功能。它应接受一个类型为 DWORD 的 `fileHandle` 输入，该输入代表要关闭的文件的句柄。函数应检查 `fileHandle` 是否不为零，这表示当前有文件打开。如果为真，它应调用 `SysFileClose` 并将 `fileHandle` 作为参数传递以关闭文件，然后将 `fileHandle` 设置为零，表示当前没有文件打开。不应有输出变量，并且在 `fileHandle` 已经为零的情况下，函数应什么也不做。"
+}

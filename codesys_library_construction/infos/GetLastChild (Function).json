@@ -1,0 +1,31 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "GetLastChild (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_Module/TreeNavigation/GetLastChild.html",
+  "page_title": "GetLastChild (FUN)",
+  "text": "\nFUNCTION GetLastChild :\nIModule\nReturns the last child module instance of a given instance.\nReturns 0 if (and only if) itfM has no children.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetLastChild",
+          "Type": "IModule",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfM",
+          "Type": "IModule",
+          "Comment": "The instance that is queried for the last child (must not be 0)"
+        }
+      ]
+    }
+  ]
+}

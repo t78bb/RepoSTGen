@@ -1,0 +1,23 @@
+{
+  "library": "ModbusFB",
+  "title": "Len (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/ModbusFB/Current/ModbusFB/Function-Blocks/Util/pou-ByteBuffer/Len.html",
+  "page_title": "ByteBuffer.Len (METH)",
+  "text": "\nMETHOD Len : UINT\nReturns the length of the ByteBuffer.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "Len",
+          "Type": "UINT"
+        }
+      ]
+    }
+  ]
+}

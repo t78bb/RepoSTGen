@@ -1,0 +1,32 @@
+{
+  "library": "StringUtils",
+  "title": "StrCaseCmpW (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/StringUtils/Current/Public-Parts/Unicode/StrCaseCmpW.html",
+  "page_title": "StrCaseCmpW (FUN)",
+  "text": "\nFUNCTION StrCaseCmpW : INT\nDoes a case insensitive comparison of two wstrings.\nCase insensitive is intended only for the comparison\nbetween two ASCII characters within the strings\nReturn values:\n0  -> the strings are equal\n-1 -> pwd1 is less than pwd2\n1  -> pwd1 is larger than pwd2\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "StrCaseCmpW",
+          "Type": "INT"
+        },
+        {
+          "Scope": "Input",
+          "Name": "pwd1",
+          "Type": "POINTER TO WORD"
+        },
+        [
+          "pwd2",
+          "POINTER TO WORD"
+        ]
+      ]
+    }
+  ]
+}

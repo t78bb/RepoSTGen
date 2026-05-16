@@ -1,0 +1,23 @@
+{
+  "library": "ModbusFB",
+  "title": "GetData (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/ModbusFB/Current/ModbusFB/Function-Blocks/Util/pou-ByteBuffer/GetData.html",
+  "page_title": "ByteBuffer.GetData (METH)",
+  "text": "\nMETHOD GetData : POINTER TO BYTE\nReturns the pointer to the ARRAY OF BYTE that backs this buffer.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetData",
+          "Type": "POINTER TO BYTE"
+        }
+      ]
+    }
+  ]
+}

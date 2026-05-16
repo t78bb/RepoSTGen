@@ -1,0 +1,5 @@
+{
+  "requirement": "This code is intended to implement a fault detection mechanism for a motor that sets a fault status and turns off the motor when an overload condition is detected.",
+  "provide_code": "METHOD SetFault : BOOL\nVAR_INPUT\n\tMotorI:MotorI;\nEND_VAR\nVAR_OUTPUT\n\tMotorO:MotorO;\nEND_VAR",
+  "function_name": "Motor_SetFault"
+}

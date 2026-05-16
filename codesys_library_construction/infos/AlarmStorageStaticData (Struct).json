@@ -1,0 +1,163 @@
+{
+  "library": "AlarmManager",
+  "title": "AlarmStorageStaticData (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Alarm-storage-API/AlarmStorageStaticData.html",
+  "page_title": "AlarmStorageStaticData (STRUCT)",
+  "text": "\nTYPE AlarmStorageStaticData : STRUCT\nThis structure bundles the data of one row of the alarm storage, that is static, i.e.\nall the data except the latch variables (because the number of latch variables can vary)\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "liTimestapLast",
+          "Type": "TIMESTAMP",
+          "Initial": "",
+          "Comment": "The timestamps of the last state change of the alarm"
+        },
+        {
+          "Name": "liTimestapActive",
+          "Type": "TIMESTAMP",
+          "Initial": "",
+          "Comment": "The timestamps when the alarm became active"
+        },
+        {
+          "Name": "liTimestapInactive",
+          "Type": "TIMESTAMP",
+          "Initial": "",
+          "Comment": "The timestamps when the alarm became inactive"
+        },
+        {
+          "Name": "liTimestapAcknowledge",
+          "Type": "TIMESTAMP",
+          "Initial": "",
+          "Comment": "The timestamps when the alarm was acknowledged"
+        },
+        {
+          "Name": "iOffsetLast",
+          "Type": "INT",
+          "Initial": "-1",
+          "Comment": "The offset of the last state change of the alarm"
+        },
+        {
+          "Name": "iOffsetActive",
+          "Type": "INT",
+          "Initial": "-1",
+          "Comment": "The offset when the alarm became active"
+        },
+        {
+          "Name": "iOffsetInactive",
+          "Type": "INT",
+          "Initial": "-1",
+          "Comment": "The offset when the alarm became inactive"
+        },
+        {
+          "Name": "iOffsetAcknowledge",
+          "Type": "INT",
+          "Initial": "-1",
+          "Comment": "The offset when the alarm was acknowledged"
+        },
+        {
+          "Name": "liTriggerValueVal",
+          "Type": "LINT",
+          "Initial": "",
+          "Comment": "The trigger value as ârawâ value"
+        },
+        {
+          "Name": "iTriggerValueType",
+          "Type": "TypeClass",
+          "Initial": "",
+          "Comment": "A TypeClass value representing the type of the trigger value"
+        },
+        {
+          "Name": "udiAlarmId",
+          "Type": "UDINT",
+          "Initial": "",
+          "Comment": "The internal id of the alarm, i.e. IAlarm.GetInternalID"
+        },
+        {
+          "Name": "udiAlarmGroupId",
+          "Type": "UDINT",
+          "Initial": "",
+          "Comment": "The internal id of the alarm group the alarm belongs to,\ni.e. IAlarmGroup.GetInternalID"
+        },
+        {
+          "Name": "udiAlarmClassId",
+          "Type": "UDINT",
+          "Initial": "",
+          "Comment": "The internal id of the alarm class the alarm references,\ni.e. IAlarmClass.GetInternalID"
+        },
+        {
+          "Name": "eState",
+          "Type": "AlarmState",
+          "Initial": "",
+          "Comment": "The current state of the alarm"
+        },
+        {
+          "Name": "usiPriority",
+          "Type": "USINT",
+          "Initial": "",
+          "Comment": "The priority of the alarm according to the referenced alarm\nclass"
+        },
+        {
+          "Name": "liRemoteDeviceVal",
+          "Type": "LINT",
+          "Initial": "",
+          "Comment": "The remote device value as ârawâ value\nThis parameter contains a pointer to the STRING containing the remote device name\n-1 in case of NO remote device"
+        },
+        {
+          "Name": "pwsCmtActiveAck",
+          "Type": "POINTER TO WSTRING",
+          "Initial": "",
+          "Comment": "Acknowledge comments"
+        },
+        {
+          "Name": "pwsCmtNormal",
+          "Type": "POINTER TO WSTRING",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Name": "pwsCmtActive",
+          "Type": "POINTER TO WSTRING",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Name": "pwsCmtWaitingConf",
+          "Type": "POINTER TO WSTRING",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Name": "pwsUserIdActiveAck",
+          "Type": "POINTER TO WSTRING",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Name": "pwsUserIdNormal",
+          "Type": "POINTER TO WSTRING",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Name": "pwsUserIdActive",
+          "Type": "POINTER TO WSTRING",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Name": "pwsUserIdWaitingConf",
+          "Type": "POINTER TO WSTRING",
+          "Initial": "",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

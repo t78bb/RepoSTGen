@@ -1,0 +1,8 @@
+{
+  "library": "AlarmManager",
+  "title": "IAlarmStateChangedListener2 (Interface)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/IAlarmStateChangedListener2.html",
+  "page_title": "IAlarmStateChangedListener2 (ITF)",
+  "text": "\nINTERFACE IAlarmStateChangedListener2 EXTENDS\nIAlarmStateChangedListener\nThis interface extends the interface IAlarmStateChangedListener to call its\nmethod AlarmDeactivationStateChanged() in case the deactivation state of an alarm changed.\nMethods:\nAlarmDeactivationStateChanged\nAlarmStateChanged\n, inherited from\nIAlarmStateChangedListener\nStructure:\nAlarmDeactivationStateChanged (Method)",
+  "tables": []
+}

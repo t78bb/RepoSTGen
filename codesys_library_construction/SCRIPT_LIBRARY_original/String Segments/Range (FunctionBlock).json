@@ -1,0 +1,23 @@
+{
+  "library": "String Segments",
+  "title": "Range (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Segments/Current/Strings/Functionblocks/Range.html",
+  "page_title": "Range (FB)",
+  "text": "Library Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nStrings\nAliases\nConstants (GVL)\nIDisposable (Alias)\nRUNE (Alias)\nEnums\nERROR (Enum)\nFunctionblocks\nRange (FunctionBlock)\nIRange\nSetInitialValue (Method)\nUTF8Literal (FunctionBlock)\nSetInitialValue (Method)\n_RangePool (FunctionBlock)\nProtected\n_StringPool (FunctionBlock)\nIStringPool\nSetInitialValue (Method)\n_UTF8String (FunctionBlock)\nIString\nIStringRepresentation\nFunctions\nCompare (Function)\nCopy (Function)\nCreateRangePool (Function)\nCreateString (Function)\nCreateStringPool (Function)\nIsASCIIString (Function)\nIsValidString (Function)\nLen (Function)\nReset (Function)\nRuneCount (Function)\nSetSegment (Function)\nInterfaces\nIRange (Interface)\nGetNextRune (Method)\nReset (Method)\nUngetLastRune (Method)\nIRangePool (Interface)\nGetPoolStatus (Method)\nGetRange (Method)\nIRangeProvider (Interface)\nGetRange (Method)\nIString (Interface)\nGetSegment (Method)\nIsASCII (Method)\nIsValid (Method)\nLen (Method)\nIStringPool (Interface)\nGetPoolConfig (Method)\nGetString (Method)\nIStringRepresentation (Interface)\nLen (Method)\nToIString (Method)\nStructs\nCONFIG (Struct)\nSTATUS (Struct)\nFile and Project Information\nLibrary Reference\nMemory Block Manager\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nUTF-8 Encoding Support\nLibrary Identification\nLibrary Properties\nString Segments\nDocs\n»\nStrings\n»\nFunctionblocks\n»\nRange (FB)\nRange (FB)\nÂ¶\nFUNCTION_BLOCK FINAL Range EXTENDS MBM.Disposable IMPLEMENTS\nIRange\nRune by rune Iteration over the content of a\nitfString\ninstance.\nInOut:\nScope\nName\nType\nInput Const\nitfString\nIString\nMethods:\nSetInitialValue\nGetNextRune\nReset\nUngetLastRune\nStructure:\nIRange\nGetNextRune (Method)\nReset (Method)\nUngetLastRune (Method)\nSetInitialValue (Method)",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input Const",
+          "Name": "itfString",
+          "Type": "IString"
+        }
+      ]
+    }
+  ]
+}

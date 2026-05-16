@@ -1,0 +1,8 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_StringBuffer (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/File/help-functions/SMC_StringBuffer.html",
+  "page_title": "SMC_StringBuffer (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_StringBuffer\nThis FB allocates a defined number of strings during\ninitilization and is able to store strings e.g. for\nSMC_ReadNCFile\n.",
+  "tables": []
+}

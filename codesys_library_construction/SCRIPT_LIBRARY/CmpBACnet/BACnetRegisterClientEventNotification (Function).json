@@ -1,0 +1,76 @@
+{
+  "library": "CmpBACnet",
+  "title": "BACnetRegisterClientEventNotification (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/CmpBACnet/Current/BACnetClientAPI/advanced/BACnetRegisterClientEventNotification.html",
+  "page_title": "BACnetRegisterClientEventNotification (FUN)",
+  "text": "\nFUNCTION BACnetRegisterClientEventNotification :\nIEC_BACNET_STATUS\nRegisters an device notification class reference for event and alarm acquisation.\nThis function enables the user appliaction to subscribe to an event and alarm source\nvery easy. This function will do most of the work, normally a client application has\nto manage, just in one call. It checks periodical for the presence and online state\nfor devices and checks for integrity of the alarms and event acquired from other\ndevices.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "BACnetRegisterClientEventNotification",
+          "Type": "IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "hCustomer",
+          "Type": "IEC_BACNET_HANDLE",
+          "Comment": "An handle to an created advanced BACnet client customer created byBACnetOpenClientCustomer."
+        },
+        [
+          "devId",
+          "IEC_BACNET_INST_NUMBER",
+          "The device instance number from the remote or local device from which the events or\nalarms shall be acquired."
+        ],
+        [
+          "notifClass",
+          "IEC_BACNET_INST_NUMBER",
+          "The notification class object instance number from the remote or local device from\nwhich the events or alarms shall be acquired."
+        ],
+        [
+          "pValidTransitions",
+          "POINTER TOIEC_BACNET_BIT_STRING",
+          "A pointer to an bit string structure which contians the bits for the transitions on\nwhich a notification shall be sent. More information can be found under\nBACNET_DESTINATION"
+        ],
+        [
+          "pValidDays",
+          "POINTER TOIEC_BACNET_BIT_STRING",
+          "A pointer to an bit string structure which contians the bits for the weekdays on\nwhich a notification shall be sent. More information can be found under\nBACNET_DESTINATION"
+        ],
+        [
+          "pFromTime",
+          "POINTER TOIEC_BACNET_TIME",
+          "A pointer to a time structure which contains the start time at which notifications\nshall be sent. More information can be found under BACNET_DESTINATION"
+        ],
+        [
+          "pToTime",
+          "POINTER TOIEC_BACNET_TIME",
+          "A pointer to a time structure which contains the end time at which notifications\nshall NOT be sent anymore. More information can be found under\nBACNET_DESTINATION"
+        ],
+        [
+          "nSubscribeMode",
+          "IEC_BACNET_CLIENT_SUBSCRIBE_MODE",
+          "This defines how the data is acquired."
+        ],
+        [
+          "pICallback",
+          "CmpEventMgr.ICmpEventCallback",
+          "A pointer to the event-callback interface which gets called on BACnet event notification.\nTo unregister a NULL pointer shall be used here."
+        ],
+        [
+          "pUserArg",
+          "POINTER TO BYTE",
+          "A pointer to data from the user application which is transparent for the API.\nThis pointer will not be modified by the BACnet API. This pointer and the pUserFct\npointer is associated with the given device instance and notification class object\ninstance pair. So for every different combination of those parameters these pointers\nare stored. This pointer may be NULL."
+        ]
+      ]
+    }
+  ]
+}

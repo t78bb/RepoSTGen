@@ -1,0 +1,28 @@
+{
+  "library": "String Builder Base",
+  "title": "SetInitialValue (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Builder Base/Current/BuilderBase/Function-Blocks/pou-Range/SetInitialValue.html",
+  "page_title": "Range.SetInitialValue (METH)",
+  "text": "BuilderBase\nAliases\nConstants (GVL)\nIStringRepresentation (Alias)\nRUNE (Alias)\nEnums\nENCODING (Enum)\nERROR (Enum)\nFunction Blocks\nRange (FunctionBlock)\nIRange\nSetInitialValue (Method)\nFunctions\nCreateRange (Function)\nCreateRangePool (Function)\nInterfaces\nIBuilder (Interface)\nGetBuilderStats (Method)\nReset (Method)\nSegments\nWriteIString (Method)\nWriteMemSegment (Method)\nWriteRune (Method)\nWriteString (Method)\nWriteWString (Method)\nICharmap (Interface)\nDecode (Method)\nEncode (Method)\nInternals\n_RangePool (FunctionBlock)\nProtected\nStructs\nSTATS (Struct)\nLibrary Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nFile and Project Information\nLibrary Reference\nMemory Block Manager\nLibrary Identification\nLibrary Properties\nString Segments\nLibrary Identification\nLibrary Properties\nUTF-8 Encoding Support\nLibrary Identification\nLibrary Properties\nString Builder Base\nDocs\n»\nBuilderBase\n»\nFunction\nBlocks\n»\nRange\n(FB)\n»\nRange.SetInitialValue (METH)\nRange.SetInitialValue (METH)\nÂ¶\nMETHOD FINAL SetInitialValue : STR.ERROR\nInOut:\nScope\nName\nType\nReturn\nSetInitialValue\nSTR.ERROR\nInput\nitfBuilder\nIBuilder",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetInitialValue",
+          "Type": "STR.ERROR"
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfBuilder",
+          "Type": "IBuilder"
+        }
+      ]
+    }
+  ]
+}

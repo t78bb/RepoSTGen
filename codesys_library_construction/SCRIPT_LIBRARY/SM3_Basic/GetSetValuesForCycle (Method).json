@@ -1,0 +1,46 @@
+{
+  "library": "SM3_Basic",
+  "title": "GetSetValuesForCycle (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/DriveInterface/AXIS_REF/pou-AXIS_REF_SM3/GetSetValuesForCycle.html",
+  "page_title": "AXIS_REF_SM3.GetSetValuesForCycle (METH)",
+  "text": "\nMETHOD FINAL GetSetValuesForCycle : BOOL\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "dynSet",
+          "Type": "SMC_TG_DynState"
+        },
+        {
+          "Scope": "Input",
+          "Name": "nCycle",
+          "Type": "SM0.CycleCounter"
+        },
+        [
+          "nCycleSI",
+          "SM0.CycleCounter"
+        ],
+        [
+          "offsetPosition",
+          "LREAL"
+        ],
+        {
+          "Scope": "Return",
+          "Name": "GetSetValuesForCycle",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Output",
+          "Name": "cycleTimeSpent",
+          "Type": "LREAL"
+        }
+      ]
+    }
+  ]
+}

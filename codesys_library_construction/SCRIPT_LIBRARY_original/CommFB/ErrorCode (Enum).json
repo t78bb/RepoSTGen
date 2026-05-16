@@ -1,0 +1,88 @@
+{
+  "library": "CommFB",
+  "title": "ErrorCode (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/CommFB/Current/CommFB/ErrorCode.html",
+  "page_title": "ErrorCode (ENUM)",
+  "text": "CommFB\nAINFO_TYPE (Union)\nAddressConcept (GVL)\nAddress Concept\nGenerating a CommFB-ID\nProfibus DP\nProfinet IO\nDevice Diagnosis\nAddress Conversion\nAddresses\nADDR_TO_ID (FunctionBlock)\nADDR_TYPE (Union)\nCREATE_ID (FunctionBlock)\nDP_ADDR (Struct)\nDP_DEVICE_ID (Struct)\nID_TO_ADDR (FunctionBlock)\nIO_SYSTEM_TYPE (Enum)\nPN_ADDR (Struct)\nPN_DEVICE_ID (Struct)\nSUBSLOT_ID (Function)\nCNCT (FunctionBlock)\nConstants (GVL)\nDP Address\nADDR (Function)\nID (Function)\nSLOT_ID (Function)\nDP_AINFO (Struct)\nDP_DIAG (Struct)\nErrorCode (Enum)\nErrorCode1_RW (Enum)\nFieldDevice\nPRVREC (FunctionBlock)\nPRVREC_MODE (Enum)\nRCVREC (FunctionBlock)\nRCVREC_MODE (Enum)\nSALARM (FunctionBlock)\nGETIO_PART (FunctionBlock)\nPN_AINFO (Struct)\nRALARM (FunctionBlock)\nRALARM_MODE (Enum)\nRDIAG (FunctionBlock)\nRDREC (FunctionBlock)\nSETIO_PART (FunctionBlock)\nWRREC (FunctionBlock)\nImages\nLibrary Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nFile and Project Information\nLibrary Reference\nIoDriver Profibus2 Interfaces\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nCommFB\nDocs\n»\nCommFB\n»\nErrorCode (ENUM)\nErrorCode (ENUM)\nÂ¶\nTYPE ErrorCode :\nThe\nSTATUS\noutput has the data type DWORD which is interpreted as a packed array of four bytes.\nByte 0:\nFunction_Num\nByte 1:\nError_Decode\nByte 2:\nError_Code_1\nByte 3:\nError_Code_2\nThe Elements are used as specified in IEC 61158-6 (Profibus DP, Profinet IO)\nException: If\nFunction_Num\nhas a value of 16#40, no protocol element is used.\nThis is the case for example if the validation of one input parameter failed.\nIn this case\nError_Decode\nvalue of 16#82..16#8F reports an error at parameter number 2 - 15.\nOther fixed error codes are defined in this enum.\nAttributes:\nqualified_only\nInOut:\nName\nInitial\nComment\nNONE\n0\nNo error\nINVALID_ID\n16#40820000\nInvalid ID\nUNKNOWN\n16#40000100\nUnknown error\nNOT_IMPLEMENTED\n16#40000101\nFunction not implemented\nRDIAG_PROFINET\n16#40000102\ntried to use RDIAG on Profinet device\nSTACK_NOT_RUNNING\n16#40000103\nStack not running.\nNO_RESSOURCE\n16#40000104\nOut of ressources or ressource busy.\nBUFFER_SIZE\n16#40000105\nspecified local data-buffer size too small\nINVALID_STATE\n16#40000110\nrequested operation not possible in this state\nADDRESS_NOT_UNIQUE\n16#40000111\ntarget-address is not unique\nADDRESS_INVALID\n16#40000112\naddress is invalid or unreachable (e.g. different IP subnet)\nDEVICE_NOT_FOUND\n16#40000113\nunable to detect/address target-device\nDEVICETYPE_MISMATCH\n16#40000114\ntarget device has wrong type for requested operation\nTIMEOUT\n16#40000115\nOperation timed out",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "NONE",
+          "Initial": "0",
+          "Comment": "No error"
+        },
+        {
+          "Name": "INVALID_ID",
+          "Initial": "16#40820000",
+          "Comment": "Invalid ID"
+        },
+        {
+          "Name": "UNKNOWN",
+          "Initial": "16#40000100",
+          "Comment": "Unknown error"
+        },
+        {
+          "Name": "NOT_IMPLEMENTED",
+          "Initial": "16#40000101",
+          "Comment": "Function not implemented"
+        },
+        {
+          "Name": "RDIAG_PROFINET",
+          "Initial": "16#40000102",
+          "Comment": "tried to use RDIAG on Profinet device"
+        },
+        {
+          "Name": "STACK_NOT_RUNNING",
+          "Initial": "16#40000103",
+          "Comment": "Stack not running."
+        },
+        {
+          "Name": "NO_RESSOURCE",
+          "Initial": "16#40000104",
+          "Comment": "Out of ressources or ressource busy."
+        },
+        {
+          "Name": "BUFFER_SIZE",
+          "Initial": "16#40000105",
+          "Comment": "specified local data-buffer size too small"
+        },
+        {
+          "Name": "INVALID_STATE",
+          "Initial": "16#40000110",
+          "Comment": "requested operation not possible in this state"
+        },
+        {
+          "Name": "ADDRESS_NOT_UNIQUE",
+          "Initial": "16#40000111",
+          "Comment": "target-address is not unique"
+        },
+        {
+          "Name": "ADDRESS_INVALID",
+          "Initial": "16#40000112",
+          "Comment": "address is invalid or unreachable (e.g. different IP subnet)"
+        },
+        {
+          "Name": "DEVICE_NOT_FOUND",
+          "Initial": "16#40000113",
+          "Comment": "unable to detect/address target-device"
+        },
+        {
+          "Name": "DEVICETYPE_MISMATCH",
+          "Initial": "16#40000114",
+          "Comment": "target device has wrong type for requested operation"
+        },
+        {
+          "Name": "TIMEOUT",
+          "Initial": "16#40000115",
+          "Comment": "Operation timed out"
+        }
+      ]
+    }
+  ]
+}

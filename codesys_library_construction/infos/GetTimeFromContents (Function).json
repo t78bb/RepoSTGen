@@ -1,0 +1,31 @@
+{
+  "library": "BACnet",
+  "title": "GetTimeFromContents (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/Utilities/BACnetUtilities/FromBACnetContents/GetTimeFromContents.html",
+  "page_title": "GetTimeFromContents (FUN)",
+  "text": "\nFUNCTION GetTimeFromContents : TIME\nTries to evaluate property contents as TIME data type. If the contents are not of type TIME\n0 is returned.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetTimeFromContents",
+          "Type": "TIME",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "conts",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_CONTENTS",
+          "Comment": "The contents to be evaluated as TIME."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_TRAFO_GantryT2 (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_Trafo_POUs/SoftMotion-Transformations/Gantry-systems/SMC_TRAFO_GantryT2.html",
+  "page_title": "SMC_TRAFO_GantryT2 (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_TRAFO_GantryT2\nReverse transformation for T-gantry systems with stationary drives.\nNote\nFor detailed information on transformations\nsee overview to\nSM_Trafo_POUs\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "pi",
+          "Type": "SMC_PosInfo",
+          "Comment": "Set target position vector (x,y), output of the interpolator."
+        },
+        [
+          "dOffsetX",
+          "LREAL",
+          "Additional offset for x-axis"
+        ],
+        [
+          "dOffsetY",
+          "LREAL",
+          "Additional offset for y-axis"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "da",
+          "Type": "LREAL",
+          "Comment": "Set target position of axis a"
+        },
+        [
+          "db",
+          "LREAL",
+          "Set target position of axis b"
+        ]
+      ]
+    }
+  ]
+}

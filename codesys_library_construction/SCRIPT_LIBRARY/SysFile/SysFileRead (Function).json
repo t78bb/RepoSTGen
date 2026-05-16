@@ -1,0 +1,46 @@
+{
+  "library": "SysFile",
+  "title": "SysFileRead (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SysFile/Current/SysFileRead.html",
+  "page_title": "SysFileRead (FUN)",
+  "text": "\nFUNCTION SysFileRead : __XWORD\nRead number of bytes out of the file\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SysFileRead",
+          "Type": "__XWORD",
+          "Comment": "Number of bytes read from file. 0=if failed"
+        },
+        {
+          "Scope": "Input",
+          "Name": "hFile",
+          "Type": "RTS_IEC_HANDLE",
+          "Comment": "Handle of the file"
+        },
+        [
+          "pbyBuffer",
+          "POINTER TO BYTE",
+          "Pointer to buffer for read data"
+        ],
+        [
+          "ulSize",
+          "__XWORD",
+          "Number of bytes to read from file. Must be less or equal the\nbuffer size!"
+        ],
+        [
+          "pResult",
+          "POINTER TO RTS_IEC_RESULT",
+          "Pointer to runtime system error code (see CmpErrors.library)"
+        ]
+      ]
+    }
+  ]
+}

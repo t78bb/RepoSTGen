@@ -1,0 +1,67 @@
+{
+  "library": "SM3_Robotics",
+  "title": "MC_SetCoordinateTransform (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/AdministrativeConfiguration/Coordinate-systems/MC_SetCoordinateTransform.html",
+  "page_title": "MC_SetCoordinateTransform (FB)",
+  "text": "\nFUNCTION_BLOCK MC_SetCoordinateTransform\nThis function block sets a coordinate transformation between the\nworld coordinate system (WCS) and the product- or machine-coordinate\nsystem (PCS_*/MCS).\nNote\nWhen the PCS is dynamic (in the sense that the PCS is moving\nrelative to WCS), please use\nMC_SetDynCoordTransform\ninstead.\nThis FB does not start a movement (administrative FB).\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "AxisGroup",
+          "Type": "AXIS_GROUP_REF_SM3",
+          "Comment": "Reference to a group of axis"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Comment": "Sets the coordinate transformation on rising edge"
+        },
+        [
+          "CoordTransform",
+          "MC_COORD_REF",
+          "The coordinate transformation, i.e. a product coordinate\nsystem (PCS_1 or PCS_2) or machine coordinate system (MCS)\nexpressed in the world coordinate system (WCS)"
+        ],
+        [
+          "CoordSystem",
+          "SMC_COORD_SYSTEM",
+          "Which coordinate transformation is to be set.  Allowed values are\nPCS_1, PCS_2, and MCS."
+        ],
+        [
+          "Name",
+          "STRING",
+          "The name of the coordinate system."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Done",
+          "Type": "BOOL",
+          "Comment": "The transformation has been set successfully"
+        },
+        [
+          "Busy",
+          "BOOL",
+          "The FB is not finished"
+        ],
+        [
+          "Error",
+          "BOOL",
+          "Signals that an error has occurred within the function block"
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

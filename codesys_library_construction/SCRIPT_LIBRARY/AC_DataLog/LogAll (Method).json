@@ -1,0 +1,23 @@
+{
+  "library": "AC_DataLog",
+  "title": "LogAll (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_DataLog/Current/AC_DataLog/DataLogChannel/pou-DataLogChannel/IDataLogChannel/LogAll.html",
+  "page_title": "DataLogChannel.LogAll (METH)",
+  "text": "\nMETHOD LogAll : BOOL\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "LogAll",
+          "Type": "BOOL"
+        }
+      ]
+    }
+  ]
+}

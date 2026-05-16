@@ -1,0 +1,33 @@
+{
+  "library": "String Segments",
+  "title": "RuneCount (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Segments/Current/Strings/Functions/RuneCount.html",
+  "page_title": "RuneCount (FUN)",
+  "text": "\nFUNCTION RuneCount : UDINT\nReturns the number of runes in\nitfString\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "RuneCount",
+          "Type": "UDINT"
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfString",
+          "Type": "IString"
+        },
+        {
+          "Scope": "Output",
+          "Name": "eErrorID",
+          "Type": "ERROR"
+        }
+      ]
+    }
+  ]
+}

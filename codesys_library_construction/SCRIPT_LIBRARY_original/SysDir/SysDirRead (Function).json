@@ -1,0 +1,48 @@
+{
+  "library": "SysDir",
+  "title": "SysDirRead (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SysDir/Current/SysDirRead.html",
+  "page_title": "SysDirRead (FUN)",
+  "text": "Deutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nMenu\nSearch\nDeutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nDirFileTime (Struct)\nDirInfo (Struct)\nDirInfoFlags (GVL)\nSysDirClose (Function)\nSysDirCopy (Function)\nSysDirCreate (Function)\nSysDirCreate2 (Function)\nSysDirDelete (Function)\nSysDirDelete2 (Function)\nSysDirGetCurrent (Function)\nSysDirOpen (Function)\nSysDirRead (Function)\nSysDirRename (Function)\nSysDirSetCurrent (Function)\nFile and Project Information\nLibrary Reference\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nSysDir\nDocs\n»\nSysDirRead (FUN)\nSysDirRead (FUN)\nÂ¶\nFUNCTION SysDirRead : RTS_IEC_RESULT\nRead next directory entry. Writes the entry in pszDirEntry.\nInOut:\nScope\nName\nType\nComment\nReturn\nSysDirRead\nRTS_IEC_RESULT\nReturns the runtime system error code (see CmpErrors.library)\nERR_OK: Entry could be read\nERR_END_OF_OBJECT: If end of directory list was reached\nERR_PARAMETER: If one of the parameters is invalid\nERR_BUFFERSIZE: If iMaxDirEntry is too short to get the complete directory entry string\nNote\nTypically after error\nERR_BUFFERSIZE\n, the dir-handle is set to the next entry, so this entry will be missed!\nInput\nhDir\nRTS_IEC_HANDLE\nHandle to directory opened with SysDirOpen\nInout\nszDirEntry\nSTRING\nOUT_PARAMETER: Directory entry as string\nInput\ndiMaxDirEntry\nDINT\nOUT_PARAMETER: Max number of bytes to write in pszDirEntry\npDirInfo\nPOINTER TO\nDirInfo\nOUT_PARAMETER: Directory information\nNOTE: Can be 0 (so only directory name is provided in pszDirEntry)\ntop\nCODESYS Group | We\nsoftware\nAutomation.\nto software\n['sɒftwɛər]\ntransitive verb\n__softwared/softwaring\n: to develop software\n// to software automation: to develop software for automation purposes\nThe CODESYS Group is the manufacturer of CODESYS, the leading hardware-independent\n                                    IEC 61131-3 automation software for developing and engineering controller\n                                    applications.\nCODESYS® is a registered trademark.\nCODESYS GmbH\nA member of the CODESYS Group\nMemminger Straße 151, 87439 Kempten\nGermany\nTel.:\n+49-831-54031-0\ninfo@codesys.com\nLegal Notice\nPrivacy Policy\nLinkedIn\nYoutube\nRSS\nDownloads\nLogin\nCODESYS Store\n© 2022 CODESYS GmbH\n| A member of the CODESYS Group",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SysDirRead",
+          "Type": "RTS_IEC_RESULT",
+          "Comment": "Returns the runtime system error code (see CmpErrors.library)ERR_OK: Entry could be readERR_END_OF_OBJECT: If end of directory list was reachedERR_PARAMETER: If one of the parameters is invalidERR_BUFFERSIZE: If iMaxDirEntry is too short to get the complete directory entry stringNoteTypically after errorERR_BUFFERSIZE, the dir-handle is set to the next entry, so this entry will be missed!"
+        },
+        {
+          "Scope": "Input",
+          "Name": "hDir",
+          "Type": "RTS_IEC_HANDLE",
+          "Comment": "Handle to directory opened with SysDirOpen"
+        },
+        {
+          "Scope": "Inout",
+          "Name": "szDirEntry",
+          "Type": "STRING",
+          "Comment": "OUT_PARAMETER: Directory entry as string"
+        },
+        {
+          "Scope": "Input",
+          "Name": "diMaxDirEntry",
+          "Type": "DINT",
+          "Comment": "OUT_PARAMETER: Max number of bytes to write in pszDirEntry"
+        },
+        [
+          "pDirInfo",
+          "POINTER TODirInfo",
+          "OUT_PARAMETER: Directory information\nNOTE: Can be 0 (so only directory name is provided in pszDirEntry)"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "library": "BACnet",
+  "title": "AddBACnetDate (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/Calendar/pou-BACnetCalendar/AddBACnetDate.html",
+  "page_title": "BACnetCalendar.AddBACnetDate (METH)",
+  "text": "\nMETHOD AddBACnetDate : CmpBACnet.IEC_BACNET_STATUS\nAdds a specific date as calendar entry to the Date_List-Property of this BACnet-Calendar-Object.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "AddBACnetDate",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "bacDat",
+          "Type": "CmpBACnet.IEC_BACNET_DATE",
+          "Comment": "The date to add to the Date_List-Property."
+        }
+      ]
+    }
+  ]
+}

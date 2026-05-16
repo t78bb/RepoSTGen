@@ -1,0 +1,8 @@
+{
+  "library": "DNP3",
+  "title": "DNP3_String (Alias)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Types/DNP3_String.html",
+  "page_title": "DNP3_String (ALIAS)",
+  "text": "\nTYPE DNP3_String : STRING(Parameter.DNP3_StringLength)",
+  "tables": []
+}

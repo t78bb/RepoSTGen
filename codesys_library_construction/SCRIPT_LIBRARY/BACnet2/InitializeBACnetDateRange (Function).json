@@ -1,0 +1,37 @@
+{
+  "library": "BACnet2",
+  "title": "InitializeBACnetDateRange (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/Utilities/BACnetUtilities/InitializeBACnetDataTypes/InitializeBACnetDateRange.html",
+  "page_title": "InitializeBACnetDateRange (FUN)",
+  "text": "\nFUNCTION InitializeBACnetDateRange : BOOL\nInitializes a IEC_BACNET_DATE_RANGE according to a given BACnetDateRange struct.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "InitializeBACnetDateRange",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "dateRange",
+          "Type": "BACnetDateRange",
+          "Comment": "The BACnetDateRange to use for initialization."
+        },
+        {
+          "Scope": "Inout",
+          "Name": "bacDateRange",
+          "Type": "CmpBACnet.IEC_BACNET_DATE_RANGE",
+          "Comment": "The BACnet date range to operate on."
+        }
+      ]
+    }
+  ]
+}

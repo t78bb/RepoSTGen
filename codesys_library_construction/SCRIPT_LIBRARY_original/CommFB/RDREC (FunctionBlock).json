@@ -1,0 +1,71 @@
+{
+  "library": "CommFB",
+  "title": "RDREC (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/CommFB/Current/CommFB/RDREC.html",
+  "page_title": "RDREC (FB)",
+  "text": "CommFB\nAINFO_TYPE (Union)\nAddressConcept (GVL)\nAddress Concept\nGenerating a CommFB-ID\nProfibus DP\nProfinet IO\nDevice Diagnosis\nAddress Conversion\nAddresses\nADDR_TO_ID (FunctionBlock)\nADDR_TYPE (Union)\nCREATE_ID (FunctionBlock)\nDP_ADDR (Struct)\nDP_DEVICE_ID (Struct)\nID_TO_ADDR (FunctionBlock)\nIO_SYSTEM_TYPE (Enum)\nPN_ADDR (Struct)\nPN_DEVICE_ID (Struct)\nSUBSLOT_ID (Function)\nCNCT (FunctionBlock)\nConstants (GVL)\nDP Address\nADDR (Function)\nID (Function)\nSLOT_ID (Function)\nDP_AINFO (Struct)\nDP_DIAG (Struct)\nErrorCode (Enum)\nErrorCode1_RW (Enum)\nFieldDevice\nPRVREC (FunctionBlock)\nPRVREC_MODE (Enum)\nRCVREC (FunctionBlock)\nRCVREC_MODE (Enum)\nSALARM (FunctionBlock)\nGETIO_PART (FunctionBlock)\nPN_AINFO (Struct)\nRALARM (FunctionBlock)\nRALARM_MODE (Enum)\nRDIAG (FunctionBlock)\nRDREC (FunctionBlock)\nSETIO_PART (FunctionBlock)\nWRREC (FunctionBlock)\nImages\nLibrary Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nFile and Project Information\nLibrary Reference\nIoDriver Profibus2 Interfaces\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nCommFB\nDocs\n»\nCommFB\n»\nRDREC (FB)\nRDREC (FB)\nÂ¶\nFUNCTION_BLOCK RDREC\nRead Process Data Record (RDREC)\nThis function block executes an acyclic read of user or system record-data.\nThe function is invoked when REQ input is equal to TRUE.\nThe ID parameter identifies the slot or subslot of the Field Device the data record is read from.\nThe INDEX input of the READ function block contains an integer which identifies the data record to be read, e.g. Profinet Diagnosis- or I&M-Data.\nThe MLEN parameter specifies the count of bytes which shall be read as an maximum.\nThe variable given as RECORD parameter shall be at least of MLEN byte.\nIf the data record is read successfully, the VALID output indicates that the read data record is stored in the RECORD parameter.\nThe LEN output contains the actual length of the data that has been read in byte.\nIf an error occurred, the ERROR output indicates an error and the STATUS output contains the error code.\nCode-Example: use RDREC to read the diagnosis of a PN-Slave\nPROGRAM\nPLC_PRG\nVAR\nrdrec\n:\nCommFB.RDREC\n;\nbuffer\n:\nARRAY\n[0..255]\nOF\nBYTE\n;\nreadError\n:\nDWORD\n;\ndiagReader\n:\nProfinetCommon.DiagnosisDataReader\n;\nchannelDiag\n:\nProfinetCommon.ChannelDiagnosisData\n;\nEND_VAR\n// Read Diagosis-Data:\nrdrec.ID\n:=\npnDevice.ID\n;\n// \"pnDevice\" is a Profinet slave in the device tree\nrdrec.INDEX\n:=\nTO_INT\n(\nProfinetCommon.DiagnosisRecordIndex.Device\n);\n// = 16#F80C --> get all diagnosis for this device\nrdrec.MLEN\n:=\nTO_INT\n(\nSIZEOF\n(\nbuffer\n));\nrdrec.RECORD\n:=\nADR\n(\nbuffer\n);\nrdrec\n();\nIF\n(\nrdrec.VALID\nAND\nrdrec.REQ\n)\nTHEN\n//here we have valid data\ndiagReader.InitData\n(\nrdrec.RECORD\n,\nTO_UINT\n(\nrdrec.LEN\n));\nWHILE\n(\ndiagReader.Read\n())\nDO\n;\n// do something useful with diag-data\nEND_WHILE\nELSIF\n(\nrdrec.ERROR\n)\nTHEN\nreadError\n:=\nrdrec.STATUS\n;\n// read service failed\nEND_IF\nrdrec.REQ\n:=\nrdrec.BUSY\n;\n// only read once\nInOut:\nScope\nName\nType\nComment\nInput\nREQ\nBOOL\nRequest\nID\nDWORD\nIdentifier of a slot / subslot of a Field Device (see:\nAddressConcept\n)\nINDEX\nINT\nIndex of the data record\nMLEN\nINT\nmaximum length to be read\nRECORD\nPOINTER TO BYTE\nRead data record\nOutput\nVALID\nBOOL\nNew data record received and is valid\nBUSY\nBOOL\nFB is busy\nERROR\nBOOL\nError detected\nSTATUS\nDWORD\nLast detected status\nLEN\nINT\nLength of the read data record",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "REQ",
+          "Type": "BOOL",
+          "Comment": "Request"
+        },
+        [
+          "ID",
+          "DWORD",
+          "Identifier of a slot / subslot of a Field Device (see:AddressConcept)"
+        ],
+        [
+          "INDEX",
+          "INT",
+          "Index of the data record"
+        ],
+        [
+          "MLEN",
+          "INT",
+          "maximum length to be read"
+        ],
+        [
+          "RECORD",
+          "POINTER TO BYTE",
+          "Read data record"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "VALID",
+          "Type": "BOOL",
+          "Comment": "New data record received and is valid"
+        },
+        [
+          "BUSY",
+          "BOOL",
+          "FB is busy"
+        ],
+        [
+          "ERROR",
+          "BOOL",
+          "Error detected"
+        ],
+        [
+          "STATUS",
+          "DWORD",
+          "Last detected status"
+        ],
+        [
+          "LEN",
+          "INT",
+          "Length of the read data record"
+        ]
+      ]
+    }
+  ]
+}

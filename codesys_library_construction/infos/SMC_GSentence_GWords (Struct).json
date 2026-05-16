@@ -1,0 +1,23 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_GSentence_GWords (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/GSentence/SMC_GSentence_GWords.html",
+  "page_title": "SMC_GSentence_GWords (STRUCT)",
+  "text": "\nTYPE SMC_GSentence_GWords : STRUCT\nAdditional data for gwords-sentences\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "sentenceNumber",
+          "Type": "UDINT",
+          "Comment": "The sentence number from the N-word"
+        }
+      ]
+    }
+  ]
+}

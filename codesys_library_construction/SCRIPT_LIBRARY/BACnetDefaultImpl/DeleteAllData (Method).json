@@ -1,0 +1,23 @@
+{
+  "library": "BACnetDefaultImpl",
+  "title": "DeleteAllData (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnetDefaultImpl/Current/BACnetDefaultImpl/Function-Blocks/pou-ObjectPersistence/DeleteAllData.html",
+  "page_title": "ObjectPersistence.DeleteAllData (METH)",
+  "text": "\nMETHOD DeleteAllData : CmpBACnet.IEC_BACNET_STATUS\nThis function deletes all the previously created data files.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "DeleteAllData",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS"
+        }
+      ]
+    }
+  ]
+}

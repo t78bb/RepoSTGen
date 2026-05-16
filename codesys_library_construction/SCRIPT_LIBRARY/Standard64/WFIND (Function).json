@@ -1,0 +1,32 @@
+{
+  "library": "Standard64",
+  "title": "WFIND (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/Standard64/Current/String-Functions/WFIND.html",
+  "page_title": "WFIND (FUN)",
+  "text": "\nFUNCTION WFIND : INT\nFind the wcharacter position of the beginning of\nthe first occurence of STR2 in STR1.\nIf no occurence of STR1 is found, then\nthe result is 0.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "WFIND",
+          "Type": "INT"
+        },
+        {
+          "Scope": "Input",
+          "Name": "STR1",
+          "Type": "WSTRING(255)"
+        },
+        [
+          "STR2",
+          "WSTRING(255)"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "library": "Standard64",
+  "title": "AtomicReadLReal (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/Standard64/Current/Atomic-Read-Write-Functions/AtomicReadLReal.html",
+  "page_title": "AtomicReadLReal (FUN)",
+  "text": "\nFUNCTION AtomicReadLReal : LREAL\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "AtomicReadLReal",
+          "Type": "LREAL"
+        },
+        {
+          "Scope": "Input",
+          "Name": "pSrc",
+          "Type": "POINTER TO LREAL"
+        }
+      ]
+    }
+  ]
+}

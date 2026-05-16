@@ -1,0 +1,58 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC3_DriveAcyclicTel (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/DataTypes/DriveInterface/SMC3_DriveAcyclicTel.html",
+  "page_title": "SMC3_DriveAcyclicTel (STRUCT)",
+  "text": "\nTYPE SMC3_DriveAcyclicTel : STRUCT\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Name": "dwParam",
+          "Type": "DWORD",
+          "Initial": "0"
+        },
+        {
+          "Name": "dwValue",
+          "Type": "DWORD",
+          "Initial": "0"
+        },
+        {
+          "Name": "dwAddParam",
+          "Type": "DWORD",
+          "Initial": "0"
+        },
+        {
+          "Name": "pCommandingFB",
+          "Type": "POINTER TO SMC3_CommunicateDriveParameter",
+          "Initial": "0"
+        },
+        {
+          "Name": "usiState",
+          "Type": "USINT",
+          "Initial": "0"
+        },
+        {
+          "Name": "usiForgotten",
+          "Type": "USINT",
+          "Initial": "0"
+        },
+        {
+          "Name": "usiDataLength",
+          "Type": "USINT",
+          "Initial": "0"
+        },
+        {
+          "Name": "bReadCommand",
+          "Type": "BOOL",
+          "Initial": "TRUE"
+        }
+      ]
+    }
+  ]
+}

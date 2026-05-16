@@ -1,0 +1,33 @@
+{
+  "library": "AlarmManager",
+  "title": "EFilterTimeRangeType (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Enumerations/EFilterTimeRangeType.html",
+  "page_title": "EFilterTimeRangeType (ENUM)",
+  "text": "\nTYPE EFilterTimeRangeType :\nThis enumeration describes to which time stamp we have to apply the filter\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "NOT_SET",
+          "Initial": "-1",
+          "Comment": "Filter is not already set"
+        },
+        {
+          "Name": "DISABLE",
+          "Initial": "0",
+          "Comment": "Filter is disabled"
+        },
+        {
+          "Name": "ENABLE",
+          "Initial": "1",
+          "Comment": "Filter is enabled"
+        }
+      ]
+    }
+  ]
+}

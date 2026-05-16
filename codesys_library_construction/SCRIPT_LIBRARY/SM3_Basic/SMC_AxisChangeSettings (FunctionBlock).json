@@ -1,0 +1,52 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_AxisChangeSettings (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/DriveInterface/AXIS_REF/SMC_AxisChangeSettings.html",
+  "page_title": "SMC_AxisChangeSettings (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_AxisChangeSettings\nThis function block can be used to change advanced settings of an axis.\nIt returns done immediately after one call with a rising edge on\nbExecute\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "bExecute",
+          "Type": "BOOL",
+          "Comment": "TRUE: Starts the function block."
+        },
+        [
+          "bUpdateIOsInStop",
+          "BOOL",
+          "Update the IOs if the application is stopped.\nThis setting will only have an effect, if âUpdate IOs while in stopâ\nis enabled in the PLC settings.  The default value for this setting\nis FALSE.\nNote: this may violate other PLC settings, like âkeep current valueâ,\nbecause the axis may change the outputs, e.g. when decelerating due to\nan error reaction."
+        ],
+        [
+          "AutoRestart",
+          "SMC_AXIS_AUTORESTART_MODE",
+          "Auto restart setting.  See|AXIS_REF_SM3.bAutoRestart|."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bDone",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        [
+          "bBusy",
+          "BOOL",
+          ""
+        ]
+      ]
+    }
+  ]
+}

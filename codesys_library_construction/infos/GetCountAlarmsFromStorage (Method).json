@@ -1,0 +1,37 @@
+{
+  "library": "AlarmManager",
+  "title": "GetCountAlarmsFromStorage (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/pou-IAlarmHandler2/GetCountAlarmsFromStorage.html",
+  "page_title": "IAlarmHandler2.GetCountAlarmsFromStorage (METH)",
+  "text": "\nMETHOD GetCountAlarmsFromStorage : DINT\nThis method counts all the alarms in the alarm storage, that are currently stored\nand fit the passed filter criteria the IAlarmManagerClient instance uses.\nThe return value is the count.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetCountAlarmsFromStorage",
+          "Type": "DINT",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfAlarmManagerClient",
+          "Type": "IAlarmManagerClient",
+          "Comment": "The IAlarmManagerClient instance"
+        },
+        {
+          "Scope": "Output",
+          "Name": "udiResult",
+          "Type": "UDINT",
+          "Comment": "Indicates, whether the processing was successful or not:\nERR_OK:              Alarms from storage have been read and counted successfully\nERR_NO_OBJECT:       Client was not found, has been not yet registered at the alarm manager\nERR_NOTINITIALIZED:  No client has been registered at the alarm manager"
+        }
+      ]
+    }
+  ]
+}

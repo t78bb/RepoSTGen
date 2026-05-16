@@ -1,0 +1,25 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "OnFrameIndexChanged (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/GenVisu/pou-AC_Visu_Base/protected/OnFrameIndexChanged.html",
+  "page_title": "AC_Visu_Base.OnFrameIndexChanged (METH)",
+  "text": "\nMETHOD PROTECTED ABSTRACT OnFrameIndexChanged\nThis method is called whenever the frame index\nchanges. It has an empty implementation and\nis expected to be overridden in a base class which\nis created by the composer during generation.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "uiIdx",
+          "Type": "UINT",
+          "Comment": "The new frame index which it was changed to"
+        }
+      ]
+    }
+  ]
+}

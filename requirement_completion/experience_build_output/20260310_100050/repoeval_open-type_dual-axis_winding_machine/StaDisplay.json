@@ -1,0 +1,17 @@
+{
+  "模糊点列表": [
+    {
+      "模糊点类型": "变量范围",
+      "模糊点描述": "原始需求未明确指定iStatus的有效值范围及对应的输出",
+      "差异细节": "模型生成代码仅处理iStatus值1到6，而参考代码处理更广泛的iStatus值，包括2到24及221、222，并且ELSE条件的输出也不同",
+      "精准需求描述": "需明确指定iStatus的有效值范围为1到24及221、222，并定义每个范围的输出。对于超出这些值的iStatus，应设置Y1, Y2, Y3, Y4为FALSE，Y5, Y6为TRUE"
+    },
+    {
+      "模糊点类型": "IO映射",
+      "模糊点描述": "原始需求未明确说明不同iStatus值对应的输出组合",
+      "差异细节": "模型生成代码为每个iStatus值设置了唯一的输出激活，而参考代码允许多个iStatus值共享相同的输出组合",
+      "精准需求描述": "需明确指定iStatus值2到10, 221, 222对应的输出为Y1=TRUE, Y2=FALSE, Y3=FALSE, Y4=FALSE, Y5=FALSE, Y6=TRUE等，以此类推，详细定义每个iStatus值或值范围对应的输出"
+    }
+  ],
+  "case_id": "repoeval_open-type_dual-axis_winding_machine/StaDisplay"
+}

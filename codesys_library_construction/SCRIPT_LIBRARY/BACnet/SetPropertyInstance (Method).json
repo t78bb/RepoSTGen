@@ -1,0 +1,36 @@
+{
+  "library": "BACnet",
+  "title": "SetPropertyInstance (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/pou-IBACnetObjectBase/SetPropertyInstance.html",
+  "page_title": "IBACnetObjectBase.SetPropertyInstance (METH)",
+  "text": "\nMETHOD SetPropertyInstance : CmpBACnet.IEC_BACNET_STATUS\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetPropertyInstance",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS"
+        },
+        {
+          "Scope": "Input",
+          "Name": "ePropertyID",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_ID"
+        },
+        [
+          "nIndex",
+          "DINT"
+        ],
+        [
+          "propertyContents",
+          "CmpBACnet.IEC_BACNET_PROPERTY_CONTENTS"
+        ]
+      ]
+    }
+  ]
+}

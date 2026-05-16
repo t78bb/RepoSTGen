@@ -1,0 +1,31 @@
+{
+  "library": "BACnet",
+  "title": "GetEventParameters (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/EventEnrollment/pou-BACnetEventEnrollment/GetEventParameters.html",
+  "page_title": "BACnetEventEnrollment.GetEventParameters (METH)",
+  "text": "\nMETHOD GetEventParameters : CmpBACnet.IEC_BACNET_STATUS\nGets the value of the Event_Parameters-Property of this BACnet-EventEnrollment-Property. The returned pointer\npEventParam is allocated with the corresponding data, whereas the user has to use\nFreeStackAllocatedMemory\n, to free\nthe allocated memory after data usage.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetEventParameters",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Output",
+          "Name": "pEventParam",
+          "Type": "POINTER TO\nCmpBACnet.IEC_BACNET_EVENT_PARAMETER",
+          "Comment": "The returned Pointer gets filled with the data of IEC_BACNET_EVENT_PARAMETER AND (!) the data referenced within evtParams.\nAfter usage, useFreeStackAllocatedMemory, to free the used memory again."
+        }
+      ]
+    }
+  ]
+}

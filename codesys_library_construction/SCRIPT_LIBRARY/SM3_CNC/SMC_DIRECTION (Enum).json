@@ -1,0 +1,33 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_DIRECTION (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_Data-types/SoftMotion-CNC/SMC_DIRECTION.html",
+  "page_title": "SMC_DIRECTION (ENUM)",
+  "text": "\nTYPE SMC_DIRECTION :\nThis enumeration variable indicates the current interpolation direction\nof the FB instance. Possible states:\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "IPO_positive",
+          "Initial": "1",
+          "Comment": "Interpolation is ongoing in positive direction (along the\noriginal path)"
+        },
+        {
+          "Name": "IPO_standstill",
+          "Initial": "0",
+          "Comment": "Interpolation paused"
+        },
+        {
+          "Name": "IPO_negative",
+          "Initial": "-1",
+          "Comment": "Interpolation is ongoing in negative direction\n(in opposite direction to the original path)"
+        }
+      ]
+    }
+  ]
+}

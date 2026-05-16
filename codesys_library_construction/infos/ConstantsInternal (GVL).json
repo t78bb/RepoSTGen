@@ -1,0 +1,33 @@
+{
+  "library": "DNP3",
+  "title": "ConstantsInternal (GVL)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/GlobalConstants/ConstantsInternal.html",
+  "page_title": "ConstantsInternal (GVL)",
+  "text": "\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Constant",
+          "Name": "CMPID_IEClibDNP3",
+          "Type": "UDINT",
+          "Initial": "16#A4",
+          "Comment": ""
+        },
+        [
+          "PRODUCT_CODE_DNP3",
+          "DWORD",
+          "16#2282",
+          "8834"
+        ]
+      ]
+    }
+  ]
+}

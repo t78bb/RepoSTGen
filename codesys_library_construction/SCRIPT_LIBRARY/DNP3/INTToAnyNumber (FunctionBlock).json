@@ -1,0 +1,28 @@
+{
+  "library": "DNP3",
+  "title": "INTToAnyNumber (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/AnyNumberConverter/INTToAnyNumber.html",
+  "page_title": "INTToAnyNumber (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL INTToAnyNumber\nConvert INT to an AnyNumber with baseType = AnyNumberType.TYPE_INT.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "in",
+          "Type": "INT"
+        },
+        {
+          "Scope": "Output",
+          "Name": "out",
+          "Type": "AnyNumber"
+        }
+      ]
+    }
+  ]
+}

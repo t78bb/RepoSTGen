@@ -1,0 +1,243 @@
+{
+  "library": "MQTT Client SL",
+  "title": "MQTTClient (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/MQTT Client SL/Current/MQTT-Client/Common/Function-Blocks/MQTTClient.html",
+  "page_title": "MQTTClient (FB)",
+  "text": "MQTT Client\nCommon\nEnums\nCOMMUNICATION_MODE (Enum)\nFILTER_MODE (Enum)\nMQTT_ERROR (Enum)\nMQTT_QOS (Enum)\nMQTT_VERSION (Enum)\nV5\nFunction Blocks\nMQTTClient (FunctionBlock)\nMQTTPublish (FunctionBlock)\nMQTTSubscribe (FunctionBlock)\nParams\nMQTTParam (ParamList)\nStructs\nMQTTV5\nUTF-8\nConvertUTF16toUTF8 (Function)\nConvertUTF8toUTF16 (Function)\nFile and Project Information\nLibrary Reference\n3SLicense\nLibrary Identification\nLibrary Properties\nCAA FB Factory\nLibrary Identification\nLibrary Properties\nCAA Types Extern\nLibrary Identification\nLibrary Properties\nCmpCrypto\nLibrary Identification\nLibrary Properties\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nCmpLog\nLibrary Identification\nLibrary Properties\nCmpSchedule\nLibrary Identification\nLibrary Properties\nCmpX509Cert\nLibrary Identification\nLibrary Properties\nCommon Behaviour Model\nLibrary Identification\nLibrary Properties\nComponent Manager\nLibrary Identification\nLibrary Properties\nElement Collections\nLibrary Identification\nLibrary Properties\nMemoryUtils\nLibrary Identification\nLibrary Properties\nNet Base Services\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nStringUtils\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysSocket2\nLibrary Identification\nLibrary Properties\nSysSocket2 Implementation\nLibrary Identification\nLibrary Properties\nSysTime\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nWeb Socket Client SL\nLibrary Identification\nLibrary Properties\nMQTT Client SL\nDocs\n»\nMQTT\nClient\n»\nCommon\n»\nFunction\nBlocks\n»\nMQTTClient (FB)\nMQTTClient (FB)\nÂ¶\nFUNCTION_BLOCK MQTTClient EXTENDS CBML.LCon\nFunction block to connect with a MQTT broker\nInOut:\nScope\nName\nType\nInitial\nComment\nInherited from\nInput\nxEnable\nBOOL\nTRUE\n: Activates the defined operation\nFALSE\n: Aborts/resets the defined operation\nLCon\nOutput\nxDone\nBOOL\nTRUE\n: Ready condition reached\nLCon\nxBusy\nBOOL\nTRUE\n: Operation is running\nLCon\nxError\nBOOL\nTRUE\n: Error condition reached\nLCon\nInput\nuiPort\nUINT\nPort of MQTT Broker Server\nxUseTLS\nBOOL\nObsolete, use itfTLSContext instead !\nTRUE: Crypted Connection, FALSE: Uncrypted Connection\nuiKeepAlive\nUINT\n5\nKeep Alive Time in Seconds (optional)\npbWillMessage\nPOINTER TO BYTE\n0\nPointer to the âLast Willâ message (optional)\nuiWillMessageSize\nUINT\n0\nSize of âLast Willâ message (optional)\nxWillRetain\nBOOL\nTRUE: Saves the âLast Willâ message on server. If Client\nsubscribes later, then it receives the last stack message\nfrom server.\neWillQoS\nMQTT_QOS\nQoS Level of âLast Willâ message\nxCleanSession\nBOOL\nTRUE: Creates a new session, FALSE: Uses already existing\nsession if available\nwsUsername\nWSTRING(255)\nââ\nUser Name (optional)\nwsPassword\nWSTRING(1024)\nââ\nUser Password (optional)\nwsWillTopic\nWSTRING(1024)\nââ\nWill Topic (optional)\nsClientId\nSTRING(255)\nââ\nClient ID, if empty then new ID is generated, allowed are\nonly these characters\n0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ\n(optional)\ntPingInterval\nTIME\nTIME#2s0ms\nInterval time in seconds how often should be pinged, if\nTime<=0 then no pings\nhCert\nRTS_IEC_HANDLE\nRTS_INVALID_HANDLE\nObsolete, use itfTLSContext instead !\nHandle to the client certificate (optional)\nitfTLSContext\nNBS.ITLSContext\n0\nEncapsulates all the data neccecray to handle encrypted tcp connections\nStatic initialization, as shown in the following code snippet.\nVAR\ncommonName\n:\nSTRING\n:=\n'MyRrasPi'\n;\nciCertInfo\n:\nNBS.CERT_INFO\n:=\n(\npsInfo\n:=\nADR\n(\ncommonName\n),\nudiSize\n:=\nLEN\n(\ncommonName\n));\nmyTLSContext\n:\nNBS.TLSContext\n:=\n(\nePurpose\n:=\nNBS.PURPOSE.CLIENT_SIDE\n,\nsUseCaseName\n:=\n'NBSTest'\n,\nsTLSVersion\n:=\n'1.3'\n,\nciCertInfo\n:=\nciCertInfo\n,\nudiVerificationMode\n:=\n2\n);\nEND_VAR\nitfAsyncProperty\nNBS.IAsyncProperty\n0\nRuns the connect process in a own background task.\nUse this property if the connection setup takes longer than one task cycle (e.g. TLS connections)\nudiTimeOut\nUDINT\n0\nDefines the time (Âµs) after which the connection setup\naborts with xError.\neCommunicationMode\nCOMMUNICATION_MODE\nCOMMUNICATION_MODE.TCP\nCommunication mode: TCP or WEB_SOCKET, default: TCP\nCOMMUNICATION_MODE.TCP: Configure the connection via the inputs: sHostname, uiPort and itfTLSContext\nCOMMUNICATION_MODE.WEB_SOCKET: Configure the connection via the inputs: sWebSocketUrl and itfTLSContext\nAdditional WebSocket options can be set via the method\nSetWebSocketOptions\n.\nsWebSocketUrl\nREFERENCE TO STRING(1024)\nThe uri of the websocket server. e.g âws://localhost:8080â\nws-URI = âws:â â//â host [ â:â port ] path [ â?â query ]\nwss-URI = âwss:â â//â host [ â:â port ] path [ â?â query ]\nThe input is only relevant for eCommunicationMode = COMMUNICATION_MODE.WEB_SOCKET.\neMQTTVersion\nMQTT_VERSION\nMQTT_VERSION.V3_1_1\nMQTT protocol version, default: 3.1.1\nmQTTConnectProperties\nREFERENCE TO\nMQTTConnectProperties\nConnection properties for MQTT V5\nmQTTWillProperties\nREFERENCE TO\nMQTTWillProperties\nWill properties for MQTT V5\nInout Const\nsHostname\nSTRING(80)\nHost name of Broker MQTT Server (is IPAddress)\nOutput\neMQTTError\nMQTT_ERROR\nMQTT Error Type\nxConnectedToBroker\nBOOL\nFALSE\nFALSE when there is no Connection to MQTT Broker Server,\notherwise TRUE\neReaonCode\nMQTT_REASON_CODE\nReason code of the last operation (MQTT V5 only)\nmQTTConnackProperties\nMQTTConnackProperties\nConnection response properties (MQTT V5 only)\nMethods:\nResetAction\nSendAuthPacket\nSetInitialValue\nSetWebSocketOptions\nStructure:\nResetAction (Method)\nSendAuthPacket (Method)\nSetInitialValue (Method)\nSetWebSocketOptions (Method)",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment",
+        "Inherited from"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "xEnable",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUE: Activates the defined operationFALSE: Aborts/resets the defined operation",
+          "Inherited from": "LCon"
+        },
+        {
+          "Scope": "Output",
+          "Name": "xDone",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUE: Ready condition reached",
+          "Inherited from": "LCon"
+        },
+        [
+          "xBusy",
+          "BOOL",
+          "",
+          "TRUE: Operation is running",
+          "LCon"
+        ],
+        [
+          "xError",
+          "BOOL",
+          "",
+          "TRUE: Error condition reached",
+          "LCon"
+        ],
+        {
+          "Scope": "Input",
+          "Name": "uiPort",
+          "Type": "UINT",
+          "Initial": "",
+          "Comment": "Port of MQTT Broker Server",
+          "Inherited from": ""
+        },
+        [
+          "xUseTLS",
+          "BOOL",
+          "",
+          "Obsolete, use itfTLSContext instead !TRUE: Crypted Connection, FALSE: Uncrypted Connection",
+          ""
+        ],
+        [
+          "uiKeepAlive",
+          "UINT",
+          "5",
+          "Keep Alive Time in Seconds (optional)",
+          ""
+        ],
+        [
+          "pbWillMessage",
+          "POINTER TO BYTE",
+          "0",
+          "Pointer to the âLast Willâ message (optional)",
+          ""
+        ],
+        [
+          "uiWillMessageSize",
+          "UINT",
+          "0",
+          "Size of âLast Willâ message (optional)",
+          ""
+        ],
+        [
+          "xWillRetain",
+          "BOOL",
+          "",
+          "TRUE: Saves the âLast Willâ message on server. If Client\nsubscribes later, then it receives the last stack message\nfrom server.",
+          ""
+        ],
+        [
+          "eWillQoS",
+          "MQTT_QOS",
+          "",
+          "QoS Level of âLast Willâ message",
+          ""
+        ],
+        [
+          "xCleanSession",
+          "BOOL",
+          "",
+          "TRUE: Creates a new session, FALSE: Uses already existing\nsession if available",
+          ""
+        ],
+        [
+          "wsUsername",
+          "WSTRING(255)",
+          "ââ",
+          "User Name (optional)",
+          ""
+        ],
+        [
+          "wsPassword",
+          "WSTRING(1024)",
+          "ââ",
+          "User Password (optional)",
+          ""
+        ],
+        [
+          "wsWillTopic",
+          "WSTRING(1024)",
+          "ââ",
+          "Will Topic (optional)",
+          ""
+        ],
+        [
+          "sClientId",
+          "STRING(255)",
+          "ââ",
+          "Client ID, if empty then new ID is generated, allowed are\nonly these characters\n0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ\n(optional)",
+          ""
+        ],
+        [
+          "tPingInterval",
+          "TIME",
+          "TIME#2s0ms",
+          "Interval time in seconds how often should be pinged, if\nTime<=0 then no pings",
+          ""
+        ],
+        [
+          "hCert",
+          "RTS_IEC_HANDLE",
+          "RTS_INVALID_HANDLE",
+          "Obsolete, use itfTLSContext instead !Handle to the client certificate (optional)",
+          ""
+        ],
+        [
+          "itfTLSContext",
+          "NBS.ITLSContext",
+          "0",
+          "Encapsulates all the data neccecray to handle encrypted tcp connectionsStatic initialization, as shown in the following code snippet.VARcommonName:STRING:='MyRrasPi';ciCertInfo:NBS.CERT_INFO:=(psInfo:=ADR(commonName),udiSize:=LEN(commonName));myTLSContext:NBS.TLSContext:=(ePurpose:=NBS.PURPOSE.CLIENT_SIDE,sUseCaseName:='NBSTest',sTLSVersion:='1.3',ciCertInfo:=ciCertInfo,udiVerificationMode:=2);END_VAR",
+          ""
+        ],
+        [
+          "itfAsyncProperty",
+          "NBS.IAsyncProperty",
+          "0",
+          "Runs the connect process in a own background task.\nUse this property if the connection setup takes longer than one task cycle (e.g. TLS connections)",
+          ""
+        ],
+        [
+          "udiTimeOut",
+          "UDINT",
+          "0",
+          "Defines the time (Âµs) after which the connection setup\naborts with xError.",
+          ""
+        ],
+        [
+          "eCommunicationMode",
+          "COMMUNICATION_MODE",
+          "COMMUNICATION_MODE.TCP",
+          "Communication mode: TCP or WEB_SOCKET, default: TCPCOMMUNICATION_MODE.TCP: Configure the connection via the inputs: sHostname, uiPort and itfTLSContextCOMMUNICATION_MODE.WEB_SOCKET: Configure the connection via the inputs: sWebSocketUrl and itfTLSContextAdditional WebSocket options can be set via the methodSetWebSocketOptions.",
+          ""
+        ],
+        [
+          "sWebSocketUrl",
+          "REFERENCE TO STRING(1024)",
+          "",
+          "The uri of the websocket server. e.g âws://localhost:8080â\nws-URI = âws:â â//â host [ â:â port ] path [ â?â query ]\nwss-URI = âwss:â â//â host [ â:â port ] path [ â?â query ]The input is only relevant for eCommunicationMode = COMMUNICATION_MODE.WEB_SOCKET.",
+          ""
+        ],
+        [
+          "eMQTTVersion",
+          "MQTT_VERSION",
+          "MQTT_VERSION.V3_1_1",
+          "MQTT protocol version, default: 3.1.1",
+          ""
+        ],
+        [
+          "mQTTConnectProperties",
+          "REFERENCE TOMQTTConnectProperties",
+          "",
+          "Connection properties for MQTT V5",
+          ""
+        ],
+        [
+          "mQTTWillProperties",
+          "REFERENCE TOMQTTWillProperties",
+          "",
+          "Will properties for MQTT V5",
+          ""
+        ],
+        {
+          "Scope": "Inout Const",
+          "Name": "sHostname",
+          "Type": "STRING(80)",
+          "Initial": "",
+          "Comment": "Host name of Broker MQTT Server (is IPAddress)",
+          "Inherited from": ""
+        },
+        {
+          "Scope": "Output",
+          "Name": "eMQTTError",
+          "Type": "MQTT_ERROR",
+          "Initial": "",
+          "Comment": "MQTT Error Type",
+          "Inherited from": ""
+        },
+        [
+          "xConnectedToBroker",
+          "BOOL",
+          "FALSE",
+          "FALSE when there is no Connection to MQTT Broker Server,\notherwise TRUE",
+          ""
+        ],
+        [
+          "eReaonCode",
+          "MQTT_REASON_CODE",
+          "",
+          "Reason code of the last operation (MQTT V5 only)",
+          ""
+        ],
+        [
+          "mQTTConnackProperties",
+          "MQTTConnackProperties",
+          "",
+          "Connection response properties (MQTT V5 only)",
+          ""
+        ]
+      ]
+    }
+  ]
+}

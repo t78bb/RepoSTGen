@@ -1,0 +1,28 @@
+{
+  "library": "DNP3",
+  "title": "GetOutstation (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Outstation/pou-OutstationDataModel/private/Outstations/GetOutstation.html",
+  "page_title": "OutstationDataModel.GetOutstation (METH)",
+  "text": "\nMETHOD GetOutstation : IOutstation\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetOutstation",
+          "Type": "IOutstation"
+        },
+        {
+          "Scope": "Input",
+          "Name": "idx",
+          "Type": "UINT"
+        }
+      ]
+    }
+  ]
+}

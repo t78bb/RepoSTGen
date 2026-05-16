@@ -1,0 +1,45 @@
+{
+  "library": "String Segments",
+  "title": "_StringPool (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Segments/Current/Strings/Functionblocks/_StringPool.html",
+  "page_title": "_StringPool (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL _StringPool EXTENDS MBM.Disposable IMPLEMENTS\nIStringPool\nProvides a pool of\nIString\ninstances.\nUse the\nGetString\nmethod to get a new instance.\nExample for a\n``\n_StringPool instance with a capacity of 10 IString instances with a size of minimal 80 bytes each:\naxwMemory\n:\nARRAY\n[0..209]\nOF\n__XWORD\n;\nfbStringPool\n:\nSTR._StringPool\n:=\n(\nudiStringSize\n:=\n80\n,\npbyPool\n:=\nADR\n(\naxwMemory\n),\nudiPoolSize\n:=\nSIZEOF\n(\naxwMemory\n));\nstPoolConfig\n:\nSTR.CONFIG\n:=\nfbStringPool.GetPoolConfig\n();\n// -> udiStringSize = 87 | udiCapacity = 10\nPlease take a look to the function blocks in the Library âGeneric String Baseâ\nYou can use the\nGSB.StringPool\nfunction block, which performs the same task in a much more convenient way\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Scope": "Input Const",
+          "Name": "udiStringSize",
+          "Type": "UDINT",
+          "Initial": "16#FFFFFFFF"
+        },
+        [
+          "udiInitialCapacity",
+          "UDINT",
+          "5"
+        ],
+        [
+          "pbyPool",
+          "POINTER TO BYTE",
+          ""
+        ],
+        [
+          "udiPoolSize",
+          "UDINT",
+          ""
+        ],
+        [
+          "usiExtensionFactor",
+          "USINT",
+          ""
+        ]
+      ]
+    }
+  ]
+}

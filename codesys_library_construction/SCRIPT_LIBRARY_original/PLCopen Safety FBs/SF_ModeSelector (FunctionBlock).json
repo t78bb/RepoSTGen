@@ -1,0 +1,190 @@
+{
+  "library": "PLCopen Safety FBs",
+  "title": "SF_ModeSelector (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/PLCopen Safety FBs/Current/PLCopenSafetyFBs/Function-Blocks/SF_ModeSelector.html",
+  "page_title": "SF_ModeSelector (FB)",
+  "text": "PLCopenSafetyFBs\nEnums\nFBS_ANTI (Enum)\nFBS_EDM (Enum)\nFBS_ENSWITCH (Enum)\nFBS_ENSWITCH2 (Enum)\nFBS_EQUI (Enum)\nFBS_ESPE (Enum)\nFBS_ESTOP (Enum)\nFBS_GUARD (Enum)\nFBS_GUARDLOCK2 (Enum)\nFBS_MODESEL (Enum)\nFBS_OUTCONTROL (Enum)\nFBS_PSE (Enum)\nFBS_RESBUT (Enum)\nFBS_SAFEREQ (Enum)\nFBS_TESTSEN (Enum)\nFBS_TWOHAND (Enum)\nFunction Blocks\nSF_Antivalent (FunctionBlock)\nSF_EDM (FunctionBlock)\nSF_ESPE (FunctionBlock)\nSF_EmergencyStop (FunctionBlock)\nSF_EnableSwitch (FunctionBlock)\nSF_EnableSwitch_2 (FunctionBlock)\nSF_Equivalent (FunctionBlock)\nSF_Guard (FunctionBlock)\nSF_GuardLocking_2 (FunctionBlock)\nSF_ModeSelector (FunctionBlock)\nSF_OutControl (FunctionBlock)\nSF_PSE (FunctionBlock)\nSF_ResetButton (FunctionBlock)\nSF_SafetyRequest (FunctionBlock)\nSF_TestableSafetySensor (FunctionBlock)\nSF_TwoHandControlTypeII (FunctionBlock)\nSF_TwoHandControlTypeIII (FunctionBlock)\nFile and Project Information\nLibrary Reference\nStandard\nLibrary Identification\nLibrary Properties\nSysTimeCore\nLibrary Identification\nLibrary Properties\nPLCopen Safety FBs\nDocs\n»\nPLCopenSafetyFBs\n»\nFunction\nBlocks\n»\nSF_ModeSelector (FB)\nSF_ModeSelector (FB)\nÂ¶\nFUNCTION_BLOCK SF_ModeSelector\nThis function block selects the system operation mode, such as manual, automatic, semi-automatic, etc.\nInOut:\nScope\nName\nType\nInitial\nComment\nInput\nActivate\nBOOL\nFALSE\nActivation of the FB.\nS_Mode0\nBOOL\nFALSE\nInput X (0 - 7) from mode selector switch. FALSE: Mode X is\nnot requested by operator. TRUE: Mode X is requested by\noperator.\nS_Mode1\nBOOL\nFALSE\nS_Mode2\nBOOL\nFALSE\nS_Mode3\nBOOL\nFALSE\nS_Mode4\nBOOL\nFALSE\nS_Mode5\nBOOL\nFALSE\nS_Mode6\nBOOL\nFALSE\nS_Mode7\nBOOL\nFALSE\nS_Unlock\nBOOL\nFALSE\nLocks the selected mode.\nFALSE: The actual S_ModeXSel output is locked therefore a change of any S_ModeX input does not lead to a change in the S_ModeXSel output even in the event of a rising edge of Set-Mode.\nTRUE: The selected S_ModeXSel is not locked; a mode selec-tion change is possible.\nS_SetMode\nBOOL\nFALSE\nSets the selected mode. Operator acknowledges the setting of a mode.\nAny change to new S_ModeX = TRUE leads to S_AnyModeSel/S_ModeXSel = FALSE, only a rising SetMode trigger then leads to new S_ModeXSel = TRUE.\nAutoSetMode\nBOOL\nFALSE\nParameterizes the acknowledgement mode\nFALSE: A change in mode must be acknowledged by the operator via SetMode.\nTRUE: A valid change of the S_ModeX input to another S_ModeX automatically leads to a change in S_ModeXSel with-out operator acknowledgment via SetMode (as long as this is not locked by S_Unlock).\nModeMonitorTime\nTIME\nTIME#0ms\nMaximum permissible time for changing the selection input.\nReset\nBOOL\nFALSE\nManual reset of FB\nOutput\nReady\nBOOL\nFALSE\nActivation of the FB. TRUE indicates that the FB is\nactivated and the outputs results are valid, FALSE the FB is\nnot active and the program is not executed.\nS_Mode0Sel\nBOOL\nFALSE\nIndicates that mode X (0 - 7) is selected and acknowledged.\nFALSE: Mode X is not selected or not active. TRUE: Mode X is\nselected and active.\nS_Mode1Sel\nBOOL\nFALSE\nS_Mode2Sel\nBOOL\nFALSE\nS_Mode3Sel\nBOOL\nFALSE\nS_Mode4Sel\nBOOL\nFALSE\nS_Mode5Sel\nBOOL\nFALSE\nS_Mode6Sel\nBOOL\nFALSE\nS_Mode7Sel\nBOOL\nFALSE\nS_AnyModeSel\nBOOL\nFALSE\nIndicates that any of the 8 modes is selected and\nacknowledged. FALSE: No S_ModeX is selected. TRUE: One of\nthe 8 S_ModeX is selected and active.\nSafetyDemand\nBOOL\nFALSE\nOutput indicating that the FB is active and the primary\nsafety function is demanded (e.g. related to the safety\nfunctionality).\nResetRequest\nBOOL\nFALSE\nError flag\nOutput which can be used to signal the operator to press the reset functionality to continue.\nError\nBOOL\nFALSE\nError flag\nDiagCode\nWORD\n0\nDiagnostic register",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "Activate",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "Activation of the FB."
+        },
+        [
+          "S_Mode0",
+          "BOOL",
+          "FALSE",
+          "Input X (0 - 7) from mode selector switch. FALSE: Mode X is\nnot requested by operator. TRUE: Mode X is requested by\noperator."
+        ],
+        [
+          "S_Mode1",
+          "BOOL",
+          "FALSE",
+          ""
+        ],
+        [
+          "S_Mode2",
+          "BOOL",
+          "FALSE",
+          ""
+        ],
+        [
+          "S_Mode3",
+          "BOOL",
+          "FALSE",
+          ""
+        ],
+        [
+          "S_Mode4",
+          "BOOL",
+          "FALSE",
+          ""
+        ],
+        [
+          "S_Mode5",
+          "BOOL",
+          "FALSE",
+          ""
+        ],
+        [
+          "S_Mode6",
+          "BOOL",
+          "FALSE",
+          ""
+        ],
+        [
+          "S_Mode7",
+          "BOOL",
+          "FALSE",
+          ""
+        ],
+        [
+          "S_Unlock",
+          "BOOL",
+          "FALSE",
+          "Locks the selected mode.\nFALSE: The actual S_ModeXSel output is locked therefore a change of any S_ModeX input does not lead to a change in the S_ModeXSel output even in the event of a rising edge of Set-Mode.\nTRUE: The selected S_ModeXSel is not locked; a mode selec-tion change is possible."
+        ],
+        [
+          "S_SetMode",
+          "BOOL",
+          "FALSE",
+          "Sets the selected mode. Operator acknowledges the setting of a mode.\nAny change to new S_ModeX = TRUE leads to S_AnyModeSel/S_ModeXSel = FALSE, only a rising SetMode trigger then leads to new S_ModeXSel = TRUE."
+        ],
+        [
+          "AutoSetMode",
+          "BOOL",
+          "FALSE",
+          "Parameterizes the acknowledgement mode\nFALSE: A change in mode must be acknowledged by the operator via SetMode.\nTRUE: A valid change of the S_ModeX input to another S_ModeX automatically leads to a change in S_ModeXSel with-out operator acknowledgment via SetMode (as long as this is not locked by S_Unlock)."
+        ],
+        [
+          "ModeMonitorTime",
+          "TIME",
+          "TIME#0ms",
+          "Maximum permissible time for changing the selection input."
+        ],
+        [
+          "Reset",
+          "BOOL",
+          "FALSE",
+          "Manual reset of FB"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Ready",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "Activation of the FB. TRUE indicates that the FB is\nactivated and the outputs results are valid, FALSE the FB is\nnot active and the program is not executed."
+        },
+        [
+          "S_Mode0Sel",
+          "BOOL",
+          "FALSE",
+          "Indicates that mode X (0 - 7) is selected and acknowledged.\nFALSE: Mode X is not selected or not active. TRUE: Mode X is\nselected and active."
+        ],
+        [
+          "S_Mode1Sel",
+          "BOOL",
+          "FALSE",
+          ""
+        ],
+        [
+          "S_Mode2Sel",
+          "BOOL",
+          "FALSE",
+          ""
+        ],
+        [
+          "S_Mode3Sel",
+          "BOOL",
+          "FALSE",
+          ""
+        ],
+        [
+          "S_Mode4Sel",
+          "BOOL",
+          "FALSE",
+          ""
+        ],
+        [
+          "S_Mode5Sel",
+          "BOOL",
+          "FALSE",
+          ""
+        ],
+        [
+          "S_Mode6Sel",
+          "BOOL",
+          "FALSE",
+          ""
+        ],
+        [
+          "S_Mode7Sel",
+          "BOOL",
+          "FALSE",
+          ""
+        ],
+        [
+          "S_AnyModeSel",
+          "BOOL",
+          "FALSE",
+          "Indicates that any of the 8 modes is selected and\nacknowledged. FALSE: No S_ModeX is selected. TRUE: One of\nthe 8 S_ModeX is selected and active."
+        ],
+        [
+          "SafetyDemand",
+          "BOOL",
+          "FALSE",
+          "Output indicating that the FB is active and the primary\nsafety function is demanded (e.g. related to the safety\nfunctionality)."
+        ],
+        [
+          "ResetRequest",
+          "BOOL",
+          "FALSE",
+          "Error flag\nOutput which can be used to signal the operator to press the reset functionality to continue."
+        ],
+        [
+          "Error",
+          "BOOL",
+          "FALSE",
+          "Error flag"
+        ],
+        [
+          "DiagCode",
+          "WORD",
+          "0",
+          "Diagnostic register"
+        ]
+      ]
+    }
+  ]
+}

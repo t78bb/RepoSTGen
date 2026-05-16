@@ -1,0 +1,28 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_GetLastObj (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/OutQueue-Functions/SMC_GetLastObj.html",
+  "page_title": "SMC_GetLastObj (FUN)",
+  "text": "\nFUNCTION SMC_GetLastObj : POINTER TO SMC_GEOINFO\nReturns the pointer to the last object in\nSMC_OUTQUEUE\ntask-safety: call from consumer task only\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "poq",
+          "Type": "POINTER TOSMC_OUTQUEUE"
+        },
+        {
+          "Scope": "Return",
+          "Name": "SMC_GetLastObj",
+          "Type": "POINTER TOSMC_GEOINFO"
+        }
+      ]
+    }
+  ]
+}

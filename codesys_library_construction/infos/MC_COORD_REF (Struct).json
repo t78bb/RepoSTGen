@@ -1,0 +1,48 @@
+{
+  "library": "SM3_Robotics",
+  "title": "MC_COORD_REF (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/Basic-types/MC_COORD_REF.html",
+  "page_title": "MC_COORD_REF (STRUCT)",
+  "text": "\nTYPE MC_COORD_REF : STRUCT\nStores the position and orientation of the TCP.\nThe orientation is stored with three angles A, B, C according to\nthe ZYâZâ euler angles convention.\nThe new coordinate system is defined relative to the reference\ncoordinate system\nInitially is identical with the reference coordinate system.\nFirst, it is turned by A degrees around the z axis of the reference system.\nSecond, it is turned about B degrees around the resulting yâ axis.\nThird, it is turned about C degrees around the resulting zââ axis.\nThe corresponding rotation matrix is given by R = Rz(A) * Ry(B) * Rz(C).\nIn this matrix, the columns correspond to the axes of the new coordinate\nsystem, expressed in coordinates of the reference coordinate system.\nNote\nIf A, B, C are computed by the system, the angle B is normalized\nto the range 0Â° .. 180Â°.  If B is 0Â° or 180Â°, C is set to 0Â°.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "X",
+          "Type": "LREAL",
+          "Comment": "X-coordinate of position"
+        },
+        {
+          "Name": "Y",
+          "Type": "LREAL",
+          "Comment": "Y-coordinate of position"
+        },
+        {
+          "Name": "Z",
+          "Type": "LREAL",
+          "Comment": "Z-coordinate of position"
+        },
+        {
+          "Name": "A",
+          "Type": "LREAL",
+          "Comment": "Angle of rotation around z-axis [deg]"
+        },
+        {
+          "Name": "B",
+          "Type": "LREAL",
+          "Comment": "Angle of rotation around yâ-axis [deg]"
+        },
+        {
+          "Name": "C",
+          "Type": "LREAL",
+          "Comment": "Angle of rotation around zââ-axis [deg]"
+        }
+      ]
+    }
+  ]
+}

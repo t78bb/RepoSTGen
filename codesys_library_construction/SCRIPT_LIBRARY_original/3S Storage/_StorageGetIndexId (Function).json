@@ -1,0 +1,42 @@
+{
+  "library": "3S Storage",
+  "title": "_StorageGetIndexId (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/3S Storage/Current/_3SStorage/External/Functions/Storage/_StorageGetIndexId.html",
+  "page_title": "_StorageGetIndexId (FUN)",
+  "text": "Deutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nMenu\nSearch\nDeutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\n_3SStorage\nExternal\nFunctions\nStorage\nInstances\nStorage (FunctionBlock)\nIStorage2\nStorageClear (Method)\nStorageClose (Method)\nStorageEncoding (Property)\nStorageGetMetrics (Method)\nStorageGetPath (Method)\nStorageIsReadOnly (Property)\nStorageLockingState (Property)\nStorageNumOfTables (Property)\nStorageOpenFile (Method)\nStorageReorg (Method)\nStorageSchemaVersion (Property)\nStorageUserVersion (Property)\nStorageVersion (Property)\nTableOpen (Method)\nTransactionBegin (Method)\nUtilityGetCurrentDateAndTime (Method)\nUtilityRandomness (Method)\n_3SStorageVersionConstants (GVL)\nFile and Project Information\nLibrary Reference\nCAA FB Factory\nLibrary Identification\nLibrary Properties\nCAA Storage\nLibrary Identification\nLibrary Properties\nCAA Types Extern\nLibrary Identification\nLibrary Properties\n3S Storage\nDocs\n»\n_3SStorage\n»\nExternal\n»\nFunctions\n»\nStorage\n»\n_StorageGetIndexId (FUN)\n_StorageGetIndexId (FUN)\nÂ¶\nFUNCTION _StorageGetIndexId : STO.ERROR\n= SignatureFlag.SimulationExternal = link even in simulation mode\nInOut:\nScope\nName\nType\nReturn\n_StorageGetIndexId\nSTO.ERROR\nInput\nhStorage\nSTORAGE_TYPE\nInout\nsIndex\nSTRING\nsTable\nSTRING\nOutput\nidIndex\nCAA.IDENT\ntop\nCODESYS Group | We\nsoftware\nAutomation.\nto software\n['sɒftwɛər]\ntransitive verb\n__softwared/softwaring\n: to develop software\n// to software automation: to develop software for automation purposes\nThe CODESYS Group is the manufacturer of CODESYS, the leading hardware-independent\n                                    IEC 61131-3 automation software for developing and engineering controller\n                                    applications.\nCODESYS® is a registered trademark.\nCODESYS GmbH\nA member of the CODESYS Group\nMemminger Straße 151, 87439 Kempten\nGermany\nTel.:\n+49-831-54031-0\ninfo@codesys.com\nLegal Notice\nPrivacy Policy\nLinkedIn\nYoutube\nRSS\nDownloads\nLogin\nCODESYS Store\n© 2022 CODESYS GmbH\n| A member of the CODESYS Group",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "_StorageGetIndexId",
+          "Type": "STO.ERROR"
+        },
+        {
+          "Scope": "Input",
+          "Name": "hStorage",
+          "Type": "STORAGE_TYPE"
+        },
+        {
+          "Scope": "Inout",
+          "Name": "sIndex",
+          "Type": "STRING"
+        },
+        [
+          "sTable",
+          "STRING"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "idIndex",
+          "Type": "CAA.IDENT"
+        }
+      ]
+    }
+  ]
+}

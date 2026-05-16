@@ -1,0 +1,31 @@
+{
+  "library": "Visu Utils",
+  "title": "GetIPv4Address (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/Visu Utils/Current/VisuUtils/VisuActionUtilities/Interfaces/pou-IVisualizationClient/GetIPv4Address.html",
+  "page_title": "IVisualizationClient.GetIPv4Address (METH)",
+  "text": "\nMETHOD GetIPv4Address : STRING\nReturns the IPv4 address of the given client in dotted notation if provided by the\nclient which is typically only done for webvisualizations.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetIPv4Address",
+          "Type": "STRING",
+          "Comment": ""
+        },
+        {
+          "Scope": "Output",
+          "Name": "xIsValid",
+          "Type": "BOOL",
+          "Comment": "TRUE: The ip address is valid"
+        }
+      ]
+    }
+  ]
+}

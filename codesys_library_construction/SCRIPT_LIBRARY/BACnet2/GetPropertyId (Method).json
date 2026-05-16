@@ -1,0 +1,28 @@
+{
+  "library": "BACnet2",
+  "title": "GetPropertyId (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/BACnetObjects/base/pou-BACnetObjectBase/GetPropertyId.html",
+  "page_title": "BACnetObjectBase.GetPropertyId (METH)",
+  "text": "\nMETHOD GetPropertyId : CmpBACnet.IEC_BACNET_PROPERTY_ID\nGets the propertId with the given index (0 .. NumberOfProperties-1).\nReturns IEC_BACNET_PROPERTY_ID._PROP_MAX_SIZE, in case propIdx is out of range\nor the requested propertID can not be read properly.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetPropertyId",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_ID"
+        },
+        {
+          "Scope": "Input",
+          "Name": "propIdx",
+          "Type": "DWORD"
+        }
+      ]
+    }
+  ]
+}

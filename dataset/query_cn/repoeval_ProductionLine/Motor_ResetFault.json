@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现通过检测故障复位信号来清除电机的故障状态。",
+  "provide_code": "METHOD ResetFault : BOOL\nVAR_INPUT\n\tMotorI:MotorI;\nEND_VAR\nVAR_OUTPUT\n\tMotorO:MotorO;\nEND_VAR"
+}

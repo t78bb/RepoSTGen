@@ -1,0 +1,39 @@
+{
+  "library": "String Builder",
+  "title": "_Builder (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Builder/Current/Builder/Function-Blocks/_Builder.html",
+  "page_title": "_Builder (FB)",
+  "text": "Builder\nAliases\nConstants (GVL)\nEnums\nENCODING (Alias)\nERROR (Alias)\nSTATS (Alias)\nFunction Blocks\nRange (Alias)\n_RangePool (Alias)\nInterfaces\nIBuilder (Folder)\nICharmap (Alias)\nIString (Alias)\nIStringRepresentation (Folder)\nTypes\nRUNE (Alias)\nFunction Blocks\n_Builder (FunctionBlock)\nIBuilder\nIStringRepresentation\nSetInitialValue (Method)\nFunctions\nCreateRange (Function)\nCreateRangePool (Function)\nLibrary Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nFile and Project Information\nLibrary Reference\nImmutable String Segments\nLibrary Identification\nLibrary Properties\nMemory Block Manager\nLibrary Identification\nLibrary Properties\nString Builder Base\nLibrary Identification\nLibrary Properties\nString Conversions\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nUTF-16 Encoding Support\nLibrary Identification\nLibrary Properties\nUTF-8 Encoding Support\nLibrary Identification\nLibrary Properties\nString Builder\nDocs\n»\nBuilder\n»\nFunction\nBlocks\n»\n_Builder (FB)\n_Builder (FB)\nÂ¶\nFUNCTION_BLOCK FINAL _Builder EXTENDS MBM.Disposable IMPLEMENTS\nIBuilder\nA Builder is used to efficiently build a string using Write methods.\nIt minimizes memory copying.\nInOut:\nScope\nName\nType\nInput Const\nitfString\nIString\nudiInitialCapacity\nUDINT\npbyBuffer\nPOINTER TO BYTE\nudiBufferSize\nUDINT\nusiExtensionFactor\nUSINT\nMethods:\nSetInitialValue\nGetBuilderStats\nGetCurrentSegment\nGetFirstSegment\nGetNextSegment\nLen\nReset\nToIString\nValidateSegment\nWriteIString\nWriteMemSegment\nWriteRune\nWriteString\nWriteWString\nStructure:\nIBuilder\nGetBuilderStats (Method)\nReset (Method)\nSegments\nGetCurrentSegment (Method)\nGetFirstSegment (Method)\nGetNextSegment (Method)\nValidateSegment (Method)\nWriteIString (Method)\nWriteMemSegment (Method)\nWriteRune (Method)\nWriteString (Method)\nWriteWString (Method)\nIStringRepresentation\nLen (Method)\nToIString (Method)\nSetInitialValue (Method)",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input Const",
+          "Name": "itfString",
+          "Type": "IString"
+        },
+        [
+          "udiInitialCapacity",
+          "UDINT"
+        ],
+        [
+          "pbyBuffer",
+          "POINTER TO BYTE"
+        ],
+        [
+          "udiBufferSize",
+          "UDINT"
+        ],
+        [
+          "usiExtensionFactor",
+          "USINT"
+        ]
+      ]
+    }
+  ]
+}

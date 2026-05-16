@@ -1,0 +1,37 @@
+{
+  "library": "CommFB",
+  "title": "DP_ADDR (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/CommFB/Current/CommFB/Addresses/DP_ADDR.html",
+  "page_title": "DP_ADDR (STRUCT)",
+  "text": "\nTYPE DP_ADDR : STRUCT\ndata structure for physical/native identification of a slot of a PROFIBUS DP-slave.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "VERSION",
+          "Type": "BYTE",
+          "Initial": "1",
+          "Comment": "Version of the data structure (1= Version 1)"
+        },
+        {
+          "Name": "D",
+          "Type": "DP_DEVICE_ID",
+          "Initial": "",
+          "Comment": "Identification of the Field Device"
+        },
+        {
+          "Name": "SLOT",
+          "Type": "BYTE",
+          "Initial": "",
+          "Comment": "Slot Number (identification of a slot)"
+        }
+      ]
+    }
+  ]
+}

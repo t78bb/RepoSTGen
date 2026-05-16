@@ -1,0 +1,23 @@
+{
+  "library": "AlarmManager",
+  "title": "GetFilterCriteria (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/pou-IAlarmManagerClient/GetFilterCriteria.html",
+  "page_title": "IAlarmManagerClient.GetFilterCriteria (METH)",
+  "text": "\nMETHOD GetFilterCriteria : IAlarmFilterCriteria\nReturns an instance of IAlarmFilterCriteria describing the filter criteria\nused to retrieve the currently active alarms or the historic alarms.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetFilterCriteria",
+          "Type": "IAlarmFilterCriteria"
+        }
+      ]
+    }
+  ]
+}

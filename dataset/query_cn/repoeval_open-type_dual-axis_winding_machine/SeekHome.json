@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现基于不同归位模式的机械轴归位（Home）操作控制逻辑。",
+  "provide_code": "FUNCTION_BLOCK SeekHome\nVAR_IN_OUT \n\t_Axis\t:\tAXIS_REF_SM3;\nEND_VAR\nVAR_INPUT\n\t_xHome\t:\tBOOL;\n\t_xAbort\t:\tBOOL;\n\t_nHomeMode\t:\tHomeMode;\n\t_fFastHomeVel\t:\tLREAL;\n\t_fSlowHomeVel\t:\tLREAL;\n\t_fHomeAcc\t\t:\tLREAL;\n\t_fHomeDec\t\t:\tLREAL;\n\t_fHomePos\t\t:\tLREAL;\n\t_xReferenceSwitch\t:\tBOOL;//typically is true\n\t_nDirection\t:\tMC_DIRECTION;\n\t_xIndexPulse\t:\tBOOL;\nEND_VAR\nVAR_OUTPUT\n\t_xBusy\t:\tBOOL;\n\t_xDone\t:\tBOOL;\n\t_xErr\t:\tBOOL;\n\t_iErrId\t:\tDINT;\nEND_VAR"
+}

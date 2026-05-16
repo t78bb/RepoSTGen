@@ -1,0 +1,23 @@
+{
+  "library": "MemoryUtils",
+  "title": "Padding (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/MemoryUtils/Current/MemoryUtils/Functionblocks/pou-ByteBuffer/Padding.html",
+  "page_title": "ByteBuffer.Padding (METH)",
+  "text": "\nMETHOD Padding\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "len",
+          "Type": "DINT"
+        }
+      ]
+    }
+  ]
+}

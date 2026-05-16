@@ -1,0 +1,30 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_TokenQueue (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/File/ReadNCFile/Token/SMC_TokenQueue.html",
+  "page_title": "SMC_TokenQueue (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_TokenQueue\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "strProgramName",
+          "Type": "STRING",
+          "Comment": "Program name (producer to consumer)"
+        },
+        [
+          "bRestart",
+          "BOOL",
+          "Restart signal from consumer to producer"
+        ]
+      ]
+    }
+  ]
+}

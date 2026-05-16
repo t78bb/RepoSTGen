@@ -1,0 +1,23 @@
+{
+  "library": "SM3_CNC",
+  "title": "RemoveLast (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/File/ReadNCFile/Token/pou-SMC_TokenQueue/RemoveLast.html",
+  "page_title": "SMC_TokenQueue.RemoveLast (METH)",
+  "text": "\nMETHOD RemoveLast : BOOL\nRemoves the last token of the queue.\nNote: only safe if the queue is filled and read from the same task.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "RemoveLast",
+          "Type": "BOOL"
+        }
+      ]
+    }
+  ]
+}

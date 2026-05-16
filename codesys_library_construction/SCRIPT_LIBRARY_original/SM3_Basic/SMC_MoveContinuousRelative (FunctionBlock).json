@@ -1,0 +1,119 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_MoveContinuousRelative (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/Movement/SMC_MoveContinuousRelative.html",
+  "page_title": "SMC_MoveContinuousRelative (FB)",
+  "text": "GlobalTextList (GlobalTextList)\nImages\nLibrary Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nProject Information\nGetBooleanProperty (Function)\nGetCompany (Function)\nGetNumberProperty (Function)\nGetTextProperty (Function)\nGetTextProperty2 (Function)\nGetTitle (Function)\nGetVersion (Function)\nGetVersionProperty (Function)\nSM3_Basic\nDataTypes\nAdditional\nMC_CAMSWITCH_REF (Struct)\nMC_CAMSWITCH_TR (Struct)\nMC_OUTPUT_REF (Alias)\nMC_TAPPETMODE (Enum)\nMC_TRACK_REF (Alias)\nMC_TRACK_TR (Struct)\nTRIGGER_REF (Struct)\nAdministrative/Configuration\nSMC3_BrakeSetState (Enum)\nSMC3_PersistPositionDiag (Enum)\nSMC3_PersistPosition_Data (Struct)\nSMC_AXIS_AUTORESTART_MODE (Enum)\nCAM\nCamSegment\nMC_CAM_ID (Struct)\nMC_CAM_REF (FunctionBlock)\nMC_STARTMODE (Enum)\nSMC_CAMTAPPETACTION (Enum)\nSMC_CAMTAPPETTYPE (Enum)\nSMC_CAMTable_LREAL_128_1 (Struct)\nSMC_CAMTable_LREAL_128_2 (Struct)\nSMC_CAMTable_LREAL_256_1 (Struct)\nSMC_CAMTable_LREAL_256_2 (Struct)\nSMC_CAMTable_REAL_128_1 (Struct)\nSMC_CAMTable_REAL_128_2 (Struct)\nSMC_CAMTable_REAL_256_1 (Struct)\nSMC_CAMTable_REAL_256_2 (Struct)\nSMC_CAMTable_UDINT_128_1 (Struct)\nSMC_CAMTable_UDINT_128_2 (Struct)\nSMC_CAMTable_UDINT_256_1 (Struct)\nSMC_CAMTable_UDINT_256_2 (Struct)\nSMC_CAMTable_UINT_128_1 (Struct)\nSMC_CAMTable_UINT_128_2 (Struct)\nSMC_CAMTable_UINT_256_1 (Struct)\nSMC_CAMTable_UINT_256_2 (Struct)\nSMC_CAMTappet (Struct)\nSMC_CAMXYVA (Struct)\nSMC_CAM_TYPE (Enum)\nDiagnostics\nSMC_CommunicationState (Enum)\nSMC_LOGGERMODE (Enum)\nDriveInterface\nMC_DIRECTION (Enum)\nSMC3_CaptureDescription (Struct)\nSMC3_CheckPositionLagMode (Enum)\nSMC3_DriveAcyclicTel (Struct)\nSMC3_MappingEntry (Alias)\nSMC3_ParamCommunicationMethod_Enum (Enum)\nSMC_AXIS_STATE (Enum)\nSMC_AXIS_TYPE (Enum)\nSMC_CONTROLLER_MODE (Enum)\nSMC_ENCODER_REF (Struct)\nSMC_FBERROR (Struct)\nSMC_MOTOR_TYPE (Enum)\nSMC_MOVEMENTTYPE (Enum)\nSMC_RAMPTYPE (Enum)\nSMC_SWITCHING_STATE (Enum)\nSMC_ValueSelect (Enum)\nMovement\nMC_TA_REF (Struct)\nMC_TP_REF (Struct)\nMC_TV_REF (Struct)\nSMC_BACKLASH_MODE (Enum)\nSMC_BACKLASH_STARTSTATE (Enum)\nSMC_HOMING_MODE (Enum)\nSMC_TA (Struct)\nSMC_TP (Struct)\nSMC_TV (Struct)\nDriveInterface\nAXIS_REF\nAXIS_REF_SM3 (FunctionBlock)\nIAxisRef (Interface)\nSMC3_ReinitDrive (FunctionBlock)\nSMC_AxisChangeSettings (FunctionBlock)\nSMC_AxisReadSettings (FunctionBlock)\nAXIS_REF_LOGICAL\nAXIS_REF_LOGICAL_SM3 (FunctionBlock)\nAXIS_REF_MAPPING\nAXIS_REF_MAPPING_SM3 (FunctionBlock)\nAXIS_REF_VIRTUAL\nAXIS_REF_VIRTUAL_SM3 (FunctionBlock)\nENCODER_REF\nENCODER_REF_SM3 (FunctionBlock)\nFREE_ENCODER_REF\nFREE_ENCODER_REF (FunctionBlock)\nGlobals\nLibParams (ParamList)\nSMC_DriveBasic_GlobalVariables (GVL)\nSM_PLCOpen_GlobalVariables (GVL)\nPOUs\nAdditional\nMC_AbortTrigger (FunctionBlock)\nMC_DigitalCamSwitch (FunctionBlock)\nMC_TouchProbe (FunctionBlock)\nSMC_CAMSWITCH_TOGGLE_EVENT (Struct)\nSMC_CAMSWITCH_TOGGLE_EVENTS (Struct)\nSMC_CAMSWITCH_TRACKS_EVENTS (Alias)\nSMC_DigitalCamSwitch_HighPrecision (FunctionBlock)\nSMC_FreeEncoder (FunctionBlock)\nSMC_Logical_Axis (FunctionBlock)\nSMC_StartupDrive (FunctionBlock)\nSMC_VIRTUAL_AXIS (FunctionBlock)\nAdministrative/Configuration\nMC_Power (FunctionBlock)\nMC_Reset (FunctionBlock)\nMC_SetPosition (FunctionBlock)\nSMC3_BrakeControl (FunctionBlock)\nSMC3_PersistPosition (FunctionBlock)\nSMC3_PersistPositionLogical (FunctionBlock)\nSMC3_PersistPositionSingleturn (FunctionBlock)\nSMC_ChangeAxisScalingLinear (FunctionBlock)\nSMC_ChangeAxisScalingRotary (FunctionBlock)\nSMC_ChangeDynamicLimits (FunctionBlock)\nSMC_ChangeGearingRatio (FunctionBlock)\nSMC_GetForecast (FunctionBlock)\nSMC_GetTravelTime (FunctionBlock)\nSMC_SetAdditionalConversionFactors (FunctionBlock)\nSMC_SetControllerMode (FunctionBlock)\nSMC_SetCustomRampType (FunctionBlock)\nSMC_SetForecast (FunctionBlock)\nSMC_SetMovementType (FunctionBlock)\nSMC_SetRampType (FunctionBlock)\nSMC_SetSoftwareLimits (FunctionBlock)\nCAM\nMC_CamTableSelect (FunctionBlock)\nSMC_CAMBounds (FunctionBlock)\nSMC_CAMBounds_Pos (FunctionBlock)\nSMC_CamEditor (FunctionBlock)\nSMC_CamRegister (FunctionBlock)\nSMC_CamTableEvaluate (Function)\nSMC_GetCamSlaveSetPosition (FunctionBlock)\nSMC_GetTappetValue (FunctionBlock)\nSMC_ReadCAM (FunctionBlock)\nSMC_WriteCAM (FunctionBlock)\nDiagnostics\nFBError\nMC_ReadActualPosition (FunctionBlock)\nMC_ReadActualTorque (FunctionBlock)\nMC_ReadActualVelocity (FunctionBlock)\nMC_ReadAxisError (FunctionBlock)\nMC_ReadStatus (FunctionBlock)\nSMC3_BrakeStatus (FunctionBlock)\nSMC_AxisDiagnosticLog (FunctionBlock)\nSMC_CheckAxisCommunication (FunctionBlock)\nSMC_CheckLimits (FunctionBlock)\nSMC_EstimateDeadTime (FunctionBlock)\nSMC_GetMaxSetAccDec (FunctionBlock)\nSMC_GetMaxSetVelocity (FunctionBlock)\nSMC_GetTrackingError (FunctionBlock)\nSMC_InPosition (FunctionBlock)\nSMC_MeasureDistance (FunctionBlock)\nSMC_ReadSetPosition (FunctionBlock)\nSMC_ReadSetValues (FunctionBlock)\nMovement\nDirect\nMC_AccelerationProfile (FunctionBlock)\nMC_Halt (FunctionBlock)\nMC_HaltSuperImposed (FunctionBlock)\nMC_Home (FunctionBlock)\nMC_Jog (FunctionBlock)\nMC_MoveAbsolute (FunctionBlock)\nMC_MoveAdditive (FunctionBlock)\nMC_MoveRelative (FunctionBlock)\nMC_MoveSuperImposed (FunctionBlock)\nMC_MoveVelocity (FunctionBlock)\nMC_PositionProfile (FunctionBlock)\nMC_SetOverride (FunctionBlock)\nMC_Stop (FunctionBlock)\nMC_VelocityProfile (FunctionBlock)\nMaster/Slave\nSMC_BacklashCompensation (FunctionBlock)\nSMC_GetOverride (FunctionBlock)\nSMC_Homing (FunctionBlock)\nSMC_Inch (FunctionBlock)\nSMC_MoveContinuousAbsolute (FunctionBlock)\nSMC_MoveContinuousRelative (FunctionBlock)\nParameter access\nMC_ReadBoolParameter (FunctionBlock)\nMC_ReadParameter (FunctionBlock)\nMC_WriteBoolParameter (FunctionBlock)\nMC_WriteParameter (FunctionBlock)\nSMC_ParameterNumber_CoE (Function)\nSMC_ParameterNumber_SoE (Function)\nSMC_GetCyclicMapping (Function)\ninternal\nTrajectories\nVisualization\nGenerated\nFramed visu helpers\nOriginal\nImagePool_sm3 (ImagePool)\nSM3_Basic_GetVersion (Function)\nFile and Project Information\nLibrary Reference\n3SLicense\nLibrary Identification\nLibrary Properties\nBase Interfaces\nLibrary Identification\nLibrary Properties\nCAA Callback Extern\nLibrary Identification\nLibrary Properties\nCAA Device Diagnosis\nLibrary Identification\nLibrary Properties\nCAA Types Extern\nLibrary Identification\nLibrary Properties\nCmpApp\nLibrary Identification\nLibrary Properties\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nCmpEventMgr\nLibrary Identification\nLibrary Properties\nCmpIecTask\nLibrary Identification\nLibrary Properties\nCmpLog\nLibrary Identification\nLibrary Properties\nComponent Manager\nLibrary Identification\nLibrary Properties\nEmpty\nLibrary Identification\nLibrary Properties\nFloatingPointUtils\nLibrary Identification\nLibrary Properties\nIoDriver Interfaces\nLibrary Identification\nLibrary Properties\nIoStandard\nLibrary Identification\nLibrary Properties\nSM3_CommonPublic\nLibrary Identification\nLibrary Properties\nSM3_Error\nLibrary Identification\nLibrary Properties\nSM3_Math\nLibrary Identification\nLibrary Properties\nSM3_RBase\nLibrary Identification\nLibrary Properties\nSM3_Ramps\nLibrary Identification\nLibrary Properties\nSM3_Shared\nLibrary Identification\nLibrary Properties\nSM3_StringUtils\nLibrary Identification\nLibrary Properties\nSM3_TrajectoryGeneration\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nSysCpuHandling\nLibrary Identification\nLibrary Properties\nSysFile\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysTarget\nLibrary Identification\nLibrary Properties\nSysTime\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nVisuElem3DPath\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElemCamDisplayer\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElemMeter\nLibrary Identification\nLibrary Properties\nVisuElemTextEditor\nLibrary Identification\nLibrary Properties\nVisuElemTrace\nLibrary Identification\nLibrary Properties\nVisuElemXYChart\nLibrary Identification\nLibrary Properties\nVisuElems\nLibrary Identification\nLibrary Properties\nVisuElemsAlarm\nLibrary Identification\nLibrary Properties\nVisuElemsDateTime\nLibrary Identification\nLibrary Properties\nVisuElemsSpecialControls\nLibrary Identification\nLibrary Properties\nVisuElemsWinControls\nLibrary Identification\nLibrary Properties\nVisuInputs\nLibrary Identification\nLibrary Properties\nVisuNativeControl\nLibrary Identification\nLibrary Properties\nSM3_Basic\nDocs\n»\nSM3_Basic\n»\nPOUs\n»\nMovement\n»\nSMC_MoveContinuousRelative (FB)\nSMC_MoveContinuousRelative (FB)\nÂ¶\nFUNCTION_BLOCK SMC_MoveContinuousRelative\nThis function block executes a relative movement with a given end-velocity.\nIn contrast to\nMC_MoveRelative\n, it will not reach the target position with\nzero velocity, but with the specified\nEndVelocity\n.\nIt is designed for generating via movements. Once the target position has\nbeen reached, the function block sets the\nInEndVelocity\noutput and\nkeeps this velocity until interrupted by another movement.\nNote\nTake care when using\nMC_SetOverride\nwhile this function block is\nactive.\nIf\nAdaptEndVelToAvoidOvershoot\nis set to FALSE, reducing the\nacceleration or jerk override or changing the velocity override\ncan lead to a position overshoot or reversal.  This happens if\nthe (potentially overridden)\nEndVelocity\ncannot be reached from\nthe current state using the overridden\nAcceleration\n,\nDeceleration\n, and\nJerk\nlimits.\nInOut:\nScope\nName\nType\nInitial\nComment\nInout\nAxis\nAXIS_REF_SM3\nReference to axis\nInput\nExecute\nBOOL\nRising edge: Starts the execution of the function block.\nDistance\nLREAL\nRelative (signed) distance to travel (in technical units\n[u])\nVelocity\nLREAL\nValue of maximum velocity (not necessarily reached) [u/s]\nEndVelocity\nLREAL\nUnsigned (!) value of end velocity in [u/s].  This end velocity may\nalso be higher than Velocity.\nEndVelocityDirection\nMC_Direction\ncurrent\nDetermines the direction of end velocity.\nPermissible values:\npositive\n,\nnegative\n,\ncurrent\n.\ncurrent\nwill use the direction of the\nAxis\nwhen\na rising edge for the\nExecute\ninput is detected\n(velocity < 0 =\nnegative\n, velocity >= 0 =\npositive\n).\nNot applicable:\nshortest\n,\nfastest\n.\nAcceleration\nLREAL\nValue of acceleration (increasing energy of the motor)\n[u/sÂ²]\nDeceleration\nLREAL\nValue of deceleration (decreasing energy of the motor)\n[u/sÂ²]\nJerk\nLREAL\nValue of the Jerk [u/sÂ³]\nAdaptEndVelToAvoidOvershoot\nBOOL\nIn some cases, a given\nEndVelocity\nmay lead to a position overshoot.\nFor example, if the remaining distance is too short to reach the\nend velocity from the current velocity and acceleration, then the\naxis may turn in opposite direction, leading to an overshoot.\nAnother case is an end velocity that has opposite direction to the\ndistance to be travelled.  To arrive at the target position with this\nvelocity, the axis will first exceed the distance, reverse and\naccelerate to the end velocity, again causing an overshoot.\nIf the input\nAdaptEndVelToAvoidOvershoot\nis TRUE, then the\neffective end velocity will be adapted in order to avoid an overshoot.\nThese are the two situatons where an overshoot will be avoided:\nFirst, if the remaining distance is too short to reach the desired\nEndVelocity.  In this case, the effective end velocity is reduced\n(if the current velocity is lower) or increased (if the current\nvelocity is higher) to the closest velocity that can be reached\nin the given distance.\nSecond, if the direction of the end velocity is opposite to the\ndirection of the movement.  In this case, the effective end velocity\nwill be set to zero.  Note that the direction of the movement is\nnot determined by the current velocity and acceleration, but by\nthe sign of the distacne to the target position.\nNote that the output\nInEndVelocity\nis set only after the programmed\nend velocity has been reached.  Once the given distance has been travelled\nthe output\nDistanceTravelled\nis set and the axis is accelerated or\ndecelerated to the given (programmed) EndVelocity.\nOutput\nInEndVelocity\nBOOL\nTRUE\n: Commanded distance has been travelled and the programmed\nEndVelocity\nhas been reached.\nIf\nAdaptEndVelToAvoidOvershoot\nis FALSE, this output rises to\nTRUE in the same cycle as\nDistanceTravelled\n.   Otherwise, it\nmay rise to TRUE later.\nDistanceTravelled\nBOOL\nTRUE\n: Commanded distance has been travelled.\nAxis runs with commanded velocity``EndVelocity`` (or possibly slower\nif\nAdaptEndVelToAvoidOvershoot\nhas been set).\nBusy\nBOOL\nTRUE\n: Execution of function block has not been finished\nyet.\nCommandAborted\nBOOL\nTRUE\n: Command has been aborted by another command.\nError\nBOOL\nTRUE\n: Error has occurred within the function block.\nErrorID\nSMC_ERROR\nError identification",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3",
+          "Initial": "",
+          "Comment": "Reference to axis"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Rising edge: Starts the execution of the function block."
+        },
+        [
+          "Distance",
+          "LREAL",
+          "",
+          "Relative (signed) distance to travel (in technical units\n[u])"
+        ],
+        [
+          "Velocity",
+          "LREAL",
+          "",
+          "Value of maximum velocity (not necessarily reached) [u/s]"
+        ],
+        [
+          "EndVelocity",
+          "LREAL",
+          "",
+          "Unsigned (!) value of end velocity in [u/s].  This end velocity may\nalso be higher than Velocity."
+        ],
+        [
+          "EndVelocityDirection",
+          "MC_Direction",
+          "current",
+          "Determines the direction of end velocity.\nPermissible values:positive,negative,current.currentwill use the direction of theAxiswhen\na rising edge for theExecuteinput is detected\n(velocity < 0 =negative, velocity >= 0 =positive).\nNot applicable:shortest,fastest."
+        ],
+        [
+          "Acceleration",
+          "LREAL",
+          "",
+          "Value of acceleration (increasing energy of the motor)\n[u/sÂ²]"
+        ],
+        [
+          "Deceleration",
+          "LREAL",
+          "",
+          "Value of deceleration (decreasing energy of the motor)\n[u/sÂ²]"
+        ],
+        [
+          "Jerk",
+          "LREAL",
+          "",
+          "Value of the Jerk [u/sÂ³]"
+        ],
+        [
+          "AdaptEndVelToAvoidOvershoot",
+          "BOOL",
+          "",
+          "In some cases, a givenEndVelocitymay lead to a position overshoot.\nFor example, if the remaining distance is too short to reach the\nend velocity from the current velocity and acceleration, then the\naxis may turn in opposite direction, leading to an overshoot.\nAnother case is an end velocity that has opposite direction to the\ndistance to be travelled.  To arrive at the target position with this\nvelocity, the axis will first exceed the distance, reverse and\naccelerate to the end velocity, again causing an overshoot.If the inputAdaptEndVelToAvoidOvershootis TRUE, then the\neffective end velocity will be adapted in order to avoid an overshoot.These are the two situatons where an overshoot will be avoided:First, if the remaining distance is too short to reach the desired\nEndVelocity.  In this case, the effective end velocity is reduced\n(if the current velocity is lower) or increased (if the current\nvelocity is higher) to the closest velocity that can be reached\nin the given distance.Second, if the direction of the end velocity is opposite to the\ndirection of the movement.  In this case, the effective end velocity\nwill be set to zero.  Note that the direction of the movement is\nnot determined by the current velocity and acceleration, but by\nthe sign of the distacne to the target position.Note that the outputInEndVelocityis set only after the programmed\nend velocity has been reached.  Once the given distance has been travelled\nthe outputDistanceTravelledis set and the axis is accelerated or\ndecelerated to the given (programmed) EndVelocity."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "InEndVelocity",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUE: Commanded distance has been travelled and the programmedEndVelocityhas been reached.\nIfAdaptEndVelToAvoidOvershootis FALSE, this output rises to\nTRUE in the same cycle asDistanceTravelled.   Otherwise, it\nmay rise to TRUE later."
+        },
+        [
+          "DistanceTravelled",
+          "BOOL",
+          "",
+          "TRUE: Commanded distance has been travelled.\nAxis runs with commanded velocity``EndVelocity`` (or possibly slower\nifAdaptEndVelToAvoidOvershoothas been set)."
+        ],
+        [
+          "Busy",
+          "BOOL",
+          "",
+          "TRUE: Execution of function block has not been finished\nyet."
+        ],
+        [
+          "CommandAborted",
+          "BOOL",
+          "",
+          "TRUE: Command has been aborted by another command."
+        ],
+        [
+          "Error",
+          "BOOL",
+          "",
+          "TRUE: Error has occurred within the function block."
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

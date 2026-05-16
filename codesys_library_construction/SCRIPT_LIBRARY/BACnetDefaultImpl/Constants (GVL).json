@@ -1,0 +1,40 @@
+{
+  "library": "BACnetDefaultImpl",
+  "title": "Constants (GVL)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnetDefaultImpl/Current/BACnetDefaultImpl/GlobalConstants/Constants.html",
+  "page_title": "Constants (GVL)",
+  "text": "\n{attribute âconditionalshowâ}\n{attribute âconditionalshowâ := âSomeTextâ}\n{attribute âhideâ}\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Scope": "Constant",
+          "Name": "PDATA_HEADER_MAGIC",
+          "Type": "UDINT",
+          "Initial": "16#DEADBACF"
+        },
+        [
+          "PDATA_PROPPER_MAGIC",
+          "UDINT",
+          "16#ABBABEED"
+        ],
+        [
+          "PDATA_HEADER_VERSION",
+          "WORD",
+          "16#100"
+        ],
+        [
+          "LOG_INVALID_INSTNUMBER",
+          "DWORD",
+          "4294967295"
+        ]
+      ]
+    }
+  ]
+}

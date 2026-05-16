@@ -1,0 +1,8 @@
+{
+  "library": "AlarmManager",
+  "title": "KindOf (Property)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/pou-IAlarm4/KindOf.html",
+  "page_title": "IAlarm4.KindOf (PROP)",
+  "text": "\nPROPERTY KindOf :\nEAlarmType\nThis property returns an EAlarmType value, that is used to distinguish between alarms and events.",
+  "tables": []
+}

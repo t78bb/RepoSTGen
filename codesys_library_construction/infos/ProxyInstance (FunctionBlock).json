@@ -1,0 +1,8 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "ProxyInstance (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_Module/ProxyInstance.html",
+  "page_title": "ProxyInstance (FB)",
+  "text": "\nFUNCTION_BLOCK ProxyInstance EXTENDS\nBaseInstance\nThis implementation can be extended by Proxy-FBs.  It already\ncontains the proper Initialize method and the properties\nfrom interface IBaseInstance.\nProperties:\nLocalComAddress\nComAddress\n, inherited from\nBaseInstance\nInitParametersDone\n, inherited from\nBaseInstance\nInstanceName\n, inherited from\nBaseInstance\nMethods:\nMain\nSetProxyIdentification\nFB_EXIT\n, inherited from\nBaseInstance\nInit\n, inherited from\nBaseInstance\nOnAfterOnlineChange\n, inherited from\nBaseInstance\nOnBeforeOnlineChange\n, inherited from\nBaseInstance\nSetBaseIdentification\n, inherited from\nBaseInstance\nStructure:\nLocalComAddress (Property)\nMain (Method)\nSetProxyIdentification (Method)",
+  "tables": []
+}

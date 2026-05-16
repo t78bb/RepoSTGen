@@ -1,0 +1,33 @@
+{
+  "library": "ModbusFB",
+  "title": "RequestDataWriteMultiple (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/ModbusFB/Current/ModbusFB/Structs/RequestDataWriteMultiple.html",
+  "page_title": "RequestDataWriteMultiple (STRUCT)",
+  "text": "\nTYPE RequestDataWriteMultiple : STRUCT\nRepresents a write request for WriteMultipleCoils and WriteMultipleRegisters.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Name": "uiStartAddress",
+          "Type": "UINT",
+          "Initial": "0"
+        },
+        {
+          "Name": "uiQuantity",
+          "Type": "UINT",
+          "Initial": "1"
+        },
+        {
+          "Name": "usiByteCount",
+          "Type": "USINT",
+          "Initial": "0"
+        }
+      ]
+    }
+  ]
+}

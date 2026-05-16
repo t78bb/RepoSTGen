@@ -1,0 +1,100 @@
+{
+  "library": "PLCopen Safety FBs",
+  "title": "SF_Guard (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/PLCopen Safety FBs/Current/PLCopenSafetyFBs/Function-Blocks/SF_Guard.html",
+  "page_title": "SF_Guard (FB)",
+  "text": "\nFUNCTION_BLOCK SF_Guard\nThis function block monitors the relevant safety guard.\nThere are two independent input parameters for two switches at the safety guard coupled with a time difference (DiscrepancyTime) for closing the guard.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "Activate",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "Activation of the FB."
+        },
+        [
+          "S_GuardSwitch1",
+          "BOOL",
+          "FALSE",
+          "Guard switch 1 input. FALSE: Guard is not closed. TRUE:\nGuard is closed."
+        ],
+        [
+          "S_GuardSwitch2",
+          "BOOL",
+          "FALSE",
+          "Guard switch 2 input. FALSE: Guard is not closed. TRUE:\nGuard is closed."
+        ],
+        [
+          "DiscrepancyTime",
+          "TIME",
+          "TIME#0ms",
+          "Configures the monitored synchronous time between\nS_GuardSwitch1 and S_GuardSwitch2."
+        ],
+        [
+          "S_StartReset",
+          "BOOL",
+          "FALSE",
+          "Start behaviour of safety FB"
+        ],
+        [
+          "S_AutoReset",
+          "BOOL",
+          "FALSE",
+          "Behaviour on error of safety FB"
+        ],
+        [
+          "Reset",
+          "BOOL",
+          "FALSE",
+          "Manual reset of FB"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Ready",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "Activation of the FB. TRUE indicates that the FB is\nactivated and the outputs results are valid, FALSE the FB is\nnot active and the program is not executed."
+        },
+        [
+          "S_GuardOut",
+          "BOOL",
+          "FALSE",
+          "Output indicating that the guard is closed and the guarded\narea safe. FALSE: Guard is open. TRUE: both S_GuardSwitches\nare TRUE, no error and acknowledgment. Guard is closed."
+        ],
+        [
+          "SafetyDemand",
+          "BOOL",
+          "FALSE",
+          "Output indicating that the FB is active and the primary\nsafety function is demanded (e.g. related to the safety\nfunctionality)."
+        ],
+        [
+          "ResetRequest",
+          "BOOL",
+          "FALSE",
+          "Output which can be used to signal the operator to press the\nreset functionality to continue."
+        ],
+        [
+          "Error",
+          "BOOL",
+          "FALSE",
+          "Error flag"
+        ],
+        [
+          "DiagCode",
+          "WORD",
+          "0",
+          "Diagnostic register"
+        ]
+      ]
+    }
+  ]
+}

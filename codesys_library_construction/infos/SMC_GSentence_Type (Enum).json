@@ -1,0 +1,45 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_GSentence_Type (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/GSentence/SMC_GSentence_Type.html",
+  "page_title": "SMC_GSentence_Type (ENUM)",
+  "text": "\nTYPE SMC_GSentence_Type :\nThe possible types of GSentence\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "GWORDS",
+          "Comment": "List of G-Words.  This is the most common type of GSentence."
+        },
+        {
+          "Name": "SUBCALL",
+          "Comment": "A subprogram call"
+        },
+        {
+          "Name": "DYNCALL",
+          "Comment": "A dynamic subprogram call using an expression of type STRING\nfor the subprogram name"
+        },
+        {
+          "Name": "SUBDECL",
+          "Comment": "A subprogram declaration"
+        },
+        {
+          "Name": "SUBRET",
+          "Comment": "An explicit subprogram return"
+        },
+        {
+          "Name": "SUBEND",
+          "Comment": "A subprogram end statement"
+        },
+        {
+          "Name": "LET",
+          "Comment": "A local variable declaration"
+        }
+      ]
+    }
+  ]
+}

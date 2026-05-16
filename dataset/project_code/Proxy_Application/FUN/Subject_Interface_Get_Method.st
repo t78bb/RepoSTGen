@@ -1,0 +1,3 @@
+METHOD Get_Method : int
+VAR_INPUT
+END_VAR

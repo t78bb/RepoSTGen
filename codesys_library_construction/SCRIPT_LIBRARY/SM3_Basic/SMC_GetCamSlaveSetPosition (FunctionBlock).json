@@ -1,0 +1,107 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_GetCamSlaveSetPosition (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/CAM/SMC_GetCamSlaveSetPosition.html",
+  "page_title": "SMC_GetCamSlaveSetPosition (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_GetCamSlaveSetPosition\nThis function block calculates the current target position\nof an axis (slave) in the case the axis is coupled via a cam\nto the motion of another axis (Master).\nThe slave is not moved or otherwise affected.\nThe module can be used to determine the start position, velocity, and\nacceleration of a slave that is coupled to a master axis via a cam table.\nDue to the fact that the corresponding value is calculated within\none cycle, the output\nDone\nis not necessary.\nNote\nThis FB can only be called once to determine the start conditions that the\nslave must have in order to avoid ramping in. It cannot be used cyclically\nto read the current slave values.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Master",
+          "Type": "AXIS_REF_SM3",
+          "Initial": "",
+          "Comment": "Reference to master axis"
+        },
+        [
+          "Slave",
+          "AXIS_REF_SM3",
+          "",
+          "Reference to slave axis"
+        ],
+        {
+          "Scope": "Input",
+          "Name": "Enable",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUE: Starts the execution of the function block."
+        },
+        [
+          "MasterOffset",
+          "LREAL",
+          "",
+          "Offset of master table"
+        ],
+        [
+          "SlaveOffset",
+          "LREAL",
+          "",
+          "Offset of slave table"
+        ],
+        [
+          "MasterScaling",
+          "LREAL",
+          "1",
+          "Scaling factor for master profile"
+        ],
+        [
+          "SlaveScaling",
+          "LREAL",
+          "1",
+          "Scaling factor for slave profile"
+        ],
+        [
+          "CamTableID",
+          "MC_CAM_ID",
+          "",
+          "Identifier of cam table, output ofMC_CamTableSelect"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "fStartPosition",
+          "Type": "LREAL",
+          "Initial": "",
+          "Comment": "Slave position according to cam and current master position."
+        },
+        [
+          "fStartVelocity",
+          "LREAL",
+          "",
+          "Slave velocity according to cam and current master position."
+        ],
+        [
+          "fStartAcceleration",
+          "LREAL",
+          "",
+          "Slave acceleration according to cam and current master\nposition."
+        ],
+        [
+          "Busy",
+          "BOOL",
+          "",
+          "TRUE: Execution of function block has not been finished\nyet."
+        ],
+        [
+          "Error",
+          "BOOL",
+          "",
+          "TRUE: Error has occurred within the function block."
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

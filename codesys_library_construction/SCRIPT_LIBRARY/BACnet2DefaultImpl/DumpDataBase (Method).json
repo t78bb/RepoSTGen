@@ -1,0 +1,23 @@
+{
+  "library": "BACnet2DefaultImpl",
+  "title": "DumpDataBase (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2DefaultImpl/Current/BACnetDefaultImpl/Function-Blocks/pou-ObjectPersistence/DumpDataBase.html",
+  "page_title": "ObjectPersistence.DumpDataBase (METH)",
+  "text": "\nMETHOD DumpDataBase : CmpBACnet.IEC_BACNET_STATUS\nDumps the object database to data files.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "DumpDataBase",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "library": "BACnet",
+  "title": "PropertyAttributeWritableString (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/Utilities/ToString/PropertyAttributeWritableString.html",
+  "page_title": "PropertyAttributeWritableString (FUN)",
+  "text": "\nFUNCTION PropertyAttributeWritableString : STRING\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "PropertyAttributeWritableString",
+          "Type": "STRING"
+        },
+        {
+          "Scope": "Input",
+          "Name": "propAttr",
+          "Type": "BACnetPropertyAttributeWritable"
+        }
+      ]
+    }
+  ]
+}

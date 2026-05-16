@@ -1,0 +1,52 @@
+{
+  "library": "DNP3",
+  "title": "MasterCommandFrznAnlgInFeedbackPoll (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/Commands/MasterCommandFrznAnlgInFeedbackPoll.html",
+  "page_title": "MasterCommandFrznAnlgInFeedbackPoll (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL MasterCommandFrznAnlgInFeedbackPoll EXTENDS\nMasterCommand\nMaster command FrznAnlgInFeedbackPoll\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment",
+        "Inherited from"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "xExecute",
+          "Type": "BOOL",
+          "Comment": "Execute the command (xExecute FALSE â> TRUE).",
+          "Inherited from": "MasterCommand"
+        },
+        [
+          "itfMaster",
+          "IMaster",
+          "Interface IMaster",
+          "MasterCommand"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "xDone",
+          "Type": "BOOL",
+          "Comment": "Command executed successfully.",
+          "Inherited from": "MasterCommand"
+        },
+        [
+          "xError",
+          "BOOL",
+          "Error during command executions",
+          "MasterCommand"
+        ],
+        [
+          "eErrorID",
+          "Error",
+          "Specific error during command executions.",
+          "MasterCommand"
+        ]
+      ]
+    }
+  ]
+}

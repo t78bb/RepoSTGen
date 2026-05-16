@@ -1,0 +1,61 @@
+{
+  "library": "CmpBACnet",
+  "title": "BACnetRemoveListElement (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/CmpBACnet/Current/BACnetClientAPI/BACnetRemoveListElement.html",
+  "page_title": "BACnetRemoveListElement (FUN)",
+  "text": "\nFUNCTION BACnetRemoveListElement :\nIEC_BACNET_STATUS\nSends an Remove-List-Element request\nSends a request to remove one or more list elements from an object property which\nis a list. This routine may control APDU properties like APDU length, segmentation,\nand timeout for both request and in response. This routine can execute asynchronously,\ni.e. this routine will return to the caller before the BACnet reply comes so\nthat the applications can keep running. In this case the response information will be\nreceived by the thread which is responsible for receiving asynchronous responses.\nAn optional BACNET_CHANGE_LIST_COMPLETE_CB routine, which is provided by the BACnet\napplication, shall be used to process this information. If a number of asynchronous\nrequests are sent, the responses shall be queued and identified by the transaction\nhandles. If the application does not supply the BACNET_CHANGE_LIST_COMPLETE_CB routine\nthen the BACnetRemoveListElement routine sends a request and waits for the reply.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "BACnetRemoveListElement",
+          "Type": "IEC_BACNET_STATUS",
+          "Comment": "A status indicating whether the operation worked."
+        },
+        {
+          "Scope": "Input",
+          "Name": "pSourceAddress",
+          "Type": "POINTER TOIEC_BACNET_ADDRESS",
+          "Comment": "If the BACnet application has only one device constructed and installed, this can\nbe 0. In this case the MAC address of this device will be used. Otherwise this\nshall be the MAC address returned on device object construction."
+        },
+        [
+          "pDestinationAddress",
+          "POINTER TOIEC_BACNET_ADDRESS",
+          "This is the MAC address of the device to which the request\nshould be sent."
+        ],
+        [
+          "pRemoveInfo",
+          "POINTER TOIEC_BACNET_CHANGE_LIST_INFO",
+          "A pointer to the service information data structure. This data structure contains\nthe objectID, ePropertyID, nIndex and a buffer in which the Property Contents\ndatatype list is placed."
+        ],
+        [
+          "pAPDUParams",
+          "POINTER TOIEC_BACNET_APDU_PROPERTIES",
+          "A pointer to the APDU-Properties structure which sets APDU properties for this\ntransaction only. This does not change global defaults or settings for the application\nAPDU Properties. This argument may be 0. In this case APDU properties  are used\nwhich were specified in the device object properties of the applications device which\nsends the request."
+        ],
+        [
+          "pTransactionToken",
+          "POINTER TOBACnetAsyncTransactionToken",
+          "Transaction token of the asynchronous call - seeBACnetAsyncTransactionToken."
+        ],
+        [
+          "pError",
+          "POINTER TOIEC_BACNET_ERROR",
+          "A pointer to a structure to hold BACnet Error information. pError may be 0 if the\napplication isnât interested in detailed error information."
+        ],
+        [
+          "pFirstFailed",
+          "POINTER TOIEC_BACNET_UNSIGNED",
+          "A pointer to a buffer in which to place the sequence number of the first element\nin the pElements list which cannot be added to the property. pFirstFailed may be\n0."
+        ]
+      ]
+    }
+  ]
+}

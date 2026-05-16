@@ -1,0 +1,41 @@
+{
+  "library": "CmpBACnet",
+  "title": "BACnetWriteGroup (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/CmpBACnet/Current/BACnetClientAPI/BACnetWriteGroup.html",
+  "page_title": "BACnetWriteGroup (FUN)",
+  "text": "\nFUNCTION BACnetWriteGroup :\nIEC_BACNET_STATUS\nSends an unconfirmed WriteGroup request.\nThe WriteGroup service is used by a sending BACnet-user to update arbitrary Channel objects\nPresent_Value properties for a  particular numbered control group. The  WriteGroup service\nis an unconfirmed service. Upon receipt of a WriteGroup service request, all devices that are\nmembers of the specified control group shall write to their corresponding Channel objects\nPresent_Value properties with the value applicable to the Channel Number, if any. A device\nshall be considered to be a member of a control group if that device has one or more Channel\nobjects for which the âGroup Numberâ from the service appears in its Control_Groups property.\nIf the receiving device does not contain one or more Channel objects with matching channel numbers,\nthen those values shall be ignored.\nThe WriteGroup service may be unicast, multicast, broadcast locally, on a particular remote\nnetwork, or using the global BACnet network address. Because global broadcasts are generally\ndiscouraged, the use of multiple directed broadcasts is preferred.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "BACnetWriteGroup",
+          "Type": "IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "pSourceAddress",
+          "Type": "POINTER TOIEC_BACNET_ADDRESS",
+          "Comment": "If the BACnet application has only one device constructed and installed, this can\nbe NULL. In this case the MAC address of this device will be used. Otherwise this\nshall be the MAC address returned on device object construction."
+        },
+        [
+          "pDestinationAddress",
+          "POINTER TOIEC_BACNET_ADDRESS",
+          "This is the MAC address of the device to which the request\nshould be sent."
+        ],
+        [
+          "pServiceInfo",
+          "POINTER TOIEC_BACNET_WRITE_GROUP_INFO",
+          "A pointer to the service request information data structure."
+        ]
+      ]
+    }
+  ]
+}

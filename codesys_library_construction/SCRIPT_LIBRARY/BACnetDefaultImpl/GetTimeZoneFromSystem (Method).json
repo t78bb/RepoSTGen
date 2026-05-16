@@ -1,0 +1,23 @@
+{
+  "library": "BACnetDefaultImpl",
+  "title": "GetTimeZoneFromSystem (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnetDefaultImpl/Current/BACnetDefaultImpl/Function-Blocks/pou-TimeSync_SvcAppHook/GetTimeZoneFromSystem.html",
+  "page_title": "TimeSync_SvcAppHook.GetTimeZoneFromSystem (METH)",
+  "text": "\nMETHOD GetTimeZoneFromSystem : ERROR\nGets the timezone from the underlying system.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetTimeZoneFromSystem",
+          "Type": "ERROR"
+        }
+      ]
+    }
+  ]
+}

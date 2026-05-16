@@ -1,0 +1,28 @@
+{
+  "library": "SM3_CNC",
+  "title": "AppendGWord (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/GSentence/pou-SMC_GSentenceQueue/AppendGWord.html",
+  "page_title": "SMC_GSentenceQueue.AppendGWord (METH)",
+  "text": "\nMETHOD AppendGWord : BOOL\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "AppendGWord",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Inout Const",
+          "Name": "gw",
+          "Type": "SMC_GWORD"
+        }
+      ]
+    }
+  ]
+}

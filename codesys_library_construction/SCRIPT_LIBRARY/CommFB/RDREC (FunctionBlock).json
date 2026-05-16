@@ -1,0 +1,71 @@
+{
+  "library": "CommFB",
+  "title": "RDREC (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/CommFB/Current/CommFB/RDREC.html",
+  "page_title": "RDREC (FB)",
+  "text": "\nFUNCTION_BLOCK RDREC\nRead Process Data Record (RDREC)\nThis function block executes an acyclic read of user or system record-data.\nThe function is invoked when REQ input is equal to TRUE.\nThe ID parameter identifies the slot or subslot of the Field Device the data record is read from.\nThe INDEX input of the READ function block contains an integer which identifies the data record to be read, e.g. Profinet Diagnosis- or I&M-Data.\nThe MLEN parameter specifies the count of bytes which shall be read as an maximum.\nThe variable given as RECORD parameter shall be at least of MLEN byte.\nIf the data record is read successfully, the VALID output indicates that the read data record is stored in the RECORD parameter.\nThe LEN output contains the actual length of the data that has been read in byte.\nIf an error occurred, the ERROR output indicates an error and the STATUS output contains the error code.\nCode-Example: use RDREC to read the diagnosis of a PN-Slave\nPROGRAM\nPLC_PRG\nVAR\nrdrec\n:\nCommFB.RDREC\n;\nbuffer\n:\nARRAY\n[0..255]\nOF\nBYTE\n;\nreadError\n:\nDWORD\n;\ndiagReader\n:\nProfinetCommon.DiagnosisDataReader\n;\nchannelDiag\n:\nProfinetCommon.ChannelDiagnosisData\n;\nEND_VAR\n// Read Diagosis-Data:\nrdrec.ID\n:=\npnDevice.ID\n;\n// \"pnDevice\" is a Profinet slave in the device tree\nrdrec.INDEX\n:=\nTO_INT\n(\nProfinetCommon.DiagnosisRecordIndex.Device\n);\n// = 16#F80C --> get all diagnosis for this device\nrdrec.MLEN\n:=\nTO_INT\n(\nSIZEOF\n(\nbuffer\n));\nrdrec.RECORD\n:=\nADR\n(\nbuffer\n);\nrdrec\n();\nIF\n(\nrdrec.VALID\nAND\nrdrec.REQ\n)\nTHEN\n//here we have valid data\ndiagReader.InitData\n(\nrdrec.RECORD\n,\nTO_UINT\n(\nrdrec.LEN\n));\nWHILE\n(\ndiagReader.Read\n())\nDO\n;\n// do something useful with diag-data\nEND_WHILE\nELSIF\n(\nrdrec.ERROR\n)\nTHEN\nreadError\n:=\nrdrec.STATUS\n;\n// read service failed\nEND_IF\nrdrec.REQ\n:=\nrdrec.BUSY\n;\n// only read once\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "REQ",
+          "Type": "BOOL",
+          "Comment": "Request"
+        },
+        [
+          "ID",
+          "DWORD",
+          "Identifier of a slot / subslot of a Field Device (see:AddressConcept)"
+        ],
+        [
+          "INDEX",
+          "INT",
+          "Index of the data record"
+        ],
+        [
+          "MLEN",
+          "INT",
+          "maximum length to be read"
+        ],
+        [
+          "RECORD",
+          "POINTER TO BYTE",
+          "Read data record"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "VALID",
+          "Type": "BOOL",
+          "Comment": "New data record received and is valid"
+        },
+        [
+          "BUSY",
+          "BOOL",
+          "FB is busy"
+        ],
+        [
+          "ERROR",
+          "BOOL",
+          "Error detected"
+        ],
+        [
+          "STATUS",
+          "DWORD",
+          "Last detected status"
+        ],
+        [
+          "LEN",
+          "INT",
+          "Length of the read data record"
+        ]
+      ]
+    }
+  ]
+}

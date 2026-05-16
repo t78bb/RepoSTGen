@@ -1,0 +1,45 @@
+{
+  "name": "CreateBuffer",
+  "type": "Function",
+  "signature": "FUNCTION CreateBuffer : CAA.HANDLE",
+  "return_type": "CAA.HANDLE",
+  "description": "Create a segmented buffer",
+  "url": "https://content.helpme-codesys.com/en/libs/CAA%20Segmented%20Buffer%20Manager%20Extern/Current/CAA-Segemented-Buffer-Manager/Functions/Buffer/CreateBuffer.html",
+  "parameters": [
+    {
+      "scope": "Return",
+      "name": "CreateBuffer",
+      "type": "CAA.HANDLE",
+      "comment": "Handle to the buffer"
+    },
+    {
+      "scope": "Input",
+      "name": "szSize",
+      "type": "CAA.SIZE",
+      "comment": "size of the new Buffer"
+    },
+    {
+      "scope": "Input",
+      "name": "pData",
+      "type": "CAA.PVOID",
+      "comment": "Pointer to initial data. CAA.gc_pNULL => Init with zero"
+    },
+    {
+      "scope": "Input",
+      "name": "xPermanent",
+      "type": "BOOL",
+      "comment": "TRUE => Buffer is immutable"
+    },
+    {
+      "scope": "Input",
+      "name": "peError",
+      "type": "POINTER TO ERROR",
+      "comment": "Local library ERROR ID"
+    }
+  ]
+}
+
+
+
+
+

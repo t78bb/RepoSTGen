@@ -1,0 +1,30 @@
+{
+  "library": "3SLicense",
+  "title": "LicenseMissingID (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/3SLicense/Current/pou-OLM_OnlineLicenseManager/LicenseMissingID.html",
+  "page_title": "OLM_OnlineLicenseManager.LicenseMissingID (METH)",
+  "text": "OLM_OnlineLicenseManager (FunctionBlock)\nDemoModeExpiredID (Method)\nDemoModeStartedID (Method)\nGetUserLicenseValue (Method)\nLicenseMissingID (Method)\nFile and Project Information\nLibrary Reference\nCAA Types Extern\nLibrary Identification\nLibrary Properties\nCmpApp\nLibrary Identification\nLibrary Properties\nCmpCodeMeter\nLibrary Identification\nLibrary Properties\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nCmpEventMgr\nLibrary Identification\nLibrary Properties\nCmpLog\nLibrary Identification\nLibrary Properties\nComponent Manager\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nSysCpuHandling\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\n3SLicense\nDocs\n»\nOLM_OnlineLicenseManager\n(FB)\n»\nOLM_OnlineLicenseManager.LicenseMissingID (METH)\nOLM_OnlineLicenseManager.LicenseMissingID (METH)\nÂ¶\nMETHOD LicenseMissingID\nWith this method a component that previously asked for a license and received a negative result can post an error log message in a unified way\nHence this method should be called after GetUserLicenseValue has been called and returned no license.\nIn contrast to the method LicenseMissing, this function will post the message only once, and so the caller doesnât have to take care and make sure to call it only once by himself\nInOut:\nScope\nName\nType\nComment\nInput\nstrComponent\nSTRING\nname of the component\nudiLicenseID\nUDINT\nlicense ID of the component",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "strComponent",
+          "Type": "STRING",
+          "Comment": "name of the component"
+        },
+        [
+          "udiLicenseID",
+          "UDINT",
+          "license ID of the component"
+        ]
+      ]
+    }
+  ]
+}

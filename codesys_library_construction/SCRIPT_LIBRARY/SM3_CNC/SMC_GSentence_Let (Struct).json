@@ -1,0 +1,25 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_GSentence_Let (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/GSentence/SMC_GSentence_Let.html",
+  "page_title": "SMC_GSentence_Let (STRUCT)",
+  "text": "\nTYPE SMC_GSentence_Let : STRUCT\nA variable declaration\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Name": "name",
+          "Type": "STRING"
+        },
+        {
+          "Name": "vtype",
+          "Type": "SMC_GVar_Type"
+        }
+      ]
+    }
+  ]
+}

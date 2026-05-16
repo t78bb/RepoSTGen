@@ -1,0 +1,40 @@
+{
+  "library": "Standard64",
+  "title": "WREPLACE (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/Standard64/Current/String-Functions/WREPLACE.html",
+  "page_title": "WREPLACE (FUN)",
+  "text": "\nFUNCTION WREPLACE : WSTRING(255)\nReplaces L wcharacters of STR1 by STR2,\nstarting at the POS-th wcharacter position\nand returns the new string.\nPOS = 1 is the first character.\nNote\nThe current implementation is unfortunately not correct for the case\nP=0\n. The implementation cannot be changed for compatibility reasons.\nIf\nP=0\nis used, the parameter\nL\nis internally reduced by one!\nIt is generally recommended to use values in the range specified by IEC 61131-3. The smallest value for\nP\nis specified there as\n1\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "WREPLACE",
+          "Type": "WSTRING(255)"
+        },
+        {
+          "Scope": "Input",
+          "Name": "STR1",
+          "Type": "WSTRING(255)"
+        },
+        [
+          "STR2",
+          "WSTRING(255)"
+        ],
+        [
+          "L",
+          "INT"
+        ],
+        [
+          "P",
+          "INT"
+        ]
+      ]
+    }
+  ]
+}

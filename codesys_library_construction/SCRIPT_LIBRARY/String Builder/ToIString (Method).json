@@ -1,0 +1,53 @@
+{
+  "library": "String Builder",
+  "title": "ToIString (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Builder/Current/Builder/Function-Blocks/pou-_Builder/IStringRepresentation/ToIString.html",
+  "page_title": "_Builder.ToIString (METH)",
+  "text": "\nMETHOD FINAL ToIString :\nIString\nReturns the accumulated string\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "ToIString",
+          "Type": "IString",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfString",
+          "Type": "IString",
+          "Initial": "",
+          "Comment": "Defines the output target"
+        },
+        [
+          "liStart",
+          "LINT",
+          "0",
+          "Defines the rune index from which the content is output0 => first rune, -1 => last rune[STR.c_liMinIndex<=liStart<=STR.c_liMaxIndex]"
+        ],
+        [
+          "liEnd",
+          "LINT",
+          "-1",
+          "Defines the rune index up to which the content is output0 => first rune, -1 => last rune[STR.c_liMinIndex<=liEnd<=STR.c_liMaxIndex]"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "eErrorID",
+          "Type": "STR.ERROR",
+          "Initial": "",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

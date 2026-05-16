@@ -1,0 +1,6 @@
+{
+  "requirement": "This code should implement a FUNCTION_BLOCK named Realsubject that adheres to the Subject_Interface. It should include methods for setting and retrieving an integer property, iProp. The Get_Method should return the current value of iProp, and the Set_Method should accept an integer input, num, and assign its value to iProp. The implementation must handle the direct interaction with the iProp field of the instance (using THIS^ operator), ensuring that the value set through Set_Method can be retrieved accurately by Get_Method.",
+  "provide_code": "{attribute 'enable_dynamic_creation'}\nFUNCTION_BLOCK Realsubject IMPLEMENTS  Subject_Interface\nVAR_INPUT\nEND_VAR\nVAR_OUTPUT\nEND_VAR",
+  "function_name": "Realsubject",
+  "requirement_cn": "这段代码应实现一个名为 Realsubject 的 FUNCTION_BLOCK，该功能块实现 Subject_Interface 接口。它应包括用于设置和检索整数属性 iProp 的方法。Get_Method 应返回 iProp 的当前值，而 Set_Method 应接受一个整数输入 num，并将其值赋给 iProp。实现必须处理与实例的 iProp 字段的直接交互（使用 THIS^ 操作符），确保通过 Set_Method 设置的值可以被 Get_Method 准确检索。"
+}

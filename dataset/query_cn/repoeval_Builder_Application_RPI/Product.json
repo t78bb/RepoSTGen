@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现根据客户规格动态创建包含不同零部件的产品对象。",
+  "provide_code": "{attribute 'enable_dynamic_creation'}\n//The class Product is just a plain bluprint of the components of the object to be built.\n//The final Product may ot may not contain the all the Parts listed on the Product declaration\n// rather only the parts in the specifications sent by the client.\nFUNCTION_BLOCK Product\nVAR_INPUT\n\t//List of possible parts to be build in a final Product object\n\tmainPart \t: STRING;\n\tpart1 \t\t: STRING;\n\tpart2 \t\t: STRING;\n\tpart3 \t\t: STRING;\nEND_VAR\nVAR_OUTPUT\nEND_VAR"
+}

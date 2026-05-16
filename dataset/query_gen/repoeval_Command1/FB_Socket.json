@@ -1,0 +1,6 @@
+{
+  "requirement": "This code should implement a FUNCTION_BLOCK named FB_Socket with two methods, Off and On, which control the output variable bActive of type BOOL. The Off method sets bActive to false, indicating the socket is inactive, while the On method sets bActive to true, indicating the socket is active. Both methods should ensure that the state of bActive is directly manipulated based on the method invoked without any conditions or additional computations.",
+  "provide_code": "FUNCTION_BLOCK PUBLIC FB_Socket\nVAR_OUTPUT\n\tbActive\t\t: BOOL;\nEND_VAR",
+  "function_name": "FB_Socket",
+  "requirement_cn": "该代码应实现一个名为 FB_Socket 的 FUNCTION_BLOCK，其中包含两个方法，Off 和 On，用于控制类型为 BOOL 的输出变量 bActive。Off 方法将 bActive 设置为 false，表示插座处于非活动状态；On 方法将 bActive 设置为 true，表示插座处于活动状态。这两个方法应确保根据调用的方法直接操作 bActive 的状态，无需任何条件或额外计算。"
+}

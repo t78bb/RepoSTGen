@@ -1,0 +1,29 @@
+{
+  "library": "BACnet2",
+  "title": "BACnetTimeStampUnion (Union)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/Structs/BACnetTimeStampUnion.html",
+  "page_title": "BACnetTimeStampUnion (UNION)",
+  "text": "\nTYPE BACnetTimeStampUnion : UNION\nHelper Structure for CODESYS-Typed time stamps, which include this union.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Name": "tim",
+          "Type": "TIME"
+        },
+        {
+          "Name": "seqNumber",
+          "Type": "UDINT"
+        },
+        {
+          "Name": "dateTime",
+          "Type": "BACnetDateTime"
+        }
+      ]
+    }
+  ]
+}

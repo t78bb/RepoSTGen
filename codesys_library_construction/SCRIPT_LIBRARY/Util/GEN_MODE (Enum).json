@@ -1,0 +1,53 @@
+{
+  "library": "Util",
+  "title": "GEN_MODE (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/Datatypes/GEN_MODE.html",
+  "page_title": "GEN_MODE (ENUM)",
+  "text": "\nTYPE GEN_MODE :\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Name": "TRIANGLE",
+          "Initial": "0"
+        },
+        {
+          "Name": "TRIANGLE_POS",
+          "Initial": "1"
+        },
+        {
+          "Name": "SAWTOOTH_RISE",
+          "Initial": "2"
+        },
+        {
+          "Name": "SAWTOOTH_FALL",
+          "Initial": "3"
+        },
+        {
+          "Name": "RECTANGLE",
+          "Initial": "4"
+        },
+        {
+          "Name": "SINUS",
+          "Initial": "5"
+        },
+        {
+          "Name": "COSINUS",
+          "Initial": "6"
+        },
+        {
+          "Name": "SINE",
+          "Initial": "7"
+        },
+        {
+          "Name": "COSINE",
+          "Initial": "8"
+        }
+      ]
+    }
+  ]
+}

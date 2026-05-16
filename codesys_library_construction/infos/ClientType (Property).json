@@ -1,0 +1,8 @@
+{
+  "library": "Visu Utils",
+  "title": "ClientType (Property)",
+  "url": "https://content.helpme-codesys.com/en/libs/Visu Utils/Current/VisuUtils/VisuActionUtilities/Interfaces/pou-IVisualizationClient/ClientType.html",
+  "page_title": "IVisualizationClient.ClientType (PROP)",
+  "text": "\nPROPERTY ClientType :\nVisuClientType\nThe client type\nA simplified struct of\nVisuElemBase.VisuStructGlobalClientData.ClientType\nis used.",
+  "tables": []
+}

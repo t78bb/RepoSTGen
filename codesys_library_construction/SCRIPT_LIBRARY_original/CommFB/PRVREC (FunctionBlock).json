@@ -1,0 +1,91 @@
+{
+  "library": "CommFB",
+  "title": "PRVREC (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/CommFB/Current/CommFB/FieldDevice/PRVREC.html",
+  "page_title": "PRVREC (FB)",
+  "text": "CommFB\nAINFO_TYPE (Union)\nAddressConcept (GVL)\nAddress Concept\nGenerating a CommFB-ID\nProfibus DP\nProfinet IO\nDevice Diagnosis\nAddress Conversion\nAddresses\nADDR_TO_ID (FunctionBlock)\nADDR_TYPE (Union)\nCREATE_ID (FunctionBlock)\nDP_ADDR (Struct)\nDP_DEVICE_ID (Struct)\nID_TO_ADDR (FunctionBlock)\nIO_SYSTEM_TYPE (Enum)\nPN_ADDR (Struct)\nPN_DEVICE_ID (Struct)\nSUBSLOT_ID (Function)\nCNCT (FunctionBlock)\nConstants (GVL)\nDP Address\nADDR (Function)\nID (Function)\nSLOT_ID (Function)\nDP_AINFO (Struct)\nDP_DIAG (Struct)\nErrorCode (Enum)\nErrorCode1_RW (Enum)\nFieldDevice\nPRVREC (FunctionBlock)\nPRVREC_MODE (Enum)\nRCVREC (FunctionBlock)\nRCVREC_MODE (Enum)\nSALARM (FunctionBlock)\nGETIO_PART (FunctionBlock)\nPN_AINFO (Struct)\nRALARM (FunctionBlock)\nRALARM_MODE (Enum)\nRDIAG (FunctionBlock)\nRDREC (FunctionBlock)\nSETIO_PART (FunctionBlock)\nWRREC (FunctionBlock)\nImages\nLibrary Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nFile and Project Information\nLibrary Reference\nIoDriver Profibus2 Interfaces\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nCommFB\nDocs\n»\nCommFB\n»\nFieldDevice\n»\nPRVREC (FB)\nPRVREC (FB)\nÂ¶\nFUNCTION_BLOCK PRVREC\nA Field Device can receive a request to provide a process data record to a Host Controller or Supervisor. The host may use the\nRDREC\nfunction block.\nThe application program is informed about this request and can provide the requested process data record using the PRVREC function block.\nThis function blocks contains the methods to check, receive and respond a request for a process data record.\nAll aspects of providing a process data record may use one function block instance, the different methods are distinguished using the MODE input.\nIf a data record is received (with MODE=1 or MODE=2), the NEW output indicates that the data record is stored in the variable given at the RECORD parameter.\nIf the function block refuses to accept the data record, the CODE1 input sets the Error Code1, and the CODE2 input sets the Error Code 2 of the negative response.\nIf an error occurred, the ENO=0 indicates an error and the STATUS output contains the error code.// | If an error occurred, the ENO=0 indicates an error and the STATUS output contains the error code.\nNote\nThe application program of the Field Device shall acknowledge the received request, otherwise the Host Controller will get a timeout error or the device stack will send a negative response.\nCode-Example\nPROGRAM\nProvideData\nVAR\nprvData\n:\nCommFB.PRVREC\n;\ndata\n:\nARRAY\n[0..3]\nOF\nBYTE\n:=\n[0,1,2,3]\n;\n// some dummy data\nEND_VAR\n// Variant 1: receive data for a specific slot:\nprvData.EN\n:=\n1\n;\nprvData.F_ID\n:=\nCommFB.SUBSLOT_ID\n(\nEN\n:=\nTRUE\n,\nPN_Device.DeviceID\n,\n2\n,\n1\n);\n// get ID of Slot 2 of the specified device\nprvData\n(\nMODE\n:=\nCommFB.PRVREC_MODE.RECEIVE_BY_SLOT\n);\n// get request\nIF\nprvData.NEW\nTHEN\n// process record\nIF\n(\nprvData.SLOT\n=\n1\nAND\nprvData.INDEX\n=\n2\n)\nTHEN\nprvData\n(\nMODE\n:=\n3\n,\nLEN\n:=\n4\n,\nRECORD\n:=\nADR\n(\ndata\n));\n// pos. response with data\nEND_IF\nEND_IF\n// Variant 2: check for request, then decide to process it (receive + pos./neg. response)\nprvData\n(\nMODE\n:=\nCommFB.PRVREC_MODE.CHECK\n,\nF_ID\n:=\nPN_Device.DeviceID\n);\n// get request\nIF\n(\nprvData.NEW\n)\nTHEN\n// Reject everything else.\n// If a request from the host is not confimed by the aplication, the stack may send a neg. response after a timeout.\nprvData\n(\nMODE\n:=\n4\n,\nCODE1\n:=\n16#B2\n);\nEND_IF\nInOut:\nScope\nName\nType\nComment\nInput\nEN\nBOOL\nEnable\nMODE\nUINT\nFunction specifier, see\nPRVREC_MODE\nF_ID\nDWORD\nSlot / subslot to filter the data records to receive\nCODE1\nBYTE\nReason for negative response. (see\nErrorCode1_RW\n)\nCODE2\nBYTE\nReason for negative response. (0 or user specific)\nLEN\nUINT\nLength of a data record to provide\nRECORD\nPOINTER TO BYTE\nProvided data record\nOutput\nENO\nBOOL\nFunction enabled\nNEW\nBOOL\nNew data record requested\nSTATUS\nDWORD\nField Device interface status\nSLOT\nUINT\nSlot the record is requested for\nSUBSLOT\nUINT\nSubslot the record is requested for\nINDEX\nUINT\nIndex of the requested data record\nRLEN\nUINT\nLength of the requested data record",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "EN",
+          "Type": "BOOL",
+          "Comment": "Enable"
+        },
+        [
+          "MODE",
+          "UINT",
+          "Function specifier, seePRVREC_MODE"
+        ],
+        [
+          "F_ID",
+          "DWORD",
+          "Slot / subslot to filter the data records to receive"
+        ],
+        [
+          "CODE1",
+          "BYTE",
+          "Reason for negative response. (seeErrorCode1_RW)"
+        ],
+        [
+          "CODE2",
+          "BYTE",
+          "Reason for negative response. (0 or user specific)"
+        ],
+        [
+          "LEN",
+          "UINT",
+          "Length of a data record to provide"
+        ],
+        [
+          "RECORD",
+          "POINTER TO BYTE",
+          "Provided data record"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "ENO",
+          "Type": "BOOL",
+          "Comment": "Function enabled"
+        },
+        [
+          "NEW",
+          "BOOL",
+          "New data record requested"
+        ],
+        [
+          "STATUS",
+          "DWORD",
+          "Field Device interface status"
+        ],
+        [
+          "SLOT",
+          "UINT",
+          "Slot the record is requested for"
+        ],
+        [
+          "SUBSLOT",
+          "UINT",
+          "Subslot the record is requested for"
+        ],
+        [
+          "INDEX",
+          "UINT",
+          "Index of the requested data record"
+        ],
+        [
+          "RLEN",
+          "UINT",
+          "Length of the requested data record"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "library": "DNP3",
+  "title": "BinaryCounterPointObserver (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/PointObserver/BinaryCounterPointObserver.html",
+  "page_title": "BinaryCounterPointObserver (FB)",
+  "text": "DNP3\nDoc\nIntegration of datapoints into the application\nExample\nIntroduction\nCODESYS DNP3 - Components\nOutstation data model and datapoints\nOutstation datapoint - inputs versa configuration\nOutstation datapoint inputs / outputs of type AnyNumber\nOutstation data flow\nMaster functionality\nMaster data flow\nCalling function block instances\nApplication bringup and debugging\nEnums\nCommandRejectReason (Enum)\nDoubleBitState (Enum)\nError (Enum)\nFunction Blocks\nAnyNumberConverter\nAnyNumberToDINT (FunctionBlock)\nAnyNumberToINT (FunctionBlock)\nAnyNumberToLREAL (FunctionBlock)\nAnyNumberToREAL (FunctionBlock)\nAnyNumberToSINT (FunctionBlock)\nAnyNumberToUDINT (FunctionBlock)\nAnyNumberToUINT (FunctionBlock)\nAnyNumberToUSINT (FunctionBlock)\nDINTToAnyNumber (FunctionBlock)\nINTToAnyNumber (FunctionBlock)\nLREALToAnyNumber (FunctionBlock)\nREALToAnyNumber (FunctionBlock)\nSINTToAnyNumber (FunctionBlock)\nUDINTToAnyNumber (FunctionBlock)\nUINTToAnyNumber (FunctionBlock)\nUSINTToAnyNumber (FunctionBlock)\nETHdeviceHelper (FunctionBlock)\nMaster\nAddressQualifier (Enum)\nAnalogInfo (Struct)\nAutoUpdateMode (Enum)\nCROB_Info (Struct)\nCommands\nFreezeTimeDateField (Enum)\nFunctionCode (Enum)\nMaster (FunctionBlock)\nMasterConfiguration (FunctionBlock)\nMasterConfigurationCOM (FunctionBlock)\nMasterConfigurationIP (FunctionBlock)\nMasterLoggingOptions (Enum)\nPointObserver\nTimeSyncType (Enum)\nOutstation\nDNP3OutstationSessionConfigEvents (Struct)\nDNP3OutstationSessionConfigUnsolicitedResponse (Struct)\nEvents\nGroups\nOutstation (FunctionBlock)\nOutstationConfiguration (FunctionBlock)\nOutstationConfigurationCOM (FunctionBlock)\nOutstationConfigurationIP (FunctionBlock)\nOutstationDataModel (FunctionBlock)\nOutstationDataModelExample (FunctionBlock)\nOutstationLoggingOptions (Enum)\nPoints\nFunctions\nAnyNumber\nAnyNumberArithmetic (Function)\nAnyNumberArithmeticOperation (Enum)\nAnyNumberAssign (Function)\nAnyNumberAssignIfNotEqual (Function)\nAnyNumberCheck (Function)\nAnyNumberClipToLimits (Function)\nAnyNumberCompare (Function)\nAnyNumberCompareOperation (Enum)\nAnyNumberConvertFromDINT (Function)\nAnyNumberConvertFromINT (Function)\nAnyNumberConvertFromLREAL (Function)\nAnyNumberConvertFromREAL (Function)\nAnyNumberConvertFromSINT (Function)\nAnyNumberConvertFromUDINT (Function)\nAnyNumberConvertFromUINT (Function)\nAnyNumberConvertFromUSINT (Function)\nAnyNumberConvertToDINT (Function)\nAnyNumberConvertToINT (Function)\nAnyNumberConvertToLREAL (Function)\nAnyNumberConvertToREAL (Function)\nAnyNumberConvertToSINT (Function)\nAnyNumberConvertToUDINT (Function)\nAnyNumberConvertToUINT (Function)\nAnyNumberConvertToUSINT (Function)\nAnyNumberInitToZero (Function)\nAnyNumberIsWithinLimits (Function)\nAnyNumberMaximum (Function)\nAnyNumberMinimum (Function)\nAnyNumberToString (Function)\nAnyNumberTypeEquals (Function)\nAnyNumberTypeToString (Function)\nAnyNumberValueToString (Function)\nAnyNumberZero (Function)\nGetCurrentDateTime (Function)\nGlobalConstants\nConstants (GVL)\nConstantsInternal (GVL)\nInterfaces\nIPoint (Interface)\nGetDescriptionString (Method)\nIdentificationToString (Method)\nPointNum (Property)\nPointTyp (Property)\nToString (Method)\nIPointObserver (Interface)\nEnabled (Property)\nEquals (Method)\nGetError (Method)\nGetErrorId (Method)\nGetSequenceNumber (Method)\nIsModified (Property)\nKey (Property)\nNum (Property)\nToString (Method)\nTyp (Property)\nParameter\nParameter (ParamList)\nTypes\nAnyNumber\nAnyNumber (Struct)\nAnyNumberPointerUnion (Union)\nAnyNumberType (Enum)\nAnyNumberUnion (Union)\nAnyNumberValueUnion (Union)\nCOMParity (Enum)\nCOMStopBits (Enum)\nDNP3_String (Alias)\nLibrary Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nFile and Project Information\nLibrary Reference\n3SLicense\nLibrary Identification\nLibrary Properties\nCmpApp\nLibrary Identification\nLibrary Properties\nCmpDNP3\nLibrary Identification\nLibrary Properties\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nCmpEventMgr\nLibrary Identification\nLibrary Properties\nCmpLog\nLibrary Identification\nLibrary Properties\nComponent Manager\nLibrary Identification\nLibrary Properties\nIoDrvEthernet Interfaces\nLibrary Identification\nLibrary Properties\nIoDrvUtility\nLibrary Identification\nLibrary Properties\nIoStandard\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nSysCpuHandling\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysSocket\nLibrary Identification\nLibrary Properties\nSysTask\nLibrary Identification\nLibrary Properties\nSysTimeCore\nLibrary Identification\nLibrary Properties\nSysTimeRtc\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nUtil\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nDNP3\nDocs\n»\nDNP3\n»\nFunction\nBlocks\n»\nMaster\n»\nPointObserver\n»\nBinaryCounterPointObserver (FB)\nBinaryCounterPointObserver (FB)\nÂ¶\nFUNCTION_BLOCK FINAL BinaryCounterPointObserver EXTENDS\nPointObserver\nIMPLEMENTS IBinaryCounterPointObserver\nDNP3 Master datapoint observer for a datapoint of DNP3 object group 20 âcountersâ.\nInOut:\nScope\nName\nType\nComment\nInherited from\nInput\nitfMaster\nIMaster\nConnect to a Master.\nPointObserver\nxEnable\nBOOL\nEnable the PointObserver.\nPointObserver\npointNumber\nUINT\nDatapoint number.\nPointObserver\nOutput\nxError\nBOOL\nAn error occured.\nPointObserver\neErrorID\nError\nThe specific error.\nPointObserver\nmodified\nBOOL\nData received since last call.\nPointObserver\nsequenceNumber\nUDINT\nSequence number of received data.\nPointObserver\nvalue\nUDINT\nValue received from Outstation.\nflags\nUSINT\nFlags received from Outstation. Flag values are ORâd\ncombinations of the following:\nDNPDEFS_DBAS_FLAG_ON_LINE - the point has been read\nsuccessfully\nDNPDEFS_DBAS_FLAG_RESTART - the field device that originated the\ndata object has been restarted. This device may be the deviced\nreporting this data object.\nDNPDEFS_DBAS_FLAG_COMM_LOST - the device reporting this data object\nhas lost communication with the originator of the data object\nDNPDEFS_DBAS_FLAG_REMOTE_FORCED - the state of the binary object\nhas been forced to its current state at the originating device\nDNPDEFS_DBAS_FLAG_LOCAL_FORCED - the state of the binary object\nhas been forced to its current state at the device reporting\nthis data object\nDNPDEFS_DBAS_FLAG_CNTR_ROLLOVER - the accumulated value has exceeded\nhas exceeded its maximum and rolled over to zero.\nNOTE: This maximum value is not necessarily equal to (2^32-1) for\n32 bit counters or (2^16-1) for 16 bit counters. It can be different\nfor each counter instance. Technical Bulletin TB-2002-001 Counter\nObjects recommends â[Outstation] devices do not set the Rollover flag and\nthat host(Master) devices ignore the Rollover flagâ.\nhasTimeStamp\nBOOL\nUpdate received from Outstation has a valid time stamp.\ntimeStamp\nLDATE_AND_TIME\nTime stamp reported - valid if hasTimeStamp = TRUE, invalid\notherwise.\nProperties:\nEnabled\n, inherited from\nPointObserver\nIsModified\n, inherited from\nPointObserver\nKey\n, inherited from\nPointObserver\nTyp\n, inherited from\nPointObserver\nMethods:\nConnectToMaster\n, inherited from\nPointObserver\nDisconnectFromMaster\n, inherited from\nPointObserver\nEquals\n, inherited from\nPointObserver\nGetError\n, inherited from\nPointObserver\nGetErrorId\n, inherited from\nPointObserver\nGetSequenceNumber\n, inherited from\nPointObserver\nIEC_TMWDTIMETimeStampToLogString\n, inherited from\nPointObserver\nIEC_TMWDTIME_TO_LDT\n, inherited from\nPointObserver\nLogError\n, inherited from\nPointObserver\nLogInfo\n, inherited from\nPointObserver\nLogPointObserver\n, inherited from\nPointObserver\nPointerToTimeStampToString\n, inherited from\nPointObserver\nSetError\n, inherited from\nPointObserver\nTimeStampToLogString\n, inherited from\nPointObserver\nToString\n, inherited from\nPointObserver",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment",
+        "Inherited from"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "itfMaster",
+          "Type": "IMaster",
+          "Comment": "Connect to a Master.",
+          "Inherited from": "PointObserver"
+        },
+        [
+          "xEnable",
+          "BOOL",
+          "Enable the PointObserver.",
+          "PointObserver"
+        ],
+        [
+          "pointNumber",
+          "UINT",
+          "Datapoint number.",
+          "PointObserver"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "xError",
+          "Type": "BOOL",
+          "Comment": "An error occured.",
+          "Inherited from": "PointObserver"
+        },
+        [
+          "eErrorID",
+          "Error",
+          "The specific error.",
+          "PointObserver"
+        ],
+        [
+          "modified",
+          "BOOL",
+          "Data received since last call.",
+          "PointObserver"
+        ],
+        [
+          "sequenceNumber",
+          "UDINT",
+          "Sequence number of received data.",
+          "PointObserver"
+        ],
+        [
+          "value",
+          "UDINT",
+          "Value received from Outstation.",
+          ""
+        ],
+        [
+          "flags",
+          "USINT",
+          "Flags received from Outstation. Flag values are ORâdcombinations of the following:DNPDEFS_DBAS_FLAG_ON_LINE - the point has been readsuccessfullyDNPDEFS_DBAS_FLAG_RESTART - the field device that originated thedata object has been restarted. This device may be the deviced\nreporting this data object.DNPDEFS_DBAS_FLAG_COMM_LOST - the device reporting this data objecthas lost communication with the originator of the data objectDNPDEFS_DBAS_FLAG_REMOTE_FORCED - the state of the binary objecthas been forced to its current state at the originating deviceDNPDEFS_DBAS_FLAG_LOCAL_FORCED - the state of the binary objecthas been forced to its current state at the device reporting\nthis data objectDNPDEFS_DBAS_FLAG_CNTR_ROLLOVER - the accumulated value has exceededhas exceeded its maximum and rolled over to zero.\nNOTE: This maximum value is not necessarily equal to (2^32-1) for\n32 bit counters or (2^16-1) for 16 bit counters. It can be different\nfor each counter instance. Technical Bulletin TB-2002-001 Counter\nObjects recommends â[Outstation] devices do not set the Rollover flag and\nthat host(Master) devices ignore the Rollover flagâ.",
+          ""
+        ],
+        [
+          "hasTimeStamp",
+          "BOOL",
+          "Update received from Outstation has a valid time stamp.",
+          ""
+        ],
+        [
+          "timeStamp",
+          "LDATE_AND_TIME",
+          "Time stamp reported - valid if hasTimeStamp = TRUE, invalid\notherwise.",
+          ""
+        ]
+      ]
+    }
+  ]
+}

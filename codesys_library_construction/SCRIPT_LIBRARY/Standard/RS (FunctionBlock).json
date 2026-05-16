@@ -1,0 +1,36 @@
+{
+  "library": "Standard",
+  "title": "RS (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/Standard/Current/Bistable-Function-Blocks/RS.html",
+  "page_title": "RS (FB)",
+  "text": "\nFUNCTION_BLOCK RS\nRealizes a bistable reset-dominat latch\n(* Example declaration *)\nRSInst\n:\nRS\n;\n(* Example in ST *)\nRSInst\n(\nSET\n:=\nVarBOOL1\n,\nRESET1\n:=\nVarBOOL2\n);\nVarBOOL3\n:=\nRSInst.Q1\n;\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "SET",
+          "Type": "BOOL",
+          "Comment": "Rising edge: SetQ1toTRUE"
+        },
+        [
+          "RESET1",
+          "BOOL",
+          "Rising edge: ResetQ1toFALSE(dominant)"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Q1",
+          "Type": "BOOL",
+          "Comment": "Output value"
+        }
+      ]
+    }
+  ]
+}

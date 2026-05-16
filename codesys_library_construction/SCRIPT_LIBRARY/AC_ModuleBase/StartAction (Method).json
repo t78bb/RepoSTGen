@@ -1,0 +1,30 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "StartAction (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_RMP_ReliableMessageProtocol/pou-RMPSendMessage/StartAction.html",
+  "page_title": "RMPSendMessage.StartAction (METH)",
+  "text": "\nMETHOD StartAction\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Scope": "Output",
+          "Name": "xComplete",
+          "Type": "BOOL",
+          "Initial": "TRUE"
+        },
+        [
+          "iErrorID",
+          "INT",
+          "0"
+        ]
+      ]
+    }
+  ]
+}

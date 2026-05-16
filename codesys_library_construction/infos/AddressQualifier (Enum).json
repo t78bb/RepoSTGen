@@ -1,0 +1,57 @@
+{
+  "library": "DNP3",
+  "title": "AddressQualifier (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/AddressQualifier.html",
+  "page_title": "AddressQualifier (ENUM)",
+  "text": "\nTYPE AddressQualifier :\nDNP3 address qualifier\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Name": "QUAL_8BIT_START_STOP",
+          "Initial": "Constants.DNPDEFS_QUAL_8BIT_START_STOP"
+        },
+        {
+          "Name": "QUAL_16BIT_START_STOP",
+          "Initial": "Constants.DNPDEFS_QUAL_16BIT_START_STOP"
+        },
+        {
+          "Name": "QUAL_ALL_POINTS",
+          "Initial": "Constants.DNPDEFS_QUAL_ALL_POINTS"
+        },
+        {
+          "Name": "QUAL_8BIT_LIMITED_QTY",
+          "Initial": "Constants.DNPDEFS_QUAL_8BIT_LIMITED_QTY"
+        },
+        {
+          "Name": "QUAL_16BIT_LIMITED_QTY",
+          "Initial": "Constants.DNPDEFS_QUAL_16BIT_LIMITED_QTY"
+        },
+        {
+          "Name": "QUAL_8BIT_INDEX",
+          "Initial": "Constants.DNPDEFS_QUAL_8BIT_INDEX"
+        },
+        {
+          "Name": "QUAL_16BIT_INDEX_8BITQ",
+          "Initial": "Constants.DNPDEFS_QUAL_16BIT_INDEX_8BITQ"
+        },
+        {
+          "Name": "QUAL_16BIT_INDEX",
+          "Initial": "Constants.DNPDEFS_QUAL_16BIT_INDEX"
+        },
+        {
+          "Name": "QUAL_8BIT_FREE_FORMAT",
+          "Initial": "Constants.DNPDEFS_QUAL_8BIT_FREE_FORMAT"
+        },
+        {
+          "Name": "QUAL_16BIT_FREE_FORMAT",
+          "Initial": "Constants.DNPDEFS_QUAL_16BIT_FREE_FORMAT"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "library": "String Segments",
+  "title": "IsLibReleased (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Segments/Current/Library-Information/IsLibReleased.html",
+  "page_title": "IsLibReleased (FUN)",
+  "text": "\nFUNCTION IsLibReleased : BOOL\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "IsLibReleased",
+          "Type": "BOOL"
+        }
+      ]
+    }
+  ]
+}

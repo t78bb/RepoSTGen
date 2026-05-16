@@ -1,0 +1,131 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_MoveAdditionalAxes (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/Movement/SMC_MoveAdditionalAxes.html",
+  "page_title": "SMC_MoveAdditionalAxes (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL SMC_MoveAdditionalAxes\nMoves the additional axes of an axis group without affecting the\naxes of the kinematics.  The resulting movement is similar to an\nMC_MoveDirectRelative\nwith zero distance in the coordinate system of\nthe preceding movement.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "AxisGroup",
+          "Type": "AXIS_GROUP_REF_SM3",
+          "Initial": "",
+          "Comment": "Reference to a group of axes"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Start the motion at rising edge"
+        },
+        [
+          "AdditionalAxes",
+          "IAdditionalAxesMovement",
+          "",
+          "An instance ofSMC_MoveAdditionalAxesAbsoluteorSMC_MoveAdditionalAxesRelativeshould be assigned to this input. The additional axes of the axis group will perform\nthe specified movement while this function block is active."
+        ],
+        [
+          "BufferMode",
+          "MC_BUFFER_MODE",
+          "",
+          "Defines the chronological sequence of the FB relative to the\nprevious block."
+        ],
+        [
+          "TransitionMode",
+          "MC_TRANSITION_MODE",
+          "",
+          "Defines the blending in case of a blending buffer mode.\n.. note:-|ioMC_TRANSITION_MODE.TMCornerDistance|relatestothedistancearobot's TCP travels.  For this movementthe TCP distance is always zero, but the preceding movementcan have a non-zero TCP distance.- |ioMC_TRANSITION_MODE.TMStartVelocity| and |ioMC_TRANSITION_MODE.TMAxisDistance|require ``TransitionParameter``[2] to be set for additionalaxes to affect the blending distance."
+        ],
+        [
+          "TransitionParameter",
+          "ARRAY\n[0..(SMC_RCNST.MAX_TRANS_PARAMS\n- 1)] OF LREAL",
+          "[0, 0, 1]",
+          "Parameters for blending"
+        ],
+        [
+          "VelFactor",
+          "LREAL",
+          "1",
+          "The maximum velocity of each axis is multiplied by this factor, which\nmust be in the range ]0, 1]."
+        ],
+        [
+          "AccFactor",
+          "LREAL",
+          "1",
+          "The maximum acceleration of each axis is multiplied by this factor, which\nmust be in the range ]0, 1]."
+        ],
+        [
+          "JerkFactor",
+          "LREAL",
+          "1",
+          "The maximum jerk of each axis is multiplied by this factor, which\nmust be in the range ]0, 1]."
+        ],
+        [
+          "Name",
+          "STRING",
+          "âSMC_MoveAdditionalAxesâ",
+          "The name of the movement."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Done",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Commanded end positions reached for all axes"
+        },
+        [
+          "Busy",
+          "BOOL",
+          "",
+          "The FB is not finished"
+        ],
+        [
+          "Active",
+          "BOOL",
+          "",
+          "Indicates that the FB has control on the axis"
+        ],
+        [
+          "CommandAborted",
+          "BOOL",
+          "",
+          "Command is aborted by another command"
+        ],
+        [
+          "CommandAccepted",
+          "BOOL",
+          "",
+          "The command has been accepted by the axis group.\nIf the output becomesTRUE, the function block instance can be used to\ncommand the next movement with a new rising edge onExecute.\nWhile the output isFALSE, keep calling the function block without\na new rising edge ofExecute.\nThe output is reset toFALSEon a falling edge ofExecute."
+        ],
+        [
+          "Error",
+          "BOOL",
+          "",
+          "Signals that an error has occurred within the function block"
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "",
+          "Error identification"
+        ],
+        [
+          "MovementId",
+          "SMC_Movement_Id",
+          "",
+          "The unique identifier of the movement.  Valid ifCommandAcceptedorDoneisTRUE."
+        ]
+      ]
+    }
+  ]
+}

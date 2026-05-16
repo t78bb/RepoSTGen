@@ -1,0 +1,8 @@
+{
+  "library": "3S CANopenSafety",
+  "title": "CANopenManagerSIL2 (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/3S CANopenSafety/Current/_3SCANopenSafety/Function-Blocks/CANopenManagerSIL2.html",
+  "page_title": "CANopenManagerSIL2 (FB)",
+  "text": "\nFUNCTION_BLOCK CANopenManagerSIL2 EXTENDS CSB.CANopenSafetyBase\nThis function block implements a CANopen Safety SIL2 I/O driver.\nThe safe I/O driver is realized through a black channel approach. The safe driver sits on top of an unsafe CANopen Stack.\nCommunication is realized over a shared memory.\nThe manager function block manages all instances of CANRemoteDeviceSafe.",
+  "tables": []
+}

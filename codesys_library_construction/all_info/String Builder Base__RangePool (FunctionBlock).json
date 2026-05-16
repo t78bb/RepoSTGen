@@ -1,0 +1,40 @@
+{
+  "library": "String Builder Base",
+  "title": "_RangePool (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Builder Base/Current/BuilderBase/Internals/_RangePool.html",
+  "page_title": "_RangePool (FB)",
+  "text": "BuilderBase\nAliases\nConstants (GVL)\nIStringRepresentation (Alias)\nRUNE (Alias)\nEnums\nENCODING (Enum)\nERROR (Enum)\nFunction Blocks\nRange (FunctionBlock)\nIRange\nSetInitialValue (Method)\nFunctions\nCreateRange (Function)\nCreateRangePool (Function)\nInterfaces\nIBuilder (Interface)\nGetBuilderStats (Method)\nReset (Method)\nSegments\nWriteIString (Method)\nWriteMemSegment (Method)\nWriteRune (Method)\nWriteString (Method)\nWriteWString (Method)\nICharmap (Interface)\nDecode (Method)\nEncode (Method)\nInternals\n_RangePool (FunctionBlock)\nProtected\nStructs\nSTATS (Struct)\nLibrary Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nFile and Project Information\nLibrary Reference\nMemory Block Manager\nLibrary Identification\nLibrary Properties\nString Segments\nLibrary Identification\nLibrary Properties\nUTF-8 Encoding Support\nLibrary Identification\nLibrary Properties\nString Builder Base\nDocs\n»\nBuilderBase\n»\nInternals\n»\n_RangePool (FB)\n_RangePool (FB)\nÂ¶\nFUNCTION_BLOCK FINAL _RangePool EXTENDS STR._AbstractRangePool IMPLEMENTS STR.IRangePool\nInOut:\nScope\nName\nType\nInherited from\nInput Const\nudiInitialCapacity\nUDINT\n_AbstractRangePool\npbyPool\nPOINTER TO BYTE\n_AbstractRangePool\nudiPoolSize\nUDINT\n_AbstractRangePool\nusiExtensionFactor\nUSINT\n_AbstractRangePool\nMethods:\nGetRangeSize\nNewRange\nStructure:\nProtected\nGetRangeSize (Method)\nNewRange (Method)",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Inherited from"
+      ],
+      "rows": [
+        {
+          "Scope": "Input Const",
+          "Name": "udiInitialCapacity",
+          "Type": "UDINT",
+          "Inherited from": "_AbstractRangePool"
+        },
+        [
+          "pbyPool",
+          "POINTER TO BYTE",
+          "_AbstractRangePool"
+        ],
+        [
+          "udiPoolSize",
+          "UDINT",
+          "_AbstractRangePool"
+        ],
+        [
+          "usiExtensionFactor",
+          "USINT",
+          "_AbstractRangePool"
+        ]
+      ]
+    }
+  ]
+}

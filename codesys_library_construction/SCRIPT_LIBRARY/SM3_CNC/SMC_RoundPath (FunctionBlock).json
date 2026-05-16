@@ -1,0 +1,100 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_RoundPath (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/SoftMotion-Function-Blocks/SMC_RoundPath.html",
+  "page_title": "SMC_RoundPath (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_RoundPath\nSMC_RoundPath\nrounds corners between adjacent elements by inserting\ncircular arc segments.  See\nSMC_SmoothPath\nfor an alternative\ncorner smoothing with splines.\nThe distance between the corner and the point at which the two\nadjacent elements are cut is the minimum of half the length of the\nfirst element, half the length of the second element and the sum\nof\ndRadius\nand\nD\n.\nIf the sum of input variable\ndRadius\nand G-code word\nD\nis 0,\nthen no rounding is done.\nIf one of the two elements is a G0 element, then no rounding is done.\nDetails\nAll\nSMC_GEOINFO\nelements of the input structure\nSMC_OUTQUEUE\nare checked one after the other. The round-path functionality is\nexecuted for all elements between G52 and G50.\nM-function at a rounded corner:\nIf there is a M-function at the corner that will be rounded then the\nM-function remains but is moved to the end of the rounded corner.\nThis behavior is consistent with the behavior of\nSMC_SmoothPath\n.\nH-function at a rounded corner:\nIf there is an H-function between the first cut point and the corner\n(1), the point is moved to the rounded path (1â).\nThe distance to the start point remains the same.\nIf there a H-function between the corner and the second cut point\n(3) the point is also moved to the rounded path (3â),\nso that the distance to the end point remains the same.\nThe position of the moved H-functions is limited so that they donât\ncross the center of rounded path. Otherwise the order of the H-functions\nmight change (2â, 4â).\nExample\nN000 G01 X10 Y0 F100\nN010 G01 X10 Y10\nN020 G52 D2 (rounding with distance 2 on)\nN030 G01 X20 Y10\nN040 G01 X20 Y0\nN050 G01 X30 Y0 D5 (cut distance 5)\nN060 G01 X30 Y10\nN070 G01 X40 Y10\nN080 G50 (rounding off)\nN090 G01 X40 Y0\nN100 G01 X50 Y0\nThe first rounded corner is the one after sentence N020 at position\nX20 Y10.\nThe cut distance is changed from 2 to 5 in sentence N050 and is valid\nfrom there. Rounding is turned off at position X40 Y10.\nA rounding element always uses the tool correction information\n(i.e. lengths and diameter) of the preceding element.\nNote\nPROBE movements such as G31 are not supported. The error\nSMC_PROBE_G31_NOT_ALLOWED\nis reported if a PROBE movement\nis encountered while corner rounding active.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "bExecute",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "WhileTRUE, the function block is active"
+        },
+        [
+          "bAbort",
+          "BOOL",
+          "",
+          "IfTRUE, the current processing of this function block\nis aborted"
+        ],
+        [
+          "bAppend",
+          "BOOL",
+          "",
+          "As long as this input is set toFALSE, the DataOutQueue will be\ncleared at each reset.\nAs long as it is set toTRUE, newly incoming data will be written\nto the end of DataOutQueue."
+        ],
+        [
+          "poqDataIn",
+          "POINTER TOSMC_OUTQUEUE",
+          "",
+          "Input path queue"
+        ],
+        [
+          "dRadius",
+          "LREAL",
+          "",
+          "This input variable contains the value, which â added to the corresponding\nSmoothRadius-value of theSMC_GEOINFOobject (G-code word D) â\ndefines the (maximum) distance to a corner, at which the particular\nobjects will be cut and replaced by an arc (see above).\nThis value can be modified online.\nThus it is possible to predefine offline (using the D-word)\nand to change online. Default: 0"
+        ],
+        [
+          "dAngleTol",
+          "LREAL",
+          "0.001",
+          "This input prescribes the value of angle tolerance,\nup to which a path corner is not rounded."
+        ],
+        [
+          "nSizeOutQueue",
+          "UDINT",
+          "",
+          "This variable contains the size of the data buffer,\nthe list ofSMC_GEOINFOstructure objects will be written to.\nThis buffer must be able to hold at least fiveSMC_GEOINFOobjects.\nOtherwise, the function block will not execute any actions at all.\nIts size may be predefined, but may be modified later only during a reset.\nIt is recommended to create the buffer as described by the example below:ExampleBuf:Array[1..50]ofSMC_GeoInfoThe correct buffer size will then be retrieved by use of the operatorsizeof(ExampleBuf)."
+        ],
+        [
+          "pbyBufferOutQueue",
+          "POINTER TO ARRAY [0..0]\nOF SMC_GEOINFO",
+          "",
+          "This input must point to the first byte of the memory area\nthat is allocated for theSMC_OUTQUEUEstructure.\nThis area must be at least as big as defined innSizeOutQueue.\nTypically the allocation of the memory buffer is done in the\ndeclaration part of the IEC-program by defining an array ofSMC_GEOINFO(e.g.BUF:ARRAY[1..50]OFSMC_GEOINFO;\nfor a buffer that can store 50 path elements).\nThe value may be predefined, but may be modified later on only during a reset."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bDone",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "This variable will be set toTRUEas soon as the\ninput data frompoqDataInhas been processed completely.\nThereafter, the module will not perform any further actions\nuntil it gets reset.\nIf inputbExecuteisFALSE,bDonewill be reset toFALSE."
+        },
+        [
+          "bBusy",
+          "BOOL",
+          "",
+          "TRUE, while execution of function block is not finished"
+        ],
+        [
+          "bError",
+          "BOOL",
+          "",
+          "Signals, that an error has occurred within the function\nblock"
+        ],
+        [
+          "wErrorID",
+          "SMC_ERROR",
+          "",
+          "Error identification"
+        ],
+        [
+          "poqDataOut",
+          "POINTER TOSMC_OUTQUEUE",
+          "",
+          "This output variable points on theSMC_OUTQUEUEstructure,\nwhich manages the roundedSMC_GEOINFOobjects."
+        ]
+      ]
+    }
+  ]
+}

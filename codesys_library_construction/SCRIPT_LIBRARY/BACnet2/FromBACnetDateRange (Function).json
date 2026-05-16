@@ -1,0 +1,31 @@
+{
+  "library": "BACnet2",
+  "title": "FromBACnetDateRange (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/Utilities/BACnetUtilities/FromBACnetDataTypes/FromBACnetDateRange.html",
+  "page_title": "FromBACnetDateRange (FUN)",
+  "text": "\nFUNCTION FromBACnetDateRange :\nBACnetDateRange\nReturns a BACnetDateRange struct corresponding to the given IEC_BACNET_DATE_RANGE.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "FromBACnetDateRange",
+          "Type": "BACnetDateRange",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "bacDatRng",
+          "Type": "CmpBACnet.IEC_BACNET_DATE_RANGE",
+          "Comment": "The BACnet date range to convert to a BACnetDateRange."
+        }
+      ]
+    }
+  ]
+}

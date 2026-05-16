@@ -1,0 +1,34 @@
+{
+  "library": "DNP3",
+  "title": "SetSessionConfigAspectApplConfirmTimeout (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Outstation/pou-OutstationConfiguration/SetSessionConfigAspectApplConfirmTimeout.html",
+  "page_title": "OutstationConfiguration.SetSessionConfigAspectApplConfirmTimeout (METH)",
+  "text": "\nMETHOD SetSessionConfigAspectApplConfirmTimeout :\nError\nSet optional channel configuration aspect - application confirm timeout.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetSessionConfigAspectApplConfirmTimeout",
+          "Type": "Error",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "applConfirmTimeout",
+          "Type": "UDINT",
+          "Initial": "10000",
+          "Comment": "Application confirm timeout specifies how long the Outstation DNP device will\nwait for an application layer confirmation from the master for a\nSOLICITED response."
+        }
+      ]
+    }
+  ]
+}

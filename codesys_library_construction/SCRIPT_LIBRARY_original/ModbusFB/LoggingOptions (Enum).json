@@ -1,0 +1,118 @@
+{
+  "library": "ModbusFB",
+  "title": "LoggingOptions (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/ModbusFB/Current/ModbusFB/Enums/LoggingOptions.html",
+  "page_title": "LoggingOptions (ENUM)",
+  "text": "Library Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nModbusFB\nEnums\nError (Enum)\nExceptionCodes (Enum)\nFunctionCodes (Enum)\nLoggingOptions (Enum)\nPrimaryTables (Enum)\nRtuAscii (Enum)\nSerialSubFunctionCodes (Enum)\nFunction Blocks\nClient\nClient (FunctionBlock)\nClientRequest (FunctionBlock)\nClientRequestMaskWriteRegister (FunctionBlock)\nClientRequestRead (FunctionBlock)\nClientRequestReadBits (FunctionBlock)\nClientRequestReadCoils (FunctionBlock)\nClientRequestReadDiscreteInputs (FunctionBlock)\nClientRequestReadHoldingRegisters (FunctionBlock)\nClientRequestReadInputRegisters (FunctionBlock)\nClientRequestReadRegisters (FunctionBlock)\nClientRequestReadWriteMultipleRegisters (FunctionBlock)\nClientRequestWriteMultiple (FunctionBlock)\nClientRequestWriteMultipleCoils (FunctionBlock)\nClientRequestWriteMultipleRegisters (FunctionBlock)\nClientRequestWriteSingle (FunctionBlock)\nClientRequestWriteSingleCoil (FunctionBlock)\nClientRequestWriteSingleRegister (FunctionBlock)\nClientSerial (FunctionBlock)\nClientTCP (FunctionBlock)\nServer\nExampleDataModel (FunctionBlock)\nServer (FunctionBlock)\nServerSerial (FunctionBlock)\nServerTCP (FunctionBlock)\nUtil\nByteBuffer (FunctionBlock)\nGlobalConstants\nConstants (GVL)\nParameter (ParamList)\nStructs\nRequestData (Struct)\nRequestDataDiagnostics (Struct)\nRequestDataMaskWriteRegister (Struct)\nRequestDataRead (Struct)\nRequestDataReadWriteMultipleRegisters (Struct)\nRequestDataWriteMultiple (Struct)\nRequestDataWriteSingle (Struct)\nRequestUnion (Union)\nSupportedFcs (Struct)\nTableDefinition (Struct)\nTableDefinitions (Struct)\nTableSection (Struct)\nFile and Project Information\nLibrary Reference\n3SLicense\nLibrary Identification\nLibrary Properties\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nCmpLog\nLibrary Identification\nLibrary Properties\nCommon Behaviour Model\nLibrary Identification\nLibrary Properties\nComponent Manager\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nStringUtils\nLibrary Identification\nLibrary Properties\nSysCom\nLibrary Identification\nLibrary Properties\nSysCpuHandling\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysSocket\nLibrary Identification\nLibrary Properties\nSysTarget\nLibrary Identification\nLibrary Properties\nSysTimeCore\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nModbusFB\nDocs\n»\nModbusFB\n»\nEnums\n»\nLoggingOptions (ENUM)\nLoggingOptions (ENUM)\nÂ¶\nTYPE LoggingOptions :\nLogging options - can be combined with bitwise OR operation to enable specific logging.\nAttributes:\nqualified_only\nInOut:\nName\nInitial\nComment\nNone\n16#0\nInit\n16#1\nInitialization\nServerStartStop\n16#2\nStart / stop of server\nServerDataModel\n16#4\nServer data model information\nServerException\n16#8\nServer rejected requests with exception\nServerExceptionReason\n16#10\nServer rejected requests with exception, detailed reason\nServerReceivedValidRequests\n16#20\nServer received valid request\nServerRequestDetails\n16#40\nServer received request - details\nClientConnectDisconnect\n16#80\nClient connect / disconnect.\nClientReceivedValidReplies\n16#100\nClient received valid reply\nClientReplyDetails\n16#200\nClient received valid reply - details\nClientRequestStateChange\n16#400\nClientRequest state changes\nSendFrames\n16#800\nSend frame\nWarnOnReceivedInvalidFrames\n16#1000\nWarn on invalid frames received\nClientTcpSocket\n16#2000\nLog ClientTcp socket activities\nServerTcpSocket\n16#4000\nLog ServerTcp socket activities\nSysComOpenClose\n16#8000\nLog SysCom open/close\nInternals\n16#10000\nSysComHandlerStateChange\n16#20000\nLog SysComHandler state changes\nAll\n16#FFFFFFFF",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "None",
+          "Initial": "16#0",
+          "Comment": ""
+        },
+        {
+          "Name": "Init",
+          "Initial": "16#1",
+          "Comment": "Initialization"
+        },
+        {
+          "Name": "ServerStartStop",
+          "Initial": "16#2",
+          "Comment": "Start / stop of server"
+        },
+        {
+          "Name": "ServerDataModel",
+          "Initial": "16#4",
+          "Comment": "Server data model information"
+        },
+        {
+          "Name": "ServerException",
+          "Initial": "16#8",
+          "Comment": "Server rejected requests with exception"
+        },
+        {
+          "Name": "ServerExceptionReason",
+          "Initial": "16#10",
+          "Comment": "Server rejected requests with exception, detailed reason"
+        },
+        {
+          "Name": "ServerReceivedValidRequests",
+          "Initial": "16#20",
+          "Comment": "Server received valid request"
+        },
+        {
+          "Name": "ServerRequestDetails",
+          "Initial": "16#40",
+          "Comment": "Server received request - details"
+        },
+        {
+          "Name": "ClientConnectDisconnect",
+          "Initial": "16#80",
+          "Comment": "Client connect / disconnect."
+        },
+        {
+          "Name": "ClientReceivedValidReplies",
+          "Initial": "16#100",
+          "Comment": "Client received valid reply"
+        },
+        {
+          "Name": "ClientReplyDetails",
+          "Initial": "16#200",
+          "Comment": "Client received valid reply - details"
+        },
+        {
+          "Name": "ClientRequestStateChange",
+          "Initial": "16#400",
+          "Comment": "ClientRequest state changes"
+        },
+        {
+          "Name": "SendFrames",
+          "Initial": "16#800",
+          "Comment": "Send frame"
+        },
+        {
+          "Name": "WarnOnReceivedInvalidFrames",
+          "Initial": "16#1000",
+          "Comment": "Warn on invalid frames received"
+        },
+        {
+          "Name": "ClientTcpSocket",
+          "Initial": "16#2000",
+          "Comment": "Log ClientTcp socket activities"
+        },
+        {
+          "Name": "ServerTcpSocket",
+          "Initial": "16#4000",
+          "Comment": "Log ServerTcp socket activities"
+        },
+        {
+          "Name": "SysComOpenClose",
+          "Initial": "16#8000",
+          "Comment": "Log SysCom open/close"
+        },
+        {
+          "Name": "Internals",
+          "Initial": "16#10000",
+          "Comment": ""
+        },
+        {
+          "Name": "SysComHandlerStateChange",
+          "Initial": "16#20000",
+          "Comment": "Log SysComHandler state changes"
+        },
+        {
+          "Name": "All",
+          "Initial": "16#FFFFFFFF",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "library": "BACnet",
+  "title": "AddPropertyReference (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/Schedule/pou-BACnetSchedule/PropertyReferences/AddPropertyReference.html",
+  "page_title": "BACnetSchedule.AddPropertyReference (METH)",
+  "text": "\nMETHOD AddPropertyReference : CmpBACnet.IEC_BACNET_STATUS\nAdds device object property reference to the List_Of-Object_Property_References-Property (which lists all the Objects to influenced\nby this Schedule) of this BACnet-Object.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "AddPropertyReference",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "deviceInstance",
+          "Type": "CmpBACnet.IEC_BACNET_DWORD",
+          "Initial": "",
+          "Comment": "The BACnet device to reference."
+        },
+        [
+          "objInstance",
+          "CmpBACnet.IEC_BACNET_DWORD",
+          "",
+          "The BACnet object instance number of the BACnet device to\nreference."
+        ],
+        [
+          "objType",
+          "CmpBACnet.IEC_BACNET_OBJECT_TYPE",
+          "",
+          "The BACnet object type number of the BACnet device to\nreference."
+        ],
+        [
+          "propID",
+          "CmpBACnet.IEC_BACNET_PROPERTY_ID",
+          "",
+          "The BACnet property ID of the BACnet object to reference."
+        ],
+        [
+          "nIndex",
+          "CmpBACnet.IEC_BACNET_SIGNED",
+          "",
+          "The 1 based index to reference of the BACnet property."
+        ],
+        [
+          "xDevicePresent",
+          "BOOL",
+          "TRUE",
+          "Whether the BACnet device is present or not."
+        ]
+      ]
+    }
+  ]
+}

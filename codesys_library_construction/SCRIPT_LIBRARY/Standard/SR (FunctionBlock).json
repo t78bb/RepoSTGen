@@ -1,0 +1,36 @@
+{
+  "library": "Standard",
+  "title": "SR (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/Standard/Current/Bistable-Function-Blocks/SR.html",
+  "page_title": "SR (FB)",
+  "text": "\nFUNCTION_BLOCK SR\nRealizes a bistable set-dominat latch\n(* Example declaration *)\nSRInst\n:\nSR\n;\n(* Example in ST *)\nSRInst\n(\nSET1\n:=\nVarBOOL1\n,\nRESET\n:=\nVarBOOL2\n);\nVarBOOL3\n:=\nSRInst.Q1\n;\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "SET1",
+          "Type": "BOOL",
+          "Comment": "Rising edge: SetQ1toTRUE(dominant)"
+        },
+        [
+          "RESET",
+          "BOOL",
+          "Rising edge: ResetQ1toFALSE"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Q1",
+          "Type": "BOOL",
+          "Comment": "Output value"
+        }
+      ]
+    }
+  ]
+}

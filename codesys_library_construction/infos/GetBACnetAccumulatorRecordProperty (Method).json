@@ -1,0 +1,28 @@
+{
+  "library": "BACnet",
+  "title": "GetBACnetAccumulatorRecordProperty (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/pou-IBACnetObjectBase/Utilities/GetBACnetAccumulatorRecordProperty.html",
+  "page_title": "IBACnetObjectBase.GetBACnetAccumulatorRecordProperty (METH)",
+  "text": "\nMETHOD GetBACnetAccumulatorRecordProperty : CmpBACnet.IEC_BACNET_ACCUMULATOR_RECORD\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetBACnetAccumulatorRecordProperty",
+          "Type": "CmpBACnet.IEC_BACNET_ACCUMULATOR_RECORD"
+        },
+        {
+          "Scope": "Input",
+          "Name": "propID",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_ID"
+        }
+      ]
+    }
+  ]
+}

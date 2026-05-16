@@ -1,0 +1,23 @@
+{
+  "library": "3S Storage",
+  "title": "StorageClear (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/3S Storage/Current/_3SStorage/Instances/pou-Storage/StorageClear.html",
+  "page_title": "Storage.StorageClear (METH)",
+  "text": "\nMETHOD StorageClear : STO.ERROR\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "StorageClear",
+          "Type": "STO.ERROR"
+        }
+      ]
+    }
+  ]
+}

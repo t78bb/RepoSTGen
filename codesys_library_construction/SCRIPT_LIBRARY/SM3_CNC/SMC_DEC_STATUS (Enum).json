@@ -1,0 +1,33 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_DEC_STATUS (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_Data-types/SoftMotion-CNC/SMC_DEC_STATUS.html",
+  "page_title": "SMC_DEC_STATUS (ENUM)",
+  "text": "\nTYPE SMC_DEC_STATUS :\nThis enumeration variable indicates the current state of the FB instance.\nPossible states:\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "WAIT_PROG",
+          "Initial": "0",
+          "Comment": "Program not found yet"
+        },
+        {
+          "Name": "READ_WORD",
+          "Initial": "1",
+          "Comment": "Word read"
+        },
+        {
+          "Name": "PROG_READ",
+          "Initial": "2",
+          "Comment": "End of program reached"
+        }
+      ]
+    }
+  ]
+}

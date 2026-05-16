@@ -1,0 +1,46 @@
+{
+  "library": "Standard",
+  "title": "CTD (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/Standard/Current/Counter/CTD.html",
+  "page_title": "CTD (FB)",
+  "text": "Deutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nMenu\nSearch\nDeutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nBistable Function Blocks\nRS (FunctionBlock)\nSR (FunctionBlock)\nCounter\nCTD (FunctionBlock)\nCTU (FunctionBlock)\nCTUD (FunctionBlock)\nMiscellaneous\nRTC (FunctionBlock)\nString Functions\nCONCAT (Function)\nDELETE (Function)\nFIND (Function)\nINSERT (Function)\nLEFT (Function)\nLEN (Function)\nMID (Function)\nREPLACE (Function)\nRIGHT (Function)\nTimer\nTOF (FunctionBlock)\nTON (FunctionBlock)\nTP (FunctionBlock)\nTrigger\nF_TRIG (FunctionBlock)\nR_TRIG (FunctionBlock)\nFile and Project Information\nLibrary Reference\nStandard\nDocs\n»\nCounter\n»\nCTD (FB)\nCTD (FB)\nÂ¶\nFUNCTION_BLOCK CTD\nDecrements a given value\n(* Example declaration *)\nCTDInst\n:\nCTD\n;\n(* Example in ST *)\nCTDInst\n(\nCD\n:=\nVarBOOL1\n,\nLOAD\n:=\nVarBOOL2\n,\nPV\n:=\nVarWORD1\n);\nVarBOOL3\n:=\nCTDInst.Q\n;\nVarWORD2\n:=\nCTDInst.CV\n;\nInOut:\nScope\nName\nType\nComment\nInput\nCD\nBOOL\nRising edge: Decrementing\nCV\nby one\nLOAD\nBOOL\nTRUE\n: Set\nCV\nto the start value\nPV\nPV\nWORD\nStart value for decrementing\nOutput\nQ\nBOOL\nTRUE\nif\nCV\n=\n0\nCV\nWORD\nCurrent counter value\ntop\nCODESYS Group | We\nsoftware\nAutomation.\nto software\n['sɒftwɛər]\ntransitive verb\n__softwared/softwaring\n: to develop software\n// to software automation: to develop software for automation purposes\nThe CODESYS Group is the manufacturer of CODESYS, the leading hardware-independent\n                                    IEC 61131-3 automation software for developing and engineering controller\n                                    applications.\nCODESYS® is a registered trademark.\nCODESYS GmbH\nA member of the CODESYS Group\nMemminger Straße 151, 87439 Kempten\nGermany\nTel.:\n+49-831-54031-0\ninfo@codesys.com\nLegal Notice\nPrivacy Policy\nLinkedIn\nYoutube\nRSS\nDownloads\nLogin\nCODESYS Store\n© 2022 CODESYS GmbH\n| A member of the CODESYS Group",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "CD",
+          "Type": "BOOL",
+          "Comment": "Rising edge: DecrementingCVby one"
+        },
+        [
+          "LOAD",
+          "BOOL",
+          "TRUE: SetCVto the start valuePV"
+        ],
+        [
+          "PV",
+          "WORD",
+          "Start value for decrementing"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Q",
+          "Type": "BOOL",
+          "Comment": "TRUEifCV=0"
+        },
+        [
+          "CV",
+          "WORD",
+          "Current counter value"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "library": "SM3_CNC",
+  "title": "Advance (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/GSentence/pou-SMC_GWord_Iterator/Advance.html",
+  "page_title": "SMC_GWord_Iterator.Advance (METH)",
+  "text": "\nMETHOD Advance : BOOL\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "Advance",
+          "Type": "BOOL"
+        }
+      ]
+    }
+  ]
+}

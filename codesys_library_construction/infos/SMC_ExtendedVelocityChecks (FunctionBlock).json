@@ -1,0 +1,81 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_ExtendedVelocityChecks (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/SoftMotion-Function-Blocks/SMC_ExtendedVelocityChecks.html",
+  "page_title": "SMC_ExtendedVelocityChecks (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_ExtendedVelocityChecks\nThis function limits the velocity, acceleration and deceleration\nof the path so that the resulting velocity, acceleration and\ndeceleration for the additional axes\n(P, Q, U, V, W, A, B, C and additionally Z for in 2D mode)\ndo not exceed the values set in\nF<Axis>\nand\nE<Axis>\n.\nThese limits are typically defined in the G-code by using the\nG-code words FZ, FP, FQ, FU, FV, FW, FA, FB, FC, and\nEZ, EP, EQ, EU, EV, EW, EA, eB, EC.\nFZ0, FP0, â¦, FC0 reset the velocity limit of the additional axis.\nEZ0, EP0, â¦, EC0 reset the limitation of acceleration or\ndeceleration of the additional axis.\nFZ and EZ are only valid in the 2D-mode.\nExample\nIn sentence N0, the acceleration of additional axis P is\nlimited to 10, the deceleration is limited to 13. In sentence N1, the\nlimitations on additional axis P are reset again (EP0).\nG-Code\n:\nN0\nG1\nX100\nEP10\nEP\n-13\nP100\nN1\nG1\nX200\nEP0\nP0\nE<axis>/F<axis>\nThe following code is used to define velocity/acceleration/deceleration\nof a additional axes <axis> by E<axis>/F<axis>.\nG-Code\nN20 M9\nN030 F10 E40.0 E-40.0\nN040 M8\nN050 G92 X0.0 Y0.0 Z570.0 U35.0 V225.0 W20.0 P382.0 (Starting position)\nN060 G1 X0.0 Y0.0 Z570.0 U35.0 V225.0 W20.0 P382.0\nN230 G0 X0.0 F200.0 E200.0 E-200.0\nN240 M7\nN250 F50.0 E40.0 E-40.0\nN260 G0 U100.0 V158.0 W100.0 P260.0 Y100.0 Z400.0 F50.0\nN270 G0 V125.0 P260.0 Z400.0 FV1.25 EV500 EV-500 (additional axis V is set)\nN280 G0 V170.0 P260.0 Z400.0 FV50.0\nN285 G0 V170.0 P260.0 Z400.0 FP100.0 EP500 EP-500 (additional axis P is set)\nN290 G0 X0.0 F200.0 E200.0 E-200.0\nN300 M7\nN310 F50.0 E40.0 E-40.0\nN320 G0 U100.0 V158.0 W100.0 P260.0 Y100.0 Z400.0 F50.0\nN330 G0 V125.0 P260.0 Z400.0 F1.25\nN340 G0 V170.0 P260.0 Z400.0 F50.0\nN350 M8\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "bExecute",
+          "Type": "BOOL",
+          "Comment": "Execution starts on the rising edge."
+        },
+        [
+          "bAbort",
+          "BOOL",
+          "IfFALSEat a rising edge ofbExecute,\nthe output queuepoqDataOutis emptied"
+        ],
+        [
+          "bAppend",
+          "BOOL",
+          "IfFALSEat a rising edge ofbExecute,\nthe output queuepoqDataOutis emptied"
+        ],
+        [
+          "poqDataIn",
+          "POINTER TOSMC_OUTQUEUE",
+          "This input points to theSMC_OUTQUEUEstructure object,\nwhich describes theSMC_GEOINFOobjects of the path;\ntypically it points to the outputpoqDataOutof the\npreceding module (e.g.SMC_NCDecoder/SMC_SmoothPath)."
+        ],
+        [
+          "nSizeOutQueue",
+          "UDINT",
+          "This variable contains the size of the data buffer,\nthe list ofSMC_GEOINFOstructure objects will be written to.\nThis buffer must be able to hold at least fiveSMC_GEOINFOobjects.\nOtherwise, the function block will not execute any actions at all.\nIts size may be predefined, but may be modified later only during a reset.\nIt is recommended to create the buffer as described by the example below:ExampleBuf:ARRAY[1..50]OFSMC_GEOINFOThe appropriate buffer size will then be retrieved\nby use of the operatorsizeof(ExampleBuf)."
+        ],
+        [
+          "pbyBufferOutQueue",
+          "POINTER TO ARRAY [0..0]\nOF SMC_GEOINFO",
+          "This input must point to the first byte of the memory area\nthat is allocated for theSMC_OUTQUEUEstructure.\nThis area must be at least as big as defined innSizeOutQueue.\nTypically the allocation of the memory buffer is done in the\ndeclaration part of the IEC-program by defining an array\nofSMC_GEOINFOe.g.BUF:ARRAY[1..50]OFSMC_GEOINFO;\nfor a buffer that can store 50 path elements).\nThe value may be predefined, but may be modified later on only during a reset."
+        ],
+        [
+          "bStrictlyHoldAccDecABC",
+          "BOOL",
+          "If TRUE, the maximal accelerations and decelerations of A, B, C are strictly held.\nOtherwise, we use a heuristic that may lead to quicker profiles, but occasionally violate\nthe A/B/C-acceleration-limit, if A/B/C move quickly while\nthere is an ac- / deceleration on the path."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bDone",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        [
+          "bBusy",
+          "BOOL",
+          "TRUE, while execution of function block is not finished\nand the process on the path object is still running"
+        ],
+        [
+          "bError",
+          "BOOL",
+          "Signals that an error has occurred within the function block"
+        ],
+        [
+          "wErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ],
+        [
+          "poqDataOut",
+          "POINTER TOSMC_OUTQUEUE",
+          "This variable points to aSMC_OUTQUEUEstructure,\nwhich manages theSMC_GEOINFOobjects of the loopless path."
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "library": "Util",
+  "title": "FREQ_MEASURE (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/Signals/FREQ_MEASURE.html",
+  "page_title": "FREQ_MEASURE (FB)",
+  "text": "Analog Monitors\nHYSTERESIS (FunctionBlock)\nLIMITALARM (FunctionBlock)\nBCD Conversions\nBCD_TO_BYTE (Function)\nBCD_TO_DWORD (Function)\nBCD_TO_INT (Function)\nBCD_TO_WORD (Function)\nBYTE_TO_BCD (Function)\nDWORD_TO_BCD (Function)\nINT_TO_BCD (Function)\nWORD_TO_BCD (Function)\nBit/Byte Functions\nBIT_AS_BYTE (FunctionBlock)\nBIT_AS_DWORD (FunctionBlock)\nBIT_AS_WORD (FunctionBlock)\nBYTE_AS_BIT (FunctionBlock)\nDWORD_AS_BIT (FunctionBlock)\nEXTRACT (Function)\nGETBIT (Function)\nPACK (Function)\nPUTBIT (Function)\nSETBIT (Function)\nSWITCHBIT (Function)\nUNPACK (FunctionBlock)\nWORD_AS_BIT (FunctionBlock)\nConstants\nTextBlockSize (ParamList)\nController\nPD (FunctionBlock)\nPID\n(FB)\nTemperature control with PID and LIMIT\nPID_FIXCYCLE (FunctionBlock)\nDatatypes\nGEN_MODE (Enum)\nPOINT (Struct)\nPT_SIZE (Struct)\nEncoding\nBASE64 (Function)\nFunction Manipulators\nCHARCURVE (FunctionBlock)\nRAMP_INT (FunctionBlock)\nRAMP_REAL (FunctionBlock)\nGray Conversions\nBYTE_TO_GRAY (Function)\nDWORD_TO_GRAY (Function)\nGRAY_TO_BYTE (Function)\nGRAY_TO_DWORD (Function)\nGRAY_TO_WORD (Function)\nWORD_TO_GRAY (Function)\nHEX/ASCII Functions\nBYTE_TO_HEXinASCII (Function)\nHEXinASCII_TO_BYTE (Function)\nWORD_AS_STRING (Function)\nLibrary Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nMathematical Functions\nDERIVATIVE (FunctionBlock)\nINTEGRAL (FunctionBlock)\nLIN_TRAFO (FunctionBlock)\nROTATION_DIFFERENCE (FunctionBlock)\nSTATISTICS_INT (FunctionBlock)\nSTATISTICS_REAL (FunctionBlock)\nVARIANCE (FunctionBlock)\nSignals\nBLINK (FunctionBlock)\nFREQ_MEASURE (FunctionBlock)\nGEN (FunctionBlock)\nTimerSwitch\nEnums\nERROR (Enum)\nPERIOD (Enum)\nWEEKDAY (Enum)\nFunctionBlocks\nDateTimeProvider (FunctionBlock)\nGetDateTime (Method)\nTimerSwitch (FunctionBlock)\nIDateTimeProvider\nFunctions\nCombineDateTime (Function)\nDateTimeFromWeek (Function)\nDayOfWeek (Function)\nGetDateTime (Function)\nGetLocalDateTime (Function)\nGetTimeStampsDifference (Function)\nIsLeapYear (Function)\nJoinDateTime (Function)\nLocalDateTime (Function)\nSeparateDateTime (Function)\nSplitDateTime (Function)\nWeekOfYear (Function)\nGlobalConstants\nDAY_FLAGS (GVL)\nTSW (GVL)\nInterfaces\nIDateTimeProvider (Interface)\nGetDateTime (Method)\nStructs\nDateTime (Struct)\nSchedule (Struct)\nSegment (Struct)\nTimeZone (Struct)\nTypes\nDAY (Alias)\nDAYS (Alias)\nHOUR (Alias)\nMILLISECOND (Alias)\nMINUTE (Alias)\nMONTH (Alias)\nSECOND (Alias)\nTZ_NAME (Alias)\nWEEK (Alias)\nYEAR (Alias)\nFile and Project Information\nLibrary Reference\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysTimeRtc\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nUtil\nDocs\n»\nSignals\n»\nFREQ_MEASURE (FB)\nFREQ_MEASURE (FB)\nÂ¶\nFUNCTION_BLOCK FREQ_MEASURE\nMeasures the frequency of a signal\nInOut:\nScope\nName\nType\nInitial\nComment\nInput\nIN\nBOOL\nInput signal\nPERIODS\nINT (1..10)\n1\nA period is the time between two rising edges of the input signal.\nOUT\nwill equal the average frequency during the given\nPERIODS\n(number of periods; minimal 1 maximal 10).\nThe function block will not work unless this value is between 1 and 10.\nRESET\nBOOL\nReset measurement\nOutput\nOUT\nREAL\nFrequency [Hz]\nVALID\nBOOL\nFALSE\n: As long as the first measure has been finished.  Or time distance between two rising edges >\n3\n*\nOUT\n.\n(Indicates that something is wrong with the inputs)",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "IN",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Input signal"
+        },
+        [
+          "PERIODS",
+          "INT (1..10)",
+          "1",
+          "A period is the time between two rising edges of the input signal.OUTwill equal the average frequency during the givenPERIODS(number of periods; minimal 1 maximal 10).\nThe function block will not work unless this value is between 1 and 10."
+        ],
+        [
+          "RESET",
+          "BOOL",
+          "",
+          "Reset measurement"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "OUT",
+          "Type": "REAL",
+          "Initial": "",
+          "Comment": "Frequency [Hz]"
+        },
+        [
+          "VALID",
+          "BOOL",
+          "",
+          "FALSE: As long as the first measure has been finished.  Or time distance between two rising edges >3*OUT.\n(Indicates that something is wrong with the inputs)"
+        ]
+      ]
+    }
+  ]
+}

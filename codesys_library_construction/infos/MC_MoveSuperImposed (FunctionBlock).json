@@ -1,0 +1,102 @@
+{
+  "library": "SM3_Basic",
+  "title": "MC_MoveSuperImposed (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/Movement/MC_MoveSuperImposed.html",
+  "page_title": "MC_MoveSuperImposed (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL MC_MoveSuperImposed\nThe function block causes an additional movement, on top of an ongoing\n(original) movement of the axis. The original movement is not aborted,\ninstead the movement by the given distance is superimposed.\nIf\nMC_MoveSuperImposed\nis active, a further aborting command on the\nsame axis interrupts both commands, i.e.\nMC_MoveSuperImposed\nand the\noriginal command.  A further buffered or blending command does _not_\ninterrupt the superimposed movement.  The superimposed movement is\ncontinued in parallel.\nThe function block\nMC_MoveSuperImposed\nmust be called after the\nfunction block of the original movement.  If a movement command is called\nafter\nMC_MoveSuperImposed\n, the error SMC_MSI_INVALID_EXECUTION_ORDER\nis returned.\nIf an instance of\nMC_MoveSuperImposed\nis active and a second instance\nof type\nMC_MoveSuperImposed\nis called, an error is reported by the\nsecond instance.\nIf an instance of\nMC_MoveSuperImposed\nis active and is started again\n(with possibly different inputs) with a new rising edge on\nExecute\n,\nthe active superimposed movement is aborted and replaced by the new\nsuperimposed movement, while the original motion function block\nremains active.  The new distance is relative to the start of the\nfirst superimposed movement.  This means that a new distance of 0\nwill result in a slowdown that cancels the effect of the first\nsuperimposed movement.\nTo halt a superimposed movement, use the function block\nMC_HaltSuperImposed\n.  While\nMC_HaltSuperImposed\nis active,\nno further superimposed movement can be started.\nIn the\nstandstill\nstate of the axis,\nMC_MoveSuperImposed\nbehaves\nlike\nMC_MoveRelative\n.\nThe\nAcceleration\n,\nDeceleration\nand\nJerk\ninputs are\nadditional values (not absolute values), which are added to the\noriginal movement.\nThe original function block will always complete its movement\nwithin the same duration and with no consideration for any instance of\nMC_MoveSuperImposed\nacting at the same time.\nMC_MoveSuperImposed\nacts on the slave axis while\nMC_Phasing\noperates\non the master axis.\nExample\nUse of\nMC_MoveSuperImposed\nThe following illustration shows how the\nFirst\ninstance of the type\nMC_MoveRelative\nis combined with the\nSecond\ninstance of the type\nMC_MoveSuperImposed\n.\nThe signal curve of\nCommandAborted\nis not shown because the new\ncommand works on the same instance. The end position lies between 7000\nand 8000 depending on the time behavior of the abortion of the second\ncommand set for\nMC_MoveSuperimposed\n.\nUse of\nMC_MoveSuperImposed\nand cam plate motion\nThe double line of the slave\nVelocity\nindicates the effect on the\nAxis\n, which is in synchronized motion of cam plate execution and\nMC_MoveSuperimposed\n.\nThe same applies to the associated slave position.\nSlave\nVelocity\nwith\nMC_Superimposed\n: Slave\nVelocity\nunder\nthe influence of\nMC_SuperImposed\n.\nSlave\nPosition\nwith\nMC_Superimposed\n: Slave\nPosition\nunder\nthe influence of\nMC_SuperImposed\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3",
+          "Comment": "Reference to the axis"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Comment": "A rising edge starts the superimposed movement."
+        },
+        [
+          "Abort",
+          "BOOL",
+          "Aborts an ongoing movement and resets all outputs.\nIf set during an active movement, then the axis position\nwill jump back to the position it would have had without the\nsuperimposed movement."
+        ],
+        [
+          "Distance",
+          "LREAL",
+          "Additional distance in technical units [u].\nIf the FB interrupts itself,\na superimposed movement aborted by a new superimposed movement, then\nthe distance is relative to the start position of the interrupted\nsuperimposed movement."
+        ],
+        [
+          "VelocityDiff",
+          "LREAL",
+          "Maximum velocity of the superimposed movement"
+        ],
+        [
+          "Acceleration",
+          "LREAL",
+          "Maximum acceleration of the superimposed movement"
+        ],
+        [
+          "Deceleration",
+          "LREAL",
+          "Maximum deceleration of the superimposed movement"
+        ],
+        [
+          "Jerk",
+          "LREAL",
+          "Maximum jerk of the superimposed movement"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Done",
+          "Type": "BOOL",
+          "Comment": "TRUE: Distance is reached"
+        },
+        [
+          "Busy",
+          "BOOL",
+          "TRUE: Function block is in operation."
+        ],
+        [
+          "CommandAborted",
+          "BOOL",
+          "TRUE: Execution has been interrupted by another function\nblock instance operating onAxis."
+        ],
+        [
+          "Error",
+          "BOOL",
+          "TRUE: Error has occurred."
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ],
+        [
+          "DistanceTravelled",
+          "LREAL",
+          "The superimposed distance travelled so far.  Only set if\nBusy or Done."
+        ],
+        [
+          "SuperImposedVelocity",
+          "LREAL",
+          "The current superimposed velocity.  Only set if Busy or\nDone."
+        ],
+        [
+          "SuperImposedAcceleration",
+          "LREAL",
+          "The current superimposed acceleration.  Only set if Busy or\nDone."
+        ]
+      ]
+    }
+  ]
+}

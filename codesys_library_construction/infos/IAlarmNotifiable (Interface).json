@@ -1,0 +1,8 @@
+{
+  "library": "AlarmManager",
+  "title": "IAlarmNotifiable (Interface)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/IAlarmNotifiable.html",
+  "page_title": "IAlarmNotifiable (ITF)",
+  "text": "\nINTERFACE IAlarmNotifiable\nThis interface is implemented by generated function block instances and\nperforms the action in case of a state transition\nMethods:\nExecute\nStructure:\nExecute (Method)",
+  "tables": []
+}

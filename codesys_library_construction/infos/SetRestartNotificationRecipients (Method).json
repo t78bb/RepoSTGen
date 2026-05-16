@@ -1,0 +1,36 @@
+{
+  "library": "BACnet",
+  "title": "SetRestartNotificationRecipients (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/Device/pou-BACnetDevice/SetRestartNotificationRecipients.html",
+  "page_title": "BACnetDevice.SetRestartNotificationRecipients (METH)",
+  "text": "\nMETHOD SetRestartNotificationRecipients : CmpBACnet.IEC_BACNET_STATUS\nSets the Restart_Notification_Recipients-List of this BACnet object.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetRestartNotificationRecipients",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "uiListCount",
+          "Type": "CmpBACnet.IEC_BACNET_ELEMENT_COUNT",
+          "Comment": "The length of the list in the following pointer."
+        },
+        [
+          "pList",
+          "POINTER TO\nCmpBACnet.IEC_BACNET_RECIPIENT",
+          "The list data containing elements according to the given\ncount."
+        ]
+      ]
+    }
+  ]
+}

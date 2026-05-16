@@ -1,0 +1,5 @@
+{
+  "requirement": "This code is intended to implement a status-based control system that sets the values of six boolean outputs (Y1 to Y6) based on the input integer status (iStatus).",
+  "provide_code": "FUNCTION_BLOCK StaDisplay\nVAR_INPUT\n\tiStatus :\tINT;\nEND_VAR\nVAR_OUTPUT\n\tY1,Y2,Y3,Y4,Y5,Y6\t:\tBOOL;\nEND_VAR",
+  "function_name": "StaDisplay"
+}

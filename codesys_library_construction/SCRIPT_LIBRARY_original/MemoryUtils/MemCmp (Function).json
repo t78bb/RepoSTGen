@@ -1,0 +1,41 @@
+{
+  "library": "MemoryUtils",
+  "title": "MemCmp (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/MemoryUtils/Current/MemoryUtils/Functions/MemCmp.html",
+  "page_title": "MemCmp (FUN)",
+  "text": "Deutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nMenu\nSearch\nDeutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nMemoryUtils\nEnums\nByteOrder (Enum)\nERROR (Enum)\nFunctionblocks\nByteBuffer (FunctionBlock)\nAlign2 (Method)\nAlign4 (Method)\nGetByte (Method)\nGetDWord (Method)\nGetDataPointer (Method)\nGetLWord (Method)\nGetNBytes (Method)\nGetNDWords (Method)\nGetNLWords (Method)\nGetNWords (Method)\nGetWord (Method)\nNeedsSwapping (Property)\nPadding (Method)\nPutByte (Method)\nPutDWord (Method)\nPutLWord (Method)\nPutNBytes (Method)\nPutNDWords (Method)\nPutNLWords (Method)\nPutNWords (Method)\nPutWord (Method)\nResetPosition (Method)\nSkip (Method)\nMemoryManager (FunctionBlock)\nPrivate\nPublic\nFunctions\nBitCpy (Function)\nMemCmp (Function)\nMemCpy (Function)\nMemSet (Function)\nSwapping\nMemForceSwap (Function)\nSwap (Function)\nSwapLocalToIntel (Function)\nSwapLocalToMotorola (Function)\nFile and Project Information\nLibrary Reference\nCAA Callback Extern\nLibrary Identification\nLibrary Properties\nCAA Memory Block Manager Extern\nLibrary Identification\nLibrary Properties\nCAA Types Extern\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nSysCpuHandling\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nMemoryUtils\nDocs\n»\nMemoryUtils\n»\nFunctions\n»\nMemCmp (FUN)\nMemCmp (FUN)\nÂ¶\nFUNCTION MemCmp : BOOL\nMemCmp compares two memory buffers.\nThis function compares the data at âpbyMem1â\nof âdwSizeâ bytes with the data at âpbyMem2â.\nIf the data is fully equal, the function\nreturns TRUE. Otherwise the function returns\nFALSE.\nIf dwSize is 0, the function returns TRUE,\nas zero compared bytes are always equal.\nNote, that this function (similar to memcmp in C)\nmakes no additional checks of input parameters.\nThe caller has to take care about the validity\nof pointers and sizes, passed to this function.\nAs the function implements no error handling,\nthe exact count of âdwSizeâ bytes is compared.\nInOut:\nScope\nName\nType\nComment\nReturn\nMemCmp\nBOOL\nInput\npbyMem1\nPOINTER TO BYTE\nPointer to memory which should be compared\npbyMem2\nPOINTER TO BYTE\nPointer to memory which should be compared\ndwSize\nDWORD\nNumber of bytes to compare\ntop\nCODESYS Group | We\nsoftware\nAutomation.\nto software\n['sɒftwɛər]\ntransitive verb\n__softwared/softwaring\n: to develop software\n// to software automation: to develop software for automation purposes\nThe CODESYS Group is the manufacturer of CODESYS, the leading hardware-independent\n                                    IEC 61131-3 automation software for developing and engineering controller\n                                    applications.\nCODESYS® is a registered trademark.\nCODESYS GmbH\nA member of the CODESYS Group\nMemminger Straße 151, 87439 Kempten\nGermany\nTel.:\n+49-831-54031-0\ninfo@codesys.com\nLegal Notice\nPrivacy Policy\nLinkedIn\nYoutube\nRSS\nDownloads\nLogin\nCODESYS Store\n© 2022 CODESYS GmbH\n| A member of the CODESYS Group",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "MemCmp",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "pbyMem1",
+          "Type": "POINTER TO BYTE",
+          "Comment": "Pointer to memory which should be compared"
+        },
+        [
+          "pbyMem2",
+          "POINTER TO BYTE",
+          "Pointer to memory which should be compared"
+        ],
+        [
+          "dwSize",
+          "DWORD",
+          "Number of bytes to compare"
+        ]
+      ]
+    }
+  ]
+}

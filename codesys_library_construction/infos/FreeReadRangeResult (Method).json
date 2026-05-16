@@ -1,0 +1,23 @@
+{
+  "library": "BACnet2DefaultImpl",
+  "title": "FreeReadRangeResult (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2DefaultImpl/Current/BACnetDefaultImpl/Function-Blocks/LoggingObjects/Internal/pou-LogObjectsBase/FreeReadRangeResult.html",
+  "page_title": "LogObjectsBase.FreeReadRangeResult (METH)",
+  "text": "\nMETHOD PROTECTED FreeReadRangeResult\nDeallocation function to deallocate readRangeResult.itemData.buffer.pBuffer provided by GetRecordsBy*().\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "readRangeResult",
+          "Type": "CmpBACnet.IEC_BACNET_READ_RANGE_RESULT"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "library": "StringUtils",
+  "title": "StrMidW (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/StringUtils/Current/Public-Parts/Unicode/StrMidW.html",
+  "page_title": "StrMidW (FUN)",
+  "text": "\nFUNCTION StrMidW\nReturn <iLength> characters of <pwst>, beginning at the <iPosition>-th character position.\n<iPosition> = 1 is the first character.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "pwst",
+          "Type": "POINTER TO WORD",
+          "Comment": ""
+        },
+        [
+          "uiInputBufferSize",
+          "UINT",
+          "The size of the buffer, where pwst points to"
+        ],
+        [
+          "iLength",
+          "INT",
+          ""
+        ],
+        [
+          "iPosition",
+          "INT",
+          ""
+        ],
+        [
+          "pwstResult",
+          "POINTER TO WORD",
+          "The buffer, where the result will be returned"
+        ],
+        [
+          "uiResultBufferSize",
+          "UINT",
+          "The size of the buffer (in bytes), where the result will be\nreturned"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "library": "DNP3",
+  "title": "TimeStampToLogString (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/PointObserver/pou-PointObserver/TimeStampToLogString.html",
+  "page_title": "PointObserver.TimeStampToLogString (METH)",
+  "text": "\nMETHOD PROTECTED TimeStampToLogString : STRING\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "TimeStampToLogString",
+          "Type": "STRING"
+        },
+        {
+          "Scope": "Input",
+          "Name": "hasTimeStamp",
+          "Type": "BOOL"
+        },
+        [
+          "timeStamp",
+          "LDATE_AND_TIME"
+        ]
+      ]
+    }
+  ]
+}

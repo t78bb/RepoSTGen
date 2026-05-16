@@ -1,0 +1,6 @@
+
+VAR_GLOBAL
+	HMI_b总产量清零 AT %MX150.0: BOOL;
+	HMI_b初始化 AT %MX150.1: BOOL;
+	HMI_b禁用蜂鸣器 AT %MX150.2: BOOL;
+END_VAR

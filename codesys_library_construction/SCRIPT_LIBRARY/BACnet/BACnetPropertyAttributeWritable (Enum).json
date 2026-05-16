@@ -1,0 +1,29 @@
+{
+  "library": "BACnet",
+  "title": "BACnetPropertyAttributeWritable (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/Enums/BACnetPropertyAttributeWritable.html",
+  "page_title": "BACnetPropertyAttributeWritable (ENUM)",
+  "text": "\nTYPE BACnetPropertyAttributeWritable :\nAttribute to configure writability of BACnet object properties.\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Name": "DEFAULT",
+          "Initial": "-1"
+        },
+        {
+          "Name": "WRITEABLE",
+          "Initial": "1"
+        },
+        {
+          "Name": "READONLY",
+          "Initial": "0"
+        }
+      ]
+    }
+  ]
+}

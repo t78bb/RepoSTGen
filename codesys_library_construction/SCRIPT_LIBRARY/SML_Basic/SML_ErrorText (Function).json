@@ -1,0 +1,36 @@
+{
+  "library": "SML_Basic",
+  "title": "SML_ErrorText (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SML_Basic/Current/Base/Error/SML_ErrorText.html",
+  "page_title": "SML_ErrorText (FUN)",
+  "text": "\nFUNCTION SML_ErrorText : STRING(100)\nTranslates an error number to a descriptive error text.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SML_ErrorText",
+          "Type": "STRING(100)",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "eError",
+          "Type": "SML_Error",
+          "Comment": "The error number"
+        },
+        [
+          "eLanguage",
+          "SML_LANGUAGE",
+          "The desired output language"
+        ]
+      ]
+    }
+  ]
+}

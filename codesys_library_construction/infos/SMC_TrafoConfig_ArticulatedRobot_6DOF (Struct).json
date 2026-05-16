@@ -1,0 +1,73 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_TrafoConfig_ArticulatedRobot_6DOF (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_Trafo_Data-types/SMC_TrafoConfig_ArticulatedRobot_6DOF.html",
+  "page_title": "SMC_TrafoConfig_ArticulatedRobot_6DOF (STRUCT)",
+  "text": "\nTYPE SMC_TrafoConfig_ArticulatedRobot_6DOF : STRUCT\nThese parameters describe an articulated 6DOF robot as supported\nby the kinematik transformations\nSMC_Trafo_ArticulatedRobot_6DOF\nand\nSMC_TrafoF_ArticulatedRobot_6DOF\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "d1",
+          "Type": "LREAL",
+          "Comment": "Denavit-Hartenberg Parameter d1 [u]"
+        },
+        {
+          "Name": "a1",
+          "Type": "LREAL",
+          "Comment": "Denavit-Hartenberg Parameter a1 [u]"
+        },
+        {
+          "Name": "a2",
+          "Type": "LREAL",
+          "Comment": "Denavit-Hartenberg Parameter a2 [u]"
+        },
+        {
+          "Name": "d3",
+          "Type": "LREAL",
+          "Comment": "Denavit-Hartenberg Parameter d3 [u]"
+        },
+        {
+          "Name": "a3",
+          "Type": "LREAL",
+          "Comment": "Denavit-Hartenberg Parameter a3 [u]"
+        },
+        {
+          "Name": "d4",
+          "Type": "LREAL",
+          "Comment": "Denavit-Hartenberg Parameter d4 [u]"
+        },
+        {
+          "Name": "d6",
+          "Type": "LREAL",
+          "Comment": "Denavit-Hartenberg Parameter d6 [u]"
+        },
+        {
+          "Name": "q3_min_deg",
+          "Type": "LREAL",
+          "Comment": "The minimum possible angle of joint 3 in degrees"
+        },
+        {
+          "Name": "q3_max_deg",
+          "Type": "LREAL",
+          "Comment": "The maximum possible angle of joint 3 in degrees"
+        },
+        {
+          "Name": "q5_min_deg",
+          "Type": "LREAL",
+          "Comment": "The minimum possible angle of joint 5 in degrees"
+        },
+        {
+          "Name": "q5_max_deg",
+          "Type": "LREAL",
+          "Comment": "The maximum possible angle of joint 5 in degrees"
+        }
+      ]
+    }
+  ]
+}

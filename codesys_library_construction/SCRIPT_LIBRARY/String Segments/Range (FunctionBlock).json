@@ -1,0 +1,23 @@
+{
+  "library": "String Segments",
+  "title": "Range (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Segments/Current/Strings/Functionblocks/Range.html",
+  "page_title": "Range (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL Range EXTENDS MBM.Disposable IMPLEMENTS\nIRange\nRune by rune Iteration over the content of a\nitfString\ninstance.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input Const",
+          "Name": "itfString",
+          "Type": "IString"
+        }
+      ]
+    }
+  ]
+}

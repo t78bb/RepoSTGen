@@ -1,0 +1,8 @@
+{
+  "library": "AlarmManager",
+  "title": "IAlarmStorageReaderConsumer (Interface)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Alarm-storage-API/IAlarmStorageReaderConsumer.html",
+  "page_title": "IAlarmStorageReaderConsumer (ITF)",
+  "text": "\nINTERFACE IAlarmStorageReaderConsumer EXTENDS __SYSTEM.IQueryInterface\nThis interface must be implemented by function blocks, that process the data read\nby AlarmStorageReader.Read\nMethods:\nAlarmRead\nBeforeReading\nLatchVariableRead\nReadingDataCompleted\nStructure:\nAlarmRead (Method)\nBeforeReading (Method)\nLatchVariableRead (Method)\nReadingDataCompleted (Method)",
+  "tables": []
+}

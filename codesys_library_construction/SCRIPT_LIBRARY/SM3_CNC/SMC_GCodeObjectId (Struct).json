@@ -1,0 +1,23 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_GCodeObjectId (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_Data-types/SoftMotion-CNC/SMC_GCodeObjectId.html",
+  "page_title": "SMC_GCodeObjectId (STRUCT)",
+  "text": "\nTYPE SMC_GCodeObjectId : STRUCT\nIdentifies a path object of type\nSMC_GeoInfo\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "id",
+          "Type": "DINT",
+          "Comment": "The unique identifier of the path object."
+        }
+      ]
+    }
+  ]
+}

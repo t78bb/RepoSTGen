@@ -1,0 +1,78 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_SEGMENT (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_Data-types/SoftMotion-CNC/SMC_SEGMENT.html",
+  "page_title": "SMC_SEGMENT (STRUCT)",
+  "text": "\nTYPE SMC_SEGMENT : STRUCT\nThis structure is used internally by the\nSMC_Interpolator\n.\nIt represents a path segment of fixed length in which\na certain acceleration shape is used.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "eType",
+          "Type": "SMC_SEGMENTTYPE",
+          "Comment": "ACC, CONST, DEC, M"
+        },
+        {
+          "Name": "dLength",
+          "Type": "LREAL",
+          "Comment": "Object length"
+        },
+        {
+          "Name": "dTime",
+          "Type": "LREAL",
+          "Comment": "Needed time for interpolation"
+        },
+        {
+          "Name": "dVelStart",
+          "Type": "LREAL",
+          "Comment": "Velocity at the beginning of the segment"
+        },
+        {
+          "Name": "dVelEnd",
+          "Type": "LREAL",
+          "Comment": "Velocity at the end of the segment"
+        },
+        {
+          "Name": "iStartObj",
+          "Type": "INT",
+          "Comment": "Position of the start object in the queue"
+        },
+        {
+          "Name": "dPosInStartObj",
+          "Type": "LREAL",
+          "Comment": "Beginning of segment relative to the start point of the\nstart object"
+        },
+        {
+          "Name": "iDestObj",
+          "Type": "INT",
+          "Comment": "Position of the last object in the queue"
+        },
+        {
+          "Name": "dPosInDestObj",
+          "Type": "LREAL",
+          "Comment": "End of segment relative to the start point of the\ndestination object"
+        },
+        {
+          "Name": "dAccStart",
+          "Type": "LREAL",
+          "Comment": "Start acceleration (signed)"
+        },
+        {
+          "Name": "dAccEnd",
+          "Type": "LREAL",
+          "Comment": "End acceleration (signed)"
+        },
+        {
+          "Name": "dJerk",
+          "Type": "LREAL",
+          "Comment": "Jerk (signed), only used for changing acceleration"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "library": "BACnet2",
+  "title": "StartBACnetStack (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/BACnetServer/pou-IBACnetServer/StartBACnetStack.html",
+  "page_title": "IBACnetServer.StartBACnetStack (METH)",
+  "text": "\nMETHOD StartBACnetStack : CmpBACnet.IEC_BACNET_STATUS\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "StartBACnetStack",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS"
+        }
+      ]
+    }
+  ]
+}

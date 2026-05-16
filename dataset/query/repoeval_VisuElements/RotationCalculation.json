@@ -1,0 +1,5 @@
+{
+  "requirement": "This code is intended to implement the calculation of the new coordinates of a point after rotating it around a specified center by a given angle.",
+  "provide_code": "FUNCTION RotationCalculation : BOOL\nVAR_INPUT\n    rCenterX : REAL;    (* X coordinate of rotation center *)\n    rCenterY : REAL;    (* Y coordinate of rotation center *)\n    rAngle : REAL;      (* Rotation angle in degrees *)\n    rPointX : REAL;     (* X coordinate of point to rotate *)\n    rPointY : REAL;     (* Y coordinate of point to rotate *)\nEND_VAR\n\nVAR_OUTPUT\n    rRotatedX : REAL;   (* X coordinate after rotation *)\n    rRotatedY : REAL;   (* Y coordinate after rotation *)\nEND_VAR",
+  "function_name": "RotationCalculation"
+}

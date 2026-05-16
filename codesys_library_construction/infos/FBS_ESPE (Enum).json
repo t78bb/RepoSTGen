@@ -1,0 +1,63 @@
+{
+  "library": "PLCopen Safety FBs",
+  "title": "FBS_ESPE (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/PLCopen Safety FBs/Current/PLCopenSafetyFBs/Enums/FBS_ESPE.html",
+  "page_title": "FBS_ESPE (ENUM)",
+  "text": "\nTYPE FBS_ESPE :\nDefinition of SF_ESPE function block states and its diagnostic values.\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "IDLE",
+          "Initial": "16#0",
+          "Comment": "The function block is not active (initial state)."
+        },
+        {
+          "Name": "INIT",
+          "Initial": "16#8001",
+          "Comment": "Activation is TRUE. The function block was enabled. Check if\nS_StartReset is required."
+        },
+        {
+          "Name": "OUT_ENABLED",
+          "Initial": "16#8000",
+          "Comment": "Activation is TRUE. S_ESPE_In = TRUE. Functional mode with\nS_ESPE_Out = TRUE."
+        },
+        {
+          "Name": "WAIT_FOR_IN_1",
+          "Initial": "16#8802",
+          "Comment": "Activation is TRUE. Check if Reset is FALSE and wait for\nS_ESPE_In = TRUE."
+        },
+        {
+          "Name": "WAIT_FOR_RESET_1",
+          "Initial": "16#8402",
+          "Comment": "Activation is TRUE. S_ESPE_In = TRUE. Wait for rising\ntrigger of Reset."
+        },
+        {
+          "Name": "WAIT_FOR_IN_2",
+          "Initial": "16#8804",
+          "Comment": "Activation is TRUE. Safety demand detected. Check if Reset\nis FALSE and wait for S_ESPE_In = TRUE."
+        },
+        {
+          "Name": "WAIT_FOR_RESET_2",
+          "Initial": "16#8404",
+          "Comment": "Activation is TRUE. S_ESPE_In = TRUE. Check for S_AutoReset\nor wait for rising trigger of Reset."
+        },
+        {
+          "Name": "ERR_RESET_1",
+          "Initial": "16#C001",
+          "Comment": "Reset is TRUE while waiting for S_ESPE_In = TRUE."
+        },
+        {
+          "Name": "ERR_RESET_2",
+          "Initial": "16#C011",
+          "Comment": "Reset is TRUE while waiting for S_ESPE_In = TRUE."
+        }
+      ]
+    }
+  ]
+}

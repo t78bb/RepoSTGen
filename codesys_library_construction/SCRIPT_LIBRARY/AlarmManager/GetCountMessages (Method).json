@@ -1,0 +1,23 @@
+{
+  "library": "AlarmManager",
+  "title": "GetCountMessages (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/pou-IAlarm3/GetCountMessages.html",
+  "page_title": "IAlarm3.GetCountMessages (METH)",
+  "text": "\nMETHOD GetCountMessages : USINT\nReturns the number of messages of the alarm\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetCountMessages",
+          "Type": "USINT"
+        }
+      ]
+    }
+  ]
+}

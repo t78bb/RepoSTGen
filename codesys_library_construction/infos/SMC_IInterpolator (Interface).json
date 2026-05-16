@@ -1,0 +1,8 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_IInterpolator (Interface)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/SoftMotion-Function-Blocks/Interpolator_Help_Functions/SMC_IInterpolator.html",
+  "page_title": "SMC_IInterpolator (ITF)",
+  "text": "\nINTERFACE SMC_IInterpolator\nCommon interface for\nSMC_Interpolator\nand\nSMC_Interpolator2Dir\nMethods:\nGetCurrentObject\nStructure:\nGetCurrentObject (Method)",
+  "tables": []
+}

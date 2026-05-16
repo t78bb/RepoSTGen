@@ -1,0 +1,23 @@
+{
+  "library": "AlarmManager",
+  "title": "AutoResetDigitalAlarms (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/pou-IAlarmClass2/AutoResetDigitalAlarms.html",
+  "page_title": "IAlarmClass2.AutoResetDigitalAlarms (METH)",
+  "text": "\nMETHOD AutoResetDigitalAlarms : BOOL\nIs the setting âReset digital alarms automaticallyâ set\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "AutoResetDigitalAlarms",
+          "Type": "BOOL"
+        }
+      ]
+    }
+  ]
+}

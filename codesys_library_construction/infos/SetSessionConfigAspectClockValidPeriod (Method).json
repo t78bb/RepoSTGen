@@ -1,0 +1,34 @@
+{
+  "library": "DNP3",
+  "title": "SetSessionConfigAspectClockValidPeriod (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Outstation/pou-OutstationConfiguration/SetSessionConfigAspectClockValidPeriod.html",
+  "page_title": "OutstationConfiguration.SetSessionConfigAspectClockValidPeriod (METH)",
+  "text": "\nMETHOD SetSessionConfigAspectClockValidPeriod :\nError\nSet optional channel configuration aspect - clock valid period.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetSessionConfigAspectClockValidPeriod",
+          "Type": "Error",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "clockValidPeriod",
+          "Type": "UDINT",
+          "Initial": "((30 * 60) * 1000)",
+          "Comment": "Specifies how long the local clock will remain valid after receiving\na time synchronization. (or after sdnpsesn_restartClockValidTime is called)"
+        }
+      ]
+    }
+  ]
+}

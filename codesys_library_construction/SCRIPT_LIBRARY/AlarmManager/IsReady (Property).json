@@ -1,0 +1,8 @@
+{
+  "library": "AlarmManager",
+  "title": "IsReady (Property)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/pou-IAlarmHandler8/IsReady.html",
+  "page_title": "IAlarmHandler8.IsReady (PROP)",
+  "text": "\nPROPERTY IsReady : BOOL\nReturns true if the alarm groups are initialized. It is recommended to check this flag before access of alarm API functionality.\nNote: To avoid problems due to e.g. Online Change this flag should be checked cyclically.",
+  "tables": []
+}

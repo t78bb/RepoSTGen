@@ -1,0 +1,6 @@
+{
+  "requirement": "This code should implement a FUNCTION_BLOCK named FB_AirConditioning with methods to control an air conditioning system. It should include methods named Activate, Deactivate, and SetTemperature. The Activate method sets the output variable bActive to TRUE, indicating the air conditioning is turned on, without altering the temperature. The Deactivate method sets bActive to FALSE, turning off the air conditioning. The SetTemperature method takes an input variable lrNewTemperature of type LREAL and sets the output variable lrTemperature to this value, effectively changing the air conditioning's temperature setting. The method should return a BOOL indicating success, which is not explicitly handled in the provided snippet.",
+  "provide_code": "FUNCTION_BLOCK PUBLIC FB_AirConditioning\nVAR_OUTPUT\n\tbActive\t\t\t: BOOL;\n\tlrTemperature\t: LREAL;\nEND_VAR",
+  "function_name": "FB_AirConditioning",
+  "requirement_cn": "这段代码应实现一个名为 FB_AirConditioning 的 FUNCTION_BLOCK，包含控制空调系统的方法。应包括 Activate、Deactivate 和 SetTemperature 三个方法。Activate 方法将输出变量 bActive 设置为 TRUE，表示空调已开启，不改变温度值。Deactivate 方法将 bActive 设置为 FALSE，关闭空调。SetTemperature 方法接受一个类型为 LREAL 的输入变量 lrNewTemperature，并将输出变量 lrTemperature 设置为此值，有效地改变空调的温度设置。该方法应返回一个表示成功的 BOOL 类型，但在提供的代码片段中未明确处理。"
+}

@@ -1,0 +1,23 @@
+{
+  "library": "DNP3",
+  "title": "ReadTime (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/pou-Master/Commands/ReadTime.html",
+  "page_title": "Master.ReadTime (METH)",
+  "text": "\nMETHOD ReadTime :\nError\nIssue an read time request\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "ReadTime",
+          "Type": "Error"
+        }
+      ]
+    }
+  ]
+}

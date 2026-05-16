@@ -1,0 +1,25 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "ResetAction (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_RMP_ReliableMessageProtocol/pou-RMPSendMessage/ResetAction.html",
+  "page_title": "RMPSendMessage.ResetAction (METH)",
+  "text": "\nMETHOD ResetAction\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Scope": "Output",
+          "Name": "xComplete",
+          "Type": "BOOL",
+          "Initial": "TRUE"
+        }
+      ]
+    }
+  ]
+}

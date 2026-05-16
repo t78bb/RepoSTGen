@@ -1,0 +1,27 @@
+{
+  "library": "BACnet",
+  "title": "SetBACnetClientCOVProperty (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/pou-IBACnetObjectBase/Utilities/SetBACnetClientCOVProperty.html",
+  "page_title": "IBACnetObjectBase.SetBACnetClientCOVProperty (METH)",
+  "text": "\nMETHOD SetBACnetClientCOVProperty\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "propID",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_ID"
+        },
+        [
+          "clientCOV",
+          "CmpBACnet.IEC_BACNET_CLIENT_COV"
+        ]
+      ]
+    }
+  ]
+}

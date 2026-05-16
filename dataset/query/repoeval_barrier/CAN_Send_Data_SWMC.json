@@ -1,0 +1,5 @@
+{
+  "requirement": "This code is intended to implement the transmission of CAN messages to specific channels based on the provided SWMC_ID, with configurable message identifiers and data payloads.",
+  "provide_code": "FUNCTION CAN_Send_Data_SWMC : BOOL\nVAR_INPUT\n\tSWMC_ID : UINT;\n\tid \t\t: UINT;\n\tdata\t: ARRAY[1..8] OF BYTE;\nEND_VAR",
+  "function_name": "CAN_Send_Data_SWMC"
+}

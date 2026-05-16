@@ -1,0 +1,43 @@
+{
+  "library": "SysFile",
+  "title": "SysFileGetPath (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SysFile/Current/SysFileGetPath.html",
+  "page_title": "SysFileGetPath (FUN)",
+  "text": "\nFUNCTION SysFileGetPath : RTS_IEC_RESULT\nGet the path of this file.\nIf a path is specified in the filename, the path will be extracted from the filename.\nIf no path is specified in the filename, the standard path for this file extension type will be returned.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SysFileGetPath",
+          "Type": "RTS_IEC_RESULT",
+          "Comment": "The runtime system error code (see CmpErrors.library)"
+        },
+        {
+          "Scope": "Input",
+          "Name": "szFileName",
+          "Type": "STRING",
+          "Comment": "File name. Can contain an absolute or relative path"
+        },
+        {
+          "Scope": "Inout",
+          "Name": "szPath",
+          "Type": "STRING",
+          "Comment": "Path for this file"
+        },
+        {
+          "Scope": "Input",
+          "Name": "diMaxLen",
+          "Type": "DINT",
+          "Comment": "Maximum size in bytes of path length"
+        }
+      ]
+    }
+  ]
+}

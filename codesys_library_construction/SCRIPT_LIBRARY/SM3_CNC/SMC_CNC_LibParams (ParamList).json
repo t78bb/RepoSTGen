@@ -1,0 +1,57 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_CNC_LibParams (ParamList)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SMC_CNC_LibParams.html",
+  "page_title": "SMC_CNC_LibParams (PARAMS)",
+  "text": "\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Constant",
+          "Name": "MAX_SUBPROGRAMS",
+          "Type": "UDINT",
+          "Initial": "512",
+          "Comment": "The maximum number of subprograms supported bySMC_ReadNCFile2.\nIncrease this value if you get the error SMC_PRS_TOO_MANY_SUBPROGRAMS."
+        },
+        [
+          "MAX_SUBPROGRAM_PARAMS",
+          "UDINT",
+          "21",
+          "The maximum number of CNC subprograms parameters and local variables\nsupported bySMC_ReadNCFile2andSMC_ReadNCFromStream.\nIncrease this value if you get the error\nSMC_PRS_TOO_MANY_SUBPROGRAM_PARAMETERS or\nSMC_PRS_TOO_MANY_LOCAL_VARIABLES."
+        ],
+        [
+          "MAX_SUBPROGRAM_NESTING_DEPTH",
+          "UDINT",
+          "14",
+          "The maximum nesting depth for CNC subprogram calls.\nIncrease this value if you get the error\nSMC_NAV_MAX_SUBPROGRAM_NESTING_EXCEEDED."
+        ],
+        [
+          "EVAL_STACK_SIZE",
+          "UDINT",
+          "100",
+          "The size of the evaluation stack for expressions in|SMC_NC_Interpreter|.\nIncrease this value if you get the error SMC_IPR_EVAL_STACK_OVERFLOW."
+        ],
+        [
+          "MAX_GWORDS_PER_SENTENCE",
+          "UDINT",
+          "128",
+          "The maximum number of G-Words supported for one sentence.\nIncrease this value if you get the error SMC_RNCF_BUFFER_TOO_SMALL."
+        ],
+        [
+          "SENTENCE_BUFFER_SIZE",
+          "UDINT",
+          "100",
+          "The size of the G-Code sentence jump buffer.\nIncrease this value if the performance of G-Code jumps (G20) is\npoor."
+        ]
+      ]
+    }
+  ]
+}

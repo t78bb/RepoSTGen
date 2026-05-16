@@ -1,0 +1,8 @@
+{
+  "library": "SM3_Basic",
+  "title": "MC_TRACK_REF (Alias)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/DataTypes/Additional/MC_TRACK_REF.html",
+  "page_title": "MC_TRACK_REF (ALIAS)",
+  "text": "\nTYPE MC_TRACK_REF : ARRAY [1..32] OF MC_TRACK_TR\nData structure containing 32 track-descriptions, e.g. the ON and OFF compensations per output/track.\nTo be evaluated by\nMC_DigitalCamSwitch\n. See\nMC_TRACK_TR\n.",
+  "tables": []
+}

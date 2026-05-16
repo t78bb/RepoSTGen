@@ -1,0 +1,8 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "ModuleType (Property)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_Module/pou-ModuleInfo/ModuleType.html",
+  "page_title": "ModuleInfo.ModuleType (PROP)",
+  "text": "\nPROPERTY FINAL ModuleType : STRING(255)\nThe qualified module type (this is the qualified name of the module description)",
+  "tables": []
+}

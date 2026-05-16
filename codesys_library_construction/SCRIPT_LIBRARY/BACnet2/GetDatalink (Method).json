@@ -1,0 +1,28 @@
+{
+  "library": "BACnet2",
+  "title": "GetDatalink (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/BACnetServer/pou-IBACnetServer/GetDatalink.html",
+  "page_title": "IBACnetServer.GetDatalink (METH)",
+  "text": "\nMETHOD GetDatalink : POINTER TO BACnetDatalink\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetDatalink",
+          "Type": "POINTER TOBACnetDatalink"
+        },
+        {
+          "Scope": "Input",
+          "Name": "index",
+          "Type": "WORD"
+        }
+      ]
+    }
+  ]
+}

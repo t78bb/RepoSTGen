@@ -1,0 +1,61 @@
+{
+  "library": "Standard64",
+  "title": "LCTUD (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/Standard64/Current/Counter/LCTUD.html",
+  "page_title": "LCTUD (FB)",
+  "text": "\nFUNCTION_BLOCK PUBLIC LCTUD\nIncrements and decrements a given value\n(* Example declaration *)\nLCTUDInst\n:\nLCUTD\n;\n(* Example in ST *)\nLCTUDInst\n(\nCU\n:=\nVarBOOL1\n,\nCD\n:=\nVarBOOL2\n,\nRESET\n:=\nVarBOOL3\n,\nLOAD\n:=\nVarBOOL4\n,\nPV\n:=\nVarLWORD1\n);\nVarBOOL5\n:=\nCTUDInst.QU\n;\nVarBOOL6\n:=\nCTUDInst.QD\n;\nVarLWORD2\n:=\nCTUDInst.CV\n;\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "CU",
+          "Type": "BOOL",
+          "Comment": "Rising edge: IncrementingCVby one"
+        },
+        [
+          "CD",
+          "BOOL",
+          "Rising edge: DecrementingCVby one"
+        ],
+        [
+          "RESET",
+          "BOOL",
+          "TRUE: ResetCVto 0"
+        ],
+        [
+          "LOAD",
+          "BOOL",
+          "TRUE: SetCVto the start valuePV"
+        ],
+        [
+          "PV",
+          "LWORD",
+          "Start value for decrementing / upper limit for incrementing"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "QU",
+          "Type": "BOOL",
+          "Comment": "TRUEifCV>=PV"
+        },
+        [
+          "QD",
+          "BOOL",
+          "TRUEifCV=0"
+        ],
+        [
+          "CV",
+          "LWORD",
+          "Current counter value"
+        ]
+      ]
+    }
+  ]
+}

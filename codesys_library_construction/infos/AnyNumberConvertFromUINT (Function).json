@@ -1,0 +1,33 @@
+{
+  "library": "DNP3",
+  "title": "AnyNumberConvertFromUINT (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Functions/AnyNumber/AnyNumberConvertFromUINT.html",
+  "page_title": "AnyNumberConvertFromUINT (FUN)",
+  "text": "\nFUNCTION AnyNumberConvertFromUINT :\nError\nConvert UINT to AnyNumber\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "AnyNumberConvertFromUINT",
+          "Type": "Error"
+        },
+        {
+          "Scope": "Input",
+          "Name": "in",
+          "Type": "UINT"
+        },
+        {
+          "Scope": "Output",
+          "Name": "out",
+          "Type": "AnyNumber"
+        }
+      ]
+    }
+  ]
+}

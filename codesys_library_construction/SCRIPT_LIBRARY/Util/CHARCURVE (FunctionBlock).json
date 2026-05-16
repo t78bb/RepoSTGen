@@ -1,0 +1,47 @@
+{
+  "library": "Util",
+  "title": "CHARCURVE (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/Function-Manipulators/CHARCURVE.html",
+  "page_title": "CHARCURVE (FB)",
+  "text": "\nFUNCTION_BLOCK CHARCURVE\nMaps an input signal onto a characteristic curve\nThe characteristic curve is given by an array of POINTs, which include a set of X-values\nwith their corresponding Y-values.\nExample in ST:\nVAR\nCHARACTERISTIC_LINE\n:\nCHARCURVE\n;\nKL\n:\nARRAY\n[0..10]\nOF\nPOINT\n:=\n[(X:=0,Y:=0),(X:=250,Y:=50),\n(X:=500,Y:=150),(X:=750,Y:=400), 7((X:=1000,Y:=1000))]\n;\nCOUNTER\n:\nINT\n;\nEND_VAR\nCOUNTER\n:=\nCOUNTER\n+10\n;\nsupply\nCHARCURVE\nwith\nfor\nexample\na\nconstantly\nincreasing\nvalue\nCHARACTERISTIC_LINE\n(\nIN\n:=\nCOUNTER\n,\nN\n:=\n5\n,\nP\n:=\nKL\n);\nIllustration of the resulting curve\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "IN",
+          "Type": "INT",
+          "Comment": "Input signal"
+        },
+        [
+          "N",
+          "BYTE",
+          "Number of points defining the characteristic curve : 2 <=N<= 11"
+        ],
+        {
+          "Scope": "Inout",
+          "Name": "P",
+          "Type": "ARRAY [0..10] OFPOINT",
+          "Comment": "Array of points to describe the characteristic curve"
+        },
+        {
+          "Scope": "Output",
+          "Name": "OUT",
+          "Type": "INT",
+          "Comment": "Output variable, contains the manipulated value"
+        },
+        [
+          "ERR",
+          "BYTE",
+          "0 : No error1 : Error inP: wrong sequence (completely tested, only ifINis equal to largest X-value ofP)2 :INoutside of limits ofP4 :Ninvalid, number of points not within the allowed range 2..11"
+        ]
+      ]
+    }
+  ]
+}

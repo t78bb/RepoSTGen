@@ -1,0 +1,29 @@
+{
+  "library": "Util",
+  "title": "Segment (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/TimerSwitch/Structs/Segment.html",
+  "page_title": "Segment (STRUCT)",
+  "text": "\nTYPE Segment : STRUCT\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Name": "sName",
+          "Type": "TZ_NAME"
+        },
+        {
+          "Name": "dtDate",
+          "Type": "DateTime"
+        },
+        {
+          "Name": "iBias",
+          "Type": "INT"
+        }
+      ]
+    }
+  ]
+}

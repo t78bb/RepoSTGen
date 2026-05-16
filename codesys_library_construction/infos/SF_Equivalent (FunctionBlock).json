@@ -1,0 +1,76 @@
+{
+  "library": "PLCopen Safety FBs",
+  "title": "SF_Equivalent (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/PLCopen Safety FBs/Current/PLCopenSafetyFBs/Function-Blocks/SF_Equivalent.html",
+  "page_title": "SF_Equivalent (FB)",
+  "text": "\nFUNCTION_BLOCK SF_Equivalent\nThis function block converts two equivalent SAFEBOOL inputs (both NO or NC) to one SAFEBOOL output, includ-ing discrepancy time monitoring.\nThis function block should not be used stand-alone since it has no restart interlock. It is required to connect the output to other safety related functionalities.\nFunction block according to PLCopen, Technical Committee 5: Safety Software (Technical Specification), Part 1: Concepts and Function Blocks, Version 2.01 (2020-2)\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "Activate",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "Activation of the FB."
+        },
+        [
+          "S_ChannelA",
+          "BOOL",
+          "FALSE",
+          "Input A for logical connection."
+        ],
+        [
+          "S_ChannelB",
+          "BOOL",
+          "FALSE",
+          "Input B for logical connection."
+        ],
+        [
+          "DiscrepancyTime",
+          "TIME",
+          "TIME#0ms",
+          "Maximum monitoring time for discrepancy status of both\ninputs."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Ready",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "Activation of the FB. TRUE indicates that the FB is\nactivated and the outputs results are valid, FALSE the FB is\nnot active and the program is not executed."
+        },
+        [
+          "S_EquivalentOut",
+          "BOOL",
+          "FALSE",
+          "Safety related output"
+        ],
+        [
+          "SafetyDemand",
+          "BOOL",
+          "FALSE",
+          "Output indicating that the FB is active and the primary\nsafety function is demanded (e.g. related to the safety\nfunctionality)."
+        ],
+        [
+          "Error",
+          "BOOL",
+          "FALSE",
+          "Error flag"
+        ],
+        [
+          "DiagCode",
+          "WORD",
+          "0",
+          "Diagnostic register"
+        ]
+      ]
+    }
+  ]
+}

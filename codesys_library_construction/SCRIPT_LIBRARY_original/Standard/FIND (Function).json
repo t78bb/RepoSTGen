@@ -1,0 +1,36 @@
+{
+  "library": "Standard",
+  "title": "FIND (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/Standard/Current/String-Functions/FIND.html",
+  "page_title": "FIND (FUN)",
+  "text": "Deutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nMenu\nSearch\nDeutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nBistable Function Blocks\nRS (FunctionBlock)\nSR (FunctionBlock)\nCounter\nCTD (FunctionBlock)\nCTU (FunctionBlock)\nCTUD (FunctionBlock)\nMiscellaneous\nRTC (FunctionBlock)\nString Functions\nCONCAT (Function)\nDELETE (Function)\nFIND (Function)\nINSERT (Function)\nLEFT (Function)\nLEN (Function)\nMID (Function)\nREPLACE (Function)\nRIGHT (Function)\nTimer\nTOF (FunctionBlock)\nTON (FunctionBlock)\nTP (FunctionBlock)\nTrigger\nF_TRIG (FunctionBlock)\nR_TRIG (FunctionBlock)\nFile and Project Information\nLibrary Reference\nStandard\nDocs\n»\nString\nFunctions\n»\nFIND (FUN)\nFIND (FUN)\nÂ¶\nFUNCTION FIND : INT\nSearches for the position of a partial string within a string.\nFIND(STR1,\nSTR2)\nmeans: Find the position of the first character where\nSTR2\nappears\nin\nSTR1\nfor the first time. If STR2 is not found in STR1, then OUT:=0.\n(* Example declaration *)\narINT1\n:\nINT\n;\n(* Example in ST , result is '4' *)\narINT1\n:=\nFIND\n(\n'abcdef'\n,\n'de'\n);\nInOut:\nScope\nName\nType\nComment\nReturn\nFIND\nINT\nCharacter position of the first occurance of\nSTR2\nin\nSTR1\n. If no occurance is found, result is 0\nInput\nSTR1\nSTRING(255)\nString within which\nSTR2\nis searched\nSTR2\nSTRING(255)\nString whose position is searched in\nSTR1\ntop\nCODESYS Group | We\nsoftware\nAutomation.\nto software\n['sɒftwɛər]\ntransitive verb\n__softwared/softwaring\n: to develop software\n// to software automation: to develop software for automation purposes\nThe CODESYS Group is the manufacturer of CODESYS, the leading hardware-independent\n                                    IEC 61131-3 automation software for developing and engineering controller\n                                    applications.\nCODESYS® is a registered trademark.\nCODESYS GmbH\nA member of the CODESYS Group\nMemminger Straße 151, 87439 Kempten\nGermany\nTel.:\n+49-831-54031-0\ninfo@codesys.com\nLegal Notice\nPrivacy Policy\nLinkedIn\nYoutube\nRSS\nDownloads\nLogin\nCODESYS Store\n© 2022 CODESYS GmbH\n| A member of the CODESYS Group",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "FIND",
+          "Type": "INT",
+          "Comment": "Character position of the first occurance ofSTR2inSTR1. If no occurance is found, result is 0"
+        },
+        {
+          "Scope": "Input",
+          "Name": "STR1",
+          "Type": "STRING(255)",
+          "Comment": "String within whichSTR2is searched"
+        },
+        [
+          "STR2",
+          "STRING(255)",
+          "String whose position is searched inSTR1"
+        ]
+      ]
+    }
+  ]
+}

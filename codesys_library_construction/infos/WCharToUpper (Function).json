@@ -1,0 +1,28 @@
+{
+  "library": "StringUtils",
+  "title": "WCharToUpper (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/StringUtils/Current/Public-Parts/Unicode/WCharToUpper.html",
+  "page_title": "WCharToUpper (FUN)",
+  "text": "\nFUNCTION WCharToUpper : WORD\nThis function converts a character of a wstring to uppercase.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "WCharToUpper",
+          "Type": "WORD"
+        },
+        {
+          "Scope": "Input",
+          "Name": "wdChar",
+          "Type": "WORD"
+        }
+      ]
+    }
+  ]
+}

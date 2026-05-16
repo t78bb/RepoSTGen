@@ -1,0 +1,23 @@
+{
+  "library": "AlarmManager",
+  "title": "GetName (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/pou-IAlarmGroup/GetName.html",
+  "page_title": "IAlarmGroup.GetName (METH)",
+  "text": "\nMETHOD GetName : STRING\nReturns the name of the alarm group (The name of the corresponding object in the\nobject tree)\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetName",
+          "Type": "STRING"
+        }
+      ]
+    }
+  ]
+}

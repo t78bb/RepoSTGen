@@ -1,0 +1,25 @@
+{
+  "library": "AC_DataLog",
+  "title": "ETableType (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_DataLog/Current/AC_DataLog/DataLogStorage/SQLiteStorage/ETableType.html",
+  "page_title": "ETableType (ENUM)",
+  "text": "\nTYPE ETableType :\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Name": "data_table",
+          "Initial": "0"
+        },
+        {
+          "Name": "hash_table",
+          "Initial": "1"
+        }
+      ]
+    }
+  ]
+}

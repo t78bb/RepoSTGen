@@ -1,0 +1,33 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_AddAxes_Modulo_ApplyPeriod (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/AxisGroup/Movements/SMC_AddAxes_Modulo_ApplyPeriod.html",
+  "page_title": "SMC_AddAxes_Modulo_ApplyPeriod (FUN)",
+  "text": "\nFUNCTION SMC_AddAxes_Modulo_ApplyPeriod\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "vDst",
+          "Type": "SMRB.AddAxesVec"
+        },
+        {
+          "Scope": "Inout Const",
+          "Name": "vSrc",
+          "Type": "SMRB.AddAxesVec"
+        },
+        {
+          "Scope": "Input",
+          "Name": "paInfos",
+          "Type": "POINTER TO SMRCP.AxisInfo"
+        }
+      ]
+    }
+  ]
+}

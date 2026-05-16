@@ -1,0 +1,33 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_POS_REF (Union)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/Basic-types/SMC_POS_REF.html",
+  "page_title": "SMC_POS_REF (UNION)",
+  "text": "\nTYPE SMC_POS_REF : UNION\nRepresents a position of the TCP.\nA position can be either defined in cartesian coordinates\n(X,Y,Z,A,B,C) or in axis coordinates (A0, â¦ A5).\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "a",
+          "Type": "TRAFO.AXISPOS_REF",
+          "Comment": "Axis coordinates"
+        },
+        {
+          "Name": "c",
+          "Type": "MC_COORD_REF",
+          "Comment": "Cartesian position"
+        },
+        {
+          "Name": "v",
+          "Type": "ARRAY\n[0..(SMRB.MAX_KIN_AXES -\n1)] OF LREAL",
+          "Comment": "Array of values, interpretation depends on coordinate system\nused"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "library": "ModbusFB",
+  "title": "Error (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/ModbusFB/Current/ModbusFB/Enums/Error.html",
+  "page_title": "Error (ENUM)",
+  "text": "\nTYPE Error :\nError type used in MODBUS function block library.\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "OK",
+          "Initial": "0",
+          "Comment": ""
+        },
+        {
+          "Name": "LicenseMissing",
+          "Initial": "1",
+          "Comment": "Valid MODBUS license is missing."
+        },
+        {
+          "Name": "InvalidDataModel",
+          "Initial": "2",
+          "Comment": "The âdata modelâ contains errors or inconsistencies."
+        },
+        {
+          "Name": "IllegalFunction",
+          "Initial": "3",
+          "Comment": "Undefined âfunction codeâ used to enable/disable supported\nâfunction codesâ."
+        },
+        {
+          "Name": "InvalidUnitId",
+          "Initial": "4",
+          "Comment": "Invalid Unit-Id / Slave address."
+        },
+        {
+          "Name": "NoMemory",
+          "Initial": "21",
+          "Comment": "Can not allocate memory."
+        },
+        {
+          "Name": "InternalError",
+          "Initial": "22",
+          "Comment": "Other internal error."
+        },
+        {
+          "Name": "RequestNotProcessed",
+          "Initial": "50",
+          "Comment": "Request not processed in time"
+        },
+        {
+          "Name": "RequestException",
+          "Initial": "51",
+          "Comment": "Request caused reply âexceptionâ."
+        },
+        {
+          "Name": "RequestParameterError",
+          "Initial": "52",
+          "Comment": "Invalid request parameter, for example âRead Coilsâ ->\nâQuantity of coilsâ = 0"
+        },
+        {
+          "Name": "RequestError",
+          "Initial": "53",
+          "Comment": "Internal request error"
+        },
+        {
+          "Name": "RequestCancelled",
+          "Initial": "54",
+          "Comment": "Request cancelled"
+        },
+        {
+          "Name": "ReplyError",
+          "Initial": "55",
+          "Comment": "Internal reply error"
+        },
+        {
+          "Name": "ReplyTimeout",
+          "Initial": "56",
+          "Comment": "No reply received in time"
+        },
+        {
+          "Name": "InvalidReply",
+          "Initial": "57",
+          "Comment": "Invalid / incomplete reply"
+        },
+        {
+          "Name": "TcpSocketError",
+          "Initial": "101",
+          "Comment": "Error on open/close/read/write TCP socket."
+        },
+        {
+          "Name": "TcpInvalidInterface",
+          "Initial": "102",
+          "Comment": "The application tried to use an unknown ETH interface."
+        },
+        {
+          "Name": "TcpConnectTimeout",
+          "Initial": "103",
+          "Comment": "TCP connect timeout."
+        },
+        {
+          "Name": "SerialInvalidComPort",
+          "Initial": "201",
+          "Comment": "The application tried to use an unknown SysCom port."
+        },
+        {
+          "Name": "SerialComPortUserInconsistentPortSetting",
+          "Initial": "202",
+          "Comment": "Multiple ServerSerial function blocks tried to share one\nSysCom port with inconsistent settings."
+        },
+        {
+          "Name": "SerialComPortUserClientExclusiveError",
+          "Initial": "203",
+          "Comment": "A ClientSerial function block is not allowed to share a\nSysCom port with any other user."
+        },
+        {
+          "Name": "SerialComPortError",
+          "Initial": "204",
+          "Comment": "Error on open/close/read/write SysCom port."
+        },
+        {
+          "Name": "SerialInternalError",
+          "Initial": "205",
+          "Comment": "Internal error working with SysCom port."
+        }
+      ]
+    }
+  ]
+}

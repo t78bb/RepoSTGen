@@ -1,0 +1,33 @@
+{
+  "library": "ModbusFB",
+  "title": "RequestDataMaskWriteRegister (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/ModbusFB/Current/ModbusFB/Structs/RequestDataMaskWriteRegister.html",
+  "page_title": "RequestDataMaskWriteRegister (STRUCT)",
+  "text": "\nTYPE RequestDataMaskWriteRegister : STRUCT\nRepresents a read request for MaskWriteRegister.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Name": "uiReferenceAddress",
+          "Type": "UINT",
+          "Initial": "0"
+        },
+        {
+          "Name": "uiAndMask",
+          "Type": "UINT",
+          "Initial": "0"
+        },
+        {
+          "Name": "uiOrMask",
+          "Type": "UINT",
+          "Initial": "0"
+        }
+      ]
+    }
+  ]
+}

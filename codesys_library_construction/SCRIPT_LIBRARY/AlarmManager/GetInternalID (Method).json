@@ -1,0 +1,23 @@
+{
+  "library": "AlarmManager",
+  "title": "GetInternalID (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/pou-IAlarmGroup/GetInternalID.html",
+  "page_title": "IAlarmGroup.GetInternalID (METH)",
+  "text": "\nMETHOD GetInternalID : UDINT\nReturns the only internally used numeric ID, that is used for access the alarm\ngroup. This ID will also be used as a reference in the alarm storage.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetInternalID",
+          "Type": "UDINT"
+        }
+      ]
+    }
+  ]
+}

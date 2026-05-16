@@ -1,0 +1,65 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_GetMaxSetAccDec (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/Diagnostics/SMC_GetMaxSetAccDec.html",
+  "page_title": "SMC_GetMaxSetAccDec (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_GetMaxSetAccDec\nThis function block may be employed to measure the maximum absolute value of acceleration\n(or deceleration) of an axis.  Measuring will be done if\nbEnable\nis\nTRUE\n, and will\nbe reset to 0, if\nbEnable\nis\nFALSE\n. With\ndwTimeStamp\nyou can provide\na call counter, which is latched output in\ndwTimeAtMax\nwith a new maximum value.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "bEnable",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "TRUE: Starts execution of function block."
+        },
+        [
+          "dwTimeStamp",
+          "DWORD",
+          "",
+          "Optional time stamp input; can be used to find out when the\nmaximum has occured."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bValid",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "TRUE: Parameter is available."
+        },
+        [
+          "bBusy",
+          "BOOL",
+          "",
+          "TRUE: Execution of the function block has not been\nfinished."
+        ],
+        [
+          "fMaxAcceleration",
+          "LREAL",
+          "0",
+          "Maximum acceleration in [u/sÂ²]"
+        ],
+        [
+          "dwTimeAtMax",
+          "DWORD",
+          "0",
+          "Maximum value ofdwTimeStamp"
+        ]
+      ]
+    }
+  ]
+}

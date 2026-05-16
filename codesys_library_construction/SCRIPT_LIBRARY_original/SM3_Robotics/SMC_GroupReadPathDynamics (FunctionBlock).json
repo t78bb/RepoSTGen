@@ -1,0 +1,95 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_GroupReadPathDynamics (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/Diagnostics/SMC_GroupReadPathDynamics.html",
+  "page_title": "SMC_GroupReadPathDynamics (FB)",
+  "text": "Library Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nGetVersion (Function)\nIsLibReleased (Function)\nSM3_Robotics\nBasic types\nIDENT_IN_GROUP_REF_SM3 (Alias)\nMC_CIRC_PATHCHOICE (Enum)\nMC_COORD_REF (Struct)\nMC_EXECUTION_MODE (Enum)\nMC_TRANSITION_MODE (Enum)\nSMC_AXIS_GROUP_COMPATIBILITY_OPTIONS (Struct)\nSMC_AXIS_GROUP_CONTINUE_DATA (FunctionBlock)\nSMC_AXIS_GROUP_STATE (Enum)\nSMC_CIRC_MODE (Enum)\nSMC_DYN_LIMITS (Alias)\nSMC_IDynamicCS (Interface)\nSMC_ORIENTATION_MODE (Enum)\nSMC_POS_REF (Union)\nSMC_PTP_MOVEMENT_TYPE (Enum)\nSMC_READ_TOOL_MODE (Enum)\nPOUs\nAdditional\nSMC_AxisDistanceAxes (Enum)\nSMC_AxisDistanceSubMode (Enum)\nSMC_AxisDistanceTransition (FunctionBlock)\nSMC_AxisDistanceTransitionParam (Function)\nSMC_CornerDistance (FunctionBlock)\nSMC_CornerDistanceTransitionParam (Function)\nSMC_StartVelocity (FunctionBlock)\nSMC_StartVelocityAxes (Enum)\nSMC_StartVelocityTransitionParam (Function)\nSMC_StartupAxisGroup (FunctionBlock)\nAdministrative/Configuration\nAxisGroup\nComputation\nCoordinate systems\nDynamics\nKinematics\nTrigger\nAxisGroup\nAXIS_GROUP_REF_SM3 (FunctionBlock)\nHelpers\nMovements\nDiagnostics\nMC_GroupReadActualAcceleration (FunctionBlock)\nMC_GroupReadActualPosition (FunctionBlock)\nMC_GroupReadActualVelocity (FunctionBlock)\nMC_GroupReadConfiguration (FunctionBlock)\nMC_GroupReadError (FunctionBlock)\nMC_GroupReadStatus (FunctionBlock)\nMC_ReadCoordinateTransform (FunctionBlock)\nMC_ReadKinTransform (FunctionBlock)\nSMC_GroupAddOffset (FunctionBlock)\nSMC_GroupAdditionalAxesTargetPositions (FunctionBlock)\nSMC_GroupConvertPosition (FunctionBlock)\nSMC_GroupGetContinuePosition (FunctionBlock)\nSMC_GroupGetContinueToolOffset (FunctionBlock)\nSMC_GroupReadPathAcceleration (FunctionBlock)\nSMC_GroupReadPathDynamics (FunctionBlock)\nSMC_GroupReadPathVelocity (FunctionBlock)\nSMC_GroupReadPlanningStatistics (FunctionBlock)\nSMC_GroupReadPositionInMovement (FunctionBlock)\nSMC_GroupReadRemainingTrajectoryDuration (FunctionBlock)\nSMC_GroupReadSetAcceleration (FunctionBlock)\nSMC_GroupReadSetJerk (FunctionBlock)\nSMC_GroupReadSetPosition (FunctionBlock)\nSMC_GroupReadSetVelocity (FunctionBlock)\nSMC_GroupTargetPosition (FunctionBlock)\nSMC_ReadKinTransformForAxis (FunctionBlock)\nMovement\nAdditionalAxes\nGroupInterrupt\nMC_GroupContinue (FunctionBlock)\nMC_GroupHalt (FunctionBlock)\nMC_GroupInterrupt (FunctionBlock)\nMC_GroupStop (FunctionBlock)\nMC_MoveCircularAbsolute (FunctionBlock)\nMC_MoveCircularRelative (FunctionBlock)\nMC_MoveDirectAbsolute (FunctionBlock)\nMC_MoveDirectRelative (FunctionBlock)\nMC_MoveLinearAbsolute (FunctionBlock)\nMC_MoveLinearRelative (FunctionBlock)\nSMC_GroupEnableResumeAfterError (FunctionBlock)\nSMC_GroupJog (FunctionBlock)\nSMC_GroupJog2 (FunctionBlock)\nSMC_GroupUpdateContinueData (FunctionBlock)\nSMC_GroupWait (FunctionBlock)\nSMC_MoveAdditionalAxes (FunctionBlock)\ninternal\nDivers\nKernel_CP\nFile and Project Information\nLibrary Reference\n3SLicense\nLibrary Identification\nLibrary Properties\nCmpApp\nLibrary Identification\nLibrary Properties\nCmpIecTask\nLibrary Identification\nLibrary Properties\nCmpLog\nLibrary Identification\nLibrary Properties\nFloatingPointUtils\nLibrary Identification\nLibrary Properties\nSM3_Basic\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nSM3_CPKernelDefaults\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nSM3_CommonPublic\nLibrary Identification\nLibrary Properties\nSM3_Dynamics\nLibrary Identification\nLibrary Properties\nSM3_Error\nLibrary Identification\nLibrary Properties\nSM3_RBase\nLibrary Identification\nLibrary Properties\nSM3_RCP\nLibrary Identification\nLibrary Properties\nSM3_RError\nLibrary Identification\nLibrary Properties\nSM3_Ramps\nLibrary Identification\nLibrary Properties\nSM3_Shared\nLibrary Identification\nLibrary Properties\nSM3_StringUtils\nLibrary Identification\nLibrary Properties\nSM3_TrajectoryGeneration\nLibrary Identification\nLibrary Properties\nSM3_Transformation\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysTarget\nLibrary Identification\nLibrary Properties\nSysTime\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nSM3_Robotics\nDocs\n»\nSM3_Robotics\n»\nPOUs\n»\nDiagnostics\n»\nSMC_GroupReadPathDynamics (FB)\nSMC_GroupReadPathDynamics (FB)\nÂ¶\nFUNCTION_BLOCK SMC_GroupReadPathDynamics\nThis function block returns the path velocity, acceleration,\nand jerk of an axis group.\nAny position or orientation lag (see\nPositionLag\nand\nOrientationLag\noutputs of\nMC_GroupReadStatus\n) is ignored.  The dynamics are evaluated\nas if the axis group was following the path exactly.\nThis is an administrative FB, no movement is generated.\nInOut:\nScope\nName\nType\nInitial\nComment\nInout\nAxisGroup\nAXIS_GROUP_REF_SM3\nReference to a group of axes\nInput\nEnable\nBOOL\nReturn the path dynamics of the axis group\nin the selected coordinate system while enabled.\nCoordSystem\nSMC_COORD_SYSTEM\nSMC_COORD_SYSTEM.MCS\nCoordinate system.  Note: for any static coordinate system,\nthe result will be the same.  For dynamic coordinate systems,\nthe returned dynamics are relative to this coordinate system\nand will depend on the movement of the PCS.\nThe coordinate system ACS is not allowed.\nSource\nMC_SOURCE\nMC_SOURCE.SAVE\nDetermines the source on which the path dynamics is based.\nFor MC_SOURCE.ACT, the actual value received from the drive\nin this bus task cycle is used.  For MC_SOURCE.SAVE, the\nvalue computed in the PLC in the previous cycle is used.\nFor MC_SORUCE.SET, the value computed in the PLC in this\ncycle is used.\nNote 1: if the set values of the axis group are used\n(\n|MC_SOURCE.SET|\n), then it is recommended\nto call\nSMC_GroupUpdate\nand to update any dynamic coordinate systems\nbefore this function block is called.  For example, if\nMC_TrackConveyorBelt\nis used, then the movement function block of\nthe belt-axis should be called before.\nNote 2: if the actual values of the axis group are used\n(\n|MC_SOURCE.ACT|\n), then the resulting jerk\nwill not be accurate, as we generally donât have accurate information\nabout the actual jerk of the axes.\nTimeOffset\nLREAL\nThe time offset in seconds when to evaluate the path dynamics.\nMust be in [0,\nfPlanningForecastDuration\n].\nfPlanningForecastDuration\ncan be configured using\nSMC_TuneCPKernel\n.\nFor time offsets > 0, the output will only be\nValid\nif\nthe\nSource\nis set to\n|MC_SOURCE.SET|\nthe\nTimeOffset\ndoes not exceed the\nCurrentPlanningForecast\nreported by\nMC_GroupReadStatus\n.\nWhile\nMC_GroupHalt\nor\nMC_GroupStop\nare active, valid path dynamics\ncan only be obtained for TimeOffset = 0.\nOutput\nValid\nBOOL\nTRUE\nif valid outputs are available\nBusy\nBOOL\nThe FB is not finished\nError\nBOOL\nSignals that an error has occurred within the function block\nErrorID\nSMC_ERROR\nError identification\nPathVelocity\nLREAL\nPath velocity of the group in the given coordinate system\nPathAcceleration\nLREAL\nPath acceleration of the group in the given coordinate\nsystem\nPathJerk\nLREAL\nPath jerk of the group in the given coordinate system",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "AxisGroup",
+          "Type": "AXIS_GROUP_REF_SM3",
+          "Initial": "",
+          "Comment": "Reference to a group of axes"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Enable",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Return the path dynamics of the axis group\nin the selected coordinate system while enabled."
+        },
+        [
+          "CoordSystem",
+          "SMC_COORD_SYSTEM",
+          "SMC_COORD_SYSTEM.MCS",
+          "Coordinate system.  Note: for any static coordinate system,\nthe result will be the same.  For dynamic coordinate systems,\nthe returned dynamics are relative to this coordinate system\nand will depend on the movement of the PCS.\nThe coordinate system ACS is not allowed."
+        ],
+        [
+          "Source",
+          "MC_SOURCE",
+          "MC_SOURCE.SAVE",
+          "Determines the source on which the path dynamics is based.\nFor MC_SOURCE.ACT, the actual value received from the drive\nin this bus task cycle is used.  For MC_SOURCE.SAVE, the\nvalue computed in the PLC in the previous cycle is used.\nFor MC_SORUCE.SET, the value computed in the PLC in this\ncycle is used.Note 1: if the set values of the axis group are used\n(|MC_SOURCE.SET|), then it is recommended\nto callSMC_GroupUpdateand to update any dynamic coordinate systems\nbefore this function block is called.  For example, ifMC_TrackConveyorBeltis used, then the movement function block of\nthe belt-axis should be called before.Note 2: if the actual values of the axis group are used\n(|MC_SOURCE.ACT|), then the resulting jerk\nwill not be accurate, as we generally donât have accurate information\nabout the actual jerk of the axes."
+        ],
+        [
+          "TimeOffset",
+          "LREAL",
+          "",
+          "The time offset in seconds when to evaluate the path dynamics.\nMust be in [0,fPlanningForecastDuration].fPlanningForecastDurationcan be configured usingSMC_TuneCPKernel.\nFor time offsets > 0, the output will only beValidiftheSourceis set to|MC_SOURCE.SET|theTimeOffsetdoes not exceed theCurrentPlanningForecastreported byMC_GroupReadStatus.WhileMC_GroupHaltorMC_GroupStopare active, valid path dynamics\ncan only be obtained for TimeOffset = 0."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Valid",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUEif valid outputs are available"
+        },
+        [
+          "Busy",
+          "BOOL",
+          "",
+          "The FB is not finished"
+        ],
+        [
+          "Error",
+          "BOOL",
+          "",
+          "Signals that an error has occurred within the function block"
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "",
+          "Error identification"
+        ],
+        [
+          "PathVelocity",
+          "LREAL",
+          "",
+          "Path velocity of the group in the given coordinate system"
+        ],
+        [
+          "PathAcceleration",
+          "LREAL",
+          "",
+          "Path acceleration of the group in the given coordinate\nsystem"
+        ],
+        [
+          "PathJerk",
+          "LREAL",
+          "",
+          "Path jerk of the group in the given coordinate system"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_Trafo_4AxisPalletizer (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_Trafo_POUs/SoftMotion-Transformations/Robot-Kinematiks/SMC_Trafo_4AxisPalletizer.html",
+  "page_title": "SMC_Trafo_4AxisPalletizer (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_Trafo_4AxisPalletizer\nInverse transformation for a 4-axis palletizer.\nAssumptions:\nAll a_i in the config are non-negative,\na_2\nand\na_3\nare not less than\ng_fSMC_CNC_EPS\nThe valid range for axis 0 (\ndQ0\n)\nis contained in\n]-180Â°,\n180Â°[\nThe valid range for axis 1 (\ndQ1\n)\nis contained in\n[-90Â°,\n90Â°]\nThe valid range for axis 2 (\ndQ2\n)\nis contained in\n]-180Â°,\n90Â°[\nThe valid range for axis 3 (\ndQ3\n)\nis not constrained and may be greater than\n360Â°\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "config",
+          "Type": "SMC_TrafoConfig_4AxisPalletizer",
+          "Initial": "",
+          "Comment": "The configuration settings of the palletizer"
+        },
+        {
+          "Scope": "Input",
+          "Name": "pi",
+          "Type": "SMC_PosInfo",
+          "Initial": "",
+          "Comment": "The current position and orientation\nin world coordinates:dX,dY,dZ, and C"
+        },
+        [
+          "bElbowLow",
+          "BOOL",
+          "FALSE",
+          "Whether axis 2 is in the range]-180Â°,-90Â°[(TRUE)or[-90Â°,90Â°](FALSE)"
+        ],
+        [
+          "bBackwards",
+          "BOOL",
+          "FALSE",
+          "Whether axis 0 is set so that the palletizer faces the target\n(FALSE) or that it faces the opposite direction (TRUE)"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "dQ0",
+          "Type": "LREAL",
+          "Initial": "",
+          "Comment": "The value of axis 0 in degrees"
+        },
+        [
+          "dQ1",
+          "LREAL",
+          "",
+          "The value of axis 1 in degrees"
+        ],
+        [
+          "dQ2",
+          "LREAL",
+          "",
+          "The value of axis 2 in degrees"
+        ],
+        [
+          "dQ3",
+          "LREAL",
+          "",
+          "The value of axis 3 in degrees"
+        ],
+        [
+          "bError",
+          "BOOL",
+          "",
+          "Whether an error occured during the computation"
+        ],
+        [
+          "result",
+          "SMC_TrafoResult_4AxisPalletizer",
+          "",
+          "The detailed result of the computation"
+        ]
+      ]
+    }
+  ]
+}

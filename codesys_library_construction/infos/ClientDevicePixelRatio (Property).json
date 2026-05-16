@@ -1,0 +1,8 @@
+{
+  "library": "Visu Utils",
+  "title": "ClientDevicePixelRatio (Property)",
+  "url": "https://content.helpme-codesys.com/en/libs/Visu Utils/Current/VisuUtils/VisuActionUtilities/Interfaces/pou-IVisualizationClient/ClientDevicePixelRatio.html",
+  "page_title": "IVisualizationClient.ClientDevicePixelRatio (PROP)",
+  "text": "\nPROPERTY ClientDevicePixelRatio : REAL\nReturns the device pixel ratio of the client",
+  "tables": []
+}

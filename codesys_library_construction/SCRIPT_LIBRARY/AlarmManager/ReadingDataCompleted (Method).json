@@ -1,0 +1,8 @@
+{
+  "library": "AlarmManager",
+  "title": "ReadingDataCompleted (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Alarm-storage-API/pou-IAlarmStorageReaderConsumer/ReadingDataCompleted.html",
+  "page_title": "IAlarmStorageReaderConsumer.ReadingDataCompleted (METH)",
+  "text": "\nMETHOD ReadingDataCompleted\nNotification, that reading the data (i.e. the values) has been completed",
+  "tables": []
+}

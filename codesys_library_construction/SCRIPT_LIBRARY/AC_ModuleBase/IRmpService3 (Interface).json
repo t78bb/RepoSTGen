@@ -1,0 +1,8 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "IRmpService3 (Interface)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_RMP_ReliableMessageProtocol/IRmpService3.html",
+  "page_title": "IRmpService3 (ITF)",
+  "text": "\nINTERFACE IRmpService3 EXTENDS\nIRmpService2\nInterface implemented by the RMP (Reliable Message Protocoll) service\nMethods:\nGetComFBForComAddress\nGetIsActionOngoing\n, inherited from\nIRmpService2\nSetIsActionOngoing\n, inherited from\nIRmpService2\nStructure:\nGetComFBForComAddress (Method)",
+  "tables": []
+}

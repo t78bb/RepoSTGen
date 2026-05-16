@@ -1,0 +1,88 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_TRAFO_GantryCutter3 (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_Trafo_POUs/SoftMotion-Transformations/Gantry-systems/SMC_TRAFO_GantryCutter3.html",
+  "page_title": "SMC_TRAFO_GantryCutter3 (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_TRAFO_GantryCutter3\nReverse transformation for three-dimensional gantry systems with\none rotation axis being controlled in such a way\nthat the knife will point along the path tangent.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "pi",
+          "Type": "SMC_PosInfo",
+          "Initial": "",
+          "Comment": "Target position vector (x,y), ouput of interpolator"
+        },
+        [
+          "v",
+          "SMC_VECTOR3D",
+          "",
+          "Vector of current path tangent, output of interpolator"
+        ],
+        [
+          "dOffsetX",
+          "LREAL",
+          "",
+          "Additional offset for x-axis"
+        ],
+        [
+          "dOffsetY",
+          "LREAL",
+          "",
+          "Additional offset for y-axis"
+        ],
+        [
+          "dOffsetZ",
+          "LREAL",
+          "",
+          "Additional offset for z-axis"
+        ],
+        [
+          "dOffsetR",
+          "LREAL",
+          "",
+          "Additional offset for rotational axis"
+        ],
+        [
+          "iDirectionR",
+          "INT",
+          "1",
+          "Direction of rotation"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "dx",
+          "Type": "LREAL",
+          "Initial": "0",
+          "Comment": "Resulting target position for x-axis"
+        },
+        [
+          "dy",
+          "LREAL",
+          "0",
+          "Resulting target position for y-axis"
+        ],
+        [
+          "dz",
+          "LREAL",
+          "0",
+          "Resulting target position for z-axis"
+        ],
+        [
+          "dr",
+          "LREAL",
+          "0",
+          "Rotation of resulting position in degrees"
+        ]
+      ]
+    }
+  ]
+}

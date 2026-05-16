@@ -1,0 +1,23 @@
+{
+  "library": "BACnetDefaultImpl",
+  "title": "PostUnregister (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnetDefaultImpl/Current/BACnetDefaultImpl/Function-Blocks/pou-ObjectPersistence/PostUnregister.html",
+  "page_title": "ObjectPersistence.PostUnregister (METH)",
+  "text": "\nMETHOD PostUnregister : UDINT\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "PostUnregister",
+          "Type": "UDINT"
+        }
+      ]
+    }
+  ]
+}

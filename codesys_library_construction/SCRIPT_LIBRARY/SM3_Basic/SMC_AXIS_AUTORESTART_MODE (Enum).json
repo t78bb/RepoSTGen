@@ -1,0 +1,29 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_AXIS_AUTORESTART_MODE (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/DataTypes/AdministrativeConfiguration/SMC_AXIS_AUTORESTART_MODE.html",
+  "page_title": "SMC_AXIS_AUTORESTART_MODE (ENUM)",
+  "text": "\nTYPE SMC_AXIS_AUTORESTART_MODE :\nThe autorestart mode for\nSMC_AxisChangeSettings\n.\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "NO_CHANGE",
+          "Comment": "Donât change the current value of bAutoRestart"
+        },
+        {
+          "Name": "ON",
+          "Comment": "Turn on automatic restart"
+        },
+        {
+          "Name": "OFF",
+          "Comment": "Turn off automatic restart"
+        }
+      ]
+    }
+  ]
+}

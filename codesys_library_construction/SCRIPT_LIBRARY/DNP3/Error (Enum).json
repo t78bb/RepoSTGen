@@ -1,0 +1,118 @@
+{
+  "library": "DNP3",
+  "title": "Error (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Enums/Error.html#",
+  "page_title": "Error (ENUM)",
+  "text": "\nTYPE Error :\nError type used in DNP3 application library.\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "OK",
+          "Initial": "0",
+          "Comment": ""
+        },
+        {
+          "Name": "CmpDNP3_InternalError",
+          "Initial": "1",
+          "Comment": "Unexpected error raised from CmpDNP3."
+        },
+        {
+          "Name": "CmpDNP3_ComError",
+          "Initial": "2",
+          "Comment": "Error using COM interface"
+        },
+        {
+          "Name": "CmpDNP3_SocketError",
+          "Initial": "3",
+          "Comment": "Error using TCP socket"
+        },
+        {
+          "Name": "LicenseMissing",
+          "Initial": "4",
+          "Comment": "Valid license is missing."
+        },
+        {
+          "Name": "PointInvalidConfiguration",
+          "Initial": "5",
+          "Comment": "Invalid point configuration."
+        },
+        {
+          "Name": "InvalidConfiguration",
+          "Initial": "6",
+          "Comment": "Invalid configuration."
+        },
+        {
+          "Name": "AmbiguousAddress",
+          "Initial": "7",
+          "Comment": "Ambiguous Master / Outstation address."
+        },
+        {
+          "Name": "NoSession",
+          "Initial": "9",
+          "Comment": "Master / Outstation doesnât have opened a session."
+        },
+        {
+          "Name": "AnyNumberError",
+          "Initial": "8",
+          "Comment": "Error working with AnyNumber."
+        },
+        {
+          "Name": "OperationNotImplemented",
+          "Initial": "10",
+          "Comment": "Operation not implemented (yet)."
+        },
+        {
+          "Name": "NoMemory",
+          "Initial": "11",
+          "Comment": "No more memory."
+        },
+        {
+          "Name": "InvalidFreezeSchedule",
+          "Initial": "12",
+          "Comment": "Invalid freeze schedule, for example freezeTime < now"
+        },
+        {
+          "Name": "OperationNotPermitted",
+          "Initial": "13",
+          "Comment": "Operation not permitted."
+        },
+        {
+          "Name": "PointNotExistent",
+          "Initial": "14",
+          "Comment": "Point with given point number doesnt exist."
+        },
+        {
+          "Name": "PointObserverAmbiguous",
+          "Initial": "15",
+          "Comment": "Point observer with given tupel point type / number is\nregistered already."
+        },
+        {
+          "Name": "PointObserverUnknown",
+          "Initial": "16",
+          "Comment": "Point observer with given tupel point type / number is not\nregistered."
+        },
+        {
+          "Name": "MasterDatabaseNotInitialized",
+          "Initial": "17",
+          "Comment": "Master database not initialized"
+        },
+        {
+          "Name": "MasterDisabled",
+          "Initial": "18",
+          "Comment": "Master is disabled"
+        },
+        {
+          "Name": "InternalError",
+          "Initial": "42",
+          "Comment": "Other internal error."
+        }
+      ]
+    }
+  ]
+}

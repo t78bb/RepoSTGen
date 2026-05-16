@@ -1,0 +1,8 @@
+{
+  "library": "ModbusFB",
+  "title": "LogDataModel (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/ModbusFB/Current/ModbusFB/Function-Blocks/Server/pou-Server/DataModel/LogDataModel.html",
+  "page_title": "Server.LogDataModel (METH)",
+  "text": "\nMETHOD PUBLIC LogDataModel\nWrite âdata modelâ to logger.",
+  "tables": []
+}

@@ -1,0 +1,25 @@
+{
+  "library": "SM3_Error",
+  "title": "SMC_LANGUAGE_TYPE (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Error/Current/SM3_Error/SMC_LANGUAGE_TYPE.html",
+  "page_title": "SMC_LANGUAGE_TYPE (ENUM)",
+  "text": "\nTYPE SMC_LANGUAGE_TYPE :\nThis\nENUM\nis used at the function\nSMC_ErrorString\nto determine the language.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "english",
+          "Comment": "English"
+        },
+        {
+          "Name": "deutsch",
+          "Comment": "German"
+        }
+      ]
+    }
+  ]
+}

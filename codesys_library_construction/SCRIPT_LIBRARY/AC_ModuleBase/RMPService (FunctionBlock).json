@@ -1,0 +1,51 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "RMPService (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_RMP_ReliableMessageProtocol/RMPService.html",
+  "page_title": "RMPService (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL RMPService IMPLEMENTS\nIRmpService3\nThis function block is unique in an application and gets automatically created and initialized\nduring the generation of the composer for every applicrt of the RMP (Reliable Message Protocoll)\ncommunication.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "uiLocalAppID",
+          "Type": "UINT",
+          "Initial": "",
+          "Comment": "Local app ID"
+        },
+        [
+          "uiNumberOfConnections",
+          "UINT",
+          "",
+          "Number of connections to other apps"
+        ],
+        [
+          "pSendConnection",
+          "POINTER TORMPConnection",
+          "",
+          "Pointer to array of RMPServiceconncetions representing sending connections created\nby the composer during generation"
+        ],
+        [
+          "pReceiveConnection",
+          "POINTER TORMPConnection",
+          "",
+          "Pointer to array of RMPServiceconncetions representing receiving connections created\nby the composer during generation"
+        ],
+        [
+          "pRMPComFB",
+          "POINTER TOIRMPFBCommunication",
+          "0",
+          "Pointer to array of IRMPFBCommunication representing FBs used for communiction\n(0 if no communication FBs are used)"
+        ]
+      ]
+    }
+  ]
+}

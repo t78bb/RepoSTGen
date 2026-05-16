@@ -1,0 +1,37 @@
+{
+  "library": "SysFile",
+  "title": "SYS_FILE_STATUS (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SysFile/Current/SYS_FILE_STATUS.html",
+  "page_title": "SYS_FILE_STATUS (ENUM)",
+  "text": "Deutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nMenu\nSearch\nDeutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nACCESS_MODE (Enum)\nSYS_FILETIME (Struct)\nSYS_FILE_STATUS (Enum)\nSysFileClose (Function)\nSysFileCopy (Function)\nSysFileDelete (Function)\nSysFileDeleteByHandle (Function)\nSysFileEOF (Function)\nSysFileFlush (Function)\nSysFileGetName (Function)\nSysFileGetName2 (Function)\nSysFileGetPath (Function)\nSysFileGetPos (Function)\nSysFileGetSize (Function)\nSysFileGetSizeByHandle (Function)\nSysFileGetStatus (Function)\nSysFileGetStatus2 (Function)\nSysFileGetTime (Function)\nSysFileOpen (Function)\nSysFileRead (Function)\nSysFileRename (Function)\nSysFileSetPos (Function)\nSysFileTruncate (Function)\nSysFileWrite (Function)\nFile and Project Information\nLibrary Reference\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nSysFile\nDocs\n»\nSYS_FILE_STATUS (ENUM)\nSYS_FILE_STATUS (ENUM)\nÂ¶\nTYPE SYS_FILE_STATUS :\nFile status\nActual file status of the specified file.\nInOut:\nName\nComment\nFS_OK\nFile could be opened\nFS_NO_FILE\nNo file available\nFS_ILLEGAL_POS\nIllegal position in the file\nFS_FULL\nNo more space on the filesystem\nFS_EOF\nEnd of file reached\ntop\nCODESYS Group | We\nsoftware\nAutomation.\nto software\n['sɒftwɛər]\ntransitive verb\n__softwared/softwaring\n: to develop software\n// to software automation: to develop software for automation purposes\nThe CODESYS Group is the manufacturer of CODESYS, the leading hardware-independent\n                                    IEC 61131-3 automation software for developing and engineering controller\n                                    applications.\nCODESYS® is a registered trademark.\nCODESYS GmbH\nA member of the CODESYS Group\nMemminger Straße 151, 87439 Kempten\nGermany\nTel.:\n+49-831-54031-0\ninfo@codesys.com\nLegal Notice\nPrivacy Policy\nLinkedIn\nYoutube\nRSS\nDownloads\nLogin\nCODESYS Store\n© 2022 CODESYS GmbH\n| A member of the CODESYS Group",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "FS_OK",
+          "Comment": "File could be opened"
+        },
+        {
+          "Name": "FS_NO_FILE",
+          "Comment": "No file available"
+        },
+        {
+          "Name": "FS_ILLEGAL_POS",
+          "Comment": "Illegal position in the file"
+        },
+        {
+          "Name": "FS_FULL",
+          "Comment": "No more space on the filesystem"
+        },
+        {
+          "Name": "FS_EOF",
+          "Comment": "End of file reached"
+        }
+      ]
+    }
+  ]
+}

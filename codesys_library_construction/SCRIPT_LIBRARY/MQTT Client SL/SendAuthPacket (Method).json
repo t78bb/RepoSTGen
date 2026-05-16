@@ -1,0 +1,48 @@
+{
+  "library": "MQTT Client SL",
+  "title": "SendAuthPacket (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/MQTT Client SL/Current/MQTT-Client/Common/Function-Blocks/pou-MQTTClient/SendAuthPacket.html",
+  "page_title": "MQTTClient.SendAuthPacket (METH)",
+  "text": "\nMETHOD SendAuthPacket : BOOL\nMethod to send AUTH packets to the server (MQTT V5 only).\nThis method can be called to send an AUTH response to the server if a AUTH packet has been received.\nsee MQTTClient.mQTTConnackProperties.xAuthPacketReceived\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SendAuthPacket",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "xSendAuthPacket",
+          "Type": "BOOL",
+          "Comment": "A rising egde will send the AUTH packet"
+        },
+        [
+          "eReasonCode",
+          "MQTT_REASON_CODE",
+          "The reason code to send."
+        ],
+        {
+          "Scope": "Inout",
+          "Name": "mQTTAuthProperties",
+          "Type": "MQTTAuthProperties",
+          "Comment": "AUTH properties"
+        },
+        {
+          "Scope": "Output",
+          "Name": "eError",
+          "Type": "MQTT_ERROR",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

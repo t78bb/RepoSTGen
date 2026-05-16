@@ -1,0 +1,81 @@
+{
+  "library": "MQTT Client SL",
+  "title": "MQTTParam (ParamList)",
+  "url": "https://content.helpme-codesys.com/en/libs/MQTT Client SL/Current/MQTT-Client/Common/Params/MQTTParam.html",
+  "page_title": "MQTTParam (PARAMS)",
+  "text": "MQTT Client\nCommon\nEnums\nCOMMUNICATION_MODE (Enum)\nFILTER_MODE (Enum)\nMQTT_ERROR (Enum)\nMQTT_QOS (Enum)\nMQTT_VERSION (Enum)\nV5\nFunction Blocks\nMQTTClient (FunctionBlock)\nMQTTPublish (FunctionBlock)\nMQTTSubscribe (FunctionBlock)\nParams\nMQTTParam (ParamList)\nStructs\nMQTTV5\nUTF-8\nConvertUTF16toUTF8 (Function)\nConvertUTF8toUTF16 (Function)\nFile and Project Information\nLibrary Reference\n3SLicense\nLibrary Identification\nLibrary Properties\nCAA FB Factory\nLibrary Identification\nLibrary Properties\nCAA Types Extern\nLibrary Identification\nLibrary Properties\nCmpCrypto\nLibrary Identification\nLibrary Properties\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nCmpLog\nLibrary Identification\nLibrary Properties\nCmpSchedule\nLibrary Identification\nLibrary Properties\nCmpX509Cert\nLibrary Identification\nLibrary Properties\nCommon Behaviour Model\nLibrary Identification\nLibrary Properties\nComponent Manager\nLibrary Identification\nLibrary Properties\nElement Collections\nLibrary Identification\nLibrary Properties\nMemoryUtils\nLibrary Identification\nLibrary Properties\nNet Base Services\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nStringUtils\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysSocket2\nLibrary Identification\nLibrary Properties\nSysSocket2 Implementation\nLibrary Identification\nLibrary Properties\nSysTime\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nWeb Socket Client SL\nLibrary Identification\nLibrary Properties\nMQTT Client SL\nDocs\n»\nMQTT\nClient\n»\nCommon\n»\nParams\n»\nMQTTParam (PARAMS)\nMQTTParam (PARAMS)\nÂ¶\nAttributes:\nqualified_only\nInOut:\nScope\nName\nType\nInitial\nComment\nConstant\ng_uiMaxTopicLevel\nUINT\n10\nThe maximal count of levels per topic\ng_udiMaxQueuedPackets\nUDINT\n1000\nThe maximal count of queued packets that are possible to\nstore\ng_udiMaxPacketSize\nUDINT\n6000\nMaximum size of a MQTT packet byte array, MUST be smaller\nthan 256 MB !\ng_udiMaxReceiveBufferSize\nUDINT\ng_udiMaxPacketSize\nMaximum size of the receive buffer. This value should be\nlarge enough to store the packets to be received per one\ncycle.\ng_udiMaxPayloadSize\nUDINT\n4096\nMaximum size of a MQTT payload byte array, MUST be < than\nmax. Packet Size !\ng_udiMaxPublishersAndSubscribers\nUDINT\n20\nMaximum number of publishers + subscribers\ng_udiMaxUserProperties\nUDINT\n10\nMaximum number of user properties per packet (MQTT V5 only)\ng_udiMaxUserPropertyValueLength\nUDINT\n80\nMaximum length of the user property key and value (MQTT V5\nonly, Range: 1 - 1024))\ng_udiMaxCorrelationDataSize\nUDINT\n256\nMaximum size of the correlation data (MQTT V5 only)\ng_udiMaxAuthDataSize\nUDINT\n256\nMaximum size of the authentication data (MQTT V5 only)",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Constant",
+          "Name": "g_uiMaxTopicLevel",
+          "Type": "UINT",
+          "Initial": "10",
+          "Comment": "The maximal count of levels per topic"
+        },
+        [
+          "g_udiMaxQueuedPackets",
+          "UDINT",
+          "1000",
+          "The maximal count of queued packets that are possible to\nstore"
+        ],
+        [
+          "g_udiMaxPacketSize",
+          "UDINT",
+          "6000",
+          "Maximum size of a MQTT packet byte array, MUST be smaller\nthan 256 MB !"
+        ],
+        [
+          "g_udiMaxReceiveBufferSize",
+          "UDINT",
+          "g_udiMaxPacketSize",
+          "Maximum size of the receive buffer. This value should be\nlarge enough to store the packets to be received per one\ncycle."
+        ],
+        [
+          "g_udiMaxPayloadSize",
+          "UDINT",
+          "4096",
+          "Maximum size of a MQTT payload byte array, MUST be < than\nmax. Packet Size !"
+        ],
+        [
+          "g_udiMaxPublishersAndSubscribers",
+          "UDINT",
+          "20",
+          "Maximum number of publishers + subscribers"
+        ],
+        [
+          "g_udiMaxUserProperties",
+          "UDINT",
+          "10",
+          "Maximum number of user properties per packet (MQTT V5 only)"
+        ],
+        [
+          "g_udiMaxUserPropertyValueLength",
+          "UDINT",
+          "80",
+          "Maximum length of the user property key and value (MQTT V5\nonly, Range: 1 - 1024))"
+        ],
+        [
+          "g_udiMaxCorrelationDataSize",
+          "UDINT",
+          "256",
+          "Maximum size of the correlation data (MQTT V5 only)"
+        ],
+        [
+          "g_udiMaxAuthDataSize",
+          "UDINT",
+          "256",
+          "Maximum size of the authentication data (MQTT V5 only)"
+        ]
+      ]
+    }
+  ]
+}

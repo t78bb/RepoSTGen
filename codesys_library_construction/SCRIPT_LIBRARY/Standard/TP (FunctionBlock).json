@@ -1,0 +1,41 @@
+{
+  "library": "Standard",
+  "title": "TP (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/Standard/Current/Timer/TP.html",
+  "page_title": "TP (FB)",
+  "text": "\nFUNCTION_BLOCK TP\nImplements a pulse timer\n(* Example declaration *)\nTPInst\n:\nTP\n;\n(* Example in ST *)\nTPInst\n(\nIN\n:=\nVarBOOL1\n,\nPT\n:=\nT#5s\n);\nVarBOOL2\n:=\nTPInst.Q\n;\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "IN",
+          "Type": "BOOL",
+          "Comment": "Rising edge starts the pulse timer and setsQtoTRUE"
+        },
+        [
+          "PT",
+          "TIME",
+          "Length of the pulse (high-signal)"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Q",
+          "Type": "BOOL",
+          "Comment": "Pulse signal, set toTRUEforPTmilliseconds ifENhas a rising edge"
+        },
+        [
+          "ET",
+          "TIME",
+          "Elapsed time since pulse timer started. It will then remain\nconstant afterPTis reached."
+        ]
+      ]
+    }
+  ]
+}

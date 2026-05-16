@@ -1,0 +1,65 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_WriteCAM (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/CAM/SMC_WriteCAM.html",
+  "page_title": "SMC_WriteCAM (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_WriteCAM\nThis function block is designed for storing a cam table created within the Cam editor into a file at runtime.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "CAM",
+          "Type": "MC_CAM_REF",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "bExecute",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "Rising edge: Starts the execution of the function block."
+        },
+        [
+          "sFileName",
+          "STRING(255)",
+          "",
+          "Name of the file, which contains the cam description in the\ndefined ASCII format."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bDone",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "TRUE: Cam has been written."
+        },
+        [
+          "bBusy",
+          "BOOL",
+          "FALSE",
+          "TRUEExecution of function block has not been finished."
+        ],
+        [
+          "bError",
+          "BOOL",
+          "FALSE",
+          "TRUE: Error has occurred within the function block."
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "0",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

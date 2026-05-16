@@ -1,0 +1,58 @@
+{
+  "library": "CommFB",
+  "title": "ID (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/CommFB/Current/CommFB/DP-Address/ID.html#",
+  "page_title": "ID (FUN)",
+  "text": "\nFUNCTION ID : DWORD\nThis function converts the physical identification of a slot or a DP-slave to a handle which can be used with Communication Function Blocks.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "ID",
+          "Type": "DWORD",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "EN",
+          "Type": "BOOL",
+          "Initial": "TRUE",
+          "Comment": ""
+        },
+        [
+          "MASTER",
+          "BYTE",
+          "",
+          "ID of the DP system"
+        ],
+        [
+          "SEGMENT",
+          "BYTE",
+          "",
+          "Number of the DP segment"
+        ],
+        [
+          "STATION",
+          "BYTE",
+          "",
+          "Number of the DP-slave(station address)"
+        ],
+        [
+          "SLOT",
+          "BYTE",
+          "",
+          "Slot number"
+        ]
+      ]
+    }
+  ]
+}

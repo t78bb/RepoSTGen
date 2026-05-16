@@ -1,0 +1,125 @@
+{
+  "library": "SM3_Basic",
+  "title": "MC_GearInPos (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/Movement/MasterSlave/MC_GearInPos.html",
+  "page_title": "MC_GearInPos (FB)",
+  "text": "\nFUNCTION_BLOCK MC_GearInPos\nMC_GearInPos\ncouples the slave axis to the master axis taking into\naccount a specific positional relationship.\nImportant\nIn certain cases, it may be impossible to avoid a reversal of the slave.\n(Even if the slave velocity is not opposite to the master.)\nOne example is a slave with a small positive velocity and a large\nnegative acceleration. It may not be possible to ramp down the\nacceleration fast enough to prevent the velocity from becoming negative.\nNote\nMC_GearInPos\nshould be called after the motion FB controlling\nthe\nMaster\naxis has been called.  Otherwise, the\nSlave\naxis\nwill lag behind the\nMaster\naxis.\nTiming diagram\nWith\nBufferMode\nAborting, any previous motion is continued until the\nmaster crosses the position\nMasterSyncPosition\nâ\nMasterStartDistance\nin the correct direction.\nAt that point in time the output\nStartSync\nis set. When a stop\ncommand is executed on the slave axis before the synchronization\nhas happened, it will inhibit the synchronization and the function block\nissues\nCommandAborted\n=\nTRUE\n.\nIf the\nMasterStartDistance\nis not specified (indicated by a non-positive\nvalue), the function block calculates the setting start distancepoint so\nthat synchronization starts at the current master position.\nWith\nBufferMode\nBuffered or BlendingPrevious, the input\nMasterStartDistance\ncannot be provided (i.e. must be set to 0).\nThe reason for this is that as soon as the previous movement finished,\nMC_GearInPos must take over the axis and continue the movement, it cannot\nwait until the master sync position has been reached.\n(If the master is in standstill when the previous movement is finished,\nthen an error\nSMC_GIP_CANNOT_START_SYNC\nis reported.)\nTiming Diagram of\nMC_GearInPos\nÂ¶\nDifferent examples of gearing\nÂ¶\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Master",
+          "Type": "AXIS_REF_SM3",
+          "Initial": "",
+          "Comment": "Reference to master axis"
+        },
+        [
+          "Slave",
+          "AXIS_REF_SM3",
+          "",
+          "Reference to slave axis"
+        ],
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Rising edge: Starts the execution of the function block."
+        },
+        [
+          "RatioNumerator",
+          "DINT",
+          "1",
+          "Gear ratio numerator"
+        ],
+        [
+          "RatioDenominator",
+          "DINT",
+          "1",
+          "Gear ratio denominator"
+        ],
+        [
+          "MasterSyncPosition",
+          "LREAL",
+          "",
+          "Master position where the axes run in sync."
+        ],
+        [
+          "SlaveSyncPosition",
+          "LREAL",
+          "",
+          "Slave position where the axes run in sync."
+        ],
+        [
+          "MasterStartDistance",
+          "LREAL",
+          "",
+          "Master distance for the gear in procedure (where the slave axis will\nbe started for getting into synchronization).\nIn other words, the slave is brought into sync with the master during\nthis distance, i.e. fromMasterSyncPosition-MasterStartDistanceuntilMasterSyncPosition.IfMasterStartDistanceis 0 (or negative), then the slave movement\nis started immediately, provided that the master is not in standstill.\nIf BufferMode <> Aborting, then the MasterStartDistance must be 0\n(or negative)."
+        ],
+        [
+          "BufferMode",
+          "MC_BUFFER_MODE",
+          "",
+          "Defines the chronological sequence of the FB relative to the previous block.\nOnly the BufferModesAborting,BufferedandBlendingPreviousare\nsupported.BlendingPreviousmeans that the configured velocity (including the direction)\nof the previous movement is used as the blending velocity, even if this movement\nhas the opposite direction.\nIf the function block is Busy, then only BufferMode=Aborting\nis allowed."
+        ],
+        [
+          "AvoidReversal",
+          "BOOL",
+          "",
+          "FALSE: Signals that the reversal of the slave is physically possible\nand acceptable.TRUE: Signals that a reversal of the modulo slave has to be avoided,\ne.g. because it is physically impossible or might lead to damage.It works only with modulo slave axes.If a reversal cannot be avoided, the axis is stopped with an error.Behavior:If the slave axis is a modulo axis and the master\nvelocity (times the sign of the gear ratio) is not oppositeto theslavevelocity, thenMC_GearInPostries to avoid\na reversal of the slave.It tries to âstretchâ the slave movement by increasing the distance\nthe slave travels by up to 5 slave periods.If this âstretchingâ is not successful, an error is reported.If the slave velocity is opposite to the master velocity\ntimes the sign of the gear ratio,an error is reported.If the slave axis is not a modulo axis, an error is reported on the\nrising edge of the Execute input."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "StartSync",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUE: Commanded gearing has been started."
+        },
+        [
+          "InSync",
+          "BOOL",
+          "",
+          "TRUE: Cmmanded gearing has been completed."
+        ],
+        [
+          "Busy",
+          "BOOL",
+          "",
+          "TRUE: Execution of the function block has not been\nfinished."
+        ],
+        [
+          "Active",
+          "BOOL",
+          "",
+          "Indicates that the FB has control on the axis"
+        ],
+        [
+          "CommandAborted",
+          "BOOL",
+          "FALSE",
+          "TRUE: Execution has been interrupted by another function block\ninstance operating on the axis."
+        ],
+        [
+          "Error",
+          "BOOL",
+          "",
+          "TRUE: Error has occurred within the function block."
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

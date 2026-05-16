@@ -1,0 +1,43 @@
+{
+  "library": "AC_Alarming",
+  "title": "GlobalTextList (GlobalTextList)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_Alarming/Current/GlobalTextList.html",
+  "page_title": "GlobalTextList (Text List)",
+  "text": "\nID\nDefault\nen\nde\n1\nACK\nall\nvisible\nACK all visible\nAlle sichtbaren Alarme bestÃ¤tigen\n0\nACK\nselected\nACK selected\nSelektierte Alarme bestÃ¤tigen\n3\nFreeze\nScrl\nPos\nFreeze Scrl Pos\nScrl Position einfrieren\n2\nHistory\nHistory\nHistorie",
+  "tables": [
+    {
+      "headers": [
+        "ID",
+        "Default",
+        "en",
+        "de"
+      ],
+      "rows": [
+        {
+          "ID": "1",
+          "Default": "ACKallvisible",
+          "en": "ACK all visible",
+          "de": "Alle sichtbaren Alarme bestÃ¤tigen"
+        },
+        {
+          "ID": "0",
+          "Default": "ACKselected",
+          "en": "ACK selected",
+          "de": "Selektierte Alarme bestÃ¤tigen"
+        },
+        {
+          "ID": "3",
+          "Default": "FreezeScrlPos",
+          "en": "Freeze Scrl Pos",
+          "de": "Scrl Position einfrieren"
+        },
+        {
+          "ID": "2",
+          "Default": "History",
+          "en": "History",
+          "de": "Historie"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "library": "String Builder Base",
+  "title": "GetRangeSize (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Builder Base/Current/BuilderBase/Internals/pou-_RangePool/Protected/GetRangeSize.html",
+  "page_title": "_RangePool.GetRangeSize (METH)",
+  "text": "\nMETHOD PROTECTED GetRangeSize : UDINT\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetRangeSize",
+          "Type": "UDINT"
+        }
+      ]
+    }
+  ]
+}

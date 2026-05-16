@@ -1,0 +1,36 @@
+{
+  "library": "ModbusFB",
+  "title": "SupportFc (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/ModbusFB/Current/ModbusFB/Function-Blocks/Server/pou-Server/SupportFc.html",
+  "page_title": "Server.SupportFc (METH)",
+  "text": "\nMETHOD SupportFc :\nError\nDetermine if a given âfunction codeâ is supported by the server.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SupportFc",
+          "Type": "Error",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "eFc",
+          "Type": "FunctionCodes",
+          "Comment": "Function code to check, to enable/disable if supported."
+        },
+        [
+          "xSupported",
+          "BOOL",
+          "TRUE - given function code should be supported by the\nserver, FALSE if not."
+        ]
+      ]
+    }
+  ]
+}

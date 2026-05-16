@@ -1,0 +1,37 @@
+{
+  "library": "SM3_Basic",
+  "title": "GetActValuesForCycle (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/DriveInterface/AXIS_REF/pou-AXIS_REF_SM3/GetActValuesForCycle.html",
+  "page_title": "AXIS_REF_SM3.GetActValuesForCycle (METH)",
+  "text": "\nMETHOD FINAL GetActValuesForCycle : BOOL\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "dynAct",
+          "Type": "SMC_TG_DynState"
+        },
+        {
+          "Scope": "Input",
+          "Name": "nCycle",
+          "Type": "SM0.CycleCounter"
+        },
+        [
+          "offsetPosition",
+          "LREAL"
+        ],
+        {
+          "Scope": "Return",
+          "Name": "GetActValuesForCycle",
+          "Type": "BOOL"
+        }
+      ]
+    }
+  ]
+}

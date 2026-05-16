@@ -1,0 +1,23 @@
+{
+  "library": "BACnet2DefaultImpl",
+  "title": "RegisterTimeProvider (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2DefaultImpl/Current/BACnetDefaultImpl/Function-Blocks/pou-DeviceDateTime/RegisterTimeProvider.html",
+  "page_title": "DeviceDateTime.RegisterTimeProvider (METH)",
+  "text": "\nMETHOD RegisterTimeProvider : UDINT\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "RegisterTimeProvider",
+          "Type": "UDINT"
+        }
+      ]
+    }
+  ]
+}

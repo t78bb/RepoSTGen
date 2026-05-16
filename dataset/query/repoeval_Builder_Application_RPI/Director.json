@@ -1,0 +1,5 @@
+{
+  "requirement": "This code is intended to implement a Director class that delegates the construction of a final product object to a specified ConcreteBuilder.",
+  "provide_code": "{attribute 'enable_dynamic_creation'}\n//The director class is responsible to delegate the construction of the final product object \n// to a concrete builder object.\nFUNCTION_BLOCK Director\nVAR_INPUT\n\t//Reference to the builder that is going to be building the final product object.\n\tinputConcreteBuilder : ConcreteBuilder(specs := inputConcreteBuilder.specifications);\nEND_VAR\nVAR_OUTPUT\nEND_VAR",
+  "function_name": "Director"
+}

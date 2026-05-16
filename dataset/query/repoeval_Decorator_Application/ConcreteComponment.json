@@ -1,0 +1,5 @@
+{
+  "requirement": "This code is intended to implement a basic object creation functionality with a description and value, designed to be decorated and comply with a component interface.",
+  "provide_code": "{attribute 'enable_dynamic_creation'}\n//This class creates the most basic object well called. This object is to be decorated\nFUNCTION_BLOCK ConcreteComponent IMPLEMENTS Component_Interface\nVAR_INPUT\nEND_VAR\nVAR_OUTPUT\nEND_VAR",
+  "function_name": "ConcreteComponment"
+}

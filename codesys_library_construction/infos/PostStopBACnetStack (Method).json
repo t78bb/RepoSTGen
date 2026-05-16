@@ -1,0 +1,23 @@
+{
+  "library": "BACnet",
+  "title": "PostStopBACnetStack (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetServerPlugin/pou-IBACnetServerPlugin/PostStopBACnetStack.html",
+  "page_title": "IBACnetServerPlugin.PostStopBACnetStack (METH)",
+  "text": "\nMETHOD PostStopBACnetStack : UDINT\nGets called prior of\nBACnetServer.StopBACnetStack\n.\nReturn CmpErrors.Errors.ERR_OK if successfully.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "PostStopBACnetStack",
+          "Type": "UDINT"
+        }
+      ]
+    }
+  ]
+}

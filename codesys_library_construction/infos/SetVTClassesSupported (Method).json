@@ -1,0 +1,36 @@
+{
+  "library": "BACnet",
+  "title": "SetVTClassesSupported (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/Device/pou-BACnetDevice/SetVTClassesSupported.html",
+  "page_title": "BACnetDevice.SetVTClassesSupported (METH)",
+  "text": "\nMETHOD SetVTClassesSupported : CmpBACnet.IEC_BACNET_STATUS\nSets the VT_Classes_Supported-List of this BACnet object.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetVTClassesSupported",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "uiListCount",
+          "Type": "CmpBACnet.IEC_BACNET_ELEMENT_COUNT",
+          "Comment": "The length of the list in the following pointer."
+        },
+        [
+          "pList",
+          "POINTER TO\nCmpBACnet.IEC_BACNET_VT_CLASS",
+          "The list data containing elements according to the given\ncount."
+        ]
+      ]
+    }
+  ]
+}

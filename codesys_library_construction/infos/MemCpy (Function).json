@@ -1,0 +1,31 @@
+{
+  "library": "MemoryUtils",
+  "title": "MemCpy (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/MemoryUtils/Current/MemoryUtils/Functions/MemCpy.html",
+  "page_title": "MemCpy (FUN)",
+  "text": "\nFUNCTION MemCpy\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "pbyDest",
+          "Type": "POINTER TO BYTE"
+        },
+        [
+          "pbySrc",
+          "POINTER TO BYTE"
+        ],
+        [
+          "dwSize",
+          "DWORD"
+        ]
+      ]
+    }
+  ]
+}

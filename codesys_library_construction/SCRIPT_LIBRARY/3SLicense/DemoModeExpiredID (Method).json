@@ -1,0 +1,30 @@
+{
+  "library": "3SLicense",
+  "title": "DemoModeExpiredID (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/3SLicense/Current/pou-OLM_OnlineLicenseManager/DemoModeExpiredID.html",
+  "page_title": "OLM_OnlineLicenseManager.DemoModeExpiredID (METH)",
+  "text": "\nMETHOD DemoModeExpiredID\nWith this method a component can propagade in a uniform way that its demo mode has expired and it has stopped to work.\nIn contrast to the method DemoModeExpired, this function will post the message only once, and so the caller doesnât have to take care and make sure to call it only once by himself\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "strComponent",
+          "Type": "STRING",
+          "Comment": "name of the component"
+        },
+        [
+          "udiLicenseID",
+          "UDINT",
+          "license ID of the component"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "library": "BACnetDefaultImpl",
+  "title": "GetHook (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnetDefaultImpl/Current/BACnetDefaultImpl/Function-Blocks/LoggingObjects/pou-TrendLog/GetHook.html",
+  "page_title": "TrendLog.GetHook (METH)",
+  "text": "\nMETHOD GetHook : BACnet.IBACnetServerPluginHook\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetHook",
+          "Type": "BACnet.IBACnetServerPluginHook"
+        },
+        {
+          "Scope": "Input",
+          "Name": "index",
+          "Type": "UINT"
+        }
+      ]
+    }
+  ]
+}

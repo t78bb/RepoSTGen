@@ -1,0 +1,41 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_ParameterNumber_SoE (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/Parameter-access/SMC_ParameterNumber_SoE.html",
+  "page_title": "SMC_ParameterNumber_SoE (FUN)",
+  "text": "\nFUNCTION SMC_ParameterNumber_SoE : DINT\nThis function translates from a SoE (servodrive over EtherCAT)\nobject (IDN + element) to a SoftMotion parameter number that can be used\nwith function blocks like\nMC_ReadParameter\n,\nMC_ReadBoolParameter\n,\nMC_WriteParameter\n, and\nMC_WriteBoolParameter\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "IDN",
+          "Type": "UINT",
+          "Comment": "The IDN"
+        },
+        [
+          "element",
+          "USINT",
+          "2: Name, 3: Attribute, 4: Unit, 5: Minimum, 6: Maximum, 0 or\n7: Value"
+        ],
+        [
+          "dataLength",
+          "USINT",
+          "The data length in bytes (1, 2, or 4).\nOnly used when writing a parameter."
+        ],
+        {
+          "Scope": "Return",
+          "Name": "SMC_ParameterNumber_SoE",
+          "Type": "DINT",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

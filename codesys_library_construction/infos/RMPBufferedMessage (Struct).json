@@ -1,0 +1,53 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "RMPBufferedMessage (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_RMP_ReliableMessageProtocol/RMPBufferedMessage.html",
+  "page_title": "RMPBufferedMessage (STRUCT)",
+  "text": "\nTYPE RMPBufferedMessage : STRUCT\nThe structure representing a message buffered in the RMP (Reliable Message Protocoll)\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "udiReceiverID",
+          "Type": "UDINT",
+          "Comment": "Receiver ApplicationID+ModuleID"
+        },
+        {
+          "Name": "udiSenderID",
+          "Type": "UDINT",
+          "Comment": "Sender ApplicationID+ModuleID"
+        },
+        {
+          "Name": "uiHandle",
+          "Type": "UINT",
+          "Comment": "Is unique handle and indicates send order; only Bit0-14 are\nused"
+        },
+        {
+          "Name": "byStatusBits",
+          "Type": "BYTE",
+          "Comment": "Bit0: TRUE: this buffer entry is unused\nBit1: TRUE: this buffer entry is locked and may not be freed or deleted by anyone except the owner THIS ENTRY MUST BE SET WITH TESTANDSET\nBit2: TRUE: editing is ongoing"
+        },
+        {
+          "Name": "tValidity",
+          "Type": "TIME",
+          "Comment": "Time distance, how long this message will bevalid"
+        },
+        {
+          "Name": "tExpirationTime",
+          "Type": "TIME",
+          "Comment": "time,(TIME()), when message expires"
+        },
+        {
+          "Name": "mdData",
+          "Type": "ARRAY [0..63] OF BYTE",
+          "Comment": "data"
+        }
+      ]
+    }
+  ]
+}

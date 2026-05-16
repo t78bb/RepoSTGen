@@ -1,0 +1,23 @@
+{
+  "library": "SM3_CNC",
+  "title": "IsEmpty (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/GSentence/pou-SMC_GSentenceQueue/IsEmpty.html",
+  "page_title": "SMC_GSentenceQueue.IsEmpty (METH)",
+  "text": "\nMETHOD IsEmpty : BOOL\nReturns whether the queue is currently empty.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "IsEmpty",
+          "Type": "BOOL"
+        }
+      ]
+    }
+  ]
+}

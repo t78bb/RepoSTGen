@@ -1,0 +1,11 @@
+{
+  "模糊点列表": [
+    {
+      "模糊点类型": "循环逻辑",
+      "模糊点描述": "原始需求未明确指定在递减检查时的循环起始和结束楼层",
+      "差异细节": "模型生成代码在递减检查时从nStartFloor到nEndFloor递减，而参考代码从nEndFloor到nStartFloor递减",
+      "精准需求描述": "在递减检查时，循环应从结束楼层开始，到起始楼层结束"
+    }
+  ],
+  "case_id": "repoeval_four-level_elevator_control/F_CheckJobInDirection"
+}

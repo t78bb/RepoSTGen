@@ -1,0 +1,519 @@
+{
+  "dataset_dir": "D:\\graduate_project\\项目级st补全\\repo_gen_project_plug\\repo_gen_project_plug\\dataset",
+  "generation_context_ground_truth": {
+    "directory": "D:\\graduate_project\\项目级st补全\\repo_gen_project_plug\\repo_gen_project_plug\\dataset\\generation_context_ground_truth",
+    "effective_file_count": 99,
+    "average_lines_per_file": 26.454545454545453,
+    "effective_lines_by_project": {
+      "Builder_Application_RPI": {
+        "file_count": 5,
+        "lines_total": 50,
+        "lines_avg_per_file": 10.0
+      },
+      "Command1": {
+        "file_count": 12,
+        "lines_total": 37,
+        "lines_avg_per_file": 3.0833333333333335
+      },
+      "Decorator_Application": {
+        "file_count": 8,
+        "lines_total": 42,
+        "lines_avg_per_file": 5.25
+      },
+      "GreatExampleOfAdvantages": {
+        "file_count": 2,
+        "lines_total": 58,
+        "lines_avg_per_file": 29.0
+      },
+      "Interation_HowTo": {
+        "file_count": 2,
+        "lines_total": 39,
+        "lines_avg_per_file": 19.5
+      },
+      "PID_controller": {
+        "file_count": 4,
+        "lines_total": 130,
+        "lines_avg_per_file": 32.5
+      },
+      "PT1Filter": {
+        "file_count": 1,
+        "lines_total": 19,
+        "lines_avg_per_file": 19.0
+      },
+      "ProductionLine": {
+        "file_count": 6,
+        "lines_total": 53,
+        "lines_avg_per_file": 8.833333333333334
+      },
+      "Proxy_Application": {
+        "file_count": 2,
+        "lines_total": 14,
+        "lines_avg_per_file": 7.0
+      },
+      "VisuElements": {
+        "file_count": 3,
+        "lines_total": 135,
+        "lines_avg_per_file": 45.0
+      },
+      "Wrappers": {
+        "file_count": 1,
+        "lines_total": 20,
+        "lines_avg_per_file": 20.0
+      },
+      "assembly-station": {
+        "file_count": 1,
+        "lines_total": 91,
+        "lines_avg_per_file": 91.0
+      },
+      "barrier": {
+        "file_count": 13,
+        "lines_total": 474,
+        "lines_avg_per_file": 36.46153846153846
+      },
+      "counter": {
+        "file_count": 1,
+        "lines_total": 10,
+        "lines_avg_per_file": 10.0
+      },
+      "electronic_cam_motion": {
+        "file_count": 4,
+        "lines_total": 228,
+        "lines_avg_per_file": 57.0
+      },
+      "electronic_gear_motion": {
+        "file_count": 3,
+        "lines_total": 194,
+        "lines_avg_per_file": 64.66666666666667
+      },
+      "elevator": {
+        "file_count": 5,
+        "lines_total": 182,
+        "lines_avg_per_file": 36.4
+      },
+      "four-level_elevator_control": {
+        "file_count": 3,
+        "lines_total": 59,
+        "lines_avg_per_file": 19.666666666666668
+      },
+      "isScaleOutput": {
+        "file_count": 1,
+        "lines_total": 25,
+        "lines_avg_per_file": 25.0
+      },
+      "measurement_control": {
+        "file_count": 1,
+        "lines_total": 33,
+        "lines_avg_per_file": 33.0
+      },
+      "open-type_dual-axis_winding_machine": {
+        "file_count": 5,
+        "lines_total": 163,
+        "lines_avg_per_file": 32.6
+      },
+      "plc_hello_mixing_tank": {
+        "file_count": 6,
+        "lines_total": 161,
+        "lines_avg_per_file": 26.833333333333332
+      },
+      "readwriteFile": {
+        "file_count": 2,
+        "lines_total": 125,
+        "lines_avg_per_file": 62.5
+      },
+      "three-axis_CNC_motion": {
+        "file_count": 5,
+        "lines_total": 255,
+        "lines_avg_per_file": 51.0
+      },
+      "traffic_light": {
+        "file_count": 3,
+        "lines_total": 22,
+        "lines_avg_per_file": 7.333333333333333
+      }
+    },
+    "missing_match_count": 1,
+    "missing_query_files": [
+      "repoeval_isScaleOutput_vari\\F_isScaleOutput.json"
+    ]
+  },
+  "query": {
+    "directory": "D:\\graduate_project\\项目级st补全\\repo_gen_project_plug\\repo_gen_project_plug\\dataset\\query",
+    "query_json_file_count": 100,
+    "requirement_token_avg_length": 30.04,
+    "requirement_token_total": 3004,
+    "requirement_sample_count": 100,
+    "requirement_tokens_by_project": {
+      "Builder_Application_RPI": {
+        "file_count": 5,
+        "token_total": 119,
+        "token_avg_length": 23.8
+      },
+      "Command1": {
+        "file_count": 12,
+        "token_total": 236,
+        "token_avg_length": 19.666666666666668
+      },
+      "Decorator_Application": {
+        "file_count": 8,
+        "token_total": 203,
+        "token_avg_length": 25.375
+      },
+      "GreatExampleOfAdvantages": {
+        "file_count": 2,
+        "token_total": 52,
+        "token_avg_length": 26.0
+      },
+      "Interation_HowTo": {
+        "file_count": 2,
+        "token_total": 49,
+        "token_avg_length": 24.5
+      },
+      "PID_controller": {
+        "file_count": 4,
+        "token_total": 133,
+        "token_avg_length": 33.25
+      },
+      "PT1Filter": {
+        "file_count": 1,
+        "token_total": 29,
+        "token_avg_length": 29.0
+      },
+      "ProductionLine": {
+        "file_count": 6,
+        "token_total": 143,
+        "token_avg_length": 23.833333333333332
+      },
+      "Proxy_Application": {
+        "file_count": 2,
+        "token_total": 54,
+        "token_avg_length": 27.0
+      },
+      "VisuElements": {
+        "file_count": 3,
+        "token_total": 92,
+        "token_avg_length": 30.666666666666668
+      },
+      "Wrappers": {
+        "file_count": 1,
+        "token_total": 29,
+        "token_avg_length": 29.0
+      },
+      "assembly-station": {
+        "file_count": 1,
+        "token_total": 48,
+        "token_avg_length": 48.0
+      },
+      "barrier": {
+        "file_count": 13,
+        "token_total": 408,
+        "token_avg_length": 31.384615384615383
+      },
+      "counter": {
+        "file_count": 1,
+        "token_total": 22,
+        "token_avg_length": 22.0
+      },
+      "electronic_cam_motion": {
+        "file_count": 4,
+        "token_total": 100,
+        "token_avg_length": 25.0
+      },
+      "electronic_gear_motion": {
+        "file_count": 3,
+        "token_total": 94,
+        "token_avg_length": 31.333333333333332
+      },
+      "elevator": {
+        "file_count": 5,
+        "token_total": 140,
+        "token_avg_length": 28.0
+      },
+      "four-level_elevator_control": {
+        "file_count": 3,
+        "token_total": 79,
+        "token_avg_length": 26.333333333333332
+      },
+      "isScaleOutput": {
+        "file_count": 1,
+        "token_total": 127,
+        "token_avg_length": 127.0
+      },
+      "isScaleOutput_vari": {
+        "file_count": 1,
+        "token_total": 169,
+        "token_avg_length": 169.0
+      },
+      "measurement_control": {
+        "file_count": 1,
+        "token_total": 26,
+        "token_avg_length": 26.0
+      },
+      "open-type_dual-axis_winding_machine": {
+        "file_count": 5,
+        "token_total": 163,
+        "token_avg_length": 32.6
+      },
+      "plc_hello_mixing_tank": {
+        "file_count": 6,
+        "token_total": 188,
+        "token_avg_length": 31.333333333333332
+      },
+      "readwriteFile": {
+        "file_count": 2,
+        "token_total": 68,
+        "token_avg_length": 34.0
+      },
+      "three-axis_CNC_motion": {
+        "file_count": 5,
+        "token_total": 155,
+        "token_avg_length": 31.0
+      },
+      "traffic_light": {
+        "file_count": 3,
+        "token_total": 78,
+        "token_avg_length": 26.0
+      }
+    },
+    "provide_code_colon_avg_count": 5.07,
+    "provide_code_sample_count": 100,
+    "provide_code_input_param_avg_count": 2.76,
+    "provide_code_output_param_avg_count": 1.19,
+    "provide_code_param_avg_count": 3.9499999999999997,
+    "provide_code_params_by_project": {
+      "Builder_Application_RPI": {
+        "file_count": 5,
+        "avg_input_param_count": 2.0,
+        "avg_output_param_count": 0.0,
+        "avg_param_count": 2.0,
+        "input_param_total": 10,
+        "output_param_total": 0,
+        "param_total": 10
+      },
+      "Command1": {
+        "file_count": 12,
+        "avg_input_param_count": 0.08333333333333333,
+        "avg_output_param_count": 0.5833333333333334,
+        "avg_param_count": 0.6666666666666667,
+        "input_param_total": 1,
+        "output_param_total": 7,
+        "param_total": 8
+      },
+      "Decorator_Application": {
+        "file_count": 8,
+        "avg_input_param_count": 0.625,
+        "avg_output_param_count": 0.0,
+        "avg_param_count": 0.625,
+        "input_param_total": 5,
+        "output_param_total": 0,
+        "param_total": 5
+      },
+      "GreatExampleOfAdvantages": {
+        "file_count": 2,
+        "avg_input_param_count": 0.0,
+        "avg_output_param_count": 0.0,
+        "avg_param_count": 0.0,
+        "input_param_total": 0,
+        "output_param_total": 0,
+        "param_total": 0
+      },
+      "Interation_HowTo": {
+        "file_count": 2,
+        "avg_input_param_count": 0.0,
+        "avg_output_param_count": 0.0,
+        "avg_param_count": 0.0,
+        "input_param_total": 0,
+        "output_param_total": 0,
+        "param_total": 0
+      },
+      "PID_controller": {
+        "file_count": 4,
+        "avg_input_param_count": 6.25,
+        "avg_output_param_count": 1.75,
+        "avg_param_count": 8.0,
+        "input_param_total": 25,
+        "output_param_total": 7,
+        "param_total": 32
+      },
+      "PT1Filter": {
+        "file_count": 1,
+        "avg_input_param_count": 3.0,
+        "avg_output_param_count": 1.0,
+        "avg_param_count": 4.0,
+        "input_param_total": 3,
+        "output_param_total": 1,
+        "param_total": 4
+      },
+      "ProductionLine": {
+        "file_count": 6,
+        "avg_input_param_count": 1.1666666666666667,
+        "avg_output_param_count": 1.0,
+        "avg_param_count": 2.166666666666667,
+        "input_param_total": 7,
+        "output_param_total": 6,
+        "param_total": 13
+      },
+      "Proxy_Application": {
+        "file_count": 2,
+        "avg_input_param_count": 0.0,
+        "avg_output_param_count": 0.0,
+        "avg_param_count": 0.0,
+        "input_param_total": 0,
+        "output_param_total": 0,
+        "param_total": 0
+      },
+      "VisuElements": {
+        "file_count": 3,
+        "avg_input_param_count": 4.666666666666667,
+        "avg_output_param_count": 2.6666666666666665,
+        "avg_param_count": 7.333333333333334,
+        "input_param_total": 14,
+        "output_param_total": 8,
+        "param_total": 22
+      },
+      "Wrappers": {
+        "file_count": 1,
+        "avg_input_param_count": 1.0,
+        "avg_output_param_count": 1.0,
+        "avg_param_count": 2.0,
+        "input_param_total": 1,
+        "output_param_total": 1,
+        "param_total": 2
+      },
+      "assembly-station": {
+        "file_count": 1,
+        "avg_input_param_count": 3.0,
+        "avg_output_param_count": 2.0,
+        "avg_param_count": 5.0,
+        "input_param_total": 3,
+        "output_param_total": 2,
+        "param_total": 5
+      },
+      "barrier": {
+        "file_count": 13,
+        "avg_input_param_count": 2.6153846153846154,
+        "avg_output_param_count": 0.46153846153846156,
+        "avg_param_count": 3.076923076923077,
+        "input_param_total": 34,
+        "output_param_total": 6,
+        "param_total": 40
+      },
+      "counter": {
+        "file_count": 1,
+        "avg_input_param_count": 3.0,
+        "avg_output_param_count": 1.0,
+        "avg_param_count": 4.0,
+        "input_param_total": 3,
+        "output_param_total": 1,
+        "param_total": 4
+      },
+      "electronic_cam_motion": {
+        "file_count": 4,
+        "avg_input_param_count": 2.0,
+        "avg_output_param_count": 1.75,
+        "avg_param_count": 3.75,
+        "input_param_total": 8,
+        "output_param_total": 7,
+        "param_total": 15
+      },
+      "electronic_gear_motion": {
+        "file_count": 3,
+        "avg_input_param_count": 6.666666666666667,
+        "avg_output_param_count": 4.333333333333333,
+        "avg_param_count": 11.0,
+        "input_param_total": 20,
+        "output_param_total": 13,
+        "param_total": 33
+      },
+      "elevator": {
+        "file_count": 5,
+        "avg_input_param_count": 3.6,
+        "avg_output_param_count": 1.4,
+        "avg_param_count": 5.0,
+        "input_param_total": 18,
+        "output_param_total": 7,
+        "param_total": 25
+      },
+      "four-level_elevator_control": {
+        "file_count": 3,
+        "avg_input_param_count": 3.0,
+        "avg_output_param_count": 0.0,
+        "avg_param_count": 3.0,
+        "input_param_total": 9,
+        "output_param_total": 0,
+        "param_total": 9
+      },
+      "isScaleOutput": {
+        "file_count": 1,
+        "avg_input_param_count": 4.0,
+        "avg_output_param_count": 0.0,
+        "avg_param_count": 4.0,
+        "input_param_total": 4,
+        "output_param_total": 0,
+        "param_total": 4
+      },
+      "isScaleOutput_vari": {
+        "file_count": 1,
+        "avg_input_param_count": 4.0,
+        "avg_output_param_count": 0.0,
+        "avg_param_count": 4.0,
+        "input_param_total": 4,
+        "output_param_total": 0,
+        "param_total": 4
+      },
+      "measurement_control": {
+        "file_count": 1,
+        "avg_input_param_count": 7.0,
+        "avg_output_param_count": 0.0,
+        "avg_param_count": 7.0,
+        "input_param_total": 7,
+        "output_param_total": 0,
+        "param_total": 7
+      },
+      "open-type_dual-axis_winding_machine": {
+        "file_count": 5,
+        "avg_input_param_count": 5.2,
+        "avg_output_param_count": 1.2,
+        "avg_param_count": 6.4,
+        "input_param_total": 26,
+        "output_param_total": 6,
+        "param_total": 32
+      },
+      "plc_hello_mixing_tank": {
+        "file_count": 6,
+        "avg_input_param_count": 6.666666666666667,
+        "avg_output_param_count": 2.5,
+        "avg_param_count": 9.166666666666668,
+        "input_param_total": 40,
+        "output_param_total": 15,
+        "param_total": 55
+      },
+      "readwriteFile": {
+        "file_count": 2,
+        "avg_input_param_count": 3.0,
+        "avg_output_param_count": 5.0,
+        "avg_param_count": 8.0,
+        "input_param_total": 6,
+        "output_param_total": 10,
+        "param_total": 16
+      },
+      "three-axis_CNC_motion": {
+        "file_count": 5,
+        "avg_input_param_count": 4.8,
+        "avg_output_param_count": 4.2,
+        "avg_param_count": 9.0,
+        "input_param_total": 24,
+        "output_param_total": 21,
+        "param_total": 45
+      },
+      "traffic_light": {
+        "file_count": 3,
+        "avg_input_param_count": 1.3333333333333333,
+        "avg_output_param_count": 0.3333333333333333,
+        "avg_param_count": 1.6666666666666665,
+        "input_param_total": 4,
+        "output_param_total": 1,
+        "param_total": 5
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "library": "SysDir",
+  "title": "SysDirRead (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SysDir/Current/SysDirRead.html",
+  "page_title": "SysDirRead (FUN)",
+  "text": "\nFUNCTION SysDirRead : RTS_IEC_RESULT\nRead next directory entry. Writes the entry in pszDirEntry.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SysDirRead",
+          "Type": "RTS_IEC_RESULT",
+          "Comment": "Returns the runtime system error code (see CmpErrors.library)ERR_OK: Entry could be readERR_END_OF_OBJECT: If end of directory list was reachedERR_PARAMETER: If one of the parameters is invalidERR_BUFFERSIZE: If iMaxDirEntry is too short to get the complete directory entry stringNoteTypically after errorERR_BUFFERSIZE, the dir-handle is set to the next entry, so this entry will be missed!"
+        },
+        {
+          "Scope": "Input",
+          "Name": "hDir",
+          "Type": "RTS_IEC_HANDLE",
+          "Comment": "Handle to directory opened with SysDirOpen"
+        },
+        {
+          "Scope": "Inout",
+          "Name": "szDirEntry",
+          "Type": "STRING",
+          "Comment": "OUT_PARAMETER: Directory entry as string"
+        },
+        {
+          "Scope": "Input",
+          "Name": "diMaxDirEntry",
+          "Type": "DINT",
+          "Comment": "OUT_PARAMETER: Max number of bytes to write in pszDirEntry"
+        },
+        [
+          "pDirInfo",
+          "POINTER TODirInfo",
+          "OUT_PARAMETER: Directory information\nNOTE: Can be 0 (so only directory name is provided in pszDirEntry)"
+        ]
+      ]
+    }
+  ]
+}

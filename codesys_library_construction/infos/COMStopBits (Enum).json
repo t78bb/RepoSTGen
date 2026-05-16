@@ -1,0 +1,33 @@
+{
+  "library": "DNP3",
+  "title": "COMStopBits (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Types/COMStopBits.html",
+  "page_title": "COMStopBits (ENUM)",
+  "text": "\nTYPE COMStopBits :\nCOM interface stop bits\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "OneStopBit",
+          "Initial": "1",
+          "Comment": "Stopbit: 1"
+        },
+        {
+          "Name": "One5Stopbits",
+          "Initial": "",
+          "Comment": "Stopbits: 1,5"
+        },
+        {
+          "Name": "TwoStopBits",
+          "Initial": "",
+          "Comment": "Stopbits: 2"
+        }
+      ]
+    }
+  ]
+}

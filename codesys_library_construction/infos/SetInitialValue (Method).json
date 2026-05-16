@@ -1,0 +1,41 @@
+{
+  "library": "MQTT Client SL",
+  "title": "SetInitialValue (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/MQTT Client SL/Current/MQTT-Client/Common/Function-Blocks/pou-MQTTClient/SetInitialValue.html",
+  "page_title": "MQTTClient.SetInitialValue (METH)",
+  "text": "\nMETHOD SetInitialValue : BOOL\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetInitialValue",
+          "Type": "BOOL",
+          "Initial": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfTLSContext",
+          "Type": "NBS.ITLSContext",
+          "Initial": "0"
+        },
+        [
+          "itfAsyncProperty",
+          "NBS.IAsyncProperty",
+          "0"
+        ],
+        [
+          "itfTSNContext",
+          "NBS.ITSNContext",
+          "0"
+        ]
+      ]
+    }
+  ]
+}

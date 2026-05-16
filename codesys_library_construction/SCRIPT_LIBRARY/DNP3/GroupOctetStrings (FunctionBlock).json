@@ -1,0 +1,52 @@
+{
+  "library": "DNP3",
+  "title": "GroupOctetStrings (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Outstation/Groups/GroupOctetStrings.html",
+  "page_title": "GroupOctetStrings (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL GroupOctetStrings EXTENDS GroupOctetStringsBase\nGroup of datapoints of type OctetString.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment",
+        "Inherited from"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "tScanPeriod",
+          "Type": "TIME",
+          "Initial": "TIME#0ms",
+          "Comment": "Scan period for datapoints within group.\nIf tScanPeriod is set to T#0MS, the OutstationDataModel.tScanPeriod is used.\nCan be configured per datapoint as well.",
+          "Inherited from": "GroupBase"
+        },
+        {
+          "Scope": "Output",
+          "Name": "itfGroup",
+          "Type": "IGroupOctetStrings",
+          "Initial": "",
+          "Comment": "",
+          "Inherited from": "GroupOctetStringsBase"
+        },
+        {
+          "Scope": "Input",
+          "Name": "aPoints",
+          "Type": "POINTER TOOctetString",
+          "Initial": "",
+          "Comment": "Pointer to array of OctetString",
+          "Inherited from": ""
+        },
+        [
+          "numPoints",
+          "UINT",
+          "",
+          "Number of Points",
+          ""
+        ]
+      ]
+    }
+  ]
+}

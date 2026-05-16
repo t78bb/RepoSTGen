@@ -1,0 +1,47 @@
+{
+  "library": "String Builder Base",
+  "title": "WriteMemSegment (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Builder Base/Current/BuilderBase/Interfaces/pou-IBuilder/WriteMemSegment.html",
+  "page_title": "IBuilder.WriteMemSegment (METH)",
+  "text": "BuilderBase\nAliases\nConstants (GVL)\nIStringRepresentation (Alias)\nRUNE (Alias)\nEnums\nENCODING (Enum)\nERROR (Enum)\nFunction Blocks\nRange (FunctionBlock)\nIRange\nSetInitialValue (Method)\nFunctions\nCreateRange (Function)\nCreateRangePool (Function)\nInterfaces\nIBuilder (Interface)\nGetBuilderStats (Method)\nReset (Method)\nSegments\nWriteIString (Method)\nWriteMemSegment (Method)\nWriteRune (Method)\nWriteString (Method)\nWriteWString (Method)\nICharmap (Interface)\nDecode (Method)\nEncode (Method)\nInternals\n_RangePool (FunctionBlock)\nProtected\nStructs\nSTATS (Struct)\nLibrary Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nFile and Project Information\nLibrary Reference\nMemory Block Manager\nLibrary Identification\nLibrary Properties\nString Segments\nLibrary Identification\nLibrary Properties\nUTF-8 Encoding Support\nLibrary Identification\nLibrary Properties\nString Builder Base\nDocs\n»\nBuilderBase\n»\nInterfaces\n»\nIBuilder\n(ITF)\n»\nIBuilder.WriteMemSegment (METH)\nIBuilder.WriteMemSegment (METH)\nÂ¶\nMETHOD WriteMemSegment : UDINT\nAppends the contents of\npbyMemory\nto the buffer.\nIt returns the number of bytes written.\nInOut:\nScope\nName\nType\nInitial\nReturn\nWriteMemSegment\nUDINT\nInput\npbyMemory\nPOINTER TO BYTE\nudiSize\nUDINT\neEncoding\nENCODING\nENCODING.UTF8\nOutput\neErrorID\nERROR",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "WriteMemSegment",
+          "Type": "UDINT",
+          "Initial": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "pbyMemory",
+          "Type": "POINTER TO BYTE",
+          "Initial": ""
+        },
+        [
+          "udiSize",
+          "UDINT",
+          ""
+        ],
+        [
+          "eEncoding",
+          "ENCODING",
+          "ENCODING.UTF8"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "eErrorID",
+          "Type": "ERROR",
+          "Initial": ""
+        }
+      ]
+    }
+  ]
+}

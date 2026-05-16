@@ -1,0 +1,47 @@
+{
+  "library": "AC_Alarming",
+  "title": "GetActiveAlarmsOfModule (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_Alarming/Current/ExtenderFB/pou-IACAlarmExtender3/GetActiveAlarmsOfModule.html",
+  "page_title": "IACAlarmExtender3.GetActiveAlarmsOfModule (METH)",
+  "text": "ExtenderFB\nACAlarmExtender (FunctionBlock)\nAcknowledgeAllAlarmsOfModule (Method)\nExecute (Method)\nGetActiveAlarmsOfModule (Method)\nGetEventAlarmID (Method)\nGetID (Property)\nInit (Method)\nInit2 (Method)\nInitSortedModuleAlarms (Method)\nAlarmInfo (Struct)\nAlarmingCall (Enum)\nIACAlarmExtender (Interface)\nInit (Method)\nIACAlarmExtender2 (Interface)\nGetEventAlarmID (Method)\nInit2 (Method)\nIACAlarmExtender3 (Interface)\nAcknowledgeAllAlarmsOfModule (Method)\nGetActiveAlarmsOfModule (Method)\nInitSortedModuleAlarms (Method)\nModuleAlarmInfo (Struct)\nModuleCall (Struct)\nModuleEvent (Struct)\nFunctions\nRaiseModuleEvent (Function)\nReplaceAlarmPlaceholderString (Function)\nGlobalTextList (GlobalTextList)\nModuleInterface\nIModuleAlarming (Interface)\nConsumeModuleAlarm (Method)\nVisualization\nFile and Project Information\nLibrary Reference\nAC_ModuleBase\nLibrary Identification\nLibrary Properties\nAlarmManager\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nStringUtils\nLibrary Identification\nLibrary Properties\nVisuElem3DPath\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElemCamDisplayer\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElemMeter\nLibrary Identification\nLibrary Properties\nVisuElemTextEditor\nLibrary Identification\nLibrary Properties\nVisuElemTrace\nLibrary Identification\nLibrary Properties\nVisuElemXYChart\nLibrary Identification\nLibrary Properties\nVisuElems\nLibrary Identification\nLibrary Properties\nVisuElemsAlarm\nLibrary Identification\nLibrary Properties\nVisuElemsDateTime\nLibrary Identification\nLibrary Properties\nVisuElemsSpecialControls\nLibrary Identification\nLibrary Properties\nVisuElemsWinControls\nLibrary Identification\nLibrary Properties\nVisuNativeControl\nLibrary Identification\nLibrary Properties\nAC_Alarming\nDocs\n»\nExtenderFB\n»\nIACAlarmExtender3\n(ITF)\n»\nIACAlarmExtender3.GetActiveAlarmsOfModule (METH)\nIACAlarmExtender3.GetActiveAlarmsOfModule (METH)\nÂ¶\nMETHOD GetActiveAlarmsOfModule : BOOL\nThis method gets all currently active alarms that belong\nto the module instance defined by\nitfModule\n.\nNote\nFor using this method one must activate the option to sort\nalarms per module in the options of the Alarm-Generator.\nInOut:\nScope\nName\nType\nComment\nReturn\nGetActiveAlarmsOfModule\nBOOL\nThe return value indicates if it was possible to get all\nactive alarms that belong to\nitfModule\n.\nThe return value does also take into account if the size\nof the array pointed to\npActiveAlarms\nwas adequate.\nInput\nitfModule\nAC.IModule\nThe module the active alarms shall be searched.\npActiveAlarms\nPOINTER TO\nAlarmManager.IAlarm\nPointer to an array of\nAlarmManager.IAlarm\n.\nHere the found alarms are stored.\nuiSizeOfActiveAlarms\nUINT\nThe size of the array\npActiveAlarms\nis pointing to.\nOutput\nuiNumFoundAlarms\nUINT\nThe number of found alarms.",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetActiveAlarmsOfModule",
+          "Type": "BOOL",
+          "Comment": "The return value indicates if it was possible to get all\nactive alarms that belong toitfModule.The return value does also take into account if the size\nof the array pointed topActiveAlarmswas adequate."
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfModule",
+          "Type": "AC.IModule",
+          "Comment": "The module the active alarms shall be searched."
+        },
+        [
+          "pActiveAlarms",
+          "POINTER TO\nAlarmManager.IAlarm",
+          "Pointer to an array ofAlarmManager.IAlarm.\nHere the found alarms are stored."
+        ],
+        [
+          "uiSizeOfActiveAlarms",
+          "UINT",
+          "The size of the arraypActiveAlarmsis pointing to."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "uiNumFoundAlarms",
+          "Type": "UINT",
+          "Comment": "The number of found alarms."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_TuneCPKernel (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/AdministrativeConfiguration/Computation/SMC_TuneCPKernel.html",
+  "page_title": "SMC_TuneCPKernel (FB)",
+  "text": "Library Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nGetVersion (Function)\nIsLibReleased (Function)\nSM3_Robotics\nBasic types\nIDENT_IN_GROUP_REF_SM3 (Alias)\nMC_CIRC_PATHCHOICE (Enum)\nMC_COORD_REF (Struct)\nMC_EXECUTION_MODE (Enum)\nMC_TRANSITION_MODE (Enum)\nSMC_AXIS_GROUP_COMPATIBILITY_OPTIONS (Struct)\nSMC_AXIS_GROUP_CONTINUE_DATA (FunctionBlock)\nSMC_AXIS_GROUP_STATE (Enum)\nSMC_CIRC_MODE (Enum)\nSMC_DYN_LIMITS (Alias)\nSMC_IDynamicCS (Interface)\nSMC_ORIENTATION_MODE (Enum)\nSMC_POS_REF (Union)\nSMC_PTP_MOVEMENT_TYPE (Enum)\nSMC_READ_TOOL_MODE (Enum)\nPOUs\nAdditional\nSMC_AxisDistanceAxes (Enum)\nSMC_AxisDistanceSubMode (Enum)\nSMC_AxisDistanceTransition (FunctionBlock)\nSMC_AxisDistanceTransitionParam (Function)\nSMC_CornerDistance (FunctionBlock)\nSMC_CornerDistanceTransitionParam (Function)\nSMC_StartVelocity (FunctionBlock)\nSMC_StartVelocityAxes (Enum)\nSMC_StartVelocityTransitionParam (Function)\nSMC_StartupAxisGroup (FunctionBlock)\nAdministrative/Configuration\nAxisGroup\nComputation\nCoordinate systems\nDynamics\nKinematics\nTrigger\nAxisGroup\nAXIS_GROUP_REF_SM3 (FunctionBlock)\nHelpers\nMovements\nDiagnostics\nMC_GroupReadActualAcceleration (FunctionBlock)\nMC_GroupReadActualPosition (FunctionBlock)\nMC_GroupReadActualVelocity (FunctionBlock)\nMC_GroupReadConfiguration (FunctionBlock)\nMC_GroupReadError (FunctionBlock)\nMC_GroupReadStatus (FunctionBlock)\nMC_ReadCoordinateTransform (FunctionBlock)\nMC_ReadKinTransform (FunctionBlock)\nSMC_GroupAddOffset (FunctionBlock)\nSMC_GroupAdditionalAxesTargetPositions (FunctionBlock)\nSMC_GroupConvertPosition (FunctionBlock)\nSMC_GroupGetContinuePosition (FunctionBlock)\nSMC_GroupGetContinueToolOffset (FunctionBlock)\nSMC_GroupReadPathAcceleration (FunctionBlock)\nSMC_GroupReadPathDynamics (FunctionBlock)\nSMC_GroupReadPathVelocity (FunctionBlock)\nSMC_GroupReadPlanningStatistics (FunctionBlock)\nSMC_GroupReadPositionInMovement (FunctionBlock)\nSMC_GroupReadRemainingTrajectoryDuration (FunctionBlock)\nSMC_GroupReadSetAcceleration (FunctionBlock)\nSMC_GroupReadSetJerk (FunctionBlock)\nSMC_GroupReadSetPosition (FunctionBlock)\nSMC_GroupReadSetVelocity (FunctionBlock)\nSMC_GroupTargetPosition (FunctionBlock)\nSMC_ReadKinTransformForAxis (FunctionBlock)\nMovement\nAdditionalAxes\nGroupInterrupt\nMC_GroupContinue (FunctionBlock)\nMC_GroupHalt (FunctionBlock)\nMC_GroupInterrupt (FunctionBlock)\nMC_GroupStop (FunctionBlock)\nMC_MoveCircularAbsolute (FunctionBlock)\nMC_MoveCircularRelative (FunctionBlock)\nMC_MoveDirectAbsolute (FunctionBlock)\nMC_MoveDirectRelative (FunctionBlock)\nMC_MoveLinearAbsolute (FunctionBlock)\nMC_MoveLinearRelative (FunctionBlock)\nSMC_GroupEnableResumeAfterError (FunctionBlock)\nSMC_GroupJog (FunctionBlock)\nSMC_GroupJog2 (FunctionBlock)\nSMC_GroupUpdateContinueData (FunctionBlock)\nSMC_GroupWait (FunctionBlock)\nSMC_MoveAdditionalAxes (FunctionBlock)\ninternal\nDivers\nKernel_CP\nFile and Project Information\nLibrary Reference\n3SLicense\nLibrary Identification\nLibrary Properties\nCmpApp\nLibrary Identification\nLibrary Properties\nCmpIecTask\nLibrary Identification\nLibrary Properties\nCmpLog\nLibrary Identification\nLibrary Properties\nFloatingPointUtils\nLibrary Identification\nLibrary Properties\nSM3_Basic\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nSM3_CPKernelDefaults\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nSM3_CommonPublic\nLibrary Identification\nLibrary Properties\nSM3_Dynamics\nLibrary Identification\nLibrary Properties\nSM3_Error\nLibrary Identification\nLibrary Properties\nSM3_RBase\nLibrary Identification\nLibrary Properties\nSM3_RCP\nLibrary Identification\nLibrary Properties\nSM3_RError\nLibrary Identification\nLibrary Properties\nSM3_Ramps\nLibrary Identification\nLibrary Properties\nSM3_Shared\nLibrary Identification\nLibrary Properties\nSM3_StringUtils\nLibrary Identification\nLibrary Properties\nSM3_TrajectoryGeneration\nLibrary Identification\nLibrary Properties\nSM3_Transformation\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysTarget\nLibrary Identification\nLibrary Properties\nSysTime\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nSM3_Robotics\nDocs\n»\nSM3_Robotics\n»\nPOUs\n»\nAdministrative/Configuration\n»\nComputation\n»\nSMC_TuneCPKernel (FB)\nSMC_TuneCPKernel (FB)\nÂ¶\nFUNCTION_BLOCK SMC_TuneCPKernel\nThis function block can be used to tune the behaviour\nof the CP movements kernel.\nIt must be called from the planning task.\nOnce called with rising edge and\npPE\n<>\n0\n, this FB must be called cyclically.\nDonât use more than one instance of this FB.\nInOut:\nScope\nName\nType\nInitial\nComment\nInout\nAxisGroup\nAXIS_GROUP_REF_SM3\nReference to a group of axis\nInput\nExecute\nBOOL\nApplies the settings on a rising edge\npPE\nPOINTER TO\nSMC_AXIS_GROUP_PATH_ELEMENT\nPointer to the first element of the path buffer;\n0 means reset to default.\nNote: this input is deprecated.  The internal path buffer\nhas been increased, it should no longer be necessary to\nchange it.  Use of this input is discouraged.\nnSizeBuf\nUDINT\nSize of the path buffer;\nMust be a multiple of\nSIZEOF(SMC_AXIS_GROUP_PATH_ELEMENT)\n.\nThe buffer must contain the desired number of path elements\nplus one, but at least 5 path elements.\nNote: this input is deprecated.  The internal path buffer\nhas been increased, it should no longer be necessary to\nchange it.  Use of this input is discouraged.\nfPlanningInterval\nLREAL\nThe planning interval in seconds.\n(If less than bus task interval, then the bus task interval will be\nused.)\n0 means reset to default.\nThis is the maximum step size of the trajectory planner.  Using a longer\nplanning interval can reduce the amount of computation done by the planning task.\nIf there are no performance issues in the planning task, it is recommended to\nleave this parameter at its default value.\nIf the planning interval is changed, the following consideration should be taken\ninto account:\nSince in one planning cycle at most a duration of fPlanningInterval of the\ntrajectory is planned, the planning interval must not be lower than the\naverage planning task cycle time.  Otherwise, the synchronisation buffer\n(see\n|fSyncBufferDuration|\n) might run empty.\nA longer planning interval can lead to a coarser trajectory, i.e. configured\nlimits might not be reached or they might be exceeded.\nFor fast movements with acceleration and deceleration phases well below one\nsecond, a planning interval between 0.016 and 0.032 is recommended.\nChanging the planning interval should be done step by step, starting from the default\nvalue 0.016, while checking the resulting trajectories for each step.\nfSyncBufferDuration\nLREAL\nEmployed for the synchronisation between planning task and bus task:\nthe minimum duration of trajectories that shall be held available\n(apart from end of path).\nThe lower this parameter, the lower the latency.\nToo low values may lead to errors, if the synchronisation-queue runs empty.\n0 means reset to default.\nThe current sync buffer duration can be monitored using the\nCurrentSyncBufferDuration\noutput of\nMC_GroupReadStatus\n.\nfSyncBufferMinFactor\nLREAL\nEmployed for the synchronisation between planning task and bus task:\nthe factor of fSyncBufferDuration that the duration of the synchronisation\nbuffer should not fall below.\nIf a queue underrun error occurs, using a higher value of this parameter\nmay help.\nToo low values may lead to queue underrun errors.\n0 means reset to default, must be in the range [0, 1[.\nfMaxBrakeDuration\nLREAL\nThe maximum duration of a stop trajectory. In seconds.\nSetting a low value may lower the effective maximum velocity.\n0 means reset to default.\nNote: this input is deprecated.  It no longer has an effect\non the trajectory planning.\ndiMaxBlendingDelayCycles\nDINT\n-1\nThe maximum time the planner waits for a second element\nafter planning has started.  (In cycles of the bus task.)\nBefore this duration has elapsed, the planner will not plan beyond\nhalf of the first element.\nA negative value will reset the setting to its default.\nA too short delay may result in too little blending after a new\npath has been started.  A too long delay may result in an acutal\ndelay before the movement starts.\n(This delay is important for good blending behaviour after\nthe planner starts.  If no delay were used and the second\nblended movement was commanded a bit later, the planner\nmight have advanced the lookahead marker too much, limiting\nor removing the effect of blending.)\nfPlanningForecastDuration\nLREAL\n-1\nThe planning forecast duration in seconds.\nThis parameter is relevant for various function blocks that allow\nquerying information about the future state of an axis group.  This\nincludes function blocks related to triggers (see\nSMC_GroupPrepareTrigger\n,\nSMC_GroupReadTrigger\n, and\nSMC_TRIGGER_INFO\n) as well as function\nblocks such as\nSMC_GroupReadRemainingTrajectoryDuration\nor\nSMC_GroupReadPathDynamics\n, if the\nTimeOffset\ninput is used.\nThe lower this parameter, the lower the latency. This has the following\neffects:\nDepending on the performance of the PLC, higher values of this parameter\ncan slightly delay the start of a movement from standstill. However, for\nPLCs with good performance, this delay will be much smaller than the\nconfigured value of this parameter.\nOn the other hand, some operations that are executed on an ongoing movement\nare affected by this parameter and result in a higher latency. The latency\nincreases by the value that is set for this parameter.\nIt affects the following operations: (1) Movements with\nMC_BUFFER_MODE.Aborting\n.\n(2) Changing the dynamics with\nMC_GroupSetOverride\n. (3) Performing an immediate\ninterrupt with\nMC_GroupInterrupt\n. (4) Applying ancillary limits with\nSMC_GroupSetAncillaryAxisLimits\nor\nSMC_GroupSetAncillaryPathLimits\nand\nexecution mode\nMC_EXECUTION_MODE.Immediately\n. (5) Applying a load with\nSMC_GroupSetLoad\nand execution mode\nMC_EXECUTION_MODE.Immediately\n.\nA negative value will reset the parameter to its default value.\nIf the value is too large, the error\nSMC_CP_FORECAST_TOO_LARGE\nis returned.  For this error, the value of\nfSyncBufferDuration\nand\nfPlanningInterval\nare also considered.  The larger the total duration\nforecast and buffer) and the smaller the planning interval, the more likely\nthe error is returned.  For a planning interval of 0.016 s and a sync buffer\nduration of 0.05 s, a typical forecast duration is 0.3 s.  In this case,\na forecast duration of more than 8 seconds (a value that is very high and\nnot recommended due to the resulting latency) leads to an error.\nThe recommended range for the quotient\n(sync buffer duration + forecast duration) / fPlanningInterval\nis between 0 and 25, the maximum is 511.\nThe current planning forecast can be monitored using the\nCurrentPlanningForecast\noutput of\nMC_GroupReadStatus\n.\nOutput\nDone\nBOOL\nThe FB is finished\nBusy\nBOOL\nThe FB is not finished\nError\nBOOL\nSignals that an error has occurred within the function block\nErrorID\nSMC_ERROR\nError identification",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "AxisGroup",
+          "Type": "AXIS_GROUP_REF_SM3",
+          "Initial": "",
+          "Comment": "Reference to a group of axis"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Applies the settings on a rising edge"
+        },
+        [
+          "pPE",
+          "POINTER TO\nSMC_AXIS_GROUP_PATH_ELEMENT",
+          "",
+          "Pointer to the first element of the path buffer;\n0 means reset to default.\nNote: this input is deprecated.  The internal path buffer\nhas been increased, it should no longer be necessary to\nchange it.  Use of this input is discouraged."
+        ],
+        [
+          "nSizeBuf",
+          "UDINT",
+          "",
+          "Size of the path buffer;\nMust be a multiple ofSIZEOF(SMC_AXIS_GROUP_PATH_ELEMENT).\nThe buffer must contain the desired number of path elements\nplus one, but at least 5 path elements.\nNote: this input is deprecated.  The internal path buffer\nhas been increased, it should no longer be necessary to\nchange it.  Use of this input is discouraged."
+        ],
+        [
+          "fPlanningInterval",
+          "LREAL",
+          "",
+          "The planning interval in seconds.\n(If less than bus task interval, then the bus task interval will be\nused.)0 means reset to default.This is the maximum step size of the trajectory planner.  Using a longer\nplanning interval can reduce the amount of computation done by the planning task.\nIf there are no performance issues in the planning task, it is recommended to\nleave this parameter at its default value.If the planning interval is changed, the following consideration should be taken\ninto account:Since in one planning cycle at most a duration of fPlanningInterval of the\ntrajectory is planned, the planning interval must not be lower than the\naverage planning task cycle time.  Otherwise, the synchronisation buffer\n(see|fSyncBufferDuration|) might run empty.A longer planning interval can lead to a coarser trajectory, i.e. configured\nlimits might not be reached or they might be exceeded.For fast movements with acceleration and deceleration phases well below one\nsecond, a planning interval between 0.016 and 0.032 is recommended.Changing the planning interval should be done step by step, starting from the default\nvalue 0.016, while checking the resulting trajectories for each step."
+        ],
+        [
+          "fSyncBufferDuration",
+          "LREAL",
+          "",
+          "Employed for the synchronisation between planning task and bus task:\nthe minimum duration of trajectories that shall be held available\n(apart from end of path).\nThe lower this parameter, the lower the latency.\nToo low values may lead to errors, if the synchronisation-queue runs empty.\n0 means reset to default.\nThe current sync buffer duration can be monitored using theCurrentSyncBufferDurationoutput ofMC_GroupReadStatus."
+        ],
+        [
+          "fSyncBufferMinFactor",
+          "LREAL",
+          "",
+          "Employed for the synchronisation between planning task and bus task:\nthe factor of fSyncBufferDuration that the duration of the synchronisation\nbuffer should not fall below.\nIf a queue underrun error occurs, using a higher value of this parameter\nmay help.\nToo low values may lead to queue underrun errors.\n0 means reset to default, must be in the range [0, 1[."
+        ],
+        [
+          "fMaxBrakeDuration",
+          "LREAL",
+          "",
+          "The maximum duration of a stop trajectory. In seconds.\nSetting a low value may lower the effective maximum velocity.\n0 means reset to default.\nNote: this input is deprecated.  It no longer has an effect\non the trajectory planning."
+        ],
+        [
+          "diMaxBlendingDelayCycles",
+          "DINT",
+          "-1",
+          "The maximum time the planner waits for a second element\nafter planning has started.  (In cycles of the bus task.)\nBefore this duration has elapsed, the planner will not plan beyond\nhalf of the first element.A negative value will reset the setting to its default.A too short delay may result in too little blending after a new\npath has been started.  A too long delay may result in an acutal\ndelay before the movement starts.(This delay is important for good blending behaviour after\nthe planner starts.  If no delay were used and the second\nblended movement was commanded a bit later, the planner\nmight have advanced the lookahead marker too much, limiting\nor removing the effect of blending.)"
+        ],
+        [
+          "fPlanningForecastDuration",
+          "LREAL",
+          "-1",
+          "The planning forecast duration in seconds.\nThis parameter is relevant for various function blocks that allow\nquerying information about the future state of an axis group.  This\nincludes function blocks related to triggers (seeSMC_GroupPrepareTrigger,SMC_GroupReadTrigger, andSMC_TRIGGER_INFO) as well as function\nblocks such asSMC_GroupReadRemainingTrajectoryDurationorSMC_GroupReadPathDynamics, if theTimeOffsetinput is used.The lower this parameter, the lower the latency. This has the following\neffects:Depending on the performance of the PLC, higher values of this parameter\ncan slightly delay the start of a movement from standstill. However, for\nPLCs with good performance, this delay will be much smaller than the\nconfigured value of this parameter.On the other hand, some operations that are executed on an ongoing movement\nare affected by this parameter and result in a higher latency. The latency\nincreases by the value that is set for this parameter.\nIt affects the following operations: (1) Movements withMC_BUFFER_MODE.Aborting.\n(2) Changing the dynamics withMC_GroupSetOverride. (3) Performing an immediate\ninterrupt withMC_GroupInterrupt. (4) Applying ancillary limits withSMC_GroupSetAncillaryAxisLimitsorSMC_GroupSetAncillaryPathLimitsand\nexecution modeMC_EXECUTION_MODE.Immediately. (5) Applying a load withSMC_GroupSetLoadand execution modeMC_EXECUTION_MODE.Immediately.A negative value will reset the parameter to its default value.If the value is too large, the errorSMC_CP_FORECAST_TOO_LARGEis returned.  For this error, the value offSyncBufferDurationandfPlanningIntervalare also considered.  The larger the total duration\nforecast and buffer) and the smaller the planning interval, the more likely\nthe error is returned.  For a planning interval of 0.016 s and a sync buffer\nduration of 0.05 s, a typical forecast duration is 0.3 s.  In this case,\na forecast duration of more than 8 seconds (a value that is very high and\nnot recommended due to the resulting latency) leads to an error.\nThe recommended range for the quotient\n(sync buffer duration + forecast duration) / fPlanningInterval\nis between 0 and 25, the maximum is 511.\nThe current planning forecast can be monitored using theCurrentPlanningForecastoutput ofMC_GroupReadStatus."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Done",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "The FB is finished"
+        },
+        [
+          "Busy",
+          "BOOL",
+          "",
+          "The FB is not finished"
+        ],
+        [
+          "Error",
+          "BOOL",
+          "",
+          "Signals that an error has occurred within the function block"
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

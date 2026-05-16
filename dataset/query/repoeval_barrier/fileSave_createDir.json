@@ -1,0 +1,5 @@
+{
+  "requirement": "This code is intended to implement the creation of a directory path by concatenating a file path and device name, and then creating the directory if it does not already exist.",
+  "provide_code": "FUNCTION_BLOCK fileSave\nVAR_INPUT\n\tfilePath \t:STRING;\n\tdevName\t\t: STRING ;\n\tintervalt\t:INT;\nEND_VAR",
+  "function_name": "fileSave_createDir"
+}

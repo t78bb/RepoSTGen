@@ -1,0 +1,8 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "IModuleTree (Interface)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_Module/IModuleTree.html",
+  "page_title": "IModuleTree (ITF)",
+  "text": "\nINTERFACE IModuleTree\nInterface for implementations of the runtime tree structure of the module\ninstance tree.\nMethods:\nGetFirstChild\nGetFirstToplevelInstance\nGetParent\nNextSibling\nPrevSibling\nStructure:\nGetFirstChild (Method)\nGetFirstToplevelInstance (Method)\nGetParent (Method)\nNextSibling (Method)\nPrevSibling (Method)",
+  "tables": []
+}

@@ -1,0 +1,31 @@
+{
+  "library": "AlarmManager",
+  "title": "UnregisterClient (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/pou-IAlarmHandler2/UnregisterClient.html",
+  "page_title": "IAlarmHandler2.UnregisterClient (METH)",
+  "text": "\nMETHOD UnregisterClient : UDINT\nUnregisters an instance IAlarmManagerClient at the alarm mannager.\nThe return value indicates, whether unregistering was successful\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "UnregisterClient",
+          "Type": "UDINT",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfAlarmManagerClient",
+          "Type": "IAlarmManagerClient",
+          "Comment": "The IAlarmManagerClient instance to unregister"
+        }
+      ]
+    }
+  ]
+}

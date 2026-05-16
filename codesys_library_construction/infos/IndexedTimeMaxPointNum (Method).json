@@ -1,0 +1,23 @@
+{
+  "library": "DNP3",
+  "title": "IndexedTimeMaxPointNum (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/pou-Master/Datapoints/IndexedTimeMaxPointNum.html",
+  "page_title": "Master.IndexedTimeMaxPointNum (METH)",
+  "text": "\nMETHOD IndexedTimeMaxPointNum : DINT\nMaximum point number of all Indexed Time datapoints (DNP3 object group 50 âtime and dateâ variation 4) provided by the Outstation.\nReturns -1 if there are no datapoints.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "IndexedTimeMaxPointNum",
+          "Type": "DINT"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_ToolCorr (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/SoftMotion-Function-Blocks/SMC_ToolCorr.html",
+  "page_title": "SMC_ToolCorr (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_ToolCorr\nThis function block is replaced by\nSMC_ToolRadiusCorr\n.\nSMC_ToolCorr\ncreates a shifted path.\nIn the shifted path each point has a defined distance to\nthe original point (tool radius correction).\nA typical application is the milling of a programmed contour with a\nmilling drill of a certain diameter. In order to compensate the radius of the\ndrill, the milling drill must follow a shifted path.\nNote\nThe shifted path may contain self-intersections or loops\nThat would mean that the desired contour would be destroyed\nduring passing the shifted path. (See the example below.)\nTo avoid such intersections, use\nSMC_AvoidLoop\n.\nProceeding of SMC_ToolCorr\nAll SMC_GEOINFO objects found in the Input\nSMC_OUTQUEUE\nstructure\nwill be checked one after the other.\nIf Bit1 (Bit2) of the variable\nIntern_Mark\nis set in one of these objects,\nthen starting from there â in direction of motion - the path will be\nshifted to the left (right) by the currently set tool radius.\nIn order to get a continuous path the input\neMode\nhave to set\non one the desired mode:\nTC_RAMP_IN\n: this mode is used to ramp into the offset path,\nwhich means that the start position stays unchanged, but the\nend position is offset. All further objects are offset as well until the\ntool radius correction is switched off by setting Bit0 of\nIntern_Mark\n.\nThen, the start position of the object is still offset, but the\nend position is the original one.\nTC_BLIND_POS\n: this mode is used for insetting a positioning object\n(SMC_GEOINFO.iMoveType = 100), resp. if such a positioning object is\nalready preceding the object. It will be shifted directly to the\nstart point of the shifted path. Each further object will then be\noffset as well, until Bit0 of\nIntern_Mark\ngets set, what will stop\nthe tool radius correction. A further positioning object will be\ninserted.\nSMC_NCDecoder\nwill set these bits in reaction on the instructions G41/G42/G40.\nIn other words: The tool radius correction will be done for all objects\nlocated between the instructions G41 and G40 resp. G42 and G40.\nExample 1: Simple tool correction\nG-Code:\nN0 G0 X10 Y-10 F10 E100 E-100\nN1 G41 D10\nN2 G1 X20 Y-10\nN2 G1 X30 Y-10\nCNC path without tool correction:\nCNC path with tool correction, eMode=TC_BLIND_POS:\nExample 2: Tool correction with eMode=TC_BLIND_POS\nG-Code\nN000 G41 D1 (WRK an)\nN010 G00 X3 F100 E1000 E-1000\nN020 G01 X5 Y10\nN030 G01 X7 Y10\nN040 G01 X10 Y0\nN050 G00 X20\nN060 G40 (WRK off)\nIn the example above the element in sentence N010 ramps in the shifted path.\nThe element in sentence N050 is used for ramping out. The following figure shows\nthe CNC path with tool correction and\neMode=TC_BLIND_POS\n:\nIt is highly recommended, that the first and last element in the parenthesis is\na positioning element (G0). If this is not the case, the first move is to the\noriginal starting point of the object, and the next move is to the offset start point.\nExample 3: Tool correction with eMode=TC_RAMP_IN\nG-Code\n% G-code RampIn and Rampout in radius correction\nN0 G0 X10.0 Y-15.0 F10.0 E100 E-100.0\nN1 G41 D10.0\nN2 G1 X20.0 Y-15.0 (RampIn)\nN3 G1 X30.0 Y-15\nN4 G40\nN5 G1 X40.0 Y-15.0 (RampOut)\nCondition for RampIn and RampOut is a linear movement (G1 in sentence N1 and sentence N5).\nThe following figure shows the CNC path with radius correction\neMode=TC_RAMP_IN\n:\nExample 4: Tool correction with eMode=TC_RAMP_IN\nG-Code\nN000 G41 D3 (WRK an)\nN010 G01 X3 Y10 F100 E1000 E-1000\nN020 G01 X7 Y10\nN030 G01 X10 Y0\nN040 G40 (WRK off)\nN050 G01 X20\nIn the example above the element in sentence N010 ramps in the shifted path. The\nelement in sentence N050 is used for ramping out.\nNote the first element inside the G41/G40 parenthesis is used for ramping in and\nthe next is used for ramping out and must be a line (G01).\nExample 5: Milling a contour with a milling drill moved in Z-direction\nG-Code\n(First section)\nN000 G41 D1 (WRK on) F100 E1000 E-1000\nN010 G00 X3\nN020 G01 Z10\nN030 G01 X5 Y10 (Beginning of the milling contour)\nN040 G01 X7 Y10\nN050 G01 X10 Y0 (End of the milling contour)\nN060 G01 Z0\nN070 G40 (WRK off)\nN080 G00 X20\n(Second section)\nN080 G42 D1 (WRK on)\nN090 G00 X23\nN100 G01 Z10\nN110 G01 X25 Y10\nN120 G01 X27 Y10\nN130 G01 X30 Y0\nN140 G01 Z0\nN150 G40 (WRK off)\nN160 G00 X40\nThe example above shows the using of the tool radius correction (WRK) together\nwith the cutter positioning in Z-direction. The mode is set to\nBLIND_POS\n.\nThe first element in the G41/G42-G40 parenthesis is to be a positioning to the\nstart point of the contour. The next step is the positioning of the shaping tool\nin Z. Then the contour starts. At last the Z-axis is positioned off the workpiece\nand the tool radius correction is turned off. The second section of the example\nshows a tool radius correction in another direction. The following figure shows\nthe milling CNC path along the Z-axis:\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "bExecute",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Starts on rising edge."
+        },
+        [
+          "bAbort",
+          "BOOL",
+          "",
+          "IfTRUE, the current processing of this function block\nis aborted"
+        ],
+        [
+          "bAppend",
+          "BOOL",
+          "",
+          "As long as this input remainsFALSE, the DataOutQueue will be\ncleared at each reset.\nAs long as it remainsTRUE, newly incoming data will be written\nto the end of the DataOutQueue."
+        ],
+        [
+          "poqDataIn",
+          "POINTER TOSMC_OUTQUEUE",
+          "",
+          "The input path queue."
+        ],
+        [
+          "dToolRadius",
+          "LREAL",
+          "",
+          "This variable contains the value, which â added to the current ToolRadius\nof theSMC_GEOINFOobject â  will determine the tool radius by which\nthe path is to be shifted (see above). This value can be modified online.\nThus it is possible to predefine the value offline\n(by theSMC_GEOINFOstructure) and to modulate it online.\nNote that a tool radius correction that gets initiated during a shift\nof the block will cause the abort of the path correction and therefore\nshould be avoided! But it is possible to do the radius correction\nduring a reset or within a phase guaranteeing that the module is not\ncurrently shifting a block (Status=TC_ORIG). Default-Value: 0."
+        ],
+        [
+          "nSizeOutQueue",
+          "UDINT",
+          "",
+          "This variable contains the size of the data buffer, the list ofSMC_GEOINFOstructure objects will be written to.\nThis buffer must be at least five times as big as aSMC_GEOINFOstructure\nitself. Otherwise,SMC_NCDecoderwill not execute any actions at all.\nIts size may be predefined, but may be modified later only during a reset.\nIt is recommended to create the buffer as described by the example below.ExampleBuf:Array[1..50]ofSMC_GeoInfo.The correct buffer size will then be retrieved by use of the\noperatorsizeof(ExampleBuf)."
+        ],
+        [
+          "pbyBufferOutQueue",
+          "POINTER TO ARRAY [0..0]\nOF SMC_GEOINFO",
+          "",
+          "This input must point to the first byte of the memory area that is\nallocated for theSMC_OUTQUEUEstructure.\nThis area must be at least as big as defined innSizeOutQueue.\nTypically the allocation of the memory buffer is done in the declaration\npart of the IEC-program by defining an array ofSMC_GEOINFO(for exampleBUF:ARRAY[1..50]OFSMC_GEOINFO;for a buffer that can store 50 path elements).\nThe value may be predefined, but may be modified later on\nonly during a reset."
+        ],
+        [
+          "eMode",
+          "SMC_TOOLCORRMODE",
+          "TC_RAMP_IN",
+          "Mode that defines the transition between offset and non-\noffset path."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bDone",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "This variable is be set toTRUEas soon as the input path\nhas been processed completely.\nThe function block does not perform any further actions\nuntil it gets a reset."
+        },
+        [
+          "bBusy",
+          "BOOL",
+          "",
+          "TRUE, while execution of function block is not finished"
+        ],
+        [
+          "bError",
+          "BOOL",
+          "",
+          "Signals, that an error has occurred within the function\nblock"
+        ],
+        [
+          "wErrorID",
+          "SMC_ERROR",
+          "",
+          "Error identification"
+        ],
+        [
+          "poqDataOut",
+          "POINTER TOSMC_OUTQUEUE",
+          "",
+          "This variable points to theSMC_OUTQUEUEstructure that manages\nthe decodedSMC_GEOINFOobjects."
+        ],
+        [
+          "iStatus",
+          "SMC_TC_STATUS",
+          "TC_ORIG",
+          "Shows the current status of the module.TC_ORIG(0): No tool radius correction at the object.TC_RIGHT(1): Shift objects to the right.TC_LEFT(2): Shift objects to the left.TC_END(4): Processing of the objects is terminated."
+        ]
+      ]
+    }
+  ]
+}

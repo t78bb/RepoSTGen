@@ -1,0 +1,23 @@
+{
+  "library": "BACnet2",
+  "title": "GetNumPersistentObjects (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/BACnetServer/pou-IBACnetServer/PropertyAttributes/GetNumPersistentObjects.html",
+  "page_title": "IBACnetServer.GetNumPersistentObjects (METH)",
+  "text": "\nMETHOD GetNumPersistentObjects : UDINT\nGets the number of BACnet-Objects with persistent properties\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetNumPersistentObjects",
+          "Type": "UDINT"
+        }
+      ]
+    }
+  ]
+}

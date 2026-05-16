@@ -1,0 +1,28 @@
+{
+  "library": "DNP3",
+  "title": "UDINTToAnyNumber (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/AnyNumberConverter/UDINTToAnyNumber.html",
+  "page_title": "UDINTToAnyNumber (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL UDINTToAnyNumber\nConvert UDINT to an AnyNumber with baseType = AnyNumberType.TYPE_UDINT.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "in",
+          "Type": "UDINT"
+        },
+        {
+          "Scope": "Output",
+          "Name": "out",
+          "Type": "AnyNumber"
+        }
+      ]
+    }
+  ]
+}

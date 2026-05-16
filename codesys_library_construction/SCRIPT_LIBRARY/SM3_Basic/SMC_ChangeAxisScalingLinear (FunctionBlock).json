@@ -1,0 +1,89 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_ChangeAxisScalingLinear (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/AdministrativeConfiguration/SMC_ChangeAxisScalingLinear.html",
+  "page_title": "SMC_ChangeAxisScalingLinear (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_ChangeAxisScalingLinear\nThis function block changes the scaling (increments per technical units),\nof a linear axis.\nThe drive must not be enabled with\nMC_Power\n, otherwise error\nSMC_CGR_DRIVE_POWERED\nis returned.\nAn automatic reinitialization of the drive is done in order to guarantee\nthat all variables are initialized in a correct way.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3",
+          "Initial": "",
+          "Comment": "Reference to the axis."
+        },
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Rising edge: starts the execution of the function block."
+        },
+        [
+          "Increments",
+          "UDINT",
+          "16#10000",
+          "The increments perTechnicalUnits. Units: [inc]."
+        ],
+        [
+          "TechnicalUnits",
+          "UDINT",
+          "360",
+          "The units that correspond toIncrements. In technical\nunits [u]."
+        ],
+        [
+          "InvertDirection",
+          "BOOL",
+          "",
+          "Whether the direction of the axis is inverted or not."
+        ],
+        [
+          "ModuloPeriod",
+          "LREAL",
+          "",
+          "Modulo period (only for modulo axes) in technical units [u]."
+        ],
+        [
+          "AxisType",
+          "SMC_AXIS_TYPE",
+          "",
+          "The axis type."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Done",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUE: The scaling has been changed."
+        },
+        [
+          "Busy",
+          "BOOL",
+          "",
+          "TRUE: Execution of function block has not been finished\nyet."
+        ],
+        [
+          "Error",
+          "BOOL",
+          "",
+          "TRUE: An error has occurred within the function block."
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

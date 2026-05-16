@@ -1,0 +1,28 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "GetIsActionOngoing (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_RMP_ReliableMessageProtocol/pou-RMPService/GetIsActionOngoing.html",
+  "page_title": "RMPService.GetIsActionOngoing (METH)",
+  "text": "\nMETHOD GetIsActionOngoing : BOOL\n..return:\nIf it was possible to get the current state of activity.\nIf this is\nFALSE\nxIsActionOngoing\nis not valid!\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetIsActionOngoing",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Output",
+          "Name": "xIsActionOngoing",
+          "Type": "BOOL"
+        }
+      ]
+    }
+  ]
+}

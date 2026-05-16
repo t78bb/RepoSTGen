@@ -1,0 +1,62 @@
+{
+  "library": "SML_Basic",
+  "title": "MC_WriteBoolParameter_SML (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SML_Basic/Current/PLCopen/MC_WriteBoolParameter_SML.html",
+  "page_title": "MC_WriteBoolParameter_SML (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL MC_WriteBoolParameter_SML\nWrites the value of a boolean SoftMotion or axis specific parameter.\nFor the list of all SoftMotion parameter numbers see\nAxis_REF_SML\n.\nSee\nMC_WriteParameter_SML\nfor a description of axis specific parameters.\nNote\nIf the parameter is not of type\nBOOL\n, the behavior is undefined.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SML",
+          "Comment": "Reference to the axis"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Comment": "Rising edge: Writing is started"
+        },
+        [
+          "ParameterNumber",
+          "DINT",
+          "Number of the parameter"
+        ],
+        [
+          "Value",
+          "BOOL",
+          "Value to be written"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Done",
+          "Type": "BOOL",
+          "Comment": "The value was written successfully"
+        },
+        [
+          "Busy",
+          "BOOL",
+          "The FB is not finished and new output values are to be\nexpected"
+        ],
+        [
+          "Error",
+          "BOOL",
+          "An error occurred"
+        ],
+        [
+          "ErrorID",
+          "SML_ERROR",
+          "The error number"
+        ]
+      ]
+    }
+  ]
+}

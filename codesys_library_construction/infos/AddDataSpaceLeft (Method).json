@@ -1,0 +1,23 @@
+{
+  "library": "SM3_CNC",
+  "title": "AddDataSpaceLeft (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/GSentence/pou-SMC_GSentenceQueue/AddDataSpaceLeft.html",
+  "page_title": "SMC_GSentenceQueue.AddDataSpaceLeft (METH)",
+  "text": "\nMETHOD AddDataSpaceLeft : UDINT\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "AddDataSpaceLeft",
+          "Type": "UDINT"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "library": "StringUtils",
+  "title": "StrCmpA (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/StringUtils/Current/Public-Parts/Ansi/StrCmpA.html",
+  "page_title": "StrCmpA (FUN)",
+  "text": "\nFUNCTION StrCmpA : INT\nDoes a case sensitive comparison of two strings\nReturn values:\n0 -> the strings are equal\n-1 -> pwd1 is less than pwd2\n1 -> pwd1 is larger than pwd2\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "StrCmpA",
+          "Type": "INT"
+        },
+        {
+          "Scope": "Input",
+          "Name": "pby1",
+          "Type": "POINTER TO BYTE"
+        },
+        [
+          "pby2",
+          "POINTER TO BYTE"
+        ]
+      ]
+    }
+  ]
+}

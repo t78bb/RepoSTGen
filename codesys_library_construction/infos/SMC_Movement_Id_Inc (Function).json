@@ -1,0 +1,28 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_Movement_Id_Inc (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/AxisGroup/Movements/SMC_Movement_Id_Inc.html",
+  "page_title": "SMC_Movement_Id_Inc (FUN)",
+  "text": "\nFUNCTION SMC_Movement_Id_Inc : SMC_Movement_Id\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "id",
+          "Type": "SMC_Movement_Id"
+        },
+        {
+          "Scope": "Return",
+          "Name": "SMC_Movement_Id_Inc",
+          "Type": "SMC_Movement_Id"
+        }
+      ]
+    }
+  ]
+}

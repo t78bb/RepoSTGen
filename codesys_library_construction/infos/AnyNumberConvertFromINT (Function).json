@@ -1,0 +1,28 @@
+{
+  "library": "DNP3",
+  "title": "AnyNumberConvertFromINT (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Functions/AnyNumber/AnyNumberConvertFromINT.html",
+  "page_title": "AnyNumberConvertFromINT (FUN)",
+  "text": "\nFUNCTION AnyNumberConvertFromINT\nConvert INT to AnyNumber\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "in",
+          "Type": "INT"
+        },
+        {
+          "Scope": "Output",
+          "Name": "out",
+          "Type": "AnyNumber"
+        }
+      ]
+    }
+  ]
+}

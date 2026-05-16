@@ -1,0 +1,36 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_GetObj (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/OutQueue-Functions/SMC_GetObj.html",
+  "page_title": "SMC_GetObj (FUN)",
+  "text": "\nFUNCTION SMC_GetObj : POINTER TO SMC_GEOINFO\nReturns the n-th object of an\nSMC_OUTQUEUE\n.\nFor\nN=0\nthe first element will be returned.\nIf the number of elements is less than n+1, zero is returned.\ntask-safety: call from consumer task only\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "poq",
+          "Type": "POINTER TOSMC_OUTQUEUE",
+          "Comment": "The out queue"
+        },
+        [
+          "N",
+          "UINT",
+          "Index of object in the queue. Counting is\nstarted withN=0for the first element."
+        ],
+        {
+          "Scope": "Return",
+          "Name": "SMC_GetObj",
+          "Type": "POINTER TOSMC_GEOINFO",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

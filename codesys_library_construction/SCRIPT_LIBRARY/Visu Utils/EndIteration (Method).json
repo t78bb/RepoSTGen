@@ -1,0 +1,8 @@
+{
+  "library": "Visu Utils",
+  "title": "EndIteration (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/Visu Utils/Current/VisuUtils/VisuActionUtilities/Interfaces/pou-IVisualizationClientIteration/EndIteration.html",
+  "page_title": "IVisualizationClientIteration.EndIteration (METH)",
+  "text": "\nMETHOD EndIteration\nThis method will be called after the end of an iteration over all clients.\nNote\nPlease remark that this method will be called from VISU_TASK",
+  "tables": []
+}

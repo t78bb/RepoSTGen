@@ -1,0 +1,33 @@
+{
+  "library": "CommFB",
+  "title": "DP_DEVICE_ID (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/CommFB/Current/CommFB/Addresses/DP_DEVICE_ID.html",
+  "page_title": "DP_DEVICE_ID (STRUCT)",
+  "text": "\nTYPE DP_DEVICE_ID : STRUCT\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "MASTER",
+          "Type": "BYTE",
+          "Comment": "DP master interface identification"
+        },
+        {
+          "Name": "SEGMENT",
+          "Type": "BYTE",
+          "Comment": "segment number"
+        },
+        {
+          "Name": "STATION",
+          "Type": "BYTE",
+          "Comment": "station number"
+        }
+      ]
+    }
+  ]
+}

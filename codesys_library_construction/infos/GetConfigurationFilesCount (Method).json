@@ -1,0 +1,28 @@
+{
+  "library": "BACnet",
+  "title": "GetConfigurationFilesCount (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/Device/pou-BACnetDevice/GetConfigurationFilesCount.html",
+  "page_title": "BACnetDevice.GetConfigurationFilesCount (METH)",
+  "text": "\nMETHOD GetConfigurationFilesCount : CmpBACnet.IEC_BACNET_STATUS\nGets the count of entries in the Configuration_Files-BACnet-Property.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetConfigurationFilesCount",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS"
+        },
+        {
+          "Scope": "Output",
+          "Name": "count",
+          "Type": "CmpBACnet.IEC_BACNET_ELEMENT_COUNT"
+        }
+      ]
+    }
+  ]
+}

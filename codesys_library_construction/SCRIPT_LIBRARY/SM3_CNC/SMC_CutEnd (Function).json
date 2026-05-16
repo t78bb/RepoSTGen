@@ -1,0 +1,32 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_CutEnd (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/GeoInfo-Help-Functions/SMC_CutEnd.html",
+  "page_title": "SMC_CutEnd (FUN)",
+  "text": "\nFUNCTION SMC_CutEnd : BOOL\nDeletes the part between\nd..1\n(T) of object\npg\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SMC_CutEnd",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Input",
+          "Name": "pg",
+          "Type": "POINTER TOSMC_GEOINFO"
+        },
+        [
+          "d",
+          "LREAL"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "library": "BACnetDefaultImpl",
+  "title": "LogRecord (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnetDefaultImpl/Current/BACnetDefaultImpl/Function-Blocks/LoggingObjects/Internal/pou-LogObjectsBase/Logging/LogRecord.html",
+  "page_title": "LogObjectsBase.LogRecord (METH)",
+  "text": "\nMETHOD PROTECTED LogRecord\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "recordCount",
+          "Type": "CmpBACnet.IEC_BACNET_UNSIGNED"
+        },
+        [
+          "pRecord",
+          "POINTER TO BYTE"
+        ],
+        [
+          "numRecordEntries",
+          "CmpBACnet.IEC_BACNET_UNSIGNED"
+        ]
+      ]
+    }
+  ]
+}

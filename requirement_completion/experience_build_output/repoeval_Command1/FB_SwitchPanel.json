@@ -1,0 +1,11 @@
+{
+  "模糊点列表": [
+    {
+      "模糊点类型": "函数调用",
+      "模糊点描述": "原始需求未明确指定如何执行命令对象的方法",
+      "差异细节": "模型生成代码中直接调用 aiCommand[nIndex]()，而参考代码中调用 aiCommand[nIndex].Execute()",
+      "精准需求描述": "当开关状态变为激活时，应调用与该开关关联的命令对象的 Execute 方法"
+    }
+  ],
+  "case_id": "repoeval_Command1/FB_SwitchPanel"
+}

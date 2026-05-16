@@ -1,0 +1,28 @@
+{
+  "library": "SM3_CNC",
+  "title": "GetFromEnd (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/File/ReadNCFile/Token/pou-SMC_TokenQueue/GetFromEnd.html",
+  "page_title": "SMC_TokenQueue.GetFromEnd (METH)",
+  "text": "\nMETHOD GetFromEnd : POINTER TO SMC_Token\nReturns a pointer to the n-last token, or 0 if the queue has less than n+1 tokens.\nThe pointer is valid until the next call to\nRemoveFirst\n.\nOnly to be called safely from the writing task, or when it is made sure that\nno tokens are added concurrently.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "n",
+          "Type": "UDINT"
+        },
+        {
+          "Scope": "Return",
+          "Name": "GetFromEnd",
+          "Type": "POINTER TOSMC_Token"
+        }
+      ]
+    }
+  ]
+}

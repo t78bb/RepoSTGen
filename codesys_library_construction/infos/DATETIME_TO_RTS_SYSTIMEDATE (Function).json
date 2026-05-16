@@ -1,0 +1,37 @@
+{
+  "library": "BACnet2DefaultImpl",
+  "title": "DATETIME_TO_RTS_SYSTIMEDATE (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2DefaultImpl/Current/BACnetDefaultImpl/Functions/DATETIME_TO_RTS_SYSTIMEDATE.html",
+  "page_title": "DATETIME_TO_RTS_SYSTIMEDATE (FUN)",
+  "text": "\nFUNCTION DATETIME_TO_RTS_SYSTIMEDATE : ERROR\nConverts timestamp in milliseconds since 1.1.1970 00:00:00.000 to SYSTIMEDATE\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "DATETIME_TO_RTS_SYSTIMEDATE",
+          "Type": "ERROR",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "uliDateTime",
+          "Type": "ULINT",
+          "Comment": "timestamp in milliseconds since 1.1.1970 00:00:00.000"
+        },
+        {
+          "Scope": "Inout",
+          "Name": "std",
+          "Type": "SYSTIMEDATE",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

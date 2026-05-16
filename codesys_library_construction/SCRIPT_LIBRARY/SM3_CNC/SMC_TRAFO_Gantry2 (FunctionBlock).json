@@ -1,0 +1,46 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_TRAFO_Gantry2 (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_Trafo_POUs/SoftMotion-Transformations/Gantry-systems/SMC_TRAFO_Gantry2.html",
+  "page_title": "SMC_TRAFO_Gantry2 (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_TRAFO_Gantry2\nReverse transformation for two-dimensional portal systems.\nNote\nFor detailed information on transformations\nsee overview to\nSM_Trafo_POUs\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "pi",
+          "Type": "SMC_PosInfo",
+          "Comment": "Target vector position (x,y), output of interpolator."
+        },
+        [
+          "dOffsetX",
+          "LREAL",
+          "Additional offset for x-axis"
+        ],
+        [
+          "dOffsetY",
+          "LREAL",
+          "Additional offset for y-axis"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "dx",
+          "Type": "LREAL",
+          "Comment": "Resulting position for x-axis"
+        },
+        [
+          "dy",
+          "LREAL",
+          "Resulting position for y-axis"
+        ]
+      ]
+    }
+  ]
+}

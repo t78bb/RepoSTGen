@@ -1,0 +1,48 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_TC_STATUS (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_Data-types/SoftMotion-CNC/SMC_TC_STATUS.html",
+  "page_title": "SMC_TC_STATUS (ENUM)",
+  "text": "\nTYPE SMC_TC_STATUS :\nThis enumeration indicates the current state of the FB\nSMC_ToolCorr\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "TC_ORIG",
+          "Initial": "0",
+          "Comment": "No tool radius correction at the object"
+        },
+        {
+          "Name": "TC_RIGHT",
+          "Initial": "1",
+          "Comment": "Shift objects to the right"
+        },
+        {
+          "Name": "TC_LEFT",
+          "Initial": "2",
+          "Comment": "Shift objects to the left"
+        },
+        {
+          "Name": "TC_RAMPIN_RIGHT",
+          "Initial": "3",
+          "Comment": "Next object ramps in to the right"
+        },
+        {
+          "Name": "TC_RAMPIN_LEFT",
+          "Initial": "4",
+          "Comment": "Next object ramps in to the left"
+        },
+        {
+          "Name": "TC_END",
+          "Initial": "5",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

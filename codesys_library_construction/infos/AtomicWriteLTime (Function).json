@@ -1,0 +1,32 @@
+{
+  "library": "Standard64",
+  "title": "AtomicWriteLTime (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/Standard64/Current/Atomic-Read-Write-Functions/AtomicWriteLTime.html",
+  "page_title": "AtomicWriteLTime (FUN)",
+  "text": "\nFUNCTION AtomicWriteLTime : BOOL\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "AtomicWriteLTime",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Input",
+          "Name": "pDest",
+          "Type": "POINTER TO LTIME"
+        },
+        [
+          "ltValue",
+          "LTIME"
+        ]
+      ]
+    }
+  ]
+}

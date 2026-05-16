@@ -1,0 +1,23 @@
+{
+  "library": "MemoryUtils",
+  "title": "Free (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/MemoryUtils/Current/MemoryUtils/Functionblocks/pou-MemoryManager/Public/Free.html",
+  "page_title": "MemoryManager.Free (METH)",
+  "text": "\nMETHOD PUBLIC Free\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "pMsg",
+          "Type": "POINTER TO BYTE"
+        }
+      ]
+    }
+  ]
+}

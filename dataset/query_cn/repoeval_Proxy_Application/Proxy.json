@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现一个代理功能块，用于通过密码验证保护对实际主题对象的访问。",
+  "provide_code": "{attribute 'enable_dynamic_creation'}\nFUNCTION_BLOCK Proxy IMPLEMENTS  Subject_Interface\nVAR_INPUT\nEND_VAR\nVAR_OUTPUT\nEND_VAR"
+}

@@ -1,0 +1,95 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_CamRegister (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/CAM/SMC_CamRegister.html",
+  "page_title": "SMC_CamRegister (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_CamRegister\nThis function block represents a tappet control unit.\nLike\nMC_CamIn\n, it operates on a cam table represented as a structure\nof type a\nMC_CAM_REF\n.\nThe slave movmement in the\nMC_CAM_REF\nstructure is ignored,\nonly the tappet information is evaluated.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Master",
+          "Type": "AXIS_REF_SM3",
+          "Initial": "",
+          "Comment": "Reference to master axis"
+        },
+        [
+          "CamTable",
+          "MC_CAM_REF",
+          "",
+          "Description of a (possibly empty) cam containing the\ndescription of the tappets."
+        ],
+        [
+          "bTappet",
+          "ARRAY\n[1..MAX_NUM_TAPPETS] OF\nBOOL",
+          "",
+          "Tappet bits"
+        ],
+        {
+          "Scope": "Input",
+          "Name": "Enable",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "TRUE: Starts execution of function block."
+        },
+        [
+          "MasterOffset",
+          "LREAL",
+          "0",
+          "Offset to be added to master position"
+        ],
+        [
+          "MasterScaling",
+          "LREAL",
+          "1",
+          "Scaling factor for master profile"
+        ],
+        [
+          "TappetHysteresis",
+          "LREAL",
+          "0",
+          "Size of the hysteresis for tappets in [u].\nA positive value means that the tappet cannot fire immediately after it\nhas fired. The master position first needs to move away from the tappet\nby more than the value given forTappetHysteresis.For example, if the master is an encoder, the master position may\noscillate by a few increments around the tappet position. Without a\nhysteresis, the tappet may fire all the time."
+        ],
+        [
+          "DeadTimeCompensation",
+          "LREAL",
+          "0",
+          "Dead time compensation in seconds. The position of the\nmaster axis to be expected will be calculated by linear\nextrapolation."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Busy",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "TRUE: Execution of function block has not been finished."
+        },
+        [
+          "Error",
+          "BOOL",
+          "FALSE",
+          "TRUE: Error has occurred within the function block."
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "0",
+          "Error identification"
+        ],
+        [
+          "EndOfProfile",
+          "BOOL",
+          "FALSE",
+          "Indicates that theMasterhas reached a border of the cam table.\n(This can be either the start or the end of the cam table,\ndepending on theMasterdirection.)The output stays TRUE while theMasteris outside the cam range."
+        ]
+      ]
+    }
+  ]
+}

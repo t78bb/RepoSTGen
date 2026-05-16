@@ -1,0 +1,5 @@
+{
+  "requirement": "This code is intended to implement a tank level simulation that calculates and updates the liquid level based on valve states, fill and drain rates, and ensures the level remains within specified bounds.",
+  "provide_code": "FUNCTION_BLOCK FB_TankLevelSimulator\nVAR_INPUT\n\tbMedium1Opened\t\t:\tBOOL;\t\t\t// 介质1阀门打开\n\tbMedium2Opened\t\t:\tBOOL;\t\t\t// 介质2阀门打开\n\tbDrainOpened\t\t:\tBOOL;\t\t\t// 排空阀门打开\n\tbReset\t\t\t\t:\tBOOL;\t\t\t// 复位到初始液位\n\t\n\t// 配置参数\n\trInitialLevel\t\t:\tREAL := 25.0;\t// 初始液位 (%)\n\trFillRate1\t\t\t:\tREAL := 0.1;\t// 介质1填充速率 (%/cycle)\n\trFillRate2\t\t\t:\tREAL := 0.1;\t// 介质2填充速率 (%/cycle)\n\trDrainRate\t\t\t:\tREAL := 0.2;\t// 排空速率 (%/cycle)\n\trMinLevel\t\t\t:\tREAL := 0.0;\t// 最小液位 (%)\n\trMaxLevel\t\t\t:\tREAL := 100.0;\t// 最大液位 (%)\nEND_VAR\nVAR_OUTPUT\n\trCurrentLevel\t\t:\tREAL;\t\t\t// 当前液位 (%)\nEND_VAR",
+  "function_name": "FB_TankLevelSimulator"
+}

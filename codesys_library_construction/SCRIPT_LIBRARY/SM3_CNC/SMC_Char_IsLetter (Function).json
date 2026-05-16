@@ -1,0 +1,28 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_Char_IsLetter (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/File/ReadNCFile/Token/TokenScanner/Helpers/SMC_Char_IsLetter.html",
+  "page_title": "SMC_Char_IsLetter (FUN)",
+  "text": "\nFUNCTION SMC_Char_IsLetter : BOOL\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SMC_Char_IsLetter",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Input",
+          "Name": "c",
+          "Type": "BYTE"
+        }
+      ]
+    }
+  ]
+}

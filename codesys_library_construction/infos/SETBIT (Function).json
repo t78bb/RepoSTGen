@@ -1,0 +1,41 @@
+{
+  "library": "Util",
+  "title": "SETBIT (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/BitByte-Functions/SETBIT.html",
+  "page_title": "SETBIT (FUN)",
+  "text": "\nFUNCTION SETBIT : BOOL\nSets the value of bit at position N of variable X to B\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SETBIT",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "X",
+          "Type": "__SYSTEM.AnyType",
+          "Comment": "Variable to be modified"
+        },
+        [
+          "N",
+          "BYTE",
+          "Bitnummer 0â¦(to size of datatype)"
+        ],
+        [
+          "B",
+          "BOOL",
+          "Desired value of the bit"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "library": "Standard",
+  "title": "MID (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/Standard/Current/String-Functions/MID.html",
+  "page_title": "MID (FUN)",
+  "text": "Deutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nMenu\nSearch\nDeutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nBistable Function Blocks\nRS (FunctionBlock)\nSR (FunctionBlock)\nCounter\nCTD (FunctionBlock)\nCTU (FunctionBlock)\nCTUD (FunctionBlock)\nMiscellaneous\nRTC (FunctionBlock)\nString Functions\nCONCAT (Function)\nDELETE (Function)\nFIND (Function)\nINSERT (Function)\nLEFT (Function)\nLEN (Function)\nMID (Function)\nREPLACE (Function)\nRIGHT (Function)\nTimer\nTOF (FunctionBlock)\nTON (FunctionBlock)\nTP (FunctionBlock)\nTrigger\nF_TRIG (FunctionBlock)\nR_TRIG (FunctionBlock)\nFile and Project Information\nLibrary Reference\nStandard\nDocs\n»\nString\nFunctions\n»\nMID (FUN)\nMID (FUN)\nÂ¶\nFUNCTION MID : STRING(255)\nReturns a specific number of characters of a string, starting from a specific position\nMID\n(STR,\nLEN,\nPOS)\nmeans: Retrieve\nLEN\ncharacters from the\nSTR\nstring beginning with the character at position\nPOS\n.\n(* Example declaration *)\nVarSTRING1\n:\nSTRING\n;\n(* Example in ST , result is 'US' *)\nVarSTRING1\n:=\nMID\n(\n'SUSI'\n,\n2\n,\n2\n);\nInOut:\nScope\nName\nType\nComment\nReturn\nMID\nSTRING(255)\nPartial string of\nSTR\nInput\nSTR\nSTRING(255)\nString to be analyzed\nLEN\nINT\nNumber of characters, counted from the left\nPOS\nINT\nStart position for the partial string\ntop\nCODESYS Group | We\nsoftware\nAutomation.\nto software\n['sɒftwɛər]\ntransitive verb\n__softwared/softwaring\n: to develop software\n// to software automation: to develop software for automation purposes\nThe CODESYS Group is the manufacturer of CODESYS, the leading hardware-independent\n                                    IEC 61131-3 automation software for developing and engineering controller\n                                    applications.\nCODESYS® is a registered trademark.\nCODESYS GmbH\nA member of the CODESYS Group\nMemminger Straße 151, 87439 Kempten\nGermany\nTel.:\n+49-831-54031-0\ninfo@codesys.com\nLegal Notice\nPrivacy Policy\nLinkedIn\nYoutube\nRSS\nDownloads\nLogin\nCODESYS Store\n© 2022 CODESYS GmbH\n| A member of the CODESYS Group",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "MID",
+          "Type": "STRING(255)",
+          "Comment": "Partial string ofSTR"
+        },
+        {
+          "Scope": "Input",
+          "Name": "STR",
+          "Type": "STRING(255)",
+          "Comment": "String to be analyzed"
+        },
+        [
+          "LEN",
+          "INT",
+          "Number of characters, counted from the left"
+        ],
+        [
+          "POS",
+          "INT",
+          "Start position for the partial string"
+        ]
+      ]
+    }
+  ]
+}

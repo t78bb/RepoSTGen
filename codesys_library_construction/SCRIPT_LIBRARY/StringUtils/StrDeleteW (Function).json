@@ -1,0 +1,31 @@
+{
+  "library": "StringUtils",
+  "title": "StrDeleteW (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/StringUtils/Current/Public-Parts/Unicode/StrDeleteW.html",
+  "page_title": "StrDeleteW (FUN)",
+  "text": "\nFUNCTION StrDeleteW\nDeletes <iLength> characters of <pwst>, beginning at the <iPosition>-th character position.\n<iPosition> = 1 is the first character.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "pwd",
+          "Type": "POINTER TO WORD"
+        },
+        [
+          "iLength",
+          "INT"
+        ],
+        [
+          "iPosition",
+          "INT"
+        ]
+      ]
+    }
+  ]
+}

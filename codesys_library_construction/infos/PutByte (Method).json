@@ -1,0 +1,23 @@
+{
+  "library": "MemoryUtils",
+  "title": "PutByte (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/MemoryUtils/Current/MemoryUtils/Functionblocks/pou-ByteBuffer/PutByte.html",
+  "page_title": "ByteBuffer.PutByte (METH)",
+  "text": "\nMETHOD PutByte\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "byByte",
+          "Type": "BYTE"
+        }
+      ]
+    }
+  ]
+}

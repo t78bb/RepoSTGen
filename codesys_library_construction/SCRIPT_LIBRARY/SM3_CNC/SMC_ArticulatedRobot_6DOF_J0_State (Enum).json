@@ -1,0 +1,29 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_ArticulatedRobot_6DOF_J0_State (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_Trafo_Data-types/SMC_ArticulatedRobot_6DOF_J0_State.html",
+  "page_title": "SMC_ArticulatedRobot_6DOF_J0_State (ENUM)",
+  "text": "\nTYPE SMC_ArticulatedRobot_6DOF_J0_State :\nThe possible configuration states of joint 0 of the 6DOF robot arm.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "SMC_AR_ARMFORWARD",
+          "Comment": "The arm is pointing towards the wrist center"
+        },
+        {
+          "Name": "SMC_AR_ARMBACKWARDS",
+          "Comment": "The arm is pointing opposite to the wrist center"
+        },
+        {
+          "Name": "SMC_AR_ARMSTRAIGHT",
+          "Comment": "The wrist center is directly above joint 0 (singular case)"
+        }
+      ]
+    }
+  ]
+}

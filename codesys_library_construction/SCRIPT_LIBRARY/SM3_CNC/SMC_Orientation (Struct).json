@@ -1,0 +1,33 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_Orientation (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_Trafo_POUs/SoftMotion-Transformations/additional-FBs/SMC_Orientation.html",
+  "page_title": "SMC_Orientation (STRUCT)",
+  "text": "\nTYPE SMC_Orientation : STRUCT\nRepresents an orientation with three euler angles\nA, B, and C.  Which convention is used (XYZ, ZYZ, ZYX, â¦)\nmust be specified for each use of this structure and is not\npart of the structure definition.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "A",
+          "Type": "LREAL",
+          "Comment": "The euler angle A in degrees."
+        },
+        {
+          "Name": "B",
+          "Type": "LREAL",
+          "Comment": "The euler angle B in degrees."
+        },
+        {
+          "Name": "C",
+          "Type": "LREAL",
+          "Comment": "The euler angle C in degrees."
+        }
+      ]
+    }
+  ]
+}

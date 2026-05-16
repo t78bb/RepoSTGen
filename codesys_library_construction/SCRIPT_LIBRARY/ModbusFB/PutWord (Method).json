@@ -1,0 +1,23 @@
+{
+  "library": "ModbusFB",
+  "title": "PutWord (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/ModbusFB/Current/ModbusFB/Function-Blocks/Util/pou-ByteBuffer/PutWord.html",
+  "page_title": "ByteBuffer.PutWord (METH)",
+  "text": "\nMETHOD PutWord\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "wWord",
+          "Type": "WORD"
+        }
+      ]
+    }
+  ]
+}

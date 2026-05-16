@@ -1,0 +1,23 @@
+{
+  "library": "BACnet2",
+  "title": "Request (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/BACnetServer/Async/pou-BACnetServerConfEventNotification/Request.html",
+  "page_title": "BACnetServerConfEventNotification.Request (METH)",
+  "text": "\nMETHOD PROTECTED Request : CmpBACnet.IEC_BACNET_STATUS\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "Request",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS"
+        }
+      ]
+    }
+  ]
+}

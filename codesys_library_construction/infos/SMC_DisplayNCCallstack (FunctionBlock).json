@@ -1,0 +1,57 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_DisplayNCCallstack (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/Interpreter/Callstack/SMC_DisplayNCCallstack.html",
+  "page_title": "SMC_DisplayNCCallstack (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_DisplayNCCallstack\nThis function block displays the names of the NC-programs\nwhich the currently interpolated movement comes from\n(at âinterpolation timeâ).\nAttention: This function block must be called in the same task\nas the interpreter.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout Const",
+          "Name": "csi",
+          "Type": "SMC_NCCallstackInfo",
+          "Comment": "Output of the instance ofSMC_NCInterpreterthat has emitted\nthe ongoing movement."
+        },
+        [
+          "ipo",
+          "SMC_Interpolator",
+          "The interpolator in use."
+        ],
+        {
+          "Scope": "Input",
+          "Name": "Enable",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Output",
+          "Name": "Valid",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        [
+          "Error",
+          "BOOL",
+          ""
+        ],
+        [
+          "ErrorID",
+          "SMC_Error",
+          ""
+        ],
+        [
+          "Callstack",
+          "ARRAY\n[0..(SoftMotion_NC2_Constants.IPR_CALLSTACK_SIZE\n- 1)] OF STRING",
+          "The callstack that corresponds to the movement that is currently\nbeing interpolated.\nCallstack[0] holds the name of the (sub)program that the current\nmovement originates from. If it is a sub-program, then\nCallstack[1] holds the name of the calling (sub)program\nand so on.\nThe list of active programs is terminated by an empty string."
+        ]
+      ]
+    }
+  ]
+}

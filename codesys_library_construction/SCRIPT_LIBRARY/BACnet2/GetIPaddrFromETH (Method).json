@@ -1,0 +1,31 @@
+{
+  "library": "BACnet2",
+  "title": "GetIPaddrFromETH (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/BACnetServer/pou-BACnetIPdatalink/protected/GetIPaddrFromETH.html",
+  "page_title": "BACnetIPdatalink.GetIPaddrFromETH (METH)",
+  "text": "\nMETHOD PROTECTED GetIPaddrFromETH : BOOL\nGets IP-address from parent ETH device, returns TRUE, if valid IP-address was obtained.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetIPaddrFromETH",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "pConnector",
+          "Type": "POINTER TO\nIoConfigConnector",
+          "Comment": "âchildâ connector to parent device, parent device could be\nâCommon.Ethernetâ (Ethernet), âCommon.BACnetâ (BACnetServer)\nor âCommon.PCIâ (PLC)."
+        }
+      ]
+    }
+  ]
+}

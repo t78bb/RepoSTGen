@@ -1,0 +1,23 @@
+{
+  "library": "BACnet2",
+  "title": "GetStructuredObjectCount (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/BACnetServer/pou-IBACnetServer/Objects/GetStructuredObjectCount.html",
+  "page_title": "IBACnetServer.GetStructuredObjectCount (METH)",
+  "text": "\nMETHOD GetStructuredObjectCount : UDINT\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetStructuredObjectCount",
+          "Type": "UDINT"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "library": "SM3_Dynamics",
+  "title": "DynSpatialInertia (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Dynamics/Current/SM3_Dynamics/ISMDynamics/DynSpatialInertia.html",
+  "page_title": "DynSpatialInertia (STRUCT)",
+  "text": "\nTYPE DynSpatialInertia : STRUCT\nThe spatial inertia of a body, relative to a frame at the center\nof mass.\nBeing situated at the center of mass means that the spatial inertia\ncan be represented by a 3x3 rotational inertia matrix\nI\nand the\nmass of the body\nm\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "I",
+          "Type": "SM3M.SMC_Matrix3",
+          "Comment": "The 3x3 rotational inertia matrix in kg*uÂ²."
+        },
+        {
+          "Name": "m",
+          "Type": "LREAL",
+          "Comment": "The mass in kg."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "library": "SM3_Dynamics",
+  "title": "ISMDynamics (Interface)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Dynamics/Current/SM3_Dynamics/ISMDynamics/ISMDynamics.html",
+  "page_title": "ISMDynamics (ITF)",
+  "text": "\nINTERFACE ISMDynamics\nRepresents a dynamic model that can be used to calculate\naxis forces or torques for a given axes state.\nMethods:\nAxesStateToTorque\nStructure:\nAxesStateToTorque (Method)",
+  "tables": []
+}

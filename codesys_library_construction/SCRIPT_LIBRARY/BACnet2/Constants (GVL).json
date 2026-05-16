@@ -1,0 +1,50 @@
+{
+  "library": "BACnet2",
+  "title": "Constants (GVL)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/Constants.html",
+  "page_title": "Constants (GVL)",
+  "text": "\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Scope": "Constant",
+          "Name": "YEAR_UNSPECIFIED",
+          "Type": "CmpBACnet.IEC_BACNET_WORD",
+          "Initial": "65535"
+        },
+        [
+          "DAY_OF_MONTH_UNSPECIFIED",
+          "CmpBACnet.IEC_BACNET_BYTE",
+          "255"
+        ],
+        [
+          "HOUR_UNSPECIFIED",
+          "CmpBACnet.IEC_BACNET_BYTE",
+          "255"
+        ],
+        [
+          "MINUTE_UNSPECIFIED",
+          "CmpBACnet.IEC_BACNET_BYTE",
+          "255"
+        ],
+        [
+          "SECOND_UNSPECIFIED",
+          "CmpBACnet.IEC_BACNET_BYTE",
+          "255"
+        ],
+        [
+          "HUNDREDTHS_UNSPECIFIED",
+          "CmpBACnet.IEC_BACNET_BYTE",
+          "255"
+        ]
+      ]
+    }
+  ]
+}

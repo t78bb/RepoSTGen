@@ -1,0 +1,33 @@
+{
+  "library": "String Functions",
+  "title": "ERROR (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Functions/Current/StrFunc/Enums/ERROR.html",
+  "page_title": "ERROR (ENUM)",
+  "text": "Library Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nStrFunc\nAliases\nIString (Alias)\nEnums\nERROR (Enum)\nFunctions\nCONCAT (Function)\nCOUNT (Function)\nDELETE (Function)\nFIND (Function)\nINSERT (Function)\nLEFT (Function)\nLEN (Function)\nMID (Function)\nREPLACE (Function)\nRIGHT (Function)\nFile and Project Information\nLibrary Reference\nString Segments\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nUTF-8 Encoding Support\nLibrary Identification\nLibrary Properties\nString Functions\nDocs\n»\nStrFunc\n»\nEnums\n»\nERROR (ENUM)\nERROR (ENUM)\nÂ¶\nTYPE ERROR :\nAttributes:\nqualified_only\nInOut:\nName\nInitial\nNO_ERROR\nWRONG_PARAMETER\n2\nNOT_FOUND\nINVALID_ENCODING",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Name": "NO_ERROR",
+          "Initial": ""
+        },
+        {
+          "Name": "WRONG_PARAMETER",
+          "Initial": "2"
+        },
+        {
+          "Name": "NOT_FOUND",
+          "Initial": ""
+        },
+        {
+          "Name": "INVALID_ENCODING",
+          "Initial": ""
+        }
+      ]
+    }
+  ]
+}

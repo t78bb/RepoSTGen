@@ -1,0 +1,5 @@
+{
+  "requirement": "This code is intended to implement a function that converts axis status information into a corresponding descriptive string based on priority order.",
+  "provide_code": "FUNCTION F_AxisStatusToString : STRING\nVAR_INPUT\n\tfbReadStatus\t:\tMC_ReadStatus;\t\t//轴状态读取功能块\nEND_VAR",
+  "function_name": "F_AxisStatusToString"
+}

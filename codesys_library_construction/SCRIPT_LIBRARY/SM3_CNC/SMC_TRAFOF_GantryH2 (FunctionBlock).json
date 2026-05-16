@@ -1,0 +1,97 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_TRAFOF_GantryH2 (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_Trafo_POUs/SoftMotion-Transformations/Gantry-systems/SMC_TRAFOF_GantryH2.html",
+  "page_title": "SMC_TRAFOF_GantryH2 (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_TRAFOF_GantryH2\nForward transformation for H-gantry systems with stationary drives.\nNote\nFor detailed information on transformations\nsee overview to\nSM_Trafo_POUs\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "DriveA",
+          "Type": "AXIS_REF_SM3",
+          "Comment": "Reference to axis A"
+        },
+        [
+          "DriveB",
+          "AXIS_REF_SM3",
+          "Reference to axis B"
+        ],
+        {
+          "Scope": "Input",
+          "Name": "dOffsetX",
+          "Type": "LREAL",
+          "Comment": "Offset for x-axis"
+        },
+        [
+          "dOffsetY",
+          "LREAL",
+          "Offset for y-axis"
+        ],
+        [
+          "minX",
+          "LREAL",
+          "Minimum x-position limiting move range\n(for visualization purpose)"
+        ],
+        [
+          "maxX",
+          "LREAL",
+          "Maximum x-position limiting move range\n(for visualization purpose)"
+        ],
+        [
+          "minY",
+          "LREAL",
+          "Minimum y-position limiting move range\n(for visualization purpose)"
+        ],
+        [
+          "maxY",
+          "LREAL",
+          "Maximum y-position limiting move range\n(for visualization purpose)"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "dx",
+          "Type": "LREAL",
+          "Comment": "X-position in geo coordinates"
+        },
+        [
+          "dy",
+          "LREAL",
+          "Y-position in geo coordinates"
+        ],
+        [
+          "dnx",
+          "LREAL",
+          "Normed x-position (with value in [0,1])\n(for visualization purpose)"
+        ],
+        [
+          "dny",
+          "LREAL",
+          "Normed y-position (with value in [0,1])\n(for visualization purpose)"
+        ],
+        [
+          "ratio",
+          "LREAL",
+          "Ratio of x-interval to y-interval\n(for visualization purpose)"
+        ],
+        [
+          "dnOffsetX",
+          "LREAL",
+          "Normed x-offset (with value in [0,1])\n(for visualization purpose)"
+        ],
+        [
+          "dnOffsetY",
+          "LREAL",
+          "Normed y-offset (with value in [0,1])\n(for visualization purpose)"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_GSentence_Iterator (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/GSentence/SMC_GSentence_Iterator.html",
+  "page_title": "SMC_GSentence_Iterator (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL SMC_GSentence_Iterator\nThis iterator allows to iterate all sentences of a sentence queue.\nIt can be retrieved from the sentence-queue\n(\nSMC_GSentenceQueue.GetSentenceIterator\n).\nFor each sentence, a g-word iterator (\nSMC_GWord_Iterator\n) can\nbe created.\nMethods:\nAdvance\nGetCount\nGetGWordIterator\nGetValue\nInit\nIsValid\nStructure:\nAdvance (Method)\nGetCount (Method)\nGetGWordIterator (Method)\nGetValue (Method)\nInit (Method)\nIsValid (Method)",
+  "tables": []
+}

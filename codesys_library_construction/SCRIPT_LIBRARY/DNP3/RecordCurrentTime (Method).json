@@ -1,0 +1,23 @@
+{
+  "library": "DNP3",
+  "title": "RecordCurrentTime (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/pou-Master/Commands/RecordCurrentTime.html",
+  "page_title": "Master.RecordCurrentTime (METH)",
+  "text": "\nMETHOD RecordCurrentTime :\nError\nIssue an record current time request.\nThis is generally the first step in a time synchronization on a LAN\nchannel.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "RecordCurrentTime",
+          "Type": "Error"
+        }
+      ]
+    }
+  ]
+}

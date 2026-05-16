@@ -1,0 +1,37 @@
+{
+  "library": "BACnet",
+  "title": "FromBACnetString (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/Utilities/BACnetUtilities/FromBACnetDataTypes/FromBACnetString.html",
+  "page_title": "FromBACnetString (FUN)",
+  "text": "\nFUNCTION FromBACnetString : BOOL\nReturns a WSTRING corresponding to the given IEC_BACNET_STRING. Only UTF-8 and ISO 8859-1 BACnet-String supported right now.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "FromBACnetString",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "bacString",
+          "Type": "CmpBACnet.IEC_BACNET_STRING",
+          "Comment": "The BACnet string to convert to a WSTRING\n(with respect to the given string type in the BACnet string)."
+        },
+        {
+          "Scope": "Inout",
+          "Name": "wStrBuffer",
+          "Type": "WSTRING(255)",
+          "Comment": "A buffer used during conversion."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现主从轴之间的齿轮耦合运动控制，包括启动、运行、停止及错误管理功能。",
+  "provide_code": "FUNCTION_BLOCK FB_GearMotionControl\nVAR_INPUT\n\tMasterAxis\t\t\t:\tAXIS_REF;\t\t//主轴引用\n\tSlaveAxis\t\t\t:\tAXIS_REF;\t\t//从轴引用\n\tbStart\t\t\t\t:\tBOOL;\t\t\t//启动信号\n\tbStop\t\t\t\t:\tBOOL;\t\t\t//停止信号\n\tnRatioNumerator\t\t:\tINT := 1;\t\t//传动比分子\n\tnRatioDenominator\t:\tINT := 1;\t\t//传动比分母\n\tnDirection\t\t\t:\tINT := 1;\t\t//运动方向（1=正向，-1=反向）\n\trVelocity\t\t\t:\tREAL := 360.0;\t//主轴速度\n\trAcceleration\t\t:\tREAL := 10000.0;//加速度\n\trDeceleration\t\t:\tREAL := 10000.0;//减速度\nEND_VAR\nVAR_OUTPUT\n\tbRunning\t\t\t:\tBOOL;\t\t\t//运行中\n\tbReady\t\t\t\t:\tBOOL;\t\t\t//准备就绪（可以启动）\n\tbError\t\t\t\t:\tBOOL;\t\t\t//错误标志\n\tnCurrentState\t\t:\tBYTE;\t\t\t//当前状态\nEND_VAR"
+}

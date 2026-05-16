@@ -1,0 +1,31 @@
+{
+  "library": "BACnet2",
+  "title": "AddElement (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/Utilities/BACnetUtilities/BACnetProperties/property-proxies/pou-IBACnetLIST_of_Unsigned/AddElement.html",
+  "page_title": "IBACnetLIST_of_Unsigned.AddElement (METH)",
+  "text": "\nMETHOD AddElement : CmpBACnet.IEC_BACNET_STATUS\nAdd element to the end of this property.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "AddElement",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Inout Const",
+          "Name": "value",
+          "Type": "CmpBACnet.IEC_BACNET_UNSIGNED",
+          "Comment": "Element value to add."
+        }
+      ]
+    }
+  ]
+}

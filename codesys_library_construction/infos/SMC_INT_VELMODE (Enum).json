@@ -1,0 +1,43 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_INT_VELMODE (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_Data-types/SoftMotion-CNC/SMC_INT_VELMODE.html",
+  "page_title": "SMC_INT_VELMODE (ENUM)",
+  "text": "\nTYPE SMC_INT_VELMODE :\nRepresents the velocity profile.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "TRAPEZOID",
+          "Initial": "0",
+          "Comment": "Velocity profile with trapezoid shape"
+        },
+        {
+          "Name": "SIGMOID",
+          "Initial": "1",
+          "Comment": "Equal to theTRAPEZOIDprofile but rising and falling edges of the\nvelocity profile are replaced by sin2 functions with same area."
+        },
+        {
+          "Name": "SIGMOID_LIMIT",
+          "Initial": "2",
+          "Comment": "Velocity profile: Equal to modeSIGMOIDwith the difference that\nthe same time is taken for interpolating one path in trapezoid and\nsigmoid mode. For that, the existing modeSIGMOIDexceeds the limit\nabout a factor of PI/2."
+        },
+        {
+          "Name": "QUADRATIC",
+          "Initial": "3",
+          "Comment": "Acceleration profile in a trapezoidal form with jerk limitation:\nthis mode, that keeps the value of the jerk in a certain limit\n(defined indJerkMax), is a quadratic velocity shape.\nThe position profile is built of polynomials of 3rd degree.\nHence, the velocity profile consists of parabolas, the acceleration\nof line segments and the jerk of horizontal line segments."
+        },
+        {
+          "Name": "QUADRATIC_SMOOTH",
+          "Initial": "4",
+          "Comment": "It works like modeQUADRATICbut creates a jerk profile without jumps.\nThis is done by replacing the linear ramps of the acceleration by\nmonotone functions that have zero slope at the start- and end-point.\nThe function must lead to the same end velocity and end position\nafter the acceleration ramp.\nThis is similar to the way a sinÂ² function is used instead of a\nlinear velocity ramp in the sigmoidal velocity mode.\nIn particular, the computation of the segments and the length and\nduration of the segments is not affected."
+        }
+      ]
+    }
+  ]
+}

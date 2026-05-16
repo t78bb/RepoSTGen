@@ -1,0 +1,28 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_OutQueue_IsFull (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/OutQueue-Functions/SMC_OutQueue_IsFull.html",
+  "page_title": "SMC_OutQueue_IsFull (FUN)",
+  "text": "\nFUNCTION SMC_OutQueue_IsFull : BOOL\nReturns whether the queue is full.\ntask-safety: call from producer task only\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SMC_OutQueue_IsFull",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Inout Const",
+          "Name": "oq",
+          "Type": "SMC_OUTQUEUE"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "library": "SM3_CNC",
+  "title": "GetGExpTokenIterator (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/GSentence/pou-SMC_GWord_Iterator/GetGExpTokenIterator.html",
+  "page_title": "SMC_GWord_Iterator.GetGExpTokenIterator (METH)",
+  "text": "\nMETHOD GetGExpTokenIterator : BOOL\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetGExpTokenIterator",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Inout",
+          "Name": "iterator",
+          "Type": "SMC_GExpToken_Iterator"
+        }
+      ]
+    }
+  ]
+}

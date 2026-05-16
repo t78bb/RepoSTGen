@@ -1,0 +1,52 @@
+{
+  "library": "SM3_Robotics",
+  "title": "MC_GroupReset (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/AdministrativeConfiguration/AxisGroup/MC_GroupReset.html",
+  "page_title": "MC_GroupReset (FB)",
+  "text": "\nFUNCTION_BLOCK MC_GroupReset\nThis function block makes the transition from the state\nGroupErrorStop\nto\nGroupStandby\nby resetting all internal group-related errors.\nThis function block also resets all axes in this group like\nMC_Reset\n,\nindependently of the current axis group state. Axis errors can, for example,\nbe reset while the axis group is still in state\nGroupDisabled\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "AxisGroup",
+          "Type": "AXIS_GROUP_REF_SM3",
+          "Comment": "Reference to a group of axis"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Comment": "Start the action at rising edge"
+        },
+        {
+          "Scope": "Output",
+          "Name": "Done",
+          "Type": "BOOL",
+          "Comment": "Reset for axis group and all axes in this group done"
+        },
+        [
+          "Busy",
+          "BOOL",
+          "The FB is not finished"
+        ],
+        [
+          "Error",
+          "BOOL",
+          "Signals that an error has occurred within the function block"
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

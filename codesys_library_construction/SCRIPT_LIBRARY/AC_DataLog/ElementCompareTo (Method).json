@@ -1,0 +1,28 @@
+{
+  "library": "AC_DataLog",
+  "title": "ElementCompareTo (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_DataLog/Current/AC_DataLog/Queue/pou-DataLogVarDescForQueue_FB/IElement/ElementCompareTo.html",
+  "page_title": "DataLogVarDescForQueue_FB.ElementCompareTo (METH)",
+  "text": "\nMETHOD ElementCompareTo : INT\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "ElementCompareTo",
+          "Type": "INT"
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfElement",
+          "Type": "COL.IElement"
+        }
+      ]
+    }
+  ]
+}

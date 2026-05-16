@@ -1,0 +1,41 @@
+{
+  "library": "Standard",
+  "title": "INSERT (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/Standard/Current/String-Functions/INSERT.html",
+  "page_title": "INSERT (FUN)",
+  "text": "Deutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nMenu\nSearch\nDeutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nBistable Function Blocks\nRS (FunctionBlock)\nSR (FunctionBlock)\nCounter\nCTD (FunctionBlock)\nCTU (FunctionBlock)\nCTUD (FunctionBlock)\nMiscellaneous\nRTC (FunctionBlock)\nString Functions\nCONCAT (Function)\nDELETE (Function)\nFIND (Function)\nINSERT (Function)\nLEFT (Function)\nLEN (Function)\nMID (Function)\nREPLACE (Function)\nRIGHT (Function)\nTimer\nTOF (FunctionBlock)\nTON (FunctionBlock)\nTP (FunctionBlock)\nTrigger\nF_TRIG (FunctionBlock)\nR_TRIG (FunctionBlock)\nFile and Project Information\nLibrary Reference\nStandard\nDocs\n»\nString\nFunctions\n»\nINSERT (FUN)\nINSERT (FUN)\nÂ¶\nFUNCTION INSERT : STRING(255)\nInserts a string into another string at a specific position\nINSERT\n(STR1,\nSTR2,\nPOS)\nmeans: Insert\nSTR2\ninto\nSTR1\nafter position\nPOS\n.\n(* Example declaration *)\nVarSTRING1\n:\nSTRING\n;\n(* Example in ST , result is 'SUXYSI' *)\nVarSTRING1\n:=\nINSERT\n(\n'SUSI'\n,\n'XY'\n,\n2\n);\nInOut:\nScope\nName\nType\nComment\nReturn\nINSERT\nSTRING(255)\nResulting string\nInput\nSTR1\nSTRING(255)\nString into which\nSTR2\nis inserted\nSTR2\nSTRING(255)\nString to be inserted into\nSTR1\nPOS\nINT\nInsert position. If\nPOS\nis > 255 OR < 0, the result equals\nSTR1\n0\n: Inserts before the first character\n1\n: Inserts after the first character.\ntop\nCODESYS Group | We\nsoftware\nAutomation.\nto software\n['sɒftwɛər]\ntransitive verb\n__softwared/softwaring\n: to develop software\n// to software automation: to develop software for automation purposes\nThe CODESYS Group is the manufacturer of CODESYS, the leading hardware-independent\n                                    IEC 61131-3 automation software for developing and engineering controller\n                                    applications.\nCODESYS® is a registered trademark.\nCODESYS GmbH\nA member of the CODESYS Group\nMemminger Straße 151, 87439 Kempten\nGermany\nTel.:\n+49-831-54031-0\ninfo@codesys.com\nLegal Notice\nPrivacy Policy\nLinkedIn\nYoutube\nRSS\nDownloads\nLogin\nCODESYS Store\n© 2022 CODESYS GmbH\n| A member of the CODESYS Group",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "INSERT",
+          "Type": "STRING(255)",
+          "Comment": "Resulting string"
+        },
+        {
+          "Scope": "Input",
+          "Name": "STR1",
+          "Type": "STRING(255)",
+          "Comment": "String into whichSTR2is inserted"
+        },
+        [
+          "STR2",
+          "STRING(255)",
+          "String to be inserted intoSTR1"
+        ],
+        [
+          "POS",
+          "INT",
+          "Insert position. IfPOSis > 255 OR < 0, the result equalsSTR10: Inserts before the first character1: Inserts after the first character."
+        ]
+      ]
+    }
+  ]
+}

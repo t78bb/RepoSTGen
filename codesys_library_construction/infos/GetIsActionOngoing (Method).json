@@ -1,0 +1,28 @@
+{
+  "library": "AC_DataLog",
+  "title": "GetIsActionOngoing (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_DataLog/Current/AC_DataLog/DataLogChannel/pou-DataLogChannel/IDataLogChannel/GetIsActionOngoing.html",
+  "page_title": "DataLogChannel.GetIsActionOngoing (METH)",
+  "text": "\nMETHOD GetIsActionOngoing : BOOL\nThis method tries to get if this channel is currently active writing or reading.\n..return:\nIf it was possible to get the current state of activity.\nIf this is\nFALSE\nxIsActionOngoing\nis not valid!\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetIsActionOngoing",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Output",
+          "Name": "xIsActionOngoing",
+          "Type": "BOOL"
+        }
+      ]
+    }
+  ]
+}

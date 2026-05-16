@@ -1,0 +1,28 @@
+{
+  "library": "BACnet2",
+  "title": "Initialize_IEC_BACNET_PROPERTY_CONTENTS_withTag (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/Utilities/Mem/Initialize_IEC_BACNET_PROPERTY_CONTENTS_withTag.html",
+  "page_title": "Initialize_IEC_BACNET_PROPERTY_CONTENTS_withTag (FUN)",
+  "text": "\nFUNCTION Initialize_IEC_BACNET_PROPERTY_CONTENTS_withTag\nInitializes a CmpBACnet.IEC_BACNET_PROPERTY_CONTENTS with the given data type tag.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "tag",
+          "Type": "CmpBACnet.IEC_BACNET_DATA_TYPE"
+        },
+        {
+          "Scope": "Inout",
+          "Name": "conts",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_CONTENTS"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "library": "BACnet",
+  "title": "InitializeBACnetBoolean (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/Utilities/BACnetUtilities/InitializeBACnetDataTypes/InitializeBACnetBoolean.html",
+  "page_title": "InitializeBACnetBoolean (FUN)",
+  "text": "\nFUNCTION InitializeBACnetBoolean : BOOL\nInitializes a IEC_BACNET_BOOLEAN according to a given BOOL.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "InitializeBACnetBoolean",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "xInp",
+          "Type": "BOOL",
+          "Comment": "The BOOL value to use for initialization."
+        },
+        {
+          "Scope": "Inout",
+          "Name": "bacBool",
+          "Type": "CmpBACnet.IEC_BACNET_BOOLEAN",
+          "Comment": "The BACnet bool value to operate on."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "library": "AlarmManager_Itfs",
+  "title": "TIMESTAMP (Alias)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager_Itfs/Current/TIMESTAMP.html",
+  "page_title": "TIMESTAMP (ALIAS)",
+  "text": "\nTYPE TIMESTAMP : LINT\nA type similar to SysTimeCore.SYSTIME, that is a signed type in contrast to the\nunsigned type SysTimeCore.SYSTIME. This signed type avoids warning during the IEC\ncode conversion (because the IEC type ULINT doesnât have an exact counterpart in\nin java). The signed type can be used without any problems because using the 63\nbits of the LINT value allows us to represents dates up to the year 30000.",
+  "tables": []
+}

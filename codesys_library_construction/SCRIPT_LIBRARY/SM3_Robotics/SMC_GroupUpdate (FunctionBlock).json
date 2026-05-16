@@ -1,0 +1,42 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_GroupUpdate (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/AdministrativeConfiguration/Computation/SMC_GroupUpdate.html",
+  "page_title": "SMC_GroupUpdate (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_GroupUpdate\nThis function block can be used to bring forward\nthe execution of all of the axis groupâs implicit computations.\nIf\nEnable\n=\nTRUE\n, they will be shifted from the end of the cycle\nto the execution-time of this function block.\nNote\nAll function blocks that influence the state of the axis group should be called\nbefore this function block.\nE.g. if you want to move a single axis of the axis group via a single axis\nfunction block, the torque values are not updated by the axis group if you\ncall the single axis function block after SMC_GroupUpdate.\nNote\nAll function blocks that require the final state of the axis group for this\ncycle have to be called after SMC_GroupUpdate.\nE.g. if you use an axis of the axis group as a master axis for another axis,\nthe respective master/slave function block has to be called after SMC_GroupUpdate.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "AxisGroup",
+          "Type": "AXIS_GROUP_REF_SM3",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "Enable",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Output",
+          "Name": "Error",
+          "Type": "BOOL",
+          "Comment": "Signals that an error has occurred within the function block"
+        },
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_GSentence (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/GSentence/SMC_GSentence.html",
+  "page_title": "SMC_GSentence (STRUCT)",
+  "text": "\nTYPE SMC_GSentence : STRUCT\nRepresents one sentence of a G-Code file\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "pos",
+          "Type": "SMC_NC_SourcePosition",
+          "Comment": "The source-position of the start of the sentence"
+        },
+        {
+          "Name": "t",
+          "Type": "SMC_GSentence_Type",
+          "Comment": ""
+        },
+        {
+          "Name": "u",
+          "Type": "SMC_GSentence_Union",
+          "Comment": ""
+        },
+        {
+          "Name": "nNumGWords",
+          "Type": "UDINT",
+          "Comment": "The number of G-words (stored in the G-Word queue)"
+        },
+        {
+          "Name": "nNumGExpTokens",
+          "Type": "UDINT",
+          "Comment": "The summed number of g-expression tokens for all G-words of\nthe sentence"
+        },
+        {
+          "Name": "lenAddData",
+          "Type": "UDINT",
+          "Comment": "The summed additional data size fro all g-expression tokens\nof the sentence"
+        },
+        {
+          "Name": "bStepSuppress",
+          "Type": "BOOL",
+          "Comment": "Whether the sentence starts with â/â"
+        }
+      ]
+    }
+  ]
+}

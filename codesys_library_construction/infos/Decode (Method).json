@@ -1,0 +1,33 @@
+{
+  "library": "String Builder Base",
+  "title": "Decode (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Builder Base/Current/BuilderBase/Interfaces/pou-ICharmap/Decode.html",
+  "page_title": "ICharmap.Decode (METH)",
+  "text": "\nMETHOD Decode :\nRUNE\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "Decode",
+          "Type": "RUNE"
+        },
+        {
+          "Scope": "Input",
+          "Name": "byCode",
+          "Type": "BYTE"
+        },
+        {
+          "Scope": "Output",
+          "Name": "eErrorID",
+          "Type": "ERROR"
+        }
+      ]
+    }
+  ]
+}

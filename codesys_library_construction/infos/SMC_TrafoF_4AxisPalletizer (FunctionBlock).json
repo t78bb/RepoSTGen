@@ -1,0 +1,111 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_TrafoF_4AxisPalletizer (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_Trafo_POUs/SoftMotion-Transformations/Robot-Kinematiks/SMC_TrafoF_4AxisPalletizer.html",
+  "page_title": "SMC_TrafoF_4AxisPalletizer (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_TrafoF_4AxisPalletizer\nForward transformation for a 4-axis palletizer.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "config",
+          "Type": "SMC_TrafoConfig_4AxisPalletizer",
+          "Comment": "The configuration settings of the palletizer"
+        },
+        [
+          "Drive1",
+          "Axis_Ref_SM3",
+          "The drive of axis 0"
+        ],
+        [
+          "Drive2",
+          "Axis_Ref_SM3",
+          "The drive of axis 1"
+        ],
+        [
+          "Drive3",
+          "Axis_Ref_SM3",
+          "The drive of axis 2"
+        ],
+        [
+          "Drive4",
+          "Axis_Ref_SM3",
+          "The drive of axis 3"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "dX",
+          "Type": "LREAL",
+          "Comment": "The current x-position of the tool center point\nin world coordinates"
+        },
+        [
+          "dY",
+          "LREAL",
+          "The current y-position of the tool center point\nin world coordinates"
+        ],
+        [
+          "dZ",
+          "LREAL",
+          "The current z-position of the tool center point\nin world coordinates"
+        ],
+        [
+          "dC",
+          "LREAL",
+          "The current roll angle of the tool in degrees"
+        ],
+        [
+          "bElbowLow",
+          "BOOL",
+          "TRUEthe angle of axis 2 is in the range]-180Â°,-90Â°["
+        ],
+        [
+          "bElbowStraight",
+          "BOOL",
+          "TRUE`,iftheangleofaxis2isequalto``-90Â°"
+        ],
+        [
+          "bBackwards",
+          "BOOL",
+          "FALSE, if the palletizer faces towards the TCP,TRUE, if facing in opposite direction"
+        ],
+        [
+          "bStraightUp",
+          "BOOL",
+          "TRUEthe two arms segments are both vertical\n(dQ1=0Â°,dQ2=-90Â°)"
+        ],
+        [
+          "vK1Pos",
+          "SMC_Vector3D",
+          "The current position of joint 1 in world coordinates"
+        ],
+        [
+          "vK2Pos",
+          "SMC_Vector3D",
+          "The current position of joint 2 in world coordinates"
+        ],
+        [
+          "vK3Pos",
+          "SMC_Vector3D",
+          "The current position of joint 3 in world coordinates"
+        ],
+        [
+          "vKToolDir",
+          "SMC_Vector3D",
+          "The current (unit) direction of the gripper (x-axis of K5)\nin world coordinates"
+        ],
+        [
+          "dScale",
+          "LREAL",
+          "A scaling factor: if the working space is scaled\nwith this factor, it fits in to the cube[0,1]^3"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_SEGMENTTYPE (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_Data-types/SoftMotion-CNC/SMC_SEGMENTTYPE.html",
+  "page_title": "SMC_SEGMENTTYPE (ENUM)",
+  "text": "\nTYPE SMC_SEGMENTTYPE :\nThe possible types of a segment\nNote\nThe values of the types must match the values in\nSMC_INT_STATUS\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "SMC_SEG_UNKNOWN",
+          "Initial": "0",
+          "Comment": ""
+        },
+        {
+          "Name": "SMC_SEG_ACCEL",
+          "Initial": "2",
+          "Comment": ""
+        },
+        {
+          "Name": "SMC_SEG_CONSTANT",
+          "Initial": "3",
+          "Comment": ""
+        },
+        {
+          "Name": "SMC_SEG_DECEL",
+          "Initial": "4",
+          "Comment": ""
+        },
+        {
+          "Name": "SMC_SEG_M",
+          "Initial": "6",
+          "Comment": ""
+        },
+        {
+          "Name": "SMC_SEG_INCREASING_ACCEL",
+          "Initial": "7",
+          "Comment": "The acceleration is increased (dJerk>0,dAccEnd>0)"
+        },
+        {
+          "Name": "SMC_SEG_DECREASING_ACCEL",
+          "Initial": "8",
+          "Comment": "The acceleration is decreased (dJerk<0,dAccStart>0)"
+        },
+        {
+          "Name": "SMC_SEG_INCREASING_DECEL",
+          "Initial": "9",
+          "Comment": "The deceleration is increased (dJerk<0,dAccEnd<0)"
+        },
+        {
+          "Name": "SMC_SEG_DECREASING_DECEL",
+          "Initial": "10",
+          "Comment": "The deceleration is decreased (dJerk>0,dAccStart<0)"
+        }
+      ]
+    }
+  ]
+}

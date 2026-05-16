@@ -1,0 +1,8 @@
+{
+  "library": "DNP3",
+  "title": "Num (Property)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Interfaces/pou-IPointObserver/Num.html",
+  "page_title": "IPointObserver.Num (PROP)",
+  "text": "\nPROPERTY Num : UINT\nGet the Point number",
+  "tables": []
+}

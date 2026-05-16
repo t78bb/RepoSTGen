@@ -1,0 +1,30 @@
+{
+  "library": "BACnet2",
+  "title": "SetBACnetDevObjPropReferenceProperty (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/BACnetObjects/base/pou-BACnetObjectBase/Utilities/typed-property-access/SetBACnetDevObjPropReferenceProperty.html",
+  "page_title": "BACnetObjectBase.SetBACnetDevObjPropReferenceProperty (METH)",
+  "text": "\nMETHOD SetBACnetDevObjPropReferenceProperty\nSets the BACnetDeviceObjectPropertyReference value of the specified Property (propID) of this BACnet-Object.\nThe used functions are no client, meaning, that the access of the property is not restricted by write or read access restrictions.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "propID",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_ID",
+          "Comment": "The ID of the property to set."
+        },
+        [
+          "devObjRef",
+          "CmpBACnet.IEC_BACNET_DEV_OBJ_PROP_REFERENCE",
+          "The device object property reference to set for the\nproperty."
+        ]
+      ]
+    }
+  ]
+}

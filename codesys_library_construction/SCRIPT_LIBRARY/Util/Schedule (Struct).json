@@ -1,0 +1,38 @@
+{
+  "library": "Util",
+  "title": "Schedule (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/TimerSwitch/Structs/Schedule.html",
+  "page_title": "Schedule (STRUCT)",
+  "text": "\nTYPE Schedule : STRUCT\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "usiSwitch",
+          "Type": "USINT",
+          "Comment": "Number of the output; Several time periods for each output\nare possible. [1..32]"
+        },
+        {
+          "Name": "todFirstOn",
+          "Type": "TOD",
+          "Comment": "First time from which the switch is to be switched on"
+        },
+        {
+          "Name": "todLastOn",
+          "Type": "TOD",
+          "Comment": "Last time until which the switch is to be switched on"
+        },
+        {
+          "Name": "byDayFlags",
+          "Type": "DAYS",
+          "Comment": "The day(s) in a week this switch is active"
+        }
+      ]
+    }
+  ]
+}

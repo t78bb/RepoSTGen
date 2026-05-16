@@ -1,0 +1,36 @@
+{
+  "library": "StringUtils",
+  "title": "CharAtEquals (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/StringUtils/Current/Public-Parts/pou-CharBufferString/CharAtEquals.html",
+  "page_title": "CharBufferString.CharAtEquals (METH)",
+  "text": "\nMETHOD CharAtEquals : BOOL\nThis method tests, if the character at a specified position within the string is\nequal to a given character.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "CharAtEquals",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "iPosition",
+          "Type": "INT",
+          "Comment": "The position (relative to 1) within the string to check"
+        },
+        [
+          "stChar",
+          "STRING(1)",
+          "The character to search"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "library": "SysFile",
+  "title": "SysFileSetPos (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SysFile/Current/SysFileSetPos.html",
+  "page_title": "SysFileSetPos (FUN)",
+  "text": "\nFUNCTION SysFileSetPos : RTS_IEC_RESULT\nSet the file pointer to the specified position\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SysFileSetPos",
+          "Type": "RTS_IEC_RESULT",
+          "Comment": "Returns the runtime system error code (see\nCmpErrors.library)"
+        },
+        {
+          "Scope": "Input",
+          "Name": "hFile",
+          "Type": "RTS_IEC_HANDLE",
+          "Comment": "Handle of the file"
+        },
+        [
+          "ulOffset",
+          "__XWORD",
+          "Offset to set from the beginning of the file"
+        ]
+      ]
+    }
+  ]
+}

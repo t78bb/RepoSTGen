@@ -1,0 +1,33 @@
+{
+  "library": "SysDir",
+  "title": "DirInfoFlags (GVL)",
+  "url": "https://content.helpme-codesys.com/en/libs/SysDir/Current/DirInfoFlags.html",
+  "page_title": "DirInfoFlags (GVL)",
+  "text": "\nDirectory info flags\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Constant",
+          "Name": "DF_FILE",
+          "Type": "DWORD",
+          "Initial": "16#0",
+          "Comment": "Entry is a file"
+        },
+        [
+          "DF_DIRECTORY",
+          "DWORD",
+          "16#2",
+          "Entry is a directory"
+        ]
+      ]
+    }
+  ]
+}

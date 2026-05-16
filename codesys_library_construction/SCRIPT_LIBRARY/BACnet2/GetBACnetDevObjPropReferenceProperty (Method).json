@@ -1,0 +1,31 @@
+{
+  "library": "BACnet2",
+  "title": "GetBACnetDevObjPropReferenceProperty (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/BACnetObjects/base/pou-BACnetObjectBase/Utilities/typed-property-access/GetBACnetDevObjPropReferenceProperty.html",
+  "page_title": "BACnetObjectBase.GetBACnetDevObjPropReferenceProperty (METH)",
+  "text": "\nMETHOD GetBACnetDevObjPropReferenceProperty : CmpBACnet.IEC_BACNET_DEV_OBJ_PROP_REFERENCE\nReturns the BACnetDeviceObjectPropertyReference value of the specified Property (propID) of this BACnet-Object.\nThe used functions are no client, meaning, that the access of the property is not restricted by write or read access restrictions.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetBACnetDevObjPropReferenceProperty",
+          "Type": "CmpBACnet.IEC_BACNET_DEV_OBJ_PROP_REFERENCE",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "propID",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_ID",
+          "Comment": "The ID of the property to get."
+        }
+      ]
+    }
+  ]
+}

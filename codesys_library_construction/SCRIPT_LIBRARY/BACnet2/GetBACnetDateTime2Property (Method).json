@@ -1,0 +1,31 @@
+{
+  "library": "BACnet2",
+  "title": "GetBACnetDateTime2Property (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/BACnetObjects/base/pou-BACnetObjectBase/Utilities/typed-property-access/GetBACnetDateTime2Property.html",
+  "page_title": "BACnetObjectBase.GetBACnetDateTime2Property (METH)",
+  "text": "\nMETHOD GetBACnetDateTime2Property : CmpBACnet.IEC_BACNET_DATE_TIME\nReturns the BACnet-DateTime-Value of the specified Property (propID) of this BACnet-Object as a CmpBACnet.IEC_BACNET_DATE_TIME struct.\nThe used functions are no client, meaning, that the access of the property is not restricted by write or read access restrictions.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetBACnetDateTime2Property",
+          "Type": "CmpBACnet.IEC_BACNET_DATE_TIME",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "propID",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_ID",
+          "Comment": "The ID of the property to get."
+        }
+      ]
+    }
+  ]
+}

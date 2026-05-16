@@ -1,0 +1,106 @@
+{
+  "library": "Util",
+  "title": "PID (FB)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/Controller/PID.html#",
+  "page_title": "PID (FB)",
+  "text": "\nFUNCTION_BLOCK PID\nRepresents a PID controller\nNote\nThe PID controller itself measures the elapsed time between two calls, however with a maximum accuracy of milliseconds. This\nmight lead to rough running in case of short cycle times: For example in case of a cycle time of 1ms the PID sometimes might\nmeasure 2 ms, sometimes 0 ms. So if possible, for such cases better use\nPID_FIXCYCLE\n, where the cycle time can be set precisely.\nSee\nPID_FIXCYCLE\nNote\nConsider that the controller parameters only get applied when used in the manual mode at a start, a reset or at a change down.\nA PID controller continuously calculates an error value e(t)\nas the difference between a desired set point and a measured process variable. The PID controller applies a correction\nbased on proportional, integral, and derivative terms (sometimes denoted P, I, and D respectively)\nwhich give their name to the controller type.\nP accounts for present values of the error. For example, if the error is large and positive, the control output will also be large and positive.\nI accounts for past values of the error. For example, if the current output is not sufficiently strong, the integral of the error will accumulate over time, and the controller will respond by applying a stronger action.\nD accounts for possible future trends of the error, based on its current rate of change.[1]\nAs a PID controller relies only on the measured process variable, not on knowledge of the underlying process,\nit is broadly applicable. By tuning the three parameters of the model, a PID controller can deal with\nspecific process requirements. The response of the controller can be described in terms of its responsiveness\nto an error, of the degree to which the system overshoots a setpoint, and of the degree of any system oscillation.\nThe use of the PID algorithm does not guarantee optimal control of the system or even its stability.\nY_OFFSET\n,\nY_MIN\nand\nY_MAX\nserve for transformation of the manipulated variable within a prescribed range.\nMANUAL\ncan be used to switch to manual operation;\nRESET\ncan be used to re-initialize the controller.\nIn normal operation (\nMANUAL\n=\nRESET\n=\nLIMITS_ACTIVE\n=\nFALSE\n) the controller calculates the controller error e as difference from\nSET_POINT\nâ\nACTUAL\n, generates the derivation with respect to time\n\\(\\frac{\\delta e}{\\delta t}\\)\nand stores these values internally.\nThe output\nY\nis the manipulated variable unlike the PD controller contains an additional integral part,\nand is calculated as follows:\n\\(Y = KP \\cdot (e + \\frac{1}{TN} \\int e dt + TV \\frac{\\delta e}{\\delta t}) + Y_{OFFSET}\\)\nSo besides the P-part also the current change of the controller error (D-part) and the history of the controller error (I-part) influence the manipulated\nvariable. The PID controller can be easily converted to a PI-controller by setting\nTV=0\n.\nBecause of the additional integral part, an overflow can come about by incorrect parameterization of the controller, if the integral of the error e becomes\nto great. Therefore for the sake of safety a BOOLean output called OVERFLOW is present, which in this case would have the value TRUE. This only\nwill happen if the control system is instable due to incorrect parameterization. At the same time, the controller will be suspended and will only be\nactivated again by re-initialization.\nNote\nAs long as the limitation for the manipulated variable (\nY_MIN\n,\nY_MAX\n) is active, the integral part will be adapted, like if the history\nof the input values had automatically effected the limited output value. If this behaviour is not wanted, the following workaround is\npossible: Switch off the limitation at the PID controller (\nY_MIN>=Y_MAX\n) and instead apply the\nLIMIT\noperator (IEC standard) on\noutput value\nY\n(see an example in the figure below).\nNote\nIt is not necessary to readjust the controller parameters (KP, TN, TV) if the cycle time changes.\nTemperature control with PID and LIMIT\nÂ¶\nSee in the following figure a simple example of using the PID module for temperature control and in combination with the\nLIMIT\noperator. The input of\nthe actual temperature is simulated by giving a constant value via ActualTemperature.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "ACTUAL",
+          "Type": "REAL",
+          "Initial": "",
+          "Comment": "Current value, process variable"
+        },
+        [
+          "SET_POINT",
+          "REAL",
+          "",
+          "Desired value, set point"
+        ],
+        [
+          "KP",
+          "REAL",
+          "",
+          "Proportionality const. P"
+        ],
+        [
+          "TN",
+          "REAL",
+          "",
+          "Reset time I [sec]"
+        ],
+        [
+          "TV",
+          "REAL",
+          "",
+          "Rate time, derivative time D [sec]. If set to 0, then it\nworks as PI controller"
+        ],
+        [
+          "Y_MANUAL",
+          "REAL",
+          "",
+          "Yis set to this value as long asMANUAL=TRUE"
+        ],
+        [
+          "Y_OFFSET",
+          "REAL",
+          "",
+          "Offset for manipulated variable"
+        ],
+        [
+          "Y_MIN",
+          "REAL",
+          "",
+          "Minimum value for manipulated variable"
+        ],
+        [
+          "Y_MAX",
+          "REAL",
+          "",
+          "Maximum value for manipulated variable"
+        ],
+        [
+          "MANUAL",
+          "BOOL",
+          "",
+          "TRUE: Manual:Yis not influenced by controllerFALSE: Controller determinesY"
+        ],
+        [
+          "RESET",
+          "BOOL",
+          "",
+          "TRUE: SetYoutput toY_OFFSETand reset\nintegral part"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Y",
+          "Type": "REAL",
+          "Initial": "",
+          "Comment": "Manipulated variable, set value"
+        },
+        [
+          "LIMITS_ACTIVE",
+          "BOOL",
+          "FALSE",
+          "TRUE:Yhas exceeded the given limitsY_MIN,Y_MAXand is limited to these values"
+        ],
+        [
+          "OVERFLOW",
+          "BOOL",
+          "FALSE",
+          "Overflow in integral part"
+        ]
+      ]
+    }
+  ]
+}

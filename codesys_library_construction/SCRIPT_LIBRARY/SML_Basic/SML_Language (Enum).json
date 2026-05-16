@@ -1,0 +1,22 @@
+{
+  "library": "SML_Basic",
+  "title": "SML_Language (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SML_Basic/Current/Base/Error/SML_Language.html",
+  "page_title": "SML_Language (ENUM)",
+  "text": "\nTYPE SML_Language :\n",
+  "tables": [
+    {
+      "headers": [
+        "Name"
+      ],
+      "rows": [
+        {
+          "Name": "SML_LNG_English"
+        },
+        {
+          "Name": "SML_LNG_German"
+        }
+      ]
+    }
+  ]
+}

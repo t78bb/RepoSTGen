@@ -1,0 +1,65 @@
+{
+  "library": "SM3_Basic",
+  "title": "MC_ReadActualPosition (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/Diagnostics/MC_ReadActualPosition.html",
+  "page_title": "MC_ReadActualPosition (FB)",
+  "text": "\nFUNCTION_BLOCK MC_ReadActualPosition\nThis function block returns the current position of the referenced axis.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3",
+          "Initial": "",
+          "Comment": "Reference to axis"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Enable",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "WhileTRUE, the outputvalueprovides the parameter\nvalue continuously for reading out."
+        },
+        {
+          "Scope": "Output",
+          "Name": "Valid",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "TRUE: Valid outputs are available."
+        },
+        [
+          "Busy",
+          "BOOL",
+          "FALSE",
+          "TRUE: Execution of the function block has not been\nfinished yet."
+        ],
+        [
+          "Error",
+          "BOOL",
+          "FALSE",
+          "TRUE: Error has occurred within the function block."
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "0",
+          "Error identification"
+        ],
+        [
+          "Position",
+          "LREAL",
+          "0",
+          "New absolute position (in axis unit [u])"
+        ]
+      ]
+    }
+  ]
+}

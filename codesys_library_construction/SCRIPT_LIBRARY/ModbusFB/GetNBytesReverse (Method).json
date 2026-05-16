@@ -1,0 +1,27 @@
+{
+  "library": "ModbusFB",
+  "title": "GetNBytesReverse (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/ModbusFB/Current/ModbusFB/Function-Blocks/Util/pou-ByteBuffer/GetNBytesReverse.html",
+  "page_title": "ByteBuffer.GetNBytesReverse (METH)",
+  "text": "\nMETHOD GetNBytesReverse\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "pDest",
+          "Type": "POINTER TO BYTE"
+        },
+        [
+          "uiBytes",
+          "UINT"
+        ]
+      ]
+    }
+  ]
+}

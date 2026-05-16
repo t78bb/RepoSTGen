@@ -1,0 +1,8 @@
+{
+  "library": "AlarmManager",
+  "title": "OffsetAcknowledge (Property)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/pou-IAlarm5/Access-to-offsets/OffsetAcknowledge.html",
+  "page_title": "IAlarm5.OffsetAcknowledge (PROP)",
+  "text": "\nPROPERTY OffsetAcknowledge : INT\nOffset when the alarm went into state âactive, acknowledgedâ",
+  "tables": []
+}

@@ -1,0 +1,6 @@
+{
+  "requirement": "This code should implement a function block named fileSave_createDir that constructs a directory path by appending a device name to a given file path and then creates the directory. The function should take two input parameters: filePath of type STRING, which is the base directory path, and devName of type STRING, which is the device name to append. The function should concatenate these two strings, adding a '/' between them to form a complete path, and then use the SysDirCreate2 function to create the directory at this path, where the second parameter of SysDirCreate2 is set to TRUE, indicating that intermediate directories should be created if they do not exist.",
+  "provide_code": "FUNCTION_BLOCK fileSave\nVAR_INPUT\n\tfilePath \t:STRING;\n\tdevName\t\t: STRING ;\n\tintervalt\t:INT;\nEND_VAR",
+  "function_name": "fileSave_createDir",
+  "requirement_cn": "这段代码应实现一个名为 fileSave_createDir 的功能块，该功能块通过将设备名称附加到给定的文件路径上来构建目录路径，然后创建该目录。该函数应接受两个输入参数：类型为 STRING 的 filePath，即基础目录路径；以及类型为 STRING 的 devName，即要附加的设备名称。函数应将这两个字符串连接起来，在它们之间添加 '/' 以形成完整的路径，然后使用 SysDirCreate2 函数在此路径上创建目录，其中 SysDirCreate2 的第二个参数设置为 TRUE，表示如果不存在则应创建中间目录。"
+}

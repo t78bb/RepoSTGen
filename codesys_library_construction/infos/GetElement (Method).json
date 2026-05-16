@@ -1,0 +1,37 @@
+{
+  "library": "BACnet2",
+  "title": "GetElement (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/Utilities/BACnetUtilities/BACnetProperties/property-proxies/pou-IBACnetARRAYN_of_Unsigned8/GetElement.html",
+  "page_title": "IBACnetARRAYN_of_Unsigned8.GetElement (METH)",
+  "text": "\nMETHOD GetElement : CmpBACnet.IEC_BACNET_STATUS\nGet the element with the given index from this property.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetElement",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "nIndex",
+          "Type": "CmpBACnet.IEC_BACNET_ARRAY_INDEX",
+          "Comment": "Index (0 .. number of elements-1)."
+        },
+        {
+          "Scope": "Inout",
+          "Name": "data",
+          "Type": "USINT",
+          "Comment": "Element data."
+        }
+      ]
+    }
+  ]
+}

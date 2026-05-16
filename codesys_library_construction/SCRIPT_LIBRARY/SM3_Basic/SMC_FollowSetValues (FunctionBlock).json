@@ -1,0 +1,113 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_FollowSetValues (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/Movement/Direct/SMC_FollowSetValues.html",
+  "page_title": "SMC_FollowSetValues (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_FollowSetValues\nWrites set values to the axis without doing any checks.\nNote\nThis function block does not support forecasts that are set up by\nSMC_SetForecast\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3",
+          "Initial": "",
+          "Comment": "Reference to the axis"
+        },
+        {
+          "Scope": "Input",
+          "Name": "bExecute",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Rising edge: Starts the execution of the function block."
+        },
+        [
+          "bAbort",
+          "BOOL",
+          "",
+          "Abort the execution of the function block\n(e.g. in order to avoid an error when restarting with a different axis)"
+        ],
+        [
+          "dwValueMask",
+          "DWORD",
+          "",
+          "Values, which are written to the axis (TRUE) and which are\nignored (FALSE):Bit0:fSetPositionBit1:fSetVelocityBit2:fSetAccelerationBit3:fSetJerkBit4:fSetTorqueBit5:fSetCurrent"
+        ],
+        [
+          "fSetPosition",
+          "LREAL",
+          "",
+          "Set position in [u]"
+        ],
+        [
+          "fSetVelocity",
+          "LREAL",
+          "",
+          "Set velocity in [u/s]"
+        ],
+        [
+          "fSetAcceleration",
+          "LREAL",
+          "",
+          "Set acceleration in [u/sÂ²]"
+        ],
+        [
+          "fSetJerk",
+          "LREAL",
+          "",
+          "Set jerk in [u/sÂ³]"
+        ],
+        [
+          "fSetTorque",
+          "LREAL",
+          "",
+          "Set torque/force in [Nm]/[N]"
+        ],
+        [
+          "fSetCurrent",
+          "LREAL",
+          "",
+          "Set current in [A]"
+        ],
+        [
+          "bFixedCoordinateSystem",
+          "BOOL",
+          "TRUE",
+          "The coordinate system for theAxiscan be changed usingMC_SetPosition.\nWhenbFixedCoordinateSystemis set to TRUE, thefSetPositionis expected to be given in the coordinate system that was active\nwhen there was a rising edge onbExecute.  IfMC_SetPositionis\ncalled during execution, the providedfSetPositionis automatically\ntransformed to the new coordinate system.\nWhenbFixedCoordinateSystemis set to FALSE, thefSetPositionis expected to be given in the current coordinate system.  IfMC_SetPositionis called during execution, the providedfSetPositionhas to be adjusted to the new coordinate system."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bBusy",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUE: Execution of function block has not been finished."
+        },
+        [
+          "bCommandAborted",
+          "BOOL",
+          "",
+          "TRUE: Command has been aborted by another command."
+        ],
+        [
+          "bError",
+          "BOOL",
+          "",
+          "TRUE: Error has occurred within the function block."
+        ],
+        [
+          "iErrorID",
+          "SMC_ERROR",
+          "",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

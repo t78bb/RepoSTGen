@@ -1,0 +1,169 @@
+{
+  "library": "DNP3",
+  "title": "FunctionCode (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/FunctionCode.html",
+  "page_title": "FunctionCode (ENUM)",
+  "text": "DNP3\nDoc\nIntegration of datapoints into the application\nExample\nIntroduction\nCODESYS DNP3 - Components\nOutstation data model and datapoints\nOutstation datapoint - inputs versa configuration\nOutstation datapoint inputs / outputs of type AnyNumber\nOutstation data flow\nMaster functionality\nMaster data flow\nCalling function block instances\nApplication bringup and debugging\nEnums\nCommandRejectReason (Enum)\nDoubleBitState (Enum)\nError (Enum)\nFunction Blocks\nAnyNumberConverter\nAnyNumberToDINT (FunctionBlock)\nAnyNumberToINT (FunctionBlock)\nAnyNumberToLREAL (FunctionBlock)\nAnyNumberToREAL (FunctionBlock)\nAnyNumberToSINT (FunctionBlock)\nAnyNumberToUDINT (FunctionBlock)\nAnyNumberToUINT (FunctionBlock)\nAnyNumberToUSINT (FunctionBlock)\nDINTToAnyNumber (FunctionBlock)\nINTToAnyNumber (FunctionBlock)\nLREALToAnyNumber (FunctionBlock)\nREALToAnyNumber (FunctionBlock)\nSINTToAnyNumber (FunctionBlock)\nUDINTToAnyNumber (FunctionBlock)\nUINTToAnyNumber (FunctionBlock)\nUSINTToAnyNumber (FunctionBlock)\nETHdeviceHelper (FunctionBlock)\nMaster\nAddressQualifier (Enum)\nAnalogInfo (Struct)\nAutoUpdateMode (Enum)\nCROB_Info (Struct)\nCommands\nFreezeTimeDateField (Enum)\nFunctionCode (Enum)\nMaster (FunctionBlock)\nMasterConfiguration (FunctionBlock)\nMasterConfigurationCOM (FunctionBlock)\nMasterConfigurationIP (FunctionBlock)\nMasterLoggingOptions (Enum)\nPointObserver\nTimeSyncType (Enum)\nOutstation\nDNP3OutstationSessionConfigEvents (Struct)\nDNP3OutstationSessionConfigUnsolicitedResponse (Struct)\nEvents\nGroups\nOutstation (FunctionBlock)\nOutstationConfiguration (FunctionBlock)\nOutstationConfigurationCOM (FunctionBlock)\nOutstationConfigurationIP (FunctionBlock)\nOutstationDataModel (FunctionBlock)\nOutstationDataModelExample (FunctionBlock)\nOutstationLoggingOptions (Enum)\nPoints\nFunctions\nAnyNumber\nAnyNumberArithmetic (Function)\nAnyNumberArithmeticOperation (Enum)\nAnyNumberAssign (Function)\nAnyNumberAssignIfNotEqual (Function)\nAnyNumberCheck (Function)\nAnyNumberClipToLimits (Function)\nAnyNumberCompare (Function)\nAnyNumberCompareOperation (Enum)\nAnyNumberConvertFromDINT (Function)\nAnyNumberConvertFromINT (Function)\nAnyNumberConvertFromLREAL (Function)\nAnyNumberConvertFromREAL (Function)\nAnyNumberConvertFromSINT (Function)\nAnyNumberConvertFromUDINT (Function)\nAnyNumberConvertFromUINT (Function)\nAnyNumberConvertFromUSINT (Function)\nAnyNumberConvertToDINT (Function)\nAnyNumberConvertToINT (Function)\nAnyNumberConvertToLREAL (Function)\nAnyNumberConvertToREAL (Function)\nAnyNumberConvertToSINT (Function)\nAnyNumberConvertToUDINT (Function)\nAnyNumberConvertToUINT (Function)\nAnyNumberConvertToUSINT (Function)\nAnyNumberInitToZero (Function)\nAnyNumberIsWithinLimits (Function)\nAnyNumberMaximum (Function)\nAnyNumberMinimum (Function)\nAnyNumberToString (Function)\nAnyNumberTypeEquals (Function)\nAnyNumberTypeToString (Function)\nAnyNumberValueToString (Function)\nAnyNumberZero (Function)\nGetCurrentDateTime (Function)\nGlobalConstants\nConstants (GVL)\nConstantsInternal (GVL)\nInterfaces\nIPoint (Interface)\nGetDescriptionString (Method)\nIdentificationToString (Method)\nPointNum (Property)\nPointTyp (Property)\nToString (Method)\nIPointObserver (Interface)\nEnabled (Property)\nEquals (Method)\nGetError (Method)\nGetErrorId (Method)\nGetSequenceNumber (Method)\nIsModified (Property)\nKey (Property)\nNum (Property)\nToString (Method)\nTyp (Property)\nParameter\nParameter (ParamList)\nTypes\nAnyNumber\nAnyNumber (Struct)\nAnyNumberPointerUnion (Union)\nAnyNumberType (Enum)\nAnyNumberUnion (Union)\nAnyNumberValueUnion (Union)\nCOMParity (Enum)\nCOMStopBits (Enum)\nDNP3_String (Alias)\nLibrary Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nFile and Project Information\nLibrary Reference\n3SLicense\nLibrary Identification\nLibrary Properties\nCmpApp\nLibrary Identification\nLibrary Properties\nCmpDNP3\nLibrary Identification\nLibrary Properties\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nCmpEventMgr\nLibrary Identification\nLibrary Properties\nCmpLog\nLibrary Identification\nLibrary Properties\nComponent Manager\nLibrary Identification\nLibrary Properties\nIoDrvEthernet Interfaces\nLibrary Identification\nLibrary Properties\nIoDrvUtility\nLibrary Identification\nLibrary Properties\nIoStandard\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nSysCpuHandling\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysSocket\nLibrary Identification\nLibrary Properties\nSysTask\nLibrary Identification\nLibrary Properties\nSysTimeCore\nLibrary Identification\nLibrary Properties\nSysTimeRtc\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nUtil\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nDNP3\nDocs\n»\nDNP3\n»\nFunction\nBlocks\n»\nMaster\n»\nFunctionCode (ENUM)\nFunctionCode (ENUM)\nÂ¶\nTYPE FunctionCode :\nDNP3 function code\nAttributes:\nqualified_only\nInOut:\nName\nInitial\nFC_CONFIRM\nConstants.DNPDEFS_FC_CONFIRM\nFC_READ\nConstants.DNPDEFS_FC_READ\nFC_WRITE\nConstants.DNPDEFS_FC_WRITE\nFC_SELECT\nConstants.DNPDEFS_FC_SELECT\nFC_OPERATE\nConstants.DNPDEFS_FC_OPERATE\nFC_DIRECT_OP\nConstants.DNPDEFS_FC_DIRECT_OP\nFC_DIRECT_OP_NOACK\nConstants.DNPDEFS_FC_DIRECT_OP_NOACK\nFC_FRZ\nConstants.DNPDEFS_FC_FRZ\nFC_FRZ_NOACK\nConstants.DNPDEFS_FC_FRZ_NOACK\nFC_FRZ_CLEAR\nConstants.DNPDEFS_FC_FRZ_CLEAR\nFC_FRZ_CLEAR_NOACK\nConstants.DNPDEFS_FC_FRZ_CLEAR_NOACK\nFC_FRZ_TIME\nConstants.DNPDEFS_FC_FRZ_TIME\nFC_FRZ_TIME_NOACK\nConstants.DNPDEFS_FC_FRZ_TIME_NOACK\nFC_COLD_RESTART\nConstants.DNPDEFS_FC_COLD_RESTART\nFC_WARM_RESTART\nConstants.DNPDEFS_FC_WARM_RESTART\nFC_INIT_DATA_TO_DFLTS\nConstants.DNPDEFS_FC_INIT_DATA_TO_DFLTS\nFC_INIT_APPLICATION\nConstants.DNPDEFS_FC_INIT_APPLICATION\nFC_START_APPLICATION\nConstants.DNPDEFS_FC_START_APPLICATION\nFC_STOP_APPLICATION\nConstants.DNPDEFS_FC_STOP_APPLICATION\nFC_SAVE_CONFIGURATION\nConstants.DNPDEFS_FC_SAVE_CONFIGURATION\nFC_ENABLE_UNSOL\nConstants.DNPDEFS_FC_ENABLE_UNSOL\nFC_DISABLE_UNSOL\nConstants.DNPDEFS_FC_DISABLE_UNSOL\nFC_ASSIGN_CLASS\nConstants.DNPDEFS_FC_ASSIGN_CLASS\nFC_DELAY_MEASURE\nConstants.DNPDEFS_FC_DELAY_MEASURE\nFC_RECORD_CURRENT_TIME\nConstants.DNPDEFS_FC_RECORD_CURRENT_TIME\nFC_OPEN_FILE\nConstants.DNPDEFS_FC_OPEN_FILE\nFC_CLOSE_FILE\nConstants.DNPDEFS_FC_CLOSE_FILE\nFC_DELETE_FILE\nConstants.DNPDEFS_FC_DELETE_FILE\nFC_GET_FILE_INFO\nConstants.DNPDEFS_FC_GET_FILE_INFO\nFC_AUTHENTICATE\nConstants.DNPDEFS_FC_AUTHENTICATE\nFC_ABORT\nConstants.DNPDEFS_FC_ABORT\nFC_ACTIVATE_CONFIG\nConstants.DNPDEFS_FC_ACTIVATE_CONFIG\nFC_AUTH_REQUEST\nConstants.DNPDEFS_FC_AUTH_REQUEST\nFC_AUTH_REQUEST_NOACK\nConstants.DNPDEFS_FC_AUTH_REQUEST_NOACK\nFC_AUTH_SAV6_HDR\nConstants.DNPDEFS_FC_AUTH_SAV6_HDR\nFC_RESPONSE\nConstants.DNPDEFS_FC_RESPONSE\nFC_UNSOLICITED\nConstants.DNPDEFS_FC_UNSOLICITED\nFC_AUTH_RESPONSE\nConstants.DNPDEFS_FC_AUTH_RESPONSE",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Name": "FC_CONFIRM",
+          "Initial": "Constants.DNPDEFS_FC_CONFIRM"
+        },
+        {
+          "Name": "FC_READ",
+          "Initial": "Constants.DNPDEFS_FC_READ"
+        },
+        {
+          "Name": "FC_WRITE",
+          "Initial": "Constants.DNPDEFS_FC_WRITE"
+        },
+        {
+          "Name": "FC_SELECT",
+          "Initial": "Constants.DNPDEFS_FC_SELECT"
+        },
+        {
+          "Name": "FC_OPERATE",
+          "Initial": "Constants.DNPDEFS_FC_OPERATE"
+        },
+        {
+          "Name": "FC_DIRECT_OP",
+          "Initial": "Constants.DNPDEFS_FC_DIRECT_OP"
+        },
+        {
+          "Name": "FC_DIRECT_OP_NOACK",
+          "Initial": "Constants.DNPDEFS_FC_DIRECT_OP_NOACK"
+        },
+        {
+          "Name": "FC_FRZ",
+          "Initial": "Constants.DNPDEFS_FC_FRZ"
+        },
+        {
+          "Name": "FC_FRZ_NOACK",
+          "Initial": "Constants.DNPDEFS_FC_FRZ_NOACK"
+        },
+        {
+          "Name": "FC_FRZ_CLEAR",
+          "Initial": "Constants.DNPDEFS_FC_FRZ_CLEAR"
+        },
+        {
+          "Name": "FC_FRZ_CLEAR_NOACK",
+          "Initial": "Constants.DNPDEFS_FC_FRZ_CLEAR_NOACK"
+        },
+        {
+          "Name": "FC_FRZ_TIME",
+          "Initial": "Constants.DNPDEFS_FC_FRZ_TIME"
+        },
+        {
+          "Name": "FC_FRZ_TIME_NOACK",
+          "Initial": "Constants.DNPDEFS_FC_FRZ_TIME_NOACK"
+        },
+        {
+          "Name": "FC_COLD_RESTART",
+          "Initial": "Constants.DNPDEFS_FC_COLD_RESTART"
+        },
+        {
+          "Name": "FC_WARM_RESTART",
+          "Initial": "Constants.DNPDEFS_FC_WARM_RESTART"
+        },
+        {
+          "Name": "FC_INIT_DATA_TO_DFLTS",
+          "Initial": "Constants.DNPDEFS_FC_INIT_DATA_TO_DFLTS"
+        },
+        {
+          "Name": "FC_INIT_APPLICATION",
+          "Initial": "Constants.DNPDEFS_FC_INIT_APPLICATION"
+        },
+        {
+          "Name": "FC_START_APPLICATION",
+          "Initial": "Constants.DNPDEFS_FC_START_APPLICATION"
+        },
+        {
+          "Name": "FC_STOP_APPLICATION",
+          "Initial": "Constants.DNPDEFS_FC_STOP_APPLICATION"
+        },
+        {
+          "Name": "FC_SAVE_CONFIGURATION",
+          "Initial": "Constants.DNPDEFS_FC_SAVE_CONFIGURATION"
+        },
+        {
+          "Name": "FC_ENABLE_UNSOL",
+          "Initial": "Constants.DNPDEFS_FC_ENABLE_UNSOL"
+        },
+        {
+          "Name": "FC_DISABLE_UNSOL",
+          "Initial": "Constants.DNPDEFS_FC_DISABLE_UNSOL"
+        },
+        {
+          "Name": "FC_ASSIGN_CLASS",
+          "Initial": "Constants.DNPDEFS_FC_ASSIGN_CLASS"
+        },
+        {
+          "Name": "FC_DELAY_MEASURE",
+          "Initial": "Constants.DNPDEFS_FC_DELAY_MEASURE"
+        },
+        {
+          "Name": "FC_RECORD_CURRENT_TIME",
+          "Initial": "Constants.DNPDEFS_FC_RECORD_CURRENT_TIME"
+        },
+        {
+          "Name": "FC_OPEN_FILE",
+          "Initial": "Constants.DNPDEFS_FC_OPEN_FILE"
+        },
+        {
+          "Name": "FC_CLOSE_FILE",
+          "Initial": "Constants.DNPDEFS_FC_CLOSE_FILE"
+        },
+        {
+          "Name": "FC_DELETE_FILE",
+          "Initial": "Constants.DNPDEFS_FC_DELETE_FILE"
+        },
+        {
+          "Name": "FC_GET_FILE_INFO",
+          "Initial": "Constants.DNPDEFS_FC_GET_FILE_INFO"
+        },
+        {
+          "Name": "FC_AUTHENTICATE",
+          "Initial": "Constants.DNPDEFS_FC_AUTHENTICATE"
+        },
+        {
+          "Name": "FC_ABORT",
+          "Initial": "Constants.DNPDEFS_FC_ABORT"
+        },
+        {
+          "Name": "FC_ACTIVATE_CONFIG",
+          "Initial": "Constants.DNPDEFS_FC_ACTIVATE_CONFIG"
+        },
+        {
+          "Name": "FC_AUTH_REQUEST",
+          "Initial": "Constants.DNPDEFS_FC_AUTH_REQUEST"
+        },
+        {
+          "Name": "FC_AUTH_REQUEST_NOACK",
+          "Initial": "Constants.DNPDEFS_FC_AUTH_REQUEST_NOACK"
+        },
+        {
+          "Name": "FC_AUTH_SAV6_HDR",
+          "Initial": "Constants.DNPDEFS_FC_AUTH_SAV6_HDR"
+        },
+        {
+          "Name": "FC_RESPONSE",
+          "Initial": "Constants.DNPDEFS_FC_RESPONSE"
+        },
+        {
+          "Name": "FC_UNSOLICITED",
+          "Initial": "Constants.DNPDEFS_FC_UNSOLICITED"
+        },
+        {
+          "Name": "FC_AUTH_RESPONSE",
+          "Initial": "Constants.DNPDEFS_FC_AUTH_RESPONSE"
+        }
+      ]
+    }
+  ]
+}

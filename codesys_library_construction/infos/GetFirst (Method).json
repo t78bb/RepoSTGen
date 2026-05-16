@@ -1,0 +1,28 @@
+{
+  "library": "SM3_CNC",
+  "title": "GetFirst (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/File/ReadNCFile/Token/pou-SMC_TokenQueue/GetFirst.html",
+  "page_title": "SMC_TokenQueue.GetFirst (METH)",
+  "text": "\nMETHOD GetFirst : BOOL\nReturns the first token if the queue is non-empty.\nReturns whether the queue was non-empty.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "token",
+          "Type": "SMC_Token"
+        },
+        {
+          "Scope": "Return",
+          "Name": "GetFirst",
+          "Type": "BOOL"
+        }
+      ]
+    }
+  ]
+}

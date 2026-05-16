@@ -1,0 +1,23 @@
+{
+  "library": "AC_DataLog",
+  "title": "DeleteLogFile (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_DataLog/Current/AC_DataLog/DataLogStorage/pou-DataLogStorageBase/private/DeleteLogFile.html",
+  "page_title": "DataLogStorageBase.DeleteLogFile (METH)",
+  "text": "\nMETHOD FINAL PROTECTED DeleteLogFile : BOOL\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "DeleteLogFile",
+          "Type": "BOOL"
+        }
+      ]
+    }
+  ]
+}

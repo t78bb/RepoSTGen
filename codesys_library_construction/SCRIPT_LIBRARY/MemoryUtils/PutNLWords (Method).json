@@ -1,0 +1,27 @@
+{
+  "library": "MemoryUtils",
+  "title": "PutNLWords (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/MemoryUtils/Current/MemoryUtils/Functionblocks/pou-ByteBuffer/PutNLWords.html",
+  "page_title": "ByteBuffer.PutNLWords (METH)",
+  "text": "\nMETHOD PutNLWords\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "pdwSource",
+          "Type": "POINTER TO LWORD"
+        },
+        [
+          "uiCount",
+          "UINT"
+        ]
+      ]
+    }
+  ]
+}

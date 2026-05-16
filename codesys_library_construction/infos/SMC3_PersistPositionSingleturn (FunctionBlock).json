@@ -1,0 +1,83 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC3_PersistPositionSingleturn (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/AdministrativeConfiguration/SMC3_PersistPositionSingleturn.html",
+  "page_title": "SMC3_PersistPositionSingleturn (FB)",
+  "text": "\nFUNCTION_BLOCK SMC3_PersistPositionSingleturn\nThis function block serves to persist the axis position of an\nabsolute encoder that has a limited range.\nStrictly speaking, this function block is not only for single-turn\nencoders but also for multi-turn encoders where the range of the encoder\nis a power of two and less than 2^32.\nBoth encoders with a range -2^k .. 2^k - 1 and a range 0 .. 2^(k+1)\nare supported.\nFor a more general function block, see\nSMC3_PersistPosition\n, which allows\nencoder ranges that are not a power of two (in bus increments).\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3",
+          "Initial": "",
+          "Comment": ""
+        },
+        [
+          "PersistentData",
+          "SMC3_PersistPositionSingleturn_Data",
+          "",
+          ""
+        ],
+        {
+          "Scope": "Input",
+          "Name": "bEnable",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUE: Activates FB, else inactive."
+        },
+        [
+          "usiNumberOfAbsoluteBits",
+          "USINT",
+          "16",
+          "Number of bits that are persistent (absolute encoded)\n[1..32]."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bPositionRestored",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUE: The position has been restored during the last\nstart-up of the axis."
+        },
+        [
+          "bPositionStored",
+          "BOOL",
+          "",
+          "TRUE: The position has been stored during the last call."
+        ],
+        [
+          "bBusy",
+          "BOOL",
+          "",
+          "TRUE: FB is not idle."
+        ],
+        [
+          "bError",
+          "BOOL",
+          "",
+          "TRUE: Error has occurred within the function block."
+        ],
+        [
+          "eErrorID",
+          "SMC_ERROR",
+          "",
+          "Error identification"
+        ],
+        [
+          "eRestoringDiag",
+          "SMC3_PersistPositionDiag",
+          "SMC3_PersistPositionDiag.SMC3_PPD_RESTORING_OK",
+          "Diagnostic information about restoring"
+        ]
+      ]
+    }
+  ]
+}

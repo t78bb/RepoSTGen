@@ -1,0 +1,41 @@
+{
+  "library": "CmpBACnet",
+  "title": "BACnetRegisterClientCommunicationStateCallback (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/CmpBACnet/Current/BACnetClientAPI/advanced/BACnetRegisterClientCommunicationStateCallback.html",
+  "page_title": "BACnetRegisterClientCommunicationStateCallback (FUN)",
+  "text": "\nFUNCTION BACnetRegisterClientCommunicationStateCallback :\nIEC_BACNET_STATUS\nRegisters a callback for communication changes.\nThis registers a callback routine. This callback can be registered at any time. If the\ncallback is registered more than once, the new callback procedure replaces old one.\nA NULL procedure pointer cancels the callback.n\nThis function gives a user application the ability to get notified if an connection\nto one of the registered devices couldnât or could be established. It is called\nin every case were the connection state to an BACnet remote device changes.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "BACnetRegisterClientCommunicationStateCallback",
+          "Type": "IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "hCustomer",
+          "Type": "IEC_BACNET_HANDLE",
+          "Comment": "An handle to an created advanced BACnet client customer created byBACnetOpenClientCustomer."
+        },
+        [
+          "pICallback",
+          "CmpEventMgr.ICmpEventCallback",
+          "A pointer to the event-callback interface which gets called on changes in\ncommunication to the device.\nTo unregister a NULL pointer shall be used here."
+        ],
+        [
+          "pUserArg",
+          "POINTER TO BYTE",
+          "A pointer to data from the user application which is transparent for the API.\nThis pointer will not be modified by the BACnet API. This may be NULL."
+        ]
+      ]
+    }
+  ]
+}

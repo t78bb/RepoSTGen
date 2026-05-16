@@ -1,0 +1,125 @@
+{
+  "library": "SM3_Robotics",
+  "title": "MC_GroupStop (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/Movement/MC_GroupStop.html",
+  "page_title": "MC_GroupStop (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL MC_GroupStop\nThis function block commands a controlled motion stop and\ntransfers the axis group to the state\nGroupStopping\n.\nIt aborts any other motion command.\nWhile the axis group is in state GroupStopping, no other FB can\nperform any motion on the same axis group. After the axis group\nhas reached standstill, the\nDone\noutput is set to\nTRUE\nimmediately.\nThe axis group remains in the state\nGroupStopping\nas long as\nExecute\nis still\nTRUE\nor the axes are not yet in standstill.\nAs soon as\nDone\nis set and\nExecute\nis\nFALSE\n, the axis group\ngoes to  state\nGroupStandBy\n. The command can only be aborted by\nMC_Power\n.\nNote\nThe effective limits for deceleration and jerk are determined by the\ninputs\nDeceleration\n,\nJerk\n,\nAccFactor\n, and\nJerkFactor\n.\nThese limits can be exceeded in order to stay on the commanded path.\nNote\nIn contrast to\nMC_GroupHalt\nthe given dynamic limits are neither\ninfluenced by an override set using\nMC_GroupSetOverride\n, nor by\naxis limit factors set using\nSMC_GroupSetAxisLimitFactors\n, nor by\nancillary limits set using\nSMC_GroupSetAncillaryPathLimits\nand\nSMC_GroupSetAncillaryAxisLimits\nrespectively.\nFor halting point-to-point movements:\nthe velocity/acc-/deceleration/jerk of each axis are properties\nof each axis and not specified within this function block.\nSee also inputs\nAccFactor\nand\nJerkFactor\n.\nSMC_GroupSaveContinueData\nand\nMC_GroupContinue\ncan be used to\ncontinue on the original path after a stop, if\nClearMovements\nis\nset to FALSE.\nThe first movement after an\nMC_GroupStop\noverwrites the state of the\naxis group, so\nSMC_GroupSaveContinueData\nhas to be called before any\nnew movement is commanded.\nIf\nClearMovements\nis set to FALSE and there are any movements in a dynamic\ncoordinate system (see\nMC_TrackConveyorBelt\n,\nMC_TrackRotaryTable\n,\nMC_SetDynCoordTransform\n, or\nSMC_SetDynCoordTransformEx\n) that are not yet\nDone\nwhen\nMC_GroupStop\nis executed, the coordinate systems will remain\nInUse\neven after\nMC_GroupStop\nis\nDone\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "AxisGroup",
+          "Type": "AXIS_GROUP_REF_SM3",
+          "Initial": "",
+          "Comment": "Reference to a group of axes"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Start the action at rising edge"
+        },
+        [
+          "Deceleration",
+          "LREAL",
+          "",
+          "Value of the deceleration [u/sÂ²].\nOnly used if a continuous-path movement is halted."
+        ],
+        [
+          "Jerk",
+          "LREAL",
+          "",
+          "Value of the jerk [u/sÂ³].\nOnly used if a continuous-path movement is halted."
+        ],
+        [
+          "AccFactor",
+          "LREAL",
+          "1",
+          "The maximum deceleration of each axis is multiplied by this factor, which\nmust be in the range ]0, 1]."
+        ],
+        [
+          "JerkFactor",
+          "LREAL",
+          "1",
+          "The maximum jerk of each axis is multiplied by this factor, which\nmust be in the range ]0, 1]."
+        ],
+        [
+          "TorqueFactor",
+          "LREAL",
+          "1",
+          "The maximum torque of each axis is multiplied by this factor, which\nmust be in the range ]0, 1].  A dynamic model must have been set usingSMC_GroupSetDynamicsfor this factor to have an effect."
+        ],
+        [
+          "ClearMovements",
+          "BOOL",
+          "TRUE",
+          "If set to TRUE, all movements commanded beforeMC_GroupStopare cleared\nafter the axis group reaches standstill.  In order to be able to continue the\nprevious movements from the stop position usingSMC_GroupSaveContinueDataandMC_GroupContinue,ClearMovementshas to be set to FALSE."
+        ],
+        [
+          "Name",
+          "STRING",
+          "âMC_GroupStopâ",
+          "The name of the movement."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Done",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Standstill has been reached"
+        },
+        [
+          "Busy",
+          "BOOL",
+          "",
+          "The FB is not finished"
+        ],
+        [
+          "Active",
+          "BOOL",
+          "",
+          "Indicates that the FB has control on the axis"
+        ],
+        [
+          "CommandAborted",
+          "BOOL",
+          "",
+          "Command is aborted by disabling MC-Power of one or more\nof the axes in the group. The state changes toGroupDisabled"
+        ],
+        [
+          "CommandAccepted",
+          "BOOL",
+          "",
+          "The command has been accepted by the axis group.\nIf the output becomesTRUE, the function block instance can be used to\ncommand the next movement with a new rising edge onExecute.\nWhile the output isFALSE, keep calling the function block without\na new rising edge ofExecute.\nThe output is reset toFALSEon a falling edge ofExecute."
+        ],
+        [
+          "Error",
+          "BOOL",
+          "",
+          "Signals that an error has occurred within the function block"
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "",
+          "Error identification"
+        ],
+        [
+          "MovementId",
+          "SMC_Movement_Id",
+          "",
+          "The unique identifier of the movement.  Valid ifCommandAcceptedorDoneisTRUE."
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "library": "StringUtils",
+  "title": "CharAt (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/StringUtils/Current/Public-Parts/pou-CharBufferString/CharAt.html",
+  "page_title": "CharBufferString.CharAt (METH)",
+  "text": "\nMETHOD CharAt : BYTE\nThis method returns the character at a specified position.\nIt should be only used to iterate through a string and must not\nbe called for positions after the trailing 0 character.\nAttention! For instances storing a WSTRING: Valid values are\nonly returned if the character at the given position is an ASCII\ncharacter\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "CharAt",
+          "Type": "BYTE",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "iPosition",
+          "Type": "INT",
+          "Comment": "The position (relative to 1) within the string to check"
+        }
+      ]
+    }
+  ]
+}

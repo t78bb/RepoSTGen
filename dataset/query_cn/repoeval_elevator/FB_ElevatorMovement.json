@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现电梯在多楼层间根据目标楼层请求进行上下移动的控制逻辑。",
+  "provide_code": "FUNCTION_BLOCK FB_ElevatorMovement\nVAR_INPUT\n\tCurrentFloor\t\t:\tINT;\t\t\t\t// 当前楼层\n\tbDoorReady\t\t\t:\tBOOL;\t\t\t\t// 门准备好\nEND_VAR\nVAR_IN_OUT\n\tTargetFloors\t\t:\tARRAY[0..3] OF BOOL;\t// 目标楼层数组\nEND_VAR\nVAR_OUTPUT\n\tbMovingUp\t\t\t:\tBOOL;\t\t\t\t// 向上移动\n\tbMovingDown\t\t\t:\tBOOL;\t\t\t\t// 向下移动\n\tbArrivedAtTarget\t:\tBOOL;\t\t\t\t// 到达目标楼层\nEND_VAR"
+}

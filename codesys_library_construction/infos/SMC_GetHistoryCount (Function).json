@@ -1,0 +1,28 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_GetHistoryCount (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/OutQueue-Functions/SMC_GetHistoryCount.html",
+  "page_title": "SMC_GetHistoryCount (FUN)",
+  "text": "\nFUNCTION SMC_GetHistoryCount : UINT\nReturns the number of deleted objects in\nSMC_OUTQUEUE\nthat have not been overwritten, yet.\ntask-safety: call from consumer task only\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SMC_GetHistoryCount",
+          "Type": "UINT"
+        },
+        {
+          "Scope": "Input",
+          "Name": "poq",
+          "Type": "POINTER TOSMC_OUTQUEUE"
+        }
+      ]
+    }
+  ]
+}

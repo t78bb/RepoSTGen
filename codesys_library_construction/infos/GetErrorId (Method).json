@@ -1,0 +1,23 @@
+{
+  "library": "DNP3",
+  "title": "GetErrorId (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/PointObserver/pou-PointObserver/GetErrorId.html",
+  "page_title": "PointObserver.GetErrorId (METH)",
+  "text": "\nMETHOD GetErrorId :\nError\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetErrorId",
+          "Type": "Error"
+        }
+      ]
+    }
+  ]
+}

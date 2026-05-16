@@ -1,0 +1,23 @@
+{
+  "library": "DNP3",
+  "title": "WarmRestart (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/pou-Master/Commands/WarmRestart.html",
+  "page_title": "Master.WarmRestart (METH)",
+  "text": "\nMETHOD WarmRestart :\nError\nIssue a warm restart request\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "WarmRestart",
+          "Type": "Error"
+        }
+      ]
+    }
+  ]
+}

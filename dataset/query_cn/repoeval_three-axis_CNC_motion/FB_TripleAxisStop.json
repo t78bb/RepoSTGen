@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现对三轴（X、Y、Z）的同时停止控制，并提供停止状态和错误信息反馈。",
+  "provide_code": "FUNCTION_BLOCK FB_TripleAxisStop\nVAR_INPUT\n\tAxisX\t\t\t:\tSM3_Basic.AXIS_REF_SM3\t\t\t//X轴引用\n\tAxisY\t\t\t:\tSM3_Basic.AXIS_REF_SM3\t\t\t//Y轴引用\n\tAxisZ\t\t\t:\tSM3_Basic.AXIS_REF_SM3\t\t\t//Z轴引用\n\tbExecute\t\t:\tBOOL;\t\t\t\t//执行停止信号\n\trDeceleration\t:\tREAL := 100.0;\t\t//减速度\nEND_VAR\nVAR_OUTPUT\n\tbDone\t\t\t:\tBOOL;\t\t\t\t//三轴都停止完成\n\tbBusy\t\t\t:\tBOOL;\t\t\t\t//停止进行中\n\tbError\t\t\t:\tBOOL;\t\t\t\t//错误标志\n\tsErrorString\t:\tSTRING;\t\t\t\t//错误信息字符串\nEND_VAR"
+}

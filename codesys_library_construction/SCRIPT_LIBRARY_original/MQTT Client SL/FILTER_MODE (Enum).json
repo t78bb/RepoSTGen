@@ -1,0 +1,33 @@
+{
+  "library": "MQTT Client SL",
+  "title": "FILTER_MODE (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/MQTT Client SL/Current/MQTT-Client/Common/Enums/FILTER_MODE.html",
+  "page_title": "FILTER_MODE (ENUM)",
+  "text": "MQTT Client\nCommon\nEnums\nCOMMUNICATION_MODE (Enum)\nFILTER_MODE (Enum)\nMQTT_ERROR (Enum)\nMQTT_QOS (Enum)\nMQTT_VERSION (Enum)\nV5\nFunction Blocks\nMQTTClient (FunctionBlock)\nMQTTPublish (FunctionBlock)\nMQTTSubscribe (FunctionBlock)\nParams\nMQTTParam (ParamList)\nStructs\nMQTTV5\nUTF-8\nConvertUTF16toUTF8 (Function)\nConvertUTF8toUTF16 (Function)\nFile and Project Information\nLibrary Reference\n3SLicense\nLibrary Identification\nLibrary Properties\nCAA FB Factory\nLibrary Identification\nLibrary Properties\nCAA Types Extern\nLibrary Identification\nLibrary Properties\nCmpCrypto\nLibrary Identification\nLibrary Properties\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nCmpLog\nLibrary Identification\nLibrary Properties\nCmpSchedule\nLibrary Identification\nLibrary Properties\nCmpX509Cert\nLibrary Identification\nLibrary Properties\nCommon Behaviour Model\nLibrary Identification\nLibrary Properties\nComponent Manager\nLibrary Identification\nLibrary Properties\nElement Collections\nLibrary Identification\nLibrary Properties\nMemoryUtils\nLibrary Identification\nLibrary Properties\nNet Base Services\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nStringUtils\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysSocket2\nLibrary Identification\nLibrary Properties\nSysSocket2 Implementation\nLibrary Identification\nLibrary Properties\nSysTime\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nWeb Socket Client SL\nLibrary Identification\nLibrary Properties\nMQTT Client SL\nDocs\n»\nMQTT\nClient\n»\nCommon\n»\nEnums\n»\nFILTER_MODE (ENUM)\nFILTER_MODE (ENUM)\nÂ¶\nTYPE FILTER_MODE :\nFilter settings for the subcriber function block.\nAttributes:\nqualified_only\nInOut:\nName\nInitial\nComment\nFILTER_ON\n0\nFilters the telegrams by topics\nFILTER_OFF\n1\nTurns the filter off and receives ALL subscribed telegrams\nFILTER_NONE\n2\nReceives no telegrams. In this mode you can only subscribe\nor unsubscribe topics",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "FILTER_ON",
+          "Initial": "0",
+          "Comment": "Filters the telegrams by topics"
+        },
+        {
+          "Name": "FILTER_OFF",
+          "Initial": "1",
+          "Comment": "Turns the filter off and receives ALL subscribed telegrams"
+        },
+        {
+          "Name": "FILTER_NONE",
+          "Initial": "2",
+          "Comment": "Receives no telegrams. In this mode you can only subscribe\nor unsubscribe topics"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "library": "Standard64",
+  "title": "WMID (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/Standard64/Current/String-Functions/WMID.html",
+  "page_title": "WMID (FUN)",
+  "text": "Deutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nMenu\nSearch\nDeutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nAtomic Read-Write Functions\nAtomicReadLInt (Function)\nAtomicReadLReal (Function)\nAtomicReadLTime (Function)\nAtomicReadLWord (Function)\nAtomicReadULInt (Function)\nAtomicWriteLInt (Function)\nAtomicWriteLReal (Function)\nAtomicWriteLTime (Function)\nAtomicWriteLWord (Function)\nAtomicWriteULInt (Function)\nCounter\nLCTD (FunctionBlock)\nLCTU (FunctionBlock)\nLCTUD (FunctionBlock)\nString Functions\nWCONCAT (Function)\nWDELETE (Function)\nWFIND (Function)\nWINSERT (Function)\nWLEFT (Function)\nWLEN (Function)\nWMID (Function)\nWREPLACE (Function)\nWRIGHT (Function)\nTimer\nLTOF (FunctionBlock)\nLTON (FunctionBlock)\nLTP (FunctionBlock)\nFile and Project Information\nLibrary Reference\nStandard64\nDocs\n»\nString\nFunctions\n»\nWMID (FUN)\nWMID (FUN)\nÂ¶\nFUNCTION WMID : WSTRING(255)\nReturn LEN characters of STR, beginning\nat the POS-th wcharacter position.\nPOS = 1 is the first character.\nInOut:\nScope\nName\nType\nReturn\nWMID\nWSTRING(255)\nInput\nSTR\nWSTRING(255)\nLEN\nINT\nPOS\nINT\ntop\nCODESYS Group | We\nsoftware\nAutomation.\nto software\n['sɒftwɛər]\ntransitive verb\n__softwared/softwaring\n: to develop software\n// to software automation: to develop software for automation purposes\nThe CODESYS Group is the manufacturer of CODESYS, the leading hardware-independent\n                                    IEC 61131-3 automation software for developing and engineering controller\n                                    applications.\nCODESYS® is a registered trademark.\nCODESYS GmbH\nA member of the CODESYS Group\nMemminger Straße 151, 87439 Kempten\nGermany\nTel.:\n+49-831-54031-0\ninfo@codesys.com\nLegal Notice\nPrivacy Policy\nLinkedIn\nYoutube\nRSS\nDownloads\nLogin\nCODESYS Store\n© 2022 CODESYS GmbH\n| A member of the CODESYS Group",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "WMID",
+          "Type": "WSTRING(255)"
+        },
+        {
+          "Scope": "Input",
+          "Name": "STR",
+          "Type": "WSTRING(255)"
+        },
+        [
+          "LEN",
+          "INT"
+        ],
+        [
+          "POS",
+          "INT"
+        ]
+      ]
+    }
+  ]
+}

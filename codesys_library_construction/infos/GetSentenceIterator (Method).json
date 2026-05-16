@@ -1,0 +1,31 @@
+{
+  "library": "SM3_CNC",
+  "title": "GetSentenceIterator (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/GSentence/pou-SMC_GSentenceQueue/GetSentenceIterator.html",
+  "page_title": "SMC_GSentenceQueue.GetSentenceIterator (METH)",
+  "text": "\nMETHOD GetSentenceIterator : BOOL\nInitializes a sentence iterator for the entire queue.\nAttention: the iterator is only valid until a sentence\nis removed from the queue.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetSentenceIterator",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Inout",
+          "Name": "iterator",
+          "Type": "SMC_GSentence_Iterator",
+          "Comment": "Out: the iterator"
+        }
+      ]
+    }
+  ]
+}

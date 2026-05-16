@@ -1,0 +1,8 @@
+{
+  "library": "AC_DataLog",
+  "title": "IDataLogManager2 (Interface)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_DataLog/Current/AC_DataLog/DataLogManager/IDataLogManager2.html",
+  "page_title": "IDataLogManager2 (ITF)",
+  "text": "\nINTERFACE IDataLogManager2 EXTENDS\nIDataLogManager\nProperties:\nBias\nLogBias\nMethods:\nExternaLogAllChannels\n, inherited from\nIDataLogManager\nStructure:\nBias (Property)\nLogBias (Property)",
+  "tables": []
+}

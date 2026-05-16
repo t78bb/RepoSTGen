@@ -1,0 +1,63 @@
+{
+  "library": "PLCopen Safety FBs",
+  "title": "FBS_PSE (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/PLCopen Safety FBs/Current/PLCopenSafetyFBs/Enums/FBS_PSE.html",
+  "page_title": "FBS_PSE (ENUM)",
+  "text": "PLCopenSafetyFBs\nEnums\nFBS_ANTI (Enum)\nFBS_EDM (Enum)\nFBS_ENSWITCH (Enum)\nFBS_ENSWITCH2 (Enum)\nFBS_EQUI (Enum)\nFBS_ESPE (Enum)\nFBS_ESTOP (Enum)\nFBS_GUARD (Enum)\nFBS_GUARDLOCK2 (Enum)\nFBS_MODESEL (Enum)\nFBS_OUTCONTROL (Enum)\nFBS_PSE (Enum)\nFBS_RESBUT (Enum)\nFBS_SAFEREQ (Enum)\nFBS_TESTSEN (Enum)\nFBS_TWOHAND (Enum)\nFunction Blocks\nSF_Antivalent (FunctionBlock)\nSF_EDM (FunctionBlock)\nSF_ESPE (FunctionBlock)\nSF_EmergencyStop (FunctionBlock)\nSF_EnableSwitch (FunctionBlock)\nSF_EnableSwitch_2 (FunctionBlock)\nSF_Equivalent (FunctionBlock)\nSF_Guard (FunctionBlock)\nSF_GuardLocking_2 (FunctionBlock)\nSF_ModeSelector (FunctionBlock)\nSF_OutControl (FunctionBlock)\nSF_PSE (FunctionBlock)\nSF_ResetButton (FunctionBlock)\nSF_SafetyRequest (FunctionBlock)\nSF_TestableSafetySensor (FunctionBlock)\nSF_TwoHandControlTypeII (FunctionBlock)\nSF_TwoHandControlTypeIII (FunctionBlock)\nFile and Project Information\nLibrary Reference\nStandard\nLibrary Identification\nLibrary Properties\nSysTimeCore\nLibrary Identification\nLibrary Properties\nPLCopen Safety FBs\nDocs\n»\nPLCopenSafetyFBs\n»\nEnums\n»\nFBS_PSE (ENUM)\nFBS_PSE (ENUM)\nÂ¶\nTYPE FBS_PSE :\nDefinition of SF_PSE function block states and its diagnostic values.\nAttributes:\nqualified_only\nInOut:\nName\nInitial\nComment\nIDLE\n16#0\nThe function block is not active (initial state).\nINIT\n16#8001\nActivation is TRUE. The function block was enabled. Check if\nS_StartReset is requested.\nWAIT_FOR_S_PSE_IN_1\n16#8802\nActivation is TRUE. Check if Reset is FALSE and wait for\nS_PSE_In = TRUE.\nWAIT_FOR_S_PSE_IN_2\n16#8804\nActivation is TRUE. Safety demand detected. Check if Reset\nis FALSE and wait for S_PSE_In = TRUE.\nWAIT_FOR_RESET_1\n16#8402\nActivation is TRUE. S_PSE_In = TRUE. Wait for rising trigger\nof Reset.\nWAIT_FOR_RESET_2\n16#8404\nActivation is TRUE. S_PSE_In = TRUE. Check for S_AutoReset\nor wait for rising trigger of Reset.\nOUTPUT_ENABLED\n16#8000\nActivation is TRUE. S_PSE_In = TRUE. Functional mode with\nS_PSE_Out = TRUE.\nERR_RESET_1\n16#C001\nReset is TRUE while waiting for S_PSE_In = TRUE.\nERR_RESET_2\n16#C011\nReset is TRUE while waiting for S_PSE_In = TRUE.",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "IDLE",
+          "Initial": "16#0",
+          "Comment": "The function block is not active (initial state)."
+        },
+        {
+          "Name": "INIT",
+          "Initial": "16#8001",
+          "Comment": "Activation is TRUE. The function block was enabled. Check if\nS_StartReset is requested."
+        },
+        {
+          "Name": "WAIT_FOR_S_PSE_IN_1",
+          "Initial": "16#8802",
+          "Comment": "Activation is TRUE. Check if Reset is FALSE and wait for\nS_PSE_In = TRUE."
+        },
+        {
+          "Name": "WAIT_FOR_S_PSE_IN_2",
+          "Initial": "16#8804",
+          "Comment": "Activation is TRUE. Safety demand detected. Check if Reset\nis FALSE and wait for S_PSE_In = TRUE."
+        },
+        {
+          "Name": "WAIT_FOR_RESET_1",
+          "Initial": "16#8402",
+          "Comment": "Activation is TRUE. S_PSE_In = TRUE. Wait for rising trigger\nof Reset."
+        },
+        {
+          "Name": "WAIT_FOR_RESET_2",
+          "Initial": "16#8404",
+          "Comment": "Activation is TRUE. S_PSE_In = TRUE. Check for S_AutoReset\nor wait for rising trigger of Reset."
+        },
+        {
+          "Name": "OUTPUT_ENABLED",
+          "Initial": "16#8000",
+          "Comment": "Activation is TRUE. S_PSE_In = TRUE. Functional mode with\nS_PSE_Out = TRUE."
+        },
+        {
+          "Name": "ERR_RESET_1",
+          "Initial": "16#C001",
+          "Comment": "Reset is TRUE while waiting for S_PSE_In = TRUE."
+        },
+        {
+          "Name": "ERR_RESET_2",
+          "Initial": "16#C011",
+          "Comment": "Reset is TRUE while waiting for S_PSE_In = TRUE."
+        }
+      ]
+    }
+  ]
+}

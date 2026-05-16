@@ -1,0 +1,36 @@
+{
+  "library": "SM3_Basic",
+  "title": "GetDeviceState (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/DriveInterface/AXIS_REF/pou-AXIS_REF_SM3/CAA-Device-Diagnosis/GetDeviceState.html",
+  "page_title": "AXIS_REF_SM3.GetDeviceState (METH)",
+  "text": "\nMETHOD GetDeviceState : DED.DEVICE_STATE\nReturns the state of the device; if device state is\nERROR\nfurther information can be read by\nGetDeviceError\n.\n: return:\neDeviceState\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetDeviceState",
+          "Type": "DED.DEVICE_STATE",
+          "Comment": ""
+        },
+        {
+          "Scope": "Output",
+          "Name": "xDiagnosisInfoAvailable",
+          "Type": "BOOL",
+          "Comment": "TRUE: Diagnosis info can be read by callingGetDeviceDiagnosisInfo."
+        },
+        [
+          "eError",
+          "DED.ERROR",
+          ""
+        ]
+      ]
+    }
+  ]
+}

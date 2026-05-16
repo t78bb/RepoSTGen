@@ -1,0 +1,47 @@
+{
+  "library": "String Functions",
+  "title": "RIGHT (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Functions/Current/StrFunc/Functions/RIGHT.html",
+  "page_title": "RIGHT (FUN)",
+  "text": "\nFUNCTION RIGHT :\nIString\nReturns a specific number of runes of a string, starting from right\nReturns 0 in case of\neErrorID\n<>\nERROR.NO_ERROR\nSee\nIStringRepresentation\nâ\nToIString(itfResource,\n-TO_LINT(udiCount))\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "RIGHT",
+          "Type": "IString",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfString",
+          "Type": "IString",
+          "Comment": "String to be analyzed"
+        },
+        [
+          "udiCount",
+          "UDINT",
+          "Number of runes"
+        ],
+        [
+          "itfResource",
+          "IString",
+          "The resource that this function is working on. It will\ncontain the result after the function call and will also be\nreturned by this function so it can be used in nested calls."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "eErrorID",
+          "Type": "ERROR",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

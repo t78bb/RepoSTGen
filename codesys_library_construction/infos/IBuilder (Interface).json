@@ -1,0 +1,8 @@
+{
+  "library": "String Builder Base",
+  "title": "IBuilder (Interface)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Builder Base/Current/BuilderBase/Interfaces/IBuilder.html",
+  "page_title": "IBuilder (ITF)",
+  "text": "\nINTERFACE IBuilder EXTENDS MBM.IDisposable, STR.IStringRepresentation\nA Builder is used to efficiently build a string using Write methods.\nIt minimizes memory copying.\nMethods:\nGetBuilderStats\nReset\nWriteIString\nWriteMemSegment\nWriteRune\nWriteString\nWriteWString\nGetCurrentSegment\nGetFirstSegment\nGetNextSegment\nValidateSegment\nStructure:\nGetBuilderStats (Method)\nReset (Method)\nSegments\nGetCurrentSegment (Method)\nGetFirstSegment (Method)\nGetNextSegment (Method)\nValidateSegment (Method)\nWriteIString (Method)\nWriteMemSegment (Method)\nWriteRune (Method)\nWriteString (Method)\nWriteWString (Method)",
+  "tables": []
+}

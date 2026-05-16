@@ -1,0 +1,40 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_CalcDirectionFromVector (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_Trafo_POUs/SoftMotion-Transformations/additional-FBs/SMC_CalcDirectionFromVector.html",
+  "page_title": "SMC_CalcDirectionFromVector (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_CalcDirectionFromVector\nBy use of this function the orientation (\ndAlpha\n)\nof the tool can be calculated.\nNote\nFor detailed information on transformation function blocks\nsee the overview on kinematic transformations in the\nCNC online help.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "v",
+          "Type": "SMC_VECTOR3D",
+          "Initial": "",
+          "Comment": "Tangent vectorv. In general,vwill be identical to\nthe outputvecActTangentof the interpolator."
+        },
+        [
+          "eDir",
+          "SMC_VECTORDIR",
+          "SMC_tangential",
+          "InputeDirspecifies, whether the direction has to be\ncalculated parallel to a path tangent (SMC_tangential),\nor oppositely (SMC_opp_tangential) or orthogonally to\nthe path (SMC_orthogonal_r(right to the path tangent)\nresp.SMC_orthogonal_l(left to the path tangent))."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "dDir",
+          "Type": "LREAL",
+          "Initial": "",
+          "Comment": "The angledDiris measured in degrees.\nIt will remain constant during standstill of the interpolator,\ni.e. whenvis the zero vector.eDiris mostly either used as set value\natSMC_ControlAxisByPosfor a directional axis\nor as inputdAlphafor the transformation."
+        }
+      ]
+    }
+  ]
+}

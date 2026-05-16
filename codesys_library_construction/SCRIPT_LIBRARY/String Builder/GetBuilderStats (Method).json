@@ -1,0 +1,28 @@
+{
+  "library": "String Builder",
+  "title": "GetBuilderStats (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Builder/Current/Builder/Function-Blocks/pou-_Builder/IBuilder/GetBuilderStats.html",
+  "page_title": "_Builder.GetBuilderStats (METH)",
+  "text": "\nMETHOD FINAL GetBuilderStats :\nSTATS\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetBuilderStats",
+          "Type": "STATS"
+        },
+        {
+          "Scope": "Output",
+          "Name": "eErrorID",
+          "Type": "ERROR"
+        }
+      ]
+    }
+  ]
+}

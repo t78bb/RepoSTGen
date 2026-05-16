@@ -1,0 +1,4 @@
+FUNCTION_BLOCK PUBLIC FB_SocketOnCommand IMPLEMENTS I_Command
+VAR
+	refSocket : REFERENCE TO FB_Socket;
+END_VAR

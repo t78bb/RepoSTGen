@@ -1,0 +1,43 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_TRIGGER_INFO (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/AdministrativeConfiguration/Trigger/SMC_TRIGGER_INFO.html",
+  "page_title": "SMC_TRIGGER_INFO (STRUCT)",
+  "text": "\nTYPE SMC_TRIGGER_INFO : STRUCT\nThis structure collects all information about a trigger that\ncan be read using\nSMC_GroupReadTrigger\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "status",
+          "Type": "SMC_TRIGGER_STATUS",
+          "Comment": "The status of the trigger.NoteA trigger can beEnabledorActiveeven if the movement\nit is attached to is alreadyDone.  This can happen if the\ntrigger is close to the end of a movement and the movement is\nfollowed by a blending movement.  The first movement will reportDoneas soon as the blending starts.  But the trigger will\nbeEnabledorActiveuntil the trigger point has been\nreached."
+        },
+        {
+          "Name": "movementId",
+          "Type": "SMC_MOVEMENT_ID",
+          "Comment": "The id of the movement the trigger\nis assigned to."
+        },
+        {
+          "Name": "triggerTime",
+          "Type": "LREAL",
+          "Comment": "The duration in seconds until the trigger point is reached. The value\nis relative to the start of the current task cycle.\nOnly valid ifstatusisActive.\nThe value of thetriggerTimeis limited to the current effective\nplanning forecast.  The desired forecast can be configured using thefPlanningForecastDurationinput ofSMC_TuneCPKernel.  The current\neffective planning forecast can be monitored using theCurrentPlanningForecastoutput ofMC_GroupReadStatus.\nIf no planning forecast has been configured, i.e. iffPlanningForecastDurationis set to 0, the trigger will becomeActiveat the start of the\ncycle where the trigger point will be reached and thetriggerTimewill\ncontain the remaining duration until the trigger point is reached.\nThe trigger time is reported in the range\n0 <= triggerTime <= MAX(TaskCycleTime,fPlanningForecastDuration)."
+        },
+        {
+          "Name": "errorId",
+          "Type": "SMC_ERROR",
+          "Comment": "The specific error code ifstatusisError."
+        },
+        {
+          "Name": "name",
+          "Type": "STRING",
+          "Comment": "The name of the trigger."
+        }
+      ]
+    }
+  ]
+}

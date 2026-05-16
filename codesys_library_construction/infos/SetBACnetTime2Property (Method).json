@@ -1,0 +1,30 @@
+{
+  "library": "BACnet2",
+  "title": "SetBACnetTime2Property (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/BACnetObjects/base/pou-BACnetObjectBase/Utilities/typed-property-access/SetBACnetTime2Property.html",
+  "page_title": "BACnetObjectBase.SetBACnetTime2Property (METH)",
+  "text": "\nMETHOD SetBACnetTime2Property\nSets the Time-Value of the specified Property (propID) of this BACnet-Object using a CmpBACnet.IEC_BACNET_TIME struct.\nThe used functions are no client, meaning, that the access of the property is not restricted by write or read access restrictions.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "propID",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_ID",
+          "Comment": "The ID of the property to set."
+        },
+        [
+          "bacTim",
+          "CmpBACnet.IEC_BACNET_TIME",
+          "The TIME value to set for the property."
+        ]
+      ]
+    }
+  ]
+}

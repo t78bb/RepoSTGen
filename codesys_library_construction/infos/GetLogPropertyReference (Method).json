@@ -1,0 +1,37 @@
+{
+  "library": "BACnet",
+  "title": "GetLogPropertyReference (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/TrendLogMultiple/pou-BACnetTrendLogMultiple/GetLogPropertyReference.html",
+  "page_title": "BACnetTrendLogMultiple.GetLogPropertyReference (METH)",
+  "text": "\nMETHOD GetLogPropertyReference : CmpBACnet.IEC_BACNET_STATUS\nGets the device object property reference at index nIndex of the Log_DeviceObjectProperty-Property of this BACnet-Object.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetLogPropertyReference",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "nIndex",
+          "Type": "CmpBACnet.IEC_BACNET_ELEMENT_COUNT",
+          "Comment": "The 1 based index to get the property reference for."
+        },
+        {
+          "Scope": "Output",
+          "Name": "devObjPropRef",
+          "Type": "CmpBACnet.IEC_BACNET_DEV_OBJ_PROP_REFERENCE",
+          "Comment": "The property reference after a call to this method."
+        }
+      ]
+    }
+  ]
+}

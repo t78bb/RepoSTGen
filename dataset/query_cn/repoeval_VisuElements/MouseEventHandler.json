@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现对鼠标左键单击、双击、右键单击、中键单击以及鼠标位置的事件检测和处理。",
+  "provide_code": "FUNCTION_BLOCK MouseEventHandler\nVAR_INPUT\n    xLeftClick : BOOL;      (* Left mouse button click *)\n    xRightClick : BOOL;     (* Right mouse button click *)\n    xMiddleClick : BOOL;    (* Middle mouse button click *)\n    xMouseMove : BOOL;      (* Mouse movement detected *)\n    rMouseX : REAL;         (* Current mouse X position *)\n    rMouseY : REAL;         (* Current mouse Y position *)\n    tDblClickTime : TIME := T#300MS;  (* Double click timeout *)\nEND_VAR\n\nVAR_OUTPUT\n    eMouseEvent : INT;      (* Event type: 0=None, 1=SingleClick, 2=DoubleClick, 3=RightClick, 4=MiddleClick *)\n    rEventX : REAL;         (* X position where event occurred *)\n    rEventY : REAL;         (* Y position where event occurred *)\n    xEventActive : BOOL;    (* TRUE when an event is active *)\nEND_VAR"
+}

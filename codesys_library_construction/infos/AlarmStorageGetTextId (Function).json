@@ -1,0 +1,41 @@
+{
+  "library": "AlarmManager",
+  "title": "AlarmStorageGetTextId (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Alarm-storage-API/AlarmStorageGetTextId.html",
+  "page_title": "AlarmStorageGetTextId (FUN)",
+  "text": "\nFUNCTION AlarmStorageGetTextId : STRING\nThis function can be used to determine the text id of a message of an alarm,\nthat was read from the alarm storage.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "AlarmStorageGetTextId",
+          "Type": "STRING",
+          "Comment": "The text id. An empty string if the corresponding\ninformation cannot be retrieved"
+        },
+        {
+          "Scope": "Input",
+          "Name": "udiAlarmGroupId",
+          "Type": "UDINT",
+          "Comment": "The internal id of the alarm group, that was read from the\nalarm storage"
+        },
+        [
+          "udiAlarmId",
+          "UDINT",
+          "The internal id of the alarm, that was read from the alarm\nstorage"
+        ],
+        [
+          "iWhichMessage",
+          "INT",
+          "The 1-based index of the text id."
+        ]
+      ]
+    }
+  ]
+}

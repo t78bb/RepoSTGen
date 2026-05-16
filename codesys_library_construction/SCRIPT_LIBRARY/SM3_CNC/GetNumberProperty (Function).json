@@ -1,0 +1,28 @@
+{
+  "library": "SM3_CNC",
+  "title": "GetNumberProperty (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/Projektinformationen/GetNumberProperty.html",
+  "page_title": "GetNumberProperty (FUN)",
+  "text": "\nFUNCTION GetNumberProperty : DINT\nThis function has been automatically generated from the project information.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetNumberProperty",
+          "Type": "DINT"
+        },
+        {
+          "Scope": "Input",
+          "Name": "stKey",
+          "Type": "WSTRING"
+        }
+      ]
+    }
+  ]
+}

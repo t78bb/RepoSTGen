@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现数控系统（CNC）的初始化，包括复位G代码处理、轴控制、回零和停止功能块的状态。",
+  "provide_code": "FUNCTION INIT_CNC_System : BOOL\nVAR_IN_OUT\n\tfbSMC_ReadNCFile\t\t:\tSMC_ReadNCFile;\n\tfbSMC_NCDecoder\t\t\t:\tSMC_NCDecoder;\n\tfbSMC_CheckVelocities\t:\tSMC_CheckVelocities;\n\tfbSMC_Interpolator\t\t:\tSMC_Interpolator;\n\tfbSMC_ControlAxisXByPos\t:\tSMC_ControlAxisByPos;\n\tfbSMC_ControlAxisYByPos\t:\tSMC_ControlAxisByPos;\n\tfbSMC_ControlAxisZByPos\t:\tSMC_ControlAxisByPos;\n\tfbSMC_AXISX_HOMING\t\t:\tSMC_HOMING;\n\tfbSMC_AXISY_HOMING\t\t:\tSMC_HOMING;\n\tfbSMC_AXISZ_HOMING\t\t:\tSMC_HOMING;\n\tfbMC_AXISX_STOP\t\t\t:\tMC_STOP;\n\tfbMC_AXISY_STOP\t\t\t:\tMC_STOP;\n\tfbMC_AXISZ_STOP\t\t\t:\tMC_STOP;\nEND_VAR\nVAR_INPUT\n\tAxisX\t\t\t\t\t:\tSM3_Basic.AXIS_REF_SM3\n\tAxisY\t\t\t\t\t:\tSM3_Basic.AXIS_REF_SM3\n\tAxisZ\t\t\t\t\t:\tSM3_Basic.AXIS_REF_SM3\nEND_VAR"
+}

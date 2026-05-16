@@ -1,0 +1,112 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_TRAFOF_Gantry3 (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_Trafo_POUs/SoftMotion-Transformations/Gantry-systems/SMC_TRAFOF_Gantry3.html",
+  "page_title": "SMC_TRAFOF_Gantry3 (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_TRAFOF_Gantry3\nForward transformation of three dimensional gantry systems.\nEach instance of\nSMC_TRAFOF_GANTRY3\ncan be connected\nto a visualization template named\nSMC_VISU_Gantry3\nNote\nFor detailed information on transformations\nsee Overview to\nSM_Trafo_POUs\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "DriveX",
+          "Type": "AXIS_REF_SM3",
+          "Comment": "Reference to x-axis"
+        },
+        [
+          "DriveY",
+          "AXIS_REF_SM3",
+          "Reference to y-axis"
+        ],
+        [
+          "DriveZ",
+          "AXIS_REF_SM3",
+          "Reference to z-axis"
+        ],
+        {
+          "Scope": "Input",
+          "Name": "dOffsetX",
+          "Type": "LREAL",
+          "Comment": "Offset position for x-axis. Equivalent toSMC_TRAFO_Gantry3"
+        },
+        [
+          "dOffsetY",
+          "LREAL",
+          "Offset position for y-axis. Equivalent toSMC_TRAFO_Gantry3"
+        ],
+        [
+          "dOffsetZ",
+          "LREAL",
+          "Offset position for z-axis. Equivalent toSMC_TRAFO_Gantry3"
+        ],
+        [
+          "minX",
+          "LREAL",
+          "Minimum x position limiting move range\n(for visualization purpose)"
+        ],
+        [
+          "maxX",
+          "LREAL",
+          "(for visualization purpose)"
+        ],
+        [
+          "minY",
+          "LREAL",
+          "Minimum y position limiting move range\n(for visualization purpose)"
+        ],
+        [
+          "maxY",
+          "LREAL",
+          "Maximum y position limiting move range\n(for visualization purpose)"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "dx",
+          "Type": "LREAL",
+          "Comment": "X-position"
+        },
+        [
+          "dy",
+          "LREAL",
+          "Y-position"
+        ],
+        [
+          "dz",
+          "LREAL",
+          "Z-position"
+        ],
+        [
+          "dnx",
+          "LREAL",
+          "Normed x-position (with value in [0,1])\n(for visualization purpose)"
+        ],
+        [
+          "dny",
+          "LREAL",
+          "Normed y-position (with value in [0,1])\n(for visualization purpose)"
+        ],
+        [
+          "ratio",
+          "LREAL",
+          "Ratio x-interval / y-interval"
+        ],
+        [
+          "dnOffsetX",
+          "LREAL",
+          "Normed x-offset (with value in [0,1])\n(for visualization purpose)"
+        ],
+        [
+          "dnOffsetY",
+          "LREAL",
+          "Normed y-offset (with value in [0,1])\n(for visualization purpose)"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "library": "Util",
+  "title": "IsLeapYear (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/TimerSwitch/Functions/IsLeapYear.html",
+  "page_title": "IsLeapYear (FUN)",
+  "text": "\nFUNCTION IsLeapYear : BOOL\nChecks whether the year (uiYear) passed represents a leap year.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "IsLeapYear",
+          "Type": "BOOL",
+          "Initial": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "uiYear",
+          "Type": "YEAR",
+          "Initial": ""
+        },
+        {
+          "Scope": "Output",
+          "Name": "eErrorID",
+          "Type": "ERROR",
+          "Initial": "ERROR.NO_ERROR"
+        }
+      ]
+    }
+  ]
+}

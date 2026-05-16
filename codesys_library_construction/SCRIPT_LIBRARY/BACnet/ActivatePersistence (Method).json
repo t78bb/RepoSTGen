@@ -1,0 +1,28 @@
+{
+  "library": "BACnet",
+  "title": "ActivatePersistence (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetServer/pou-IBACnetServer/Persistence/ActivatePersistence.html",
+  "page_title": "IBACnetServer.ActivatePersistence (METH)",
+  "text": "\nMETHOD ActivatePersistence : UDINT\nRegisters a\nIBACnetPersistence\nwith\nBACnetServer\n.\nReturn CmpErrors.Errors.ERR_OK if succesfully registered.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "ActivatePersistence",
+          "Type": "UDINT"
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfPersistence",
+          "Type": "IBACnetPersistence"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "library": "BACnetDefaultImpl",
+  "title": "PostStartBACnetStack (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnetDefaultImpl/Current/BACnetDefaultImpl/Function-Blocks/LoggingObjects/pou-TrendLog/PostStartBACnetStack.html",
+  "page_title": "TrendLog.PostStartBACnetStack (METH)",
+  "text": "\nMETHOD PostStartBACnetStack : UDINT\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "PostStartBACnetStack",
+          "Type": "UDINT"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_ArticulatedRobot_6DOF_J1_State (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_Trafo_Data-types/SMC_ArticulatedRobot_6DOF_J1_State.html",
+  "page_title": "SMC_ArticulatedRobot_6DOF_J1_State (ENUM)",
+  "text": "\nTYPE SMC_ArticulatedRobot_6DOF_J1_State :\nThe possible configuration states of joint 1 of the 6DOF robot arm.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "SMC_AR_ELBOWUP",
+          "Comment": "The âelbowâ is pointing upwards"
+        },
+        {
+          "Name": "SMC_AR_ELBOWDOWN",
+          "Comment": "The âelbowâ is pointing downwards"
+        },
+        {
+          "Name": "SMC_AR_ELBOWSTRAIGHT",
+          "Comment": "The arm is fully stretched (singular case)"
+        }
+      ]
+    }
+  ]
+}

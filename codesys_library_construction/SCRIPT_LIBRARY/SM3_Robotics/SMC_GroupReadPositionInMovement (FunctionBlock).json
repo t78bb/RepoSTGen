@@ -1,0 +1,62 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_GroupReadPositionInMovement (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/Diagnostics/SMC_GroupReadPositionInMovement.html",
+  "page_title": "SMC_GroupReadPositionInMovement (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_GroupReadPositionInMovement\nFunction block for reading the position in the current movement. The\nresult can be used for preparing a trigger using\nSMC_GroupPrepareTrigger\nby setting the\nPositionType\nto\nMvtRelative\nand the\nPosition.MvtPosition\nto the\nPosition\noutput of this function block.\nNote\nIf the position is read while blending between movements, then on the first\nhalf of the blending the\nMovementId\nand\nPosition\nwill belong to the\nfirst movement and on the second half, they will belong to the second\nmovement.\nThis is consistent with how trigger positions are handled when blending, but\nin contrast to the behavior of the\nActive\noutputs of the movement command\nFBs. The\nActive\noutput of the second movement will become\nTRUE\nas\nsoon as the blending starts.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "AxisGroup",
+          "Type": "AXIS_GROUP_REF_SM3",
+          "Comment": "Reference to a group of axes"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Enable",
+          "Type": "BOOL",
+          "Comment": "The position is read continuously while enabled."
+        },
+        {
+          "Scope": "Output",
+          "Name": "Valid",
+          "Type": "BOOL",
+          "Comment": "TRUEif thePositionandMovementIdare valid."
+        },
+        [
+          "Busy",
+          "BOOL",
+          "The FB is not finished"
+        ],
+        [
+          "Position",
+          "LREAL",
+          "The current position within the current movement. The value\nis between 0 and 1, where 0 is the start and 1 the end of the\nmovement."
+        ],
+        [
+          "MovementId",
+          "SMC_Movement_Id",
+          "The id of the current movement."
+        ],
+        [
+          "Error",
+          "BOOL",
+          "Signals that an error has occurred within the function block"
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

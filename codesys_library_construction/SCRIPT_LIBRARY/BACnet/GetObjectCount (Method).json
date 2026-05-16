@@ -1,0 +1,23 @@
+{
+  "library": "BACnet",
+  "title": "GetObjectCount (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetServer/pou-IBACnetServer/Objects/GetObjectCount.html",
+  "page_title": "IBACnetServer.GetObjectCount (METH)",
+  "text": "\nMETHOD GetObjectCount : UDINT\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetObjectCount",
+          "Type": "UDINT"
+        }
+      ]
+    }
+  ]
+}

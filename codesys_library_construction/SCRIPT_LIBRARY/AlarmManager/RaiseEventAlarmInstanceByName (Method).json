@@ -1,0 +1,41 @@
+{
+  "library": "AlarmManager",
+  "title": "RaiseEventAlarmInstanceByName (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/pou-IAlarmHandler7/RaiseEventAlarmInstanceByName.html",
+  "page_title": "IAlarmHandler7.RaiseEventAlarmInstanceByName (METH)",
+  "text": "\nMETHOD RaiseEventAlarmInstanceByName : BOOL\nRaises an Event for a specified alarm template instance.\nIf a function block is used in several alarm group templates this function can be used to obtain the correct alarm instance.\nThis method uses semaphore synchronization with AlarmEvaluation_PRG.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "RaiseEventAlarmInstanceByName",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "pFBInstance",
+          "Type": "POINTER TO BYTE",
+          "Comment": "Pointer to the template FB instance. Use THIS when inside\nthe function block."
+        },
+        [
+          "uiTemplateAlarmId",
+          "ALARM_ID",
+          "The Alarm ID within the related alarm group template, which should be raised. The name of the generated\nenum has to be passed: Alm_<Name of the alarm template group>_Alarm_IDs"
+        ],
+        [
+          "stAlarmTemplateName",
+          "STRING(255)",
+          "Name of the related alarm group template of this template instance.\nIn case of multiple alarm group template objects that use the same FB as type, specify the specific type."
+        ]
+      ]
+    }
+  ]
+}

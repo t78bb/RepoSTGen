@@ -1,0 +1,160 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_SmoothPath (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/SoftMotion-Function-Blocks/SMC_SmoothPath.html",
+  "page_title": "SMC_SmoothPath (FB)",
+  "text": "GlobalTextList (GlobalTextList)\nImagePool_cnc_sm3 (ImagePool)\nImages\nLibrary Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nProjektinformationen\nGetBooleanProperty (Function)\nGetCompany (Function)\nGetNumberProperty (Function)\nGetTextProperty (Function)\nGetTextProperty2 (Function)\nGetTitle (Function)\nGetVersion (Function)\nGetVersionProperty (Function)\nSM3_CNC_GetVersion (Function)\nSMC_CNC_LibParams (ParamList)\nSM_CNC_Data types\nFile\nSMC_SINGLEVAR (Struct)\nSMC_TOKENTYPE (Enum)\nSMC_VARLIST (Struct)\nSMC_VARTYPE (Enum)\nSoftMotion CNC\nSMC_ABC_SLOPES_AT_STOP (Enum)\nSMC_ABC_SLOPES_NO_STOP (Enum)\nSMC_ADDAXIS (Enum)\nSMC_AL_STATUS (Enum)\nSMC_CNC_REF (FunctionBlock)\nSMC_DEC_STATUS (Enum)\nSMC_DIRECTION (Enum)\nSMC_GAddress (Alias)\nSMC_GCODEVIEWER_DATA (Struct)\nSMC_GCODE_TEXT (Struct)\nSMC_GCODE_WORD (Struct)\nSMC_GCodeObjectId (Struct)\nSMC_GEOINFO (Struct)\nSMC_GWord (Struct)\nSMC_INT_STATUS (Enum)\nSMC_INT_VELMODE (Enum)\nSMC_LINE_3D (Struct)\nSMC_MOVTYP (Enum)\nSMC_M_PARAMETERS (Struct)\nSMC_OBJECTSPLITTERMODE (Enum)\nSMC_ORI_CONVENTION (Enum)\nSMC_OUTQUEUE (FunctionBlock)\nbFull (Property)\nSMC_PLANE_H (Struct)\nSMC_POSINFO (Struct)\nSMC_SEGMENT (Struct)\nSMC_SEGMENTTYPE (Enum)\nSMC_SMOOTHBSPLINE_MODE (Enum)\nSMC_SMOOTHPATHADDAXMODE (Enum)\nSMC_SMOOTHPATHMODE (Enum)\nSMC_Seg (Struct)\nSMC_TC_STATUS (Enum)\nSMC_TOOLCORRMODE (Enum)\nSMC_VECTOR6D (Struct)\nSM_CNC_POUs\nFile\nReadNCFile\nSMC_ReadNCFile (FunctionBlock)\nStream\nToken\nSMC_ReadNCQueue (FunctionBlock)\nCloseFile (Action)\nhelp functions\nSMC_StringBuffer (FunctionBlock)\nNC2\nGSentence\nSMC_GExpToken_Iterator (FunctionBlock)\nSMC_GJUMP_COMMAND (Enum)\nSMC_GJUMP_TARGET (Union)\nSMC_GSentence (Struct)\nSMC_GSentenceQueue (FunctionBlock)\nSMC_GSentence_DynCall (Struct)\nSMC_GSentence_GWords (Struct)\nSMC_GSentence_GWords_Create (Function)\nSMC_GSentence_Iterator (FunctionBlock)\nSMC_GSentence_Let (Struct)\nSMC_GSentence_SubCall (Struct)\nSMC_GSentence_SubRet (Struct)\nSMC_GSentence_Type (Enum)\nSMC_GSentence_Union (Union)\nSMC_GVarDecl (Struct)\nSMC_GVar_Type (Enum)\nSMC_GWord_Iterator (FunctionBlock)\nSMC_NC_CopySentence (Function)\nSMC_NC_CopySentenceChecked (Function)\nGSentenceJumpBuffer\nSMC_GSentenceJumpBuffer (FunctionBlock)\nInterpreter\nCallstack\nSMC_NCInterpreter (FunctionBlock)\nParser\nExpressions\nSMC_NCTokenParser (FunctionBlock)\nSMC_NC_SourcePosition (Struct)\nSymbolTable\nReadNCFile2\nSMC_IGSentenceModifier (Interface)\nSMC_INCLookup (Interface)\nSMC_ITokenModifier (Interface)\nSMC_NCLookupFile (FunctionBlock)\nSMC_NCNavigator (FunctionBlock)\nSMC_NC_CanProcessTokens (Function)\nSMC_NC_FindProgramFile (Function)\nSMC_NC_PrependDefaults (FunctionBlock)\nSMC_NC_TokenQueue_Completed (Function)\nSMC_ReadNCFile2 (FunctionBlock)\nSMC_ReadNCFromStream (FunctionBlock)\nSoftMotion CNC\nCoordinate Transformations\nSMC_CoordinateTransformation3D (FunctionBlock)\nSMC_DetermineCuboidBearing (FunctionBlock)\nSMC_InvCoordinateTransformation3D (FunctionBlock)\nSMC_TeachCoordinateSystem (FunctionBlock)\nSMC_UnitVectorToRPY (FunctionBlock)\nDirect Axis Control\nSMC_ControlAxisByPos (FunctionBlock)\nSMC_ControlAxisByPosVel (FunctionBlock)\nSMC_ControlAxisByVel (FunctionBlock)\nGCode Viewer\nSMC_GCodeViewer (FunctionBlock)\nGeoInfo Help Functions\nSMC_AdaptHelpMarks (Function)\nSMC_CalcEndPnt (Function)\nSMC_CalcLengthGeo (Function)\nSMC_CalcStartPnt (Function)\nSMC_CutEnd (Function)\nSMC_CutStart (Function)\nSMC_GeoinfoInit (Function)\nSMC_GetAccVec (Function)\nSMC_GetAddAxValue (Function)\nSMC_GetClosestPnt (Function)\nSMC_GetLengthOfPrefix (Function)\nSMC_GetPnt (Function)\nSMC_GetPntPI (Function)\nSMC_GetTanVec (Function)\nSMC_GetTanVec3D (Function)\nSMC_InvertDirection (Function)\nSMC_RampInCorr (Function)\nSMC_RampOutCorr (Function)\nSMC_RecalculateHelpMarks (Function)\nSMC_SingleCorr (Function)\nOutQueue Functions\nSMC_AppendObj (Function)\nSMC_DeleteObj (Function)\nSMC_GetCount (Function)\nSMC_GetHistoryCount (Function)\nSMC_GetLastObj (Function)\nSMC_GetObj (Function)\nSMC_GetObjFromEnd (Function)\nSMC_GetObjFromHistory (Function)\nSMC_OutQueueInit (Function)\nSMC_OutQueueIsSyncing (Function)\nSMC_OutQueue_IsFull (Function)\nSMC_RestoreQueue (Function)\nSMC_SetObj (Function)\nSMC_SetQueueCapacity (Function)\nPosinfo Functions\nSMC_PosInfo_Trf_Inverse (Function)\nSMC_PosInfo_Trf_Mult (Function)\nQueue manipulation\nSMC_QueueSetReservedEntries (FunctionBlock)\nSMC_RotateQueue2D (FunctionBlock)\nSMC_ScaleQueue3D (FunctionBlock)\nSMC_TranslateQueue3D (FunctionBlock)\nSoftMotion Function Blocks\nBlockSearch\nDecoderBuffer\nInterpolator_Help_Functions\nM_Functions\nNCDecoder_Help_Functions\nSMC_AddGCodeState (Struct)\nSMC_AvoidLoop (FunctionBlock)\nSMC_CheckForLimits (FunctionBlock)\nSMC_CheckVelocities (FunctionBlock)\nSMC_ExtendedVelocityChecks (FunctionBlock)\nSMC_Interpolator (FunctionBlock)\nSMC_Interpolator2Dir (FunctionBlock)\nSMC_Interpolator2Dir_SlowTask (FunctionBlock)\nSMC_LimitCircularVelocity (FunctionBlock)\nSMC_LimitDynamics (FunctionBlock)\nSMC_NCDecoder (FunctionBlock)\nSMC_ObjectSplitter (FunctionBlock)\nSMC_ReadAdditionalIpoState (FunctionBlock)\nSMC_RecomputeABCSlopes (FunctionBlock)\nSMC_ReduceVelEndAtCorner (FunctionBlock)\nSMC_RoundPath (FunctionBlock)\nSMC_SegmentAnalyzer (FunctionBlock)\nSMC_SetInterpreterStartPosition (FunctionBlock)\nSMC_SmoothAddAxes (FunctionBlock)\nSMC_SmoothBSpline (FunctionBlock)\nSMC_SmoothMerge (FunctionBlock)\nSMC_SmoothPath (FunctionBlock)\nSMC_ToolCorr (FunctionBlock)\nSMC_ToolLengthCorr (FunctionBlock)\nSMC_ToolRadiusCorr (FunctionBlock)\nSMC_XInterpolator (FunctionBlock)\nSM_Trafo_Data types\nSMC_ArticulatedRobot_6DOF_J0_State (Enum)\nSMC_ArticulatedRobot_6DOF_J1_State (Enum)\nSMC_ArticulatedRobot_6DOF_J4_State (Enum)\nSMC_TrafoConfig_4AxisPalletizer (Struct)\nSMC_TrafoConfig_ArticulatedRobot_6DOF (Struct)\nSMC_TrafoResult_4AxisPalletizer (Enum)\nSMC_TrafoResult_ArticulatedRobot_6DOF (Enum)\nSMC_VECTORDIR (Enum)\nSM_Trafo_POUs\nForward and inverse transformation\nSMC_TRAFOV_\nSoftMotion Transformations\nGantry systems\nParallel Systems\nRobot Kinematiks\nScara System\nWrapper\nadditional FBs\nVisu_Templates\nFile\nCNC\nSM_CNC_Visualizations\nFBs\nCNC\nDirect Axis Control\nTranslation & Rotation & Scaling\nhelp visu\nSM_Trafo_Visualizations\nTrafo templates\nGantry\nParallel\nRobot\nScara\nVisu_Templates_New\nFramed Visu Helpers\nTextListForCombobox_MC_DIRECTION (TextList)\nTextListForCombobox_SMC_ABC_SLOPES_AT_STOP (TextList)\nTextListForCombobox_SMC_ABC_SLOPES_NO_STOP (TextList)\nTextListForCombobox_SMC_AL_STATUS (TextList)\nTextListForCombobox_SMC_DEC_STATUS (TextList)\nTextListForCombobox_SMC_DIRECTION (TextList)\nTextListForCombobox_SMC_ERROR (TextList)\nTextListForCombobox_SMC_INT_STATUS (TextList)\nTextListForCombobox_SMC_INT_VELMODE (TextList)\nTextListForCombobox_SMC_ORI_CONVENTION (TextList)\nTextListForCombobox_SMC_SMOOTHBSPLINE_MODE (TextList)\nTextListForCombobox_SMC_SMOOTHPATHADDAXMODE (TextList)\nTextListForCombobox_SMC_SMOOTHPATHMODE (TextList)\nTextListForCombobox_SMC_TC_STATUS (TextList)\nTextListForCombobox_SMC_TOOLCORRMODE (TextList)\nFile and Project Information\nLibrary Reference\n3SLicense\nLibrary Identification\nLibrary Properties\nBase Interfaces\nLibrary Identification\nLibrary Properties\nCmpLog\nLibrary Identification\nLibrary Properties\nFloatingPointUtils\nLibrary Identification\nLibrary Properties\nMatrix\nLibrary Identification\nLibrary Properties\nSM3_Basic\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nSM3_RBase\nLibrary Identification\nLibrary Properties\nSM3_Shared\nLibrary Identification\nLibrary Properties\nSM3_Transformation\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nSysFile\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysTarget\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nVisuElem3DPath\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElemCamDisplayer\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElemMeter\nLibrary Identification\nLibrary Properties\nVisuElemTextEditor\nLibrary Identification\nLibrary Properties\nVisuElemTrace\nLibrary Identification\nLibrary Properties\nVisuElems\nLibrary Identification\nLibrary Properties\nVisuElemsAlarm\nLibrary Identification\nLibrary Properties\nVisuElemsDateTime\nLibrary Identification\nLibrary Properties\nVisuElemsSpecialControls\nLibrary Identification\nLibrary Properties\nVisuElemsWinControls\nLibrary Identification\nLibrary Properties\nVisuInputs\nLibrary Identification\nLibrary Properties\nVisuNativeControl\nLibrary Identification\nLibrary Properties\nSM3_CNC\nDocs\n»\nSM_CNC_POUs\n»\nSoftMotion\nCNC\n»\nSoftMotion\nFunction\nBlocks\n»\nSMC_SmoothPath (FB)\nSMC_SmoothPath (FB)\nÂ¶\nFUNCTION_BLOCK SMC_SmoothPath\nSMC_SmoothPath\nsmoothes corners between adjacent elements by inserting\nsplines.  See\nSMC_RoundPath\nfor an alternative corner rounding\nwith circular arcs.\nThe cut distance, the distance between the start or end of the spline and\nthe corner, is always limited to the sum of\ndEdgeDistance\nand the value\nof the g-code word\nD\n.\nIf input\nbSymmetricalDistances\nis set, the cut distance is further\nlimited to the minimum of half the length of the first element and\nhalf the length of the second element.\nIf the sum of input variable\ndEdgeDistance\nand G-code word\nD\nis 0,\nthen no smoothing is done.\nIf one of the two elements is a G0 element, then no smoothing is done.\nDetails\nAll\nSMC_GEOINFO\nelements of the input structure\nSMC_OUTQUEUE\nare checked one after the other. The smooth-path functionality is\nexecuted for all elements between G51 and G50.\nM-function at the smoothed corner\nIf there is a M-function at the corner that will be smoothed, then the\nM-function remains but is moved to the end of the smoothed corner.\nThis behavior is consistent with the behavior of\nSMC_RoundPath\n.\nH-function at a smoothed corner\nIf there is a H-function bewtween the first cut point and the corner\n(1), the point is moved to the smoothed path (1â).\nThe distance to the start point remains the same.\nIf there a H-function between the corner and the second cut point\n(3) the point is also moved to the smoothed path (3â),\nso that the distance to the end point remains the same.\nThe position of the moved H-functions is limited so that they donât\ncross the center of smoothed path. Otherwise the order of the H-functions\nmight change (2â, 4â).\nExample 1: Smoothing with splines\nG-Code\nN000 G01 X10 Y0 F100\nN010 G51 D2 (smoothing with cut distance 2)\nN020 G01 X10 Y20\nN030 G01 X20 Y20\nN040 G01 X20 Y0\nN050 G50 (smoothing off)\nN060 G01 X30\nThe following figure shows a path with smoothed corners. The smoothing is\nturned on at position X10 Y0 and is turned off at position X20 Y0.\nAll corners between these positions are replaced by splines.\nExample 2: Input bSymmetricalDistances\nG-Code\nN000 G01 X10 Y0 F100\nN010 G51 D10 (smoothing with cut distance 2)\nN020 G01 X10 Y20\nN030 G01 X20 Y20\nN040 G01 X20 Y0\nN050 G50 (smoothing off)\nN060 G01 X30\nThe example shows the result when the cut distance\nis larger than half of the element. The following figure shows the\nresulting path with\nbSymmetricalDistances\n=\nFALSE\n.\nThe element is too short, so it is completely replaced by two\nsplines.\nIn the following figure\nbSymmetricalDistances\nis set, together\nwith\nbImprovedSymmetricCuts\n.  At both\ncorners, half the length of the horizontal line limits the cut\ndistance to 5.\nExample 3: Input eMode\nG-Code\nN000 G51 D10 (smoothing with cut distance 10)\nN010 G01 X0 Y10\nN020 G01 X10 Y10\nN030 G01 X10 Y0\nN040 G50 (smoothing off)\nThe default spline type for smoothing is\nSP_SPLINE3\n, i.e. a\nthird-degree polynomial in each dimension.\nIt is recommended to use\nSP_SPLINE5_MIN_CURVATURE\n.\nFifth-degree polynomials have the advantage that they are smooth up to\nthe curvature (second derivative).\nThis results in a limited jerk.\nDynamic curves along the X-axis with eMode = SP_SPLINE3\nDynamic curves along the X-axis with eMode = SP_SPLINE5\nA smoothing element always uses the tool correction information\n(i.e. lengths and diameter) of the preceding element.\nNote\nPROBE movements such as G31 are not supported. The error\nSMC_PROBE_G31_NOT_ALLOWED\nis reported if a PROBE movement\nis encountered while corner smoothing active.\nInOut:\nScope\nName\nType\nInitial\nComment\nInput\nbExecute\nBOOL\nStarts on rising edge.\nbAbort\nBOOL\nIf\nTRUE\n, the current processing of this function block\nis aborted\nbAppend\nBOOL\nAs long as this input is set to\nFALSE\n, the\npoqDataOut\nqueue\nwill be cleared at each reset. As long as it is set to\nTRUE\n, newly\nincoming data will be written to the end of the\npoqDataOut\n-queue.\npoqDataIn\nPOINTER TO\nSMC_OUTQUEUE\nThe input path queue\ndEdgeDistance\nLREAL\nThis input variable contains the value, which â added to the value of\nthe\nD\nword â determines the (maximum) cut distance to the corner.\nThis value may be modified online.\ndAngleTol\nLREAL\n0.001\nThis input defines the value for the angle tolerance, up to which\na path bend should not be smoothed.\nnSizeOutQueue\nUDINT\nThis variable contains the size of the data buffer\npbyBufferOutQueue\nin bytes.\nThe list of\nSMC_GEOINFO\nstructure objects will be written to.\nThis buffer must be large enough to hold at least five\nSMC_GEOINFO\nobjects.\nOtherwise, the function block will not execute any actions at all.\nIts size may be predefined, but may be modified later only during a reset.\nIt is recommended to create the buffer as described by the example below:\nExampleBuf:\nARRAY[1..50]\nOF\nSMC_GeoInfo;\nThe correct buffer size will then be retrieved by use of the\noperator\nsizeof(ExampleBuf)\n.\npbyBufferOutQueue\nPOINTER TO ARRAY [0..0]\nOF SMC_GEOINFO\nThis input must point to the first byte of the memory area being\nallocated for the\nSMC_OUTQUEUE\nstructure.\nThis area must be at least as big as defined in\nnSizeOutQueue\n.\nTypically the allocation of the memory buffer is done within the\ndeclaration part of the IEC-program by defining a byte-array\n(ExampleBuf:\nARRAY[1..50]\nOF\nSMC_GEOINFO;\n).\nThe value may be predefined, but may then be modified during a reset only.\neMode\nSMC_SMOOTHPATHMODE\nSP_SPLINE3\nDetermines which kind of spline is used for smoothing.\nIt is recommended to use\nSMC_SMOOTHPATHMODE.SP_SPLINE5_MIN_CURVATURE\n.\nbSymmetricalDistances\nBOOL\nTRUE\nIf\nbSymmetricalDistances\nis set, the cut distance is limited\nto half the length of the shorter element.  Otherwise the cut distance\ndefined in the\nD\nword is used.\nbImprovedSymmetricCuts\nBOOL\nIf\nbSymmetricalDistances\nis set, the first element is cut at most in half.\nIf the option\nbImprovedSymmetricCuts\nis set, this limitation is lifted.\nIn some cases this results in a better smoothing.  Only has an effect if\nbSymmetricalDistances\nis set.\nIt is recommended to set this input to\nTRUE\nif\nbSymmetricalDistances\nis set.\neAddAxMode\nSMC_SMOOTHPATHADDAXMODE\nSPAA_LATE\nThe way how additional axis are treated.\nIf\nSMC_SmoothMerge\nis used, this parameter should be set\nto mode\nSPAA_EXACT\n.\ndMinimumCurvatureRadius\nLREAL\nIf a spline, that would be inserted in a edge, contains a position\nwhere its curvature radius is less than this parameter, this edge is not\nsmoothed.  In this situation no spline is inserted, but the original path is\nmaintained and a stop is executed in the edge.\nbCheckCurvature\nBOOL\nIf\nTRUE\n, it is checked if the curvature of adjacent elements is equal.\nIf this is not the case, the path will be smoothed.\ndRelativeCurvatureTol\nLREAL\n0.001\nThe maximum allowed relative difference in the curvature.\nOnly used if\nbCheckCurvature\nis\nTRUE\n.\nbCheckAddAxVelJump\nBOOL\nIf\nTRUE\nthe axis A, B and C are checked for velocity jumps.\nShould be set if\nSMC_SmoothMerge\nis used.\ndMaxAddAxVelDifference\nLREAL\nThe maximum allowed velocity jump [units/sec]. This input is evaluated if\nbCheckAddAxVelJump\nis\nTRUE\n. Recommended:\nmaxAcceleration\n*\ntaskCycleTime\nOutput\nbDone\nBOOL\nThis output will be set to\nTRUE\nas soon as the input data from\npoqDataIn\nhas been processed completely.\nThereafter, the module will not perform any further actions until it gets reset.\nIf input\nbExecute\nis\nFALSE\n,\nbDone\nwill be reset to\nFALSE\n.\nbBusy\nBOOL\nTRUE\n, while execution of function block is not finished\nbError\nBOOL\nSignals, that an error has occurred within the function\nblock\nwErrorID\nSMC_ERROR\nError identification\npoqDataOut\nPOINTER TO\nSMC_OUTQUEUE\nThe output path queue\nudiStopsDueToCurvatureRadius\nUDINT\nNumber of edges that could not be smoothed because of the\ndMinimumCurvatureRadius\nsetting\nStructure:\nSMC_DoBeforeLeave (Action)\nSMC_SmoothPathInit (Action)",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "bExecute",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Starts on rising edge."
+        },
+        [
+          "bAbort",
+          "BOOL",
+          "",
+          "IfTRUE, the current processing of this function block\nis aborted"
+        ],
+        [
+          "bAppend",
+          "BOOL",
+          "",
+          "As long as this input is set toFALSE, thepoqDataOutqueue\nwill be cleared at each reset. As long as it is set toTRUE, newly\nincoming data will be written to the end of thepoqDataOut-queue."
+        ],
+        [
+          "poqDataIn",
+          "POINTER TOSMC_OUTQUEUE",
+          "",
+          "The input path queue"
+        ],
+        [
+          "dEdgeDistance",
+          "LREAL",
+          "",
+          "This input variable contains the value, which â added to the value of\ntheDword â determines the (maximum) cut distance to the corner.\nThis value may be modified online."
+        ],
+        [
+          "dAngleTol",
+          "LREAL",
+          "0.001",
+          "This input defines the value for the angle tolerance, up to which\na path bend should not be smoothed."
+        ],
+        [
+          "nSizeOutQueue",
+          "UDINT",
+          "",
+          "This variable contains the size of the data bufferpbyBufferOutQueuein bytes.The list ofSMC_GEOINFOstructure objects will be written to.\nThis buffer must be large enough to hold at least fiveSMC_GEOINFOobjects.\nOtherwise, the function block will not execute any actions at all.\nIts size may be predefined, but may be modified later only during a reset.\nIt is recommended to create the buffer as described by the example below:ExampleBuf:ARRAY[1..50]OFSMC_GeoInfo;The correct buffer size will then be retrieved by use of the\noperatorsizeof(ExampleBuf)."
+        ],
+        [
+          "pbyBufferOutQueue",
+          "POINTER TO ARRAY [0..0]\nOF SMC_GEOINFO",
+          "",
+          "This input must point to the first byte of the memory area being\nallocated for theSMC_OUTQUEUEstructure.\nThis area must be at least as big as defined innSizeOutQueue.\nTypically the allocation of the memory buffer is done within the\ndeclaration part of the IEC-program by defining a byte-array\n(ExampleBuf:ARRAY[1..50]OFSMC_GEOINFO;).\nThe value may be predefined, but may then be modified during a reset only."
+        ],
+        [
+          "eMode",
+          "SMC_SMOOTHPATHMODE",
+          "SP_SPLINE3",
+          "Determines which kind of spline is used for smoothing.\nIt is recommended to useSMC_SMOOTHPATHMODE.SP_SPLINE5_MIN_CURVATURE."
+        ],
+        [
+          "bSymmetricalDistances",
+          "BOOL",
+          "TRUE",
+          "IfbSymmetricalDistancesis set, the cut distance is limited\nto half the length of the shorter element.  Otherwise the cut distance\ndefined in theDword is used."
+        ],
+        [
+          "bImprovedSymmetricCuts",
+          "BOOL",
+          "",
+          "IfbSymmetricalDistancesis set, the first element is cut at most in half.\nIf the optionbImprovedSymmetricCutsis set, this limitation is lifted.\nIn some cases this results in a better smoothing.  Only has an effect ifbSymmetricalDistancesis set.\nIt is recommended to set this input toTRUEifbSymmetricalDistancesis set."
+        ],
+        [
+          "eAddAxMode",
+          "SMC_SMOOTHPATHADDAXMODE",
+          "SPAA_LATE",
+          "The way how additional axis are treated.\nIfSMC_SmoothMergeis used, this parameter should be set\nto modeSPAA_EXACT."
+        ],
+        [
+          "dMinimumCurvatureRadius",
+          "LREAL",
+          "",
+          "If a spline, that would be inserted in a edge, contains a position\nwhere its curvature radius is less than this parameter, this edge is not\nsmoothed.  In this situation no spline is inserted, but the original path is\nmaintained and a stop is executed in the edge."
+        ],
+        [
+          "bCheckCurvature",
+          "BOOL",
+          "",
+          "IfTRUE, it is checked if the curvature of adjacent elements is equal.\nIf this is not the case, the path will be smoothed."
+        ],
+        [
+          "dRelativeCurvatureTol",
+          "LREAL",
+          "0.001",
+          "The maximum allowed relative difference in the curvature.\nOnly used ifbCheckCurvatureisTRUE."
+        ],
+        [
+          "bCheckAddAxVelJump",
+          "BOOL",
+          "",
+          "IfTRUEthe axis A, B and C are checked for velocity jumps.\nShould be set ifSMC_SmoothMergeis used."
+        ],
+        [
+          "dMaxAddAxVelDifference",
+          "LREAL",
+          "",
+          "The maximum allowed velocity jump [units/sec]. This input is evaluated ifbCheckAddAxVelJumpisTRUE. Recommended:maxAcceleration*taskCycleTime"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bDone",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "This output will be set toTRUEas soon as the input data frompoqDataInhas been processed completely.\nThereafter, the module will not perform any further actions until it gets reset.\nIf inputbExecuteisFALSE,bDonewill be reset toFALSE."
+        },
+        [
+          "bBusy",
+          "BOOL",
+          "",
+          "TRUE, while execution of function block is not finished"
+        ],
+        [
+          "bError",
+          "BOOL",
+          "",
+          "Signals, that an error has occurred within the function\nblock"
+        ],
+        [
+          "wErrorID",
+          "SMC_ERROR",
+          "",
+          "Error identification"
+        ],
+        [
+          "poqDataOut",
+          "POINTER TOSMC_OUTQUEUE",
+          "",
+          "The output path queue"
+        ],
+        [
+          "udiStopsDueToCurvatureRadius",
+          "UDINT",
+          "",
+          "Number of edges that could not be smoothed because of thedMinimumCurvatureRadiussetting"
+        ]
+      ]
+    }
+  ]
+}

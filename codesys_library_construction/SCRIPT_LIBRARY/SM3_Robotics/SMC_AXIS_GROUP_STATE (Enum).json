@@ -1,0 +1,34 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_AXIS_GROUP_STATE (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/Basic-types/SMC_AXIS_GROUP_STATE.html",
+  "page_title": "SMC_AXIS_GROUP_STATE (ENUM)",
+  "text": "\nTYPE SMC_AXIS_GROUP_STATE :\nThe possible states of an axis group according to PLCopen for Motion Control part 4.\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name"
+      ],
+      "rows": [
+        {
+          "Name": "Disabled"
+        },
+        {
+          "Name": "Standby"
+        },
+        {
+          "Name": "Moving"
+        },
+        {
+          "Name": "Homing"
+        },
+        {
+          "Name": "Stopping"
+        },
+        {
+          "Name": "ErrorStop"
+        }
+      ]
+    }
+  ]
+}

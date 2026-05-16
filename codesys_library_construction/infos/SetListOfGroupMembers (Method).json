@@ -1,0 +1,36 @@
+{
+  "library": "BACnet",
+  "title": "SetListOfGroupMembers (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/Group/pou-BACnetGroup/SetListOfGroupMembers.html",
+  "page_title": "BACnetGroup.SetListOfGroupMembers (METH)",
+  "text": "\nMETHOD SetListOfGroupMembers : CmpBACnet.IEC_BACNET_STATUS\nSets the List_Of_Group_Members of this BACnet object.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetListOfGroupMembers",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "uiListCount",
+          "Type": "CmpBACnet.IEC_BACNET_ELEMENT_COUNT",
+          "Comment": "The length of the list in the following pointer"
+        },
+        [
+          "pList",
+          "POINTER TO\nCmpBACnet.IEC_BACNET_READ_ACCESS_SPEC",
+          "The list data containing elements according to the given\ncount."
+        ]
+      ]
+    }
+  ]
+}

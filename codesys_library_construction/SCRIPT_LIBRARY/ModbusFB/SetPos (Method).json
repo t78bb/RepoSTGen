@@ -1,0 +1,23 @@
+{
+  "library": "ModbusFB",
+  "title": "SetPos (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/ModbusFB/Current/ModbusFB/Function-Blocks/Util/pou-ByteBuffer/SetPos.html",
+  "page_title": "ByteBuffer.SetPos (METH)",
+  "text": "\nMETHOD SetPos\nSet position between begin (0) and end (Len() - 1).\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "uiPosToSet",
+          "Type": "UINT"
+        }
+      ]
+    }
+  ]
+}

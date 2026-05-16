@@ -1,0 +1,72 @@
+{
+  "library": "SM3_CNC",
+  "title": "InitP (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/GSentence/pou-SMC_GSentenceQueue/InitP.html",
+  "page_title": "SMC_GSentenceQueue.InitP (METH)",
+  "text": "\nMETHOD InitP : BOOL\nInitializes the queue with user-defined buffers.\nSee also method\nSMC_GSentenceQueue.SetPointers\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout Const",
+          "Name": "prgName",
+          "Type": "STRING(255)",
+          "Comment": "The name of the program or subprogram.\nThis is usually the full path of the CNC file.\nE.g. for the file with full path â/some/dir/name.cncâ."
+        },
+        {
+          "Scope": "Input",
+          "Name": "pBufSentences",
+          "Type": "POINTER TOSMC_GSentence",
+          "Comment": "Pointer to the sentence buffer"
+        },
+        [
+          "nSizeBufSentences",
+          "UDINT",
+          "Size of the sentence buffer in bytes.  Must hold at least 2\nsentences."
+        ],
+        [
+          "pBufGWords",
+          "POINTER TOSMC_GWord",
+          "Pointer to the gword buffer"
+        ],
+        [
+          "nSizeBufGWords",
+          "UDINT",
+          "Size of the G-Word buffer in bytes.  Must hold at least 64\ngwords."
+        ],
+        [
+          "pBufGExpTokens",
+          "POINTER TO\nSMC_GExpression_Token",
+          "Pointer to the expression token buffer"
+        ],
+        [
+          "nSizeBufGExpTokens",
+          "UDINT",
+          "Size of the expression token buffer in bytes.\nMust hold at least 128 expressions."
+        ],
+        [
+          "pBufAddData",
+          "POINTER TO BYTE",
+          "Pointer to the additional data buffer"
+        ],
+        [
+          "nSizeBufAddData",
+          "UDINT",
+          "Size of the additional data buffer in bytes.\nMust hold at least 256 bytes."
+        ],
+        {
+          "Scope": "Return",
+          "Name": "InitP",
+          "Type": "BOOL",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

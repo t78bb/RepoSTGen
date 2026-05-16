@@ -1,0 +1,33 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_RampInCorr (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/GeoInfo-Help-Functions/SMC_RampInCorr.html",
+  "page_title": "SMC_RampInCorr (FUN)",
+  "text": "\nFUNCTION SMC_RampInCorr : BOOL\nTranslates the object corresp. to position\npi\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SMC_RampInCorr",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Inout",
+          "Name": "gi",
+          "Type": "SMC_GEOINFO"
+        },
+        {
+          "Scope": "Inout Const",
+          "Name": "pi",
+          "Type": "SMC_PosInfo"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "library": "BACnet2",
+  "title": "RegisterHook (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/BACnetServer/pou-IBACnetServer/HooksCallbacks/RegisterHook.html",
+  "page_title": "IBACnetServer.RegisterHook (METH)",
+  "text": "\nMETHOD RegisterHook : CmpBACnet.IEC_BACNET_STATUS\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "RegisterHook",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS"
+        },
+        {
+          "Scope": "Input",
+          "Name": "eHookType",
+          "Type": "CmpBACnet.IEC_BACNET_CB_TYPE"
+        },
+        [
+          "itfEvent",
+          "IBACnetEventConsumer"
+        ]
+      ]
+    }
+  ]
+}

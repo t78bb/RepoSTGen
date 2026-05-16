@@ -1,0 +1,52 @@
+{
+  "library": "SM3_Robotics",
+  "title": "MC_UngroupAllAxes (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/AdministrativeConfiguration/AxisGroup/MC_UngroupAllAxes.html",
+  "page_title": "MC_UngroupAllAxes (FB)",
+  "text": "\nFUNCTION_BLOCK MC_UngroupAllAxes\nThis function block removes all axes from an axis group.\nIf the state of the axis group is not\nGroupDisabled\n, an error\nis created and the axes are not removed from the group.\nThis is an administrative FB, since no movement is generated.\nThe command cannot be buffered.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "AxisGroup",
+          "Type": "AXIS_GROUP_REF_SM3",
+          "Comment": "Reference to a group of axes"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Comment": "Start the removal process at the rising edge"
+        },
+        {
+          "Scope": "Output",
+          "Name": "Done",
+          "Type": "BOOL",
+          "Comment": "The axis has been removed"
+        },
+        [
+          "Busy",
+          "BOOL",
+          "The FB is not finished"
+        ],
+        [
+          "Error",
+          "BOOL",
+          "Signals that an error has occurred within the function block"
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

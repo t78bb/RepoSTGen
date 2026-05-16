@@ -1,0 +1,31 @@
+{
+  "library": "BACnet",
+  "title": "RemoveSubordinate (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/StructuredView/pou-BACnetStructuredView/RemoveSubordinate.html",
+  "page_title": "BACnetStructuredView.RemoveSubordinate (METH)",
+  "text": "\nMETHOD RemoveSubordinate : CmpBACnet.IEC_BACNET_STATUS\nRemoves a subordinate (given by a BACnet-Object-Reference) and a subordinate anotation at index nIndex from the Subordinate_List-Property and\nthe Subordinate_Annotations-Property of this BACnet-Object. Both the subordinate and its annotation are removed simulatenously by\nthis function.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "RemoveSubordinate",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "nIndex",
+          "Type": "CmpBACnet.IEC_BACNET_ELEMENT_COUNT",
+          "Comment": "The 1 based index of the subordinate to remove."
+        }
+      ]
+    }
+  ]
+}

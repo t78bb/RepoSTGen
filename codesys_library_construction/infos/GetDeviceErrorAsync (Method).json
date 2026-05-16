@@ -1,0 +1,43 @@
+{
+  "library": "SM3_Basic",
+  "title": "GetDeviceErrorAsync (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/DriveInterface/AXIS_REF/pou-AXIS_REF_SM3/CAA-Device-Diagnosis/GetDeviceErrorAsync.html",
+  "page_title": "AXIS_REF_SM3.GetDeviceErrorAsync (METH)",
+  "text": "\nMETHOD GetDeviceErrorAsync : DED.PROC_STATE\nReturns the device error of the current node; you can also use the function block\nGetDeviceError\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetDeviceErrorAsync",
+          "Type": "DED.PROC_STATE",
+          "Comment": "eState"
+        },
+        {
+          "Scope": "Input",
+          "Name": "eCmd",
+          "Type": "DED.PROC_CMD",
+          "Comment": "eCommand"
+        },
+        {
+          "Scope": "Inout",
+          "Name": "eriDeviceError",
+          "Type": "DED.ERROR_INFO",
+          "Comment": "Error struct"
+        },
+        {
+          "Scope": "Output",
+          "Name": "eError",
+          "Type": "DED.ERROR",
+          "Comment": "Error code if method fails"
+        }
+      ]
+    }
+  ]
+}

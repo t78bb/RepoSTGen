@@ -1,0 +1,43 @@
+{
+  "library": "ModbusFB",
+  "title": "TableSection (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/ModbusFB/Current/ModbusFB/Structs/TableSection.html",
+  "page_title": "TableSection (STRUCT)",
+  "text": "\nTYPE TableSection : STRUCT\nTableSection is used to define a section of one of the âprimary tablesâ as part of the âdata modelâ.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "uiStart",
+          "Type": "UINT",
+          "Initial": "0",
+          "Comment": "The âdata itemâ start index"
+        },
+        {
+          "Name": "uiNumDataItems",
+          "Type": "UINT",
+          "Initial": "0",
+          "Comment": "Number of âdata itemsâ in section"
+        },
+        {
+          "Name": "pStartAddr",
+          "Type": "POINTER TO BYTE",
+          "Initial": "0",
+          "Comment": "Section start address"
+        },
+        {
+          "Name": "uiDataItemSize",
+          "Type": "UINT",
+          "Initial": "0",
+          "Comment": "âdata itemâ size in bit, 1 or 8 for DiscreteInputs and Coils, 16 for InputRegisters and HoldingRegisters.\nDiscreteInputs and Coils can be put in memory as ARRAY[] OF BOOL (uiDataItemSize = 8)\nor adressed bit-wise (uiDataItemSize = 1)."
+        }
+      ]
+    }
+  ]
+}

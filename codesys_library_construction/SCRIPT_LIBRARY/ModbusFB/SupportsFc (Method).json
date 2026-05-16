@@ -1,0 +1,31 @@
+{
+  "library": "ModbusFB",
+  "title": "SupportsFc (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/ModbusFB/Current/ModbusFB/Function-Blocks/Server/pou-Server/SupportsFc.html",
+  "page_title": "Server.SupportsFc (METH)",
+  "text": "\nMETHOD SupportsFc : BOOL\nReturns, if a given âfunction codeâ is supported by the server.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SupportsFc",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "eFc",
+          "Type": "FunctionCodes",
+          "Comment": "Function code to check, if it is supported."
+        }
+      ]
+    }
+  ]
+}

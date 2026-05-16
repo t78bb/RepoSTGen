@@ -1,0 +1,33 @@
+{
+  "library": "String Builder Base",
+  "title": "Encode (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Builder Base/Current/BuilderBase/Interfaces/pou-ICharmap/Encode.html",
+  "page_title": "ICharmap.Encode (METH)",
+  "text": "\nMETHOD Encode : BYTE\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "Encode",
+          "Type": "BYTE"
+        },
+        {
+          "Scope": "Input",
+          "Name": "diRune",
+          "Type": "RUNE"
+        },
+        {
+          "Scope": "Output",
+          "Name": "eErrorID",
+          "Type": "ERROR"
+        }
+      ]
+    }
+  ]
+}

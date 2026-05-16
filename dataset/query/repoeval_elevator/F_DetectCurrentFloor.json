@@ -1,0 +1,5 @@
+{
+  "requirement": "This code is intended to implement the detection of the current floor based on sensor inputs, with the ability to retain the previous floor state when no sensor signal is active.",
+  "provide_code": "FUNCTION F_DetectCurrentFloor : INT\nVAR_INPUT\n\tFloorSensor0\t:\tBOOL;\t\t// 0楼传感器\n\tFloorSensor1\t:\tBOOL;\t\t// 1楼传感器\n\tFloorSensor2\t:\tBOOL;\t\t// 2楼传感器\n\tFloorSensor3\t:\tBOOL;\t\t// 3楼传感器\n\tCurrentFloor\t:\tINT;\t\t// 当前楼层（用于保持状态）\nEND_VAR",
+  "function_name": "F_DetectCurrentFloor"
+}

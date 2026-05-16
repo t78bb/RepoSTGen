@@ -1,0 +1,8 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "RMPMessageBuffer (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_RMP_ReliableMessageProtocol/RMPMessageBuffer.html",
+  "page_title": "RMPMessageBuffer (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL RMPMessageBuffer\nThis FB represents a queue of messages that are stored in a RMPService; it is used both for sending and receiving\nMethods:\nAddMessage\nClearExpiredMessages\nDelete\nEnlargeExpirationTime\nExistsMessageWithHandle\nGetMessage\nGetMessageForReceiver\nGetMessageToApplication\nLock\nUnlock\nStructure:\nAddMessage (Method)\nClearExpiredMessages (Method)\nDelete (Method)\nEnlargeExpirationTime (Method)\nExistsMessageWithHandle (Method)\nGetMessage (Method)\nGetMessageForReceiver (Method)\nGetMessageToApplication (Method)\nLock (Method)\nUnlock (Method)",
+  "tables": []
+}

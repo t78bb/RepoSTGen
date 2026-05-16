@@ -1,0 +1,23 @@
+{
+  "library": "BACnet2DefaultImpl",
+  "title": "PostStopBACnetStack (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2DefaultImpl/Current/BACnetDefaultImpl/Function-Blocks/LoggingObjects/Internal/pou-LogObjectsBase/PostStopBACnetStack.html",
+  "page_title": "LogObjectsBase.PostStopBACnetStack (METH)",
+  "text": "\nMETHOD PostStopBACnetStack : UDINT\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "PostStopBACnetStack",
+          "Type": "UDINT"
+        }
+      ]
+    }
+  ]
+}

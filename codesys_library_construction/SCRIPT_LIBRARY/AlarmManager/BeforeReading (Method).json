@@ -1,0 +1,25 @@
+{
+  "library": "AlarmManager",
+  "title": "BeforeReading (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Alarm-storage-API/pou-IAlarmStorageReaderConsumer/BeforeReading.html",
+  "page_title": "IAlarmStorageReaderConsumer.BeforeReading (METH)",
+  "text": "\nMETHOD BeforeReading\nThis method is called, before the 1st row is read.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "usiCountLatchVariables",
+          "Type": "USINT",
+          "Comment": "The number of latch variables, that are stored for each\nalarm in the alarm storage"
+        }
+      ]
+    }
+  ]
+}

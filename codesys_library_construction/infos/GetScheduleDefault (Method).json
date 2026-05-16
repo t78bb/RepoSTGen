@@ -1,0 +1,31 @@
+{
+  "library": "BACnet",
+  "title": "GetScheduleDefault (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/Schedule/pou-BACnetSchedule/GetScheduleDefault.html",
+  "page_title": "BACnetSchedule.GetScheduleDefault (METH)",
+  "text": "\nMETHOD GetScheduleDefault : CmpBACnet.IEC_BACNET_STATUS\nGets the contents of the Schedule_Default-Property of this BACnet-Object. Eventually, if value wasnât allocated before\nthe call of this function, the retriefed value.Buffer.pBuffer pointer has to be freed using\nFreeStackAllocatedMemory\nagain!\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetScheduleDefault",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Inout",
+          "Name": "value",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_CONTENTS",
+          "Comment": "value.buffer.pBuffer has to have an allocated memory, which fits the dataâs needs (is at least allocated big enough!) or has to\nbe freed using FreeStackAllocatedMemory after usage!"
+        }
+      ]
+    }
+  ]
+}

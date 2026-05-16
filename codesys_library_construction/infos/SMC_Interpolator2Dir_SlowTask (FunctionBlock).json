@@ -1,0 +1,46 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_Interpolator2Dir_SlowTask (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/SoftMotion-Function-Blocks/SMC_Interpolator2Dir_SlowTask.html",
+  "page_title": "SMC_Interpolator2Dir_SlowTask (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_Interpolator2Dir_SlowTask\nThis FB is used for generating the reversed-path. It has been split off\nfrom\nSMC_Interpolator2Dir\nin order to be called from the task\nthat reads the g-code and performs the path preprocessing.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "ipo2d",
+          "Type": "SMC_Interpolator2Dir",
+          "Initial": "",
+          "Comment": "SMC_Interpolator2Dir-instance."
+        },
+        {
+          "Scope": "Input",
+          "Name": "dAngleTol",
+          "Type": "LREAL",
+          "Initial": "0",
+          "Comment": "Angle tolerance for backward path. Typically the same as angle\ntolerance of SMC_CheckVelocities."
+        },
+        [
+          "nSizeOutQueue",
+          "UDINT",
+          "",
+          "This variable contains the size of the data buffer the\nbackward path shall be stored in. This buffer must be large enough\nto hold the complete path."
+        ],
+        [
+          "pbyBufferOutQueue",
+          "POINTER TO BYTE",
+          "",
+          "Pointer to the first byte of the memory area that is\nallocated for the backward path."
+        ]
+      ]
+    }
+  ]
+}

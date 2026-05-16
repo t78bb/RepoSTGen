@@ -1,0 +1,28 @@
+{
+  "library": "BACnet",
+  "title": "GetBACnetBooleanProperty (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/pou-IBACnetObjectBase/Utilities/GetBACnetBooleanProperty.html",
+  "page_title": "IBACnetObjectBase.GetBACnetBooleanProperty (METH)",
+  "text": "\nMETHOD GetBACnetBooleanProperty : BOOL\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetBACnetBooleanProperty",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Input",
+          "Name": "propID",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_ID"
+        }
+      ]
+    }
+  ]
+}

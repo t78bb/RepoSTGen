@@ -1,0 +1,28 @@
+{
+  "library": "DNP3",
+  "title": "Equals (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/PointObserver/pou-PointObserver/Equals.html",
+  "page_title": "PointObserver.Equals (METH)",
+  "text": "\nMETHOD Equals : BOOL\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "Equals",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfOther",
+          "Type": "IPointObserver"
+        }
+      ]
+    }
+  ]
+}

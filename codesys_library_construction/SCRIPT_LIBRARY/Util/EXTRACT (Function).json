@@ -1,0 +1,36 @@
+{
+  "library": "Util",
+  "title": "EXTRACT (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/BitByte-Functions/EXTRACT.html",
+  "page_title": "EXTRACT (FUN)",
+  "text": "\nFUNCTION EXTRACT : BOOL\nReturns bit number\nN\nof value\nX\nExample in ST:\nFLAG\n:=\nEXTRACT\n(\nX\n:=\n81\n,\nN\n:=\n4\n);\n(* Result : TRUE, because 81 is binary 1010001, so the bit '4' is 1 *)\nFLAG\n:=\nEXTRACT\n(\nX\n:=\n33\n,\nN\n:=\n0\n);\n(* Result : TRUE, because 33 is binary 100001, so the bit '0' is 1 *)\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "EXTRACT",
+          "Type": "BOOL",
+          "Comment": "The Nth bit of valueX"
+        },
+        {
+          "Scope": "Input",
+          "Name": "X",
+          "Type": "DWORD",
+          "Comment": "Input value"
+        },
+        [
+          "N",
+          "BYTE",
+          "Number of the bit to be extracted. Counting starts at 0."
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "library": "BACnet",
+  "title": "GetWeeklyEntryCount (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/Schedule/pou-BACnetSchedule/WeeklySchedule/GetWeeklyEntryCount.html",
+  "page_title": "BACnetSchedule.GetWeeklyEntryCount (METH)",
+  "text": "\nMETHOD GetWeeklyEntryCount : CmpBACnet.IEC_BACNET_STATUS\nGets the number of weekly entries for a specific day dayOfWeek in the Weekly_Schedule-Property of this BACnet-Object.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetWeeklyEntryCount",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "dayOfWeek",
+          "Type": "CmpBACnet.IEC_BACNET_DAY_OF_WEEK",
+          "Comment": "The day of the week for which the entry count shall be\ndetermined."
+        },
+        {
+          "Scope": "Output",
+          "Name": "count",
+          "Type": "CmpBACnet.IEC_BACNET_ELEMENT_COUNT",
+          "Comment": "The number of entries for the specified week day after\ncalling this method."
+        }
+      ]
+    }
+  ]
+}

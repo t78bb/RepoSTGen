@@ -1,0 +1,117 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_TRAFOF_Gantry3D (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_Trafo_POUs/SoftMotion-Transformations/Gantry-systems/SMC_TRAFOF_Gantry3D.html",
+  "page_title": "SMC_TRAFOF_Gantry3D (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_TRAFOF_Gantry3D\nForward transformation for three dimensional gantry systems.\nEach instance of\nSMC_TRAFOF_GANTRY3D\ncan be connected to\na visualization template named\nSMC_VISU_GANTRY3D_XY\nor\nSMC_VISU_GANTRY3D_YZ\n.\nNote\nFor detailed information on transformations\nsee overview to\nSM_Trafo_POUs\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "dOffsetX",
+          "Type": "LREAL",
+          "Comment": "offset position"
+        },
+        [
+          "dOffsetY",
+          "LREAL",
+          "offset position"
+        ],
+        [
+          "dOffsetZ",
+          "LREAL",
+          "offset position"
+        ],
+        [
+          "minX",
+          "LREAL",
+          "area"
+        ],
+        [
+          "maxX",
+          "LREAL",
+          "area"
+        ],
+        [
+          "minY",
+          "LREAL",
+          "area"
+        ],
+        [
+          "maxY",
+          "LREAL",
+          "area"
+        ],
+        [
+          "minZ",
+          "LREAL",
+          "area"
+        ],
+        [
+          "maxZ",
+          "LREAL",
+          "area"
+        ],
+        {
+          "Scope": "Inout",
+          "Name": "DriveX",
+          "Type": "AXIS_REF_SM3",
+          "Comment": "X-,Y-,Z-drive"
+        },
+        [
+          "DriveY",
+          "AXIS_REF_SM3",
+          "X-,Y-,Z-drive"
+        ],
+        [
+          "DriveZ",
+          "AXIS_REF_SM3",
+          "X-,Y-,Z-drive"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "dx",
+          "Type": "LREAL",
+          "Comment": "position"
+        },
+        [
+          "dy",
+          "LREAL",
+          "position"
+        ],
+        [
+          "dz",
+          "LREAL",
+          "position"
+        ],
+        [
+          "dnx",
+          "LREAL",
+          "normed position"
+        ],
+        [
+          "dny",
+          "LREAL",
+          "normed position"
+        ],
+        [
+          "dnz",
+          "LREAL",
+          "normed position"
+        ],
+        [
+          "dm",
+          "LREAL",
+          ""
+        ]
+      ]
+    }
+  ]
+}

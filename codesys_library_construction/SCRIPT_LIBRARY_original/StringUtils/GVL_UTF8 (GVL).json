@@ -1,0 +1,141 @@
+{
+  "library": "StringUtils",
+  "title": "GVL_UTF8 (GVL)",
+  "url": "https://content.helpme-codesys.com/en/libs/StringUtils/Current/Public-Parts/UTF8/GVL_UTF8.html",
+  "page_title": "GVL_UTF8 (GVL)",
+  "text": "Deutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nMenu\nSearch\nDeutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nPublic Parts\nAnsi\nCharToUpper (Function)\nStrCaseCmpA (Function)\nStrCaseCmpEndA (Function)\nStrCaseCmpStartA (Function)\nStrCaseFindA (Function)\nStrCmpA (Function)\nStrCmpEndA (Function)\nStrCmpStartA (Function)\nStrConcatA (Function)\nStrCpyA (Function)\nStrDeleteA (Function)\nStrFindA (Function)\nStrIsNullOrEmptyA (Function)\nStrLenA (Function)\nStrMidA (Function)\nStrPadLeftA (Function)\nStrPadRightA (Function)\nStrReplaceA (Function)\nStrToLowerA (Function)\nStrToUpperA (Function)\nStrTrimA (Function)\nStrTrimEndA (Function)\nStrTrimStartA (Function)\nCharBufferPtr (Alias)\nCharBufferString (FunctionBlock)\nCapacity (Property)\nCharAt (Method)\nCharAtEquals (Method)\nCharacters (Property)\nCopy (Method)\nCopyFrom (Method)\nCopyFrom2 (Method)\nDelete (Method)\nFB_Exit (Method)\nFB_Init (Method)\nFind (Method)\nFindFrom (Method)\nFromString (Method)\nInit (Method)\nInitialize (Method)\nInsert (Method)\nLength (Property)\nMid (Method)\nReplace (Method)\nStringType (Property)\nILocalizedDateTimeNames (Interface)\nGetDayLong (Method)\nGetDayShort (Method)\nGetMonthLong (Method)\nGetMonthShort (Method)\nPrintf (Function)\nStuSprintf (Function)\nStuSprintfW (Function)\nUTF8\nConvertUTF16toUTF8 (Function)\nConvertUTF8toUTF16 (Function)\nGVL_UTF8 (GVL)\nIsLegalUTF8 (Function)\nIsSpaceCharacter (Function)\nUnicode\nStrCaseCmpW (Function)\nStrCaseFindW (Function)\nStrCmpW (Function)\nStrConcatW (Function)\nStrCpyW (Function)\nStrDeleteW (Function)\nStrFindW (Function)\nStrIsNullOrEmptyW (Function)\nStrLenW (Function)\nStrMidW (Function)\nStrPadLeftW (Function)\nStrPadRightW (Function)\nStrReplaceW (Function)\nStrTrimEndW (Function)\nStrTrimStartW (Function)\nStrTrimW (Function)\nWCharToUpper (Function)\nFile and Project Information\nLibrary Reference\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nComponent Manager\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysTimeRtc\nLibrary Identification\nLibrary Properties\nStringUtils\nDocs\n»\nPublic\nParts\n»\nUTF8\n»\nGVL_UTF8 (GVL)\nGVL_UTF8 (GVL)\nÂ¶\nAttributes:\nqualified_only\nInOut:\nScope\nName\nType\nInitial\nComment\nConstant\ntrailingBytesForUTF8\nARRAY [0..255] OF BYTE\n[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5]\nfirstByteMark\nARRAY [0..6] OF BYTE\n[16#0, 16#0, 16#C0, 16#E0, 16#F0, 16#F8, 16#FC]\noffsetsFromUTF8\nARRAY [0..5] OF DWORD\n[16#0, 16#3080, 16#E2080, 16#3C82080, 16#FA082080, 16#82082080]\nhalfShift\nINT\n10\nused FOR shifting BY 10 bits\nhalfBase\nDWORD\n16#10000\nhalfMask\nDWORD\n16#3FF\nUNI_REPLACEMENT_CHAR\nDWORD\n16#FFFD\nUNI_MAX_BMP\nDWORD\n16#FFFF\nUNI_MAX_UTF16\nDWORD\n16#10FFFF\nUNI_MAX_UTF32\nDWORD\n16#7FFFFFFF\nUNI_MAX_LEGAL_UTF32\nDWORD\n16#10FFFF\nbyteMask\nDWORD\n16#BF\nbyteMark\nDWORD\n16#80\nUNI_SUR_HIGH_START\nDWORD\n16#D800\nUNI_SUR_HIGH_END\nDWORD\n16#DBFF\nUNI_SUR_LOW_START\nDWORD\n16#DC00\nUNI_SUR_LOW_END\nDWORD\n16#DFFF\nERR_SOURCE_EXHAUSTED\nUDINT\n16#40A0\nERR_TARGET_EXHAUSTED\nUDINT\n16#40A1\nERR_SOURCE_ILLEGAL\nUDINT\n16#40A2\ntop\nCODESYS Group | We\nsoftware\nAutomation.\nto software\n['sɒftwɛər]\ntransitive verb\n__softwared/softwaring\n: to develop software\n// to software automation: to develop software for automation purposes\nThe CODESYS Group is the manufacturer of CODESYS, the leading hardware-independent\n                                    IEC 61131-3 automation software for developing and engineering controller\n                                    applications.\nCODESYS® is a registered trademark.\nCODESYS GmbH\nA member of the CODESYS Group\nMemminger Straße 151, 87439 Kempten\nGermany\nTel.:\n+49-831-54031-0\ninfo@codesys.com\nLegal Notice\nPrivacy Policy\nLinkedIn\nYoutube\nRSS\nDownloads\nLogin\nCODESYS Store\n© 2022 CODESYS GmbH\n| A member of the CODESYS Group",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Constant",
+          "Name": "trailingBytesForUTF8",
+          "Type": "ARRAY [0..255] OF BYTE",
+          "Initial": "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5]",
+          "Comment": ""
+        },
+        [
+          "firstByteMark",
+          "ARRAY [0..6] OF BYTE",
+          "[16#0, 16#0, 16#C0, 16#E0, 16#F0, 16#F8, 16#FC]",
+          ""
+        ],
+        [
+          "offsetsFromUTF8",
+          "ARRAY [0..5] OF DWORD",
+          "[16#0, 16#3080, 16#E2080, 16#3C82080, 16#FA082080, 16#82082080]",
+          ""
+        ],
+        [
+          "halfShift",
+          "INT",
+          "10",
+          "used FOR shifting BY 10 bits"
+        ],
+        [
+          "halfBase",
+          "DWORD",
+          "16#10000",
+          ""
+        ],
+        [
+          "halfMask",
+          "DWORD",
+          "16#3FF",
+          ""
+        ],
+        [
+          "UNI_REPLACEMENT_CHAR",
+          "DWORD",
+          "16#FFFD",
+          ""
+        ],
+        [
+          "UNI_MAX_BMP",
+          "DWORD",
+          "16#FFFF",
+          ""
+        ],
+        [
+          "UNI_MAX_UTF16",
+          "DWORD",
+          "16#10FFFF",
+          ""
+        ],
+        [
+          "UNI_MAX_UTF32",
+          "DWORD",
+          "16#7FFFFFFF",
+          ""
+        ],
+        [
+          "UNI_MAX_LEGAL_UTF32",
+          "DWORD",
+          "16#10FFFF",
+          ""
+        ],
+        [
+          "byteMask",
+          "DWORD",
+          "16#BF",
+          ""
+        ],
+        [
+          "byteMark",
+          "DWORD",
+          "16#80",
+          ""
+        ],
+        [
+          "UNI_SUR_HIGH_START",
+          "DWORD",
+          "16#D800",
+          ""
+        ],
+        [
+          "UNI_SUR_HIGH_END",
+          "DWORD",
+          "16#DBFF",
+          ""
+        ],
+        [
+          "UNI_SUR_LOW_START",
+          "DWORD",
+          "16#DC00",
+          ""
+        ],
+        [
+          "UNI_SUR_LOW_END",
+          "DWORD",
+          "16#DFFF",
+          ""
+        ],
+        [
+          "ERR_SOURCE_EXHAUSTED",
+          "UDINT",
+          "16#40A0",
+          ""
+        ],
+        [
+          "ERR_TARGET_EXHAUSTED",
+          "UDINT",
+          "16#40A1",
+          ""
+        ],
+        [
+          "ERR_SOURCE_ILLEGAL",
+          "UDINT",
+          "16#40A2",
+          ""
+        ]
+      ]
+    }
+  ]
+}

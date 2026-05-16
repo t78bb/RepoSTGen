@@ -1,0 +1,37 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_Token_InitVariable (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/File/ReadNCFile/Token/Constructors/SMC_Token_InitVariable.html",
+  "page_title": "SMC_Token_InitVariable (FUN)",
+  "text": "\nFUNCTION SMC_Token_InitVariable\nConstructor function for tokens of type variable.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "tk",
+          "Type": "SMC_Token",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "name",
+          "Type": "STRING",
+          "Comment": "The name of the variable, without the leading and trailing â$â characters.\nMust be a valid identifier in upper-case."
+        },
+        {
+          "Scope": "Inout Const",
+          "Name": "srcPos",
+          "Type": "SMC_NC_SourcePosition",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

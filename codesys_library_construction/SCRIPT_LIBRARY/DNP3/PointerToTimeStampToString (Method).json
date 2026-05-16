@@ -1,0 +1,28 @@
+{
+  "library": "DNP3",
+  "title": "PointerToTimeStampToString (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/PointObserver/pou-PointObserver/PointerToTimeStampToString.html",
+  "page_title": "PointObserver.PointerToTimeStampToString (METH)",
+  "text": "\nMETHOD PROTECTED PointerToTimeStampToString : STRING\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "PointerToTimeStampToString",
+          "Type": "STRING"
+        },
+        {
+          "Scope": "Input",
+          "Name": "pTimeStamp",
+          "Type": "POINTER TO CmpDNP3.IEC_TMWDTIME"
+        }
+      ]
+    }
+  ]
+}

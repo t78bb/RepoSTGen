@@ -1,0 +1,88 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_CheckVelocities (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/SoftMotion-Function-Blocks/SMC_CheckVelocities.html",
+  "page_title": "SMC_CheckVelocities (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_CheckVelocities\nThis function block checks the track speed of the particular path segments.\nIf the OutQueue has not been created by the editor, but by the IEC program\n(e.g. by\nSMC_NCInterpreter\n), this function block has to be called straight\nbefore each call to the interpolator.\nThe main task of this function is to check the path for sharp bends and\nto reduce the velocity to zero at these bends.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "bExecute",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Execution starts on the rising edge."
+        },
+        [
+          "bAbort",
+          "BOOL",
+          "",
+          "IfTRUE, the current processing of this function block\nis aborted"
+        ],
+        [
+          "poqDataIn",
+          "POINTER TOSMC_OUTQUEUE",
+          "",
+          "This input points to theSMC_OUTQUEUEstructure object,\nwhich describes theSMC_GEOINFOobjects of the path;\ntypically it points to the outputpoqDataOutof the\npreceding module (e.g.SMC_NCDecoder/SMC_SmoothPath)."
+        ],
+        [
+          "dAngleTol",
+          "LREAL",
+          "0.001",
+          "This input describes the tolerance angle (angle leeway) up to\nwhich at a sharp bend of the path no stop shall be executed."
+        ],
+        [
+          "bCheckAddAxVelJump",
+          "BOOL",
+          "",
+          "SeeSMC_SmoothPath"
+        ],
+        [
+          "dMaxAddAxVelDifference",
+          "LREAL",
+          "",
+          "SeeSMC_SmoothPath"
+        ],
+        [
+          "dDryRunVelocity",
+          "LREAL",
+          "",
+          "Activation of dry run.\nIf the value is greater than zero, dry run is active.\nThis means that the effective maximum velocity during interpolation\n(including the override) is limited to the given value.\nIf the value is zero, dry run is deactivated.  Values less than zero\nlead to an error.\nA new value of the input is applied only on a rising edge of bExecute."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bBusy",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUE, while execution of function block is not finished\nand the process on the path object is still running"
+        },
+        [
+          "bError",
+          "BOOL",
+          "",
+          "Signals, that an error has occurred within the function\nblock"
+        ],
+        [
+          "wErrorID",
+          "SMC_ERROR",
+          "",
+          "Error identification"
+        ],
+        [
+          "poqDataOut",
+          "POINTER TOSMC_OUTQUEUE",
+          "",
+          "This output points on theSMC_OUTQUEUEstructure object,\nwhich contains the path with the permissible velocity values\nand should now be fed to the interpolator."
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "library": "AC_Alarming",
+  "title": "IModuleAlarming (Interface)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_Alarming/Current/ModuleInterface/IModuleAlarming.html",
+  "page_title": "IModuleAlarming (ITF)",
+  "text": "\nINTERFACE IModuleAlarming EXTENDS __System.IQueryInterface\nInterface used to make a module function block to be callable after\nan alarm was issued. Implement this interface in your module function block\nin order to get a callable module function block, which can get module calls\nafter an alarm was issued.\nMethods:\nConsumeModuleAlarm\nStructure:\nConsumeModuleAlarm (Method)",
+  "tables": []
+}

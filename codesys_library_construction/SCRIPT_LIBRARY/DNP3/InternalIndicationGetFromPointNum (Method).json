@@ -1,0 +1,37 @@
+{
+  "library": "DNP3",
+  "title": "InternalIndicationGetFromPointNum (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/pou-Master/Datapoints/InternalIndicationGetFromPointNum.html",
+  "page_title": "Master.InternalIndicationGetFromPointNum (METH)",
+  "text": "\nMETHOD InternalIndicationGetFromPointNum :\nError\nGet the value of Internal Indication datapoint (DNP3 object group 80 âinternal indicationsâ) with given point number (0 .. MaxPointNum).\nReturns PointNotExistent, if a datapoint with the given point number doesnt exist, OK otherwise.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "InternalIndicationGetFromPointNum",
+          "Type": "Error",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "pointNumber",
+          "Type": "UINT",
+          "Comment": "Point number."
+        },
+        {
+          "Scope": "Output",
+          "Name": "value",
+          "Type": "BOOL",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

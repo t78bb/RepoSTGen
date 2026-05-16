@@ -1,0 +1,64 @@
+{
+  "library": "Util",
+  "title": "GEN (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/Signals/GEN.html",
+  "page_title": "GEN (FB)",
+  "text": "\nFUNCTION_BLOCK GEN\nGenerates periodic functions of different, given types\nThe generation may be done relative to a specific time base or a given call-count base (\nBASE\n).\nAn example set of available types of periodic functions are shown in the following image.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "MODE",
+          "Type": "GEN_MODE",
+          "Initial": "",
+          "Comment": "Types available:TRIANGLE: Triangular from -AMPLITUDEto +AMPLITUDETRIANGLE_POS: Triangular from 0 to +AMPLITUDESAWTOOTH_RISE: Sawtooth increasing from -AMPLITUDEto +AMPLITUDESAWTOOTH_FALL: Sawtooth decreasing from +AMPLITUDEto -AMPLITUDERECTANGLE: Rectangular switching from  -AMPLITUDEto +AMPLITUDESINE: SineCOSINE: Cosine"
+        },
+        [
+          "BASE",
+          "BOOL",
+          "",
+          "FALSE: Period referring to call (CYCLES)TRUE: Period referring to time (PERIOD)"
+        ],
+        [
+          "PERIOD",
+          "TIME",
+          "TIME#1s0ms",
+          "Period time, only relevant ifBASE=TRUE"
+        ],
+        [
+          "CYCLES",
+          "INT",
+          "1000",
+          "Number of calls per period, only relevant ifBASE=FALSE"
+        ],
+        [
+          "AMPLITUDE",
+          "INT",
+          "",
+          "Amplitud of the function to be generated"
+        ],
+        [
+          "RESET",
+          "BOOL",
+          "",
+          "TRUE: SetsOUTto zero"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "OUT",
+          "Type": "INT",
+          "Initial": "",
+          "Comment": "Generated function value"
+        }
+      ]
+    }
+  ]
+}

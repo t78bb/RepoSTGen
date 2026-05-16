@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现根据输入的轨道类型、挡板索引编号和目标方向操作对应UI按钮的状态更新。",
+  "provide_code": "FUNCTION setButtonByDirect : BOOL\nVAR_INPUT\n\tlevel\t\t:INT;\t//1->地轨\t2->天轨\n\tidx\t\t\t:INT;\t//挡板索引编号\n\tdirect\t\t:TargetDirect;\nEND_VAR"
+}

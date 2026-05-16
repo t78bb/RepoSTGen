@@ -1,0 +1,30 @@
+{
+  "library": "CommFB",
+  "title": "Constants (GVL)",
+  "url": "https://content.helpme-codesys.com/en/libs/CommFB/Current/CommFB/Constants.html",
+  "page_title": "Constants (GVL)",
+  "text": "\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Scope": "Constant",
+          "Name": "INVALID_ID",
+          "Type": "UDINT",
+          "Initial": "16#FFFFFFFF"
+        },
+        [
+          "MAX_PN_ALARM_DATA",
+          "UDINT",
+          "198"
+        ]
+      ]
+    }
+  ]
+}

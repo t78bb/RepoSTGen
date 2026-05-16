@@ -1,0 +1,31 @@
+{
+  "library": "StringUtils",
+  "title": "FromString (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/StringUtils/Current/Public-Parts/pou-CharBufferString/FromString.html",
+  "page_title": "CharBufferString.FromString (METH)",
+  "text": "\nMETHOD FromString : BOOL\nConverts an IEC string value into the internally used representation. The result of the\nmethod indicates, whether the processing was successful or not (e.g. CharBufferString.m_Type <> ANY_STRING).\nIf the internally used buffer is not large enough the result is TRUE and only the used buffer size â 1 will be copied.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "FromString",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "stString",
+          "Type": "STRING(255)",
+          "Comment": "The string to convert\n@IECCodeConverter_Type: String"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_GCodeViewer (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/GCode-Viewer/SMC_GCodeViewer.html",
+  "page_title": "SMC_GCodeViewer (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_GCodeViewer\nThis function block produces a textual representation of the G-Code\nthat has been processed by\nSMC_NCInterpreter\nor\nSMC_NCDecoder\n.\nThis textual representation can be displayed in a visualization.\nWith the input\ninterpolatedObjectId\n, typically connected with the\nSMC_Interpolator\noutput\nactObjectId\n, the function block\ngets the information which line has already been processed.  It\nwill remove the text of already processed lines.\nNote\nThe output of the function block does not exactly match\nthe G-code stored in the editor or in the text file.\nFor example, no blank lines or comments will be output and\nvariables will be replaced with their value.\nThe function block is called in the same task as\nSMC_NCInterpreter\n.\nThe number of\nSMC_GCODEVIEWER_DATA\nobjects in the buffer\npBuffer\nmust be at least as large as the sum of all buffer sizes of the\nSMC_NCInterpreter\nand the path-preprocessing function blocks.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "GCodeText",
+          "Type": "SMC_GCODE_TEXT",
+          "Comment": "Information about the interpreted GCode.\nIntended to be connected to the output with the same name ofSMC_NCInterpreterorSMC_NCDecoder."
+        },
+        {
+          "Scope": "Input",
+          "Name": "bEnable",
+          "Type": "BOOL",
+          "Comment": "The function block executes as long asbEnableisTRUE.\nEnable must beTRUEas long as eitherSMC_NCInterpreterorSMC_Interpolatorare still busy."
+        },
+        [
+          "interpolatedObjectId",
+          "SMC_GCodeObjectId",
+          "Identifier of the currently interpolated object of the path."
+        ],
+        [
+          "uiNumberOfBufferEntries",
+          "UINT",
+          "Size of the array that is passed bypBuffer.  The size\nis in elements, not bytes."
+        ],
+        [
+          "pBuffer",
+          "POINTER TOSMC_GCODEVIEWER_DATA",
+          "Address of the array allocated as a buffer for the function\nblock"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bError",
+          "Type": "BOOL",
+          "Comment": "Signals, that an error has occurred within the function\nblock"
+        },
+        [
+          "bBusy",
+          "BOOL",
+          "TRUE, if execution of function block is not finished"
+        ],
+        [
+          "wErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ],
+        [
+          "asGCode",
+          "ARRAY [0..c_uiLines] OF\nSTRING",
+          "Currently active G-code lines.  The first line (index 0) is the G-Code\nof the object currently being interpolated."
+        ]
+      ]
+    }
+  ]
+}

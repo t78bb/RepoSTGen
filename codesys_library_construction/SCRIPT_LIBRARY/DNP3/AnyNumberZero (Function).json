@@ -1,0 +1,28 @@
+{
+  "library": "DNP3",
+  "title": "AnyNumberZero (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Functions/AnyNumber/AnyNumberZero.html",
+  "page_title": "AnyNumberZero (FUN)",
+  "text": "\nFUNCTION AnyNumberZero :\nAnyNumber\nReturns an AnyNumber set to 0 using the given base type.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "AnyNumberZero",
+          "Type": "AnyNumber"
+        },
+        {
+          "Scope": "Input",
+          "Name": "baseType",
+          "Type": "AnyNumberType"
+        }
+      ]
+    }
+  ]
+}

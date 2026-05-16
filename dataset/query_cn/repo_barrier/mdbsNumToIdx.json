@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现根据设备编号 `devNo` 映射对应的层级 `level` 和索引 `idx`。",
+  "provide_code": "FUNCTION_BLOCK mdbsNumToIdx\nVAR_INPUT\n\tdevNo\t\t:WORD;\nEND_VAR\nVAR_OUTPUT\n\tlevel\t\t:INT;\n\tidx\t\t\t:INT;\nEND_VAR"
+}

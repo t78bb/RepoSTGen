@@ -1,0 +1,113 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_TRAFOF_Tripod_Arm (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_Trafo_POUs/SoftMotion-Transformations/Parallel-Systems/Tripod_Arm/SMC_TRAFOF_Tripod_Arm.html",
+  "page_title": "SMC_TRAFOF_Tripod_Arm (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_TRAFOF_Tripod_Arm\nThe transformation module is provided to\nexecute forward transformations of a tripod arm.\nNote\nFor detailed information on transformation modules\nsee the overview on kinematic transformations in the\nCNC online help.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "dArmLength1",
+          "Type": "LREAL",
+          "Initial": "",
+          "Comment": "Length of arm1 connected to motor"
+        },
+        [
+          "dArmLength2",
+          "LREAL",
+          "",
+          "Length of arm2 from arm to stewart"
+        ],
+        [
+          "dArm1Radius",
+          "LREAL",
+          "",
+          "Radius of the circle that goes through all three motor axes"
+        ],
+        [
+          "dStewartRadius",
+          "LREAL",
+          "0",
+          "Radius of the stewart plate"
+        ],
+        [
+          "dDistance",
+          "LREAL",
+          "",
+          "Distance between the two connecting rods for each arm"
+        ],
+        [
+          "dRotationOffset",
+          "LREAL",
+          "0",
+          "Mathematically oriented angle between\naxis A and origin (0,0) in degrees"
+        ],
+        [
+          "dOffsetA",
+          "LREAL",
+          "0",
+          "Additional offset of axis A in SoftMotion units"
+        ],
+        [
+          "dOffsetB",
+          "LREAL",
+          "0",
+          "Additional offset of axis B in SoftMotion units"
+        ],
+        [
+          "dOffsetC",
+          "LREAL",
+          "0",
+          "Additional offset of axis C in SoftMotion units"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "dx",
+          "Type": "LREAL",
+          "Initial": "",
+          "Comment": "X-position of centre of inner ring/manipulator\nin geo coordinates"
+        },
+        [
+          "dy",
+          "LREAL",
+          "",
+          "Y-position of centre of inner ring/manipulator\nin geo coordinates"
+        ],
+        [
+          "dz",
+          "LREAL",
+          "",
+          "Z-position of centre of inner ring/manipulator\nin geo coordinates"
+        ],
+        {
+          "Scope": "Inout",
+          "Name": "DriveA",
+          "Type": "AXIS_REF_SM3",
+          "Initial": "",
+          "Comment": "Reference to axis A"
+        },
+        [
+          "DriveB",
+          "AXIS_REF_SM3",
+          "",
+          "Reference to axis B"
+        ],
+        [
+          "DriveC",
+          "AXIS_REF_SM3",
+          "",
+          "Reference to axis C"
+        ]
+      ]
+    }
+  ]
+}

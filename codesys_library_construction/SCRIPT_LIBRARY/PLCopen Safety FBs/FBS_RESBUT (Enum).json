@@ -1,0 +1,58 @@
+{
+  "library": "PLCopen Safety FBs",
+  "title": "FBS_RESBUT (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/PLCopen Safety FBs/Current/PLCopenSafetyFBs/Enums/FBS_RESBUT.html",
+  "page_title": "FBS_RESBUT (ENUM)",
+  "text": "\nTYPE FBS_RESBUT :\nDefinition of SF_ResetButton function block states and its diagnostic values.\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "IDLE",
+          "Initial": "16#0",
+          "Comment": "The function block is not active (initial state)."
+        },
+        {
+          "Name": "WAIT_R_TRIG",
+          "Initial": "16#83E2",
+          "Comment": "The function block is enabled. Wait for R_TRIG at ResetIn."
+        },
+        {
+          "Name": "WAIT_F_TRIG",
+          "Initial": "16#83F2",
+          "Comment": "ResetIn is TRUE. Wait for F_TRIG at ResetIn."
+        },
+        {
+          "Name": "RESET_DETECTED",
+          "Initial": "16#8000",
+          "Comment": "Valid reset behavior was detected. The state is valid for at\nleast one cycle and will automatically transfer to 16#83E2."
+        },
+        {
+          "Name": "ERR_PARAM",
+          "Initial": "16#C000",
+          "Comment": "TrailingMinimum > TrailingMaximum OR TrailingMinimum < 100\nmsec"
+        },
+        {
+          "Name": "ERR_RESET",
+          "Initial": "16#C001",
+          "Comment": "ResetIn is TRUE while waiting for NOT ResetIn."
+        },
+        {
+          "Name": "ERR_TRAIL_MAX",
+          "Initial": "16#C3E0",
+          "Comment": "TrailingMaximum elapsed before detecting F_TRIG at ResetIn.\nWaiting for R_TRIG at ResetIn."
+        },
+        {
+          "Name": "ERR_TRAIL_MIN",
+          "Initial": "16#C3F0",
+          "Comment": "F_TRIG at ResetIn detected before TrailingMinimum elapsed.\nWaiting for R_TRIG at ResetIn."
+        }
+      ]
+    }
+  ]
+}

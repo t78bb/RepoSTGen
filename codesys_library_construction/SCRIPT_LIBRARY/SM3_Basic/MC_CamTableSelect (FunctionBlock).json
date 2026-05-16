@@ -1,0 +1,95 @@
+{
+  "library": "SM3_Basic",
+  "title": "MC_CamTableSelect (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/CAM/MC_CamTableSelect.html",
+  "page_title": "MC_CamTableSelect (FB)",
+  "text": "\nFUNCTION_BLOCK MC_CamTableSelect\nThis function block is designed for selecting the cam tables by setting connections to relevant tables.\nNote\nWhen the\nDone\noutput is\nTRUE\n, the\nCamTableID\nis valid and can be passed to\nMC_CamIn\n.\nThe\nCamTable\nis not copied.  Instead, a reference to the\nCamTable\nis passed to\nMC_CamIn\nvia the\nCamTableID\n.  Take care that the\nCamTable\nis not modified while\nMC_CamIn\nis active.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Master",
+          "Type": "AXIS_REF_SM3",
+          "Initial": "",
+          "Comment": "Reference to the master axis"
+        },
+        [
+          "Slave",
+          "AXIS_REF_SM3",
+          "",
+          "Reference to the slave axis"
+        ],
+        [
+          "CamTable",
+          "MC_CAM_REF",
+          "",
+          "Reference to the cam description"
+        ],
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "Rising edge: Starts the execution of the function block."
+        },
+        [
+          "Periodic",
+          "BOOL",
+          "TRUE",
+          "TRUE: PeriodicFALSE: Non periodic"
+        ],
+        [
+          "MasterAbsolute",
+          "BOOL",
+          "TRUE",
+          "TRUE: Absolute coordinates, i.e. the zero position of the cam table domainwill correspond to the zero position of the master axis.FALSE: Relative coordinates, i.e. the zero position of the cam table domainwill correspond to the current position of the master axis on a rising\nedge of theExecuteinput.\nNote that for non-periodic cam tables, 0 must be inside the domain ifMasterAbsolute= FALSE, otherwiseSMC_CI_MASTER_OUT_OF_SCALEwill be reported whenMC_CamInis started with thisCamTableID."
+        ],
+        [
+          "SlaveAbsolute",
+          "BOOL",
+          "TRUE",
+          "TRUE: Absolute coordinates, i.e. the zero position of the cam table codomainwill correspond to the zero position of the slave axis.FALSE: Relative coordinates, i.e. the zero position of the cam table codomainwill correspond to the current position of the slave axis on a rising\nedge of theExecuteinput.Note that if eitherSlaveAbsolute= FALSE or theMC_CamInStartModeisrelative, relative coordinates are used. In all other cases, absolute coordinates\nare used."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Done",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "TRUE: Preselection has been done."
+        },
+        [
+          "Busy",
+          "BOOL",
+          "FALSE",
+          "TRUE: Execution of function block has not been finished."
+        ],
+        [
+          "Error",
+          "BOOL",
+          "FALSE",
+          "TRUE: Error has occurred within the function block."
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "0",
+          "Error identification"
+        ],
+        [
+          "CamTableID",
+          "MC_CAM_ID",
+          "",
+          "Identifier of the cam table be used for the function block."
+        ]
+      ]
+    }
+  ]
+}

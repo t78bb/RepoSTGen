@@ -1,0 +1,28 @@
+{
+  "library": "BACnet",
+  "title": "GetAddressBinding (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetServer/pou-IBACnetServer/DeviceAddressBindings/GetAddressBinding.html",
+  "page_title": "IBACnetServer.GetAddressBinding (METH)",
+  "text": "\nMETHOD GetAddressBinding\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "nIndex",
+          "Type": "UDINT"
+        },
+        {
+          "Scope": "Inout",
+          "Name": "binding",
+          "Type": "CmpBACnet.IEC_BACNET_ADDRESS_BINDING"
+        }
+      ]
+    }
+  ]
+}

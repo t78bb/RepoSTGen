@@ -1,0 +1,27 @@
+{
+  "library": "MemoryUtils",
+  "title": "GetNLWords (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/MemoryUtils/Current/MemoryUtils/Functionblocks/pou-ByteBuffer/GetNLWords.html",
+  "page_title": "ByteBuffer.GetNLWords (METH)",
+  "text": "\nMETHOD GetNLWords\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "pdwTarget",
+          "Type": "POINTER TO LWORD"
+        },
+        [
+          "uiCount",
+          "UINT"
+        ]
+      ]
+    }
+  ]
+}

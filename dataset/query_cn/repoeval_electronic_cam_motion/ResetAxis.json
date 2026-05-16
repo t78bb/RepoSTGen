@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现对两个轴（AxisX和AxisY）的错误检测与复位功能，并在复位完成后返回操作结果。",
+  "provide_code": "FUNCTION_BLOCK ResetAxis\nVAR_INPUT \n\tbExec\t:\tBOOL;\nEND_VAR"
+}

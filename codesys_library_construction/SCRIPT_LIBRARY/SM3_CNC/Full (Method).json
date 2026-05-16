@@ -1,0 +1,23 @@
+{
+  "library": "SM3_CNC",
+  "title": "Full (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/File/ReadNCFile/Token/pou-SMC_TokenQueue/Full.html",
+  "page_title": "SMC_TokenQueue.Full (METH)",
+  "text": "\nMETHOD Full : BOOL\nReturns whether the queue is full\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "Full",
+          "Type": "BOOL"
+        }
+      ]
+    }
+  ]
+}

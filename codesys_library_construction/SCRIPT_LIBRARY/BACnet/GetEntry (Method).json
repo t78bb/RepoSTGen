@@ -1,0 +1,37 @@
+{
+  "library": "BACnet",
+  "title": "GetEntry (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/Calendar/pou-BACnetCalendar/GetEntry.html",
+  "page_title": "BACnetCalendar.GetEntry (METH)",
+  "text": "\nMETHOD GetEntry : CmpBACnet.IEC_BACNET_STATUS\nGets the calendar entry in the Date_List-Property of this BACnet-Calendar-Object, which has index nIndex. Use\nThe function GetEntryCount, to be able to go through all entries of the Date_List-Property.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetEntry",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "nIndex",
+          "Type": "CmpBACnet.IEC_BACNET_ELEMENT_COUNT",
+          "Comment": "The 1 based index of the entry to get."
+        },
+        {
+          "Scope": "Output",
+          "Name": "entry",
+          "Type": "CmpBACnet.IEC_BACNET_CALENDAR_ENTRY",
+          "Comment": "The entry specified by nIndex (filled after calling this\nmethod)."
+        }
+      ]
+    }
+  ]
+}

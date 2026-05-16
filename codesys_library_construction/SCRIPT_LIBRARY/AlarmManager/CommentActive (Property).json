@@ -1,0 +1,8 @@
+{
+  "library": "AlarmManager",
+  "title": "CommentActive (Property)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/pou-IAlarm7/CommentActive.html",
+  "page_title": "IAlarm7.CommentActive (PROP)",
+  "text": "\nPROPERTY CommentActive : POINTER TO WSTRING\nOptional comment that can be provided for the state âActiveâ.",
+  "tables": []
+}

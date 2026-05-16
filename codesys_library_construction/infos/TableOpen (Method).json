@@ -1,0 +1,33 @@
+{
+  "library": "3S Storage",
+  "title": "TableOpen (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/3S Storage/Current/_3SStorage/Instances/pou-Storage/TableOpen.html",
+  "page_title": "Storage.TableOpen (METH)",
+  "text": "\nMETHOD TableOpen : STO.ITable\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "TableOpen",
+          "Type": "STO.ITable"
+        },
+        {
+          "Scope": "Input",
+          "Name": "idTable",
+          "Type": "CAA.IDENT"
+        },
+        {
+          "Scope": "Output",
+          "Name": "eError",
+          "Type": "STO.ERROR"
+        }
+      ]
+    }
+  ]
+}

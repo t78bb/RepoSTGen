@@ -1,0 +1,33 @@
+{
+  "library": "String Builder Base",
+  "title": "WriteIString (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Builder Base/Current/BuilderBase/Interfaces/pou-IBuilder/WriteIString.html",
+  "page_title": "IBuilder.WriteIString (METH)",
+  "text": "\nMETHOD WriteIString : UDINT\nAppends the contents of\nitfString\nto the buffer.\nIt returns the number of bytes written.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "WriteIString",
+          "Type": "UDINT"
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfString",
+          "Type": "IStringRepresentation"
+        },
+        {
+          "Scope": "Output",
+          "Name": "eErrorID",
+          "Type": "ERROR"
+        }
+      ]
+    }
+  ]
+}

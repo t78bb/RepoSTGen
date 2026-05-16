@@ -1,0 +1,35 @@
+{
+  "library": "ModbusFB",
+  "title": "Init (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/ModbusFB/Current/ModbusFB/Function-Blocks/Util/pou-ByteBuffer/Init.html",
+  "page_title": "ByteBuffer.Init (METH)",
+  "text": "\nMETHOD Init\nInitializes the ByteBuffer with the given byte array and length.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "pBuffer",
+          "Type": "POINTER TO BYTE"
+        },
+        [
+          "uiCapacity",
+          "UINT"
+        ],
+        [
+          "uiLen",
+          "UINT"
+        ],
+        [
+          "bSwapBytes",
+          "BOOL"
+        ]
+      ]
+    }
+  ]
+}

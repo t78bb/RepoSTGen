@@ -1,0 +1,37 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_NC_SourcePosition (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/Parser/SMC_NC_SourcePosition.html",
+  "page_title": "SMC_NC_SourcePosition (STRUCT)",
+  "text": "\nTYPE SMC_NC_SourcePosition : STRUCT\nRepresents a source position consisting of a line number,\na column number (both zero-based), and a length.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "diLine",
+          "Type": "DINT",
+          "Initial": "-1",
+          "Comment": "The zero-based line number. -1 if unknown."
+        },
+        {
+          "Name": "diColumn",
+          "Type": "DINT",
+          "Initial": "-1",
+          "Comment": "The zero-based column number. -1 if unknown."
+        },
+        {
+          "Name": "diLength",
+          "Type": "DINT",
+          "Initial": "-1",
+          "Comment": "The length. -1 if unknown."
+        }
+      ]
+    }
+  ]
+}

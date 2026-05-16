@@ -1,0 +1,37 @@
+{
+  "library": "Util",
+  "title": "GetLocalDateTime (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/TimerSwitch/Functions/GetLocalDateTime.html",
+  "page_title": "GetLocalDateTime (FUN)",
+  "text": "\nFUNCTION GetLocalDateTime : ULINT\nRelated to\nTimeZone\nin\ntzTimeZone\nthis function returns the current date and time in milliseconds since Thursday, 1.1.1970 00:00:00.000, managed in a 64 Bit data type\nThe default\nIDateTimeProvider\nimplementation (\nDateTimeProvider\n) is in use\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetLocalDateTime",
+          "Type": "ULINT",
+          "Comment": "The current local date and time in milliseconds since\n1.1.1970 00:00:00.000"
+        },
+        {
+          "Scope": "Inout Const",
+          "Name": "tzTimeZone",
+          "Type": "TimeZone",
+          "Comment": "Time zone as base for caclulating local time"
+        },
+        {
+          "Scope": "Output",
+          "Name": "eErrorID",
+          "Type": "ERROR",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

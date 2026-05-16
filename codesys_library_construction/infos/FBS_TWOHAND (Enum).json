@@ -1,0 +1,98 @@
+{
+  "library": "PLCopen Safety FBs",
+  "title": "FBS_TWOHAND (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/PLCopen Safety FBs/Current/PLCopenSafetyFBs/Enums/FBS_TWOHAND.html",
+  "page_title": "FBS_TWOHAND (ENUM)",
+  "text": "\nTYPE FBS_TWOHAND :\nDefinition of SF_TwoHandControl (TypeII and TypeIII) function block states and its diagnostic values.\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "IDLE",
+          "Initial": "16#0",
+          "Comment": "The function block is not active (initial state)."
+        },
+        {
+          "Name": "BUTTONS_ACTUATED",
+          "Initial": "16#8000",
+          "Comment": "Both buttons actuated correctly. The safety related output\nis enabled."
+        },
+        {
+          "Name": "INIT",
+          "Initial": "16#8001",
+          "Comment": "Function block is active, but in the Init state."
+        },
+        {
+          "Name": "BUTTONS_RELEASED",
+          "Initial": "16#8802",
+          "Comment": "No Button is actuated."
+        },
+        {
+          "Name": "BUTTON_1_ACTUATED",
+          "Initial": "16#8804",
+          "Comment": "Only Button 1 is actuated. For TypeIII start of monitoring\ntimer."
+        },
+        {
+          "Name": "BUTTON_2_ACTUATED",
+          "Initial": "16#8806",
+          "Comment": "Only Button 2 is actuated. For TypeIII start of monitoring\ntimer."
+        },
+        {
+          "Name": "BUTTON_2_RELEASED",
+          "Initial": "16#8808",
+          "Comment": "The safety related output was enabled AND is disabled again.\nFALSE at both S_Button1 and S_Button2 was not achieved after disabling the safety related output."
+        },
+        {
+          "Name": "BUTTON_1_RELEASED",
+          "Initial": "16#880A",
+          "Comment": "The safety related output was enabled AND is disabled again.\nFALSE at both S_Button1 and S_Button2 was not achieved after disabling the safety related output.\nIn this state, S_Button1 is FALSE and S_Button2 is TRUE after disabling the safety related output."
+        },
+        {
+          "Name": "LOCKED_OFF",
+          "Initial": "16#880C",
+          "Comment": "The safety related output was enabled AND is disabled again.\nFALSE AT both S_Button1 and S_Button2 was not achieved after disabling the safety related output.\nIn this state, S_Button1 is TRUE and S_Button2 is TRUE after disabling the safety related output."
+        },
+        {
+          "Name": "LOCKED_ON",
+          "Initial": "16#880E",
+          "Comment": "Incorrect actuation of the buttons. Waiting for release of\nboth buttons."
+        },
+        {
+          "Name": "ERR_1_B1",
+          "Initial": "16#C010",
+          "Comment": "S_Button1 was TRUE on FB activation."
+        },
+        {
+          "Name": "ERR_1_B2",
+          "Initial": "16#C020",
+          "Comment": "S_Button2 was TRUE on FB activation."
+        },
+        {
+          "Name": "ERR_1_B1B2",
+          "Initial": "16#C030",
+          "Comment": "The signals at S_Button1 AND S_Button2 were TRUE on FB\nactivation."
+        },
+        {
+          "Name": "ERR_2_B1",
+          "Initial": "16#C040",
+          "Comment": "S_Button1 was FALSE and S_Button 2 was TRUE after 500 ms in\nstate 8806 (only TypeIII)."
+        },
+        {
+          "Name": "ERR_2_B2",
+          "Initial": "16#C050",
+          "Comment": "S_Button1 was TRUE and S_Button 2 was FALSE after 500 ms in\nstate 8804 (only TypeIII)."
+        },
+        {
+          "Name": "ERR_2_B1B2",
+          "Initial": "16#C060",
+          "Comment": "S_Button1 was TRUE and S_Button 2 was TRUE after 500 ms in state 8005 or 8006.\nThis state is only possible when the states of the inputs (S_Button1 and S_Button2) change from divergent to convergent (both TRUE) simultaneously when the timer elapses (500 ms) at the same cycle."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现双轴电源控制及状态监测功能。",
+  "provide_code": "FUNCTION_BLOCK FB_DualAxisPower\nVAR_INPUT\n\tAxis1\t\t\t:\tAXIS_REF;\t\t\t//轴1引用\n\tAxis2\t\t\t:\tAXIS_REF;\t\t\t//轴2引用\n\tbPowerOn\t\t:\tBOOL;\t\t\t\t//电源使能信号\nEND_VAR\nVAR_OUTPUT\n\tbPowerDone\t\t:\tBOOL;\t\t\t\t//两轴都准备就绪\n\tbAxis1Ready\t\t:\tBOOL;\t\t\t\t//轴1准备就绪\n\tbAxis2Ready\t\t:\tBOOL;\t\t\t\t//轴2准备就绪\n\tbError\t\t\t:\tBOOL;\t\t\t\t//错误标志\nEND_VAR"
+}

@@ -1,0 +1,51 @@
+{
+  "library": "DNP3",
+  "title": "ReadPoints (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/pou-Master/Commands/ReadPoints.html",
+  "page_title": "Master.ReadPoints (METH)",
+  "text": "\nMETHOD ReadPoints :\nError\nIssue an read one or more specific data points request.\nNote that this request uses indexed addressing which\nis not required by any of the DNP3 subset level definitions and is not\nsupported by a significant percentage of DNP3 Outstation devices.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "ReadPoints",
+          "Type": "Error",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "group",
+          "Type": "USINT",
+          "Comment": "object group for read request"
+        },
+        [
+          "variation",
+          "USINT",
+          "object variation to read"
+        ],
+        [
+          "qualifier",
+          "AddressQualifier",
+          "address qualifier, must be 8/16 bit indexed\nQUAL_8BIT_INDEX or QUAL_16BIT_INDEX"
+        ],
+        [
+          "numPoints",
+          "UINT",
+          "number of points to read"
+        ],
+        [
+          "pPoints",
+          "POINTER TO UINT",
+          "pointer to array of point numbers to read"
+        ]
+      ]
+    }
+  ]
+}

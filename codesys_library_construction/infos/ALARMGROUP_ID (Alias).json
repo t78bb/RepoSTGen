@@ -1,0 +1,8 @@
+{
+  "library": "AlarmManager",
+  "title": "ALARMGROUP_ID (Alias)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/ALARMGROUP_ID.html",
+  "page_title": "ALARMGROUP_ID (ALIAS)",
+  "text": "\nTYPE ALARMGROUP_ID : USINT\nThis type represents the alarmgroup IDs within an alarm configuration",
+  "tables": []
+}

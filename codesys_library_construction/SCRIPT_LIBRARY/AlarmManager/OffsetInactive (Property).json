@@ -1,0 +1,8 @@
+{
+  "library": "AlarmManager",
+  "title": "OffsetInactive (Property)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/pou-IAlarm5/Access-to-offsets/OffsetInactive.html",
+  "page_title": "IAlarm5.OffsetInactive (PROP)",
+  "text": "\nPROPERTY OffsetInactive : INT\nOffset when the alarm went into state âwaiting for confirmationâ",
+  "tables": []
+}

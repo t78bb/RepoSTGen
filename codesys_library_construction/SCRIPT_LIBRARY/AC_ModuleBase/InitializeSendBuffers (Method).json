@@ -1,0 +1,41 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "InitializeSendBuffers (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_RMP_ReliableMessageProtocol/AC_RMP_FBCommunication/pou-IRMPFBCommunication/InitializeSendBuffers.html",
+  "page_title": "IRMPFBCommunication.InitializeSendBuffers (METH)",
+  "text": "\nMETHOD InitializeSendBuffers : BOOL\nThis provides you with pointers to the buffers holding the RMP data and mirrored\nvariables to be sent.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "InitializeSendBuffers",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "pRMPSendData",
+          "Type": "POINTER TORMPExchangeData",
+          "Comment": "The data structure used for the generall RMP; this data has to be send\nvia any network connection to the application having the given communication\naddress"
+        },
+        [
+          "pSendVars",
+          "POINTER TORMPVarData",
+          "The data list of variables being mirrored to a module in the targeted application;\nthis data has to be send via any network connection to the application having\nthe given communication address"
+        ],
+        [
+          "udiSendVarsCount",
+          "UDINT",
+          "This is the number of variables given via the pointerpSendVars"
+        ]
+      ]
+    }
+  ]
+}

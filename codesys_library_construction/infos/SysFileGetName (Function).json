@@ -1,0 +1,31 @@
+{
+  "library": "SysFile",
+  "title": "SysFileGetName (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SysFile/Current/SysFileGetName.html",
+  "page_title": "SysFileGetName (FUN)",
+  "text": "\nFUNCTION SysFileGetName : POINTER TO STRING\nGet the file name from file specified by handle\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SysFileGetName",
+          "Type": "POINTER TO STRING",
+          "Comment": "File name of the specified file"
+        },
+        {
+          "Scope": "Input",
+          "Name": "hFile",
+          "Type": "RTS_IEC_HANDLE",
+          "Comment": "Handle of the file"
+        }
+      ]
+    }
+  ]
+}

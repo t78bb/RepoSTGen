@@ -1,0 +1,31 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_TP (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/DataTypes/Movement/SMC_TP.html",
+  "page_title": "SMC_TP (STRUCT)",
+  "text": "\nTYPE SMC_TP : STRUCT\nThis\nSTRUCT\ndefines one point on the trajectory defined by\nMC_TP_REF\nand consists of a pair of time and position values.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "delta_time",
+          "Type": "TIME",
+          "Initial": "TIME#0ms",
+          "Comment": "Period of time between reaching the last and the current point"
+        },
+        {
+          "Name": "position",
+          "Type": "LREAL",
+          "Initial": "0",
+          "Comment": "(Absolute-/relative-)position at this point"
+        }
+      ]
+    }
+  ]
+}

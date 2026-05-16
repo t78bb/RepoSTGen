@@ -1,0 +1,23 @@
+{
+  "library": "DNP3",
+  "title": "SetError (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/PointObserver/pou-PointObserver/SetError.html",
+  "page_title": "PointObserver.SetError (METH)",
+  "text": "\nMETHOD PROTECTED SetError\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "eError",
+          "Type": "Error"
+        }
+      ]
+    }
+  ]
+}

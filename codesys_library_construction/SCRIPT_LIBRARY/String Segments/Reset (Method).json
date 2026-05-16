@@ -1,0 +1,23 @@
+{
+  "library": "String Segments",
+  "title": "Reset (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Segments/Current/Strings/Functionblocks/pou-Range/IRange/Reset.html",
+  "page_title": "Range.Reset (METH)",
+  "text": "\nMETHOD FINAL Reset :\nERROR\nSet back the original state of this\nIRange\ninstance\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "Reset",
+          "Type": "ERROR"
+        }
+      ]
+    }
+  ]
+}

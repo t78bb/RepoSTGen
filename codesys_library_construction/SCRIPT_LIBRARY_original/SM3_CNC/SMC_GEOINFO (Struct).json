@@ -1,0 +1,379 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_GEOINFO (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_Data-types/SoftMotion-CNC/SMC_GEOINFO.html",
+  "page_title": "SMC_GEOINFO (STRUCT)",
+  "text": "GlobalTextList (GlobalTextList)\nImagePool_cnc_sm3 (ImagePool)\nImages\nLibrary Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nProjektinformationen\nGetBooleanProperty (Function)\nGetCompany (Function)\nGetNumberProperty (Function)\nGetTextProperty (Function)\nGetTextProperty2 (Function)\nGetTitle (Function)\nGetVersion (Function)\nGetVersionProperty (Function)\nSM3_CNC_GetVersion (Function)\nSMC_CNC_LibParams (ParamList)\nSM_CNC_Data types\nFile\nSMC_SINGLEVAR (Struct)\nSMC_TOKENTYPE (Enum)\nSMC_VARLIST (Struct)\nSMC_VARTYPE (Enum)\nSoftMotion CNC\nSMC_ABC_SLOPES_AT_STOP (Enum)\nSMC_ABC_SLOPES_NO_STOP (Enum)\nSMC_ADDAXIS (Enum)\nSMC_AL_STATUS (Enum)\nSMC_CNC_REF (FunctionBlock)\nSMC_DEC_STATUS (Enum)\nSMC_DIRECTION (Enum)\nSMC_GAddress (Alias)\nSMC_GCODEVIEWER_DATA (Struct)\nSMC_GCODE_TEXT (Struct)\nSMC_GCODE_WORD (Struct)\nSMC_GCodeObjectId (Struct)\nSMC_GEOINFO (Struct)\nSMC_GWord (Struct)\nSMC_INT_STATUS (Enum)\nSMC_INT_VELMODE (Enum)\nSMC_LINE_3D (Struct)\nSMC_MOVTYP (Enum)\nSMC_M_PARAMETERS (Struct)\nSMC_OBJECTSPLITTERMODE (Enum)\nSMC_ORI_CONVENTION (Enum)\nSMC_OUTQUEUE (FunctionBlock)\nbFull (Property)\nSMC_PLANE_H (Struct)\nSMC_POSINFO (Struct)\nSMC_SEGMENT (Struct)\nSMC_SEGMENTTYPE (Enum)\nSMC_SMOOTHBSPLINE_MODE (Enum)\nSMC_SMOOTHPATHADDAXMODE (Enum)\nSMC_SMOOTHPATHMODE (Enum)\nSMC_Seg (Struct)\nSMC_TC_STATUS (Enum)\nSMC_TOOLCORRMODE (Enum)\nSMC_VECTOR6D (Struct)\nSM_CNC_POUs\nFile\nReadNCFile\nSMC_ReadNCFile (FunctionBlock)\nStream\nToken\nSMC_ReadNCQueue (FunctionBlock)\nCloseFile (Action)\nhelp functions\nSMC_StringBuffer (FunctionBlock)\nNC2\nGSentence\nSMC_GExpToken_Iterator (FunctionBlock)\nSMC_GJUMP_COMMAND (Enum)\nSMC_GJUMP_TARGET (Union)\nSMC_GSentence (Struct)\nSMC_GSentenceQueue (FunctionBlock)\nSMC_GSentence_DynCall (Struct)\nSMC_GSentence_GWords (Struct)\nSMC_GSentence_GWords_Create (Function)\nSMC_GSentence_Iterator (FunctionBlock)\nSMC_GSentence_Let (Struct)\nSMC_GSentence_SubCall (Struct)\nSMC_GSentence_SubRet (Struct)\nSMC_GSentence_Type (Enum)\nSMC_GSentence_Union (Union)\nSMC_GVarDecl (Struct)\nSMC_GVar_Type (Enum)\nSMC_GWord_Iterator (FunctionBlock)\nSMC_NC_CopySentence (Function)\nSMC_NC_CopySentenceChecked (Function)\nGSentenceJumpBuffer\nSMC_GSentenceJumpBuffer (FunctionBlock)\nInterpreter\nCallstack\nSMC_NCInterpreter (FunctionBlock)\nParser\nExpressions\nSMC_NCTokenParser (FunctionBlock)\nSMC_NC_SourcePosition (Struct)\nSymbolTable\nReadNCFile2\nSMC_IGSentenceModifier (Interface)\nSMC_INCLookup (Interface)\nSMC_ITokenModifier (Interface)\nSMC_NCLookupFile (FunctionBlock)\nSMC_NCNavigator (FunctionBlock)\nSMC_NC_CanProcessTokens (Function)\nSMC_NC_FindProgramFile (Function)\nSMC_NC_PrependDefaults (FunctionBlock)\nSMC_NC_TokenQueue_Completed (Function)\nSMC_ReadNCFile2 (FunctionBlock)\nSMC_ReadNCFromStream (FunctionBlock)\nSoftMotion CNC\nCoordinate Transformations\nSMC_CoordinateTransformation3D (FunctionBlock)\nSMC_DetermineCuboidBearing (FunctionBlock)\nSMC_InvCoordinateTransformation3D (FunctionBlock)\nSMC_TeachCoordinateSystem (FunctionBlock)\nSMC_UnitVectorToRPY (FunctionBlock)\nDirect Axis Control\nSMC_ControlAxisByPos (FunctionBlock)\nSMC_ControlAxisByPosVel (FunctionBlock)\nSMC_ControlAxisByVel (FunctionBlock)\nGCode Viewer\nSMC_GCodeViewer (FunctionBlock)\nGeoInfo Help Functions\nSMC_AdaptHelpMarks (Function)\nSMC_CalcEndPnt (Function)\nSMC_CalcLengthGeo (Function)\nSMC_CalcStartPnt (Function)\nSMC_CutEnd (Function)\nSMC_CutStart (Function)\nSMC_GeoinfoInit (Function)\nSMC_GetAccVec (Function)\nSMC_GetAddAxValue (Function)\nSMC_GetClosestPnt (Function)\nSMC_GetLengthOfPrefix (Function)\nSMC_GetPnt (Function)\nSMC_GetPntPI (Function)\nSMC_GetTanVec (Function)\nSMC_GetTanVec3D (Function)\nSMC_InvertDirection (Function)\nSMC_RampInCorr (Function)\nSMC_RampOutCorr (Function)\nSMC_RecalculateHelpMarks (Function)\nSMC_SingleCorr (Function)\nOutQueue Functions\nSMC_AppendObj (Function)\nSMC_DeleteObj (Function)\nSMC_GetCount (Function)\nSMC_GetHistoryCount (Function)\nSMC_GetLastObj (Function)\nSMC_GetObj (Function)\nSMC_GetObjFromEnd (Function)\nSMC_GetObjFromHistory (Function)\nSMC_OutQueueInit (Function)\nSMC_OutQueueIsSyncing (Function)\nSMC_OutQueue_IsFull (Function)\nSMC_RestoreQueue (Function)\nSMC_SetObj (Function)\nSMC_SetQueueCapacity (Function)\nPosinfo Functions\nSMC_PosInfo_Trf_Inverse (Function)\nSMC_PosInfo_Trf_Mult (Function)\nQueue manipulation\nSMC_QueueSetReservedEntries (FunctionBlock)\nSMC_RotateQueue2D (FunctionBlock)\nSMC_ScaleQueue3D (FunctionBlock)\nSMC_TranslateQueue3D (FunctionBlock)\nSoftMotion Function Blocks\nBlockSearch\nDecoderBuffer\nInterpolator_Help_Functions\nM_Functions\nNCDecoder_Help_Functions\nSMC_AddGCodeState (Struct)\nSMC_AvoidLoop (FunctionBlock)\nSMC_CheckForLimits (FunctionBlock)\nSMC_CheckVelocities (FunctionBlock)\nSMC_ExtendedVelocityChecks (FunctionBlock)\nSMC_Interpolator (FunctionBlock)\nSMC_Interpolator2Dir (FunctionBlock)\nSMC_Interpolator2Dir_SlowTask (FunctionBlock)\nSMC_LimitCircularVelocity (FunctionBlock)\nSMC_LimitDynamics (FunctionBlock)\nSMC_NCDecoder (FunctionBlock)\nSMC_ObjectSplitter (FunctionBlock)\nSMC_ReadAdditionalIpoState (FunctionBlock)\nSMC_RecomputeABCSlopes (FunctionBlock)\nSMC_ReduceVelEndAtCorner (FunctionBlock)\nSMC_RoundPath (FunctionBlock)\nSMC_SegmentAnalyzer (FunctionBlock)\nSMC_SetInterpreterStartPosition (FunctionBlock)\nSMC_SmoothAddAxes (FunctionBlock)\nSMC_SmoothBSpline (FunctionBlock)\nSMC_SmoothMerge (FunctionBlock)\nSMC_SmoothPath (FunctionBlock)\nSMC_ToolCorr (FunctionBlock)\nSMC_ToolLengthCorr (FunctionBlock)\nSMC_ToolRadiusCorr (FunctionBlock)\nSMC_XInterpolator (FunctionBlock)\nSM_Trafo_Data types\nSMC_ArticulatedRobot_6DOF_J0_State (Enum)\nSMC_ArticulatedRobot_6DOF_J1_State (Enum)\nSMC_ArticulatedRobot_6DOF_J4_State (Enum)\nSMC_TrafoConfig_4AxisPalletizer (Struct)\nSMC_TrafoConfig_ArticulatedRobot_6DOF (Struct)\nSMC_TrafoResult_4AxisPalletizer (Enum)\nSMC_TrafoResult_ArticulatedRobot_6DOF (Enum)\nSMC_VECTORDIR (Enum)\nSM_Trafo_POUs\nForward and inverse transformation\nSMC_TRAFOV_\nSoftMotion Transformations\nGantry systems\nParallel Systems\nRobot Kinematiks\nScara System\nWrapper\nadditional FBs\nVisu_Templates\nFile\nCNC\nSM_CNC_Visualizations\nFBs\nCNC\nDirect Axis Control\nTranslation & Rotation & Scaling\nhelp visu\nSM_Trafo_Visualizations\nTrafo templates\nGantry\nParallel\nRobot\nScara\nVisu_Templates_New\nFramed Visu Helpers\nTextListForCombobox_MC_DIRECTION (TextList)\nTextListForCombobox_SMC_ABC_SLOPES_AT_STOP (TextList)\nTextListForCombobox_SMC_ABC_SLOPES_NO_STOP (TextList)\nTextListForCombobox_SMC_AL_STATUS (TextList)\nTextListForCombobox_SMC_DEC_STATUS (TextList)\nTextListForCombobox_SMC_DIRECTION (TextList)\nTextListForCombobox_SMC_ERROR (TextList)\nTextListForCombobox_SMC_INT_STATUS (TextList)\nTextListForCombobox_SMC_INT_VELMODE (TextList)\nTextListForCombobox_SMC_ORI_CONVENTION (TextList)\nTextListForCombobox_SMC_SMOOTHBSPLINE_MODE (TextList)\nTextListForCombobox_SMC_SMOOTHPATHADDAXMODE (TextList)\nTextListForCombobox_SMC_SMOOTHPATHMODE (TextList)\nTextListForCombobox_SMC_TC_STATUS (TextList)\nTextListForCombobox_SMC_TOOLCORRMODE (TextList)\nFile and Project Information\nLibrary Reference\n3SLicense\nLibrary Identification\nLibrary Properties\nBase Interfaces\nLibrary Identification\nLibrary Properties\nCmpLog\nLibrary Identification\nLibrary Properties\nFloatingPointUtils\nLibrary Identification\nLibrary Properties\nMatrix\nLibrary Identification\nLibrary Properties\nSM3_Basic\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nSM3_RBase\nLibrary Identification\nLibrary Properties\nSM3_Shared\nLibrary Identification\nLibrary Properties\nSM3_Transformation\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nSysFile\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysTarget\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nVisuElem3DPath\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElemCamDisplayer\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElemMeter\nLibrary Identification\nLibrary Properties\nVisuElemTextEditor\nLibrary Identification\nLibrary Properties\nVisuElemTrace\nLibrary Identification\nLibrary Properties\nVisuElems\nLibrary Identification\nLibrary Properties\nVisuElemsAlarm\nLibrary Identification\nLibrary Properties\nVisuElemsDateTime\nLibrary Identification\nLibrary Properties\nVisuElemsSpecialControls\nLibrary Identification\nLibrary Properties\nVisuElemsWinControls\nLibrary Identification\nLibrary Properties\nVisuInputs\nLibrary Identification\nLibrary Properties\nVisuNativeControl\nLibrary Identification\nLibrary Properties\nSM3_CNC\nDocs\n»\nSM_CNC_Data\ntypes\n»\nSoftMotion\nCNC\n»\nSMC_GEOINFO (STRUCT)\nSMC_GEOINFO (STRUCT)\nÂ¶\nTYPE SMC_GEOINFO : STRUCT\nThis data type is designed to store a path object, i.e. a segment of the programmed path, for example a line, arc or spline segment.\nIn addition to the geometry of these objects, further information can be stored as for example the velocity at the beginning/end of the path or as labels.\nNote\nAs from V3.5 SP2 of the programming system,\niSourceLine_No\nstores the line number of the CNC word and the sentence number is stored in\ndiSentenceNo\n.\nIn former versions, in particular CODESYS V2.3, the sentence number has been stored in\niSourceLine_No\n.\nThe parameters\ndP1\n--\ndP18\nare used for specific use cases.\nDepending on\niMoveType\n, these parameters contain different information:\nLIN, LINPOS\n:\nComplete information stored in\npiStartPos\nand\npiDestPos\nCLW, CCLW\n:\nThe coordinates are stored in the coordinate system\n(vX,\nvY,\nvN)\n.\ndP1\n: X-coordinate of circle center\ndP2\n: Y-coordinate of circle center\ndP3\n: Circle radius\ndP4\n: Z-coordinate of circle\nSPLINE\n:\ndP1-dP8\n: Spline parameter\ndP9-dP18\n: Additional spline parameter\nELLCLW, ELLCCLW\n:\ndP1\n: X-coordinate of circle center\ndP2\n: Y-coordinate of circle center\ndP3\n: X-component of the main axis unit vector\ndP4\n: Y-component of the main axis unit vector\ndP5\n: Length of the main axis\ndP6\n: Length of the subaxis\ndP7\n: Angle between main axis and X axis (in rad)\ndP8\n: Ratio P6/P5\nMCOMMAND\n:\nfor M-commands (\niMoveType\n=\n120\n) the values of\ndP1\n, â¦\ndP8\nare returned  by\nSMC_GetMParameters\n.\ndT1\nand\ndT2\nare the start and end parameters for circle/spline.\nLIN, LINPOS\n:\nComplete information stored in\npiStartPos\nand\npiDestPos\nCLW, ELLCLW\n:\ndT1\n: Start angle in degree, oriented mathematically (0=east, 90=north, 180=west, 270=south)\ndT2\n: Apex angle of circle in degree (e.g. 90=quarter of circle, 180 = semicircle)\nCCLW, ELLCCLW\n:\ndT1\n: Start angle in degree oriented mathematically (0=east, 90=north, 180=west, 270=south)\ndT2\n: Negative apex angle of circle in degree (e.g. -90=quarter of circle, -180 = semicircle)\nSPLINE\n:\nStart and end value of parameter t, Spline, 0 and 1 by default.\nInOut:\nName\nType\nInitial\nComment\niObjNo\nDINT\nArbitrary object number (irrelevant for current path\ndescription). Itâs a 1-based, consecutive ID.\niSourceLine_No\nDINT\nStores the 0-based line number inside the CNC source file\ndiSentenceNo\nDINT\nStores the G-code sentence number (value of the N-word)\niMoveType\nSMC_MOVTYP\nValue defining the geometrical type of the object.\nSMC_MOVTYP\n(ENUM)\npiStartPos\nSMC_POSINFO\nThe start position of the object.\npiDestPos\nSMC_POSINFO\nThe end position of the object\ndP1\nLREAL\n0\ndP2\nLREAL\n0\ndP3\nLREAL\n0\ndP4\nLREAL\n0\ndP5\nLREAL\n0\ndP6\nLREAL\n0\ndP7\nLREAL\n0\ndP8\nLREAL\n0\ndP9\nLREAL\n0\ndP10\nLREAL\n0\ndP11\nLREAL\n0\ndP12\nLREAL\n0\ndP13\nLREAL\n0\ndP14\nLREAL\n0\ndP15\nLREAL\n0\ndP16\nLREAL\n0\ndP17\nLREAL\n0\ndP18\nLREAL\n0\nvX\nSMC_Vector3D\nSTRUCT(dX := 1, dY := 0, dZ := 0)\nX-axis of the local coordinate system, expressed in world\ncoordinates.\nvY\nSMC_Vector3D\nSTRUCT(dX := 0, dY := 1, dZ := 0)\nY-axis of the local coordinate system, expressed in world\ncoordinates.\nvN\nSMC_Vector3D\nSTRUCT(dX := 0, dY := 0, dZ := 1)\nZ-axis of the local coordinate system, expressed in world\ncoordinates.\ndT1\nLREAL\n0\nStart parameter for circle/spline\ndT2\nLREAL\n1\nApex angle/end parameter for circle/spline\ndToolRadius\nLREAL\n0\nThe tool radius. Necessary for path processing with\nSMC_ToolRadiusCorr\n.\ndSmoothRadius\nLREAL\n0\nThe smooth radius. Necessary for path processing with\nSMC_RoundPath\nand\nSMC_SmoothPath\n.\ndVel\nLREAL\n0\nTarget velocity to be reached (in path units/sec)\ndVelEnd\nLREAL\n0\nPrescribed velocity at end of object (path units/sec)\ndVelEndStored\nLREAL\nNo longer used, kept for compatibility.\ndVelEndSafe\nLREAL\n0\nComputed for the quadratic velocity profile: maximum <=\ndVelEnd\nthat allows to reach\ndVelEndSafe\nof the next element.\nMay be -1 if the next element has identical values for acceleration, deceleration, and velocity.\ndAccel\nLREAL\n100\nMaximum allowable acceleration (in path units/secÂ²)\ndDecel\nLREAL\n100\nMaximum allowable deceleration (in path units/secÂ²)\ndLength\nLREAL\n0\nLength of object in path units\nwInternMark2\nWORD\n0\nIntern marks for tool correction, rounding, etc.\nbyInternMark\nBYTE\n0\nStart and end of path preprocessing actions:\nBit 0 set: Stop tool radius correction after this object\nBit 1 set: Start tool radius correction to the left of this object\nBit 2 set: Start tool radius correction to the right of this object\nBit 3 set: Stop path rounding/smoothing after this object\nBit 4 set: Start path smoothing at this object\nBit 5 set: Start path rounding at this object\nBit 6 set: Stop avoiding loops after this object\nBit 7 set: Start avoiding loops at this object\ndwFeatureFlags\nDWORD\nIf\nTRUE\n, the object is a 3D-object\nb3DMode\nBOOL\nFALSE\nStores feature bits set by G38/G39\ndHelpPos\nARRAY\n[0..MAX_IPOSWITCHES] OF\nLREAL\nRelative position of auxiliary switches (0: object start, 1:\nobject end, similar to G-code: O)\niHelpID\nARRAY\n[0..MAX_IPOSWITCHES] OF\nINT\nID (G-code: H) of auxiliary switches.\nIf the current object is of type\nMCOMMAND\n,\niHelpID[0]\nwill contain the number of the M-option.\nadVelAddAx\nARRAY [0..7] OF LREAL\nIf value\n<>\n0\n, then it specifies the velocity values for following use:\n[0]\n: all G0 commands\n[1]\n: Z-axis\n[2]\n: P-axis\n[3]\n: Q-axis\n[4]\n: U-axis/A-axis\n[5]\n: V-axis/B-axis\n[6]\n: W-axis/C-axis\n[1]\n-\n[6]\n: These are maximum values used of\nSMC_ExtendedVelocityChecks\n.\nadAccAddAx\nARRAY [0..7] OF LREAL\nadDecAddAx\nARRAY [0..7] OF LREAL\naAdditionalParams\nARRAY\n[0..(SMC_MAX_ADDITIONAL_PARAMS\n- 1)] OF LREAL\nAdditional parameters set by G38 I/J/K\nadToolLength\nARRAY [0..2] OF LREAL\nParameters for tool length compensation (set by G43 I/J/K)\ndPrecision\nLREAL\nThe precision of the G-Code, see input dPrecision of\nSMC_NCInterpreter.\nOriConv\nSMC_ORI_CONVENTION\nThe orientation convention in use for this object.\nDCS\nSMC_PosInfo\nThe decoder coordinate system, expressed in MCS.\nMeaning of dA/dB/dC depends on OriConv\nsmoothPathActive\nBOOL\nSet by\nSMC_SmoothPath\nbased on byInternMark\nroundPathActive\nBOOL\nSet by\nSMC_RoundPath\nbased on byInternMark\ntoolRadiusCorrLeftActive\nBOOL\nSet by\nSMC_ToolRadiusCorr\nbased on byInternMark\ntoolRadiusCorrRightActive\nBOOL\nSet by\nSMC_ToolRadiusCorr\nbased on byInternMark\navoidLoopActive\nBOOL\nSet by\nSMC_AvoidLoop\nbased on byInternMark\nsmoothAddAxesActive\nBOOL\nSet by\nSMC_SmoothAddAxes\nbased on wInternMark2\ncvParams\nSMC_CheckVelParams\nThe parameters of\nSMC_CheckVelocities\n.\nprobeNumber\nUDINT\nThe probe number (G31, PROBE word in G-Code), 0 if not a probe\nmovement.",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "iObjNo",
+          "Type": "DINT",
+          "Initial": "",
+          "Comment": "Arbitrary object number (irrelevant for current path\ndescription). Itâs a 1-based, consecutive ID."
+        },
+        {
+          "Name": "iSourceLine_No",
+          "Type": "DINT",
+          "Initial": "",
+          "Comment": "Stores the 0-based line number inside the CNC source file"
+        },
+        {
+          "Name": "diSentenceNo",
+          "Type": "DINT",
+          "Initial": "",
+          "Comment": "Stores the G-code sentence number (value of the N-word)"
+        },
+        {
+          "Name": "iMoveType",
+          "Type": "SMC_MOVTYP",
+          "Initial": "",
+          "Comment": "Value defining the geometrical type of the object.SMC_MOVTYP(ENUM)"
+        },
+        {
+          "Name": "piStartPos",
+          "Type": "SMC_POSINFO",
+          "Initial": "",
+          "Comment": "The start position of the object."
+        },
+        {
+          "Name": "piDestPos",
+          "Type": "SMC_POSINFO",
+          "Initial": "",
+          "Comment": "The end position of the object"
+        },
+        {
+          "Name": "dP1",
+          "Type": "LREAL",
+          "Initial": "0",
+          "Comment": ""
+        },
+        {
+          "Name": "dP2",
+          "Type": "LREAL",
+          "Initial": "0",
+          "Comment": ""
+        },
+        {
+          "Name": "dP3",
+          "Type": "LREAL",
+          "Initial": "0",
+          "Comment": ""
+        },
+        {
+          "Name": "dP4",
+          "Type": "LREAL",
+          "Initial": "0",
+          "Comment": ""
+        },
+        {
+          "Name": "dP5",
+          "Type": "LREAL",
+          "Initial": "0",
+          "Comment": ""
+        },
+        {
+          "Name": "dP6",
+          "Type": "LREAL",
+          "Initial": "0",
+          "Comment": ""
+        },
+        {
+          "Name": "dP7",
+          "Type": "LREAL",
+          "Initial": "0",
+          "Comment": ""
+        },
+        {
+          "Name": "dP8",
+          "Type": "LREAL",
+          "Initial": "0",
+          "Comment": ""
+        },
+        {
+          "Name": "dP9",
+          "Type": "LREAL",
+          "Initial": "0",
+          "Comment": ""
+        },
+        {
+          "Name": "dP10",
+          "Type": "LREAL",
+          "Initial": "0",
+          "Comment": ""
+        },
+        {
+          "Name": "dP11",
+          "Type": "LREAL",
+          "Initial": "0",
+          "Comment": ""
+        },
+        {
+          "Name": "dP12",
+          "Type": "LREAL",
+          "Initial": "0",
+          "Comment": ""
+        },
+        {
+          "Name": "dP13",
+          "Type": "LREAL",
+          "Initial": "0",
+          "Comment": ""
+        },
+        {
+          "Name": "dP14",
+          "Type": "LREAL",
+          "Initial": "0",
+          "Comment": ""
+        },
+        {
+          "Name": "dP15",
+          "Type": "LREAL",
+          "Initial": "0",
+          "Comment": ""
+        },
+        {
+          "Name": "dP16",
+          "Type": "LREAL",
+          "Initial": "0",
+          "Comment": ""
+        },
+        {
+          "Name": "dP17",
+          "Type": "LREAL",
+          "Initial": "0",
+          "Comment": ""
+        },
+        {
+          "Name": "dP18",
+          "Type": "LREAL",
+          "Initial": "0",
+          "Comment": ""
+        },
+        {
+          "Name": "vX",
+          "Type": "SMC_Vector3D",
+          "Initial": "STRUCT(dX := 1, dY := 0, dZ := 0)",
+          "Comment": "X-axis of the local coordinate system, expressed in world\ncoordinates."
+        },
+        {
+          "Name": "vY",
+          "Type": "SMC_Vector3D",
+          "Initial": "STRUCT(dX := 0, dY := 1, dZ := 0)",
+          "Comment": "Y-axis of the local coordinate system, expressed in world\ncoordinates."
+        },
+        {
+          "Name": "vN",
+          "Type": "SMC_Vector3D",
+          "Initial": "STRUCT(dX := 0, dY := 0, dZ := 1)",
+          "Comment": "Z-axis of the local coordinate system, expressed in world\ncoordinates."
+        },
+        {
+          "Name": "dT1",
+          "Type": "LREAL",
+          "Initial": "0",
+          "Comment": "Start parameter for circle/spline"
+        },
+        {
+          "Name": "dT2",
+          "Type": "LREAL",
+          "Initial": "1",
+          "Comment": "Apex angle/end parameter for circle/spline"
+        },
+        {
+          "Name": "dToolRadius",
+          "Type": "LREAL",
+          "Initial": "0",
+          "Comment": "The tool radius. Necessary for path processing withSMC_ToolRadiusCorr."
+        },
+        {
+          "Name": "dSmoothRadius",
+          "Type": "LREAL",
+          "Initial": "0",
+          "Comment": "The smooth radius. Necessary for path processing withSMC_RoundPathandSMC_SmoothPath."
+        },
+        {
+          "Name": "dVel",
+          "Type": "LREAL",
+          "Initial": "0",
+          "Comment": "Target velocity to be reached (in path units/sec)"
+        },
+        {
+          "Name": "dVelEnd",
+          "Type": "LREAL",
+          "Initial": "0",
+          "Comment": "Prescribed velocity at end of object (path units/sec)"
+        },
+        {
+          "Name": "dVelEndStored",
+          "Type": "LREAL",
+          "Initial": "",
+          "Comment": "No longer used, kept for compatibility."
+        },
+        {
+          "Name": "dVelEndSafe",
+          "Type": "LREAL",
+          "Initial": "0",
+          "Comment": "Computed for the quadratic velocity profile: maximum <=dVelEndthat allows to reachdVelEndSafeof the next element.\nMay be -1 if the next element has identical values for acceleration, deceleration, and velocity."
+        },
+        {
+          "Name": "dAccel",
+          "Type": "LREAL",
+          "Initial": "100",
+          "Comment": "Maximum allowable acceleration (in path units/secÂ²)"
+        },
+        {
+          "Name": "dDecel",
+          "Type": "LREAL",
+          "Initial": "100",
+          "Comment": "Maximum allowable deceleration (in path units/secÂ²)"
+        },
+        {
+          "Name": "dLength",
+          "Type": "LREAL",
+          "Initial": "0",
+          "Comment": "Length of object in path units"
+        },
+        {
+          "Name": "wInternMark2",
+          "Type": "WORD",
+          "Initial": "0",
+          "Comment": "Intern marks for tool correction, rounding, etc."
+        },
+        {
+          "Name": "byInternMark",
+          "Type": "BYTE",
+          "Initial": "0",
+          "Comment": "Start and end of path preprocessing actions:Bit 0 set: Stop tool radius correction after this objectBit 1 set: Start tool radius correction to the left of this objectBit 2 set: Start tool radius correction to the right of this objectBit 3 set: Stop path rounding/smoothing after this objectBit 4 set: Start path smoothing at this objectBit 5 set: Start path rounding at this objectBit 6 set: Stop avoiding loops after this objectBit 7 set: Start avoiding loops at this object"
+        },
+        {
+          "Name": "dwFeatureFlags",
+          "Type": "DWORD",
+          "Initial": "",
+          "Comment": "IfTRUE, the object is a 3D-object"
+        },
+        {
+          "Name": "b3DMode",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "Stores feature bits set by G38/G39"
+        },
+        {
+          "Name": "dHelpPos",
+          "Type": "ARRAY\n[0..MAX_IPOSWITCHES] OF\nLREAL",
+          "Initial": "",
+          "Comment": "Relative position of auxiliary switches (0: object start, 1:\nobject end, similar to G-code: O)"
+        },
+        {
+          "Name": "iHelpID",
+          "Type": "ARRAY\n[0..MAX_IPOSWITCHES] OF\nINT",
+          "Initial": "",
+          "Comment": "ID (G-code: H) of auxiliary switches.\nIf the current object is of typeMCOMMAND,iHelpID[0]will contain the number of the M-option."
+        },
+        {
+          "Name": "adVelAddAx",
+          "Type": "ARRAY [0..7] OF LREAL",
+          "Initial": "",
+          "Comment": "If value<>0, then it specifies the velocity values for following use:[0]: all G0 commands[1]: Z-axis[2]: P-axis[3]: Q-axis[4]: U-axis/A-axis[5]: V-axis/B-axis[6]: W-axis/C-axis[1]-[6]: These are maximum values used ofSMC_ExtendedVelocityChecks."
+        },
+        {
+          "Name": "adAccAddAx",
+          "Type": "ARRAY [0..7] OF LREAL",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Name": "adDecAddAx",
+          "Type": "ARRAY [0..7] OF LREAL",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Name": "aAdditionalParams",
+          "Type": "ARRAY\n[0..(SMC_MAX_ADDITIONAL_PARAMS\n- 1)] OF LREAL",
+          "Initial": "",
+          "Comment": "Additional parameters set by G38 I/J/K"
+        },
+        {
+          "Name": "adToolLength",
+          "Type": "ARRAY [0..2] OF LREAL",
+          "Initial": "",
+          "Comment": "Parameters for tool length compensation (set by G43 I/J/K)"
+        },
+        {
+          "Name": "dPrecision",
+          "Type": "LREAL",
+          "Initial": "",
+          "Comment": "The precision of the G-Code, see input dPrecision of\nSMC_NCInterpreter."
+        },
+        {
+          "Name": "OriConv",
+          "Type": "SMC_ORI_CONVENTION",
+          "Initial": "",
+          "Comment": "The orientation convention in use for this object."
+        },
+        {
+          "Name": "DCS",
+          "Type": "SMC_PosInfo",
+          "Initial": "",
+          "Comment": "The decoder coordinate system, expressed in MCS.\nMeaning of dA/dB/dC depends on OriConv"
+        },
+        {
+          "Name": "smoothPathActive",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Set bySMC_SmoothPathbased on byInternMark"
+        },
+        {
+          "Name": "roundPathActive",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Set bySMC_RoundPathbased on byInternMark"
+        },
+        {
+          "Name": "toolRadiusCorrLeftActive",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Set bySMC_ToolRadiusCorrbased on byInternMark"
+        },
+        {
+          "Name": "toolRadiusCorrRightActive",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Set bySMC_ToolRadiusCorrbased on byInternMark"
+        },
+        {
+          "Name": "avoidLoopActive",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Set bySMC_AvoidLoopbased on byInternMark"
+        },
+        {
+          "Name": "smoothAddAxesActive",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Set bySMC_SmoothAddAxesbased on wInternMark2"
+        },
+        {
+          "Name": "cvParams",
+          "Type": "SMC_CheckVelParams",
+          "Initial": "",
+          "Comment": "The parameters ofSMC_CheckVelocities."
+        },
+        {
+          "Name": "probeNumber",
+          "Type": "UDINT",
+          "Initial": "",
+          "Comment": "The probe number (G31, PROBE word in G-Code), 0 if not a probe\nmovement."
+        }
+      ]
+    }
+  ]
+}

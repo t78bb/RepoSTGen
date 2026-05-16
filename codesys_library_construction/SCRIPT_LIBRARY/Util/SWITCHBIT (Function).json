@@ -1,0 +1,36 @@
+{
+  "library": "Util",
+  "title": "SWITCHBIT (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/BitByte-Functions/SWITCHBIT.html",
+  "page_title": "SWITCHBIT (FUN)",
+  "text": "\nFUNCTION SWITCHBIT : DWORD\nSwitches a bit of a DWORD value\nSee also:\nPUTBIT\nand\nEXTRACT\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SWITCHBIT",
+          "Type": "DWORD",
+          "Comment": "Value with the switched bit"
+        },
+        {
+          "Scope": "Input",
+          "Name": "X",
+          "Type": "DWORD",
+          "Comment": "Value to be manipulated"
+        },
+        [
+          "N",
+          "BYTE",
+          "Position of the bit to switch, starting with 0"
+        ]
+      ]
+    }
+  ]
+}

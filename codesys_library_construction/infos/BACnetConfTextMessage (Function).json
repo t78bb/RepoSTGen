@@ -1,0 +1,56 @@
+{
+  "library": "CmpBACnet",
+  "title": "BACnetConfTextMessage (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/CmpBACnet/Current/BACnetClientAPI/BACnetConfTextMessage.html",
+  "page_title": "BACnetConfTextMessage (FUN)",
+  "text": "\nFUNCTION BACnetConfTextMessage :\nIEC_BACNET_STATUS\nSends an confirmed TextMessage.\nSends a request to transmit a text to the remote device. Message may be prioritized\ninto Normal or Urgent categories. In addition, a text message may be optionally\nclassified by a numeric class code or class identification string. The interpretation\nof the class is a local matter. This routine may control APDU properties like APDU\nlength, segmentation, and timeout, for both request and response. This routine can\nexecute asynchronously, so this routine will return to the caller before the BACnet\nreply is received so that the applications keeps running. In this case the response\ninformation will be received by the thread which is responsible for receiving\nasynchronous responses. An optional BACNET_SIMPLE_ACK_COMPLETE_CB routine,\nwhich has to be provided by the BACnet application, will be used to process this information.\nIf a number of asynchronous requests are sent, the responses will be queued and\nidentified by the transaction handles. If application does not supply the\nBACNET_SIMPLE_ACK_COMPLETE_CB routine, then this routine sends a request and waits\nfor reply.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "BACnetConfTextMessage",
+          "Type": "IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "pSourceAddress",
+          "Type": "POINTER TOIEC_BACNET_ADDRESS",
+          "Comment": "If the BACnet application has only one device constructed and installed, this can\nbe NULL. In this case the MAC address of this device will be used. Otherwise this\nshall be the MAC address returned on device object construction."
+        },
+        [
+          "pDestinationAddress",
+          "POINTER TOIEC_BACNET_ADDRESS",
+          "This is the MAC address of the device to which the request\nshould be sent."
+        ],
+        [
+          "pServiceInfo",
+          "POINTER TOIEC_BACNET_TEXT_MESSAGE_INFO",
+          "A pointer to the service information data structure. This data structure of datatype\nBACNET_TEXT_MESSAGE_INFO contains an object Identifier of device object of the request\ninitiator, a boolean if Message Class Present attribute, a message class, a\nmessage priority, a message string type and a message string."
+        ],
+        [
+          "pAPDUParams",
+          "POINTER TOIEC_BACNET_APDU_PROPERTIES",
+          "A pointer to the APDU-Properties structure which sets APDU properties for this\ntransaction only. This does not change global defaults or settings for the application\nAPDU Properties. This argument may be NULL. In this case APDU properties  are used\nwhich were specified in the device object properties of the applications device which\nsends the request."
+        ],
+        [
+          "pTransactionToken",
+          "POINTER TOBACnetAsyncTransactionToken",
+          "Transaction token of the asynchronous call - seeBACnetAsyncTransactionToken."
+        ],
+        [
+          "pError",
+          "POINTER TOIEC_BACNET_ERROR",
+          "A pointer to a structure to hold BACnet Error information. pError may be NULL if the\napplication isnât interested in detailed error information."
+        ]
+      ]
+    }
+  ]
+}

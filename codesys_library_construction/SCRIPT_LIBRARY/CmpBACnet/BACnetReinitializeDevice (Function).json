@@ -1,0 +1,56 @@
+{
+  "library": "CmpBACnet",
+  "title": "BACnetReinitializeDevice (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/CmpBACnet/Current/BACnetClientAPI/BACnetReinitializeDevice.html",
+  "page_title": "BACnetReinitializeDevice (FUN)",
+  "text": "\nFUNCTION BACnetReinitializeDevice :\nIEC_BACNET_STATUS\nSends a reinitializeDevice request.\nSends a message to instruct a remote Device to reboot itself (cold start) or reset\nitself (warm start). This routine may be used to execute setup/restore procedures.\nThis routine may control APDU properties like APDU length, segmentation, and\ntimeout for both request and in response. This routine can execute asynchronously,\ni.e. this routine will return to the caller before the BACnet reply comes so\nthat the applications can keep running. In this case the response information will\nbe received by the thread which is responsible for receiving asynchronous responses.\nAn optional BACNET_SIMPLE_ACK_COMPLETE_CB routine, which is provided by the BACnet\napplication, shall be used to process this information. If a number of asynchronous\nrequests are sent, the responses shall be queued and identified by the transaction\nhandles. If the application does not supply the BACNET_SIMPLE_ACK_COMPLETE_CB routine;\nthen the BACnetReinitializeDevice routine sends a request and waits for reply.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "BACnetReinitializeDevice",
+          "Type": "IEC_BACNET_STATUS",
+          "Comment": "A status indicating whether the operation worked."
+        },
+        {
+          "Scope": "Input",
+          "Name": "pSourceAddress",
+          "Type": "POINTER TOIEC_BACNET_ADDRESS",
+          "Comment": "If the BACnet application has only one device constructed and installed, this can\nbe 0. In this case the MAC address of this device will be used. Otherwise this\nshall be the MAC address returned on device object construction."
+        },
+        [
+          "pDestinationAddress",
+          "POINTER TOIEC_BACNET_ADDRESS",
+          "This is the MAC address of the device to which the request\nshould be sent."
+        ],
+        [
+          "pServiceInfo",
+          "POINTER TOIEC_BACNET_REINIT_DEV_INFO",
+          "A pointer to the service information data structure. The fields of this data\nstructure include the Reinit Type (IEC_BACNET_REINIT_TYPE.REINIT_COLDSTARTorIEC_BACNET_REINIT_TYPE.REINIT_WARMSTART), and a password."
+        ],
+        [
+          "pAPDUParams",
+          "POINTER TOIEC_BACNET_APDU_PROPERTIES",
+          "A pointer to the APDU-Properties structure which sets APDU properties for this\ntransaction only. This does not change global defaults or settings for the application\nAPDU Properties. This argument may be 0. In this case APDU properties  are used\nwhich were specified in the device object properties of the applications device which\nsends the request."
+        ],
+        [
+          "pTransactionToken",
+          "POINTER TOBACnetAsyncTransactionToken",
+          "Transaction token of the asynchronous call - seeBACnetAsyncTransactionToken."
+        ],
+        [
+          "pError",
+          "POINTER TOIEC_BACNET_ERROR",
+          "A pointer to a structure to hold BACnet Error information. pError may be 0 if the\napplication isnât interested in detailed error information."
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "library": "MQTT Client SL",
+  "title": "FilterMode (Property)",
+  "url": "https://content.helpme-codesys.com/en/libs/MQTT Client SL/Current/MQTT-Client/Common/Function-Blocks/pou-MQTTSubscribe/FilterMode.html",
+  "page_title": "MQTTSubscribe.FilterMode (PROP)",
+  "text": "\nPROPERTY FilterMode :\nFILTER_MODE\nReturns the FILTER_MODE",
+  "tables": []
+}

@@ -1,0 +1,25 @@
+{
+  "library": "BACnet",
+  "title": "BACnetDateTime (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/Structs/BACnetDateTime.html",
+  "page_title": "BACnetDateTime (STRUCT)",
+  "text": "\nTYPE BACnetDateTime : STRUCT\nHelper Structure for CODESYS-typed date times to work with BACnet properties of BACnet standard type âBACnetDateTimeâ represented by CmpBACnet.IEC_BACNET_DATE_TIME.\nPlease note: CmpBACnet.IEC_BACNET_DATE_TIME allows âunspecifiedâ elements, but BACnetDateTime does not for historic reason.\nCmpBACnet.IEC_BACNET_DATE_TIME allows âunspecifiedâ elements which are used for two different objectives.\n1.) eventually âfully unspecifiedâ: properties representing a time stamp or a time range start / end, for example BinaryInput.Change_Of_State_Time or TrendLog.Start_Time / .Stop_Time\n2.) eventually âpartially unspecifiedâ: Schedule.Exception_Schedule\nThe BACnet standard uses the terms âfully unspecifiedâ or âfully specifiedâ, but not the term âpartially unspecifiedâ (instead a bit more unspecific âunspecifiedâ).\nâfully unspecifiedâ:\nIn most cases a time stamp indicates the time of a change of object state.\nPrior to first change of object state the time stamp is supposed to be âunspecifiedâ.\nFor an example see File.Modification_Date or PulseConverter.Update_Time\nAnother use case of âfully unspecifiedâ is a time range - see TrendLog.Start_Time and .Stop_Time or Schedule.\nâpartially unspecifiedâ is mainly used in Schedule.Exception_Schedule\nBACnetDateTime has been used in earlier versions of CODESYS BACnet as an API type instead of CmpBACnet.IEC_BACNET_DATE_TIME for convenience.\nSo an interface breaking change would have been necessary to switch to CmpBACnet.IEC_BACNET_DATE_TIME to allow âunspecifiedâ directly.\nWe found this too hard of a measure, so we kept BACnetDateTime as an API type and added some assumptions and helper functions.\nAssumption: a BACnetDateTime dat = D#1970-1-1 AND tim = T#0S (begin of universe) or dat = D#2106-2-7 AND tim = T#23H59M59S999MS (end of universe) is assumed to be âfully unspecifiedâ.\nHelper functions:\nIsBACnetBACnetDateTimeUnspecified\nto check if a BACnetDateTime is âfully unspecifiedâ.\nIsBACnetDateTimeUnspecified\nto check if a CmpBACnet.IEC_BACNET_DATE_TIME is âfully unspecifiedâ.\nInitializeBACnetDateTimeUnspecified\nto initialize a CmpBACnet.IEC_BACNET_DATE_TIME to âfully unspecifiedâ.\nBACnetObjectBase.SetBACnetDateTimePropertyToUnspecified\nto initialize a property to âfully unspecifiedâ.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Name": "dat",
+          "Type": "DATE"
+        },
+        {
+          "Name": "tim",
+          "Type": "TIME"
+        }
+      ]
+    }
+  ]
+}

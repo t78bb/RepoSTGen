@@ -1,0 +1,31 @@
+{
+  "library": "BACnet",
+  "title": "IsBACnetObjectAMEVCreatable (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/Utilities/BACnetUtilities/BACnetProperties/IsBACnetObjectAMEVCreatable.html",
+  "page_title": "IsBACnetObjectAMEVCreatable (FUN)",
+  "text": "\nFUNCTION IsBACnetObjectAMEVCreatable : BOOL\nAccording to AMEV AS-B specifications return whether the given objer not.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "IsBACnetObjectAMEVCreatable",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "objType",
+          "Type": "CmpBACnet.IEC_BACNET_OBJECT_TYPE",
+          "Comment": "The object type to check for AMEV AS-B availability."
+        }
+      ]
+    }
+  ]
+}

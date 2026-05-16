@@ -1,0 +1,46 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_CommunicationState (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/DataTypes/Diagnostics/SMC_CommunicationState.html",
+  "page_title": "SMC_CommunicationState (ENUM)",
+  "text": "\nTYPE SMC_CommunicationState :\nThe communication state of an axis, as returned by\nSMC_CheckAxisCommunication\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name"
+      ],
+      "rows": [
+        {
+          "Name": "SMC_COMSTATE_NOT_STARTED"
+        },
+        {
+          "Name": "SMC_COMSTATE_VARIABLE_INITIALIZATION"
+        },
+        {
+          "Name": "SMC_COMSTATE_BASE_COM_INITIALIZATION"
+        },
+        {
+          "Name": "SMC_COMSTATE_DRIVE_INITIALIZATION"
+        },
+        {
+          "Name": "SMC_COMSTATE_DRIVE_WAITING_FOR_SYNC"
+        },
+        {
+          "Name": "SMC_COMSTATE_INITIALIZATION_DONE"
+        },
+        {
+          "Name": "SMC_COMSTATE_OPERATIONAL"
+        },
+        {
+          "Name": "SMC_COMSTATE_REINITIALIZATION"
+        },
+        {
+          "Name": "SMC_COMSTATE_ERROR"
+        },
+        {
+          "Name": "SMC_COMSTATE_UNKNOWN"
+        }
+      ]
+    }
+  ]
+}

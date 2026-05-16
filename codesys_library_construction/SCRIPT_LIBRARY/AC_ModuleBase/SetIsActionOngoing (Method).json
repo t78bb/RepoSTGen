@@ -1,0 +1,28 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "SetIsActionOngoing (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_RMP_ReliableMessageProtocol/pou-RMPService/SetIsActionOngoing.html",
+  "page_title": "RMPService.SetIsActionOngoing (METH)",
+  "text": "\nMETHOD SetIsActionOngoing : BOOL\nThis method tries to set that this channel is currently active writing or reading.\n..return:\nIf it was possible to set the current state of activity.\nIf this is\nFALSE\nxIsActionOngoing\nhas not been set!\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetIsActionOngoing",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Input",
+          "Name": "xIsActionOngoing",
+          "Type": "BOOL"
+        }
+      ]
+    }
+  ]
+}

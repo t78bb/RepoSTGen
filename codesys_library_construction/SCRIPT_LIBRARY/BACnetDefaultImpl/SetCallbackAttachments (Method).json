@@ -1,0 +1,28 @@
+{
+  "library": "BACnetDefaultImpl",
+  "title": "SetCallbackAttachments (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnetDefaultImpl/Current/BACnetDefaultImpl/Function-Blocks/LoggingObjects/pou-TrendLog/private/SetCallbackAttachments.html",
+  "page_title": "TrendLog.SetCallbackAttachments (METH)",
+  "text": "\nMETHOD PROTECTED SetCallbackAttachments : CmpBACnet.IEC_BACNET_STATUS\nSets the PropertyCallbackAttachments\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetCallbackAttachments",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS"
+        },
+        {
+          "Scope": "Input",
+          "Name": "bacObj",
+          "Type": "BACnet.BACnetObjectBase"
+        }
+      ]
+    }
+  ]
+}

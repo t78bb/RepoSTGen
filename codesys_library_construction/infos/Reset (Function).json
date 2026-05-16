@@ -1,0 +1,28 @@
+{
+  "library": "String Segments",
+  "title": "Reset (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Segments/Current/Strings/Functions/Reset.html",
+  "page_title": "Reset (FUN)",
+  "text": "\nFUNCTION Reset :\nERROR\nSet back the empty state of this\nIString\ninstance\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "Reset",
+          "Type": "ERROR"
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfString",
+          "Type": "IString"
+        }
+      ]
+    }
+  ]
+}

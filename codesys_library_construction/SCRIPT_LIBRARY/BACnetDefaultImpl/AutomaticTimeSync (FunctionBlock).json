@@ -1,0 +1,8 @@
+{
+  "library": "BACnetDefaultImpl",
+  "title": "AutomaticTimeSync (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnetDefaultImpl/Current/BACnetDefaultImpl/Function-Blocks/AutomaticTimeSync.html",
+  "page_title": "AutomaticTimeSync (FB)",
+  "text": "\nFUNCTION_BLOCK AutomaticTimeSync EXTENDS BACnet.BACnetServerPluginBase\nDefault implementation to provide automatic time synchronisation DM-ATS-A.\nNeeds to be called cyclically to ensure datetime calculation and time sync processing.\nProperties:\nName\nTimeZone\nTimeout\nUpdateTimeZoneFromSystem\nMethods:\nGetTimeZoneFromSystem\nStructure:\nGetTimeZoneFromSystem (Method)\nName (Property)\nTimeZone (Property)\nTimeout (Property)\nUpdateTimeZoneFromSystem (Property)\ntop\nCODESYS Group | We\nsoftware\nAutomation.\nto software\n['sɒftwɛər]\ntransitive verb\n__softwared/softwaring\n: to develop software\n// to software automation: to develop software for automation purposes\nThe CODESYS Group is the manufacturer of CODESYS, the leading hardware-independent\n                                    IEC 61131-3 automation software for developing and engineering controller\n                                    applications.\nCODESYS® is a registered trademark.\nCODESYS GmbH\nA member of the CODESYS Group\nMemminger Straße 151, 87439 Kempten\nGermany\nTel.:\n+49-831-54031-0\ninfo@codesys.com\nLegal Notice\nPrivacy Policy\nLinkedIn\nYoutube\nRSS\nDownloads\nLogin\nCODESYS Store\n© 2022 CODESYS GmbH\n| A member of the CODESYS Group",
+  "tables": []
+}

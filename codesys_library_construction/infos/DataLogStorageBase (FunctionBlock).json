@@ -1,0 +1,25 @@
+{
+  "library": "AC_DataLog",
+  "title": "DataLogStorageBase (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_DataLog/Current/AC_DataLog/DataLogStorage/DataLogStorageBase.html",
+  "page_title": "DataLogStorageBase (FB)",
+  "text": "\nFUNCTION_BLOCK DataLogStorageBase EXTENDS AC.Module IMPLEMENTS\nIDataLogStorage\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "sStorageName",
+          "Type": "STRING(32)",
+          "Initial": "Constants.gc_ChannelNamePlaceholder"
+        }
+      ]
+    }
+  ]
+}

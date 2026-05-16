@@ -1,0 +1,31 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "GetChildRange (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_Module/TreeNavigation/GetChildRange.html",
+  "page_title": "GetChildRange (FUN)",
+  "text": "\nFUNCTION GetChildRange :\nSiblingRange\nReturns the range of all children of an instance.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetChildRange",
+          "Type": "SiblingRange",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfM",
+          "Type": "IModule",
+          "Comment": "The instance whose child are of interest"
+        }
+      ]
+    }
+  ]
+}

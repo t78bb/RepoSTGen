@@ -1,0 +1,37 @@
+{
+  "library": "String Segments",
+  "title": "Compare (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Segments/Current/Strings/Functions/Compare.html",
+  "page_title": "Compare (FUN)",
+  "text": "\nFUNCTION Compare : DINT\nReturns an integer comparing two strings lexicographically.\nThe result will be 0 if\nitfString1\n=\nitfString2\n, -1 if\nitfString1\n<\nitfString2\n, and +1 if\nitfString1\n>\nitfString2\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "Compare",
+          "Type": "DINT"
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfString1",
+          "Type": "IString"
+        },
+        [
+          "itfString2",
+          "IString"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "eErrorID",
+          "Type": "ERROR"
+        }
+      ]
+    }
+  ]
+}

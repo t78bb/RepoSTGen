@@ -1,0 +1,36 @@
+{
+  "library": "String Builder",
+  "title": "GetCurrentSegment (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Builder/Current/Builder/Function-Blocks/pou-_Builder/IBuilder/Segments/GetCurrentSegment.html",
+  "page_title": "_Builder.GetCurrentSegment (METH)",
+  "text": "Builder\nAliases\nConstants (GVL)\nEnums\nENCODING (Alias)\nERROR (Alias)\nSTATS (Alias)\nFunction Blocks\nRange (Alias)\n_RangePool (Alias)\nInterfaces\nIBuilder (Folder)\nICharmap (Alias)\nIString (Alias)\nIStringRepresentation (Folder)\nTypes\nRUNE (Alias)\nFunction Blocks\n_Builder (FunctionBlock)\nIBuilder\nIStringRepresentation\nSetInitialValue (Method)\nFunctions\nCreateRange (Function)\nCreateRangePool (Function)\nLibrary Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nFile and Project Information\nLibrary Reference\nImmutable String Segments\nLibrary Identification\nLibrary Properties\nMemory Block Manager\nLibrary Identification\nLibrary Properties\nString Builder Base\nLibrary Identification\nLibrary Properties\nString Conversions\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nUTF-16 Encoding Support\nLibrary Identification\nLibrary Properties\nUTF-8 Encoding Support\nLibrary Identification\nLibrary Properties\nString Builder\nDocs\n»\nBuilder\n»\nFunction\nBlocks\n»\n_Builder\n(FB)\n»\nIBuilder\n»\nSegments\n»\n_Builder.GetCurrentSegment (METH)\n_Builder.GetCurrentSegment (METH)\nÂ¶\nMETHOD GetCurrentSegment :\nERROR\nReturns the available memory of the free segment\nCheck error return value for better diagnostics\nInOut:\nScope\nName\nType\nComment\nReturn\nGetCurrentSegment\nERROR\nOutput\npbyData\nPOINTER TO BYTE\nPointer to the first byte of the free segment\nudiSize\nUDINT\nData size of the free segment",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetCurrentSegment",
+          "Type": "ERROR",
+          "Comment": ""
+        },
+        {
+          "Scope": "Output",
+          "Name": "pbyData",
+          "Type": "POINTER TO BYTE",
+          "Comment": "Pointer to the first byte of the free segment"
+        },
+        [
+          "udiSize",
+          "UDINT",
+          "Data size of the free segment"
+        ]
+      ]
+    }
+  ]
+}

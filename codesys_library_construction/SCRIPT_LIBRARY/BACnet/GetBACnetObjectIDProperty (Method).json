@@ -1,0 +1,28 @@
+{
+  "library": "BACnet",
+  "title": "GetBACnetObjectIDProperty (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/pou-IBACnetObjectBase/Utilities/GetBACnetObjectIDProperty.html",
+  "page_title": "IBACnetObjectBase.GetBACnetObjectIDProperty (METH)",
+  "text": "\nMETHOD GetBACnetObjectIDProperty : CmpBACnet.IEC_BACNET_OBJECT_ID\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetBACnetObjectIDProperty",
+          "Type": "CmpBACnet.IEC_BACNET_OBJECT_ID"
+        },
+        {
+          "Scope": "Input",
+          "Name": "propID",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_ID"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "library": "String Segments",
+  "title": "Len (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Segments/Current/Strings/Functions/Len.html",
+  "page_title": "Len (FUN)",
+  "text": "\nFUNCTION Len : UDINT\nReturns the number of bytes required for the UTF-8 encoded string segment of\nifString\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "Len",
+          "Type": "UDINT"
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfString",
+          "Type": "IString"
+        },
+        {
+          "Scope": "Output",
+          "Name": "eErrorID",
+          "Type": "ERROR"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "library": "BACnet",
+  "title": "InitializeBACnetDevObjPropReference (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/Utilities/BACnetUtilities/InitializeBACnetDataTypes/InitializeBACnetDevObjPropReference.html",
+  "page_title": "InitializeBACnetDevObjPropReference (FUN)",
+  "text": "\nFUNCTION InitializeBACnetDevObjPropReference : BOOL\nInitializes a IEC_BACNET_DEV_OBJ_PROP_REFERENCE according to a given BACnetDevObjPropReference.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "InitializeBACnetDevObjPropReference",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "devObjPropRef",
+          "Type": "BACnetDevObjPropReference",
+          "Comment": "The BACnetDevObjPropReference to use for initialization."
+        },
+        {
+          "Scope": "Inout",
+          "Name": "bacDevObjPropRef",
+          "Type": "CmpBACnet.IEC_BACNET_DEV_OBJ_PROP_REFERENCE",
+          "Comment": "The BACnet device object property reference to operate on."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "library": "AC_Alarming",
+  "title": "GetActiveAlarmsOfModule (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_Alarming/Current/ExtenderFB/pou-IACAlarmExtender3/GetActiveAlarmsOfModule.html",
+  "page_title": "IACAlarmExtender3.GetActiveAlarmsOfModule (METH)",
+  "text": "\nMETHOD GetActiveAlarmsOfModule : BOOL\nThis method gets all currently active alarms that belong\nto the module instance defined by\nitfModule\n.\nNote\nFor using this method one must activate the option to sort\nalarms per module in the options of the Alarm-Generator.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetActiveAlarmsOfModule",
+          "Type": "BOOL",
+          "Comment": "The return value indicates if it was possible to get all\nactive alarms that belong toitfModule.The return value does also take into account if the size\nof the array pointed topActiveAlarmswas adequate."
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfModule",
+          "Type": "AC.IModule",
+          "Comment": "The module the active alarms shall be searched."
+        },
+        [
+          "pActiveAlarms",
+          "POINTER TO\nAlarmManager.IAlarm",
+          "Pointer to an array ofAlarmManager.IAlarm.\nHere the found alarms are stored."
+        ],
+        [
+          "uiSizeOfActiveAlarms",
+          "UINT",
+          "The size of the arraypActiveAlarmsis pointing to."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "uiNumFoundAlarms",
+          "Type": "UINT",
+          "Comment": "The number of found alarms."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "library": "BACnet2",
+  "title": "CheckMstpDeviceDriverReady (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/BACnetServer/pou-BACnetMSTPdatalink/protected/CheckMstpDeviceDriverReady.html",
+  "page_title": "BACnetMSTPdatalink.CheckMstpDeviceDriverReady (METH)",
+  "text": "\nMETHOD PROTECTED CheckMstpDeviceDriverReady : BOOL\nChecks, if parent MS/TP COM device driver is up and running.\nIn case FALSE is returned the BACnetServer will not start.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "CheckMstpDeviceDriverReady",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "pConnector",
+          "Type": "POINTER TO IoConfigConnector",
+          "Comment": "âchildâ connector to parent device."
+        },
+        [
+          "deviceName",
+          "STRING",
+          "device driver name"
+        ]
+      ]
+    }
+  ]
+}

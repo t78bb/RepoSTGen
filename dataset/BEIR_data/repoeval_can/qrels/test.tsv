@@ -1,0 +1,12 @@
+query-id	corpus-id	score
+can/0	can_FUN_CAN_Read_Data_SWMC.st_0-25	1
+can/0	can_FUN_CAN_Read_Data_SWMC.st_0-30	1
+can/0	can_FUN_CAN_Read_Data_SWMC.st_0-35	1
+can/0	can_FUN_CAN_Read_Data_SWMC.st_0-40	1
+can/0	can_FUN_CAN_Read_Data_SWMC.st_0-43	1
+can/1	can_FUN_CAN_Send_Data_SWMC.st_0-25	1
+can/1	can_FUN_CAN_Send_Data_SWMC.st_0-30	1
+can/1	can_FUN_CAN_Send_Data_SWMC.st_0-35	1
+can/1	can_FUN_CAN_Send_Data_SWMC.st_0-40	1
+can/1	can_FUN_CAN_Send_Data_SWMC.st_0-45	1
+can/1	can_FUN_CAN_Send_Data_SWMC.st_0-46	1

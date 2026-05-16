@@ -1,0 +1,942 @@
+{
+  "library": "SM3_Basic",
+  "title": "AXIS_REF_LOGICAL_SM3 (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/DriveInterface/AXIS_REF_LOGICAL/AXIS_REF_LOGICAL_SM3.html",
+  "page_title": "AXIS_REF_LOGICAL_SM3 (FB)",
+  "text": "GlobalTextList (GlobalTextList)\nImages\nLibrary Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nProject Information\nGetBooleanProperty (Function)\nGetCompany (Function)\nGetNumberProperty (Function)\nGetTextProperty (Function)\nGetTextProperty2 (Function)\nGetTitle (Function)\nGetVersion (Function)\nGetVersionProperty (Function)\nSM3_Basic\nDataTypes\nAdditional\nMC_CAMSWITCH_REF (Struct)\nMC_CAMSWITCH_TR (Struct)\nMC_OUTPUT_REF (Alias)\nMC_TAPPETMODE (Enum)\nMC_TRACK_REF (Alias)\nMC_TRACK_TR (Struct)\nTRIGGER_REF (Struct)\nAdministrative/Configuration\nSMC3_BrakeSetState (Enum)\nSMC3_PersistPositionDiag (Enum)\nSMC3_PersistPosition_Data (Struct)\nSMC_AXIS_AUTORESTART_MODE (Enum)\nCAM\nCamSegment\nMC_CAM_ID (Struct)\nMC_CAM_REF (FunctionBlock)\nMC_STARTMODE (Enum)\nSMC_CAMTAPPETACTION (Enum)\nSMC_CAMTAPPETTYPE (Enum)\nSMC_CAMTable_LREAL_128_1 (Struct)\nSMC_CAMTable_LREAL_128_2 (Struct)\nSMC_CAMTable_LREAL_256_1 (Struct)\nSMC_CAMTable_LREAL_256_2 (Struct)\nSMC_CAMTable_REAL_128_1 (Struct)\nSMC_CAMTable_REAL_128_2 (Struct)\nSMC_CAMTable_REAL_256_1 (Struct)\nSMC_CAMTable_REAL_256_2 (Struct)\nSMC_CAMTable_UDINT_128_1 (Struct)\nSMC_CAMTable_UDINT_128_2 (Struct)\nSMC_CAMTable_UDINT_256_1 (Struct)\nSMC_CAMTable_UDINT_256_2 (Struct)\nSMC_CAMTable_UINT_128_1 (Struct)\nSMC_CAMTable_UINT_128_2 (Struct)\nSMC_CAMTable_UINT_256_1 (Struct)\nSMC_CAMTable_UINT_256_2 (Struct)\nSMC_CAMTappet (Struct)\nSMC_CAMXYVA (Struct)\nSMC_CAM_TYPE (Enum)\nDiagnostics\nSMC_CommunicationState (Enum)\nSMC_LOGGERMODE (Enum)\nDriveInterface\nMC_DIRECTION (Enum)\nSMC3_CaptureDescription (Struct)\nSMC3_CheckPositionLagMode (Enum)\nSMC3_DriveAcyclicTel (Struct)\nSMC3_MappingEntry (Alias)\nSMC3_ParamCommunicationMethod_Enum (Enum)\nSMC_AXIS_STATE (Enum)\nSMC_AXIS_TYPE (Enum)\nSMC_CONTROLLER_MODE (Enum)\nSMC_ENCODER_REF (Struct)\nSMC_FBERROR (Struct)\nSMC_MOTOR_TYPE (Enum)\nSMC_MOVEMENTTYPE (Enum)\nSMC_RAMPTYPE (Enum)\nSMC_SWITCHING_STATE (Enum)\nSMC_ValueSelect (Enum)\nMovement\nMC_TA_REF (Struct)\nMC_TP_REF (Struct)\nMC_TV_REF (Struct)\nSMC_BACKLASH_MODE (Enum)\nSMC_BACKLASH_STARTSTATE (Enum)\nSMC_HOMING_MODE (Enum)\nSMC_TA (Struct)\nSMC_TP (Struct)\nSMC_TV (Struct)\nDriveInterface\nAXIS_REF\nAXIS_REF_SM3 (FunctionBlock)\nIAxisRef (Interface)\nSMC3_ReinitDrive (FunctionBlock)\nSMC_AxisChangeSettings (FunctionBlock)\nSMC_AxisReadSettings (FunctionBlock)\nAXIS_REF_LOGICAL\nAXIS_REF_LOGICAL_SM3 (FunctionBlock)\nAXIS_REF_MAPPING\nAXIS_REF_MAPPING_SM3 (FunctionBlock)\nAXIS_REF_VIRTUAL\nAXIS_REF_VIRTUAL_SM3 (FunctionBlock)\nENCODER_REF\nENCODER_REF_SM3 (FunctionBlock)\nFREE_ENCODER_REF\nFREE_ENCODER_REF (FunctionBlock)\nGlobals\nLibParams (ParamList)\nSMC_DriveBasic_GlobalVariables (GVL)\nSM_PLCOpen_GlobalVariables (GVL)\nPOUs\nAdditional\nMC_AbortTrigger (FunctionBlock)\nMC_DigitalCamSwitch (FunctionBlock)\nMC_TouchProbe (FunctionBlock)\nSMC_CAMSWITCH_TOGGLE_EVENT (Struct)\nSMC_CAMSWITCH_TOGGLE_EVENTS (Struct)\nSMC_CAMSWITCH_TRACKS_EVENTS (Alias)\nSMC_DigitalCamSwitch_HighPrecision (FunctionBlock)\nSMC_FreeEncoder (FunctionBlock)\nSMC_Logical_Axis (FunctionBlock)\nSMC_StartupDrive (FunctionBlock)\nSMC_VIRTUAL_AXIS (FunctionBlock)\nAdministrative/Configuration\nMC_Power (FunctionBlock)\nMC_Reset (FunctionBlock)\nMC_SetPosition (FunctionBlock)\nSMC3_BrakeControl (FunctionBlock)\nSMC3_PersistPosition (FunctionBlock)\nSMC3_PersistPositionLogical (FunctionBlock)\nSMC3_PersistPositionSingleturn (FunctionBlock)\nSMC_ChangeAxisScalingLinear (FunctionBlock)\nSMC_ChangeAxisScalingRotary (FunctionBlock)\nSMC_ChangeDynamicLimits (FunctionBlock)\nSMC_ChangeGearingRatio (FunctionBlock)\nSMC_GetForecast (FunctionBlock)\nSMC_GetTravelTime (FunctionBlock)\nSMC_SetAdditionalConversionFactors (FunctionBlock)\nSMC_SetControllerMode (FunctionBlock)\nSMC_SetCustomRampType (FunctionBlock)\nSMC_SetForecast (FunctionBlock)\nSMC_SetMovementType (FunctionBlock)\nSMC_SetRampType (FunctionBlock)\nSMC_SetSoftwareLimits (FunctionBlock)\nCAM\nMC_CamTableSelect (FunctionBlock)\nSMC_CAMBounds (FunctionBlock)\nSMC_CAMBounds_Pos (FunctionBlock)\nSMC_CamEditor (FunctionBlock)\nSMC_CamRegister (FunctionBlock)\nSMC_CamTableEvaluate (Function)\nSMC_GetCamSlaveSetPosition (FunctionBlock)\nSMC_GetTappetValue (FunctionBlock)\nSMC_ReadCAM (FunctionBlock)\nSMC_WriteCAM (FunctionBlock)\nDiagnostics\nFBError\nMC_ReadActualPosition (FunctionBlock)\nMC_ReadActualTorque (FunctionBlock)\nMC_ReadActualVelocity (FunctionBlock)\nMC_ReadAxisError (FunctionBlock)\nMC_ReadStatus (FunctionBlock)\nSMC3_BrakeStatus (FunctionBlock)\nSMC_AxisDiagnosticLog (FunctionBlock)\nSMC_CheckAxisCommunication (FunctionBlock)\nSMC_CheckLimits (FunctionBlock)\nSMC_EstimateDeadTime (FunctionBlock)\nSMC_GetMaxSetAccDec (FunctionBlock)\nSMC_GetMaxSetVelocity (FunctionBlock)\nSMC_GetTrackingError (FunctionBlock)\nSMC_InPosition (FunctionBlock)\nSMC_MeasureDistance (FunctionBlock)\nSMC_ReadSetPosition (FunctionBlock)\nSMC_ReadSetValues (FunctionBlock)\nMovement\nDirect\nMC_AccelerationProfile (FunctionBlock)\nMC_Halt (FunctionBlock)\nMC_HaltSuperImposed (FunctionBlock)\nMC_Home (FunctionBlock)\nMC_Jog (FunctionBlock)\nMC_MoveAbsolute (FunctionBlock)\nMC_MoveAdditive (FunctionBlock)\nMC_MoveRelative (FunctionBlock)\nMC_MoveSuperImposed (FunctionBlock)\nMC_MoveVelocity (FunctionBlock)\nMC_PositionProfile (FunctionBlock)\nMC_SetOverride (FunctionBlock)\nMC_Stop (FunctionBlock)\nMC_VelocityProfile (FunctionBlock)\nMaster/Slave\nSMC_BacklashCompensation (FunctionBlock)\nSMC_GetOverride (FunctionBlock)\nSMC_Homing (FunctionBlock)\nSMC_Inch (FunctionBlock)\nSMC_MoveContinuousAbsolute (FunctionBlock)\nSMC_MoveContinuousRelative (FunctionBlock)\nParameter access\nMC_ReadBoolParameter (FunctionBlock)\nMC_ReadParameter (FunctionBlock)\nMC_WriteBoolParameter (FunctionBlock)\nMC_WriteParameter (FunctionBlock)\nSMC_ParameterNumber_CoE (Function)\nSMC_ParameterNumber_SoE (Function)\nSMC_GetCyclicMapping (Function)\ninternal\nTrajectories\nVisualization\nGenerated\nFramed visu helpers\nOriginal\nImagePool_sm3 (ImagePool)\nSM3_Basic_GetVersion (Function)\nFile and Project Information\nLibrary Reference\n3SLicense\nLibrary Identification\nLibrary Properties\nBase Interfaces\nLibrary Identification\nLibrary Properties\nCAA Callback Extern\nLibrary Identification\nLibrary Properties\nCAA Device Diagnosis\nLibrary Identification\nLibrary Properties\nCAA Types Extern\nLibrary Identification\nLibrary Properties\nCmpApp\nLibrary Identification\nLibrary Properties\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nCmpEventMgr\nLibrary Identification\nLibrary Properties\nCmpIecTask\nLibrary Identification\nLibrary Properties\nCmpLog\nLibrary Identification\nLibrary Properties\nComponent Manager\nLibrary Identification\nLibrary Properties\nEmpty\nLibrary Identification\nLibrary Properties\nFloatingPointUtils\nLibrary Identification\nLibrary Properties\nIoDriver Interfaces\nLibrary Identification\nLibrary Properties\nIoStandard\nLibrary Identification\nLibrary Properties\nSM3_CommonPublic\nLibrary Identification\nLibrary Properties\nSM3_Error\nLibrary Identification\nLibrary Properties\nSM3_Math\nLibrary Identification\nLibrary Properties\nSM3_RBase\nLibrary Identification\nLibrary Properties\nSM3_Ramps\nLibrary Identification\nLibrary Properties\nSM3_Shared\nLibrary Identification\nLibrary Properties\nSM3_StringUtils\nLibrary Identification\nLibrary Properties\nSM3_TrajectoryGeneration\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nSysCpuHandling\nLibrary Identification\nLibrary Properties\nSysFile\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysTarget\nLibrary Identification\nLibrary Properties\nSysTime\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nVisuElem3DPath\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElemCamDisplayer\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElemMeter\nLibrary Identification\nLibrary Properties\nVisuElemTextEditor\nLibrary Identification\nLibrary Properties\nVisuElemTrace\nLibrary Identification\nLibrary Properties\nVisuElemXYChart\nLibrary Identification\nLibrary Properties\nVisuElems\nLibrary Identification\nLibrary Properties\nVisuElemsAlarm\nLibrary Identification\nLibrary Properties\nVisuElemsDateTime\nLibrary Identification\nLibrary Properties\nVisuElemsSpecialControls\nLibrary Identification\nLibrary Properties\nVisuElemsWinControls\nLibrary Identification\nLibrary Properties\nVisuInputs\nLibrary Identification\nLibrary Properties\nVisuNativeControl\nLibrary Identification\nLibrary Properties\nSM3_Basic\nDocs\n»\nSM3_Basic\n»\nDriveInterface\n»\nAXIS_REF_LOGICAL\n»\nAXIS_REF_LOGICAL_SM3 (FB)\nAXIS_REF_LOGICAL_SM3 (FB)\nÂ¶\nFUNCTION_BLOCK AXIS_REF_LOGICAL_SM3 EXTENDS\nAXIS_REF_SM3\nInOut:\nScope\nName\nType\nInitial\nComment\nInherited from\nInput\nwAxisStructID\nWORD\n16#FE12\nAXIS_REF_SM3\nnAxisState\nSMC_AXIS_STATE\npower_off\nState of the axis according to the\nPLCopen\nstate diagram:\n0:\npower_off\n1:\nerrorstop\n2:\nstopping\n3:\nstandstill\n4:\ndiscrete_motion\n5:\ncontinuous_motion\n6:\nsynchronized_motion\n7:\nhoming\nParameter number: 1000\nAXIS_REF_SM3\nbRegulatorOn\nBOOL\nFALSE\nParameter number: 1010\nAXIS_REF_SM3\nbDriveStart\nBOOL\nFALSE\nParameter number: 1011\nAXIS_REF_SM3\nbCommunication\nBOOL\nFALSE\nTRUE\n: Communication OK\nParameter number: 1012\nAXIS_REF_SM3\nwCommunicationState\nWORD\n16#FFFF\nParameter number: 1013\nAXIS_REF_SM3\nuiDriveInterfaceError\nUINT\nDrive interface error number\nParameter number: 1014\nAXIS_REF_SM3\nbRegulatorRealState\nBOOL\nFALSE\nParameter number: 1015\nAXIS_REF_SM3\nbDriveStartRealState\nBOOL\nFALSE\nParameter number: 1016\nAXIS_REF_SM3\nwDriveId\nWORD\n0\nParameter number: 1021\nAXIS_REF_SM3\niOwner\nINT\n0\nParameter number: 1022\nAXIS_REF_SM3\nfCycleTimeSpent\nLREAL\nParameter number: 1024\nAXIS_REF_SM3\nfTaskCycle\nLREAL\n0.005\nParameter number: 1025\nAXIS_REF_SM3\nbError\nBOOL\nFALSE\nParameter number: 1030\nAXIS_REF_SM3\ndwErrorID\nDWORD\n0\nDrive specific error identifier, parameter number: 1031\nAXIS_REF_SM3\nbErrorAckn\nBOOL\nFALSE\nParameter number: 1032\nAXIS_REF_SM3\nbDisableErrorLogging\nBOOL\nFALSE\nParameter number: 1036\nAXIS_REF_SM3\nfbeFBError\nARRAY\n[0..g_SMC_NUMBER_FB_ERRORS]\nOF\nSMC_FBERROR\nParameter number: 1035\nAXIS_REF_SM3\ndwRatioTechUnitsDenom\nDWORD\n1\nParameter number 1051\nAXIS_REF_SM3\niRatioTechUnitsNum\nDINT\n1\nParameter number 1052\nAXIS_REF_SM3\nnDirection\nMC_Direction\npositive\nParameter number 1053\nAXIS_REF_SM3\nfScalefactor\nLREAL\n1\nParameter number 1054\nAXIS_REF_SM3\nfFactorVel\nLREAL\n1\nParameter number 1055\nAXIS_REF_SM3\nfFactorAcc\nLREAL\n1\nParameter number: 1056\nAXIS_REF_SM3\nfFactorTor\nLREAL\n1\nParameter number: 1057\nAXIS_REF_SM3\nfFactorJerk\nLREAL\n1\nFactor jerk\nParameter number: 1058\nAXIS_REF_SM3\nfFactorCur\nLREAL\n1\nParameter number: 1059\nAXIS_REF_SM3\nfFactorReference\nLREAL\n1\nThe factor the home offset (fReference, parameter 1211) is multiplied by\nafter conversion to increments.\nWhen converting from increments, the received value in increments is\ndivided by the factor.  Drivers can set this to -1 to invert the\nsign of the home offset.\nAXIS_REF_SM3\niMovementType\nINT\nSMC_AXIS_TYPE.finite\nParameter number: 1060\nAXIS_REF_SM3\nfPositionPeriod\nLREAL\n1000\nParameter number: 1061\nAXIS_REF_SM3\neRampType\nSMC_RAMPTYPE\ntrapez\nParameter number: 1062\nAXIS_REF_SM3\nmotorType\nSMC_MOTOR_TYPE\nParameter number: 5007\nAXIS_REF_SM3\nbyControllerMode\nBYTE\nSMC_position\nParameter number: 1091\nAXIS_REF_SM3\nbyRealControllerMode\nBYTE\nSMC_position\nParameter number: 1092\nAXIS_REF_SM3\nfSetPosition\nLREAL\n0\nParameter number: 1100, 1\nAXIS_REF_SM3\nfActPosition\nLREAL\n0\nParameter number: 1101\nAXIS_REF_SM3\nfAimPosition\nLREAL\n0\nParameter number: 1105\nAXIS_REF_SM3\nfSavePosition\nLREAL\n0\nParameter number: 1107\nAXIS_REF_SM3\nfSetVelocity\nLREAL\n0\nParameter number: 1110, 11\nAXIS_REF_SM3\nfActVelocity\nLREAL\n0\nParameter number: 1111, 10\nAXIS_REF_SM3\nfMaxVelocity\nLREAL\n0\nMaximum velocity of the drive (remote parameter) in [u/s]\nParameter number: 1112,9\nAXIS_REF_SM3\nfSWMaxVelocity\nLREAL\n0\nMaximum velocity (software limit) in [u/s]\nParameter number: 1113\nAXIS_REF_SM3\nbConstantVelocity\nBOOL\nFALSE\nParameter number: 1115\nAXIS_REF_SM3\nfSaveVelocity\nLREAL\n0\nParameter number: 1117\nAXIS_REF_SM3\nfSetAcceleration\nLREAL\n0\nParameter number: 1120\nAXIS_REF_SM3\nfActAcceleration\nLREAL\n0\nParameter number: 1121\nAXIS_REF_SM3\nfMaxAcceleration\nLREAL\n0\nMaximum acceleration of the drive (remote parameter) in [u/sÂ²]\nParameter number: 1122, 13\nAXIS_REF_SM3\nfSWMaxAcceleration\nLREAL\n0\nMaximum acceleration (software limit) in [u/sÂ²]\nParameter number: 1123\nAXIS_REF_SM3\nbAccelerating\nBOOL\nFALSE\nParameter number: 1125\nAXIS_REF_SM3\nfSaveAcceleration\nLREAL\n0\nParameter number: 1127\nAXIS_REF_SM3\nfMaxDeceleration\nLREAL\n0\nMaximum deceleration of the drive (remote parameter) in [u/sÂ²]\nParameter number: 1132, 15\nAXIS_REF_SM3\nfSWMaxDeceleration\nLREAL\n0\nMaximum deceleration (software limit) in [u/sÂ²]\nParameter number: 1133\nAXIS_REF_SM3\nbDecelerating\nBOOL\nFALSE\nParameter number: 1135\nAXIS_REF_SM3\nfSaveDeceleration\nLREAL\n0\nParameter number: 1137\nAXIS_REF_SM3\nfSetJerk\nLREAL\n0\nParameter number: 1140\nAXIS_REF_SM3\nfActJerk\nLREAL\n0\nParameter number: 1141\nAXIS_REF_SM3\nfMaxJerk\nLREAL\n0\nMaximum jerk of the drive (remote parameter) in [u/sÂ³]\nParameter number: 1142, 16\nAXIS_REF_SM3\nfSWMaxJerk\nLREAL\n0\nMaximum jerk (software limit) in [u/sÂ³]\nParameter number: 1143\nAXIS_REF_SM3\nfRampJerk\nLREAL\n100000\nMaximum Jerk, special value for sinÂ² ramp type in [u/sÂ³]\nParameter number: 1144\nAXIS_REF_SM3\nfSaveJerk\nLREAL\n0\nParameter number: 1147\nAXIS_REF_SM3\nfSetCurrent\nLREAL\n0\nParameter number: 1150\nAXIS_REF_SM3\nfActCurrent\nLREAL\n0\nParameter number: 1151\nAXIS_REF_SM3\nfMaxCurrent\nLREAL\n100\nMaximum current in [A]\nParameter number: 1152\nAXIS_REF_SM3\nfSWMaxCurrent\nLREAL\n0\nMaximum user defined current in [A]\nParameter number: 1153\nAXIS_REF_SM3\nfSetTorque\nLREAL\n0\nThe set torque in [Nm] or [N] (linear) at the gearbox output.\nParameter number: 1160\nAXIS_REF_SM3\nfActTorque\nLREAL\n0\nActual torque in [Nm] or [N] (linear) at the gearbox output.\nParameter number: 1161\nAXIS_REF_SM3\nfMaxTorque\nLREAL\n0\nThe maximum torque in [Nm] or [N] (linear) at the gearbox output.\nParameter number: 1162\nAXIS_REF_SM3\nfSWMaxTorque\nLREAL\nFPU.GetLRealSpecialVal(FPU.ESpecial_FP_Value.PosInf)\nThe maximum torque (software limit) in [Nm] or [N] (linear) at\nthe gearbox output.\nParameter number: 1163\nAXIS_REF_SM3\nfSWLimitPositive\nLREAL\n0\nPosition limit in positive direction in [u]\nParameter number: 1200, 2\nAXIS_REF_SM3\nfSWLimitNegative\nLREAL\n0\nPosition limit in negative direction in [u]\nParameter number: 1201, 3\nAXIS_REF_SM3\nusiSWEndSwitchState\nUSINT\n0\nParameter number: 1204\nAXIS_REF_SM3\nbSWLimitEnable\nBOOL\nFALSE\nParameter number: 1205\nAXIS_REF_SM3\nbHWLimitEnable\nBOOL\nTRUE\nParameter number: 1206\nAXIS_REF_SM3\nbStartReference\nBOOL\nFALSE\nParameter number: 1210\nAXIS_REF_SM3\nfReference\nLREAL\n0\nParameter number: 1211\nAXIS_REF_SM3\nbStartReferenceRealState\nBOOL\nFALSE\nParameter number: 1212\nAXIS_REF_SM3\nfOffsetPosition\nLREAL\n0\nParameter number: 1215\nAXIS_REF_SM3\ndwPosOffsetForResiduals\nDWORD\n0\nParameter number: 1230\nAXIS_REF_SM3\ndwOneTurn\nDWORD\n0\nParameter number: 1231\nAXIS_REF_SM3\ndwLastPosition\nDWORD\n0\nParameter number: 1232\nAXIS_REF_SM3\nbySwitchingState\nSMC_SWITCHING_STATE\nSMC_ST_INITIALIZING\nParameter number: 1233\nAXIS_REF_SM3\niRestNumerator\nDINT\n0\nParameter number: 1234\nAXIS_REF_SM3\niTurn\nINT\n0\nParameter number: 1235\nAXIS_REF_SM3\ndwActPosition\nDWORD\n0\nParameter number: 1238\nAXIS_REF_SM3\nusiBusBitWidth\nUSINT\n32\nThe bus bit depth.  This is the number of bits used to send\nthe actual and set position from and to the drive.\nBetween 1 and 32.\nAXIS_REF_SM3\ndwBusModuloMask\nDWORD\n16#FFFFFFFF\nThe value (2^k - 1) where k is the bus bit depth.\nAXIS_REF_SM3\neBrakeControl\nSMC3_BrakeSetState\nSMC_BRAKE_AUTO\nParameter number: 1017\nAXIS_REF_SM3\nbBrakeClosedRealState\nBOOL\nFALSE\nParameter number: 1018\nAXIS_REF_SM3\nbOldError\nBOOL\nParameter number: 1033\nAXIS_REF_SM3\nbVirtual\nBOOL\nTRUE\n: Virtual drive.\nParameter number: 1040\nAXIS_REF_SM3\nbLogical\nBOOL\nParameter number: 1041\nAXIS_REF_SM3\nfSetActTimeLagCycles\nLREAL\n3\nThe dead time in cycles between the fActPosition received in this bus task\ncycle, and the fSetPosition at the beginning OF THIS bus task cycle.\nParameter number: 1070\nAXIS_REF_SM3\ndiSetPosition\nDINT\n0\nParameter number: 1108\nAXIS_REF_SM3\ndiActPosition\nDINT\n0\nParameter number: 1109\nAXIS_REF_SM3\ndiSetVelocity\nDINT\n0\nParameter number: 1118\nAXIS_REF_SM3\ndiActVelocity\nDINT\n0\nParameter number: 1119\nAXIS_REF_SM3\ndiSetAcceleration\nDINT\n0\nParameter number:  1128\nAXIS_REF_SM3\ndiActAcceleration\nDINT\n0\nParameter number: 1129\nAXIS_REF_SM3\ndiSetCurrent\nDINT\n0\nParameter number: 1158\nAXIS_REF_SM3\ndiActCurrent\nDINT\n0\nParameter number: 1159\nAXIS_REF_SM3\ndiSetTorque\nDINT\n0\nParameter number: 1168\nAXIS_REF_SM3\ndiActTorque\nDINT\n0\nParameter number: 1169\nAXIS_REF_SM3\nfSWLimitDeceleration\nLREAL\n0\nDeceleration in [u/sÂ²] with which the system will brake in case\nof a software limit.\nParameter number: 1203\nAXIS_REF_SM3\nxWaitForHaltWhenStopInterruptsHome\nBOOL\nTRUE\n: When\nMC_Home\nis interrupted by\nMC_Stop\n, then``MC_Stop.bDone``\nis delayed until the drive reports that it has successfully halted.\nbStartReferenceRealState\n=\nFALSE\nParameter number: 1213\nAXIS_REF_SM3\nfSWErrorMaxDistance\nLREAL\n0\nDistance in which the drive has to reach standstill after an error\nhas occurred.\nParameter number: 1250\nAXIS_REF_SM3\neCheckPositionLag\nSMC3_CheckPositionLagMode\n0\nParameter number: 1207\nAXIS_REF_SM3\nfMaxPositionLag\nLREAL\nParameter number: 1208\nAXIS_REF_SM3\nbPositionLagActive\nBOOL\nParameter number: 1209\nAXIS_REF_SM3\nbModuloDoneByDrive\nBOOL\nParameter number: 1242\nAXIS_REF_SM3\ndiFollowingError\nDINT\nParameter number:  1243\nAXIS_REF_SM3\nfFollowingError\nLREAL\nParameter number: 1244\nAXIS_REF_SM3\naCaptDesc\nARRAY [0..7] OF\nSMC3_CaptureDescription\nParameter number: 1400\nAXIS_REF_SM3\nxPersistentDataLoaded\nBOOL\nFALSE\nAXIS_REF_SM3\nstrDriveInterfaceError\nSTRING(255)\nAXIS_REF_SM3\nadatAcyclic\nARRAY\n[1..SMC3_gc_usiNumberAcyclicChannels]\nOF\nSMC3_DriveAcyclicTel\nAXIS_REF_SM3\nnAbortCounter\nUDINT\nInternal: counts the number of aborts.  This counter\nsimply wraps to 0 when exceeding 2^32-1, so use accordingly.\nIncreased in method SetOwner().\nAXIS_REF_SM3\nvMinRequiredVersion\nVERSION\nThe minimum version of SM3_Basic that the driver requires.\nAXIS_REF_SM3\nbAvoidReversalOnHaltStop\nBOOL\nParameter number: 1260\nAXIS_REF_SM3\nbConsiderLimitsOfAbortedMotionOnHaltStop\nBOOL\nParameter number: 1270\nAXIS_REF_SM3\nbUpdateIOsInStop\nBOOL\nUpdate the IOs if the application is stopped.\nParameter number 1280\nAXIS_REF_SM3\nbAutoRestart\nBOOL\nTRUE\nIf TRUE, an implict\nSMC3_ReinitDrive\nis executed after\nthe communication to the drive is established again after a\ncommunication loss (e.g. fieldbus slave no longer operational).\nIf FALSE, an explicit call to\nSMC3_ReinitDrive\nis required\nafter communication has been established again. (This is the\nbehavior of SoftMotion versions before 4.18.0.0.)\nDefault is TRUE if not set by the device parameter, i.e. the\ndrive device can override the default.\nParameter number 1281\nAXIS_REF_SM3\noverrideFactors\nSMRB.DynFactors\nSTRUCT(fVel := 1, fAcc := 1, fJerk := 1, fTorque := 1)\nAXIS_REF_SM3\nm_superimposed\nSMC_SuperimposedData\nInternal: information of superimposed movements\nAXIS_REF_SM3\nOutput\nstrDriver\nSTRING(16)\nAXIS_REF_SM3\ndwDriverVersion\nDWORD\nAXIS_REF_SM3\nInput\neValueReference\nSMC_ValueSelect\n2010\nusiFilterDepthPosition\nLREAL\n2020\nusiFilterDepthVelocity\nLREAL\n2021\nfTimeShiftCycles\nLREAL\n2022\nfLogicalOffsetPosition\nLREAL\n2000\nOutput\npRealAxis\nPOINTER TO\nAXIS_REF_SM3\nProperties:\nChildNodeCount\n, inherited from\nAXIS_REF_SM3\nConnector\n, inherited from\nAXIS_REF_SM3\nEnable\n, inherited from\nAXIS_REF_SM3\nFirstChildNode\n, inherited from\nAXIS_REF_SM3\nIndex\n, inherited from\nAXIS_REF_SM3\nIsDeviceDiagInitialized\n, inherited from\nAXIS_REF_SM3\nIsRootNode\n, inherited from\nAXIS_REF_SM3\nNextSiblingNode\n, inherited from\nAXIS_REF_SM3\nParentNode\n, inherited from\nAXIS_REF_SM3\nSiblingNodeCount\n, inherited from\nAXIS_REF_SM3\nMethods:\nBasicInit\n, inherited from\nAXIS_REF_SM3\nCheckCurrentSupportedCommunicationState\n, inherited from\nAXIS_REF_SM3\nCheckPositionLag\n, inherited from\nAXIS_REF_SM3\nCheckSupportedCommunicationState\n, inherited from\nAXIS_REF_SM3\nGetActValuesForCycle\n, inherited from\nAXIS_REF_SM3\nGetDeviceErrorAsync\n, inherited from\nAXIS_REF_SM3\nGetDeviceInfo\n, inherited from\nAXIS_REF_SM3\nGetDeviceState\n, inherited from\nAXIS_REF_SM3\nGetSetValuesForCycle\n, inherited from\nAXIS_REF_SM3\nGetSpecificDeviceErrorAsync\n, inherited from\nAXIS_REF_SM3\nGetSpecificDeviceState\n, inherited from\nAXIS_REF_SM3\nIsDeviceEnabled\n, inherited from\nAXIS_REF_SM3\nSetCommunicationState\n, inherited from\nAXIS_REF_SM3\nSkipNextInputUpdate\n, inherited from\nAXIS_REF_SM3\nSkipNextOutputUpdate\n, inherited from\nAXIS_REF_SM3",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment",
+        "Inherited from"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "wAxisStructID",
+          "Type": "WORD",
+          "Initial": "16#FE12",
+          "Comment": "",
+          "Inherited from": "AXIS_REF_SM3"
+        },
+        [
+          "nAxisState",
+          "SMC_AXIS_STATE",
+          "power_off",
+          "State of the axis according to thePLCopenstate diagram:0:power_off1:errorstop2:stopping3:standstill4:discrete_motion5:continuous_motion6:synchronized_motion7:homingParameter number: 1000",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "bRegulatorOn",
+          "BOOL",
+          "FALSE",
+          "Parameter number: 1010",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "bDriveStart",
+          "BOOL",
+          "FALSE",
+          "Parameter number: 1011",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "bCommunication",
+          "BOOL",
+          "FALSE",
+          "TRUE: Communication OKParameter number: 1012",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "wCommunicationState",
+          "WORD",
+          "16#FFFF",
+          "Parameter number: 1013",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "uiDriveInterfaceError",
+          "UINT",
+          "",
+          "Drive interface error numberParameter number: 1014",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "bRegulatorRealState",
+          "BOOL",
+          "FALSE",
+          "Parameter number: 1015",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "bDriveStartRealState",
+          "BOOL",
+          "FALSE",
+          "Parameter number: 1016",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "wDriveId",
+          "WORD",
+          "0",
+          "Parameter number: 1021",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "iOwner",
+          "INT",
+          "0",
+          "Parameter number: 1022",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "fCycleTimeSpent",
+          "LREAL",
+          "",
+          "Parameter number: 1024",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "fTaskCycle",
+          "LREAL",
+          "0.005",
+          "Parameter number: 1025",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "bError",
+          "BOOL",
+          "FALSE",
+          "Parameter number: 1030",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "dwErrorID",
+          "DWORD",
+          "0",
+          "Drive specific error identifier, parameter number: 1031",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "bErrorAckn",
+          "BOOL",
+          "FALSE",
+          "Parameter number: 1032",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "bDisableErrorLogging",
+          "BOOL",
+          "FALSE",
+          "Parameter number: 1036",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "fbeFBError",
+          "ARRAY\n[0..g_SMC_NUMBER_FB_ERRORS]\nOFSMC_FBERROR",
+          "",
+          "Parameter number: 1035",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "dwRatioTechUnitsDenom",
+          "DWORD",
+          "1",
+          "Parameter number 1051",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "iRatioTechUnitsNum",
+          "DINT",
+          "1",
+          "Parameter number 1052",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "nDirection",
+          "MC_Direction",
+          "positive",
+          "Parameter number 1053",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "fScalefactor",
+          "LREAL",
+          "1",
+          "Parameter number 1054",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "fFactorVel",
+          "LREAL",
+          "1",
+          "Parameter number 1055",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "fFactorAcc",
+          "LREAL",
+          "1",
+          "Parameter number: 1056",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "fFactorTor",
+          "LREAL",
+          "1",
+          "Parameter number: 1057",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "fFactorJerk",
+          "LREAL",
+          "1",
+          "Factor jerkParameter number: 1058",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "fFactorCur",
+          "LREAL",
+          "1",
+          "Parameter number: 1059",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "fFactorReference",
+          "LREAL",
+          "1",
+          "The factor the home offset (fReference, parameter 1211) is multiplied by\nafter conversion to increments.\nWhen converting from increments, the received value in increments is\ndivided by the factor.  Drivers can set this to -1 to invert the\nsign of the home offset.",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "iMovementType",
+          "INT",
+          "SMC_AXIS_TYPE.finite",
+          "Parameter number: 1060",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "fPositionPeriod",
+          "LREAL",
+          "1000",
+          "Parameter number: 1061",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "eRampType",
+          "SMC_RAMPTYPE",
+          "trapez",
+          "Parameter number: 1062",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "motorType",
+          "SMC_MOTOR_TYPE",
+          "",
+          "Parameter number: 5007",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "byControllerMode",
+          "BYTE",
+          "SMC_position",
+          "Parameter number: 1091",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "byRealControllerMode",
+          "BYTE",
+          "SMC_position",
+          "Parameter number: 1092",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "fSetPosition",
+          "LREAL",
+          "0",
+          "Parameter number: 1100, 1",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "fActPosition",
+          "LREAL",
+          "0",
+          "Parameter number: 1101",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "fAimPosition",
+          "LREAL",
+          "0",
+          "Parameter number: 1105",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "fSavePosition",
+          "LREAL",
+          "0",
+          "Parameter number: 1107",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "fSetVelocity",
+          "LREAL",
+          "0",
+          "Parameter number: 1110, 11",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "fActVelocity",
+          "LREAL",
+          "0",
+          "Parameter number: 1111, 10",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "fMaxVelocity",
+          "LREAL",
+          "0",
+          "Maximum velocity of the drive (remote parameter) in [u/s]Parameter number: 1112,9",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "fSWMaxVelocity",
+          "LREAL",
+          "0",
+          "Maximum velocity (software limit) in [u/s]Parameter number: 1113",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "bConstantVelocity",
+          "BOOL",
+          "FALSE",
+          "Parameter number: 1115",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "fSaveVelocity",
+          "LREAL",
+          "0",
+          "Parameter number: 1117",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "fSetAcceleration",
+          "LREAL",
+          "0",
+          "Parameter number: 1120",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "fActAcceleration",
+          "LREAL",
+          "0",
+          "Parameter number: 1121",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "fMaxAcceleration",
+          "LREAL",
+          "0",
+          "Maximum acceleration of the drive (remote parameter) in [u/sÂ²]Parameter number: 1122, 13",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "fSWMaxAcceleration",
+          "LREAL",
+          "0",
+          "Maximum acceleration (software limit) in [u/sÂ²]Parameter number: 1123",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "bAccelerating",
+          "BOOL",
+          "FALSE",
+          "Parameter number: 1125",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "fSaveAcceleration",
+          "LREAL",
+          "0",
+          "Parameter number: 1127",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "fMaxDeceleration",
+          "LREAL",
+          "0",
+          "Maximum deceleration of the drive (remote parameter) in [u/sÂ²]Parameter number: 1132, 15",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "fSWMaxDeceleration",
+          "LREAL",
+          "0",
+          "Maximum deceleration (software limit) in [u/sÂ²]Parameter number: 1133",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "bDecelerating",
+          "BOOL",
+          "FALSE",
+          "Parameter number: 1135",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "fSaveDeceleration",
+          "LREAL",
+          "0",
+          "Parameter number: 1137",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "fSetJerk",
+          "LREAL",
+          "0",
+          "Parameter number: 1140",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "fActJerk",
+          "LREAL",
+          "0",
+          "Parameter number: 1141",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "fMaxJerk",
+          "LREAL",
+          "0",
+          "Maximum jerk of the drive (remote parameter) in [u/sÂ³]\nParameter number: 1142, 16",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "fSWMaxJerk",
+          "LREAL",
+          "0",
+          "Maximum jerk (software limit) in [u/sÂ³]Parameter number: 1143",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "fRampJerk",
+          "LREAL",
+          "100000",
+          "Maximum Jerk, special value for sinÂ² ramp type in [u/sÂ³]\nParameter number: 1144",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "fSaveJerk",
+          "LREAL",
+          "0",
+          "Parameter number: 1147",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "fSetCurrent",
+          "LREAL",
+          "0",
+          "Parameter number: 1150",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "fActCurrent",
+          "LREAL",
+          "0",
+          "Parameter number: 1151",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "fMaxCurrent",
+          "LREAL",
+          "100",
+          "Maximum current in [A]Parameter number: 1152",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "fSWMaxCurrent",
+          "LREAL",
+          "0",
+          "Maximum user defined current in [A]Parameter number: 1153",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "fSetTorque",
+          "LREAL",
+          "0",
+          "The set torque in [Nm] or [N] (linear) at the gearbox output.\nParameter number: 1160",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "fActTorque",
+          "LREAL",
+          "0",
+          "Actual torque in [Nm] or [N] (linear) at the gearbox output.Parameter number: 1161",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "fMaxTorque",
+          "LREAL",
+          "0",
+          "The maximum torque in [Nm] or [N] (linear) at the gearbox output.\nParameter number: 1162",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "fSWMaxTorque",
+          "LREAL",
+          "FPU.GetLRealSpecialVal(FPU.ESpecial_FP_Value.PosInf)",
+          "The maximum torque (software limit) in [Nm] or [N] (linear) at\nthe gearbox output.\nParameter number: 1163",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "fSWLimitPositive",
+          "LREAL",
+          "0",
+          "Position limit in positive direction in [u]Parameter number: 1200, 2",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "fSWLimitNegative",
+          "LREAL",
+          "0",
+          "Position limit in negative direction in [u]Parameter number: 1201, 3",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "usiSWEndSwitchState",
+          "USINT",
+          "0",
+          "Parameter number: 1204",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "bSWLimitEnable",
+          "BOOL",
+          "FALSE",
+          "Parameter number: 1205",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "bHWLimitEnable",
+          "BOOL",
+          "TRUE",
+          "Parameter number: 1206",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "bStartReference",
+          "BOOL",
+          "FALSE",
+          "Parameter number: 1210",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "fReference",
+          "LREAL",
+          "0",
+          "Parameter number: 1211",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "bStartReferenceRealState",
+          "BOOL",
+          "FALSE",
+          "Parameter number: 1212",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "fOffsetPosition",
+          "LREAL",
+          "0",
+          "Parameter number: 1215",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "dwPosOffsetForResiduals",
+          "DWORD",
+          "0",
+          "Parameter number: 1230",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "dwOneTurn",
+          "DWORD",
+          "0",
+          "Parameter number: 1231",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "dwLastPosition",
+          "DWORD",
+          "0",
+          "Parameter number: 1232",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "bySwitchingState",
+          "SMC_SWITCHING_STATE",
+          "SMC_ST_INITIALIZING",
+          "Parameter number: 1233",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "iRestNumerator",
+          "DINT",
+          "0",
+          "Parameter number: 1234",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "iTurn",
+          "INT",
+          "0",
+          "Parameter number: 1235",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "dwActPosition",
+          "DWORD",
+          "0",
+          "Parameter number: 1238",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "usiBusBitWidth",
+          "USINT",
+          "32",
+          "The bus bit depth.  This is the number of bits used to send\nthe actual and set position from and to the drive.\nBetween 1 and 32.",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "dwBusModuloMask",
+          "DWORD",
+          "16#FFFFFFFF",
+          "The value (2^k - 1) where k is the bus bit depth.",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "eBrakeControl",
+          "SMC3_BrakeSetState",
+          "SMC_BRAKE_AUTO",
+          "Parameter number: 1017",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "bBrakeClosedRealState",
+          "BOOL",
+          "FALSE",
+          "Parameter number: 1018",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "bOldError",
+          "BOOL",
+          "",
+          "Parameter number: 1033",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "bVirtual",
+          "BOOL",
+          "",
+          "TRUE: Virtual drive.\nParameter number: 1040",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "bLogical",
+          "BOOL",
+          "",
+          "Parameter number: 1041",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "fSetActTimeLagCycles",
+          "LREAL",
+          "3",
+          "The dead time in cycles between the fActPosition received in this bus task\ncycle, and the fSetPosition at the beginning OF THIS bus task cycle.\nParameter number: 1070",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "diSetPosition",
+          "DINT",
+          "0",
+          "Parameter number: 1108",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "diActPosition",
+          "DINT",
+          "0",
+          "Parameter number: 1109",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "diSetVelocity",
+          "DINT",
+          "0",
+          "Parameter number: 1118",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "diActVelocity",
+          "DINT",
+          "0",
+          "Parameter number: 1119",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "diSetAcceleration",
+          "DINT",
+          "0",
+          "Parameter number:  1128",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "diActAcceleration",
+          "DINT",
+          "0",
+          "Parameter number: 1129",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "diSetCurrent",
+          "DINT",
+          "0",
+          "Parameter number: 1158",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "diActCurrent",
+          "DINT",
+          "0",
+          "Parameter number: 1159",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "diSetTorque",
+          "DINT",
+          "0",
+          "Parameter number: 1168",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "diActTorque",
+          "DINT",
+          "0",
+          "Parameter number: 1169",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "fSWLimitDeceleration",
+          "LREAL",
+          "0",
+          "Deceleration in [u/sÂ²] with which the system will brake in case\nof a software limit.Parameter number: 1203",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "xWaitForHaltWhenStopInterruptsHome",
+          "BOOL",
+          "",
+          "TRUE: WhenMC_Homeis interrupted byMC_Stop, then``MC_Stop.bDone``\nis delayed until the drive reports that it has successfully halted.bStartReferenceRealState=FALSEParameter number: 1213",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "fSWErrorMaxDistance",
+          "LREAL",
+          "0",
+          "Distance in which the drive has to reach standstill after an error\nhas occurred.Parameter number: 1250",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "eCheckPositionLag",
+          "SMC3_CheckPositionLagMode",
+          "0",
+          "Parameter number: 1207",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "fMaxPositionLag",
+          "LREAL",
+          "",
+          "Parameter number: 1208",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "bPositionLagActive",
+          "BOOL",
+          "",
+          "Parameter number: 1209",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "bModuloDoneByDrive",
+          "BOOL",
+          "",
+          "Parameter number: 1242",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "diFollowingError",
+          "DINT",
+          "",
+          "Parameter number:  1243",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "fFollowingError",
+          "LREAL",
+          "",
+          "Parameter number: 1244",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "aCaptDesc",
+          "ARRAY [0..7] OFSMC3_CaptureDescription",
+          "",
+          "Parameter number: 1400",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "xPersistentDataLoaded",
+          "BOOL",
+          "FALSE",
+          "",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "strDriveInterfaceError",
+          "STRING(255)",
+          "",
+          "",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "adatAcyclic",
+          "ARRAY\n[1..SMC3_gc_usiNumberAcyclicChannels]\nOFSMC3_DriveAcyclicTel",
+          "",
+          "",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "nAbortCounter",
+          "UDINT",
+          "",
+          "Internal: counts the number of aborts.  This counter\nsimply wraps to 0 when exceeding 2^32-1, so use accordingly.\nIncreased in method SetOwner().",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "vMinRequiredVersion",
+          "VERSION",
+          "",
+          "The minimum version of SM3_Basic that the driver requires.",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "bAvoidReversalOnHaltStop",
+          "BOOL",
+          "",
+          "Parameter number: 1260",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "bConsiderLimitsOfAbortedMotionOnHaltStop",
+          "BOOL",
+          "",
+          "Parameter number: 1270",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "bUpdateIOsInStop",
+          "BOOL",
+          "",
+          "Update the IOs if the application is stopped.\nParameter number 1280",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "bAutoRestart",
+          "BOOL",
+          "TRUE",
+          "If TRUE, an implictSMC3_ReinitDriveis executed after\nthe communication to the drive is established again after a\ncommunication loss (e.g. fieldbus slave no longer operational).\nIf FALSE, an explicit call toSMC3_ReinitDriveis required\nafter communication has been established again. (This is the\nbehavior of SoftMotion versions before 4.18.0.0.)\nDefault is TRUE if not set by the device parameter, i.e. the\ndrive device can override the default.\nParameter number 1281",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "overrideFactors",
+          "SMRB.DynFactors",
+          "STRUCT(fVel := 1, fAcc := 1, fJerk := 1, fTorque := 1)",
+          "",
+          "AXIS_REF_SM3"
+        ],
+        [
+          "m_superimposed",
+          "SMC_SuperimposedData",
+          "",
+          "Internal: information of superimposed movements",
+          "AXIS_REF_SM3"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "strDriver",
+          "Type": "STRING(16)",
+          "Initial": "",
+          "Comment": "",
+          "Inherited from": "AXIS_REF_SM3"
+        },
+        [
+          "dwDriverVersion",
+          "DWORD",
+          "",
+          "",
+          "AXIS_REF_SM3"
+        ],
+        {
+          "Scope": "Input",
+          "Name": "eValueReference",
+          "Type": "SMC_ValueSelect",
+          "Initial": "",
+          "Comment": "2010",
+          "Inherited from": ""
+        },
+        [
+          "usiFilterDepthPosition",
+          "LREAL",
+          "",
+          "2020",
+          ""
+        ],
+        [
+          "usiFilterDepthVelocity",
+          "LREAL",
+          "",
+          "2021",
+          ""
+        ],
+        [
+          "fTimeShiftCycles",
+          "LREAL",
+          "",
+          "2022",
+          ""
+        ],
+        [
+          "fLogicalOffsetPosition",
+          "LREAL",
+          "",
+          "2000",
+          ""
+        ],
+        {
+          "Scope": "Output",
+          "Name": "pRealAxis",
+          "Type": "POINTER TOAXIS_REF_SM3",
+          "Initial": "",
+          "Comment": "",
+          "Inherited from": ""
+        }
+      ]
+    }
+  ]
+}

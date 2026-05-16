@@ -1,0 +1,77 @@
+{
+  "library": "ModbusFB",
+  "title": "SerialSubFunctionCodes (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/ModbusFB/Current/ModbusFB/Enums/SerialSubFunctionCodes.html",
+  "page_title": "SerialSubFunctionCodes (ENUM)",
+  "text": "\nTYPE SerialSubFunctionCodes :\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Name": "ReturnQueryData",
+          "Initial": "0"
+        },
+        {
+          "Name": "RestartCommunicationsOption",
+          "Initial": "1"
+        },
+        {
+          "Name": "ReturnDiagnosticRegister",
+          "Initial": "2"
+        },
+        {
+          "Name": "ChangeASCIIInputDelimiter",
+          "Initial": "3"
+        },
+        {
+          "Name": "ForceListenOnlyMode",
+          "Initial": "4"
+        },
+        {
+          "Name": "ClearCountersAndDiagnosticRegister",
+          "Initial": "11"
+        },
+        {
+          "Name": "ReturnBusMessageCount",
+          "Initial": "12"
+        },
+        {
+          "Name": "ReturnBusCommunicationErrorCount",
+          "Initial": "13"
+        },
+        {
+          "Name": "ReturnBusExceptionErrorCount",
+          "Initial": "14"
+        },
+        {
+          "Name": "ReturnServerMessageCount",
+          "Initial": "15"
+        },
+        {
+          "Name": "ReturnServerNoResponseCount",
+          "Initial": "16"
+        },
+        {
+          "Name": "ReturnServerNAKCount",
+          "Initial": "17"
+        },
+        {
+          "Name": "ReturnServerBusyCount",
+          "Initial": "18"
+        },
+        {
+          "Name": "ReturnBusCharacterOverrunCount",
+          "Initial": "19"
+        },
+        {
+          "Name": "ClearOverrunCounterAndFlag",
+          "Initial": "20"
+        }
+      ]
+    }
+  ]
+}

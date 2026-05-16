@@ -1,0 +1,31 @@
+{
+  "library": "Util",
+  "title": "GRAY_TO_WORD (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/Gray-Conversions/GRAY_TO_WORD.html",
+  "page_title": "GRAY_TO_WORD (FUN)",
+  "text": "\nFUNCTION GRAY_TO_WORD : WORD\nConverts one WORD of GRAY code into one WORD of binary code\nRequirements: Functions:\nPUTBIT\n,\nEXTRACT\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GRAY_TO_WORD",
+          "Type": "WORD",
+          "Comment": "Value in binary code for inputW"
+        },
+        {
+          "Scope": "Input",
+          "Name": "W",
+          "Type": "WORD",
+          "Comment": "Value in GRAY code"
+        }
+      ]
+    }
+  ]
+}

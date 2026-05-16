@@ -1,0 +1,42 @@
+{
+  "library": "BACnet",
+  "title": "BACnetBitStringGetBit (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/Utilities/BACnetUtilities/InitializeBACnetDataTypes/BitStrings/BACnetBitStringGetBit.html",
+  "page_title": "BACnetBitStringGetBit (FUN)",
+  "text": "\nFUNCTION BACnetBitStringGetBit : BOOL\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "BACnetBitStringGetBit",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "bitStr",
+          "Type": "CmpBACnet.IEC_BACNET_BIT_STRING",
+          "Comment": "The BACnet bit string to operate on."
+        },
+        [
+          "bitIndex",
+          "UINT",
+          "The index of the bit to set"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bitValue",
+          "Type": "BOOL",
+          "Comment": "The value of the specified bit."
+        }
+      ]
+    }
+  ]
+}

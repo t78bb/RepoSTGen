@@ -1,0 +1,118 @@
+{
+  "library": "PLCopen Safety FBs",
+  "title": "FBS_GUARDLOCK2 (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/PLCopen Safety FBs/Current/PLCopenSafetyFBs/Enums/FBS_GUARDLOCK2.html",
+  "page_title": "FBS_GUARDLOCK2 (ENUM)",
+  "text": "\nTYPE FBS_GUARDLOCK2 :\nDefinition of SF_GuardLocking_2 function block states and its diagnostic values.\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "IDLE",
+          "Initial": "16#0",
+          "Comment": "The FUNCTION block is NOT active (initial state)."
+        },
+        {
+          "Name": "INIT_RESREQ",
+          "Initial": "16#8801",
+          "Comment": "Function block was activated and initiated. NOT (S_Guard =\nTRUE AND S_GuardLock = TRUE)"
+        },
+        {
+          "Name": "INIT",
+          "Initial": "16#8401",
+          "Comment": "Function block was activated and initiated. (S_Guard = TRUE\nAND S_GuardLock = TRUE)"
+        },
+        {
+          "Name": "WAIT_FOR_RESET",
+          "Initial": "16#8430",
+          "Comment": "Door is closed and locked, now waiting for operator reset."
+        },
+        {
+          "Name": "WAIT_FOR_OPERATOR",
+          "Initial": "16#8812",
+          "Comment": "Waiting for operator to request to open the door (unlock\nrequest)."
+        },
+        {
+          "Name": "GUARD_OPEN_UNLOCKED",
+          "Initial": "16#8822",
+          "Comment": "Lock is released and guard is open."
+        },
+        {
+          "Name": "GUARD_CLOSED_UNLOCKED",
+          "Initial": "16#8832",
+          "Comment": "Lock is released but guard is closed."
+        },
+        {
+          "Name": "WAIT_FOR_UNLOCKED",
+          "Initial": "16#8010",
+          "Comment": "S_UnlockGuard is TRUE, however the acknowledge signal\nS_GuardLock is still TRUE (so waiting for acknowledge\n<FALSE>)"
+        },
+        {
+          "Name": "GUARD_CLOSED_AND_LOCKED",
+          "Initial": "16#8000",
+          "Comment": "Guard is closed and locked."
+        },
+        {
+          "Name": "ERR_RESET_0",
+          "Initial": "16#C001",
+          "Comment": "Static Reset detected in state 0x8x01."
+        },
+        {
+          "Name": "ERR_RESET_1",
+          "Initial": "16#C011",
+          "Comment": "Static Reset detected in state 0xC410."
+        },
+        {
+          "Name": "ERR_RESET_2",
+          "Initial": "16#C021",
+          "Comment": "Static Reset detected in state 0xC420."
+        },
+        {
+          "Name": "ERR_RESET_3",
+          "Initial": "16#C031",
+          "Comment": "Static Reset detected in state 0x8433."
+        },
+        {
+          "Name": "ERR_RESET_4",
+          "Initial": "16#C041",
+          "Comment": "Static Reset detected in state 0xC440."
+        },
+        {
+          "Name": "ERR_GUARD",
+          "Initial": "16#C010",
+          "Comment": "S_GuardLock and S_Guard are not TRUE although the door was\nnot requested to be opened."
+        },
+        {
+          "Name": "ERR_GUARD_RETURN",
+          "Initial": "16#C410",
+          "Comment": "S_GuardLock and S_Guard become TRUE again after being lost\n(0xC010)."
+        },
+        {
+          "Name": "ERR_SAFETY_RETURN",
+          "Initial": "16#C420",
+          "Comment": "Safety acknowledge signal becomes TRUE again after being\nlost (0xCx50)."
+        },
+        {
+          "Name": "ERR_UNLOCK_REQ",
+          "Initial": "16#C440",
+          "Comment": "Waiting time to Unlock exceeded."
+        },
+        {
+          "Name": "ERR_SAFETYLOST_RESREQ",
+          "Initial": "16#C450",
+          "Comment": "Lost safety acknowledge signal with S_Guard = TRUE AND\nS_GuardLock = TRUE"
+        },
+        {
+          "Name": "ERR_SAFETYLOST",
+          "Initial": "16#C050",
+          "Comment": "Lost safety acknowledge signal with NOT (S_Guard = TRUE AND\nS_GuardLock = TRUE)"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现对电梯系统中指定楼层的上行、下行及停靠标志和相关指示灯状态的清除功能。",
+  "provide_code": "FUNCTION F_ClearFloorStop\nVAR_INPUT\n\tnFloor\t\t\t:\tUSINT;\t\t//楼层号\n\tbClearUpStop\t:\tBOOL;\t\t//是否清除上升停靠标志\n\tbClearDownStop\t:\tBOOL;\t\t//是否清除下降停靠标志\n\tbClearStopFloor\t:\tBOOL;\t\t//是否清除楼层停靠标志\nEND_VAR"
+}

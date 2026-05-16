@@ -1,0 +1,8 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "IBaseInstance (Interface)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_Module/IBaseInstance.html",
+  "page_title": "IBaseInstance (ITF)",
+  "text": "\nINTERFACE IBaseInstance EXTENDS __SYSTEM.IQueryInterface\nBase interface for all instances that have a name and a communication address.\nImplemented by IModule.\nProperties:\nComAddress\nInstanceName\nMethods:\nInit\nMain\nOnAfterOnlineChange\nOnBeforeOnlineChange\nStructure:\nComAddress (Property)\nInit (Method)\nInstanceName (Property)\nMain (Method)\nOnAfterOnlineChange (Method)\nOnBeforeOnlineChange (Method)",
+  "tables": []
+}

@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现将带有时间间隔、位置、速度和状态等信息的数据按特定格式写入文件的功能。",
+  "provide_code": "FUNCTION_BLOCK fileSave\nVAR_INPUT\n\tfilePath \t:STRING;\n\tintervalt\t:INT;\n\tpositionInt \t:INT;\n\tspeedInt \t\t:INT;\n\tstateInt\t\t:INT;\nEND_VAR"
+}

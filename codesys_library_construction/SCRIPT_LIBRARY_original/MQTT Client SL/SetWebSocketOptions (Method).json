@@ -1,0 +1,40 @@
+{
+  "library": "MQTT Client SL",
+  "title": "SetWebSocketOptions (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/MQTT Client SL/Current/MQTT-Client/Common/Function-Blocks/pou-MQTTClient/SetWebSocketOptions.html",
+  "page_title": "MQTTClient.SetWebSocketOptions (METH)",
+  "text": "MQTT Client\nCommon\nEnums\nCOMMUNICATION_MODE (Enum)\nFILTER_MODE (Enum)\nMQTT_ERROR (Enum)\nMQTT_QOS (Enum)\nMQTT_VERSION (Enum)\nV5\nFunction Blocks\nMQTTClient (FunctionBlock)\nMQTTPublish (FunctionBlock)\nMQTTSubscribe (FunctionBlock)\nParams\nMQTTParam (ParamList)\nStructs\nMQTTV5\nUTF-8\nConvertUTF16toUTF8 (Function)\nConvertUTF8toUTF16 (Function)\nFile and Project Information\nLibrary Reference\n3SLicense\nLibrary Identification\nLibrary Properties\nCAA FB Factory\nLibrary Identification\nLibrary Properties\nCAA Types Extern\nLibrary Identification\nLibrary Properties\nCmpCrypto\nLibrary Identification\nLibrary Properties\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nCmpLog\nLibrary Identification\nLibrary Properties\nCmpSchedule\nLibrary Identification\nLibrary Properties\nCmpX509Cert\nLibrary Identification\nLibrary Properties\nCommon Behaviour Model\nLibrary Identification\nLibrary Properties\nComponent Manager\nLibrary Identification\nLibrary Properties\nElement Collections\nLibrary Identification\nLibrary Properties\nMemoryUtils\nLibrary Identification\nLibrary Properties\nNet Base Services\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nStringUtils\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysSocket2\nLibrary Identification\nLibrary Properties\nSysSocket2 Implementation\nLibrary Identification\nLibrary Properties\nSysTime\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nWeb Socket Client SL\nLibrary Identification\nLibrary Properties\nMQTT Client SL\nDocs\n»\nMQTT\nClient\n»\nCommon\n»\nFunction\nBlocks\n»\nMQTTClient\n(FB)\n»\nMQTTClient.SetWebSocketOptions (METH)\nMQTTClient.SetWebSocketOptions (METH)\nÂ¶\nMETHOD SetWebSocketOptions : BOOL\nMethod to set additional websocket options if eCommunicationMode = COMMUNICATION_MODE.WEB_SOCKET\nInOut:\nScope\nName\nType\nInitial\nComment\nReturn\nSetWebSocketOptions\nBOOL\nInput\ntPingInterval\nTIME\nTIME#0ms\nPing interval, T#0s: no ping\nhttpProxySettings\nWEB_SOCKET.HttpProxySettings\nOptional http proxy settings",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetWebSocketOptions",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "tPingInterval",
+          "Type": "TIME",
+          "Initial": "TIME#0ms",
+          "Comment": "Ping interval, T#0s: no ping"
+        },
+        [
+          "httpProxySettings",
+          "WEB_SOCKET.HttpProxySettings",
+          "",
+          "Optional http proxy settings"
+        ]
+      ]
+    }
+  ]
+}

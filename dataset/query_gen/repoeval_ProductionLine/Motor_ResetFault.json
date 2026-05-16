@@ -1,0 +1,6 @@
+{
+  "requirement": "This code should implement a method named Motor_ResetFault that resets the fault status of a motor. It requires an input parameter MotorI of type MotorI, which includes a boolean attribute FaultReset indicating whether to attempt a fault reset. The method should also return a boolean value indicating the success of the operation. The output parameter MotorO of type MotorO should have its FaultStatus attribute set to FALSE when the FaultReset attribute of MotorI is triggered (rising edge detection). The method should handle the edge detection of the FaultReset signal and only reset the fault status when a rising edge is detected. The implementation should include a rising edge detection mechanism, typically using a structure like r_trig, where the CLK input is connected to MotorI.FaultReset.",
+  "provide_code": "METHOD ResetFault : BOOL\nVAR_INPUT\n\tMotorI:MotorI;\nEND_VAR\nVAR_OUTPUT\n\tMotorO:MotorO;\nEND_VAR",
+  "function_name": "Motor_ResetFault",
+  "requirement_cn": "这段代码应实现一个名为 Motor_ResetFault 的方法，用于重置电机的故障状态。它需要一个类型为 MotorI 的输入参数，其中包含一个布尔属性 FaultReset，表示是否尝试复位故障。该方法还应返回一个布尔值，表示操作的成功与否。当 MotorI 的 FaultReset 属性被触发（上升沿检测）时，输出参数 MotorO 的类型为 MotorO，其 FaultStatus 属性应设置为 FALSE。该方法应处理 FaultReset 信号的边缘检测，并且只有在检测到上升沿时才重置故障状态。实现应包括一个上升沿检测机制，通常使用像 r_trig 这样的结构，其中 CLK 输入连接到 MotorI.FaultReset。"
+}

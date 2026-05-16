@@ -1,0 +1,5 @@
+{
+  "requirement": "This code is intended to implement a command execution system for controlling the extension and retraction percentages of ground and sky tracks based on input parameters such as track level, index, direction, and proportional valve percentage.",
+  "provide_code": "FUNCTION_BLOCK CommandExecutor0\nVAR_INPUT\n\tlevel\t\t:INT;\t\t\t//1->地轨\t2->天轨\n\tidx\t\t\t:INT;\t\t\t//挡板索引编号\n\tdirect\t\t:TargetDirect;\t//方向\n\tpercent\t\t:REAL;\t\t\t//比例阀百分比 传入0-100\nEND_VAR\nVAR_OUTPUT\nEND_VAR",
+  "function_name": "CommandExecutor0"
+}

@@ -1,0 +1,6 @@
+{
+  "requirement": "This code should implement a function block named FB_AirConComfortCommand that controls an air conditioning system. It should include a reference to an FB_AirConditioning object and methods to execute air conditioning commands. The Execute method should check if the reference to the FB_AirConditioning object is valid using __ISVALIDREF and, if true, activate the air conditioning and set the temperature to 20.0 degrees Celsius. The FB_init method should initialize the reference to the FB_AirConditioning object based on the input parameters bInitRetains and bInCopyCode, where if the reference is valid, it assigns it to the internal reference; otherwise, it sets the reference to null (0).",
+  "provide_code": "FUNCTION_BLOCK PUBLIC FB_AirConComfortCommand IMPLEMENTS I_Command",
+  "function_name": "FB_AirConComfortCommand",
+  "requirement_cn": "这段代码应实现一个名为 FB_AirConComfortCommand 的功能块，用于控制空调系统。它应包括对 FB_AirConditioning 对象的引用以及执行空调命令的方法。Execute 方法应检查对 FB_AirConditioning 对象的引用是否有效，使用 __ISVALIDREF 进行验证，如果为真，则激活空调并将温度设置为 20.0 摄氏度。FB_init 方法应根据输入参数 bInitRetains 和 bInCopyCode 初始化对 FB_AirConditioning 对象的引用，如果引用有效，则将其分配给内部引用；否则，将引用设置为 null（0）。"
+}

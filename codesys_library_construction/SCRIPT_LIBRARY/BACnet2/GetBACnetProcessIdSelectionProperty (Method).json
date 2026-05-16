@@ -1,0 +1,31 @@
+{
+  "library": "BACnet2",
+  "title": "GetBACnetProcessIdSelectionProperty (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/BACnetObjects/base/pou-BACnetObjectBase/Utilities/typed-property-access/GetBACnetProcessIdSelectionProperty.html",
+  "page_title": "BACnetObjectBase.GetBACnetProcessIdSelectionProperty (METH)",
+  "text": "\nMETHOD GetBACnetProcessIdSelectionProperty : CmpBACnet.IEC_BACNET_PROCESS_ID_SELECTION\nReturns the BACnetProcessIdSelection of the specified Property (propID) of this BACnet-Object as a CmpBACnet.IEC_BACNET_PROCESS_ID_SELECTION struct.\nThe used functions are no client, meaning, that the access of the property is not restricted by write or read access restrictions.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetBACnetProcessIdSelectionProperty",
+          "Type": "CmpBACnet.IEC_BACNET_PROCESS_ID_SELECTION",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "propID",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_ID",
+          "Comment": "The ID of the property to get."
+        }
+      ]
+    }
+  ]
+}

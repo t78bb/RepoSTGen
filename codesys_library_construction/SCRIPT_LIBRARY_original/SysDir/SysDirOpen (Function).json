@@ -1,0 +1,51 @@
+{
+  "library": "SysDir",
+  "title": "SysDirOpen (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SysDir/Current/SysDirOpen.html",
+  "page_title": "SysDirOpen (FUN)",
+  "text": "Deutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nMenu\nSearch\nDeutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nDirFileTime (Struct)\nDirInfo (Struct)\nDirInfoFlags (GVL)\nSysDirClose (Function)\nSysDirCopy (Function)\nSysDirCreate (Function)\nSysDirCreate2 (Function)\nSysDirDelete (Function)\nSysDirDelete2 (Function)\nSysDirGetCurrent (Function)\nSysDirOpen (Function)\nSysDirRead (Function)\nSysDirRename (Function)\nSysDirSetCurrent (Function)\nFile and Project Information\nLibrary Reference\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nSysDir\nDocs\n»\nSysDirOpen (FUN)\nSysDirOpen (FUN)\nÂ¶\nFUNCTION SysDirOpen : RTS_IEC_HANDLE\nOpens a specified directory and returns a handle and the first directory entry.\nszDirEntry is expected to provide enough space to write the direcory entry to.\nIn case szDirEntry is 0, the first directory entry may be retrieved with SysDirRead.\nInOut:\nScope\nName\nType\nComment\nReturn\nSysDirOpen\nRTS_IEC_HANDLE\nReturns the runtime system error code (see\nCmpErrors.library)\nInput\nszDir\nREFERENCE TO STRING\nName of directory.\nNote\nEmpty string (ââ) is the request for the current working directory.\nszDirEntry\nREFERENCE TO STRING\nOUT_PARAMETER, optional: Directory entry as string, may be 0\ndiMaxDirEntry\nDINT\nOUT_PARAMETER, optional: Max number of bytes to write in\npszDirEntry\npDirInfo\nPOINTER TO\nDirInfo\nOUT_PARAMETER, optional: Directory information, may be 0\npResult\nPOINTER TO RTS_IEC_RESULT\nOUT_PARAMETER: Pointer to runtime system error code (see\nCmpErrors.library)\ntop\nCODESYS Group | We\nsoftware\nAutomation.\nto software\n['sɒftwɛər]\ntransitive verb\n__softwared/softwaring\n: to develop software\n// to software automation: to develop software for automation purposes\nThe CODESYS Group is the manufacturer of CODESYS, the leading hardware-independent\n                                    IEC 61131-3 automation software for developing and engineering controller\n                                    applications.\nCODESYS® is a registered trademark.\nCODESYS GmbH\nA member of the CODESYS Group\nMemminger Straße 151, 87439 Kempten\nGermany\nTel.:\n+49-831-54031-0\ninfo@codesys.com\nLegal Notice\nPrivacy Policy\nLinkedIn\nYoutube\nRSS\nDownloads\nLogin\nCODESYS Store\n© 2022 CODESYS GmbH\n| A member of the CODESYS Group",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SysDirOpen",
+          "Type": "RTS_IEC_HANDLE",
+          "Comment": "Returns the runtime system error code (see\nCmpErrors.library)"
+        },
+        {
+          "Scope": "Input",
+          "Name": "szDir",
+          "Type": "REFERENCE TO STRING",
+          "Comment": "Name of directory.NoteEmpty string (ââ) is the request for the current working directory."
+        },
+        [
+          "szDirEntry",
+          "REFERENCE TO STRING",
+          "OUT_PARAMETER, optional: Directory entry as string, may be 0"
+        ],
+        [
+          "diMaxDirEntry",
+          "DINT",
+          "OUT_PARAMETER, optional: Max number of bytes to write in\npszDirEntry"
+        ],
+        [
+          "pDirInfo",
+          "POINTER TODirInfo",
+          "OUT_PARAMETER, optional: Directory information, may be 0"
+        ],
+        [
+          "pResult",
+          "POINTER TO RTS_IEC_RESULT",
+          "OUT_PARAMETER: Pointer to runtime system error code (see\nCmpErrors.library)"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "library": "SM3_Basic",
+  "title": "SkipNextInputUpdate (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/DriveInterface/AXIS_REF/pou-AXIS_REF_SM3/Help-functions/SkipNextInputUpdate.html",
+  "page_title": "AXIS_REF_SM3.SkipNextInputUpdate (METH)",
+  "text": "\nMETHOD PUBLIC SkipNextInputUpdate\nSets a flag to skip the next call to\nAfterReadInputs\n.\nThis can be used in a scenario where\nAfterReadInputs\ngets called from within the application, instead of from implicit code,\ne.g. in order to fake I/O values for debug or test purposes.\nNote\nFor the\nCommunicationStateMachine\nto work correctly,\nAfterReadInputs\nmust not be called more than once per cycle.\nThis especially applies for the very first cycle, since the skip flag cannot\nbe set for the first implicit call to\nAfterReadInputs\n.",
+  "tables": []
+}

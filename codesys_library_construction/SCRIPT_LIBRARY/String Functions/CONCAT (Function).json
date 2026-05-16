@@ -1,0 +1,47 @@
+{
+  "library": "String Functions",
+  "title": "CONCAT (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Functions/Current/StrFunc/Functions/CONCAT.html",
+  "page_title": "CONCAT (FUN)",
+  "text": "\nFUNCTION CONCAT :\nIString\nConcatenates two strings\n| See:\nSBD.IBuilder\n| The multiple nesting of CONCAT calls can often be replaced much faster via multiple calls to IBuilder.WriteIString.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "CONCAT",
+          "Type": "IString",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfHead",
+          "Type": "IString",
+          "Comment": "The first part of the new string"
+        },
+        [
+          "itfTail",
+          "IString",
+          "The second part of the new string"
+        ],
+        [
+          "itfResource",
+          "IString",
+          "The resource that this function is working on. It will\ncontain the result after the function call and will also be\nreturned by this function so it can be used in nested calls."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "eErrorID",
+          "Type": "ERROR",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

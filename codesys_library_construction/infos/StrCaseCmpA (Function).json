@@ -1,0 +1,32 @@
+{
+  "library": "StringUtils",
+  "title": "StrCaseCmpA (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/StringUtils/Current/Public-Parts/Ansi/StrCaseCmpA.html",
+  "page_title": "StrCaseCmpA (FUN)",
+  "text": "\nFUNCTION StrCaseCmpA : INT\nDoes a caseinsensitive comparison of two strings\nReturn values:\n0 -> the strings are equal\n-1 -> pByte1 is less than pByte2\n1 -> pByte1 is larger than pByte2\n-2 -> Error: An invalid string (ie. Null-Pointer is given)\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "StrCaseCmpA",
+          "Type": "INT"
+        },
+        {
+          "Scope": "Input",
+          "Name": "pByte1",
+          "Type": "POINTER TO BYTE"
+        },
+        [
+          "pByte2",
+          "POINTER TO BYTE"
+        ]
+      ]
+    }
+  ]
+}

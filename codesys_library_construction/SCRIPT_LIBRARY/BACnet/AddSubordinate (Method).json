@@ -1,0 +1,58 @@
+{
+  "library": "BACnet",
+  "title": "AddSubordinate (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/StructuredView/pou-BACnetStructuredView/AddSubordinate.html",
+  "page_title": "BACnetStructuredView.AddSubordinate (METH)",
+  "text": "\nMETHOD AddSubordinate : CmpBACnet.IEC_BACNET_STATUS\nAdds a subordinate (given by a BACnet-Object-Reference) and a subordinate anotation to the Subordinate_List-Property and\nthe Subordinate_Annotations-Property of this BACnet-Object. Both the subordinate and its annotation are added simulatenously by\nthis function.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "AddSubordinate",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "deviceInstance",
+          "Type": "CmpBACnet.IEC_BACNET_DWORD",
+          "Initial": "",
+          "Comment": "The device to reference by the subordinate"
+        },
+        [
+          "objInstance",
+          "CmpBACnet.IEC_BACNET_DWORD",
+          "",
+          "The object instance number to reference by the subordinate."
+        ],
+        [
+          "objType",
+          "CmpBACnet.IEC_BACNET_OBJECT_TYPE",
+          "",
+          "The object type to reference by the subordiante."
+        ],
+        [
+          "xDevicePresent",
+          "BOOL",
+          "TRUE",
+          "Whether the device is present or not."
+        ],
+        [
+          "annotation",
+          "WSTRING(255)",
+          "",
+          "The annotation (comment) for the subordinate added."
+        ]
+      ]
+    }
+  ]
+}

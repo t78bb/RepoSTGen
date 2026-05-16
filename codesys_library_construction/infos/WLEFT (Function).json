@@ -1,0 +1,32 @@
+{
+  "library": "Standard64",
+  "title": "WLEFT (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/Standard64/Current/String-Functions/WLEFT.html",
+  "page_title": "WLEFT (FUN)",
+  "text": "\nFUNCTION WLEFT : WSTRING(255)\nReturn leftmost SIZE wcharacters of STR.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "WLEFT",
+          "Type": "WSTRING(255)"
+        },
+        {
+          "Scope": "Input",
+          "Name": "STR",
+          "Type": "WSTRING(255)"
+        },
+        [
+          "SIZE",
+          "INT"
+        ]
+      ]
+    }
+  ]
+}

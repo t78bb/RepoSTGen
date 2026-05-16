@@ -1,0 +1,41 @@
+{
+  "library": "AlarmManager",
+  "title": "AlarmStorageConvertValueToREAL (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Alarm-storage-API/AlarmStorageConvertValueToREAL.html",
+  "page_title": "AlarmStorageConvertValueToREAL (FUN)",
+  "text": "\nFUNCTION AlarmStorageConvertValueToREAL : REAL\nConverts a value read from the alarm storage into a REAL value.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "AlarmStorageConvertValueToREAL",
+          "Type": "REAL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "liValue",
+          "Type": "LINT",
+          "Comment": "The value, that was read from TblAlarm"
+        },
+        [
+          "iType",
+          "TypeClass",
+          "A TypeClass value representing the type of the value"
+        ],
+        [
+          "xValueNULL",
+          "BOOL",
+          "Indicates, whether NULL is stored in the alarm storage"
+        ]
+      ]
+    }
+  ]
+}

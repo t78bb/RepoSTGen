@@ -1,0 +1,25 @@
+{
+  "library": "AlarmManager",
+  "title": "AlarmAdded (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Alarm-storage-API/pou-IAlarmStorageListener/AlarmAdded.html",
+  "page_title": "IAlarmStorageListener.AlarmAdded (METH)",
+  "text": "\nMETHOD AlarmAdded\nNotification, that a new alarm has been written to the alarm storage\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "alarm",
+          "Type": "AlarmStorageRow",
+          "Comment": "An instance of AlarmStorageRow describing the data of the alarm."
+        }
+      ]
+    }
+  ]
+}

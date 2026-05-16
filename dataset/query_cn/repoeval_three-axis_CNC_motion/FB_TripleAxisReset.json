@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现对三轴（X轴、Y轴、Z轴）的复位操作，并提供复位状态、错误检测及错误信息反馈功能。",
+  "provide_code": "FUNCTION_BLOCK FB_TripleAxisReset\nVAR_INPUT\n\tAxisX\t\t\t:\tSM3_Basic.AXIS_REF_SM3\t\t\t//X轴引用\n\tAxisY\t\t\t:\tSM3_Basic.AXIS_REF_SM3\t\t\t//Y轴引用\n\tAxisZ\t\t\t:\tSM3_Basic.AXIS_REF_SM3\t\t\t//Z轴引用\n\tbExecute\t\t:\tBOOL;\t\t\t\t//执行复位信号\nEND_VAR\nVAR_OUTPUT\n\tbDone\t\t\t:\tBOOL;\t\t\t\t//三轴都复位完成\n\tbBusy\t\t\t:\tBOOL;\t\t\t\t//复位进行中\n\tbError\t\t\t:\tBOOL;\t\t\t\t//错误标志\n\tsErrorString\t:\tSTRING;\t\t\t\t//错误信息字符串\nEND_VAR"
+}

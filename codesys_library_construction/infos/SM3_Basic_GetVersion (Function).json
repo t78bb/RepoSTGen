@@ -1,0 +1,23 @@
+{
+  "library": "SM3_Basic",
+  "title": "SM3_Basic_GetVersion (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic_GetVersion.html",
+  "page_title": "SM3_Basic_GetVersion (FUN)",
+  "text": "\nFUNCTION SM3_Basic_GetVersion : DWORD\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SM3_Basic_GetVersion",
+          "Type": "DWORD"
+        }
+      ]
+    }
+  ]
+}

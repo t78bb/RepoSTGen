@@ -1,0 +1,42 @@
+{
+  "library": "SM3_Dynamics",
+  "title": "AxesStateToTorque (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Dynamics/Current/SM3_Dynamics/ISMDynamics/pou-ISMDynamics/AxesStateToTorque.html",
+  "page_title": "ISMDynamics.AxesStateToTorque (METH)",
+  "text": "\nMETHOD AxesStateToTorque : SMC_ERROR\nReturns the required axis forces/torques for the given\naxes state.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "AxesStateToTorque",
+          "Type": "SMC_ERROR",
+          "Comment": ""
+        },
+        {
+          "Scope": "Inout",
+          "Name": "torque",
+          "Type": "SM3M.SMC_Vec",
+          "Comment": "The resulting force or torque for all axes in N or Nm."
+        },
+        {
+          "Scope": "Inout Const",
+          "Name": "axesState",
+          "Type": "SM3M.SMC_DynVecState",
+          "Comment": "The dynamic state of all axes. For linear axes in\nu, u/s, u/sÂ², for rotary axes in Â°, Â°/s, Â°/sÂ²"
+        },
+        [
+          "addParams",
+          "DynamicsParams",
+          "Additional parameters."
+        ]
+      ]
+    }
+  ]
+}

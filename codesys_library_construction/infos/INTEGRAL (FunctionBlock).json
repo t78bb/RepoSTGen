@@ -1,0 +1,52 @@
+{
+  "library": "Util",
+  "title": "INTEGRAL (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/Mathematical-Functions/INTEGRAL.html",
+  "page_title": "INTEGRAL (FB)",
+  "text": "\nFUNCTION_BLOCK INTEGRAL\ndetermines approximately the integral over time.\nExample: Function block in FBD\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "IN",
+          "Type": "REAL",
+          "Initial": "",
+          "Comment": "Input value"
+        },
+        [
+          "TM",
+          "DWORD",
+          "",
+          "Time since last call in msec"
+        ],
+        [
+          "RESET",
+          "BOOL",
+          "",
+          "TRUE:OUTis set to zero andOVERFLOWtoFALSE"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "OUT",
+          "Type": "REAL",
+          "Initial": "",
+          "Comment": "Value of the integral. This is done by summing all part\nintegralsIN*TM"
+        },
+        [
+          "OVERFLOW",
+          "BOOL",
+          "FALSE",
+          "TRUE: The value ofOUTis out of range of REAL variables. he function is blocked till\nit is new initialised by inputRESET."
+        ]
+      ]
+    }
+  ]
+}

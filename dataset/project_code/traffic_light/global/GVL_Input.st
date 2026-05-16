@@ -1,0 +1,3 @@
+VAR_GLOBAL
+	IReset	:	BOOL;
+END_VAR

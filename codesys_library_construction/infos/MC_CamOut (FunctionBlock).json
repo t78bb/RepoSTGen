@@ -1,0 +1,59 @@
+{
+  "library": "SM3_Basic",
+  "title": "MC_CamOut (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/Movement/MasterSlave/MC_CamOut.html",
+  "page_title": "MC_CamOut (FB)",
+  "text": "\nFUNCTION_BLOCK MC_CamOut\nThis function block disengages the slave axis from the master axis immediately.\nNote\nIt is assumed that this command is followed by another command, as for instance\nMC_Stop\n,\nMC_GearIn\n.\nIf there is no further command following, the default condition should be: maintain last velocity.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Slave",
+          "Type": "AXIS_REF_SM3",
+          "Initial": "",
+          "Comment": "Reference to slave axis"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "Rising edge: Starts the execution of the function block."
+        },
+        {
+          "Scope": "Output",
+          "Name": "Done",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "TRUE: Cam has been disengaged."
+        },
+        [
+          "Busy",
+          "BOOL",
+          "FALSE",
+          "TRUE: Execution of function block has not been finished."
+        ],
+        [
+          "Error",
+          "BOOL",
+          "FALSE",
+          "TRUE: Error has occurred within the function block."
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "0",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_TRAFOF_Bipod_Arm (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_Trafo_POUs/SoftMotion-Transformations/Parallel-Systems/Bipod_Arm/SMC_TRAFOF_Bipod_Arm.html",
+  "page_title": "SMC_TRAFOF_Bipod_Arm (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_TRAFOF_Bipod_Arm\nThe transformation computes the forward transformation of a bipod\nwith two rotary axes.\nSee\nSMC_TRAFO_Bipod_Arm\nfor a description.\nNote\nFor more information on the supported transformations,\nsee the chapter on CNC transformations.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "dArmLength1",
+          "Type": "LREAL",
+          "Initial": "",
+          "Comment": "Length of Arm1 connected to motor"
+        },
+        [
+          "dArmLength2",
+          "LREAL",
+          "",
+          "Length of Arm2 from Arm1 to linked connection"
+        ],
+        [
+          "dDistance",
+          "LREAL",
+          "",
+          "Distance of the two motors"
+        ],
+        [
+          "dOffsetA",
+          "LREAL",
+          "0",
+          "Additional offset of axis A in SoftMotion units"
+        ],
+        [
+          "dOffsetB",
+          "LREAL",
+          "0",
+          "Additional offset of axis B in SoftMotion units"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bError",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUE, if position is invalid"
+        },
+        [
+          "dx",
+          "LREAL",
+          "",
+          "X-position of manipulator"
+        ],
+        [
+          "dy",
+          "LREAL",
+          "",
+          "Y-position of manipulator"
+        ],
+        {
+          "Scope": "Inout",
+          "Name": "DriveA",
+          "Type": "AXIS_REF_SM3",
+          "Initial": "",
+          "Comment": "Reference to axis A"
+        },
+        [
+          "DriveB",
+          "AXIS_REF_SM3",
+          "",
+          "Reference to axis B"
+        ]
+      ]
+    }
+  ]
+}

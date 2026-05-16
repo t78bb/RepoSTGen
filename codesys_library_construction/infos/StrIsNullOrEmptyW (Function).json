@@ -1,0 +1,31 @@
+{
+  "library": "StringUtils",
+  "title": "StrIsNullOrEmptyW (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/StringUtils/Current/Public-Parts/Unicode/StrIsNullOrEmptyW.html",
+  "page_title": "StrIsNullOrEmptyW (FUN)",
+  "text": "\nFUNCTION StrIsNullOrEmptyW : BOOL\nThis function determines if the given string is null or empty\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "StrIsNullOrEmptyW",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "pstData",
+          "Type": "CharBufferPtr",
+          "Comment": "simply a pointer to byte"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "library": "IoStandard",
+  "title": "ConfigGetConnector (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/IoStandard/Current/Config-Access-Help-Functions-internal/ConfigGetConnector.html",
+  "page_title": "ConfigGetConnector (FUN)",
+  "text": "\nFUNCTION ConfigGetConnector : POINTER TO IoConfigConnector\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "ConfigGetConnector",
+          "Type": "POINTER TO IoConfigConnector"
+        },
+        {
+          "Scope": "Input",
+          "Name": "pIoConnectorList",
+          "Type": "POINTER TO IoConfigConnector"
+        },
+        [
+          "pnCount",
+          "POINTER TO DINT"
+        ],
+        [
+          "dwModuleType",
+          "DWORD"
+        ],
+        [
+          "dwInstance",
+          "DWORD"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "library": "String Builder",
+  "title": "ValidateSegment (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Builder/Current/Builder/Function-Blocks/pou-_Builder/IBuilder/Segments/ValidateSegment.html",
+  "page_title": "_Builder.ValidateSegment (METH)",
+  "text": "Builder\nAliases\nConstants (GVL)\nEnums\nENCODING (Alias)\nERROR (Alias)\nSTATS (Alias)\nFunction Blocks\nRange (Alias)\n_RangePool (Alias)\nInterfaces\nIBuilder (Folder)\nICharmap (Alias)\nIString (Alias)\nIStringRepresentation (Folder)\nTypes\nRUNE (Alias)\nFunction Blocks\n_Builder (FunctionBlock)\nIBuilder\nIStringRepresentation\nSetInitialValue (Method)\nFunctions\nCreateRange (Function)\nCreateRangePool (Function)\nLibrary Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nFile and Project Information\nLibrary Reference\nImmutable String Segments\nLibrary Identification\nLibrary Properties\nMemory Block Manager\nLibrary Identification\nLibrary Properties\nString Builder Base\nLibrary Identification\nLibrary Properties\nString Conversions\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nUTF-16 Encoding Support\nLibrary Identification\nLibrary Properties\nUTF-8 Encoding Support\nLibrary Identification\nLibrary Properties\nString Builder\nDocs\n»\nBuilder\n»\nFunction\nBlocks\n»\n_Builder\n(FB)\n»\nIBuilder\n»\nSegments\n»\n_Builder.ValidateSegment (METH)\n_Builder.ValidateSegment (METH)\nÂ¶\nMETHOD ValidateSegment :\nERROR\nThis method validates the current segment of the builder\nTo get a free segment out of the builder, method\nGetCurrentSegment\ncan be called beforehand\nCheck error return value for better diagnostics\nInOut:\nScope\nName\nType\nComment\nReturn\nValidateSegment\nERROR\nInput\npbyData\nPOINTER TO BYTE\nPointer to the first byte of the segment\nudiSize\nUDINT\nSize of the first segment\nOutput\nudiCount\nUDINT\nThe amount of validated bytes in builder",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "ValidateSegment",
+          "Type": "ERROR",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "pbyData",
+          "Type": "POINTER TO BYTE",
+          "Comment": "Pointer to the first byte of the segment"
+        },
+        [
+          "udiSize",
+          "UDINT",
+          "Size of the first segment"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "udiCount",
+          "Type": "UDINT",
+          "Comment": "The amount of validated bytes in builder"
+        }
+      ]
+    }
+  ]
+}

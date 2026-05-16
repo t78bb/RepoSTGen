@@ -1,0 +1,59 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_SetRampType (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/AdministrativeConfiguration/SMC_SetRampType.html",
+  "page_title": "SMC_SetRampType (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_SetRampType\nSets the ramp type of an axis to a new value.\nCan only be used when the axis is in state\nstandstill\nor\npower_off\n.\nThe FB executes synchronously on the rising edge of\nbExecute\n.\nAfter the call, either\nbDone\nor\nbError\nare set.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3",
+          "Initial": "",
+          "Comment": "Axis"
+        },
+        {
+          "Scope": "Input",
+          "Name": "bExecute",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": ""
+        },
+        [
+          "eRampType",
+          "SMC_RAMPTYPE",
+          "trapez",
+          "Defines the new ramp type."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bDone",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "TRUE: Success"
+        },
+        [
+          "bError",
+          "BOOL",
+          "FALSE",
+          "TRUE: Error has occured within function block."
+        ],
+        [
+          "eErrorID",
+          "SMC_ERROR",
+          "SMC_NO_ERROR",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

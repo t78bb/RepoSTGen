@@ -1,0 +1,184 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_ReadNCFile2 (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/ReadNCFile2/SMC_ReadNCFile2.html",
+  "page_title": "SMC_ReadNCFile2 (FB)",
+  "text": "GlobalTextList (GlobalTextList)\nImagePool_cnc_sm3 (ImagePool)\nImages\nLibrary Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nProjektinformationen\nGetBooleanProperty (Function)\nGetCompany (Function)\nGetNumberProperty (Function)\nGetTextProperty (Function)\nGetTextProperty2 (Function)\nGetTitle (Function)\nGetVersion (Function)\nGetVersionProperty (Function)\nSM3_CNC_GetVersion (Function)\nSMC_CNC_LibParams (ParamList)\nSM_CNC_Data types\nFile\nSMC_SINGLEVAR (Struct)\nSMC_TOKENTYPE (Enum)\nSMC_VARLIST (Struct)\nSMC_VARTYPE (Enum)\nSoftMotion CNC\nSMC_ABC_SLOPES_AT_STOP (Enum)\nSMC_ABC_SLOPES_NO_STOP (Enum)\nSMC_ADDAXIS (Enum)\nSMC_AL_STATUS (Enum)\nSMC_CNC_REF (FunctionBlock)\nSMC_DEC_STATUS (Enum)\nSMC_DIRECTION (Enum)\nSMC_GAddress (Alias)\nSMC_GCODEVIEWER_DATA (Struct)\nSMC_GCODE_TEXT (Struct)\nSMC_GCODE_WORD (Struct)\nSMC_GCodeObjectId (Struct)\nSMC_GEOINFO (Struct)\nSMC_GWord (Struct)\nSMC_INT_STATUS (Enum)\nSMC_INT_VELMODE (Enum)\nSMC_LINE_3D (Struct)\nSMC_MOVTYP (Enum)\nSMC_M_PARAMETERS (Struct)\nSMC_OBJECTSPLITTERMODE (Enum)\nSMC_ORI_CONVENTION (Enum)\nSMC_OUTQUEUE (FunctionBlock)\nbFull (Property)\nSMC_PLANE_H (Struct)\nSMC_POSINFO (Struct)\nSMC_SEGMENT (Struct)\nSMC_SEGMENTTYPE (Enum)\nSMC_SMOOTHBSPLINE_MODE (Enum)\nSMC_SMOOTHPATHADDAXMODE (Enum)\nSMC_SMOOTHPATHMODE (Enum)\nSMC_Seg (Struct)\nSMC_TC_STATUS (Enum)\nSMC_TOOLCORRMODE (Enum)\nSMC_VECTOR6D (Struct)\nSM_CNC_POUs\nFile\nReadNCFile\nSMC_ReadNCFile (FunctionBlock)\nStream\nToken\nSMC_ReadNCQueue (FunctionBlock)\nCloseFile (Action)\nhelp functions\nSMC_StringBuffer (FunctionBlock)\nNC2\nGSentence\nSMC_GExpToken_Iterator (FunctionBlock)\nSMC_GJUMP_COMMAND (Enum)\nSMC_GJUMP_TARGET (Union)\nSMC_GSentence (Struct)\nSMC_GSentenceQueue (FunctionBlock)\nSMC_GSentence_DynCall (Struct)\nSMC_GSentence_GWords (Struct)\nSMC_GSentence_GWords_Create (Function)\nSMC_GSentence_Iterator (FunctionBlock)\nSMC_GSentence_Let (Struct)\nSMC_GSentence_SubCall (Struct)\nSMC_GSentence_SubRet (Struct)\nSMC_GSentence_Type (Enum)\nSMC_GSentence_Union (Union)\nSMC_GVarDecl (Struct)\nSMC_GVar_Type (Enum)\nSMC_GWord_Iterator (FunctionBlock)\nSMC_NC_CopySentence (Function)\nSMC_NC_CopySentenceChecked (Function)\nGSentenceJumpBuffer\nSMC_GSentenceJumpBuffer (FunctionBlock)\nInterpreter\nCallstack\nSMC_NCInterpreter (FunctionBlock)\nParser\nExpressions\nSMC_NCTokenParser (FunctionBlock)\nSMC_NC_SourcePosition (Struct)\nSymbolTable\nReadNCFile2\nSMC_IGSentenceModifier (Interface)\nSMC_INCLookup (Interface)\nSMC_ITokenModifier (Interface)\nSMC_NCLookupFile (FunctionBlock)\nSMC_NCNavigator (FunctionBlock)\nSMC_NC_CanProcessTokens (Function)\nSMC_NC_FindProgramFile (Function)\nSMC_NC_PrependDefaults (FunctionBlock)\nSMC_NC_TokenQueue_Completed (Function)\nSMC_ReadNCFile2 (FunctionBlock)\nSMC_ReadNCFromStream (FunctionBlock)\nSoftMotion CNC\nCoordinate Transformations\nSMC_CoordinateTransformation3D (FunctionBlock)\nSMC_DetermineCuboidBearing (FunctionBlock)\nSMC_InvCoordinateTransformation3D (FunctionBlock)\nSMC_TeachCoordinateSystem (FunctionBlock)\nSMC_UnitVectorToRPY (FunctionBlock)\nDirect Axis Control\nSMC_ControlAxisByPos (FunctionBlock)\nSMC_ControlAxisByPosVel (FunctionBlock)\nSMC_ControlAxisByVel (FunctionBlock)\nGCode Viewer\nSMC_GCodeViewer (FunctionBlock)\nGeoInfo Help Functions\nSMC_AdaptHelpMarks (Function)\nSMC_CalcEndPnt (Function)\nSMC_CalcLengthGeo (Function)\nSMC_CalcStartPnt (Function)\nSMC_CutEnd (Function)\nSMC_CutStart (Function)\nSMC_GeoinfoInit (Function)\nSMC_GetAccVec (Function)\nSMC_GetAddAxValue (Function)\nSMC_GetClosestPnt (Function)\nSMC_GetLengthOfPrefix (Function)\nSMC_GetPnt (Function)\nSMC_GetPntPI (Function)\nSMC_GetTanVec (Function)\nSMC_GetTanVec3D (Function)\nSMC_InvertDirection (Function)\nSMC_RampInCorr (Function)\nSMC_RampOutCorr (Function)\nSMC_RecalculateHelpMarks (Function)\nSMC_SingleCorr (Function)\nOutQueue Functions\nSMC_AppendObj (Function)\nSMC_DeleteObj (Function)\nSMC_GetCount (Function)\nSMC_GetHistoryCount (Function)\nSMC_GetLastObj (Function)\nSMC_GetObj (Function)\nSMC_GetObjFromEnd (Function)\nSMC_GetObjFromHistory (Function)\nSMC_OutQueueInit (Function)\nSMC_OutQueueIsSyncing (Function)\nSMC_OutQueue_IsFull (Function)\nSMC_RestoreQueue (Function)\nSMC_SetObj (Function)\nSMC_SetQueueCapacity (Function)\nPosinfo Functions\nSMC_PosInfo_Trf_Inverse (Function)\nSMC_PosInfo_Trf_Mult (Function)\nQueue manipulation\nSMC_QueueSetReservedEntries (FunctionBlock)\nSMC_RotateQueue2D (FunctionBlock)\nSMC_ScaleQueue3D (FunctionBlock)\nSMC_TranslateQueue3D (FunctionBlock)\nSoftMotion Function Blocks\nBlockSearch\nDecoderBuffer\nInterpolator_Help_Functions\nM_Functions\nNCDecoder_Help_Functions\nSMC_AddGCodeState (Struct)\nSMC_AvoidLoop (FunctionBlock)\nSMC_CheckForLimits (FunctionBlock)\nSMC_CheckVelocities (FunctionBlock)\nSMC_ExtendedVelocityChecks (FunctionBlock)\nSMC_Interpolator (FunctionBlock)\nSMC_Interpolator2Dir (FunctionBlock)\nSMC_Interpolator2Dir_SlowTask (FunctionBlock)\nSMC_LimitCircularVelocity (FunctionBlock)\nSMC_LimitDynamics (FunctionBlock)\nSMC_NCDecoder (FunctionBlock)\nSMC_ObjectSplitter (FunctionBlock)\nSMC_ReadAdditionalIpoState (FunctionBlock)\nSMC_RecomputeABCSlopes (FunctionBlock)\nSMC_ReduceVelEndAtCorner (FunctionBlock)\nSMC_RoundPath (FunctionBlock)\nSMC_SegmentAnalyzer (FunctionBlock)\nSMC_SetInterpreterStartPosition (FunctionBlock)\nSMC_SmoothAddAxes (FunctionBlock)\nSMC_SmoothBSpline (FunctionBlock)\nSMC_SmoothMerge (FunctionBlock)\nSMC_SmoothPath (FunctionBlock)\nSMC_ToolCorr (FunctionBlock)\nSMC_ToolLengthCorr (FunctionBlock)\nSMC_ToolRadiusCorr (FunctionBlock)\nSMC_XInterpolator (FunctionBlock)\nSM_Trafo_Data types\nSMC_ArticulatedRobot_6DOF_J0_State (Enum)\nSMC_ArticulatedRobot_6DOF_J1_State (Enum)\nSMC_ArticulatedRobot_6DOF_J4_State (Enum)\nSMC_TrafoConfig_4AxisPalletizer (Struct)\nSMC_TrafoConfig_ArticulatedRobot_6DOF (Struct)\nSMC_TrafoResult_4AxisPalletizer (Enum)\nSMC_TrafoResult_ArticulatedRobot_6DOF (Enum)\nSMC_VECTORDIR (Enum)\nSM_Trafo_POUs\nForward and inverse transformation\nSMC_TRAFOV_\nSoftMotion Transformations\nGantry systems\nParallel Systems\nRobot Kinematiks\nScara System\nWrapper\nadditional FBs\nVisu_Templates\nFile\nCNC\nSM_CNC_Visualizations\nFBs\nCNC\nDirect Axis Control\nTranslation & Rotation & Scaling\nhelp visu\nSM_Trafo_Visualizations\nTrafo templates\nGantry\nParallel\nRobot\nScara\nVisu_Templates_New\nFramed Visu Helpers\nTextListForCombobox_MC_DIRECTION (TextList)\nTextListForCombobox_SMC_ABC_SLOPES_AT_STOP (TextList)\nTextListForCombobox_SMC_ABC_SLOPES_NO_STOP (TextList)\nTextListForCombobox_SMC_AL_STATUS (TextList)\nTextListForCombobox_SMC_DEC_STATUS (TextList)\nTextListForCombobox_SMC_DIRECTION (TextList)\nTextListForCombobox_SMC_ERROR (TextList)\nTextListForCombobox_SMC_INT_STATUS (TextList)\nTextListForCombobox_SMC_INT_VELMODE (TextList)\nTextListForCombobox_SMC_ORI_CONVENTION (TextList)\nTextListForCombobox_SMC_SMOOTHBSPLINE_MODE (TextList)\nTextListForCombobox_SMC_SMOOTHPATHADDAXMODE (TextList)\nTextListForCombobox_SMC_SMOOTHPATHMODE (TextList)\nTextListForCombobox_SMC_TC_STATUS (TextList)\nTextListForCombobox_SMC_TOOLCORRMODE (TextList)\nFile and Project Information\nLibrary Reference\n3SLicense\nLibrary Identification\nLibrary Properties\nBase Interfaces\nLibrary Identification\nLibrary Properties\nCmpLog\nLibrary Identification\nLibrary Properties\nFloatingPointUtils\nLibrary Identification\nLibrary Properties\nMatrix\nLibrary Identification\nLibrary Properties\nSM3_Basic\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nSM3_RBase\nLibrary Identification\nLibrary Properties\nSM3_Shared\nLibrary Identification\nLibrary Properties\nSM3_Transformation\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nSysFile\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysTarget\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nVisuElem3DPath\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElemCamDisplayer\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElemMeter\nLibrary Identification\nLibrary Properties\nVisuElemTextEditor\nLibrary Identification\nLibrary Properties\nVisuElemTrace\nLibrary Identification\nLibrary Properties\nVisuElems\nLibrary Identification\nLibrary Properties\nVisuElemsAlarm\nLibrary Identification\nLibrary Properties\nVisuElemsDateTime\nLibrary Identification\nLibrary Properties\nVisuElemsSpecialControls\nLibrary Identification\nLibrary Properties\nVisuElemsWinControls\nLibrary Identification\nLibrary Properties\nVisuInputs\nLibrary Identification\nLibrary Properties\nVisuNativeControl\nLibrary Identification\nLibrary Properties\nSM3_CNC\nDocs\n»\nSM_CNC_POUs\n»\nNC2\n»\nReadNCFile2\n»\nSMC_ReadNCFile2 (FB)\nSMC_ReadNCFile2 (FB)\nÂ¶\nFUNCTION_BLOCK SMC_ReadNCFile2\nSMC_ReadNCFile2\ncan read an NC-ASCII-file from the file system\nof the controller in order to make it available for the\nSMC_NCInterpreter\n.\nThus, an NC program can be read in and interpreted at runtime.\nInOut:\nScope\nName\nType\nInitial\nComment\nInput\nbExecute\nBOOL\nRising edge: starts execution.\nbAppend\nBOOL\nIf\nTRUE`\n, no default values are added (like G17 for 3D mode).\nIntended to be used together with the input\nbAppend\nof\nSMC_NCInterpreter\n.\nNote: must not be TRUE for the first rising edge of\nbExecute\n.\nbAbort\nBOOL\nIf\nTRUE\n, the current processing of this function block\nis aborted\nsFileName\nSTRING(255)\nFile path of the file containing the g-code.\npvl\nPOINTER TO\nSMC_VARLIST\nA variable list defining the type and address for each variable that\ncan be used from the g-code.\nIf there are no variables in the g-code, this input is not used.\nfDefaultVel\nLREAL\nDefault velocity; used if the velocity (F-word) is not specified inside\nthe CNC file.\nNote: only applies to the main program, not to subprograms.\nfDefaultAccel\nLREAL\nDefault acceleration; used if acceleration (E+ word) is not specified\ninside the CNC file. A non-negative value is expected.\nNote: only applies to the main program, not to subprograms.\nfDefaultDecel\nLREAL\nDefault deceleration (E- word); used if deceleration is not specified\ninside the CNC file\nNote: only applies to the main program, not to subprograms.\nfDefaultVelFF\nLREAL\nDefault velocity for fast forward (G0), FF word.\nIt is used if no velocity is specified inside the CNC file.\nNote: only applies to the main program, not to subprograms.\nfDefaultAccelFF\nLREAL\nDefault acceleration for fast forward (G0), EF+ word.\nIt is used if no acceleration is specified inside the CNC file.\nNote: only applies to the main program, not to subprograms.\nfDefaultDecelFF\nLREAL\nDefault deceleration for fast forward (G0), EF- word.\nA non-negative value is expected. It is used if no deceleration\nis specified inside the CNC file.\nNote: only applies to the main program, not to subprograms.\nb3DMode\nBOOL\nTRUE\nIf\nTRUE\n, a G17 command (activation of 3D-mode) is executed implicitly.\nNote: only applies to the main program, not to subprograms.\nbStepSuppress\nBOOL\nWhen this input is\nTRUE\n, lines of the CNC program starting\nwith â/â will be ignored. Otherwise they will be processed.\naSubProgramDirs\nARRAY [0..4] OF\nSTRING(174)\nAn array of up to 5 directories where subprograms are searched.\nFor a subprogram with name âSUBâ, the file âsub.cncâ (lower-case)\nis searched in each of the given directories, starting with\ndirectory aSubProgramDirs[0], in ascending order.  The first match\nis used.\nThe first empty directory name ends the search.\nbParenthesesAsComments\nBOOL\nTRUE\nUsually, parentheses in g-code are treated as multi-line comments.\nIf bParenthesesAsComments is set to FALSE, however, parentheses\ncan be used in the usual ways to group expressions (â(a+b)*câ) and\nfor subprogram calls (âN10 sub(17)â) in g-code.\nMulti-line comments can be started with â(\nâ and end with â\n)â.\nFor more control over the delimiters, call the method\nSMC_ReadNCFile2.SetDelimiters\nbefore calling the main method of this FB.  If SetDelimiters is\ncalled, this input is ignored.\nNote\nRegardless of the value of this input, it is always possible to\nuse curly braces â{}â to group expressions and for subprogram calls.\nbDisableJumpBuffer\nBOOL\nThis input, if\nTRUE\n, disables an internal jump buffer that is used to\nimprove performance of g-code processing if jumps (G20) are used.\npCustomFunTable\nPOINTER TO\nSMC_NC_GFunctionTable\nAllows to define custom functions that can be used in G-Code expressions.\nIf there are no custom G-Code functions, this input is null.\naTokenModifier\nARRAY\n[0..SMC_CNC_LibParams.MAX_SUBPROGRAM_NESTING_DEPTH]\nOF\nSMC_ITokenModifier\nOptional modifier function blocks that can change the tokens\non the fly.  This can be used to translate between G-Code\ndialects.\nLeave 0 if not needed.  Otherwise, set all members of the\narray to valid function block instances.\naSentenceModifier\nARRAY\n[0..SMC_CNC_LibParams.MAX_SUBPROGRAM_NESTING_DEPTH]\nOF\nSMC_IGSentenceModifier\nOptional modifier function blocks that can change the g-code\nsentences on the fly.  This can be used to translate between G-Code\ndialects.\nLeave 0 if not needed.  Otherwise, set all members of the\narray to valid function block instances.\nOutput\nbBusy\nBOOL\nTRUE\nwhile execution of function block is not finished\nbError\nBOOL\nTRUE\nsignals that an error has occurred within\nthe function block.\nErrorID\nSMC_ERROR\nError identification\nerrorPos\nSMC_NC_SourcePosition\nThe source-position where an error has been detected.\nErrorProgramName\nSTRING\nThe name of the program where an error has been detected\nsentences\nSMC_GSentenceQueue\nThe output sentence queue that can be fed into\nSMC_NCInterpreter\n.\nadwFileSize\nARRAY\n[0..SMC_CNC_LibParams.MAX_SUBPROGRAM_NESTING_DEPTH]\nOF DWORD\nSize of the file in bytes.\nadwPos\nARRAY\n[0..SMC_CNC_LibParams.MAX_SUBPROGRAM_NESTING_DEPTH]\nOF DWORD\nCurrent Position of the cursor in the file.\nMethods:\nSetDelimiters\nStructure:\nSetDelimiters (Method)",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "bExecute",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Rising edge: starts execution."
+        },
+        [
+          "bAppend",
+          "BOOL",
+          "",
+          "IfTRUE`, no default values are added (like G17 for 3D mode).\nIntended to be used together with the inputbAppendofSMC_NCInterpreter.\nNote: must not be TRUE for the first rising edge ofbExecute."
+        ],
+        [
+          "bAbort",
+          "BOOL",
+          "",
+          "IfTRUE, the current processing of this function block\nis aborted"
+        ],
+        [
+          "sFileName",
+          "STRING(255)",
+          "",
+          "File path of the file containing the g-code."
+        ],
+        [
+          "pvl",
+          "POINTER TOSMC_VARLIST",
+          "",
+          "A variable list defining the type and address for each variable that\ncan be used from the g-code.\nIf there are no variables in the g-code, this input is not used."
+        ],
+        [
+          "fDefaultVel",
+          "LREAL",
+          "",
+          "Default velocity; used if the velocity (F-word) is not specified inside\nthe CNC file.\nNote: only applies to the main program, not to subprograms."
+        ],
+        [
+          "fDefaultAccel",
+          "LREAL",
+          "",
+          "Default acceleration; used if acceleration (E+ word) is not specified\ninside the CNC file. A non-negative value is expected.\nNote: only applies to the main program, not to subprograms."
+        ],
+        [
+          "fDefaultDecel",
+          "LREAL",
+          "",
+          "Default deceleration (E- word); used if deceleration is not specified\ninside the CNC file\nNote: only applies to the main program, not to subprograms."
+        ],
+        [
+          "fDefaultVelFF",
+          "LREAL",
+          "",
+          "Default velocity for fast forward (G0), FF word.\nIt is used if no velocity is specified inside the CNC file.\nNote: only applies to the main program, not to subprograms."
+        ],
+        [
+          "fDefaultAccelFF",
+          "LREAL",
+          "",
+          "Default acceleration for fast forward (G0), EF+ word.\nIt is used if no acceleration is specified inside the CNC file.\nNote: only applies to the main program, not to subprograms."
+        ],
+        [
+          "fDefaultDecelFF",
+          "LREAL",
+          "",
+          "Default deceleration for fast forward (G0), EF- word.\nA non-negative value is expected. It is used if no deceleration\nis specified inside the CNC file.\nNote: only applies to the main program, not to subprograms."
+        ],
+        [
+          "b3DMode",
+          "BOOL",
+          "TRUE",
+          "IfTRUE, a G17 command (activation of 3D-mode) is executed implicitly.\nNote: only applies to the main program, not to subprograms."
+        ],
+        [
+          "bStepSuppress",
+          "BOOL",
+          "",
+          "When this input isTRUE, lines of the CNC program starting\nwith â/â will be ignored. Otherwise they will be processed."
+        ],
+        [
+          "aSubProgramDirs",
+          "ARRAY [0..4] OF\nSTRING(174)",
+          "",
+          "An array of up to 5 directories where subprograms are searched.\nFor a subprogram with name âSUBâ, the file âsub.cncâ (lower-case)\nis searched in each of the given directories, starting with\ndirectory aSubProgramDirs[0], in ascending order.  The first match\nis used.\nThe first empty directory name ends the search."
+        ],
+        [
+          "bParenthesesAsComments",
+          "BOOL",
+          "TRUE",
+          "Usually, parentheses in g-code are treated as multi-line comments.\nIf bParenthesesAsComments is set to FALSE, however, parentheses\ncan be used in the usual ways to group expressions (â(a+b)*câ) and\nfor subprogram calls (âN10 sub(17)â) in g-code.\nMulti-line comments can be started with â(â and end with â)â.For more control over the delimiters, call the methodSMC_ReadNCFile2.SetDelimitersbefore calling the main method of this FB.  If SetDelimiters is\ncalled, this input is ignored.NoteRegardless of the value of this input, it is always possible to\nuse curly braces â{}â to group expressions and for subprogram calls."
+        ],
+        [
+          "bDisableJumpBuffer",
+          "BOOL",
+          "",
+          "This input, ifTRUE, disables an internal jump buffer that is used to\nimprove performance of g-code processing if jumps (G20) are used."
+        ],
+        [
+          "pCustomFunTable",
+          "POINTER TOSMC_NC_GFunctionTable",
+          "",
+          "Allows to define custom functions that can be used in G-Code expressions.\nIf there are no custom G-Code functions, this input is null."
+        ],
+        [
+          "aTokenModifier",
+          "ARRAY\n[0..SMC_CNC_LibParams.MAX_SUBPROGRAM_NESTING_DEPTH]\nOFSMC_ITokenModifier",
+          "",
+          "Optional modifier function blocks that can change the tokens\non the fly.  This can be used to translate between G-Code\ndialects.\nLeave 0 if not needed.  Otherwise, set all members of the\narray to valid function block instances."
+        ],
+        [
+          "aSentenceModifier",
+          "ARRAY\n[0..SMC_CNC_LibParams.MAX_SUBPROGRAM_NESTING_DEPTH]\nOFSMC_IGSentenceModifier",
+          "",
+          "Optional modifier function blocks that can change the g-code\nsentences on the fly.  This can be used to translate between G-Code\ndialects.\nLeave 0 if not needed.  Otherwise, set all members of the\narray to valid function block instances."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bBusy",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUEwhile execution of function block is not finished"
+        },
+        [
+          "bError",
+          "BOOL",
+          "",
+          "TRUEsignals that an error has occurred within\nthe function block."
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "",
+          "Error identification"
+        ],
+        [
+          "errorPos",
+          "SMC_NC_SourcePosition",
+          "",
+          "The source-position where an error has been detected."
+        ],
+        [
+          "ErrorProgramName",
+          "STRING",
+          "",
+          "The name of the program where an error has been detected"
+        ],
+        [
+          "sentences",
+          "SMC_GSentenceQueue",
+          "",
+          "The output sentence queue that can be fed intoSMC_NCInterpreter."
+        ],
+        [
+          "adwFileSize",
+          "ARRAY\n[0..SMC_CNC_LibParams.MAX_SUBPROGRAM_NESTING_DEPTH]\nOF DWORD",
+          "",
+          "Size of the file in bytes."
+        ],
+        [
+          "adwPos",
+          "ARRAY\n[0..SMC_CNC_LibParams.MAX_SUBPROGRAM_NESTING_DEPTH]\nOF DWORD",
+          "",
+          "Current Position of the cursor in the file."
+        ]
+      ]
+    }
+  ]
+}

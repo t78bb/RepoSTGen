@@ -1,0 +1,23 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "CallPrioHighStart (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_Module/pou-Module/StandardCalls/CallPrioHighStart.html",
+  "page_title": "Module.CallPrioHighStart (METH)",
+  "text": "\nMETHOD CallPrioHighStart : BOOL\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "CallPrioHighStart",
+          "Type": "BOOL"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "library": "String Builder",
+  "title": "RUNE (Alias)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Builder/Current/Builder/Aliases/Types/RUNE.html",
+  "page_title": "RUNE (ALIAS)",
+  "text": "\nTYPE\nRUNE\n: UTF8.|dRUNE|\nThe term\nrune\nappears in the libraries and source code, and means exactly the same as âunicode code pointâ,\nwith one interesting addition.\nThis library defines the word\nrune\nas an alias for the type\nDINT\n,\nso programs can be clear when an integer value represents a code point.\nMoreover, what you might think of as a character constant is called a rune constant.\nThe type and value of the expression\nWSTRING#\"â\"\nis a rune with the integer value\nDINT#16#2318\n.",
+  "tables": []
+}

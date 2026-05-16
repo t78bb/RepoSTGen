@@ -1,0 +1,36 @@
+{
+  "library": "AlarmManager",
+  "title": "AlarmStorageGetTextListName (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Alarm-storage-API/AlarmStorageGetTextListName.html",
+  "page_title": "AlarmStorageGetTextListName (FUN)",
+  "text": "\nFUNCTION AlarmStorageGetTextListName : POINTER TO STRING\nThis function can be used to determine the name of the textlist of an alarm group,\nthat was read from the alarm storage.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "AlarmStorageGetTextListName",
+          "Type": "POINTER TO STRING",
+          "Comment": "A pointer to a STRING containing the name of the textlist. A\nNULL pointer if the corresponding information cannot be\nretrieved"
+        },
+        {
+          "Scope": "Input",
+          "Name": "udiAlarmGroupId",
+          "Type": "UDINT",
+          "Comment": "The internal id of the alarm group, that was read from the\nalarm storage"
+        },
+        [
+          "udiAlarmId",
+          "UDINT",
+          "The internal id of the alarm, that was read from the alarm\nstorage"
+        ]
+      ]
+    }
+  ]
+}

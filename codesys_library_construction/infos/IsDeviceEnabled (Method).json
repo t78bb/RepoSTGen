@@ -1,0 +1,23 @@
+{
+  "library": "SM3_Basic",
+  "title": "IsDeviceEnabled (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/DriveInterface/AXIS_REF/pou-AXIS_REF_SM3/Help-functions/IsDeviceEnabled.html",
+  "page_title": "AXIS_REF_SM3.IsDeviceEnabled (METH)",
+  "text": "\nMETHOD PROTECTED IsDeviceEnabled : BOOL\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "IsDeviceEnabled",
+          "Type": "BOOL"
+        }
+      ]
+    }
+  ]
+}

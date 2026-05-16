@@ -1,0 +1,8 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "First (Property)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_Module/TreeNavigation/pou-SiblingRange/First.html",
+  "page_title": "SiblingRange.First (PROP)",
+  "text": "\nPROPERTY FINAL First :\nIModule\nReturns the current first item of the range",
+  "tables": []
+}

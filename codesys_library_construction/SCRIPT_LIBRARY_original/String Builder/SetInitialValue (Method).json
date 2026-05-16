@@ -1,0 +1,51 @@
+{
+  "library": "String Builder",
+  "title": "SetInitialValue (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Builder/Current/Builder/Function-Blocks/pou-_Builder/SetInitialValue.html",
+  "page_title": "_Builder.SetInitialValue (METH)",
+  "text": "Builder\nAliases\nConstants (GVL)\nEnums\nENCODING (Alias)\nERROR (Alias)\nSTATS (Alias)\nFunction Blocks\nRange (Alias)\n_RangePool (Alias)\nInterfaces\nIBuilder (Folder)\nICharmap (Alias)\nIString (Alias)\nIStringRepresentation (Folder)\nTypes\nRUNE (Alias)\nFunction Blocks\n_Builder (FunctionBlock)\nIBuilder\nIStringRepresentation\nSetInitialValue (Method)\nFunctions\nCreateRange (Function)\nCreateRangePool (Function)\nLibrary Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nFile and Project Information\nLibrary Reference\nImmutable String Segments\nLibrary Identification\nLibrary Properties\nMemory Block Manager\nLibrary Identification\nLibrary Properties\nString Builder Base\nLibrary Identification\nLibrary Properties\nString Conversions\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nUTF-16 Encoding Support\nLibrary Identification\nLibrary Properties\nUTF-8 Encoding Support\nLibrary Identification\nLibrary Properties\nString Builder\nDocs\n»\nBuilder\n»\nFunction\nBlocks\n»\n_Builder\n(FB)\n»\n_Builder.SetInitialValue (METH)\n_Builder.SetInitialValue (METH)\nÂ¶\nMETHOD FINAL SetInitialValue :\nERROR\nInOut:\nScope\nName\nType\nInitial\nReturn\nSetInitialValue\nERROR\nInput\nitfString\nIString\n0\nudiInitialCapacity\nUDINT\n0\npbyBuffer\nPOINTER TO BYTE\n0\nudiBufferSize\nUDINT\n0\nusiExtensionFactor\nUSINT\n0",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetInitialValue",
+          "Type": "ERROR",
+          "Initial": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfString",
+          "Type": "IString",
+          "Initial": "0"
+        },
+        [
+          "udiInitialCapacity",
+          "UDINT",
+          "0"
+        ],
+        [
+          "pbyBuffer",
+          "POINTER TO BYTE",
+          "0"
+        ],
+        [
+          "udiBufferSize",
+          "UDINT",
+          "0"
+        ],
+        [
+          "usiExtensionFactor",
+          "USINT",
+          "0"
+        ]
+      ]
+    }
+  ]
+}

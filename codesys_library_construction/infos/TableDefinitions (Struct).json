@@ -1,0 +1,33 @@
+{
+  "library": "ModbusFB",
+  "title": "TableDefinitions (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/ModbusFB/Current/ModbusFB/Structs/TableDefinitions.html",
+  "page_title": "TableDefinitions (STRUCT)",
+  "text": "\nTYPE TableDefinitions : STRUCT\nTableDefinitions represents the âprimary tablesâ (the âdata modelâ).\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Name": "tableDiscreteInputs",
+          "Type": "TableDefinition"
+        },
+        {
+          "Name": "tableCoils",
+          "Type": "TableDefinition"
+        },
+        {
+          "Name": "tableInputRegisters",
+          "Type": "TableDefinition"
+        },
+        {
+          "Name": "tableHoldingRegisters",
+          "Type": "TableDefinition"
+        }
+      ]
+    }
+  ]
+}

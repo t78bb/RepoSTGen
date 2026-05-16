@@ -1,0 +1,28 @@
+{
+  "library": "BACnet",
+  "title": "GetBACnetUnsignedProperty (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/pou-IBACnetObjectBase/Utilities/GetBACnetUnsignedProperty.html",
+  "page_title": "IBACnetObjectBase.GetBACnetUnsignedProperty (METH)",
+  "text": "\nMETHOD GetBACnetUnsignedProperty : UDINT\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetBACnetUnsignedProperty",
+          "Type": "UDINT"
+        },
+        {
+          "Scope": "Input",
+          "Name": "propID",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_ID"
+        }
+      ]
+    }
+  ]
+}

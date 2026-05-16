@@ -1,0 +1,28 @@
+{
+  "library": "DNP3",
+  "title": "SetSessionConfigAspectUnsolicitedResponse (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Outstation/pou-OutstationConfiguration/SetSessionConfigAspectUnsolicitedResponse.html",
+  "page_title": "OutstationConfiguration.SetSessionConfigAspectUnsolicitedResponse (METH)",
+  "text": "\nMETHOD SetSessionConfigAspectUnsolicitedResponse :\nError\nSet optional outstation session configuration aspect - unsolicited responses.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetSessionConfigAspectUnsolicitedResponse",
+          "Type": "Error"
+        },
+        {
+          "Scope": "Input",
+          "Name": "configUnsolicitedResponse",
+          "Type": "DNP3OutstationSessionConfigUnsolicitedResponse"
+        }
+      ]
+    }
+  ]
+}

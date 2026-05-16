@@ -1,0 +1,64 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_ReadCAM (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/CAM/SMC_ReadCAM.html",
+  "page_title": "SMC_ReadCAM (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_ReadCAM\nThis function block is designed for loading a cam at runtime and making it available\nfor the modules\nMC_CamTableSelect\nand\nMC_CamIn\n.\nThe cam to be loaded has to be created within the cam editor before and saved in a â*.CAMâ file (see\nSMC_WriteCAM\n).\nThe size of a loadable cam is limited by the library parameters\nLibParams.gc_SMC_FILE_MAXCAMEL\n(number of elements)\nand\nLibParams.gc_SMC_FILE_MAXCAMTAP\n(number of cam switch actions).\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "bExecute",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "Rising edge: Starts the execution of the function block."
+        },
+        [
+          "sFileName",
+          "STRING(255)",
+          "",
+          "Name of the file, which contains the cam description in the\ndefined ASCII format."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bDone",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "TRUE: Cam has been read in."
+        },
+        [
+          "bBusy",
+          "BOOL",
+          "FALSE",
+          "TRUE: Execution of the function block has not been\nfinished."
+        ],
+        [
+          "bError",
+          "BOOL",
+          "FALSE",
+          "TRUE: Error has occurred within the function block."
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "0",
+          "Error identification"
+        ],
+        [
+          "CAM",
+          "MC_CAM_REF",
+          "STRUCT(nElements := 0, nTappets := 0)",
+          ""
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC3_BrakeStatus (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/Diagnostics/SMC3_BrakeStatus.html",
+  "page_title": "SMC3_BrakeStatus (FB)",
+  "text": "\nFUNCTION_BLOCK SMC3_BrakeStatus\nThis function block reads the current status of a mechanical brake (if the brake is opened or closed).\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "bEnable",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "TRUE: Activates FB, else inactive."
+        },
+        {
+          "Scope": "Output",
+          "Name": "bValid",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUE: At least one value since enabling has been\nreceived."
+        },
+        [
+          "bBusy",
+          "BOOL",
+          "",
+          "TRUE: FB is not idle."
+        ],
+        [
+          "bError",
+          "BOOL",
+          "FALSE",
+          "TRUE: Error has occured within the function block."
+        ],
+        [
+          "nErrorID",
+          "SMC_ERROR",
+          "0",
+          "Error identification"
+        ],
+        [
+          "bBrakeClosed",
+          "BOOL",
+          "",
+          "TRUE: Brake is closed."
+        ]
+      ]
+    }
+  ]
+}

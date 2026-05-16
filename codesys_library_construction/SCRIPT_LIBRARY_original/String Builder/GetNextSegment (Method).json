@@ -1,0 +1,42 @@
+{
+  "library": "String Builder",
+  "title": "GetNextSegment (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Builder/Current/Builder/Function-Blocks/pou-_Builder/IBuilder/Segments/GetNextSegment.html",
+  "page_title": "_Builder.GetNextSegment (METH)",
+  "text": "Builder\nAliases\nConstants (GVL)\nEnums\nENCODING (Alias)\nERROR (Alias)\nSTATS (Alias)\nFunction Blocks\nRange (Alias)\n_RangePool (Alias)\nInterfaces\nIBuilder (Folder)\nICharmap (Alias)\nIString (Alias)\nIStringRepresentation (Folder)\nTypes\nRUNE (Alias)\nFunction Blocks\n_Builder (FunctionBlock)\nIBuilder\nIStringRepresentation\nSetInitialValue (Method)\nFunctions\nCreateRange (Function)\nCreateRangePool (Function)\nLibrary Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nFile and Project Information\nLibrary Reference\nImmutable String Segments\nLibrary Identification\nLibrary Properties\nMemory Block Manager\nLibrary Identification\nLibrary Properties\nString Builder Base\nLibrary Identification\nLibrary Properties\nString Conversions\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nUTF-16 Encoding Support\nLibrary Identification\nLibrary Properties\nUTF-8 Encoding Support\nLibrary Identification\nLibrary Properties\nString Builder\nDocs\n»\nBuilder\n»\nFunction\nBlocks\n»\n_Builder\n(FB)\n»\nIBuilder\n»\nSegments\n»\n_Builder.GetNextSegment (METH)\n_Builder.GetNextSegment (METH)\nÂ¶\nMETHOD FINAL GetNextSegment : POINTER TO BYTE\nReturns the pointer to the next segment of the builder\nInOut:\nScope\nName\nType\nComment\nReturn\nGetNextSegment\nPOINTER TO BYTE\nInput\npbyCurSegment\nPOINTER TO BYTE\nStart pointer of the current segment\nOutput\nudiSize\nUDINT\nSize in bytes of the next segment\neErrorID\nERROR\nCheck error message for better diagnostics",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetNextSegment",
+          "Type": "POINTER TO BYTE",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "pbyCurSegment",
+          "Type": "POINTER TO BYTE",
+          "Comment": "Start pointer of the current segment"
+        },
+        {
+          "Scope": "Output",
+          "Name": "udiSize",
+          "Type": "UDINT",
+          "Comment": "Size in bytes of the next segment"
+        },
+        [
+          "eErrorID",
+          "ERROR",
+          "Check error message for better diagnostics"
+        ]
+      ]
+    }
+  ]
+}

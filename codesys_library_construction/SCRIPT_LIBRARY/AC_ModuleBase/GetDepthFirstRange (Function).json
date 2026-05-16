@@ -1,0 +1,31 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "GetDepthFirstRange (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_Module/TreeNavigation/GetDepthFirstRange.html",
+  "page_title": "GetDepthFirstRange (FUN)",
+  "text": "\nFUNCTION GetDepthFirstRange :\nDepthFirstRange\nReturns a range of all instances in the module tree in\ndepth-first preorder of\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetDepthFirstRange",
+          "Type": "DepthFirstRange",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfModule",
+          "Type": "IModule",
+          "Comment": "The module which the depth first range shall use to start\nfrom"
+        }
+      ]
+    }
+  ]
+}

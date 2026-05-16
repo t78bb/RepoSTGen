@@ -1,0 +1,33 @@
+{
+  "library": "Util",
+  "title": "TSW (GVL)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/TimerSwitch/GlobalConstants/TSW.html",
+  "page_title": "TSW (GVL)",
+  "text": "\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Constant",
+          "Name": "gc_tzTimeZoneCET",
+          "Type": "TimeZone",
+          "Initial": "STRUCT(iBias := 60, asgPeriod := [STRUCT(sName := âCETâ, dtDate := STRUCT(uiMonth := 10, eWeekday := WEEKDAY.SUNDAY, uiDay := 5, uiHour := 3)), STRUCT(sName := âCESTâ, dtDate := STRUCT(uiMonth := 3, eWeekday := WEEKDAY.SUNDAY, uiDay := 5, uiHour := 2), iBias := 60)])",
+          "Comment": "Central Europe Time"
+        },
+        [
+          "gc_tzTimeZoneUTC",
+          "TimeZone",
+          "STRUCT(asgPeriod := [STRUCT(sName := âUTCâ)])",
+          "Coordinated Universal Time"
+        ]
+      ]
+    }
+  ]
+}

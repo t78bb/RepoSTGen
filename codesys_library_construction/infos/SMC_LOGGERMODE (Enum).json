@@ -1,0 +1,22 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_LOGGERMODE (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/DataTypes/Diagnostics/SMC_LOGGERMODE.html",
+  "page_title": "SMC_LOGGERMODE (ENUM)",
+  "text": "\nTYPE SMC_LOGGERMODE :\n",
+  "tables": [
+    {
+      "headers": [
+        "Name"
+      ],
+      "rows": [
+        {
+          "Name": "LOG_CONTINUOUS"
+        },
+        {
+          "Name": "LOG_AT_CLOSE"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "library": "String Builder Base",
+  "title": "GetNextSegment (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Builder Base/Current/BuilderBase/Interfaces/pou-IBuilder/Segments/GetNextSegment.html",
+  "page_title": "IBuilder.GetNextSegment (METH)",
+  "text": "\nMETHOD GetNextSegment : POINTER TO BYTE\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetNextSegment",
+          "Type": "POINTER TO BYTE"
+        },
+        {
+          "Scope": "Input",
+          "Name": "pbyCurSegment",
+          "Type": "POINTER TO BYTE"
+        },
+        {
+          "Scope": "Output",
+          "Name": "udiSize",
+          "Type": "UDINT"
+        },
+        [
+          "eErrorID",
+          "ERROR"
+        ]
+      ]
+    }
+  ]
+}

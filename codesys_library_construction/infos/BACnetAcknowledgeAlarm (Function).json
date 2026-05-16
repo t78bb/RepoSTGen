@@ -1,0 +1,56 @@
+{
+  "library": "CmpBACnet",
+  "title": "BACnetAcknowledgeAlarm (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/CmpBACnet/Current/BACnetClientAPI/BACnetAcknowledgeAlarm.html",
+  "page_title": "BACnetAcknowledgeAlarm (FUN)",
+  "text": "\nFUNCTION BACnetAcknowledgeAlarm :\nIEC_BACNET_STATUS\nSends an AcknowledgeAlarm request.\nSends a message to the initiating device to acknowledge that the operator has seen and\nresponded to the event notification that required the acknowledgment. This routine may\nacknowledge either Confirmed Event Notification or Unconfirmed Event Notification\nrequests. This routine allows to control APDU properties like APDU length, segmentation\nand timeout for both request and response. This routine can execute asynchronously,\ni.e. this routine will return to the caller before the BACnet reply comes so that the\napplication can keep running. In this case the response information will be received\nby the thread which is responsible for receiving asynchronous responses. An optional\nBACNET_SIMPLE_ACK_COMPLETE_CB routine, which is provided by the BACnet application,\nshall be used to process this information. If a number of asynchronous requests are\nsent, the responses shall be queued and identified by the transaction handles. If the\napplication does not supply the BACNET_SIMPLE_ACK_COMPLETE_CB routine, then the\nBACnetAcknowledgeAlarm routine sends a request and waits for reply.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "BACnetAcknowledgeAlarm",
+          "Type": "IEC_BACNET_STATUS",
+          "Comment": "A status indicating if the operation worked."
+        },
+        {
+          "Scope": "Input",
+          "Name": "pSourceAddress",
+          "Type": "POINTER TOIEC_BACNET_ADDRESS",
+          "Comment": "If the BACnet application has only one device constructed and installed, this can\nbe 0. In this case the MAC address of this device will be used. Otherwise this\nshall be the MAC address returned on device object construction."
+        },
+        [
+          "pDestinationAddress",
+          "POINTER TOIEC_BACNET_ADDRESS",
+          "This is the MAC address of the device to which the request\nshould be sent."
+        ],
+        [
+          "pAckAlarmParams",
+          "POINTER TOIEC_BACNET_ACK_ALARM_INFO",
+          "A pointer to the memory block which contains a number of acknowledgement\nparameters: a process identifier to recognize a notification to which this\nacknowledgement is responding, an event objectâs identifier, an event state, a\ntime stamp to identify the event notification that is acknowledging, the identifier\nof operator or process that is acknowledging this event notification, and the\ntime this acknowledgement was issued."
+        ],
+        [
+          "pAPDUParams",
+          "POINTER TOIEC_BACNET_APDU_PROPERTIES",
+          "A pointer to the APDU-Properties structure which sets APDU properties for this\ntransaction only. This does not change global defaults or settings for the application\nAPDU Properties. This argument may be 0. In this case APDU properties  are used\nwhich were specified in the device object properties of the applications device which\nsends the request."
+        ],
+        [
+          "pTransactionToken",
+          "POINTER TOBACnetAsyncTransactionToken",
+          "Transaction token of the asynchronous call - seeBACnetAsyncTransactionToken."
+        ],
+        [
+          "pError",
+          "POINTER TOIEC_BACNET_ERROR",
+          "A pointer to a structure to hold BACnet Error information. pError may be 0 if the\napplication isnât interested in detailed error information."
+        ]
+      ]
+    }
+  ]
+}

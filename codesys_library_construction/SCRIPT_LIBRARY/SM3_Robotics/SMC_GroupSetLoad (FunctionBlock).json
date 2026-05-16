@@ -1,0 +1,57 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_GroupSetLoad (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/AdministrativeConfiguration/AxisGroup/SMC_GroupSetLoad.html",
+  "page_title": "SMC_GroupSetLoad (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_GroupSetLoad\nThis function block allows to set a\nLoad\n, consisting of mass and inertia,\nthat is connected to the TCP of the axis group.  The load could be a tool\nthat is attached to the flange or an object that has been picked up by\nthe machine.\nA dynamic model for the machine must have been configured before using\nthis function block. See\nSMC_GroupSetDynamics\n.\nNote\nA new\nLoad\nreplaces a previously set load.\nAn object that is picked up by a tool can be modeled by combining\nthe load for the object and the load for the tool.\nThe load is always represented in the current TCS, relative to the\ncurrent TCP.  Note that setting a tool using\nSMC_GroupSetTool\nchanges the TCP and the TCS.  This means in particular that the\nrepresentation for the load for a tool is different depending on\nwhether the load is set before or after the tool.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "AxisGroup",
+          "Type": "AXIS_GROUP_REF_SM3",
+          "Comment": "Reference to a group of axes"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Comment": "Executes the FB at the rising edge."
+        },
+        [
+          "Load",
+          "SMC_DynLoad",
+          "The load to be set, represented in the TCS."
+        ],
+        [
+          "ExecutionMode",
+          "MC_EXECUTION_MODE",
+          "Specifies when the load should be adopted."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Done",
+          "Type": "BOOL",
+          "Comment": "The defined load has been added to the axisgroup"
+        },
+        [
+          "Error",
+          "BOOL",
+          "Signals that an error has occurred within the function block"
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

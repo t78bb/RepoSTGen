@@ -1,0 +1,8 @@
+{
+  "library": "SM3_CNC",
+  "title": "StepSuppress (Action)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/File/ReadNCFile/Token/pou-SMC_ReadNCTokens/StepSuppress.html",
+  "page_title": "SMC_ReadNCTokens.StepSuppress (ACT)",
+  "text": "\nWe encode a leading â/â character into the\nline number of the first âNâ-word:\n1) if the original value is positive, it\nis negated\n2) if the original value is 0, the least\nnegative value is used\nNote: the least negative value of a DINT is\n-2^31, the greatest positive value is\n(2^31 - 1), so negating a positive DINT can\nnever result in the least negative value.",
+  "tables": []
+}

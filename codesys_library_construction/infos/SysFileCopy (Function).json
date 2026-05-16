@@ -1,0 +1,41 @@
+{
+  "library": "SysFile",
+  "title": "SysFileCopy (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SysFile/Current/SysFileCopy.html",
+  "page_title": "SysFileCopy (FUN)",
+  "text": "\nFUNCTION SysFileCopy : RTS_IEC_RESULT\nCopy one file to another.\nA standard path will be added to the filename, if no path is specified.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SysFileCopy",
+          "Type": "RTS_IEC_RESULT",
+          "Comment": "The runtime system error code (see CmpErrors.library)"
+        },
+        {
+          "Scope": "Input",
+          "Name": "szDestFileName",
+          "Type": "STRING",
+          "Comment": "Destination file name. File name can contain an absolute or relative path to the file.\nPath entries must be separated with a Slash (/)  and not with a Backslash (\\)!"
+        },
+        [
+          "szSourceFileName",
+          "STRING",
+          "Source file name. File name can contain an absolute or relative path to the file.\nPath entries must be separated with a Slash (/)  and not with a Backslash (\\)!"
+        ],
+        [
+          "pulCopied",
+          "POINTER TO __XWORD",
+          "Number of bytes copied"
+        ]
+      ]
+    }
+  ]
+}

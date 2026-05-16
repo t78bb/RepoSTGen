@@ -1,0 +1,28 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_GroupInterruptPositionMvtRel (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/Movement/GroupInterrupt/SMC_GroupInterruptPositionMvtRel.html",
+  "page_title": "SMC_GroupInterruptPositionMvtRel (STRUCT)",
+  "text": "\nTYPE SMC_GroupInterruptPositionMvtRel : STRUCT\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "id",
+          "Type": "SMC_Movement_Id",
+          "Comment": "The ID of the movement that shall be interrupted."
+        },
+        {
+          "Name": "pos",
+          "Type": "LREAL",
+          "Comment": "The relative position where the interrupt shall occur.\nMust be between 0 and 1. 0 means at the start 1 at the\nend of the movement."
+        }
+      ]
+    }
+  ]
+}

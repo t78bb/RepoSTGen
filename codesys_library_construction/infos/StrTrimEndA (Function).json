@@ -1,0 +1,25 @@
+{
+  "library": "StringUtils",
+  "title": "StrTrimEndA (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/StringUtils/Current/Public-Parts/Ansi/StrTrimEndA.html",
+  "page_title": "StrTrimEndA (FUN)",
+  "text": "\nFUNCTION StrTrimEndA\nRemove trailing whitespaces (ASCII 9, 10, 13, 32).\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "pString",
+          "Type": "POINTER TO BYTE",
+          "Comment": "Pointer to the string to be trimmed."
+        }
+      ]
+    }
+  ]
+}

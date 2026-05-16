@@ -1,0 +1,31 @@
+{
+  "library": "CmpBACnet",
+  "title": "BACnetOpenClientCustomer (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/CmpBACnet/Current/BACnetClientAPI/advanced/BACnetOpenClientCustomer.html",
+  "page_title": "BACnetOpenClientCustomer (FUN)",
+  "text": "\nFUNCTION BACnetOpenClientCustomer :\nIEC_BACNET_HANDLE\nCreates a new advanced BACnet client customer handle.\nTo use the advanced BACnet client API, first an customer needs to be created. This\nhandle is needed to register device object property references for data acquisation or\nsubscriptions to event notification of remote or local devices and objects.\nReturns a valid handle on success or a NULL handle on failure.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "BACnetOpenClientCustomer",
+          "Type": "IEC_BACNET_HANDLE",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "bReportOnlyOnValueChanges",
+          "Type": "IEC_BACNET_BOOLEAN",
+          "Comment": "If this parameter is set to True, the value change notification callback\nBACNET_CLIENT_VALUE_CB is only called if the value has changed and not every time\non reception of an ChangeOfValue notification or on response on ReadProperty request."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "library": "BACnet",
+  "title": "GetWeeklySchedule (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/Schedule/pou-BACnetSchedule/WeeklySchedule/GetWeeklySchedule.html",
+  "page_title": "BACnetSchedule.GetWeeklySchedule (METH)",
+  "text": "\nMETHOD GetWeeklySchedule : CmpBACnet.IEC_BACNET_STATUS\nGets the Weekly_Schedule of this BACnet object. The returned pointer pWeeklySchedule is\nallocated with the corresponding data, whereas the user has to use FreeStackAllocatedMemory,\nto free the allocated memory after data usage.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetWeeklySchedule",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Output",
+          "Name": "pWeeklySchedule",
+          "Type": "POINTER TO\nCmpBACnet.IEC_BACNET_DAILY_SCHEDULE",
+          "Comment": "The returned Pointer gets filled with the data of the Priority Array AND (!) the data referenced within the array\n(i.e. strings, etc.).\nAfter usage, useFreeStackAllocatedMemory, to free the used memory."
+        }
+      ]
+    }
+  ]
+}

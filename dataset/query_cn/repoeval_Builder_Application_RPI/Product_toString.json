@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现将多个字符串部分（主部件和其他部件）拼接为一个完整字符串的功能。",
+  "provide_code": "//Method to be used in the visualization element for an easier String handling\nMETHOD toString : STRING\nVAR_INPUT\n\t//List of possible parts to be build in a final Product object\n\tmainPart \t: STRING;\n\tpart1 \t\t: STRING;\n\tpart2 \t\t: STRING;\n\tpart3 \t\t: STRING;\nEND_VAR\nVAR_OUTPUT\nEND_VAR"
+}

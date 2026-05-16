@@ -1,0 +1,67 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_GroupReadPlanningStatistics (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/Diagnostics/SMC_GroupReadPlanningStatistics.html",
+  "page_title": "SMC_GroupReadPlanningStatistics (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_GroupReadPlanningStatistics\nAdministrative FB for reading planning statistics.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "AxisGroup",
+          "Type": "AXIS_GROUP_REF_SM3",
+          "Comment": "Reference to a group of axes"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Enable",
+          "Type": "BOOL",
+          "Comment": "Get the planning statistics of the\naxis group continuously while enabled"
+        },
+        {
+          "Scope": "Output",
+          "Name": "Valid",
+          "Type": "BOOL",
+          "Comment": "TRUEif valid outputs are available"
+        },
+        [
+          "Busy",
+          "BOOL",
+          "The FB is not finished"
+        ],
+        [
+          "Error",
+          "BOOL",
+          "Signals that an error has occurred within the function block"
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ],
+        [
+          "numTimeBudgetExceeded",
+          "UDINT",
+          "The number of times the time budget for planning was exceeded.\nValues > 0 indicate performance problems."
+        ],
+        [
+          "numSlowDownLowIpoQueue",
+          "UDINT",
+          "The number of times the planner added samples from the stop\ntrajectory because the Ipo queue duration is too short."
+        ],
+        [
+          "numTimeBudgetNewMovementExceeded",
+          "UDINT",
+          "The number of times the time budget for adding new movements\nwas exceeded. Values > 0 indicate performance problems."
+        ]
+      ]
+    }
+  ]
+}

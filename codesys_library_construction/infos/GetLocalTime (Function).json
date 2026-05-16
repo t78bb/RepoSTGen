@@ -1,0 +1,33 @@
+{
+  "library": "BACnet2DefaultImpl",
+  "title": "GetLocalTime (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2DefaultImpl/Current/BACnetDefaultImpl/Functions/GetLocalTime.html",
+  "page_title": "GetLocalTime (FUN)",
+  "text": "\nFUNCTION GetLocalTime : CmpBACnet.IEC_BACNET_TIME_STAMP\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetLocalTime",
+          "Type": "CmpBACnet.IEC_BACNET_TIME_STAMP"
+        },
+        {
+          "Scope": "Input",
+          "Name": "tz",
+          "Type": "Util.TimeZone"
+        },
+        {
+          "Scope": "Output",
+          "Name": "eErrorID",
+          "Type": "Util.ERROR"
+        }
+      ]
+    }
+  ]
+}

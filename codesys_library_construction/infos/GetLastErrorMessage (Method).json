@@ -1,0 +1,28 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "GetLastErrorMessage (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_Module/pou-Module/ErrorHandling/GetLastErrorMessage.html",
+  "page_title": "Module.GetLastErrorMessage (METH)",
+  "text": "\nMETHOD GetLastErrorMessage : STRING(255)\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetLastErrorMessage",
+          "Type": "STRING(255)"
+        },
+        {
+          "Scope": "Input",
+          "Name": "sLanguage",
+          "Type": "STRING"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "GetID (Property)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_Module/pou-IEnvironmentExtender/GetID.html",
+  "page_title": "IEnvironmentExtender.GetID (PROP)",
+  "text": "\nPROPERTY GetID : STRING\nReturns the id of the environemnt extender, i.e. the id of the\ncomposer extension provided via the Automation Plattform.",
+  "tables": []
+}

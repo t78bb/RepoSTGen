@@ -1,0 +1,76 @@
+{
+  "library": "SM3_CNC_Visu",
+  "title": "SMC_PathCopierCompleteQueue (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC_Visu/Current/SM3_CNC_VISU/SMC_PathCopierCompleteQueue.html",
+  "page_title": "SMC_PathCopierCompleteQueue (FB)",
+  "text": "GlobalTextList (GlobalTextList)\nImages\nSM3_CNC_VISU\nSMC_PathCopier (FunctionBlock)\nSMC_PathCopierCompleteQueue (FunctionBlock)\nSMC_PathCopierFile (FunctionBlock)\nSMC_PositionTracker (FunctionBlock)\nFile and Project Information\nLibrary Reference\nSM3_Basic\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nSM3_CNC\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nSM3_Error\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nVisuElem3DPath\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nSM3_CNC_Visu\nDocs\n»\nSM3_CNC_VISU\n»\nSMC_PathCopierCompleteQueue (FB)\nSMC_PathCopierCompleteQueue (FB)\nÂ¶\nFUNCTION_BLOCK SMC_PathCopierCompleteQueue\nThe function block\nSMC_PathCopierCompleteQueue\nis used to create an\narray of points from a CNC path.\nIn contrast to\nSMC_PathCopier\nthat is used if the path is not\ncontained completely in the queue,\nthis function block can only be used if the complete path fits into\nthe queue``poqCNCPath``.\nAn error occurs when the path is not entirely contained in the queue\nor the number of path elements exceeds the number of points.\nInOut:\nScope\nName\nType\nInitial\nComment\nInput\nbExecute\nBOOL\nA rising edge starts the function block\nudiNumberOfPointsInArray\nUDINT\n0\nNumber of points which are declared in\npBuffer\nof the\nreferred array.\npBuffer\nPOINTER TO\nVisuStruct3DPathPoint\nPointer to the allocated array of points\npoqCNCPath\nPOINTER TO SMC_OUTQUEUE\nPointer to the path that shall be displayed\nprecision\nLREAL\n1\nDefines the precision of the track, meaning how many points should be computed for\nan element in the queue. A value of 1 indicates that a point should be calculated\nevery 1 unit of the path. A value of 2 indicates that two points should be calculated\nfor every 1 unit of the path.\nOutput\nbDone\nBOOL\nTRUE\n: FB completed\nbError\nBOOL\nTRUE\n: error during operation\niErrorID\nSMC_ERROR\nError ID\nvs3dt\nVisuStruct3DTrack\nTrack output. To be setup as input of the visu element\nPath3D\n.",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "bExecute",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "A rising edge starts the function block"
+        },
+        [
+          "udiNumberOfPointsInArray",
+          "UDINT",
+          "0",
+          "Number of points which are declared inpBufferof the\nreferred array."
+        ],
+        [
+          "pBuffer",
+          "POINTER TO\nVisuStruct3DPathPoint",
+          "",
+          "Pointer to the allocated array of points"
+        ],
+        [
+          "poqCNCPath",
+          "POINTER TO SMC_OUTQUEUE",
+          "",
+          "Pointer to the path that shall be displayed"
+        ],
+        [
+          "precision",
+          "LREAL",
+          "1",
+          "Defines the precision of the track, meaning how many points should be computed for\nan element in the queue. A value of 1 indicates that a point should be calculated\nevery 1 unit of the path. A value of 2 indicates that two points should be calculated\nfor every 1 unit of the path."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bDone",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUE: FB completed"
+        },
+        [
+          "bError",
+          "BOOL",
+          "",
+          "TRUE: error during operation"
+        ],
+        [
+          "iErrorID",
+          "SMC_ERROR",
+          "",
+          "Error ID"
+        ],
+        [
+          "vs3dt",
+          "VisuStruct3DTrack",
+          "",
+          "Track output. To be setup as input of the visu elementPath3D."
+        ]
+      ]
+    }
+  ]
+}

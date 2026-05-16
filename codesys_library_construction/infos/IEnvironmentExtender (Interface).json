@@ -1,0 +1,8 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "IEnvironmentExtender (Interface)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_Module/IEnvironmentExtender.html",
+  "page_title": "IEnvironmentExtender (ITF)",
+  "text": "\nINTERFACE IEnvironmentExtender EXTENDS __SYSTEM.IQueryInterface\nInterface used by the composer to extend the module environment by\ncustom extensions. This can only be done when i.e. providing a\ncomposer extension via the automation plattform.\nProperties:\nGetID\nStructure:\nGetID (Property)",
+  "tables": []
+}

@@ -1,0 +1,32 @@
+{
+  "library": "BACnet",
+  "title": "DestroyObject (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetServer/pou-IBACnetServer/Objects/DestroyObject.html",
+  "page_title": "IBACnetServer.DestroyObject (METH)",
+  "text": "\nMETHOD DestroyObject : CmpBACnet.IEC_BACNET_STATUS\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "DestroyObject",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS"
+        },
+        {
+          "Scope": "Input",
+          "Name": "objIDTyp",
+          "Type": "CmpBACnet.IEC_BACNET_OBJECT_TYPE"
+        },
+        [
+          "objIDInstance",
+          "UDINT"
+        ]
+      ]
+    }
+  ]
+}

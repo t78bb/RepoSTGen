@@ -1,0 +1,66 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_TRAFO_Scara2 (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_Trafo_POUs/SoftMotion-Transformations/Scara-System/SMC_TRAFO_Scara2.html",
+  "page_title": "SMC_TRAFO_Scara2 (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_TRAFO_Scara2\nThe transformation module is provided to\nexecute backward transformations of 2-jointed Scara systems.\nNote\nFor detailed information on transformation modules see\nsee the overview on kinematic transformations in the\nCNC online help.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "pi",
+          "Type": "SMC_PosInfo",
+          "Comment": "Target position vector (x,y). Output of Interpolator"
+        },
+        [
+          "dOffsetA",
+          "LREAL",
+          "Additional offset for A-axis in degree"
+        ],
+        [
+          "dOffsetB",
+          "LREAL",
+          "Additional offset for B-axis in degree"
+        ],
+        [
+          "dArmLength1",
+          "LREAL",
+          "Length of first robot arm"
+        ],
+        [
+          "dArmLength2",
+          "LREAL",
+          "Length of second robot arm"
+        ],
+        [
+          "bElbowLow",
+          "BOOL",
+          "TRUEif elbow is low andFALSE, if elbow is high"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bError",
+          "Type": "BOOL",
+          "Comment": "TRUEif position is invalid"
+        },
+        [
+          "dA",
+          "LREAL",
+          "Drive position of axis A in degree"
+        ],
+        [
+          "dB",
+          "LREAL",
+          "Drive position of axis B in degree"
+        ]
+      ]
+    }
+  ]
+}

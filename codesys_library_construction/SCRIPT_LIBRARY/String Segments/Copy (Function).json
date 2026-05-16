@@ -1,0 +1,37 @@
+{
+  "library": "String Segments",
+  "title": "Copy (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Segments/Current/Strings/Functions/Copy.html",
+  "page_title": "Copy (FUN)",
+  "text": "\nFUNCTION Copy : UDINT\nOverwrites the content of\nitfDstString\nwith the content of\nitfSrcString\nIt returns the number of bytes written.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "Copy",
+          "Type": "UDINT"
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfDstString",
+          "Type": "IString"
+        },
+        [
+          "itfSrcString",
+          "IString"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "eErrorID",
+          "Type": "ERROR"
+        }
+      ]
+    }
+  ]
+}

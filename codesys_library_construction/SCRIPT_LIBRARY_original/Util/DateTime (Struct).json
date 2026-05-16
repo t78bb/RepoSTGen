@@ -1,0 +1,58 @@
+{
+  "library": "Util",
+  "title": "DateTime (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/TimerSwitch/Structs/DateTime.html",
+  "page_title": "DateTime (STRUCT)",
+  "text": "Analog Monitors\nHYSTERESIS (FunctionBlock)\nLIMITALARM (FunctionBlock)\nBCD Conversions\nBCD_TO_BYTE (Function)\nBCD_TO_DWORD (Function)\nBCD_TO_INT (Function)\nBCD_TO_WORD (Function)\nBYTE_TO_BCD (Function)\nDWORD_TO_BCD (Function)\nINT_TO_BCD (Function)\nWORD_TO_BCD (Function)\nBit/Byte Functions\nBIT_AS_BYTE (FunctionBlock)\nBIT_AS_DWORD (FunctionBlock)\nBIT_AS_WORD (FunctionBlock)\nBYTE_AS_BIT (FunctionBlock)\nDWORD_AS_BIT (FunctionBlock)\nEXTRACT (Function)\nGETBIT (Function)\nPACK (Function)\nPUTBIT (Function)\nSETBIT (Function)\nSWITCHBIT (Function)\nUNPACK (FunctionBlock)\nWORD_AS_BIT (FunctionBlock)\nConstants\nTextBlockSize (ParamList)\nController\nPD (FunctionBlock)\nPID\n(FB)\nTemperature control with PID and LIMIT\nPID_FIXCYCLE (FunctionBlock)\nDatatypes\nGEN_MODE (Enum)\nPOINT (Struct)\nPT_SIZE (Struct)\nEncoding\nBASE64 (Function)\nFunction Manipulators\nCHARCURVE (FunctionBlock)\nRAMP_INT (FunctionBlock)\nRAMP_REAL (FunctionBlock)\nGray Conversions\nBYTE_TO_GRAY (Function)\nDWORD_TO_GRAY (Function)\nGRAY_TO_BYTE (Function)\nGRAY_TO_DWORD (Function)\nGRAY_TO_WORD (Function)\nWORD_TO_GRAY (Function)\nHEX/ASCII Functions\nBYTE_TO_HEXinASCII (Function)\nHEXinASCII_TO_BYTE (Function)\nWORD_AS_STRING (Function)\nLibrary Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nMathematical Functions\nDERIVATIVE (FunctionBlock)\nINTEGRAL (FunctionBlock)\nLIN_TRAFO (FunctionBlock)\nROTATION_DIFFERENCE (FunctionBlock)\nSTATISTICS_INT (FunctionBlock)\nSTATISTICS_REAL (FunctionBlock)\nVARIANCE (FunctionBlock)\nSignals\nBLINK (FunctionBlock)\nFREQ_MEASURE (FunctionBlock)\nGEN (FunctionBlock)\nTimerSwitch\nEnums\nERROR (Enum)\nPERIOD (Enum)\nWEEKDAY (Enum)\nFunctionBlocks\nDateTimeProvider (FunctionBlock)\nGetDateTime (Method)\nTimerSwitch (FunctionBlock)\nIDateTimeProvider\nFunctions\nCombineDateTime (Function)\nDateTimeFromWeek (Function)\nDayOfWeek (Function)\nGetDateTime (Function)\nGetLocalDateTime (Function)\nGetTimeStampsDifference (Function)\nIsLeapYear (Function)\nJoinDateTime (Function)\nLocalDateTime (Function)\nSeparateDateTime (Function)\nSplitDateTime (Function)\nWeekOfYear (Function)\nGlobalConstants\nDAY_FLAGS (GVL)\nTSW (GVL)\nInterfaces\nIDateTimeProvider (Interface)\nGetDateTime (Method)\nStructs\nDateTime (Struct)\nSchedule (Struct)\nSegment (Struct)\nTimeZone (Struct)\nTypes\nDAY (Alias)\nDAYS (Alias)\nHOUR (Alias)\nMILLISECOND (Alias)\nMINUTE (Alias)\nMONTH (Alias)\nSECOND (Alias)\nTZ_NAME (Alias)\nWEEK (Alias)\nYEAR (Alias)\nFile and Project Information\nLibrary Reference\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysTimeRtc\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nUtil\nDocs\n»\nTimerSwitch\n»\nStructs\n»\nDateTime (STRUCT)\nDateTime (STRUCT)\nÂ¶\nTYPE DateTime : STRUCT\nTwo formats are supported:\nAbsolute format: defines an exact time. âuiYearâ, âuiMonthâ, âuiDayâ, âuiHourâ, âuiMinuteâ and âuiSecondâ define the exact time. âuiWeekdayâ is of no importance.\nDay of the month format: is selected by setting âuiYearâ to 0. âuiWeekdayâ defines a weekday and âuiDayâ specifies the day of the month in a value range of 1..5.\nThis notation makes it possible to define the first Sunday in April as well as the last Thursday in October\n(âuiDayâ = 1 corresponds to the first weekday in a month, âuiDayâ = 5 corresponds to the last weekday in a month)\nNote\nThe following applies for the summer time in Europe:\nThe switch to summer time is done on the last Sunday in March. At 2:00 a.m. the clock is set ahead by one hour.\nThe following applies for the winter time (standard time) in Europe:\nThe switch to winter time is done on the last Sunday in October. At 3:00 a.m. the clock is set back by one hour.\nInOut:\nName\nType\nComment\nuiYear\nYEAR\nuiMonth\nMONTH\nuiDay\nDAY\nIf Year = 0, then 1..5 1 => first day in this month, 5 =>\nlast day in this month\nuiHour\nHOUR\nuiMinute\nMINUTE\nuiSecond\nSECOND\nuiMilliseconds\nMILLISECOND\neWeekday\nWEEKDAY",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "uiYear",
+          "Type": "YEAR",
+          "Comment": ""
+        },
+        {
+          "Name": "uiMonth",
+          "Type": "MONTH",
+          "Comment": ""
+        },
+        {
+          "Name": "uiDay",
+          "Type": "DAY",
+          "Comment": "If Year = 0, then 1..5 1 => first day in this month, 5 =>\nlast day in this month"
+        },
+        {
+          "Name": "uiHour",
+          "Type": "HOUR",
+          "Comment": ""
+        },
+        {
+          "Name": "uiMinute",
+          "Type": "MINUTE",
+          "Comment": ""
+        },
+        {
+          "Name": "uiSecond",
+          "Type": "SECOND",
+          "Comment": ""
+        },
+        {
+          "Name": "uiMilliseconds",
+          "Type": "MILLISECOND",
+          "Comment": ""
+        },
+        {
+          "Name": "eWeekday",
+          "Type": "WEEKDAY",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "requirement": "This code should implement a function block named FirstPublish in CODESYS/Structured Text that manages MQTT publishing. It should initialize a publisher object of type MQTT.MQTTPublish and use it to publish a message. The function block should handle the initialization of the publisher only once, setting it with a specific MQTT_IN_OUT configuration from an external source named HowTo. The publishing should occur based on the condition of a boolean variable 'doPublish'. If 'doPublish' is TRUE, the function block should publish a predefined string 'testPayload' to a topic 'TestTopic/FromCodesys' with the quality of service set to 'ExactlyOnce' and without retaining the message. The function block should ensure that the publisher is initialized before attempting to publish.",
+  "provide_code": "FUNCTION_BLOCK FirstPublish\nVAR_INPUT\nEND_VAR\nVAR_OUTPUT\nEND_VAR",
+  "function_name": "FirstPublish",
+  "requirement_cn": "这段代码应实现一个名为 FirstPublish 的 CODESYS/Structured Text 功能块，用于管理 MQTT 发布。它应该初始化一个类型为 MQTT.MQTTPublish 的发布者对象，并使用它发布消息。该功能块应该仅一次处理发布者的初始化，将其设置为来自名为 HowTo 的外部源的特定 MQTT_IN_OUT 配置。发布应基于布尔变量 'doPublish' 的条件进行。如果 'doPublish' 为 TRUE，则功能块应发布预定义字符串 'testPayload' 到主题 'TestTopic/FromCodesys'，服务质量设置为 'ExactlyOnce'，并且不保留消息。功能块应确保在尝试发布之前初始化发布者。"
+}

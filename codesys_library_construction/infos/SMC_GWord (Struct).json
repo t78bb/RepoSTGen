@@ -1,0 +1,38 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_GWord (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_Data-types/SoftMotion-CNC/SMC_GWord.html",
+  "page_title": "SMC_GWord (STRUCT)",
+  "text": "\nTYPE SMC_GWord : STRUCT\nThis data type represents the data of one G-code word like âN20â or âG1â.\nIt replaces the older structure\nSMC_GCODE_WORD\n, which is kept only for\ncompatibility.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "strAddress",
+          "Type": "SMC_GAddress",
+          "Comment": "The address of the G-Code word.  E.g. âGâ, âNâ, âEFâ,\nâPROBEâ."
+        },
+        {
+          "Name": "nNumExpTokens",
+          "Type": "UDINT",
+          "Comment": "The number of expression-tokens (SMC_GExpression_Token) needed\nto evaluate the value of the GWord.\nThis can be a simple literal,\na variable access, or a composite expression like (a + b).\nThe type of the expression ;"
+        },
+        {
+          "Name": "lenAddData",
+          "Type": "UDINT",
+          "Comment": "The number of bytes of additional data stored for all expression-tokens\nin sum.  This is a redundant value that is used to make iteration more\nefficient."
+        },
+        {
+          "Name": "pos",
+          "Type": "SMC_NC_SourcePosition",
+          "Comment": "The source position of the g-word."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "BaseInstance (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_Module/BaseInstance.html",
+  "page_title": "BaseInstance (FB)",
+  "text": "\nFUNCTION_BLOCK BaseInstance IMPLEMENTS\nIBaseInstance2\nThis implementation is the common base for FB Module and\nProxyInstance. For details see\nIBaseInstance\n.\nProperties:\nComAddress\nInitParametersDone\nInstanceName\nMethods:\nFB_EXIT\nInit\nMain\nOnAfterOnlineChange\nOnBeforeOnlineChange\nSetBaseIdentification\nStructure:\nComAddress (Property)\nFB_EXIT (Method)\nInit (Method)\nInitParametersDone (Property)\nInstanceName (Property)\nMain (Method)\nOnAfterOnlineChange (Method)\nOnBeforeOnlineChange (Method)\nSetBaseIdentification (Method)",
+  "tables": []
+}

@@ -1,0 +1,52 @@
+{
+  "library": "BACnet2",
+  "title": "GetCallbackAttachmentsForProperty (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/BACnetServerPlugin/pou-IBACnetServerPlugin/GetCallbackAttachmentsForProperty.html",
+  "page_title": "IBACnetServerPlugin.GetCallbackAttachmentsForProperty (METH)",
+  "text": "\nMETHOD GetCallbackAttachmentsForProperty : UDINT\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetCallbackAttachmentsForProperty",
+          "Type": "UDINT",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "devId",
+          "Type": "CmpBACnet.IEC_BACNET_UNSIGNED",
+          "Comment": "device of object"
+        },
+        [
+          "objId",
+          "CmpBACnet.IEC_BACNET_OBJECT_ID",
+          "the object ID"
+        ],
+        [
+          "propID",
+          "CmpBACnet.IEC_BACNET_PROPERTY_ID",
+          "the property ID"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bReadCallbackAttached",
+          "Type": "CmpBACnet.IEC_BACNET_BOOLEAN",
+          "Comment": ""
+        },
+        [
+          "bWriteCallbackAttached",
+          "CmpBACnet.IEC_BACNET_BOOLEAN",
+          ""
+        ]
+      ]
+    }
+  ]
+}

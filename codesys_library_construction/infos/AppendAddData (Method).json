@@ -1,0 +1,32 @@
+{
+  "library": "SM3_CNC",
+  "title": "AppendAddData (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/GSentence/pou-SMC_GSentenceQueue/AppendAddData.html",
+  "page_title": "SMC_GSentenceQueue.AppendAddData (METH)",
+  "text": "\nMETHOD AppendAddData : BOOL\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "AppendAddData",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Input",
+          "Name": "pNewElems",
+          "Type": "POINTER TO BYTE"
+        },
+        [
+          "nNumElems",
+          "UDINT"
+        ]
+      ]
+    }
+  ]
+}

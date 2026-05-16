@@ -1,0 +1,25 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "ClientCreated (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/GenVisu/pou-IModuleVisuClientListener/ClientCreated.html",
+  "page_title": "IModuleVisuClientListener.ClientCreated (METH)",
+  "text": "\nMETHOD ClientCreated\nThis method will be called when a visu client is registered\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "iClientID",
+          "Type": "INT",
+          "Comment": "The ID of the new visu client"
+        }
+      ]
+    }
+  ]
+}

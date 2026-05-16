@@ -1,0 +1,46 @@
+{
+  "library": "BACnet2DefaultImpl",
+  "title": "BACnetEventCallback (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2DefaultImpl/Current/BACnetDefaultImpl/Function-Blocks/pou-UTCTimeSync_SvcAppHook/BACnetEventCallback.html",
+  "page_title": "UTCTimeSync_SvcAppHook.BACnetEventCallback (METH)",
+  "text": "\nMETHOD BACnetEventCallback : BOOL\nHook callback for IEC_BACNET_CB_TYPE.CB_UTC_TIME_SYNC\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "BACnetEventCallback",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "EventId",
+          "Type": "DWORD",
+          "Comment": "If only one event is possibly called, the following Ids can be ignored. If there are more\nat least the EventId should be checked, to get the right type of pParameter.ID of the occured Event. Contains the class and the event (see CmpBACnet.EVENTIDS)"
+        },
+        [
+          "usParamId",
+          "WORD",
+          "Id of the parameter structure (see pParameter and\nCmpBACnet.EVENTIDS)"
+        ],
+        [
+          "usVersion",
+          "WORD",
+          "Version of the parameter structure (see pParameter and\nCmpBACnet.EVENTIDS)"
+        ],
+        [
+          "pParameter",
+          "POINTER TO BYTE",
+          "Pointer to the event specific parameter, that is specified\nby Id (see CmpBACnet.EVENTIDS and CmpBACnet, i.e.\nEVT_BACNET_ACKALARM)"
+        ]
+      ]
+    }
+  ]
+}

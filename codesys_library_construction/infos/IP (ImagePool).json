@@ -1,0 +1,55 @@
+{
+  "library": "AC_DataLog",
+  "title": "IP (ImagePool)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_DataLog/Current/AC_DataLog/IP.html",
+  "page_title": "IP (Image Pool)",
+  "text": "\nID\nFile name\nImage\nLink type\nDataLogStorage_Icon_16\nStorageContainer_16x.png\nEmbedded\nDataLogManager_Icon_16\nLog_16x.png\nEmbedded\nDataLogManager_Icon_32\nLog_32x.png\nEmbedded\nDataLogChannel_Icon_16\nLog_inverse_16x.png\nEmbedded\nDataLogChannel_Icon_32\nLog_inverse_32x.png\nEmbedded\nDataLogStorage_Icon_32\nStorageContainer_32x.png\nEmbedded",
+  "tables": [
+    {
+      "headers": [
+        "ID",
+        "File name",
+        "Image",
+        "Link type"
+      ],
+      "rows": [
+        {
+          "ID": "DataLogStorage_Icon_16",
+          "File name": "StorageContainer_16x.png",
+          "Image": "",
+          "Link type": "Embedded"
+        },
+        {
+          "ID": "DataLogManager_Icon_16",
+          "File name": "Log_16x.png",
+          "Image": "",
+          "Link type": "Embedded"
+        },
+        {
+          "ID": "DataLogManager_Icon_32",
+          "File name": "Log_32x.png",
+          "Image": "",
+          "Link type": "Embedded"
+        },
+        {
+          "ID": "DataLogChannel_Icon_16",
+          "File name": "Log_inverse_16x.png",
+          "Image": "",
+          "Link type": "Embedded"
+        },
+        {
+          "ID": "DataLogChannel_Icon_32",
+          "File name": "Log_inverse_32x.png",
+          "Image": "",
+          "Link type": "Embedded"
+        },
+        {
+          "ID": "DataLogStorage_Icon_32",
+          "File name": "StorageContainer_32x.png",
+          "Image": "",
+          "Link type": "Embedded"
+        }
+      ]
+    }
+  ]
+}

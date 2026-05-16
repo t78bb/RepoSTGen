@@ -1,0 +1,45 @@
+{
+  "library": "AlarmManager",
+  "title": "LatchVariableRead (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Alarm-storage-API/pou-IAlarmStorageReaderConsumer/LatchVariableRead.html",
+  "page_title": "IAlarmStorageReaderConsumer.LatchVariableRead (METH)",
+  "text": "\nMETHOD LatchVariableRead\nNotification, that a latch variable  from TblAlarm has been read and can be processed.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "diWhichRow",
+          "Type": "DINT",
+          "Comment": "A 0-based index of the row read from TblAlarm."
+        },
+        [
+          "usiWhichVariable",
+          "USINT",
+          "A 1-based index of the latch variable within all latch\nvariables"
+        ],
+        [
+          "liLatchVarValue",
+          "LINT",
+          "The latch value as ârawâ value.\nIf|iLatchVarType|has the value TYPE_STRING, this parameter contains a pointer to\nthe STRING, in case of TYPE_WSTRING this parameter contains a POINTER to a WSTRING"
+        ],
+        [
+          "iLatchVarType",
+          "TypeClass",
+          "A TypeClass value representing the type of the latch\nvariable"
+        ],
+        [
+          "xValueNULL",
+          "BOOL",
+          "Indicates, whether NULL is stored in the alarm storage"
+        ]
+      ]
+    }
+  ]
+}

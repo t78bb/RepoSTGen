@@ -1,0 +1,6 @@
+{
+  "requirement": "This code should implement a method within the FUNCTION_BLOCK named FB_Lamp that sets the output variable 'byLevel' to a value specified by the input variable 'byNewLevel'. Both 'byLevel' and 'byNewLevel' are of type BYTE. The method, named SetLevel, should return a BOOL indicating successful execution, which in this context is always TRUE since the operation is a direct assignment.",
+  "provide_code": "FUNCTION_BLOCK PUBLIC FB_Lamp\nVAR_OUTPUT\n\tbyLevel\t\t\t: BYTE;\nEND_VAR",
+  "function_name": "FB_Lamp",
+  "requirement_cn": "这段代码应实现一个名为 FB_Lamp 的 FUNCTION_BLOCK 中的方法，该方法将输出变量 'byLevel' 设置为输入变量 'byNewLevel' 指定的值。'byLevel' 和 'byNewLevel' 均为 BYTE 类型。该方法名为 SetLevel，应返回一个 BOOL 值，表示执行成功，在这个上下文中，由于操作是直接赋值，因此始终为 TRUE。"
+}

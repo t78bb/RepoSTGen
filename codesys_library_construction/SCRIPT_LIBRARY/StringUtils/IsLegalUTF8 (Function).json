@@ -1,0 +1,36 @@
+{
+  "library": "StringUtils",
+  "title": "IsLegalUTF8 (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/StringUtils/Current/Public-Parts/UTF8/IsLegalUTF8.html",
+  "page_title": "IsLegalUTF8 (FUN)",
+  "text": "\nFUNCTION IsLegalUTF8 : BOOL\nThis method checks if a given string contains of valid UTF-8 characters.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "IsLegalUTF8",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "source",
+          "Type": "POINTER TO BYTE",
+          "Comment": "Pointer to the string to check"
+        },
+        [
+          "length",
+          "INT",
+          "Length of the string to check"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_GJUMP_COMMAND (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/GSentence/SMC_GJUMP_COMMAND.html",
+  "page_title": "SMC_GJUMP_COMMAND (ENUM)",
+  "text": "\nTYPE SMC_GJUMP_COMMAND :\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "None",
+          "Comment": ""
+        },
+        {
+          "Name": "Sentence",
+          "Comment": "Jump to a given sentence number (forward or backward)"
+        },
+        {
+          "Name": "Target",
+          "Comment": "Jump to unknown jump target (! in g-code, forward)"
+        },
+        {
+          "Name": "SubCall",
+          "Comment": "Call a sub program"
+        },
+        {
+          "Name": "SubRet",
+          "Comment": "Return from a sub program"
+        }
+      ]
+    }
+  ]
+}

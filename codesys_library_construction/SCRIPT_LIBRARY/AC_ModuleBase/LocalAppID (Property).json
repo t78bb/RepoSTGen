@@ -1,0 +1,8 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "LocalAppID (Property)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_RMP_ReliableMessageProtocol/pou-RMPService/LocalAppID.html",
+  "page_title": "RMPService.LocalAppID (PROP)",
+  "text": "\nPROPERTY FINAL LocalAppID : UINT",
+  "tables": []
+}

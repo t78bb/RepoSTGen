@@ -1,0 +1,32 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_SingleCorr (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/GeoInfo-Help-Functions/SMC_SingleCorr.html",
+  "page_title": "SMC_SingleCorr (FUN)",
+  "text": "\nFUNCTION SMC_SingleCorr : BOOL\nTranslates the object corresp. to the radius\ndR\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SMC_SingleCorr",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Input",
+          "Name": "pg",
+          "Type": "POINTER TOSMC_GEOINFO"
+        },
+        [
+          "dR",
+          "LREAL"
+        ]
+      ]
+    }
+  ]
+}

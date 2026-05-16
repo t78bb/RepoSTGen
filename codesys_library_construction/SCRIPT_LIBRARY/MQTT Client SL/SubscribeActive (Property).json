@@ -1,0 +1,8 @@
+{
+  "library": "MQTT Client SL",
+  "title": "SubscribeActive (Property)",
+  "url": "https://content.helpme-codesys.com/en/libs/MQTT Client SL/Current/MQTT-Client/Common/Function-Blocks/pou-MQTTSubscribe/SubscribeActive.html",
+  "page_title": "MQTTSubscribe.SubscribeActive (PROP)",
+  "text": "\nPROPERTY SubscribeActive : BOOL",
+  "tables": []
+}

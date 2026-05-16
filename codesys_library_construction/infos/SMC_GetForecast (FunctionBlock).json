@@ -1,0 +1,57 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_GetForecast (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/AdministrativeConfiguration/SMC_GetForecast.html",
+  "page_title": "SMC_GetForecast (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_GetForecast\nThis function block returns the forecast duration of a given axis.\nThe forecast duration can be set using\nSMC_SetForecast\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3",
+          "Comment": "Reference to the axis"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Enable",
+          "Type": "BOOL",
+          "Comment": "TRUE: The forecast is read continuously"
+        },
+        {
+          "Scope": "Output",
+          "Name": "Valid",
+          "Type": "BOOL",
+          "Comment": "TRUE: The forecast has been read successfully"
+        },
+        [
+          "Busy",
+          "BOOL",
+          "TRUE: Function block is in operation"
+        ],
+        [
+          "Error",
+          "BOOL",
+          "TRUE: Error has occurred during execution"
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ],
+        [
+          "ForecastDuration",
+          "LREAL",
+          "The forecast duration in seconds"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "library": "AlarmManager",
+  "title": "AddAlarmStorageListener (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Alarm-storage-API/pou-AlarmStorageReader/AddAlarmStorageListener.html",
+  "page_title": "AlarmStorageReader.AddAlarmStorageListener (METH)",
+  "text": "\nMETHOD AddAlarmStorageListener :\nEAlarmStorageReaderErrors\nAdds an IAlarmStorageListener instance.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "AddAlarmStorageListener",
+          "Type": "EAlarmStorageReaderErrors",
+          "Comment": "A EAlarmStorageReaderErrors value indicating, whether the processing has been completed successfully or not:EAlarmStorageReaderErrors.NoError: Completed successfullyEAlarmStorageReaderErrors.WrongParameter: If the IAlarmStorageListener instance is invalidEAlarmStorageReaderErrors.NoMemory: If the IAlarmStorageListener instance cannot be stored, because no memory availableEAlarmStorageReaderErrors.InvalidCall: If there is no alarm storage is available, where the IAlarmStorageListener instance can be registered"
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfAlarmStorageListener",
+          "Type": "IAlarmStorageListener",
+          "Comment": "An instance of IAlarmStorageListener, that will be informed every\ntime, when new data has been written into the alarm storage"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "ModuleInfo (Property)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_Module/pou-Module/Identification/ModuleInfo.html",
+  "page_title": "Module.ModuleInfo (PROP)",
+  "text": "\nPROPERTY FINAL ModuleInfo : POINTER TO ModuleInfo",
+  "tables": []
+}

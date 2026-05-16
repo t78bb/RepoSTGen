@@ -1,0 +1,8 @@
+{
+  "library": "AlarmManager",
+  "title": "IAlarm3 (Interface)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/IAlarm3.html",
+  "page_title": "IAlarm3 (ITF)",
+  "text": "\nINTERFACE IAlarm3 EXTENDS\nIAlarm2\nThis is an extension of the IAlarm2 interface, to support additional latch variables.\nMethods:\nGetCountLatchVariables\nGetCountMessages\nGetLatchVarValue\nGetMessage2\nSetLatchVarValue\nGetAlarmClass\n, inherited from\nIAlarm\nGetAlarmGroup\n, inherited from\nIAlarm\nGetCurrentValue\n, inherited from\nIAlarm\nGetID\n, inherited from\nIAlarm\nGetInternalID\n, inherited from\nIAlarm\nGetLatchVar1Value\n, inherited from\nIAlarm\nGetLatchVar2Value\n, inherited from\nIAlarm\nGetMessage\n, inherited from\nIAlarm\nGetState\n, inherited from\nIAlarm\nGetTimestampAcknowledge\n, inherited from\nIAlarm\nGetTimestampActive\n, inherited from\nIAlarm\nGetTimestampInactive\n, inherited from\nIAlarm\nGetTimestampLast\n, inherited from\nIAlarm\nGetTriggerValue\n, inherited from\nIAlarm\nIsDeactivated\n, inherited from\nIAlarm\nStructure:\nGetCountLatchVariables (Method)\nGetCountMessages (Method)\nGetLatchVarValue (Method)\nGetMessage2 (Method)\nSetLatchVarValue (Method)",
+  "tables": []
+}

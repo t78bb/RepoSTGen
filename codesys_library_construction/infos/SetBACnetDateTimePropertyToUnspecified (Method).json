@@ -1,0 +1,31 @@
+{
+  "library": "BACnet",
+  "title": "SetBACnetDateTimePropertyToUnspecified (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/pou-BACnetObjectBase/Utilities/SetBACnetDateTimePropertyToUnspecified.html",
+  "page_title": "BACnetObjectBase.SetBACnetDateTimePropertyToUnspecified (METH)",
+  "text": "\nMETHOD SetBACnetDateTimePropertyToUnspecified : CmpBACnet.IEC_BACNET_STATUS\nSets the specified IEC_BACNET_DATE_TIME-property (propID) of this BACnet-Object to unspecified.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetBACnetDateTimePropertyToUnspecified",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "propID",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_ID",
+          "Comment": "The ID of the property to set."
+        }
+      ]
+    }
+  ]
+}

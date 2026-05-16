@@ -1,0 +1,25 @@
+{
+  "library": "AlarmManager",
+  "title": "EventOccurred (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/pou-IAlarmManagerClient2/EventOccurred.html",
+  "page_title": "IAlarmManagerClient2.EventOccurred (METH)",
+  "text": "\nMETHOD EventOccurred\nNotification, that an event occurred, that is not visible in the list of active\nalarms, but is only written into the alarm storage.\nRemark: This method is only called for those event, that matches the filter\ncriteria returned by method IAlarmManagerClient.GetFilterCriteria\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "itfAlarm",
+          "Type": "IAlarm",
+          "Comment": "An instance of IAlarm describing the event"
+        }
+      ]
+    }
+  ]
+}

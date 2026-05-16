@@ -1,0 +1,25 @@
+{
+  "library": "AC_Alarming",
+  "title": "AlarmInfo (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_Alarming/Current/ExtenderFB/AlarmInfo.html",
+  "page_title": "AlarmInfo (STRUCT)",
+  "text": "\nTYPE AlarmInfo : STRUCT\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Name": "alarmID",
+          "Type": "AlarmManager.ALARM_ID"
+        },
+        {
+          "Name": "alarmGroupID",
+          "Type": "AlarmManager.ALARMGROUP_ID"
+        }
+      ]
+    }
+  ]
+}

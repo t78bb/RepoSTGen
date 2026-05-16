@@ -1,0 +1,11 @@
+{
+  "模糊点列表": [
+    {
+      "模糊点类型": "变量定义",
+      "模糊点描述": "原始需求未明确是否需要在方法内定义额外的变量",
+      "差异细节": "模型生成代码中定义了一个额外的局部变量rPlainValue用于存储和返回对象的值，而参考代码直接使用了THIS^.rValue返回值",
+      "精准需求描述": "方法内不应定义额外的局部变量，直接使用对象的属性rValue获取并返回其值"
+    }
+  ],
+  "case_id": "repoeval_Decorator_Application/ConcreteComponment_getValue"
+}

@@ -1,0 +1,36 @@
+{
+  "library": "CmpBACnet",
+  "title": "BACnetSetClientDeviceFixAddress (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/CmpBACnet/Current/BACnetClientAPI/advanced/BACnetSetClientDeviceFixAddress.html",
+  "page_title": "BACnetSetClientDeviceFixAddress (FUN)",
+  "text": "\nFUNCTION BACnetSetClientDeviceFixAddress :\nIEC_BACNET_STATUS\nRegisters a fix MAC address for communication with the advanced BACnet client API.\nThe user application can register a fix MAC address for communication to an remote\nBACnet device instead of using dynamic address binding which is the default for this API.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "BACnetSetClientDeviceFixAddress",
+          "Type": "IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "devId",
+          "Type": "IEC_BACNET_INST_NUMBER",
+          "Comment": "The device instance number for which a fix MAC address shall\nbe registered."
+        },
+        [
+          "pAddress",
+          "POINTER TOIEC_BACNET_ADDRESS",
+          "A pointer to a valid MAC address structure which contains the network address under\nwhich the given device instance number is reachable. To go back to dynamic address\nbinding this parameter shall be NULL."
+        ]
+      ]
+    }
+  ]
+}

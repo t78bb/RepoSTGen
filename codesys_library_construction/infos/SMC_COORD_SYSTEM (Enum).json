@@ -1,0 +1,41 @@
+{
+  "library": "SM3_CommonPublic",
+  "title": "SMC_COORD_SYSTEM (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CommonPublic/Current/SM3_CommonPublic/SMC_COORD_SYSTEM.html",
+  "page_title": "SMC_COORD_SYSTEM (ENUM)",
+  "text": "\nTYPE SMC_COORD_SYSTEM :\nThe possible coordinate systems in which positions may be expressed.\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "ACS",
+          "Comment": "Axis coordinate system.  This is not a cartesian coordinate system.\nInstead, each axis of the axis group spans one dimension.  A point\nin this coordinate system is simply the assignment of a value for\neach axis of the axis group."
+        },
+        {
+          "Name": "MCS",
+          "Comment": "Machine coordinate system.  This coordinate system is directly\nassociated with the kinematic of one axis group.  The position\nand orientation of the MCS is defined by the kinematic\ntransformation."
+        },
+        {
+          "Name": "WCS",
+          "Comment": "World coordinate system.  This coordinate system is the common\ncoordinate system for all axis groups working together to solve\nsome task."
+        },
+        {
+          "Name": "PCS_1",
+          "Comment": "Product coordinate system number 1.  This coordinate system is\nattached to a product.  It may be static or dynamic."
+        },
+        {
+          "Name": "PCS_2",
+          "Comment": "Product coordinate system number 2.  This coordinate system is\nattached to a product.  It may be static or dynamic."
+        },
+        {
+          "Name": "TCS",
+          "Comment": "Tool coordinate system.\nWhen used with MoveDirect-, MoveLinear- or MoveCircular-FBs,\nposition-data is interpreted with respect to the axis groupâs\nposition and orientation at the beginning of the movement,\nso relative and absolute movements are treated the same.\nIn all other possible applications (like for example|SMC_GroupConvertPosition|), TCS means the current situation of\nthe corresponding axis group, i.e. the set-values of the\nbeginning of a cycle."
+        }
+      ]
+    }
+  ]
+}

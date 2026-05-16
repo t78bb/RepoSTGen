@@ -1,0 +1,147 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_TRAFOF_5Axes (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_Trafo_POUs/SoftMotion-Transformations/Gantry-systems/SMC_TRAFOF_5Axes.html",
+  "page_title": "SMC_TRAFOF_5Axes (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_TRAFOF_5Axes\nThe forward transformation function block computes\nthe tool center point coordinates from the axis positions.\nNote\nFor detailed information on transformations\nsee Overview to\nSM_Trafo_POUs\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "DriveX",
+          "Type": "AXIS_REF_SM3",
+          "Comment": "Axis X"
+        },
+        [
+          "DriveY",
+          "AXIS_REF_SM3",
+          "Axis Y"
+        ],
+        [
+          "DriveZ",
+          "AXIS_REF_SM3",
+          "Axis Z"
+        ],
+        [
+          "DriveIncl",
+          "AXIS_REF_SM3",
+          "Orientation inclination"
+        ],
+        [
+          "DriveAzi",
+          "AXIS_REF_SM3",
+          "Orientation azimuth"
+        ],
+        {
+          "Scope": "Input",
+          "Name": "dOffsetX",
+          "Type": "LREAL",
+          "Comment": "Offset value X"
+        },
+        [
+          "dOffsetY",
+          "LREAL",
+          "Offset value Y"
+        ],
+        [
+          "dOffsetZ",
+          "LREAL",
+          "Offset value Z"
+        ],
+        [
+          "dOffsetIncl",
+          "LREAL",
+          "Offset value inclination"
+        ],
+        [
+          "dOffsetAzi",
+          "LREAL",
+          "Offset value azimuth"
+        ],
+        [
+          "dTool",
+          "LREAL",
+          "Length of the tool"
+        ],
+        [
+          "minX",
+          "LREAL",
+          "Minimal display area of axis X for visualization"
+        ],
+        [
+          "maxX",
+          "LREAL",
+          "Maximal display area of axis X for visualization"
+        ],
+        [
+          "minY",
+          "LREAL",
+          "Minimal display area of axis Y or visualization"
+        ],
+        [
+          "maxY",
+          "LREAL",
+          "Maximal display area of axis Y for visualization"
+        ],
+        [
+          "minZ",
+          "LREAL",
+          "Minimal display areas of axis Z for visualization"
+        ],
+        [
+          "maxZ",
+          "LREAL",
+          "Maximal display area of axis Z for visualization"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "dx",
+          "Type": "LREAL",
+          "Comment": "Position of the tool correction point (TCP) in X"
+        },
+        [
+          "dy",
+          "LREAL",
+          "Position of the tool correction point (TCP) in Y"
+        ],
+        [
+          "dz",
+          "LREAL",
+          "Position of the tool correction point (TCP) in Z"
+        ],
+        [
+          "dAzimuth",
+          "LREAL",
+          "Orientation or the tool in spherical coordinate azimuth"
+        ],
+        [
+          "dInclination",
+          "LREAL",
+          "Orientation or the tool in spherical coordinate inclination"
+        ],
+        [
+          "da",
+          "LREAL",
+          "Orientation of the tool in vector coordinate a"
+        ],
+        [
+          "db",
+          "LREAL",
+          "Orientation of the tool in vector coordinate b"
+        ],
+        [
+          "dc",
+          "LREAL",
+          "Orientation of the tool in vector coordinate c"
+        ]
+      ]
+    }
+  ]
+}

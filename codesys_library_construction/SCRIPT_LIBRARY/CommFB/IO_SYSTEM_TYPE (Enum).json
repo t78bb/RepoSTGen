@@ -1,0 +1,25 @@
+{
+  "library": "CommFB",
+  "title": "IO_SYSTEM_TYPE (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/CommFB/Current/CommFB/Addresses/IO_SYSTEM_TYPE.html",
+  "page_title": "IO_SYSTEM_TYPE (ENUM)",
+  "text": "\nTYPE IO_SYSTEM_TYPE :\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Name": "PROFIBUS_DP",
+          "Initial": "1"
+        },
+        {
+          "Name": "PROFINET_IO",
+          "Initial": "2"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "library": "MQTT Client SL",
+  "title": "ConvertUTF16toUTF8 (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/MQTT Client SL/Current/MQTT-Client/UTF-8/ConvertUTF16toUTF8.html",
+  "page_title": "ConvertUTF16toUTF8 (FUN)",
+  "text": "\nFUNCTION ConvertUTF16toUTF8 : UDINT\nConverts a WSTRING to STRING\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "ConvertUTF16toUTF8",
+          "Type": "UDINT",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "sourceStart",
+          "Type": "POINTER TO WORD",
+          "Comment": "Pointer to WSTRING"
+        },
+        [
+          "targetStart",
+          "POINTER TO BYTE",
+          "Pointer to STRING"
+        ],
+        [
+          "dwTargetBufferSize",
+          "DWORD",
+          "Size of STRING"
+        ],
+        [
+          "bStrictConversion",
+          "BOOL",
+          ""
+        ]
+      ]
+    }
+  ]
+}

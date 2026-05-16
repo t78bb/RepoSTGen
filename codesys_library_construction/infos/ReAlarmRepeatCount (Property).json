@@ -1,0 +1,8 @@
+{
+  "library": "AlarmManager",
+  "title": "ReAlarmRepeatCount (Property)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/pou-IAlarm7/ReAlarmRepeatCount.html",
+  "page_title": "IAlarm7.ReAlarmRepeatCount (PROP)",
+  "text": "\nPROPERTY ReAlarmRepeatCount : UDINT\nReturns the re-alarm repeat count of the current cycle",
+  "tables": []
+}

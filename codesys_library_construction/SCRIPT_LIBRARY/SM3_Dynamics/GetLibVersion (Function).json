@@ -1,0 +1,23 @@
+{
+  "library": "SM3_Dynamics",
+  "title": "GetLibVersion (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Dynamics/Current/Library-Information/GetLibVersion.html",
+  "page_title": "GetLibVersion (FUN)",
+  "text": "\nFUNCTION GetLibVersion : VERSION\nThis function has been automatically generated from the project information.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetLibVersion",
+          "Type": "VERSION"
+        }
+      ]
+    }
+  ]
+}

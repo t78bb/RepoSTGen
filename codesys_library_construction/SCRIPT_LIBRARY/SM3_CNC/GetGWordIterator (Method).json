@@ -1,0 +1,33 @@
+{
+  "library": "SM3_CNC",
+  "title": "GetGWordIterator (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/GSentence/pou-SMC_GSentence_Iterator/GetGWordIterator.html",
+  "page_title": "SMC_GSentence_Iterator.GetGWordIterator (METH)",
+  "text": "\nMETHOD GetGWordIterator : BOOL\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetGWordIterator",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Inout",
+          "Name": "iterator",
+          "Type": "SMC_GWord_Iterator"
+        },
+        {
+          "Scope": "Input",
+          "Name": "bReverse",
+          "Type": "BOOL"
+        }
+      ]
+    }
+  ]
+}

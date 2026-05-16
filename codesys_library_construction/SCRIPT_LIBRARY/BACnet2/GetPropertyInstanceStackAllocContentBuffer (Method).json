@@ -1,0 +1,42 @@
+{
+  "library": "BACnet2",
+  "title": "GetPropertyInstanceStackAllocContentBuffer (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/BACnetObjects/base/pou-BACnetObjectBase/GetPropertyInstanceStackAllocContentBuffer.html",
+  "page_title": "BACnetObjectBase.GetPropertyInstanceStackAllocContentBuffer (METH)",
+  "text": "\nMETHOD GetPropertyInstanceStackAllocContentBuffer : CmpBACnet.IEC_BACNET_STATUS\nGets the value/content of a specified BACnet-Property (ePropertyID) independend of any client side acces restrictions.\nThe specified index should be set to CmpBACnet.CONSTANT.BACNET_ENTIRE_ARRAY, meaning that all elements of a List or Array in a BACnet-Property are retrieved.\nOtherwise an index counting from 1 specifies a element of a BACnetARRAY property.\nThe IEC_BACNET_PEROPERTY_CONTENTS variable propertyContents.Buffer.pBuffer is requested to be initialized with 0, whereas the\nstack allocates the latter pointer. Consequently after using the information in propertyContents.Buffer.pBuffer has to be used to freed.\nDeallocStackAllocatedContentBuffer\nprovides convenient dealloc for stack allocated propertyContents.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetPropertyInstanceStackAllocContentBuffer",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "ePropertyID",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_ID",
+          "Comment": "The id of the property to get."
+        },
+        [
+          "nIndex",
+          "CmpBACnet.IEC_BACNET_ARRAY_INDEX",
+          "Counting from 1. See documentation of\nCmpBACnet.BACnetRetrievePropertyInstance."
+        ],
+        {
+          "Scope": "Inout",
+          "Name": "propertyContents",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_CONTENTS",
+          "Comment": "structure holding the read Property-Data (see documentation\nabove)."
+        }
+      ]
+    }
+  ]
+}

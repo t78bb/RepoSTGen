@@ -1,0 +1,112 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_SmoothMerge (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/SoftMotion-Function-Blocks/SMC_SmoothMerge.html",
+  "page_title": "SMC_SmoothMerge (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_SmoothMerge\nThe function block serves the preprocessing of line segments supplied by a CAD/CAM\nsystem. It is executed after decoding. It tries to approximate a\nmaximum number of points by a polynom. The deviation from the original path must be\nwithin a given threshold. The created elements can be smoothed by use of the SMC_SmoothPath\nfunction block.\nIn each cycle this function block appends a maximum of one element to the out-queue.\nExactly one element is appended if the in-queue is full or\nbEndOfList\nis active and\nthe out-queue is not full. The look-ahead is therefore limited by the size of the\nin-queue. Only movements in X, Y, Z, A, B and C are considered.\nThe function block uses the mean-square-best-approximation, but always pass exactly\nthrough one first point (for avoiding jumps). This first point is given by the\npiDestPos\nof the last generated element. If it is the first element that we deal with, this is its\npiStartPos\n.\nOnly the following movement types can be merged:\nAll G01 movements\nG00 movements without movement in X/Y/Z direction\nEvery other movement type or without the required feature flag will just\nbe forwarded to the out-queue, except for one case:\nThe first element after a merging block is going to be converted into a line,\nexcept for administrative (i.e. M-function, G4 etc.) and G00 elements.\nNote\nThe function block\ndoes only merge the additional axes A/B/C (P/Q/U/V/W are not considered)\ndoes not support h-functions\ndoes not support changes of flags like G51, G52, G40 and so on. These changes are\nignored.\ntakes at most 128 line segments into account (as this quantity influences both\nperformance and storage size).\ndoes not support probe movements / G31.\nA spline always contains the same tool correction information\n(i.e. lengths and diameter) as the first of the segments\nthat it replaces.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "bExecute",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Starts on rising edge; whileTRUE, the function block is\nactive."
+        },
+        [
+          "poqDataIn",
+          "POINTER TOSMC_OUTQUEUE",
+          "",
+          "Points to theSMC_OUTQUEUE-structure object, which contains theSMC_GEOINFOobjects of the unsmoothed path; typically it points to the outputpoqDataOutof the preceding module (e.g. theSMC_NCDecoder)."
+        ],
+        [
+          "nSizeOutQueue",
+          "UDINT",
+          "",
+          "Size of the data bufferpbyBufferOutQueue``in bytes"
+        ],
+        [
+          "pbyBufferOutQueue",
+          "POINTER TO ARRAY [0..0]\nOF SMC_GEOINFO",
+          "",
+          "Points to the first byte of the memory area being allocated for theSMC_OUTQUEUE-structure. This area must be at least as big as defined innSizeOutQueue. Typically the allocation of the memory buffer is done within\nthe declaration part of the IEC-program by defining an array ofSMC_GeoInfo(ExampleBuf:ARRAY[1..50]OFSMC_GEOINFOfor a buffer which can hold 50 path\nelements). After predefining the value it may be modified during a reset only."
+        ],
+        [
+          "piMaxDifference",
+          "SMC_POSINFO",
+          "",
+          "The maximum allowed deviation from the original path, in X,\nY, Z, A, B and C"
+        ],
+        [
+          "usiMaxDegree",
+          "USINT",
+          "5",
+          "The maximal degree for the resulting polynomials, at most 5"
+        ],
+        [
+          "wFeatureFlag",
+          "WORD",
+          "",
+          "The feature bit (0..31) used for smoothing (controlled by\nG38/G39)"
+        ],
+        [
+          "wAdditionalParamNumber",
+          "WORD",
+          "",
+          "The number of the additional parameter (set by G38 I/J/K) that is used as\na factor multiplied to the precision"
+        ],
+        [
+          "dMinimumCurvatureRadius",
+          "LREAL",
+          "",
+          "If a possibly generated spline contains a position where its curvature radius\nis less than this value, it wonât be generated."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bDone",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Will be set toTRUEas soon as the input data frompoqDataInhas been\nprocessed completely. Thereafter, the module will not perform any further actions\nuntil it gets reset. If thebExecuteinput isFALSE,bDonewill be\nreset toFALSE."
+        },
+        [
+          "bBusy",
+          "BOOL",
+          "",
+          "TRUE, while execution of function block is not finished"
+        ],
+        [
+          "bError",
+          "BOOL",
+          "",
+          "Signals, that an error has occurred within the function\nblock"
+        ],
+        [
+          "wErrorID",
+          "SMC_ERROR",
+          "",
+          "Error identification"
+        ],
+        [
+          "poqDataOut",
+          "POINTER TOSMC_OUTQUEUE",
+          "",
+          "The queue for the output path"
+        ],
+        [
+          "uiNrElems",
+          "UINT",
+          "",
+          "The number of elements that have been merged in this cycle"
+        ]
+      ]
+    }
+  ]
+}

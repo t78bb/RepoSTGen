@@ -1,0 +1,28 @@
+{
+  "library": "BACnetDefaultImpl",
+  "title": "RemoveDataFiles (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnetDefaultImpl/Current/BACnetDefaultImpl/Function-Blocks/LoggingObjects/Internal/pou-LogObjectsBase/Files/DataFiles/RemoveDataFiles.html",
+  "page_title": "LogObjectsBase.RemoveDataFiles (METH)",
+  "text": "\nMETHOD PROTECTED RemoveDataFiles : RTS_IEC_RESULT\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "RemoveDataFiles",
+          "Type": "RTS_IEC_RESULT"
+        },
+        {
+          "Scope": "Input",
+          "Name": "unusedOnly",
+          "Type": "BOOL"
+        }
+      ]
+    }
+  ]
+}

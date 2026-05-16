@@ -1,0 +1,28 @@
+{
+  "library": "AC_Alarming",
+  "title": "ModuleCall (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_Alarming/Current/ExtenderFB/ModuleCall.html",
+  "page_title": "ModuleCall (STRUCT)",
+  "text": "\nTYPE ModuleCall : STRUCT\nA structure internally used by the alarm generator to\ngenerate the module calls after an alarm was issued.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "inst",
+          "Type": "AC.IModule",
+          "Comment": "The module instance defining a module call"
+        },
+        {
+          "Name": "calltype",
+          "Type": "UINT",
+          "Comment": "The module call type defined by the module instance"
+        }
+      ]
+    }
+  ]
+}

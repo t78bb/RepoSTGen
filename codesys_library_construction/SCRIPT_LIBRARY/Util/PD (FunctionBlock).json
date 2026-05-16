@@ -1,0 +1,94 @@
+{
+  "library": "Util",
+  "title": "PD (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/Controller/PD.html",
+  "page_title": "PD (FB)",
+  "text": "\nFUNCTION_BLOCK PD\nRepresents a PD controller\nA PD controller continuously calculates\nan error value e(t) as the difference between a desired set point and a measured process variable. The PD controller\napplies a correction based on proportional and derivative terms (sometimes denoted P and D respectively)\nwhich give their name to the controller type.\nY_OFFSET\n,\nY_MIN\nand\nY_MAX\nare used for the transformation of the manipulated variable\nwithin a prescribed range.\nMANUAL\ncan be used to switch on and off manual operation.\nRESET\nserves to reset the\ncontroller. In normal operation (\nMANUAL\n=\nRESET\n=\nLIMITS_ACTIVE\n=\nFALSE\n) the controller calculates\nthe controller error e as difference\nSET_POINT\nâ\nACTUAL\n, generates the derivation with respect\nto time\n\\(\\frac{\\delta e}{\\delta t}\\)\nand stores these values internally.\nThe output, that is the manipulated variable\nY\n, is calculated as follows:\n\\(Y = KP \\cdot (e + TV \\frac{\\delta e}{\\delta t}) + Y_{OFFSET}\\)\nSo besides the P-part also the current change of the controller error (D-part) influences the\nmanipulated variable. Additionally\nY\nis limited on a range prescribed by\nY_MIN\nand\nY_MAX\n. If\nY\nexceeds these limits,\nLIMITS_ACTIVE\nwill get\nTRUE\n. If no limitation of the manipulated variable is desired,\nY_MIN\nand\nY_MAX\nhave to be set to 0. As long as\nMANUAL=TRUE\n,\nY_MANUAL\nwill be written to\nY\n.\nA P controller can be easily created by setting\nTV=0\n.\nFor more information see:\nPID\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "ACTUAL",
+          "Type": "REAL",
+          "Initial": "",
+          "Comment": "Actual value, process variable"
+        },
+        [
+          "SET_POINT",
+          "REAL",
+          "",
+          "Specified value, set point"
+        ],
+        [
+          "KP",
+          "REAL",
+          "",
+          "Proportionality constant P"
+        ],
+        [
+          "TV",
+          "REAL",
+          "",
+          "Rate time, derivative time D [sec]. If set to 0, than it\nworks a P controller"
+        ],
+        [
+          "Y_MANUAL",
+          "REAL",
+          "",
+          "Yis set to this value as long asMANUAL=TRUE"
+        ],
+        [
+          "Y_OFFSET",
+          "REAL",
+          "",
+          "Offset for manipulated variable"
+        ],
+        [
+          "Y_MIN",
+          "REAL",
+          "",
+          "Minimum value for manipulated variable. If no limitation is\ndesired, it must be be set to 0"
+        ],
+        [
+          "Y_MAX",
+          "REAL",
+          "",
+          "Maximum value for manipulated variable. If no limitation is\ndesired, it must be be set to 0"
+        ],
+        [
+          "MANUAL",
+          "BOOL",
+          "",
+          "TRUE: Manual:Yis not influenced by controllerFALSE: Controller determinesY"
+        ],
+        [
+          "RESET",
+          "BOOL",
+          "",
+          "TRUE: SetYoutput toY_OFFSET"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Y",
+          "Type": "REAL",
+          "Initial": "",
+          "Comment": "Manipulated variable, set value"
+        },
+        [
+          "LIMITS_ACTIVE",
+          "BOOL",
+          "FALSE",
+          "TRUE:Yhas exceeded the given limitsY_MIN,Y_MAXand is limited to these values"
+        ]
+      ]
+    }
+  ]
+}

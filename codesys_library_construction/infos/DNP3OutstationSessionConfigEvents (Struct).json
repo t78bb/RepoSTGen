@@ -1,0 +1,157 @@
+{
+  "library": "DNP3",
+  "title": "DNP3OutstationSessionConfigEvents (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Outstation/DNP3OutstationSessionConfigEvents.html",
+  "page_title": "DNP3OutstationSessionConfigEvents (STRUCT)",
+  "text": "\nTYPE DNP3OutstationSessionConfigEvents : STRUCT\nParameters for outstation session related to event configuration.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "binaryInputMaxEvents",
+          "Type": "UINT",
+          "Initial": "100",
+          "Comment": "Binary Input event configuration - maximum number of events."
+        },
+        {
+          "Name": "binaryInputEventMode",
+          "Type": "PointEventMode",
+          "Initial": "PointEventMode.EVENT_MODE_SOE",
+          "Comment": "Binary Input event configuration - event mode."
+        },
+        {
+          "Name": "doubleInputMaxEvents",
+          "Type": "UINT",
+          "Initial": "100",
+          "Comment": "Double Bit Input event configuration - maximum number of\nevents."
+        },
+        {
+          "Name": "doubleInputEventMode",
+          "Type": "PointEventMode",
+          "Initial": "PointEventMode.EVENT_MODE_SOE",
+          "Comment": "Double Bit Input event configuration - event mode."
+        },
+        {
+          "Name": "binaryOutputMaxEvents",
+          "Type": "UINT",
+          "Initial": "100",
+          "Comment": "Binary Output event configuration - maximum number of\nevents."
+        },
+        {
+          "Name": "binaryOutputEventMode",
+          "Type": "PointEventMode",
+          "Initial": "PointEventMode.EVENT_MODE_SOE",
+          "Comment": "Binary Output event configuration - event mode."
+        },
+        {
+          "Name": "binaryOutCmdMaxEvents",
+          "Type": "UINT",
+          "Initial": "100",
+          "Comment": "Binary Output Command event configuration - maximum number\nof events."
+        },
+        {
+          "Name": "binaryOutCmdEventMode",
+          "Type": "PointEventMode",
+          "Initial": "PointEventMode.EVENT_MODE_SOE",
+          "Comment": "Binary Output Command event configuration - event mode."
+        },
+        {
+          "Name": "analogInputMaxEvents",
+          "Type": "UINT",
+          "Initial": "100",
+          "Comment": "Analog Input event configuration - maximum number of events."
+        },
+        {
+          "Name": "analogInputEventMode",
+          "Type": "PointEventMode",
+          "Initial": "PointEventMode.EVENT_MODE_SOE",
+          "Comment": "Binary Input event configuration - event mode."
+        },
+        {
+          "Name": "analogOutputMaxEvents",
+          "Type": "UINT",
+          "Initial": "100",
+          "Comment": "Analog Output event configuration - maximum number of\nevents."
+        },
+        {
+          "Name": "analogOutputEventMode",
+          "Type": "PointEventMode",
+          "Initial": "PointEventMode.EVENT_MODE_SOE",
+          "Comment": "Analog Output event configuration - event mode."
+        },
+        {
+          "Name": "analogOutCmdMaxEvents",
+          "Type": "UINT",
+          "Initial": "100",
+          "Comment": "Analog Output Command event configuration - maximum number\nof events."
+        },
+        {
+          "Name": "analogOutCmdEventMode",
+          "Type": "PointEventMode",
+          "Initial": "PointEventMode.EVENT_MODE_SOE",
+          "Comment": "Analog Output Command event configuration - event mode."
+        },
+        {
+          "Name": "binaryCounterMaxEvents",
+          "Type": "UINT",
+          "Initial": "100",
+          "Comment": "Binary Counter event configuration - maximum number of\nevents."
+        },
+        {
+          "Name": "binaryCounterEventMode",
+          "Type": "PointEventMode",
+          "Initial": "PointEventMode.EVENT_MODE_SOE",
+          "Comment": "Binary Counter event configuration - event mode."
+        },
+        {
+          "Name": "frozenCounterMaxEvents",
+          "Type": "UINT",
+          "Initial": "100",
+          "Comment": "Frozen Counter event configuration - maximum number of\nevents."
+        },
+        {
+          "Name": "frozenCounterEventMode",
+          "Type": "PointEventMode",
+          "Initial": "PointEventMode.EVENT_MODE_SOE",
+          "Comment": "Frozen Counter event configuration - event mode."
+        },
+        {
+          "Name": "frozenAnalogInMaxEvents",
+          "Type": "UINT",
+          "Initial": "100",
+          "Comment": "Frozen Analog Input event configuration - maximum number of\nevents."
+        },
+        {
+          "Name": "frozenAnalogInEventMode",
+          "Type": "PointEventMode",
+          "Initial": "PointEventMode.EVENT_MODE_SOE",
+          "Comment": "Frozen Analog Input event configuration - event mode."
+        },
+        {
+          "Name": "truncateStrings",
+          "Type": "BOOL",
+          "Initial": "TRUE",
+          "Comment": "Set this to TRUE to truncate string to length specified by read variation,\nwhich is the normally desired behavior. Setting this to false may send\na longer string than the variation specified. ie reading group 110\nvariation 10 would either truncate all strings to at most 10 bytes,\nor if this parameter is FALSE would allow a longer string to be returned.\nThis behavior would be more like reading variation 0."
+        },
+        {
+          "Name": "stringMaxEvents",
+          "Type": "UINT",
+          "Initial": "100",
+          "Comment": "String event configuration - maximum number of events."
+        },
+        {
+          "Name": "stringEventMode",
+          "Type": "PointEventMode",
+          "Initial": "PointEventMode.EVENT_MODE_SOE",
+          "Comment": "String event configuration - event mode."
+        }
+      ]
+    }
+  ]
+}

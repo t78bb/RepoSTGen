@@ -1,0 +1,31 @@
+{
+  "library": "BACnet",
+  "title": "SetFaultParameters (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/EventEnrollment/pou-BACnetEventEnrollment/SetFaultParameters.html",
+  "page_title": "BACnetEventEnrollment.SetFaultParameters (METH)",
+  "text": "\nMETHOD SetFaultParameters : CmpBACnet.IEC_BACNET_STATUS\nSets the value of the Event_Parameters-Property of this BACnet-EventEnrollment-Property.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetFaultParameters",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "faultParam",
+          "Type": "CmpBACnet.IEC_BACNET_FAULT_PARAMETER",
+          "Comment": "The event parameters structure to set for the\nEvent_Parameters-Property."
+        }
+      ]
+    }
+  ]
+}

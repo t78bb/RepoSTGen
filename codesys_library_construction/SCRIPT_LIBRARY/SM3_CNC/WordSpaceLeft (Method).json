@@ -1,0 +1,23 @@
+{
+  "library": "SM3_CNC",
+  "title": "WordSpaceLeft (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/GSentence/pou-SMC_GSentenceQueue/WordSpaceLeft.html",
+  "page_title": "SMC_GSentenceQueue.WordSpaceLeft (METH)",
+  "text": "\nMETHOD WordSpaceLeft : UDINT\nReturns how many words may be appended to the queue.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "WordSpaceLeft",
+          "Type": "UDINT"
+        }
+      ]
+    }
+  ]
+}

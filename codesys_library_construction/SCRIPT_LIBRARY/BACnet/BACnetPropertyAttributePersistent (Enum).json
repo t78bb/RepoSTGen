@@ -1,0 +1,29 @@
+{
+  "library": "BACnet",
+  "title": "BACnetPropertyAttributePersistent (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/Enums/BACnetPropertyAttributePersistent.html",
+  "page_title": "BACnetPropertyAttributePersistent (ENUM)",
+  "text": "\nTYPE BACnetPropertyAttributePersistent :\nAttribute to configure persistence of BACnet object properties.\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Name": "DEFAULT",
+          "Initial": "-1"
+        },
+        {
+          "Name": "PERSIST",
+          "Initial": "1"
+        },
+        {
+          "Name": "NON_PERSISTENT",
+          "Initial": "0"
+        }
+      ]
+    }
+  ]
+}

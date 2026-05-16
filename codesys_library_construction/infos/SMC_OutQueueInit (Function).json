@@ -1,0 +1,31 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_OutQueueInit (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/OutQueue-Functions/SMC_OutQueueInit.html",
+  "page_title": "SMC_OutQueueInit (FUN)",
+  "text": "\nFUNCTION SMC_OutQueueInit : BOOL\nThis function intiailizes the\nSMC_OUTQUEUE\n.\ntask-safety: not task-safe; the application has to make sure\nthat no other queue function is called while this\nfunction is active, and that no other queue function is active\nwhen this function is called.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SMC_OutQueueInit",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "poq",
+          "Type": "POINTER TOSMC_OUTQUEUE",
+          "Comment": "Queue to be initialized."
+        }
+      ]
+    }
+  ]
+}

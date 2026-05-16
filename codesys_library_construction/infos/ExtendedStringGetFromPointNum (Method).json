@@ -1,0 +1,62 @@
+{
+  "library": "DNP3",
+  "title": "ExtendedStringGetFromPointNum (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/pou-Master/Datapoints/ExtendedStringGetFromPointNum.html",
+  "page_title": "Master.ExtendedStringGetFromPointNum (METH)",
+  "text": "\nMETHOD ExtendedStringGetFromPointNum :\nError\nGet the value of Extended String datapoint (DNP3 object group 114 âextended stringsâ) with given point number (0 .. MaxPointNum).\nReturns PointNotExistent, if a datapoint with the given point number doesnt exist, OK otherwise.\nThe caller has to provide a buffer where to store the Extended String value.\nEventually the Extended String value exceeds the provided buffer, in this case Error.NoMemory will be returned,\nnevertheless the first maxLenStrBuf bytes of value are copied to pStrBuf.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "ExtendedStringGetFromPointNum",
+          "Type": "Error",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "pointNumber",
+          "Type": "UINT",
+          "Comment": "Point number."
+        },
+        [
+          "pStrBuf",
+          "POINTER TO USINT",
+          "Pointer to buffer where to store the Extended String value"
+        ],
+        [
+          "maxLenStrBuf",
+          "UINT",
+          "Maximum number of bytes to store in pStrBuf"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "strLen",
+          "Type": "UINT",
+          "Comment": "number of bytes in value"
+        },
+        [
+          "flags",
+          "USINT",
+          "flags received from Outstation. Flag values are ORâdcombinations of the following:DNPDEFS_DBAS_FLAG_ON_LINE - the point has been readsuccessfullyDNPDEFS_DBAS_FLAG_RESTART - the field device that originated thedata object has been restarted. This device may be the deviced\nreporting this data object.DNPDEFS_DBAS_FLAG_COMM_LOST - the device reporting this data objecthas lost communication with the originator of the data objectDNPDEFS_DBAS_FLAG_REMOTE_FORCED - the state of the binary objecthas been forced to its current state at the originating device"
+        ],
+        [
+          "hasTimeStamp",
+          "BOOL",
+          "Has a valid time stamp."
+        ],
+        [
+          "timeStamp",
+          "LDATE_AND_TIME",
+          "Time stamp reported - valid if hasTimeStamp = TRUE, invalid\notherwise."
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "RMP_GVL (GVL)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_RMP_ReliableMessageProtocol/RMP_GVL.html",
+  "page_title": "RMP_GVL (GVL)",
+  "text": "\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "g_AC_RMP_xDiagLog",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "Determines whether diagnostic message for the RMP\n(Reliable Message Protocoll) should be logged or not"
+        }
+      ]
+    }
+  ]
+}

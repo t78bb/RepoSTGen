@@ -1,0 +1,58 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_M_PARAMETERS (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_Data-types/SoftMotion-CNC/SMC_M_PARAMETERS.html",
+  "page_title": "SMC_M_PARAMETERS (STRUCT)",
+  "text": "\nTYPE SMC_M_PARAMETERS : STRUCT\nThis data type can define additional parameters for the currently active\nM-function which can be evaluated by\nSMC_GetMParameters\nin order to\ndisplay additional values for the respective M-function.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Name": "dP1",
+          "Type": "LREAL",
+          "Initial": "0"
+        },
+        {
+          "Name": "dP2",
+          "Type": "LREAL",
+          "Initial": "0"
+        },
+        {
+          "Name": "dP3",
+          "Type": "LREAL",
+          "Initial": "0"
+        },
+        {
+          "Name": "dP4",
+          "Type": "LREAL",
+          "Initial": "0"
+        },
+        {
+          "Name": "dP5",
+          "Type": "LREAL",
+          "Initial": "0"
+        },
+        {
+          "Name": "dP6",
+          "Type": "LREAL",
+          "Initial": "0"
+        },
+        {
+          "Name": "dP7",
+          "Type": "LREAL",
+          "Initial": "0"
+        },
+        {
+          "Name": "dP8",
+          "Type": "LREAL",
+          "Initial": "0"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "模糊点列表": [
+    {
+      "模糊点类型": "变量范围",
+      "模糊点描述": "原始需求未明确指定消息质量服务等级",
+      "差异细节": "模型生成代码使用的是MQTT.QoS.AtLeastOnce，而参考代码使用的是MQTT.QoS.ExactlyOnce",
+      "精准需求描述": "消息发布时应使用MQTT.QoS.ExactlyOnce作为消息的服务质量等级"
+    },
+    {
+      "模糊点类型": "IO映射",
+      "模糊点描述": "原始需求未明确指定发布消息的有效载荷内容",
+      "差异细节": "模型生成代码中有效载荷内容为'Hello from Codesys'，而参考代码中有效载荷内容为变量sendPayload的值",
+      "精准需求描述": "发布的消息有效载荷应为预设变量sendPayload的值"
+    },
+    {
+      "模糊点类型": "IO映射",
+      "模糊点描述": "原始需求未明确指定发布消息的主题",
+      "差异细节": "模型生成代码中的主题为'TestTopic/ToCodesys'，而参考代码中的主题为'TestTopic/FromCodesys'",
+      "精准需求描述": "发布的消息主题应为'TestTopic/FromCodesys'"
+    },
+    {
+      "模糊点类型": "报错机制",
+      "模糊点描述": "原始需求未明确是否需要使用字符串形式发布消息",
+      "差异细节": "模型生成代码直接发送字节数据，而参考代码设置PublishAsString为TRUE，使用字符串形式发送数据",
+      "精准需求描述": "发布消息时应使用字符串形式，设置PublishAsString为TRUE"
+    }
+  ],
+  "case_id": "repoeval_Interation_HowTo/FirstPublish"
+}

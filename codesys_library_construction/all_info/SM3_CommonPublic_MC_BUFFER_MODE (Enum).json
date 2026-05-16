@@ -1,0 +1,41 @@
+{
+  "library": "SM3_CommonPublic",
+  "title": "MC_BUFFER_MODE (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CommonPublic/Current/SM3_CommonPublic/MC_BUFFER_MODE.html",
+  "page_title": "MC_BUFFER_MODE (ENUM)",
+  "text": "SM3_CommonPublic\nMC_BUFFER_MODE (Enum)\nMC_SOURCE (Enum)\nSMC_ADDITIONAL_AXES_VALUES_ARRAY (Alias)\nSMC_COORD_SYSTEM (Enum)\nSMC_Movement_Id (Alias)\nFile and Project Information\nLibrary Reference\nSM3_CPKernelDefaults\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nSM3_CommonPublic\nDocs\n»\nSM3_CommonPublic\n»\nMC_BUFFER_MODE (ENUM)\nMC_BUFFER_MODE (ENUM)\nÂ¶\nTYPE MC_BUFFER_MODE :\nThe buffer mode describes how a motion command is inserted\ninto the queue of commanded motions.\nAttributes:\nqualified_only\nInOut:\nName\nComment\nAborting\nThe movement is executed immediately and is not buffered.\nAll previously commanded movements are aborted.\nBuffered\nThe function block starts as soon as the last commanded movement is finished.\nThe TransitionMode has no effect.\nMovements with the Buffered buffer mode always start at the beginning of a cycle.\nThe only exception is when the movement follows an SMC_GroupWait.\nThen the movement starts exactly after the set wait time.\nBlendingLow\nIn the blending range between the two movements, the smaller value of the velocity,\nacceleration, and jerk limits of both movements is used.\nBlendingPrevious\nIn the blending range between the two movements, the velocity, acceleration,\nand jerk limits of the first movement are used.\nBlendingNext\nIn the blending range between the two movements, the velocity, acceleration,\nand jerk limits of the second movement are used.\nBlendingHigh\nIn the blending range between the two movements, the larger value of the velocity,\nacceleration, and jerk limits of both movements is used.",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "Aborting",
+          "Comment": "The movement is executed immediately and is not buffered.\nAll previously commanded movements are aborted."
+        },
+        {
+          "Name": "Buffered",
+          "Comment": "The function block starts as soon as the last commanded movement is finished.\nThe TransitionMode has no effect.\nMovements with the Buffered buffer mode always start at the beginning of a cycle.\nThe only exception is when the movement follows an SMC_GroupWait.\nThen the movement starts exactly after the set wait time."
+        },
+        {
+          "Name": "BlendingLow",
+          "Comment": "In the blending range between the two movements, the smaller value of the velocity,\nacceleration, and jerk limits of both movements is used."
+        },
+        {
+          "Name": "BlendingPrevious",
+          "Comment": "In the blending range between the two movements, the velocity, acceleration,\nand jerk limits of the first movement are used."
+        },
+        {
+          "Name": "BlendingNext",
+          "Comment": "In the blending range between the two movements, the velocity, acceleration,\nand jerk limits of the second movement are used."
+        },
+        {
+          "Name": "BlendingHigh",
+          "Comment": "In the blending range between the two movements, the larger value of the velocity,\nacceleration, and jerk limits of both movements is used."
+        }
+      ]
+    }
+  ]
+}

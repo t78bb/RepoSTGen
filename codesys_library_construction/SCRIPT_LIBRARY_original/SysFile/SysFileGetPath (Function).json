@@ -1,0 +1,43 @@
+{
+  "library": "SysFile",
+  "title": "SysFileGetPath (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SysFile/Current/SysFileGetPath.html",
+  "page_title": "SysFileGetPath (FUN)",
+  "text": "Deutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nMenu\nSearch\nDeutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nACCESS_MODE (Enum)\nSYS_FILETIME (Struct)\nSYS_FILE_STATUS (Enum)\nSysFileClose (Function)\nSysFileCopy (Function)\nSysFileDelete (Function)\nSysFileDeleteByHandle (Function)\nSysFileEOF (Function)\nSysFileFlush (Function)\nSysFileGetName (Function)\nSysFileGetName2 (Function)\nSysFileGetPath (Function)\nSysFileGetPos (Function)\nSysFileGetSize (Function)\nSysFileGetSizeByHandle (Function)\nSysFileGetStatus (Function)\nSysFileGetStatus2 (Function)\nSysFileGetTime (Function)\nSysFileOpen (Function)\nSysFileRead (Function)\nSysFileRename (Function)\nSysFileSetPos (Function)\nSysFileTruncate (Function)\nSysFileWrite (Function)\nFile and Project Information\nLibrary Reference\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nSysFile\nDocs\n»\nSysFileGetPath (FUN)\nSysFileGetPath (FUN)\nÂ¶\nFUNCTION SysFileGetPath : RTS_IEC_RESULT\nGet the path of this file.\nIf a path is specified in the filename, the path will be extracted from the filename.\nIf no path is specified in the filename, the standard path for this file extension type will be returned.\nInOut:\nScope\nName\nType\nComment\nReturn\nSysFileGetPath\nRTS_IEC_RESULT\nThe runtime system error code (see CmpErrors.library)\nInput\nszFileName\nSTRING\nFile name. Can contain an absolute or relative path\nInout\nszPath\nSTRING\nPath for this file\nInput\ndiMaxLen\nDINT\nMaximum size in bytes of path length\ntop\nCODESYS Group | We\nsoftware\nAutomation.\nto software\n['sɒftwɛər]\ntransitive verb\n__softwared/softwaring\n: to develop software\n// to software automation: to develop software for automation purposes\nThe CODESYS Group is the manufacturer of CODESYS, the leading hardware-independent\n                                    IEC 61131-3 automation software for developing and engineering controller\n                                    applications.\nCODESYS® is a registered trademark.\nCODESYS GmbH\nA member of the CODESYS Group\nMemminger Straße 151, 87439 Kempten\nGermany\nTel.:\n+49-831-54031-0\ninfo@codesys.com\nLegal Notice\nPrivacy Policy\nLinkedIn\nYoutube\nRSS\nDownloads\nLogin\nCODESYS Store\n© 2022 CODESYS GmbH\n| A member of the CODESYS Group",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SysFileGetPath",
+          "Type": "RTS_IEC_RESULT",
+          "Comment": "The runtime system error code (see CmpErrors.library)"
+        },
+        {
+          "Scope": "Input",
+          "Name": "szFileName",
+          "Type": "STRING",
+          "Comment": "File name. Can contain an absolute or relative path"
+        },
+        {
+          "Scope": "Inout",
+          "Name": "szPath",
+          "Type": "STRING",
+          "Comment": "Path for this file"
+        },
+        {
+          "Scope": "Input",
+          "Name": "diMaxLen",
+          "Type": "DINT",
+          "Comment": "Maximum size in bytes of path length"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_CamEditor (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/CAM/SMC_CamEditor.html",
+  "page_title": "SMC_CamEditor (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_CamEditor\nThis function block is used to display cam tables in the visualization.\nImportant\nThis function block does not work without either a\nTargetVisu\nor a\nWebVisu\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "bEnable",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "FALSE: No modification of the cam table is possible."
+        },
+        {
+          "Scope": "Output",
+          "Name": "bCAMchanged",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUE: Cam has been changed in the visualization."
+        },
+        [
+          "bError",
+          "BOOL",
+          "FALSE",
+          "TRUE: Error has occurred within the function block."
+        ],
+        [
+          "nErrorID",
+          "SMC_ERROR",
+          "",
+          "Error identification"
+        ],
+        {
+          "Scope": "Inout",
+          "Name": "cam",
+          "Type": "MC_CAM_REF",
+          "Initial": "",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

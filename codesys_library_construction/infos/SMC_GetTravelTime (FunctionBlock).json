@@ -1,0 +1,77 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_GetTravelTime (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/AdministrativeConfiguration/SMC_GetTravelTime.html",
+  "page_title": "SMC_GetTravelTime (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_GetTravelTime\nReturns when the axis will pass through a given position in\na given direction.\nThe function block returns the duration after a single call with\nEnable=TRUE, provided no error has occurred and the position will\nbe reached during the configured forecast duration.\nAn error is returned in the following situations:\nSMC_AXIS_IS_NO_AXIS_REF if an invalid axis is passed to the\nfunction block.\nSMC_FB_CALLED_FROM_WRONG_TASK if the function block is not called in\nthe bus task of the axis.\nSMC_AXIS_NOT_FOLLOWING_SETVALUES if the drive is not under control of\nSoftMotion, e.g. during quick stop, drive controlled homing or\ncontroller mode SMC_nocontrol.\nSMC_WRONG_CONTROLLER_MODE if the controller mode is not SMC_position\nor SMC_velocity.\nNote\nReading the duration requires setting a forecast duration using\nSMC_SetForecast\n.  The\nAxis\nmust be within the forecast\nduration of the\nPosition\nfor the\nDuration\noutput to be valid.\nIf the axis does not move, then Valid is FALSE even if the axis\nis exactly at the given position.\nWhile the calculated\nDuration\nhas sub-cycle accuracy, a position\nthat is passed twice in one cycle will not be detected.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout Const",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3",
+          "Initial": "",
+          "Comment": "Reference to the axis"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Enable",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Get the duration continuously while enabled."
+        },
+        [
+          "Position",
+          "LREAL",
+          "",
+          "The axis position."
+        ],
+        [
+          "Direction",
+          "SMC_CAMTAPPETTYPE",
+          "SMC_CAMTAPPETTYPE.TAPPET_all",
+          "The direction from which the position needs to be passed.\nIf the position is reached from a different direction,\nit will not be returned by this function block."
+        ],
+        [
+          "ValueSource",
+          "MC_SOURCE",
+          "MC_SOURCE.SET",
+          "Determines whether the duration is based on when the position\nis reached by the set position sent to the drive, or the\nactual position inside the drive.With MC_SOURCE.SET, the duration is based on the set position\nat the beginning of the current bus task cycle.With MC_SOURCE.ACT, an additional dead time between the set positions\nand the time when this set position is reached by the drive,\nis added to the swicth event time.\nIf you set this input to MC_SOURCE.ACT, make sure the dead time\nbetween set and actual values is correct.  The dead time in cycles\ncan be set by writing parameter 1070, or in the SoftMotion drive\nconfiguration editor.Note: the value MC_SOURCE.SAVE behaves identically to MC_SOURCE.SET."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Valid",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Whether the duration output is valid."
+        },
+        [
+          "Duration",
+          "LREAL",
+          "",
+          "The duration in seconds until the position is passed, relative to\nthe start of the current cycle.The duration has sub-cycle accuracy.A value of 0s means that the position has been reached with the\nposition at the end of the previous cycle.  A value equal to the\ntask interval means that the position will be reached at the end\nof this cycle."
+        ],
+        [
+          "Error",
+          "BOOL",
+          "",
+          "Whether an error has occurred."
+        ],
+        [
+          "ErrorId",
+          "SMC_ERROR",
+          "",
+          "The error identifier."
+        ]
+      ]
+    }
+  ]
+}

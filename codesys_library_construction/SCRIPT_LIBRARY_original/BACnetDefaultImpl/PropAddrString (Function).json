@@ -1,0 +1,36 @@
+{
+  "library": "BACnetDefaultImpl",
+  "title": "PropAddrString (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnetDefaultImpl/Current/BACnetDefaultImpl/Functions/PropAddrString.html",
+  "page_title": "PropAddrString (FUN)",
+  "text": "Deutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nMenu\nSearch\nDeutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nBACnetDefaultImpl\nFunction Blocks\nApplicationSoftwareVersion (FunctionBlock)\nName (Property)\nPostStartBACnetStack (Method)\nAutomaticTimeSync (FunctionBlock)\nGetTimeZoneFromSystem (Method)\nName (Property)\nTimeZone (Property)\nTimeout (Property)\nUpdateTimeZoneFromSystem (Property)\nBackupRestore (FunctionBlock)\nBACnetEventCallback (Method)\nBackupFailTime (Property)\nBackupFilePath (Property)\nDumpDataBase (Method)\nGetHook (Method)\nGetTimeZoneFromSystem (Method)\nInit (Method)\nName (Property)\nNumHooks (Property)\nPassword (Property)\nPostUnregister (Method)\nPreRegister (Method)\nRestore (Method)\nRestoreClientCreatedObjects (Property)\nTimeZone (Property)\nUpdateTimeZoneFromSystem (Property)\nClientCreatableObjects (FunctionBlock)\nBACnetEventCallback (Method)\nBlockFurtherProcessing (Property)\nGetHook (Method)\nInit (Method)\nName (Property)\nNumHooks (Property)\nPreRegister (Method)\nSetMaxNum (Method)\nDCC_SvcAppHook (FunctionBlock)\nBACnetEventCallback (Method)\nGetHook (Method)\nInit (Method)\nName (Property)\nNumHooks (Property)\nPassword (Property)\nDevelopmentSupport\nDeviceDateTime (FunctionBlock)\nGetTimeZoneFromSystem (Method)\nName (Property)\nRegisterTimeProvider (Method)\nTimeZone (Property)\nUnregisterTimeProvider (Method)\nUpdateTimeZoneFromSystem (Property)\nLimitDeviceObjectPropertyReferencesToCertainTypes (FunctionBlock)\nBACnetEventCallback (Method)\nGetCallback (Method)\nGetHook (Method)\nInit (Method)\nName (Property)\nNumCallbacks (Property)\nNumHooks (Property)\nPostStartBACnetStack (Method)\nPreRegister (Method)\nLoggingObjects\nInternal\nTrendLog (FunctionBlock)\nObjectPersistence (FunctionBlock)\nDeleteAllData (Method)\nDumpDataBase (Method)\nHardShutdown (Property)\nLogIndexFileContent (Method)\nName (Property)\nPersistentPath (Property)\nPostUnregister (Method)\nPreRegister (Method)\nRestoreClientCreatedObjects (Property)\nPropertyConfiguration (Folder)\nDoGetPropertyAttributes (Method)\nGetPropertyAttributes (Method)\nLogging\nName (Property)\nPropertyConfigurationMostlyAllPersistent (FunctionBlock)\nGetPropertyAttributes (Method)\nName (Property)\nPropertyConfigurationMostlyAllWritable (FunctionBlock)\nGetPropertyAttributes (Method)\nName (Property)\nReinitDevice_SvcAppHook (FunctionBlock)\nBACnetEventCallback (Method)\nGetHook (Method)\nGetTimeZoneFromSystem (Method)\nInit (Method)\nName (Property)\nNumHooks (Property)\nPassword (Property)\nTimeZone (Property)\nUpdateTimeZoneFromSystem (Property)\nTimeSync_SvcAppHook (FunctionBlock)\nBACnetEventCallback (Method)\nGetHook (Method)\nGetTimeZoneFromSystem (Method)\nInit (Method)\nName (Property)\nNumHooks (Property)\nTimeZone (Property)\nUpdateTimeZoneFromSystem (Property)\nUTCTimeSync_SvcAppHook (FunctionBlock)\nBACnetEventCallback (Method)\nGetHook (Method)\nInit (Method)\nName (Property)\nNumHooks (Property)\nFunctions\nDATETIME_TO_RTS_SYSTIMEDATE (Function)\nDateTimeToString (Function)\nDateTimeToTimestamp (Function)\nDirectory (FunctionBlock)\nClose (Method)\nGetDir (Method)\nRead (Method)\nSetDir (Method)\nls_log (Method)\nGetLocalTime (Function)\nGetSystemTimeZone (Function)\nPersistenceWriteProperty (Function)\nPropAddrString (Function)\nPropertyContentToString (Function)\nRTS_SYSTIMEDATE_TO_STRING (Function)\nSysTimeDateToString (Function)\nTime2BACnetDateTime (Function)\nTime2BACnetTimeStamp (Function)\nTimeZoneSegmentToString (Function)\nTimeZoneToString (Function)\nTimezoneInformationToString (Function)\nUtilDateTimeToString (Function)\nGlobalConstants\nConstants (GVL)\nStructs\nPERSISTENT_PDATA_HEADER (Struct)\nPersistence\nPERSISTENT_DATA_BUFFER (Struct)\nPERSISTENT_INDEX_HEADER (Struct)\nPERSISTENT_PDATA_ENTRY (Struct)\nPropertyConfiguration\nPropertyConfigurationObjectPropertyPair (Struct)\nTypes\nFileNameString (Alias)\nLibrary Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nFile and Project Information\nLibrary Reference\nBACnet\nLibrary Identification\nLibrary Properties\nCmpBACnet\nLibrary Identification\nLibrary Properties\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nCmpEventMgr\nLibrary Identification\nLibrary Properties\nCmpLog\nLibrary Identification\nLibrary Properties\nComponent Manager\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nStringUtils\nLibrary Identification\nLibrary Properties\nSysDir\nLibrary Identification\nLibrary Properties\nSysFile\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysSem\nLibrary Identification\nLibrary Properties\nSysTime\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nUtil\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nBACnetDefaultImpl\nDocs\n»\nBACnetDefaultImpl\n»\nFunctions\n»\nPropAddrString (FUN)\nPropAddrString (FUN)\nÂ¶\nFUNCTION PropAddrString : STRING\nInOut:\nScope\nName\nType\nReturn\nPropAddrString\nSTRING\nInput\ndevInstance\nCmpBACnet.IEC_BACNET_DWORD\nobjID\nCmpBACnet.IEC_BACNET_OBJECT_ID\npropID\nCmpBACnet.IEC_BACNET_PROPERTY_ID\ntop\nCODESYS Group | We\nsoftware\nAutomation.\nto software\n['sɒftwɛər]\ntransitive verb\n__softwared/softwaring\n: to develop software\n// to software automation: to develop software for automation purposes\nThe CODESYS Group is the manufacturer of CODESYS, the leading hardware-independent\n                                    IEC 61131-3 automation software for developing and engineering controller\n                                    applications.\nCODESYS® is a registered trademark.\nCODESYS GmbH\nA member of the CODESYS Group\nMemminger Straße 151, 87439 Kempten\nGermany\nTel.:\n+49-831-54031-0\ninfo@codesys.com\nLegal Notice\nPrivacy Policy\nLinkedIn\nYoutube\nRSS\nDownloads\nLogin\nCODESYS Store\n© 2022 CODESYS GmbH\n| A member of the CODESYS Group",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "PropAddrString",
+          "Type": "STRING"
+        },
+        {
+          "Scope": "Input",
+          "Name": "devInstance",
+          "Type": "CmpBACnet.IEC_BACNET_DWORD"
+        },
+        [
+          "objID",
+          "CmpBACnet.IEC_BACNET_OBJECT_ID"
+        ],
+        [
+          "propID",
+          "CmpBACnet.IEC_BACNET_PROPERTY_ID"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "library": "Standard",
+  "title": "DELETE (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/Standard/Current/String-Functions/DELETE.html",
+  "page_title": "DELETE (FUN)",
+  "text": "\nFUNCTION DELETE : STRING(255)\nDeletes a number of characters from a string\nDELETE\n(STR,\nLEN,\nPOS)\nmeans: Delete\nLEN\ncharacters from\nSTR\n, beginning with the character in the\nPOS\nposition.\nPOS\n=\n0\nor\nPOS\n=\n1\n, are both addressing the first character.\nNote\nThe current implementation is unfortunately not correct for the case\nPos=0\n. The implementation cannot be changed for compatibility reasons.\nIf\nPos=0\nis used, the parameter\nLEN\nis internally reduced by one!\nIt is generally recommended to use values in the range specified by IEC 61131-3. The smallest value for\nPos\nis specified there as\n1\n.\n(* Example declaration *)\nVarSTRING1\n:\nSTRING\n;\n(* Example in ST , result is 'SUSI' *)\nVarSTRING1\n:=\nDELETE\n(\n'SUXYSI'\n,\n2\n,\n3\n);\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "DELETE",
+          "Type": "STRING(255)",
+          "Comment": "String remaining after deletion"
+        },
+        {
+          "Scope": "Input",
+          "Name": "STR",
+          "Type": "STRING(255)",
+          "Comment": "String to be modfied"
+        },
+        [
+          "LEN",
+          "INT",
+          "Length of the partial string to be deleted, number of\ncharacters"
+        ],
+        [
+          "POS",
+          "INT",
+          "Position inSTRafter which the deletion starts. Counted from left,\nstarting with 1"
+        ]
+      ]
+    }
+  ]
+}

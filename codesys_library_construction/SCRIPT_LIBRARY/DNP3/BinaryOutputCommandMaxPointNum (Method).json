@@ -1,0 +1,23 @@
+{
+  "library": "DNP3",
+  "title": "BinaryOutputCommandMaxPointNum (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/pou-Master/Datapoints/BinaryOutputCommandMaxPointNum.html",
+  "page_title": "Master.BinaryOutputCommandMaxPointNum (METH)",
+  "text": "\nMETHOD BinaryOutputCommandMaxPointNum : DINT\nMaximum point number of all Binary Output Command datapoints (DNP3 object group 12 âbinary output commandsâ) provided by the Outstation.\nReturns -1 if there are no datapoints.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "BinaryOutputCommandMaxPointNum",
+          "Type": "DINT"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_GAddress (Alias)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_Data-types/SoftMotion-CNC/SMC_GAddress.html",
+  "page_title": "SMC_GAddress (ALIAS)",
+  "text": "\nTYPE SMC_GAddress : STRING(5)",
+  "tables": []
+}

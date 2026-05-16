@@ -1,0 +1,8 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "LastErrorNumber (Property)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_Module/pou-Module/ErrorHandling/LastErrorNumber.html",
+  "page_title": "Module.LastErrorNumber (PROP)",
+  "text": "\nPROPERTY LastErrorNumber : UINT",
+  "tables": []
+}

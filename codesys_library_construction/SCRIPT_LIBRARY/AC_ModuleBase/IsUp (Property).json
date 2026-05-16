@@ -1,0 +1,8 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "IsUp (Property)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_RMP_ReliableMessageProtocol/pou-RMPConnection/IsUp.html",
+  "page_title": "RMPConnection.IsUp (PROP)",
+  "text": "\nPROPERTY FINAL IsUp : BOOL\nReturn whether the connection is working; TRUE: data connection is working",
+  "tables": []
+}

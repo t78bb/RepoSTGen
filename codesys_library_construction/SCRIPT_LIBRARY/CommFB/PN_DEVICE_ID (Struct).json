@@ -1,0 +1,38 @@
+{
+  "library": "CommFB",
+  "title": "PN_DEVICE_ID (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/CommFB/Current/CommFB/Addresses/PN_DEVICE_ID.html",
+  "page_title": "PN_DEVICE_ID (STRUCT)",
+  "text": "\nTYPE PN_DEVICE_ID : STRUCT\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "STATIONNAME",
+          "Type": "STRING",
+          "Comment": "Station name"
+        },
+        {
+          "Name": "INSTANCE",
+          "Type": "WORD",
+          "Comment": "Instance ID"
+        },
+        {
+          "Name": "DEVICE",
+          "Type": "WORD",
+          "Comment": "Device ID"
+        },
+        {
+          "Name": "VENDOR",
+          "Type": "WORD",
+          "Comment": "Vendor ID"
+        }
+      ]
+    }
+  ]
+}

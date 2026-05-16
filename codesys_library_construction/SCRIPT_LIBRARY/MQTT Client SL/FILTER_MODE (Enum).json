@@ -1,0 +1,33 @@
+{
+  "library": "MQTT Client SL",
+  "title": "FILTER_MODE (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/MQTT Client SL/Current/MQTT-Client/Common/Enums/FILTER_MODE.html",
+  "page_title": "FILTER_MODE (ENUM)",
+  "text": "\nTYPE FILTER_MODE :\nFilter settings for the subcriber function block.\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "FILTER_ON",
+          "Initial": "0",
+          "Comment": "Filters the telegrams by topics"
+        },
+        {
+          "Name": "FILTER_OFF",
+          "Initial": "1",
+          "Comment": "Turns the filter off and receives ALL subscribed telegrams"
+        },
+        {
+          "Name": "FILTER_NONE",
+          "Initial": "2",
+          "Comment": "Receives no telegrams. In this mode you can only subscribe\nor unsubscribe topics"
+        }
+      ]
+    }
+  ]
+}

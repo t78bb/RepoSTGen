@@ -1,0 +1,36 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_DeleteObj (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/OutQueue-Functions/SMC_DeleteObj.html",
+  "page_title": "SMC_DeleteObj (FUN)",
+  "text": "\nFUNCTION SMC_DeleteObj : BOOL\nRemoves an object from an\nSMC_OUTQUEUE\n.\nThe n-th object will be deleted from the list (\npoq\n),\ncounting starts with 0.\nIf\nN-1\nis greater than the number of\nSMC_GEOINFO\nobjects stored\nin the list, nothing will happen and\nFALSE\nwill be\nreturned instead of\nTRUE\n.\ntask-safety: only task-safe if\nN\n= 0 and called from consumer task\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "poq",
+          "Type": "POINTER TOSMC_OUTQUEUE",
+          "Comment": "The out qeueu"
+        },
+        [
+          "N",
+          "UINT",
+          "Index of object to be deleted\n(Note, thatN=0mentions the first element of the list)."
+        ],
+        {
+          "Scope": "Return",
+          "Name": "SMC_DeleteObj",
+          "Type": "BOOL",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "library": "AC_DataLog",
+  "title": "IDataLogChannel (Interface)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_DataLog/Current/AC_DataLog/DataLogChannel/IDataLogChannel.html",
+  "page_title": "IDataLogChannel (ITF)",
+  "text": "\nINTERFACE IDataLogChannel EXTENDS AC.IModule, CmpEventMgr.ICmpEventCallback\nProperties:\nEnable\nUseHashValues\nMethods:\nGetAllDataLogVariables\nGetIsActionOngoing\nLogAll\nSetIsActionOngoing\nStructure:\nEnable (Property)\nGetAllDataLogVariables (Method)\nGetIsActionOngoing (Method)\nLogAll (Method)\nSetIsActionOngoing (Method)\nUseHashValues (Property)",
+  "tables": []
+}

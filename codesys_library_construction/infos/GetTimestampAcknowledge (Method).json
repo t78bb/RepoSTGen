@@ -1,0 +1,23 @@
+{
+  "library": "AlarmManager",
+  "title": "GetTimestampAcknowledge (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/pou-IAlarm/Access-to-timestamps/GetTimestampAcknowledge.html",
+  "page_title": "IAlarm.GetTimestampAcknowledge (METH)",
+  "text": "\nMETHOD GetTimestampAcknowledge :\nTimestamp\nReturns the timestamp, when the alarm went into state âactive, acknowledgedâ\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetTimestampAcknowledge",
+          "Type": "Timestamp"
+        }
+      ]
+    }
+  ]
+}

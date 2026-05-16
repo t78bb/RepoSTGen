@@ -1,0 +1,28 @@
+{
+  "library": "BACnet",
+  "title": "DeactivatePersistence (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetServer/pou-IBACnetServer/Persistence/DeactivatePersistence.html",
+  "page_title": "IBACnetServer.DeactivatePersistence (METH)",
+  "text": "\nMETHOD DeactivatePersistence : UDINT\nUnregisters a\nIBACnetPersistence\nfrom\nBACnetServer\n.\nReturn CmpErrors.Errors.ERR_OK if succesfully unregistered.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "DeactivatePersistence",
+          "Type": "UDINT"
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfPersistence",
+          "Type": "IBACnetPersistence"
+        }
+      ]
+    }
+  ]
+}

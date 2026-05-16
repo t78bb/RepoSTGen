@@ -1,0 +1,46 @@
+{
+  "library": "BACnet",
+  "title": "AddExceptionBACnetDate (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/Schedule/pou-BACnetSchedule/ExceptionSchedule/AddExceptionBACnetDate.html",
+  "page_title": "BACnetSchedule.AddExceptionBACnetDate (METH)",
+  "text": "\nMETHOD AddExceptionBACnetDate : CmpBACnet.IEC_BACNET_STATUS\nAdds a date to the Exception_Schedule-Property of this BACnet-Object.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "AddExceptionBACnetDate",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "bacDat",
+          "Type": "CmpBACnet.IEC_BACNET_DATE",
+          "Comment": "The exception date to add."
+        },
+        [
+          "pEntries",
+          "POINTER TO\nCmpBACnet.IEC_BACNET_TIME_VALUE",
+          "The times and values during the date which correspond to the\nexception date."
+        ],
+        [
+          "entryCount",
+          "CmpBACnet.IEC_BACNET_ELEMENT_COUNT",
+          "The number of times and values for the exceptions."
+        ],
+        [
+          "eventPriority",
+          "BYTE",
+          "The priority with which the values are written."
+        ]
+      ]
+    }
+  ]
+}

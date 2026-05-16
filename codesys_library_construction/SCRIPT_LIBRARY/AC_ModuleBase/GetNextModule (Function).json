@@ -1,0 +1,31 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "GetNextModule (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_Module/TreeNavigation/GetNextModule.html",
+  "page_title": "GetNextModule (FUN)",
+  "text": "\nFUNCTION GetNextModule :\nIModule\nReturns the next module in depth-first preorder of the module tree.\nReturns 0 if (and only if) itfM is the last module in the preorder of the tree.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetNextModule",
+          "Type": "IModule",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfM",
+          "Type": "IModule",
+          "Comment": "The module instance that is queried for the next instance\n(must not be 0)"
+        }
+      ]
+    }
+  ]
+}

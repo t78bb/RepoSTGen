@@ -1,0 +1,46 @@
+{
+  "library": "BACnet",
+  "title": "BACnetEventCallback (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetHooksCallbacks/pou-IBACnetEventConsumer/BACnetEventCallback.html",
+  "page_title": "IBACnetEventConsumer.BACnetEventCallback (METH)",
+  "text": "\nMETHOD BACnetEventCallback : BOOL\nThis method gets called, whenever a event occurs for which the implementing FB is registered via\nBACnetServer.RegisterHook\nor\nBACnetServer.RegisterCallback\n. Since several FBs implementing IBACnetEventConsumer can be registered for one event or callback the\nfollowing rules are used for the returned BOOL:\nIf the method returns FALSE, all other registered IBACnetEventConsumer objects for the specified Hook/Callback are further called.\nIf the method return TRUE, the other registeres IBACnetEventConsumer objects are not called anymore. The calling order is as\nthe objects were registered. All calls have to treat on their own, whether the EventIds are correct (see CmpBACnet.EVENTIDS) and/or\nBACnet-Object-IDs or other additional data fits the needs of the registered FB (i.e. the specific BACnet-Object-FB).\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "BACnetEventCallback",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "EventId",
+          "Type": "DWORD",
+          "Comment": "If only one event is possibly called, the following Ids can be ignored. If there are more\nat least the EventId should be checked, to get the right type of pParameter.ID of the occured Event. Contains the class and the event (see CmpBACnet.EVENTIDS)"
+        },
+        [
+          "usParamId",
+          "WORD",
+          "Id of the parameter structure (see pParameter and\nCmpBACnet.EVENTIDS)"
+        ],
+        [
+          "usVersion",
+          "WORD",
+          "Version of the parameter structure (see pParameter and\nCmpBACnet.EVENTIDS)"
+        ],
+        [
+          "pParameter",
+          "POINTER TO BYTE",
+          "Pointer to the event specific parameter, that is specified\nby Id (see CmpBACnet.EVENTIDS and CmpBACnet, i.e.\nEVT_BACNET_ACKALARM)"
+        ]
+      ]
+    }
+  ]
+}

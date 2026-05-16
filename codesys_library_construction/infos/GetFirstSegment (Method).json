@@ -1,0 +1,36 @@
+{
+  "library": "String Builder",
+  "title": "GetFirstSegment (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Builder/Current/Builder/Function-Blocks/pou-_Builder/IBuilder/Segments/GetFirstSegment.html",
+  "page_title": "_Builder.GetFirstSegment (METH)",
+  "text": "\nMETHOD FINAL GetFirstSegment : POINTER TO BYTE\nReturns the pointer to the first segment of the builder\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetFirstSegment",
+          "Type": "POINTER TO BYTE",
+          "Comment": ""
+        },
+        {
+          "Scope": "Output",
+          "Name": "udiSize",
+          "Type": "UDINT",
+          "Comment": "Size of the first segment in bytes"
+        },
+        [
+          "eErrorID",
+          "ERROR",
+          "Check error message for better diagnostics"
+        ]
+      ]
+    }
+  ]
+}

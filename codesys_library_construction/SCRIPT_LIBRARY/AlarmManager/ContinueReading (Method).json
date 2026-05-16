@@ -1,0 +1,46 @@
+{
+  "library": "AlarmManager",
+  "title": "ContinueReading (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Alarm-storage-API/pou-AlarmStorageReader/ContinueReading.html",
+  "page_title": "AlarmStorageReader.ContinueReading (METH)",
+  "text": "\nMETHOD ContinueReading :\nEAlarmStorageReaderErrors\nReads data from the alarm storage.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "ContinueReading",
+          "Type": "EAlarmStorageReaderErrors",
+          "Comment": "A EAlarmStorageReaderErrors value indicating, whether the processing has been completed successfully or not:EAlarmStorageReaderErrors.NoError: Completed successfullyEAlarmStorageReaderErrors.InvalidCall: ContinueReading was called without calling method Read beforeEAlarmStorageReaderErrors.AdditionalReadCallRequired: Reading has been completed successfully, but there isadditional call of method ContinueReading necessary to read the rest of the data"
+        },
+        {
+          "Scope": "Input",
+          "Name": "liTimstampFrom",
+          "Type": "LINT",
+          "Comment": "The timestamp (when the alarm became active) of the 1st\nalarm"
+        },
+        [
+          "liTimstampTo",
+          "LINT",
+          "The timestamp of the last alarm"
+        ],
+        [
+          "xReadAscending",
+          "BOOL",
+          "If this parameter is TRUE, then the rows will be returned by âtimestamp activeâ ascending,\notherwise descending"
+        ],
+        [
+          "itfAlarmStorageReaderConsumer",
+          "IAlarmStorageReaderConsumer",
+          "An instance of IAlarmStorageReaderConsumer, to which the data read from\nthe alarm storage will be passed."
+        ]
+      ]
+    }
+  ]
+}

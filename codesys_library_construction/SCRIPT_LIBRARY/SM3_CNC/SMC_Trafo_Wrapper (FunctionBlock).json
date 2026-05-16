@@ -1,0 +1,102 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_Trafo_Wrapper (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_Trafo_POUs/SoftMotion-Transformations/Wrapper/SMC_Trafo_Wrapper.html",
+  "page_title": "SMC_Trafo_Wrapper (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_Trafo_Wrapper EXTENDS SMC_TRAFO_WrapperBase\nWrapper function block for kinematic function blocks that\nimplement the interface\nTRAFO.MC_KIN_REF_SM3\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment",
+        "Inherited from"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "Enable",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "The transformation is computed if Enable is TRUE.",
+          "Inherited from": "SMC_Trafo_WrapperBase"
+        },
+        [
+          "Kin",
+          "TRAFO.MC_KIN_REF_SM3",
+          "",
+          "The robotics kinematics",
+          "SMC_Trafo_WrapperBase"
+        ],
+        [
+          "KinOri",
+          "TRAFO.ISMOrientationKinematics",
+          "",
+          "Optional: orientation kinematics that is combined with the\nkinematicskin.  IfkinOriis set, thenkinmust implement the interfaceTRAFO.ISMPositionKinematics.",
+          "SMC_Trafo_WrapperBase"
+        ],
+        [
+          "OriConv",
+          "SMC_ORI_CONVENTION",
+          "",
+          "The orientation convention used for dA, dB, and dC of outputpi.",
+          "SMC_Trafo_WrapperBase"
+        ],
+        [
+          "AxisSettings",
+          "ARRAY\n[0..(SMRB.MAX_KIN_AXES -\n1)] OF\nTRAFO.Axis_Settings",
+          "[6(STRUCT(limits := STRUCT(xUnlimited := TRUE)))]",
+          "The axis settings (e.g. axis ranges).\nThe settings can be queried from the axis using the function blockSMC_AxisSettingsFromAxes.",
+          "SMC_Trafo_WrapperBase"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Error",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUEif the transformation failed",
+          "Inherited from": "SMC_Trafo_WrapperBase"
+        },
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "",
+          "The error identifier",
+          "SMC_Trafo_WrapperBase"
+        ],
+        {
+          "Scope": "Input",
+          "Name": "config",
+          "Type": "TRAFO.ConfigData",
+          "Initial": "",
+          "Comment": "The configuration of the robot",
+          "Inherited from": ""
+        },
+        [
+          "axesPrev",
+          "TRAFO.AXISPOS_REF",
+          "",
+          "The previous values of the axes.",
+          ""
+        ],
+        [
+          "pi",
+          "SMC_PosInfo",
+          "",
+          "Cartesian position and orientation. Output ofSMC_Interpolator.",
+          ""
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Axes",
+          "Type": "TRAFO.AXISPOS_REF",
+          "Initial": "",
+          "Comment": "The values of the axes corresponding to the value ofpi,\ngiven the last axis position and the configuration.",
+          "Inherited from": ""
+        }
+      ]
+    }
+  ]
+}

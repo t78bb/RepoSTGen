@@ -1,0 +1,28 @@
+{
+  "library": "SM3_Basic",
+  "title": "GetVersionProperty (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/Project-Information/GetVersionProperty.html",
+  "page_title": "GetVersionProperty (FUN)",
+  "text": "\nFUNCTION GetVersionProperty : VERSION\nThis function has been automatically generated from the project information.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetVersionProperty",
+          "Type": "VERSION"
+        },
+        {
+          "Scope": "Input",
+          "Name": "stKey",
+          "Type": "WSTRING"
+        }
+      ]
+    }
+  ]
+}

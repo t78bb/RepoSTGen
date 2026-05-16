@@ -1,0 +1,23 @@
+{
+  "library": "DNP3",
+  "title": "LogDatabase (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/pou-Master/Database/LogDatabase.html",
+  "page_title": "Master.LogDatabase (METH)",
+  "text": "\nMETHOD LogDatabase :\nError\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "LogDatabase",
+          "Type": "Error"
+        }
+      ]
+    }
+  ]
+}

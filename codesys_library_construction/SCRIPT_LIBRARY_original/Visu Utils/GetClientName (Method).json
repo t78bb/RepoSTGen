@@ -1,0 +1,31 @@
+{
+  "library": "Visu Utils",
+  "title": "GetClientName (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/Visu Utils/Current/VisuUtils/VisuActionUtilities/Interfaces/pou-IVisualizationClient/GetClientName.html",
+  "page_title": "IVisualizationClient.GetClientName (METH)",
+  "text": "VisuUtils\nVisuActionUtilities\nFunction Blocks\nFBFileTransfer (FunctionBlock)\nFbChangeVisu (FunctionBlock)\nFbCloseDialog (FunctionBlock)\nFbIterateClients (FunctionBlock)\nFbOpenDialog (FunctionBlock)\nFbOpenDialogExtended (FunctionBlock)\nFunctions\nFctGetNextVisu (Function)\nFctGetPreviousVisu (Function)\nFctHandleEventsWithinCycleStart (Function)\nFctHandleEventsWithinCycleStop (Function)\nGlobalVariables\nGlobals (GVL)\nPublicVariables (GVL)\nInterfaces\nIVisualizationClient (Interface)\nIVisualizationClientFilter (Interface)\nIVisualizationClientIteration (Interface)\nIVisualizationClientRaw (Interface)\nTypes\nEnum\nFile and Project Information\nLibrary Reference\nCmpIecTask\nLibrary Identification\nLibrary Properties\nCmpVisuHandler\nLibrary Identification\nLibrary Properties\nCommon Behaviour Model\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysSem\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nVisuElemBase\nLibrary Identification\nLibrary Properties\nVisu Utils\nDocs\n»\nVisuUtils\n»\nVisuActionUtilities\n»\nInterfaces\n»\nIVisualizationClient\n(ITF)\n»\nIVisualizationClient.GetClientName (METH)\nIVisualizationClient.GetClientName (METH)\nÂ¶\nMETHOD GetClientName : STRING\nReturns the name of the given client if specified in the according configuration of\nthe client which is dependent on the concrete type of client.\nInOut:\nScope\nName\nType\nComment\nReturn\nGetClientName\nSTRING\nOutput\nxIsValid\nBOOL\nTRUE\n: The client name is configured",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetClientName",
+          "Type": "STRING",
+          "Comment": ""
+        },
+        {
+          "Scope": "Output",
+          "Name": "xIsValid",
+          "Type": "BOOL",
+          "Comment": "TRUE: The client name is configured"
+        }
+      ]
+    }
+  ]
+}

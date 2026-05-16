@@ -1,0 +1,59 @@
+{
+  "library": "CommFB",
+  "title": "SUBSLOT_ID (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/CommFB/Current/CommFB/Addresses/SUBSLOT_ID.html",
+  "page_title": "SUBSLOT_ID (FUN)",
+  "text": "\nFUNCTION SUBSLOT_ID : DWORD\nReturns the ID of a subslot.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SUBSLOT_ID",
+          "Type": "DWORD",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "EN",
+          "Type": "BOOL",
+          "Initial": "TRUE",
+          "Comment": "Optional"
+        },
+        [
+          "ID",
+          "DWORD",
+          "",
+          "Handle to a PN-slave or a subslot"
+        ],
+        [
+          "SLOT",
+          "UINT",
+          "",
+          "Slot number"
+        ],
+        [
+          "SUBSLOT",
+          "UINT",
+          "",
+          "Subslot number. Use 0 for Profibus DP"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "ENO",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUE: Subslot ID found; FALSE: The requested Subslot could\nnot be found."
+        }
+      ]
+    }
+  ]
+}

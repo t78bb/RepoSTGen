@@ -1,0 +1,53 @@
+{
+  "library": "AlarmManager",
+  "title": "AlarmState (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Enumerations/AlarmState.html",
+  "page_title": "AlarmState (ENUM)",
+  "text": "\nTYPE AlarmState :\nThis enumeration defines the possible states an alarm can have.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "NotDefined",
+          "Initial": "16#FF",
+          "Comment": "Alarm is not active."
+        },
+        {
+          "Name": "Normal",
+          "Initial": "0",
+          "Comment": "Alarm is not active."
+        },
+        {
+          "Name": "Active",
+          "Initial": "2",
+          "Comment": "Alarm is active (alarm condition is true)."
+        },
+        {
+          "Name": "WaitingForConfirmation",
+          "Initial": "3",
+          "Comment": "Alarm is no longer active, but has to be confirmed."
+        },
+        {
+          "Name": "ActiveAcknowledged",
+          "Initial": "4",
+          "Comment": "Alarm is still active, has to be acknowledged."
+        },
+        {
+          "Name": "InactiveUnacknowledged",
+          "Initial": "5",
+          "Comment": "Alarm is inactive, has to be acknowledged."
+        },
+        {
+          "Name": "Pending",
+          "Initial": "1",
+          "Comment": "An state indicating, that the alarm condition is true, but the alarm\nis not yet in the state âActiveâ"
+        }
+      ]
+    }
+  ]
+}

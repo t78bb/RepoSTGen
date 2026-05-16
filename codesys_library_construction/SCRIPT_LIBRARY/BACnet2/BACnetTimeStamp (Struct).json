@@ -1,0 +1,25 @@
+{
+  "library": "BACnet2",
+  "title": "BACnetTimeStamp (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/Structs/BACnetTimeStamp.html",
+  "page_title": "BACnetTimeStamp (STRUCT)",
+  "text": "\nTYPE BACnetTimeStamp : STRUCT\nHelper Structure for CODESYS-Typed time stamps.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Name": "tag",
+          "Type": "CmpBACnet.IEC_BACNET_TIME_STAMP_TYPE"
+        },
+        {
+          "Name": "stamp",
+          "Type": "BACnetTimeStampUnion"
+        }
+      ]
+    }
+  ]
+}

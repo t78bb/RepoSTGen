@@ -1,0 +1,52 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_AdaptHelpMarks (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/GeoInfo-Help-Functions/SMC_AdaptHelpMarks.html",
+  "page_title": "SMC_AdaptHelpMarks (FUN)",
+  "text": "\nFUNCTION SMC_AdaptHelpMarks : SMC_ERROR\nAdapts the help marks if a new element has been\ninserted between two existing elements.\nThe help marks are moved to the new element\nif they no longer fit on the cut first and second object.\nThis is done so that the following constraints are met,\nwhere the second constraint beats the first one if both cannot be met:\nThe distance of the h-function stays the same as for the\noriginal (uncut) elements. For the first element,\nthe distance is measured from the start point.\nFor the second element, the distance is measured from the\nend point.\nThe h-function is moved no further than to the\nmiddle of the new element.\nNote\nNote that constraint 2 makes sure that the order of h-functions\ndoes not change compared to the original elements.\nNote\nWhen a mark is to be adapted to a new path element whose iHelpID\narray is already full (MAX_IPOSWITCHES) then an error SMC_PATH_MAX_HPOINTS_EXCEEDED\nis produced\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SMC_AdaptHelpMarks",
+          "Type": "SMC_ERROR",
+          "Comment": ""
+        },
+        {
+          "Scope": "Inout",
+          "Name": "gi1",
+          "Type": "SMC_GeoInfo",
+          "Comment": "The first element"
+        },
+        [
+          "giN",
+          "SMC_GeoInfo",
+          "The new element"
+        ],
+        [
+          "gi2",
+          "SMC_GeoInfo",
+          "The second element"
+        ],
+        {
+          "Scope": "Input",
+          "Name": "l1Orig",
+          "Type": "LREAL",
+          "Comment": "The original length of the first element"
+        },
+        [
+          "l2Orig",
+          "LREAL",
+          "The original length of the second element"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "library": "StringUtils",
+  "title": "CopyFrom (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/StringUtils/Current/Public-Parts/pou-CharBufferString/CopyFrom.html",
+  "page_title": "CharBufferString.CopyFrom (METH)",
+  "text": "Deutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nMenu\nSearch\nDeutsch\nEnglish\nFrançais\nEspañol\nItaliano\nРусский\n日本語\n中文\nPublic Parts\nAnsi\nCharToUpper (Function)\nStrCaseCmpA (Function)\nStrCaseCmpEndA (Function)\nStrCaseCmpStartA (Function)\nStrCaseFindA (Function)\nStrCmpA (Function)\nStrCmpEndA (Function)\nStrCmpStartA (Function)\nStrConcatA (Function)\nStrCpyA (Function)\nStrDeleteA (Function)\nStrFindA (Function)\nStrIsNullOrEmptyA (Function)\nStrLenA (Function)\nStrMidA (Function)\nStrPadLeftA (Function)\nStrPadRightA (Function)\nStrReplaceA (Function)\nStrToLowerA (Function)\nStrToUpperA (Function)\nStrTrimA (Function)\nStrTrimEndA (Function)\nStrTrimStartA (Function)\nCharBufferPtr (Alias)\nCharBufferString (FunctionBlock)\nCapacity (Property)\nCharAt (Method)\nCharAtEquals (Method)\nCharacters (Property)\nCopy (Method)\nCopyFrom (Method)\nCopyFrom2 (Method)\nDelete (Method)\nFB_Exit (Method)\nFB_Init (Method)\nFind (Method)\nFindFrom (Method)\nFromString (Method)\nInit (Method)\nInitialize (Method)\nInsert (Method)\nLength (Property)\nMid (Method)\nReplace (Method)\nStringType (Property)\nILocalizedDateTimeNames (Interface)\nGetDayLong (Method)\nGetDayShort (Method)\nGetMonthLong (Method)\nGetMonthShort (Method)\nPrintf (Function)\nStuSprintf (Function)\nStuSprintfW (Function)\nUTF8\nConvertUTF16toUTF8 (Function)\nConvertUTF8toUTF16 (Function)\nGVL_UTF8 (GVL)\nIsLegalUTF8 (Function)\nIsSpaceCharacter (Function)\nUnicode\nStrCaseCmpW (Function)\nStrCaseFindW (Function)\nStrCmpW (Function)\nStrConcatW (Function)\nStrCpyW (Function)\nStrDeleteW (Function)\nStrFindW (Function)\nStrIsNullOrEmptyW (Function)\nStrLenW (Function)\nStrMidW (Function)\nStrPadLeftW (Function)\nStrPadRightW (Function)\nStrReplaceW (Function)\nStrTrimEndW (Function)\nStrTrimStartW (Function)\nStrTrimW (Function)\nWCharToUpper (Function)\nFile and Project Information\nLibrary Reference\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nComponent Manager\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysTimeRtc\nLibrary Identification\nLibrary Properties\nStringUtils\nDocs\n»\nPublic\nParts\n»\nCharBufferString\n(FB)\n»\nCharBufferString.CopyFrom (METH)\nCharBufferString.CopyFrom (METH)\nÂ¶\nMETHOD CopyFrom\nDoes a strcpy from the source string cbsSource into our instance at given positions\nand a given length.\nNote: No terminating 0 will be appended.\nInOut:\nScope\nName\nType\nComment\nInput\nrcbsSource\nREFERENCE TO\nCharBufferString\nThe source string, where the characters will be copied from\ndiSourceOffset\nDINT\nThe 1 relative offset within the source string, where the\ncopying will start\ndiTargetOffset\nDINT\nThe 1 relative offset within the source string, where the\ncopying to will start\ndiCountCharacters\nDINT\nThe number of characters to copy\ntop\nCODESYS Group | We\nsoftware\nAutomation.\nto software\n['sɒftwɛər]\ntransitive verb\n__softwared/softwaring\n: to develop software\n// to software automation: to develop software for automation purposes\nThe CODESYS Group is the manufacturer of CODESYS, the leading hardware-independent\n                                    IEC 61131-3 automation software for developing and engineering controller\n                                    applications.\nCODESYS® is a registered trademark.\nCODESYS GmbH\nA member of the CODESYS Group\nMemminger Straße 151, 87439 Kempten\nGermany\nTel.:\n+49-831-54031-0\ninfo@codesys.com\nLegal Notice\nPrivacy Policy\nLinkedIn\nYoutube\nRSS\nDownloads\nLogin\nCODESYS Store\n© 2022 CODESYS GmbH\n| A member of the CODESYS Group",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "rcbsSource",
+          "Type": "REFERENCE TOCharBufferString",
+          "Comment": "The source string, where the characters will be copied from"
+        },
+        [
+          "diSourceOffset",
+          "DINT",
+          "The 1 relative offset within the source string, where the\ncopying will start"
+        ],
+        [
+          "diTargetOffset",
+          "DINT",
+          "The 1 relative offset within the source string, where the\ncopying to will start"
+        ],
+        [
+          "diCountCharacters",
+          "DINT",
+          "The number of characters to copy"
+        ]
+      ]
+    }
+  ]
+}

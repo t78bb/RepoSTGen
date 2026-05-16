@@ -1,0 +1,37 @@
+{
+  "library": "BACnet2",
+  "title": "GetPropertyAccessRight (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/BACnetObjects/base/pou-BACnetObjectBase/GetPropertyAccessRight.html",
+  "page_title": "BACnetObjectBase.GetPropertyAccessRight (METH)",
+  "text": "\nMETHOD GetPropertyAccessRight : CmpBACnet.IEC_BACNET_STATUS\nGets the client side access rights for a specified BACnet-Property of this BACnet-Object (propID). These restrictions only hold for\nclient side access of the specified BACnet-Property.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetPropertyAccessRight",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "propID",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_ID",
+          "Comment": "The property ID for which the access right shall be\ndetermined."
+        },
+        {
+          "Scope": "Output",
+          "Name": "accessRight",
+          "Type": "CmpBACnet.IEC_BACNET_ACCESS",
+          "Comment": "The property access rights after a call to this method."
+        }
+      ]
+    }
+  ]
+}

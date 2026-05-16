@@ -1,0 +1,46 @@
+{
+  "library": "Standard",
+  "title": "CTU (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/Standard/Current/Counter/CTU.html",
+  "page_title": "CTU (FB)",
+  "text": "\nFUNCTION_BLOCK CTU\nIncrements a given value\n(* Example declaration *)\nCTUInst\n:\nCTU\n;\n(* Example in ST *)\nCTUInst\n(\nCU\n:=\nVarBOOL1\n,\nRESET\n:=\nVarBOOL2\n,\nPV\n:=\nVarWORD1\n);\nVarBOOL3\n:=\nCTUInst.Q\n;\nVarWORD2\n:=\nCTUInst.CV\n;\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "CU",
+          "Type": "BOOL",
+          "Comment": "Rising edge: IncrementingCVby one"
+        },
+        [
+          "RESET",
+          "BOOL",
+          "TRUE: ResetCVto 0"
+        ],
+        [
+          "PV",
+          "WORD",
+          "Upper limit for incrementing"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Q",
+          "Type": "BOOL",
+          "Comment": "TRUEifCV>=PV"
+        },
+        [
+          "CV",
+          "WORD",
+          "Current counter value"
+        ]
+      ]
+    }
+  ]
+}

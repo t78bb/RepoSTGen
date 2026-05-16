@@ -1,0 +1,98 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_AddGCodeState (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/SoftMotion-CNC/SoftMotion-Function-Blocks/SMC_AddGCodeState.html",
+  "page_title": "SMC_AddGCodeState (STRUCT)",
+  "text": "\nTYPE SMC_AddGCodeState : STRUCT\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "OriConv",
+          "Type": "SMC_ORI_CONVENTION",
+          "Comment": "The orientation convention in use."
+        },
+        {
+          "Name": "DCS",
+          "Type": "SMC_PosInfo",
+          "Comment": "Describes the transformation from DCS to MCS.dX, dY, dZ describe the offset of the DCS relative to the MCS.(The vector from the origin of the MCS to the origin of the DCS,expressed in MCS coordinates)dA1, â¦, dA5 describe the offset of the additional axes P, Q, U, V, W.If OriConv = SMC_ORI_CONVENTION.ADDAXES, dA, dB, and dC describean offset for each coordinate.If OriConv <> SMC_ORI_CONVENTION.ADDAXES, then the members dA, dB, dCdescribe the rotation from DCS to MCS."
+        },
+        {
+          "Name": "GCode",
+          "Type": "SMC_MOVTYP",
+          "Comment": "The active G-Code."
+        },
+        {
+          "Name": "roundPath",
+          "Type": "BOOL",
+          "Comment": "Whether SMC_RoundPath is active, G51"
+        },
+        {
+          "Name": "smoothPath",
+          "Type": "BOOL",
+          "Comment": "Whether SMC_SmoothPath is active, G52"
+        },
+        {
+          "Name": "smoothRadius",
+          "Type": "LREAL",
+          "Comment": "The smoothing/rounding distance set with the D-word of\nG51/G52."
+        },
+        {
+          "Name": "extendedFlags",
+          "Type": "DWORD",
+          "Comment": "The extended flags set with G38"
+        },
+        {
+          "Name": "extendedParams",
+          "Type": "ARRAY\n[0..(SMC_MAX_ADDITIONAL_PARAMS\n- 1)] OF LREAL",
+          "Comment": "The extended parameters set with G38/G39"
+        },
+        {
+          "Name": "tool",
+          "Type": "SMC_Vector3D",
+          "Comment": "The tool offset set with I/J/K of G43"
+        },
+        {
+          "Name": "toolRadiusCorrLeft",
+          "Type": "BOOL",
+          "Comment": "Whether SMC_ToolRadiusCorr to the left is active (G41)."
+        },
+        {
+          "Name": "toolRadiusCorrRight",
+          "Type": "BOOL",
+          "Comment": "Whether SMC_ToolRadiusCorr to the right is active (G42)."
+        },
+        {
+          "Name": "toolRadius",
+          "Type": "LREAL",
+          "Comment": "The tool radius set with the D-word of G41/G42."
+        },
+        {
+          "Name": "avoidLoop",
+          "Type": "BOOL",
+          "Comment": "Whether SMC_AvoidLoop is active (G61)"
+        },
+        {
+          "Name": "smoothAddAxes",
+          "Type": "BOOL",
+          "Comment": "Whether SMC_SmoothAddAxes is active (G71)"
+        },
+        {
+          "Name": "mode3D",
+          "Type": "BOOL",
+          "Comment": "Whether 3D-Mode is active (G16 â¦ G19)"
+        },
+        {
+          "Name": "ArcPlane",
+          "Type": "SMC_Matrix3",
+          "Comment": "The plane used for arcs, the column are the X, Y, and Z-axis of the\nplane coordinate system, the Z-axis is orthogonal to the plane.\nExpressed in the DCS.\nSet with G15 â¦ G19."
+        }
+      ]
+    }
+  ]
+}

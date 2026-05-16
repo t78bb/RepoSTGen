@@ -1,0 +1,46 @@
+{
+  "library": "DNP3",
+  "title": "MasterCommand (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/Commands/MasterCommand.html",
+  "page_title": "MasterCommand (FB)",
+  "text": "\nFUNCTION_BLOCK ABSTRACT MasterCommand\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "xExecute",
+          "Type": "BOOL",
+          "Comment": "Execute the command (xExecute FALSE â> TRUE)."
+        },
+        [
+          "itfMaster",
+          "IMaster",
+          "Interface IMaster"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "xDone",
+          "Type": "BOOL",
+          "Comment": "Command executed successfully."
+        },
+        [
+          "xError",
+          "BOOL",
+          "Error during command executions"
+        ],
+        [
+          "eErrorID",
+          "Error",
+          "Specific error during command executions."
+        ]
+      ]
+    }
+  ]
+}

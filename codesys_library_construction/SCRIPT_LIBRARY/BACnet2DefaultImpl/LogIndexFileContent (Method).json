@@ -1,0 +1,23 @@
+{
+  "library": "BACnet2DefaultImpl",
+  "title": "LogIndexFileContent (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2DefaultImpl/Current/BACnetDefaultImpl/Function-Blocks/pou-ObjectPersistence/LogIndexFileContent.html",
+  "page_title": "ObjectPersistence.LogIndexFileContent (METH)",
+  "text": "\nMETHOD LogIndexFileContent : CmpBACnet.IEC_BACNET_STATUS\nLogs the existing persistence files.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "LogIndexFileContent",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS"
+        }
+      ]
+    }
+  ]
+}

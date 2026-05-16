@@ -1,0 +1,6 @@
+{
+  "requirement": "This code should implement a function block named FB_LampSetLevelCommand that controls the brightness level of a lamp. It should have a method called Execute that sets the lamp's brightness level if the reference to the lamp is valid. The function block should include two main variables: a reference to an FB_Lamp object (refLamp) and a byte value (byNewLevel) representing the new brightness level. The Execute method should check the validity of the lamp reference using the __ISVALIDREF function and, if valid, call the SetLevel method on the lamp object with byNewLevel as the argument. Additionally, the FB_init method should initialize the function block, setting the refLamp and byNewLevel based on the input parameters, and handle the case where the lamp reference is not valid by setting it to zero.",
+  "provide_code": "FUNCTION_BLOCK PUBLIC FB_LampSetLevelCommand IMPLEMENTS I_Command",
+  "function_name": "FB_LampSetLevelCommand",
+  "requirement_cn": "这段代码应实现一个名为 FB_LampSetLevelCommand 的功能块，用于控制灯的亮度级别。它应包含一个名为 Execute 的方法，该方法在灯的引用有效时设置灯的亮度级别。功能块应包括两个主要变量：一个指向 FB_Lamp 对象的引用（refLamp）和一个表示新亮度级别的字节值（byNewLevel）。Execute 方法应使用 __ISVALIDREF 函数检查灯的引用的有效性，如果有效，则使用 byNewLevel 作为参数调用灯对象的 SetLevel 方法。此外，FB_init 方法应初始化功能块，根据输入参数设置 refLamp 和 byNewLevel，并处理灯引用无效的情况，将其设置为零。"
+}

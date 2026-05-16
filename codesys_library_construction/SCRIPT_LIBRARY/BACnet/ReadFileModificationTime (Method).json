@@ -1,0 +1,23 @@
+{
+  "library": "BACnet",
+  "title": "ReadFileModificationTime (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/File/pou-BACnetFile/ReadFileModificationTime.html",
+  "page_title": "BACnetFile.ReadFileModificationTime (METH)",
+  "text": "\nMETHOD ReadFileModificationTime :\nBACnetDateTime\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "ReadFileModificationTime",
+          "Type": "BACnetDateTime"
+        }
+      ]
+    }
+  ]
+}

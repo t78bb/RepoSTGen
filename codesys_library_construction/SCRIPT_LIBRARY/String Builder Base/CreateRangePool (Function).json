@@ -1,0 +1,47 @@
+{
+  "library": "String Builder Base",
+  "title": "CreateRangePool (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Builder Base/Current/BuilderBase/Functions/CreateRangePool.html",
+  "page_title": "CreateRangePool (FUN)",
+  "text": "\nFUNCTION CreateRangePool : STR.IRangePool\nCreates a pool for\n|IRange|\ninstances in the specified memory space\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "CreateRangePool",
+          "Type": "STR.IRangePool",
+          "Initial": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "pbyPool",
+          "Type": "POINTER TO BYTE",
+          "Initial": ""
+        },
+        [
+          "udiPoolSize",
+          "UDINT",
+          ""
+        ],
+        [
+          "usiExtensionFactor",
+          "USINT",
+          "0"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "eErrorID",
+          "Type": "STR.ERROR",
+          "Initial": ""
+        }
+      ]
+    }
+  ]
+}

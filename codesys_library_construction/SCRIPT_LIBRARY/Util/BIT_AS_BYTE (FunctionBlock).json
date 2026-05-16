@@ -1,0 +1,66 @@
+{
+  "library": "Util",
+  "title": "BIT_AS_BYTE (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/BitByte-Functions/BIT_AS_BYTE.html",
+  "page_title": "BIT_AS_BYTE (FB)",
+  "text": "\nFUNCTION_BLOCK BIT_AS_BYTE\nConverts 8 input values of data type BOOL into an output value of data type byte\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "B0",
+          "Type": "BOOL",
+          "Comment": "Input bit 0"
+        },
+        [
+          "B1",
+          "BOOL",
+          "Input bit 1"
+        ],
+        [
+          "B2",
+          "BOOL",
+          "Input bit 2"
+        ],
+        [
+          "B3",
+          "BOOL",
+          "Input bit 3"
+        ],
+        [
+          "B4",
+          "BOOL",
+          "Input bit 4"
+        ],
+        [
+          "B5",
+          "BOOL",
+          "Input bit 5"
+        ],
+        [
+          "B6",
+          "BOOL",
+          "Input bit 6"
+        ],
+        [
+          "B7",
+          "BOOL",
+          "Input bit 7"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "B",
+          "Type": "BYTE",
+          "Comment": "Output value"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "library": "BACnet",
+  "title": "GetBACnetStringProperty (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/pou-IBACnetObjectBase/Utilities/GetBACnetStringProperty.html",
+  "page_title": "IBACnetObjectBase.GetBACnetStringProperty (METH)",
+  "text": "\nMETHOD GetBACnetStringProperty : BOOL\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetBACnetStringProperty",
+          "Type": "BOOL"
+        },
+        {
+          "Scope": "Input",
+          "Name": "propID",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_ID"
+        },
+        {
+          "Scope": "Inout",
+          "Name": "wStrResult",
+          "Type": "WSTRING(255)"
+        }
+      ]
+    }
+  ]
+}

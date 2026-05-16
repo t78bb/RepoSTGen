@@ -1,0 +1,83 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_MOVTYP (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_Data-types/SoftMotion-CNC/SMC_MOVTYP.html",
+  "page_title": "SMC_MOVTYP (ENUM)",
+  "text": "\nTYPE SMC_MOVTYP :\nIndicates the geometrical type of the object. Possible states:\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "LIN",
+          "Initial": "1",
+          "Comment": "Straight movement (G01)"
+        },
+        {
+          "Name": "CLW",
+          "Initial": "",
+          "Comment": "Circle in clockwise direction (G02)"
+        },
+        {
+          "Name": "CCLW",
+          "Initial": "",
+          "Comment": "Circle in counterclockwise direction (G03)"
+        },
+        {
+          "Name": "SPLINE",
+          "Initial": "5",
+          "Comment": "Spline, parabola (G05, G06)"
+        },
+        {
+          "Name": "ELLCLW",
+          "Initial": "8",
+          "Comment": "Clockwise ellipse (G08)"
+        },
+        {
+          "Name": "ELLCCLW",
+          "Initial": "9",
+          "Comment": "Counterclockwise ellipse (G09)"
+        },
+        {
+          "Name": "SPLINE3D",
+          "Initial": "10",
+          "Comment": ""
+        },
+        {
+          "Name": "SPLINE3D_5",
+          "Initial": "11",
+          "Comment": ""
+        },
+        {
+          "Name": "LINPOS",
+          "Initial": "100",
+          "Comment": "Straight positioning (G00)"
+        },
+        {
+          "Name": "LINNODELTA",
+          "Initial": "101",
+          "Comment": "Straight movement without movement in X/Y but Z"
+        },
+        {
+          "Name": "LINADDAXES",
+          "Initial": "102",
+          "Comment": "Straight movement without movement in X/Y/Z"
+        },
+        {
+          "Name": "INITPOS",
+          "Initial": "110",
+          "Comment": "Blind positioning\n(start point still unknown, will be added bySMC_Interpolator)"
+        },
+        {
+          "Name": "MCOMMAND",
+          "Initial": "120",
+          "Comment": "Additional option, M-option"
+        }
+      ]
+    }
+  ]
+}

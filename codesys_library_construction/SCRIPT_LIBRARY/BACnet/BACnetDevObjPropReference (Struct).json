@@ -1,0 +1,37 @@
+{
+  "library": "BACnet",
+  "title": "BACnetDevObjPropReference (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/Structs/BACnetDevObjPropReference.html",
+  "page_title": "BACnetDevObjPropReference (STRUCT)",
+  "text": "\nTYPE BACnetDevObjPropReference : STRUCT\nHelper Structure for CODESYS-Typed device object property references.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Name": "objectID",
+          "Type": "CmpBACnet.IEC_BACNET_OBJECT_ID"
+        },
+        {
+          "Name": "propID",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_ID"
+        },
+        {
+          "Name": "index",
+          "Type": "CmpBACnet.IEC_BACNET_SIGNED"
+        },
+        {
+          "Name": "fDevicePresent",
+          "Type": "BOOL"
+        },
+        {
+          "Name": "deviceInstNumber",
+          "Type": "CmpBACnet.IEC_BACNET_DWORD"
+        }
+      ]
+    }
+  ]
+}

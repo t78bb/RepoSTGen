@@ -1,0 +1,77 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_GroupGetContinuePosition (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/Diagnostics/SMC_GroupGetContinuePosition.html",
+  "page_title": "SMC_GroupGetContinuePosition (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_GroupGetContinuePosition\nReads the continue position from the\ncontinueData\n.\nThe continue position is the position, from where a\nMC_GroupContinue\ncan be performed using the\ncontinueData\n.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout Const",
+          "Name": "AxisGroup",
+          "Type": "AXIS_GROUP_REF_SM3",
+          "Comment": "Reference to the axis group"
+        },
+        [
+          "continueData",
+          "SMC_AXIS_GROUP_CONTINUE_DATA",
+          "The continue data."
+        ],
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Comment": "Reads the position on rising edge"
+        },
+        {
+          "Scope": "Output",
+          "Name": "Done",
+          "Type": "BOOL",
+          "Comment": "The operation has been finished successfully"
+        },
+        [
+          "Busy",
+          "BOOL",
+          "The operation is not finished"
+        ],
+        [
+          "Error",
+          "BOOL",
+          "Signals that an error has occurred within the function block"
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ],
+        [
+          "Position",
+          "SMC_POS_REF",
+          "The position where the interrupted path can be continued."
+        ],
+        [
+          "CoordSystem",
+          "SMC_COORD_SYSTEM",
+          "The coordinate system in which the position has been stored."
+        ],
+        [
+          "AdditionalAxesPositions",
+          "SMC_ADDITIONAL_AXES_VALUES_ARRAY",
+          "The positions where the additional axes movement can be\ncontinued."
+        ],
+        [
+          "MovementId",
+          "SMC_Movement_Id",
+          "The movemnet Id corresponding to the interrupt position"
+        ]
+      ]
+    }
+  ]
+}

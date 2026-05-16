@@ -1,0 +1,179 @@
+{
+  "library": "SM3_Basic",
+  "title": "MC_CamIn(FB)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/Movement/MasterSlave/MC_CamIn.html",
+  "page_title": "MC_CamIn (FB)",
+  "text": "\nFUNCTION_BLOCK MC_CamIn\nElectronic Camming\nÂ¶\nThe slave axis follows the movement of the master axis as defined by the given\ncam table.\nThis function block controls the\nSlave\naxis.  The\nMaster\naxis\ncan be an axis controlled by another function block, or an encoder axis.\nCalculation of slave positions\nÂ¶\nThe positions for the\nSlave\naxis are calculated as follows:\nRead the current position from the\nMaster\naxis.\nScale and offset the master axis position to obtain the master\ncam position:\nMasterCamPosition\n=\nMasterScaling\n*\nMasterAxisPosition\n+\nMasterOffset\nEvaluate the cam table at the master cam position to obtain the\nslave cam position:\nSlaveCamPosition\n=\ncam(MasterCamPosition)\nScale and offset the slave cam position to obtain the slave\naxis position:\nSlaveAxisPosition\n=\nSlaveScaling\n*\nSlaveCamPosition\n+\nSlaveOffset\nWrite the calculated slave axis position to the\nSlave\naxis.\nStart Modes\nÂ¶\nCamming can be started in two different modes: immediate start and\nramping in.  With immediate start, the slave immediately follows the\ncam; with ramping in, a ramp-in phase is performed to bring the slave\nin sync with the cam.\nPlease note that the ramping-in start modes only have an effect on a\nrising edge of input Execute.  If the cam table is changed by modifying\ninput\nCamTableID\n, no ramping-in is performed.\nImmediate Modes (absolute, relative)\nÂ¶\nWith the start modes\nabsolute\nand\nrelative\n,\nthe slave is\nInSync\nimmediately and follows the\ncam table and master axis.  Depending on the current state of the slave,\nthis can lead to a jump in position, velocity, and/or acceleration.\nIf the\nStartMode\nis\nabsolute\n, the value of\nSlaveAbsolute\n, set by\nMC_CamTableSelect\n, determines whether the\nstart mode is abolute or relative.\nIf the\nStartMode\nis\nrelative\n, relative coordinates will\nbe used for the slave position, effectively overwriting the value of\nMC_CamTableSelect\n.``SlaveAbsolute``.\nIn the diagram below, the start mode is\nabsolute\n, the slave position\n(blue dots) jumps to the cam position (black line) immediately.\nRamping in with a Trajectory\nÂ¶\nWith the start modes\nramp_in\n,\nramp_in_pos\n,\nand\nramp_in_neg\n, the slave synchronizes to the cam as\nfast as possible using the configured\nVelocityDiff\n,\nAcceleration\n,\nDeceleration\n, and\nJerk\n.  If the slave is a modulo axis,\nramp_in_pos\nand\nramp_in_neg\ndefine the\ndirection for ramping in.  For a finite\nSlave\n, all three modes behave\nthe same.\nIn the diagram below, the start mode is\nramp_in\n. The slave position\n(blue dots) is ramped to the cam position (black line) and\nreaches it after the cam reaches the maximum position of 360.\nRamping in based on a Distance\nÂ¶\nWith the start mode\nramp_in_dist\n, the slave synchronizes to\nthe cam so that it is\nInSync\nas soon as the master axis reaches the\nMasterSyncPosition\n.  Synchronization will start when the\nmaster axis is within the\nMasterStartDistance\nof the\nMasterSyncPosition\n.\nIf\nMasterStartDistance\nis 0 (or negative), then the slave movement\nis started immediately, provided that the master is not in standstill.\nIf\nBufferMode\n<>\nAborting\n, then the\nMasterStartDistance\nmust\nbe 0 (or negative).\nThe\nMasterSyncPosition`\nmust be a valid position in the cam table,\notherwise the error\nSMC_CI_MASTER_SYNC_POSITION_OUT_OF_SCALE\nis reported.\nIn the diagram below, the start mode is\nramp_in_dist\n.\nThe master sync position is 180, and the master start distance is 0.\nThe slave position (blue dots) is ramped to the cam position (black line)\nand reaches it exactly at master position 180, when the cam reaches the maximum\nposition of 360.\nAvoiding reversals of the slave axis\nÂ¶\nFor some applications, a reversal of the slave axis is not allowed.  For\ndistance based ramping in, the input\nAvoidReversal\nwill avoid a\nreversal of the slave during ramping in.\nThe avoidance is only applied to modulo slave axes. If a reversal cannot be\navoided, the axis is stopped with an error.\nBehavior:\nIf the slave axis is a modulo axis and the master velocity (times the\nslope of the cam table at the\nMasterSyncPosition\n) is not opposite\nto the slave velocity, then\nMC_CamIn\ntries to avoid a reversal of\nthe slave.\nIt tries to âstretchâ the slave movement by increasing the distance\nthe slave travels by up to 5 slave periods.\nIf this âstretchingâ is not successful, i.e. does not avoid a reversal,\nan error is reported.\nIf the slave velocity is opposite to the master velocity\ntimes the slope of the cam table at the\nMasterSyncPosition\n,\nan error is reported.\nIf the slave axis is not a modulo axis, an error is reported on the\nrising edge of the Execute input.\nChanging the Cam Table\nÂ¶\nUsing the input\nBufferMode\nÂ¶\nThe recommended way to execute a second cam table after a first one\nis to buffer a second instance of\nMC_CamIn\nwith the second cam table.\nWhen loading the second cam table with\nMC_CamTableSelect\n,\nMasterAbsolute\nand\nSlaveAbsolute\nboth must be set to\nFALSE\n.  The\nStartMode\nfor the second\nMC_CamIn\ninstance must be set to\nrelative\nand the\nBufferMode\nto\nBuffered\n.\nThe second\nMC_CamIn\ninstance will then start as soon as the first instance\nreports\nEndOfProfile\nwhile automatically making the transition as smooth\nas possible.\nChanging the input\nCamTableID\nÂ¶\nNote\nIt is no longer recommended to change the cam table by changing the\nCamTableID\n.\nFor the recommended way to change the cam table on\nEndOfProfile\nsee\nSwitchingCamsUsingBufferMode\n.\nTo immediately change the cam table simply restart\nMC_CamIn\nwith\nBufferMode\nAborting\n, the desired\nStartMode\n, and the new\nCamTableID\n.\nWhile camming is active, this input can be used to change cam tables on\nthe fly without a new rising edge on\nExecute\n.\nCompared to restarting camming with a rising edge on\nExecute\n,\nthere are a few differences:\nIf ramping in with\nStartMode\nramp_in\n,\nramp_in_pos\n, or\nramp_in_neg\nis active, it is not aborted.\nEven if the\nStartMode\nis\nramp_in\n,\nramp_in_pos\n, or\nramp_in_neg\n,\nno new ramping in is initiated.\nIf\nEndOfProfile\nhas been set in the same cycle, the new cam table\nis automatically offset so that no gap occurs between the two tables.\nPlease note that when using distance based ramping in (\nramp_in_dist\n),\nthe error\nSMC_CI_CAM_CHANGED_DURING_RAMP_IN_DIST\nis returned if\nthe\nCamTableID\nchanges while ramping in is still active.\nTappets\nÂ¶\nTappets can be evaluated using the function block\nSMC_GetTappetValue\n.\nThe input\nTappetHysteresis\nallows to define a hysteresis for the\ntappets of the cam table.\nA positive value means that the tappet cannot fire immediately after\nit has fired. The master position first needs to\nmove away from the tappet by more than the value given for\ninput\nTappetHysteresis\n.\nFor example, if the master is an encoder, the master position may\noscillate by a few increments around the tappet position. Without a\nhysteresis, the tappet may fire all the time.\nEnd of Profile\nÂ¶\nThe output\nEndOfProfile\nindicates that the cam profile has been\ncompleted, either in positive or negative master direction.\nFor periodic cams, the output is set for one cycle for each new period.\nFor non-periodic cams, the output stays\nTRUE\nwhile the\nMaster\nis outside the cam range.  The\nSlave\nwill remain in\nsynchronized_motion\n.\nIf the\nSlave\nis not in standstill when\nEndOfProfile\nis reached,\nanother movement must be commanded that takes control of the\nSlave\n.\nMC_CamIn does not stop the\nSlave\non\nEndOfProfile\n.\nA buffered movement that has been commanded after this movement\nis started as soon as\nEndOfProfile\nis set.  This behavior\nis the same for periodic and non-periodic cams.\nNote that with\nStartMode\nramp_in\n,\nramp_in_pos\n, or\nramp_in_neg\nand\ndepending on the configured\nVelocityDiff\n,\nAcceleration\n,\nDeceleration\n, and\nJerk\n, it is possible that the\nMaster\nreaches\nEndOfProfile\nbefore the slave is\nInSync\n.\nNote\nMC_CamIn\nshould be called after the motion FB controlling the\nMaster\naxis has been called.  Otherwise, the\nSlave\naxis\nwill lag behind the\nMaster\naxis.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Master",
+          "Type": "AXIS_REF_SM3",
+          "Initial": "",
+          "Comment": "Reference to master axis."
+        },
+        [
+          "Slave",
+          "AXIS_REF_SM3",
+          "",
+          "Reference to slave axis"
+        ],
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Rising edge: Starts the execution of the function block."
+        },
+        [
+          "MasterOffset",
+          "LREAL",
+          "",
+          "Offset on the master cam table position in master cam table\nunits."
+        ],
+        [
+          "SlaveOffset",
+          "LREAL",
+          "",
+          "Offset on the slave axis position in slave axis units."
+        ],
+        [
+          "MasterScaling",
+          "LREAL",
+          "1",
+          "Scaling factor for the master axis position. Must not be 0."
+        ],
+        [
+          "SlaveScaling",
+          "LREAL",
+          "1",
+          "Scaling factor for slave cam position. Must not be 0."
+        ],
+        [
+          "MasterStartDistance",
+          "LREAL",
+          "",
+          "The master distance (in master cam table units) from theMasterSyncPositionwhere the slave axis starts synchronization.  Only used inStartModeramp_in_dist.\nSeeRampInDist."
+        ],
+        [
+          "MasterSyncPosition",
+          "LREAL",
+          "",
+          "The master position in the cam table where the slave axis has to be\nsynchronized to the master. Only used inStartModeramp_in_dist.\nSeeRampInDist."
+        ],
+        [
+          "AvoidReversal",
+          "BOOL",
+          "",
+          "FALSE: Signals that the reversal of the slave is physically possibleand acceptable.TRUE: Signals that a reversal of the modulo slave has to be avoided,e.g. because it is physically impossible or might lead to damage.SeeAvoidReversal."
+        ],
+        [
+          "StartMode",
+          "MC_StartMode",
+          "absolute",
+          "The start mode defines how the slave begins camming on a rising edge\nof input Execute.\nSeeStartModes."
+        ],
+        [
+          "CamTableID",
+          "MC_CAM_ID",
+          "",
+          "Identification of the cam table. The input is connected with the output ofMC_CamTableSelect.\nSeeChangingCamTableID."
+        ],
+        [
+          "BufferMode",
+          "MC_BUFFER_MODE",
+          "",
+          "Defines the chronological sequence of the FB relative to the previous block.Only the buffer modesAborting,BufferedandBlendingPreviousare supported.A cam table can be executed after a single axis command such asMC_MoveAbsoluteusing the buffer modesBufferedorBlendingPrevious.BlendingPreviousmeans that the velocity (including the direction)\nof the previous movement is used as the blending velocity, even if this\nmovement has the opposite direction compared to the cam table.For switching between cam tables, seeSwitchingCamsUsingBufferMode.If the function block is Busy, then only theBufferModeAbortingis allowed."
+        ],
+        [
+          "VelocityDiff",
+          "LREAL",
+          "",
+          "Maximum velocity difference in u/s forStartModeramp_in,ramp_in_pos, andramp_in_neg."
+        ],
+        [
+          "Acceleration",
+          "LREAL",
+          "",
+          "Acceleration in u/sÂ² forStartModeramp_in,ramp_in_pos, andramp_in_neg."
+        ],
+        [
+          "Deceleration",
+          "LREAL",
+          "",
+          "Deceleration in u/sÂ² forStartModeramp_in,ramp_in_pos, andramp_in_neg."
+        ],
+        [
+          "Jerk",
+          "LREAL",
+          "",
+          "Jerk in u/sÂ³ forStartModeramp_in,ramp_in_pos, andramp_in_neg."
+        ],
+        [
+          "TappetHysteresis",
+          "LREAL",
+          "",
+          "Size of the hysteresis for tappets in user units [u].\nSeeTappets."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "InSync",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "Indicates that theSlavefollows the cam profile."
+        },
+        [
+          "Busy",
+          "BOOL",
+          "",
+          "Execution of the function block has not finished."
+        ],
+        [
+          "Active",
+          "BOOL",
+          "",
+          "Indicates that the FB has control on the axis"
+        ],
+        [
+          "CommandAborted",
+          "BOOL",
+          "",
+          "Command has been aborted by another command"
+        ],
+        [
+          "Error",
+          "BOOL",
+          "",
+          "Signals that an error has occured within the function block."
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "",
+          "Error identification"
+        ],
+        [
+          "EndOfProfile",
+          "BOOL",
+          "",
+          "Indicates that theMasterhas reached a start or end of the\ncam table. (Whether it is the start or the end depends on the\ndirection of the master axis.)\nSeeEndOfProfile."
+        ],
+        [
+          "Tappets",
+          "SMC_TappetData",
+          "",
+          "Tappets: Has to be evaluated bySMC_GetTappetValuefunction block.\nSeeTappets."
+        ]
+      ]
+    }
+  ]
+}

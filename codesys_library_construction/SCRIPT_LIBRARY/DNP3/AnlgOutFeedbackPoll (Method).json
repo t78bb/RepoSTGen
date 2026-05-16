@@ -1,0 +1,23 @@
+{
+  "library": "DNP3",
+  "title": "AnlgOutFeedbackPoll (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/pou-Master/Commands/AnlgOutFeedbackPoll.html",
+  "page_title": "Master.AnlgOutFeedbackPoll (METH)",
+  "text": "\nMETHOD AnlgOutFeedbackPoll :\nError\nIssue an operate feedback request.\nThis will send a read for class 1 2 and 3 events and\nanalog input status values.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "AnlgOutFeedbackPoll",
+          "Type": "Error"
+        }
+      ]
+    }
+  ]
+}

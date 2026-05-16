@@ -1,0 +1,70 @@
+{
+  "library": "Util",
+  "title": "DAY_FLAGS (GVL)",
+  "url": "https://content.helpme-codesys.com/en/libs/Util/Current/TimerSwitch/GlobalConstants/DAY_FLAGS.html",
+  "page_title": "DAY_FLAGS (GVL)",
+  "text": "\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Scope": "Constant",
+          "Name": "EVERY_DAY",
+          "Type": "DAYS",
+          "Initial": "0"
+        },
+        [
+          "WORKING_DAYS",
+          "DAYS",
+          "31"
+        ],
+        [
+          "WEEKEND",
+          "DAYS",
+          "96"
+        ],
+        [
+          "MONDAY",
+          "DAYS",
+          "1"
+        ],
+        [
+          "TUESDAY",
+          "DAYS",
+          "2"
+        ],
+        [
+          "WEDNESDAY",
+          "DAYS",
+          "4"
+        ],
+        [
+          "THURSDAY",
+          "DAYS",
+          "8"
+        ],
+        [
+          "FRIDAY",
+          "DAYS",
+          "16"
+        ],
+        [
+          "SATURDAY",
+          "DAYS",
+          "32"
+        ],
+        [
+          "SUNDAY",
+          "DAYS",
+          "64"
+        ]
+      ]
+    }
+  ]
+}

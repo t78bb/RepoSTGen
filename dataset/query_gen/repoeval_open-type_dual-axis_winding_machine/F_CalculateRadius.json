@@ -1,0 +1,6 @@
+{
+  "requirement": "This code should implement a function to calculate the radius based on the center distance between two axes (lD), the AxisV position at the start of measurement (lHold), the AxisV position at the end of measurement (lHnew), material thickness (lTk), and height offset (lOffset). The function should return a floating-point number (LREAL) representing the radius. The formula used is: R = |√(D²+(Hnew+offset)²) - √(D²+(Hold+offset)²)| / π + Tk, where π (pi) is a constant representing the mathematical pi value. The function should handle the computation of square roots and the absolute value to ensure the radius is always positive. The result includes the addition of the material thickness to the computed radius value.",
+  "provide_code": "FUNCTION F_CalculateRadius : LREAL\nVAR_INPUT\n\tlD\t\t\t\t:\tLREAL;\t\t//两轴中心距离\n\tlHold\t\t\t:\tLREAL;\t\t//测量开始时的AxisV位置\n\tlHnew\t\t\t:\tLREAL;\t\t//测量结束时的AxisV位置\n\tlTk\t\t\t\t:\tLREAL;\t\t//材料厚度\n\tlOffset\t\t\t:\tLREAL;\t\t//高度偏移量\nEND_VAR",
+  "function_name": "F_CalculateRadius",
+  "requirement_cn": "该代码应实现一个函数，根据两轴中心距离（lD）、测量开始时的AxisV位置（lHold）、测量结束时的AxisV位置（lHnew）、材料厚度（lTk）和高度偏移量（lOffset）来计算半径。函数应返回表示半径的浮点数（LREAL）。使用的公式为：R = |√(D²+(Hnew+offset)²) - √(D²+(Hold+offset)²)| / π + Tk，其中π（pi）是表示数学圆周率的常数。函数应处理平方根的计算和绝对值以确保半径始终为正。结果包括将材料厚度加到计算出的半径值中。"
+}

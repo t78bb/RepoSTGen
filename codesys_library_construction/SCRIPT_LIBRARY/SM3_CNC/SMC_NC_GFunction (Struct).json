@@ -1,0 +1,28 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_NC_GFunction (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_POUs/NC2/Parser/Expressions/Functions/SMC_NC_GFunction.html",
+  "page_title": "SMC_NC_GFunction (STRUCT)",
+  "text": "\nTYPE SMC_NC_GFunction : STRUCT\nRepresents a G-Code function, consisting of the name\nand the interface providing the signature and execution\nof the function.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "stName",
+          "Type": "STRING",
+          "Comment": "The name of the function (case-insensitive).\nMust be a valid identifier."
+        },
+        {
+          "Name": "iFunc",
+          "Type": "SMC_NC_IFunction",
+          "Comment": "The implementation of the function."
+        }
+      ]
+    }
+  ]
+}

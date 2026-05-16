@@ -1,0 +1,87 @@
+{
+  "library": "DNP3",
+  "title": "PointWithFlags (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Outstation/Points/PointWithFlags.html",
+  "page_title": "PointWithFlags (FB)",
+  "text": "\nFUNCTION_BLOCK ABSTRACT PointWithFlags EXTENDS\nPoint\nIMPLEMENTS IPointWithFlags\nBase object for all DNP3 datapoints which provide flags.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment",
+        "Inherited from"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "Description",
+          "Type": "STRING",
+          "Initial": "",
+          "Comment": "Description of the datapoint - this is a configuration,\nchanges are ignored after Outstation was enabled.",
+          "Inherited from": "Point"
+        },
+        [
+          "Number",
+          "DINT",
+          "-1",
+          "Point number - this is a configuration, changes are ignored after Outstation was enabled..\nThe point number can be configured if needed to either:start with Point number > 0have gaps in Point numbersIf set to -1 (the default) the OutstationDataModel (more precisely the related âGroupâ) takes care to set the Point number internally:starting at 0, if first Point number is not set explicitly.increment by 1In case you set Point number explicitly please keep it consistent:Point numbers need to be >= 0Point numbers need to be ascending",
+          "Point"
+        ],
+        [
+          "EventClass",
+          "USINT",
+          "Constants.TMWDEFS_CLASS_MASK_ONE",
+          "The initial event class - this is a configuration, changes are ignored after Outstation was enabled.\nOperational event class may be changed by a master.",
+          "Point"
+        ],
+        [
+          "EventMode",
+          "PointEventMode",
+          "PointEventMode.EVENT_MODE_SOE",
+          "The event mode - this is a configuration, changes are ignored after Outstation was enabled.\nOnly used if the sampling rate is set within the outstation configuration.",
+          "Point"
+        ],
+        [
+          "tScanPeriod",
+          "TIME",
+          "TIME#0ms",
+          "Scan period for datapoint.\nIf tScanPeriod is set to T#0MS, the Group related tScanPeriod or the OutstationDataModel.tScanPeriod is used.",
+          "Point"
+        ],
+        [
+          "udiLogOptions",
+          "UDINT",
+          "OutstationLoggingOptions.None",
+          "LoggingOptions can be combined using OR.",
+          "Point"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "xError",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "An error occured.",
+          "Inherited from": "Point"
+        },
+        [
+          "eErrorID",
+          "Error",
+          "",
+          "The specific error.",
+          "Point"
+        ],
+        {
+          "Scope": "Input",
+          "Name": "flags",
+          "Type": "BYTE",
+          "Initial": "Constants.DNPDEFS_DBAS_FLAG_ON_LINE",
+          "Comment": "Flags used by the point. Can be changed in case a point goes offline or any other error.\nIf set to 0, the variation without flags will be used by DNP3",
+          "Inherited from": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "library": "AlarmManager",
+  "title": "ReturnValues (GVL)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Globals/ReturnValues.html",
+  "page_title": "ReturnValues (GVL)",
+  "text": "\nThis GVL contains the error codes of the alarm manager API\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Constant",
+          "Name": "ERR_OK",
+          "Type": "UDINT",
+          "Initial": "Errors.ERR_OK",
+          "Comment": "Processing successful"
+        },
+        [
+          "ERR_NOTINITIALIZED",
+          "UDINT",
+          "Errors.ERR_NOTINITIALIZED",
+          "Tried to perform an operation on an instance, that is still\nintial"
+        ],
+        [
+          "ERR_PARAMETER",
+          "UDINT",
+          "Errors.ERR_PARAMETER",
+          "Invalid parameter passed, e.g. an index outside the valid\nindex range"
+        ],
+        [
+          "ERR_NO_OBJECT",
+          "UDINT",
+          "Errors.ERR_NO_OBJECT",
+          "Requested object (e.g. IAlarmManagerClient instance) was not\nfound"
+        ],
+        [
+          "ERR_DUPLICATE",
+          "UDINT",
+          "Errors.ERR_DUPLICATE",
+          "Object still exists (e.g. IAlarmManagerClient instance is\nalready registered)"
+        ],
+        [
+          "ERR_NO_ALARM_MANAGER_CLIENT",
+          "UDINT",
+          "16#1000",
+          "No valid instance of IAlarmManagerClient passed to method\nIAlarmHandler2.RegisterClient"
+        ],
+        [
+          "ERR_NO_FILTER_CRITERIA",
+          "UDINT",
+          "16#1001",
+          "The return value of IAlarmManagerClient.GetFilterCriteria is\nno valid instance of IAlarmFilterCriteria"
+        ],
+        [
+          "ERR_NO_ALARMGROUP_FILTER_CRITERIA",
+          "UDINT",
+          "16#1002",
+          "The filter criteria the IAlarmManagerClient instance specifies has no filter criterion\nconsidering the alarm groups."
+        ],
+        [
+          "ERR_NO_ALARMCLASS_FILTER_CRITERIA",
+          "UDINT",
+          "16#1003",
+          "The filter criteria the IAlarmManagerClient instance specifies has no filter criterion\nconsidering the alarm classes."
+        ],
+        [
+          "ERR_INVALID_PRIORITY_FILTER",
+          "UDINT",
+          "16#1004",
+          "The filter criteria the IAlarmManagerClient instance specifies has an invalid filter criterion\nconsidering the priority of the alarm classes, i.e. âpriority toâ < âpriority formâ"
+        ],
+        [
+          "ERR_NO_ALARM_STORAGE",
+          "UDINT",
+          "16#1005",
+          "No access to the alarm storage possible, because no array for storing alarms from storage\nhas been passed during registering the client"
+        ],
+        [
+          "ERR_UNEXPECTED_ALARMSTATE",
+          "UDINT",
+          "16#1006",
+          "The current processing did not expect the current alarm\nstate."
+        ]
+      ]
+    }
+  ]
+}

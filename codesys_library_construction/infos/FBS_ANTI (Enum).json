@@ -1,0 +1,63 @@
+{
+  "library": "PLCopen Safety FBs",
+  "title": "FBS_ANTI (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/PLCopen Safety FBs/Current/PLCopenSafetyFBs/Enums/FBS_ANTI.html",
+  "page_title": "FBS_ANTI (ENUM)",
+  "text": "\nTYPE FBS_ANTI :\nDefinition of SF_Antivalent function block states and its diagnostic values.\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "IDLE",
+          "Initial": "16#0",
+          "Comment": "The function block is not active (initial state)."
+        },
+        {
+          "Name": "INIT",
+          "Initial": "16#8801",
+          "Comment": "An activation has been detected by the FB and the FB is now\nactivated."
+        },
+        {
+          "Name": "OUT_ENABLED",
+          "Initial": "16#8000",
+          "Comment": "The inputs switched to the Active state in antivalent mode."
+        },
+        {
+          "Name": "WAIT_FOR_NO",
+          "Initial": "16#8802",
+          "Comment": "ChannelNC has been switched to TRUE - waiting for ChannelNO\nto be switched to FALSE; discrepancy timer started."
+        },
+        {
+          "Name": "WAIT_FOR_NC",
+          "Initial": "16#8804",
+          "Comment": "ChannelNO has been switched to FALSE - waiting for ChannelNC\nto be switched to TRUE; discrepancy timer started."
+        },
+        {
+          "Name": "FROM_ACTIVE_WAIT",
+          "Initial": "16#8806",
+          "Comment": "One channel has been switched to inactive; waiting for the\nsecond channel to be switched to inactive too; discrepancy\ntimer started."
+        },
+        {
+          "Name": "ERROR_1",
+          "Initial": "16#C010",
+          "Comment": "Discrepancy time elapsed in state WAIT_FOR_NO (16#8802)."
+        },
+        {
+          "Name": "ERROR_2",
+          "Initial": "16#C020",
+          "Comment": "Discrepancy time elapsed in state WAIT_FOR_NC (16#8804)."
+        },
+        {
+          "Name": "ERROR_3",
+          "Initial": "16#C030",
+          "Comment": "Discrepancy time elapsed in state FROM_ACTIVE_WAIT\n(16#8806)."
+        }
+      ]
+    }
+  ]
+}

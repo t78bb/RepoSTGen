@@ -1,0 +1,28 @@
+{
+  "library": "BACnet",
+  "title": "RegisterPlugin (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetServer/pou-IBACnetServer/Plugins/RegisterPlugin.html",
+  "page_title": "IBACnetServer.RegisterPlugin (METH)",
+  "text": "\nMETHOD RegisterPlugin : UDINT\nRegisters a\nIBACnetServerPlugin\nwith\nBACnetServer\n.\nPlugins containing hooks/callbacks need to register after StartBACnetStack.\nReturn CmpErrors.Errors.ERR_OK if succesfully registered.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "RegisterPlugin",
+          "Type": "UDINT"
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfPlugin",
+          "Type": "IBACnetServerPlugin"
+        }
+      ]
+    }
+  ]
+}

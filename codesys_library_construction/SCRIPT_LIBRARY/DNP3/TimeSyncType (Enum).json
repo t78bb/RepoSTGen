@@ -1,0 +1,25 @@
+{
+  "library": "DNP3",
+  "title": "TimeSyncType (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/TimeSyncType.html",
+  "page_title": "TimeSyncType (ENUM)",
+  "text": "\nTYPE TimeSyncType :\nDefine enum which specifies the type of time sync required\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Name": "SYNC_TYPE_SERIAL",
+          "Initial": "ANY_TO_UDINT(CmpDNP3.IEC_MDNPBRM_SYNC_TYPE.MDNPBRM_SYNC_TYPE_SERIAL)"
+        },
+        {
+          "Name": "SYNC_TYPE_LAN",
+          "Initial": "ANY_TO_UDINT(CmpDNP3.IEC_MDNPBRM_SYNC_TYPE.MDNPBRM_SYNC_TYPE_LAN)"
+        }
+      ]
+    }
+  ]
+}

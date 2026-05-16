@@ -1,0 +1,28 @@
+{
+  "library": "BACnetDefaultImpl",
+  "title": "TimezoneInformationToString (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnetDefaultImpl/Current/BACnetDefaultImpl/Functions/TimezoneInformationToString.html",
+  "page_title": "TimezoneInformationToString (FUN)",
+  "text": "\nFUNCTION TimezoneInformationToString : STRING(255)\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "TimezoneInformationToString",
+          "Type": "STRING(255)"
+        },
+        {
+          "Scope": "Input",
+          "Name": "tzi",
+          "Type": "TimezoneInformation"
+        }
+      ]
+    }
+  ]
+}

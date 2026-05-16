@@ -1,0 +1,5 @@
+{
+  "requirement": "This code is intended to implement a function that updates the status of liquid level switches based on the current tank level and predefined full and empty thresholds.",
+  "provide_code": "FUNCTION F_UpdateLimitSwitches : BOOL\nVAR_INPUT\n\trTankLevel\t\t\t:\tREAL;\t\t\t// 当前液位 (%)\n\trFullThreshold\t\t:\tREAL := 85.0;\t// 满液位阈值 (%)\n\trEmptyThreshold\t\t:\tREAL := 5.0;\t// 空液位阈值 (%)\nEND_VAR\nVAR_OUTPUT\n\tbLevelFull\t\t\t:\tBOOL;\t\t\t// 液位满开关\n\tbLevelEmpty\t\t\t:\tBOOL;\t\t\t// 液位空开关\nEND_VAR",
+  "function_name": "F_UpdateLimitSwitches"
+}

@@ -1,0 +1,93 @@
+{
+  "library": "AlarmManager",
+  "title": "ReturnValues (GVL)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Globals/ReturnValues.html",
+  "page_title": "ReturnValues (GVL)",
+  "text": "ALARMGROUP_ID (Alias)\nALARM_ID (Alias)\nAlarm storage API\nAlarmStorageConvertFromTimestamp (Function)\nAlarmStorageConvertToTimestamp (Function)\nAlarmStorageConvertValueToLREAL (Function)\nAlarmStorageConvertValueToREAL (Function)\nAlarmStorageConvertValueToString (Function)\nAlarmStorageGetDefaultText (Function)\nAlarmStorageGetMessageCount (Function)\nAlarmStorageGetTextId (Function)\nAlarmStorageGetTextListName (Function)\nAlarmStorageReader (FunctionBlock)\nAddAlarmStorageListener (Method)\nContinueReading (Method)\nGetFirstLastRowID (Method)\nGetMinMaxTimestamps (Method)\nRead (Method)\nRemoveAlarmStorageListener (Method)\nAlarmStorageReaderGlobals (GVL)\nAlarmStorageRow (FunctionBlock)\nGetLatchVarValue (Method)\nSetLatchVarValue (Method)\nAlarmStorageStaticData (Struct)\nEAlarmStorageReaderErrors (Enum)\nIAlarmStorageListener (Interface)\nAlarmAdded (Method)\nAlarmModified (Method)\nIAlarmStorageReaderConsumer (Interface)\nAlarmRead (Method)\nBeforeReading (Method)\nLatchVariableRead (Method)\nReadingDataCompleted (Method)\nIAlarmStorageReaderConsumer2 (Interface)\nByteOrder (Property)\nAlarm_Prg (Program)\nEnumerations\nAlarmState (Enum)\nAlarmStateTransition (Enum)\nEAlarmType (Enum)\nEFilterLatchContent (Enum)\nEFilterTimeRangeType (Enum)\nFunction blocks\nDefaultAlarmFilterCriteria (FunctionBlock)\nFunctions\nConvertTimestampToLDateAndTime (Function)\nDT_to_Timestamp (Function)\nDT_to_Timestamp2 (Function)\nFilters\nElaborateLatchFilterCriteria (Function)\nElaborateTimeRangeFilterCriteria (Function)\nFormatTimestamp2 (Function)\nFormatTypedValue (Function)\nGetAlarmIDName (Function)\nReplaceAllDefaultPlaceholder (Function)\nSetCurrentUtcOffset (Function)\nTimestamp_to_DT (Function)\ndeprecated\nFormatTimestamp (Function)\nGlobals\nAlarmGlobals (GVL)\nReturnValues (GVL)\nInterfaces\nIAlarm (Interface)\nAccess-to-timestamps\nGetTimestampAcknowledge (Method)\nGetTimestampActive (Method)\nGetTimestampInactive (Method)\nGetTimestampLast (Method)\nAccess-to-values\nGetCurrentValue (Method)\nGetLatchVar1Value (Method)\nGetLatchVar2Value (Method)\nGetTriggerValue (Method)\nGetAlarmClass (Method)\nGetAlarmGroup (Method)\nGetID (Method)\nGetInternalID (Method)\nGetMessage (Method)\nGetState (Method)\nIsDeactivated (Method)\nIAlarm2 (Interface)\nIAlarm3 (Interface)\nGetCountLatchVariables (Method)\nGetCountMessages (Method)\nGetLatchVarValue (Method)\nGetMessage2 (Method)\nSetLatchVarValue (Method)\nIAlarm4 (Interface)\nKindOf (Property)\nIAlarm5 (Interface)\nAccess-to-offsets\nOffsetAcknowledge (Property)\nOffsetActive (Property)\nOffsetInactive (Property)\nOffsetLast (Property)\nIAlarm6 (Interface)\nAlarmGroupTemplate (Property)\nIAlarm7 (Interface)\nCommentActive (Property)\nCommentActiveAck (Property)\nCommentNormal (Property)\nCommentWaitingConf (Property)\nReAlarmRepeatCount (Property)\nUserIdCommentActive (Property)\nUserIdCommentActiveAck (Property)\nUserIdCommentNormal (Property)\nUserIdCommentWaitingConf (Property)\nIAlarm8 (Interface)\nSetAcknowledge (Method)\nIAlarmClass (Interface)\nGetInternalID (Method)\nGetName (Method)\nGetPriority (Method)\nIsAcknowledgeSeparately (Method)\nIAlarmClass2 (Interface)\nAckInsteadOfConfirm (Method)\nAutoResetDigitalAlarms (Method)\nReAlarmTime (Property)\nIAlarmClass3 (Interface)\nIAlarmGroup (Interface)\nGetInternalID (Method)\nGetName (Method)\nIAlarmGroup2 (Interface)\nIAlarmGroup3 (Interface)\nGetID (Method)\nIAlarmHandler (Interface)\nAcknowledgeAll (Method)\nAcknowledgeAllOfGroup (Method)\nAcknowledgeOneOfGroup (Method)\nRaiseEvent (Method)\nIAlarmHandler10 (Interface)\nClearHistory (Method)\nFindAlarmClassByName (Method)\nFindAlarmGroupByName (Method)\nIAlarmHandler2 (Interface)\nGetActiveAlarms (Method)\nGetAlarmsFromStorage (Method)\nGetCountAlarmsFromStorage (Method)\nRegisterClient (Method)\nUnregisterClient (Method)\nIAlarmHandler3 (Interface)\nIAlarmHandler4 (Interface)\nRegisterAlarmStateChangedListener (Method)\nIAlarmHandler5 (Interface)\nIAlarmHandler6 (Interface)\nAcknowledgeAllOfGroupWithComment (Method)\nAcknowledgeAllWithComment (Method)\nAcknowledgeOneOfGroupWithComment (Method)\nSetComment (Method)\nIAlarmHandler7 (Interface)\nGetInstanceAlarm (Method)\nGetInstanceAlarmByName (Method)\nRaiseEventAlarmInstance (Method)\nRaiseEventAlarmInstanceByName (Method)\nIAlarmHandler8 (Interface)\nIsReady (Property)\nIAlarmHandler9 (Interface)\nActivateAlarm (Method)\nActivateAlarmInstance (Method)\nDeactivateAlarm (Method)\nDeactivateAlarmInstance (Method)\nIAlarmManagerClient (Interface)\nActiveAlarmsChanged (Method)\nAlarmStorageModified (Method)\nGetFilterCriteria (Method)\nIAlarmManagerClient2 (Interface)\nEventOccurred (Method)\nIAlarmNotifiable (Interface)\nExecute (Method)\nIAlarmStateChangedListener (Interface)\nAlarmStateChanged (Method)\nIAlarmStateChangedListener2 (Interface)\nAlarmDeactivationStateChanged (Method)\nLibrary Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nService\nEAlarmByteOrder (Enum)\nStructures\nLatchVariable (Struct)\nStorageTaskInfo (Struct)\nTIMESTAMP (Alias)\nTL_AlarmStatus (TextList)\nFile and Project Information\nLibrary Reference\n3S Storage\nLibrary Identification\nLibrary Properties\n3SLicense\nLibrary Identification\nLibrary Properties\nAlarm Manager Interfaces\nLibrary Identification\nLibrary Properties\nAlarm Manager Internal Interfaces\nLibrary Identification\nLibrary Properties\nBase Interfaces\nLibrary Identification\nLibrary Properties\nCAA FB Factory\nLibrary Identification\nLibrary Properties\nCAA Storage\nLibrary Identification\nLibrary Properties\nCAA Types Extern\nLibrary Identification\nLibrary Properties\nCDSV3ProtocolUtils\nLibrary Identification\nLibrary Properties\nCmpApp\nLibrary Identification\nLibrary Properties\nCmpBinTagUtilIec\nLibrary Identification\nLibrary Properties\nCmpDynamicText\nLibrary Identification\nLibrary Properties\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nCmpEventMgr\nLibrary Identification\nLibrary Properties\nCmpIecTask\nLibrary Identification\nLibrary Properties\nCmpLog\nLibrary Identification\nLibrary Properties\nCmpSrv\nLibrary Identification\nLibrary Properties\nCmpVisuHandler\nLibrary Identification\nLibrary Properties\nCollections\nLibrary Identification\nLibrary Properties\nComponent Manager\nLibrary Identification\nLibrary Properties\nDatasources Interfaces\nLibrary Identification\nLibrary Properties\nElement Collections\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nStringUtils\nLibrary Identification\nLibrary Properties\nSysCpuHandling\nLibrary Identification\nLibrary Properties\nSysFile\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysProcess\nLibrary Identification\nLibrary Properties\nSysSem\nLibrary Identification\nLibrary Properties\nSysTask\nLibrary Identification\nLibrary Properties\nSysTimeCore\nLibrary Identification\nLibrary Properties\nSysTimeRtc\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nVisuShared\nLibrary Identification\nLibrary Properties\nAlarmManager\nDocs\n»\nGlobals\n»\nReturnValues (GVL)\nReturnValues (GVL)\nÂ¶\nThis GVL contains the error codes of the alarm manager API\nAttributes:\nqualified_only\nInOut:\nScope\nName\nType\nInitial\nComment\nConstant\nERR_OK\nUDINT\nErrors.ERR_OK\nProcessing successful\nERR_NOTINITIALIZED\nUDINT\nErrors.ERR_NOTINITIALIZED\nTried to perform an operation on an instance, that is still\nintial\nERR_PARAMETER\nUDINT\nErrors.ERR_PARAMETER\nInvalid parameter passed, e.g. an index outside the valid\nindex range\nERR_NO_OBJECT\nUDINT\nErrors.ERR_NO_OBJECT\nRequested object (e.g. IAlarmManagerClient instance) was not\nfound\nERR_DUPLICATE\nUDINT\nErrors.ERR_DUPLICATE\nObject still exists (e.g. IAlarmManagerClient instance is\nalready registered)\nERR_NO_ALARM_MANAGER_CLIENT\nUDINT\n16#1000\nNo valid instance of IAlarmManagerClient passed to method\nIAlarmHandler2.RegisterClient\nERR_NO_FILTER_CRITERIA\nUDINT\n16#1001\nThe return value of IAlarmManagerClient.GetFilterCriteria is\nno valid instance of IAlarmFilterCriteria\nERR_NO_ALARMGROUP_FILTER_CRITERIA\nUDINT\n16#1002\nThe filter criteria the IAlarmManagerClient instance specifies has no filter criterion\nconsidering the alarm groups.\nERR_NO_ALARMCLASS_FILTER_CRITERIA\nUDINT\n16#1003\nThe filter criteria the IAlarmManagerClient instance specifies has no filter criterion\nconsidering the alarm classes.\nERR_INVALID_PRIORITY_FILTER\nUDINT\n16#1004\nThe filter criteria the IAlarmManagerClient instance specifies has an invalid filter criterion\nconsidering the priority of the alarm classes, i.e. âpriority toâ < âpriority formâ\nERR_NO_ALARM_STORAGE\nUDINT\n16#1005\nNo access to the alarm storage possible, because no array for storing alarms from storage\nhas been passed during registering the client\nERR_UNEXPECTED_ALARMSTATE\nUDINT\n16#1006\nThe current processing did not expect the current alarm\nstate.",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Constant",
+          "Name": "ERR_OK",
+          "Type": "UDINT",
+          "Initial": "Errors.ERR_OK",
+          "Comment": "Processing successful"
+        },
+        [
+          "ERR_NOTINITIALIZED",
+          "UDINT",
+          "Errors.ERR_NOTINITIALIZED",
+          "Tried to perform an operation on an instance, that is still\nintial"
+        ],
+        [
+          "ERR_PARAMETER",
+          "UDINT",
+          "Errors.ERR_PARAMETER",
+          "Invalid parameter passed, e.g. an index outside the valid\nindex range"
+        ],
+        [
+          "ERR_NO_OBJECT",
+          "UDINT",
+          "Errors.ERR_NO_OBJECT",
+          "Requested object (e.g. IAlarmManagerClient instance) was not\nfound"
+        ],
+        [
+          "ERR_DUPLICATE",
+          "UDINT",
+          "Errors.ERR_DUPLICATE",
+          "Object still exists (e.g. IAlarmManagerClient instance is\nalready registered)"
+        ],
+        [
+          "ERR_NO_ALARM_MANAGER_CLIENT",
+          "UDINT",
+          "16#1000",
+          "No valid instance of IAlarmManagerClient passed to method\nIAlarmHandler2.RegisterClient"
+        ],
+        [
+          "ERR_NO_FILTER_CRITERIA",
+          "UDINT",
+          "16#1001",
+          "The return value of IAlarmManagerClient.GetFilterCriteria is\nno valid instance of IAlarmFilterCriteria"
+        ],
+        [
+          "ERR_NO_ALARMGROUP_FILTER_CRITERIA",
+          "UDINT",
+          "16#1002",
+          "The filter criteria the IAlarmManagerClient instance specifies has no filter criterion\nconsidering the alarm groups."
+        ],
+        [
+          "ERR_NO_ALARMCLASS_FILTER_CRITERIA",
+          "UDINT",
+          "16#1003",
+          "The filter criteria the IAlarmManagerClient instance specifies has no filter criterion\nconsidering the alarm classes."
+        ],
+        [
+          "ERR_INVALID_PRIORITY_FILTER",
+          "UDINT",
+          "16#1004",
+          "The filter criteria the IAlarmManagerClient instance specifies has an invalid filter criterion\nconsidering the priority of the alarm classes, i.e. âpriority toâ < âpriority formâ"
+        ],
+        [
+          "ERR_NO_ALARM_STORAGE",
+          "UDINT",
+          "16#1005",
+          "No access to the alarm storage possible, because no array for storing alarms from storage\nhas been passed during registering the client"
+        ],
+        [
+          "ERR_UNEXPECTED_ALARMSTATE",
+          "UDINT",
+          "16#1006",
+          "The current processing did not expect the current alarm\nstate."
+        ]
+      ]
+    }
+  ]
+}

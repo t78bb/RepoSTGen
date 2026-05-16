@@ -1,0 +1,31 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "GetLastSibling (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_Module/TreeNavigation/GetLastSibling.html",
+  "page_title": "GetLastSibling (FUN)",
+  "text": "\nFUNCTION GetLastSibling :\nIModule\nReturns the last child module instance of a given instance.\nNever returns 0.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetLastSibling",
+          "Type": "IModule",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfM",
+          "Type": "IModule",
+          "Comment": "The instance that is queried for the last sibling (must not be 0)"
+        }
+      ]
+    }
+  ]
+}

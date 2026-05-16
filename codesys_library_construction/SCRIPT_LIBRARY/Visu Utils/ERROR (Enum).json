@@ -1,0 +1,77 @@
+{
+  "library": "Visu Utils",
+  "title": "ERROR (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/Visu Utils/Current/VisuUtils/VisuActionUtilities/Types/Enum/ERROR.html",
+  "page_title": "ERROR (ENUM)",
+  "text": "\nTYPE ERROR :\nErrors that might be returned by functionblocks from this library typically\nusing the variable eError.\nAttributes:\nqualified_only\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "NO_ERROR",
+          "Comment": ""
+        },
+        {
+          "Name": "TIME_OUT",
+          "Comment": ""
+        },
+        {
+          "Name": "NOT_CALLED_FROM_VISU",
+          "Comment": ""
+        },
+        {
+          "Name": "NOT_SUPPORTED_FOR_INTEGRATED_VISU",
+          "Comment": ""
+        },
+        {
+          "Name": "ERROR",
+          "Comment": ""
+        },
+        {
+          "Name": "TRANSFER_CANCELLED",
+          "Comment": ""
+        },
+        {
+          "Name": "TRANSER_IN_PROGRESS",
+          "Comment": ""
+        },
+        {
+          "Name": "TRANSFER_FAILED",
+          "Comment": ""
+        },
+        {
+          "Name": "FILE_READ_ERROR",
+          "Comment": ""
+        },
+        {
+          "Name": "VISU_NOT_FOUND",
+          "Comment": "No visualization with the given name found."
+        },
+        {
+          "Name": "NO_CLIENT_FILTER",
+          "Comment": "No clientFilter (e.g. asFbExecuteSingleVisuActionBase.clientFilter) was set so\nthe action cannot be executed at all."
+        },
+        {
+          "Name": "NO_ITERATION_CALLBACK",
+          "Comment": "No callback for the iteration was passed"
+        },
+        {
+          "Name": "FILE_TRANSFER_SERVICES_NOT_SUPPORTED",
+          "Comment": "The file transfer services are not supported"
+        },
+        {
+          "Name": "BLOCKED_DUE_TO_ONLINECHANGE",
+          "Comment": "The operation is currently not possible because an online\nchange is in progress"
+        },
+        {
+          "Name": "CANCELLED_DUE_TO_ONLINE_CHANGE",
+          "Comment": "The operation was cancelled because an online change was\nexecuted between start and end of the operation"
+        }
+      ]
+    }
+  ]
+}

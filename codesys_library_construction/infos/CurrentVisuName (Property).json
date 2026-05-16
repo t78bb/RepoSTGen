@@ -1,0 +1,8 @@
+{
+  "library": "Visu Utils",
+  "title": "CurrentVisuName (Property)",
+  "url": "https://content.helpme-codesys.com/en/libs/Visu Utils/Current/VisuUtils/VisuActionUtilities/Interfaces/pou-IVisualizationClient/CurrentVisuName.html",
+  "page_title": "IVisualizationClient.CurrentVisuName (PROP)",
+  "text": "\nPROPERTY CurrentVisuName : STRING\nReturns the qualified name of the currently active toplevel visualization.",
+  "tables": []
+}

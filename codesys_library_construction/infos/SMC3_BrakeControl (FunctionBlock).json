@@ -1,0 +1,71 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC3_BrakeControl (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/AdministrativeConfiguration/SMC3_BrakeControl.html",
+  "page_title": "SMC3_BrakeControl (FB)",
+  "text": "\nFUNCTION_BLOCK SMC3_BrakeControl\nThis function block, if supported by the drive and its SoftMotion driver,\nit determines the behaviour of a mechanical brake.\nBy use of this function block in the application the brake can be closed or opened\nor it can be switched to automatic mode, in which the opening and closing is handled by the drive itself.\nThe function can be used if it is not possible to use the automatic mode due to special requirements\n(i.e. manual move of a component) of the application where the brake must be controlled manually.\nThe function block does not take on any further monitoring or other intelligent functions (i.e. time delayed opening of the brake).\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "bExecute",
+          "Type": "BOOL",
+          "Initial": "FALSE",
+          "Comment": "TRUE: Activates FB, else inactive."
+        },
+        [
+          "eSetBrake",
+          "SMC3_BrakeSetState",
+          "SMC_BRAKE_AUTO",
+          "Sets the brake state."
+        ],
+        [
+          "fTimeOut",
+          "LREAL",
+          "",
+          "If the time since enabling the FB is larger than this value,bTimeOutis set; this mechanism is deactivated, iffTimeOut= 0."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bDone",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUE: Signal has been sent to the drive"
+        },
+        [
+          "bBusy",
+          "BOOL",
+          "",
+          "TRUE: FB is not idle."
+        ],
+        [
+          "bError",
+          "BOOL",
+          "FALSE",
+          "TRUE: Error has occured within the function block."
+        ],
+        [
+          "nErrorID",
+          "SMC_ERROR",
+          "0",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

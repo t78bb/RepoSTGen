@@ -1,0 +1,25 @@
+{
+  "library": "AC_DataLog",
+  "title": "GetStorageFilePath (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_DataLog/Current/AC_DataLog/DataLogStorage/pou-DataLogStorageBase/private/GetStorageFilePath.html",
+  "page_title": "DataLogStorageBase.GetStorageFilePath (METH)",
+  "text": "\nMETHOD PROTECTED FINAL GetStorageFilePath\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout Const",
+          "Name": "c_sFileEnding",
+          "Type": "STRING",
+          "Comment": "File ending with â.â"
+        }
+      ]
+    }
+  ]
+}

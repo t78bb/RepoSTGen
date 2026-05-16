@@ -1,0 +1,155 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_TRAFOF_Tripod (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_Trafo_POUs/SoftMotion-Transformations/Parallel-Systems/Tripod/SMC_TRAFOF_Tripod.html",
+  "page_title": "SMC_TRAFOF_Tripod (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_TRAFOF_Tripod\nThe transformation module is provided to\nexecute forward transformations of a tripod.\nNote\nFor detailed information on transformation modules\nsee the overview on kinematic transformations in the\nCNC online help.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "DriveA",
+          "Type": "AXIS_REF_SM3",
+          "Initial": "",
+          "Comment": "Reference to axis A"
+        },
+        [
+          "DriveB",
+          "AXIS_REF_SM3",
+          "",
+          "Reference to axis B"
+        ],
+        [
+          "DriveC",
+          "AXIS_REF_SM3",
+          "",
+          "Reference to axis C"
+        ],
+        {
+          "Scope": "Input",
+          "Name": "dInnerRadius",
+          "Type": "LREAL",
+          "Initial": "",
+          "Comment": "Radius of inner ring"
+        },
+        [
+          "dOuterRadius",
+          "LREAL",
+          "",
+          "Radius of outer ring"
+        ],
+        [
+          "dLength",
+          "LREAL",
+          "",
+          "Length of linkage/strut"
+        ],
+        [
+          "dDistance",
+          "LREAL",
+          "",
+          "Distance between the two connecting rods for each arm"
+        ],
+        [
+          "dRotationOffset",
+          "LREAL",
+          "0",
+          "Mathematically oriented angle between\naxis A and origin (0,0) in degrees"
+        ],
+        [
+          "dOffsetA",
+          "LREAL",
+          "0",
+          "Additional offset of axis A in SoftMotion units"
+        ],
+        [
+          "dOffsetB",
+          "LREAL",
+          "0",
+          "Additional offset of axis B in SoftMotion units"
+        ],
+        [
+          "dOffsetC",
+          "LREAL",
+          "0",
+          "Additional offset of axis C in SoftMotion units"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "bError",
+          "Type": "BOOL",
+          "Initial": "",
+          "Comment": "TRUE, if position is invalid"
+        },
+        [
+          "dx",
+          "LREAL",
+          "",
+          "X-position of centre of inner ring"
+        ],
+        [
+          "dy",
+          "LREAL",
+          "",
+          "Y-position of centre of inner ring"
+        ],
+        [
+          "dz",
+          "LREAL",
+          "",
+          "Z-position of centre of inner ring"
+        ],
+        [
+          "dnx",
+          "LREAL",
+          "",
+          "X-coordinate of normed position of manipulator\n(for visualization purpose)"
+        ],
+        [
+          "dny",
+          "LREAL",
+          "",
+          "Y-coordinate of normed position of manipulator\n(for visualization purpose)"
+        ],
+        [
+          "dRatioInnerOuter",
+          "LREAL",
+          "",
+          "Ratio of the radius of the inner ring to that\nof the outer ring (for visualization purpose)"
+        ],
+        [
+          "adnxi",
+          "ARRAY [0..5] OF LREAL",
+          "",
+          "X-coordinates of normed start position of bar\n(for visualization purpose)"
+        ],
+        [
+          "adnyi",
+          "ARRAY [0..5] OF LREAL",
+          "",
+          "Y-coordinates of normed start position of bar\n(for visualization purpose)"
+        ],
+        [
+          "adnxo",
+          "ARRAY [0..5] OF LREAL",
+          "",
+          "X-coordinates of normed end position of bar\n(for visualization purpose)"
+        ],
+        [
+          "adnyo",
+          "ARRAY [0..5] OF LREAL",
+          "",
+          "Y-coordinates of normed end position of bar\n(for visualization purpose)"
+        ]
+      ]
+    }
+  ]
+}

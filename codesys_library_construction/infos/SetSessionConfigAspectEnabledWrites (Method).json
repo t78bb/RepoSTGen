@@ -1,0 +1,34 @@
+{
+  "library": "DNP3",
+  "title": "SetSessionConfigAspectEnabledWrites (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Outstation/pou-OutstationConfiguration/SetSessionConfigAspectEnabledWrites.html",
+  "page_title": "OutstationConfiguration.SetSessionConfigAspectEnabledWrites (METH)",
+  "text": "\nMETHOD SetSessionConfigAspectEnabledWrites :\nError\nSet optional outstation session configuration aspect - writes enabled for device specific requests.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "SetSessionConfigAspectEnabledWrites",
+          "Type": "Error",
+          "Initial": "",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "enabledWrites",
+          "Type": "USINT",
+          "Initial": "16#0",
+          "Comment": "Bit mask indicating which Writes are enabled for device specific requests,\nif device specific Write is enabled"
+        }
+      ]
+    }
+  ]
+}

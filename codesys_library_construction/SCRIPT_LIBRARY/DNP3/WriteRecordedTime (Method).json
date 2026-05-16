@@ -1,0 +1,23 @@
+{
+  "library": "DNP3",
+  "title": "WriteRecordedTime (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Master/pou-Master/Commands/WriteRecordedTime.html",
+  "page_title": "Master.WriteRecordedTime (METH)",
+  "text": "\nMETHOD WriteRecordedTime :\nError\nIssue an write time request.\nThis is generally the second step in a time synchronization on a LAN\nchannel.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "WriteRecordedTime",
+          "Type": "Error"
+        }
+      ]
+    }
+  ]
+}

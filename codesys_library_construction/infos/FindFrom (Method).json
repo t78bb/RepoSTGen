@@ -1,0 +1,36 @@
+{
+  "library": "StringUtils",
+  "title": "FindFrom (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/StringUtils/Current/Public-Parts/pou-CharBufferString/FindFrom.html",
+  "page_title": "CharBufferString.FindFrom (METH)",
+  "text": "\nMETHOD FindFrom : INT\nSearches for a substring within our string, starting at a specified position\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "FindFrom",
+          "Type": "INT",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "cbsToSearchFor",
+          "Type": "REFERENCE TOCharBufferString",
+          "Comment": ""
+        },
+        [
+          "iSearchStart",
+          "UINT",
+          "a position relative to 1, where the search starts"
+        ]
+      ]
+    }
+  ]
+}

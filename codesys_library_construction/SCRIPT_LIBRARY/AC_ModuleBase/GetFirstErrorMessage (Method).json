@@ -1,0 +1,28 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "GetFirstErrorMessage (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_Module/pou-Module/ErrorHandling/GetFirstErrorMessage.html",
+  "page_title": "Module.GetFirstErrorMessage (METH)",
+  "text": "\nMETHOD GetFirstErrorMessage : STRING(255)\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetFirstErrorMessage",
+          "Type": "STRING(255)"
+        },
+        {
+          "Scope": "Input",
+          "Name": "sLanguage",
+          "Type": "STRING"
+        }
+      ]
+    }
+  ]
+}

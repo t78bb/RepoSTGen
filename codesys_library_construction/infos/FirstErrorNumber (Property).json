@@ -1,0 +1,8 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "FirstErrorNumber (Property)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_Module/pou-Module/ErrorHandling/FirstErrorNumber.html",
+  "page_title": "Module.FirstErrorNumber (PROP)",
+  "text": "\nPROPERTY FirstErrorNumber : UINT",
+  "tables": []
+}

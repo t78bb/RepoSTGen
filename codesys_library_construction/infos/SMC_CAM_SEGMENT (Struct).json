@@ -1,0 +1,8 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_CAM_SEGMENT (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/DataTypes/CAM/CamSegment/SMC_CAM_SEGMENT.html",
+  "page_title": "SMC_CAM_SEGMENT (STRUCT)",
+  "text": "\nTYPE SMC_CAM_SEGMENT : STRUCT\nA generic segment description",
+  "tables": []
+}

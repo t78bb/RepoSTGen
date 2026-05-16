@@ -1,0 +1,8 @@
+{
+  "library": "AlarmManager",
+  "title": "IAlarmHandler2 (Interface)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/IAlarmHandler2.html",
+  "page_title": "IAlarmHandler2 (ITF)",
+  "text": "\nINTERFACE IAlarmHandler2 EXTENDS\nIAlarmHandler\nThis is an extension of the IAlarmHandler interface, that provides access to the\nalarms, that are currently active.\nMethods:\nGetActiveAlarms\nGetAlarmsFromStorage\nGetCountAlarmsFromStorage\nRegisterClient\nUnregisterClient\nAcknowledgeAll\n, inherited from\nIAlarmHandler\nAcknowledgeAllOfGroup\n, inherited from\nIAlarmHandler\nAcknowledgeOneOfGroup\n, inherited from\nIAlarmHandler\nRaiseEvent\n, inherited from\nIAlarmHandler\nStructure:\nGetActiveAlarms (Method)\nGetAlarmsFromStorage (Method)\nGetCountAlarmsFromStorage (Method)\nRegisterClient (Method)\nUnregisterClient (Method)",
+  "tables": []
+}

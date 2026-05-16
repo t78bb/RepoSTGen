@@ -1,0 +1,72 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_GroupReadSetAcceleration (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/Diagnostics/SMC_GroupReadSetAcceleration.html",
+  "page_title": "SMC_GroupReadSetAcceleration (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_GroupReadSetAcceleration\nThis function block returns the set-acceleration of an axis group\nin the selected coordinate system.\nTypically, this will be the set-acceleration from the end of the previous\ncycle.  In order to obtain the set-acceleration from the end of the current\ncycle,\nSMC_GroupUpdate\nhas to be called before this function block,\nor a\nTimeOffset\nequal to the task interval has to be supplied.\nThis is an administrative FB, since no movement is generated.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "AxisGroup",
+          "Type": "AXIS_GROUP_REF_SM3",
+          "Comment": "Reference to a group of axes"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Enable",
+          "Type": "BOOL",
+          "Comment": "Get the acceleration in the selected coordinate system of the\naxis group continuously while enabled"
+        },
+        [
+          "CoordSystem",
+          "SMC_COORD_SYSTEM",
+          "Applicable coordinate system"
+        ],
+        [
+          "TimeOffset",
+          "LREAL",
+          "The time offset in seconds when to evaluate the acceleration.\nRelative to the start of the current cycle.\nMust be in [0,fPlanningForecastDuration].fPlanningForecastDurationcan be configured usingSMC_TuneCPKernel.Time offsets > 0 are only supported ifthe offset does not exceed theCurrentPlanningForecastreported byMC_GroupReadStatus, andMC_GroupHalt/MC_GroupStop/MC_GroupInterruptare not active."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Valid",
+          "Type": "BOOL",
+          "Comment": "TRUEif valid outputs are available"
+        },
+        [
+          "Busy",
+          "BOOL",
+          "The FB is not finished"
+        ],
+        [
+          "Error",
+          "BOOL",
+          "Signals that an error has occurred within the function block"
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ],
+        [
+          "Acceleration",
+          "SMC_POS_REF",
+          "Current acceleration of the group.  If a cartesian coordinate system is\nselected, Acceleration.c contains the cartesian acceleration:\n(X,Y,Z) is the acceleration vector in u/sÂ², (A,B,C) is the angular acceleration\naround the x, y, z axis in Â°/sÂ² ."
+        ],
+        [
+          "AdditionalAxesAccelerations",
+          "SMC_ADDITIONAL_AXES_VALUES_ARRAY",
+          "Current accelerations of the groupâs additional axes."
+        ]
+      ]
+    }
+  ]
+}

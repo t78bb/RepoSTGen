@@ -1,0 +1,71 @@
+{
+  "library": "DNP3",
+  "title": "OutstationConfigurationIP (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/DNP3/Current/DNP3/Function-Blocks/Outstation/OutstationConfigurationIP.html",
+  "page_title": "OutstationConfigurationIP (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL OutstationConfigurationIP EXTENDS\nOutstationConfiguration\nIMPLEMENTS IOutstationConfigurationIP\nFunction block representing an Outstation IP configuration.\nAn Outstation needs to be configured regarding its\noutstation address\noptional validate a given master address\neither IP- or COM-settings\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment",
+        "Inherited from"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "address",
+          "Type": "UINT",
+          "Initial": "0",
+          "Comment": "The outstation address.",
+          "Inherited from": "OutstationConfiguration"
+        },
+        [
+          "name",
+          "STRING",
+          "",
+          "The outstation name.",
+          "OutstationConfiguration"
+        ],
+        [
+          "validateMaster",
+          "BOOL",
+          "FALSE",
+          "Validate the master address. This allows only the master\nwith âmasterAddressâ a connection.",
+          "OutstationConfiguration"
+        ],
+        [
+          "masterAddress",
+          "UINT",
+          "0",
+          "The master address which is allowed to connect.",
+          "OutstationConfiguration"
+        ],
+        [
+          "enableUnsolicitedResponse",
+          "BOOL",
+          "FALSE",
+          "Enable or disable the unsolicited responses using a default configuration represented by defaults provided by CmpDNP3OutstationSessionConfigUnsolicitedResponse.\nIf disabled the client will not be able to enable them.",
+          "OutstationConfiguration"
+        ],
+        [
+          "ipAddress",
+          "STRING",
+          "â0.0.0.0â",
+          "The IP address used by the outstation. 0.0.0.0 will bind to any available IP addressETHdeviceHelpercan be used to select and configure a CODESYS Ethernet adapter and provide its IP address for localIP",
+          ""
+        ],
+        [
+          "port",
+          "UINT",
+          "20000",
+          "The port the outstation is reachable.",
+          ""
+        ]
+      ]
+    }
+  ]
+}

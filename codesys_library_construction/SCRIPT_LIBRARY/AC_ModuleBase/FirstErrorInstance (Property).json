@@ -1,0 +1,8 @@
+{
+  "library": "AC_ModuleBase",
+  "title": "FirstErrorInstance (Property)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_ModuleBase/Current/AC_Module/pou-Module/ErrorHandling/FirstErrorInstance.html",
+  "page_title": "Module.FirstErrorInstance (PROP)",
+  "text": "\nPROPERTY FirstErrorInstance :\nIModule\nreturns the interface of the module instance that has caused the first error.\n0 means: the error occured in this module instance or no error has occured.",
+  "tables": []
+}

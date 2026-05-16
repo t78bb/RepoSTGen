@@ -1,0 +1,47 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_GroupEventLogging (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/AdministrativeConfiguration/AxisGroup/SMC_GroupEventLogging.html",
+  "page_title": "SMC_GroupEventLogging (FB)",
+  "text": "\nFUNCTION_BLOCK FINAL SMC_GroupEventLogging\nThis FB is used to turn on event logging for axis group events.\nAs soon as event logging is turned on, information messages will be logged\non the actions that the axis group performs. E.g. when a movement starts and\nends or an axis or path override changes.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "AxisGroup",
+          "Type": "AXIS_GROUP_REF_SM3",
+          "Comment": "Reference to a group of axes"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Enable",
+          "Type": "BOOL",
+          "Comment": "Enables event logging"
+        },
+        {
+          "Scope": "Output",
+          "Name": "Enabled",
+          "Type": "BOOL",
+          "Comment": "Signals whether axis group events are logged"
+        },
+        [
+          "Error",
+          "BOOL",
+          "Signals that an error has occurred within the function block"
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "library": "SM3_Robotics",
+  "title": "SMC_GroupSetDynamics (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Robotics/Current/SM3_Robotics/POUs/AdministrativeConfiguration/Dynamics/SMC_GroupSetDynamics.html",
+  "page_title": "SMC_GroupSetDynamics (FB)",
+  "text": "\nFUNCTION_BLOCK SMC_GroupSetDynamics\nThis function block allows setting a dynamic model for an axis group.\nSetting a dynamic model allows the axis group to calculate and limit\naxis torques.\nSetting or changing the dynamic model is only allowed while the axis\ngroup is disabled.\nSee SMC_ChangeDynamicLimits in SM3_Basic for setting axis torque limits.\nNote\nA load (see\nSMC_GroupSetLoad\n) will be reset when executing this\nfunction block.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "AxisGroup",
+          "Type": "AXIS_GROUP_REF_SM3",
+          "Comment": "Reference to a group of axes"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Comment": "The dynamic model is set on a rising edge"
+        },
+        [
+          "Dynamics",
+          "SMDYN.ISMDynamics",
+          "The dynamic model.  Setting it to 0 removes the current\ndynamic model and disables calculation and limitation of\naxis torques."
+        ],
+        [
+          "GravitationalAcceleration",
+          "SMC_VECTOR3D",
+          "The gravitational acceleration, defined in the MCS in u/s^2."
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Done",
+          "Type": "BOOL",
+          "Comment": "The dynamic model has been set successfully"
+        },
+        [
+          "Busy",
+          "BOOL",
+          "The function block is not finished"
+        ],
+        [
+          "Error",
+          "BOOL",
+          "Signals that an error has occurred within the function block"
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

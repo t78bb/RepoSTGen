@@ -1,0 +1,62 @@
+{
+  "library": "SM3_Basic",
+  "title": "MC_SetPosition (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/AdministrativeConfiguration/MC_SetPosition.html",
+  "page_title": "MC_SetPosition (FB)",
+  "text": "\nFUNCTION_BLOCK MC_SetPosition\nThis function block shifts the coordinate system of an axis.\nBoth the set and actual position of the axis are offset by\nthe same amount.  No movement is caused by this operation.\nThis recalibration can be used, for instance, for referencing an axis.\nThe function block can be called while the axis is moving.\nIn this case, the resulting movement of the drive is not affected.\nThe same set positions in increments are sent to the drive as if\nMC_SetPosition had not been called.  Only the set positions in\ntechnical units (fSetPosition) are shifted.\nImportant\nABSOLUTE (mode = FALSE) means that the new axis position is the value\nof input\nPosition\n.\nRELATIVE (mode = TRUE) means that the new axis position is the sum of\nthe current axis position and the value of input\nPosition\n.\nNote\nThis function block does not affect the trajectory of already commanded\nmovements. However, the target position of absolute movements commanded\nafter MC_SetPosition will be considered relative to the shifted\ncoordinate system.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Inout",
+          "Name": "Axis",
+          "Type": "AXIS_REF_SM3",
+          "Comment": "Reference to axis"
+        },
+        {
+          "Scope": "Input",
+          "Name": "Execute",
+          "Type": "BOOL",
+          "Comment": "Rising edge: Starts the execution of the function block."
+        },
+        [
+          "Position",
+          "LREAL",
+          "Position unit [u] (means âDistanceâ ifMode= RELATIVE)"
+        ],
+        [
+          "Mode",
+          "BOOL",
+          "TRUE= RELATIVE,FALSE= ABSOLUTE"
+        ],
+        {
+          "Scope": "Output",
+          "Name": "Done",
+          "Type": "BOOL",
+          "Comment": "TRUE: The position has been shifted."
+        },
+        [
+          "Busy",
+          "BOOL",
+          "TRUE: Execution of function block is not finished yet."
+        ],
+        [
+          "Error",
+          "BOOL",
+          "TRUE: An error has occurred within the function block."
+        ],
+        [
+          "ErrorID",
+          "SMC_ERROR",
+          "Error identification"
+        ]
+      ]
+    }
+  ]
+}

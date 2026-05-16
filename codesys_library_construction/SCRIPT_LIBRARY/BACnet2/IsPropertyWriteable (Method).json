@@ -1,0 +1,31 @@
+{
+  "library": "BACnet2",
+  "title": "IsPropertyWriteable (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/BACnetObjects/base/pou-BACnetObjectBase/IsPropertyWriteable.html",
+  "page_title": "BACnetObjectBase.IsPropertyWriteable (METH)",
+  "text": "\nMETHOD IsPropertyWriteable : BOOL\nReturns whether the specified BACnet-Property of this BACnet-Object (propID) is client side writeable or only client side readable.\nThis access restrictions only hold for client side access and not for the functions used in this FB (i.e. SetPropertyInstance).\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "IsPropertyWriteable",
+          "Type": "BOOL",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "propID",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_ID",
+          "Comment": "The property ID for which the writeability shall be\ndetermined."
+        }
+      ]
+    }
+  ]
+}

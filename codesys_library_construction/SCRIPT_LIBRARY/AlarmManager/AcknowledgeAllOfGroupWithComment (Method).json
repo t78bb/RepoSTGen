@@ -1,0 +1,36 @@
+{
+  "library": "AlarmManager",
+  "title": "AcknowledgeAllOfGroupWithComment (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AlarmManager/Current/Interfaces/pou-IAlarmHandler6/AcknowledgeAllOfGroupWithComment.html",
+  "page_title": "IAlarmHandler6.AcknowledgeAllOfGroupWithComment (METH)",
+  "text": "\nMETHOD AcknowledgeAllOfGroupWithComment\nAcknowledges all active alarms of an alarm group, whose alarm class hasnât the flag\nâacknowledge separatelyâ set. Optionally a comment and the user id can be provided.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "usiAlarmGroupID",
+          "Type": "ALARMGROUP_ID",
+          "Comment": "The ID of the alarm group"
+        },
+        {
+          "Scope": "Inout Const",
+          "Name": "wsComment",
+          "Type": "WSTRING",
+          "Comment": "The comment for the state transition"
+        },
+        [
+          "wsUserId",
+          "WSTRING",
+          "The user who provides the comment"
+        ]
+      ]
+    }
+  ]
+}

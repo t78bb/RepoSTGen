@@ -1,0 +1,42 @@
+{
+  "library": "BACnet2",
+  "title": "GetPropertyInstanceWithContentBuffer (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet2/Current/BACnetObjects/base/pou-BACnetObjectBase/GetPropertyInstanceWithContentBuffer.html",
+  "page_title": "BACnetObjectBase.GetPropertyInstanceWithContentBuffer (METH)",
+  "text": "\nMETHOD GetPropertyInstanceWithContentBuffer : CmpBACnet.IEC_BACNET_STATUS\nGets the value/content of a specified BACnet-Property (ePropertyID) independend of any client side acces restrictions.\nThe specified index should be set to CmpBACnet.CONSTANT.BACNET_ENTIRE_ARRAY, meaning that all elements of a List or Array in a BACnet-Property are retrieved.\nOtherwise an index counting from 1 specifies a element of a BACnetARRAY property.\nThe IEC_BACNET_PEROPERTY_CONTENTS variable propertyContents.Buffer.pBuffer is requested to be initialized with a properly sized memory\nblock, which is able to hold all the data of the BACnet-Property, so the stack doesnt allocate propertyContents.Buffer.pBuffer.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetPropertyInstanceWithContentBuffer",
+          "Type": "CmpBACnet.IEC_BACNET_STATUS",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "ePropertyID",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_ID",
+          "Comment": "The id of the property to get."
+        },
+        [
+          "nIndex",
+          "CmpBACnet.IEC_BACNET_ARRAY_INDEX",
+          "Counting from 1. See documentation of\nCmpBACnet.BACnetRetrievePropertyInstance."
+        ],
+        {
+          "Scope": "Inout",
+          "Name": "propertyContents",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_CONTENTS",
+          "Comment": "Initialized or not initalized structure holding the read\nProperty-Data (see documentation above)."
+        }
+      ]
+    }
+  ]
+}

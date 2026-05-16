@@ -1,0 +1,37 @@
+{
+  "library": "String Functions",
+  "title": "COUNT (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Functions/Current/StrFunc/Functions/COUNT.html",
+  "page_title": "COUNT (FUN)",
+  "text": "\nFUNCTION COUNT : UDINT\nReturns the number of\nrunes\nof a string\nSee function\nLEN\nfor calculating the number of bytes\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "COUNT",
+          "Type": "UDINT",
+          "Comment": ""
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfString",
+          "Type": "IString",
+          "Comment": "String to be analyzed"
+        },
+        {
+          "Scope": "Output",
+          "Name": "eErrorID",
+          "Type": "ERROR",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

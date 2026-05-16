@@ -1,0 +1,31 @@
+{
+  "library": "AC_Alarming",
+  "title": "AcknowledgeAllAlarmsOfModule (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/AC_Alarming/Current/ExtenderFB/pou-IACAlarmExtender3/AcknowledgeAllAlarmsOfModule.html",
+  "page_title": "IACAlarmExtender3.AcknowledgeAllAlarmsOfModule (METH)",
+  "text": "\nMETHOD AcknowledgeAllAlarmsOfModule : BOOL\nThis method acknowledges all active alarms that belong to\nmodule instance identified by\nitfModule\n.\nNote\nFor using this method one must activate the option to sort\nalarms per module in the options of the Alarm-Generator.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "AcknowledgeAllAlarmsOfModule",
+          "Type": "BOOL",
+          "Comment": "The return value indicates if it was possible to acknowledge\nthe alarms that belong toitfModule."
+        },
+        {
+          "Scope": "Input",
+          "Name": "itfModule",
+          "Type": "AC.IModule",
+          "Comment": "The module whose alarms shall be acknowledged."
+        }
+      ]
+    }
+  ]
+}

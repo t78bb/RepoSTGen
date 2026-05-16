@@ -1,0 +1,8 @@
+{
+  "library": "String Segments",
+  "title": "IRangeProvider (Interface)",
+  "url": "https://content.helpme-codesys.com/en/libs/String Segments/Current/Strings/Interfaces/IRangeProvider.html",
+  "page_title": "IRangeProvider (ITF)",
+  "text": "\nINTERFACE IRangeProvider EXTENDS __SYSTEM.IQueryInterface\nAn\nIStringRepresentation\ninstance can additionally implement this interface.\nThis way it is possible to iterate over its content rune by rune\nSee :\nIRange\nMethods:\nGetRange\nStructure:\nGetRange (Method)",
+  "tables": []
+}

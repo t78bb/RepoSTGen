@@ -1,0 +1,8 @@
+{
+  "library": "SM3_Basic",
+  "title": "SMC_CAMSWITCH_TRACKS_EVENTS (Alias)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_Basic/Current/SM3_Basic/POUs/Additional/SMC_CAMSWITCH_TRACKS_EVENTS.html",
+  "page_title": "SMC_CAMSWITCH_TRACKS_EVENTS (ALIAS)",
+  "text": "\nTYPE SMC_CAMSWITCH_TRACKS_EVENTS : ARRAY[1..LibParams.gc_SMC_DIGITAL_CAM_SWITCH_NUM_TRACKS] OF SMC_CAMSWITCH_TOGGLE_EVENTS\nThe list of tracks with a list of events per track.\nUsed by\nSMC_DigitalCamSwitch_HighPrecision",
+  "tables": []
+}

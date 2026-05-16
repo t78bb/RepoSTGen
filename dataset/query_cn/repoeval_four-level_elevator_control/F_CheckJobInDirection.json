@@ -1,0 +1,4 @@
+{
+  "requirement": "这个代码意在实现检查电梯在指定方向的楼层范围内是否有需要停靠的楼层。",
+  "provide_code": "FUNCTION F_CheckJobInDirection : BOOL\nVAR_INPUT\n\tnStartFloor\t\t:\tUSINT;\t\t//起始楼层\n\tnEndFloor\t\t:\tUSINT;\t\t//结束楼层\n\tbIncreasing\t\t:\tBOOL;\t\t//TRUE=向上检查（递增），FALSE=向下检查（递减）\nEND_VAR"
+}

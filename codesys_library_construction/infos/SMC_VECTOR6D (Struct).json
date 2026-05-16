@@ -1,0 +1,55 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_VECTOR6D (Struct)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_Data-types/SoftMotion-CNC/SMC_VECTOR6D.html",
+  "page_title": "SMC_VECTOR6D (STRUCT)",
+  "text": "\nTYPE SMC_VECTOR6D : STRUCT\nThis data type describes a six-dimensional vector.\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Type",
+        "Initial",
+        "Comment"
+      ],
+      "rows": [
+        {
+          "Name": "dX",
+          "Type": "LREAL",
+          "Initial": "0",
+          "Comment": "X-coordinate of vector"
+        },
+        {
+          "Name": "dY",
+          "Type": "LREAL",
+          "Initial": "0",
+          "Comment": "Y-coordinate of vector"
+        },
+        {
+          "Name": "dZ",
+          "Type": "LREAL",
+          "Initial": "0",
+          "Comment": "Z-coordinate of vector"
+        },
+        {
+          "Name": "dA",
+          "Type": "LREAL",
+          "Initial": "0",
+          "Comment": ""
+        },
+        {
+          "Name": "dB",
+          "Type": "LREAL",
+          "Initial": "0",
+          "Comment": ""
+        },
+        {
+          "Name": "dC",
+          "Type": "LREAL",
+          "Initial": "0",
+          "Comment": ""
+        }
+      ]
+    }
+  ]
+}

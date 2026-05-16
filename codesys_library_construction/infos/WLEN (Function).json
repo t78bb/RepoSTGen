@@ -1,0 +1,28 @@
+{
+  "library": "Standard64",
+  "title": "WLEN (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/Standard64/Current/String-Functions/WLEN.html",
+  "page_title": "WLEN (FUN)",
+  "text": "\nFUNCTION WLEN : INT\nString length function.\nReturns the number of wcharacters in STR.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "WLEN",
+          "Type": "INT"
+        },
+        {
+          "Scope": "Input",
+          "Name": "STR",
+          "Type": "WSTRING(255)"
+        }
+      ]
+    }
+  ]
+}

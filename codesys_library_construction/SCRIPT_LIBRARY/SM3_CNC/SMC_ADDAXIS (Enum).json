@@ -1,0 +1,73 @@
+{
+  "library": "SM3_CNC",
+  "title": "SMC_ADDAXIS (Enum)",
+  "url": "https://content.helpme-codesys.com/en/libs/SM3_CNC/Current/SM_CNC_Data-types/SoftMotion-CNC/SMC_ADDAXIS.html",
+  "page_title": "SMC_ADDAXIS (ENUM)",
+  "text": "\nTYPE SMC_ADDAXIS :\n",
+  "tables": [
+    {
+      "headers": [
+        "Name",
+        "Initial"
+      ],
+      "rows": [
+        {
+          "Name": "ADDAXIS_NONE",
+          "Initial": "2#0"
+        },
+        {
+          "Name": "ADDAXIS_X",
+          "Initial": "2#1"
+        },
+        {
+          "Name": "ADDAXIS_Y",
+          "Initial": "2#10"
+        },
+        {
+          "Name": "ADDAXIS_Z",
+          "Initial": "2#100"
+        },
+        {
+          "Name": "ADDAXIS_A",
+          "Initial": "2#1000"
+        },
+        {
+          "Name": "ADDAXIS_B",
+          "Initial": "2#10000"
+        },
+        {
+          "Name": "ADDAXIS_C",
+          "Initial": "2#100000"
+        },
+        {
+          "Name": "ADDAXIS_P",
+          "Initial": "2#1000000"
+        },
+        {
+          "Name": "ADDAXIS_Q",
+          "Initial": "2#10000000"
+        },
+        {
+          "Name": "ADDAXIS_U",
+          "Initial": "2#100000000"
+        },
+        {
+          "Name": "ADDAXIS_V",
+          "Initial": "2#1000000000"
+        },
+        {
+          "Name": "ADDAXIS_W",
+          "Initial": "2#10000000000"
+        },
+        {
+          "Name": "ADDAXIS_A6",
+          "Initial": "2#100000000000"
+        },
+        {
+          "Name": "ADDAXIS_ALL",
+          "Initial": "16#FFFF"
+        }
+      ]
+    }
+  ]
+}

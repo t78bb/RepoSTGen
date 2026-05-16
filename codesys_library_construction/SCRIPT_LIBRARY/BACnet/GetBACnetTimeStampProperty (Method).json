@@ -1,0 +1,28 @@
+{
+  "library": "BACnet",
+  "title": "GetBACnetTimeStampProperty (Method)",
+  "url": "https://content.helpme-codesys.com/en/libs/BACnet/Current/BACnetObjects/pou-IBACnetObjectBase/Utilities/GetBACnetTimeStampProperty.html",
+  "page_title": "IBACnetObjectBase.GetBACnetTimeStampProperty (METH)",
+  "text": "\nMETHOD GetBACnetTimeStampProperty :\nBACnetTimeStamp\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "GetBACnetTimeStampProperty",
+          "Type": "BACnetTimeStamp"
+        },
+        {
+          "Scope": "Input",
+          "Name": "propID",
+          "Type": "CmpBACnet.IEC_BACNET_PROPERTY_ID"
+        }
+      ]
+    }
+  ]
+}

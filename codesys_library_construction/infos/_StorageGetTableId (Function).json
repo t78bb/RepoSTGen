@@ -1,0 +1,38 @@
+{
+  "library": "3S Storage",
+  "title": "_StorageGetTableId (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/3S Storage/Current/_3SStorage/External/Functions/Storage/_StorageGetTableId.html",
+  "page_title": "_StorageGetTableId (FUN)",
+  "text": "\nFUNCTION _StorageGetTableId : STO.ERROR\n= SignatureFlag.SimulationExternal = link even in simulation mode\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "_StorageGetTableId",
+          "Type": "STO.ERROR"
+        },
+        {
+          "Scope": "Input",
+          "Name": "hStorage",
+          "Type": "STORAGE_TYPE"
+        },
+        {
+          "Scope": "Inout",
+          "Name": "sTable",
+          "Type": "STRING"
+        },
+        {
+          "Scope": "Output",
+          "Name": "idTable",
+          "Type": "CAA.IDENT"
+        }
+      ]
+    }
+  ]
+}

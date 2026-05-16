@@ -1,0 +1,365 @@
+{
+  "library": "SML_Basic",
+  "title": "Axis_REF_SML (FunctionBlock)",
+  "url": "https://content.helpme-codesys.com/en/libs/SML_Basic/Current/Base/Axis_REF_SML.html",
+  "page_title": "Axis_REF_SML (FB)",
+  "text": "Additional\nSML_ChangeAxisConfig (FunctionBlock)\nSML_ReinitDrive (FunctionBlock)\nSML_SetOpmode (FunctionBlock)\nSML_StartupDrive (FunctionBlock)\nBase\nAxis_REF_SML (FunctionBlock)\nConfig\nReadStandardConfigParameters (Method)\nReinitAxis (Method)\nError\nSML_ClearFBError (Function)\nSML_ErrorText (Function)\nSML_Language (Enum)\nSML_AXIS_STATE (Enum)\nSML_Constants (GVL)\nSML_ERROR (Enum)\nSML_FBError (Struct)\nSML_Globals (GVL)\nSML_MOVEMENTTYPE (Enum)\nSML_OPMODE (Enum)\nSML_Ramptype (Enum)\nGlobalTextList (GlobalTextList)\nLibrary Information\nGetLibVersion (Function)\nGetLibVersionNumber (Function)\nIsLibReleased (Function)\nPLCopen\nMC_Halt_SML (FunctionBlock)\nMC_Home_SML (FunctionBlock)\nMC_MoveAbsolute_SML (FunctionBlock)\nMC_MoveRelative_SML (FunctionBlock)\nMC_MoveVelocity_SML (FunctionBlock)\nMC_Power_SML (FunctionBlock)\nMC_ReadBoolParameter_SML (FunctionBlock)\nMC_ReadParameter_SML (FunctionBlock)\nMC_ReadStatus_SML (FunctionBlock)\nMC_Reset_SML (FunctionBlock)\nMC_Stop_SML (FunctionBlock)\nMC_WriteBoolParameter_SML (FunctionBlock)\nMC_WriteParameter_SML (FunctionBlock)\nVisu_Templates\nHelpers\nTextListForCombobox_SML_MOVEMENTTYPE (TextList)\nTextListForCombobox_SML_OPMODE (TextList)\nStartupDrive\nFile and Project Information\nLibrary Reference\n3SLicense\nLibrary Identification\nLibrary Properties\nCmpApp\nLibrary Identification\nLibrary Properties\nCmpErrors2 Interfaces\nLibrary Identification\nLibrary Properties\nCmpLog\nLibrary Identification\nLibrary Properties\nCmpSchedule\nLibrary Identification\nLibrary Properties\nComponent Manager\nLibrary Identification\nLibrary Properties\nIoStandard\nLibrary Identification\nLibrary Properties\nSM3_Math\nLibrary Identification\nLibrary Properties\nSM3_Shared\nLibrary Identification\nLibrary Properties\nSM3_StringUtils\nLibrary Identification\nLibrary Properties\nStandard\nLibrary Identification\nLibrary Properties\nSysCpuHandling\nLibrary Identification\nLibrary Properties\nSysMem\nLibrary Identification\nLibrary Properties\nSysTarget\nLibrary Identification\nLibrary Properties\nSysTypes2 Interfaces\nLibrary Identification\nLibrary Properties\nVisuElem3DPath\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElemCamDisplayer\nLibrary Identification\nLibrary Properties\nLibrary Parameter\nVisuElemMeter\nLibrary Identification\nLibrary Properties\nVisuElemTextEditor\nLibrary Identification\nLibrary Properties\nVisuElemTrace\nLibrary Identification\nLibrary Properties\nVisuElems\nLibrary Identification\nLibrary Properties\nVisuElemsAlarm\nLibrary Identification\nLibrary Properties\nVisuElemsDateTime\nLibrary Identification\nLibrary Properties\nVisuElemsSpecialControls\nLibrary Identification\nLibrary Properties\nVisuElemsWinControls\nLibrary Identification\nLibrary Properties\nVisuInputs\nLibrary Identification\nLibrary Properties\nVisuNativeControl\nLibrary Identification\nLibrary Properties\nSML_Basic\nDocs\n»\nBase\n»\nAxis_REF_SML (FB)\nAxis_REF_SML (FB)\nÂ¶\nFUNCTION_BLOCK Axis_REF_SML EXTENDS Axis_REF_Base_SML\nThe Axis_REF_SML function block serves as the interface for all public\nfunction blocks that work on the axis.  It contains the parameters and\nother members needed by every Axis_REF implementation.\nInOut:\nScope\nName\nType\nInitial\nComment\nInherited from\nInput\nfbeFBError\nARRAY\n[0..(g_SML_NUMBER_FB_ERRORS\n- 1)] OF\nSML_FBERROR\nFB error Id numbers, parameter 1035\nAxis_REF_Base_SML\nnAxisState\nSML_AXIS_STATE\nThe axis state, parameter 1000\neSetOpmode\nSML_OPMODE\nThe set opmode, parameter 2000\neActOpmode\nSML_OPMODE\nThe actual opmode, parameter 2001\nbRegulatorOn\nBOOL\nRegulator (power) on/off, parameter 1010\nbDriveStart\nBOOL\nDeactivate (\nTRUE\n) or activate (\nFALSE\n) software\nhalt/quickstop, parameter 1011\nbCommunication\nBOOL\nWhether communication is OK, parameter 1012\nwCommunicationState\nWORD\n16#FFFF\nThe state of the communication state machine, parameter 1013\nuiDriveInterfaceError\nUINT\nDrive interface error number, parameter 1014\nstrDriveInterfaceError\nSTRING\nbRegulatorRealState\nBOOL\nEffective state of the power stage of the axis, parameter\n1015\nbDriveStartRealState\nBOOL\nEffective state of the software halt/quickstop of the axis\n(\nTRUE\n: deactivated,\nFALSE\n: activated), parameter\n1016\nbError\nBOOL\nAxis error, parameter 1030\nbErrorAckn\nBOOL\nAcknowledge error (fault reset), parameter 1032\ndwRatioTechUnitsDenom\nDWORD\nThe number of increments [inc] that correspond to\niRatioTechUnits\nunits, parameter 1051\niRatioTechUnitsNum\nDINT\nThe number of technical units [u] that correspond to\ndwRatioTechUnitsDenom\nincrements, parameter 1052\nfScalefactor\nLREAL\nThe factor by which the position in [u] is multiplied to\nconvert to axis units, [inc/u], parameter 1054\nfScalefactorVel\nLREAL\nThe factor by which the velocity in [u/s] is multiplied to\nco convert to axis units, [?/u], parameter 1055. Built from\nfScalefactor\n(1054) and\nfConstVelFactor\n(2210)\nduring initialization. May be overwritten by the user.\nfScalefactorAcc\nLREAL\nThe factor by which the set acceleration is multiplied to co\nconvert to axis units, [?/u], parameter 1056. Built from\nfScalefactor\n(1054) and\nfConstAccFactor\n(2220)\nduring initialization. May be overwritten by the user.\niMovementType\nSML_MovementType\nThe movement type:\nSML_MT_MODULO\nor\nSML_MT_FINITE\n,\nparameter 1060\nfModuloPeriodU\nLREAL\nLength of a modulo period in [u], parameter 1061\neRampType\nSML_RAMPTYPE\nVelocity ramp type, parameter 1062\nfActPosition\nLREAL\nActual position in [u], only needed for modulo axes,\nparameter 1101\ndiActPosition\nDINT\nActual position in [inc], only needed for modulo axes,\nparameter 1109\nrpHomeOffset\nSML_RmtPrm\nThe home offset in [u], parameter 1211\ndwModuloOffsetInt\nDWORD\nOffset of start of closest modulo period, integral part,\nparameter 1230\nudiModuloPeriodIncInt\nUDINT\nLength of a modulo period in [inc], integral part, parameter\n1231\nudiModuloPeriodIncNum\nUDINT\nLength of a modulo period in [inc], numerator of fractional\npart, parameter 1234\nudiModuloOffsetNum\nUDINT\nOffset of start of closest modulo period, numerator of\nfractional part, parameter 1235\nbNewSetPoint\nBOOL\nTells the axis that a new set point has been given, only\nused in position mode, parameter 2010\nbRelativeSetPoint\nBOOL\nTells the axis whether the set point is relative, only used\nin position mode, parameter 2011\nbStartHoming\nBOOL\nTells the axis to start homing, only used in homing mode,\nparameter 2012\nbHalt\nBOOL\nTells the axis to halt using a quick stop, used in all\nmodes, parameter 2013\nbSetPointAck\nBOOL\nSet if the new set point has been acknowledged, only used in\nposition mode, parameter 2020\nbTargetReached\nBOOL\nSet if the target is reached, only set in position and\nhoming mode, parameter 2021\nbInVelocity\nBOOL\nSet if it has reached the commanded velocity, only set in\nvelocity mode, parameter 2022\nbHomingDone\nBOOL\nSet if homing has been performed successfully (implies\nbTargetReached), only set in homing mode, parameter 2023\nbErrorInOperation\nBOOL\nSet if an error occured, used in all modes, parameter 2024\nrpTargetPosDist\nSML_RmtPrm\nThe target position or distance in [u],   parameter 2030\nrpTargetVelocity\nSML_RmtPrm\nThe target velocity in [u/s],  used in velocity mode,\nparameter 2040\nrpProfileVelocity\nSML_RmtPrm\nThe profile velocity in [u/s], used in position mode,\nparameter 2050\nrpProfileAcceleration\nSML_RmtPrm\nThe profile acceleration in [u/sÂ²],   parameter 2060\nrpProfileDeceleration\nSML_RmtPrm\nThe profile deceleration in [u/sÂ²],   parameter 2070\nrpQuickStopDeceleration\nSML_RmtPrm\nThe deceleration for a quick stop in [u/sÂ²], parameter 2090\nfModuloOffsetInc\nLREAL\nThe modulo offset in increments, built from\ndwModuloOffsetInt\nand\nudiModuloOffsetNum\n, parameter\n2100\nbInvertHomeOffset\nBOOL\nWhether the home offset is inverted when writing it to or\nreading it from the drive, parameter 2200\nfConstVelFactor\nLREAL\nA constant factor multiplied to the velocity scale factor\n(parameter 1055), dimensionless.\nExample: the drive expects the velocity in inc/(64*s) instead of\ninc/s. Then this parameter should be set to 64.\nThe value is only used during initialization to compute\nfScalefactorVel\n(1055). Parameter 2210.\nfConstAccFactor\nLREAL\nA constant factor multiplied to the acceleration scale factor\n(parameter 1056), dimensionless.\nExample: the drive expects the velocity in 16*inc/(s) instead of\ninc/s. Then this parameter should be set to 1/16.\nThe value is only used during initialization to compute\nfScalefactorAcc\n(1056). Parameter 2220.\nusiLogicalDevice\nUSINT\nThe 0-based logical device index (6000)\nMethods:\nReadStandardConfigParameters\nReinitAxis\nStructure:\nConfig\nReadStandardConfigParameters (Method)\nReinitAxis (Method)",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type",
+        "Initial",
+        "Comment",
+        "Inherited from"
+      ],
+      "rows": [
+        {
+          "Scope": "Input",
+          "Name": "fbeFBError",
+          "Type": "ARRAY\n[0..(g_SML_NUMBER_FB_ERRORS\n- 1)] OFSML_FBERROR",
+          "Initial": "",
+          "Comment": "FB error Id numbers, parameter 1035",
+          "Inherited from": "Axis_REF_Base_SML"
+        },
+        [
+          "nAxisState",
+          "SML_AXIS_STATE",
+          "",
+          "The axis state, parameter 1000",
+          ""
+        ],
+        [
+          "eSetOpmode",
+          "SML_OPMODE",
+          "",
+          "The set opmode, parameter 2000",
+          ""
+        ],
+        [
+          "eActOpmode",
+          "SML_OPMODE",
+          "",
+          "The actual opmode, parameter 2001",
+          ""
+        ],
+        [
+          "bRegulatorOn",
+          "BOOL",
+          "",
+          "Regulator (power) on/off, parameter 1010",
+          ""
+        ],
+        [
+          "bDriveStart",
+          "BOOL",
+          "",
+          "Deactivate (TRUE) or activate (FALSE) software\nhalt/quickstop, parameter 1011",
+          ""
+        ],
+        [
+          "bCommunication",
+          "BOOL",
+          "",
+          "Whether communication is OK, parameter 1012",
+          ""
+        ],
+        [
+          "wCommunicationState",
+          "WORD",
+          "16#FFFF",
+          "The state of the communication state machine, parameter 1013",
+          ""
+        ],
+        [
+          "uiDriveInterfaceError",
+          "UINT",
+          "",
+          "Drive interface error number, parameter 1014",
+          ""
+        ],
+        [
+          "strDriveInterfaceError",
+          "STRING",
+          "",
+          "",
+          ""
+        ],
+        [
+          "bRegulatorRealState",
+          "BOOL",
+          "",
+          "Effective state of the power stage of the axis, parameter\n1015",
+          ""
+        ],
+        [
+          "bDriveStartRealState",
+          "BOOL",
+          "",
+          "Effective state of the software halt/quickstop of the axis\n(TRUE: deactivated,FALSE: activated), parameter\n1016",
+          ""
+        ],
+        [
+          "bError",
+          "BOOL",
+          "",
+          "Axis error, parameter 1030",
+          ""
+        ],
+        [
+          "bErrorAckn",
+          "BOOL",
+          "",
+          "Acknowledge error (fault reset), parameter 1032",
+          ""
+        ],
+        [
+          "dwRatioTechUnitsDenom",
+          "DWORD",
+          "",
+          "The number of increments [inc] that correspond toiRatioTechUnitsunits, parameter 1051",
+          ""
+        ],
+        [
+          "iRatioTechUnitsNum",
+          "DINT",
+          "",
+          "The number of technical units [u] that correspond todwRatioTechUnitsDenomincrements, parameter 1052",
+          ""
+        ],
+        [
+          "fScalefactor",
+          "LREAL",
+          "",
+          "The factor by which the position in [u] is multiplied to\nconvert to axis units, [inc/u], parameter 1054",
+          ""
+        ],
+        [
+          "fScalefactorVel",
+          "LREAL",
+          "",
+          "The factor by which the velocity in [u/s] is multiplied to\nco convert to axis units, [?/u], parameter 1055. Built fromfScalefactor(1054) andfConstVelFactor(2210)\nduring initialization. May be overwritten by the user.",
+          ""
+        ],
+        [
+          "fScalefactorAcc",
+          "LREAL",
+          "",
+          "The factor by which the set acceleration is multiplied to co\nconvert to axis units, [?/u], parameter 1056. Built fromfScalefactor(1054) andfConstAccFactor(2220)\nduring initialization. May be overwritten by the user.",
+          ""
+        ],
+        [
+          "iMovementType",
+          "SML_MovementType",
+          "",
+          "The movement type:SML_MT_MODULOorSML_MT_FINITE,\nparameter 1060",
+          ""
+        ],
+        [
+          "fModuloPeriodU",
+          "LREAL",
+          "",
+          "Length of a modulo period in [u], parameter 1061",
+          ""
+        ],
+        [
+          "eRampType",
+          "SML_RAMPTYPE",
+          "",
+          "Velocity ramp type, parameter 1062",
+          ""
+        ],
+        [
+          "fActPosition",
+          "LREAL",
+          "",
+          "Actual position in [u], only needed for modulo axes,\nparameter 1101",
+          ""
+        ],
+        [
+          "diActPosition",
+          "DINT",
+          "",
+          "Actual position in [inc], only needed for modulo axes,\nparameter 1109",
+          ""
+        ],
+        [
+          "rpHomeOffset",
+          "SML_RmtPrm",
+          "",
+          "The home offset in [u], parameter 1211",
+          ""
+        ],
+        [
+          "dwModuloOffsetInt",
+          "DWORD",
+          "",
+          "Offset of start of closest modulo period, integral part,\nparameter 1230",
+          ""
+        ],
+        [
+          "udiModuloPeriodIncInt",
+          "UDINT",
+          "",
+          "Length of a modulo period in [inc], integral part, parameter\n1231",
+          ""
+        ],
+        [
+          "udiModuloPeriodIncNum",
+          "UDINT",
+          "",
+          "Length of a modulo period in [inc], numerator of fractional\npart, parameter 1234",
+          ""
+        ],
+        [
+          "udiModuloOffsetNum",
+          "UDINT",
+          "",
+          "Offset of start of closest modulo period, numerator of\nfractional part, parameter 1235",
+          ""
+        ],
+        [
+          "bNewSetPoint",
+          "BOOL",
+          "",
+          "Tells the axis that a new set point has been given, only\nused in position mode, parameter 2010",
+          ""
+        ],
+        [
+          "bRelativeSetPoint",
+          "BOOL",
+          "",
+          "Tells the axis whether the set point is relative, only used\nin position mode, parameter 2011",
+          ""
+        ],
+        [
+          "bStartHoming",
+          "BOOL",
+          "",
+          "Tells the axis to start homing, only used in homing mode,\nparameter 2012",
+          ""
+        ],
+        [
+          "bHalt",
+          "BOOL",
+          "",
+          "Tells the axis to halt using a quick stop, used in all\nmodes, parameter 2013",
+          ""
+        ],
+        [
+          "bSetPointAck",
+          "BOOL",
+          "",
+          "Set if the new set point has been acknowledged, only used in\nposition mode, parameter 2020",
+          ""
+        ],
+        [
+          "bTargetReached",
+          "BOOL",
+          "",
+          "Set if the target is reached, only set in position and\nhoming mode, parameter 2021",
+          ""
+        ],
+        [
+          "bInVelocity",
+          "BOOL",
+          "",
+          "Set if it has reached the commanded velocity, only set in\nvelocity mode, parameter 2022",
+          ""
+        ],
+        [
+          "bHomingDone",
+          "BOOL",
+          "",
+          "Set if homing has been performed successfully (implies\nbTargetReached), only set in homing mode, parameter 2023",
+          ""
+        ],
+        [
+          "bErrorInOperation",
+          "BOOL",
+          "",
+          "Set if an error occured, used in all modes, parameter 2024",
+          ""
+        ],
+        [
+          "rpTargetPosDist",
+          "SML_RmtPrm",
+          "",
+          "The target position or distance in [u],   parameter 2030",
+          ""
+        ],
+        [
+          "rpTargetVelocity",
+          "SML_RmtPrm",
+          "",
+          "The target velocity in [u/s],  used in velocity mode,\nparameter 2040",
+          ""
+        ],
+        [
+          "rpProfileVelocity",
+          "SML_RmtPrm",
+          "",
+          "The profile velocity in [u/s], used in position mode,\nparameter 2050",
+          ""
+        ],
+        [
+          "rpProfileAcceleration",
+          "SML_RmtPrm",
+          "",
+          "The profile acceleration in [u/sÂ²],   parameter 2060",
+          ""
+        ],
+        [
+          "rpProfileDeceleration",
+          "SML_RmtPrm",
+          "",
+          "The profile deceleration in [u/sÂ²],   parameter 2070",
+          ""
+        ],
+        [
+          "rpQuickStopDeceleration",
+          "SML_RmtPrm",
+          "",
+          "The deceleration for a quick stop in [u/sÂ²], parameter 2090",
+          ""
+        ],
+        [
+          "fModuloOffsetInc",
+          "LREAL",
+          "",
+          "The modulo offset in increments, built fromdwModuloOffsetIntandudiModuloOffsetNum, parameter\n2100",
+          ""
+        ],
+        [
+          "bInvertHomeOffset",
+          "BOOL",
+          "",
+          "Whether the home offset is inverted when writing it to or\nreading it from the drive, parameter 2200",
+          ""
+        ],
+        [
+          "fConstVelFactor",
+          "LREAL",
+          "",
+          "A constant factor multiplied to the velocity scale factor\n(parameter 1055), dimensionless.\nExample: the drive expects the velocity in inc/(64*s) instead of\ninc/s. Then this parameter should be set to 64.\nThe value is only used during initialization to computefScalefactorVel(1055). Parameter 2210.",
+          ""
+        ],
+        [
+          "fConstAccFactor",
+          "LREAL",
+          "",
+          "A constant factor multiplied to the acceleration scale factor\n(parameter 1056), dimensionless.\nExample: the drive expects the velocity in 16*inc/(s) instead of\ninc/s. Then this parameter should be set to 1/16.\nThe value is only used during initialization to computefScalefactorAcc(1056). Parameter 2220.",
+          ""
+        ],
+        [
+          "usiLogicalDevice",
+          "USINT",
+          "",
+          "The 0-based logical device index (6000)",
+          ""
+        ]
+      ]
+    }
+  ]
+}

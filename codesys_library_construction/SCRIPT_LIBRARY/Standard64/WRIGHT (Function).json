@@ -1,0 +1,32 @@
+{
+  "library": "Standard64",
+  "title": "WRIGHT (Function)",
+  "url": "https://content.helpme-codesys.com/en/libs/Standard64/Current/String-Functions/WRIGHT.html",
+  "page_title": "WRIGHT (FUN)",
+  "text": "\nFUNCTION WRIGHT : WSTRING(255)\nReturns rightmost SIZE wcharacters of STR.\n",
+  "tables": [
+    {
+      "headers": [
+        "Scope",
+        "Name",
+        "Type"
+      ],
+      "rows": [
+        {
+          "Scope": "Return",
+          "Name": "WRIGHT",
+          "Type": "WSTRING(255)"
+        },
+        {
+          "Scope": "Input",
+          "Name": "STR",
+          "Type": "WSTRING(255)"
+        },
+        [
+          "SIZE",
+          "INT"
+        ]
+      ]
+    }
+  ]
+}
