@@ -67,13 +67,16 @@ LITL 评测可在 `LITL/config.py` 中修改默认模型（默认 `gpt-5.2`）�
 ### 2.4 CODESYS 编译服务（验证/修复步骤需要）
 
 验证修复（`verifier`）和批量语法检查依赖远程 CODESYS API。
+具体仓库:https://github.com/t78bb/codesys_call
+核心逻辑和https://github.com/cangkui/CODESYSCompileService 相同,加了项目级适配
 
 环境变量（按实际部署修改）：
 
 ```cmd
 set CODESYS_API_URL=http://192.168.x.x:9000/api/v1/pou/new_project_workflow
 ```
-
+/api/v1/pou/new_project_workflow
+这里是指定的要调用的函数名称 具体名称可以在codesys_call中看见 若在codesys_call中定义新的被调用函数要同步更改设置. 这里在代码中也有硬编码,若调用未生效可以调整下
 本地需有对应的 CODESYS 工程目录（`.project` 文件），默认路径在代码中硬编码为：
 
 ```
@@ -81,17 +84,6 @@ F:\codesys_call\CODESYSCompileService-main\projects
 ```
 
 每个评测项目名 `repoeval_xxx` 会映射到 `projects` 下的 `xxx` 工程。若路径不同，运行 `batch_syntax_check_output.py` 时用 `--projects-root` 指定。
-
-### 2.5 网络代理（国内访问 GitHub 时）
-
-若 `git push/pull` 失败（`Connection was reset`），需为 Git 配置本地代理，例如：
-
-```cmd
-git config --global http.proxy http://127.0.0.1:7890
-git config --global https.proxy http://127.0.0.1:7890
-```
-
----
 
 ## 三、目录结构说明
 
@@ -124,7 +116,7 @@ repoSTGen/
 ├── retrieve/                    # BEIR 检索
 ├── verifier/                    # CODESYS 验证与 LLM 修复
 ├── requirement_completion/      # 需求模糊点识别与追问
-├── planner/                     # 可选：生成前规划
+├── planner/                     # 可选：生成前规划(测试发现没啥效果就不用了)
 ├── LITL/                        # LLM-in-the-Loop 评测
 ├── evaluate/                    # CodeBLEU 评估器
 └── codebleu-main/               # CodeBLEU 实现
@@ -203,33 +195,9 @@ python full_process.py --result_dir 20260306_120000 --skip_generation
 # 从已有 output 子目录继续（生成 + 修复）
 python full_process.py --result_dir 20260306_120000
 
-# 启用经验库自增长
+# 启用经验库自增长(不常用)
 python full_process.py --enable-self-growing-kb
 ```
-
-### 4.3 单步模块（高级 / Debug）
-
-| 步骤 | 命令 / 说明 |
-|------|-------------|
-| 仅检索 | 由 `full_process` 内部调用 `retrieve/eval_beir_sbert_canonical.py` |
-| 仅批量生成 | `python generator/batch_generation.py --result_dir 20260306_120000` |
-| 仅需求补全 | `python requirement_completion/ambiguity_check.py --project repoeval_counter --run-id 20260306_120000 --auto-answer` |
-| 仅验证修复 | `full_process.run_fix` 已封装 `verifier/auto_fix_st_code.py` 逻辑 |
-
-### 4.4 流程示意图
-
-```mermaid
-flowchart TD
-    A[dataset/query/*.json] --> B[需求补全 ambiguity_check]
-    B -->|ask → answer → 回填 requirement| C[检索 BEIR + BGE]
-    C -->|写入 docs| D[生成 ApiEvaluator gpt-4o]
-    D --> E[readful_result/*.st]
-    E --> F[验证修复 CODESYS + LLM patch]
-    F --> G[readful_result 修复后]
-    F --> H[readful_result_no_provide]
-```
-
----
 
 ## 五、评测流程
 
@@ -356,7 +324,7 @@ python batch_syntax_check_output.py 20260306_120000 ^
 
 ## 六、典型使用场景示例
 
-### 场景 1：新人首次复现完整实验
+### 场景 1：首次复现
 
 1. 克隆仓库，配置 API 与 CODESYS 环境变量
 2. 确认 `dataset/query`、`dataset/BEIR_data`、`dataset/project_code` 数据齐全
@@ -435,7 +403,6 @@ python batch_create_no_provide.py
 
 | 问题 | 处理 |
 |------|------|
-| `fatal: unable to access github.com ... Connection was reset` | 配置 Git 代理（见 2.5 节），或开 VPN |
 | `错误: 未配置API密钥` | CMD 中 `set ZHIZENGZENG_API_KEY=...` 后重试 |
 | 检索失败 / `BEIR_data` 不存在 | 确认 `dataset/BEIR_data`；或准备 `output/stable_data` 回退 |
 | 修复跳过 / CODESYS 连接失败 | 检查 `CODESYS_API_URL`、服务是否启动、projects 工程是否存在 |
@@ -447,22 +414,7 @@ python batch_create_no_provide.py
 
 ---
 
-## 十、交接清单
-
-接手的同事请逐项确认：
-
-- [ ] 已获取 `ZHIZENGZENG_API_KEY`（或等价 OpenAI 兼容 API）
-- [ ] 已获取 CODESYS 编译服务地址与 projects 工程目录访问权限
-- [ ] `dataset/query`、`project_code`、`generation_context_ground_truth`、`BEIR_data` 已就位
-- [ ] 能用 `--project repoeval_counter` 跑通小样本全流程
-- [ ] 能独立运行 `evaluate_output.py` 与 `batch_syntax_check_output.py`
-- [ ] 了解 `output/<时间戳>/` 目录含义，不把 `output/` 提交到 Git
-- [ ] 了解 LITL 评测成本较高，按需运行
-- [ ] 了解各消融参数：`--skip_retrieve` / `--skip_answer` / `--skip_plan` / `--skip_fix`
-
----
-
-## 十一、主要脚本速查表
+## 十、主要脚本速查表
 
 | 脚本 | 用途 |
 |------|------|
@@ -481,3 +433,6 @@ python batch_create_no_provide.py
 ---
 
 > 如有环境差异（IP、路径、API 供应商），请以实际部署为准修改对应配置。
+>
+> 思考:
+> 此工作目前api推荐并不完善 只在迭代修复步骤中有涉及 可以考虑添加独立推荐步骤如autoplc
